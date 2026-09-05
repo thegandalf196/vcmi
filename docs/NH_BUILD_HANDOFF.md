@@ -1,5 +1,39 @@
 # New Horizons Linux build handoff
 
+## Post-MVP explicit-empty town garrison regression
+
+After the completed ordinary journey in `NH_TESTER_RESULTS.md`, added an
+independently reviewed, original-address-corroborated fix for lost explicit-empty
+H3M town armies. No Reconstruction implementation was imported.
+
+Regression-first evidence in the assigned root:
+
+- `gap1-red-build-retry.log`: build exit 0 after correcting test private-member
+  access. `gap1-red-tests.log/xml`: exit 1, three parser cases passed and all three
+  real-init cases (ROE/AB/SOD) failed **only** because explicit-empty neutral towns
+  gained two guard stacks; deterministic positive-control seed 0.
+- `gap1-green-build.log`: initial compile failure in new persistence tests
+  (ambiguous JSON entry point and missing concrete serializer types), not a
+  behavioral failure. Runtime corrected test qualification/includes only.
+- `gap1-green-build-retry.log`: final client and test links, exit 0.
+- `gap1-green-tests.log/xml`: **26/26 passed**, including 12 parameterized parser,
+  real-init, JSON-object and binary-object persistence cases, plus the existing
+  14 save-path/map/skill-serialization checks.
+- `gap1-lifecycle.log`, `gap1-launcher.log`: lifecycle and launcher checks exit 0.
+
+Production scope is exactly H3M loader, town header/implementation and serializer
+feature enum. `customInitialGarrison` preserves authored presence independently
+of current stacks. It bypasses initial random guards only; owner guard and weekly
+rules remain unchanged. Town JSON writes an explicit true key even if empty army
+is omitted; old/missing key retains legacy false. Binary feature advances CURRENT
+without raising MINIMAL, with false on old reads and no mutation on old writes.
+
+Native object roundtrips do not prove full saved-game or zipped-map integration.
+Next graphical requirement: load the retained pre-feature MVP save, continue,
+save in the new version and reload. Focused new-map empty-town capture requires
+an independently identified target/private synthetic exposure, not yet executed.
+AI/core resources remain enabled; no package installation or Build-owned GUI run.
+
 ## Native-test checkpoint after run1 release
 
 Tester explicitly released the client/profile at 18:11:38Z on 2026-09-05;

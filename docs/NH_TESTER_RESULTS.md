@@ -134,3 +134,48 @@ this is not an all-socket-free claim.
 - No product/launcher edits by Tester; only testing helper and this document.
   No proprietary screenshots, saves, maps, logs or profiles staged for Git.
   Candidate lease is released; no new launch without the next frozen announcement.
+
+## Planned gap1 regression — explicitly empty neutral-town capture
+
+**Plan only; not executed.** Runtime owns implementation/native tests. Preserve
+both the accepted binaries until Build replaces them and the idle MVP save profile;
+use a separate regression profile once Build announces a frozen candidate.
+
+Preflight coordination: Runtime supplies the target scenario identity, town name/
+location, and independent evidence that its H3M garrison flag is **explicitly set
+with seven empty slots**, not merely an unspecified/default garrison. Target must
+be visible/reachable on day1 without intermediate combat or scripted transfers.
+Prefer a verified purchaser scenario; none has been identified yet. If Runtime
+provides a synthetic map from the existing TinyH3MBuilder, label it focused
+integration evidence, not original-scenario acceptance. Agree its private exposure
+with Build first; do not alter purchaser Maps, launcher or product configuration.
+
+Normal-input route (private guarded Xvfb/XTest only, maximum15 minutes per run):
+
+1. New Game → Single Scenario → designated map → Begin. Inspect the target through
+   normal town information; record neutral ownership and no defending stacks.
+2. Save **before capture**, quit normally, and notify Runtime of the PID boundary.
+   After a frozen-ready confirmation, relaunch the same regression profile and load
+   that save. Verify neutral ownership/empty garrison persisted.
+3. Select the hero and execute its ordinary path onto the town entrance. Expect
+   immediate ownership transfer/town access **without a battle screen**, attack
+   confirmation for defenders, casualties or battle XP. Verify player flag, town
+   list, visiting hero and unchanged army. No frontend/state injection.
+4. Save after capture; use the normal Load Game route to reload. Check ownership,
+   hero/army and buildings persisted. End one turn and inspect expected town income
+   (account for declared map events); ensure gameplay continues. Quit normally.
+5. Control: an explicitly populated neutral town must retain its specified guards
+   and enter ordinary combat on attack. An unspecified garrison remains eligible
+   for upstream random initialization, **not guaranteed nonempty**: a single empty
+   random result is not a regression. Runtime's paired native tests establish the
+   flag/RNG distinction and serialization compatibility; GUI observations alone
+   cannot establish those internal semantics.
+
+Keep only a pre-capture/reloaded view and post-capture ownership checkpoint unless
+there is a defect. Record source/client/library hashes, scenario provenance, PID
+and normal-input steps in local evidence. Notify Runtime before start/load/quit for
+passive observation. On unexpected defenders, battle, ownership or reload failure,
+send the concrete checkpoint/log and failed step directly to Runtime and Build;
+stop/release, await their fix/frozen rebuild, and repeat the same route. No original
+execution, package installation, host display interaction or launch is authorized
+by this plan itself.
