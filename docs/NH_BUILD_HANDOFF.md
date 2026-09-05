@@ -33,8 +33,11 @@ All use red Castle (8,10), hero 0 (17,10), neutral target (20,10), blue Castle
 day-one inspection, pre-capture save/restart/reload, direct capture without battle,
 and post-capture save/load preserving ownership and army. PIDs 731666/731818 quit
 normally by 19:55:18Z; binary and all three fixture hashes stayed unchanged.
-Populated control was not attempted in that bounded run and remains pending.
-These synthetic fixtures are diagnostic, not shipped original
+A subsequent bounded run (PID 732152, normal exit 20:01:58Z) passed post-capture
+one-turn continuation: popup +1000, gold 20000→21000, two owned towns retained.
+The custom fixture's ordinary approach entered a siege with exactly 17 defending
+Pikemen. Battle/scenario completion and unspecified GUI control were not exercised;
+no claim of those passes. These synthetic fixtures are diagnostic, not shipped original
 content; no generated maps/manifests/profiles/assets belong in Git.
 
 ## Post-MVP explicit-empty town garrison regression
@@ -71,7 +74,8 @@ save → normal quit/restart/reload route on `023ffe7da`, preserving the old nam
 save unchanged; exact identity/limits are in `NH_TESTER_RESULTS.md`. This does not
 cover every historical save version. Focused synthetic explicit-empty capture
 and pre/post-capture save/load subsequently passed on frozen `9bd41073b`; see
-Tester results and fixture provenance above. Populated GUI control remains pending.
+Tester results and fixture provenance above. Subsequent populated GUI battle-entry
+control and post-capture turn/income checks passed; see the bounded Tester evidence.
 AI/core resources remain enabled; no package installation or Build-owned GUI run.
 
 ## Native-test checkpoint after run1 release

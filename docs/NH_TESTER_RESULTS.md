@@ -260,12 +260,48 @@ build directory. No MVP profile/save writes, product edits or builds during play
 Local-only evidence: `build/new-horizons-linux/testing/gap1-gui/`, containing
 `01-empty-neutral.png`, `02-pre-save-reloaded.png`, `03-captured-no-battle.png`,
 `04-post-save-reloaded.png`, `05-post-reload-hero.png`, and both client logs.
-Runtime independently observed the announced PIDs; its process evidence is in
-that directory. Startup gaps and250ms sampling prevent an exhaustive transient
-process/socket claim; dummy audio remains unverified.
+Runtime's finalized `runtime-summary.json` records1758 samples for PID731666
+(19:43:18.538547–19:50:51.331359Z) and837 for PID731818
+(19:51:41.906643–19:55:17.439602Z), with no child/owned-INET positives or observer
+errors; both exact process exits were observed. Startup gaps and250ms sampling
+prevent an exhaustive transient process/socket claim; dummy audio remains
+unverified.
 
-**Limits:** the optional17-Pikemen populated control and unspecified fixture were
+**Limits:** no post-capture End Turn/income check was performed; that remains
+pending. The optional17-Pikemen populated control and unspecified fixture were
 not played, preserving the time bound. Their distinction remains native evidence;
 unspecified guards may legitimately randomize empty. This graphical PASS covers
 this explicit-empty SOD fixture, capture, and pre/post-capture persistence—not all
 original maps, weekly neutral growth, campaigns, audio or other platforms.
+
+## Gap1 follow-up — post-capture income and populated control PASS
+
+Separately authorized bounded run,2026-09-05 19:57:48–20:01:58 UTC, PID732152,
+private guarded Xvfb. Repository evidence checkpoint `0fb1bf855` was docs-only:
+**no rebuild**, so tested binary identity remains `9bd41073b5f0772cac6447b3bd465a2859981c54`
+with the client/library hashes above. Same approved diagnostic assets/profile.
+
+1. Loaded **NEWGAMEpost** normally. Kingdom-resource popup showed gold20000 and
+   **+1000/day**, with wood20/mercury10/ore20/sulfur10/crystal10/gems10. One
+   no-spend End Turn continued to Day2 with **gold21000**, other resources
+   unchanged and both owned towns retained. This closes the preceding run's
+   pending post-capture turn/income check; no weekly-growth claim.
+2. Returned to the main menu and started **NHGap1CustomSOD** normally. Fixture
+   gzip SHA-256:
+   `6ca9a316b32f1fa9038c58ecdc6b2c7d341d3cafc443b414f1cfea3c2e2489dd`.
+   Neutral Castle **Dunwall** displayed a **Pack of Pikemen** in its popup—not an
+   exact count there. Ordinary entrance path opened a guarded siege battle with
+   **exactly17 defending Pikemen** visibly present; attacker had12 Pikemen and
+   7 Archers. Unlike the explicit-empty fixture, this did not capture directly.
+   Exact count was verified in battle, not inferred from the popup label.
+3. Quit normally through Options → Quit to Desktop from battle. No battle/scenario
+   completion claimed. PID absent, owned Xvfb stopped, explicit lease release sent
+   at20:01:58Z. **NEWGAMEpre/NEWGAMEpost hashes unchanged**, no named save writes;
+   final binaries and all three fixture gzip hashes matched their frozen values.
+
+Evidence under `build/new-horizons-linux/testing/gap1-control/`:
+`01-income.png`, `02-next-day.png`, `03-populated.png`, `04-guarded-battle.png`,
+`client.log`, `named-before.sha256`, `final-hashes.txt`, and Runtime's independent
+process observation. The optional unspecified fixture was not played; an empty
+random result would not constitute failure. Same startup/transient sampling and
+dummy-audio limitations apply. No product edits, builds or original executable use.
