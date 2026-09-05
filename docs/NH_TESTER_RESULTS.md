@@ -179,3 +179,44 @@ send the concrete checkpoint/log and failed step directly to Runtime and Build;
 stop/release, await their fix/frozen rebuild, and repeat the same route. No original
 execution, package installation, host display interaction or launch is authorized
 by this plan itself.
+
+## Gap1 candidate — accepted-save compatibility PASS
+
+Bounded normal-input test on 2026-09-05, approximately19:19–19:30 UTC, using the
+preserved MVP profile and guarded private Xvfb only. Frozen checkpoint:
+`023ffe7daa447a9613601ffd06401d2920868b00`.
+
+- Client SHA-256:
+  `1066015c77c5ba0e7e3b685c20730d234bea4306976913992cc80313b8c0e3a5`.
+- `libvcmi.so` SHA-256:
+  `3628ee50636f88da9558bd5fed7f6e36e0947c22020532404950467a6b6d2066`.
+  Final hashes matched the frozen announcement; no build/product edits during play.
+- PID730415: normal Load Game selected the preserved **Autosnh-run1** accepted on
+  the4f candidate. Restored Week2Day1, Ash XP166,4 Imps/6 Gogs, mana5/10,
+  movement319/1560, gold19450 and resources23/16/15/10/10/10. Position/fog and
+  Cinderspire ownership visually matched the previous checkpoint.
+- Continued one normal End Turn and a two-tile move. Day2 gold19950, mana6/10 and
+  movement1360/1560 were then stored in the **new, distinct**
+  `NEWGAMEgap1-compat-023` save; explicit success dialog observed. Quit normally.
+- PID730571: restarted the same frozen candidate/profile and loaded that new save
+  through the ordinary menu. Day2, XP166,4 Imps/6 Gogs, mana6/10,
+  movement1360/1560, gold19950, resources, moved position/fog and town ownership
+  matched. Quit normally again; both PIDs absent before the15-minute journey limit.
+- The original `Autosnh-run1.vsgm1` SHA-256 was checked against its pre-run hash
+  after **each** quit: unchanged. It was not overwritten. Both old and new saves
+  remain in the idle profile. Owned Xvfb stopped; explicit final lease release sent
+  to Build/Runtime at19:30:30Z.
+
+Local evidence: `build/new-horizons-linux/testing/gap1-compat/`, including
+`old-save-before.sha256`, `final-hashes.txt`, `client1.log`, `client2.log`,
+`01-old-save-restored.png`, `02-new-save-success.png`, `03-new-save-reloaded.png`.
+Runtime's finalized `runtime-summary.json` reports1416 samples for PID730415
+(19:20:17.839987–19:26:22.488238Z) and545 for PID730571
+(19:28:08.079597–19:30:28.425376Z), zero child/owned-INET positives or observer
+errors. Startup gaps,250ms sampling, Unix/netlink and dummy-audio limits remain.
+
+This establishes the exercised old-save → continue → new-save → restart/reload
+compatibility route, **not** every historical save version or a graphical gap1
+capture pass. No approved neutral-town diagnostic target was exposed or launched
+in this test. Focused capture regression remains pending Build's explicit frozen
+diagnostic identity/provenance announcement.

@@ -1,5 +1,38 @@
 # New Horizons Linux build handoff
 
+## Focused synthetic town-fixture export
+
+Added one opt-in existing GoogleTest case, no new framework or product changes:
+`NH_EXPORT_TOWN_GARRISON_FIXTURES=1` with filter
+`TinyH3MBuilderTest.ExportNeutralTownGarrisonFixtures`. Default runs skip export.
+The existing builder writes three fresh SOD maps only after parser and real-init
+validation; tests reread actual gzip files through EOF, check zlib/close status,
+and compare disk payloads with prevalidated bytes. Seed 0 is a native control,
+not a guarantee of the GUI's unspecified-garrison roll.
+
+First enabled-export attempt failed before writing: a post-init exact-four object
+count ignored unused-hero registry reservations. Replaced it with authored-object
+ID/type/subtype/position/owner checks, keeping exact-four parser assertions.
+`gap1-export-build-retry.log` exits 0; `gap1-export-green.log/xml` reports **27/27
+passed**, including export. The prior default run reports 26 passes/one opt-in skip.
+
+Build independently decompressed each actual gzip through CRC/EOF, verified
+SOD/36x36/one-level/name headers, hashed compressed/raw bytes and copied exactly
+three generated fixtures to `testing/gap1-assets/Maps` under the assigned root.
+Data/Mp3 there are links to external purchaser inputs; no original Maps are exposed
+or changed. Separate diagnostic profile: `testing/gap1-profile`. Unmodified
+launcher `--verify-only` exited 0 without creating that profile or launching.
+
+Local `testing/gap1-fixture-manifest.json` records all hashes/provenance. Primary
+`NHGap1ExplicitEmptySOD.h3m`: gzip SHA-256
+`0293f64bbc68baee87ee9c4a1cbe6474888815aee0ee6147385445ac9d260af6`,
+raw SHA-256 `95eddf9f634e89ea89919abbe930aa011f80bcfee2bde4c9bf8ff99b348c273c`.
+Other maps: `NHGap1CustomSOD` (17 pikemen) and `NHGap1UnspecifiedSOD`.
+All use red Castle (8,10), hero 0 (17,10), neutral target (20,10), blue Castle
+(30,30). Day-one graphical reachability/capture still requires sole-Tester
+verification. These synthetic fixtures are diagnostic, not shipped original
+content; no generated maps/manifests/profiles/assets belong in Git.
+
 ## Post-MVP explicit-empty town garrison regression
 
 After the completed ordinary journey in `NH_TESTER_RESULTS.md`, added an
@@ -29,8 +62,10 @@ is omitted; old/missing key retains legacy false. Binary feature advances CURREN
 without raising MINIMAL, with false on old reads and no mutation on old writes.
 
 Native object roundtrips do not prove full saved-game or zipped-map integration.
-Next graphical requirement: load the retained pre-feature MVP save, continue,
-save in the new version and reload. Focused new-map empty-town capture requires
+Tester subsequently passed the retained pre-feature MVP save → continue → new
+save → normal quit/restart/reload route on `023ffe7da`, preserving the old named
+save unchanged; exact identity/limits are in `NH_TESTER_RESULTS.md`. This does not
+cover every historical save version. Focused new-map empty-town capture requires
 an independently identified target/private synthetic exposure, not yet executed.
 AI/core resources remain enabled; no package installation or Build-owned GUI run.
 
