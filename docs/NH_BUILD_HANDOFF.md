@@ -1,5 +1,31 @@
 # New Horizons Linux build handoff
 
+## Selective-autocombat Stage A: policy only, not a UI feature
+
+Added default-true category preferences and a pure `controlsUnit(Unit, Mode)`
+predicate. FULL_BATTLE always delegates; towers explicitly retain prior automatic
+behavior; SELECTIVE consults the creature/catapult/ballista/tent flag. No skill or
+server eligibility checks, client/AI callers, settings or UI wiring were added.
+Spells/Tactics defaults remain unchanged. This does not implement user-visible
+selective autocombat or its asynchronous spell/manual handoff.
+
+Regression-first: initial build failed on a nonexistent test include, corrected
+to existing `CCreatureHandler.h`. Successful retry compiled the unconditional-true
+hook. `autocombat-stageA-red.log/xml` then recorded exactly four exclusion failures
+and four passing default/cross-category/full-battle/tower controls. Only after that
+red result was the predicate authorized. `autocombat-stageA-green-build.log` exits
+0; combined `autocombat-stageA-green.log/xml` reports **66 passes and one expected
+opt-in export skip**, including all eight policy tests. Lifecycle and launcher
+checks also exit 0; no game launched for this internal policy increment.
+
+Separate First Aid Tent characterization adds six cases to the existing real-flow
+fixture: wounded target ranks 0–3 (automatic heal versus manual TURN_QUEUE), plus
+healthy/no-target ranks 0/1 (forced automatic NO_ACTION). Uses an ordinary injury
+packet, real randomizer/seed 1337, and asserts target eligibility and exact action.
+Tent/ballista/FireShield/Enchanted tests independently passed 32/32 while policy was
+still red (`autocombat-tent-green.log/xml`). Server production rules and SDL
+client dispatch remain unchanged; these tests do not establish GUI routing.
+
 ## Selective-autocombat prerequisite: ballista server routing
 
 Test-only increment, no product/client/server-rule changes. Existing
