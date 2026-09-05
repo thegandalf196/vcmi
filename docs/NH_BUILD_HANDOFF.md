@@ -1,5 +1,26 @@
 # New Horizons Linux build handoff
 
+## Selective-autocombat prerequisite: ballista server routing
+
+Test-only increment, no product/client/server-rule changes. Existing
+`RecordingGameServer` now records `BattleSetActiveStack` and `StartAction` before
+application. New `WarMachineControlTest.cpp` follows real battle setup and bounded
+ordinary Defend actions, with the existing seed 1337 and no private flow calls.
+
+`ArtilleryRanks/WarMachineControlTest.BallistaArtilleryControlsAuthoritativeTurnRouting/*`
+passes all four ranks: absent Artillery yields authoritative AUTOMATIC_ACTION and
+one SHOOT; Basic/Advanced/Expert yield TURN_QUEUE, no automatic machine action,
+and the ballista remains active for client input. The live target/can-shoot
+preconditions are asserted. No preference grants skill eligibility.
+
+Build log `autocombat-ballista-build.log`: exit 0. Ballista plus existing FireShield
+and Enchanted sibling tests: 26/26 passed (`autocombat-ballista-tests.log/xml`).
+Combined save/map/garrison baseline: 52 passed, one expected opt-in export skip
+(`autocombat-ballista-baseline.log/xml`), exit 0. These native fixtures do not link
+SDL client dispatch and do not prove absence of duplicated client commands.
+Catapult/tent routing and new selective-autocombat behavior are not covered by this
+increment; frontend lifecycle/API implementation remains unapproved at this point.
+
 ## Focused synthetic town-fixture export
 
 Added one opt-in existing GoogleTest case, no new framework or product changes:
