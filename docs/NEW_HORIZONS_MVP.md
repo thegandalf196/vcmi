@@ -8,6 +8,8 @@ Deliver a fully playable ordinary single-player game using purchaser-supplied or
 
 Single-player must use one game process, with no separate vcmiserver child and no loopback TCP/UDP connection or listener. Keep authoritative simulation, AI, commands and presentation ordering intact. An in-process simulation thread is permitted. Current upstream ServerThreadRunner and createInternalConnection are the first implementation candidates, not a mandate to replace working logic.
 
+The single-player frontend must read as a local game: Main Menu -> New Game -> Single Scenario -> map/options -> Begin -> Adventure. Load Game must likewise reach saves without hosting/address/port/connect decisions. Internal lobby/session classes may remain, but do not expose networking terminology or a separate join/host interaction in ordinary single-player. Preserve necessary loading progress, cancellation and actionable errors; no redesign of game rules is required.
+
 Players receive one curated original-content edition: no optional third-party mod installation/selection workflow. Preserve internal content/dependency loading and upstream-required engine resources for compatibility and future curated additions. Do not claim that GPL recipients are unable to modify the source.
 
 ## First acceptance gate
