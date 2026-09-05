@@ -1,5 +1,45 @@
 # New Horizons Linux build handoff
 
+## Native-test checkpoint after run1 release
+
+Tester explicitly released the client/profile at 18:11:38Z on 2026-09-05;
+PID 722537 was absent before configuration. No live binary was overwritten.
+Enabled existing `vcmitest` in the assigned root using installed sources:
+
+```sh
+cmake --preset new-horizons-linux -DENABLE_TEST=ON \
+  -DVCMI_GOOGLETEST_SOURCE_DIR=/usr/src/googletest
+cmake --build build/new-horizons-linux --target vcmitest vcmiclient --parallel 2
+```
+
+Both commands exited zero; final log includes both executable links.
+`test/CMakeLists.txt` now permits a local GoogleTest source path, retaining the
+bundled submodule default; no downloads, installations or extra build root.
+
+Native filter (run from build `bin`, with private XDG data/config/cache below
+`testing/native`):
+
+```text
+SavegamePathTest.*:TinyH3MBuilderTest.*:HeroSecondarySkillsTest.allEightSkillsAreSerializedIntoMap
+```
+
+Initial attempt exited 1 during global setup: missing DATA/LCDESC. This was missing
+original-data mounting, not a product regression. A build-local `bin/Data` symlink
+to purchaser-supplied external Data enabled the existing read-only resource loader;
+no original files copied or modified, no profile reuse. Retest **14/14 passed**:
+four save-path policy tests, nine synthetic H3M load tests, one map skill
+serialization test. These do not prove authoritative savegame reload/seven turns.
+
+`python3 server/tests/test_server_runner.py --build-dir build/new-horizons-linux`
+also exited zero: four source checks plus actual-runner/fake-server lifecycle
+compilation/execution. Ordinary AI and core/vcmi resources retained. No game launch
+by Build. Tester owns same-save reload/continued-play/scenario-outcome acceptance.
+
+Local evidence: `native-configure.log`, `native-build.log`, `native-build.exit`,
+`native-tests.log` (initial failure), `native-tests-assets.log`,
+`native-tests-assets.exit`, and `native-lifecycle.log`, all below the assigned root.
+Earlier reports below are historical, not the current checkpoint status.
+
 ## Integrator correction: combined build and focused tests PASS
 
 The failed follow-through below was fixed by exposing the existing read-only
