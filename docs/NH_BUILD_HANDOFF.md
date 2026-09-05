@@ -1,6 +1,76 @@
 # New Horizons Linux build handoff
 
-## Combined Runtime / Frontend integration verification
+## Integrator correction: combined build and focused tests PASS
+
+The failed follow-through below was fixed by exposing the existing read-only
+`CServerHandler::isServerLocal()` query to the Cancel UI. No simulation mutation
+or new transport path was added. The integrator prematurely pushed checkpoint
+`55654be98` before reading that failed build result; it is not a tested candidate.
+This correction preserves that failure record rather than relabeling it.
+
+Verified after the header correction:
+- `cmake --build --preset new-horizons-linux`: exit 0, 46 build steps ending in
+  client relink; log `build/new-horizons-linux/integrator-build.log`.
+- `python3 server/tests/test_server_runner.py --build-dir build/new-horizons-linux`:
+  exit 0, four source checks and compiled production-runner/fake-server harness.
+- `bash tools/tests/new-horizons-launch-test.sh`: exit 0, synthetic stub only.
+- `git diff --check`: exit 0.
+
+Rebuilt client SHA-256:
+`d364b0314bdf3a38f2b7f659108c8acac27bc733b8e7163659fa18de69085d6b`.
+No game launched. Graphical gameplay and actual process/socket acceptance remain
+pending explicit bounded execution authorization.
+
+## Latest follow-through: updated Frontend build FAILED
+
+This result supersedes the successful earlier combined build below. After reading
+the Frontend cancellation/identity follow-up and `tools/README.new-horizons.md`,
+removed only both frontend generated objects and ran:
+
+| Command | Exit / result |
+| --- | --- |
+| `cmake --build --preset new-horizons-linux` | **1**: CServerHandler.cpp compiled; CMainMenu.cpp failed; no relink |
+| `python3 server/tests/test_server_runner.py --build-dir build/new-horizons-linux` | **0**: four source checks plus compiled lifecycle harness passed |
+| `bash -n tools/new-horizons-launch.sh tools/tests/new-horizons-launch-test.sh` | **0** |
+| `bash tools/tests/new-horizons-launch-test.sh` | **0**: synthetic stub tests passed; no game executed |
+
+Exact compiler failure requiring Frontend owner action:
+
+```text
+client/mainmenu/CMainMenu.cpp:827:56: error:
+‘bool CServerHandler::isServerLocal() const’ is private within this context
+client/CServerHandler.h:141:14: note: declared private here
+```
+
+Reported promptly in the build-owner response; no competing product edit made.
+The existing executable is **stale relative to these Frontend fixes**, not a final
+tested candidate. Its SHA-256 remains
+`14265af63977baaaf3230a2b28bc5acc5a7ee78d070554299a207acc685640ca`.
+
+HEAD before/after: `965c5027324ed7c286cd2e43130f0a49d35fbc71`.
+Full tracked binary git diff before/after matched byte-for-byte; SHA-256:
+`e658ebc1148722b88898d26ecabd3b978a8e8602b4570d075c4bd1fc4c460379`.
+Explicit source manifests also matched before/after (including untracked harness
+and launcher files). Key exact source SHA-256 values:
+
+```text
+3d1360effde44b0f5214bf0d482e4f0371d746fcb6351e1b26e07ab7895db2ab  client/CServerHandler.cpp
+ddf4b1db34b37f76783ef4c204779d55f136256b6400d36b480297011450100f  client/mainmenu/CMainMenu.cpp
+cf694fb6fcaf4ab86efab1be9d9ae7f4756ea96cb3d69924f2fc019cfd8fcd4e  server/tests/test_server_runner.py
+17e746f05ffbea8ea429df528a465a003aed7ff48e5f51d7a793f85987c4876d  tools/new-horizons-launch.sh
+9d3ec387cdf57192614be069aba9653d22bc7c5324a79e7f7fd5b6bce5b6789b  tools/tests/new-horizons-launch-test.sh
+```
+
+Compiled and executed harness SHA-256:
+`8bc55d4558b9d548d299b123777878e500837737bc9d2e1e8c40844ce95dddc8`.
+All detailed evidence remains under `build/new-horizons-linux/`:
+`final-frontend-build.log`, `final-runner-test.log`, `final-launcher-syntax.log`,
+`final-launcher-test.log`, `final-test-results.txt`, `final-artifact-hashes.txt`,
+`final-sources-{before,after}.sha256`, `final-working-tree-{before,after}.diff`,
+and `final-head-{before,after}.txt`. No GUI/game, install, or commit performed;
+shared source dirt preserved. Rebuild after the owner fixes the access violation.
+
+## Earlier combined Runtime / Frontend integration verification
 
 Read the completed `NH_RUNTIME_HANDOFF.md` and `NH_FRONTEND_HANDOFF.md`, then
 reconfigured and rebuilt the combined shared tree in the same assigned root.
