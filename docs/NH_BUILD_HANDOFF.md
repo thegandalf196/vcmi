@@ -29,8 +29,12 @@ Local `testing/gap1-fixture-manifest.json` records all hashes/provenance. Primar
 raw SHA-256 `95eddf9f634e89ea89919abbe930aa011f80bcfee2bde4c9bf8ff99b348c273c`.
 Other maps: `NHGap1CustomSOD` (17 pikemen) and `NHGap1UnspecifiedSOD`.
 All use red Castle (8,10), hero 0 (17,10), neutral target (20,10), blue Castle
-(30,30). Day-one graphical reachability/capture still requires sole-Tester
-verification. These synthetic fixtures are diagnostic, not shipped original
+(30,30). Sole Tester subsequently verified the primary explicit-empty target:
+day-one inspection, pre-capture save/restart/reload, direct capture without battle,
+and post-capture save/load preserving ownership and army. PIDs 731666/731818 quit
+normally by 19:55:18Z; binary and all three fixture hashes stayed unchanged.
+Populated control was not attempted in that bounded run and remains pending.
+These synthetic fixtures are diagnostic, not shipped original
 content; no generated maps/manifests/profiles/assets belong in Git.
 
 ## Post-MVP explicit-empty town garrison regression
@@ -65,8 +69,9 @@ Native object roundtrips do not prove full saved-game or zipped-map integration.
 Tester subsequently passed the retained pre-feature MVP save → continue → new
 save → normal quit/restart/reload route on `023ffe7da`, preserving the old named
 save unchanged; exact identity/limits are in `NH_TESTER_RESULTS.md`. This does not
-cover every historical save version. Focused new-map empty-town capture requires
-an independently identified target/private synthetic exposure, not yet executed.
+cover every historical save version. Focused synthetic explicit-empty capture
+and pre/post-capture save/load subsequently passed on frozen `9bd41073b`; see
+Tester results and fixture provenance above. Populated GUI control remains pending.
 AI/core resources remain enabled; no package installation or Build-owned GUI run.
 
 ## Native-test checkpoint after run1 release
