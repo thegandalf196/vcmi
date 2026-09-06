@@ -1,5 +1,51 @@
 # New Horizons Linux build handoff
 
+## Current checkpoint: command activation repair after actual GUI failure
+
+Command milestone `54213f0425500208fe259a6255914f05ad71d663` was reviewed,
+committed and pushed through the existing SSH origin. Its committed-identity
+rebuild exited 0; `commands-54213f042-native.log/.xml/.exit` records 95 cases,
+94 passes and one expected opt-in skip, exit 0. This is not full redesign acceptance.
+
+Immutable local diagnostic candidate `commands-preview-54213f042` contains copied
+config/scripts/curated modules, launcher, `BUILD-IDENTITY.json` and `SHA256SUMS`.
+Client SHA256 `ddae434a0c83b8aeb2cc0ec02ffab2132b6264e2be58a487f747c3b9af99172a`;
+library `51bbf0465d769d92d297da701126b5541177564cc5f1f9da086fefea88e45016`.
+Tester verified all hashes, used a fresh guarded private profile, reached a real
+hero-versus-hero battle, and found the ordinary spellbook instead of the command
+chooser. Actual preset/log evidence proves **new-horizons was mounted but inactive**:
+fresh default preset contained only vcmi/core. The failed-run save has legacy rules
+and must not be relabeled or reused as the new-rules retest. Its starting bonuses
+were actually Random, not Gold; Tester corrected the earlier click-count inference.
+No commands/spells were exercised. Normal quit returned exactly 0; the GUI lease
+was explicitly released. Failed profile, logs and images remain private evidence.
+
+Build's repair writes an atomic fixed managed mod preset after acquiring the lock:
+vcmi/core/new-horizons for complete curated resources, vcmi/core for legacy previews.
+Other settings and saves remain untouched; verify-only remains read-only. A shell
+stub regression first failed (exit 1), then passed. An independently compiled,
+non-GUI bootstrap probe linked to the unchanged frozen library uses the **ordinary**
+preset, not the test preset: old launcher exits 2 for missing activation; corrected
+launcher initializes all five command rules. The actual native schema validator
+also exposed the core-scope required-field exemption: empty legacy rules matched
+both oneOf alternatives. Minimum property counts now distinguish full rules and
+validate required nested shapes. Old schema probe exits 4; corrected named-schema
+checks accept core empty/full, reject a missing coefficient, and exit 0. Evidence:
+`activation-native-launcher-red.*`, `activation-native-schema-red.*`,
+`activation-native-final-green.*` under the Linux build root. The probe's initial
+inline-schema overload attempt crashed on local references; the corrected probe
+uses the same named-schema path as production. No runtime fix is claimed for that
+separate diagnostic API behavior.
+
+Next: commit only launcher/test/schema/handoff repair, freeze a **new** candidate
+with unchanged 542 binaries and explicitly separate repair identity, then obtain
+fresh Tester activation/command/AI/save gates. Do not compile or attribute the
+shared in-progress six-school C++ to this repair. Runtime/Frontend own the saved
+school APIs/UI; Build owns canonical school registration and complete existing
+spell mapping/schema, followed by the rest of the full design and local Windows
+cross-dependency/package repair. Windows publication remains blocked; no cloud
+rebuild loop or corrected-package claim has been made.
+
 ## Post-reboot local integration resumed
 
 The user returned and lifted the pause. Build again owns the sole local compiler,
