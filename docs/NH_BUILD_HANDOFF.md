@@ -1,5 +1,29 @@
 # New Horizons Linux build handoff
 
+## Dispatcher takeover — exact md4c export-source repair
+
+The build worker exhausted its provider allowance while this repair was dirty.
+Dispatcher reviewed the existing two-file fix and takes scoped integration for
+this checkpoint; unrelated Orders/Doctrine/AI/artwork and MinGW changes remain
+untouched. Do not infer worker progress from their open panes while quota-limited.
+
+Failure: Windows run `34040567531` could fetch md4c 0.5.2 upstream source, but
+restored Conan cache lacked its exported `honor-vc-runtime` patch. The fix checks
+exported-source files against the exact recipe manifest and, if incomplete,
+downloads only that same pinned recipe revision into a fresh temporary cache.
+It does not replace dependency versions, mutate the binary cache, skip patching,
+or bypass corresponding-source/license requirements.
+
+Validation: 10 dependency-notice tests, 6 system-provider tests and 3 PE audit
+tests passed. Real Conan proof used exact CI revision
+`md4c/0.5.2#3d7106721e458f9f799b87d4d50d02e0`; only the first exported-cache
+lookup was redirected to an empty directory to reproduce missing exports. Actual
+recipe download, source download, patch application, upstream notice collection
+and archive retention then succeeded. Evidence is ignored output under
+`build/new-horizons-linux/md4c-export-proof/`. This Linux proof is not a Windows
+workflow pass. Next: push the scoped repair and run Windows notice-only repack;
+continue the authorized Orders/Doctrines implementation without waiting on cloud CI.
+
 ## Selective-autocombat Stage A: policy only, not a UI feature
 
 Added default-true category preferences and a pure `controlsUnit(Unit, Mode)`
