@@ -1,6 +1,6 @@
 # New Horizons Linux build handoff
 
-## Current checkpoint: six-school native gate passed; reviewed integration next
+## Current checkpoint: native foundation committed; first Windows feature build repairs
 
 Actual first six-school build `magic-first-build-20260906T204536Z` exited 0.
 Its baseline 103 and curated 8 exposed the predicted accepted-command bonus expiry
@@ -50,8 +50,18 @@ draft remains unpublished; this is not a new-feature Windows executable or a
 Windows GUI pass. The extra packaging source is an exact committed root snapshot; compiled
 sources remain the separate original full source companion.
 
-Priority checkpoint: freeze the bounded 113/24 native foundation and start the
-actual local Windows feature client compile before expanding native test scope.
+The bounded 113/24 foundation and toolchain were committed and pushed as
+`2f51a93a0`. The first direct shell invocation failed 126 because the newly created
+helper lacked its executable bit. Retrying through Bash reached Ninja, which
+failed 1 on literal `$<LINK_ONLY:ws2_32>` expressions. Both facade and server
+forwarded `vcmiMain` link-interface properties without nested evaluation; fixing
+both with `TARGET_GENEX_EVAL` produced actual configure exit 0 and Ninja dry-run
+exit 0 with 690 actions. The helper executable bit is repaired too. These are
+build-path repairs, not a completed Windows compile. Preserve `first-feature*`,
+`configure-genex-*` and `genex-*-dry-run.*` evidence in the cross-build root.
+
+Priority checkpoint: run the actual local Windows feature client compile from
+this bounded source before expanding native test scope.
 The exact invocation is `tools/ci/build_mingw_client.sh build`; capture its log,
 exit and resulting path under `build/new-horizons-windows-cross`. Registered
 sources remain held during this serialized build; no GUI lease is active.
