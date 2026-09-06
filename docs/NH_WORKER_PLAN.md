@@ -14,6 +14,11 @@ and [NEW_HORIZONS_MVP.md](NEW_HORIZONS_MVP.md) for the compatibility foundation.
 This plan supersedes historical W1–W6 ownership in old handoff entries, not their
 evidence. The four roles below are the active workers. Dispatcher coordinates;
 Build alone integrates. Keep existing handoffs rather than duplicate report trees.
+Use [NH_DELIVERY_PIPELINE.md](NH_DELIVERY_PIPELINE.md) for separate feature/release
+lanes, early integration gates and Windows scheduling. New or resumed agents use
+[NH_AGENT_START.md](NH_AGENT_START.md) for role-specific `/goal` prompts.
+The optional fifth packaging role requires explicit file-ownership transfer; it
+is not activated by these documents.
 
 ## Product objective and sequence
 
@@ -45,11 +50,11 @@ action per round is shared with spells; Orders spend no mana, expire as declared
 and do not consume a creature action. Doctrines persist until changed. Rules and
 coefficients are explicit, tunable and versioned; old saves retain old semantics.
 
-**Next checkpoint at restart:** fix actual HeroCommandTest.cpp compilation errors
-in `build/new-horizons-linux/commands-build-fix2.log` (incomplete PlayerState,
-TeamState, TavernHeroesPool and bonus serialization types). Send Build the minimal
-fix; Build owns the shared compiler invocation. This is a dated starting point,
-not a claim that later fixes have not landed—consult the latest handoff.
+**Resume checkpoint:** use the latest Runtime handoff and actual native/Tester
+failures. The early HeroCommandTest.cpp incomplete-type build failure was fixed;
+do not replay it as current work. Prioritize defects in the frozen increment,
+then continue six-school effects and the remaining full-design families. Build
+owns shared compiler invocations.
 
 **Acceptance:** compiled tests prove legal/illegal commands, action-budget exclusion
 both directions with spells, real damage/movement changes and round expiry,
@@ -88,11 +93,12 @@ reviewed commits and pushes. Preserve all other workers' dirty changes.
 
 **Current objective:** assemble/test locally first, integrate coherent working
 increments, and deliver auditable Linux/Windows packages without proprietary assets.
-**Next checkpoint:** coordinate the Runtime test-compile fix, build vcmiclient and
-vcmitest in the existing Linux root, run focused/regression tests, verify curated
-rules/art registration and freeze one candidate for Tester. Fix the existing
-MinGW SDL_ttf dependency failure afterward in the existing cross-build root; no
-repeated cloud rebuilds as a substitute for local debugging.
+**Resume checkpoint:** read the latest Build/Windows handoff and actual outputs.
+The initial local Windows feature build/install succeeded at source 95a7001e3;
+that is build evidence, not package or gameplay acceptance. Finish the currently
+frozen incremental candidate's defect/retest/package/upload gates without pulling
+unrelated future features into its scope. Keep Linux/Windows builds incremental;
+do not replay historical dependency failures already repaired.
 
 **Acceptance:** actual successful build/test exits; candidate source identity and
 binary hashes; independent Tester result; preserved save compatibility; clean
@@ -101,10 +107,11 @@ libraries, attribution, licenses and corresponding sources. Windows cross-compil
 is not native Windows graphical acceptance. Do not publish an unaudited package.
 
 User changed the repository to independent/private with definitive-mvp as default.
-SSH origin uses github-gandalf; read access was verified at 98bd74f52. GitHub CLI
-API token is invalid; that defers API-only actions, not local work or SSH Git.
-Cloud repack 34050542538 failed; diagnose when logs are available, without claiming
-its source-collection repair passed Windows. Never force-push or change visibility.
+SSH origin uses github-gandalf. User reauthenticated GitHub CLI and private ADMIN
+API access was subsequently verified; the earlier invalid-token report is history,
+not an ongoing blocker. Verify current access when publishing. Historical cloud
+repack failures and repaired old-preview artifacts are distinct from the new mod
+candidate. Never force-push or change visibility.
 
 ## Content/Tester — independent acceptance
 
