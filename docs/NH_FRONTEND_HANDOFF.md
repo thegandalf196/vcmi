@@ -1,5 +1,147 @@
 # New Horizons frontend handoff (W2)
 
+## First six-school build and bounded missing-frame diagnostic
+
+Independently read `magic-first-build-20260906T204536Z.exit`:0. Actual log compiles
+CSpellWindow.cpp at519/691 and links client at689/691. Thus saved-school UI source
+now has real compiled evidence (not six-school rendered acceptance).
+Parsed actual `magic-first-baseline.xml`:103 cases,1 failure; curated XML:8 cases,
+1 failure. Named reds are Runtime-owned
+`SuccessfulOrderDoesNotExpirePreexistingUnitTurnBonus` and
+`LegacyHeaderDoesNotRequireDisablingCuratedModule`. They remain correctness gates;
+no frontend bypass or weakened test. Build released source for needed owned fixes.
+
+Read Content's actual repair66 first-journey record in NH_COMMAND_ACCEPTANCE:
+chooser/cancel/target-cancel, three Orders, shared spell budget, persistent/switching
+Doctrines, numeric labels/footer fitting and bookless-AI command use passed over
+seven rounds. Pre/postbattle saves survived restart. Later continuation timed out124;
+strong spell-AI/new-battle-NONE GUI checks remain unpassed. No broad completion.
+
+Recurring saved-menu `unavailable frame0:2` logs still lacked a resource name.
+Bounded owned diagnostic applied: `client/render/CAnimation.h` exposes immutable
+resource name; `client/widgets/Images.cpp` adds that name and group frame count to
+its existing failed-setFrame error. No rendering, frame selection or gameplay
+behavior changes. `size(group)` inspected: const lookup only,0 if absent.
+Diff check exit0. SHA256: header
+`05aa2ec512e42c8a1614fd2f5ca47805cee5efdd93b8fe7d0353fce672e1cd25`, cpp
+`6ba179fad22a5a12d0e349237f33bb73294f7c644b9c4998938004be02fd89b9`.
+Build notified for its next compile; this diagnostic is not yet compiled and does
+NOT claim to fix the unidentified missing frame. No compiler/GUI by Frontend.
+Next: use actual resource-attributed logs if reproduced, respond to new UI defects,
+and continue hero-family wiring when Runtime exposes real development/choice APIs.
+
+## Original six-school skill artwork — READY for Build registration
+
+Build explicitly authorized72 new skill PNGs plus72 editable SVGs. Added to
+`assets/new-horizons/generate_icons.py`, `README.md`, owned `svg/` and mod `Images/`:
+`NH_<school>Magic_<rank>_<size>.png`, school light/nature/sorcery/havoc/shadow/chaos,
+rank basic/advanced/expert, size small/medium/large/scenarioBonus. Exact canvases
+32x32/44x44/82x93/58x64 were read from skill schema and CSkill::registerIcons.
+One/two/three lit marks express ranks1/2/3, NOT later mastery choices. Reuses our
+own original CC0 geometric motifs; no purchaser/concept inputs or extracted pixels.
+Build owns the six real skill definitions, gain chances and registration.
+
+`python3 assets/new-horizons/generate_icons.py` exit0. Offline checks verify all72
+RGBA dimensions/alpha, matching SVG dimensions and no embedded image/script content;
+all256 prior outputs retain SHA256 exactly. Frontend inspected generated contact
+pixels for every school/rank/size. Full isolated regeneration exit0: all400 files
+byte-identical. Evidence under ignored Linux build root:
+`research/skill-art/{before,validation}.json`, `contact.png`, and
+`research/skill-art/reproduce-4gjj8tft/reproduction.json`. Total190SVG/190PNG/20JSON.
+Content independently audited all400 outputs: full isolated reproduction byte-
+identical, all256 previous hashes unchanged, all72 skill variants/sizes/rank markers
+checked. Its missing-family and wrong-rank negative controls rejected, then restored
+outputs passed. Contact pixels independently reviewed; Tester handoff contains the
+record. No actual skill/mastery or graphical acceptance follows from this art PASS.
+No compiler, native test or GUI launched by Frontend; frozen542 candidate untouched. Actual
+skill progression, cost/rank use, hero/level-up rendering and old-save semantics
+still require integrated gates. Next: independent art audit, Runtime/Build compile
+readiness and school/command GUI feedback; do not equate assets with masteries.
+
+## Actual saved-school callback wiring — awaiting Runtime/Build readiness
+
+Runtime supplied exact game/battle classification and level APIs; inspected their
+public declarations and actual definitions in `lib/spells/NewHorizonsMagic.cpp`.
+CGameInfoCallback delegates game rules, BattleProxy delegates battle rules, and
+CGHeroInstance uses battle-or-game saved rules for membership/level/rank/cost.
+Runtime moved the game delegation from MapInfoCallback to CGameInfoCallback;
+verified CCallback inherits it through CPlayerSpecificInfoCallback. This keeps
+map-only editor/mock callbacks on safe legacy defaults instead of calling their
+unsupported gameState(). Public signatures and frontend calls are unchanged.
+Validation restricts remapped spell levels to1..5, compatible with existing level
+text IDs; legacy/special-spell fallbacks remain Runtime-owned. `CSpellWindow.cpp/.h` now calls them:
+`getActiveSpellSchools/getSpellSchools/getSpellLevel` in adventure context,
+`battleGetActiveSpellSchools/battleGetSpellSchools/battleGetSpellLevel` in battle.
+One book-local snapshot feeds sorting, learned counts, page totals, filtering and
+level labels/hover. No raw CSpell school/level or global registry reads remain in
+the book. Existing hero rank/best-school and cost calls are retained against
+Runtime's now-present saved-context implementation. No frontend mechanics invented.
+
+Tabs and keyboard/restored selection use only active visible IDs. New-school
+order stays stable when learning spells; stale saved tabs fall back to All with
+page0. Inactive legacy strip is covered by an original plain drawn panel with an
+All-spells toggle reusing NH_spells_button; six custom glyphs/headers use registry
+paths. Legacy four-school snapshots retain original strip/navigation. New-school
+turn animation direction follows visible order rather than numeric registry IDs.
+School paths/classification are data-driven; no hard-coded faction assignment.
+Content independently reviewed the context/navigation and six-school geometry;
+local `testing/commands-static/school-context-review.json`. Its wake described
+All as48x36, but current source references NH_spells_button: Frontend decoded all
+four actual64x64 frames and requested metadata correction. Exact All bounds are
+(534+offR,318)..(598+offR,382), inside83x294 panel ending y382. No product change
+needed. Content subsequently independently decoded all four64x64 frames, recorded
+frame hashes/correct rectangles and corrected its metadata/handoff. No compiled,
+rendered, cost/cast or legacy integration claim from this review.
+
+Latest source hashes: cpp
+`ceefcb46ae75ac0e3aa974cd03e778a65d26d5389dbce2ea94058c7e8424951d`,
+header `9225916c6c86d57b88d97d1ab238c2e5543c132af980231a61e60783eef1bf36`.
+Diff check exit0; inspected toggle silent-selection, scaled-image and color APIs.
+This is NOT compiled/accepted yet: Runtime reports source WIP, with registration
+and native integration still pending. Build must take the agreed shared compile
+only after Runtime READY; immutable542 candidate is untouched. No art/config/CMake/rules edits. Content asked for independent source
+review; active-six rendering/casts/save compatibility await coherent next freeze.
+
+Actual first-command GUI gate FAILED activation: Tester reports fresh new game,
+normal adventure save/reload and field battle opened original book rather than
+chooser. BattleWindow correctly branches on authoritative battleUsesHeroCommands;
+reported to Build/Runtime, no frontend force-enable or save mutation. Native fixture
+overrides did not establish actual module activation. The mutable current.png had
+already advanced to quit confirmation when Frontend read it; do not claim that
+image independently proves the earlier book screen. Await preserved Tester record.
+
+Next: fix any independent source-review defect, then compile with Runtime READY;
+first-command activation repair/GUI retest remains necessary before accepting that
+increment. Full growth/attributes/masteries/hero/tier scope remains unfinished.
+
+## After immutable 54213f042 copy — school-context preparation
+
+Build released source freeze after copying immutable candidate54213f042; Content
+has the sole20-minute GUI lease. No frontend compiler/game launch or candidate
+copy changes. Build reports95-case native gate and identity rebuild EXIT0;
+actual command GUI acceptance remains pending, not inferred from those results.
+
+Prepared `client/windows/CSpellWindow.cpp/.h` for the agreed save-scoped contract:
+a single `readSchoolContext()` snapshots the existing real registry/classifications.
+Sorting, custom-tab learned-spell counts, school page counts and page filtering
+now share that book-local view rather than reading CSpell::schools independently.
+The reader currently preserves existing semantics; there are NO fictional callback
+bindings, new school IDs, global spell writes or claimed school migration. Runtime
+can supply the real active IDs/classifications at this one read boundary next.
+Caster school rank/best-school selection still uses existing hero mechanics;
+explicitly flagged that dependency to Runtime for borders/descriptions/costs.
+
+Static `git diff --check -- client/windows/CSpellWindow.cpp
+client/windows/CSpellWindow.h` exit0. Inspection confirms direct global school reads
+only inside the reader; inherited registry filtering/order semantics retained.
+No compiled/runtime acceptance for this post-copy change yet. SHA256:
+cpp `febe7a5551ab5f071a83e2f6880235a2be6140088427cbf2c016232f7809187f`,
+header `343c429f5dd2a11894fa28c640081c44f58a0f634c64e191eb1a48816a5d31e3`.
+No changes to command chooser/art/CMake/rules. Build notified to defer compiler
+until quiet lease ends. Next: wire Runtime's exact callback contract, then gate
+legacy/custom tab visibility, keyboard/restored selection and selected borders on
+that real saved context; react immediately to candidate Tester defects.
+
 ## Current-recipient Doctrine clarification — updated chooser READY
 
 At Tester's concrete request, exposed Runtime's declared first-slice coverage:

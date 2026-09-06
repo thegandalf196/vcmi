@@ -1,6 +1,118 @@
 # New Horizons Linux build handoff
 
-## Current checkpoint: command activation repair after actual GUI failure
+## Current checkpoint: six-school native gate passed; reviewed integration next
+
+Actual first six-school build `magic-first-build-20260906T204536Z` exited 0.
+Its baseline 103 and curated 8 exposed the predicted accepted-command bonus expiry
+and excessive-NH legacy-header failures. Runtime's scoped fixes and preservation
+controls rebuilt successfully (`magic-fixes-build-20260906T212026Z`, exit 0), then
+passed 109 baseline / 20 curated cases apart from their documented skips.
+
+Source review additionally caught the old-Tome AI affinity mismatch. Actual four
+Tome tests in each profile were RED: legacy unknown/known scores 0/20000, curated
+20000/20000. The school factor's caller subtracts it from one, so the defect was
+maximal valuation in the new profile, not zero valuation. The two-condition fix
+unions saved and original affinity and counts genuinely known school spells;
+no level-factor or global spell-definition changes were made. Both 4/4 reruns
+passed. Final assembled gates `magic-final-baseline.*` and
+`magic-final-curated.*` are **113 cases: 112 passed/one expected export skip**, and
+**24 cases: 23 passed/one context skip**, respectively, both exit 0. The required-NH
+negative test exercised one baseline configuration; do not claim both missing
+and disabled statuses were independently recorded. Native evidence includes real
+installed Havoc/Implosion AI selection, legal server casting/cost/budget, skill
+conversion, old-world exclusions, game/BattleStart persistence and turn controls.
+Six-school graphical acceptance and the remaining command GUI checks are pending.
+
+Local Windows progress is now execution-backed: shared PlutoVG fixed SDL_ttf
+without removing SVG support; `shared-plutovg-20260906T211122Z` dependency install
+exited 0. Cross configuration exposed oneTBB metadata naming a nonexistent `tbb`
+alongside real `libtbb12.dll.a`. A consumer-only metadata adjustment, without
+changing cached binaries, produced generate-with-build-never exit 0 and
+`configure-tbb-fixed.exit` 0. No Windows client compilation or execution is claimed.
+
+Windows82 notice repair `593e40b7f84b982e4e2ccf6833fc304b2a17b205` was committed
+and pushed separately. Independent inspection expanded omissions to dav1d,
+PlutoVG and Brotli. The original immutable 111081420-byte Conan cache was recovered
+with its original SHA256, exact parent identities and six byte-identical runtime
+DLLs; its full static requirements identify the three exact source revisions.
+The closure is 27 dependencies. Exact recipe source recovery exited 0; the overlay
+preserves all 111782 original source entries and adds 590 entries for those three
+leaf sources, plus FFmpeg's full LGPL notice. Twenty-six Python packaging tests
+passed. Actual local repack exited 0 under `windows82-local-repacked-593e40b7f`:
+ZIP SHA256 `5c41caa19ed75df8d1f572fea575d5027ceb61e58376cfc1aaaa308fe5792644`.
+All original protected payload bytes and the original compiled fork source archive
+are unchanged; packaging execution is explicitly local. Independent final archive
+acceptance subsequently passed at notice/source-repair scope: 763 ZIP entries,
+725 protected hashes, 26 PE files, 683 resources, exact original source entries,
+529 newly recovered upstream source files, all 27 dependency identities and
+committed packaging source blobs were checked (`windows-audit-repack593`). The
+draft remains unpublished; this is not a new-feature Windows executable or a
+Windows GUI pass. The extra packaging source is an exact committed root snapshot; compiled
+sources remain the separate original full source companion.
+
+Priority checkpoint: freeze the bounded 113/24 native foundation and start the
+actual local Windows feature client compile before expanding native test scope.
+The exact invocation is `tools/ci/build_mingw_client.sh build`; capture its log,
+exit and resulting path under `build/new-horizons-windows-cross`. Registered
+sources remain held during this serialized build; no GUI lease is active.
+After its first build checkpoint, resume the Linux committed-identity rebuild,
+immutable candidate and short Tester lease.
+
+New independent source review found map-authored legacy-school secondary rewards
+and limiters can still grant/check obsolete IDs in a six-school world, with
+possible misleading feedback. Four reward proofs and two feedback proofs are
+unregistered and unexecuted; they are required follow-up, not a claimed accepted
+six-school journey. A separate source-only test targets the pre-existing
+SPELLS_OF_LEVEL AI known-weight inversion. Do not silently count these tests as
+green or defer the requested first Windows feature compile indefinitely.
+Primary-profile primitives also remain unregistered source-only future work,
+not part of this native result. Full new spell effects, growth/secondary attributes,
+masteries, tiers and final Linux/Windows packages remain open. Older checkpoints
+below are historical context, not superseding readiness claims.
+
+## Repaired command GUI gate and six-school source assembly
+
+Repair `66ddb01bd98ecd2c0e748b7bebb26f46ec7d55ad` was committed and pushed.
+`commands-preview-54213f042-repair-66ddb01bd` preserves both 542 binaries and all
+prior payload bytes except the launcher/schema, with explicit base/repair hashes.
+Tester verified the hashes and exercised seven human rounds, all five commands,
+Bloodlust/shared budget, cancel, expiry, persistent Doctrine and movement; real
+bookless AI issued Aggressive and continued army actions. Three supervised normal
+process exits were exactly 0, with full-process prebattle and post-retreat reloads.
+No defect was observed in that slice. New-battle reset and the strong-spell AI
+journey remain pending, not implied passes. A second ten-minute quiet lease was
+given at 20:32:37Z for these remaining checks; no compiler/native/cross execution
+until Tester releases it.
+
+Outside both immutable candidates, Build has authored the next family:
+`config/newHorizons{Magic,Schools,Skills}.json`, magic schema/default setting,
+generated inline module v0.2.0 data and CMake equality/registration updates.
+There are six real school definitions and six Basic/Advanced/Expert school skills
+with the 72 original rank/size images supplied by Frontend. The saved mapping
+covers exactly 69 existing common hero spells, excluding Titan's Bolt and creature
+abilities. It includes explicit provisional faction conflicts, dual Shadow/Chaos
+Blind, optional tier/cost changes, and new-game skill replacements. See the curated
+module README for non-final choices and the still-unimplemented spell roster.
+`tools/tests/test_new_horizons_content.py` passed six offline tests with thirteen
+negative controls (`magic-content-offline.log/.exit`, exit 0). These checks are
+not native loading, six-school casting, AI or rendered acceptance. Runtime's
+school serialization, save-only compatibility and native tests remain in progress;
+Frontend's callback-driven spellbook is source-ready. No newer-family C++ has been
+compiled or attributed to the repaired 542 candidate. Eligibility/Clone tests are
+now registered for the next native batch, not retrospectively counted among 95.
+
+Runtime corrected an integration concern: although mod verification records a
+version mismatch, the ordinary save-list caller ignores that status; do not infer
+a load block from the comparator alone. An excessive active NH mod in a legacy
+save **does** throw and needs a narrowly scoped save compatibility proof/fix.
+
+Next compiler lane after the remaining GUI lease: repair the existing MinGW shared
+PlutoVG dependency route (preserve its old install evidence), or compile the Linux
+six-school batch once Runtime declares it ready; never run both concurrently.
+Windows delivery, the full spell/mastery/growth/tier scope and final packages remain
+open.
+
+## Command activation repair after actual GUI failure
 
 Command milestone `54213f0425500208fe259a6255914f05ad71d663` was reviewed,
 committed and pushed through the existing SSH origin. Its committed-identity

@@ -6,8 +6,121 @@ Active ownership is **lib/server/AI/native tests**, per `NH_WORKER_PLAN.md` and
 `NEW_HORIZONS_DESIGN.md`; historical W1 sections below are evidence, not current
 file boundaries. Build alone compiles/integrates. No Runtime UI/CMake/packaging
 edits or commits. Full redesign remains the goal after the first command increment;
-architecture experiments are closed. Shared dirty work is preserved atop
-`98bd74f52`, not a tested/committed command candidate.
+architecture experiments are closed. Command native milestone is `54213f042`;
+activation/schema repair is `66ddb01bd`. Six-school source below is separate dirty
+WIP, not compiled or accepted and not part of the immutable GUI candidate.
+
+### Latest executable checkpoint
+
+- First six-school build actually passed **691/691, EXIT0**. Baseline
+  `magic-first-baseline.*`: 103 tests, 101 passes, one expected skip, one RED.
+  Curated `magic-first-curated.*`: 8 tests, 7 passes, one RED. Runtime inspected
+  both failure logs. Real six-school rank/cost/server cast, starting conversion,
+  legacy-world exclusion, full game and BattleStart saved rules all passed.
+- Both fixes and added controls are now actually GREEN: build EXIT0,
+  `magic-fixes-baseline.*` **109 total / 108 passes / one expected skip, EXIT0**;
+  `magic-fixes-curated.*` **20 total / 19 passes / one context skip, EXIT0**.
+  Runtime independently inspected both XML files. Real installed Havoc AI choice,
+  exact server cost, turn controls and legacy-header/world/new-game continuation
+  all pass. Registered production is briefly held for Build's coherent milestone
+  review, commit-identity rebuild and immutable copy. No Runtime builds or commits.
+- The latter requires a separate private native `config/vcmi/testModSettings.json`
+  preset including `core`, `vcmi`, `vcmi-test`, `new-horizons`. Keep baseline profile
+  unchanged; school tests explicitly skip when its required registry is absent.
+- Both formerly predicted REDs are now actual: successful Charge expired a
+  preexisting STACK_GETS_TURN bonus (speed 10→5); actual ActiveModsInSaveList threw
+  ModIncompatibility for the legacy header. Assertions remain intact.
+- Fix 1 appends HERO_COMMAND to BattleUnitTurnReason, uses it only for successful
+  command reactivation, and exempts it alongside existing UNIT_SPELLCAST from
+  turn-bound bonus expiry. Legacy HERO_SPELLCAST/normal-turn behavior is unchanged.
+- Fix 2 permits only an EXCESSIVE exact curated NH module in the save loader,
+  documenting its non-replacing/save-scoped content invariant. The global mod
+  verifier is untouched; required missing/disabled NH and other excess/missing
+  dependencies still reject. Added safety controls pass. Required NH rejection
+  was exercised in ONE baseline installed-state configuration: its actual
+  NOT_INSTALLED versus DISABLED status was not recorded, so do not claim both
+  independently verified. Record/assert that status after the current source hold.
+  VERSION_MISMATCH alone is not an ordinary-save blocker in ActiveModsInSaveList
+  (its caller ignores that status).
+- Tester reports repaired activation works after real save/quit/restart/load, all
+  three Orders, shared Bloodlust budget, Doctrine switch/persistence, seven rounds
+  of bookless Blue AI choosing Aggressive. New-battle NONE and spell-AI journey are
+  still pending. The first failed 542 profile genuinely omitted NH from its active
+  preset; its save is legacy, not something to reinterpret. Build's launcher fix
+  explicitly activates the curated module. Preserve those independent artifacts.
+
+### Six-school foundation WIP (no compile or gameplay acceptance yet)
+
+`lib/spells/NewHorizonsMagic.{h,cpp}` validates saved `magic.newHorizons` settings:
+versions 1/1, ordered six scoped schools, all common hero-spell memberships,
+optional per-spell level/cost[4], faction major/minor and optional positive weights
+(default 3/1), six schoolSkills and legacy skillReplacements. Canonical
+`config/newHorizonsMagic.json` is the **unwrapped** object; Build wraps it in generated
+module settings. Invalid/unregistered data fails closed, not an inert spell list.
+
+Public game APIs: `getMagicRules`, `getActiveSpellSchools`, `getSpellSchools(SpellID)`,
+`getSpellLevel(SpellID)`. Battle counterparts: `battleGetActiveSpellSchools`,
+`battleGetSpellSchools`, `battleGetSpellLevel`. Hero adds `getMagicRules`,
+`getSpellSchools(const spells::Spell *)`, `getSpellLevel(const spells::Spell *)`;
+existing best-school/rank and cost getters now use that snapshot. Frontend wired
+those actual APIs, not hardcoded fictional IDs.
+
+CGameState and BattleInfo carry separately serialized magic snapshots; proxies
+and CGameInfoCallback delegate to the owning snapshot (not generic MapInfoCallback:
+EditorCallback deliberately has no gameState and keeps its safe legacy default). NEW_HORIZONS_MAGIC is appended
+before enum aliases with monotonic assertions. SpellSchool gains feature-gated
+scoped-string serialization with legacy numeric reads; missing scoped identities
+throw rather than falling back to an unrelated module.
+
+Casting/learning coverage in source: hero mastery/damage-school bonuses, exact
+adventure and battle mana costs, spell-level mechanics and filters, Mage Guild
+school-weighted pools and saved-level partitions, Scholar/Eagle Eye limits, AI
+spell/scroll/school reward and boat-cost queries. Old elemental tomes and damage
+artifacts retain affinity behavior; globals CSpell.schools/level/cost are untouched.
+AI's AtLeastOneMagicRule also uses saved schoolSkills and actual known-spell
+membership instead of permanently preferring old school IDs.
+`test/battleAI/NewHorizonsMagicAITest.cpp` now actually PASSES evaluator/authority
+choice, Havoc Expert rank, saved cost and shared budget in the curated 20-test run;
+crucially it relies on actual module activation, not a fixture override.
+
+Build's pre-commit source review found a Tome AI affinity regression: the school
+factor matches only new schools, not original affinity. Runtime additionally found
+that the existing `knownWeight` counts UNKNOWN spells while its caller uses
+`1-factor`: the new mismatch therefore MAX-values every original Tome, not zero.
+`test/battleAI/NewHorizonsTomeAITest.cpp` now has actual RED→GREEN in both profiles.
+Runtime independently inspected XML: four-school RED scores unknown=0/known=20000;
+six-school RED scores 20000/20000 for all four tomes. The narrow affinity-union and
+SCHOOL-known-counter repair passes all 4+4 proofs. Actual grantability is checked,
+not just a score formula. Build reports final 113 baseline / 24 curated tests,
+each with one expected/context skip and no failures.
+
+Further source-only proofs are queued before coherent six-school acceptance:
+`NewHorizonsSkillRewardTest.cpp` covers authored skill IDs/variables, actual server
+reward mutation and raw legacy-skill requirements. These currently bypass starting
+skill conversion and may grant inert retired schools or block quests. The separate
+unregistered `NewHorizonsLevelGrantAITest.cpp` also characterizes the analogous
+preexisting LEVEL-known-counter inversion with real Spellbinder's Hat grants.
+No reward or LEVEL-factor production repair has been applied without actual RED.
+
+New-game starting old magic skills convert by saved data (duplicate ranks use max,
+not addition); offering filters respect map bans and keep NH skills out of legacy
+worlds. Six real ranked secondary skills/art/data are Build/Frontend-owned.
+
+Still required: Tome AI proof/repair, broader guild/adventure/reward integration
+coverage, dedicated new spell-effect families/AI, and integrated six-school UI
+journeys. Positive scoped cast/persistence and legacy-header fixes now have the
+actual native evidence above. Growth/scaled primary and derived
+attributes, masteries and creature tiers remain later full owned requirements.
+
+During the next registered-source freeze, authored only an independent future
+primitive: `lib/entities/hero/NewHorizonsPrimaryProfile.{h,cpp}` and
+`test/hero/NewHorizonsPrimaryProfileTest.cpp`. These unregistered files parse
+`{starting:[A,D,P,K],growth:[A,D,P,K]}`, require four positive growth increments
+summing to ten, and compute deterministic int64 base ratings. Three source-only
+proofs cover the level-20 Knight example, class-specific distributions, malformed
+data and overflow prevention. This is **not** saved hero-growth activation or a
+frontend view/choice API; primary caps, creature-stat isolation, mana, independent
+skill rolls and derived attributes remain unimplemented.
 
 ### Implemented source, not yet integrated acceptance
 
@@ -30,7 +143,8 @@ architecture experiments are closed. Shared dirty work is preserved atop
   is implemented. These limitations are explicit, not claims of full philosophy.
 - BattleAI evaluates legal command effects in its existing hypothetical exchange
   scoring alongside legal spell/target pairs, with no fixed default Order. Actual
-  situational AI tests are now authored, execution still pending.
+  situational AI tests pass in the committed command milestone; six-school AI
+  behavior remains to be verified under its separate real registry/profile.
 
 ### Actual failures, fixes and evidence
 
@@ -104,8 +218,32 @@ processing for rejected HERO_COMMAND only. Do not indiscriminately gate all fail
 actions: existing unit clients deactivate/block on submission and their
 `requestRealized` has no failed-MakeAction recovery. Command chooser only closes and
 sends, so it needs no synthetic activation. This preserves existing unit/spell
-recovery; no frontend mutation or protocol shortcut. Fix is READY for Build's next
-95-test pass, not yet verified green.
+recovery; no frontend mutation or protocol shortcut. Actual
+`commands-rejection-green.xml/log/exit` now verifies **95 total, 94 passes, one
+expected skip, EXIT0**; Runtime independently inspected the XML and rejection
+suite. Build integrated the scoped native milestone as
+`54213f0425500208fe259a6255914f05ad71d663`; identity rebuild/candidate copy remains
+Build-owned. This is not GUI or full-scope acceptance.
+
+Independent, unregistered next-batch proof files (not in that milestone):
+- `HeroCommandEligibilityTest.cpp`: tactics, missing commander and invalid-side
+  guards; also preexisting STACK_GETS_TURN bonus BEFORE a successful Charge.
+  That positive characterization is expected to fail from source review because
+  command reactivation still uses legacy HERO_SPELLCAST expiry. It is not yet an
+  executed defect or an additional Tester GUI hold. Preserve legacy spell behavior
+  when addressing it; a distinct command reactivation reason is the narrow option.
+- `HeroCommandCloneTest.cpp`: actual server HERO_SPELL Clone under an active
+  Doctrine, no copied command bonus, then a subsequent Doctrine switch applying
+  to both original and clone. Source-only, not yet compiled/executed.
+
+Recovered the original read-only Word document under a PDF name at
+an external read-only copy of the original design document; re-extracted all 990 paragraphs
+under `/tmp` and read completely. Do not redistribute source document or art.
+Future-school compatibility findings: preserve builtin four IDs/global legacy
+spell classification; expose saved active school/membership mappings. SpellSchool
+currently serializes as StaticIdentifier (numeric), so six-school work must address
+stable IDs or feature-gated scoped-name serialization, retaining old numeric reads.
+Prose/list Blind school disagreement joins the declared provisional data choices.
 
 Next: Build reruns the rejection proof and full combined suite, then Tester performs
 the frozen normal-input human/AI journey with the authored maps. Fix any concrete
