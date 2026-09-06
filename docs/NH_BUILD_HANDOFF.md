@@ -1,5 +1,122 @@
 # New Horizons Linux build handoff
 
+## Post-reboot local integration resumed
+
+The user returned and lifted the pause. Build again owns the sole local compiler,
+review/staging/commit lane; no cloud workflows or API retries are needed. Current
+base is `98bd74f52` plus preserved shared command/UI/art changes, not a clean
+feature candidate. Repository privacy/default-branch changes were user actions;
+origin SSH is the available integration route.
+
+Runtime supplied concrete serialization headers in `HeroCommandTest.cpp`, retaining
+full old/current game-state roundtrips and all assertions. At 2026-09-06 18:49:10Z,
+started `cmake --build build/new-horizons-linux --target vcmiclient vcmitest
+--parallel 2`; log `commands-resume-20260906T184910Z.log`, completion status will
+be in the adjacent `.exit` file. Tester confirmed no GUI lease or competing build.
+That build exited **0**. The first real command run exited 1 (17/19 passed):
+named settings lacked test mod scope; full-state persistence failed. The baseline
+also exited 1 (63 passed, one opt-in export skip, three garrison failures).
+
+Build found the production persistence cause: `HERO_COMMANDS` was appended after
+`MINIMAL = RELEASE_170`, implicitly setting CURRENT to old value 894. Runtime moved
+it before the release aliases and added a monotonicity assertion; no test weakened.
+The corrected dependent rebuild `commands-resume-20260906T185734Z.log/.exit`
+exited **0**. Combined `commands-version-fixed.log/.xml/.exit` reports **86 passed,
+one expected skip, one failure out of 88**: only the strong-offensive-spell AI case
+still chooses a command instead. All 19 command/persistence/settings cases and all
+66 baseline regressions now pass, plus the bookless AI command/authority case.
+The failed fixture attempted power 1000 despite the core cap of 99: Magic Arrow
+did not dominate the command value for 100 Angels. Runtime replaced that assumption
+with an Implosion fixture asserting actual power 99, legal casting and substantial
+nonlethal damage; production AI and its spell-selection assertion were unchanged.
+
+Build `commands-resume-20260906T191510Z.log/.exit` exited **0**, including the
+chooser/font and custom-school tab layout changes and four new persistence tests.
+`commands-integration-resume.log/.xml/.exit` then exited **0**: **91 passes and one
+expected export skip across 92 tests**. Both actual BattleEvaluator choice/server
+validation cases passed; full BattleStart replica continuation and recipient rules
+passed. This is a native gate, not GUI acceptance or the full redesign.
+
+Final recipient-help text and the two authored hero-versus-hero exporters compiled
+successfully (`commands-resume-20260906T192403Z.log/.exit`). Actual exporter run
+`commands-fixture-export.log/.xml/.exit` passed 2/2, including parser, real-init,
+CRC/EOF and byte equality assertions. Copies and independently audited hashes are
+under `testing/commands-assets/Maps` and `testing/commands-fixture-manifest.json`;
+external Data/Mp3 are readonly input links, never shipped.
+
+A further rejection regression was proved RED: `commands-rejection-red.log/.xml`
+shows rejected Advance reactivated the stack (3 activations versus 2), expiring a
+STACK_GETS_TURN bonus (speed 10 became 5). Runtime's minimal BattleProcessor fix
+skips post-action flow for rejected HERO_COMMAND only; failed unit/spell recovery
+is deliberately preserved because their UI deactivates before submission.
+`commands-rejection-green-build-20260906T193528Z.log/.exit` exited **0** and the
+combined `commands-rejection-green.log/.xml/.exit` exited **0**: **94 passes, one
+expected skip, 95 cases**, including the unchanged formerly-red assertion and both
+real fixture exports. No generic failed-action recovery rewrite was made.
+
+Proceed to reviewed native milestone integration, commit-identified rebuild and
+immutable candidate freeze. Tester graphical acceptance remains pending. Six
+schools/effects, growth, masteries/hero UI and tiers remain full-scope work, not
+completed by this first native command gate.
+
+Build corrected `Mods/new-horizons/mod.json` filesystem path to `/Images`:
+`CFilesystemGenerator` concatenates the mod prefix without inserting a slash.
+The prior `Images` value addressed `MODS/NEW-HORIZONSImages`, not the art directory.
+Native resource/startup checks and rendered acceptance remain required.
+
+Also fixed managed launcher curation to mount only `vcmi` plus the complete
+`new-horizons` module for new candidates; old resource snapshots remain supported.
+Incomplete curated payloads fail closed. Synthetic launcher tests exited 0 in
+`commands-launcher-resume.log/.exit`, including legacy/new launches, omission
+rejections, unwanted-mod exclusion and unchanged lock/profile safeguards.
+
+Named module settings cannot read an unmounted core file through their own scoped
+filesystem. `tools/update-new-horizons-module.py` now generates inline mod settings
+from canonical `config/newHorizonsCombat.json`; `--check` passed. Root CMake checks
+JSON equality and tracks both inputs. Actual CMake positive and altered-rules
+negative checks passed using ignored `commands-module-check.cmake`. These are
+registration safeguards, not rendered or gameplay acceptance.
+
+Next: read the completed build exit, run focused HeroCommand and prior regressions
+in private XDG directories, incorporate Frontend's bounded feedback fix, then freeze
+binary/content/source hashes for the sole Tester. Only afterward resume the existing
+MinGW SDL_ttf failure. The architectural experiment remains closed.
+
+Local cross-build diagnosis (no cross compilation yet): `install.log` ends at
+SDL_ttf with unresolved `__imp_plutovg_*` references from static PlutoSVG. The pinned
+PlutoVG recipe only adds `PLUTOVG_BUILD_STATIC` for MSVC, while its Windows header
+also requires it for MinGW static consumers. The owned MinGW profile now selects
+PlutoVG's supported shared build, retaining SVG/font capability rather than
+removing it. This proposed repair is **not verified by a dependency build yet**;
+run it only after the Linux candidate/Tester compiler lease permits.
+
+## User-requested reboot pause — resume mod integration after return
+
+User says the worker allowance has been reset, but explicitly requests waiting
+for a computer restart. No further implementation/build/GUI until user returns.
+Dirty feature/artwork changes are preserved, not committed as a tested milestone.
+
+Packaging repair `98bd74f52` is pushed; Windows notice-only repack of original
+compiled run `34005089136` was dispatched as `34050542538`. Check its actual
+result after restart; do not infer success or restart a full compile unnecessarily.
+
+Dispatcher resumed Orders/Doctrine integration, added HeroCommandTest.cpp and its
+fixture to test/CMakeLists.txt, fixed missing JsonNode forward declaration in
+IGameInfoCallback.h and missing gui/Shortcut.h include in BattleHeroActionWindow.cpp.
+The subsequent real build compiled the new runtime/AI/client work but failed while
+instantiating HeroCommandTest.cpp serialization: incomplete bonus IUpdater and
+related types. Full log `build/new-horizons-linux/commands-build-fix2.log`; first
+errors, not just trailing template diagnostics, determine the next fixes. No local
+cmake/ninja/Conan build remained running at the pause. Next: finish test includes/
+compile errors, rebuild vcmiclient+vcmitest, execute focused HeroCommand tests;
+then review ruleset activation/assets and perform Tester-owned normal-input UI/AI
+journey. No graphical claim for the new command system yet.
+
+This chat's saved Pi session is the historical Dispatcher session ending
+`01a0406f-8484-719c-bd35-92bfb7346dbc`. tmux processes do not survive a reboot;
+resume that saved conversation first, then restore NewHorizons workers by their
+saved sessions rather than creating replacement histories.
+
 ## Dispatcher takeover — exact md4c export-source repair
 
 The build worker exhausted its provider allowance while this repair was dirty.

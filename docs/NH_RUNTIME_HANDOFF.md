@@ -1,5 +1,119 @@
 # New Horizons runtime handoff
 
+## Current redesign checkpoint — resumed 2026-09-06
+
+Active ownership is **lib/server/AI/native tests**, per `NH_WORKER_PLAN.md` and
+`NEW_HORIZONS_DESIGN.md`; historical W1 sections below are evidence, not current
+file boundaries. Build alone compiles/integrates. No Runtime UI/CMake/packaging
+edits or commits. Full redesign remains the goal after the first command increment;
+architecture experiments are closed. Shared dirty work is preserved atop
+`98bd74f52`, not a tested/committed command candidate.
+
+### Implemented source, not yet integrated acceptance
+
+- `HeroCommand` IDs NONE=0, CHARGE=1, HOLD_THE_LINE=2, ADVANCE=3,
+  AGGRESSIVE=4, DEFENSIVE=5; `BattleAction::makeHeroCommand(side, command)` uses
+  existing validated MakeAction transport. Queries: `battleUsesHeroCommands`,
+  `battleCanUseHeroCommand`, `battleGetActiveOrder`, `battleGetActiveDoctrine`.
+- Full coefficient JSON is captured at new-game init, serialized per game and
+  copied into battle state. Missing old-save rules default to legacy, independent
+  of currently installed module defaults. Build owns canonical config, strict
+  schema and generated inline module settings/equality checks.
+- Commands use StartAction/SetStackEffect/EndAction, existing damage/speed bonus
+  mechanics and a dedicated non-spell bonus source. Shared once-per-round budget
+  excludes spells in both directions; commands cost no mana/book/creature turn.
+- Declared first-slice semantics: recipients are currently living ordinary own
+  stacks (not turrets/SIEGE_WEAPON). Orders expire next round. Doctrines persist
+  across rounds **within the battle**, switch without stacking; same selection
+  and NONE/removal reject without spending. No cross-battle hero preference,
+  stationary-history requirement for Hold, or Wait restriction for Aggressive
+  is implemented. These limitations are explicit, not claims of full philosophy.
+- BattleAI evaluates legal command effects in its existing hypothetical exchange
+  scoring alongside legal spell/target pairs, with no fixed default Order. Actual
+  situational AI tests are now authored, execution still pending.
+
+### Actual failures, fixes and evidence
+
+`commands-build-fix2.log` failed instantiating complete game-state serialization.
+Focused concrete-type includes were added only to `HeroCommandTest.cpp`, preserving
+all assertions; Build's resumed client/test build exited 0.
+
+`commands-native-resume.log/xml`: **17/19 pass**, including all nine spell/Order/
+Doctrine budget combinations and real damage/movement/expiry/replacement controls.
+NamedSettings failed because the synthetic array lacked its required resource mod
+scope; fixed with `ModScope::scopeBuiltin()` (no lookup fallback). Full-state
+roundtrip failed resolving an identifier. `commands-baseline-resume.log/xml`:
+**63 pass, one expected skip, three town binary-compatibility failures**.
+
+Root cause: Runtime incorrectly inserted HERO_COMMANDS after the MINIMAL enum alias,
+which made CURRENT=894 and disabled later serializer feature gates. Fixed by moving
+HERO_COMMANDS immediately after TOWN_CUSTOM_INITIAL_GARRISON, before aliases, with
+an explicit monotonic static_assert. Do not treat pre-fix feature save bytes as a
+valid redesigned-rules candidate. Assertions were not weakened.
+
+Actual corrected-version run `commands-version-fixed.log/xml`: 86 passes, one
+expected skip, one failed AI fixture. All 19 command tests and all 66 baseline
+regressions passed. The AI fixture's Magic Arrow at capped power 99 was not a
+sound dominance oracle against 100 Angels. Changed only that fixture to Implosion,
+asserting effective power, legal cast, substantial damage relative to melee and
+nonlethality; retained actual evaluator choice and authoritative server execution.
+
+Build subsequently reports actual build EXIT0 and `commands-integration-resume.log/
+xml/exit`: **91 passes plus one expected export skip, EXIT0**, including both real
+AI choices, all four persistence/recipient tests and all prior baselines. Build log:
+`commands-resume-20260906T191510Z.log/.exit`. Native green is not GUI acceptance.
+
+### New native proofs and next executable task
+
+- `test/battleAI/HeroCommandAITest.cpp`: actual evaluator chooses a beneficial
+  command without a spellbook, or a strong offensive spell despite available
+  Orders; each chosen action then goes through the real server validator. Checks
+  mana and exhausted shared budget. Both now pass.
+- `test/server/battles/HeroCommandPersistenceTest.cpp`: separately authored full
+  BattleStart packet roundtrip into independent pre-battle game/army state, then
+  actual packet application, round expiry and validated Doctrine switch. Build
+  registered/compiled/ran it: original state is checked intact. All four tests
+  pass, including war-machine/enemy exclusion, no ordinary recipient availability,
+  and the explicit late-arrival limitation: new units gain no retroactive Doctrine
+  bonus; switching Doctrine applies to then-living eligible stacks. Clone's existing
+  Lua implementation creates a fresh unit, not a copy of command bonuses.
+  This is not ordinary mid-battle GUI save support: CGameState excludes active
+  battles from normal serialization.
+
+`HeroCommandFixtureExportTest.cpp` is now source-ready, not yet executed:
+`NH_EXPORT_COMMAND_FIXTURES=1`, filter `BooklessAndSpell/HeroCommandFixtureExportTest.*`.
+Exports `NHCommandsBooklessAI.h3m` and `NHCommandsSpellAI.h3m` under the existing
+private native cache's `testMaps` only after parser and real-init assertions, then
+checks gzip EOF/CRC and byte equality. Red hero 0: A2/D2/P3/K10, book with Haste,
+Bloodlust, Magic Arrow. Blue hero 2: A2/D2/P3 or 99/K10, explicitly bookless or book
+with Magic Arrow/Implosion. Both: 600 Dendroid Guards, 80 Grand Elves, Ballista,
+100 mana, Basic Pathfinding only. Anchors (17,10)/(20,10), towns (8,10)/(30,30).
+Select Red human, leave Blue computer, and choose Gold starting bonuses in normal
+setup; the H3M permits both player types, while native init explicitly checks Blue
+AI. No GUI state injection or existing-save activation.
+
+Exporter subsequently passed: Build reports 94 tests, 93 passes and one expected
+skip, with both named assets copied/audited. No GUI acceptance yet.
+
+New independently reproduced rejection defect: `commands-rejection-red.log/xml/exit`
+shows a rejected second command reactivated the unit (3 activations instead of 2)
+and expired its temporary speed bonus (5 instead of 10). Existing green tests had
+not asserted that state invariant. `HeroCommandRejectionTest.cpp` retains both
+failing assertions. Runtime fixed `BattleProcessor.cpp` to return before flow
+processing for rejected HERO_COMMAND only. Do not indiscriminately gate all failed
+actions: existing unit clients deactivate/block on submission and their
+`requestRealized` has no failed-MakeAction recovery. Command chooser only closes and
+sends, so it needs no synthetic activation. This preserves existing unit/spell
+recovery; no frontend mutation or protocol shortcut. Fix is READY for Build's next
+95-test pass, not yet verified green.
+
+Next: Build reruns the rejection proof and full combined suite, then Tester performs
+the frozen normal-input human/AI journey with the authored maps. Fix any concrete
+failures before first-increment acceptance, preserving old saves. Independent human/AI UI/save journey
+is still required before first-increment acceptance. Six schools, growth/scaled
+attributes, masteries and tiers remain later owned implementation families, not
+completed or blocked by remote API authentication.
+
 ## W1 — simulation / runner ownership
 
 Owns `client/ServerRunner.cpp`, `client/ServerRunner.h`, and `server/` only (plus this coordination note). Initial tree was clean. Read AGENTS, MVP, upstream Coding Guidelines, Networking and Code Structure; Networking's universal-TCP statement is historical and contradicted by current implementation.
