@@ -1,6 +1,109 @@
 # New Horizons Linux build handoff
 
-## Current checkpoint: native foundation committed; first Windows feature build repairs
+## Current checkpoint: bounded school/UI repairs native GREEN; commit/cross-build/refreeze next
+
+Latest actual gates are `magic-filters-final-baseline.*`: **128 total, 126 pass,
+two expected/context export skips, exit 0**; and
+`magic-filters-final-curated.*`: **39 total, 38 pass, one baseline-only skip,
+exit 0**. Both follow executed failures, not source-only predictions. Initial
+proof compilation exposed wrong fixture API calls and was repaired before tests.
+The first 14-case run passed all four named-schema tests in both contexts, failed
+only the pre-existing level-grant AI inversion in baseline, and failed ten cases
+in curated. Eight scoped production-file fixes address secondary reward decoding,
+variables, effective-rank arithmetic/server application, limiter/component/quest
+feedback, saved spell level/school filtering and the level-grant known counter.
+One remaining failure was a fixture illegally requesting an NH identifier from
+core scope; its origin now matches the actual defining module, with exact-ID,
+nonempty/full membership and explicit core-denial assertions retained. No global
+identifier bypass was introduced. The baseline compatibility proof now records
+actual **DISABLED**, not both disabled and absent configurations.
+
+Actual 95 GUI exposed invalid dynamic spell/faction schema keys (native
+patternProperties is unimplemented) and a nonfunctional All toggle. The mutable
+schema now uses supported typed additionalProperties; strict scoped identity
+checks remain in Runtime. Native named full/empty/settings-wrapper and malformed
+nested/version controls pass. Frontend's local All-toggle fix avoids hover
+clobbering PRESSED before callback dispatch. It is compiled but GUI retest is
+pending. The old 95 run reached actual AI Implosion (7525 damage/136 deaths,
+mana100 to84) and human Bloodlust (mana100 to95); six tabs/headers rendered. Its
+480-second deadline exited124, not normal0. The supervisor's old candidate-symlink
+identity check failed and used owned-group fallback; do not claim client-first
+termination. All906 frozen hashes stayed unchanged, lease is RELEASED. Tester has
+prepared a corrected identity guard for the next real run.
+
+Fullbook opt-in exporter actually passed ordinary native initialization/readback:
+69 common hero spells /59 combat spells, original starting-rank conversion, no
+rules override. `NHMagicFullBookRanks.h3m` is under the curated native testMaps
+cache and independently copied into the owned commands-assets Maps directory;
+independent gzip/header/hash audit passed (666 compressed/10572 raw bytes).
+No purchaser maps were altered. New fixture and repairs need a new immutable
+candidate; old-four/save/new-battle-NONE and repaired All interactions remain open.
+
+Windows95 runtime audit progressed from five unresolved DLL names to a real
+35-PE import/export GREEN in `runtime-audit-95.json`: exact four installed GNU
+runtime DLLs plus byte-identical `ogg.dll` loader alias, whose original DLL export
+directory and import archive both name ogg.dll. Cached binaries are unchanged;
+normal/delay imports, forwarders and requested bundled exports were checked.
+Six synthetic deployment/closure rejection tests pass. This is not Windows
+execution or source/license completion. Exact GNU source descriptors are being
+recovered; full package closure/source/independent publication gates remain open.
+
+Next: commit the bounded tested repair set, incrementally compile Windows and
+Linux with the committed identity, freeze, and give Tester another short quiet
+GO. Do not pull the unregistered primary-profile primitives into this release.
+The full redesign goal continues after this incremental release.
+
+## Previous95 execution checkpoint
+
+The first actual Windows mod-feature client now exists, not merely an old-payload
+notice repair. `sdl-main-feature-build.exit` is **0**, including install, at source
+`95a7001e3`. Its path is
+`build/new-horizons-windows-cross/install/VCMI_client.exe`, SHA256
+`17c7765fb07a8dbb4956f50ceabd96a5e46b70017a27c9aedd20e36450c4c15d`;
+`VCMI_lib.dll` SHA256
+`42f0b9233e544d8591765ebeaf5e8a6c636ff3d3bf37a7066749540cd8e51aa6`.
+Both are AMD64 PEs; the client is currently a diagnostic console-subsystem build.
+Actual repairs after the Ninja fixes were the UTF-16-preserving file-stream
+constructor (`f573a59bf`) and the SDL3 MinGW entry-point macro guard (`95a7001e3`),
+following actual compile and final-link failures. Logs retain each failed attempt.
+The same commit adds Windows managed activation, including atomic replacement:
+real extracted PowerShell functions passed a Linux PowerShell 7.5.4 smoke test
+(create/replace, legacy fallback, explicit NH activation, incomplete-content
+rejection and settings/save preservation). The first replacement attempt exposed
+PowerShell's null-to-empty conversion; `[NullString]::Value` fixed the executed
+failure. This is not Windows PowerShell 5.1 or full setup/GUI acceptance.
+
+Package audit is still open. The install tree contains demo/optional mods and
+must never be zipped wholesale. The first actual 30-PE scan found four missing
+GNU runtime DLLs plus SDL3_mixer importing `ogg.dll`, while the exact Ogg package
+contains `libogg.dll` and its import archive explicitly names `ogg.dll`. Resolve
+and record this deployment/name mismatch without mutating cached binaries or
+borrowing MSVC artifacts. GNU runtime notices/corresponding sources, curated-only
+resource staging, complete PE closure and independent new-package audit remain
+required. The existing MSVC-oriented packager cannot truthfully stamp this MinGW
+build without a distinct local toolchain/provenance path.
+
+Linux committed-identity rebuild `magic-95-committed-build.exit` is 0; actual
+`magic-95-baseline.*` / `magic-95-curated.*` again pass 113/24 with their one skip
+each. Immutable `magic-preview-95a7001e3` contains 906 files plus SHA256SUMS,
+all copied resources taken from committed blobs, no purchaser assets. Client
+SHA256 `46b9e2d24268542aec7fb0f80e61d45ff0a738c0c826470c64f16bf0830d9219`,
+library `2fbcdb43a5b38f0af86e983614ab6652967c210f3414f1c89ee2bcda2c5fa248`,
+identity `e2ad3e3496008bda3cd12274b3fbd39fbd5efa30f44ad69d0edf454c849f01a5`,
+sums `633ad06aeb1bdb8e3ae3fe57f4ce2921571798151acb6ce1d45234cd80a97a5c`.
+Launcher preflight exited 0. Tester has explicit up-to-ten-minute quiet GO,
+prioritizing actual SpellAI, two-stack transfer/new-battle NONE and old-four versus
+fresh-six UI. No compiler/native test/dependency build during that lease. Running
+candidate is immutable; mutable source work can proceed, with the seven pending
+reward/feedback/level-grant proofs still unexecuted. No full six-school or full
+redesign acceptance is claimed.
+
+User completed GitHub device authentication. An actual `gh api` repository query
+now succeeds and confirms private visibility/default `definitive-mvp`; SSH remote
+is unchanged. Release upload/publication can resume after new-package gates,
+without asking for reauthentication absent an actual failure.
+
+## Earlier foundation/build-path checkpoint
 
 Actual first six-school build `magic-first-build-20260906T204536Z` exited 0.
 Its baseline 103 and curated 8 exposed the predicted accepted-command bonus expiry

@@ -1,5 +1,71 @@
 # New Horizons frontend handoff (W2)
 
+## Delivery pipeline checkpoint
+
+Read NH_DELIVERY_PIPELINE.md, NH_AGENT_START.md, updated NH_WORKER_PLAN.md and
+design cross-links. Existing full frontend goal is retained, not restarted.
+Current release-candidate repair is the real All-toggle click defect below;
+future hero-growth/mastery/tier breadth must not delay that bounded fix/retest.
+Keep future feature source separate from immutable candidate bytes and report
+actual Windows/Linux and GUI limits. Build alone integrates/publishes; no fifth
+worker is activated and no frontend staging/commits are authorized. Arranged next
+wake: Build's incremental compile/refreeze, then Content's same-path click retest.
+
+## Actual95 All-tab click defect — local fix READY
+
+Content's real95 GUI displayed six schools/headers and observed spell-AI Implosion
+(7525 damage, mana84), but clicking All twice left the Primal/Bloodlust page.
+Evidence: `testing/magic-gui95/11-All-click-stays-Primal.png` versus initial All.
+This is a real frontend failure, not accepted six-school interaction.
+
+Root cause confirmed in existing widget code: CToggleButton::clickReleased first
+calls hover(false)/hover(true), THEN tests PRESSED. Our explicit setHoverable(true)
+let CButton::hover replace PRESSED with HIGHLIGHTED before that check, so the
+selection callback never executed. CButton defaults hoverable=false but still
+registers HOVER/SHOW_POPUP; tooltips do not require hover highlighting.
+
+Mutable `client/windows/CSpellWindow.cpp` now removes that All-toggle setting and
+sets allowDeselection=false instead. CToggle's own doSelect still supplies the
+selected highlight. This is local usage repair, no broad widget/rule/art change;
+immutable95 remains untouched. Diff check exit0; SHA256
+`f1f9e8c5856821798614e1f386a9fa3ba3619d99fa2baf77f90a9652c9d465d2`.
+Immediate READY sent to Build/Content. Next: Build incremental compile/refreeze,
+then actual Primal->All click, repeated All, school cycling/page/cast retest by
+Content. No fixed/accepted GUI claim until that regression journey passes.
+
+## 95a7001e3 immutable candidate; reward feedback remains authority-owned
+
+Build released registered-source HOLD after an immutable906-file Linux95 copy
+and reports113/24 native green. Content has the sole quiet10-minute GUI lease;
+no frontend compiler/GUI or candidate changes. Source is at95a7001e3. Independently
+read `build/new-horizons-windows-cross/sdl-main-feature-build.exit`:0, matching
+Build's first feature Windows client/install success. The explicitly assigned
+EntryPoint.cpp fix was exactly `#if __MINGW32__ && !defined(VCMI_SDL3)` around the
+legacy `#undef main`: preserve SDL3 wrapper's SDL_main symbol, retain SDL2 behavior.
+Build integrated it; Frontend made no commits. No Windows gameplay claim.
+
+Coordinated actual reward-feedback path with Runtime: CQuestLog already passes
+its game callback to quest text/components; CComponent displays the supplied
+SecondarySkill ID/rank. Runtime confirmed NO new frontend API or conversion:
+authored decoder, authoritative skill changes, limiter checks, reward/limiter
+components and quest replacements resolve the actual skill in lib/server. Their
+existing SEC_SKILL/MetaString output must be correct even for null-hero quest
+previews. Do not add a second frontend remapping or alter immutable95. Runtime
+will test/repair that path. Hero-family read/choice APIs remain unintegrated;
+await real contracts, not fictional controls. Next: actual Tester UI defects or
+new Runtime view APIs, with full growth/mastery/hero/tier scope still outstanding.
+
+## Windows feature compilation — registered source HOLD
+
+Build reports native113/24 gates green and is starting the first actual Windows
+feature-client compile. Preserve all registered client source/headers/art during
+this hold; no frontend compiler or GUI launch. Independent new files/docs are
+allowed, but no real hero growth/leadership/mastery/category read-choice API exists
+yet. Runtime's pure PrimaryProfile parser/math is not an integrated public view;
+do not wire invented values or claim growth from that helper. Reward/limiter gaps
+remain documented, so native green is not full six-school acceptance. Await Build's
+actual platform result and integrated Tester gates; full redesign scope persists.
+
 ## First six-school build and bounded missing-frame diagnostic
 
 Independently read `magic-first-build-20260906T204536Z.exit`:0. Actual log compiles

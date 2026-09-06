@@ -7,10 +7,51 @@ Active ownership is **lib/server/AI/native tests**, per `NH_WORKER_PLAN.md` and
 file boundaries. Build alone compiles/integrates. No Runtime UI/CMake/packaging
 edits or commits. Full redesign remains the goal after the first command increment;
 architecture experiments are closed. Command native milestone is `54213f042`;
-activation/schema repair is `66ddb01bd`. Six-school source below is separate dirty
-WIP, not compiled or accepted and not part of the immutable GUI candidate.
+activation/schema repair is `66ddb01bd`. Command/six-school foundation `95a7001e3`
+has Linux native and Windows client/install evidence, not full school-family or
+Windows gameplay acceptance. Its immutable GUI candidate must remain unchanged.
+
+Read and adopted `NH_DELIVERY_PIPELINE.md` and `NH_AGENT_START.md`, retaining the
+existing full-scope goal. Fix declared candidate defects first; keep unrelated
+primary/mastery breadth outside its release lane. Build remains sole integrator.
 
 ### Latest executable checkpoint
+
+- Actual 14-proof RED captured and XML independently read:
+  `magic-reward-red-commands-native-resume.xml` **13 PASS / Hat FAIL, EXIT1**;
+  `magic-reward-red-magic-native.xml` **4 schema PASS / 10 mechanics FAIL, EXIT1**.
+  Earlier proof API errors were corrected without changing assertions.
+- Bounded production fixes compiled successfully. Actual
+  `magic-reward-green-baseline.xml`: **128 total, 126 PASS / 2 skips, EXIT0**;
+  curated XML: **39 total, 37 PASS / 1 skip / 1 filter-context FAIL, EXIT1**.
+  Runtime independently read both. Nine formerly failing behaviors and all four
+  schemas pass. Remaining exception was a proof-origin error: core cannot depend
+  on NH school IDs. Test-only fix now uses each school's actual owning scope,
+  asserts exact identifier resolution and core→NH denial, retaining every expected
+  membership set. No production dependency bypass. Final rerun now GREEN:
+  `magic-filters-final-baseline.*` **128 = 126 PASS / 2 skips, EXIT0**;
+  `magic-filters-final-curated.*` **39 = 38 PASS / 1 skip, EXIT0**. Runtime
+  independently inspected XML and exit files. Build now holds registered sources
+  for reviewed commit, incremental Windows/Linux identity builds and new freeze.
+- Production repairs canonicalize authored secondary
+  IDs/variables in JsonKeyExtractor; use saved spell levels and new/original school
+  union; resolve server skill changes and reward IDs BEFORE rank arithmetic;
+  resolve limiter checks, reward/limiter components and quest text, including
+  no-selected-hero quest components using its existing game callback. The LEVEL
+  factor now counts known spells. Eight owned files, no global entity mutation,
+  getter aliases, frontend API changes or player-validation bypass.
+- GUI95 exposed unsupported `patternProperties` (78 unknown scoped keys). Build
+  repaired mutable schema with supported typed `additionalProperties`; all four
+  named-schema tests now PASS in both native profiles, exercising full/empty/real
+  settings and malformed nested spell/faction/version data.
+  No generic validation suppression and no mutation of immutable95.
+- `NewHorizonsMagicFixtureExportTest` actually PASSES: ordinary full book
+  **69 original / 59 combat spells**, map-authored rank3/2/1/1 converted through
+  actual curated initialization, no rule overrides, parser/gzip exact readback.
+  `testing/magic-native/cache/vcmi/testMaps/NHMagicFullBookRanks.h3m` is 666 bytes.
+  School membership counts are 12/11/16/18/7/10 (overlap intentional). Content was
+  notified for independent header/hash and later GUI audit. Independent fixture
+  audit now reported PASS; no broad school GUI pass yet.
 
 - First six-school build actually passed **691/691, EXIT0**. Baseline
   `magic-first-baseline.*`: 103 tests, 101 passes, one expected skip, one RED.
@@ -37,9 +78,9 @@ WIP, not compiled or accepted and not part of the immutable GUI candidate.
   documenting its non-replacing/save-scoped content invariant. The global mod
   verifier is untouched; required missing/disabled NH and other excess/missing
   dependencies still reject. Added safety controls pass. Required NH rejection
-  was exercised in ONE baseline installed-state configuration: its actual
-  NOT_INSTALLED versus DISABLED status was not recorded, so do not claim both
-  independently verified. Record/assert that status after the current source hold.
+  was exercised in ONE baseline installed-state configuration: the latest native
+  XML now records and asserts **DISABLED** against installed inventory. NH-absent
+  NOT_INSTALLED is not a separately executed configuration; do not claim both.
   VERSION_MISMATCH alone is not an ordinary-save blocker in ActiveModsInSaveList
   (its caller ignores that status).
 - Tester reports repaired activation works after real save/quit/restart/load, all
@@ -91,16 +132,24 @@ that the existing `knownWeight` counts UNKNOWN spells while its caller uses
 Runtime independently inspected XML: four-school RED scores unknown=0/known=20000;
 six-school RED scores 20000/20000 for all four tomes. The narrow affinity-union and
 SCHOOL-known-counter repair passes all 4+4 proofs. Actual grantability is checked,
-not just a score formula. Build reports final 113 baseline / 24 curated tests,
-each with one expected/context skip and no failures.
+not just a score formula. Runtime independently verified final 113 baseline / 24
+curated XML results, each with one expected/context skip and no failures.
 
-Further source-only proofs are queued before coherent six-school acceptance:
-`NewHorizonsSkillRewardTest.cpp` covers authored skill IDs/variables, actual server
-reward mutation and raw legacy-skill requirements. These currently bypass starting
-skill conversion and may grant inert retired schools or block quests. The separate
-unregistered `NewHorizonsLevelGrantAITest.cpp` also characterizes the analogous
-preexisting LEVEL-known-counter inversion with real Spellbinder's Hat grants.
-No reward or LEVEL-factor production repair has been applied without actual RED.
+Foundation source identity is now `95a7001e3`. The first Windows feature client
+and install completed: `sdl-main-feature-build.exit` is 0 and
+`build/new-horizons-windows-cross/install/VCMI_client.exe` exists (Runtime verified
+both). This is build/install evidence, NOT Windows gameplay acceptance. The
+Windows-only `VCMIDirs.cpp` repair uses the Boost path's native wide `c_str()`
+instead of the unsupported wstring stream constructor; Linux was untouched.
+Build completed the committed-identity Linux rerun and immutable GUI copy, then
+released mutable production. The reward gaps are not closed by that foundation.
+
+The now-registered reward/feedback/filter/application and LEVEL tests prove the
+failures reported above: authored IDs bypassed conversion, quests could reject
+migrated ranks, feedback displayed retired schools, and raw reward rank arithmetic
+could downgrade a trained school if only the final server callback were remapped.
+Spellbinder's Hat also had the analogous LEVEL-known-counter inversion.
+Production repairs followed actual RED; their next GREEN run remains pending.
 
 New-game starting old magic skills convert by saved data (duplicate ranks use max,
 not addition); offering filters respect map bans and keep NH skills out of legacy
@@ -111,6 +160,15 @@ coverage, dedicated new spell-effect families/AI, and integrated six-school UI
 journeys. Positive scoped cast/persistence and legacy-header fixes now have the
 actual native evidence above. Growth/scaled primary and derived
 attributes, masteries and creature tiers remain later full owned requirements.
+
+Before registering additional common hero spells, preserve the shipped 69-spell
+snapshot boundary: current `validateRules` requires coverage of every installed
+common spell, and `spellSchools` rejects missing entries. New roster work must
+separate new-game completeness from old-snapshot validation and enforce per-world
+spell availability (including artifact/AI enumeration), rather than breaking old
+six-school saves or leaking new spells into legacy worlds. This is a prerequisite
+for that future expansion, not an additional blocker for the current 69-spell
+candidate.
 
 During the next registered-source freeze, authored only an independent future
 primitive: `lib/entities/hero/NewHorizonsPrimaryProfile.{h,cpp}` and
