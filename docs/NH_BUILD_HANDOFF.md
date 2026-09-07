@@ -1,6 +1,45 @@
 # New Horizons Linux build handoff
 
-## Current: capability891 published on Linux and Windows; mastery build held
+## Current: capability891 published; mastery native green, private GUI audit pending
+
+Latest mastery checkpoint: full client/tests compile0 after preserved REDs for
+preset ENABLE_TEST=OFF, unsigned64 serialization guard, missing WindowHandler
+include, and fixture final-CCallback/incomplete serialization types. Exact fixes:
+portable checked signed halves on all five sequence fields, one UI include, real
+FINAL CCallback composition through IClient/authority visitor/ACK, complete fixture
+types and Bonus struct declaration. No production guard or assertion weakened.
+First actual34 native cases were30PASS/3schemaFAIL/1textskip. Build's real validator
+diagnostic proved pattern is explicitly unimplemented; supported exact three-icon
+v1 enum replaces it. Unchanged34 then33PASS/1expected baseline textskip; Python5pass.
+
+Deliberately registered separate two-map exporter after that diagnosis. Baseline36
+is33PASS/3expected skips. Actual private0.5 runner with NH_REQUIRE_MASTERY_TEXTS=1
+and NH_EXPORT_MASTERY_FIXTURES=1 passes36/36, including six real translations and
+two ordinary H3M exports. First private setup lacked vcmi-test; preserved RED, then
+copied actual bin/test fixture root and reran to new logs. Prior61x2/128/39 pass
+with3/3/2/1 expected skips; activated all-feature136=134PASS/2expected skips.
+No skipped export is interpreted as a map, and fixture AI is not ordinary AI play.
+
+Frozen PRIVATE `mastery-preview-private-first`:925readonly/924sums, manifest
+615c49a2d92fd45dfa89673ce744f2c44efbf982c5e3f5e9e76a39b19a2f8439;
+client33ebf7d13643e52670c69d02777b38e5d851758ad121f884bb3370abd9d45a33;
+facadeb9122598d6cea93846781ea4b7c5dbce817f00a3c233ef5cfe9847f836977354.
+Module0.5 e2220058c2b666f367d52256f8ed47b8ca5b9342fed161db152fbc809f1047fd;
+69held-source manifest7c22f7d089ac6338a98f41e344649e8e6653805dfca8f06b654c544a56bf6ffa.
+Developer ELF paths: NOT distributable. Ordinary ExpertChoices807bytes/10991raw
+SHA2f7d02eaff768fed8562fddceaa4082f2930e6aee42cd35eb8bca5503f2679a9;
+NewlyExpert819/11032 SHAe5b02f04ea2a9c45204632ec4ef0ab99d569c9fbdd95e40ababac8835143c656.
+Independent payload/native/map audit requested BEFORE any separate GUI grant.
+Raw candidate has new-horizons-launch.sh, not packaged Play wrapper: initialwrong
+helper-path127 retained; correct bash helper/client/resources verify-only0 creates
+no profile. All native and setup REDs remain in distinct logs; no GUI claim yet.
+
+User confirms F8/F9 WORK, missing buttons/ability art are presentation requests.
+Rights-checked independent equivalent usability increment authorized; public Extras
+license absence is NOT permission. Separate source/art/config lane must not change
+this frozen925 candidate or published891. Dispatcher docs reviewed/committed alone.
+
+### Published capability evidence and historical mastery build gate
 
 Both immutable891 capability previews are PUBLIC unsigned prereleases, independently
 verified after publication. Linux tag `nh-preview-89165787e50d-linux` points to
