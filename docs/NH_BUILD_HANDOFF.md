@@ -1,6 +1,39 @@
 # New Horizons Linux build handoff
 
-## Current checkpoint: MSVC034 dispatched by explicit user priority; local sources/package continue
+## Current checkpoint: local034 package assembled; MSVC setup-test repair pending
+
+Local package execution finally exited0 in `package-034-local-driver.*`, with
+read-only output `package-034-local-driver`. Actual ZIP SHA:
+`28abdd59030763427e69a8278b8dcf0d73f93c2326434a140a353f130c6e0ce6`.
+Engine source remains034; packaging source is5af3a161e. Full Conan source bundle
+actually recovered26 host dependencies/209 inventoried source-notice files;
+archive SHA `3c833bd849dea9eef76c31fe943db201adf6c2e4c2cc7eea84ecdc28ca9e36db`.
+GNU companion SHA `0bfe74c6eeccbfe7a1536589da4f44ff8701e5e9d06d72ac523626f2f37b347a`.
+Independent actual ZIP/license/source-completeness and Windows execution remain
+unaccepted; component audits are not whole-package acceptance. Failed packaging
+attempts are retained: conservative media inventory incorrectly treated libpng's
+`.dll` symlink to a GNU `.dll.a` import archive as a runtime PE; now only verified
+ar import-library links are excluded, with provenance and negative control.
+CMake declares13.0.0 and the installed driver reports13-posix, not13.2.0; both are
+preserved verbatim separately from exact distro source/version provenance.
+
+First fresh MSVC run34070234107 failed **before compile** on StepSecurity's paid
+private-repository gate. Pinned original upstream actions replaced both providers.
+Reviewed successor30db54ce699f004824a2423ae1e3e5d8d3b2d456 changed only packaging,
+workflow/docs from034 and includes the managed module. Fresh run34070750674 used
+that identity; no overlapping run was dispatched. User independently made the
+repository public; Build must not change its visibility. Both upstream actions
+passed, then all50 real Windows PowerShell5.1 Setup-Smoke checks passed. The newly
+included Managed-Preset-Smoke failed at its param-default Join-Path because
+PSScriptRoot was empty there. Dispatcher owns only that test-file repair now;
+Build will review, test, commit and dispatch the bounded successor. No gameplay
+compiler failure or successful Windows executable is claimed from either run.
+
+Current GUI reservation uses the existing ready-army checkpoint/NONE-only route;
+no local compilers/dependency jobs while reserved. Full feature work remains
+separate from the immutable034 RC; CI/package repair is Build's immediate priority.
+
+## Earlier MSVC dispatch / local source checkpoint
 
 User explicitly authorized a fresh GitHub Windows/MSVC feature build now, without
 waiting for local source collection. Verified no matching active workflow run;
