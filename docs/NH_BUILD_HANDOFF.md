@@ -1,6 +1,82 @@
 # New Horizons Linux build handoff
 
-## Current checkpoint: reviewed full Windows successor34076721466 running
+## Current checkpoint: unsigned Windows034 preview PUBLISHED; full redesign continues
+
+Published2026-09-07T03:27:37Z, public prerelease:
+https://github.com/thegandalf196/vcmi/releases/tag/nh-preview-0342384549c2-mingw
+
+Player ZIP:
+https://github.com/thegandalf196/vcmi/releases/download/nh-preview-0342384549c2-mingw/New-Horizons-Windows-x64-0342384549c2.zip
+
+Independent Tester approved this exact70a9 archive/source scope. All six actual
+GitHub assets (ZIP, four source companions, checksums) are uploaded; server SHA256
+and sizes match every frozen local artifact. Re-downloaded release ZIP matches
+70a9 and CRC; anonymous public download HEAD succeeds. Repository remains PUBLIC.
+Release JSON/download evidence is under `release-034-*` in the existing Windows
+build root. This is an unsigned incremental preview, not native Windows gameplay,
+visible new-battle NONE, future growth/UI or full-redesign acceptance.
+
+Release tag points to ab19a1106d1ee9e5e5b629422b5544ed83a56799 (export metadata only);
+compiled engine remains034 and executed packaging902. `.gitattributes` now applies
+the reviewed worker-diary/encrypted-key exclusions to automatic source archives.
+Actual GitHub archive at the tag commit verified4352 entries with those exclusions;
+complete corresponding engine/submodule/dependency sources are supplied separately.
+Do not mistake the automatic source ZIP for the player download.
+
+Full MSVC34076721466 remains in client compilation under the existing terminal
+watcher/180-minute deadline. Continue monitoring to terminal status despite local
+preview delivery; no duplicate or silent cancellation. Future native30+128/39 is
+green but unactivated; canonical data, real spell journeys, level-up UI and ordinary
+XP/save acceptance continue separately. The full goal is not complete.
+
+## Remapped034 package verification and lineage
+
+`package-034-remapped` actually packaged exit0 and is frozen read-only. ZIP:
+37504301 bytes, SHA256 **70a9daf3ae84650275c441372f87a4c4f8f87f9764167ed25d472643612d6802**;
+1171 files/1170 internal hashes. Producer verified ZIP CRC, every internal hash and
+all four source companions. Engine034, packaging902c4f33315347e06a68abc26a188393e7b420cf.
+Dependency source236867822 bytes SHA afce8c3bdf9cb4ebec9ccc5a2fae9aaf91e9b8c11fe56f7d8d1ad8fed1fcbc70;
+GNU source105184540 bytes SHA758661b0f590490ba99b5e3a29bdd750db84017db1197792275ff78c4536913c;
+engine source remains fb6c263361dd6b13aaaea4f9494e926690c74b9f39eef638f46858dee18c9c1e;
+packaging source16758692 bytes SHA48f39a97d29ccb78132c15d3e19c0b0f272df1ef844664d26f0c7d81636d4f7e.
+New Conan bundle211 inventory entries means209 notices+metadata+source tar, not211
+source files. Initial missing-Conan-PATH collection failure is retained; corrected
+isolated environment collection exit0 and all inventory/graph hashes verified.
+
+Stamped engine client863695074a0ea6f50a3acb34c0eb824ea5e904243b0f9c4c14734e5d1db9e1e0,
+facade18cc0a84e9354d014d62e6beb6bc4962b5c0fec4733f77a56797e3e9a3671c14.
+Actual embedded034 and30 installed PE privacy checks pass. Full35-PE deployment
+adds exact GNU4/Ogg alias and passes producer import/export closure and privacy.
+Tester has frozen install, full deployment and actual ZIP/source paths for audit.
+No native Windows gameplay or publication approval is inferred.
+
+Version identity correction preserved both unstamped attempts: archive-only build
+exit0/privacy0 lacked the required revision. Detached034 Git file metadata also
+hit existing CMake's relative-gitdir-only handling. A directory alias to the actual
+detached Git metadata, with all4524 archived source files unchanged, resolved it.
+Only generated Version.cpp and facade/client links rebuilt; exact034 is now checked
+in the real facade. No binary patch, source-gate waiver or gameplay edit.
+
+Actual full CI34076721466 passed72 Windows regressions, PS5.1 and whole-graph
+preflight and is now compiling the client. Downloaded report artifact10002744289:
+32 checked hosts,0 failures/no abort;29 cached PEs checked,186 CI references retained.
+Future-only native slot completed after release packaging: client+tests build0;
+30/30 future tests PASS in each context,128 baseline126+2 skips exit0 and39 curated
+38+1 skip exit0 in `future-hero-ready-*`. Authority readiness and real AI spell/
+command competition are now executed; old29-test RED evidence remains preserved.
+No UI acceptance, canonical activation or change to frozen034.
+
+Unactivated `config/newHorizonsHeroes.json` now declares18 explicit core class
+priority profiles (starting20/15/10/5, growth permutations of4/3/2/1), divisor10,
+cap10000, and independent offence/armorer/sorcery/intelligence extras[0,10,20,30].
+Runtime accepted the actual provisional table/IDs; numerical balance remains later.
+Three source-only data shape/coverage checks pass; native named-schema/coverage,
+real Summon/Sacrifice/obstacle journeys, ordinary XP fixture and future UI/save
+acceptance remain pending. Frontend is correcting legacy single-+1 level-up feedback
+to snapshot/display four actual gains. These remain separate uncommitted future
+work, not changes to the audited Windows034 target.
+
+## Full Windows successor34076721466
 
 Dispatched **34076721466** at exact **a0dcdd92f8dfd9d3591787fae2dc0cc1bf05fe71**:
 https://github.com/thegandalf196/vcmi/actions/runs/34076721466 . Full build,
@@ -37,6 +113,15 @@ successor acceptance remain unproven.
 Actual full CI34076721466 now passed its Windows package regression stage and
 PowerShell5.1 smoke stage; full-graph source preflight is running. This closes the
 observed target fixture regression, not client compilation or playable delivery.
+
+Independent a0 policy audit read from `ci-policy-a0-independent.json` confirms
+191 actual old CI references retained,173 actual local personal references blocked,
+and nine space/tab/quote ASCII/UTF16 escape controls rejected. Independent
+`preflight-independent-integration.json` exercises the actual collector: two safe
+failures plus a following success are retained in a failed gate; the real unsafe
+link guard aborts before the following dependency. This is scoped policy/source
+validation, not new package acceptance. Tester is auditing the new frozen28 DLLs;
+no GUI lease is active.
 
 Previous full successor **34076215259** ran at exact packaging-only commit
 **a3c96f5c2061a851aa2b7d0372b03cf52758196c**:
