@@ -1,6 +1,62 @@
 # New Horizons Linux build handoff
 
-## Current checkpoint: unsigned Windows034 preview PUBLISHED; full redesign continues
+## Latest: growth c550 integrated; fixed release builds in progress
+
+Growth checkpoint **c5503cc3515a455084e387f260378f700b51ea3d** is committed/pushed:
+95 coherent source/data/UI/art/test paths, reviewed by Runtime and Frontend.
+Working module0.3 metadata is byte-identical to the private GUI-tested candidate.
+No leadership/siege/mastery/new-spell-roster/creature-category completion claim.
+Next-family source work remains separate and must not move this release target.
+
+Actual private Linux GUI: Gold start, Axe pickup/equip/backpack/re-equip, ordinary
+Seer1000XP, four +3/+4/+1/+2 gains and named saves passed. Fresh restart restored
+base18/24/6/12, total20/24/6/12, last gains, equipment/skills/XP and mana10/12;
+one ordinary end turn reached Day2/mana11/12/movement1500 and saved normally.
+Exact legacy f7 save retained2/2/3/10,95/100mana, FOUR saved original schools/costs,
+no growth entry, and normal named save. Earlier six-school expectation was wrong:
+which executable wrote the save does not override saved identity. No NONE or
+legacy +1-level-up GUI claim. All four gameplay/control exits0 and frozen914-file
+inventory unchanged; first bare-Xvfb setup run also exited0 but entered no gameplay.
+Video-only windowed retry and mistaken Random bonus evidence are preserved.
+
+`hero-gui-{gold,reload,legacy034}-context/summary.json` records actual scopes and
+hashes. Gold Level2 save45aae66973705a5a2c4d145e15ca22a01954af48bebf4be0f113e5f77eef88e0;
+Day2e8ae7ff7e9e69bbe41ddc3fc92e3a64ca9a1038fe7dc3c6a64e0b6505e1213e2;
+legacy control2dc284883c1fcb14fca7758923cca8c93d93d6b4376d0e0488a173213ed3ca4e.
+All GUI leases released. This is private integration approval, not Linux distribution
+or native Windows acceptance; populated extras/cap/all-zero GUI remains untested.
+
+Final native chain build0:36 each context35PASS+exportskip, activated75=73PASS+2skips,
+128/39 regressions0. Working activation exposed an additional full-book fixture
+expecting200mana instead of20 under new ratings; Runtime added explicit legacy/new
+mana controls. CMake's independent canonical guard also needed the Heroes input.
+Both historical REDs are retained. Final `growth-cmake-build.exit`0 and
+`growth-fullbook-*`36/128/39 all0; canonical tests11 and Lua2 pass. No formulas or
+frozen map bytes were changed for these fixes.
+
+CRT-only producer repair **bc376c16abc5ccde6ce7103105991cab486671bd** is committed/pushed
+separately:82 offline tests, actual three-PE version decoder and independent eight
+reject controls pass. Final binding requires CMake-selected VS redist bytes, actual
+AMD64 version and retained terms hashes. A metadata-only precompile inventory runs
+before compilation and retains failure evidence. Notice environment version is not
+reported as copied-runtime version. These are future producer gates, NOT recovered
+historical a0 origin; its archive remains held and unchanged.
+
+ONE corrected **FULL Windows run34087844032**, exactbc376 (c550 gameplay plus four
+CRT-only files), `preflight_only=false`, no repack:
+https://github.com/thegandalf196/vcmi/actions/runs/34087844032
+`growth-bc376-*` records dispatch and the7200-second bounded terminal watcher with
+external wake. Inspect actual terminal state; never infer success from dispatch.
+No duplicate run/download or publication of this growth increment yet.
+
+Sole local compile uses separate frozen `release-c550-source` and `release-c550-build`
+directories (records use `release-c550-*`). Configure0 with `/usr` install prefix, origin-relative
+build RPATH and source-prefix mappings; bounded2700-second2-job build plus actual
+ELF privacy scan has an external wake. This addresses old ELF privacy REDs without
+changing frozen candidates or importing later shared-source work. No clean result
+or Linux package is claimed before actual build/audit output.
+
+## Published checkpoint: unsigned Windows034 preview; full redesign continues
 
 Published2026-09-07T03:27:37Z, public prerelease:
 https://github.com/thegandalf196/vcmi/releases/tag/nh-preview-0342384549c2-mingw
