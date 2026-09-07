@@ -1,6 +1,35 @@
 # New Horizons Linux build handoff
 
-## Current checkpoint: local034 package assembled; MSVC setup-test repair pending
+## Current checkpoint: local034 ZIP PRIVACY BLOCKED; repaired MSVC1a run active
+
+Independent actual ZIP audit found **173 personal-path hits in .rdata of nine
+shipped PEs**: SDL3_mixer59, client3, facade37, libopus64 and five FFmpeg DLLs2 each.
+Evidence `windows-audit034/private-path-hits.json`; frozen ZIP28ab... unchanged.
+This is a release blocker, not debug-only metadata; the producer text-file scan
+was insufficient. **Do not publish local package-034-local-driver.** Debug stripping
+or binary string replacement is not an accepted repair. Local remediation needs
+compiler source-path remapping for fork and affected dependency builds followed
+by new identities/full PE/package audit. MSVC1a remains the user-prioritized route;
+its output also needs an actual complete binary privacy audit, not an assumption
+that a hosted build is clean. No original cache/frozen artifact was modified.
+
+
+Dispatcher's narrow Managed-Preset-Smoke param-default repair was reviewed and
+included in **1a4415001c32a63a63999c4d80cc1c46f2a47a6b**, with this handoff only.
+Build actually reran default and explicit SourceRoot invocations under bundled
+PS7, both0 (`managed-preset-{default,explicit}-fixed.*`). An initial helper-path
+invocation126 is retained separately; no PS5.1 claim from these Linux runs.
+After verifying no overlapping active run, full fresh dispatch succeeded:
+https://github.com/thegandalf196/vcmi/actions/runs/34071259251
+Exact head1a4415001, preflight_only=false, empty repack_run_id. Watch sends actual
+completion to Build; inspect that run's PS5.1 and compile results before claims.
+No future product code was included. Producer local ZIP sanity audit also passed:
+1169 files/1168 manifest entries, every payload and source-companion hash, ZIP CRC,
+managed module inclusion and absence of root purchaser Data/Maps/Saves/demo.
+VCMI's own licensed Content/Data fonts/scripts are not purchaser root Data and
+were retained; a first overbroad path check rejected them and was corrected.
+Independent actual ZIP/license/source acceptance and Windows execution remain open.
+
 
 Local package execution finally exited0 in `package-034-local-driver.*`, with
 read-only output `package-034-local-driver`. Actual ZIP SHA:
@@ -29,8 +58,15 @@ PSScriptRoot was empty there. Dispatcher owns only that test-file repair now;
 Build will review, test, commit and dispatch the bounded successor. No gameplay
 compiler failure or successful Windows executable is claimed from either run.
 
-Current GUI reservation uses the existing ready-army checkpoint/NONE-only route;
-no local compilers/dependency jobs while reserved. Full feature work remains
+The ready-army/NONE-only GUI reservation has now been RELEASED: Build read
+`none-gui034/exit.json` actual0 and verified no client/Xvfb process remains.
+Actual checkpoint reload retained15 Pikemen/9 Archers/mana95; after end-day Edric
+attacked, nine Archers died and15 Pikemen survived, then normal human retreat and
+quit worked. Chooser click occurred during initialization, so **NONE is still
+unverified**. Progression stopped at240s; normal exit followed around401s after AI
+released the UI. No additional GUI authorized now; Content audits the actual
+read-only ZIP/source/notices. Do not claim battle initialization proves chooser
+state or repeat the same premature-click route unchanged. Full feature work remains
 separate from the immutable034 RC; CI/package repair is Build's immediate priority.
 
 ## Earlier MSVC dispatch / local source checkpoint
