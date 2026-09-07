@@ -1,6 +1,38 @@
 # New Horizons Linux build handoff
 
-## Current checkpoint: source preflight verified; full Windows successor prepared
+## Current checkpoint: reviewed Windows preflight fixture repair; next full build
+
+Full run34076215259 failed before compilation:71 Windows package checks ran,
+with one case-collision fixture error. NTFS overwrote the differently cased name,
+so the collision never existed and the real PE parser was reached. The fixture
+now supplies both virtual directory entries and asserts the parser is never called;
+no production/parser dependency workaround. Dispatcher independently reviewed and
+ran the complete72-test suite exit0 on Linux. Actual target confirmation remains
+required in the next full build. Failure artifact10002225725 (381 bytes) was
+retained and downloaded under `full-a3c96-reports`, proving report-on-failure works.
+
+Local release-dependency repair has now actually built libiconv package
+f288c257dce2546fa9d9580a3a05ccf88367ba64 past the old configure77 error;
+remaining remapped dependencies and whole-binary privacy still need verification.
+
+Previous full successor **34076215259** ran at exact packaging-only commit
+**a3c96f5c2061a851aa2b7d0372b03cf52758196c**:
+https://github.com/thegandalf196/vcmi/actions/runs/34076215259 . Explicit
+`preflight_only=false`, empty repack ID. Confirmed34075812952 completed/cancelled
+and no active duplicate before dispatch. `full-a3c96-watch` has a non-goal wake;
+inspect actual reports/artifacts before any successor or playable download claim.
+
+Independent audit found a synthetic whitespace-truncation escape in a3's CI path
+classification. Corrected validation checks the entire NUL-terminated string,
+including spaces, tabs and quotes; ASCII/UTF16 alignment negatives now pass.
+Whole package suite72 exit0 and actual old MSVC191 classifications unchanged.
+No evidence of this escape in actual payloads. Keep the running full a3 build;
+re-audit its final bytes with the corrected validator before publication rather
+than rebuild unchanged engine code. Local MinGW dependency privacy rebuild owns
+the serialized local lane (`remap-deps-spacefree` watcher); dependencies only,
+not an engine build from mutable future source. Runtime's29-test authority fixture
+readiness repair and separately unregistered one-test AI proof await the next
+native grant after this release dependency lane.
 
 Source-only run34073336547 at a722 actually succeeded. Downloaded artifact
 10001693338 (321860495 bytes) is frozen read-only under the existing Windows build
