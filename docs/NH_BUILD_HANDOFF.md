@@ -1,6 +1,12 @@
 # New Horizons Linux build handoff
 
-## Current checkpoint: reviewed Windows preflight fixture repair; next full build
+## Current checkpoint: reviewed full Windows successor34076721466 running
+
+Dispatched **34076721466** at exact **a0dcdd92f8dfd9d3591787fae2dc0cc1bf05fe71**:
+https://github.com/thegandalf196/vcmi/actions/runs/34076721466 . Full build,
+`preflight_only=false`, empty repack ID; no active predecessor/duplicate at
+submission. Source changes since a3 are the reviewed fixture/privacy repairs and
+handoff/prevention docs only. Watcher sends a non-goal wake on actual completion.
 
 Full run34076215259 failed before compilation:71 Windows package checks ran,
 with one case-collision fixture error. NTFS overwrote the differently cased name,
@@ -11,9 +17,26 @@ ran the complete72-test suite exit0 on Linux. Actual target confirmation remains
 required in the next full build. Failure artifact10002225725 (381 bytes) was
 retained and downloaded under `full-a3c96-reports`, proving report-on-failure works.
 
-Local release-dependency repair has now actually built libiconv package
-f288c257dce2546fa9d9580a3a05ccf88367ba64 past the old configure77 error;
-remaining remapped dependencies and whole-binary privacy still need verification.
+Local remapped dependency build/install actually finished exit0. All28 dependency
+runtime PEs across26 host nodes scan clean for personal paths; implementation
+package IDs differ from frozen034 (only metadata-only OpenGL unchanged).
+`remap-deps-frozen` preserves exact private graph,28 DLLs, hashes and scan read-only.
+The old173-hit ZIP/cache evidence is unchanged. Libiconv package
+f288c257dce2546fa9d9580a3a05ccf88367ba64 passed the old configure77 failure.
+
+Exact034 source archive fb6c263361dd6b13aaaea4f9494e926690c74b9f39eef638f46858dee18c9c1e
+was extracted read-only into `remap-engine-034-source`; separate source/build
+aliases under the temporary directory avoid private path literals. Configuration
+exit0; `remap-engine-034-build` now owns the serialized local compiler lane and
+has an engine/install completion wake. ENABLE_GITVERSION=OFF deliberately avoids
+inheriting the mutable parent checkout identity; external build identity must
+record034 and exact archive/dependency hashes. No future engine source is used.
+Engine privacy, complete PE closure, notices/source packaging and independent
+successor acceptance remain unproven.
+
+Actual full CI34076721466 now passed its Windows package regression stage and
+PowerShell5.1 smoke stage; full-graph source preflight is running. This closes the
+observed target fixture regression, not client compilation or playable delivery.
 
 Previous full successor **34076215259** ran at exact packaging-only commit
 **a3c96f5c2061a851aa2b7d0372b03cf52758196c**:
