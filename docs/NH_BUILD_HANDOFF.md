@@ -1,6 +1,69 @@
 # New Horizons Linux build handoff
 
-## Current checkpoint: SQLite notice repair validated; source-only CI preflight next
+## Current checkpoint: source preflight verified; full Windows successor prepared
+
+Source-only run34073336547 at a722 actually succeeded. Downloaded artifact
+10001693338 (321860495 bytes) is frozen read-only under the existing Windows build
+root, `sqlite-preflight-artifact`. Actual SQLite notice is1484 bytes, SHA256
+cc65d76f325d884dd49e319acf3764d5513920f34ad18e34347b8dedc6ddd2ec;
+32 dependency entries retained. This is not a playable artifact.
+
+Dispatcher launched full run34075812952 at3982b54ce. Build cancelled it while
+installing the toolset, before client compilation: seven DLLs byte-matching the
+exact pinned public cache contain169 generic CI-profile references; the old gate
+would reject them. Cancellation was a bounded packaging correction, not a compiler
+failure. The promised successor must be FULL, with no repack and no duplicate.
+Report the successor URL/head immediately; do not leave a silent cancellation gap.
+
+The reviewed policy records exact proven GitHub CI `.conan2/p` service paths and
+all offsets/hashes; unknown accounts/subtrees, escaping paths and absent provenance
+still fail. Actual frozen old MSVC payload:191 reported/191 CI/0 personal; actual
+local MinGW ZIP:173 reported/0 CI/173 blocked. Original payloads unchanged.
+`actual-ci-policy-controls.json` records these production-scanner controls.
+Whole package regression runner:71 tests exit0, Linux only; actual PS5.1 remains
+a target CI gate. Structured full-graph preflight aggregates safe missing-source/
+notice failures, aborts unknown/unsafe source work, scans cached runtime privacy,
+justifies Qt exclusion using the exact disabled-tool preset, and retains failure
+reports before client compilation. Real collector probe retained two missing-recipe
+failures while collecting exact SQLite successfully, then failed the gate.
+
+Dispatcher failure/prevention docs were narrowly committed/pushed as3982b54ce.
+Future source remains separate and uncommitted: initial native compile failed on
+an incomplete GameSettings type in the new test. Runtime's direct include and
+null-callback control repair compiled client+tests exit0. Future29 tests each
+context:28 pass/1 authority-level-gain failure; baseline128 and curated39 regression
+filters exit0. Runtime owns the actual RED investigation. No future activation,
+RC replacement, native UI acceptance or full-goal completion is claimed.
+
+## Previous checkpoint: SQLite source-only preflight running; future native integration preparing
+
+SQLite repair is committed/pushed as
+**a722279c6b497377d73b8f89c0eee93f426a55ae**. Verified no active matching run and
+dispatched source-only preflight (`preflight_only=true`, no repack) at that exact
+head: https://github.com/thegandalf196/vcmi/actions/runs/34073336547 . Watch sends
+completion to Build. Only a successful actual preflight permits the requested
+fresh full feature build; do not sweep uncommitted future code into its source.
+
+Separate FUTURE lane: four primitive sources/headers and four test files (12files)
+are registered in mutable lib/test CMake; actual build0 and13/13 tests in each
+baseline/curated profile passed (`future-primitives-*`). No034 candidate change
+or hero growth activation. Runtime owns newly authorized public Caster.h default
+power-divisor getter, future saved hero-rules/scale/server/AI integration and its
+new authority/persistence proofs. Build supplied unactivated newHorizonsHeroes
+schema. Requested Lua binding plus summon/sacrifice/obstacle/moat changes are
+prepared and Runtime-reviewed: divide only power terms, floor at the appropriate
+final product, latch obstacle divisor. Two real interpreter runs (LuaJIT/5.4)
+passed callback-double assertions; copied original scripts fail those new
+assertions. Not native binding/serialization/gameplay acceptance. These changes,
+future HeroGrowthWindow and canonical activation remain outside release commits.
+
+Local remap helper experiment now limits dependency flags to the enforced
+space-free cache (Autotools cannot interpret shell quotes embedded in CFLAGS).
+That correction has not yet rebuilt affected libraries; nine-PE privacy gate
+remains RED. No compiler currently active; next serialized slot is for Runtime's
+coherent future native proofs when ready, unless an immediate release repair
+requires it. Current immutable Windows ZIP is not publishable.
+
 
 MSVC run34071259251 passed real PS5.1 setup/managed-preset checks and exact md4c
 patch recovery, but failed **before compilation** on missing SQLite license text:
