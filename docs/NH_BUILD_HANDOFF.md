@@ -1,6 +1,40 @@
 # New Horizons Linux build handoff
 
-## Latest: growth c550 integrated; fixed release builds in progress
+## Current: capability891 published on Linux and Windows; mastery build held
+
+Both immutable891 capability previews are PUBLIC unsigned prereleases, independently
+verified after publication. Linux tag `nh-preview-89165787e50d-linux` points to
+packagingfe2a81f8c03937a12b00669cd77f59c2899b0c31/engine891; Windows tag
+`nh-preview-89165787e50d-windows` points to engine89165787e50df755ad6311365e039f3185325a09.
+Linux five public assets and Windows four public assets match exact audited sizes/
+SHA256, actual downloaded players and tag archives. Windows published2026-09-07
+11:59:27Z after FULL34110964044 succeeded/watch0; no repack/preflight substitution.
+Windows player24974039 SHAadcd0b6ce62cb36400390ee07e1fc911c454f3a12930a19ef02e376443030a30;
+source16967615 SHAe0d522934829af008e2fa9b4296b64ca1fcae81ac83b3fb4bf990bd24147347b;
+deps303766398 SHAf34425c7953d8bfbddc3874f453f06ed7798b02ba084e36d81dedf750a0a3a14.
+Independent1175/1174sums,26AMD64/6123imports,909resources(469exact/440CRLF),4594source
+blobs(600exact/3994CRLF),120mode differences(116lost+4added),fourpins/16exclusions.
+SAME-run CRTartifact10015034607 binds8selected records→3final14.29.30157.0 files;
+selected14.29.30133 directory and environment14.51 are distinct, not351/a0 proxies.
+All113700dependency members exact audited351 bytes/types/modes/links;226notices
+match except independently bound newCRTprovenance;201CIreferences/9PEs reported,
+21vendorDLL cache bytes exact. Public notes' only post-review change separates
+unaccepted NONE/broader journeys from future features not included. No nativeWindows
+or full-design claim. Older releases and historical REDs remain unchanged.
+
+Mastery remains UNACTIVATED/outside891. Runtime46paths are SOURCE_READY/held with
+exact hashes,31 expanded initial cases including actualAI/effects/query fixtures;
+libRules/State/Effects CPP+headers and three testCPPs are registered. Frontend's
+first9-file readiness was invalidated by independent covered-dialog routing RED:
+help popup could swallow matching reply/query completion. Frontend owns repair and
+regression; combined compilation waits repaired readiness. First bounded script
+`run-future-mastery-first.sh` is prepared, NOT launched. Default0.4 remains unchanged;
+private0.5 must require six registered texts via NH_REQUIRE_MASTERY_TEXTS=1, rather
+than interpreting the baseline's explicit text skip as translation acceptance.
+No GUI/compiler/CI run currently active. Full mastery/tier/new-effects and broader
+NONE/legacy+1/chained-growth acceptance remain open.
+
+## Historical: growth c550 integrated; fixed release builds in progress
 
 Growth checkpoint **c5503cc3515a455084e387f260378f700b51ea3d** is committed/pushed:
 95 coherent source/data/UI/art/test paths, reviewed by Runtime and Frontend.
