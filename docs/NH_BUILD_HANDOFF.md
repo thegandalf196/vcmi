@@ -56,6 +56,35 @@ ELF privacy scan has an external wake. This addresses old ELF privacy REDs witho
 changing frozen candidates or importing later shared-source work. No clean result
 or Linux package is claimed before actual build/audit output.
 
+### Actual build follow-up: clean Linux ELF, corrected Windows parser dependency
+
+Frozen c550 Linux build0/initial privacy0. Normal installation removed build RPATH,
+so the first staged client could not resolve its adjacent facade without the launcher
+LD_LIBRARY_PATH. Preserved that stage/ldd evidence. Explicit CMake install RPATH
+`$ORIGIN` plus BUILD_WITH_INSTALL_RPATH required only two normal relinks, not source
+or binary-string patching. New readonly `linux-release-c550-origin-candidate`:
+client ebb20763c42423f4f887cc87a3c3fd16ac049e15e94dd644df40c646ea0fc695,
+facade3f556fd7fdd9041bc9dd3b472432ab80619ae21022e0f2767a9114808effb32c.
+Actual RUNPATH `$ORIGIN`, staged ldd resolves all dependencies, ELF privacy0 and
+embedded c550 identity verified. It is Ubuntu26.04 system-dependent, not a universal
+Linux bundle; dependency/notices/header-source and exact-binary GUI gates are pending.
+Independent c550 source companion16787483 bytes/f6b625ba2dadbac2473ef18d2f46e8021eb4c6d425ac534be814f4814e1db423
+passes4575 exact Git blobs/types/modes,115 executable modes, four submodules and16
+export exclusions. No future Leadership source is included.
+
+FULL34087844032/bc376 actually FAILED before compilation: the new real CRT decoder
+imported pefile, but the workflow installed only Conan. Actual82 Windows tests,
+PS5.1, complete source preflight and configure passed; structured CRT failure
+artifact was retained/downloaded once. No game artifact was produced.
+**322cbe02548af0c9f02805453d98f0ec4587fae4** adds pinned pefile2024.8.26, an early
+real import/version smoke, and a workflow-order regression (83 offline pass).
+ONE corrected FULL34089398757 is dispatched at that exact source, no repack/source-only
+substitution or unchanged-source retry:
+https://github.com/thegandalf196/vcmi/actions/runs/34089398757
+`growth-parser-*` records its7200-second terminal watcher and external wake. Inspect
+actual terminal output before claiming compilation/package success. Later shared
+capability source and its Lua branch are uncommitted and excluded from this run.
+
 ## Published checkpoint: unsigned Windows034 preview; full redesign continues
 
 Published2026-09-07T03:27:37Z, public prerelease:
