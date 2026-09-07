@@ -1,6 +1,79 @@
 # New Horizons Linux build handoff
 
-## Current checkpoint: bounded school/UI repairs native GREEN; commit/cross-build/refreeze next
+## Current checkpoint: MSVC034 dispatched by explicit user priority; local sources/package continue
+
+User explicitly authorized a fresh GitHub Windows/MSVC feature build now, without
+waiting for local source collection. Verified no matching active workflow run;
+remote `definitive-mvp` was exact frozen034. Dispatch with `preflight_only=false`
+and empty `repack_run_id` succeeded:
+https://github.com/thegandalf196/vcmi/actions/runs/34070234107
+Head **0342384549c27ef769f0e32c267fadaefd307ed7**; actual job began checkout.
+A watch sends completion back to Build; no automatic rebuild loop. This is not
+old82 repacking or release acceptance. Local source collection remains secondary
+and active. Cloud compilation may coexist with local GUI; local quiet rules stay.
+
+Review found034's MSVC packager still copies only config/scripts/Mods-vcmi,
+omitting required Mods/new-horizons. A bounded shared resource-staging repair and
+executable positive/missing/symlink controls are prepared. Do not ship the raw034
+MSVC ZIP without auditing/fixing that omission from the exact compiled source;
+no future gameplay or checkbox changes should be pulled in merely to package it.
+
+Local Windows034 is also frozen:30 installed PEs in `feature-034-compiled`,
+35 audited deployed PEs in `runtime-audit-034`, with read-only identity/JSON.
+Client SHA `d9b84dbb1807c4d21b2297e894e19cb7b7c06ba209f548ae45dc329060c69ba5`;
+facade SHA `9e9c51b4c159c8a2126446a8429ef1f5d2cfea3759ce3e3bf8b1c87ea66f4980`.
+All normal/delay imported bundled exports and forwarders passed on the actual35.
+Complete source archive has4524 entries including all four pinned submodules,
+15 explicit private-diary/encrypted-key exclusions, SHA
+`fb6c263361dd6b13aaaea4f9494e926690c74b9f39eef638f46858dee18c9c1e`.
+Initial source snapshot failed on uninitialized optional submodules; resolved by
+fetching exact public commit objects into a reusable ignored bare source cache,
+never a worktree checkout. Five source-snapshot controls pass. GNU3 exact distro
+source identities and all six declared archives/signatures (105357955 total bytes
+including descriptors/manifest) recovered and descriptor SHA/size checked; six
+offline source controls pass. Signature bytes preserved, no independent PGP
+verification claim. Source/notices collection for the actual local Conan
+`install.json` is in progress; older `graph.json` is a missing-package probe and
+must not identify the shipping graph.
+
+GUI followups: old repaired66 save actually retained four original tabs and
+costs5/6/5, unlike fresh six-school4/4/5. Its combined route timed out124; no clean
+exit claim. Subsequent AFTER-only route visibly transferred15 Pikemen/9 Archers
+into Orrin and saved a distinct normal-adventure ready-army checkpoint. A premature
+exit/release report was withdrawn; later fail-fast evidence confirms actual exit0
+at398.97s, client/Xvfb absent and all906 hashes unchanged. Checkpoint reload and
+new-battle NONE remain unproven. No GUI is currently authorized during local
+Conan source collection. Next route must use ready-army checkpoint, not repeat
+rehire/recruit. Optional blocked-checkbox diagnostic repair and all twelve future
+Primary/SpellAvailability files remain outside this frozen increment.
+
+## Committed034 execution details
+
+Bounded source repair **0342384549c27ef769f0e32c267fadaefd307ed7** is committed
+and pushed. Actual Windows incremental build **including install** exited0
+(`repair034-build.*`); the following serialized Linux identity build exited0
+(`magic-034-committed-build.*`). Committed reruns `magic-034-baseline.*` and
+`magic-034-curated.*` repeated128/39 totals with126+2skip /38+1skip, both0.
+Frozen `magic-preview-034238454` contains906 read-only payload files, resources
+from committed blobs, no original assets, preflight0. SHA256SUMS identity:
+`5bbff558d0d47044c28bcaad3e114434afe5b68572ead656499c70b9978ffad2`.
+
+Tester actually closed both95 GUI defects on034: module Parsing OK without
+invalid-data warnings; Primal to All via ordinary click, repeated All, pointer
+page2 and keyboard page3 worked (24+24+11 combat spells). Actual hero ranks were
+Expert Havoc/Advanced Sorcery/Basic Light/Nature. Expert Implosion spent13 mana
+(200 to187), dealt750 damage and killed50 Grand Elves. Ordinary retreat, options,
+Quit desktop finished **exit0 at401s**, before the420s fallback. The corrected
+pidfd guard acquired the real client immediately; safety termination was unused.
+791 samples showed no child/INET; client/Xvfb gone and all frozen hashes unchanged.
+A separate short quiet phase on the same immutable candidate is reserved for
+valid repaired66 old-four save continuation and visibly two-stack transfer/new
+battle NONE. No compiler/dependency jobs until that lease is released.
+
+New uncommitted packaging helpers for exact Git/submodule source snapshots and
+pinned GNU distro archives are being prepared, not yet execution-accepted. All
+six future PrimaryProfile/PrimaryGrowth files remain unregistered and outside034.
+
 
 Latest actual gates are `magic-filters-final-baseline.*`: **128 total, 126 pass,
 two expected/context export skips, exit 0**; and
@@ -48,9 +121,9 @@ Six synthetic deployment/closure rejection tests pass. This is not Windows
 execution or source/license completion. Exact GNU source descriptors are being
 recovered; full package closure/source/independent publication gates remain open.
 
-Next: commit the bounded tested repair set, incrementally compile Windows and
-Linux with the committed identity, freeze, and give Tester another short quiet
-GO. Do not pull the unregistered primary-profile primitives into this release.
+Next: finish the separate old-four/NONE GUI phase, then audit/deploy Windows034
+and complete its source/notices/package closure. Do not pull the unregistered
+primary-profile/growth primitives into this release.
 The full redesign goal continues after this incremental release.
 
 ## Previous95 execution checkpoint
