@@ -85,6 +85,50 @@ https://github.com/thegandalf196/vcmi/actions/runs/34089398757
 actual terminal output before claiming compilation/package success. Later shared
 capability source and its Lua branch are uncommitted and excluded from this run.
 
+### Linux891 capability preview published / future mastery source lane
+
+Linux891/fe2 is PUBLIC unsigned prerelease, published2026-09-07T11:27:12Z:
+https://github.com/thegandalf196/vcmi/releases/tag/nh-preview-89165787e50d-linux
+Independent final static gate covers1130readonly files/1129sums, exact raw891
+ELFs/resources, all added notices/public evidence and three source companions.
+Player19514784bytes SHA55d97e539398ab0b82e2b1819f05988d047d125b72c7a0f035bd14deb756ebfa;
+engine16810473bytes SHA80764e5ee04214c7be69c7fcaaf2bf62215a6980f5a39e51a7461a2688f96e36;
+packagingfe2a81f8c03937a12b00669cd77f59c2899b0c31 source16810310bytes
+SHAe0e0ef355014fb4bac761f32519e187041e84151180db93d26c55eaff06bcebd.
+Dependency source25fbv2 retains c550 filename: exact8914471headers/providers/source
+versions/copyrights,176externalELFbytes/edges and static/startup inputs independently
+match. No blanket reuse. Source4594blobs/116executables/fourpins/16exclusions and
+688actualGNU++20 compile commands are verified. Generic rebuild instructions now
+refer to identity/actual flag records instead of incorrectly hardcoding c550.
+
+Exact PACKAGED wrapper GUI: normalnewGold/bothviews, prebattle574792byte save
+SHA874003d126329c2455ae9e6ec32be9c0744d7e76a9afeee343d44432f3b4507a;
+then actualAI8ballista shots93damage/Pikes27,120XP/995survive. Quit initiated408.6s,
+exit0 at460.790s with cleanup only after450. Fresh packaged restart restores the
+actual PREBATTLE save (XP0/1000troops), towntravel current688 thenBlueAI Day2
+refresh1170/1000troops, mana10/10, gold20600→21100. Distinctmanual Day2 save576785bytes
+SHA6d7c00cc79b8caf3b8dc603fb55bee57122eb2ccabf9e7d927d0e518cdcfcbf0;
+exit0 at422.442s/833samples. All1130/originals/copies unchanged and exactprocess/
+Xvfb/socket teardown. Optional exact891 transfer was NOT attempted; privatecap59
+transfer evidence remains separate. NewDay2 not restarted; NONE/nativeWindows/
+mastery/tier/new-effect breadth remains open. Public five asset sizes/digests and
+actual downloaded player/tag pass Build verification; independent post-upload
+verification requested. Older published previews remain unchanged.
+
+Windows34110964044 at891 remains watched, actual client compile passed and package
+step is in progress; no terminal/artifact claim yet. No local compiler/GUI active.
+
+Future unactivated Artillery mastery v1: Runtime selected Volley(+1ballista attack),
+Precision(no range/wall penalty), Repair50(pre-turn surviving-machine regeneration),
+extra mandatory choice after gaining a level with Artillery ALREADY Expert, not
+rank4. Canonical rules/schema/six texts and private-only0.5generator authored;
+default0.4 unchanged,20shape/data tests0. Stable real callback/query/readview API
+sent to Frontend; saved offers/current-query validation/crossover and13rule/state
+tests authored, but effects/AI/server fixtures and combined SOURCE_READY remain
+pending. No compile/GUI/activation acceptance. Twelve original artwork outputs
+independently pass, all421 regenerate and old409 match frozen891 Git; this is art
+only. Preserve {magnitude} substitution from saved DTOs rather than current config.
+
 ### Integrated capability0.4 / frozen release891 in progress
 
 Foundation **b77015d82e10d9169315752170c746fa5989a584** commits exactly37 reviewed
