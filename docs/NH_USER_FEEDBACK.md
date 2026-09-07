@@ -1,5 +1,46 @@
 # New Horizons — user preview feedback
 
+## Authorized implementation: curated conveniences, rights-checked assets
+
+User explicitly requests integrating the quick-save/load buttons and creature
+ability/status icons, and asks that legal obligations not worsen. This authorizes
+implementation, not assuming third-party asset permission or making legal promises.
+Include these conveniences automatically in the curated edition; no optional-mod
+management workflow. Preserve working F8/F9, saved-game semantics and combat rules.
+
+Public upstream check found GitHub license metadata null and no conventional
+license/readme/credits filenames in the inspected vcmi-extras branch tree. That is
+an unresolved redistribution-permission question, not proof of permission or a
+legal verdict. Authorship credits alone are not a license. Do not copy Extras
+sprites/config/source into shipped content until exact applicable permissions are
+evidenced. Do not relicense third-party artwork as New Horizons CC0 or infer that
+VCMI's GPL covers separately authored extras.
+
+If permissions cannot be established promptly, implement equivalent buttons with
+the existing callback framework and original New Horizons artwork. Independently
+author recognizable ability/status icons (including Undead), with editable sources,
+runtime outputs and provenance/license, or reference purchaser-installed assets
+without redistributing them where appropriate. Do not trace/redraw unlicensed
+Extras artwork. Source comparison may identify behavior and resource mappings;
+that is not asset-import approval. Keep existing GPL/component notices intact.
+
+Owners and required acceptance:
+- Frontend: implement visible Quick Save/Quick Load controls and ability/status
+  presentation using existing validated commands; original art and tooltips when
+  source-asset permissions remain unresolved. No gameplay mutation or layout
+  overrides that hide New Horizons school/development controls.
+- Build: wire reviewed config/curated registration; source/notice/asset packaging,
+  scoped commits and publication. Do not enable all Extras modules implicitly.
+- Content: independently review rights/provenance and normal-input acceptance:
+  click-save, state change, click-load/restored state, correct unavailable states,
+  F8/F9 retained, Undead/living comparison, combat spell/status icon regressions,
+  layout at supported sizes. No native Windows claim from Linux tests.
+- Runtime: only if a real callback/state defect emerges; otherwise no rule changes.
+
+Integrate as a bounded usability increment without mutating released/frozen
+candidate bytes. Keep remaining full-design goals active; exact implementation
+status and evidence belong in each owner's handoff.
+
 ## Clarification: working shortcuts, missing Extras presentation
 
 User confirms F8/F9 quick-save/load work; only the buttons are missing. User
