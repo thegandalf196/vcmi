@@ -85,6 +85,63 @@ https://github.com/thegandalf196/vcmi/actions/runs/34089398757
 actual terminal output before claiming compilation/package success. Later shared
 capability source and its Lua branch are uncommitted and excluded from this run.
 
+### Latest terminal repair and Linux/source progress
+
+FULL34089398757/322 reached actual client compilation after83 Windows regressions,
+PS5.1, full source preflight and real CRT preflight passed, then FAILED C2397 at
+CPlayerInterface.cpp505: unsigned hero level narrowed into an int snapshot field.
+Frontend's one-line `PrimaryGainSnapshot.level: ui32` fix matches the source type;
+MetaString accepts its complete range. Local old aggregate -Werror=narrowing RED
+and actual fixed declaration compile GREEN are retained.85 package tests and native
+client/test build plus59x2/128/39 gates pass. Only the header and compile-only test
+were committed as **35119d5341b3c237b87e71493ed8895cecdb2600**; future capability UI
+was excluded. ONE corrected FULL34093695275 at exact351 is watched for7200seconds:
+https://github.com/thegandalf196/vcmi/actions/runs/34093695275
+`growth-snapshot-*` holds actual status; no success/package claim from dispatch.
+The prior run's small CRT preflight artifact identifies eight14.29.30157.0 files
+under actual selected VC/Redist/MSVC/14.29.30133, including hashes matching old a0.
+This is new-run evidence, not recovered historical a0 copy provenance.
+
+Independent Linux static review:914 files/913 hashes,907 exactc550 resources,
+2AMD64 ELFs with origin RPATH and privacy0,178 resolved nodes (176 external system),
+strong imports1872+463 resolved with versions. No final distribution/GUI approval.
+The packaged wrapper/instructions are committed at22927fac0, separate from engine
+c550; developer defaults are not silently used.182 exact copyright records and17
+full common licenses are retained; the full Linux-syscall-note is additionally
+recorded by URL/SHA. Compiled xBRZ GPL3 and oneTBB Apache2 require explicit combined
+GPL3 notice, preserving core GPL2-or-later/component terms. No blanket SystemLibrary
+waiver: glibc nonshared/startup sources and GCC EligibleCompilation are separate.
+Actual686 application translation-unit commands contain no plugin/LTO flags.
+
+Exact glibc, Boost and TBB archives/patches pass independent DSC+APT-index checks;
+Boost3649 headers match preferred sources (one declared60.patch change), TBB64
+match directly. The eight remaining API-provider sources are now acquired too.
+All11 sources/35 original archive files plus3 provenance reports are in
+`New-Horizons-Linux-c5503cc3515a-dependency-sources.tar.gz`,132126986 bytes,
+SHA8459242fc724136b68a33009c993146902429841d0acaacd5ed30879ac3a286f.
+Final independent review remains pending. PGP verification is not claimed; missing
+keys and initial producer Boost-layout/Tester unpatched-header assumptions remain
+recorded. Source pins alone are not delivered preferred-source proof.
+
+### Separate future capability lane — private activation only
+
+New leadership/siege code, conditional UI, canonical data/schema and Lua branch are
+uncommitted and excluded from every fixed growth release build. Runtime/Frontend
+source holds were respected. Initial build rejected invalid PIKEMAN constants and
+private movement reads; fixture uses resolved IDs/public getters. Next actual AI
+control returned WAIT rather than immediate SHOOT. The repaired test submits the
+AI's wait, traverses the real queue and preserves later SHOOT/server-health checks.
+Actual58x2/128/39 then59x2/128/39 pass, with export skips explicit.
+Candidate-only0.4 `capabilities-preview-private-59` is readonly916files:
+client70096ce9ef1b4d48cb368761b19b674167fcf02289931fc4b4e3519b3dd15326,
+facadeed56ad8cd872cc5258768a13617779f6b73254121aeec0599c68dbf898bd26b9.
+Actual activated98=97PASS+one expected baseline-dependency skip0; all three
+ordinary exports execute, no rule/primary overrides. Capability map768/10753bytes,
+SHA8e9295ec76b5643b5b151dcb4a0dab040efc0ff3685510746c4f6d30b020a477.
+Default module remains0.3. No GUI/activation/publication acceptance; private ELF
+paths still disqualify this development candidate for distribution. A later single
+NewDay diagnostic is source-only/queued (future60/activated99), not included in98.
+
 ## Published checkpoint: unsigned Windows034 preview; full redesign continues
 
 Published2026-09-07T03:27:37Z, public prerelease:
