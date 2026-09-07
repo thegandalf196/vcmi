@@ -1,6 +1,28 @@
 # New Horizons Linux build handoff
 
-## Current checkpoint: local034 ZIP PRIVACY BLOCKED; repaired MSVC1a run active
+## Current checkpoint: SQLite notice repair validated; source-only CI preflight next
+
+MSVC run34071259251 passed real PS5.1 setup/managed-preset checks and exact md4c
+patch recovery, but failed **before compilation** on missing SQLite license text:
+`sqlite3/3.53.4#89fcf5cda598966acb7f3e185b19c58d`. Its exact recipe pins official
+`sqlite-amalgamation-3530400.zip` SHA
+`1e71ddf93849c6a6ecf58b827c0692073d2dd7ee40196158068f7b29f422e87d`.
+Build recovered that revision/source and verified the real embedded sqlite3.h
+public-domain dedication. The narrow collector extracts the complete original
+leading comment (1484bytes, SHA
+`cc65d76f325d884dd49e319acf3764d5513920f34ad18e34347b8dedc6ddd2ec`), verifies all
+five dedication/blessing phrases, records source-header hash, and leaves original
+sources unchanged. Recipe MIT or missing/partial dedication never passes.
+Thirteen notice regression tests passed; actual exact-recipe source/notices/archive
+collection passed in `sqlite-real-collect`. User requests source-only preflight
+before another full feature build. Do not dispatch a duplicate active run.
+
+The local remapped-dependency attempt failed at libiconv configure (no engine
+build): Autotools split the space-bearing repository-prefix CFLAGS despite quote
+characters. New package IDs were used, old frozen evidence retained. Fix that
+configuration before resuming; tiny compiler remap proof alone is not a dependency
+or repaired ZIP success. Current local compiler lane is free.
+
 
 Independent actual ZIP audit found **173 personal-path hits in .rdata of nine
 shipped PEs**: SDL3_mixer59, client3, facade37, libopus64 and five FFmpeg DLLs2 each.
