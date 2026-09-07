@@ -5,6 +5,8 @@
 1. Work in the HeroesIII-Definitive repository, not the historical Reconstruction
    tree. Read AGENTS.md, NEW_HORIZONS_DESIGN.md, NEW_HORIZONS_MVP.md,
    NH_WORKER_PLAN.md and NH_DELIVERY_PIPELINE.md in this docs directory.
+   Read NH_RELEASE_FAILURES.md before packaging/CI work; do not rediscover known
+   failures or count a single repaired dependency as the whole preflight passing.
 2. Inspect `git status --short --branch`, the latest role handoff and actual build/
    test evidence. Old status paragraphs are history, not instructions to redo work.
 3. Confirm role ownership with Dispatcher. Do not start a duplicate active owner.
