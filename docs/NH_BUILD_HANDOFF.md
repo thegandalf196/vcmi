@@ -23,11 +23,41 @@ Actual GitHub archive at the tag commit verified4352 entries with those exclusio
 complete corresponding engine/submodule/dependency sources are supplied separately.
 Do not mistake the automatic source ZIP for the player download.
 
-Full MSVC34076721466 remains in client compilation under the existing terminal
-watcher/180-minute deadline. Continue monitoring to terminal status despite local
-preview delivery; no duplicate or silent cancellation. Future native30+128/39 is
+Full MSVC34076721466 reached terminal SUCCESS at exacta0dcdd92f8dfd9d3591787fae2dc0cc1bf05fe71:
+client compile, package/source collection and upload all0. Actual artifact10003639577
+is345591264 bytes, server SHA256 e52d2bba64db4b02732d32fbc0156ae1d4f1fb0458047d6eeba12af62b2fa519.
+A single900-second-bounded download into `full-a0dcdd-artifact` has an external wake.
+Inspect/freeze/audit these actual bytes separately; published local034 is unchanged.
+No duplicate CI run or MSVC gameplay acceptance is implied. Future native30+128/39 is
 green but unactivated; canonical data, real spell journeys, level-up UI and ordinary
 XP/save acceptance continue separately. The full goal is not complete.
+
+## Current additional audit and future candidate checkpoints
+
+MSVC actual artifact download0 is frozen under `full-a0dcdd-artifact`. Producer
+verified all outer/internal hashes and CRC: ZIP24918052 bytes,
+ec67b38d836f1c07e5a2136105f83525f061728b1b7ea3fe92b7a46e971a0d87,1166 entries;
+source16908036 bytes64976ea42e2623b624e0a93a7706da2787f97a8313026d905170bde0943b60d7;
+dependency source303764089 bytesd6e6b4cc8fe2883ba8f06186c94a66011bc85d8a91d7156fd9a2ca59aec0a54d.
+Actual embedded report retains191 CI references, no blocked findings. Independent
+MSVC audit is pending; this is not the published local034 package.
+
+Independent review found the privacy CLI accepted a nonexistent root. Added a
+fail-closed directory precondition and sanitized structured CLI error; missing and
+regular-file roots reject, valid35-PE deployment remains clean. Whole package suite
+74 exit0. No published archive change.
+
+Future packet checkpoint35 is now GREEN:34PASS+one opt-in export skip each context;
+128/39 regressions0. Corrected test preserves CGameState's adventure-save boundary
+and verifies real BattleStart roundtrip instead of inventing midbattle game saves.
+A separate private candidate `hero-preview-private-35` (914 files, uncommitted
+source delta manifest) and isolated `testing/hero-native-35` preset were created.
+Actual ordinary new-game XP export1PASS0, no rule overrides: SOD767 compressed/
+10752 raw bytes, SHA6eb616811be9aba1a7608979ac9ebfa909b095a4a0d933f3dad499c0461bf5a7.
+However, expanded ACTUALLY ACTIVATED preset74 tests returned68PASS/2skip/4FAIL:
+clone lifetime control, two legacy-setting dependency controls and an AI effective-
+power control. Runtime is investigating. Private RED candidate frozen; no GUI offer
+or shipping activation yet. Working module generator still checks unchanged0.2.
 
 ## Continuing native and Linux distribution gates
 
