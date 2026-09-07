@@ -85,6 +85,50 @@ https://github.com/thegandalf196/vcmi/actions/runs/34089398757
 actual terminal output before claiming compilation/package success. Later shared
 capability source and its Lua branch are uncommitted and excluded from this run.
 
+### Integrated capability0.4 / frozen release891 in progress
+
+Foundation **b77015d82e10d9169315752170c746fa5989a584** commits exactly37 reviewed
+paths: Runtime/Frontend approvals matched saved source copies/hashes; no diaries,
+pycache or frozen assets included. Default module was still0.3 at that boundary.
+Activation **89165787e50df755ad6311365e039f3185325a09** commits exactly seven
+independently reviewed paths. Default0.4 metadata is BYTE-IDENTICAL to GUIcap59;
+separate primary-only generator remains exact publishedc550/0.3 and cap-only output
+remains exact authored diagnostic. CMake now checks/reconfigures capability data
+as well as primary data; real primary/capability drift negatives reject. Initial
+16-case data RED expected only the old canonical subtree; corrected test includes
+the capability source, without weakening the product guard.16data/4Lua/85packaging
+cases pass. Actual default native client/test build0;61each58PASS3optinskips,
+128/39all0, fresh activated100=98PASS2expectedskips0 with three real exports.
+Export opt-in skips are not absence of default activation.
+
+Remaining exercised capability GUI gates now pass separately: reversible town
+transfer conserves1000 troops and currentMP688 while maximum changes1170→1560→1170;
+main save8dc0 restores both views and army, normalBlueAI Day2 restores1170movement.
+Main reload quit0 at351.998s missed330quit target (cleanup only, no420extension).
+Day2 manual save16406d… is not restarted. Actual primary-only45aae then neitherf7
+loads passed; f9 was copied but NOT loaded in that phase. Actual combatAI used the
+normal autocombat route at ballista activation: eight shots total92, AI Pikemen
+finished28, victory120XP/995survivors; exit0 at359.185s/708samples and all916/protected
+hashes unchanged. All four reachable saved-presence combinations are GUI-evidenced,
+not mastery/tier/new-spell breadth. Historical124 and parser/provenance REDs remain.
+
+ONE full Windows **34110964044** at exact891, preflight_only=false/no repack:
+https://github.com/thegandalf196/vcmi/actions/runs/34110964044
+`capability-891-*` holds dispatch and a7200s terminal watcher. No terminal/package
+claim yet. Separate `release-891-source` holds exact891 and all four pinned checkouts;
+`/tmp/nh-linux-891-{source,build}` aliases, /usr prefix, prefix maps and install
+$ORIGIN configured0. A sole two-job2700s client build is active with an arranged
+terminal/privacy wake. Initial no-ref cache clone/missing alias target setup REDs
+were repaired via explicit LOCAL SHA fetches and a real build directory; published
+c550 inputs/caches were not rewritten. Install/ELF/source/dependency/GUI/package
+acceptance remains pending; privatecap59 binaries are never a distribution fallback.
+
+Next mastery progression/first real skill-family source work is authorized behind
+this immutable891 fence, opt-in/unactivated, with Runtime API/AI/serialization,
+Frontend UI/art and Build config/CMake ownership. No shared compiler until the
+release build lane is free. API/content handoff and implementation are pending;
+this is not a claim that masteries or creature categories already work.
+
 ### Published Windows351 and current capability GUI boundaries
 
 Windows351 is PUBLIC unsigned prerelease at
