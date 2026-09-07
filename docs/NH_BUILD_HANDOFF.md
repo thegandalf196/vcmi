@@ -29,6 +29,26 @@ preview delivery; no duplicate or silent cancellation. Future native30+128/39 is
 green but unactivated; canonical data, real spell journeys, level-up UI and ordinary
 XP/save acceptance continue separately. The full goal is not complete.
 
+## Continuing native and Linux distribution gates
+
+Future35 build exit0: canonical named schema plus real gameSettings wrapper,
+Summon and Sacrifice pass; FireWall exposed a real missing Lua descriptor field.
+Build added default-one casterPowerDivisor, script serialization, materialization
+copy and positive guard in SpellObstacleDescriptor. The unchanged test now passes
+creation/trigger scaling but reaches a separate full-save expectation failure:
+restored.currentBattles is empty. Both mechanics/bridge RED logs remain; Runtime
+owns that bounded investigation. Regression128/39 still exit0. No future activation.
+
+Linux distribution preflight independently inspected existing frozen034 ELF bytes:
+one client profile path in .dynstr (RUNPATH), one library path in .rodata (compiled
+install prefix). Not a GUI regression; neither file was modified or published.
+Directory privacy scanning now recognizes ELF magic, including extensionless and
+versioned .so files. Actual directory gate reproduces2 blocked findings;73 offline
+package controls pass including ELF positive/negative fixtures. A future Linux
+release needs a clean-prefix build and relocatable deployment, not rodata patching.
+Published Windows preview remains unaffected. Source-shape/candidate-only generator
+work and future gameplay stay uncommitted/separate from its fixed identities.
+
 ## Remapped034 package verification and lineage
 
 `package-034-remapped` actually packaged exit0 and is frozen read-only. ZIP:
