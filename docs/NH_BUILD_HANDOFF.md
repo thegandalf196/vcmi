@@ -1,6 +1,130 @@
 # New Horizons Linux build handoff
 
-## Current: capability891 published; mastery native green, private GUI audit pending
+## Current: capability891 published; mastery foundation committed, new preview gated
+
+Both immutable891 public previews remain unchanged. Mastery foundation86 is committed
+and pushed as dd6f6e07af7e445cec863082efebb34cce5dab77 with prescribed author/committer;
+staged86 exactly matched the reviewed copies, diff/known-prefix/token scans passed.
+Default module0.4 remains unactivated and private925/e5 save are protected. Full-design
+mastery families, creature tiers/new effects and broader journeys remain required.
+No later source/readiness or small native gate is a full redesign/Windows claim.
+
+Private925 ordinary GUI and separate restart are now evidenced in
+`testing/mastery-{gui-first,reload-first}/summary.json`: ordinary1000XP/secondary
+choice, mandatory unselected Enter/Esc, explicit Volley confirmation, normal save
+675676 bytes SHAe5efe637bca25bd4bb765dc0c363e15b3bcb87d82e2837f84cb0cad25b51c2dd.
+Fresh actual restart restores L2/XP1000/100Pikes/ExpertArtillery,18/24/6/12,
+last3/4/1/2, mana10/12, movement1160/1560, cap100/825 and scrolled saved VolleyACTIVE+1.
+Reload exit0 at183.120s/361clean samples, exact teardown; no new turn/combat/save.
+First setup1x1 RED, unverified Gold/resource bonus and late actual quit490.3s
+remain recorded; first normal exit491.020<600 is not450-target success.
+No newlyExpert/L3/covered-popup/combat mastery or ordinary AI breadth acceptance.
+
+Combat-AI review held the82-path foundation. Real AttackPossibility characterization
+initially predicted1vs2 legacy and3vs9 Volley health loss; an additional server2vs3
+assertion also failed. Do not erase that third RED or call it AI-only prematurely.
+Release-binary gdb lacked debug/source symbols. Authorized temporary server trace
+then proved fixture overlap: requested unit3/4 at15,5 resolved originalunit2/HP10.
+Server computed innate1+hero2=3 correctly, but target died after second shot.
+Historical original Volley control also attacked the wrong occupant; its old green
+count is qualified, not erased. Exact server before-image restored to HEAD SHA
+83ef6a921a5cb34580426e37b06f52d6175affd9ca220890c13b8885f8aa07d6.
+
+Narrow two-fixture repair uses free14,5 with occupancy/resolved-identity/survival
+assertions; all2/3 counts and nonBallista1 remain. Clean build0/trace-absence0,
+XML4 retained ONLY two prediction failures, actual server counts now pass.
+Initial Build nested-manifest parser/missing-script setup RED compiled nothing;
+corrected script/result logs remain separate. Runtime's scoped AI helper uses
+unit innate count plus fighting-hero(unitSide) creature-specific grant in BOTH
+AttackPossibility and BattleExchangeVariant; no unit API or server rule changes.
+First6-case run:4PASS plus two new Exchange oracle FLOAT failures. Actual AP
+scores against original defender per hit, unlike progressively damaged single-hit
+tracker. Test-only oracle now applies already HP-tested initial AP, then hardcoded
+2/3 single later-turn hits; strict FLOAT equality/real HP/ammo guards remain.
+`mastery-ai-count-oracle-*`: build0/native0/trace-absence0, actual6/6 PASS.
+Required BE-only old-count negative actually gives4PASS/2Exchange-only failures;
+exact BE source4a159e21 restored, clean rebuild0/native0/6PASS/trace-absence verified.
+Actual fresh private0.5 native40/40, activated140=138PASS/2declared skips and prior
+61x2/128/39 (3/3/2/1skips) all pass. Old80source paths unchanged; only old testCMake
+and occupied-target Volley fixture changed, plus four AI/header/test additions.
+`mastery-integration-review-ai86` has final Runtime51/Frontend26/Tester boundary
+approval. Its initial writable88 copies/control files failed the procedural seal;
+new snapshot only was made read-only and independently rechecked, old82 untouched.
+Source/publication/GUI scopes remain separate; this is an unactivated source commit.
+Temporary trace/mutation binaries are never candidates or release fallbacks.
+
+### Separate usability presentation increment — not linked/GUI acceptance
+
+Working F8/F9 were never broken. Original42 source/art readiness is preserved;
+corrected42 `source-ready-retaliation-fixed.json` changes ONLY the artwork note.
+Ten graphics bindings are independently authored, not copied Extras content.
+Actual semantic RED corrected common Vampire/Naga trait to BLOCKS_RETALIATION;
+NO_RETALIATION is temporary inability/paralysis and stays untouched. Siege's empty
+baseline descriptor would suppress its window row: one explicit original minimal
+Siege description is the sole non-icon presentation-field exception. No window
+filter, creatureNature/propagation, gameplay values or rules are changed.
+
+Private-only composer0.5.1 uses inline bonus patches and explicit Content root mount;
+old file-list/missing-mount RED and wrong unprefixed image-existence probe remain.
+Corrected actual native loader has10 nonempty descriptor/resolved-icon pairs,
+flags stable, only Siege text changed, NO_RET and MagicArrow row unchanged.
+Optional fragment is absent in baseline and present in corrected preview.
+Four corrected Python data tests pass. Actual AdventureMapWidget object compile0
+(version task+one object only); no new client/facade link or GUI claim yet.
+
+Private oracle module native checks prove existing value/subtype icons survive
+actual mod merge, subtype wins, and an installed-but-disabled module exposes no
+optional fragment. Probe overload(constchar-to-bool) and missing mandatory fixture
+modType REDs are retained; corrected typed profiles pass. A later full private probe now calls real
+CStackInstance: custom path beats subtype/value, and SPELL_IMMUNITY's actual empty
+spell icon beats three competing descriptor paths (diagnostic description proves
+the private oracle binding loaded); stack custom path wins even over that special
+spell result. Both full contexts exit0. Missing include-root, enum-wrapper and
+interface-overload compile REDs7/8/9 remain; corrected build10 succeeds. This is
+native priority stress, NOT proof of actual rendered status rows. Actual portrait/
+buttons/Naga/Vampire/Undead GUI and linked frozen candidate remain pending.
+
+Next candidate is explicitly COMBINED private0.5.1: dd6 foundation plus reviewed
+usability46, not an86-only binary accidentally containing the already compiled
+convenience object. `convenience-integration-review46` was sealed read-only at
+creation; current source/art/native review and a test-only ordinary creature/UI
+fixture accompany the full client link/freeze. No user mod-management flow is added.
+
+Actual combined link0 and all held133 hashes match. Sealed PRIVATE947/946sums at
+`combined-dd6-convenience-private-first`, manifest
+64ac2d34817e97e12c33a434c90105516becbba90d2266c1c6f663437f0a1ee9;
+client a7669de5048c0ebc1a305e118f41d9c8bd51fa6fd39f162bb4cf54afd50d7b4c;
+facade31a705069298e99649451d1efefa45daa24a5cfebe5ed956021900b51ce492ce;
+module0.5.1 b770f6b41114fda933ff8b158ae74be3e3cd49bd03e0099ffbadfe3bc802d498.
+Exact parent925 resources plus22 additions (20 runtime convenience outputs and two
+non-Image configs), changed binaries/module/identity/sums; no Sorcery replacement.
+Developer ELF paths mean NOT distributable. Independent candidate/GUI gates pending.
+
+Declared test-only fixture adds one CPP and one CMake registration outside46.
+Sourcee9ee193e exports ordinary human100Pikes/20Vampires/20VampireLords/20Nagas,
+ExpertArtillery/ballista and BlueAI town. Native guards distinguish both Undead/
+BLOCKS_RETALIATION vampires from Lord-only actual lifeDrain script, Naga and Pikes.
+Build0/default1opt-in-skip; two separate private setup REDs precede execution:
+misplaced test root failed vcmi-test discovery, then missing originalData failed
+DATA/LCDESC. New runner/test plus authorized external read-only Data symlink fixes
+setup without modifying product/947/purchaser bytes. Actual final41/41 passes with
+required mastery texts and both exports enabled; held134 unchanged.
+NHConvenienceArmy793gzip/10784raw SHA
+40405710905aedf86ac54e6d1e0142e9e5db2013a90b1ae9c177b3550f7a51b5;
+both original mastery maps remain byte-exact2f7d/e5b0. These are ordinary map exports,
+not actual button/status GUI, life-drain execution or AI gameplay acceptance.
+
+### Sorcery quality direction remains user-gated
+
+Both initial A/B and angular V2 are rejected. Follow the superseding miniature
+still-life painting brief, not an approved motif or style guide. User authorized
+Blender installation; actual5.0.1 became available. Artist's ONE CPU2thread768 proof
+render exited0 in18s, reductions0, no remaining Blender PID; slot released before
+Build's negative-control job. Raw PNG/scene metadata is PRIVATE; cleaned review
+pixels retain exact RGBA, not executable-string patching. No live import/family/
+visual approval is inferred. Artist retains isolated ownership and scheduled slots.
+
+## Historical checkpoint: mastery native green, private GUI audit was pending
 
 Latest mastery checkpoint: full client/tests compile0 after preserved REDs for
 preset ENABLE_TEST=OFF, unsigned64 serialization guard, missing WindowHandler
