@@ -85,7 +85,108 @@ https://github.com/thegandalf196/vcmi/actions/runs/34089398757
 actual terminal output before claiming compilation/package success. Later shared
 capability source and its Lua branch are uncommitted and excluded from this run.
 
-### Latest terminal repair and Linux/source progress
+### Published Windows351 and current capability GUI boundaries
+
+Windows351 is PUBLIC unsigned prerelease at
+https://github.com/thegandalf196/vcmi/releases/tag/nh-preview-35119d5341b3-windows
+published2026-09-07T08:43:44Z. All four uploaded asset sizes/server digests matched
+before publication; anonymous API, actual downloaded ZIP SHA/CRC1173 and tag checks
+pass independently. Tag351/4395entries including root (4394non-root), private/future
+capability exclusions and unpopulated submodule links are explicit. Actual notes
+match reviewed nativeWindows/NONE/full-design/201reportedCI/GPL3/CRLF/116lost4added
+limits. Older a0 provenance remains held. No native Windows gameplay claim.
+
+Capability-only authored GUI exited0 in463.621s:838samples, exact916/map/originals
+unchanged and process/Xvfb/socket teardown. Actual new game restored authored
+2/2/3/10 XP0,1000Pikes/ExpertBallista,100mana,1170movement; truthful current totals,
+NoGrowthSnapshot, capacity1000/750/75percent and scroll/control qualifiers. Normal
+435144byte Day1 save SHA38f8b3975973e11c6c8be7b8be4664fdc0152aa320a2e33a423660eb387f1f93
+and readonly control retained. Fresh load under UNCHANGED both-enabled cap59 exited0
+in331.686s (progress stopped before330; cleanup only),530samples and both916 hashes
+unchanged. Actual saved primary absence persists despite installed nonempty primary
+rules; no optional turn/newsave/battle or other presence quadrant was executed.
+
+Main both-enabled cap59 then reached truthful primary/capacity/siege UI and actual
+battle introduction after ordinary pursuit:1000Pikes/12Archers/Ballista. However,
+Tester context compaction interrupted progress and the hard supervisor ended with
+**exit124 at604.207s**, not ordinary quit0.1058samples show no children/ownedINET;
+exact processes/socket/lock absent,916/map/controls unchanged. Last input was pursuit
+YES at366s. No defend/shot/damage/transfer/distinct-save proof exists from that run.
+The hard-bound RED and partial UI/battle-intro evidence are retained. Any next run
+requires a separate bounded, battle-focused grant; no product fix is inferred from
+this harness timeout and no automatic extension occurred.
+
+### Published Linux growth preview / Windows351 terminal success
+
+Linux c550/ba85 is now a PUBLIC unsigned prerelease, published2026-09-07T08:23:33Z:
+https://github.com/thegandalf196/vcmi/releases/tag/nh-preview-c5503cc3515a-linux
+Exact source/static approval covers1128readonly files/1127hashes,912 unchanged old
+files, all added terms/public provenance and all three source companions. Final
+player TAR19496364bytes SHA2d56479fea0dfd85ef92f3e829ac1e8d198ba8f40f23fd6e2a1239fe9903e8b0.
+Dependency v2 is132208111bytes SHA25fb2447f6552f98cdf1cecc5a5312314c288aff349ef50f7e2f012f6ecefb00;
+its88regular entries preserve38v1 entries and50 actual header/terms supplement
+entries. The GCC assessment is per-file:386RLE headers;5PSTL Apache2+LLVMexception,
+quadmath LGPL2+, two generated/forwarding wrappers separately retained. Linux35
+UAPI headers and specific note/provenance are retained, not blanket GCC treatment.
+Tooling source ba85 is16796514bytes SHAb138283369724854a56197beb257f6fa2c0eefbe782ef55cb50a509fceb7e48d,
+4584exact Git blobs/116executables/four submodules/16exclusions. Stager six offline
+integrity/privacy cases pass; player/helper uses explicit adjacent package roots.
+
+Exact-package GUI phase1 exited0 in519.355s under its original600s deadline:
+actual ordinary XP1000/+3,+4,+1,+2, Sorcery, base18/24/6/12,total20/24/6/12,
+Axe/book,150Dendroids/20GrandElves, mana10/12; new save519502bytes
+SHAf9adc0187a2c81d6cb98e57794a61aab5f6b611e6a213c245a0c40c18c710bdb.
+The initial unmanaged-profile setup RED was corrected in the owned profile under
+the SAME deadline. Fresh-process phase2 exited0 in298.321s, restored that actual
+save/XP/equipment/skills/gains/army/mana, then Blue Nullkiller2 recruited/ended;
+Day2 mana11/12, movement1500, gold21200. Distinct521163byte Day2 save SHA
+ca18742ba547eb8fdfe0c92324da112574e29930addca65be797c51c0943d019 was not restarted.
+855+517monitor samples have no child/ownedINET; all1128payload/original control
+hashes unchanged, exact clients/Xvfb/sockets gone. First phase shared raw cache log
+was overwritten by restart; prior hash/console/screens/tool-read evidence remains,
+not a retained full phase1 log. Phase2 log was copied out. Both leases released.
+
+All five actual public asset server sizes/SHA match; an anonymous player download
+repeats2d56479f/1128files. Actual tag autoarchive4399entries including root (4398
+non-root) excludes private/future capability paths and includes licenses/tooling;
+tagba85 is not enginec550. Independent post-publication verification passes all five
+anonymous asset digests/sizes, actual tag/notes/player bytes. Autoarchive4016 Git blobs
+are exact plus committed CRLF conversion for android/gradlew.bat; four submodule links
+are unpopulated. The explicit4584-blob tooling companion remains exact. The draft
+by-tag REST404 and premature tmux status were corrected using authenticated release
+LIST: all five digests were verified BEFORE publication. No reupload or hidden RED.
+Actual independent publication acceptance is recorded in NH_CONTENT_ACCEPTANCE. Ubuntu26/system,
+optional driver/audio, NONE/nativeWindows/full-redesign and Day2-restart limits are
+explicit in actual release notes. Published034 remains untouched.
+
+Windows FULL34093695275/351 completed SUCCESS, watcher0. Sole readonly download is
+`full-35119d-artifact`: ZIP24955639 SHA74e63ae25a2872d73b72c966b36fa7591c443daf82c3002272ea58d2d235d334;
+source16951555 SHAe62c154b90950a80a06aaf43cd164d63e8cf1859b9645086bb14e7f9f152f00d;
+deps303765190 SHA76fdeba3ee275865dfda72695e055823b3f66c7d61f39f29d0f3f4afc14d6c5b.
+Producer CRC/outer hashes pass,1173ZIPentries. Final selected CRT SHA/version/origins
+are bound in package provenance; SAME351 precompile artifact10008343544 was downloaded
+once to `growth-snapshot-crt-preflight-artifact`, not substituted from322. Independent
+full audit now PASSES:1173files/1172sums,26AMD64/6117imports,201verified CI hits in9PEs,
+21exact cached vendor DLLs,907resources469exact/438CRLF,4580source blobs600exact/3980CRLF,
+113700 dependency members byte/type/mode/link identical,226notices same except boundCRT
+provenance. SAME351 precompile input establishes this run's final3CRT bindings. Source
+modes have116lost+4added cmd/bat bits, NOT120lost. Native Windows/publication remain
+separate gates; GPL3 combination, CRLF/non-Unix-mode-preserving source and other preview
+limits must be explicit. No CI remains active.
+
+Future only: queued NewDay and caps-only exporter compiled;61each58PASS3optinskips,
+128/39all0. All-capability100=98PASS2expectedskips0; separate diagnostic single1PASS0
+with ONLY NH_EXPORT_CAPABILITY_ONLY_FIXTURES. `capability-only-private-61` is916files,
+same cap59 ELFs, actual metadata caps-on/growth-off, manifest6b50dba19504c38f760fd2f779d0fe31d67c56a4075e0fdd553dd615f7a12e80.
+Ordinary diagnostic map566/10415bytes SHA4524bece8b97b38fc1f1b9272e1e08d3428f772ff9b4188550292644001e7eaf;
+explicitly authored H3M primary values2/2/3/10, no post-init state or rule injection.
+The original diagnostic manifest's blanket no-primary-override wording was wrong and
+is preserved; successor `capability-only-private-61-authored` changes ONLY identity
+and sums, manifestd3db115c4238fdc24dce0efe0d893034f50a2f7eebf93b449ba4629be051af31.
+Actual saved-identity GUI still pending. Source holds
+released; live0.3 and originalcap59 unchanged; capabilities remain uncommitted.
+
+### Earlier terminal repair and Linux/source progress
 
 FULL34089398757/322 reached actual client compilation after83 Windows regressions,
 PS5.1, full source preflight and real CRT preflight passed, then FAILED C2397 at
@@ -215,8 +316,9 @@ actual exported XP fixture hash unchanged. Launcher verify-only0; no client exec
 Tester received an offer, NOT GUI GO, pending independent native/candidate checks.
 
 MSVC independent audit passed the scoped ZIP/PE/resource/fork/Conan checks, including
-113700 source member bytes and218 notices. Windows filesystem source export lost
-119 Unix executable bits: do not claim Unix-mode or LF-identical reproduction.
+113700 source member bytes and218 notices. The original report called119 mode
+mismatches lost executable bits; corrected audit identifies115lost+4added cmd/bat
+bits in a0. Do not claim Unix-mode or LF-identical reproduction.
 Ten additional MSYS `/c/users/runneradmin/.conan2/p` strings match pinned public-cache
 FFmpeg DLLs. Future guard now recognizes MSYS profiles, reports known CI only with
 provenance, and rejects unknown profiles/escaping paths.75 offline regressions0;
