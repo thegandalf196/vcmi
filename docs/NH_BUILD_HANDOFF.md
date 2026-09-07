@@ -59,6 +59,35 @@ clone lifetime control, two legacy-setting dependency controls and an AI effecti
 power control. Runtime is investigating. Private RED candidate frozen; no GUI offer
 or shipping activation yet. Working module generator still checks unchanged0.2.
 
+### Follow-up: activated checkpoint green, MSVC audit caveats
+
+Runtime's four bounded fixture repairs preserve the product formulas/guards:
+clone duration uses three effective power, magic AI uses99 effective power with
+exact7725damage, and synthetic legacy setup also disables hero ratings. Actual
+`future-hero-context-*`: build0,35 each context34PASS+skip,128/39 regressions0;
+activated74=72PASS+2expected skips0. New private readonly candidate
+`hero-preview-private-context` replaces neither the original RED nor published034.
+Client de236318d233e0a444ae71588675e7c6aa4183ceba6e39ec6489915af52ad454,
+facade1e3c5baf8419404186fd637bcc0162406af8c7d105760c9b3494df4b9ebb746c;
+actual exported XP fixture hash unchanged. Launcher verify-only0; no client executed.
+Tester received an offer, NOT GUI GO, pending independent native/candidate checks.
+
+MSVC independent audit passed the scoped ZIP/PE/resource/fork/Conan checks, including
+113700 source member bytes and218 notices. Windows filesystem source export lost
+119 Unix executable bits: do not claim Unix-mode or LF-identical reproduction.
+Ten additional MSYS `/c/users/runneradmin/.conan2/p` strings match pinned public-cache
+FFmpeg DLLs. Future guard now recognizes MSYS profiles, reports known CI only with
+provenance, and rejects unknown profiles/escaping paths.75 offline regressions0;
+actual unchanged a0 ZIP now reports201 (191 Windows +10 MSYS),0 blocked; published
+MinGW ZIP remains0 findings. Separate addendum preserves the embedded191 report.
+
+MSVC publication approval remains HELD for CRT provenance: all three packaged CRT
+DLLs are14.29.30157.0; `crt_redist_directory_version:14.51.36231` describes the notice
+collector's environment, NOT those DLLs. Actual terminal run log confirms v142
+compiler14.29.30133 alongside VCToolsRedistDir14.51.36231. Exact runtime source
+binding and truthful metadata are still required; matching older DLLs alone is not
+that proof. No DLL/archive changes or new CI dispatch were made for this finding.
+
 ## Continuing native and Linux distribution gates
 
 Future35 build exit0: canonical named schema plus real gameSettings wrapper,
