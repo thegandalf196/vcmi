@@ -1,6 +1,26 @@
 # New Horizons — user preview feedback
 
-## Windows capability preview: missing familiar VCMI conveniences and rough art
+## Clarification: working shortcuts, missing Extras presentation
+
+User confirms F8/F9 quick-save/load work; only the buttons are missing. User
+identified https://vcmi.eu/Mod%20Repository/Graphical/VCMI%20extras/ as the likely
+source of familiar presentation. Direct page retrieval returned403; independently
+inspected public vcmi-mods/vcmi-extras repository on branch vcmi-1.7 instead:
+
+- Mods/adventureMap/Content/config/widgets/adventureMap.json explicitly declares
+  buttonQuickSave/buttonQuickLoad, adventureQuickSave/adventureQuickLoad bindings
+  and iam-quicksave/iam-quickload artwork (small and large layouts).
+- Mods/bonusIcons/mods/Bonus Icons/Content/config/bonusIcons/bonuses.json maps
+  core:UNDEAD to zvs/Lib1.res/E_UNDEAD. The Bonus Icons manifest describes unit
+  ability, bonus and immunity artwork.
+
+This supports a missing optional presentation-content explanation for both
+examples, not removal of quick-save/load or Undead rules. Record shortcuts as
+USER-CONFIRMED working, not an open functionality failure. Review compatibility,
+asset rights/attribution and exact selective configuration before curating any
+Extras content; do not blindly enable every optional module or import its art.
+
+## Windows capability preview: initial report of missing conveniences and rough art
 
 User reports playing the new Windows release, still finding it smooth, and a
 promising start. New screens/spell-school icons look very crude. User also reports
@@ -39,7 +59,7 @@ checks on the exact frozen candidate through normal input under existing guards.
 Build integrates fixes, preserves the released identity and keeps the full-design
 feature and release lanes separate. Existing handoffs retain detailed evidence.
 
-Ask user whether F8/F9 fail or the expected buttons are missing, where the Undead
-icon used to appear (creature information window versus battlefield marker), and
-which VCMI version/optional UI packs they used. These details refine reproduction;
-static review and default-profile tests need not stop while awaiting them.
+The shortcut-versus-button question is answered above; do not ask it again or
+report quick-save/load as broken. Continue the scoped presentation comparison and
+provenance review with Extras as the identified reference. Optional details about
+the previous VCMI version may refine compatibility but need not block review.
