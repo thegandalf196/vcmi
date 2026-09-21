@@ -23,10 +23,11 @@ is not activated by these documents.
 ## Product objective and sequence
 
 Deliver the user's New Horizons redesign as working, AI-supported gameplay:
-Orders/Doctrines, six magic schools, deterministic primary growth, secondary
+Orders, six magic schools, deterministic primary growth, secondary
 attributes, masteries, redesigned hero UI, and creature tiers. Fun first; tune
 numerical balance later. Correctness, usability, save integrity and AI are required.
-The Orders/Doctrines checkpoint below is the first increment, NOT full completion.
+The Orders checkpoint below is the first increment, NOT full completion. The
+earlier Doctrine experiment is superseded and must remain legacy-decode-only.
 
 1. Finish and independently test the integrated combat-command increment.
 2. Six-school registry, actual spells/effects, AI and spellbook integration.
@@ -44,10 +45,12 @@ performance experiment is closed. No architectural rewrite milestone.
 art, CMake or packaging edits. Coordinate shared interfaces before changing them.
 **Durable evidence:** [NH_RUNTIME_HANDOFF.md](NH_RUNTIME_HANDOFF.md).
 
-**Current objective:** make Charge, Hold the Line, Advance, Aggressive and Defensive
-execute through validated authoritative commands for humans and AI. One hero
-action per round is shared with spells; Orders spend no mana, expire as declared,
-and do not consume a creature action. Doctrines persist until changed. Rules and
+**Current objective:** implement Charge, Focus Fire, Riposte, Hold the Line,
+Brace, Protect, Flank and Second Wind through validated authoritative commands
+for humans and AI. The current playable slice contains Charge, Hold the Line and
+Focus Fire; expand it without reactivating legacy Advance or Doctrine IDs. One
+hero action per round is shared with spells; Orders spend no mana, expire as
+declared, and do not consume a creature action. Rules and
 coefficients are explicit, tunable and versioned; old saves retain old semantics.
 
 **Resume checkpoint:** use the latest Runtime handoff and actual native/Tester
@@ -58,7 +61,7 @@ owns shared compiler invocations.
 
 **Acceptance:** compiled tests prove legal/illegal commands, action-budget exclusion
 both directions with spells, real damage/movement changes and round expiry,
-Doctrine replacement/persistence, legacy/version checks and round-trip state.
+legacy Doctrine rejection/migration, version checks and round-trip Order state.
 AI evaluates commands alongside spells rather than always choosing a fixed Order.
 Independent normal-input human/AI gameplay must exercise the resulting behavior.
 
@@ -69,7 +72,7 @@ Mods/new-horizons/Images/. No runtime/AI rules or non-Image content registration
 **Durable evidence:** [NH_FRONTEND_HANDOFF.md](NH_FRONTEND_HANDOFF.md).
 
 **Current objective:** deliver discoverable, usable hero actions with accurate
-availability, cancellation, active Order/Doctrine feedback and truthful tooltips.
+availability, cancellation, active Order feedback and truthful tooltips.
 Use the existing spellbook framework; author original editable assets and runtime
 outputs with provenance. Do not claim provisional artwork is finished illustration.
 
@@ -100,6 +103,18 @@ frozen incremental candidate's defect/retest/package/upload gates without pullin
 unrelated future features into its scope. Keep Linux/Windows builds incremental;
 do not replay historical dependency failures already repaired.
 
+**CI follow-through:** own every dispatched build through its terminal result.
+Record the run URL, attempt, source SHA and full-build/preflight mode; arrange a
+bounded monitor/wake and inspect failed-job logs without waiting for the user.
+On failure, reproduce/classify it, coordinate the smallest scoped repair, run
+relevant regressions, commit/push and dispatch the corrected full build. A retry
+of unchanged source requires evidence of a transient infrastructure failure.
+Never leave cancellation without a reported reason and concrete successor action;
+never launch duplicate runs or silently replace a full build with preflight-only.
+Continue through package/audit/upload gates, verify actual release assets and
+report real external/authentication/provider limitations. Preserve safety limits;
+no endless blind retry loop. Build owns this until an explicit ownership transfer.
+
 **Acceptance:** actual successful build/test exits; candidate source identity and
 binary hashes; independent Tester result; preserved save compatibility; clean
 scoped diff/privacy review before integration. Packages retain required runtime
@@ -127,8 +142,8 @@ source coverage or a stale preview.
 **Next checkpoint:** prepare fixtures/oracles and audit assets while Build finishes;
 then test its frozen candidate through guarded normal-input combat and save/load.
 
-**Acceptance:** reproducible bounded human/AI journeys covering orders, Doctrine
-changes, shared spell budget, cancellation/availability, round transitions and
+**Acceptance:** reproducible bounded human/AI journeys covering Orders, shared
+spell budget, cancellation/availability, round transitions and
 persistence, with identities, concise results and representative screenshots.
 Only this worker may run private Xvfb/XTest GUI journeys. No host desktop input,
 visible fallback, original executable launch or competing graphical runs. No
