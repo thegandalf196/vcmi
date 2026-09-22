@@ -4015,3 +4015,64 @@ a61100fc5b01d389031b5b6ddcfb72bab4d3180f98ad6e097f3641daca65e1b6  bin/libvcmi.so
 `git diff --check` passed. Unit tests were not enabled or run. Neither Windows
 buildability nor the installed-asset gameplay acceptance gate was executed.
 Preserve this build root for subsequent integration builds; do not create another.
+
+## 2026-09-22 — frozen local playtests and Phantom Army validation
+
+The reported `Unsupported New Horizons magic rules: unknown field active`
+startup failure came from an older development binary consuming live edited
+resources. Launcher commit `9a770af25` selects explicitly promoted, checksummed
+local snapshots instead. See `tools/ci/LINUX_PLAYABLE_SNAPSHOT.md` for the
+freeze, private-profile validation, and promotion workflow. There is no fallback
+to mutable build resources or the outdated September 13 staged package.
+
+Local snapshot `c74e3d25446c0c2766100462ed2c610611f75b442d08b7aa2218dd79999ea7e1`
+was built from the shared tree at `ee320ac39` with uncommitted Phantom changes,
+then selected after a bounded headless All for One run reached day 4 without
+the startup error. This is local startup/playtest evidence, not a clean-source
+public release or full mechanic acceptance. Later working-tree edits do not
+alter this snapshot. Profile/saves remain in the existing managed profile.
+
+The snapshot helper's six unit tests, wrapper forwarding tests, and existing
+launcher isolation tests passed. The initial targeted native Phantom/roster/
+conversion/hero run completed 95 tests: 89 passed, six failed. The failures are
+under investigation; do not treat this batch as accepted yet. Real Phantom
+creation, separate Integrity persistence, physical damage/count behavior, AI
+selection, and the Solmyr Wizard/former-Alchemist Battle Mage checks passed.
+An Illusionist rounding discrepancy was found afterward and corrected in the
+working tree. The subsequent 130-case run passed all nine Phantom tests, including
+real-cast rounding, Time Stop, expiry, and physical/magical Integrity behavior;
+124 cases passed overall, with remaining AI/fixture failures under investigation.
+
+Further source-Phantom guards now forbid summoning, corpse conversion, and troop
+resurrection. Downgraded resurrection heals living troops only, normalizes
+one-battle resurrection power, and removes the full-creature threshold. Scoped
+review found no remaining blocker in this correction; selected Heal/Summon cases
+passed in a 34-case rerun (31 passed, three AI cases failed). Sacrifice diagnostics
+show the actual valuable-unit sacrifice is rejected by scoring, but invalid
+no-effect target combinations are still considered; fix candidate validation.
+Temporary numeric AI diagnostic output must be removed before integration.
+
+The broader 142-case selection also exposed
+`FocusFireAITest.FollowUpShotScoresCurrentVictimHealthAndAuthoritySpendsBothShots`
+rejecting its authored legacy V2 command profile with `Invalid New Horizons
+targeted combat fields`. Investigate `GameSettings::addOverride` merging command
+profiles with installed defaults; unlike magic overrides, command overrides are
+not currently atomic. Do not weaken schema validation to make this pass.
+`RealSummonRoundsAfterScaledPowerProduct` also submitted an empty action target;
+its fixture now supplies the normal invalid-hex sentinel for a no-target spell,
+pending rerun of its numerical assertion.
+
+The user confirmed the reported orderly shutdown was voluntary. Their immediate
+priority is explanatory combat logging, recorded in `NH_USER_FEEDBACK.md`.
+Twenty existing Metamagic logging tests were run: nineteen passed; the old Clone
+case needs an explicit legacy roster now that Phantom Army replaces Clone.
+Phantom follow-up creation details and actual Brace trigger results are the next
+logging slice. Exact damage-prevention attribution remains required separately;
+Brace itself is preemptive damage, not incoming damage mitigation. Do not derive
+Order-specific prevention from the all-defenses-removed damage estimate.
+
+Continue using the existing `build/new-horizons-linux` tree with `-j2` and
+bounded memory. Rebuild and rerun native tests after integrating pending test
+fixes, review the full gameplay diff, then commit/push the coherent implementation.
+Do not stage user-owned `AGENTS.md`, Python caches, build products, or purchaser
+assets. Keep the overall New Horizons implementation goal active.

@@ -104,3 +104,24 @@ The shortcut-versus-button question is answered above; do not ask it again or
 report quick-save/load as broken. Continue the scoped presentation comparison and
 provenance review with Extras as the identified reference. Optional details about
 the previous VCMI version may refine compatibility but need not block review.
+
+## 2026-09-22 — prioritize explanatory combat logging
+
+The user explicitly prioritizes verbose, meaningful battle-log coverage of new
+interactions. Report the actor, action, outcome, and the mechanic responsible:
+for example, a second or third spell cast enabled by Metamagic, or damage taken
+and the amount prevented by Brace. Use clear Heroes III-style sentences rather
+than technical diagnostics or a repeated New Horizons prefix.
+
+The Brace example expresses the desired explanation style, not a requested rules
+change: the canonical Brace is a preemptive strike. Attribute mitigation to the
+actual reducing Order (such as Hold the Line, Riposte, or Protect).
+
+Damage attribution must come from the actual resolved calculation, with defined
+rounding and modifier ordering; do not invent prevented amounts from tooltips.
+Emit gameplay messages for authoritative resolved actions, not hypothetical AI
+evaluations. Expand coverage across Orders, perks, spells, and their interactions;
+Metamagic and Brace are the first examples, not the entire requested scope.
+
+The user also confirmed that the reported ee320ac39 session's orderly shutdown
+was their own exit, not an unexpected closure.
