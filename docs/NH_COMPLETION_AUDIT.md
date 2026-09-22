@@ -31,16 +31,54 @@ available in the promoted playable snapshot. Recompute after content changes:
 jq '{skills:(.skills|length),perkStatuses:([.skills[].perks[].effect.status]|group_by(.)|map({status:.[0],count:length})),rankStatuses:([.skills[].ranks[].effect.status]|group_by(.)|map({status:.[0],count:length}))}' config/newHorizonsPerks.json
 ```
 
+### Per-skill catalogue breakdown
+
+Each row has three rank effects and ten perks. Active flags only:
+
+| Skill | Active ranks / 3 | Active perks / 10 |
+| --- | ---: | ---: |
+| Offense | 3 | 4 |
+| Armorer | 3 | 0 |
+| Archery | 3 | 0 |
+| Battlecraft | 3 | 1 |
+| War Machines | 3 | 0 |
+| Discipline | 3 | 1 |
+| Recruitment | 3 | 4 |
+| Command | 3 | 0 |
+| Light Magic | 3 | 0 |
+| Shadow Magic | 3 | 0 |
+| Nature Magic | 3 | 0 |
+| Havoc Magic | 3 | 3 |
+| Sorcery Magic | 3 | 9 |
+| Chaos Magic | 3 | 0 |
+| Spellcraft | 0 | 0 |
+| Wisdom | 3 | 0 |
+| Warcasting | 0 | 0 |
+| Logistics | 3 | 0 |
+| Diplomacy | 0 | 0 |
+| Estates | 3 | 0 |
+| Learning | 3 | 0 |
+| Luck | 3 | 0 |
+| Divine Mandate | 0 | 0 |
+| Sylvan Luck | 3 | 10 |
+| Metamagic | 3 | 10 |
+| Shroud of Malassa | 3 | 0 |
+| Demonic Gating | 3 | 9 |
+| Necromancy | 3 | 3 |
+| Bloodrage | 3 | 1 |
+| Bulwark of the Mire | 3 | 0 |
+| Elemental Rebirth | 0 | 0 |
+
 ## Current verification and delivery boundaries
 
 | Area | Evidence obtained | Remaining gate |
 | --- | --- | --- |
 | Source retention | Downloaded DOCX and retained source hash matched | Reconcile every requirement with implementation and accepted overrides |
 | Content consistency | 62 selected Python content tests passed | Tests do not prove gameplay for the full catalogue |
-| Phantom Army | Nine focused native cases passed, including real creation, Integrity, rounding, damage and expiry | Finish related AI regressions, full review, rebuilt client and playable delivery |
-| Phantom source restrictions | Selected healing/summoning tests pass; scoped healing correction reviewed | Integrated regression pass and gameplay validation |
-| Metamagic logs | 19 of 20 selected logging cases passed | Explicit legacy Clone fixture; active Phantom creation outcomes; wider interaction coverage |
-| Orders logs | Activation messages exist | Actual trigger results and exact source-specific damage-prevention attribution |
+| Phantom Army | Nine focused native cases and final combined 262-case selection passed, including related AI | Rebuilt client, runtime validation and playable delivery |
+| Phantom source restrictions | Healing/summoning/Sacrifice guards and negative tests pass in combined selection; scoped healing correction reviewed | Gameplay validation and exhaustive copied-ability audit |
+| Metamagic logs | Full native suite passes, including explicit legacy Clone and active Phantom creation/counterspell outcomes | Wider interaction coverage and playable delivery |
+| Orders logs | Activation messages exist; actual Brace preemptive damage/casualty log tested | Remaining trigger results and exact source-specific damage-prevention attribution |
 | Linux launcher | Frozen/checksummed snapshot selection tested and promoted | New working-tree changes require separate build, validation and promotion |
 | Full product | No full acceptance established by this checkpoint | Faction audit, complete content, AI, saves, UI, Linux/Windows and installed-asset journey |
 

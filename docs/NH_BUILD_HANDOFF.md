@@ -4076,3 +4076,45 @@ bounded memory. Rebuild and rerun native tests after integrating pending test
 fixes, review the full gameplay diff, then commit/push the coherent implementation.
 Do not stage user-owned `AGENTS.md`, Python caches, build products, or purchaser
 assets. Keep the overall New Horizons implementation goal active.
+
+### Combat logging checkpoint (same day, working tree only)
+
+Implemented post-resolution Metamagic Phantom Army creation details (actual
+creature/count/Integrity, canonical two-round creation duration) and counterspell
+suppression. The older Clone log test now explicitly supplies a legacy-enabled
+Clone roster. Brace logs actual preemptive attack packet damage/casualties and
+uses pre-hit names, including a lethal hit on a single creature; no extra RNG or
+gameplay changes are introduced by these messages. Scoped Astra review found no
+blocking logging issue; its name-count finding was corrected and tested.
+
+The 124-case logging/AI/Orders/Sacrifice integration run passed 119 cases. The
+entire Metamagic and magic-AI suites passed, as did the corrected real summoning
+rounding test. Four Sacrifice mocked-fixture expectations and the Brace name
+assertion failed. After correcting Brace, its final focused logging selection
+passed all five cases. Source-Phantom caster rejection in Sacrifice and the final
+mock corrections still need their final combined native run. Temporary Sacrifice
+numeric instrumentation has been removed. Do not treat the mixed integration
+run as a full pass or claim these changes are already in the playable snapshot.
+
+Damage-prevention tracing remains unfinished: final-range random sampling has
+no unique recoverable pre-mitigation roll. A second independent damage roll would
+alter gameplay RNG. Define counterfactual pairing/rounding explicitly before
+adding numerical per-source prevention; do not invert tooltip percentages and
+present that as a resolved damage amount.
+
+### Final native checkpoint
+
+The final combined selection passed **262/262 native tests** across 29 suites
+(about 86 seconds). It includes all Phantom Army, Sorcery math, damage-control,
+magic-AI, Metamagic, canonical HeroCommand, spell availability/roster/schema,
+hero initialization, Life Drain/Soul Steal/Transmutation, Sacrifice, Demon Summon,
+and selected Heal/Summon fixtures, plus real summoning rounding. The final
+Sacrifice source-caster restrictions and all corrected mocks are included; the
+Brace lethal singular-name test passes. No skips were reported. The 62 selected
+Python content checks and module generator consistency check also passed.
+
+This supersedes the failed intermediate batches above for those selected cases,
+not the separately noted legacy FocusFire fixture issue or full product gates.
+The client still needs rebuilding, candidate freezing, runtime checking and
+promotion. The existing playable snapshot remains unchanged. Do not describe a
+source commit or these native tests as graphical acceptance or a new release.
