@@ -4221,3 +4221,13 @@ The older save's separate load failure remains unresolved: its format is 945,
 accepted by current format 954, and the screenshot reports index -1 in a
 seven-element std::array. Existing logs do not identify the throwing caller.
 Do not attribute it to the fixed Gating hover path without a throw-site backtrace.
+
+Damage-attribution follow-up: `BattleInfo::getActualDamage` averages up to ten
+uniform samples of the already modified integer damage range, and draws nothing
+when that range is fixed. Thus the final hit does not uniquely identify the
+counterfactual without an Order, particularly after caps/floors collapse a range.
+Do not manufacture an exact prevented-HP scalar from percentages or the
+all-defenses-excluded reflection range. A truthful future extension can compare
+fully calculated with/without-Order ranges; a scalar needs explicitly defined
+sampling attribution or a clearly labelled expected value. Current causal logs
+remain actual damage/casualties, not a claim of exact counterfactual prevention.
