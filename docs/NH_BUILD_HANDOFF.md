@@ -4199,3 +4199,25 @@ rely on an optional shell prefix. A native-exported ordinary Inferno fixture is
 being prepared to exercise deposit, battle hover, selection/cancellation and
 Gate arrival without loading the incompatible older save. Do not claim GUI
 acceptance or switch the normal play script until the relevant check succeeds.
+
+### Isolated Gating reproduction prerequisites
+
+The fail-closed `tools/tests/nh-private-launch.py` now verifies the explicitly
+owned Xvfb PID, start ticks, boot ID, executable and socket identity before
+delegating to the managed launcher. It pins both SDL2 and SDL3 video/audio
+variables to X11 on `:191` and dummy audio, and removes `WAYLAND_DISPLAY`.
+Independent review caught the initially missing SDL3 aliases; they are fixed.
+All eight focused launcher tests pass. No graphical acceptance is implied.
+
+`NewHorizonsDemonicGatingFixtureExportTest` compiled and its opt-in native export
+passed with canonical New Horizons rules. `NHDemonicGatingGuiCrash.h3m` places
+human Marius with 20 Imps three clear tiles from computer Orrin with 12 Pikemen.
+Both armies satisfy Leadership, Marius has Gating, and the reserve starts empty.
+Deposit five Imps through the hero UI, approach Orrin, then verify battle hover,
+Gate selection/cancellation, placement and next-round arrival using normal input.
+The exporter asserts the ordinary initialized state before writing the named map.
+
+The older save's separate load failure remains unresolved: its format is 945,
+accepted by current format 954, and the screenshot reports index -1 in a
+seven-element std::array. Existing logs do not identify the throwing caller.
+Do not attribute it to the fixed Gating hover path without a throw-site backtrace.
