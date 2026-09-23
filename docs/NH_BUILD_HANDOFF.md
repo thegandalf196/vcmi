@@ -4257,3 +4257,30 @@ The client and wrapper exited; the tester stopped its exact owned Xvfb and
 verified the private socket/lock were gone. Root independently confirmed all
 four recorded process IDs absent. Next run can reuse the known menu/hero/battle
 coordinates to reach placement quickly; recreate an owned display guard.
+
+### Second guarded Gating run: arrival verified, shutdown defect isolated
+
+The second run of the same immutable b9 candidate verified cancellation,
+unselected battlefield hover, reopening, reserve selection, placement and
+arrival through ordinary input. Root inspected `r2-hover-unselected.png` and
+`r2-gate-placed.png` under the same evidence directory. The latter shows the
+new five-Imp stack beside the original fifteen in round two. The client log
+records `A Gate opens for 5 Imps.`, then BattleNextRound, then
+`Ordinary Gate brings forth 5 Imps.` and activation of the new stack. No invalid
+creature or Gating localization failure occurred. The known cancel behavior
+leaves the action toggle selected, requiring deselection before reopening.
+
+The bounded timeout exposed a separate launcher lifetime bug: EXIT removed the
+runtime links while the child still needed Data/H3sprite.lod. Do not confuse that
+asset-open failure with Gating. The tester verified the client and wrappers were
+gone and stopped its exact owned Xvfb. No host pointer or keyboard was used.
+The candidate remains unpromoted pending launcher signal/cleanup regression
+tests and required exact-candidate headless new-game validation.
+
+Cure integration is in progress, not yet compiled or accepted. The client now
+offers physical-affliction source choices using the existing textured object
+list, with target/hero ID revalidation and a casting-session token guarding
+late callbacks. Runtime, AI, serialization and native tests are a separate
+worker-owned change. Existing client source checks pass; this is not graphical
+or executable evidence for Cure. Preserve the currently promoted snapshot until
+the relevant validation gates pass.
