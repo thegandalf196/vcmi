@@ -4165,3 +4165,37 @@ the final rerun. Do not call the full 103-case batch green yet.
 Cure/Shield source gaps are recorded in `NH_USER_FEEDBACK.md`; they are not fixed
 by the Gating guards. Do not confuse the passing Gating server tests with a
 verified combat reserve button.
+
+### Final Order logging and compatibility native result
+
+The final combined batch passed **167/167 tests across 15 suites**, with no
+skips: GameSettings, canonical HeroCommand, all Focus Fire fixtures, magic state
+and roster context, Metamagic, Demonic Gating, damage-control and Phantom Army.
+Resolved Order logs carry qualifying offensive/defensive causes from the actual
+damage calculation and report packet damage/casualties using pre-hit names.
+Charge, Hold the Line, Riposte, Focus Fire, Protect, Flank, Second Wind and Brace
+interaction cases are covered. No extra RNG, damage recalculation or serialized
+fields were added. Numerical per-source damage prevention remains unfinished.
+
+Command profiles now replace as whole versioned snapshots, including explicit
+null across save/load, rather than merging incompatible V2 and V3 definitions.
+Unrelated settings retain deep merging. Independent production review found no
+blockers. The last new Flank test compared post-hit collateral damage against a
+pre-hit stack count; it now compares equal current-state primary/collateral
+contexts. No combat rule was changed to satisfy that assertion.
+
+The graphical Gating attempt remains **inconclusive**, and candidate b9 above is
+still not promoted. A private copy of an older Inferno save failed to load with
+an array bounds error (index -1, size 7); preserve that separate compatibility
+issue. The first private Xvfb session reached menus, not a battle. A retry then
+mistakenly inherited the desktop DISPLAY instead of :191; no input was sent.
+The root verified the exact private-profile candidate process and force-stopped
+it after SIGTERM did not exit. All candidate/wrapper processes, runtime symlinks
+and the owned Xvfb were subsequently confirmed gone. The user was informed.
+
+Before further GUI launches, add a fail-closed launcher that validates owned
+Xvfb identity and sets the private DISPLAY inside the child environment; do not
+rely on an optional shell prefix. A native-exported ordinary Inferno fixture is
+being prepared to exercise deposit, battle hover, selection/cancellation and
+Gate arrival without loading the incompatible older save. Do not claim GUI
+acceptance or switch the normal play script until the relevant check succeeds.
