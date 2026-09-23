@@ -125,3 +125,29 @@ Metamagic and Brace are the first examples, not the entire requested scope.
 
 The user also confirmed that the reported ee320ac39 session's orderly shutdown
 was their own exit, not an unexpected closure.
+
+## 2026-09-22 — stale Cure/Shield and combat reserve crash
+
+The user identified Cure and Shield among spells still obtained from teachers
+and hero specialties. Audit distinguishes roster membership from implementation:
+Cure remains in the controlling detailed Light roster, but its legacy generic
+healing/negative-dispel behavior and mastery-based 4/4/3/3 costs do not implement
+the specified 4 Mana, immediate `25 + 1.5 × Spell Power` living-stack healing and
+one player-chosen physical affliction removal (Poison, Disease or Bleeding).
+It must not resurrect or cleanse Curse, Slow or Berserk. Hero specialties and
+all learning sources need consistent migration, not only Mage Guild filtering.
+
+Vanilla Shield is active in the live roster despite being absent from the
+controlling detailed Light spell list. The earlier summary mentions Shield of
+Faith, but does not supply its mechanics; the later detailed list controls.
+Do not invent a replacement from the summary title alone. Cure and Shield are
+not fixed by this audit; preserve this work after the immediate crash repair.
+
+The user crashed after clicking the reserve button in combat on playable
+snapshot `5639618fdfcc42d7cb0df37079adf1096b1f97e760fc1f3d9344e454e38c6308`.
+The exact binary's stack trace resolves to `BattleActionsController::actionIsLegal`
+in the Demonic Gate branch: an unset creature ID (-1) is dereferenced during
+hover selection. The button also requests a missing Demonic Gating translation
+key. The 30 passing native Gating tests validate server mechanics, not this UI
+path; require regression checking of unselected, cancelled and valid selections
+before claiming the combat button works.

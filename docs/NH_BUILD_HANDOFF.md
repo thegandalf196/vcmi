@@ -4118,3 +4118,50 @@ not the separately noted legacy FocusFire fixture issue or full product gates.
 The client still needs rebuilding, candidate freezing, runtime checking and
 promotion. The existing playable snapshot remains unchanged. Do not describe a
 source commit or these native tests as graphical acceptance or a new release.
+
+### Playable logging snapshot promoted
+
+Commit `1b848c36ee20d25faa26d38de34b974004efac74` was pushed and its client
+rebuilt with the bounded single-builder policy. The frozen candidate
+`snapshot-5639618fdfcc42d7cb0df37079adf1096b1f97e760fc1f3d9344e454e38c6308`
+passed checksum validation (1,415 payload files) and a private-profile, bounded
+headless All for One run: 12 player-turn starts, reaching day 4. Expected timeout
+status 124 ended the 50-second run; no crash, fatal error, assertion or failed
+game launch was found. Known effect-format/duplicate-skill warnings and AI
+allocation/turn-guard notices remain. This is startup validation, not graphical
+or full gameplay acceptance.
+
+That exact candidate is now promoted; the normal play script's `--verify-only`
+resolves it successfully. Working-tree edits do not alter this immutable snapshot.
+The next logging slice adds qualifying Order attribution to actual resolved hits;
+quantified per-source damage prevention is still not implemented.
+
+### Gating UI crash hotfix candidate (not promoted)
+
+The user reproduced an actual abort from the combat reserve button in the
+promoted snapshot. Symbolizing that exact binary resolves to
+`BattleActionsController::actionIsLegal` at the unset Demonic Gate creature
+lookup; ordinary hover can evaluate this branch before any reserve is selected.
+Client guards now reject an unset creature before lookup/Mobile Gate movement,
+with matching realization/selector guards. The action tooltip uses the registered
+`skill.new-horizons.demonicGating.name` key. Independent review found no blocking
+regression; the source-contract check passes, but is not GUI evidence.
+
+The library, simulation library and client have compiled successfully. Candidate
+`snapshot-b9d0123a3512241401eaafb2e271bba3b0898bfaa39dfac730a633b831ba9121`
+is frozen but NOT promoted pending the private graphical regression attempt.
+It also contains working-tree Order provenance and command-context compatibility
+changes; their final combined native regression is not yet complete. The native
+test rebuild was safely interrupted to prioritize this client build, then resumed
+in the same build tree with `-j2`, 12 GiB RAM / 2 GiB swap limits.
+
+Before the Order layout change, Gating's 30 native server tests passed. The
+compatibility/Metamagic batch passed 101/103: all GameSettings and Focus Fire
+tests passed; two magic fixtures queried rules before game initialization or
+expected version 1 from a canonical version 2 profile. Those two test setups
+were corrected without changing their later save/load/cast assertions and await
+the final rerun. Do not call the full 103-case batch green yet.
+
+Cure/Shield source gaps are recorded in `NH_USER_FEEDBACK.md`; they are not fixed
+by the Gating guards. Do not confuse the passing Gating server tests with a
+verified combat reserve button.
