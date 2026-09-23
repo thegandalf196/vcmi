@@ -1,5 +1,62 @@
 # New Horizons — user preview feedback
 
+## 2026-09-23 — Conversation audit and unverified regressions
+
+The consolidated design decisions are in
+[NEW_HORIZONS_OVERRIDES.md](NEW_HORIZONS_OVERRIDES.md), including rank-specific
+perks, teachers, Leadership readouts, Order targeting, spellbook inspection and
+the latest UI/art direction. Those decisions remain requirements regardless of
+whether an older build appeared to implement them.
+
+Keep the following reported problems in regression scope. This list records
+symptoms, not established causes or fresh verification of their resolution:
+
+- Metamagic followed by a creature action (including Defend) must not produce
+  the old immediate-follow-up rejection or require a repurposed Wait button.
+  Magic Arrow and non-damage spells both need coverage under typed actions.
+- Restarting a scenario from battle must dismiss the previous battle UI.
+- Reserve/Gating selection must tolerate no selected creature, cancellation,
+  and valid selection without dereferencing creature ID -1; the missing
+  Demonic Gating localization is a separate presentation defect.
+- Christian entering a field battle with Pikemen and his war machine must not
+  enter a siege-tower shooter path. The reported tower index -256 does not prove
+  the Ballista caused it; reproduce and trace before assigning a cause.
+- Human troop transfer and AI garrison swapping must respect Leadership without
+  repeatedly attempting illegal moves or presenting an ordinary capacity limit
+  as a generic server/fishy-request failure. Verify starting armies too.
+- Adventure movement-bar fullness must correspond to actual current/maximum
+  movement after the movement rework. Auto-combat slowdown needs measurement,
+  not an assumed cause.
+- Encoding conversion, duplicate skill identifiers, mixed Disintegrate effects,
+  GUI-thread dialog waits, obsolete hero-access diagnostics, and rule-schema
+  mismatches require cause-specific checks. Hiding log messages is not a fix.
+- Spell acquisition must be audited across all sources and hero specialties;
+  Wisdom offer frequency must be checked against the correct class and eligible
+  weighted pool rather than inferred from a small number of restarts.
+- Solmyr's Master Chain Lightning description must reflect its actual
+  level-scaled jump retention; Shroud of Malassa's reported ineffectiveness
+  remains a behavior to verify against the controlling specification.
+- Orders-button clipping, oversized Halon specialty art, malformed Ward text,
+  missing stat/perk icons, and Conflux portrait clipping need rendered checks.
+
+The one-command Linux launcher remains the requested playtest entry point. It
+must identify the promoted playable candidate coherently; current source, latest
+commit and validated playable build are not interchangeable claims. Launcher
+symlink/profile errors and engine/content schema mismatches must be tested
+without replacing a known playable snapshot with an unvalidated candidate.
+
+The immediate Tower-versus-Inferno milestone also requires checking **every
+building in both factions against the scripture and Accepted overrides**, not
+just Solmyr, Arcane Reservoir and Gating. Enumerate the actual two town rosters;
+check each building's prerequisites, construction, triggered/passive effect,
+repeat/visit restrictions, AI use where applicable, save persistence and player
+feedback. Record evidence and remaining gaps per building. A few passing unique
+building tests do not establish this complete-roster requirement.
+
+Operational testing restrictions and Git authorization are separate from
+game-design overrides. A documentation audit does not lift any testing hold,
+authorize history rewriting, or prove that any listed defect is fixed.
+
 ## Authorized implementation: curated conveniences, rights-checked assets
 
 User explicitly requests integrating the quick-save/load buttons and creature
