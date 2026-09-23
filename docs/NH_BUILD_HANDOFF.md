@@ -4284,15 +4284,3 @@ late callbacks. Runtime, AI, serialization and native tests are a separate
 worker-owned change. Existing client source checks pass; this is not graphical
 or executable evidence for Cure. Preserve the currently promoted snapshot until
 the relevant validation gates pass.
-
-### September 23 recovery and input-automation hold
-
-The user reported clicks displaying many characters on screen and restarted the
-PC. The cause is not established. Do not describe private-display isolation as
-proven or attribute the incident to a particular helper without evidence.
-The user subsequently authorized resuming the latest Git tasks. Resume source,
-synthetic/headless tests, reviewed commits and pushes; do not resume GUI launches
-or mouse/keyboard automation while this incident remains unresolved. Preserve
-all existing dirty changes, especially user-owned AGENTS.md. Current recovery
-lanes are the incomplete Cure runtime/client integration and launcher child
-lifetime regression. The promoted snapshot has not been changed by recovery.
