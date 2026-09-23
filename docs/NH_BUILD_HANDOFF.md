@@ -4231,3 +4231,29 @@ all-defenses-excluded reflection range. A truthful future extension can compare
 fully calculated with/without-Order ranges; a scalar needs explicitly defined
 sampling attribution or a clearly labelled expected value. Current causal logs
 remain actual damage/casualties, not a claim of exact counterfactual prevention.
+
+### Guarded ordinary Gating GUI checkpoint (candidate b9)
+
+The sole tester used the reviewed private launcher and owned Xvfb, with a fresh
+Saves-only profile. A separate temporary asset-view root referenced purchaser
+Data/Mp3 read-only and held only the authored diagnostic map in Maps. Do not add
+maps to the writable profile after validation to bypass its allowlist. Also do
+not use `--testmap` for a human-input acceptance test: `debugStartTest` removes
+the human player. The ordinary New Game / Single Scenario menu path worked.
+
+Observed on the exact b9 candidate: Marius with 20 Imps; the reserve split set
+15 active / 5 reserved; the transfer was accepted authoritatively; normal travel
+entered battle against Orrin's 12 Pikemen; the combat reserve button opened the
+Demonic Reserve picker with `Imps 5` and correct localization. The client log
+contains no invalid-creature crash or missing Gating localization for this run.
+The cancel click coincided with the bounded 450-second timeout (exit 124), and
+its image is black: cancellation is NOT verified. Reopening, placement and
+next-round arrival remain untested. Do not promote the candidate yet.
+
+Evidence is local under `/tmp/nh-gating-private-DAggpx/evidence/`, especially
+`reserve-five-preview3.png`, `reserve-deposited.png`, `battle-entered.png` and
+`gate-open.png`; the client log is in that profile's cache/vcmi directory.
+The client and wrapper exited; the tester stopped its exact owned Xvfb and
+verified the private socket/lock were gone. Root independently confirmed all
+four recorded process IDs absent. Next run can reuse the known menu/hero/battle
+coordinates to reach placement quickly; recreate an owned display guard.
