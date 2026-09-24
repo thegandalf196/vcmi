@@ -324,6 +324,30 @@ Temporary save-capture and save-loading hooks were removed after diagnosis;
 the normal client/test build passed and all ten movement-failure tests passed
 in both rulesets. The playable snapshot remains unchanged.
 
+### Recruitment-route battle-node correction — 2026-09-24
+
+The pre-purchase reproducer isolated a committed ordinary node left behind when
+the destination rule substituted a battle-aware node. The final hero-chain pass
+could expand the obsolete node, omitting the required garrison battle. Merely
+locking that node also left it eligible for dominance comparisons and suppressed
+the legitimate recruitment route in this reproducer.
+
+The replaced node is now invalidated with `UNKNOWN` action while retaining its
+cost and remaining unlocked for a cheaper future approach. It can no longer seed
+final expansion or dominate its battle-aware replacement. Re-running the exact
+captured state now produces both the base route and the combined recruitment
+route with the required battle at (44, 60, 0). A native regression checks node
+invalidation, preservation of the battle-aware node, and cheaper-route reuse.
+
+The clean client/test build passed; all 62 targeted AI movement, pathfinding,
+defence, escape and composition tests passed in both rulesets. Temporary save
+loading and tracing hooks were removed. A 30-second private headless All for One
+run completed 43 player turns and reached day 15: mean completed turn 597 ms,
+maximum 3255 ms. No route-execution failure or crash was observed in that bounded
+run. Node-allocation-limit warnings remain and need separate investigation;
+this is not evidence of complete AI or performance acceptance. The playable
+snapshot was not promoted.
+
 ### Remaining implementation
 
 - Implement the accepted ordered Skill/perk progression across every teaching
