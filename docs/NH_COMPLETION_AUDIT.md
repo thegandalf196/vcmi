@@ -390,6 +390,23 @@ regression, not exhaustive performance acceptance. Dedicated Pathfinding art
 is still Not done and graphical acceptance remains pending. The playable
 snapshot is unchanged; existing saves retain their saved perk registry.
 
+### Logistics Navigation perk — 2026-09-24
+
+Navigation is active in the canonical and curated registries. It adds 25
+percentage points to sea Movement's base modifier without changing land capacity
+or refilling current Movement. Normal embarkation/disembarkation preserves half
+the remaining allowance, converted to the destination layer's daily capacity.
+With free boarding, the shared step charge is halved instead. Integer charges
+round up. Projected sailing nodes retain their source layer so disembarkation is
+not mistaken for Water Walk landing while the real hero is still on land.
+
+Validation: client and native-test build passed; 59 targeted New Horizons tests
+passed, including capacity, inactive-rank, free-boarding, and boarding
+preview/executor checks. Original-mode compatibility passed 50 tests with 16
+New Horizons-only skips. Fourteen skill/perk data checks and module consistency
+passed. These are native checks, not graphical or exhaustive sea-route AI
+acceptance. Dedicated art remains Not done; the playable snapshot is unchanged.
+
 ### Remaining implementation
 
 - Implement the accepted ordered Skill/perk progression across every teaching
