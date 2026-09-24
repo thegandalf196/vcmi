@@ -305,6 +305,25 @@ failure persisted. No crash, assertion or maximum-pass warning was logged before
 the intentional timeout. This bounded run does not establish resolution of all
 long-turn cases. The candidate remains unpromoted.
 
+### Recruitment-route diagnostic checkpoint — 2026-09-24
+
+A new private save captured the state immediately before the failing Gretchin
+chain, not merely after recruitment. Fresh pathfinding from that state reproduces
+the discrepancy: the base-army path includes a battle at (44, 60, 0), while the
+town-recruitment path to (55, 57, 0) includes the purchase at (34, 59, 0) but no
+battle milestone. The garrison is already visible before movement. After the
+purchase, fresh pathfinding includes the battle again. Thus neither newly
+revealed fog nor merely a copied task becoming stale explains this case.
+
+The synthetic corridor suite now also combines town recruitment with a neutral
+garrison, in addition to the existing enemy-hero case. That fixture passes and
+does **not** reproduce the captured map's missing milestone. The saved pre-chain
+state is the stronger reproducer for tracing combined-army node propagation and
+route alternatives. No speculative runtime fix has been applied for this case.
+Temporary save-capture and save-loading hooks were removed after diagnosis;
+the normal client/test build passed and all ten movement-failure tests passed
+in both rulesets. The playable snapshot remains unchanged.
+
 ### Remaining implementation
 
 - Implement the accepted ordered Skill/perk progression across every teaching
