@@ -2,9 +2,11 @@
 
 The accepted replacement table is in
 [NEW_HORIZONS_OVERRIDES.md](NEW_HORIZONS_OVERRIDES.md#approved-replacement-primary-attribute-table--2026-09-23).
-Its activation is a separate integration step from this profile primitive.
-The canonical `config/newHorizonsHeroes.json` still contains the older table
-at this checkpoint; supporting a formula does not install the new class values.
+The canonical `config/newHorizonsHeroes.json` now contains all 18 approved
+profiles with explicit progression version 2. The generated curated module
+embeds the same data. This changes newly initialized games, not profiles already
+captured in existing saves. Local playable-snapshot promotion remains a separate
+validation step.
 
 ## Saved profile contract
 
@@ -35,14 +37,26 @@ save/load and campaign crossover checks with a version-2 Knight and an unversion
 legacy Cleric retaining their respective profiles. Existing version-1 fixtures
 remain separate and unchanged.
 
-These checks exercise the new formula without activating the canonical table.
-They do not establish all-class initialization, AI decisions using the new
-canonical ratings, or rendered UI acceptance.
+An additional installed-data fixture covers all 18 classes at authored levels
+1, 2 and 20 without hero-rule or primary-rating overrides. Its level-1 case also
+exercises authoritative level-ups for all 18 classes, followed by full binary
+reload. Solmyr is explicitly selected as the Wizard representative. Mana checks
+account for genuine Intelligence perks instead of assuming every hero lacks one.
+These native checks do not establish rendered UI acceptance.
+
+Activation verification: the selected native growth, compatibility, capability,
+AI and spell-mechanics run passed 345 tests across 56 suites, with one opt-in
+capability-only export intentionally skipped. All 12 Python hero-data checks and
+the generated-module consistency check passed. The opt-in ordinary Knight
+experience-quest export also passed with its new starting ratings and mana.
+The playable candidate still
+requires its own frozen-package headless check before promotion.
 
 ## Remaining activation checks
 
-Install all 18 approved profiles with version 2 together; verify exact values,
-new-game generation, level gains, saved-world and campaign continuity, displayed
-starts/growth, and AI use of the resulting attributes. In particular, retain old
-captured snapshots and their version-1 behavior. Primitive arithmetic and schema
-tests alone do not establish that the new table is playable.
+Verify the integrated native regression set, a frozen candidate's headless
+new-game/AI flow, and displayed starts/growth before making a broad acceptance
+claim. In particular, retain old captured snapshots and their version-1 behavior.
+Complete legacy test contexts explicitly replace installed settings, preventing
+the new discriminator from being merged into deliberately unversioned fixtures.
+Primitive arithmetic and schema tests alone do not establish playability.
