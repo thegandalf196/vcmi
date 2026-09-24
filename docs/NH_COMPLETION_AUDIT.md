@@ -153,6 +153,29 @@ hero for the rest of that turn. This is a correction to the execution contract,
 not complete route-planning acceptance or evidence of graphical usability.
 The candidate was not promoted; the existing playable snapshot is unchanged.
 
+### Required battle-route diagnostics — 2026-09-24
+
+Three corridor regressions now distinguish a projected route through a battle
+from a currently executable route. With a wandering monster, a neutral garrison,
+or an enemy hero blocking the sole corridor, ordinary pathfinding reaches the
+near side but not the far target; every projected AI route retains a required
+`BattleAction`. These isolated cases pass. The garrison fixture uses synthetic
+visit geometry, not the installed garrison footprint. This is diagnostic
+coverage, not reproduction or resolution of the `All for One` failures.
+The rebuilt native test target passed all 17 movement-failure and chain
+reconstruction tests in both the New Horizons and legacy presets. Independent
+review found no blocking test defect; the near-side reachability assertion
+was added to exclude a trivially inaccessible fixture.
+
+The captured Gretchin failure precedes a later successful battle against an
+enemy hero at the horizontal garrison before reaching the same town. The next
+reproduction should include the actual garrison/hero geometry and the preceding
+army purchase or exchange, rather than assuming all battle compression is broken.
+ObjectGraph compression was considered and ruled out as the cause of this run:
+all shipped difficulty settings disable it, and the captured log has no graph
+update entries. Do not modify that inactive subsystem to claim these failures
+fixed. Tiva's two route failures still need a concrete blocker diagnosis.
+
 ### Remaining implementation
 
 - Implement the accepted ordered Skill/perk progression across every teaching
