@@ -176,6 +176,22 @@ all shipped difficulty settings disable it, and the captured log has no graph
 update entries. Do not modify that inactive subsystem to claim these failures
 fixed. Tiva's two route failures still need a concrete blocker diagnosis.
 
+The corridor coverage now also enables hero-chain planning and town recruitment.
+It requires an actual exchanged-army route and verifies that every returned route
+still contains its enemy-hero battle milestone. This case passes too; it does not
+reproduce the match failure. The captured source at (34,59,0) is the Stronghold
+town, not an external creature dwelling.
+All 18 movement-failure and chain-reconstruction tests pass with both the
+New Horizons and original-content presets after the normal-binary rebuild.
+
+To move beyond simplified fixtures, a bounded private headless run captured
+three full game saves immediately before the three live-route failures. Each
+save has a confirmed successful-write log entry. The capture hook was temporary,
+limited to three saves, and removed from source; its frozen diagnostic binaries
+were not promoted. The next diagnostic should load these exact states rather
+than infer a stale cache or lost battle milestone from the abbreviated path log.
+Private saves, paths, and diagnostic binaries are not repository deliverables.
+
 ### Remaining implementation
 
 - Implement the accepted ordered Skill/perk progression across every teaching
