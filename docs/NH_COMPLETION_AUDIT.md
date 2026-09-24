@@ -232,6 +232,35 @@ even after explicitly rebuilding the hitmap. Threat-cache invalidation alone
 does not solve this. A proposed hitmap reset was removed from this checkpoint;
 fix the evaluation perspective and add the enemy-corridor regression separately.
 
+### Enemy route threat perspective — 2026-09-24
+
+The follow-up carries the visiting hero's owner through tile danger evaluation,
+including the encountered object, its visited town, ordinary guards, and guards
+at a known subterranean-gate exit. Calls without a visiting hero retain the AI
+player's perspective. Neutral visitors do not inherit the AI player's alliances.
+Army-change notifications also mark enemy-threat and town-ownership data stale;
+the paired invalidation is necessary because threat rebuilding clears both
+fields in the shared tile records. These callbacks set flags only; calculations
+remain deferred to the next normal AI state update.
+
+The restored enemy-corridor regression checks that a weak defender permits the
+projected enemy route while a much stronger stationary defender blocks it after
+refresh. It also covers both visitor perspectives, the unchanged object-only
+API, neutral/allied visitors, and the two cache invalidation flags. This is
+separate from the original captured-match path discrepancies.
+The client/test build passed, followed by 57 targeted movement, pathfinding,
+defence, and escape tests in each of the New Horizons and original-content
+presets. The enemy-corridor test that previously failed now passes.
+
+A bounded 25-second private-profile headless All for One run completed 39 AI
+turns (mean 473 ms; maximum 2,881 ms). The log contains no crash or assertion
+report before the intentional timeout. However, the same three captured route
+failures remain: Gretchin targeting (55, 57, 0), and Tiva targeting (44, 25, 1)
+and (47, 23, 1). This validates neither a fix for those routes nor resolution of
+the reported long-turn problem. Continue tracing the original projected paths
+against execution state; do not substitute this threat fix for that diagnosis.
+The playable snapshot was not promoted or changed by this checkpoint.
+
 ### Remaining implementation
 
 - Implement the accepted ordered Skill/perk progression across every teaching
