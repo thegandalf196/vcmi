@@ -205,6 +205,33 @@ route survived into execution. Next compare plan creation, task retention, and
 state changes before execution; do not treat a fresh projection as reproduction
 of the defective original plan. Temporary probe code was removed after use.
 
+### Stationary army-change route invalidation — 2026-09-24
+
+Army-change client notifications reached an empty `garrisonsChanged` callback,
+so NK2 could reuse projected routes after a stationary hero's army changed.
+A corridor regression failed before the fix: strengthening the hero still left
+the guarded destination unavailable at the next planning update. The callback
+now marks projected paths stale; it performs no immediate path search or polling.
+The regression covers both strengthening and weakening without movement and
+requires the battle milestone on the stronger army's projected route.
+The client and native tests build successfully; all 19 movement-failure and
+chain-reconstruction tests pass with both New Horizons and original-content
+presets. Independent review found no blocking issue in this bounded callback
+fix. No graphical acceptance or playable-snapshot promotion was performed.
+
+Further exact-save probes included all allied heroes and warmed the threat and
+town-distance analysis before own pathfinding. They still did not reproduce the
+original invalid plans. Tiva's destinations were assigned to other heroes in the
+fresh projection. Do not claim this invalidation fix resolves those match failures.
+
+An additional corridor experiment exposed a separate enemy-projection defect:
+danger evaluation ignores its visitor argument and treats armies friendly to the
+AI player as harmless even when projecting an enemy's movement. Strengthening
+our stationary blocking hero therefore did not remove an enemy threat beyond it,
+even after explicitly rebuilding the hitmap. Threat-cache invalidation alone
+does not solve this. A proposed hitmap reset was removed from this checkpoint;
+fix the evaluation perspective and add the enemy-corridor regression separately.
+
 ### Remaining implementation
 
 - Implement the accepted ordered Skill/perk progression across every teaching
