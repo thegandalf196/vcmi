@@ -407,6 +407,22 @@ New Horizons-only skips. Fourteen skill/perk data checks and module consistency
 passed. These are native checks, not graphical or exhaustive sea-route AI
 acceptance. Dedicated art remains Not done; the playable snapshot is unchanged.
 
+### Logistics Scouting perk — 2026-09-24
+
+Scouting is active in the canonical and curated registries and adds five to
+adventure-map sight radius while its Logistics rank is active. The authoritative
+perk-choice path compares sight before/after selection and emits the existing
+fog-reveal packet immediately when radius grows. The regular movement reveal
+path also uses this radius; the existing AI tile-reveal callback learns newly
+visible objects. No periodic map scan is introduced.
+
+Client/test build passed, as did 28 targeted native movement, perk and AI movement
+tests, 14 skill/perk data tests, and module consistency. The new vertical-slice
+test verifies immediate reveal without movement, persistence through save/load,
+and loss of the radius bonus when Logistics is disabled without erasing explored
+terrain. Graphical acceptance and dedicated artwork remain pending; the playable
+snapshot has not changed.
+
 ### Remaining implementation
 
 - Implement the accepted ordered Skill/perk progression across every teaching
