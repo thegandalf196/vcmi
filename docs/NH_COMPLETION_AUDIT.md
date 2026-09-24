@@ -282,11 +282,28 @@ The native test build and all nine movement-failure tests pass in both the New
 Horizons and original-content presets. Temporary save-loading probes were
 removed and the normal test bootstrap restored before these runs.
 
-Next: revalidate affected queued routes without rebuilding all AI paths after
-every movement. A stale batch must allow useful replanning rather than treating
-the affected traveler as unusable for the rest of the turn. Preserve bounded
-failure handling for genuinely impossible routes. The separate Gretchin
+The follow-up adds a first-step preflight for queued ordinary movement after an
+earlier successful task has invalidated projected paths. It reuses the ordinary
+path cache rather than rebuilding projected routes for each move. If the first
+move is unavailable, the batch is discarded for the next normal planning pass
+without locking that hero. Recovery is limited to once per hero per turn; a
+repeat falls through to the existing bounded failure handling. Composition
+checks only its first executable task, and special-action-first chains are not
+predicted, since those actions may themselves establish the route. This does not
+validate every future step of a multi-action chain. The separate Gretchin
 post-purchase missing-battle-milestone case remains unresolved.
+
+Validation of the queued-route recovery: client/test build passed and 60 targeted
+tests passed in each ruleset, including composition execution and the blocked
+first-step preflight. A 30-second private headless run with the same map and
+seed completed 45 AI turns (mean 571 ms, maximum 3,135 ms). On the formerly
+failing Tiva turn, the new preflight triggered, the next planning pass selected
+the reachable Star Axis at (56, 3, 1), and Tiva moved during that same turn.
+No Tiva route failure was logged through day 15; the changed decisions mean this
+is not an identical replay of the later failure. Gretchin's post-purchase route
+failure persisted. No crash, assertion or maximum-pass warning was logged before
+the intentional timeout. This bounded run does not establish resolution of all
+long-turn cases. The candidate remains unpromoted.
 
 ### Remaining implementation
 
