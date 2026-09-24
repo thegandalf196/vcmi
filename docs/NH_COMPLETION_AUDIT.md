@@ -92,6 +92,13 @@ Each row has three rank effects and ten perks. Active flags only:
 - Audit every faction's heroes, buildings, creatures, recruitment and AI behavior.
 - Complete fixed adventure-spell Mage Guild unlock purchases/learning flow.
 - Reconcile travel spell movement rules with the independent hero movement system.
+  Current integration work covers the Fly/Water Walk cost multiplier, shared
+  daily-cast route state, and event-driven client path-cache invalidation. These
+  changes do not establish complete travel-spell acceptance. In particular,
+  authoritative end-of-day legal landing and scenario-protected barriers remain
+  open. An end-turn rejection alone is insufficient: movement must not strand a
+  hero on water or an obstacle with no remaining Movement and no legal way to
+  finish the day.
 - Complete Logistics development and its effects in authoritative movement and AI.
 - Extend explanatory combat logging across new mechanics, using actual resolved
   outcomes rather than hypothetical AI calculations or tooltip estimates.
