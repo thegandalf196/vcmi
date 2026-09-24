@@ -192,6 +192,19 @@ were not promoted. The next diagnostic should load these exact states rather
 than infer a stale cache or lost battle milestone from the abbreviated path log.
 Private saves, paths, and diagnostic binaries are not repository deliverables.
 
+Read-only native probes now load all three captured states successfully, with
+the same gameplay-mod set as the capture (the normal native-test preset adds
+`vcmi-test` and correctly fails the save's mod-compatibility check). Gretchin's
+fresh ordinary path cannot reach the destination; fresh NK2 projection includes
+the required battle at the intervening garrison, both with and without town-chain
+planning. This differs from the original executing route, which omitted that
+garrison milestone. Neither Tiva destination has an ordinary route or a fresh
+single-hero NK2 projected route in its respective captured state. These probes
+do not yet reconstruct the original multi-hero planning state or prove why its
+route survived into execution. Next compare plan creation, task retention, and
+state changes before execution; do not treat a fresh projection as reproduction
+of the defective original plan. Temporary probe code was removed after use.
+
 ### Remaining implementation
 
 - Implement the accepted ordered Skill/perk progression across every teaching
