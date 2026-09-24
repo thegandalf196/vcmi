@@ -261,6 +261,33 @@ the reported long-turn problem. Continue tracing the original projected paths
 against execution state; do not substitute this threat fix for that diagnosis.
 The playable snapshot was not promoted or changed by this checkpoint.
 
+### Captured route failures: allied occupancy diagnosis — 2026-09-24
+
+Both captured Tiva failures were isolated with a read-only save load and
+in-memory relocation of one allied hero at a time. In the first capture,
+moving Brissa away from her blocking position made Tiva's destination reachable;
+moving Aenain did not. In the second, moving Aenain made the destination
+reachable; moving Brissa did not. Restoring each ally and invalidating only the
+ordinary path cache separated the cases. No saved game was overwritten.
+
+The production log shows another hero finishing movement immediately before
+Tiva executes a previously selected task, with no intervening planning pass.
+`makeTurn` retains the batch of selected tasks across successful movement;
+copied `ExecuteHeroChain` paths do not automatically change when the pathfinder
+is invalidated. A synthetic corridor test now covers initial reachability,
+loss of ordinary and freshly projected reachability after allied occupancy,
+and restored reachability when the ally moves aside. This establishes the
+occupancy cause for the two Tiva captures, not a completed scheduling fix.
+The native test build and all nine movement-failure tests pass in both the New
+Horizons and original-content presets. Temporary save-loading probes were
+removed and the normal test bootstrap restored before these runs.
+
+Next: revalidate affected queued routes without rebuilding all AI paths after
+every movement. A stale batch must allow useful replanning rather than treating
+the affected traveler as unusable for the rest of the turn. Preserve bounded
+failure handling for genuinely impossible routes. The separate Gretchin
+post-purchase missing-battle-milestone case remains unresolved.
+
 ### Remaining implementation
 
 - Implement the accepted ordered Skill/perk progression across every teaching
