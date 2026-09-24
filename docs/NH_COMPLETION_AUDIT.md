@@ -2,7 +2,7 @@
 
 ## Status and evidence standard
 
-Initial evidence inventory, 2026-09-22. This is not a completed scripture audit
+Catalogue refreshed 2026-09-24; initial evidence inventory 2026-09-22. This is not a completed scripture audit
 or release acceptance. Authority remains `design-sources/New Horizons.docx`,
 accepted `NEW_HORIZONS_OVERRIDES.md` entries, and subsequent user directions.
 Do not infer completion from a catalogue entry, an `active` flag, artwork, or a
@@ -20,10 +20,10 @@ Current working-tree `config/newHorizonsPerks.json` contains:
 
 | Item | Active flag | Planned flag | Total |
 | --- | ---: | ---: | ---: |
-| Skill-rank effects | 78 | 15 | 93 across 31 skills |
-| Perks | 55 | 255 | 310 |
+| Skill-rank effects | 81 | 12 | 93 across 31 skills |
+| Perks | 60 | 250 | 310 |
 
-These counts include the uncommitted Illusionist activation. They are catalogue
+These counts were recomputed from the committed catalogue. They are catalogue
 states, not independently verified functional counts and not counts of features
 available in the promoted playable snapshot. Recompute after content changes:
 
@@ -52,8 +52,8 @@ Each row has three rank effects and ten perks. Active flags only:
 | Sorcery Magic | 3 | 9 |
 | Chaos Magic | 3 | 0 |
 | Spellcraft | 0 | 0 |
-| Wisdom | 3 | 0 |
-| Warcasting | 0 | 0 |
+| Wisdom | 3 | 1 |
+| Warcasting | 3 | 4 |
 | Logistics | 3 | 0 |
 | Diplomacy | 0 | 0 |
 | Estates | 3 | 0 |
@@ -84,6 +84,10 @@ Each row has three rank effects and ten perks. Active flags only:
 
 ## Known remaining breadth
 
+- Implement the accepted ordered Skill/perk progression across every teaching
+  source. Eighteen Skills currently have no active Basic perk; activating a
+  universal rank gate without implementing their choices would strand those
+  Skills at Basic. Do not mark inert perks active to conceal this dependency.
 - Audit and finish all remaining skill/perk and spell effects, not just their data.
 - Audit every faction's heroes, buildings, creatures, recruitment and AI behavior.
 - Complete fixed adventure-spell Mage Guild unlock purchases/learning flow.
