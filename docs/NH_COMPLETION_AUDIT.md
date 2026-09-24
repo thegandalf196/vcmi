@@ -348,6 +348,24 @@ run. Node-allocation-limit warnings remain and need separate investigation;
 this is not evidence of complete AI or performance acceptance. The playable
 snapshot was not promoted.
 
+### Bounded path-storage diagnosis — 2026-09-24
+
+A temporary first-rejection-per-pass probe in a private 30-second headless run
+recorded 17 saturated tile samples. All reached the configured 16-slot cap;
+none contained the used-daily-adventure-spell flag. Samples held 8–13 combined
+actor states, 0–3 uncommitted nodes, and 0–7 invalidated committed nodes. Some
+were entirely committed, with no invalidated nodes. Thus neither a system memory
+allocation failure nor daily spell-state duplication explains these samples,
+and reclaiming unused nodes alone cannot eliminate the limit.
+
+The run completed 42 turns (mean 554 ms, maximum 3360 ms) and began day 15.
+This is bounded diagnostic evidence, not an assertion that all important routes
+survive the cap. Preserve the current memory bound. Any future admission or
+reclamation change must preserve queue/predecessor pointer identity, cheaper
+re-relaxation, required battle actions and deterministic route selection; simply
+increasing capacity or recycling `UNKNOWN` nodes is not yet justified. The
+temporary probe was removed; no playable promotion was made.
+
 ### Remaining implementation
 
 - Implement the accepted ordered Skill/perk progression across every teaching
