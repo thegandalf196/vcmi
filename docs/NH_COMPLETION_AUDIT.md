@@ -87,20 +87,30 @@ Each row has three rank effects and ten perks. Active flags only:
 ### Adventure travel integration checkpoint — 2026-09-24
 
 The client and native test targets build with the current travel-cost and shared
-daily-cast planning changes. A focused curated selection passes 29 native cases:
+daily-cast planning changes. A focused curated selection passes 55 native cases:
 canonical travel costs and rounding, water/flight landing cost parity between
 pathfinder and authority, vehicle preservation, forged-layer rejection, saved
 daily-cast state, action resource reservation, and canonical AI-node selection
-when the planned arrival day changes. Nine selected movement/Dimension Door cases
+when the planned arrival day changes, plus existing AI node-pool, army-loss and
+chain-reconstruction regressions. Thirty-one selected movement/pathfinding cases
 also pass with the legacy content preset. The client path-invalidation and hero
 spell-routing source guards pass; these are source checks, not graphical proof.
 
-This checkpoint is not promoted-playable evidence. In addition to the broader
-gaps below, the AI rule order still needs an actual-route regression for a step
-that advances the day inside `MovementCostRule`: layer-transition/cast decisions
-run before that rule. Action-level next-day checks and canonical-node tests do
-not establish that every such route chooses or renews the correct travel spell.
-Keep the currently promoted snapshot until integrated validation is complete.
+Movement preparation now selects the movement day before layer-transition/cast
+decisions, refreshes that day's movement capacity, and resolves the canonical AI
+daily-state node before checking its lock. Three actual AI-route regressions
+cover a low-Movement crossing after today's shared spell allowance was spent,
+and fresh casts after one-day Water Walk/Fly effects expire. A separate hook test
+checks that resolving tomorrow's node preserves today's settled node and does
+not copy its special action. Independent source review covered the safe unused
+slot fallback under full node buckets; that fallback still needs direct native
+capacity-limit coverage.
+
+This checkpoint is not promoted-playable evidence. Actual-route coverage does
+not establish all multi-day travel combinations, authoritative legal landing,
+protected barriers, or unchanged full-match AI performance. Movement preparation
+adds a cost evaluation before normal movement charging. Keep the currently
+promoted snapshot until integrated validation is complete.
 
 ### Remaining implementation
 
