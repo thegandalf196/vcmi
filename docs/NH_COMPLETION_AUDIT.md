@@ -366,10 +366,34 @@ re-relaxation, required battle actions and deterministic route selection; simply
 increasing capacity or recycling `UNKNOWN` nodes is not yet justified. The
 temporary probe was removed; no playable promotion was made.
 
+### Logistics Pathfinding perk — 2026-09-24
+
+Pathfinding is now active in the canonical and curated perk registries. The
+shared movement calculation halves the difficult-terrain surcharge only:
+non-native terrain uses 1.20 rather than 1.40, and desert uses 1.40 rather than
+1.80. Native terrain and ordinary water are unchanged. Roads and special travel
+still apply before the single final ceiling. The perk is evaluated once when
+constructing turn information, not by scanning the registry for every tile.
+
+Replicated perk choices invalidate cached paths lazily. The AI invalidation
+callback now invalidates projected hero chains as well as ordinary paths.
+Native tests cover multiplier combinations, authoritative movement matching
+the displayed route, deactivation after losing the required rank, and AI route
+cost refresh while the hero remains stationary. The 57-test movement/perk/AI
+selection passed under New Horizons; legacy passed 43 applicable tests and
+skipped 14 NH-only cases. Fourteen skill/perk data tests and client invalidation
+source checks passed. Client and native test builds passed.
+
+A 30-second private headless match completed 44 player turns and reached day 15
+(mean 589 ms, maximum 3233 ms). This narrow run showed no gross turn-time
+regression, not exhaustive performance acceptance. Dedicated Pathfinding art
+is still Not done and graphical acceptance remains pending. The playable
+snapshot is unchanged; existing saves retain their saved perk registry.
+
 ### Remaining implementation
 
 - Implement the accepted ordered Skill/perk progression across every teaching
-  source. Eighteen Skills currently have no active Basic perk; activating a
+  source. Seventeen Skills currently have no active Basic perk; activating a
   universal rank gate without implementing their choices would strand those
   Skills at Basic. Do not mark inert perks active to conceal this dependency.
 - Audit and finish all remaining skill/perk and spell effects, not just their data.
