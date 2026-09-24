@@ -87,7 +87,7 @@ Each row has three rank effects and ten perks. Active flags only:
 ### Adventure travel integration checkpoint — 2026-09-24
 
 The client and native test targets build with the current travel-cost and shared
-daily-cast planning changes. A focused curated selection passes 55 native cases:
+daily-cast planning changes. A focused curated selection passes 56 native cases:
 canonical travel costs and rounding, water/flight landing cost parity between
 pathfinder and authority, vehicle preservation, forged-layer rejection, saved
 daily-cast state, action resource reservation, and canonical AI-node selection
@@ -112,6 +112,21 @@ protected barriers, or unchanged full-match AI performance. Movement preparation
 adds a cost evaluation before normal movement charging. Keep the currently
 promoted snapshot until integrated validation is complete.
 
+A bounded headless `All for One` run found repeated authoritative rejection of
+coastal Shipwreck visits: the planner represents the water-side blocking visit
+with a SAIL node although the hero stays on land. The corrected shared predicate
+allows only a non-transit blocking shore interaction, not boatless sailing, and
+charges the source land terrain cost. The new native regression verifies path
+and executor agreement, the actual visit, retained shore position and no boat;
+the existing fake non-blocking coast-object rejection remains covered.
+The same-seed headless rerun completed that Shipwreck interaction without the
+server rejection and recorded 67 completed AI turns (maximum 3681 ms). It still
+logged four AI `cannot reach` messages and node-capacity warnings; do not call
+this a clean gameplay acceptance run or promote on this evidence alone.
+`AIGateway::moveHeroToTile` currently returns success when its refreshed path is
+empty, so these planning/execution failures need separate investigation rather
+than being dismissed as successful actions.
+
 ### Remaining implementation
 
 - Implement the accepted ordered Skill/perk progression across every teaching
@@ -129,6 +144,11 @@ promoted snapshot until integrated validation is complete.
   open. An end-turn rejection alone is insufficient: movement must not strand a
   hero on water or an obstacle with no remaining Movement and no legal way to
   finish the day.
+  The decisive expiry occurs in the `NewTurn` state visitor, after explicit
+  EndTurn reaches `TurnOrderProcessor`; the timer's last-moved-hero flag does not
+  guard explicit EndTurn or every hero. Any fix must combine movement-time safe
+  landing reachability, event-time turn-boundary validation, and AI landing
+  execution. A server-only EndTurn rejection risks the AI's existing retry loop.
 - Complete Logistics development and its effects in authoritative movement and AI.
 - Extend explanatory combat logging across new mechanics, using actual resolved
   outcomes rather than hypothetical AI calculations or tooltip estimates.
