@@ -84,6 +84,26 @@ Each row has three rank effects and ten perks. Active flags only:
 
 ## Known remaining breadth
 
+### Adventure travel integration checkpoint — 2026-09-24
+
+The client and native test targets build with the current travel-cost and shared
+daily-cast planning changes. A focused curated selection passes 29 native cases:
+canonical travel costs and rounding, water/flight landing cost parity between
+pathfinder and authority, vehicle preservation, forged-layer rejection, saved
+daily-cast state, action resource reservation, and canonical AI-node selection
+when the planned arrival day changes. Nine selected movement/Dimension Door cases
+also pass with the legacy content preset. The client path-invalidation and hero
+spell-routing source guards pass; these are source checks, not graphical proof.
+
+This checkpoint is not promoted-playable evidence. In addition to the broader
+gaps below, the AI rule order still needs an actual-route regression for a step
+that advances the day inside `MovementCostRule`: layer-transition/cast decisions
+run before that rule. Action-level next-day checks and canonical-node tests do
+not establish that every such route chooses or renews the correct travel spell.
+Keep the currently promoted snapshot until integrated validation is complete.
+
+### Remaining implementation
+
 - Implement the accepted ordered Skill/perk progression across every teaching
   source. Eighteen Skills currently have no active Basic perk; activating a
   universal rank gate without implementing their choices would strand those
