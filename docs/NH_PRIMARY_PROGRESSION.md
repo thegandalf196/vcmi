@@ -49,8 +49,19 @@ AI and spell-mechanics run passed 345 tests across 56 suites, with one opt-in
 capability-only export intentionally skipped. All 12 Python hero-data checks and
 the generated-module consistency check passed. The opt-in ordinary Knight
 experience-quest export also passed with its new starting ratings and mana.
-The playable candidate still
-requires its own frozen-package headless check before promotion.
+The committed `dcb01a936` build was frozen as snapshot
+`4f65c4825321d87c46ad18b2e1fedc3f3e0bdc05a68d1f0e54a75d896dc9f446`.
+That exact package completed 75 AI turns in a bounded 45-second headless
+`All for One` check, reaching the start of day 26. A fresh private profile used
+configured seed 1284510375, dummy media drivers, no autosaves, a 4 GiB memory
+limit and a 200% CPU quota. Maximum completed turn time was 3733 milliseconds;
+mean time was about 516 milliseconds. No checked crash, command rejection,
+Leadership-limit or unsupported-rules error appeared. The planned timeout
+stopped the active turn, and no launcher/client child remained afterward.
+
+The package is now promoted for the ordinary Linux launcher, which passed its
+non-launching path verification. This is a bounded new-game/AI smoke check,
+not a whole-match, graphical, or comparative performance acceptance claim.
 
 ## Remaining activation checks
 
