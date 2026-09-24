@@ -127,6 +127,32 @@ this a clean gameplay acceptance run or promote on this evidence alone.
 empty, so these planning/execution failures need separate investigation rather
 than being dismissed as successful actions.
 
+### AI movement failure contract — 2026-09-24
+
+An empty refreshed single-hero route previously returned success from
+`AIGateway::moveHeroToTile`. It now raises the existing task-failure exception,
+preventing a hero chain from continuing as though that movement completed.
+A nonempty route whose next step belongs to a future day still returns pending
+(`false`). Adventure-spell execution also restores its callback wait setting on
+every exception path, including a failed Town Portal visit.
+
+The client/test build passed. Fifty targeted New Horizons movement, daily-spell,
+pathfinding and task-failure tests passed, plus seven legacy-mode movement and
+task-failure tests. The two new live tiny-map tests verify unreachable versus
+future-day behavior and unchanged hero position/movement. Independent review
+found no correctness issue; direct spell callback-restoration coverage remains
+missing.
+
+A 35-second private-profile headless `All for One` run with requested seed
+1284510375 completed 68 AI turns (mean 428 ms, maximum 2366 ms), then exited at
+the prescribed timeout with no remaining client. There were no crash or server
+validation errors. Three unavailable live routes entered task-failure handling;
+the AI continued, but projected/live route disagreement and bounded node-pool
+allocation warnings remain unresolved. Failure handling can lock the affected
+hero for the rest of that turn. This is a correction to the execution contract,
+not complete route-planning acceptance or evidence of graphical usability.
+The candidate was not promoted; the existing playable snapshot is unchanged.
+
 ### Remaining implementation
 
 - Implement the accepted ordered Skill/perk progression across every teaching
