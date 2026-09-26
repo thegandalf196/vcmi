@@ -280,7 +280,23 @@ and identified playable delivery.
 
 ## UP-004 — Generic hero combat-resource panel
 
-Status: Open; some source work previously reported, not independently closed.
+Status: In progress; generic renderer and two real providers implemented, native
+and visual verification pending.
+
+2026-09-26 provider-extensibility checkpoint: the compact hero battle panel now
+renders a variable list of generic icon/label/value/tooltip entries above the
+separate Hero, Order and Spell Action counts. Metamagic contributes its
+authoritative remaining/maximum uses through typed skill metadata. Bloodrage is
+the second canonical Faction Skill consumer of the same path and contributes
+its authoritative current creature-damage bonus and rank cap; this does not
+create or mutate a second currency. Skills without provider metadata or a
+learned rank reserve no row. Counterspell and Warcasting also use the generic
+renderer as non-Faction-Skill state entries. Provider parsing rejects unknown or
+malformed metadata, and dynamic panel height drives stack-panel placement.
+Focused source/schema/data checks pass. The generated module, C++ loader tests,
+native client build, rendered layout and playable delivery still require the
+next isolated integration/CI checkpoint; do not mark this resolved from source
+guards alone.
 
 2026-09-24 source checks: the Metamagic prompt and Warcasting status guards both
 pass. `BattleWindow::refreshHeroBattleStatus` collects generic `CombatStatusEntry`
