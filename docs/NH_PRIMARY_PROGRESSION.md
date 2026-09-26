@@ -1,9 +1,11 @@
 # Versioned primary-attribute progression
 
-The accepted replacement table is in
-[NEW_HORIZONS_OVERRIDES.md](NEW_HORIZONS_OVERRIDES.md#approved-replacement-primary-attribute-table--2026-09-23).
-The canonical `config/newHorizonsHeroes.json` now contains all 18 approved
-profiles with explicit progression version 2. The generated curated module
+The accepted replacement table is in the canonical
+[New Horizons.docx](design-sources/New%20Horizons.docx). The legacy 18-point
+proposal and its disposition are documented in
+[NH_OVERRIDE_MIGRATION.md](NH_OVERRIDE_MIGRATION.md). The canonical
+`config/newHorizonsHeroes.json` now contains all 18 approved profiles with
+explicit progression version 3. The generated curated module
 embeds the same data. This changes newly initialized games, not profiles already
 captured in existing saves. Local playable-snapshot promotion remains a separate
 validation step.
@@ -18,6 +20,13 @@ Each class profile may carry `progressionVersion` alongside its `starting` and
   starting vector remains available but does not change that historical formula.
 - Version 2 requires a starting total of 100 and positive growth entries totaling
   18. Its base is `starting + (L - 1) * growth`.
+- Version 3 requires a starting total of 100, positive growth entries totaling
+  20, and `starting = 5 * growth` for every attribute. Its deterministic base is
+  therefore `growth * (L + 4)`. Independently, the configured `extraGrowth`
+  entries grant +1 Attack from Offense or Archery, +1 Defense from Armorer,
+  +1 Spell Power from Spellcraft, or +1 Knowledge from Wisdom at
+  10%/20%/30% for Basic/Advanced/Expert rank. These bonuses do not alter the
+  fixed class vector or the captured progression profile.
 - Unsupported versions and malformed/nonintegral ratings are rejected. Arithmetic
   uses 64-bit intermediates; the hero rules' existing primary cap still applies
   when ratings are installed on a hero.
@@ -28,9 +37,9 @@ a new installed profile must not rewrite an older hero's captured profile. Hero
 class identifiers remain stable: Tower `core:alchemist` is displayed as Battle
 Mage; Stronghold `core:battlemage` is displayed as Shaman; Solmyr remains a Wizard.
 
-## Native integration coverage
+## Historical version-2 integration coverage
 
-The version-2 Knight fixture has passed native checks for real map initialization
+The version-2 Knight fixture passed native checks for real map initialization
 and Knowledge-derived mana, authored map experience, serialized randomizer growth,
 and authoritative level-up gains. A mixed-version world also passed full binary
 save/load and campaign crossover checks with a version-2 Knight and an unversioned
@@ -59,13 +68,13 @@ mean time was about 516 milliseconds. No checked crash, command rejection,
 Leadership-limit or unsupported-rules error appeared. The planned timeout
 stopped the active turn, and no launcher/client child remained afterward.
 
-The package is now promoted for the ordinary Linux launcher, which passed its
+That historical package was promoted for the ordinary Linux launcher and passed its
 non-launching path verification. This is a bounded new-game/AI smoke check,
-not a whole-match, graphical, or comparative performance acceptance claim.
+not evidence that the current version-3 profiles were built, tested, or promoted.
 
 ## Remaining activation checks
 
-Verify the integrated native regression set, a frozen candidate's headless
+Verify version 3 with the integrated native regression set, a frozen candidate's headless
 new-game/AI flow, and displayed starts/growth before making a broad acceptance
 claim. In particular, retain old captured snapshots and their version-1 behavior.
 Complete legacy test contexts explicitly replace installed settings, preventing
