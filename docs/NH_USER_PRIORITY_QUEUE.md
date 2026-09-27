@@ -497,7 +497,29 @@ visual verification of each subitem. Record delivery separately from source work
 
 ## UP-009 — Asset integration and comprehensive UI/art inventory
 
-Status: Open; audit existing inventory against actual runtime bindings.
+Status: Implemented (visual verification pending); playable delivery pending.
+
+2026-09-27 inventory-to-runtime audit: the complete requested replacement set
+was traced from retained provenance through exported assets and every known
+source consumer. The twelve current Metamagic rank assets, both Metamagic
+specialty bindings, hero Movement and Leadership replacements, creature/Fort
+Leadership crown, creature Rank stair-step and skill-probability information
+control are all installed. No missing runtime binding was found. Fort cards
+reuse the crown for Leadership Cost but intentionally present Core/Elite/
+Champion as text headings; the stair-step is confined to the categorized
+creature window. The skill-probability information mark is code-drawn over its
+four-state entry control and therefore has no raster-art provenance. Stale
+register and manifest descriptions were reconciled, including the superseded
+single-master Metamagic record and the crown's Fort consumer. The audit also
+found that the 24-pixel descriptor hitbox could overlap adjacent fields and the
+first skill row. In the New Horizons layout it now contracts to the visible
+16-pixel information mark and sits exactly between those regions, while legacy
+presentation retains its 24-pixel descriptor. The source guard checks the
+heading width, both vertical boundaries and the horizontal panel boundary.
+All seven focused static art/export/binding checks, JSON/CSV validation and an
+independent source review pass. Native rendered inspection of every listed slot
+and identified playable delivery remain outstanding; this is not visual
+approval or final-art acceptance.
 
 2026-09-26 exact active-perk checkpoint: all 64 currently active perks now have
 named bindings to distinct normal art and complete four-state descriptors. The
