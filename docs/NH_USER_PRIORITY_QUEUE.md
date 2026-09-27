@@ -58,6 +58,48 @@ usable if the temporary attachment disappears.
 
 ## Queue intake and ordering
 
+### UP-015 — Activate Encirclement and integrate its perk art
+
+Status: Source implemented; native and playable verification pending, assigned
+2026-09-27.
+
+The canonical Basic Offense perk is “Flank! gains +7% damage per additional
+distinct attack side instead of +4%.” Activate its existing catalog definition,
+preserve its `requires: basic` gate and exact text, and bind purpose-made,
+role-appropriate art. The additional-side coefficient must become +7% for an
+eligible Encirclement holder; the first-side/base Flank formula and non-Flank
+attacks remain unchanged. Keep authoritative battle damage and AI evaluation in
+sync, and verify the effect across save/load and applicable battle cases.
+
+2026-09-27 content/UI checkpoint: the config entry and regenerated module are
+active, the client icon binding points to its purpose-made four-state runtime
+descriptor, and the source/runtime hash guard and active-perk data tests pass.
+Original prompt, source master, reductions, comparison and runtime provenance
+are retained under `assets/new-horizons/art-source/encirclement-v1/`; the art is
+provisional, with no in-game review or user-final approval recorded. Runtime
+logic, focused native scenarios, and playable delivery remain open; this
+checkpoint does not claim the gameplay effect is implemented or verified.
+
+2026-09-27 runtime/AI checkpoint: authoritative damage and Battle AI now share
+one saved-snapshot-aware additional-side resolver: ordinary Flank retains 4%,
+while an eligible Encirclement holder receives 7%. The first-side formula is
+unchanged. AI valuation counts distinct sides from currently contacting ready
+melee stacks without mutating authoritative state. Focused source coverage now
+compares identical additional-side damage before/after selection, preserves
+repeated-side damage, exercises a multi-hex contact mask, transports the mask
+through client-pack and serializer roundtrips, and makes the AI choose a weaker
+base target only when the multi-side opportunity reverses the comparison.
+Static/data/art checks and independent source review pass; native execution is
+assigned to GitHub CI. Saved perk catalogs remain authoritative: an older hero
+whose snapshot still marks Encirclement planned is not silently rewritten, so
+the perk becomes offerable in newly initialized New Horizons games.
+
+Acceptance: focused native tests establish +7% per additional distinct side
+only for the eligible holder, unchanged first-side damage and no change to
+non-Flank attacks; verify AI estimates and save/load identity; regenerate/check
+the module and pass active-perk art/data guards. Separately record in-game art/UI
+review and the delivered build identity before closing visual/playable work.
+
 ### UP-014 — Fixed-school Mage Guild spell generation
 
 Status: Implemented (verification pending), assigned 2026-09-25.
