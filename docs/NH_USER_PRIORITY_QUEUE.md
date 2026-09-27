@@ -144,7 +144,8 @@ and playable/in-game acceptance remains explicitly separate where still needed.
 
 Status: Source implemented and independently reviewed on 2026-09-27. Exact-head
 dependency/source preflight run 36332113616 passed for commit `be8cb13a5`;
-full compile/package run 36333365693 is in progress. Playable acceptance remains
+full compile/package run 36333365693 succeeded and uploaded artifact
+`10938170495` (617,643,648 bytes). Playable acceptance remains
 pending.
 
 2026-09-27 crash evidence: the user supplied
@@ -199,7 +200,8 @@ the confirmed window lifecycle and client routing. An independent Astra review
 found and caused repairs for empty-slot exchange, ordinary last-stack routing,
 reverse rebalance, and two test compilation defects; its final re-review found
 no blocking source issue. Exact-head dependency/source preflight run 36332113616
-passed; full compile/package run 36333365693 remains in progress. Native/GUI and
+passed; full compile/package run 36333365693 succeeded with playable package
+artifact `10938170495`. Native/GUI and
 playable evidence are still required before this item is Playable-accepted.
 
 ### UP-020 — Maintain a durable implementation sprint register
