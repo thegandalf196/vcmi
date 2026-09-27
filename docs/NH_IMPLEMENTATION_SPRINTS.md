@@ -99,9 +99,11 @@ Implemented source checkpoint (2026-09-27):
 
 Static evidence: both client guards, Python compilation and `git diff --check`
 pass. Exact-head dependency/source preflight run 36332113616 passed for commit
-`be8cb13a5`; full compile/package run 36333365693 is in progress. Native tests,
-GUI reproduction and playable acceptance remain outstanding and are not inferred
-from either build route.
+`be8cb13a5`; full compile/package run 36333365693 succeeded and uploaded
+`New-Horizons-Windows-x64-be8cb13a58a5dfe17d76aeab431608b918c821df`
+(artifact `10938170495`, 617,643,648 bytes). Native tests, GUI reproduction and
+playable acceptance remain outstanding and are not inferred from either build
+route.
 
 ### Next dedicated sprint — Fortress completion
 
