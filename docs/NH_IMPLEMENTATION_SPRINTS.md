@@ -38,7 +38,84 @@ For each failed build, update `NH_RELEASE_FAILURES.md` with its run/head, exact
 failure, cause, repair, guard, and first succeeding target run. Never discard a
 failed run merely because a later run succeeds.
 
-## Current sprint — Armorer foundation and delivery closure
+## Current implementation priority — complete Skills perks and spells
+
+The user reprioritized functional completion on 2026-09-27: implement every
+missing canonical Skill rank, perk and spell before returning to broad faction
+completion or nonessential art polish. Purpose-made provisional art remains part
+of an active mechanic's minimum usable surface, but final-art iteration follows
+functional breadth. UP-023 owns the exhaustive matrix and evidence. UP-024 owns
+the newly remembered universal Blacksmith inventory rule and Stronghold Ballista
+Yard's existing canonical +20 weekly Siege visit effect.
+
+The interrupted Fortress base-growth slice remains preserved uncommitted in the
+worktree. Do not discard or misrepresent it as integrated; resume it under UP-022
+after the functional Skill/perk/spell lane unless it becomes a direct dependency.
+
+## Current sprint — Leadership-safe army exchange
+
+### Shift split/combine crash and legal partial transfer
+
+**State:** Cause confirmed from the user's exact-build Windows minidump; source
+repair implemented and independently reviewed. Exact-head target build and
+playable acceptance remain pending under UP-021.
+
+Confirmed failure: `CSplitWindow::apply()` runs its transfer callback before it
+closes. An over-capacity Leadership check pushes an explanatory info dialog;
+the split window then calls `WindowBase::close()` while it is no longer the top
+window, producing the unhandled `std::runtime_error` in exact artifact
+`6948b1aa56df3358febe86cd48017552ca1fe735`. Independently harden the numeric
+split path against non-positive deltas; do not misattribute that adjacent bug as
+the observed dump failure.
+
+Required result:
+
+- reproduce and identify the failing Shift split/combine request and whether an
+  over-capacity Leadership transition is its trigger;
+- keep the server authoritative and validate stale/invalid requests without
+  mutating either army;
+- when combining equal creatures into a hero's army, transfer exactly the
+  largest count that fits the destination slot's current Leadership capacity;
+- leave any excess in the source slot, and leave both stacks unchanged with a
+  precise explanation when zero creatures fit;
+- keep the split dialog and all shared combine routes consistent with exact-fit,
+  partial-fit, zero-fit, empty-slot, same-army and cross-army cases;
+- add focused authoritative/client/AI regression evidence, independent review,
+  commit/push and exact target-build evidence before playable promotion.
+
+Implemented source checkpoint (2026-09-27):
+
+- split dialogs close before callbacks can open an error window;
+- ordinary same-creature combines are authoritative partial-merge intents;
+- the server clamps only those merge intents to the current per-slot Leadership
+  capacity and preserves excess plus any required last source creature;
+- exact numeric splits are never silently clamped, legitimate reverse slider
+  moves are normalized client-side, and malformed negative/stale requests are
+  rejected without mutation;
+- empty-slot exchange and legacy/no-cap behavior are preserved;
+- focused server regressions and two client source guards are present;
+- an independent Astra review found three routing regressions and two test
+  compile blockers, all repaired; final re-review reported no blocking finding.
+
+Static evidence: both client guards, Python compilation and `git diff --check`
+pass. Exact-head dependency/source preflight run 36332113616 passed for commit
+`be8cb13a5`; full compile/package run 36333365693 is in progress. Native tests,
+GUI reproduction and playable acceptance remain outstanding and are not inferred
+from either build route.
+
+### Next dedicated sprint — Fortress completion
+
+**State:** Deferred under UP-022 until the higher-priority UP-023
+Skill/perk/spell completion lane is closed, unless a Fortress mechanic becomes
+a direct dependency of that lane.
+
+Build a granular canonical requirement matrix first, then close Fortress heroes,
+classes, biographies, specialties, creatures, buildings, faction Skill and every
+perk, progression/acquisition, global-system interactions, AI, UI/log feedback,
+provisional artwork, tests and delivery evidence. A partially active faction or
+passing content parse is not completion.
+
+## Preserved parallel checkpoint — Armorer foundation and delivery closure
 
 ### A. Iron Discipline — active implementation
 
@@ -77,14 +154,17 @@ Evidence already obtained:
   pass;
 - independent review identified Fire Shield, Hypnotize, and Warcasting-preview
   gaps; all three are repaired, and final source re-review found no blocker.
-- exact Windows run `36326436603` targets full head
-  `9806a27eff4ee4b427c92b270cc7ac5ea45b06bb`; keep this handle until terminal.
+- exact Windows run `36326436603` completed successfully at full head
+  `9806a27eff4ee4b427c92b270cc7ac5ea45b06bb`; it compiled, packaged and uploaded
+  `New-Horizons-Windows-x64-9806a27eff4ee4b427c92b270cc7ac5ea45b06bb`
+  (artifact `10935745939`, 617,638,770 bytes). This establishes target-build and
+  package evidence for the source revision, not focused gameplay execution or
+  playable acceptance.
 
 Remaining acceptance:
 
-- monitor exact run `36326436603`, inspect its actual terminal result, and run
-  the focused `IronDisciplineTest`, `HeroOrderStatePersistenceTest`, and Armorer
-  AI cases on the matching native build where the route permits;
+- run the focused `IronDisciplineTest`, `HeroOrderStatePersistenceTest`, and
+  Armorer AI cases on the matching native build where the route permits;
 - record any failure and its prevention before retrying;
 - produce and promote a validated playable snapshot, then obtain in-game visual
   and gameplay acceptance.
@@ -119,8 +199,9 @@ visual/playable gates.
 
 ### Pavise
 
-**State:** Planned; starts after Iron Discipline is committed and its exact-head
-build is dispatched.
+**State:** Implemented, independently reviewed and committed in source. Native
+tests, exact-head Windows build and playable visual/runtime acceptance remain
+pending.
 
 Canonical result: when a friendly stack Defends, ranged physical creature damage
 against it is reduced by an additional 25%.
@@ -136,8 +217,33 @@ Required scope before activation:
 - purpose-made provisional artwork through the HoMM3 Art workflow;
 - focused native tests, independent review, commit/push and exact-head build.
 
+Resolved implementation direction:
+
+- Pavise is an independent 25% multiplicative physical-damage reduction source,
+  composed inside the existing 80% combined reduction cap. Thus an existing 20%
+  reduction plus Pavise leaves `0.80 x 0.75 = 0.60` damage, or 40% total
+  reduction; it is not an additive 45%;
+- eligibility is derived for each hit from physical ranged damage by an ordinary
+  creature attacker, the target's live Defend state, and the target's current
+  controlling hero owning Pavise. Turrets, siege weapons, commander placeholders,
+  melee and magical damage are excluded;
+- existing Defend state and cloned hypothetical battle state provide lifecycle
+  and AI parity, so Pavise adds no separately serialized battle field.
+
 Completing Pavise gives Armorer three implemented Basic choices plus the already
 implemented Basic-perk set needed by the strict Skill/perk progression model.
+
+Implementation checkpoint (2026-09-27): the authoritative damage path, previews,
+Defend log, Battle AI valuation, active catalog/module bindings, focused server
+and AI tests, and purpose-made provisional HoMM3 artwork are integrated. Pavise
+is a separate 25% multiplicative ranged-physical reduction inside the existing
+80% aggregate cap. It derives ownership from the target's current controller and
+uses ordinary Defend lifetime, so it adds no serialized state. Independent Astra
+review caught and caused repairs for spell-like shooters' physical melee,
+wait-then-move AI behavior, Defend's ordinary Defense bonus in the test baseline,
+the cap assertion, and a detached test-state mutation. Final re-review found no
+blocking source issue. The active-art guard and 45 focused Python data tests pass;
+native/runtime acceptance is not yet claimed.
 
 ## Following sprint — Advanced Armorer sequence
 
