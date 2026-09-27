@@ -62,15 +62,16 @@ usable if the temporary attachment disappears.
 
 Status: Implemented (verification pending), assigned 2026-09-25.
 
-2026-09-26 source checkpoint: the canonical DOCX and saved magic-rules profile
-now define equal preferred pairs and the 5/4/2/2/2 slot profile. Generation
-selects distinct non-preferred schools, prevents duplicate spell IDs, leaves
-unavailable school slots empty, preserves a separate Spell Research reserve,
-and serializes each level's actual visible prefix. Map bans also constrain
-authored spells in this mode; compatible authored spells retain priority but
-cannot occupy the wrong school slot. Legacy marker-absent generation remains
-weight-based. Schema, compatibility, constrained-pool, authored-spell, empty-slot
-and save-round-trip regressions are present. Native CI verification and playable
+2026-09-26 source delivery: commit `deacc31af` defines the exact nine canonical
+preferred-school pairs and 5/4/2/2/2 slot profile. Generation chooses distinct
+non-preferred schools, prevents duplicate spell IDs, leaves unavailable slots
+empty, and admits only eligible ordinary combat spells. Authored spells cannot
+bypass the roster, map bans, school slots, or common-spell eligibility. New
+Horizons stores no hidden replacement reserve: client Spell Research is absent
+and the server rejects it before mutation, while marker-absent legacy rules keep
+their historical path. Visible counts and assigned schools serialize with old
+defaults and downsave protection. Forty-eight focused data/source checks,
+module regeneration and independent review pass. Native CI and playable
 delivery remain pending.
 
 2026-09-26 static-validation checkpoint: ordinary random selection now draws
@@ -644,6 +645,16 @@ migration with implementation completion.
 ## UP-011 — AI turn times and leadership failures
 
 Status: Open; prior isolated passes do not close the reported match regression.
+
+2026-09-26 evidence refresh: the current profile still does not contain the
+reported match. Its latest log loaded `Too Many Monsters`, recorded ten Nullkiller
+turns between 72 and 876 ms, and contains no Leadership-limit rejection; the
+newest autosave remains the unrelated September 21 `And One For All` save. The
+known full-registry perk lookup, unreachable-movement rescoring and post-battle
+Necromancy admission defects already have committed fixes and focused tests, but
+none proves the user's 8.7/45.8-second scenario. A safe headless `--testsave`
+route exists for a copied save. Faithful replay remains blocked on locating the
+matching save; do not run or attribute the unrelated autosave instead.
 
 2026-09-24 read-only checkpoint: prior timing/admission analysis is in
 `NH_PERFORMANCE_EXPERIMENT.md`, including the synthetic selected-perk lookup
