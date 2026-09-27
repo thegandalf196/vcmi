@@ -58,6 +58,22 @@ usable if the temporary attachment disappears.
 
 ## Queue intake and ordering
 
+### UP-020 — Maintain a durable implementation sprint register
+
+Status: Implemented as a living process; ongoing until New Horizons completion,
+assigned 2026-09-27.
+
+Maintain `docs/NH_IMPLEMENTATION_SPRINTS.md` as the durable answer to what is in
+progress, what comes next, what remains, which dependencies apply, and which
+evidence is still missing. Update it whenever work is selected, materially
+changes state, is blocked, is committed, or gains native/playable/visual
+evidence. Keep source implementation, native verification, playable delivery
+and user acceptance distinct. The canonical DOCX remains gameplay authority;
+the sprint register schedules work and must not invent or override design rules.
+Build failures remain in `docs/NH_RELEASE_FAILURES.md` with their prevention
+evidence. Acceptance is that a fresh agent can resume the real next task from
+repository documents without relying on chat context.
+
 ### UP-019 — Activate Shield Master and integrate its perk art
 
 Status: Source implemented; native and playable verification pending, assigned
@@ -297,7 +313,16 @@ focused tests; distinguish source completion from playable delivery.
 
 ### UP-013 — Complete missing Mage Guild levels and artwork
 
-Status: In progress; user explicitly requested creation, 2026-09-24.
+Status: Implemented and delivered; visual verification pending.
+
+2026-09-27 reconciliation: the retained evidence below proves the complete
+supplied-art integration, focused native validation, seven-day headless smoke,
+commit/push and promotion through the normal launcher at `42860ed29`. The five
+offline asset/integration checks still pass against the current tree. No missing
+source, export, binding, prerequisite or playable-delivery task remains under
+this entry. It stays open only for an authorized rendered review and the user's
+visual acceptance; do not regenerate or replace the supplied artwork merely to
+make progress on that separate gate.
 
 2026-09-25 delivery request: promote the supplied Mage Guild integration for the
 normal play script. Prepare an art-only successor of the currently selected
@@ -382,8 +407,17 @@ may determine execution order; explicitly record any blocker or reprioritization
 
 ## UP-003 — Revised Metamagic and Grand Metamagic
 
-Status: In progress; core runtime aligned, focused persistence/projection and
-playable verification remain.
+Status: Source implemented; native and playable verification pending.
+
+2026-09-27 source-completeness reconciliation: a fresh canonical/runtime audit
+found no remaining justified source change within UP-003. Spell Buffer resolves
+either kind of outstanding Metamagic grant, including Grand's continuation,
+before round cleanup; New Horizons Fire Wall passes its three-round base through
+the shared Echoed Duration hook. Direct regressions cover Grand-expiry Buffer,
+Fire Wall world-save duration/expiry, and isolated Battle AI obstacle ageing
+without live-state mutation. Pending Changes is empty and the detailed canonical
+DOCX rules match the active ten-perk pool. The focused native cases still require
+target-platform execution, and playable/rendered acceptance remains separate.
 
 2026-09-27 duration-lifecycle checkpoint: successful Windows run `36291243926`
 built the client at `eb6aa28c5`, including the Spell Buffer/Grand-expiry and
