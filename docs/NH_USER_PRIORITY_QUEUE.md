@@ -58,6 +58,42 @@ usable if the temporary attachment disappears.
 
 ## Queue intake and ordering
 
+### UP-018 — Activate Countercharge and integrate its perk art
+
+Status: Source implemented; native and playable verification pending, assigned
+2026-09-27.
+
+2026-09-27 source checkpoint: Countercharge is active with its Basic Armorer
+gate. Authoritative Brace damage and Battle AI valuation share one resolver that
+adds 25 percentage points to Brace's pre-emptive multiplier and caps the perk's
+result at 100%. The modifier is confined to Brace's marked pre-emptive hit;
+ordinary attacks, retaliation and Bulwark's independent pre-emptive reaction are
+unchanged. Focused sources cover the increase, cap, non-holder, actual server
+reaction, separation from Bulwark/retaliation, a real Charge-versus-Brace AI
+decision reversal, and a deep-copied active Brace Order carrying a genuine
+Warcasting snapshot. Purpose-made provisional art retains the exact generation
+prompt, 1254x1254 master, 44x44/32x32 reductions, four distinct runtime states,
+descriptor and hashes. The 140 New Horizons Python tests, module regeneration,
+JSON/CSV parsing, the 72-icon active-perk provenance/uniqueness guard and
+whitespace checks pass. Independent Astra review found no material runtime,
+compile/API or art blocker after its two evidence gaps were corrected. Native
+compilation/tests, playable delivery and in-game visual approval remain pending.
+
+Implement the canonical Basic Armorer perk end to end. Countercharge increases
+only the pre-emptive attack granted by Brace! by +25 percentage points of normal
+damage, capped at 100%. It must not alter Bulwark or any ordinary, retaliatory,
+or other pre-emptive attack. Authoritative combat resolution, displayed damage
+forecasts and Battle AI valuation must share the same saved-snapshot-aware
+calculation and must not mutate live state during hypothetical evaluation.
+
+Acceptance: focused native tests establish the +25-point increase, the 100% cap,
+unchanged behavior for heroes without the perk and no spillover to Bulwark or
+other attacks; verify authoritative/AI forecast parity and save/load identity;
+activate the existing catalog entry, regenerate/check the content module and
+bind purpose-made four-state HoMM3-style provisional art with retained source
+prompt, provenance and runtime hashes. Playable delivery and in-game visual
+review remain separate gates.
+
 ### UP-017 — Activate No Quarter and integrate its perk art
 
 Status: Source implemented; native and playable verification pending, assigned
@@ -77,8 +113,10 @@ purpose-made four-state provisional art are present. All 140 New Horizons
 Python tests, module regeneration, JSON/CSV parsing, the 71-icon active-perk
 provenance/uniqueness guard and whitespace checks pass; two independent Astra
 reviews found no remaining material source blocker after the first review's
-five findings were corrected. Native compilation/tests, playable delivery and
-in-game visual approval remain pending.
+five findings were corrected. Exact Windows preview CI run `36315781168` built,
+packaged and uploaded head `2663c1b500e86208a15c1ca7d44fd9feeae51946`
+successfully. Focused native test execution, playable delivery and in-game visual
+approval remain pending.
 
 Implement the canonical Expert Offense perk end to end: when a melee attack
 leaves a surviving enemy stack strictly below 25% of its maximum HP, that stack
