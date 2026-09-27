@@ -183,6 +183,23 @@ may determine execution order; explicitly record any blocker or reprioritization
 Status: In progress; core runtime aligned, focused persistence/projection and
 playable verification remain.
 
+2026-09-27 canonical completeness audit: the current runtime and focused tests
+cover the core lifecycle, all ten active perk identities, Grand continuation,
+Formula Reserve, Arcane Acquisition, save/load, logs and AI projection. Two
+active-rule contradictions remain in the committed source and are now isolated
+for the next checkpoint. Spell Buffer only recognizes an unused initial offer,
+although the canonical wording also includes Grand Metamagic's unused further
+Spell Action. New Horizons Fire Wall stores a fixed three-round obstacle without
+passing its eligible follow-up duration through Echoed Duration. The source fix
+and focused regressions are prepared locally: either pending Metamagic grant
+qualifies for the once-per-combat round-expiry Buffer reward, and Fire Wall uses
+the shared duration adjustment while legacy obstacle behavior stays unchanged.
+Retired Spell Echo and Countersequence references are retained deliberately for
+old-save migration/compatibility; they are not restored to the active perk pool.
+The module drift check, ten perk-data tests, client Metamagic source guard,
+whitespace check and independent Astra review pass. Native compilation/execution
+and playable delivery remain pending.
+
 2026-09-26 persistence/projection checkpoint: focused coverage now transports
 the saved Arcane Acquisition provenance on a Focus Magic enchantment through
 the detached `BattleStart` descriptor wire path and verifies the restored side,
