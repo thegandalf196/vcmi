@@ -353,6 +353,19 @@ the playable version containing it.
 
 Status: Implemented (native verification pending); playable delivery pending.
 
+2026-09-27 Master Gate catalogue checkpoint: the canonical Expert Demonic
+Gating perk is now implemented in source rather than merely activated to conceal
+a progression gap. The first successfully opened Gate per side and combat
+preserves the gating stack's existing Creature Activation; rejected actions and
+post-movement Mobile Gate failures do not spend the perk. The continuation does
+not begin another activation, expire activation-scoped state, roll Morale, or
+advance the queue, and authoritative and Battle AI hypothetical lifecycles use
+the same rule. The spent flag and Mobile Gate transition are versioned for
+save/network transport with old-load defaults and downsave protection. Focused
+regular, Mobile, failure, second-Gate, serialization and AI-projection tests are
+present. Static/data/art checks and independent source review pass; native CI,
+playable delivery and runtime acceptance remain pending.
+
 2026-09-26 completion checkpoint: the one-per-tier cardinality question is
 resolved. The user retained the existing runtime, and the canonical detailed
 rule assigns exactly one perk slot to each of Basic, Advanced and Expert; the
@@ -515,6 +528,15 @@ visual verification of each subitem. Record delivery separately from source work
 ## UP-009 — Asset integration and comprehensive UI/art inventory
 
 Status: Implemented (visual verification pending); playable delivery pending.
+
+2026-09-27 Master Gate art checkpoint: the newly active perk has purpose-made
+horned-gate, master-key and ready-sword art created through the HoMM3 Art
+workflow. Its generated master, exact prompt, 44x44 and 32x32 reductions,
+comparison sheet, hashes and deterministic four-state exporter are retained
+under `master-gate-v1`; `NH_perk_master_gate` is bound to all four runtime
+states. This raises the complete active-perk set to 65 without borrowing another
+perk's image. Source/art uniqueness checks and independent review pass. The art
+remains Provisional until in-game visual review and explicit user approval.
 
 2026-09-27 inventory-to-runtime audit: the complete requested replacement set
 was traced from retained provenance through exported assets and every known
