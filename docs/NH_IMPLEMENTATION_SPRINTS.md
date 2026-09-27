@@ -75,9 +75,18 @@ and Counterfire incapacitation, recursion, retaliation-resource and saved-round
 handling. Perfect Moment applies to the first Skirmisher strike only. Focused
 data checks and `git diff --check` pass; native compilation/tests, target build
 and playable UI verification remain separate gates. The six Advanced/Expert
-perks remain unimplemented. After the full ten-perk Archery slice is closed,
+perks are now in uncommitted source with targeted syntax checks, data tests,
+server/AI regression cases and an independent review in progress. Native test
+execution is currently blocked by unrelated curated-module drift at CMake
+reconfiguration; do not run the broad content generator over preserved changes.
+After the full ten-perk Archery slice is closed,
 Bulwark of the Mire is the next full Skill slice; do not insert another Skill or
 art-polish lane first.
+
+**Spell Lock Windows follow-up:** runs `36343003125` and `36347971057` failed
+in BattleAI compilation for distinct incomplete-type and duration-return-type
+errors. Both repairs are pushed through `ddcd57391`; full Windows run
+`36350655648` is in progress. No target-build success is claimed yet.
 
 **Delivery checkpoint:** full Windows workflow run `36341858040` succeeded at
 committed head `70117e251a5fcf5f2163adbfb8be94626a57b56a` with
@@ -154,6 +163,22 @@ request orientation. The split window retains explicit `Hero: <name>` and
 source-stack guard, an invalid exchange fixture, the real UI orientation, and a
 misdeclared label member. Focused source guards pass. Native compilation/tests,
 exact-head packaging, localization, rendered layout and user play remain open.
+
+Latest user follow-up (2026-09-27): a complete move of a hero's final stack
+into a garrison emitted `No creatures to split` for a one-creature source. The
+new source route shows the localized last-army explanation at zero movable
+creatures; positive whole-stack intents reach the server, which retains one
+creature and clamps any Leadership-limited destination transfer. An Astra review
+found and caused the remaining garrison-click exact-split route to use that
+whole-stack intent. Focused server tests and client guards are present and source
+checks pass; native/target-build/playable evidence is pending.
+
+The user's transfer-dialog mock is `https://i.imgur.com/j1G5Qzi.png`. A source
+layout checkpoint replaces clipped owner wording with built-in hero portraits
+and garrison crests below the creature art, extends the original dialog at
+runtime to 298×440 using installed assets, and keeps bounded full-name help for
+ambiguous markers. Independent Astra review is clear and source guards pass;
+rendered appearance and input remain unverified. UP-025 tracks acceptance.
 
 ### Next dedicated sprint — Fortress completion
 
