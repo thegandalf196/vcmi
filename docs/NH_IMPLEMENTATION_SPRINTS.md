@@ -85,8 +85,16 @@ art-polish lane first.
 
 **Spell Lock Windows follow-up:** runs `36343003125` and `36347971057` failed
 in BattleAI compilation for distinct incomplete-type and duration-return-type
-errors. Both repairs are pushed through `ddcd57391`; full Windows run
-`36350655648` is in progress. No target-build success is claimed yet.
+errors. The repairs are pushed through `ddcd57391`; exact-head Windows run
+`36353181774` succeeded and published artifact `10943952550`. This establishes
+target compilation, not playable Spell Lock acceptance.
+
+**Bulwark of the Mire:** first three Basic perks are active in source and data:
+Mireborn, Thick Hide, Bog Ambush. Authoritative physical-damage and reaction
+paths, BattleAI forecasts/Defend choice, hoverable Defend status feedback, and
+focused regressions have undergone independent source review. Seven perks remain
+planned. The uncommitted slice still needs a native/target build and rendered
+verification; no full-Skill completion or playable acceptance is claimed.
 
 **Delivery checkpoint:** full Windows workflow run `36341858040` succeeded at
 committed head `70117e251a5fcf5f2163adbfb8be94626a57b56a` with

@@ -148,6 +148,13 @@ User ordering clarification (2026-09-27): after the active Spell Lock and full
 Archery slices, complete Bulwark of the Mire as the next full Skill slice before
 War Machines or Command. Partial Mireborn source is not completion.
 
+2026-09-27 Bulwark Basic checkpoint: Mireborn, Thick Hide, and Bog Ambush now
+have authoritative physical-damage/reaction hooks, detached-state BattleAI
+forecasts, Defend valuation, and status-panel feedback in source. The remaining
+seven perks are still planned; do not call the Skill complete. Focused source,
+data, and syntax checks pass; native Bulwark test execution, exact target build,
+rendered status-panel behavior, and playable confirmation remain pending.
+
 ### UP-022 — Complete the Fortress faction implementation
 
 Status: Open; paused at a preserved uncommitted Fortress-growth checkpoint when
