@@ -315,16 +315,38 @@ the playable version containing it.
 
 ## UP-005 — Skill/perk progression across acquisition paths
 
-Status: In progress; ordinary gates implemented, perk-cardinality conflict open.
+Status: Implemented (native verification pending); playable delivery pending.
+
+2026-09-26 completion checkpoint: the one-per-tier cardinality question is
+resolved. The user retained the existing runtime, and the canonical detailed
+rule assigns exactly one perk slot to each of Basic, Advanced and Expert; the
+older queue wording claiming an open conflict was stale. Ordinary generated
+offers, human replies and the authoritative rank application now all enforce
+Basic Skill → Basic perk → Advanced Skill → Advanced perk → Expert Skill →
+Expert perk. Explicit external rewards retain the canonical exception and may
+advance an eligible Skill without the preceding perk, after which offers resume
+at the earliest missing perk tier. Teacher rewards now recheck current class
+weight and faction ownership even for an already-owned Skill, closing the Thane
+/ Wisdom advancement bypass while preserving negative adjustments and full-bar
+advancement of eligible existing Skills. Focused source/tests are present;
+native compilation and execution are assigned to GitHub CI, and no playable
+delivery or runtime acceptance is claimed yet.
+
+The strict gate deliberately exposes the still-incomplete perk catalogue:
+Skills without an active Basic perk cannot advance ordinarily, and Skills with
+no active Advanced perk cannot reach Expert through ordinary progression. Do
+not reactivate inert/planned perks to hide that gap; finish their mechanics and
+tests under the implementation backlog before claiming complete playable Skill
+progression. Exceptional eligible rewards remain available as specified.
 
 2026-09-26 source checkpoint: ordinary Skill advancement now requires the
 preceding perk tier, ordinary human and AI level-up paths share the gate, and an
 exceptional external rank grant preserves the rank while subsequent perk offers
 fill Basic, Advanced and Expert tiers in order. Focused regressions were added.
-The canonical DOCX also permits additional perks from an already eligible tier,
-while the existing runtime still permits only one perk per tier. Do not close
-this item until that cardinality conflict is explicitly resolved and CI verifies
-the compiled paths.
+The earlier interpretation that the DOCX permitted multiple perks from an
+already eligible tier was superseded by the user's explicit decision to retain
+the one-per-tier runtime and by the detailed canonical one-slot-per-tier rule.
+CI must still verify the compiled paths before this item advances to delivery.
 
 Latest decision, 2026-09-24: user answered **Keep the DOCX exception**. Preserve
 exceptional external skill-rank advancement without an earlier perk. Do not
