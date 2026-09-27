@@ -58,6 +58,38 @@ usable if the temporary attachment disappears.
 
 ## Queue intake and ordering
 
+### UP-025 — Split dialog owner indicators and unclipped layout
+
+Status: Implemented (target build and rendered/playable verification pending);
+assigned 2026-09-27. User mock:
+`https://i.imgur.com/j1G5Qzi.png` (438 × 612).
+
+The current split/transfer dialog places ownership wording behind the creature
+art, so it is clipped and hard to read. Follow the mock's visual direction:
+identify the hero side with its portrait and the garrison side with its banner
+or crest, beneath the corresponding creature art. The user explicitly said the
+extra wording is unnecessary if the visual identification works. Keep both
+amounts, slider, confirmation and cancel controls usable, preserve the Heroes
+III leather/red/gold presentation, and handle hero-to-hero or other army
+pairings without misidentifying either side. Do not change authoritative
+transfer behavior as a layout workaround.
+
+Acceptance: focused source/UI checks plus rendered inspection show both owner
+markers visible, correctly aligned, and unobscured at the actual game scale;
+left/right amounts and controls remain legible and functional. Record exact
+candidate build and playable confirmation separately.
+
+2026-09-27 source checkpoint: built-in hero portraits and player crests now
+identify the two sides beneath the creature panels. Names appear only when a
+marker is unavailable or two distinct armies share the same marker; long names
+are width-bounded with full text on hover/right-click. The installed 298×337
+`GPUCRDIV` art is recomposed at runtime into a player-colored 298×440 dialog
+with its original title, side rails and footer. The lowest button ends at y391,
+above the y403 footer. No extracted original art is committed. The split and
+garrison routing source guards and `git diff --check` pass; independent Astra
+source review found no remaining blocking issue. C++ target build and actual
+rendered/input acceptance are still pending.
+
 ### UP-024 — Universal Blacksmith inventory and Stronghold Ballista Yard
 
 Status: Open; assigned 2026-09-27. Canonical DOCX integration and runtime
@@ -142,9 +174,11 @@ and playable/in-game acceptance remains explicitly separate where still needed.
 
 ### UP-021 — Fix Shift stack split/combine crash and Leadership-aware combining
 
-Status: Crash repair playable-confirmed by the user on 2026-09-27, but the
-broader Leadership-aware transfer acceptance reopened for an empty-slot defect
-and split-dialog clarity. Exact-head
+Status: Reopened by playable last-stack transfer defect on 2026-09-27. The
+original crash repair is playable-confirmed and the empty-slot/split-label
+follow-up is Windows-build verified, but transferring the complete final hero
+stack into a garrison can still reach the server with no legal positive split
+amount and emit `No creatures to split` as a server problem. Exact-head
 dependency/source preflight run 36332113616 passed for commit `be8cb13a5`;
 full compile/package run 36333365693 succeeded and uploaded artifact
 `10938170495` (617,643,648 bytes). The user confirmed that the original split
@@ -232,6 +266,32 @@ no blocking source issue. Exact-head dependency/source preflight run 36332113616
 passed; full compile/package run 36333365693 succeeded with playable package
 artifact `10938170495`. Native/GUI and
 playable evidence are still required before this item is Playable-accepted.
+
+2026-09-27 playable last-stack follow-up: when the player tries to transfer the
+complete last stack from a hero into a garrison, the runtime logs `No creatures
+to split` and presents it as `Server encountered a problem`. Preserve the rule
+that a hero may not be left without creatures. If the source stack contains more
+than one creature, transfer the greatest legal amount and retain one creature
+with the hero. If it contains exactly one, perform no mutation and show a normal,
+precise gameplay explanation instead of issuing a zero-count split or surfacing
+an exception/system-error message. Apply the same result to drag/drop, combine,
+and split-dialog routes that share the transfer operation, with the server still
+authoritative. Add focused regressions for one-creature zero-fit, multi-creature
+last-stack partial transfer, stale requests, conservation and absence of an
+exception/error response; obtain independent review, an exact target build and
+playable confirmation before resolving this follow-up.
+
+2026-09-27 source checkpoint: ordinary empty-slot last-stack moves now send a
+whole-stack intent, allowing the authoritative server to reserve one final hero
+creature and clamp the transfer to the receiving hero's current Leadership
+capacity. Exact-one no-ops show the localized last-army explanation without a
+zero-count split request; same-creature combines and Shift numeric splits keep
+their distinct paths. Focused server cases cover exact-one rejection, all-but-
+one garrison transfer, capacity-clamped transfer retaining multiple source
+creatures, conservation, and stale source rejection. Garrison/hero exchange and
+split lifecycle source guards pass. Independent Astra review cleared the server
+logic and prompted correction of the final client routing gap. Native tests,
+target build, and playable confirmation remain pending.
 
 ### UP-020 — Maintain a durable implementation sprint register
 
