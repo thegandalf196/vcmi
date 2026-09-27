@@ -183,6 +183,17 @@ may determine execution order; explicitly record any blocker or reprioritization
 Status: In progress; core runtime aligned, focused persistence/projection and
 playable verification remain.
 
+2026-09-26 persistence/projection checkpoint: focused coverage now transports
+the saved Arcane Acquisition provenance on a Focus Magic enchantment through
+the detached `BattleStart` descriptor wire path and verifies the restored side,
+value, duration and perk flag. Battle AI projection separately resolves a
+single ranged strike from zero to exactly two marks, then a second strike from
+two to the three-mark cap with the increased projected damage, while leaving
+the authoritative battle untouched. Production already shares the saved
+parameters and the same combat-event script between authoritative and
+hypothetical resolution. Native compilation/execution and playable delivery
+remain pending; this checkpoint is not runtime acceptance.
+
 2026-09-26 decline-retirement checkpoint: current New Horizons battles no longer
 accept an explicit Metamagic decline/end command. The compatibility bit remains
 decodable, but the authoritative request processor and replicated-state visitor
