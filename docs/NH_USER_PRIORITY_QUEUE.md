@@ -58,6 +58,46 @@ usable if the temporary attachment disappears.
 
 ## Queue intake and ordering
 
+### UP-019 — Activate Shield Master and integrate its perk art
+
+Status: Source implemented; native and playable verification pending, assigned
+2026-09-27.
+
+2026-09-27 source checkpoint: Shield Master is active and Protect captures a
+public one-or-two interception allowance when the Order is issued, so the
+authoritative server, clients and opposing-side Battle AI share the same saved
+snapshot without exposing a concealed hero. An exact 0..2 consumed count and
+allowance serialize together; old boolean state normalizes to ordinary one-use
+Protect, invalid shapes reject, and downsaving rejects even an unspent two-use
+allowance. Authoritative three-strike coverage expects two redirected/reduced
+hits and a third Ward hit; focused sources also cover ordinary one-use behavior,
+ranged non-consumption, death/separation, round reset, packets, legacy saves and
+AI replay/nonmutation. The Protect log and visible status report used/remaining
+interceptions. Purpose-made provisional art retains its exact prompt, 1254x1254
+master, 44x44/32x32 reductions, four runtime states, provenance and hashes. The
+140 New Horizons Python tests, module check, JSON/CSV parsing, 73-icon active-art
+guard, privacy scan and whitespace checks pass. An independent Astra review
+found and prompted correction of two AI projection regressions and opposing-hero
+visibility, then cleared the revised source. Native compilation/tests, playable
+delivery and in-game visual approval remain pending.
+
+Implement the canonical Basic Armorer perk end to end: Protect! may intercept
+the first two qualifying melee attacks against its Ward each round instead of
+only the first. Track and serialize the exact number of interceptions consumed,
+with safe compatibility for older one-use saved battle state. The authoritative
+server path, client-visible Order state, forecasts and Battle AI hypothetical
+replay must share the same saved-snapshot-aware interception limit and must not
+mutate the live battle while evaluating choices.
+
+Acceptance: focused native tests establish two redirects/reductions and a third
+attack reaching the Ward for a holder, ordinary one-use behavior for a
+non-holder, no ranged consumption, broken/dead/separated pair behavior, exact
+round reset, packet/save compatibility and AI replay parity/nonmutation. Update
+the Protect combat log/status wording for the second interception. Activate the
+catalog entry, regenerate/check the module and bind purpose-made four-state
+HoMM3-style provisional art with retained source prompt, provenance and runtime
+hashes. Playable delivery and in-game visual review remain separate gates.
+
 ### UP-018 — Activate Countercharge and integrate its perk art
 
 Status: Source implemented; native and playable verification pending, assigned
@@ -78,6 +118,9 @@ JSON/CSV parsing, the 72-icon active-perk provenance/uniqueness guard and
 whitespace checks pass. Independent Astra review found no material runtime,
 compile/API or art blocker after its two evidence gaps were corrected. Native
 compilation/tests, playable delivery and in-game visual approval remain pending.
+Exact Windows preview CI run `36318766320` completed successfully at pushed head
+`102220f8d54986ad6533b50c3f313d8bbc063fce`, including client compilation,
+packaging and artifact upload; this is build evidence, not gameplay acceptance.
 
 Implement the canonical Basic Armorer perk end to end. Countercharge increases
 only the pre-emptive attack granted by Brace! by +25 percentage points of normal
