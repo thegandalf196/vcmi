@@ -42,8 +42,9 @@ failed run merely because a later run succeeds.
 
 ### A. Iron Discipline — active implementation
 
-**State:** In source; review repairs applied; static validation passing; native
-verification, commit/push, and playable delivery pending.
+**State:** Source committed and pushed; independent review clear; static
+validation passing; exact-head Windows/native verification and playable delivery
+pending.
 
 Canonical result: Hold the Line also reduces magical damage by half of its
 current physical reduction.
@@ -67,37 +68,40 @@ Current source scope:
 
 Evidence already obtained:
 
+- provisional art commit `4828cccdb` and runtime/AI/UI/test commit `9806a27ef`
+  are pushed on `definitive-mvp`;
 - canonical module regeneration check passes;
 - all 140 `test_new_horizons*.py` tests pass;
 - active-perk artwork/source/runtime guard passes with 74 unique icons;
 - Orders client source guard, JSON/CSV parsing, privacy scan and whitespace check
   pass;
 - independent review identified Fire Shield, Hypnotize, and Warcasting-preview
-  gaps; all three have focused repairs in the working tree.
+  gaps; all three are repaired, and final source re-review found no blocker.
+- exact Windows run `36326436603` targets full head
+  `9806a27eff4ee4b427c92b270cc7ac5ea45b06bb`; keep this handle until terminal.
 
 Remaining acceptance:
 
-- complete the AI review and final independent source review;
-- commit art and runtime coherently with exact repository identity;
-- push normally, dispatch one exact-head Windows build, and run the focused
-  `IronDisciplineTest`, `HeroOrderStatePersistenceTest`, and Armorer AI cases;
+- monitor exact run `36326436603`, inspect its actual terminal result, and run
+  the focused `IronDisciplineTest`, `HeroOrderStatePersistenceTest`, and Armorer
+  AI cases on the matching native build where the route permits;
 - record any failure and its prevention before retrying;
 - produce and promote a validated playable snapshot, then obtain in-game visual
   and gameplay acceptance.
 
 ### B. Shield Master — target-build closure
 
-**State:** Source committed and pushed at `6948b1aa56df3358febe86cd48017552ca1fe735`;
-exact Windows run `36322531152` is active. Native compilation has passed and the
-run is packaging. Do not dispatch a duplicate while this handle remains live.
+**State:** Exact Windows run `36322531152` completed successfully at
+`6948b1aa56df3358febe86cd48017552ca1fe735`. It compiled, packaged and uploaded
+`New-Horizons-Windows-x64-6948b1aa56df3358febe86cd48017552ca1fe735`
+(artifact `10933193980`, 614,831,501 bytes). This proves the Windows build/package
+route for that source; it does not by itself prove focused gameplay behavior.
 
 Remaining acceptance:
 
-- record the terminal result for that exact run/head;
-- on failure, add the incident to `NH_RELEASE_FAILURES.md`, repair it, add a
-  focused guard when possible, and dispatch the corrected exact head;
-- on success, record artifact identity and native scope in the user-priority
-  queue; playable promotion and in-game Protect/interception visual review remain
+- execute the focused Shield Master native tests if/when the package route exposes
+  a test-enabled binary;
+- playable promotion and in-game Protect/interception visual review remain
   separate gates.
 
 ### C. Priority-queue verification closures

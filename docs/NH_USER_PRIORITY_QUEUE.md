@@ -76,8 +76,16 @@ repository documents without relying on chat context.
 
 ### UP-019 — Activate Shield Master and integrate its perk art
 
-Status: Source implemented; native and playable verification pending, assigned
-2026-09-27.
+Status: Windows build/package verified; focused native and playable verification
+pending, assigned 2026-09-27.
+
+2026-09-27 target-build checkpoint: exact workflow run `36322531152` completed
+successfully at full head `6948b1aa56df3358febe86cd48017552ca1fe735`.
+The Windows x64 client compiled, packaged and uploaded artifact
+`New-Horizons-Windows-x64-6948b1aa56df3358febe86cd48017552ca1fe735`
+(`10933193980`, 614,831,501 bytes). This closes the source-level Windows build
+gate for Shield Master but not the focused gameplay tests, playable promotion,
+or in-game Protect/interception and artwork acceptance.
 
 2026-09-27 source checkpoint: Shield Master is active and Protect captures a
 public one-or-two interception allowance when the Order is issued, so the
