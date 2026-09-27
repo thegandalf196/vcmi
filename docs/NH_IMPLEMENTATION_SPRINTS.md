@@ -66,16 +66,18 @@ and `git diff --check` pass. Native compile/tests, exact target build and playab
 acceptance remain separate gates; catalogue status alone is not completion.
 
 **Archery Basic perks:** Target Caller, Skirmisher, Point-Blank Shot and
-Counterfire have an uncommitted implementation checkpoint, but Astra review
-blocks integration. Skirmisher currently rejects enemy ownership, forces a
-single deterministic firing hex rather than accepting the player's legal chosen
-half-Speed position, and can preview a different attack than it executes.
-Point-Blank remains blocked by the earlier ordinary-shooter engagement gate.
-Counterfire can react while incapacitated and consumes ordinary retaliation.
-Repair these paths and add the missing player-choice, incapacitation, retaliation,
-multi-target/recursion and saved round-stamp evidence before committing the four
-perks. After the full ten-perk Archery slice is closed, Bulwark of the Mire is
-the next full Skill slice; do not insert another Skill or art-polish lane first.
+Counterfire have passed independent Astra source review after repair. The slice
+now includes server-validated player-selected Skirmisher firing hexes, one
+cached reachability calculation rather than render-loop pathfinding, projected
+AI evaluation of every legal firing position, ordinary ranged multi-shot/ammo
+semantics at 75% per strike, Point-Blank's physical adjacent-shot exception,
+and Counterfire incapacitation, recursion, retaliation-resource and saved-round
+handling. Perfect Moment applies to the first Skirmisher strike only. Focused
+data checks and `git diff --check` pass; native compilation/tests, target build
+and playable UI verification remain separate gates. The six Advanced/Expert
+perks remain unimplemented. After the full ten-perk Archery slice is closed,
+Bulwark of the Mire is the next full Skill slice; do not insert another Skill or
+art-polish lane first.
 
 **Delivery checkpoint:** full Windows workflow run `36341858040` succeeded at
 committed head `70117e251a5fcf5f2163adbfb8be94626a57b56a` with
