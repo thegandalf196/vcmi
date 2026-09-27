@@ -58,6 +58,47 @@ usable if the temporary attachment disappears.
 
 ## Queue intake and ordering
 
+### UP-017 — Activate No Quarter and integrate its perk art
+
+Status: Source implemented; native and playable verification pending, assigned
+2026-09-27.
+
+2026-09-27 source checkpoint: canonical No Quarter is active with its Expert
+gate. Every qualifying physical melee hit evaluates each surviving hostile
+primary or collateral target against a strict post-damage 25% threshold,
+including retaliation, Cleave and pre-emptive strikes while excluding ranged,
+spell-like and Time Stopped targets. A tagged round blocker suppresses even
+unlimited retaliation before the immediate counter check; an explicit saved
+activation lifetime keeps the non-stacking -2 Morale penalty through the end of
+the target's next accepted activation, including when applied to the currently
+active unit. Phantom integrity supplies its own maximum. Authoritative runtime,
+Battle AI preview/replay, packet/downsave guards, focused runtime/AI tests and
+purpose-made four-state provisional art are present. All 140 New Horizons
+Python tests, module regeneration, JSON/CSV parsing, the 71-icon active-perk
+provenance/uniqueness guard and whitespace checks pass; two independent Astra
+reviews found no remaining material source blocker after the first review's
+five findings were corrected. Native compilation/tests, playable delivery and
+in-game visual approval remain pending.
+
+Implement the canonical Expert Offense perk end to end: when a melee attack
+leaves a surviving enemy stack strictly below 25% of its maximum HP, that stack
+loses every remaining retaliation for the current round and suffers -2 Morale
+through the end of its next activation. Exact 25% does not trigger. The
+authoritative effect must suppress even unlimited retaliation, become visible
+before any immediate retaliation check, expire correctly at the new round / end
+of the affected stack's next accepted activation, and avoid duplicate stacking
+when refreshed.
+
+Acceptance: authoritative runtime and Battle AI apply the same actual-health
+threshold and transient effects without mutating live state during hypothetical
+evaluation; focused native tests cover the strict threshold, immediate
+retaliation suppression, unlimited retaliation, round reset, Morale lifetime,
+refresh, exclusions, save/packet behavior where applicable, and AI parity.
+Activate the existing perk catalogue entry, regenerate/check the module, bind
+purpose-made HoMM3-style provisional art, retain source prompt/provenance and
+runtime hashes, and pass active-perk data/art guards. Playable delivery and
+in-game visual review remain separate gates.
+
 ### UP-016 — Activate Cleave and integrate its perk art
 
 Status: Source implemented; native and playable verification pending, assigned
