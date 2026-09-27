@@ -77,22 +77,25 @@ multi-target/recursion and saved round-stamp evidence before committing the four
 perks. After the full ten-perk Archery slice is closed, Bulwark of the Mire is
 the next full Skill slice; do not insert another Skill or art-polish lane first.
 
-**Delivery checkpoint:** full Windows workflow run `36341858040` was dispatched
-at committed head `70117e251a5fcf5f2163adbfb8be94626a57b56a` with
-`preflight_only=false`. It is the first actual compile/package attempt for the
-Leadership empty-slot follow-up; record its conclusion and artifact before
-claiming playable delivery. The earlier run `36339991468` was source preflight
-only and is not a playable build.
+**Delivery checkpoint:** full Windows workflow run `36341858040` succeeded at
+committed head `70117e251a5fcf5f2163adbfb8be94626a57b56a` with
+`preflight_only=false`. It compiled, packaged and uploaded artifact
+`New-Horizons-Windows-x64-70117e251a5fcf5f2163adbfb8be94626a57b56a`
+(`10940446726`, 621,090,196 bytes), proving the target build/package gate for
+the Leadership empty-slot follow-up. Rendered label inspection and playable
+behavior remain separate acceptance gates. The earlier run `36339991468` was
+source preflight only and is not a playable build.
 
 ## Current sprint — Leadership-safe army exchange
 
 ### Shift split/combine crash and legal partial transfer
 
 **State:** The dump-confirmed split-window crash is fixed and playable-confirmed
-by the user in Windows artifact `10938170495`. A subsequent empty-hero-slot
-Leadership defect and split-dialog ownership-label request are repaired and
-independently source-reviewed; their new exact-head build, rendered inspection,
-localization and playable acceptance remain pending under UP-021.
+by the user in Windows artifact `10938170495`. The subsequent empty-hero-slot
+Leadership defect and split-dialog ownership-label request are repaired,
+independently source-reviewed, and exact-head Windows build/package verified by
+run `36341858040` and artifact `10940446726`. Rendered inspection, localization
+and playable acceptance remain pending under UP-021.
 
 Confirmed failure: `CSplitWindow::apply()` runs its transfer callback before it
 closes. An over-capacity Leadership check pushes an explanatory info dialog;

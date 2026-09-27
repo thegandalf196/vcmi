@@ -148,7 +148,11 @@ and split-dialog clarity. Exact-head
 dependency/source preflight run 36332113616 passed for commit `be8cb13a5`;
 full compile/package run 36333365693 succeeded and uploaded artifact
 `10938170495` (617,643,648 bytes). The user confirmed that the original split
-crash no longer occurs in that playable build.
+crash no longer occurs in that playable build. The empty-slot and split-label
+follow-up now also has exact-head Windows compile/package evidence: run
+`36341858040` succeeded at `70117e251a5fcf5f2163adbfb8be94626a57b56a`
+and uploaded artifact `10940446726` (621,090,196 bytes). Rendered labels and the
+new partial empty-slot behavior still require playable acceptance.
 
 2026-09-27 crash evidence: the user supplied
 `VCMI_client.exe_crashinfo.dmp` (SHA-256
