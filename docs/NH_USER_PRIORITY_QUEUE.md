@@ -225,6 +225,19 @@ may determine execution order; explicitly record any blocker or reprioritization
 Status: In progress; core runtime aligned, focused persistence/projection and
 playable verification remain.
 
+2026-09-27 duration-lifecycle checkpoint: successful Windows run `36291243926`
+built the client at `eb6aa28c5`, including the Spell Buffer/Grand-expiry and
+Fire Wall duration corrections. Static perk/module guards remain clean. Added
+focused native coverage for an Echoed Duration Fire Wall surviving a complete
+world save/load with four rounds remaining, expiring after exactly four round
+boundaries, and aging through an isolated hypothetical Battle AI model without
+mutating the live obstacle. These new native cases await the next CI execution;
+no playable or rendered acceptance is claimed. A read-only AI integration trace
+found no separate projected-Mana defect: hypothetical spell evaluation neither
+stores nor spends caster Mana, and every real continuation decision is rebuilt
+from the newly authoritative post-cast state, which already contains Formula
+Reserve or Spell Buffer rewards.
+
 2026-09-27 canonical completeness audit: the current runtime and focused tests
 cover the core lifecycle, all ten active perk identities, Grand continuation,
 Formula Reserve, Arcane Acquisition, save/load, logs and AI projection. Two
@@ -358,8 +371,18 @@ and identified playable delivery.
 
 ## UP-004 — Generic hero combat-resource panel
 
-Status: In progress; generic renderer and two real providers implemented, native
-and visual verification pending.
+Status: Source implemented; native client/loader checks passed; visual and
+playable verification pending.
+
+2026-09-27 evidence reconciliation: the generic renderer and typed provider
+loader are ancestors of successful Windows client build `36291243926` at
+`eb6aa28c5`. The five focused `CSkill` combat-status loader cases passed in the
+recorded native integration run; current Metamagic/Warcasting UI guards, module
+regeneration, and whitespace checks also pass. No further speculative product
+change is justified before rendered inspection. Remaining acceptance is a
+screenshot/input matrix covering sticky and non-sticky panels, compact/outside
+placement, short viewports, simultaneous statuses, maximum values, z-order,
+hover and right-click help.
 
 2026-09-26 provider-extensibility checkpoint: the compact hero battle panel now
 renders a variable list of generic icon/label/value/tooltip entries above the
