@@ -58,6 +58,142 @@ usable if the temporary attachment disappears.
 
 ## Queue intake and ordering
 
+### UP-024 — Universal Blacksmith inventory and Stronghold Ballista Yard
+
+Status: Open; assigned 2026-09-27. Canonical DOCX integration and runtime
+implementation are the next systemic content task after the active
+Skill/perk/spell completion lane is established.
+
+Every town Blacksmith must sell every ordinarily purchasable War Machine. Towns
+retain economic identity through price rather than exclusive inventory: a
+machine historically associated with that town is cheaper there, while the
+other machines remain available at their ordinary configured prices.
+Do not expose the siege Catapult as ordinary shop inventory unless the canonical
+War Machines rules explicitly make it purchasable. Put the price table in data,
+not UI conditionals or repeated hardcoded faction branches; numerical price
+tuning is provisional under the fun-first contract.
+
+Stronghold's Ballista Yard retains its canonical visiting effect: the visiting
+hero gains +20 Siege until the end of the current week; revisiting refreshes but
+does not stack it. Its Ballista sale must coexist coherently with the universal
+Blacksmith inventory rather than creating a duplicate item or charging the hero
+twice. Human UI, AI purchasing/valuation, authoritative affordability and
+inventory, save/load duration, descriptions and logs must agree.
+
+Acceptance: the canonical DOCX records the universal-inventory and price-identity
+rule; all nine towns expose the same ordinary War Machine set with the correct
+data-driven faction prices; Stronghold Ballista Yard grants exactly the saved
+weekly +20 Siege effect; focused authoritative/UI/AI/save tests and an exact
+target build pass. Playable and rendered shop acceptance remain separate.
+
+### UP-023 — Complete all missing Skills, perks, and spells before further art
+
+Status: In progress; reprioritized by the user on 2026-09-27 ahead of the
+Fortress faction-completion lane and nonessential artwork.
+
+Finish functional gameplay breadth for every canonical Skill, every rank effect,
+all ten perks per Skill, and every canonical spell. Work in dependency-safe
+vertical slices, but do not substitute catalogue activation, descriptions,
+borrowed icons, or isolated formulas for working mechanics. Each slice requires
+authoritative execution, legal acquisition/progression, Battle/adventure AI as
+applicable, save/network compatibility, UI/status/log feedback, focused tests,
+independent review and target-build evidence. Remove or disable legacy spell
+acquisition routes that contradict the canonical roster. Purpose-made provisional
+art remains required when an active surface cannot function without it, but
+polish and final-art replacement follow functional completion.
+
+Acceptance: a requirements matrix accounts for every canonical Skill rank,
+perk and spell with implementation and evidence status; no entry remains merely
+planned or inert; AI can use and respond to every relevant mechanic; target
+builds and focused native tests pass; unresolved rendered/final-art acceptance
+is tracked separately and does not conceal gameplay gaps.
+
+### UP-022 — Complete the Fortress faction implementation
+
+Status: Open; paused at a preserved uncommitted Fortress-growth checkpoint when
+the user reprioritized complete Skill/perk/spell implementation on 2026-09-27.
+Resume after UP-023 unless a Fortress mechanic is a direct dependency of that
+functional completion lane.
+
+Finish the Fortress faction against the complete canonical DOCX scope rather
+than treating one visible subsystem as faction completion. Audit and implement
+Fortress heroes/classes/specialties and biographies, creatures and faction
+data, town buildings and prerequisites, the faction Skill and every one of its
+perks, interactions with global Skills/spells/Orders/Leadership, Battle and
+adventure AI, UI/log/status presentation, provisional HoMM3-style artwork, and
+all Fortress-specific acquisition/progression rules. Reconcile every canonical
+Fortress requirement with source, tests, target builds and playable evidence;
+record genuine design ambiguities instead of silently inventing rules.
+
+Acceptance: the completion audit and sprint register contain a granular
+Fortress requirement matrix with authoritative evidence for every item; all
+implemented entries have focused authoritative and AI coverage, generated
+content is synchronized, active assets satisfy the art/provenance guards, an
+independent review is clear, an exact pushed commit builds on the target route,
+and playable/in-game acceptance remains explicitly separate where still needed.
+
+### UP-021 — Fix Shift stack split/combine crash and Leadership-aware combining
+
+Status: Source implemented and independently reviewed on 2026-09-27. Exact-head
+dependency/source preflight run 36332113616 passed for commit `be8cb13a5`;
+full compile/package run 36333365693 is in progress. Playable acceptance remains
+pending.
+
+2026-09-27 crash evidence: the user supplied
+`VCMI_client.exe_crashinfo.dmp` (SHA-256
+`8b7527f3e2970ffebb43e1ba580314dc0bd41ba1f6abeae140b22365c69205ee`),
+created by exact Windows artifact `6948b1aa56df3358febe86cd48017552ca1fe735`.
+The dump records an unhandled MSVC `std::runtime_error` on the main thread.
+Binary metadata and the throw-site strings identify
+`WindowBase::close()` and its "Only top interface can be closed" guard. The
+reproduced control flow is concrete: `CSplitWindow::apply()` invokes the split
+callback; an over-capacity Leadership check pushes its explanatory info dialog;
+then `CSplitWindow::apply()` attempts to close the split window even though it
+is no longer the top window. This confirms that positive Leadership overflow
+can trigger the reported crash. The uploaded client log begins with the user's
+subsequent run, thirty seconds after the dump, so it is not treated as the
+crashing session's event log.
+
+Shift-splitting a creature stack in order to combine it into a hero's army can
+crash the game, possibly when the resulting stack would exceed the receiving
+hero's per-slot Leadership capacity. Reproduce from the newest relevant log/save
+when available, trace both client split/merge request construction and
+authoritative server validation, and fix the crash without bypassing server
+authority or weakening Leadership limits.
+
+As a quality-of-life rule, a combine operation must transfer as many creatures
+as legally fit in the destination stack under the receiving hero's current
+Leadership capacity. If the source contains more, combine only the legal amount
+and leave the remainder in its source slot; if none fit, leave both stacks
+unchanged and provide a precise explanation. Never delete creatures, create an
+illegal transient army, overflow counts, or depend on the UI prediction for
+validity. Apply the same authoritative behavior to every ordinary stack-combine
+route that shares this operation, including AI use where applicable.
+
+Acceptance: focused tests cover exact-fit, partial-fit, zero-fit, empty-slot
+split/transfer, Shift split-dialog confirmation, same-army and cross-army hero
+exchange, no-Leadership-limit/legacy rulesets, last-stack constraints, invalid or
+stale requests, state/network/save identity where applicable, and no mutation
+on rejected actions. Client UI previews and explanations agree with the server;
+independent review and an exact target build pass before playable promotion.
+
+2026-09-27 source result: `CSplitWindow` now snapshots its callback and amounts,
+closes first, and invokes the callback afterward, eliminating the dump-confirmed
+top-window exception. Ordinary combines send explicit merge intent and the
+authoritative server transfers the largest legal count, leaving excess and any
+required last source creature in place. Numeric split requests remain exact;
+the client normalizes legitimate reverse rebalancing into a positive request,
+while the server rejects malformed negative/stale counts and accepts a true
+zero-delta no-op without mutation. Focused server tests cover zero/partial/exact
+fit, cross-hero last-stack retention, bulk partial merge, malformed/stale numeric
+requests, over-cap rejection and legacy no-cap behavior. Two source guards cover
+the confirmed window lifecycle and client routing. An independent Astra review
+found and caused repairs for empty-slot exchange, ordinary last-stack routing,
+reverse rebalance, and two test compilation defects; its final re-review found
+no blocking source issue. Exact-head dependency/source preflight run 36332113616
+passed; full compile/package run 36333365693 remains in progress. Native/GUI and
+playable evidence are still required before this item is Playable-accepted.
+
 ### UP-020 — Maintain a durable implementation sprint register
 
 Status: Implemented as a living process; ongoing until New Horizons completion,
@@ -984,6 +1120,14 @@ migration with implementation completion.
 ## UP-011 — AI turn times and leadership failures
 
 Status: Open; prior isolated passes do not close the reported match regression.
+
+2026-09-27 blocker recheck: a read-only search across the available VCMI profile
+save trees still finds no save newer than the September 21 `And One For All`
+autosaves in the normal New Horizons profile. None is the reported match whose
+logs contained 8,766 ms and 45,829 ms Nullkiller turns plus a Leadership-limit
+rejection. The exact scenario therefore remains unavailable for faithful replay;
+the unrelated saves were not launched or attributed to this regression. Continue
+with other unblocked priority/canonical work until a matching save appears.
 
 2026-09-26 evidence refresh: the current profile still does not contain the
 reported match. Its latest log loaded `Too Many Monsters`, recorded ten Nullkiller
