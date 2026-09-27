@@ -142,11 +142,13 @@ and playable/in-game acceptance remains explicitly separate where still needed.
 
 ### UP-021 — Fix Shift stack split/combine crash and Leadership-aware combining
 
-Status: Source implemented and independently reviewed on 2026-09-27. Exact-head
+Status: Crash repair playable-confirmed by the user on 2026-09-27, but the
+broader Leadership-aware transfer acceptance reopened for an empty-slot defect
+and split-dialog clarity. Exact-head
 dependency/source preflight run 36332113616 passed for commit `be8cb13a5`;
 full compile/package run 36333365693 succeeded and uploaded artifact
-`10938170495` (617,643,648 bytes). Playable acceptance remains
-pending.
+`10938170495` (617,643,648 bytes). The user confirmed that the original split
+crash no longer occurs in that playable build.
 
 2026-09-27 crash evidence: the user supplied
 `VCMI_client.exe_crashinfo.dmp` (SHA-256
@@ -185,6 +187,29 @@ exchange, no-Leadership-limit/legacy rulesets, last-stack constraints, invalid o
 stale requests, state/network/save identity where applicable, and no mutation
 on rejected actions. Client UI previews and explanations agree with the server;
 independent review and an exact target build pass before playable promotion.
+
+2026-09-27 playable follow-up: dragging a whole garrison stack into an empty
+hero slot still requested an exact full-stack swap, so an over-capacity stack
+was rejected instead of filling the empty slot to the receiving hero's current
+Leadership capacity. Repair both the client fast path and authoritative empty-
+slot swap path so the legal maximum moves and the remainder stays in the
+garrison. The split dialog must also label its left and right armies explicitly,
+using `Hero: <name>` and `Garrison: <name>` (with accurate equivalents for other
+army pairings), so the player can tell which count belongs to which side.
+
+2026-09-27 source follow-up: the client now permits an over-capacity whole-stack
+move into an empty hero slot as a server-authored partial-transfer intent. The
+server calculates the receiving hero's current per-slot capacity, moves exactly
+that many creatures through the normal validated `RebalanceStacks` path, and
+leaves the remainder in the source garrison. Missing armies and two-empty-slot
+requests reject safely. Focused server regressions establish a legal visiting-
+hero exchange, use the UI's destination-first orientation, check conservation
+and response status, and cover the stale two-empty request. The split dialog now
+retains and renders explicit left/right owner labels. Its source guard and the
+existing callback-lifecycle guard pass, and an independent Astra source review
+found no remaining logic blocker after two test-fixture corrections. Native,
+exact-head Windows, rendered-label/localization, and playable verification are
+still pending; the old promoted package does not contain this follow-up.
 
 2026-09-27 source result: `CSplitWindow` now snapshots its callback and amounts,
 closes first, and invokes the callback afterward, eliminating the dump-confirmed

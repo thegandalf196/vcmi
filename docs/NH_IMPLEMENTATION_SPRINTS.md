@@ -56,9 +56,11 @@ after the functional Skill/perk/spell lane unless it becomes a direct dependency
 
 ### Shift split/combine crash and legal partial transfer
 
-**State:** Cause confirmed from the user's exact-build Windows minidump; source
-repair implemented and independently reviewed. Exact-head target build and
-playable acceptance remain pending under UP-021.
+**State:** The dump-confirmed split-window crash is fixed and playable-confirmed
+by the user in Windows artifact `10938170495`. A subsequent empty-hero-slot
+Leadership defect and split-dialog ownership-label request are repaired and
+independently source-reviewed; their new exact-head build, rendered inspection,
+localization and playable acceptance remain pending under UP-021.
 
 Confirmed failure: `CSplitWindow::apply()` runs its transfer callback before it
 closes. An over-capacity Leadership check pushes an explanatory info dialog;
@@ -104,6 +106,17 @@ pass. Exact-head dependency/source preflight run 36332113616 passed for commit
 (artifact `10938170495`, 617,643,648 bytes). Native tests, GUI reproduction and
 playable acceptance remain outstanding and are not inferred from either build
 route.
+
+Empty-slot follow-up source checkpoint (2026-09-27): an ordinary whole-stack
+drag from a garrison into an empty hero slot is now an authoritative partial
+move intent. The server moves the current Leadership-legal maximum and preserves
+the remainder; stale two-empty requests reject safely. The server regressions
+establish a valid visiting-hero exchange and mirror the UI's destination-first
+request orientation. The split window retains explicit `Hero: <name>` and
+`Garrison: <name>` labels. An Astra review found and caused repairs for a missing
+source-stack guard, an invalid exchange fixture, the real UI orientation, and a
+misdeclared label member. Focused source guards pass. Native compilation/tests,
+exact-head packaging, localization, rendered layout and user play remain open.
 
 ### Next dedicated sprint — Fortress completion
 
