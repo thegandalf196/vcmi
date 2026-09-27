@@ -52,6 +52,38 @@ The interrupted Fortress base-growth slice remains preserved uncommitted in the
 worktree. Do not discard or misrepresent it as integrated; resume it under UP-022
 after the functional Skill/perk/spell lane unless it becomes a direct dependency.
 
+### Active functional slices — Spell Lock and Archery
+
+**Spell Lock:** source implementation has passed final independent Astra review
+after three repair passes. Compound effects such as Teleport drop the whole
+paired effect instead of invoking a script with an empty target; real-mechanics
+tests compare execution with `castEval` for damage, status, dispel, Teleport and
+mixed locked/unlocked area targets; and explicitly nonmagical creature abilities
+such as Death Cloud and Fireball Ability bypass the seal in both real and
+forecast paths. Protection, cleansing, frozen duration handling and AI valuation
+now consistently apply only to magical effects. Focused Python content checks
+and `git diff --check` pass. Native compile/tests, exact target build and playable
+acceptance remain separate gates; catalogue status alone is not completion.
+
+**Archery Basic perks:** Target Caller, Skirmisher, Point-Blank Shot and
+Counterfire have an uncommitted implementation checkpoint, but Astra review
+blocks integration. Skirmisher currently rejects enemy ownership, forces a
+single deterministic firing hex rather than accepting the player's legal chosen
+half-Speed position, and can preview a different attack than it executes.
+Point-Blank remains blocked by the earlier ordinary-shooter engagement gate.
+Counterfire can react while incapacitated and consumes ordinary retaliation.
+Repair these paths and add the missing player-choice, incapacitation, retaliation,
+multi-target/recursion and saved round-stamp evidence before committing the four
+perks. After the full ten-perk Archery slice is closed, Bulwark of the Mire is
+the next full Skill slice; do not insert another Skill or art-polish lane first.
+
+**Delivery checkpoint:** full Windows workflow run `36341858040` was dispatched
+at committed head `70117e251a5fcf5f2163adbfb8be94626a57b56a` with
+`preflight_only=false`. It is the first actual compile/package attempt for the
+Leadership empty-slot follow-up; record its conclusion and artifact before
+claiming playable delivery. The earlier run `36339991468` was source preflight
+only and is not a playable build.
+
 ## Current sprint — Leadership-safe army exchange
 
 ### Shift split/combine crash and legal partial transfer
