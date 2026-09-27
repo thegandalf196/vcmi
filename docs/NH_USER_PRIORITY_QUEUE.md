@@ -17,6 +17,13 @@ registers; it is not cancelled by this new queue.
 
 Status: Implemented (visual verification pending); playable delivery pending.
 
+2026-09-26 source delivery: commit `4a03aae52` isolates the Tower-only opaque
+leather replacement and per-card responsive frames, together with its source
+wiring regression. Independent review confirmed child ownership, paint order,
+five-row bounds, non-Tower isolation and unchanged building interactions. The
+focused Tower and recruitment-category checks pass. Windows CI and actual
+rendered inspection remain pending; this is not yet visual acceptance.
+
 2026-09-24 checkpoint: existing dirty `CHallInterface` source replaces the baked
 vanilla card area with opaque leather and attaches an individual background to
 each relocated card. Independent source review found correct ownership, paint
@@ -390,7 +397,14 @@ and class eligibility, no lost choices, and identified playable delivery.
 
 ## UP-006 — Browse all perks from a skill
 
-Status: Open; existing implementation/delivery must be checked.
+Status: Implemented (visual/input verification pending); playable delivery pending.
+
+2026-09-26 reconciliation: the implementation is already committed and pushed.
+The complete saved perk catalogue is grouped by tier with icon, name and learned
+state; skill left-click opens it, perk right-click shares the normal perk-help
+formatter, and legacy skill help remains the fallback. The focused browser guard
+passes in the current tree. No new product edit is warranted without rendered
+input evidence; this is not yet visual acceptance.
 
 2026-09-24 source reconciliation: `CHeroWindow` already routes skill left-clicks
 to `NewHorizonsPerkBrowser` using the saved perk catalogue, retaining ordinary
@@ -410,7 +424,14 @@ layout/input, and identified playable delivery.
 
 ## UP-007 — Complete Tower dwelling and Library swap
 
-Status: Open; related to UP-001, but not closed by fixing black backgrounds.
+Status: Implemented (visual/runtime journey pending); playable delivery pending.
+
+2026-09-26 reconciliation: committed configuration and focused tests cover the
+Genie/Magi dwelling identities, row order, costs, prerequisites, recruitment and
+Library growth/position requirements. The two Tower progression source tests and
+the recruitment-category guard pass in the current tree; the recorded native
+Library and melee-penalty regressions also passed. A real construction/recruitment
+journey and construction-screen acceptance remain required before resolution.
 
 2026-09-24 checkpoint: both Tower building progression source/configuration
 tests pass. The native Library-growth and Magi-melee-penalty tests also pass
@@ -431,7 +452,16 @@ correct construction-screen order, and identified playable delivery.
 
 ## UP-008 — Outstanding UI corrections
 
-Status: Open; track each subitem separately during implementation.
+Status: Implemented (visual/input verification pending); playable delivery pending.
+
+2026-09-26 reconciliation: all three product corrections are already committed
+and pushed. `4293ebc0a` binds the Metamagic specialty to the native 44×44 slot;
+`7a361474e` provides the Fort label/value gutter and compact bordered leather
+Overcharge window; `a313d3c67` supplies the target-aware shared damage/casualty
+forecast. The specialty-art, recruitment-layout and Overcharge source guards pass
+in the current tree, and the two recorded native forecast regressions passed.
+Current dirty `CCastleInterface` hunks belong to UP-001/UP-014, not this item.
+Rendered legibility and pointer interaction remain unverified.
 
 2026-09-24 source reconciliation: Overcharge already uses a 320x250 bordered
 leather dialog, refreshes selected-target damage/kills through the shared effect
@@ -670,6 +700,12 @@ user's Downloads directory; do not overwrite its mechanics while editing prose.
 
 Status: Implemented; client build and focused native checks passed; visual
 verification and playable delivery pending.
+
+2026-09-26 source delivery: commit `c0bbb2d3e` isolates the compact hero-card
+presentation, accessible-hero capacity callback, privacy boundary, right-click
+explanation and focused regressions. The source guard and independent review
+pass. A newer Windows preview build containing this commit is queued; the prior
+successful build does not establish this commit's compile or visual acceptance.
 
 2026-09-24 implementation checkpoint: root integrated `CompactHeroSpellPoints`
 for both compact hero-card renderers. The two text lines are bounded to 30x20,
