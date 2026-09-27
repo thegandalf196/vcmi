@@ -58,6 +58,44 @@ usable if the temporary attachment disappears.
 
 ## Queue intake and ordering
 
+### UP-016 — Activate Cleave and integrate its perk art
+
+Status: Source implemented; native and playable verification pending, assigned
+2026-09-27.
+
+2026-09-27 source checkpoint: canonical Cleave is active with its Advanced gate.
+Authoritative combat selects from the destroyed stack's adjacent living enemies
+by current aggregate HP, lowest occupied hex and unit ID, then resolves one
+50%-damage physical follow-up before any surviving retaliation. Its saved
+per-activation expenditure resets only on genuine activations; continuations
+preserve it, and old serializers reject lossy state. Battle AI scores and replays
+the same follow-up without mutating the live battle, including post-Cleave
+retaliation recalculation and clone/rebirth distinctions. Purpose-made
+HoMM3-style source art, four runtime states, prompt/provenance and hashes are
+retained and bound as Provisional. Focused runtime, AI and compatibility tests
+are registered. All 137 New Horizons Python tests, module regeneration, the
+68-icon art/uniqueness guard, JSON/Lua syntax and whitespace checks pass; an
+independent Astra review found no remaining production blocker. Native CI and
+playable/in-game visual verification remain pending.
+
+Implement the canonical Advanced Offense perk end to end. After an ordinary
+physical melee attack destroys an enemy stack, the attacker automatically
+strikes one living hostile stack adjacent to the destroyed stack for 50% normal
+damage. Choose the candidate with the highest current aggregate HP; break ties
+by the lowest occupied battlefield hex and then unit ID. Cleave triggers at most
+once per genuine creature activation, does not trigger itself, and is not a
+ranged, retaliation, Brace/pre-emptive, or spell-like attack. Same-activation
+continuations preserve expenditure; a genuinely new activation resets it.
+
+Acceptance: authoritative runtime and Battle AI use the same eligibility and
+target-selection rules; hypothetical replay includes the follow-up state and
+score without mutating the live battle; save/packet compatibility preserves the
+activation expenditure; focused native tests cover trigger, 50% damage,
+deterministic targeting, exclusions, non-recursion, and activation reset. Bind
+purpose-made HoMM3-style provisional art, retain source prompt/provenance and
+runtime hashes, regenerate/check content, and pass active-perk data/art guards.
+Playable delivery and in-game visual review remain separate gates.
+
 ### UP-015 — Activate Encirclement and integrate its perk art
 
 Status: Source implemented; native and playable verification pending, assigned
