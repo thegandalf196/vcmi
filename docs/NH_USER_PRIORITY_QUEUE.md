@@ -112,6 +112,10 @@ Durable matrix: `docs/NH_FUNCTIONAL_COMPLETION_MATRIX.md`. Update it whenever a
 slice changes catalogue, implementation or evidence status; do not infer
 completion from an `active` marker.
 
+User ordering clarification (2026-09-27): after the active Spell Lock and full
+Archery slices, complete Bulwark of the Mire as the next full Skill slice before
+War Machines or Command. Partial Mireborn source is not completion.
+
 ### UP-022 — Complete the Fortress faction implementation
 
 Status: Open; paused at a preserved uncommitted Fortress-growth checkpoint when
