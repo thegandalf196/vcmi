@@ -694,7 +694,22 @@ unrelated test run is insufficient. Existing GUI/input restrictions remain.
 
 ## UP-012 — Hero redesign workbook and biography rewrite
 
-Status: Open. User authorized improved rewrites; originals must remain available.
+Status: Implemented (native loading and playable verification pending). Originals
+remain available for every entry that did not pass review.
+
+2026-09-27 selective-activation checkpoint: all 144 standard heroes were matched
+by identity against the purchaser-installed biography table and reviewed in
+three editorial rounds. Fifty-two independently rewritten biographies passed
+the final fidelity/material-improvement gate; the other 92 decisions are
+explicit `null` inheritances, so New Horizons leaves their installed text
+untouched. One nominally accepted near-verbatim copyedit was withheld on
+provenance grounds. The generated module patch contains exactly the 52 accepted
+entries and every record is leaf-only `texts.biography`; no workbook mechanics,
+purchaser originals, comparison report, or workstation path enters the module.
+Map-authored custom biographies retain precedence. The generator owns both the
+manifest and patch drift check, module identity advances to 0.14.0, and 86
+focused Python content/generator tests pass. Native content loading and playable
+presentation remain unverified; this is not graphical acceptance.
 
 2026-09-24 checkpoint: created a separate Downloads draft,
 `New_Horizons_Biography_Comparison.md`, with six original/candidate comparisons
