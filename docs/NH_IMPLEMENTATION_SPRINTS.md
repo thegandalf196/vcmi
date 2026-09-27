@@ -214,9 +214,9 @@ visual/playable gates.
 
 ### Pavise
 
-**State:** Implemented, independently reviewed and committed in source. Native
-tests, exact-head Windows build and playable visual/runtime acceptance remain
-pending.
+**State:** Implemented, independently reviewed, committed, and exact-head
+Windows-build verified. Focused native tests and playable visual/runtime
+acceptance remain pending.
 
 Canonical result: when a friendly stack Defends, ranged physical creature damage
 against it is reduced by an additional 25%.
@@ -258,7 +258,11 @@ review caught and caused repairs for spell-like shooters' physical melee,
 wait-then-move AI behavior, Defend's ordinary Defense bonus in the test baseline,
 the cap assertion, and a detached test-state mutation. Final re-review found no
 blocking source issue. The active-art guard and 45 focused Python data tests pass;
-native/runtime acceptance is not yet claimed.
+native/runtime acceptance is not yet claimed. Exact workflow run `36333519971`
+succeeded at commit `7862ca7eeccec4a266209ce1450e11eded418713` and uploaded
+`New-Horizons-Windows-x64-7862ca7eeccec4a266209ce1450e11eded418713`
+(artifact `10938463974`, 621,082,490 bytes). This proves the Windows compile and
+package route for that exact source revision, not focused gameplay execution.
 
 ## Following sprint — Advanced Armorer sequence
 
