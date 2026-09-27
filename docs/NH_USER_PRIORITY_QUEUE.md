@@ -108,6 +108,10 @@ planned or inert; AI can use and respond to every relevant mechanic; target
 builds and focused native tests pass; unresolved rendered/final-art acceptance
 is tracked separately and does not conceal gameplay gaps.
 
+Durable matrix: `docs/NH_FUNCTIONAL_COMPLETION_MATRIX.md`. Update it whenever a
+slice changes catalogue, implementation or evidence status; do not infer
+completion from an `active` marker.
+
 ### UP-022 — Complete the Fortress faction implementation
 
 Status: Open; paused at a preserved uncommitted Fortress-growth checkpoint when
