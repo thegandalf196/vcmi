@@ -1,5 +1,12 @@
 # New Horizons completion audit
 
+> Historical inventory snapshot. Its 2026-09-24 perk counts and per-Skill rows
+> are stale and must not be used as current Phase 1 coverage. The maintained
+> working-tree ledger is [NH_FUNCTIONAL_COMPLETION_MATRIX.md](NH_FUNCTIONAL_COMPLETION_MATRIX.md),
+> which currently records 95 active / 215 planned perks. Keep this audit for
+> its earlier evidence and unfinished-item history until its whole scope can
+> be reconciled, rather than updating one number and implying the rest is live.
+
 ## Status and evidence standard
 
 Catalogue refreshed 2026-09-24; initial evidence inventory 2026-09-22. This is not a completed scripture audit
@@ -84,6 +91,31 @@ Each row has three rank effects and ten perks. Active flags only:
 | Full product | No full acceptance established by this checkpoint | Faction audit, complete content, AI, saves, UI, Linux/Windows and installed-asset journey |
 
 ## Known remaining breadth
+
+### Historical DOCX catalogue-validation checkpoint
+
+The earlier 26-failure/hash-mismatch checkpoint is superseded. The current
+then-canonical DOCX SHA-256 was
+`7fd38c3b12386e62f511d66bfbd1ea615f301d1e2bdf57a9c70b831ff3ff81e4`;
+the registry and generated module identify that source, all 129 New Horizons
+Python data checks pass, and module regeneration is clean. This establishes
+catalogue/source consistency only, not native runtime or playable acceptance.
+
+### Metamagic reconciliation at the DOCX checkpoint
+
+Pending Changes is empty because the accepted consume-on-use Metamagic,
+Arcane Acquisition, Formula Reserve, Spell Buffer, and automatic Grand
+Metamagic rules were integrated into the DOCX and carried into the canonical
+Markdown. Implement and test
+the definitions there; historical traces below are evidence of earlier states,
+not alternative authority. Current runtime and delivery evidence remains tracked
+under UP-003 in the user-priority queue.
+
+The older manual-Grand and grant-time-counting source trace is superseded by the
+consume-on-use canonical decision and subsequent UP-003 implementation work. Do
+not restore those rejected transitions from this historical audit. Review the
+current source, AI projection, replicated state, and focused transition tests
+together before changing status from implementation to verified delivery.
 
 ### Adventure travel integration checkpoint — 2026-09-24
 
@@ -424,6 +456,31 @@ and loss of the radius bonus when Logistics is disabled without erasing explored
 terrain. Graphical acceptance and dedicated artwork remain pending; the playable
 snapshot has not changed.
 
+### Physical reduction prerequisite for Arcane Ballistics
+
+The canonical specification requires independent physical reductions to multiply
+and their combined reduction to cap at 80%. The previous calculator added some
+Order/Bulwark/general contributions and had no aggregate PDR cap. The source now
+adds an explicit saved `physicalDamageReductionCapPercent` setting (80 for new
+worlds, absent means historical behavior), runtime/schema validation, and a
+separate physical-only damage stage shared by authoritative attacks and AI.
+Contributions to the same generic bonus source/source ID retain `totalValue()`;
+distinct sources, Armorer, Battlecraft Defend, Bulwark and defensive Orders
+multiply. Petrification, Creature Defense, outgoing penalties and Phantom Army
+remain outside the stage. Cross-source-ID percentage modifiers are not supported
+by the curated grouping contract; the original path is retained for snapshots
+without the setting.
+
+Native regression cases now cover independent versus same-source contributions,
+the cap, petrification remaining separate, and historical behavior. Native
+validation is **pending**: the incremental `vcmitest` build remains running.
+The new shared-header payload triggered a broad rebuild; it must finish before
+any test executable is launched. **29 offline content checks pass**, module
+metadata is synchronized, and independent source review found no blocking issue.
+This is the prerequisite foundation, not completed Arcane Ballistics: its perk
+catalog migration, three-mark penetration, previews and native proof remain.
+No playable promotion or canonical DOCX edit was performed.
+
 ### Remaining implementation
 
 - Implement the accepted ordered Skill/perk progression across every teaching
@@ -451,7 +508,376 @@ snapshot has not changed.
   outcomes rather than hypothetical AI calculations or tooltip estimates.
 - Verify save compatibility, integrated UI, and both supported release platforms.
 
+### September 24 — primary growth and Buffer Mana verification
+
+The native test target builds successfully. A private-profile headless run passed
+all 43 tests in `NewHorizonsPrimaryProfileTest`, `NewHorizonsPrimaryGrowthTest`,
+`NewHorizonsHeroRulesTest`, `NewHorizonsVersionThreeHeroGrowthTest`, and
+`SpellPointCapacityTest`, plus `NewHorizonsInstalledSkillGrowthTest` and the
+three `NewHorizonsCanonicalClassGrowthTest` level cases. This covers version-3 profile validation, independent
+percentile boundaries, canonical installed data, authoritative level-up gains,
+and combat Buffer grants preserving normal Mana and temporary-buffer provenance.
+The 12 Python hero-data tests and generated-module consistency check also pass.
+The integrated source is commit `b8220475d`. The planned Wisdom perk Deep
+Knowledge still lacks its specified +10-percentage-point Knowledge-growth
+modifier; the base version-3 growth system must not be mistaken for completion
+of that perk.
+
+The development-screen explanation now derives bonus opportunities from the
+hero's growth view. The client build succeeds, including the Tower construction
+background correction; recruitment-category and Overcharge source checks pass.
+Graphical verification remains pending. Added coverage verifies all five scoped
+skill IDs at Basic/Advanced/Expert, nontrivial growth-roll continuation after
+randomizer serialization, and all eighteen classes at levels 1, 2 and 20 with
+game-state reload. The revised Metamagic perks are not verified end to end.
+No playable snapshot was promoted by this check.
+
+A subsequent private-profile run also passes all 28 tests in
+`NewHorizonsHeroGrowthTest` and `NewHorizonsVersionTwoHeroGrowthTest`, covering
+legacy/version-2 growth, authoritative gain reporting, game/campaign round trips,
+scaled spell calculations, and ordinary Mana-cost interactions.
+
+### September 24 — skill combat-status metadata
+
+Optional `combatStatus` skill metadata now selects a typed read-only provider
+and registers a localized description. Metamagic declares its existing combat-use
+counter as the first provider; this does not introduce an action pool or new
+gameplay state. Five native skill tests pass (omission, translation, schema,
+malformed loader input, and existing icons), as do six Python skill-data checks
+and generated-module consistency. The schema unit test intentionally isolates
+metadata from mod image-filesystem validation. Generic client rows now consume
+skill metadata, retain exhausted-use readback, and derive panel placement from
+visible height. Ward and Warcasting use the same renderer. Focused Warcasting
+and Metamagic UI source guards pass; independent source review found no material
+issues. The combined client/test build passes after correcting missing
+renderer/font includes. The integrated run passes all 48 focused native tests
+(the 43 growth/Buffer tests plus five skill tests), 18 Python hero/skill-data
+tests, module consistency, and both focused UI source guards. Compact mode
+retains the existing stack/hero overlay behavior; both
+layout modes, sticky panels on/off, and simultaneous statuses still require
+graphical acceptance. These checks do not establish UI completion or promotion.
+
+The existing 43 `NewHorizonsMetamagicTest` cases and eight
+`HeroSpellAllowanceTransition` cases also pass as a pre-change regression
+baseline. They are **not** acceptance of the newly approved perks: several
+explicitly assert manual Grand activation, Countersequence, and Spell Echo in
+place of Spell Buffer. Those expectations must be replaced with the canonical
+pool and Pending Changes decisions during the coordinated runtime/AI migration.
+
+Migration hazard found in the next-perk trace: the current retired-perk migration
+unconditionally maps `metamagic.spellBuffer` to `metamagic.spellEcho`. Reviving
+Spell Buffer requires snapshot-aware migration so current selections are not
+silently rewritten to the removed perk. Round expiry clears sequence state in
+`BattleInfo::nextRound`; rewards must resolve before that clear. The approved
+Spell Buffer reward is specifically unused-action expiry at round end, not
+voluntary decline. Formula Reserve must handle completed qualifying sequences
+when the Grand continuation is cast, declined, or expires, without double pay.
+Also inspect combat-end sequence finalization rather than assuming a next round
+always occurs. Update human and AI Grand paths together; a protocol flag must
+not remain a player-controlled way to activate Grand on an earlier sequence.
+
 This list is known gaps, not an exhaustive replacement for the scriptures. Keep
 the full implementation goal active until a requirement-by-requirement audit
 proves completion. See `NH_BUILD_HANDOFF.md` for the current test failures and
 the exact playable snapshot boundary.
+
+### Metamagic migration preparation
+
+The retired Spell Buffer migration is now restricted to the historical
+`d0aa9c0017967e85120b4e63e04df3d58441d606ce9c496d29117515330654ce`
+source snapshot with schema/ruleset version 1. Selections are renamed only when
+the matching historical definition is migrated. New/unknown snapshots retain
+their own Spell Buffer definitions; orphan selections remain invalid. JSON and
+binary regressions cover these boundaries. The test target builds successfully
+and all 18 `NewHorizonsPerkState` tests pass headlessly. This does not activate
+the new perk: its runtime expiry reward remains
+unimplemented. The catalog must carry its reconciled source identity before
+reviving the ID; the source hash is not an independent catalog revision.
+
+The automatic Grand integration trace confirms that activation belongs to the
+accepted first follow-up of the third used sequence (pre-cast use count 2), with
+Expert rank, the perk, and no previous Grand activation. Remove manual client
+toggles and AI false/true alternatives together. The accepted-cast packet may
+retain a server-derived outcome marker, but the request flag must no longer
+authorize activation. Share the predicate and transition across execution and
+AI projections; preserve already-pending legacy continuations. Formula Reserve
+must use the derived outcome rather than the old player-choice flag. This is an
+implementation contract, not evidence that automatic Grand already works.
+
+### Automatic Grand integration
+
+The shared transition now derives automatic third-used-sequence activation and
+rejects a mismatched accepted-cast outcome atomically. Server requests with the
+retired manual Grand flag are rejected; accepted packets carry the calculated
+outcome. Both client toggles and their mode state are removed. AI candidates use
+the same predicate, without requesting Grand or duplicating ordinary/Grand
+variants. The old pre-cast continuation-score duplication is removed: a granted
+continuation is evaluated against the actual post-cast battlefield on the next
+AI decision. No deeper sequence-search optimality is claimed.
+
+Tests now include three successive used sequences, an invalid third follow-up,
+a forged manual request, no charge for the Grand continuation, a previously
+granted legacy continuation, a typed-ledger AI third-use request, and hypothetical
+transitions that leave real state untouched. The independent source review found
+no remaining material issue after correcting the Formula Reserve fixture to
+avoid spending its existing once-combat refund during setup. The combined
+`vcmiclient`/`vcmitest` build passes. All 109 focused native tests pass across the
+action ledger, shared spell transition, Metamagic, Warcasting, action/packet
+serialization, and the three Metamagic AI cases. The remaining 33 magic-AI
+regressions also pass (142 native tests total across these two runs). Focused
+client guards and module consistency pass; no graphical acceptance or playable
+promotion is claimed. Full Formula Reserve per-sequence rewards, Spell Buffer
+expiry rewards, and Arcane Acquisition remain separate unimplemented revisions;
+this slice does not claim that the full Metamagic pool is complete.
+
+The focused Grand description test and module consistency check pass. The full
+perk-data comparison still reports 26 failures: 25 skill-pool comparisons against
+the newly supplied DOCX and the unreconciled source hash. These remain real
+catalog migration gaps, not evidence to change the document or blindly refresh
+its hash. They prevent a full-design completion claim.
+
+Next reward implementation boundaries are explicit events, not polling:
+resolve round expiry before `BattleNextRound` clears the sequence; resolve a
+qualifying pending sequence before battle-result cleanup; final accepted extra
+casts and voluntary decline already have replicated refund paths. Formula
+Reserve must pay once per qualifying closure, not once per combat. Spell Buffer
+must pay only on round expiry and needs a serialized once-combat flag. Ordinary
+restoration and Buffer grants must remain distinct typed mana mutations. Granted
+Buffer must not be added to combat-only `temporaryBufferRemaining`, which is
+removed at battle cleanup. Validate closure reason and sequence/grant identity
+before closing so duplicate resolution cannot grant resources twice. AI
+hypothetical action state must follow the same eligibility/expiry semantics;
+its current no-op mana spending is not evidence of mana-pool forecasting.
+
+### Revised Metamagic reward catalog boundary
+
+The live perk catalog now uses revision 2, while the parser and schema retain
+revision 1 support. This separates the newly approved Spell Buffer reward from
+the historical revision-1 migration of an identically named, different perk to
+Spell Echo. Native regression coverage now explicitly includes revision-1
+nonhistorical hashes, revision-2 snapshots with all known hash categories, and
+subsequent reloads of already migrated Spell Echo selections. These new native
+assertions await the next build/run; do not count source additions as passes.
+
+The focused Python schema and revised reward-description checks pass, as do the
+generic combat-status and optional-Metamagic client guards and generated-module
+consistency. Independent catalog review found no correctness defect and prompted
+the additional historical reload coverage above. The full DOCX/catalog comparison
+still fails on 26 unresolved provenance/content comparisons. The source hash has
+not been refreshed to disguise those gaps. Spell Buffer's generic neutral icon
+is explicitly **Not done**, not final or purpose-made provisional art.
+
+Reward runtime source is now implemented: Formula Reserve settles on accepted
+final casts, decline of a qualifying continuation, round expiry, and combat end;
+Spell Buffer settles only on unused-offer round expiry. A new serialized
+once-combat Buffer flag rejects lossy older writes. Tests cover repeated
+sequences, capped recovery, expiry versus decline/end, permanent versus temporary
+Buffer cleanup, and serialization. Round and combat-end logs report the actual
+reward amounts; the round callback refreshes cached hero Spell Point cards.
+Independent production review found no correctness defect. The combined native
+client/test build has started; these new native cases have **not yet run**.
+Arcane Acquisition, remaining catalog reconciliation, canonical DOCX integration,
+graphical acceptance, and playable promotion remain outstanding.
+
+### Focus Magic prerequisite for Arcane Acquisition
+
+Read-only mapping against the current DOCX confirms Focus Magic and Arcane
+Breach have no runtime definitions. Arcane Acquisition therefore cannot be
+completed merely by replacing the Countersequence catalog entry. The Sorcery
+level-3 spell costs 11 Mana, enchants one friendly ranged-capable stack for three
+rounds, and adds a mark after each damaging ranged creature attack. Marks cap
+at three, last two rounds, refresh together when another mark is applied, and
+are dispellable. Each mark gives subsequent friendly ranged attacks Creature
+Defense penetration of `min(20%, 10% + 0.05% * SP)`; melee gains nothing and the
+new mark cannot benefit the attack that applies it.
+
+Required integration includes the spell definition, authoritative post-attack
+mark mutation, damage calculation, save state, expiry/Dispel, AI projected
+attacks and spell valuation, visible enchantment/mark duration and count, and
+attack-preview penetration. Arcane Ballistics additionally depends on three
+marks and Physical Damage Reduction penetration. Existing accepted-cast
+Metamagic provenance can qualify Arcane Acquisition without adding a hero UI
+field. Countersequence's saved fields require compatible reading, not blind
+deletion. The phrase "first enemy stack" needs clarification on once-per-
+enchantment versus every unmarked target; a question has been raised. The base
+spell and mark prerequisites do not depend on that answer.
+
+Implementation seams inspected: `AFTER_ATTACK` combat-event triggers execute
+after the attack packet and expose actual per-target damage; `SetStackEffect`
+provides saved, replicated timed bonuses. Do not simply label hostile marks with
+the positive Focus Magic spell as their source: `scripts/spells/dispel.lua`
+classifies selective removal by the source spell's positiveness. Arcane Breach
+needs a correctly negative effect identity (or an equally explicit generic
+polarity mechanism), so friendly cleansing and hostile buff removal stay legal.
+`Bonus::bonusOwner` is not serialized and cannot retain mark beneficiary side.
+Target-aware penetration must flow through the shared damage callback/Lua
+calculator, and projected post-hit mark application plus damage-cache validity
+must be handled explicitly for the AI. Existing bonus updates only extend
+duration; they do not replace an aggregate mark count or payload.
+
+### Metamagic rewards native validation checkpoint
+
+The combined `vcmiclient`/`vcmitest` build completed successfully. The initial
+native run passed 85 of 91 cases and exposed six fixture defects: mutually
+exclusive Advanced perks selected together, a Normal baseline captured before
+paying for the triggering spell, and an unsupported empty-buffer assumption
+after a serializer exception. Legal perk combinations now have separate cases;
+the zero-gain Buffer test fills its pool after the cast. No runtime rule was
+weakened to satisfy these tests.
+
+After rebuilding the corrected test file, all **93** reward, perk rules/state,
+serialization, and Spell Point capacity tests pass. All **99** shared action,
+Warcasting, Magic Arrow action, and magic-AI regressions also pass: **192 native
+tests total** in two isolated headless runs. Client Metamagic and Warcasting
+guards, generated-module consistency, and `git diff --check` pass. This
+supersedes the earlier pending-build/reward-test status above. No graphical
+acceptance or playable promotion is claimed; the full DOCX/catalog comparison
+and the missing Focus Magic/Arcane Acquisition work remain unresolved.
+
+### Arcane Breach identity and formula foundation
+
+The registered `new-horizons:arcaneBreach` identity is now negative, special,
+nonpersistent and absent from both hero-spell rosters. It has no cast effect;
+this is the status source needed by selective Dispel, not a playable Focus
+Magic spell. Its unrelated borrowed icon frames are explicitly **Not done**
+in the asset register. All 26 offline content checks and generated-module
+consistency pass. A native loader/learning-exclusion case has been added.
+
+`NewHorizonsSorcery` now defines the canonical spell/mark durations, cap and
+per-mark penetration formula in basis points. The new test covers fractional
+values, every documented Spell Power example, the cap boundary, negative input
+and integer overflow. The native rebuild completed and all **11** Sorcery and
+spell-roster-context tests pass, including the new formula and loaded identity
+cases. The formula is not yet wired into damage calculation.
+
+Additional AI inspection confirms that `CUnitState::acquireState()` borrows
+its source's unit/bonus pointers. A child hypothetical battle used for marks
+between shots must therefore remain owned by the returned attack possibility;
+copying health alone cannot preserve its bonus state. Selected attack replay
+already carries per-strike hits in `fortuneStrikes`; extend that shared strike
+aftermath rather than inventing a second independent hit history. Future
+exchange attacks also need post-hit mark application, never during read-only
+`evaluateOnly` target probes. The original-damage cache must retain its
+pre-effect baseline while current marked damage is recalculated.
+
+Lua combat scripts can issue the same `SetStackEffect` mutations against
+`HypotheticBattle`, but AI does not dispatch combat triggers automatically.
+Use an explicit deterministic mark-only bridge, not blanket replay of all
+scripts (some can cast, damage, heal, animate or log). Live Focus Magic,
+post-hit marks, damage integration, AI valuation, status UI and Arcane
+Acquisition remain unfinished; no promotion is claimed by this checkpoint.
+
+### Focus Magic scripted mark mutation checkpoint
+
+Registered spell-effect and combat-event scripts now implement friendly
+shooter-capable target filtering, a three-round captured-strength enchantment,
+and post-hit Arcane Breach mutation. The spell effect is not yet attached to a
+live Focus Magic spell definition/roster entry. The mark handler accepts only
+positive-damage ranged hits on living hostiles, checks the current controller
+against the captured beneficiary side, and refreshes existing marks before
+adding another below the three-mark cap. Each mark retains its own potency.
+Marks deliberately omit a shared stacking key: that key would collapse the
+visible bonus list to one entry and defeat cap accounting.
+
+Native Lua bindings expose current controlling side and copied combat-trigger
+JSON parameters. The cast-side penetration binding applies Warcasting only to
+the Spell Power component before the cap, not to the fixed base. The bindings
+compile. All **15** focused native cases pass (Sorcery formula, loaded roster
+identity, original combat-event dispatch and three new direct-script cases).
+The direct-script cases exercise actual Lua/bonus packets, but supply hit
+payloads themselves: this is not yet proof of full Focus Magic casting,
+damage penetration, per-shot AI projection, expiry/Dispel interaction or UI.
+The final fixture cleanup rebuilt successfully: all 15 cases pass again, and
+the original combat-event test also passes separately under the legacy profile
+(not skipped). No native process remains active and no playable promotion was
+performed. The next integration must add the spell definition and cast tests,
+shared penetration consumption, AI per-strike projection/cache handling and
+player-visible status/preview/log feedback before claiming Focus Magic complete.
+
+### Focus Magic damage and AI integration — validation pending
+
+The working source now feeds captured Arcane Breach penetration into the shared
+physical-ranged damage calculation, without changing the creature's actual
+Defense. Candidate attacks retain a private hypothetical battle and apply the
+same mark script between shots; selected exchange projections replay those marks
+into their own model. The damage cache remembers marked targets so removing or
+expiring marks cannot revive an older cached penetration premium. New native
+regressions cover multi-shot isolation and expiry, alongside shared damage tests.
+These additions are not yet validated: the integration build has started, and
+the actual spell-cast fixture is still being completed. No playable promotion or
+full Focus Magic completion is claimed.
+
+The definition now has five registered native cast tests and a separate AI
+decision test for choosing a friendly shooter. The private test maps opt into
+Focus Magic without activating its production roster row. All **27** offline
+content checks pass, and module metadata synchronization passes. The first native
+integration build found a missing `GameSettings.h` include in the combat-event
+fixture; after correction that compilation unit passed and the remaining build
+continued. Native behavioral results are still pending. Independent source
+review found no concrete lifetime/mark-replay regression, but is not a substitute
+for those tests or graphical acceptance.
+
+The native integration and cast-fixture follow-up builds succeeded. The first
+focused run executed 28 cases: **20 passed, 6 failed, 2 skipped**. Scripted marks
+were ignored because Lua returns JSON numbers as floats while the damage bridge
+required integer storage; the bridge and UI now compare exact numeric side
+values instead (not a truncating conversion). Two AI tests accidentally selected
+the identifier API's boolean overload through a C-string argument; explicit
+string arguments correct that lookup. These fixes await rebuild/retest. Valid
+Focus Magic casts and the AI choice also failed and remain under diagnosis.
+The creature status tooltips and ranged preview now have source implementations,
+but client compilation and rendered acceptance are still pending. No promotion.
+
+After rebuilding, the scripted-mark damage assertions no longer reported a
+failure, but the run terminated in the now-unskipped AI projection test. A
+single-test debugger run located a dangling temporary bonus-list iteration in
+the shared damage callback. The callback and AI mark-detection helper now retain
+the returned shared list before iterating; this correction is not yet retested.
+Cast preflight still rejects valid targets with no `ProblemImpl` text, so scoped
+script-error diagnostics are being added rather than weakening cast validation.
+
+Static tracing then found a script-identity collision: both the enchantment spell
+effect and its combat trigger used `core:focusMagic`, while script identities
+share a registry. The spell loader rejects a combat-trigger entry as a spell
+effect, leaving no applicable effect and no target problem text. The enchantment
+registration is being separated as `core:focusMagicEnchantment`; the existing
+combat trigger remains `core:focusMagic`. Native kind/distinct-ID assertions and
+a new validation run must confirm the correction.
+
+After the distinct script registration and bonus-list lifetime fixes rebuilt,
+the focused native run completed without crashes or skips: **27 of 28 passed**.
+This includes mark damage, mark expiry, multi-shot projection, AI selection of
+Focus Magic, ordinary accepted casts and Warcasting. The remaining recast test
+attempts a second Hero spell in the same round; its fixture must advance the
+round rather than bypass the action rule. Separately, **25 Focus Fire, Sylvan
+Luck and Hero Command AI regressions passed**. Client compilation, remaining
+full attack/Dispel/log tests, and graphical acceptance are still outstanding.
+
+The corrected recast fixture rebuilt and the full focused set now passes:
+**28 native tests, no skips**. These results validate the loaded spell/effect
+identities, fixed-duration recasting across rounds, captured potency, Warcasting,
+scripted mark penetration, expiry and per-shot AI projection/selection. They do
+not yet prove full authoritative multi-shot event dispatch, selective Dispel,
+battle-log presentation or rendered UI. The logging work is resuming and the
+client UI build is next; the playable snapshot remains unchanged.
+
+The client build passed. The authoritative Grand Elf double-shot test now proves
+that the first hit receives no premature penetration, the second benefits from
+the first mark, and Selective Dispel removes the negative marks while preserving
+a positive enchantment. Localized combat logs report actual combined penetration,
+including mixed-potency capped refreshes; hypothetical AI evaluation does not
+perform logging or the extra log-only bonus reads. The CMake curated-translation
+guard now includes the new combat text source.
+
+Focus Magic is enabled in the canonical new-world roster (Sorcery level 3,
+11 Spell Points at every rank). Cast and AI fixtures use that installed entry
+rather than injecting it; a separate context test verifies older saved rosters
+do not silently gain it. The roster fixture baseline is now 71 entries.
+After rebuilding, **77 native tests from 12 suites passed with no skips**,
+covering Focus Magic, logs, authoritative Dispel, AI projections/selection,
+roster contexts/consumers, magic-state serialization, Focus Fire, Sylvan Luck,
+and Hero Commands. **28 content tests** and the module metadata check passed.
+These are source/native integration results, not graphical acceptance or a
+playable promotion. Purpose-made Focus Magic/Arcane Breach art and their
+remaining perk interactions are still unfinished; the published playable
+snapshot has not changed.

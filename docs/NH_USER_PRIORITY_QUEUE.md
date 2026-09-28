@@ -13,6 +13,18 @@ This is a task register, not a replacement for the canonical Markdown or Pending
 Changes. Existing ordinary backlog remains in the completion audit and other
 registers; it is not cancelled by this new queue.
 
+## UP-029 — Commit the accumulated work and clear the worktree
+
+Status: In progress; user reprioritized this on 2026-09-28.
+
+Stop new feature edits, let the already-running native build finish safely,
+identify generated artifacts versus source and user-owned work, then commit
+all meaningful uncommitted changes in truthful, coherent checkpoints. Do not
+discard, reset, or silently hide user data. Acceptance: committed source and
+documents, focused validation status recorded, and `git status --short` empty
+apart from explicitly disclosed ignored local outputs. Pushing is a separate
+delivery step after local commits are reviewed.
+
 ## UP-001 — Tower construction-screen layout
 
 Status: Implemented (visual verification pending); playable delivery pending.
@@ -58,9 +70,24 @@ usable if the temporary attachment disappears.
 
 ## Queue intake and ordering
 
+### UP-028 — Persist the Heroes III UI construction standard
+
+Status: Resolved in source; future visual work must apply it.
+
+The user supplied a reusable UI-design prompt emphasizing continuous
+materials, restrained ornament, dense hierarchy, tactile controls, consistent
+grids, authentic assets, outside-in panel construction, and explicit review
+for pasted cutouts. Persisted it as `docs/NH_HOMM3_UI_STYLE_GUIDE.md` and linked
+that guide from `AGENTS.md` so future UI tasks read it before implementation.
+The guide also requires comparison at native resolution against relevant
+original Heroes III dialogs and clarifies that painted period-appropriate
+shading is allowed while modern-style gradients are not. This records a work
+standard, not a claim that every current UI screen already meets it.
+
 ### UP-027 — School ranks strengthen spells as well as unlock acquisition
 
-Status: Open; assigned 2026-09-27. The user clarified that Basic, Advanced,
+Status: In progress; several native slices verified, but complete spell coverage
+and playable validation remain pending. Assigned 2026-09-27. The user clarified that Basic, Advanced,
 and Expert ranks of each of the six Magic School Skills should provide
 progressively stronger versions of spells from that school, not merely unlock
 learning higher-level spells. Preserve the already-approved rule that a
@@ -84,12 +111,268 @@ effect-appropriate scaling for non-damage spells rather than forcing the damage
 formula onto them. This first systemic pass need not hand-author every spell's
 unique rank behavior before establishing the common rule.
 
+Initial provisional damage ladder: no rank / Basic / Advanced / Expert scale
+only the Spell Power coefficient by 100% / 115% / 130% / 145%. Save the new
+rule in magic-rules version 3; old v1/v2 saves retain 100%. Multi-school spells
+take the highest School rank once; neutral Adventure Spells are excluded.
+Numeric non-damage effects may share the coefficient rule where appropriate;
+discrete effects need authored variants or an explicit exception.
+
+2026-09-28 checkpoint: the shared school-rank rule has been integrated into
+the canonical Markdown and its source hash synchronized with the perk registry.
+The new-game magic snapshot and module mirror now select v3 with the four
+provisional factors. A New Horizons spell overlay suppresses all 23 active
+core creature spells whose inherited Expert range was Mass; the focused
+data test passes. This is source/data evidence only, not runtime, target-build,
+or playable verification. Initial non-damage rank scaling covers Cure's
+Spell Power-derived healing and Transfigure Matter's summoned-HP term;
+other schools' non-damage spells still need authored effects, and UP-027
+remains open.
+
+Non-damage audit, 2026-09-28: Transfigure Matter is the first additional
+low-risk authored case: scale only its `2 × Spell Power` summoned-HP term,
+leaving fixed/obstacle HP, Matter Shaper, and placement unchanged. Phantom
+Army now scales only its Spell Power-derived integrity with Sorcery rank;
+the fixed base, cap, and Illusionist order are preserved. Fractional ranked
+basis points survive until the final Health floor; a review-found Basic/SP 1
+case now checks the exact 20,172 Integrity result from 100,000 source Health.
+The Phantom test translation unit compiles, including rank values,
+preview/cast parity, v1/v2 fallback, and tooltip assertions; native execution
+remains pending. Bless,
+Spell Lock, and Time Stop have authored Spell Power-derived durations but
+need their matching runtime/preview paths checked before rank adjustment.
+Nature's Quicksand, Shadow's inherited status spells, and Chaos's legacy
+Misfortune currently expose old rank behavior, not the new authored contract;
+Havoc's authored live spells are covered by direct damage. Do not count those
+legacy tier values as completion of this queue item. Transfigure's source now
+uses a saved-rules, caster-specific coefficient through a separate Lua binding
+that preserves the existing two-argument scaling API; focused source tests
+cover four v3 ranks, v1/v2 fallback, preview/cast parity, and Matter Shaper.
+
+Independent overlay review found three additional inherited-Heroes-III shape
+or side-effect leaks (Berserk area targeting, Dispel obstacle removal, and
+Chain Lightning rank-dependent chain length). New-game overlay corrections and
+focused assertions are in the worktree. The review also found a save-compatibility
+gap: unlike the versioned coefficient, global spell-content overlays affect
+older v1/v2 saves. Do not call this slice complete or playable until the
+overlays are guarded or that compatibility is deliberately resolved and native
+behavior is verified.
+
+Validation checkpoint: the v3 magic/perk module mirrors exactly match their
+canonical JSON inputs; 34 focused Python schema/perk tests pass, as does the
+Expert targeting data test. A native source review found and corrected the
+v3 Warcasting gate, stale spellbook damage estimate, v1/v2 test-fixture
+assumptions, arithmetic divisor bound, Cure test expectation, and an AI test
+that assumed zero Overcharge. Touched production and test translation units
+compile using existing Ninja commands. The full native test binary was not
+rebuilt or run, and the broader generated-module check still fails on an
+unrelated already-dirty creature-categories settings mirror (the v3 magic and
+perk mirrors match exactly). At that checkpoint validation was source-only; a subsequent
+safe filtered-manifest Linux build linked `bin/libvcmi.so` successfully with
+the v3 magic and Transfigure runtime. The focused Transfigure test object
+compiled, but no current `vcmitest` binary could be linked: the full test
+target stopped in `NewHorizonsDemonicGatingTest.cpp` on obsolete
+`STACKS_DEFENSE`, `battle::Unit::movedThisRound`, and default
+`SideInBattle` assumptions. Those stale fixture calls, plus Unique Building
+Training and Hero Command AI test compile gaps, have now been repaired and
+their translation units compiled. The full suite still has not linked or run;
+the user prefers faster feature-to-playtest cycles over pursuing each unrelated
+fixture failure now. Therefore native execution, target-client build, and
+playable verification still remain pending. The user
+has been asked whether v1/v2 saves should retain old Expert targeting or
+receive the new no-Mass correction; do not infer an answer.
+
+2026-09-28 native v3 follow-up: the curated module mirror now passes the full
+generator `--check`, including the previously stale creature-category section.
+The current Linux `vcmi`, `vcmiclient`, and `vcmitest` targets link after
+repairing stale test APIs. Bless now uses raw Spell Power in its v3
+`min(4, 2 + floor(coefficient × SP / 80))` duration term, adds Benediction
+after the ordinary cap, keeps explicit overrides and v1/v2 enchantment logic,
+and remains single-target at Expert. In an isolated TEST profile with
+`new-horizons` active, all six Bless runtime tests and the AI hypothetical-vs-
+authoritative forecast test pass (7/7). Independent Astra review caught and
+cleared the divisor error before this result. This validates one Light spell,
+not every non-damage rank effect; the global v1/v2 spell-overlay compatibility
+gap and graphical/playable verification remain open.
+
+2026-09-28 saved-profile trace: the new `core:*` spell patches in the curated
+module are merged into shared `CSpell` objects at content load, before a v1/v2
+or v3 saved magic-rules profile is considered. Consequently old New Horizons
+saves can inherit v3-only Expert single-target ranges, Berserk/Dispel targeting
+and effects, fixed Chain Lightning chain length, and Bless/Curse mastery
+changes. This is a concrete compatibility defect, not merely an untested
+possibility. Keep it open until saved-rule-aware cast, UI, and AI resolution is
+verified against v1/v2 and v3 side by side; do not promote a new gameplay
+snapshot as save-compatible based only on the coefficient's version gate.
+
+2026-09-28 Expert-range compatibility slice: removed the 23 new global
+`range: "0"` spell patches and made their Expert single-target targeting a
+saved-v3 battle-mechanics decision. Expert effect mastery remains Expert;
+explicit perk-granted Mass remains available. The current Linux `vcmitest`
+target linked, a focused isolated New Horizons profile passed four native
+helper/Bless/Temporal Field cases, and the offline content check passed.
+Independent Astra review found no blocker in this narrow slice. Existing Cure
+and Slow special cases still cap old-profile ranges, and the separate global
+Berserk, Dispel, Chain Lightning, Bless/Curse, and Ice Bolt effect leaks remain
+open. Do not describe the entire v1/v2 spell-overlay problem as resolved.
+
+2026-09-28 Berserk saved-profile slice: removed its global content patch and
+resolved single-creature targeting through the saved-v3 battle mechanics. Old
+v1/v2 profiles retain core area targeting and effect; v3 remains single-target,
+without making Expert a Mass spell or changing explicit Mass effects. The
+current native `vcmitest` target links; six focused tests pass (including
+authoritative old-profile area casts, v3 single-target casts, and friendly-
+target rejection without spending mana). The focused content suite passes
+33/33. This is native/source verification, not playable delivery. Dispel,
+Chain Lightning, Bless/Curse, and Ice Bolt global-effect compatibility leaks
+remain open, as do other School-rank spell effects.
+
+2026-09-28 Chain Lightning saved-profile slice: removed the global fixed-five
+patch and chose the effective chain count from the saved battle rules through
+shared spell mechanics/Lua targeting. The native `vcmitest` target links;
+three focused tests pass. V1/v2 previews use `{4,4,5,5}` targets by mastery
+and an authoritative base cast hits four; v3 previews and base cast use five.
+The focused content suite passes 33/33. No playable snapshot was promoted.
+Independent review then found that v3 Base/Basic spellbook help still used the
+inherited four-target description; a v3-only five-target description and
+v1/v2/v3 regression assertions were added. The incremental native target
+linked and all three Chain profile cases passed again with the description
+checks. This slice
+does not claim the canonical jump-damage percentages or Conductor perk are
+implemented. At this checkpoint, Dispel, Bless/Curse, and Ice Bolt global-effect
+compatibility leaks remained open, along with other non-damage School-rank
+effects.
+
+2026-09-28 Dispel saved-profile slice: removed its global smart-targeting and
+Expert effect override. Saved v3 mechanics now permit either allied or enemy
+single-stack targets and use the full status-removal effect without inherited
+Expert obstacle removal; v1/v2 retain core smart/Expert effect behavior. The
+current native `vcmitest` target links and seven focused tests pass, including
+six v1/v2/v3 profile cases and the existing Selective Dispel no-default-Mass
+guard. The focused content suite passes 33/33. This is not a playable
+ promotion. Bless/Curse and Ice Bolt global-effect leaks remain open, as does
+ broader non-damage School-rank coverage.
+
+2026-09-28 Bless/Curse saved-profile repair: the v3 natural-endpoint values
+are selected during timed-effect conversion from the saved battle magic rules,
+not by changing shared core spell data. V1/v2 retain the original Expert
+Bless +1 and Curse -1 damage-endpoint modifiers; v3 uses zero while retaining
+Expert effect mastery and single-stack ordinary targeting. The Linux
+`vcmitest` target linked, all 11 focused Bless profile cases passed with New
+Horizons active, the v3 AI hypothetical-versus-authoritative Bless case passed,
+and the content guard passed. Independent source review found no blocker. The
+global Ice Bolt speed-effect leak and broader School-rank spell coverage remain
+open; no gameplay snapshot was promoted from this source/native result.
+
+2026-09-28 Ice Bolt saved-profile repair: its inherited -2 movement-range
+effect is now gated at spell-effect evaluation by the saved battle magic
+profile. V1/v2 retain the prior effect; v3 Ice Bolt changes neither movement
+range nor Initiative and deals only its authored damage. The gate covers cast
+legality, authoritative application, affected-target queries, and hypothetical
+AI previews. The Linux `vcmitest` target linked, the focused content guard
+passed, and three native v1/v2/v3 cast-plus-preview cases passed after test
+fixtures were corrected to use valid v1 rules and detached preview targets.
+Independent review found no source blocker. Edge-case applicability tests,
+save/load round-trip, remaining School-rank spell effects, and playable
+delivery remain open; this is not a promoted snapshot.
+
+The first broad `NewHorizonsDirectDamageMechanicsTest` run exposed three red
+Conductor/Annihilator cases. Their fixtures skipped the existing prerequisite
+perks; production tier validation was correct. The fixtures now select active
+Basic Stormcaller before Advanced Conductor, and both before Expert
+Annihilator. After correction, the full 36-case direct-damage mechanics suite
+passed under an isolated New Horizons profile. This does not complete those
+perks' wider gameplay acceptance or the School-rank roster.
+
+2026-09-28 current overlay audit: the curated spell-content directory now has
+only one `core:*` root patch, Ice Bolt. The prior Expert-Mass, Berserk, Dispel,
+Chain Lightning, Bless, and Curse patches are absent; their v3 changes are
+instead selected by saved battle magic rules. Ice Bolt's remaining shared
+content patch is wrapped by the saved-profile effect adapter, and focused
+v1/v2/v3 cast/preview tests already pass. This narrows the original global
+overlay concern but does not close save/load compatibility: a real old-profile
+round-trip test against installed v3 content is being added, and the 23
+Expert-range identities still lack a table-driven cast-path sweep. No playable
+snapshot is implied.
+
+2026-09-28 saved-profile round-trip checkpoint: a real world save/load plus
+BattleStart packet test now retains exact v1, v2, or v3 rules against the
+currently installed v3 content. It checks Berserk/Dispel target mechanics,
+Chain Lightning's affected target identities, and an authoritative Ice Bolt
+cast (damage, Mana, legacy movement slow, v3 non-slow). A fixture-only issue
+where BattleStart revived original army stacks was corrected in the test;
+no production change was needed. The Linux `vcmitest` target links and 54/54
+focused and adjacent profile tests pass with no skips. Independent Astra
+test review found no blocker. This is not a resumed mid-combat save test,
+Berserk/Dispel effects were not cast in this round-trip case, and the 23
+Expert-range identities still lack a table-driven cast-path sweep. No
+playable snapshot is implied.
+
+2026-09-28 Focus Magic rank slice: the authored Arcane Breach penetration
+formula now applies the saved Sorcery School coefficient only to its
+Spell Power-derived term before Warcasting and final flooring; the fixed
+10% base, 20% cap, three-mark limit, and duration are unchanged. V1/v2
+profiles retain 100%. Canonical text, all four static spell descriptions,
+and hero-context help state the rule and show the current ordinary per-mark
+value without implying battle-only Warcasting has already applied. The Linux
+`vcmitest` target links and 12/12 focused authoritative tests pass with zero
+skips under an isolated New Horizons preset. Independent Astra source review
+found no blocker after the help correction. Rank-sensitive detached BattleAI
+forecast proof, rendered/playable help, and broader spell-rank coverage remain
+open.
+
+2026-09-28 Focus Magic AI parity follow-up: the detached ranged-attack
+forecast now has a rank-sensitive regression using the authoritative cast
+test's uncapped 1015/1021-basis-point mark values. Against Defense 2000,
+the second shot projects strictly more damage for the Expert value while
+the first-shot baseline is equal; projected marks retain their captured
+values, and forecast/exchange tracking leaves live battle state unchanged.
+The Linux `vcmitest` target links, `AttackResourceProjectionTest.*` passes
+8/8 with zero skips under New Horizons, and independent Astra review found
+no blocker after test-strengthening. Rank-to-value capture and AI consumption
+are proven in separate native paths, not in one end-to-end AI spell-choice
+journey. Rendered/playable help and the wider spell-rank roster remain open.
+
+2026-09-28 Expert-range cast-mechanics follow-up: a saved v1/v2/v3 world and
+BattleStart round-trip now checks the range, Mass classification, target type,
+and effect mastery of all 23 inherited core creature-spell identities, with
+Cure, Slow, and Dispel exceptions explicit. The Linux `vcmitest` target links;
+the isolated New Horizons profile passes 45/45 focused tests with zero skips.
+The broader adjacent run passes 70/71; the one independently reproducible
+failure is Cure's selected removal of physical Poison from a full-health
+stack. Keep that gameplay defect open under UP-023; it is not evidence against
+the table-only range test. Source review and playable validation remain open.
+
+2026-09-28 post-Cure integrated rerun: after the authoritative Cure fix and
+its survivor-healability refinement, the same isolated New Horizons profile
+passes the expanded adjacent spell/Cure selection 74/74 with zero skips;
+the formerly failing physical-only Poison Cure case and the added combined
+Poison case pass. The focused v1/v2/v3 range/profile selection passes 45/45
+again with zero skips against the stable current `vcmitest` binary. Source
+review found no blocker in the range table or final Cure validation. The
+earlier 70/71 line above is historical failure evidence, not current status.
+
+2026-09-28 Time Stop rank-radius slice: saved-v3 Sorcery rank and eligible
+Warcasting now scale only the Spell Power-derived radius threshold before
+flooring. The fixed radius 1, ordinary cap 2, Chronomancer cap 3, and stasis
+lifetime are unchanged. One shared Lua radius path feeds selected targets,
+hex overlay, and AI affected-stack valuation. Hero-context help and static
+descriptions explain the ranked threshold; v2 saved rules retain 100%, while
+v1 does not gain a spell excluded by its roster. The Linux `vcmitest` target
+links. In an isolated New Horizons TEST profile, the focused changed-behavior
+selection passes 11/11 and all Time Stop-named tests pass 15/15, including
+authoritative cast/preview parity, rank and Warcasting boundaries, v2 fallback,
+Chronomancer geometry, AI geometry, and existing lifecycle behavior. An
+independent Astra source review found no production blocker. Broader adjacent
+CTest still reports unrelated old fixture failures; rendered/playable evidence,
+other non-damage School effects, commit, and delivery remain open.
+
 Acceptance: all six School Skills have meaningful rank-dependent spell effects
 on applicable spells; casting access remains independent of School rank for
 legitimately inscribed spells; acquisition gates remain intact; AI and player
 feedback match authoritative results; data, native, target-build, and playable
-evidence are tracked separately. Exact effect/scaling choices await an authored
-design decision after the spell-system audit.
+evidence are tracked separately. The coefficient ladder is authored provisionally;
+the non-damage exception matrix remains to be completed.
 
 ### UP-026 — Repair and promote Markdown as the sole canonical design source
 
@@ -129,9 +412,151 @@ the repaired source, registry identity, audit, and source-derived tests.
 
 ### UP-025 — Split dialog owner indicators and unclipped layout
 
-Status: Implemented (target build and rendered/playable verification pending);
+Status: Revised Linux build promoted for user playtest (rendered aesthetic
+acceptance pending);
 assigned 2026-09-27. User mock:
 `https://i.imgur.com/j1G5Qzi.png` (438 × 612).
+
+2026-09-28 user priority: deliver a Linux playable snapshot containing this
+garrison/hero split UI, selectable through `play-new-horizons-linux.sh`.
+Build the client and matching library from the UI-containing source, freeze
+and verify the snapshot, then promote it only after appropriate headless
+validation. Record the exact snapshot identity and tell the user how to launch
+it. Source checks alone do not satisfy this request.
+
+2026-09-28 delivery: built a clean detached checkout of committed source
+`8c4ad7e5f253b5596f12e5743fb931909fb7139d` (which includes split-UI commit
+`3865be695`) as a Release Linux `vcmiclient` and matching `libvcmi.so`.
+All three split/garrison source guards passed in that checkout. Froze snapshot
+`e1d6a5aec6fe0e154d0323bd464b7646ca5f0936c85390daa88e6e280716abaf`;
+its SHA256 inventory passed. An isolated `--headless --disable-video` All for
+One smoke loaded the map and observed 46 AI turn starts in 35 seconds without
+the smoke suite's forbidden errors. Promoted the same snapshot; default
+`play-new-horizons-linux.sh --verify-only` resolves it successfully. This is
+playable delivery, not rendered confirmation of the owner markers or actual
+split-dialog interaction; user playtest remains the acceptance gate.
+
+2026-09-28 user playtest feedback: screenshot
+`https://i.imgur.com/O0tdnvq.png` shows the "Split Troglodytes" dialog.
+The user explicitly confirmed that transfers work both garrison-to-garrison
+and hero-to-garrison; the defect is **aesthetic, not owner routing**. They
+called out the pasted-on gold line and the overall appearance of a collage of
+cutouts rather than a coherent Heroes III dialog ("MS Paint"). Compare the
+rendered screenshot with their earlier mock `https://i.imgur.com/j1G5Qzi.png`
+and their clearer target `https://i.imgur.com/8nKTXds.jpeg`: one continuous
+leather surface, ornate outer border, and individually recessed native-looking
+portrait/crest, slider, and amount wells, without full-width gold seams.
+Rework the frame, panel transitions, owner emblems, slider, amount fields, and
+footer as one native-looking leather/red/gold composition; remove stray
+divider lines and excessive blank space. Preserve working transfer behavior.
+Rebuild, inspect an actual render, and obtain playable/user confirmation before
+marking the visual defect resolved.
+
+2026-09-28 source revision: removed the repeated decorated `GPUCRDIV` center
+strips that produced the full-width gold seams. The revised split background
+uses the continuous native `DiBoxBck` leather, retains the original ornate
+outer frame and creature art, and gives the owner markers, slider, and amount
+fields individual recessed wells. Fallback owner labels fit above fixed
+controls without shifting their backgrounds. The focused split/garrison source
+guard passes; both changed client C++ translation units compile in the main
+worktree, and the complete `vcmiclient` target builds in the isolated clean
+Linux UI checkout with only these UI changes applied. This is **not yet** a
+rendered visual acceptance or a promoted playable update; the existing
+launcher snapshot remains unchanged.
+
+The first unpromoted candidate snapshot `51fd276eb69c29a2ade1c021fddfaf22f3a05f84f23d593bfcd7692b3109bd3a`
+passed build/freeze but failed an isolated All for One runtime smoke: repeated
+"Hero spell unavailable under authoritative target validation" messages
+occurred during AI turns, with schema warnings as well. This candidate is
+retained only for diagnosis and must not be promoted; the previously selected
+snapshot remained active at that point. The visual source change has not been blamed for
+unrelated spell/AI errors, and no screenshot of the revised dialog exists yet.
+
+2026-09-28 follow-up: an independent Astra review found owner-well height and
+control spacing risks; both were corrected. The revised Linux client built
+successfully, then an isolated 35-second All for One smoke observed 46 AI turn
+starts and no server problems, crashes, or unavailable-spell messages. The two
+`mageGuildGeneration` schema warnings also occurred with the former promoted
+snapshot and are not attributed to this UI change. Froze and promoted immutable
+snapshot `3edad4fb06c63d59128fa1546ed4b8ad94a5831f81a3a3d5cd075aef568b7caf`;
+`play-new-horizons-linux.sh --verify-only` resolves it. The user's already
+running process was not touched. The new dialog is now playable for review,
+but an actual rendered split-dialog image and user aesthetic acceptance are
+still pending, so UP-025 remains open.
+
+2026-09-28 target-image refinement: the user supplied
+`https://i.imgur.com/8nKTXds.jpeg` as the cohesive Heroes III reference.
+The current source now mounts the two creature images in narrow beveled frames,
+and gives the actual owner emblems, slider, amount fields, and native buttons
+individual recessed wells on one leather field. The short amount wells leave a
+leather gap above the buttons; repeated full-width gold dividers are absent.
+The client/library build and focused split source guards pass, and independent
+Astra source review found no geometry or callback blocker. That review still
+flags a possible leather-texture join and double-framed button look, both of
+which require an actual rendered split-dialog screenshot. This revised UI has
+**not** been frozen or promoted; the prior snapshot remains the playable one.
+
+2026-09-28 private rendered checkpoint: the current unpromoted combined-source
+client was frozen as candidate
+`344129b2c0a7aa3ce8591fce4d0c2a0d91cc2b34bea28f3dd2dd59bb78150fae`
+and launched on an owned private Xvfb display with purchaser assets and a fresh
+profile. Its actual `Split Imps` dialog was captured at
+`/tmp/nh-split-dialog.YzRRHW/split-dialog-actual.png` on the installed
+Arrogance scenario, without touching the host desktop or user saves. The
+capture shows the pasted full-width gold center dividers are gone; creature
+art, two hero-owner portraits, slider, amounts and buttons are visible on a
+single leather field at game scale. A narrow texture transition below the
+creature art and native buttons within larger wells merit user aesthetic review.
+The candidate is **not promoted** and the screenshot is not user acceptance;
+the prior selected snapshot remains the playable default.
+
+2026-09-28 combined-source smoke after the schema repair: a fresh private
+headless `All for One` run reached 12 turn starts without the prior category or
+magic schema warnings, but the client exited with signal 11 while the AI was
+finishing tan's day-four turn. A second fresh-profile run reached 24 turn
+starts in the 25-second bound without a crash, yet emitted an authoritative
+`Leadership limit exceeded` server problem during an AI battle. These are
+distinct observations, not proof that the visual change caused either issue.
+They block promotion of this combined-source candidate; the previously
+selected playable snapshot remained unchanged at this checkpoint. Preserve both private logs at
+`/tmp/nh-schema-smoke.D8MyWU` and `/tmp/nh-schema-smoke-repeat.2BBvhT` for
+diagnosis. The split-dialog render itself remains a provisional visual check.
+
+2026-09-28 visual-only playable delivery: applied the same two UI source files
+(SHA-256 `b86afb477e8a7ccaac5ee47881732ca4d990f759ec3ddc03bb1c26e2b706f176`
+and `a1a7afe652fbad24ddfd845afcab9c8043aa7e6130f0e67ca8d91e58404d1204`)
+to the detached committed `8c4ad7e5` source line, leaving the unrelated dirty
+mechanics out. The incremental Linux `vcmiclient` build and all three split/
+garrison source guards passed. Froze snapshot
+`107947d37280117049ec8573081cf226fb9dee4e958729c9fb02ec7f4ab696b3`;
+a fresh-profile, headless `All for One` run reached 49 turn starts in 35
+seconds, exited only on the bounded timeout, and logged no server problem or
+crash. Promoted that exact snapshot; `play-new-horizons-linux.sh --verify-only`
+resolves it. This delivers the UI refinement for user review but does not
+assert user aesthetic acceptance or deliver unrelated in-progress mechanics.
+
+2026-09-28 schema-warning follow-up (validation-only; no UI or gameplay source
+change): the private profile log at
+`/tmp/nh-split-dialog.YzRRHW/profile/cache/vcmi/VCMI_Client_log.txt` records
+the category warning at lines 521–530 and again under merged settings at
+11986–11999. `newHorizonsCreatureCategories.json` used string `pattern`, which
+this engine's `JsonValidator` reports as `Not implemented entry in schema` and
+then rejects; the existing `CreatureCategoryRules` runtime parser already
+requires exactly one non-edge colon for each growth-line member. The same log's
+magic warning at lines 35068–35090 and 35246–35257 came from a core-scoped
+`gameSettings.magic.newHorizons` object whose children remain New Horizons
+scoped: `required` under `not` treats absent `factionWeights` as satisfied for
+the core object, so the schema rejects otherwise valid v2/v3 rules. Removed
+only the unsupported category pattern and the v2/v3 schema `not`/`required`
+combination; `newHorizonsMagic::validateRules` continues to reject simultaneous
+fixed Mage Guild generation and faction weights. Added mixed-scope named and
+`gameSettings` wrapper regressions plus a malformed growth-member case proving
+runtime rejection. With dirty worktree atop `8c4ad7e5f253b5596f12e5743fb931909fb7139d`,
+`build/new-horizons-linux/bin/vcmitest` passed 30/30 focused category schema,
+category runtime, v2/v3 named/wrapped schema, and Mage Guild runtime tests.
+The isolated XDG profile was `/tmp/nh-schema-validation.evGjfS`; the native
+test run did not launch a game or verify a post-fix client log. No candidate was
+frozen or promoted for this schema-only follow-up.
 
 The current split/transfer dialog places ownership wording behind the creature
 art, so it is clipped and hard to read. Follow the mock's visual direction:
@@ -209,6 +634,45 @@ planned or inert; AI can use and respond to every relevant mechanic; target
 builds and focused native tests pass; unresolved rendered/final-art acceptance
 is tracked separately and does not conceal gameplay gaps.
 
+2026-09-28 Phase 1 coverage direction: use the canonical Markdown Version 1.0
+specification and the coverage matrix as the implementation ledger. Missing
+features outrank exhaustive revalidation of working features. Apply focused
+build/mechanic checks and record non-blocking interactions for Phase 2; move
+through independent missing items with separate worker file ownership.
+For Storm of Daggers specifically, inspect existing spell-effect animations
+before choosing a multi-target presentation. Reuse one only if it reads
+clearly as the intended dagger storm; otherwise create a new purpose-made
+animation (including provisional art via the HoMM3 art workflow). Do not
+ship an unrelated effect merely to avoid animation work.
+
+2026-09-28 Holy Wrath source checkpoint: the missing Level-3 Light spell has
+an active roster and registered single-enemy definition, saved-v3 School-rank
+Spell Power scaling, an Inferno-origin/Undead damage bonus applied before the
+ordinary per-source damage cap, and an original purpose-made provisional
+icon bound to its book/scroll and battle roles. The separate scenario-bonus
+image remains an unrelated placeholder. The canonical source clarifies the
+classification and cap order. Python content checks pass 34/34 and the module
+mirror check passes. The Linux native target built; 10/10 focused authoritative
+cases and 1/1 actual BattleEvaluator choice/forecast/cast case passed, and root
+re-ran all 11 together with zero skips and exit 0. Independent review found
+the cap defect and confirmed its source repair. Save roundtrip, in-game
+rendering, and playable delivery are not yet claimed; under Phase 1 these
+non-blocking checks no longer hold up the next missing feature. This does not
+close UP-023 or Bulwark's Deep Bulwark gap.
+
+2026-09-28 Adventure Spell acquisition checkpoint: the shared Guild I–V
+town-owned purchase path now covers Summon Boat, Water Walk, Town Portal, Fly,
+and Dimension Door. The server validates owner/turn, built Guild tier,
+eligibility, duplicate state and affordability before charging; persistent
+town unlocks teach current/later visiting heroes. Client Mage Guild controls
+and Nullkiller purchase requests use that command. The Linux `vcmitest` and
+`vcmiclient` targets link; 6/6 focused server/AI cases and 1/1 packet
+round-trip pass in an isolated New Horizons profile, and the client source
+guard passes. Independent Astra review found no blocking authority or
+serialization issue. Rendered purchase/playable delivery and each spell's
+effect-completeness audit remain open; this advances ordinary acquisition
+coverage, not all of UP-023.
+
 Durable matrix: `docs/NH_FUNCTIONAL_COMPLETION_MATRIX.md`. Update it whenever a
 slice changes catalogue, implementation or evidence status; do not infer
 completion from an `active` marker.
@@ -251,6 +715,119 @@ Poison AI valuation uses raw HP on a different score scale. Repair these before
 data activation or a build claim. Deep Bulwark still lacks an actual nonmagical
 forced-displacement path. Native tests and performance-bound Defend evaluation
 are pending.
+
+2026-09-28 current-source re-audit: physical Poison's Cure handling and
+Swamp Renewal's survivor-HP AI clamp are now present, but the advanced perks
+remain planned. `makeAutomaticAction` still bypasses the Poison/Mire Grip/
+Swamp Renewal start-of-activation hook; Toxic Spines AI values future Poison
+on a mismatched scale; Mire Grip AI omits collateral damage; Shared Cover and
+Vengeful Mire status hints omit their perk adjustments; Deep Bulwark has no
+nonmagical forced-displacement path. An isolated runtime/test repair for the
+shared automatic-activation gap is in progress. Do not activate all seven
+based on this partial source work.
+
+2026-09-28 automatic-activation source checkpoint: automatic creature actions
+now enter the same authoritative start-of-activation hook as ordinary turns,
+covering physical Poison ticks, Mire Grip expiry, and Swamp Renewal. A lethal
+Poison tick stops the automatic action. Focused regression cases cover all
+three effects, including the full rendered renewal log line and lethal Poison;
+both changed C++ translation units passed syntax checks and an independent
+Astra source review found no blocking issue. Native execution and a matching
+target build are still pending, so the advanced perks remain planned and the
+other reviewed Bulwark gaps above remain open.
+
+2026-09-28 native activation follow-up: the full current Linux client/library/
+test targets link. An isolated TEST profile with New Horizons active passes
+eight focused native regressions for ordinary/automatic physical Poison,
+lethal automatic Poison action suppression, serialized status clearing on
+death, ordinary/automatic Swamp Renewal (including the complete rendered log
+line), and ordinary/automatic Mire Grip expiry. The lethal death-packet state
+was a real production defect and is now resaved after status clearing; the
+other initial failures were fixture observation/tier-progression errors.
+Independent Astra review found no blocking issue in the final source. The
+seven advanced Bulwark perks remain planned; this is only their shared
+activation prerequisite, not the complete Skill or a playable promotion.
+
+2026-09-28 Mire Grip AI parity checkpoint: a bounded two-file projection/test
+revision compiles, but its two new focused native cases pass 0/2. In the first
+case the trigger is detected, then the projected attacker dies before the slow
+is applied; the collateral-only test still fails its trigger assertion despite
+positive forecast damage and visible Bulwark ownership. The attacker-side AI
+callback correctly conceals the opposing hero, so the direct projection tests
+use the owner-visible view; this does not prove omniscient attacker AI behavior.
+An independent diagnosis is in progress. Do not activate Mire Grip or describe
+the seven advanced perks as complete while these cases remain red.
+
+2026-09-28 Mire Grip AI repair follow-up: the initial failures exposed two
+invalid fixtures (retaliation blocked on the defender; Defending set before
+`beginCombat()` reset it) and a real hypothetical expiry mismatch. The AI
+forecast/exchange now use the authoritative `ONE_BATTLE` Bulwark source and
+marker, while `HypotheticBattle` expires both only at a real creature
+activation after Poison and before Renewal. The per-victim trigger also
+requires an ordinary creature attacker. The incremental native `vcmitest`
+build succeeded, and all three focused cases pass in an isolated TEST profile.
+They cover direct and collateral triggering, same-activation suppression,
+retention through rejected actions, ordinary Orders, round rollover and hero
+spell continuation, Second Wind expiry, reapplication and live-state
+immutability. Independent Astra source review found no blocker. This repairs
+one AI seam only; hidden opposing perks remain hidden to attacker-side AI,
+other advanced Bulwark gaps remain, and none of the seven perks was activated.
+
+2026-09-28 Toxic Spines AI valuation follow-up: the detached forecast now
+converts the positive residual physical-Poison tick damage through
+`calculateDamageReduce`, matching the AI-value scale already used for immediate
+reflection rather than adding raw HP damage to the score. The focused native
+Toxic Spines case linked and passed 1/1 in an isolated New Horizons TEST
+profile after its defender-owner view was corrected; it asserts converted
+score, state/tick and live-state immutability. This removes one AI blocker but
+does not activate Toxic Spines or resolve the remaining status/Deep Bulwark
+gaps.
+
+2026-09-28 Defend-status parity slice: the client tooltip now computes Shared
+Cover's effective reduction only with an adjacent same-side ordinary
+Defending creature and displays the capped adjustment; Vengeful Mire appears
+only in melee reflection. The private-hero visibility guard remains. The
+current `vcmiclient` target built successfully (97/97), nine focused UI source
+checks pass, and the scoped diff is clean. This is build/source evidence, not
+a graphical-playable check or activation of the seven advanced perks. Deep
+Bulwark and other runtime/AI work remain open.
+
+2026-09-28 six-perk source activation checkpoint: Toxic Spines, Swamp Renewal,
+Mire Grip, Shared Cover, Immovable, and Vengeful Mire are active in the
+production perk registry and embedded module. Deep Bulwark remains planned:
+there is no implemented nonmagical forced-displacement producer for it to
+counter. The isolated New Horizons test profile passes 11/11 focused runtime
+cases and 8/8 focused BattleAI cases; both fixtures use production perk status
+instead of overriding it. An independent Astra source review found no blocking
+activation issue. The broader Bulwark regression passes 53/53 after seven
+older fixture corrections. Toxic Spines still needs persistent client
+physical-Poison status feedback, and actual rendered/playable validation,
+target-package build, commit, and push remain pending. Do not call the full
+Skill complete or claim the current play script includes this source.
+
+2026-09-28 physical-Poison client feedback checkpoint: the stack status panel
+now reads the serialized physical-Poison state, shows remaining activations
+and the authoritative next tick, and refreshes on application, ticks, Cure,
+and expiry. Time Stop and Spell Lock retain status priority; hidden overflow
+is disclosed. The Linux client and focused native UI test link and pass,
+the Python status guard passes 11/11, and independent Astra source review
+found no blocker. The Poison icon reuses the classic SpellInt frame; it is
+not purpose-made Toxic Spines perk art. Native-resolution rendering,
+playable delivery, and Deep Bulwark remain open.
+
+2026-09-28 Cure/physical-Poison integration defect: an isolated native case
+reproduces server rejection when a full-health stack has only Toxic Spines'
+serialized physical Poison and the hero explicitly selects Poison for Cure.
+New Horizons preflight and target selection recognize the affliction, but
+legacy effect applicability sees no bonus or wound and rejects the cast before
+the existing server-side poison-clear packet can run. The authoritative Cure
+path now accepts a validated explicit affliction without requiring legacy
+bonus applicability. Selector-free healing requires an injured surviving
+creature, not merely casualties below the stack's original total Health.
+The Linux `vcmitest` target links and all 24 focused Cure cases pass with
+zero skips under an isolated New Horizons profile, including physical-only
+and combined Poison, invalid selector no-spend, casualty no-op rejection, and
+Spell Lock rejection. This is source/native evidence, not a playable claim.
 
 ### UP-022 — Complete the Fortress faction implementation
 
@@ -1323,6 +1900,39 @@ migration with implementation completion.
 ## UP-011 — AI turn times and leadership failures
 
 Status: Open; prior isolated passes do not close the reported match regression.
+
+2026-09-28 unrelated fresh-profile `All for One` smoke of the current
+unpromoted combined-source build reached 24 turn starts in 25 seconds but
+logged one authoritative Leadership-limit rejection during an AI battle:
+the receiving hero could command at most 12 creatures at 60 Leadership each
+with 760 Leadership. Its diagnostic log is at
+`/tmp/nh-schema-smoke-repeat.2BBvhT/stdout.log`. This is a new reproducible
+AI symptom, not a replay of the user's missing 45,829 ms turn save. A separate
+fresh run exited with signal 11 after 12 turn starts; that cause remains
+unattributed. Do not promote this combined-source build on these smokes.
+
+Read-only 2026-09-28 trace: the AI accepted Cuthbert's wandering Halfling
+`Followers` offer by answering BlockingDialog query 256 with `1`; the server
+then emitted the 12-creature Leadership-cap complaint and opened a garrison
+dialog. This was a QueryReply, not an AI-issued stack transfer. The current
+`tryJoiningArmy` source plans a partial transfer, so the exact failing count
+remains unexplained by the log. A focused accepted-`CGCreature` regression is
+being added to the existing Leadership admission fixture before changing
+authoritative behavior. The signal-11 run has no stack trace/core and no
+Leadership complaint; the two symptoms have no demonstrated connection.
+
+Focused accepted-offer tests now show the partial-join planner itself
+conserves creatures: with no free place, the hero takes none and leaves two
+Halflings; with one free place, the hero takes exactly one and leaves one.
+The latter test also found a separate follow-up anomaly: a manual garrison
+swap of that last remaining creature returned `PackageApplied=false` without
+a captured Leadership complaint, whereas swapping a two-creature remainder
+worked. Keep that last-creature/dialog-query path open for isolated diagnosis;
+do not infer a fix to the AI-smoke rejection or signal-11 crash from the
+partial-join evidence alone. The latest isolated native accepted-offer suite
+passes 2/2 after narrowing its scope to the joining decision and source-object
+conservation. No production code was changed for this trace; the separate
+last-creature swap, AI-smoke rejection, and signal-11 crash remain open.
 
 2026-09-27 blocker recheck: a read-only search across the available VCMI profile
 save trees still finds no save newer than the September 21 `And One For All`

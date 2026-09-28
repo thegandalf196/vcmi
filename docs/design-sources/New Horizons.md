@@ -512,9 +512,23 @@ Target: one enemy stack.
 
 Damage = 40 + 2 × SP
 
+Under version-3 School-rank rules, Light's no-rank / Basic / Advanced /
+Expert coefficient (100% / 115% / 130% / 145%) strengthens only the
+`2 × SP` term before the final target-classification multiplier. An eligible
+Warcasting bonus affects that same Spell Power term. The fixed 40 damage and
+the 1.5× classification multiplier do not increase with School rank.
+
 Against **Undead or Demonic** creatures:
 
 Final Damage = Damage × 1.5
+
+For the current creature roster, **Demonic** means an Inferno-origin creature,
+including its upgraded form. This is a creature classification, not a test of
+the defending hero's faction or of which army currently commands the stack.
+Undead is the creature's existing Undead trait. A creature qualifying through
+both classifications receives the multiplier only once.
+The ordinary per-source damage-received cap, if present, applies after this
+classification multiplier, just as it does for other spell-damage bonuses.
 
 ###### **SP Normal Undead / Demon**
 
@@ -1269,6 +1283,11 @@ For an obstacle occupying S battlefield hexes:
 
 Diamond Golem HP Pool = 80 + 2 × SP + 50 × S
 
+Sorcery rank strengthens only the `2 × SP` component of this HP Pool using
+the shared no-rank / Basic / Advanced / Expert coefficient ladder. It does not
+change obstacle eligibility, target count, the fixed or footprint HP terms,
+or Matter Shaper's separate bonus.
+
 The obstacle disappears and that much total Diamond Golem health is created in its location.
 
 If Diamond Golems eventually have G HP each:
@@ -1323,6 +1342,13 @@ Each Arcane Breach causes subsequent friendly ranged creature attacks against th
 
 ###### **Creature Defense Penetration per Mark = min(20%, 10% + 0.05% × SP)**
 
+Under the version-3 School-rank rule, Sorcery's no-rank / Basic / Advanced /
+Expert coefficient of 100% / 115% / 130% / 145% strengthens only the
+`0.05% × SP` component. The fixed 10% base, 20% per-mark cap, three-mark
+limit, and duration do not change. An eligible Warcasting bonus also applies
+to that Spell Power component; both coefficients are applied before its final
+integer rounding. Older saved magic-rule profiles retain the unranked formula.
+
 Thus:
 
 SP 20 → 11% per mark → 33% at 3 marks SP 50 → 12.5% per mark → 37.5% at 3 marks SP 100 → 15% per mark → 45% at 3 marks
@@ -1340,6 +1366,22 @@ If a creature makes several separately resolved ranged attacks, each attack that
 This means the first shot studies the target rather than receiving a free damage bonus. Repeated fire progressively exposes the target, and the rest of the army's shooters may exploit the weakness the enchanted stack has created.
 
 The spell therefore rewards sustained ranged concentration without duplicating Archery, Focus Fire!, Bless, or Frailty. Focus Magic does not make arrows intrinsically stronger. It makes the enemy progressively easier to shoot through.
+
+###### **Phantom Army**
+
+Phantom Army copies one eligible friendly stack's creature count and offensive
+profile, but its temporary body has a separate Integrity pool. Its starting
+Integrity is based on the source stack's **current aggregate Health**, not its
+maximum or original Health:
+
+Phantom Integrity = max(1, floor(Source current Health × min(40%, 20% + 0.15% × SP)))
+
+Sorcery rank strengthens only the `0.15% × SP` component using the shared
+no-rank / Basic / Advanced / Expert coefficient ladder. It does not increase
+the fixed 20% base, bypass the 40% cap, change the copied attack profile, or
+grant another target. Illusionist's separate +25% Integrity applies **after**
+the capped percentage, with final Health rounded down once. The phantom lasts
+two rounds unless another explicit effect changes its duration.
 
 ###### **Implosion**
 
@@ -1385,11 +1427,19 @@ Later, if you decide that creatures need Fire Resistance, Lightning Resistance, 
 
 Select a battlefield hex.
 
-Radius = min(2, 1 + floor(SP / 100))
+Ordinary radius = min(2, 1 + floor(SP / 100)). Without a Sorcery School
+rank, SP below 100 gives radius 1 and SP 100+ gives radius 2. Chronomancer
+raises the maximum radius to 3; it does not add a free radius step.
 
-Below SP 100: radius 1.
-
-SP 100+: radius 2.
+Under the version-3 School-rank rule, Sorcery's no-rank / Basic / Advanced /
+Expert coefficient of 100% / 115% / 130% / 145% scales only the `SP / 100`
+term before rounding down. An eligible Warcasting Spell Power bonus applies
+to that term as well. The fixed first hex, radius cap, stasis lifetime, and
+affected-target rules do not change. Thus, without Warcasting, the first
+extra-radius threshold is SP 100 / 87 / 77 / 69 for no rank / Basic /
+Advanced / Expert respectively. Older saved rules profiles keep the original
+100% coefficient when the spell is available; this rule does not grant Time
+Stop to a profile whose saved roster excludes it.
 
 Everything inside enters stasis until the beginning of the caster's next Hero Action.
 
@@ -1411,7 +1461,14 @@ Duration:
 
 Duration = min(3, 1 + floor(SP / 80)) rounds
 
-SP 0–79 → 1 round. SP 80–159 → 2 rounds. SP 160+ → 3 rounds.
+Without Sorcery rank: SP 0–79 → 1 round. SP 80–159 → 2 rounds.
+SP 160+ → 3 rounds. Under the version-3 School-rank rule, Sorcery's
+no-rank / Basic / Advanced / Expert coefficient of 100% / 115% / 130% / 145%
+multiplies only the `SP / 80` term **before** rounding down. It does not
+increase the fixed first round, the ordinary three-round cap, or the number
+of targets. An eligible Warcasting Spell Power bonus applies to that same term.
+Spellbinder adds its round after the ordinary cap (maximum four), then an
+eligible Echoed Duration Metamagic follow-up may add one more (maximum five).
 
 ###### On a **friendly target** :
 
@@ -4030,6 +4087,32 @@ Command improves how efficiently a hero projects Attack, Defense, Leadership, an
 
 ### Magic Skills
 
+###### Shared School-rank spell progression
+
+The six Magic School Skills govern both ordinary acquisition and the strength of
+applicable spells. A legitimately inscribed combat spell remains castable without
+its School Skill; lacking the rank gives the unmodified spell rather than locking
+it. Basic, Advanced, and Expert never turn a single-target spell into a Mass
+spell. Mass versions require the explicit perk or other effect that grants them.
+
+For a damaging spell with a Spell Power coefficient, School rank multiplies
+**that coefficient**, not its flat base damage: no rank 100%, Basic 115%,
+Advanced 130%, Expert 145%. Apply the percentage before the spell's usual final
+integer rounding. Costs, target shape, damage type, mitigation, caps, and other
+spell-specific rules do not change merely because of School rank. If a spell
+belongs to multiple schools, use the highest applicable School rank **once**;
+the schools do not stack. School-neutral Adventure Spells are unaffected.
+
+For non-damage spells, strengthen an authored Spell Power-derived component
+where that is meaningful—for example Cure's healing, but not its fixed healing
+base or its affliction-removal choice. Discrete effects such as dispelling,
+movement, and target selection need individually authored rank benefits; do not
+multiply a boolean effect or invent an implicit Mass version. During the
+incremental rollout, a spell without an authored rank benefit keeps its normal
+effect, while its School rank still governs ordinary acquisition. This is an
+implementation gap to close spell by spell, not a permanent exemption for an
+entire school.
+
 ###### Light Magic
 
 Light preserves: healing, blessing, divine protection, purification, restoration, and holy retaliation.
@@ -4038,9 +4121,9 @@ Light preserves: healing, blessing, divine protection, purification, restoration
 
 |**Rank**|**Effect**|
 |---|---|
-|Basic|The hero may acquire Level 3 spells from this school through ordinary learning.|
-|Advanced|The hero may acquire Level 4 spells from this school through ordinary learning.|
-|Expert|The hero may acquire Level 5 spells from this school through ordinary learning.|
+|Basic|The hero may acquire Level 3 spells from this school through ordinary learning. When a School-rank spell benefit is authored, applicable Spell Power coefficients use the provisional 115% Basic multiplier.|
+|Advanced|The hero may acquire Level 4 spells from this school through ordinary learning. When a School-rank spell benefit is authored, applicable Spell Power coefficients use the provisional 130% Advanced multiplier.|
+|Expert|The hero may acquire Level 5 spells from this school through ordinary learning. When a School-rank spell benefit is authored, applicable Spell Power coefficients use the provisional 145% Expert multiplier.|
 
 
 
@@ -4071,9 +4154,9 @@ Shadow condemns: curses, stolen vitality, supernatural affliction, sacrifice, re
 
 |**Rank**|**Effect**|
 |---|---|
-|Basic|The hero may acquire Level 3 spells from this school through ordinary learning.|
-|Advanced|The hero may acquire Level 4 spells from this school through ordinary learning.|
-|Expert|The hero may acquire Level 5 spells from this school through ordinary learning.|
+|Basic|The hero may acquire Level 3 spells from this school through ordinary learning. When a School-rank spell benefit is authored, applicable Spell Power coefficients use the provisional 115% Basic multiplier.|
+|Advanced|The hero may acquire Level 4 spells from this school through ordinary learning. When a School-rank spell benefit is authored, applicable Spell Power coefficients use the provisional 130% Advanced multiplier.|
+|Expert|The hero may acquire Level 5 spells from this school through ordinary learning. When a School-rank spell benefit is authored, applicable Spell Power coefficients use the provisional 145% Expert multiplier.|
 
 
 
@@ -4104,9 +4187,9 @@ Nature governs living systems and the physical world: regeneration, vegetation, 
 
 |**Rank**|**Effect**|
 |---|---|
-|Basic|The hero may acquire Level 3 spells from this school through ordinary learning.|
-|Advanced|The hero may acquire Level 4 spells from this school through ordinary learning.|
-|Expert|The hero may acquire Level 5 spells from this school through ordinary learning.|
+|Basic|The hero may acquire Level 3 spells from this school through ordinary learning. When a School-rank spell benefit is authored, applicable Spell Power coefficients use the provisional 115% Basic multiplier.|
+|Advanced|The hero may acquire Level 4 spells from this school through ordinary learning. When a School-rank spell benefit is authored, applicable Spell Power coefficients use the provisional 130% Advanced multiplier.|
+|Expert|The hero may acquire Level 5 spells from this school through ordinary learning. When a School-rank spell benefit is authored, applicable Spell Power coefficients use the provisional 145% Expert multiplier.|
 
 
 
@@ -4137,9 +4220,9 @@ Skill progression
 
 |**Rank**|**Effect**|
 |---|---|
-|Basic|The hero may acquire Level 3 spells from this school through ordinary learning.|
-|Advanced|The hero may acquire Level 4 spells from this school through ordinary learning.|
-|Expert|The hero may acquire Level 5 spells from this school through ordinary learning.|
+|Basic|The hero may acquire Level 3 spells from this school through ordinary learning. When a School-rank spell benefit is authored, applicable Spell Power coefficients use the provisional 115% Basic multiplier.|
+|Advanced|The hero may acquire Level 4 spells from this school through ordinary learning. When a School-rank spell benefit is authored, applicable Spell Power coefficients use the provisional 130% Advanced multiplier.|
+|Expert|The hero may acquire Level 5 spells from this school through ordinary learning. When a School-rank spell benefit is authored, applicable Spell Power coefficients use the provisional 145% Expert multiplier.|
 
 
 
@@ -4170,9 +4253,9 @@ Sorcery manipulates magic and reality through technique: overcharge, dispelling,
 
 |**Rank**|**Effect**|
 |---|---|
-|Basic|The hero may acquire Level 3 spells from this school through ordinary learning.|
-|Advanced|The hero may acquire Level 4 spells from this school through ordinary learning.|
-|Expert|The hero may acquire Level 5 spells from this school through ordinary learning.|
+|Basic|The hero may acquire Level 3 spells from this school through ordinary learning. When a School-rank spell benefit is authored, applicable Spell Power coefficients use the provisional 115% Basic multiplier.|
+|Advanced|The hero may acquire Level 4 spells from this school through ordinary learning. When a School-rank spell benefit is authored, applicable Spell Power coefficients use the provisional 130% Advanced multiplier.|
+|Expert|The hero may acquire Level 5 spells from this school through ordinary learning. When a School-rank spell benefit is authored, applicable Spell Power coefficients use the provisional 145% Expert multiplier.|
 
 
 
@@ -4203,9 +4286,9 @@ Chaos destabilizes probability, position, identity, control, and the relationshi
 
 |**Rank**|**Effect**|
 |---|---|
-|Basic|The hero may acquire Level 3 spells from this school through ordinary learning.|
-|Advanced|The hero may acquire Level 4 spells from this school through ordinary learning.|
-|Expert|The hero may acquire Level 5 spells from this school through ordinary learning.|
+|Basic|The hero may acquire Level 3 spells from this school through ordinary learning. When a School-rank spell benefit is authored, applicable Spell Power coefficients use the provisional 115% Basic multiplier.|
+|Advanced|The hero may acquire Level 4 spells from this school through ordinary learning. When a School-rank spell benefit is authored, applicable Spell Power coefficients use the provisional 130% Advanced multiplier.|
+|Expert|The hero may acquire Level 5 spells from this school through ordinary learning. When a School-rank spell benefit is authored, applicable Spell Power coefficients use the provisional 145% Expert multiplier.|
 
 
 

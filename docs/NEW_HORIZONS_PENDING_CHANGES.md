@@ -15,7 +15,13 @@ entries here and thereby recreate a permanent override layer.
 
 ## Awaiting integration
 
-### School-rank spell potency — 2026-09-27
+No approved design amendment remains awaiting canonical integration. Runtime
+completion and playable delivery remain separately tracked in the priority
+queue.
+
+## Integrated history
+
+### School-rank spell potency — 2026-09-27 (integrated)
 
 Basic, Advanced, and Expert rank in each of the six Magic Schools must
 progressively strengthen applicable spells of that school, in addition to
@@ -25,11 +31,19 @@ Heroes V-like damage rule: improve the coefficient that multiplies Spell Power,
 not merely flat base damage. Expert rank does not automatically grant Mass
 versions; those remain perk-granted. For non-damage spells, choose meaningful
 effect-appropriate rank improvements, with explicit exceptions instead of a
-blind numerical multiplier. Exact coefficients and the first-pass exception
-matrix await a spell-system audit and authored integration into the canonical
-Markdown. Track implementation separately in UP-027.
-
-## Integrated history
+blind numerical multiplier. The initial authored coefficient ladder (provisional
+balance) is: no School rank 100%, Basic 115%, Advanced 130%, Expert 145% of
+the spell's Spell Power coefficient. Apply it before existing integer rounding;
+preserve flat base terms, caps, costs, target shape, mitigation, and specialty
+rules. For a multi-school spell, use the highest applicable rank once, never
+stack the schools. Adventure Spells remain neutral and unscaled. Saved magic
+rules version 3 carries the ladder; v1/v2 saves retain 100% so an ongoing game
+does not silently change its formulas. Numeric healing, temporary HP, and
+restoration may follow the same coefficient principle where the formula has an
+actual Spell Power term. Discrete/binary spells need authored rank variants or
+an explicit exception. The shared rule is now in the canonical Markdown Magic
+Skills section; implementation and validation of specific spell effects remain
+tracked in UP-027.
 
 The five amendments approved before 2026-09-27 were integrated into the
 canonical DOCX: Spell Lock duration stacking, Arcane Acquisition target
