@@ -40,6 +40,174 @@ failed run merely because a later run succeeds.
 
 ## Current implementation priority — complete Skills perks and spells
 
+### 2026-09-28 active Phase 1 slice — Storm of Daggers
+
+Implement the remaining Sorcery combat-spell identity as a target-selected
+damage-pool spell: one to five distinct enemy stacks, saved-v3 School-rank
+scaling of its Spell Power term, equal per-target split, atomic rejection of
+invalid selections, human numbered selection/forecast, and BattleAI subset
+choice. Engine, UI, AI, and purpose-made original spell/impact art have separate
+file ownership. A single cast should repeat a dagger impact on each selected
+stack; the borrowed Magic Arrow projectile and Chain Lightning ray are not
+acceptable stand-ins. Focused authoritative, AI, client, data and asset gates
+are the Phase 1 completion target; rendered/playable art acceptance remains
+separate.
+
+Independent Astra source review found two blocking acceptance issues before
+this slice can count toward coverage: Storm's fractional Spell Power term must
+survive until final half-up rounding, and BattleAI must filter illegal singleton
+targets before ranking candidate subsets. The runtime and AI owners are
+correcting these now. The client owner replaced the flat selector backdrop
+with a continuous leather surface and nested battle-style frame; native
+rendering remains unverified. Additional invalid-target case coverage is a
+deferred integration finding, not a Phase 1 blocker.
+
+Deferred Phase 2 interaction to verify: current Magic Mirror resolution may
+reflect a multi-target spell according to its first selected target rather than
+resolve reflection independently per selected stack. The canonical Storm text
+does not settle this; do not present an unverified interpretation as complete.
+
+### 2026-09-28 active Phase 1 slice — Adventure Spell unlocks
+
+Implement the shared town-owned Guild I–V purchase path for Summon Boat,
+Water Walk, Town Portal, Fly, and Dimension Door. Server/state owns validation,
+resource payment, persisted unlock tiers, and teaching the current and later
+visiting heroes. Client owns an exercisable Mage Guild purchase view; Nullkiller2
+uses the same validated command. Keep file ownership disjoint. A scoped build
+and focused purchase/AI checks are the Phase 1 gate; rendered polish and wider
+save/interaction coverage remain separately tracked for later phases.
+
+Source/native checkpoint: all five tier-mapped Adventure Spells have an
+authoritative town-owned purchase command, versioned unlock state, visiting-
+hero teaching, Mage Guild purchase controls, and Nullkiller purchasing. The
+Linux `vcmitest` and `vcmiclient` targets link. In an isolated New Horizons
+profile, six focused server/AI cases and one polymorphic packet round-trip
+pass with zero skips; the client source guard passes. Independent Astra review
+found no remaining blocking authority/serialization defect. This is not a
+rendered gameplay check or a promoted playable snapshot. Broad interactions
+and shop presentation remain Phase 2 / visual verification work.
+
+The prior Holy Wrath slice has a built authoritative implementation, 10/10
+focused server cases, 1/1 actual BattleEvaluator choice case, a purpose-made
+provisional icon family, and independent cap-order review. It is sufficient to
+advance Phase 1 coverage, not a claim of playable release acceptance.
+
+### 2026-09-28 selected slice — Holy Wrath
+
+Implement the missing Level-3 Light spell as a complete vertical slice under
+UP-023: 11 Mana, one enemy target, `40 + 2 × Spell Power` damage, with one
+final 1.5× multiplier against Undead or Inferno-origin creatures. Saved-v3
+Light rank scales only the Spell Power term. Reuse the authoritative damage
+path for detached AI forecasts, retain the v1/v2 roster boundary, and provide
+purpose-made provisional icon art through the HoMM3 art workflow. Record
+target build, focused cast/AI/acquisition tests, source review and the eventual
+playable delivery separately. This work does not close Bulwark's Deep Bulwark
+gap or the remaining missing spells and perks.
+
+### 2026-09-28 resumption checkpoint
+
+UP-025's latest split-dialog revision builds and passes its source guards, but
+the user's cohesive leather reference remains a visual acceptance target, not
+proof of the rendered result. A single designated Tester captured the actual
+`Split Imps` window on an owned private display from frozen unpromoted candidate
+`344129b2c0a7aa3ce8591fce4d0c2a0d91cc2b34bea28f3dd2dd59bb78150fae`.
+The pasted full-width gold seams are absent and the controls are visible on a
+continuous leather field. Texture-join/button-well aesthetics and variant
+owner combinations still need user review. At that capture checkpoint the
+launcher still selected the earlier promoted snapshot.
+
+Subsequently, the identical two UI source files were applied to the detached
+committed source line, excluding unrelated dirty mechanics. The UI-only Linux
+client built; three split/garrison guards passed; frozen snapshot
+`107947d37280117049ec8573081cf226fb9dee4e958729c9fb02ec7f4ab696b3`
+advanced 49 AI turn starts in a 35-second private headless smoke with no server
+problem or crash. It is now the selected `play-new-horizons-linux.sh` snapshot.
+This delivers a playable visual candidate, not user aesthetic acceptance.
+The separate combined-source smoke found a signal-11 crash in one run and an
+AI Leadership rejection in another; that build remains unpromoted and needs
+diagnosis before a broad Skills-and-spells delivery.
+
+For UP-027, the current Linux client, library, and native test targets link;
+seven focused Bless/rank/AI tests pass in an isolated New Horizons TEST profile.
+The global spell-overlay effect on v1/v2 saves is under compatibility review,
+and the remaining non-damage rank effects remain open. For UP-023, the shared
+Bulwark automatic-activation prerequisite passes eight focused native cases,
+including lethal Poison death-state serialization; seven advanced perks are
+still planned. These are source/native checkpoints, not a complete playable
+Skills-and-spells release.
+
+Mire Grip AI forecast/expiry parity now passes three focused native cases and
+an independent Astra source review, including collateral triggering and
+retention until actual activation. This does not activate Mire Grip or clear
+the remaining advanced Bulwark gaps.
+
+The first overlay repair is now in source, independently reviewed, and native
+focused-verified: the 23 Expert no-Mass ranges are selected from saved v3 battle
+rules instead of patched into shared spell data. Four isolated native cases
+cover v1/v2/v3 lookup, v2/v3 Bless targeting and Expert effect rank, and an
+explicit Temporal Field Mass path. Berserk, Dispel, Chain Lightning, Bless/Curse
+and Ice Bolt global effects remain a separate compatibility backlog; no new
+launcher promotion follows from this one slice.
+
+Berserk is the second saved-profile overlay repair: v1/v2 retain the original
+area cast, while saved v3 selects single-creature targeting through battle
+mechanics. The native `vcmitest` target links and six focused tests pass,
+including authoritative area/single-target behavior and a v3 friendly-target
+rejection without spent mana; 33 focused content tests pass. This is not a
+playable promotion or closure of the other global spell-overlay leaks.
+
+Chain Lightning is the third saved-profile overlay repair: its fixed-five
+count is resolved from saved v3 rules during shared Lua spell targeting, not
+globally patched into `CSpell` data. The current `vcmitest` target links and
+three focused native cases pass, covering v1/v2 rank-dependent previews and
+four-target base casts versus v3 five-target previews/casts. The content guard
+passes 33/33. Other overlay effects and broad playable validation remain open.
+
+Dispel is the fourth saved-profile repair: v3 resolves its friend-or-foe
+single-stack targeting and full status-removal effect in battle mechanics,
+without inherited Expert obstacle removal; v1/v2 retain core behavior. The
+native target links and seven focused cases pass, including the Selective
+Dispel no-default-Mass guard; the content guard passes 33/33. Bless/Curse and
+Ice Bolt remain global-effect leaks, and no gameplay snapshot is promoted.
+
+Bless and Curse now resolve their v3 natural damage endpoints through saved
+battle rules rather than global spell patches. Old v1/v2 Expert endpoint
+modifiers remain +1/-1. The Linux native test target linked; 11 focused Bless
+profile cases, one Bless AI forecast/cast parity case, and the content guard
+passed with the curated test mod active. Ice Bolt remains a separate saved-
+profile leak; this source/native checkpoint is not a playable promotion.
+
+Ice Bolt's legacy -2 movement-range effect is now saved-profile-gated in the
+shared spell-effect path: v1/v2 retain it, while v3 is damage-only. The native
+test target links; three focused v1/v2/v3 authoritative-cast and AI-preview
+cases pass, as does the content guard. Independent review found no blocker.
+Application edge-case and save/load tests, broader spell coverage, and a
+playable snapshot remain outstanding.
+
+The same active-profile native run initially exposed three Conductor/
+Annihilator test fixtures that selected Advanced/Expert perks without earlier
+tier perks. Production progression was unchanged; corrected fixtures now
+select their prerequisites. Root reran the full direct-damage mechanics suite:
+36/36 passed in about 8.4 seconds.
+
+The Toxic Spines AI forecast now values positive residual physical Poison in
+AI units rather than adding raw damage to a value estimate. One focused native
+test passes, and the full native test target links. Bulwark remains planned,
+with other perk/runtime and visual gaps still open.
+
+The Bulwark Defend tooltip now mirrors Shared Cover's adjacent-Defender bonus
+and Vengeful Mire's melee-only reflection increase while preserving private
+hero visibility. `vcmiclient` compiled/linked (97/97) and nine focused UI
+source checks pass. No graphical/playable verification or advanced-perk
+activation follows from this display slice.
+
+For the AI Leadership smoke, two focused accepted wandering-creature offer
+tests now pass: no-free-slot and one-free-slot partial admissions conserve all
+Halflings and open the expected garrison dialog without a Leadership error.
+They do not reproduce the separate AI complaint. A one-creature remainder
+manual swap discrepancy has its own follow-up; the combined-source signal-11
+run remains unexplained. No broad gameplay snapshot was promoted.
+
 The user reprioritized functional completion on 2026-09-27: implement every
 missing canonical Skill rank, perk and spell before returning to broad faction
 completion or nonessential art polish. Purpose-made provisional art remains part
@@ -100,13 +268,33 @@ completion or playable acceptance is claimed. Advanced/Expert runtime and AI
 source are in progress, including a distinct physical Poison status for Toxic
 Spines; keep those uncommitted until reviewed and validated.
 
+2026-09-28 update: six further Bulwark perks are now active in uncommitted
+production data. Deep Bulwark alone remains planned because no nonmagical
+displacement mechanic exists yet. Focused native runtime 11/11 and BattleAI
+8/8 cases pass with the production perk registry; independent source review
+found no activation blocker. The broader active-profile Bulwark regression
+passes 53/53 after seven fixture corrections. Toxic Spines needs a persistent client Poison
+status display, and rendered/playable plus target-package acceptance remain
+open. This checkpoint supersedes the seven-planned count above, not its
+historical Basic build evidence.
+
 **Canonical Markdown migration:** the user selected the repaired Markdown as
 the sole design authority. DOCX-to-Markdown fidelity repair restored all 31
 perk pools and the non-perk tables identified by independent review. A final
 Astra cell-text sweep found one stray Shield of Chaos scope word; it was
 corrected. Six School Skill descriptions were also reconciled with the
 already-approved inscribed-spell casting rule. All 16 source-derived tests pass;
-scoped commit/push and any target-package delivery remain separate gates.
+the scoped source migration was committed and pushed as `8c4ad7e5f`.
+Target-package delivery remains a separate gate.
+
+**Magic School rank potency:** the user added a Heroes V-like first-pass rule:
+School rank improves the Spell Power coefficient on damage spells (initial
+100/115/130/145% ladder), while non-damage effects get considered improvements.
+Expert never automatically grants Mass. The shared rule is now integrated in
+canonical Markdown and Pending Changes records the integration; UP-027 tracks
+remaining implementation. Runtime/schema and NH-only spell-data lanes are
+active. Focused data assertions pass, but native, save-compatibility, AI,
+rendered UI, target-build, and playable evidence is not yet established.
 
 **Delivery checkpoint:** full Windows workflow run `36341858040` succeeded at
 committed head `70117e251a5fcf5f2163adbfb8be94626a57b56a` with
