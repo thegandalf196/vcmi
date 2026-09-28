@@ -3,7 +3,7 @@
 ## 2026-09-23 — Conversation audit and unverified regressions
 
 The consolidated design decisions are in the canonical
-[New Horizons.docx](design-sources/New%20Horizons.docx), including rank-specific
+[New Horizons.md](design-sources/New%20Horizons.md), including rank-specific
 perks, teachers, Leadership readouts, Order targeting, spellbook inspection and
 the latest UI/art direction. The retired legacy Overrides dispositions are kept
 in [NH_OVERRIDE_MIGRATION.md](NH_OVERRIDE_MIGRATION.md). Those decisions remain

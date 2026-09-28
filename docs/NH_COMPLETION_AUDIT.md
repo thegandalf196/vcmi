@@ -3,8 +3,9 @@
 ## Status and evidence standard
 
 Catalogue refreshed 2026-09-24; initial evidence inventory 2026-09-22. This is not a completed scripture audit
-or release acceptance. Authority remains `design-sources/New Horizons.docx`,
-accepted `NEW_HORIZONS_OVERRIDES.md` entries, and subsequent user directions.
+or release acceptance. Authority remains `design-sources/New Horizons.md`;
+the completed legacy dispositions are retained in `NH_OVERRIDE_MIGRATION.md`,
+and temporary amendments belong in Pending Changes before canonical integration.
 Do not infer completion from a catalogue entry, an `active` flag, artwork, or a
 small passing test selection. Implementation, validation, and playable delivery
 are separate states.

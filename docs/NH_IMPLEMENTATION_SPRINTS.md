@@ -10,7 +10,7 @@ This is the durable execution register for completing New Horizons. It answers:
 - which dependency or verification gate prevents an item from being called done;
 - which commit, test, build, or playable snapshot proves each completed step.
 
-It does not replace `design-sources/New Horizons.docx`, which remains the sole
+It does not replace `design-sources/New Horizons.md`, which remains the sole
 canonical design specification. It does not replace `NH_USER_PRIORITY_QUEUE.md`,
 whose open user-assigned items take precedence. `NH_COMPLETION_AUDIT.md` remains
 the broad requirement inventory; this file turns that inventory into an ordered
@@ -93,8 +93,20 @@ target compilation, not playable Spell Lock acceptance.
 Mireborn, Thick Hide, Bog Ambush. Authoritative physical-damage and reaction
 paths, BattleAI forecasts/Defend choice, hoverable Defend status feedback, and
 focused regressions have undergone independent source review. Seven perks remain
-planned. The uncommitted slice still needs a native/target build and rendered
-verification; no full-Skill completion or playable acceptance is claimed.
+planned. The Basic source was committed as `40628d29d` and exact-head Windows
+run `36360403677` succeeded, publishing artifact `10945274902`. Native Bulwark
+test execution and rendered/playable verification remain open; no full-Skill
+completion or playable acceptance is claimed. Advanced/Expert runtime and AI
+source are in progress, including a distinct physical Poison status for Toxic
+Spines; keep those uncommitted until reviewed and validated.
+
+**Canonical Markdown migration:** the user selected the repaired Markdown as
+the sole design authority. DOCX-to-Markdown fidelity repair restored all 31
+perk pools and the non-perk tables identified by independent review. A final
+Astra cell-text sweep found one stray Shield of Chaos scope word; it was
+corrected. Six School Skill descriptions were also reconciled with the
+already-approved inscribed-spell casting rule. All 16 source-derived tests pass;
+scoped commit/push and any target-package delivery remain separate gates.
 
 **Delivery checkpoint:** full Windows workflow run `36341858040` succeeded at
 committed head `70117e251a5fcf5f2163adbfb8be94626a57b56a` with

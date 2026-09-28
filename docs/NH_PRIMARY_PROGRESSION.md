@@ -1,7 +1,7 @@
 # Versioned primary-attribute progression
 
 The accepted replacement table is in the canonical
-[New Horizons.docx](design-sources/New%20Horizons.docx). The legacy 18-point
+[New Horizons.md](design-sources/New%20Horizons.md). The legacy 18-point
 proposal and its disposition are documented in
 [NH_OVERRIDE_MIGRATION.md](NH_OVERRIDE_MIGRATION.md). The canonical
 `config/newHorizonsHeroes.json` now contains all 18 approved profiles with
