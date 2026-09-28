@@ -56,8 +56,10 @@ separate.
 Independent Astra source review found two blocking acceptance issues before
 this slice can count toward coverage: Storm's fractional Spell Power term must
 survive until final half-up rounding, and BattleAI must filter illegal singleton
-targets before ranking candidate subsets. The runtime and AI owners are
-correcting these now. The client owner replaced the flat selector backdrop
+targets before ranking candidate subsets. Both corrections are in the pushed
+Phase 1 checkpoint: the authoritative Storm filter passes 4/4 and the bounded
+AI subset/valuation filter passes 2/2 under the curated New Horizons profile;
+`vcmitest` and `vcmiclient` link. The client owner replaced the flat selector backdrop
 with a continuous leather surface and nested battle-style frame; native
 rendering remains unverified. Additional invalid-target case coverage is a
 deferred integration finding, not a Phase 1 blocker.

@@ -15,7 +15,7 @@ registers; it is not cancelled by this new queue.
 
 ## UP-029 — Commit the accumulated work and clear the worktree
 
-Status: In progress; user reprioritized this on 2026-09-28.
+Status: Resolved on 2026-09-28.
 
 Stop new feature edits, let the already-running native build finish safely,
 identify generated artifacts versus source and user-owned work, then commit
@@ -24,6 +24,15 @@ discard, reset, or silently hide user data. Acceptance: committed source and
 documents, focused validation status recorded, and `git status --short` empty
 apart from explicitly disclosed ignored local outputs. Pushing is a separate
 delivery step after local commits are reviewed.
+
+Delivery: `4fec9c75a` (policy/design/ledgers), `f81d0aab4` (provisional art),
+`124c78c7d` (tooling), and `18dea9a1a` (Phase 1 source/config/tests) were
+committed and pushed to `origin/definitive-mvp`. `vcmitest` and `vcmiclient`
+link; Storm's authoritative 4/4 and AI 2/2 focused cases pass under the curated
+New Horizons profile. The Storm and Adventure Guild client source guards and
+the generated-module check pass. No playable rendering or full integration
+claim follows from these gates. `git status --short` was empty after delivery;
+local `output/` previews and Python caches remain preserved but ignored.
 
 ## UP-001 — Tower construction-screen layout
 
