@@ -9,7 +9,7 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
-This is a task register, not a replacement for the canonical DOCX or Pending
+This is a task register, not a replacement for the canonical Markdown or Pending
 Changes. Existing ordinary backlog remains in the completion audit and other
 registers; it is not cancelled by this new queue.
 
@@ -58,6 +58,75 @@ usable if the temporary attachment disappears.
 
 ## Queue intake and ordering
 
+### UP-027 — School ranks strengthen spells as well as unlock acquisition
+
+Status: Open; assigned 2026-09-27. The user clarified that Basic, Advanced,
+and Expert ranks of each of the six Magic School Skills should provide
+progressively stronger versions of spells from that school, not merely unlock
+learning higher-level spells. Preserve the already-approved rule that a
+legitimately inscribed spell is castable without the School rank; this request
+changes the effect of a cast, not whether the cast is permitted.
+
+Audit the canonical spell formulas and existing rank consumers before choosing
+the scaling contract. Define what improves for direct damage, healing,
+protection, debuffs, summons, duration, and special/non-numeric spells without
+silently adding multipliers to incompatible mechanics. State how multi-school
+spells, perk-granted Mass variants, and specialty spells interact. Integrate the
+approved rule in canonical Markdown, catalogue descriptions, authoritative
+cast/damage/status paths, AI forecasts, tooltips/logs, and focused tests. Keep
+numerical balance provisional but make the rule intelligible and coherent.
+
+User clarification: start modestly with a Heroes V-like model for damaging
+spells—School rank strengthens the coefficient multiplying Spell Power, not
+just a flat base-damage term. Expert School rank must never automatically grant
+Mass versions; Mass variants remain explicitly perk-granted. Use considered,
+effect-appropriate scaling for non-damage spells rather than forcing the damage
+formula onto them. This first systemic pass need not hand-author every spell's
+unique rank behavior before establishing the common rule.
+
+Acceptance: all six School Skills have meaningful rank-dependent spell effects
+on applicable spells; casting access remains independent of School rank for
+legitimately inscribed spells; acquisition gates remain intact; AI and player
+feedback match authoritative results; data, native, target-build, and playable
+evidence are tracked separately. Exact effect/scaling choices await an authored
+design decision after the spell-system audit.
+
+### UP-026 — Repair and promote Markdown as the sole canonical design source
+
+Status: Resolved (design/source migration); assigned 2026-09-27. The committed
+Markdown, source registry, and audit are the authority handoff. A new target
+package is a separate playable-delivery gate, not a design-migration blocker.
+The user converted the current `New Horizons.docx` to
+`$HOME/Downloads/New Horizons.md` and explicitly chose the repaired
+Markdown as the sole canonical design specification. The repaired repository
+copy is `docs/design-sources/New Horizons.md`; it intentionally differs from
+the original export because table defects and approved later decisions were
+reconciled.
+
+Audit the conversion item by item against the DOCX, especially split/paginated
+tables, headings, formulas, and omitted material. Preserve design intent; do
+not silently treat conversion artifacts as new rules. Integrate the approved
+Toxic Spines and Immovable trigger clarifications. Keep the original DOCX as a
+historical source, not a competing active authority. Update all repository
+authority references, tests and generators to use the repaired Markdown; retire
+the relevant Pending Changes entry only after canonical integration is proven.
+
+Acceptance: a source-to-Markdown fidelity audit records omissions and repairs;
+the Markdown has parseable tables and complete rule text; the two Bulwark
+clarifications are present; source-derived tests pass; no active instruction
+continues to call the DOCX canonical; independent review confirms the authority
+switch. Do not ship its embedded illustration as game art.
+
+2026-09-27 source checkpoint: the DOCX-to-Markdown audit and repair record is
+`NH_MARKDOWN_CANONICAL_MIGRATION.md`. The repaired Markdown has 136 uniform-width
+tables, all 31 perk pools/310 entries, restored non-perk spell/rule tables and
+School-rank acquisition-only wording consistent with inscribed-spell casting.
+The registry and curated module point to its SHA-256; all 16 source-derived perk
+and table tests pass. The first independent review found conversion blockers;
+those were repaired. A final Astra cell-text review found one stray Shield of
+Chaos resistance-scope word, now corrected. The scoped migration commit contains
+the repaired source, registry identity, audit, and source-derived tests.
+
 ### UP-025 — Split dialog owner indicators and unclipped layout
 
 Status: Implemented (target build and rendered/playable verification pending);
@@ -92,7 +161,7 @@ rendered/input acceptance are still pending.
 
 ### UP-024 — Universal Blacksmith inventory and Stronghold Ballista Yard
 
-Status: Open; assigned 2026-09-27. Canonical DOCX integration and runtime
+Status: Open; assigned 2026-09-27. Canonical Markdown integration and runtime
 implementation are the next systemic content task after the active
 Skill/perk/spell completion lane is established.
 
@@ -112,7 +181,7 @@ Blacksmith inventory rather than creating a duplicate item or charging the hero
 twice. Human UI, AI purchasing/valuation, authoritative affordability and
 inventory, save/load duration, descriptions and logs must agree.
 
-Acceptance: the canonical DOCX records the universal-inventory and price-identity
+Acceptance: the canonical Markdown records the universal-inventory and price-identity
 rule; all nine towns expose the same ordinary War Machine set with the correct
 data-driven faction prices; Stronghold Ballista Yard grants exactly the saved
 weekly +20 Siege effect; focused authoritative/UI/AI/save tests and an exact
@@ -152,8 +221,36 @@ War Machines or Command. Partial Mireborn source is not completion.
 have authoritative physical-damage/reaction hooks, detached-state BattleAI
 forecasts, Defend valuation, and status-panel feedback in source. The remaining
 seven perks are still planned; do not call the Skill complete. Focused source,
-data, and syntax checks pass; native Bulwark test execution, exact target build,
-rendered status-panel behavior, and playable confirmation remain pending.
+data, and syntax checks pass. Exact-head Windows run `36360403677` at
+`40628d29d92ab0d47282321fd411f5d079f38844` succeeded and published preview
+artifact `10945274902`. Native Bulwark test execution, rendered status-panel
+behavior, and playable confirmation remain pending.
+
+2026-09-27 design clarifications for the remaining Bulwark perks: Toxic Spines
+triggers once per Defending Bulwark stack per round; Immovable applies its first
+physical-hit reduction only while that stack is Defending. These user choices
+are integrated into the repaired canonical Markdown and recorded in the
+migration audit. Toxic Spines additionally has an approved reflection-based
+three-activation physical Poison potency and nonstacking stronger-refresh rule;
+it must not reuse legacy magical Poison. Deep Bulwark must not be counted complete merely because a
+generic immunity helper exists: verify an actual nonmagical forced-displacement
+path and AI response before activation.
+
+2026-09-27 Poison application decision: an equal or stronger physical Poison
+application replaces the existing potency and restarts all three ticks; a
+weaker application is ignored. This applies across different Bulwark sources
+and does not create simultaneous Poison instances.
+
+2026-09-27 advanced-slice review hold: runtime and AI source for Vengeful Mire,
+Shared Cover, Mire Grip, Swamp Renewal, Immovable, and Toxic Spines is present
+but not activated. Independent Astra review found blocking seams: automatic
+creature activations bypass the new start-of-turn effects; projected Cure cannot
+remove physical Poison; AI Mire Grip expiry/collateral triggering diverges;
+Swamp Renewal AI values dead-creature HP and its runtime log/test disagree; and
+Poison AI valuation uses raw HP on a different score scale. Repair these before
+data activation or a build claim. Deep Bulwark still lacks an actual nonmagical
+forced-displacement path. Native tests and performance-bound Defend evaluation
+are pending.
 
 ### UP-022 — Complete the Fortress faction implementation
 
@@ -162,7 +259,7 @@ the user reprioritized complete Skill/perk/spell implementation on 2026-09-27.
 Resume after UP-023 unless a Fortress mechanic is a direct dependency of that
 functional completion lane.
 
-Finish the Fortress faction against the complete canonical DOCX scope rather
+Finish the Fortress faction against the complete canonical Markdown scope rather
 than treating one visible subsystem as faction completion. Audit and implement
 Fortress heroes/classes/specialties and biographies, creatures and faction
 data, town buildings and prerequisites, the faction Skill and every one of its
@@ -310,7 +407,7 @@ progress, what comes next, what remains, which dependencies apply, and which
 evidence is still missing. Update it whenever work is selected, materially
 changes state, is blocked, is committed, or gains native/playable/visual
 evidence. Keep source implementation, native verification, playable delivery
-and user acceptance distinct. The canonical DOCX remains gameplay authority;
+and user acceptance distinct. The canonical Markdown remains gameplay authority;
 the sprint register schedules work and must not invent or override design rules.
 Build failures remain in `docs/NH_RELEASE_FAILURES.md` with their prevention
 evidence. Acceptance is that a fresh agent can resume the real next task from
@@ -549,7 +646,7 @@ the equal-chance rule; uniqueness can consequently leave a later overlapping
 school slot empty. All 129 New Horizons Python checks and module-regeneration
 check pass. Native compilation/tests remain assigned to GitHub CI.
 
-Replace the canonical DOCX guild-generation rule and implement it: each faction
+Replace the canonical Markdown guild-generation rule and implement it: each faction
 has two equal preferred schools. Levels I/II contain one spell from each preferred
 school plus 3/2 spells from distinct non-preferred schools respectively. Levels
 III/IV/V contain exactly one spell from each preferred school. Totals 5/4/2/2/2.
@@ -557,7 +654,7 @@ Select non-preferred schools uniformly without replacement, then eligible spells
 uniformly within each school/level; no faction spell weights or duplicates.
 If a required school has no eligible spell at that level, leave that slot empty;
 never substitute a spell from another school.
-Update New Horizons.docx directly, not only Pending Changes. Preserve roster/map
+Update New Horizons.md directly, not only Pending Changes. Preserve roster/map
 eligibility, determinism, and non-NH gameplay. Verify rules and generation with
 focused tests; distinguish source completion from playable delivery.
 
