@@ -987,8 +987,25 @@ legality discrepancy for Disintegrated casualties and temporary shield HP was
 fixed before acceptance. Phase 2: verify full battle-result accounting with
 an army-backed stack, interactions with other one-battle restorations,
 Spell Lock/Dispel, and live save/load continuation. Native-resolution UI,
-playable delivery, and final-art approval remain open. After this slice the
-next missing Shadow identity is Soul Reaper. UP-023 remains open.
+playable delivery, and final-art approval remain open. At that checkpoint the
+next missing Shadow identity was Soul Reaper. UP-023 remains open.
+
+2026-09-29 Soul Reaper source/native checkpoint: the Level-5 Shadow finisher
+is active in saved v3 at 21 Mana. Its target-specific damage is 60 + 1.4 ×
+Spell Power + 40% of missing aggregate HP; Shadow School/Spellcraft rank scales
+only the Spell Power term. A post-mitigation hit leaving at most 10% of effective
+maximum HP executes the surviving creatures, while ordinary remains and
+Rebirth still apply. Authoritative cast, detached preview, AI evaluation,
+and an explicit execution log line are wired. Saved v1/v2 snapshots cannot
+cast it even if a new row is synthetically present. Linux `vcmitest` and
+`vcmiclient` build; the active-profile Soul Reaper filter passes 9/9
+server/AI cases with zero skips, curated-content tests 42/42, and the module
+mirror check passes. Purpose-made Provisional 44/32/30 icons are bound. The
+independent Astra review's lethal-damage regression, v2 gate and log-test
+findings were fixed before acceptance. Phase 2 retains partial-resistance AI
+valuation, broader status/save interactions, scenario-icon consumer sizing,
+and native/rendered/playable validation. Doom is the next missing Shadow
+identity; UP-023 remains open.
 
 User ordering clarification (2026-09-27): after the active Spell Lock and full
 Archery slices, complete Bulwark of the Mire as the next full Skill slice before
