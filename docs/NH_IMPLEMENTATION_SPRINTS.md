@@ -40,6 +40,30 @@ failed run merely because a later run succeeds.
 
 ## Current implementation priority — complete Skills perks and spells
 
+### 2026-09-29 Phase 1 native checkpoint — Quicksand exact placement
+
+The saved-v3 Quicksand row now explicitly opts into exact caster-selected
+placement. The shared count/legality contract drives ordered client hex
+selection, remaining-count/undo/confirm feedback, server validation before
+action announcement and effect application, the Lua obstacle effect, and
+BattleAI's delayed ground-movement pressure choice. The new obstacles are
+concealed even when the spell effect uses minimal content settings; the
+`StartAction` presentation omits their coordinates while the authoritative
+action retains them. The appended action-serialization feature rejects a
+multi-hex Quicksand vector on older protocols. Old v1/v2 and markerless-v3
+saved battles retain random placement.
+
+Linux `vcmitest` and `vcmiclient` link. The curated focused filter passes
+9/9 native Quicksand rules/Lua/server/AI cases; 12 magic-data tests, both
+repeated-placement UI source guards, the generated-module check, and
+`git diff --check` pass. Independent review found and the integrator repaired
+missing Lua API and client-method wiring before this build. The source guards
+are not rendered UI acceptance; no GUI was launched or playable snapshot
+promoted. Phase 2 retains concealed enemy-obstacle placement collisions,
+full network confidentiality of broadcast obstacle packets, trap lifecycle,
+and native-resolution panel readability. Mire Shaper's extra-patch cap still
+requires a canonical decision before activation.
+
 ### 2026-09-29 Phase 1 native checkpoint — Holy Armor and magical reduction
 
 Holy Armor is registered as a Level-2 Light combat spell (8 Mana, one friendly
