@@ -291,8 +291,8 @@ Out of the fifteen possible pairings between six schools, nine are represented b
 
 - Level 1: Curse; Disease (new); Life Drain
 - Level 2: Blind; Weakness
-- Level 3: Animate Dead; Death Ripple
-- Level 4: Vampirism; Plague
+- Level 3: Animate Dead; Death Ripple; Plague
+- Level 4: Vampirism
 - Level 5: Soul Reaper; Apocalypse of Death (new)
 
 #### 🌳 NATURE

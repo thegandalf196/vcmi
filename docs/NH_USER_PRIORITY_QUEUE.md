@@ -905,6 +905,25 @@ remain unverified. Independent review found no blocking mechanic defect;
 the two deferred copy/asset-inventory mismatches it found were corrected.
 UP-023 remains open; the next missing Shadow identity is Plague.
 
+2026-09-29 Plague checkpoint: the detailed canonical Shadow table makes it
+Level 3 / 11 Mana; the older summary roster now agrees. The registered spell
+has a saved three-round status, one end-of-turn tick/spread per infected stack
+per battle round, WAIT exclusion, deterministic adjacent selection, and
+caster-friendly fire. It affects nonliving creature types unless an actual
+magical immunity applies. The battle status shows its icon and duration, and
+the AI has a read-only first-spread valuation/selection hook. Both Linux targets
+link; 6/6 authoritative plus 1/1 AI focused active-profile tests pass, as do
+37/37 content checks. Purpose-made spell art is source-bound but Provisional;
+Plaguebearer art exists but is deliberately unbound. Independent re-review
+found no remaining blocking defect after fixing status expiry, extra-activation
+ticks, and independent magical-damage reduction. Spell Penetration/Annihilator
+on delayed ticks and wider propagation-chain AI forecast are Phase 2 findings.
+Plaguebearer remains a distinct open perk: the canonical text grants one spread
+beyond the "normal limit" without defining that base limit. A user choice is
+pending; do not infer the perk's rule from base Plague. Native rendering,
+saved-battle continuation, and playable delivery need separate evidence.
+UP-023 remains open; the next missing Shadow identity is Soul Chain.
+
 User ordering clarification (2026-09-27): after the active Spell Lock and full
 Archery slices, complete Bulwark of the Mire as the next full Skill slice before
 War Machines or Command. Partial Mireborn source is not completion.
