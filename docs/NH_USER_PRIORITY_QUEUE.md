@@ -890,6 +890,21 @@ Phase 2 should check Hex versus Lucky Recovery: the current AI projection
 resolves Hex before recovery, while authority resolves recovery first.
 UP-023 remains open; the next missing Shadow identity is Frailty.
 
+2026-09-29 Frailty checkpoint: the Level-2 Shadow spell replaces ordinary
+core Weakness acquisition in new saved-v3 games while older saved rosters
+retain Weakness. Each cast removes a percentage of intrinsic Creature Defense
+for the battle; recasts accumulate to 60%, ordinary Dispel clears the bonus,
+and selected Withering Touch adds five percentage points per cast without
+raising the cap. The AI values projected allied physical-damage gains, and
+the stack status shows accumulated strength without a round countdown.
+Purpose-made spell and four-state perk art are source-bound but Provisional.
+Both Linux targets link; 6/6 authoritative and 1/1 AI focused active-profile
+tests pass, along with 37/37 content and 3/3 status-source checks. Native
+rendering, saved-battle continuation, real AI selection, and playable delivery
+remain unverified. Independent review found no blocking mechanic defect;
+the two deferred copy/asset-inventory mismatches it found were corrected.
+UP-023 remains open; the next missing Shadow identity is Plague.
+
 User ordering clarification (2026-09-27): after the active Spell Lock and full
 Archery slices, complete Bulwark of the Mire as the next full Skill slice before
 War Machines or Command. Partial Mireborn source is not completion.
