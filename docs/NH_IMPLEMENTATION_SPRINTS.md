@@ -40,6 +40,31 @@ failed run merely because a later run succeeds.
 
 ## Current implementation priority — complete Skills perks and spells
 
+### 2026-09-29 Phase 1 native checkpoint — Holy Armor and magical reduction
+
+Holy Armor is registered as a Level-2 Light combat spell (8 Mana, one friendly
+stack, two rounds) with a purpose-made provisional icon family. Its reduction
+is `min(60%, 30% + 0.20% × scaled Spell Power)`; only the Spell Power term
+receives the saved School-rank, Spellcraft, Warcasting, and Empower effects.
+The authoritative spell applies one independent `SPELL_DAMAGE_REDUCTION`
+source. Current-roster magical damage combines independent reduction sources
+multiplicatively, caps the aggregate at 95%, and applies relative penetration;
+older saved rosters without Holy Armor keep their prior reduction path. The
+same path serves forecast and actual hero/creature spell casts. Non-damaging
+spell effects remain unaffected. BattleAI values the projected Armor strength
+against visible creature-caster magical damage without reading hidden enemy
+hero spells. An independent Astra review found no blocking defect.
+
+Both Linux `vcmitest` and `vcmiclient` link, the curated active-profile focused
+Holy Armor/MDR/AI filter passes 25/25, 39 focused Python content tests pass,
+and the module mirror check passes. This is source/native evidence, not a
+playable visual acceptance or promoted launcher snapshot. Deferred Phase 2
+checks: two-round expiry, repeat cast, save/load, Fire Shield's separate Lua
+immunity/reflection path (which lacks the saved-roster opt-in), and mixed
+reduction/penetration interactions in broad battles. AI currently does not
+estimate hero-only magical threats; its creature-pressure and health fallback
+are intentionally approximate and require later calibration.
+
 ### 2026-09-29 Phase 1 native checkpoint — Quicksand v3 count
 
 UP-027's next concrete gap is Nature Quicksand. Its saved-v3 patch count now
