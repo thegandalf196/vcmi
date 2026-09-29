@@ -40,6 +40,30 @@ failed run merely because a later run succeeds.
 
 ## Current implementation priority — complete Skills perks and spells
 
+### 2026-09-28 Phase 1 checkpoint — Nature Poison
+
+UP-023 now has a distinct Level-2 Nature hero spell (`new-horizons:poison`),
+not a reclassification of the old `core:poison` creature ability. The saved-v3
+roster supplies its 7-Mana guild identity, and the authoritative cast applies
+the existing serialized physical-Poison state for three escalating activation
+ticks; Cure removes it and ordinary Dispel leaves it. A shared formula scales
+only the Spell Power term by Nature rank, while BattleAI values the marginal
+remaining ticks on detached states. Purpose-made Provisional icon art is bound
+through the HoMM3 art workflow, and the existing physical-Poison status panel
+provides battle feedback.
+
+The Linux `vcmitest` and `vcmiclient` targets link, a fresh isolated TEST preset with New
+Horizons active passes eight focused cast/tick/AI cases with zero skips, and
+the old-v2 roster exclusion plus adjacent Magic Arrow AI regression each pass
+1/1. The offline content suite passes 47/47 and the module mirror check passes.
+Two stale presets skipped every case; their runs are not execution evidence.
+Independent Astra review found a detached-state test setup error, repaired
+before the passing run. Hero-source kill attribution, broader save/dispel
+interactions, rendered icon approval and playable promotion remain open.
+Combat-spell identity coverage is now 35/67; it is not effect-completeness
+coverage. The next high-value shared gap identified is Spellcraft's missing
+rank efficiency and progression perks, with 0/3 rank effects currently active.
+
 ### 2026-09-28 active Phase 1 checkpoint — universal Blacksmith and Nature Regeneration
 
 UP-024's saved capability ruleset v4 now defines universal Ballista/Ammo Cart/First Aid Tent stock and nine faction-favored prices. The authoritative town offer is deduplicated at the lowest price, is used by server charging and the new human shop, and is queried by recurring Nullkiller purchase hooks. Stronghold's Ballista Yard grants a nonstacking weekly +20 Siege on town visit, including when built with a hero present. The client source/geometry guard, AI source guard, 53 Python data cases and the focused linked runtime filter pass. Both Linux `vcmitest` and `vcmiclient` link; rendered shop and playable acceptance are not claimed. Independent Astra review's stale-bonus test assertion, build-while-visiting path, and UI ruleset-gate findings were repaired. Broader AI purchase behavior and week-boundary save interaction remain Phase 2 evidence.

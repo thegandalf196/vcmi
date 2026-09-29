@@ -595,9 +595,10 @@ rendered/input acceptance are still pending.
 
 ### UP-024 — Universal Blacksmith inventory and Stronghold Ballista Yard
 
-Status: Open; assigned 2026-09-27. Canonical Markdown integration and runtime
-implementation are the next systemic content task after the active
-Skill/perk/spell completion lane is established.
+Status: Implemented (rendered/playable verification pending); assigned
+2026-09-27. Canonical Markdown integration, source implementation, focused
+native verification, and commit/push are complete. The in-game shop and weekly
+effect still require a playable acceptance check.
 
 Every town Blacksmith must sell every ordinarily purchasable War Machine. Towns
 retain economic identity through price rather than exclusive inventory: a
@@ -632,6 +633,10 @@ Independent review's building-under-visitor and UI saved-rules-gate findings
 were repaired. This is not rendered/playable shop acceptance; keep UP-024 open
 for that evidence and record broader AI spending/week-boundary interactions for
 Phase 2.
+
+Source checkpoint `e6545354a` was pushed to `origin/definitive-mvp` on
+2026-09-28; the worktree was clean afterward. This is source delivery, not
+playable snapshot promotion.
 
 ### UP-023 — Complete all missing Skills, perks, and spells before further art
 
@@ -707,6 +712,19 @@ focused filter passes 17/17 combined cases and both Linux targets link.
 Regeneration advances spell coverage to 34/67 and perk activation to 96/310;
 it does not close UP-023. Rendered/playable status and broader dispel/save
 interaction checks remain separate.
+
+2026-09-28 Nature Poison source checkpoint: the separate
+`new-horizons:poison` hero spell now has a saved-v3 Nature Level-2 roster row,
+7-Mana cost, legal single-enemy targeting, authoritative physical-Poison state,
+three escalating activation ticks, Cure/Dispel distinction, BattleAI valuation,
+and purpose-made Provisional icon. The original `core:poison` creature ability
+is not reclassified or replaced. Both Linux `vcmitest` and `vcmiclient` link;
+offline content checks
+pass 47/47. A fresh isolated TEST preset with New Horizons active passes the
+eight focused authoritative/AI Poison cases with zero skips; the saved-v2
+roster exclusion and adjacent Magic Arrow AI regression each pass 1/1. The
+source count is now 35/67 combat-spell identities, not 35 verified spell
+mechanics. Hero-source kill credit and broad interactions remain deferred.
 
 User ordering clarification (2026-09-27): after the active Spell Lock and full
 Archery slices, complete Bulwark of the Mire as the next full Skill slice before
