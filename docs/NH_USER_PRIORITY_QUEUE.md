@@ -9,6 +9,31 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-032 — Implement Light Guardian Spirit
+
+Status: Implemented (verification pending), 2026-09-29.
+
+Implement the canonical Level-2, 8-Mana, single-friendly-stack Guardian Spirit:
+a separate pool of `50 + 2 × Spell Power` temporary HP absorbs physical
+creature damage from melee, shots, retaliations, and physical creature
+abilities before actual stack HP, but spell damage bypasses it. The effect
+expires after two rounds or when the pool is exhausted. Apply the Healer and
+Guardian Light-perk modifiers to their specified components. Provide
+authoritative/save behavior, active status and combat feedback, BattleAI
+use/valuation, purpose-made provisional artwork, and focused native evidence.
+Keep rendered/playable acceptance separate and record Phase 2 interactions.
+
+Source/native checkpoint: the saved-v3 spell, separate serialized pool,
+physical-creature damage provenance, two-round expiry/exhaustion, combat
+feedback, active status, Healer/Guardian modifiers, BattleAI casting path, and
+purpose-made Provisional icons are implemented. Linux `vcmiclient` and
+`vcmitest` link. The private active-profile Guardian/Healer filter passes 7/7
+with zero skips; curated content passes 45/45 and the module mirror matches.
+Rendered/playable acceptance remains open. Defer AI physical-attack exchange
+forecasting, scripted nonmagical ability classification, full combat
+save/reload, Dispel, and broader interactions to Phase 2. Next missing Light
+identity: Heavenly Gale.
+
 ## UP-031 — Implement Light Sanctuary
 
 Status: Implemented (verification pending), 2026-09-29.
