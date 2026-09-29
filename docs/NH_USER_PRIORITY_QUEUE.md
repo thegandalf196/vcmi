@@ -621,6 +621,18 @@ data-driven faction prices; Stronghold Ballista Yard grants exactly the saved
 weekly +20 Siege effect; focused authoritative/UI/AI/save tests and an exact
 target build pass. Playable and rendered shop acceptance remain separate.
 
+2026-09-28 Phase 1 source/native checkpoint: saved capability ruleset v4 defines
+the three ordinary machines and all nine faction price identities. Town offers
+deduplicate Blacksmith/Yard stock, server purchase and client/Nullkiller use the
+same quoted price, and the Yard's weekly +20 Siege refreshes without stacking.
+Both Linux `vcmitest` and `vcmiclient` link; the active-profile combined focused
+filter passes 17/17 across this and the Regeneration slice, including the
+authoritative shop/refresh case. Client geometry and AI source guards pass.
+Independent review's building-under-visitor and UI saved-rules-gate findings
+were repaired. This is not rendered/playable shop acceptance; keep UP-024 open
+for that evidence and record broader AI spending/week-boundary interactions for
+Phase 2.
+
 ### UP-023 — Complete all missing Skills, perks, and spells before further art
 
 Status: In progress; reprioritized by the user on 2026-09-27 ahead of the
@@ -685,6 +697,16 @@ coverage, not all of UP-023.
 Durable matrix: `docs/NH_FUNCTIONAL_COMPLETION_MATRIX.md`. Update it whenever a
 slice changes catalogue, implementation or evidence status; do not infer
 completion from an `active` marker.
+
+2026-09-28 Nature Regeneration checkpoint: the Level-1 spell and Basic
+Herbalist perk now have authoritative wound marking/healing, saved fixed-point
+state, client status feedback, purpose-made Provisional art and a bounded
+BattleAI projection. Independent review caught casualty-mark transfer and
+repeated AI forecast healing; both were corrected. The final active-profile
+focused filter passes 17/17 combined cases and both Linux targets link.
+Regeneration advances spell coverage to 34/67 and perk activation to 96/310;
+it does not close UP-023. Rendered/playable status and broader dispel/save
+interaction checks remain separate.
 
 User ordering clarification (2026-09-27): after the active Spell Lock and full
 Archery slices, complete Bulwark of the Mire as the next full Skill slice before
