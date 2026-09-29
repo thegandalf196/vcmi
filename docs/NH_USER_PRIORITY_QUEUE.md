@@ -158,6 +158,23 @@ uses a saved-rules, caster-specific coefficient through a separate Lua binding
 that preserves the existing two-argument scaling API; focused source tests
 cover four v3 ranks, v1/v2 fallback, preview/cast parity, and Matter Shaper.
 
+2026-09-29 Phase 1 native checkpoint: Shadow's Sorrow is corrected from its
+erroneous Chaos-school roster assignment to the canonical Level-1 Shadow
+identity. The saved-v3 effect is one hostile stack, three rounds,
+Morale penalty `min(3, 1 + floor(SP × School coefficient / 70))`, with no
+implicit Mass variant. The source's “not below 10” sentence conflicts with
+the global −10..+10 Morale range; clarification is pending. The Linux native
+target links; 7/7 authoritative and 3/3 projected-AI cases execute under an
+isolated curated profile, with no skips. Source/AI review found no blocker.
+Saved v1/v2 retain their legacy Chaos/Mass behavior; full AI action choice,
+save/load, and playable acceptance remain open.
+The Sorrow vertical slice exposed a scale hazard: `CGHeroInstance` retains a
+legacy Spell Power divisor of 10 under New Horizons primary growth, but the
+canonical Sorrow thresholds refer to the raw hero SP rating (0–69, 70–139,
+140+). Its v3 formula must use that raw rating. Audit other authored
+rating-based spell formulas individually; do not globally remove the divisor
+from inherited effects without save/version review.
+
 2026-09-29 Quicksand continuation: the saved-v3 patch-count formula is in
 source, with a shared caster/battle coefficient path and a real Lua obstacle
 application test. Both Linux targets link; 31/31 adjacent active-profile

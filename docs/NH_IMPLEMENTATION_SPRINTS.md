@@ -40,6 +40,30 @@ failed run merely because a later run succeeds.
 
 ## Current implementation priority — complete Skills perks and spells
 
+### 2026-09-29 Phase 1 native checkpoint — Shadow Sorrow
+
+The inherited Sorrow roster assignment is corrected from Chaos to canonical
+Shadow. Saved-v3 Sorrow is Level 1, costs 4 Mana, targets one hostile stack,
+and lowers Morale for three rounds by `min(3, 1 + floor(scaled raw SP / 70))`.
+School rank, Spellcraft, Warcasting, and Empower scale only that raw-SP term;
+the legacy primary-growth divisor is intentionally not applied. A stronger
+recast replaces the earlier penalty and refreshes duration without stacking.
+The tooltip, battle log, authoritative cast, and AI's hypothetical scoring
+consume this rule; saved v1/v2 retain their old Chaos/Mass behavior.
+
+The Linux `vcmitest` and `vcmiclient` targets link. Under an isolated active New Horizons
+profile, all 7/7 authoritative Sorrow cases pass in 1.612 seconds and all 3/3
+AI projected-score cases pass in 1.00 second; the content-module mirror and
+`git diff --check` pass. Independent review found no blocking issue. This is
+source/native evidence, not rendered or playable acceptance; Sorrow was
+already counted among the 36/67 identities, so the identity count does not
+change. AI's full action choice, unchanged-potency refresh valuation,
+malformed explicit-null saved-row hardening, and save/load roundtrip remain
+Phase 2 checks. The canonical sentence "cannot reduce Morale below 10"
+conflicts with the global −10..+10 range; user clarification is pending, so
+the existing global clamp applies. Malediction remains planned. The next
+missing-identity candidate is Shadow Life Drain, subject to the priority queue.
+
 ### 2026-09-29 Phase 1 native checkpoint — Quicksand exact placement
 
 The saved-v3 Quicksand row now explicitly opts into exact caster-selected
