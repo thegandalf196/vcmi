@@ -40,6 +40,29 @@ failed run merely because a later run succeeds.
 
 ## Current implementation priority — complete Skills perks and spells
 
+### 2026-09-29 Phase 1 native checkpoint — Shadow Life Drain
+
+Life Drain is now a registered Level-1 Shadow combat spell for saved-v3
+New Horizons. Its human target picker selects a living enemy and then a living
+friendly stack; the server validates that exact ordered pair before any action
+or Mana is spent. It deals `25 + 1.8 × Spell Power` damage, then heals the
+friendly stack for 60% of damage actually inflicted, limited to surviving
+creatures. The Blood Drinker hook raises the fraction to 75% when its perk is
+active. AI enumerates legal complete pairs. The cast logs both damage and the
+amount of health actually restored. A purpose-made provisional spell icon has
+44×44, 32×32, and 30×30 exports and a retained master/prompt.
+
+The Linux `vcmitest` and `vcmiclient` targets link. A fresh isolated active
+New Horizons test profile passes **12/12** focused formula, script,
+authoritative server, and AI target-enumeration tests with zero skips. The
+client source guard, content-module mirror check, JSON/JSONC parsing, Lua
+syntax check, and `git diff --check` pass. Independent review found no Phase 1
+blocker. These are source/native results, not graphical/playable acceptance.
+Phase 2 should cover Magic Mirror/reflection of paired spells, friendly
+resistance and Blood Drinker execution, AI healing valuation, and broader
+spell interactions. The next missing Shadow identity is Hex of Pain; the
+priority queue remains authoritative before starting it.
+
 ### 2026-09-29 Phase 1 native checkpoint — Shadow Malediction
 
 Basic Shadow Magic's Malediction is active and extends canonical saved-v3 Curse
