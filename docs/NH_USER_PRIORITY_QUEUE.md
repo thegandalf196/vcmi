@@ -877,6 +877,19 @@ purpose-made four-state icon is Provisional; in-game rendering and save/AI
 interaction matrices remain unverified. Nine Shroud perks and the much larger
 UP-023 list remain open.
 
+2026-09-29 Hex of Pain checkpoint: the Level-2 Shadow spell is registered and
+castable, with a three-round attack/retaliation trigger that applies captured
+Spell-Power damage plus 10% of actual inflicted damage without recursive
+attacks. The AI forecasts the reactive injury in attack and spell valuations.
+The Linux client and test targets link; 6/6 focused active-profile authoritative
+and AI tests pass, as do 36/36 content checks. Purpose-made 44/32/30-pixel art
+is source-bound but Provisional. Native rendering and playable delivery remain
+unverified. Painweaver's specified bonus to the Hex Spell-Power component is
+still missing and remains an open UP-023 perk interaction, not a completed perk.
+Phase 2 should check Hex versus Lucky Recovery: the current AI projection
+resolves Hex before recovery, while authority resolves recovery first.
+UP-023 remains open; the next missing Shadow identity is Frailty.
+
 User ordering clarification (2026-09-27): after the active Spell Lock and full
 Archery slices, complete Bulwark of the Mire as the next full Skill slice before
 War Machines or Command. Partial Mireborn source is not completion.
