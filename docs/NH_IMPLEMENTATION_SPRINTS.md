@@ -40,6 +40,30 @@ failed run merely because a later run succeeds.
 
 ## Current implementation priority — complete Skills perks and spells
 
+### 2026-09-29 Phase 1 checkpoint — Empower Spell and Expert Spellcraft
+
+Empower Spell is now a functional Advanced Spellcraft perk: after Wisdom, a
+spell costing at least 12 Mana gains +25% to its Spell Power-derived numerical
+term. The multiplier reaches direct damage, authored and generic non-damage
+effects, and generic durations without scaling fixed bases or flat bonuses.
+The selected perk unlocks normal Expert Spellcraft progression, activating
+the existing 130% Expert rank coefficient. Original four-state crystal art is
+Provisional. Linux `vcmitest` and `vcmiclient` link. The final focused and
+adjacent spell filter passes 69/69 native cases; 17 perk-data cases, two
+UI-inventory cases, and the module-generation check pass. Independent review
+caught and verified repairs for Regeneration overflow, saved-v3 duration
+preservation, tooltip punctuation, and Spell Lock saturation arithmetic. The
+broad active-perk art guard still reports 21
+older unmapped active perks; Empower's own art checks pass. A wider adjacent
+filter found five Warcasting tests whose fixtures violate the already-existing
+Basic-before-Advanced perk rule; their source was not changed in this slice.
+Record them for Phase 2. Mass Slow and broader Lua interaction tests also
+remain deferred. No playable promotion or visual acceptance is claimed.
+
+Next Phase 1 coverage target: the highest-priority missing UP-023 spell/Skill
+slice after this Spellcraft progression bridge, not more Spellcraft test
+hardening merely because additional interaction tests could be written.
+
 ### 2026-09-29 Phase 1 checkpoint — Spell Penetration and Advanced Spellcraft
 
 Basic Spell Penetration now has a saved selected-perk gate and ignores 20% of
