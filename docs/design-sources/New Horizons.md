@@ -722,6 +722,14 @@ Attack Bonus = min(6, 3 + floor(SP / 75)) Defense Bonus = min(6, 3 + floor(SP / 
 
 Affected creatures also **cannot suffer negative Morale** while Crusade is active.
 
+School rank strengthens only the Spell Power-derived terms in these formulas:
+use the shared 100% / 115% / 130% / 145% coefficient before each term's
+final rounding. Fixed bases and caps do not scale. Initiative is a flat bonus,
+not a movement-Speed bonus. Preserve fractional Magical Damage Reduction in
+basis points; round down only after the scaled `0.065% × SP` component is
+calculated. Crusader extends the entire effect to four rounds; its repeated
+negative-Morale protection wording does not grant an additional separate bonus.
+
 |SP|Attack|Defense|Initiative|Magical Damage Reduction|
 |---|---|---|---|---|
 |50|+3|+3|+1|15.25%|

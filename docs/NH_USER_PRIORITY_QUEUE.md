@@ -9,6 +9,35 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-036 — Implement Light Crusade! and Crusader
+
+Status: Implemented (verification pending), 2026-09-29; UP-023 Phase 1 coverage slice.
+
+Implement the canonical Level-5, 24-Mana entire-friendly-army empowerment:
+Attack/Defense `min(6, 3 + floor(SP / 75))`, flat Initiative
+`min(3, 1 + floor(SP / 100))`, independent multiplicative Magical Damage
+Reduction `min(25%, 12% + 0.065% × SP)`, and negative-Morale floor zero.
+Duration is three rounds, four with Crusader. School rank strengthens only
+the Spell Power-derived components; fixed bases and caps stay unchanged.
+Preserve fractional magical reduction, Speed/Initiative separation, recast
+refresh rather than stacking, saved-v3 roster boundaries, and ordinary
+action/Mana restrictions. Provide authoritative execution, BattleAI use,
+active status/help, registration, focused tests and build evidence. Record
+unverified cross-system and rendered/playable checks for Phase 2 separately.
+
+Source/native checkpoint: both Linux client/test targets link; the isolated
+active-profile Crusade filter passes 19/19 with zero skips, including actual
+AI choice/submission/casting, recast/expiry, fractional reduction, current
+bonus serialization, and Echoed Duration with and without Crusader. The
+49-case content suite, two perk-inventory checks, two UI wiring checks,
+module mirror and diff check pass. Independent review has no remaining
+blocking finding. Coverage advances to 52/67 combat-spell identities and
+111/310 active perks; Light identity coverage is 11/11. Appropriate original
+Prayer assets are referenced, not copied; Crusader's bespoke perk art is Not
+done. Full combat save/reload, Dispel, generic duration artifacts, hypnosis
+and wider AI forecasts remain Phase 2 work. Rendered/playable acceptance
+remains open; no launcher snapshot is promoted by this source checkpoint.
+
 ## UP-035 — Implement Light Purify and Purifier
 
 Status: Implemented (verification pending), 2026-09-29.
