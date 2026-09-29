@@ -941,6 +941,20 @@ completion matrix (active-chain attack forecasting, Spell Lock, primary
 Dispel, and combat-log order). UP-023 remains open; the next missing Shadow
 identity is Shadow Gift. Plaguebearer remains separately unresolved.
 
+2026-09-29 Shadow Gift source/native checkpoint: the Level-3 Shadow spell and
+Dark Gift perk are registered and implemented with an explicit 10/20/30%
+choice, server-validated real HP sacrifice and battle-long maximum-HP cap
+loss, a three-round per-victim Shadow spell-damage packet, a compact choice
+modal, stack-status cues, and an AI cast-choice path. Both Linux targets link.
+The active-profile focused filter passes 8/8 without skips (including cap,
+healing, serialization, authoritative attack, AI tier choice and conservative
+Phantom-integrity pricing); module mirror and 39/39 content checks pass.
+Count as Phase 1 implementation coverage, not rendered or playable delivery.
+The icon remains Provisional; native rendering and broader cross-system
+interactions are recorded in the functional completion matrix. The prior
+Soul Chain commit `176f63845` is pushed to `origin/definitive-mvp`.
+Next missing Shadow identity: Vampirism. UP-023 remains open.
+
 User ordering clarification (2026-09-27): after the active Spell Lock and full
 Archery slices, complete Bulwark of the Mire as the next full Skill slice before
 War Machines or Command. Partial Mireborn source is not completion.
