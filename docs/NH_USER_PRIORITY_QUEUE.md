@@ -158,6 +158,19 @@ uses a saved-rules, caster-specific coefficient through a separate Lua binding
 that preserves the existing two-argument scaling API; focused source tests
 cover four v3 ranks, v1/v2 fallback, preview/cast parity, and Matter Shaper.
 
+2026-09-29 Quicksand continuation: the saved-v3 patch-count formula is in
+source, with a shared caster/battle coefficient path and a real Lua obstacle
+application test. Both Linux targets link; 31/31 adjacent active-profile
+Obstacle and Magic-v2-rule tests pass, including Nature-rank threshold and
+v1/v2 legacy-count cases. Independent review found no blocking defect.
+This must not be called complete
+Quicksand: v3 still uses random NO_TARGET placement, whereas the canonical
+spell requires sequential caster-selected legal hexes, count/undo/confirm
+feedback, authoritative exact-target validation, and AI placement. V1/v2 must
+retain their configured legacy counts. Mire Shaper remains planned, and the
+canonical text does not yet settle whether its +1 patch can exceed the usual
+five-patch cap. Native graphical/playable evidence is still absent.
+
 Independent overlay review found three additional inherited-Heroes-III shape
 or side-effect leaks (Berserk area targeting, Dispel obstacle removal, and
 Chain Lightning rank-dependent chain length). New-game overlay corrections and
