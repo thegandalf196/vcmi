@@ -972,6 +972,24 @@ and expiry, overkill, legacy live-cast rejection, and status save/load
 continuation need broader deterministic checks. After this slice the next
 missing Shadow identity is Re-animate. UP-023 remains open.
 
+2026-09-29 Re-animate source/native checkpoint: the Level-4 Shadow spell and
+Expert Reanimator perk now have saved-v3 registration, 16-Mana cost, a
+species-neutral temporary-resurrection path, usable-remains/Disintegrate and
+shield-aware target checks, casualty-only Reanimator scaling, AI target/cast
+projection, combat logs, a generic Temporary stack indicator, and purpose-made
+Provisional spell/perk art. Legacy `core:animateDead` remains classified but
+inactive in new v3 snapshots; old saves retain their own roster. Both Linux
+targets link. In the active New Horizons profile, 11/11 focused authoritative
+and AI cases pass with zero skips; 58/58 content/perk-data checks, the 5/5 UI
+source guard, module-mirror check, and diff check pass. Independent Astra
+review found no production crash/corruption blocker. A discovered target-
+legality discrepancy for Disintegrated casualties and temporary shield HP was
+fixed before acceptance. Phase 2: verify full battle-result accounting with
+an army-backed stack, interactions with other one-battle restorations,
+Spell Lock/Dispel, and live save/load continuation. Native-resolution UI,
+playable delivery, and final-art approval remain open. After this slice the
+next missing Shadow identity is Soul Reaper. UP-023 remains open.
+
 User ordering clarification (2026-09-27): after the active Spell Lock and full
 Archery slices, complete Bulwark of the Mire as the next full Skill slice before
 War Machines or Command. Partial Mireborn source is not completion.
