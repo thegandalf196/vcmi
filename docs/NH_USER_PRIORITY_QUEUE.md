@@ -955,6 +955,23 @@ interactions are recorded in the functional completion matrix. The prior
 Soul Chain commit `176f63845` is pushed to `origin/definitive-mvp`.
 Next missing Shadow identity: Vampirism. UP-023 remains open.
 
+2026-09-29 Vampirism source checkpoint: the Level-4 Shadow spell and Advanced
+Night Feeder perk have registered 15-Mana/three-round rules, authoritative
+attack-and-retaliation lifesteal from actual damage, heal-only packets that
+cannot restore casualties, an AI projection/cast-valuation path, stack status
+feedback, and purpose-made Provisional spell/perk icons. The saved-v3 School
+coefficient affects only the raw Spell Power term; Night Feeder adds 15 points
+after the ordinary 50% cap. The Linux native `vcmitest` target links and all
+15 focused Vampirism runtime/AI cases pass in an active New Horizons profile
+with zero skips. The Linux `vcmiclient` target also links. The 57 focused
+content/perk-data checks, three UI source checks, module-mirror check, and diff
+check pass. Independent review found no blocking issue. Do not treat
+source/native evidence as playable delivery.
+Phase 2 findings: ordinary AI attack-choice valuation can undervalue healing,
+and expiry, overkill, legacy live-cast rejection, and status save/load
+continuation need broader deterministic checks. After this slice the next
+missing Shadow identity is Re-animate. UP-023 remains open.
+
 User ordering clarification (2026-09-27): after the active Spell Lock and full
 Archery slices, complete Bulwark of the Mire as the next full Skill slice before
 War Machines or Command. Partial Mireborn source is not completion.
