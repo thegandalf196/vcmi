@@ -9,6 +9,31 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-033 — Implement Light Heavenly Gale and Aegis
+
+Status: Implemented (verification pending), 2026-09-29.
+
+Implement the canonical Level-3, 13-Mana, entire-friendly-army Heavenly Gale:
+for two rounds, physical ranged projectile damage (including physical siege
+shots) is reduced by `min(80%, 50% + 0.15% × Spell Power)`. Preserve the
+specified fractional percentages, School-rank potency of the Spell Power
+term, and exclusion of melee, spell damage, magical beams, area explosions,
+and non-projectile magic. Activate Aegis's +20% Spell Power-derived
+protection component for both Heavenly Gale and Holy Armor. Provide saved
+effect state, clear status/feedback, AI casting and valuation, purpose-made
+Provisional art, and focused native evidence. Record broader classification,
+cross-system, rendered, and playable gaps separately.
+
+Source/native checkpoint: Heavenly Gale's saved-v3 two-round mass marker,
+fractional physical-projectile mitigation, Aegis scaling for both it and Holy
+Armor, stack status, BattleAI choice/valuation, and purpose-made Provisional
+icons are implemented. Both Linux targets link. The isolated active-profile
+server/AI filter passes 15/15 with zero skips; curated content passes 46/46
+and the module mirror matches. Rendered/playable acceptance remains open.
+Defer exhaustive magical-beam and area-shot classification, AI valuation under
+combined physical-damage caps, AI mass projection logging, Dispel and
+save/load round trips, and live AI submission to Phase 2.
+
 ## UP-032 — Implement Light Guardian Spirit
 
 Status: Implemented (verification pending), 2026-09-29.
