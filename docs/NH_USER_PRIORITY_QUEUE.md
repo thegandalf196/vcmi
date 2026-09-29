@@ -736,6 +736,19 @@ Independent review's Focus Magic mismatch was repaired. Old-v3 Summon/Sacrifice
 semantics and representative Lua Spellcraft execution remain Phase 2 checks;
 rendered/playable delivery is still pending. UP-023 remains open.
 
+2026-09-29 Spellcraft progression checkpoint: Basic Spell Penetration is
+registered active and uses the shared spell-damage path to ignore 20% of a
+hostile target's Magical Damage Reduction. Its selected perk state opens normal
+Advanced Spellcraft progression; the already-implemented 120% Advanced rank is
+registered active. The purpose-made four-state icon is Provisional. The Linux
+client/test targets link, 4/4 focused native cast/prediction/progression/rank cases
+and 17/17 perk-data cases pass, and the generated-module check passes.
+Independent review found no Phase 1 blocker. The global active-perk art check
+still fails on 21 earlier active perks without named icons; Spell Penetration
+itself passes that check's source/runtime assertions. Cross-perk penetration
+stacking and rendered/playable acceptance remain deferred. Expert Spellcraft
+still needs an Advanced perk. This does not close UP-023.
+
 User ordering clarification (2026-09-27): after the active Spell Lock and full
 Archery slices, complete Bulwark of the Mire as the next full Skill slice before
 War Machines or Command. Partial Mireborn source is not completion.
