@@ -171,6 +171,15 @@ retain their configured legacy counts. Mire Shaper remains planned, and the
 canonical text does not yet settle whether its +1 patch can exceed the usual
 five-patch cap. Native graphical/playable evidence is still absent.
 
+2026-09-29 Holy Armor continuation: Level-2 Light protection now uses the saved
+School-rank coefficient on its Spell Power term while keeping its fixed 30%
+base. The spell, independent magical-reduction runtime, focused AI choice,
+and provisional art binding link in the Linux client; 25/25 active-profile
+native and 39/39 focused Python cases pass. This advances the protection
+category but does not close UP-027: other non-damage spells and full playable
+coverage remain. Holy Armor's lifecycle/save integration and Fire Shield's
+separate reduction path are deferred to Phase 2, not assumed verified.
+
 Independent overlay review found three additional inherited-Heroes-III shape
 or side-effect leaks (Berserk area targeting, Dispel obstacle removal, and
 Chain Lightning rank-dependent chain length). New-game overlay corrections and
