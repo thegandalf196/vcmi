@@ -40,6 +40,30 @@ failed run merely because a later run succeeds.
 
 ## Current implementation priority — complete Skills perks and spells
 
+### 2026-09-28/29 Phase 1 checkpoint — Basic Spellcraft efficiency
+
+UP-023 advances Skill-rank coverage from 81/93 to 82/93. Basic Spellcraft is
+registered active: its saved-v3 110% efficiency multiplies the applicable
+School-rank factor without rounding the intermediate percentage. The shared
+basis-point path reaches direct-damage cast/forecast, Cure, Bless, Poison,
+Regeneration, Focus Magic, Spell Lock, Time Stop, Transfigure Matter, Phantom
+Army, Summon, Sacrifice, and the other authored Lua numeric paths touched in
+this slice. Fixed spell bases stay fixed. Old v3 snapshots without the new
+field use 100% Spellcraft; v1/v2 reject it. Contextual spell help reports the
+live coefficient. AI Poison, Regeneration and Spell Lock projections use the
+same coefficient. Formula tests cover manually assigned Advanced/Expert ranks,
+but those ranks remain planned because normal advancement needs working Basic
+and Advanced Spellcraft perks.
+
+The Linux `vcmitest` and `vcmiclient` targets link; the active-mod focused
+filter passes 15/15, the adjacent Focus Magic/saved-rules filter passes 32/32,
+and 64 offline magic/content/perk checks pass. The module mirror check passes.
+Independent Astra review found a Focus Magic authoritative/tooltip mismatch;
+it was repaired and given a real-cast assertion before the passing runs.
+Deferred Phase 2: old-v3 Summon/Sacrifice casts may now gain School scaling
+that those script paths previously lacked, and non-100% Lua execution needs a
+representative runtime test. No rendered/playable acceptance is claimed.
+
 ### 2026-09-28 Phase 1 checkpoint — Nature Poison
 
 UP-023 now has a distinct Level-2 Nature hero spell (`new-horizons:poison`),

@@ -726,6 +726,16 @@ roster exclusion and adjacent Magic Arrow AI regression each pass 1/1. The
 source count is now 35/67 combat-spell identities, not 35 verified spell
 mechanics. Hero-source kill credit and broad interactions remain deferred.
 
+2026-09-28/29 Spellcraft checkpoint: Basic efficiency now has a saved-v3
+110% factor and a live authoritative/forecast/UI path, composed exactly with
+School rank. The Basic rank is active; Advanced/Expert formulas are covered but
+their registry status remains planned until prerequisite Spellcraft perks make
+normal advancement possible. Linux client/test targets link, the active-mod
+focused filters pass 15/15 and 32/32, and offline data checks pass 64/64.
+Independent review's Focus Magic mismatch was repaired. Old-v3 Summon/Sacrifice
+semantics and representative Lua Spellcraft execution remain Phase 2 checks;
+rendered/playable delivery is still pending. UP-023 remains open.
+
 User ordering clarification (2026-09-27): after the active Spell Lock and full
 Archery slices, complete Bulwark of the Mire as the next full Skill slice before
 War Machines or Command. Partial Mireborn source is not completion.
