@@ -90,6 +90,20 @@ resistance and Blood Drinker execution, AI healing valuation, and broader
 spell interactions. The next missing Shadow identity is Hex of Pain; the
 priority queue remains authoritative before starting it.
 
+### 2026-09-29 Phase 1 native checkpoint — Hex of Pain
+
+Hex of Pain adds one active Level-2 Shadow combat-spell identity (38/67):
+three rounds of reactive Shadow damage after each attack or retaliation,
+with actual-inflicted-damage clipping and no recursive attack event. BattleAI
+projects that injury into attack choices and values the curse as future
+prevented enemy attack value. An original purpose-made icon family is bound at
+44, 32, and 30 pixels and remains Provisional pending native rendering and
+user approval. The Linux client and test targets link; 6/6 focused active-
+profile authoritative/AI tests and 36/36 content tests pass. Painweaver's
+specified +20% Spell-Power-component interaction, broad save/dispelling and
+playable/graphical verification remain open. The next missing Shadow identity
+is Frailty, subject to the user-priority queue.
+
 ### 2026-09-29 Phase 1 native checkpoint — Shadow Malediction
 
 Basic Shadow Magic's Malediction is active and extends canonical saved-v3 Curse
