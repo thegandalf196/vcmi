@@ -749,6 +749,27 @@ itself passes that check's source/runtime assertions. Cross-perk penetration
 stacking and rendered/playable acceptance remain deferred. Expert Spellcraft
 still needs an Advanced perk. This does not close UP-023.
 
+2026-09-29 Empower Spell checkpoint: the Advanced Spellcraft perk uses the
+post-Wisdom Mana cost threshold of 12 before separate battlefield surcharges
+or discounts. Its 25% multiplier affects Spell Power-derived components in
+the shared direct-damage, custom spell, generic non-damage, and timed-duration
+paths; fixed bases and flat duration bonuses remain outside it. Selecting the
+perk opens normal Expert Spellcraft progression, and the existing 130% rank
+effect is now registered active. No new saved field was added; older v3
+duration behavior remains gated. The purpose-made four-state art is
+Provisional. Both Linux targets link; the final focused and adjacent spell
+filter passes 69/69 native cases, 17/17 registry cases, 2/2 UI-inventory
+cases, and the generated-module check pass. Independent review caught and saw
+repairs for a Regeneration integer-overflow risk, old-v3 duration drift, a
+tooltip typo, and Spell Lock saturation arithmetic.
+The global active-perk art check still reports the same 21 older unmapped
+perks; Empower itself passes its source/runtime checks. Five Warcasting tests
+in a wider run throw at the pre-existing strict perk-tier guard because their
+fixtures select Advanced perks without a Basic prerequisite; record that
+test-fixture issue for Phase 2, not as Empower execution evidence. Mass Slow
+variant and wider Lua interactions remain unverified. This does not close
+UP-023 or establish playable delivery.
+
 User ordering clarification (2026-09-27): after the active Spell Lock and full
 Archery slices, complete Bulwark of the Mire as the next full Skill slice before
 War Machines or Command. Partial Mireborn source is not completion.
