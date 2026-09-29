@@ -9,6 +9,29 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-035 — Implement Light Purify and Purifier
+
+Status: Implemented (verification pending), 2026-09-29.
+
+Implement the canonical Level-4, 15-Mana radius-2 area cleanse with selected
+negative effects per friendly stack, capped at one below 120 Spell Power and
+two at 120 or above. Physical Poison is a selectable base effect; Purifier
+adds an automatic physical-affliction removal outside that cap. Preserve
+positive effects and Orders, reject invalid or empty selections before
+spending resources, and provide UI, AI, serialization and original
+Provisional art.
+
+Source/native checkpoint: both Linux targets link and all 10 focused
+active-profile server/helper/AI cases pass with zero skips. The 48-case
+content suite, module mirror, picker routing guard and diff check pass.
+Independent review's detached-state Poison finding was corrected. Coverage
+is 51/67 combat-spell identities and 110/310 active perks; Light is 10/11.
+Purpose-made Provisional art was generated with the HoMM3 art workflow.
+Rendered/playable acceptance, full save/load and other physical afflictions
+remain open. Phase 2 must align hypnosis ownership: server eligibility uses
+current ownership while UI/AI additionally check original side. UP-023
+remains open; the next missing Light identity is Crusade!.
+
 ## UP-034 — Implement Light Divine Retribution and Retributionist
 
 Status: Implemented (verification pending), 2026-09-29.
