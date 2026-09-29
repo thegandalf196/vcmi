@@ -34,6 +34,34 @@ the generated-module check pass. No playable rendering or full integration
 claim follows from these gates. `git status --short` was empty after delivery;
 local `output/` previews and Python caches remain preserved but ignored.
 
+## UP-030 — Activate Shadow Magic's Malediction perk
+
+Status: Implemented with focused native evidence; rendered/playable verification
+pending, 2026-09-29.
+
+Implement the canonical Basic perk: Curse and Sorrow each last one additional
+round. New Horizons v3 Curse must use its authored fixed three-round duration;
+v1/v2 Curse must retain legacy duration behavior. Keep Sorrow's Morale-strength
+formula and the unresolved lower-bound wording separate from this duration
+change. Register the perk, provide a distinct provisional icon made through
+the Heroes III art workflow, make AI projections and contextual help reflect
+the effect, and verify authoritative casts and refreshes under an active New
+Horizons profile. Acceptance is source, module-mirror, Linux build, focused
+native behavior and active-perk art-guard evidence. Rendered/playable
+acceptance remains separate.
+
+Checkpoint: saved-v3 Curse and Sorrow now use three rounds ordinarily and four
+with Malediction; recasting replaces and refreshes the timed bonus. V1/v2
+effects retain legacy durations even when the perk is selected. The Linux
+`vcmitest` and `vcmiclient` targets link; focused active-profile authoritative
+tests pass 8/8 and projected-AI valuation tests pass 5/5, both with zero skips.
+The 17-case perk-data contract and curated-module mirror pass. A purpose-made
+provisional hourglass icon has a named binding, four distinct 44×44 states,
+source master and prompt; its targeted checks pass. The global active-perk art
+guard still fails on 21 previously documented unrelated neutral-icon gaps.
+No rendered/playable or full AI cast-choice claim is made. AI same-round
+exchange overlap and equal-strength refresh valuation are Phase 2 findings.
+
 ## UP-001 — Tower construction-screen layout
 
 Status: Implemented (visual verification pending); playable delivery pending.

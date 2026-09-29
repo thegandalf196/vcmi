@@ -40,6 +40,30 @@ failed run merely because a later run succeeds.
 
 ## Current implementation priority — complete Skills perks and spells
 
+### 2026-09-29 Phase 1 native checkpoint — Shadow Malediction
+
+Basic Shadow Magic's Malediction is active and extends canonical saved-v3 Curse
+and Sorrow from three to four rounds. Curse's inherited Spell-Power-based
+duration is replaced with its authored fixed three-round rule in v3; v1/v2
+saved profiles retain the legacy effects. Recasts replace and refresh their
+timed bonuses, spellbook help and battle logs report the actual duration, and
+BattleAI values projected Curse/Sorrow duration from hypothetical effects.
+Normal Basic-perk selection now opens Advanced Shadow progression. A distinct
+provisional thorn-bound hourglass icon was produced with the HoMM3 art workflow,
+with master, prompt, 44×44/32×32 comparison, four runtime states and named
+client binding.
+
+Linux `vcmitest` and `vcmiclient` link. Under an isolated active New Horizons
+profile the focused authoritative filter passes 8/8 and the projected-AI
+filter passes 5/5, zero skips. The 17-case perk-data test, module-mirror check,
+targeted icon-state/hash check and `git diff --check` pass. Independent review
+found no Phase 1 blocker. The full active-perk art guard remains red on 21
+pre-existing neutral-icon gaps; rendered/playable Malediction and full AI
+action-choice acceptance are not claimed. Phase 2 should examine AI overlap
+between current exchange and duration forecasts and equal-strength recast
+valuation. Next high-value gap: another missing Shadow spell such as Life Drain,
+or another Basic perk that unlocks a progression-deadlocked Skill.
+
 ### 2026-09-29 Phase 1 native checkpoint — Shadow Sorrow
 
 The inherited Sorrow roster assignment is corrected from Chaos to canonical
