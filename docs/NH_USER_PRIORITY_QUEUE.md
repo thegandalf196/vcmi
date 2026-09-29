@@ -1004,8 +1004,24 @@ mirror check passes. Purpose-made Provisional 44/32/30 icons are bound. The
 independent Astra review's lethal-damage regression, v2 gate and log-test
 findings were fixed before acceptance. Phase 2 retains partial-resistance AI
 valuation, broader status/save interactions, scenario-icon consumer sizing,
-and native/rendered/playable validation. Doom is the next missing Shadow
-identity; UP-023 remains open.
+and native/rendered/playable validation. UP-023 remains open.
+
+2026-09-29 Doom source/native checkpoint: the last detailed-roster Shadow
+identity is registered and executable as a saved-v3 Level-5, 25-Mana,
+single-enemy malediction. Its capped percentage penalty affects outgoing and
+retaliation damage once, Initiative, and battlefield movement for three rounds;
+Morale falls by three and Defense is unchanged. Shadow School and Spellcraft
+scale only the Spell Power term. Recast refresh, expiry, friendly/multitarget
+rejection, pre-v3 cast rejection, AI projection/resistance valuation, combat
+logs, stack-status UI, and purpose-made Provisional art have focused source or
+native evidence. Both Linux `vcmitest` and `vcmiclient` targets link; 8/8
+active-profile server/AI cases pass with zero skips, the Doom status guard
+passes 3/3, the content suite passes 43/43, and the module mirror is current.
+The reviewer found no blocking production issue. Phase 2 retains Dispel and
+save/load round trips, mixed Initiative/movement/Fortune effects, full AI cast
+selection and combined exchange-score resistance valuation, plus rendered and
+playable acceptance. The next missing detailed-roster combat spell is Light's
+Sanctuary; UP-023 remains open.
 
 User ordering clarification (2026-09-27): after the active Spell Lock and full
 Archery slices, complete Bulwark of the Mire as the next full Skill slice before
