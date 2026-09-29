@@ -40,6 +40,20 @@ failed run merely because a later run succeeds.
 
 ## Current implementation priority — complete Skills perks and spells
 
+### 2026-09-29 Phase 1 checkpoint — Spell Penetration and Advanced Spellcraft
+
+Basic Spell Penetration now has a saved selected-perk gate and ignores 20% of
+hostile targets' Magical Damage Reduction on hero spell damage, sharing the
+authoritative/prediction path while leaving Mana, resistance and immunity
+unchanged. Selecting it permits normal advancement to Advanced Spellcraft;
+the pre-existing 120% coefficient is now registered active. New purpose-made
+four-state art is Provisional. Linux `vcmitest` and `vcmiclient` link; 4/4
+focused native cases, 17/17 registry/data tests and the module mirror check
+pass. Independent review found no Phase 1 blocker. The active-perk art guard
+still reports 21 older unmapped perks; this new icon passes its own checks.
+Cross-perk penetration composition and rendered/playable review are deferred.
+Next: one working Advanced Spellcraft perk to unlock Expert progression.
+
 ### 2026-09-28/29 Phase 1 checkpoint — Basic Spellcraft efficiency
 
 UP-023 advances Skill-rank coverage from 81/93 to 82/93. Basic Spellcraft is
