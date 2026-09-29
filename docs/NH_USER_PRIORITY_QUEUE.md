@@ -924,6 +924,23 @@ pending; do not infer the perk's rule from base Plague. Native rendering,
 saved-battle continuation, and playable delivery need separate evidence.
 UP-023 remains open; the next missing Shadow identity is Soul Chain.
 
+2026-09-29 Soul Chain checkpoint: the Level-3 Shadow spell is registered at
+12 Mana with an ordered primary plus zero to two distinct secondary enemies.
+The two-round, Dispel-removable links echo a saved percentage of actual
+secondary damage onto the primary as nonrecursive Shadow damage. Saved
+Shadow School/Spellcraft scaling affects only the Spell-Power term; the active
+Soul Binder perk adds 15 percentage points after the 40% base cap. The
+client has an explicit confirm/undo target selector and secondary/primary
+status readback; purpose-made spell/perk art is source-bound but Provisional.
+Both Linux targets link. Active-profile authoritative tests pass 5/5 and AI
+cast-choice passes 1/1, all without skips; module sync and 38/38 content
+checks pass. Source review found no blocking defect. Native rendering,
+playable delivery, whole-battle save continuation, and broader interaction
+validation remain separate; Phase 2 findings are recorded in the functional
+completion matrix (active-chain attack forecasting, Spell Lock, primary
+Dispel, and combat-log order). UP-023 remains open; the next missing Shadow
+identity is Shadow Gift. Plaguebearer remains separately unresolved.
+
 User ordering clarification (2026-09-27): after the active Spell Lock and full
 Archery slices, complete Bulwark of the Mire as the next full Skill slice before
 War Machines or Command. Partial Mireborn source is not completion.
