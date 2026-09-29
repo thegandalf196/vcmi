@@ -9,6 +9,34 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-031 — Implement Light Sanctuary
+
+Status: Implemented (verification pending), 2026-09-29.
+
+Implement the canonical Level-1, 5-Mana Sanctuary spell for one friendly stack.
+While Sanctified, the stack cannot be deliberately selected for an enemy
+creature attack or hostile single-target spell, but area, global, and indirect
+effects still work. Moving, attacking, or using an offensive active ability
+ends the effect immediately; Wait and Defend preserve it. Give the effect
+authoritative lifecycle/save behavior, visible status and combat feedback,
+BattleAI targeting/use, a purpose-made provisional icon, and focused native
+evidence. Do not count registration or source alone as playable acceptance.
+The interpretation of expiration after a later Wait/Defend activation has
+been asked of the user; until clarified, preserve protection through those
+passive actions and keep the lifecycle easy to adjust. Update the functional
+coverage matrix and record any Phase 2 interaction gaps before resolving.
+
+Source/native checkpoint: saved-v3 Light registration, authoritative direct-
+target rejection and pre-action break, active-status UI, BattleAI targeting/use,
+and purpose-made Provisional 44/32/30 artwork are implemented. Linux `vcmitest`
+and `vcmiclient` link; 7/7 server and 2/2 AI focused cases pass in an isolated
+active New Horizons profile with zero skips. Curated content tests pass 44/44,
+and the generated module mirror matches. Independent source review found no
+remaining blocking defect after the hostile-spell flag and owner checks were
+fixed. Native-resolution rendering, playable delivery, and the Wait/Defend
+expiration clarification remain open; do not mark this resolved on source/native
+evidence alone. Phase 2 interaction gaps are recorded in the coverage matrix.
+
 This is a task register, not a replacement for the canonical Markdown or Pending
 Changes. Existing ordinary backlog remains in the completion audit and other
 registers; it is not cancelled by this new queue.
