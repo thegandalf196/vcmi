@@ -9,6 +9,33 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-034 — Implement Light Divine Retribution and Retributionist
+
+Status: Implemented (verification pending), 2026-09-29.
+
+Implement the canonical Level-4, 16-Mana, one-friendly-stack Divine
+Retribution. For two rounds, a damaging enemy creature attacker becomes
+Judged; at the end of that round it takes Holy damage equal to the lesser of
+30% of damage dealt and `25 + 1.25 × Spell Power`, at most once per attacker
+per round. Melee and ranged creature attacks qualify; spells do not. The
+School rank strengthens only the Spell Power term. Retributionist grants +20%
+reactive damage to the spell's final capped result. Provide authoritative
+saved-state/lifecycle, clear status and combat log, AI use, original Provisional
+art, and focused native evidence.
+Interpret "damage dealt" as the sum of actual HP loss after mitigation from
+qualifying creature-attack packets by each attacker against each protected
+effect in a round. Resolve pending Judgments before the protected spell's
+round-end decrement.
+Record broader multi-packet and shield/overkill interactions for Phase 2.
+Both Linux targets link; 14/14 isolated active-profile server/AI cases pass
+with zero skips. The 47-case content suite, module mirror, and diff checks
+pass. The independent review's blocking recast finding was fixed and covered.
+Purpose-made Provisional 44/32/30 spell art is bound; the Retributionist perk
+still uses a neutral fallback and needs its own art. In-game rendering,
+playable delivery, full save/reload, Dispel, unusual physical packets, and AI
+valuation under mixed threats remain unverified. Do not mark this Resolved
+until the delivered game has the intended behavior and presentation.
+
 ## UP-033 — Implement Light Heavenly Gale and Aegis
 
 Status: Implemented (verification pending), 2026-09-29.
