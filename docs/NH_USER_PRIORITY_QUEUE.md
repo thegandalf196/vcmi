@@ -456,6 +456,21 @@ independent Astra source review found no production blocker. Broader adjacent
 CTest still reports unrelated old fixture failures; rendered/playable evidence,
 other non-damage School effects, commit, and delivery remain open.
 
+2026-09-29 Slow rank/tempo slice (source and focused native checkpoint):
+saved-v3 Slow now derives its Initiative-only penalty from the
+canonical fixed 20% base plus the Sorcery-ranked Spell Power term, capped at
+50%. Temporal Field still takes 60% of the final ordinary magnitude. Its
+ordinary hero duration is the authored two rounds, with Temporalist and
+existing duration extensions applied separately; v1/v2 retain their prior
+configured magnitude and duration. Hero-context help reports the current
+ordinary value, and the same timed-effect path serves AI previews and casts.
+The Linux `vcmitest` and `vcmiclient` targets link. An active-profile focused
+rank, cap, duration, Mass, old-profile and hero-help filter passed 19/19 with
+zero skips. The broad name filter also exposed four pre-existing unrelated
+fixture failures (two old Ice Bolt
+rules fields and two AI perk-tier setup errors); these belong to Phase 2.
+Rendered/playable verification and other non-damage spell effects remain open.
+
 Acceptance: all six School Skills have meaningful rank-dependent spell effects
 on applicable spells; casting access remains independent of School rank for
 legitimately inscribed spells; acquisition gates remain intact; AI and player

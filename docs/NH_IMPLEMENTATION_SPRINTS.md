@@ -40,6 +40,33 @@ failed run merely because a later run succeeds.
 
 ## Current implementation priority — complete Skills perks and spells
 
+### 2026-09-29 Phase 1 native checkpoint — Sorcery Slow
+
+Saved-v3 Slow now applies an Initiative-only reduction of
+`min(50%, 20% + floor(scaled Spell Power / 5))`. Sorcery rank, Spellcraft,
+and eligible cast modifiers strengthen only the Spell Power term; the fixed
+20% base does not scale. Temporal Field still applies 60% to the final
+ordinary Slow penalty after target-specific specialties. Ordinary v3 hero
+Slow lasts two rounds before Temporalist and existing duration extensions.
+Saved v1/v2 casts retain configured magnitude and Spell-Power-based duration.
+Hero-context help reports the current pre-specialty estimate and fixed base
+duration; the same Lua effect serves hypothetical AI previews and actual
+casts. This closes one more authored non-damage School-rank effect under
+UP-027 without changing the 37/67 registered combat-spell identity count.
+
+The Linux `vcmitest` and `vcmiclient` targets link. A focused active-profile
+filter passes 19/19 with zero skips, including all four rank coefficients,
+the 50% cap, Mass magnitude, Temporalist, v1/v2 fallback, preview/cast
+parity, and hero-help assertions. Independent review found no Phase 1
+blocker. Deferred Phase 2 checks include combined Spellcraft/Warcasting/
+Empower rounding, added `SPELL_DURATION` bonuses, and Echoed Duration
+specifically for Slow. A broader name filter exposed four unrelated
+pre-existing fixture failures: two old Ice Bolt saved-rule builders still
+contain `selectedPlacement`, and two AI Temporal Field fixtures violate
+the earlier-perk-tier rule. No playable snapshot or rendered tooltip
+acceptance is claimed. The next Phase 1 slice should increase missing
+spell/perk coverage rather than repeat this Slow integration matrix.
+
 ### 2026-09-29 Phase 1 native checkpoint — Shadow Life Drain
 
 Life Drain is now a registered Level-1 Shadow combat spell for saved-v3
