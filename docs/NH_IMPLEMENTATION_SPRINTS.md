@@ -40,6 +40,14 @@ failed run merely because a later run succeeds.
 
 ## Current implementation priority — complete Skills perks and spells
 
+### 2026-09-28 active Phase 1 checkpoint — universal Blacksmith and Nature Regeneration
+
+UP-024's saved capability ruleset v4 now defines universal Ballista/Ammo Cart/First Aid Tent stock and nine faction-favored prices. The authoritative town offer is deduplicated at the lowest price, is used by server charging and the new human shop, and is queried by recurring Nullkiller purchase hooks. Stronghold's Ballista Yard grants a nonstacking weekly +20 Siege on town visit, including when built with a hero present. The client source/geometry guard, AI source guard, 53 Python data cases and the focused linked runtime filter pass. Both Linux `vcmitest` and `vcmiclient` link; rendered shop and playable acceptance are not claimed. Independent Astra review's stale-bonus test assertion, build-while-visiting path, and UI ruleset-gate findings were repaired. Broader AI purchase behavior and week-boundary save interaction remain Phase 2 evidence.
+
+UP-023's Nature Level-1 Regeneration and Basic Herbalist are in source with an original provisional icon family, saved fixed-point wound marks, activation-start healing, battle status feedback, and BattleAI forecast. Independent Astra review found and prompted fixes for marks transferring across a casualty, repeated AI forecast healing, and a test expectation error. The final combined active-profile runtime filter passes 17/17 cases across spell formula, authoritative battle, AI, saved shop rules, and Yard purchase/refresh; both Linux targets link. This advances one spell identity and one perk, but rendered status presentation and playable delivery remain pending and UP-023 remains open.
+
+The shared `BonusType` change forced a large native rebuild. Source guards and 53 focused Python data tests pass. A first linked build stopped on an AI `unique_ptr` extraction compile error; the `.get()` repair is in source, the resumed `vcmitest`/`vcmiclient` build linked, and the failure/repair are retained in `NH_RELEASE_FAILURES.md`. An initial focused runtime attempt also exposed three test setup defects (same-round recast, week-boundary expectation, and spellbook mutation/missing artifact) plus the real AI hypothetical-rate gap; those were repaired without relaxing authoritative action legality. The final active-profile 17/17 filter has no skips.
+
 ### 2026-09-28 active Phase 1 slice — Storm of Daggers
 
 Implement the remaining Sorcery combat-spell identity as a target-selected
