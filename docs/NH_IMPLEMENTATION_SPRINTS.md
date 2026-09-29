@@ -40,6 +40,32 @@ failed run merely because a later run succeeds.
 
 ## Current implementation priority — complete Skills perks and spells
 
+### 2026-09-29 Phase 1 native checkpoint — Crusade! and Crusader
+
+UP-036 completes the remaining Light combat-spell identity: a 24-Mana,
+three-round friendly-army empowerment with capped Attack/Defense and flat
+Initiative, fractional independent magical reduction, and negative-Morale
+protection. Crusader adds one round. Runtime, BattleAI and status writers have
+separate file ownership; root owns content, module, build and integration.
+Focused authoritative and actual AI choice/projection tests are required.
+Use the appropriate original Prayer assets by reference for the working spell;
+bespoke icon approval and rendered/playable acceptance stay separate. Do not
+promote the normal launcher's snapshot merely because development builds pass.
+
+The authoritative effect, saved fractional reduction, status, combat log,
+Crusader and BattleAI paths are in source. Echoed Duration applies once to
+the fixed base: three rounds ordinarily, four with either duration perk,
+five with both. Both Linux targets link; the isolated active-profile filter
+passes 19/19 with zero skips, including actual AI submission and casting.
+Content passes 49/49, perk inventory 2/2, UI wiring 2/2, module mirror and
+diff checks pass. Independent review has no blocking finding. Coverage is
+52/67 registered combat identities and 111/310 active perks; Light is 11/11
+by identity. Generic duration artifacts, full battle save/reload, Dispel,
+hypnosis and wider AI horizons are recorded for Phase 2. Rendering, bespoke
+perk art and playable delivery remain open. Next missing spell: Nature
+Entangle; do not return to exhaustive Crusade interaction testing before
+increasing missing implementation coverage.
+
 ### 2026-09-29 Phase 1 native checkpoint — Sorcery Slow
 
 Saved-v3 Slow now applies an Initiative-only reduction of
