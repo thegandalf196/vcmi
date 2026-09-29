@@ -865,6 +865,18 @@ test-fixture issue for Phase 2, not as Empower execution evidence. Mass Slow
 variant and wider Lua interactions remain unverified. This does not close
 UP-023 or establish playable delivery.
 
+2026-09-29 Shroud Backstab checkpoint: the first Basic Shroud perk is active.
+The selected perk adds +15 percentage points only to the existing rear-facing
+physical melee flanking damage path; Basic and Expert rear attacks now gain
++40% and +75% total. No new saved combat state is required, and the shared
+damage estimator feeds server resolution and AI candidate forecasts. The Linux
+test and client targets link; 5/5 isolated active-profile Shroud tests pass with
+zero skips. The perk/UI-inventory data checks pass 19/19, module generation is
+in sync, and independent review found no blocking mechanic defect. The
+purpose-made four-state icon is Provisional; in-game rendering and save/AI
+interaction matrices remain unverified. Nine Shroud perks and the much larger
+UP-023 list remain open.
+
 User ordering clarification (2026-09-27): after the active Spell Lock and full
 Archery slices, complete Bulwark of the Mire as the next full Skill slice before
 War Machines or Command. Partial Mireborn source is not completion.
