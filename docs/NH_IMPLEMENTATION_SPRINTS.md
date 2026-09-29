@@ -40,6 +40,42 @@ failed run merely because a later run succeeds.
 
 ## Current implementation priority — complete Skills perks and spells
 
+### 2026-09-29 Phase 1 native checkpoint — Quicksand v3 count
+
+UP-027's next concrete gap is Nature Quicksand. Its saved-v3 patch count now
+uses the authored formula instead of inherited 4/6/8 mastery data:
+`min(5, 2 + floor(scaled Spell Power / 60))` rule. The fixed two-patch base is
+unscaled; School rank, Spellcraft, Empower, and battle-only Warcasting compose
+on the Spell Power term before one floor. Old v1/v2 profiles must retain their
+configured 4/6/8 behavior. This is a **partial Quicksand slice**: the current
+NO_TARGET spell still chooses random legal tiles rather than accepting exact
+caster-selected, ordered hexes. Required placement UI, authoritative exact
+count/hex validation, and deliberate AI placement remain open. Mire Shaper's
+additional patch is also still planned; its interaction with the five-patch
+cap needs a canonical decision before that perk is activated. The single
+saved-profile-aware helper feeds the Lua obstacle application and dynamic
+spellbook description. An independent source review found no blocking count,
+save, or Lua defect; it identified and the worker repaired a non-discriminating
+Empower/Warcasting test. Linux `vcmitest` and `vcmiclient` link, and the
+active-profile adjacent `ObstacleTest.*`, `ObstacleApplyTest.*`, and
+`NewHorizonsMagicV2RulesTest.*` filter passes 31/31, including the real Lua
+placement count at SP 59 and v1/v2 configured-count preservation. The first
+test invocation without the custom-school XDG profile failed to resolve the
+Nature ID; the active-profile run required by the test contract passed. No
+playable Quicksand claim follows from this source/native checkpoint.
+
+An adjacent current-head Spell Lock/Archery filter ran 32 tests: 16 passed,
+16 failed. Read-only classification found 15 failures attributable to stale
+test fixtures or assertions (cast allowance metadata, strict perk-tier
+prerequisites, an unset mock SpellID, invalid creature ability fixture,
+obsolete help wording, and an allied-shooter-blocker expectation). The
+remaining Skirmisher counterfire forecast assertion depends on enemy-hero
+information hidden from the player-scoped AI view; record that visibility
+contract question for Phase 2. This is not a green Spell Lock/Archery gate,
+but no crash, corruption, or demonstrated authoritative regression blocks
+the current Phase 1 implementation slice. Repair the fixtures at a suitable
+integration checkpoint, without weakening the production guards.
+
 ### 2026-09-29 Phase 1 checkpoint — Empower Spell and Expert Spellcraft
 
 Empower Spell is now a functional Advanced Spellcraft perk: after Wisdom, a
