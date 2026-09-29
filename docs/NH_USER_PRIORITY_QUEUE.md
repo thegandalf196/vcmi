@@ -163,13 +163,26 @@ source, with a shared caster/battle coefficient path and a real Lua obstacle
 application test. Both Linux targets link; 31/31 adjacent active-profile
 Obstacle and Magic-v2-rule tests pass, including Nature-rank threshold and
 v1/v2 legacy-count cases. Independent review found no blocking defect.
-This must not be called complete
-Quicksand: v3 still uses random NO_TARGET placement, whereas the canonical
+At that checkpoint Quicksand was not complete: v3 still used random NO_TARGET
+placement, whereas the canonical
 spell requires sequential caster-selected legal hexes, count/undo/confirm
 feedback, authoritative exact-target validation, and AI placement. V1/v2 must
 retain their configured legacy counts. Mire Shaper remains planned, and the
 canonical text does not yet settle whether its +1 patch can exceed the usual
 five-patch cap. Native graphical/playable evidence is still absent.
+
+2026-09-29 Quicksand exact-placement checkpoint: saved-v3 new games now
+require the caster to select the exact ordered patch count on legal empty
+ground. Client count/undo/confirm controls, authoritative no-spend rejection,
+the Lua effect, concealed obstacle flags and `StartAction` presentation,
+BattleAI placement, and an append-only protocol gate are in source. Older
+v1/v2 and markerless-v3 saved battles keep random placement. Both Linux
+targets link; the focused native filter passes 9/9, the magic-data gate 12/12,
+and both repeated-placement UI source guards pass. This resolves the missing
+Phase 1 selected-placement path, not UP-027 as a whole or playable UI
+acceptance. Deferred: hidden enemy-obstacle collisions, obstacle-packet
+confidentiality, trigger/lifecycle integration, native-resolution readability,
+and Mire Shaper's unsettled extra-patch cap.
 
 2026-09-29 Holy Armor continuation: Level-2 Light protection now uses the saved
 School-rank coefficient on its Spell Power term while keeping its fixed 30%
