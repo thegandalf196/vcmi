@@ -20,6 +20,15 @@ do not assume an unmet condition explains the report. Reproduce with focused
 native execution, fix an evidenced defect, and distinguish source verification
 from updated playable delivery. Preserve the user's live game and saves.
 
+Evidence: latest client log identifies Basic Bulwark with Toxic Spines and a
+Defending stack. The active perk requires Basic, but reflectionPercent(1) is
+zero, and authoritative Poison application sits behind reflectedDamage > 0.
+The perk therefore has no trigger at its own acquisition rank. This requires
+a design resolution, not merely a status icon. The user is asked whether Toxic
+Spines should grant 25% reflection on the first qualifying Basic melee hit or
+move to Advanced. Do not silently rewrite the approved reflection-based potency.
+Until resolved, preserve Advanced/Expert behavior and record Basic as blocked.
+
 ## UP-064 — New Horizons main-menu title art and visible product version
 
 Latest user delivery request, 2026-09-30: build all committed changes through
