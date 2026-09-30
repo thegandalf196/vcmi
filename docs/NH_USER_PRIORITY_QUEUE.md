@@ -281,7 +281,8 @@ source delivery or restart it solely because newer commits exist.
 
 ## UP-053 — Implement Wisdom Arcane Reservoir capacity perk
 
-Status: Implemented; source/native verified, delivery pending, 2026-09-30.
+Status: Implemented; source/native verified and pushed, playable acceptance
+pending, 2026-09-30.
 UP-023 Phase 1 slice after Deep Knowledge. This Expert perk is distinct from
 the Tower building of the same name: it adds 25 Maximum Normal Spell Points,
 not Buffer, and does not refill current Mana. Add the flat amount after the
@@ -302,9 +303,12 @@ Coverage is 124/310, Wisdom 6/4 active/planned. Overflow saturation is reviewed
 but not separately reached within validated fixture limits. No bespoke art,
 rendered/playable acceptance, promotion or new Windows package is claimed.
 
+Source delivery: `bccb3bd16d33317db7f5c4a1be64a695a4e09a5b` is pushed;
+local and remote branch identities match with a clean source checkpoint.
+
 ## UP-054 — Implement Wisdom Arcane Memory accepted scroll learning
 
-Status: Planned; shared scroll-source map identified, 2026-09-30.
+Status: Planned; accepted completion map complete, 2026-09-30.
 UP-023 Phase 1 candidate after Arcane Reservoir. A genuinely scroll-sourced
 accepted cast permanently teaches its spell only if current School acquisition
 rules permit it. Do not learn from spellbook/tome sources, failed casts, removed
@@ -320,6 +324,19 @@ call `performCast` later. Map a genuine accepted completion hook before
 consuming/learning, including canceled and deferred selections.
 No new saved counter: learned spells already persist. Confirm these event
 boundaries with focused native/build evidence, including rejected adventures.
+
+Architecture decision: add a generic successful-adventure-cast notification to
+`SpellCastEnvironment` (`lib/spells/ISpellMechanics.h`), with a default no-op
+for non-authoritative environments. Notify only in `performCast`'s successful
+effects branch after Mana/end-cast processing. `ServerSpellCastEnvironment`
+excludes external casters and delegates to the existing shared
+`useChargeBasedSpell` handler. That handler can capture true scroll provenance,
+discharge once, then learn through `ChangeSpells` when eligible. Remove the
+unconditional charge call from `CGameHandler::castSpell`; combat already calls
+the same handler after its accepted hero cast. The ordinary `CastAdvSpell`
+visitor bypasses `CGameHandler::castSpell`, so completion notification must
+cover that path too. Test ordinary success, failed effects, cancellation,
+PENDING/valid reply and source priority; no new persisted marker or netpack.
 
 ## UP-046 — Elemental Rebirth foundational effects
 
