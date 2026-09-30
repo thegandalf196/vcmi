@@ -623,6 +623,12 @@ full proc-family AI valuation, direct fractional seeded roll and new-marker
 Sylvan/Perfect Moment execution, custom-specialty and full world-save journeys.
 Dedicated art remains Not done; no GUI/profile/snapshot promotion.
 
+Source delivery: `63431ceb3cc0e216f9aff9785445e522fab7cddf` is committed and
+pushed; remote identity matches and the source checkpoint is clean. Full
+Windows run `36719626047` is in progress on that frozen source, including the
+later Summon Boat clause and this Misfortune foundation. Preserve the live run;
+dispatch does not establish compile/package or graphical acceptance.
+
 ## UP-062 — Complete canonical Berserk and Frenzied Curse
 
 Status: Planned; read-only runtime and AI maps complete, 2026-09-30.
