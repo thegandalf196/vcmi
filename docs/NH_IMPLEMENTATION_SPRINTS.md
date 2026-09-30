@@ -40,13 +40,133 @@ failed run merely because a later run succeeds.
 
 ## Current implementation priority — complete Skills perks and spells
 
+### 2026-09-30 Phase 1 source/native checkpoint — Hydra's Vitality
+
+2026-09-30 final source/native gate: both Linux targets build successfully;
+the isolated refreshed Hydra filter passes 8/8 and existing health guards
+16/16, zero skips. Runtime and actual AI submission/activation parity are
+verified, with all legal Orders retained in the controlled AI fixture. Temporary
+diagnostics are removed. Content/inventory/perk checks pass 73/73; UI source,
+module mirror and diff guards pass. Independent review has no blocking finding.
+Coverage is now 57/67 combat identities, Nature 9/11, active perks 114/310.
+Full combat save/load/status interactions, reach-aware Order valuation,
+two-packet expiry presentation and rendered/playable acceptance remain Phase 2.
+No launcher promotion. Next unblocked exploration is Elemental Convergence;
+Nature's Wrath awaits its two recorded chain-rule clarifications.
+
+UP-041 follows pushed Verdant Prison checkpoint `758da1d99` and its delivery
+record `740df792e`. A bare STACK_HEALTH enchantment would grant free body HP
+to every non-front survivor. Implement a compact current-health cohort ledger
+only when needed, retain normal health behavior otherwise, and keep activation,
+expiry/Dispel and detached AI on the same principal paths. Runtime owns health/
+lifecycle plumbing; AI and UI use separate files. Root owns registration,
+canonical rounding clarification, original Provisional art, focused validation
+and reviewed delivery. Do not increment coverage before those gates pass.
+
+Registration checkpoint: the Level-4, 16-Mana single-target spell/effect and
+both native test sources are wired. Purpose-made HoMM3-art 44/32/30 icons are
+bound, with retained master/prompt/provenance and inspected reductions; art is
+Provisional. Health/runtime and AI workers are active. Two new UI-worker spawns
+were rejected by the agent service thread limit; an existing completed worker
+slot was reused for the UI-only contract. The Windows run above was re-polled
+and is live in package-audit/preflight, not yet a compile result. Coverage stays
+at the prior verified checkpoint until the Hydra principal path builds/passes.
+
+Shared-preview checkpoint: canonical targeting, noncompounding capacity and
+fractional per-survivor regeneration details are explicit in the Markdown.
+The shared saved-v3 effect value computes the capped capacity percentage from
+raw SP rather than the legacy divisor; Lua/UI consume that same value.
+Content, UI inventory and canonical perk-data checks pass 73/73 after repairing
+the stale activation inventory documented in the failure ledger. The UI source
+guard passes, but is explicitly not compile/render/runtime evidence. Runtime
+cohort implementation and native fixtures remain in progress; do not build
+against missing worker files or call the spell delivered. The same Windows
+Verdant run was verified live in **Compile Windows x64 client**.
+
+Health-review checkpoint: compact cohorts now exist in shared unit state.
+The isolated damage/heal/expiry review found no principal count error there,
+but identified a concrete temporary-resurrection cleanup defect: removing
+`resurrected * maximumHP` can delete more creatures than the resurrection
+count when survivors have different current HP. Root classified this as a
+blocking count-integrity repair, not deferred reward polish. Remove exactly
+the recorded creature count and add a focused guard before delivery. Require
+normalization after bonus addition so the pre-effect health UPDATE cannot
+expose free HP, and disable capacity regeneration after its source expires.
+Percentage preview now uses millionths of one percent, retaining School
+fractions until the final creature-HP floor. UI and AI drafts are frozen;
+native execution waits for the runtime/script/test checkpoint.
+
+Independent maintenance delivery: `dff0fe557` is committed and pushed, repairing
+only the expected active-perk inventory for nine perks already active in the
+previously delivered configuration. Independent read-only review confirmed
+that it does not depend on Hydra's unfinished runtime or activate new content.
+The 73 focused data checks pass. Hydra remains uncommitted and uncounted while
+the runtime owner finishes raw-hex target resolution, controller-aware friendly
+eligibility, pre-cost capacity limits and native health-integrity fixtures.
+
+Narrow lifecycle re-review found no blocking source issue in bonus-change
+normalization, authoritative round-expiry updates or genuine-activation healing.
+Keep the two-packet expiry presentation boundary as deferred rendered Phase 2
+work: `BattleNextRound` precedes its normalization UPDATE. This is not a native
+compile or gameplay certification. No coverage increase is justified yet.
+
+Build checkpoint: both native fixture sources are present; the serialized Linux
+client/test build is running with eight jobs. All source/data guards still pass
+(73 Python checks, UI wiring, module mirror and diff checks). Two principal
+detached-state omissions are repaired: bonus normalization now reads projected
+units, and hypothetical genuine activations consume capacity regeneration.
+The C++ pre-cost path now rejects unrepresentable capacities independently of
+Lua applicability. Fixture review corrected normal-action recast timing, base
+capacity expectations and genuine authoritative activation triggering. Because
+two source fixes landed during the first compile pass, require an incremental
+rebuild afterward before the tester refreshes the isolated runner. No native
+test result, source delivery or coverage gain is claimed by this checkpoint.
+
+The first pass stopped on a status-icon pointer-type mismatch, repaired in
+the failure ledger. The second pass recompiled the latest target-validation
+source, linked `libvcmi.so` and `libvcmiclientcommon.a`, and progressed into
+test compilation. Independent final source review reports no remaining blocking
+finding, conditional on the build and focused native results. The build remains
+live; do not restart it merely because an observation times out. The separate
+Windows Verdant job `36659663956` is still compiling its frozen older source.
+
+Native checkpoint: both Linux targets and the no-stale-object follow-up build
+pass. The isolated refreshed Hydra filter runs eight cases with no skips;
+five pass, while raw-tail-hex selection, v2 fixture configuration and actual
+AI spell selection need repair. The separate health/Regeneration/Cure filter
+passes 16/16, no skips. Preserve the failed assertions and retained evidence;
+runtime and AI owners are repairing separate files. Coverage remains 56/67,
+and this feature remains uncommitted until the focused failures are resolved.
+
+Next-slice preparation is read-only: Nature's Wrath can reuse the existing
+nearest-unvisited chain transform and detached cast evaluation with a mixed
+damage/survivor-healing effect. Worldroot extends its 17-stack cap to 19 and
+strengthens only the SP-derived term by 10%. The canonical document supplies
+no numerical jump range, and resistance/path behavior needs clarification.
+Two non-blocking user questions are pending: unlimited nearest-stack jumps
+versus a finite range, and retaining versus skipping resisted enemy links.
+Do not silently implement the unresolved choices; finish Hydra's current
+repair/build/native/commit gate first. Tie handling should remain deterministic.
+
+2026-09-30 retry2 checkpoint: client/test targets rebuild successfully; all
+six server cases and invalid-target AI pass (7/8 overall, zero skips). The
+actual friendly spell-selection case still chooses an Order even after the
+distant enemy count is reduced, so actual forecast/candidate-score tracing is
+required rather than another speculative fixture adjustment. Existing health
+guards again pass 16/16. Coverage remains unchanged; no Hydra commit yet.
+The same Windows Verdant run has now completed compile/package/upload
+successfully; its frozen source is distinct from these Hydra changes.
+
 ### 2026-09-29 Phase 1 source/native checkpoint — Verdant Prison
 
 Committed and pushed as `758da1d99abc74fbe7aeefbb00249269b44c5ec3`.
 The full Windows build was dispatched on that exact source as
 [run 36659663956](https://github.com/thegandalf196/vcmi/actions/runs/36659663956).
-It was confirmed queued; this is not a Windows compile/package pass. Poll
-the same run to completion and persist any concrete failure before retrying.
+The same run completed successfully on 2026-09-30: Windows x64 compilation,
+runtime staging, recursive PE/license/source packaging and downloadable preview
+upload all passed. This proves packaging of frozen source `758da1d99`, not
+Hydra's later dirty changes or in-game visual acceptance. No Linux launcher
+snapshot was promoted.
 
 UP-040 follows pushed Summon Trolls commit `dd73972b7`. Reuse its exact-HP
 summon and prospective health paths for the canonical Dendroid ring, dividing

@@ -9,6 +9,40 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-041 — Implement Hydra's Vitality and capacity-safe creature health
+
+Status: Implemented (rendered/playable verification pending), 2026-09-30;
+UP-023 Phase 1 coverage slice.
+
+Implement the canonical Nature Level-4, 16-Mana, three-round enchantment:
+maximum creature HP increases by `min(50%, 25% + 0.15% × SP)` and each
+surviving creature regenerates 10% of enhanced maximum HP at genuine activation
+start. School rank strengthens only SP; no mass variant. Increasing capacity
+must not immediately heal any creature, change living count, restore casualties
+or create a Guardian Spirit-style shield. Actual current health, damage,
+ordinary healing and restoration must retain coherent creature counts while
+enhanced capacity is unfilled. Expiry/Dispel clamps excess body HP without
+resurrection. Use compact serialized health cohorts rather than one entry per
+creature or a per-frame army scan. Share principal lifecycle with hypothetical
+AI; expose useful target preview/status and combat feedback. Require focused
+principal/native and minimum health-integrity guards plus a successful build.
+Record broad interaction/save/reward and rendered/playable checks for Phase 2;
+no implicit launcher promotion. Root owns rounding clarification and integration.
+
+Source/native checkpoint: both Linux client/test targets link. The isolated
+Hydra filter passes 8/8 and existing health/Regeneration/Cure guards pass
+16/16, zero skips, on refreshed identical binaries/resources. Coverage rises
+to 57/67 combat identities and Nature 9/11; active perks remain 114/310.
+Principal evidence includes raw wide-tail targeting, no instant HP/count gain,
+genuine activation healing, ordinary healing without resurrection, exact
+temporary-resurrection cleanup, recast/expiry clamping, saved-v2 and overflow
+pre-cost rejection, actual AI submission, detached/live immutability and real
+activation parity. Independent review has no remaining blocking finding.
+Failed runs and fixture repairs are retained in NH_RELEASE_FAILURES.md.
+Full combat save/load and status interactions, reach-aware Order valuation,
+two-packet expiry presentation, rendered/playable acceptance and art approval
+remain Phase 2. No normal profile or launcher snapshot was changed.
+
 ## UP-040 — Implement Verdant Prison and Verdant Warden
 
 Status: Implemented (rendered/playable verification pending), 2026-09-29;
