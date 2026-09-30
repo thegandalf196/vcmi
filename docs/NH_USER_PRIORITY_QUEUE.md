@@ -42,6 +42,10 @@ and corrections are retained in NH_RELEASE_FAILURES.md. Broader save/status/
 obstacle interactions, tactical AI quality and rendered/playable acceptance
 remain Phase 2; no launcher promotion.
 
+Source delivery: commit `d6f976a1b` is pushed; full Windows preview run
+`36670136812` is live on that source. No compile/package success is claimed
+for Blink yet; the preceding successful Hydra artifact does not contain Blink.
+
 ## UP-041 — Implement Hydra's Vitality and capacity-safe creature health
 
 Status: Implemented (rendered/playable verification pending), 2026-09-30;
