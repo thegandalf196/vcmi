@@ -40,6 +40,35 @@ failed run merely because a later run succeeds.
 
 ## Current implementation priority — complete Skills perks and spells
 
+### 2026-09-29 Phase 1 source/native checkpoint — Verdant Prison
+
+UP-040 follows pushed Summon Trolls commit `dd73972b7`. Reuse its exact-HP
+summon and prospective health paths for the canonical Dendroid ring, dividing
+one shared pool across legal placements rather than giving the full pool to
+every stack. Runtime and UI have separate file ownership; AI follows the
+shared geometry. Root integrates registration, canonical rounding detail,
+validation, original Provisional art and delivery. Both Linux targets link;
+the isolated active-profile filter passes 11/11 and Summon Trolls guard passes
+10/10, zero skips. Content/inventory passes 55/55; targeting source guard,
+module mirror and diff checks pass. Independent review has no remaining
+production blocker. Runtime includes resistance/immunity and reflected-anchor
+handling; actual AI submission matches detached per-hex HP/placement forecasts.
+Coverage is 56/67 combat identities, Nature 8/11, and 114/310 active perks.
+Original spell art remains Provisional; Warden art is Not done. Full combat
+save/load, broad reward/status interactions, AI tactical quality and rendered/
+playable acceptance remain Phase 2. No launcher snapshot is promoted.
+
+Next-slice exploration: Hydra's Vitality cannot be implemented faithfully by
+adding only a timed `STACK_HEALTH` bonus. `CHealth::creatureHealthAvailable`
+derives every full survivor's current HP from its live maximum, so that would
+instantly heal a multi-creature stack on cast. Ordinary `HEAL` only fills the
+front creature's wounds. The next slice needs explicit unfilled enhanced
+capacity, per-survivor activation regeneration without resurrection, and
+expiry normalization, shared by authoritative and hypothetical state. Reuse
+the genuine activation hook and existing serialized health state; do not
+substitute instant healing or a Guardian Spirit shield for this mechanic.
+Per-creature/fractional rounding must be recorded alongside implementation.
+
 ### 2026-09-29 Phase 1 source/native checkpoint — Summon Trolls
 
 UP-039 was implemented in separate runtime, targeting UI and BattleAI lanes.
@@ -59,6 +88,14 @@ Original art remains Provisional and Beastcaller art remains Not done.
 Full mid-combat binary save/reload, broader reward/effect interactions, AI
 placement quality and rendered/playable acceptance remain Phase 2 work.
 No launcher snapshot is promoted. Next: Verdant Prison and Verdant Warden.
+
+Cross-platform batch checkpoint: GitHub notice/dependency preflight
+[run 36656624940](https://github.com/thegandalf196/vcmi/actions/runs/36656624940)
+was dispatched on pushed source `dd73972b7` with `preflight_only=true`.
+The same run completed successfully. This proves notice/dependency preflight,
+not Windows compilation or packaging. Verdant Prison source work continues
+independently; dispatch the full Windows build after its reviewed/native
+checkpoint is pushed, so the batch includes the new slice.
 
 ### 2026-09-29 Phase 1 source/native checkpoint — Vengeful Vines
 
