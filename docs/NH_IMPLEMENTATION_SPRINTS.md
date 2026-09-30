@@ -60,6 +60,13 @@ individually in UP-056. This is Phase 1 missing functionality, not Phase 2 polis
 
 Historical correction evidence:
 
+Source checkpoint `1f8177b97a5bcc81ff0fbe6b6846088c4deee770` is pushed,
+with a clean worktree at delivery. Full Windows build `36691148552` is queued
+for that exact source:
+https://github.com/thegandalf196/vcmi/actions/runs/36691148552
+Dispatch/queue is not build or package success. Preserve the earlier successful
+Prepared Caster payload while this run is pending.
+
 Repaired client 57887 and test retry 28356 build. The first isolated native
 slice 94687 passes four of six cases, zero skips, on binary
 `49c29fdd1feeba5b216e9092e6ae21d153187ac5d5af609f9c46044b9cf8d42c`.
