@@ -660,6 +660,12 @@ Counts are unchanged. Full Berserk/Frenzied completion still needs the pending
 Morale decision, one-activation expiry and perk implementation. All-blocked
 approach remains uncertified; broader tied-branch/forced-walk forecast progression
 is Phase 2. No GUI, launcher profile or playable snapshot promotion.
+
+Source delivery: `8c462143286f910e91eea0849afe9d83d4eb4209` is committed and
+pushed; remote identity matches. Full Windows run `36719626047` is confirmed
+still compiling its frozen `63431ceb3` source and does not contain this Berserk
+checkpoint. Preserve that live run; queue a newer build after it terminates.
+Native verification is not Windows or graphical acceptance.
 UP-023 missing Chaos base-mechanic slice. Canonical Berserk affects one enemy's
 next activation, forces melee even for shooters, selects by actual movement
 cost regardless of allegiance, randomizes equal-distance ties and approaches
