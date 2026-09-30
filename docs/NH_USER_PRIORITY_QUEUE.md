@@ -9,6 +9,41 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-039 — Implement Summon Trolls and Beastcaller
+
+Status: Implemented (rendered/playable verification pending), 2026-09-29;
+UP-023 Phase 1 coverage slice.
+
+Implement the canonical Nature Level-2, 9-Mana spell: summon existing Trolls
+on a legal empty hex chosen by the caster, with aggregate HP `100 + 2.5 × SP`.
+Convert to `ceil(pool / Troll HP)` creatures and wound the final creature so
+initial HP equals the pool, without rounding-generated HP. Preserve intrinsic
+abilities/regeneration and ordinary Initiative entry. Temporary summons vanish
+after combat and cannot create permanent troops or strategic resources.
+Beastcaller increases the pool by 25%; School rank strengthens only the Spell
+Power component. Preview legal placement, footprint and resulting HP/count
+before spending Mana or a Hero Action. Reuse shared aggregate-HP/placement and
+summon state where safe, with authoritative validation, AI use, combat feedback,
+registration and focused native/build evidence. Track broad save/load, reward,
+interaction and rendered/playable checks separately for Phase 2, without
+silently claiming those paths complete or promoting the normal launcher.
+
+Source/native checkpoint: both Linux client/test targets link; the isolated
+active-profile `NewHorizonsSummonTrolls*` filter passes 10/10, zero skips.
+It covers exact count/HP preview and resolution, School rank, Beastcaller,
+flat/percentage health artifacts, occupied-hex and saved-v2 pre-cost rejection,
+independent recasts, spawn/state JSON and authoritative UPDATE replay, and
+actual AI destination submission with detached forecast/resolution parity.
+The shared new-unit AI bonus-inheritance repair also passes the two existing
+Phantom Army/Transfigure Matter guards. Content and perk inventory pass 54/54;
+UI source guard, module mirror and diff checks pass. Independent review has
+no remaining blocker. Coverage is 55/67 combat identities, Nature 7/11, and
+113/310 active perks. Original Provisional spell art is bound; Beastcaller
+perk art remains Not done. Full mid-combat binary save/reload, broader reward
+and effect interactions, tactical placement quality, rendered/playable
+acceptance and launcher promotion remain separate Phase 2 work. Next missing
+Nature identity: Verdant Prison, with Verdant Warden.
+
 ## UP-038 — Implement Nature Vengeful Vines
 
 Status: Implemented (rendered/playable verification pending), 2026-09-29;

@@ -2385,6 +2385,13 @@ Convert that HP pool into the existing Troll creature.
 
 Troll Count = ceil(HP Pool / Troll HP)
 
+School proficiency strengthens only the Spell Power component, not the fixed
+100 HP. Beastcaller increases the resulting whole pool by 25%. Apply all these
+modifiers before rounding the final pool down once to whole HP; do not round
+the Spell Power component prematurely. Every cast creates an independent
+temporary stack at its chosen legal empty hex, rather than merging into an
+earlier summon or imposing an additional once-per-combat restriction.
+
 The final Troll may begin partially wounded so the spell does not gain free HP through rounding. The Trolls:
 
 - appear on a legal empty hex chosen by the caster;
