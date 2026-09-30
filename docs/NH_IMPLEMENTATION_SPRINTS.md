@@ -40,6 +40,26 @@ failed run merely because a later run succeeds.
 
 ## Current implementation priority — complete Skills perks and spells
 
+### 2026-09-29 Phase 1 source/native checkpoint — Summon Trolls
+
+UP-039 was implemented in separate runtime, targeting UI and BattleAI lanes.
+Root owns registration, canonical rounding clarification, original Provisional
+art, focused validation and integration. The spell uses chosen
+empty-hex placement and exact aggregate HP, not the generic summon effect's
+automatic placement or whole-creature floor rounding. Beastcaller scales the
+whole pool; School rank scales only its Spell Power term. Both Linux targets
+link, all ten focused runtime/AI cases pass with zero skips, and two existing
+Phantom Army/Transfigure Matter AI guards pass. Content/inventory passes 54/54;
+the module mirror and targeting source guard pass. Exact HP/count and spawn/
+update JSON roundtrips are verified; independent review has no blocker.
+New hypothetical units now inherit ordinary army bonuses through an owned,
+source-only stack bearer, matching authoritative Elixir health and count.
+Coverage is 55/67 combat identities, Nature 7/11, and 113/310 active perks.
+Original art remains Provisional and Beastcaller art remains Not done.
+Full mid-combat binary save/reload, broader reward/effect interactions, AI
+placement quality and rendered/playable acceptance remain Phase 2 work.
+No launcher snapshot is promoted. Next: Verdant Prison and Verdant Warden.
+
 ### 2026-09-29 Phase 1 source/native checkpoint — Vengeful Vines
 
 UP-038 implements the six-hex S-bend using one shared geometry function for
