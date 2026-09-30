@@ -100,6 +100,12 @@ promotion. Initial failures remain in the failure ledger and isolated reports.
 The source map and earlier in-progress evidence below are chronological records,
 not claims that the native gate is still pending.
 
+Source delivery: `25bd4b08219fd9ff25cbf541a4b1c7f32bd164c1` is committed
+and pushed with matching remote identity. All checkpoint source changes are
+committed; no unrelated dirty files are left. UP-047 records the next Command
+perk's recipient-scope question; while that and UP-046 remain unanswered,
+continue an unblocked missing specification item rather than inventing rules.
+
 Windows status: Blink run `36670136812` succeeds on frozen source
 `d6f976a1b4b071768172c18003a942adc760f888`, downloadable artifact
 `11079313586` (`New-Horizons-Windows-x64-d6f976a1b4b071768172c18003a942adc760f888`,
