@@ -504,8 +504,17 @@ is the next unblocked implementation while answers remain pending.
 
 ## UP-057 — Implement Chaos Hand of Fate
 
-Status: Planned; shared-effect/AI map complete, secondary mitigation resolved,
+Status: Implemented; focused source/native verified, playable delivery pending,
 2026-09-30.
+Both Linux targets build (90769 final incremental gate). Native 54761 passes
+17/17, zero skips: six Hand of Fate runtime cases, accepted/read-only AI cast,
+eight current Holy Wrath cases and two existing AI guards. Binary SHA-256
+`3ac2c0c602cb277c228164144ff86b2d448257b45cac526294c72cccdd7c09fd`;
+reports `UP057-hand-of-fate-isolated-ai-retry5-focused.log`/`.xml`.
+All 77 offline checks, module check and independent principal-path review pass.
+Coverage is 59/67 combat identities, Chaos 5/11. See the failure ledger for
+preserved initial failures and Phase 2 findings. Bespoke art remains Not done;
+no GUI/profile/snapshot promotion occurred.
 UP-023 Phase 1 missing combat identity. Canonical detailed roster controls over
 the abbreviated table: primary damage is `70 + 2.5 * SP`, with ordinary saved
 School/Spellcraft scaling on the SP term. After the primary hit, use actual HP
@@ -518,14 +527,15 @@ expected collateral valuation with detached AI without consuming live RNG or
 state during inspection. Register the spell, expose existing casting/preview/log
 hooks, preserve legacy saved-roster isolation and validate principal actual/AI
 paths. No bespoke art or completed effect is claimed by a placeholder binding.
-Read-only mapping is complete; no implementation has been claimed. The existing
+The shared mapping is complete. The existing
 damage script returns actual HP-clamped loss and supplies the post-hit pool;
 detached AI needs expected collateral value rather than one RNG-stub recipient.
 The user approved applying the secondary recipient's own magical defenses to
 half the primary actual loss. This does not influence selection or permit a
-reroll. The clarification is persisted in Pending Changes awaiting integration
-into the detailed canonical section. UP-058 and UP-059 admission corrections
-are source/native verified; this is the next missing combat identity.
+reroll. The clarification is integrated into the detailed canonical section
+and its abbreviated table; Pending Changes records the integration. UP-058 and
+UP-059 admission corrections are source/native verified; this missing combat
+identity now has focused runtime and actual AI evidence.
 
 ## UP-058 — Repair canonical combat-spell School assignments
 

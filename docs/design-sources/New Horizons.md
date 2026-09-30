@@ -1538,7 +1538,7 @@ The following numbers are prototype values. The spell concepts themselves are co
 |2|**Berserk**|8|Target attacks the nearest reachable stack regardless of<br>allegiance|
 |2|**Forgetfulness**|8|Suppresses ranged attacks and special creature abilities|
 |3|**Polymorph**|12|Turns an enemy into a random same-tier creature while<br>conserving its current HP pool|
-|3|**Hand of Fate**|12|Heavy single-target damage; 50% of actual damage spills<br>onto a random friendly stack|
+|3|**Hand of Fate**|12|Heavy single-target damage; 50% of actual HP loss spills<br>onto one random other surviving stack, friend or enemy; its own magical defenses apply|
 |4|**Puppet Master**|16|Directly control an enemy stack for one activation|
 |4|**Reality Warp**|15|Friendly and enemy target exchange their transferable buffs and debuffs|
 |5|Pandemonium|22|Battlefield-wide damage proportional to each stack's number of debuffs|
@@ -1897,6 +1897,8 @@ At SP 20:
 Hand of Fate calculates: 320 damage But the enemy target has only: 170 HP remaining It therefore suffers only: 170 actual damage The secondary hit is: 170 × 50% = 85 damage not 160. This prevents overkill from generating free collateral damage. The primary target cannot be selected again for the secondary strike. If no other stack exists, there is no collateral hit.
 
 No resistance or targeting intelligence should influence which secondary stack is chosen.
+
+The secondary hit starts at half the primary target's actual HP loss, rounded down. Apply the selected recipient's own magical defenses, including immunity, resistance, and magical damage reduction. Do not apply the caster's damage bonuses a second time. Protected surviving stacks remain eligible for selection; if the chosen recipient blocks the hit, it deals no damage and is not rerolled.
 
 That would undermine the spell.
 
