@@ -58,6 +58,13 @@ Archmage's map (UP-055) remains available. Five Adventure identities/acquisition
 are registered, but all five retain missing canonical effect clauses, recorded
 individually in UP-056. This is Phase 1 missing functionality, not Phase 2 polish.
 
+Town Portal's bounded map confirms the existing deterministic squared-distance
+resolver can be retained. Occupied-nearest cancellation must not become a
+farther-town fallback. Shared runtime/AI destination and Movement policy is
+missing; owner-versus-team towns and the legacy minimum Movement threshold are
+now explicitly awaiting user clarification. Archmage UP-055 remains the next
+unblocked implementation; do not stall the whole Phase 1 queue on these choices.
+
 Historical correction evidence:
 
 Source checkpoint `1f8177b97a5bcc81ff0fbe6b6846088c4deee770` is pushed,

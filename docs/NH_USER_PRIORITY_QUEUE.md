@@ -457,6 +457,20 @@ Advanced Town Portal query in UP-054 is generic completion compatibility
 coverage, not canonical New Horizons nearest-town/movement acceptance.
 No production edit or activation has been made for this audit.
 
+Town Portal policy map complete: existing squared planar distance and strict
+first-entry tie-break are deterministic; no route scan is required by the
+specification. Preserve occupied-nearest cancellation, without silently choosing
+a farther free town. Effect and AI currently enumerate different candidate pools
+and independently resolve distance, so share the policy/resolver instead.
+Keep canonical gating in saved `isAdventureSpell` rules, not global mastery JSON;
+Reinforcements uses the same base effect and must remain unchanged. The client
+only renders the requested generic picker, so eliminating the canonical query
+requires no new client-owned destination logic. AI must also predict zero
+remaining Movement. The user is asked whether controlled means owner-only or
+team towns, and whether any positive Movement permits casting instead of the
+legacy 200/300 minimum. Do not silently choose those semantics. Archmage UP-055
+is the next unblocked implementation while answers remain pending.
+
 ## UP-046 — Elemental Rebirth foundational effects
 
 Status: Planned; read-only map complete, HP-basis clarification pending,
