@@ -631,7 +631,35 @@ dispatch does not establish compile/package or graphical acceptance.
 
 ## UP-062 — Complete canonical Berserk and Frenzied Curse
 
-Status: Planned; read-only runtime and AI maps complete, 2026-09-30.
+Status: Partial; targeting foundation source/native verified, 2026-09-30.
+
+The preceding answer-only turn confirmed an already-recorded Hand of Fate
+decision and made no implementation progress. Current source is revalidated
+clean at `c66a4f6ab`; Windows run `36719626047` is confirmed live and preserved.
+Two Luna workers now own disjoint shared-callback/test and BattleAI/test files;
+root owns authoritative tie selection, activation regression tests and integration.
+This checkpoint corrects melee-only shooters, equal-cost target enumeration,
+server-only random tie selection, empty-target safety and exact AI forced movement.
+It does not resolve the pending negative-Morale/one-activation lifecycle decision,
+activate Frenzied Curse, or certify all-blocked approach behavior. Completion
+evidence is recorded below after build and focused execution, not inferred from edits.
+
+Checkpoint: v3 shared candidates force melee, use path cost and retain uniform
+target ties; the server alone draws the actual target and supplies the defender's
+side on forced WALK. Empty sets are safe; legal-target filters prevent rejected
+invincible/hostile Sanctified primaries. Legacy shooters and singleton first-nearest
+melee are retained. Detached AI movement/no-action and signed tied expectation
+work, and the legal AI cast is accepted without forecast mutation of RNG/Mana/HP.
+Both Linux targets build; final build `27932` and native `9314` pass 21/21,
+zero skips (nine callback, two activation, four AI and six profile cases).
+Binary `83356a9a474e1300cbe78c66616e4dd004ef9fcab7305d44310b813f8e1bdee3`;
+reports `UP062-berserk-foundation-final-focused.log`/`.xml`. All 77 offline gates,
+module and diff checks pass; independent review has no remaining blocker.
+The failure ledger retains all compile/fixture failures and debugger attribution.
+Counts are unchanged. Full Berserk/Frenzied completion still needs the pending
+Morale decision, one-activation expiry and perk implementation. All-blocked
+approach remains uncertified; broader tied-branch/forced-walk forecast progression
+is Phase 2. No GUI, launcher profile or playable snapshot promotion.
 UP-023 missing Chaos base-mechanic slice. Canonical Berserk affects one enemy's
 next activation, forces melee even for shooters, selects by actual movement
 cost regardless of allegiance, randomizes equal-distance ties and approaches
