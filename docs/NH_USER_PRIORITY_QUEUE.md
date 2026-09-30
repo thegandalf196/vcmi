@@ -9,6 +9,50 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-064 — New Horizons main-menu title art and visible product version
+
+Status: Implemented (rendered/playable verification pending), 2026-09-30.
+User interrupts ordinary coverage work for
+these two presentation/delivery tasks; preserve the uncommitted UP-063 slice.
+
+Inventory every main-menu title/splash variant, including Complete, Shadow of
+Death and Armageddon's Blade. Replace only the edition subtitle with
+`New Horizons`, matching each variant's lettering style, color and treatment;
+preserve composition and other artwork. Use the HoMM3 art skill even for drafts.
+Keep purchaser files intact and do not commit/distribute extracted backgrounds.
+Record provenance and a portable integration strategy rather than silently
+shipping original game artwork. Review at native menu resolution.
+
+Audit earlier approximately 0.7 version labels and explain their evidenced
+rationale. Establish a persistent product-version policy and one authoritative
+version value, separate from the upstream engine version, save schema and Git
+revision. Show the product version in native brown/yellow typography at the
+main menu's bottom-left corner. Acceptance requires actual runtime bindings,
+focused validation and build evidence; source edits are not playable delivery.
+
+Inventory finds eight installed illustrations: Complete and Armageddon's Blade
+each supply main, two scenario-selection, and loading art. The user explicitly
+accepted using these available references; separate Shadow of Death art is not
+a blocker. Eight HoMM3-skill subtitle edits and native 800×600 private compositions
+exist. Only bounded generated replacement regions are runtime files; purchaser
+archives and every pixel outside those regions remain untouched. Unknown source
+payloads require a matching reference instead of a guessed overlay.
+
+Historical evidence: a035100a2 introduced 0.7.0 for the saved planned perk
+registry, 9e675d976 introduced 0.8.0 for the Tower roster swap, and fd0f03156
+introduced 0.14.0 for reviewed biographies. These were module/content identity
+epochs, not completion percentages. The current value remains 0.14.0 in the
+new single authoring config; menu and module generator share it. Future tested
+feature checkpoints increment minor, fixes increment patch; 1.0 remains an
+accepted release boundary. Linux client compilation succeeds, nine focused
+offline checks pass, and eight pixel comparisons confirm unchanged artwork
+outside the subtitle rectangles. Independent review has no blocking finding.
+Review repaired patch resource lookup, source CRC lookup precedence, and null
+generated-image fallback; the focused source guards cover these repairs.
+Actual menu rendering and playable delivery remain pending. The local build
+includes the preserved UP-063 working tree and must not be promoted as a clean
+menu-only candidate. No launcher snapshot was changed.
+
 ## UP-045 — Implement Command Combined Arms
 
 Status: Implemented; source/native verified, rendered/playable acceptance
