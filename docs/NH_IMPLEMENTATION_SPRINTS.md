@@ -40,6 +40,40 @@ failed run merely because a later run succeeds.
 
 ## Current implementation priority — complete Skills perks and spells
 
+### 2026-09-30 user-priority interruption — main-menu branding and version
+
+UP-064 takes precedence at the user's explicit request. Available Complete and
+Armageddon's Blade illustrations receive eight bounded generated subtitle
+patches rather than redistributed full original backgrounds. The existing
+0.14.0 module version becomes a single authoring value shared with a small
+yellow bottom-left menu label; historical bumps and the ongoing checkpoint
+policy are documented in NH_VERSIONING.md. Native-size private compositions
+exist; client compilation and nine focused checks pass. Independent review has
+no remaining blocking finding. Rendered runtime and playable delivery remain
+pending; no launcher promotion was performed.
+The unfinished UP-063 working-tree slice below is preserved, not discarded,
+staged accidentally, or counted as completed by this menu work.
+
+### 2026-09-30 current slice — Shield of Chaos and Paradox Shield
+
+UP-063 is in source with independent review complete and no blocking finding.
+Two Luna workers implemented disjoint runtime/native and AI/native files; root
+integrates data, canonical clarification, registration and validation. Base
+protection is source-grouped physical/magical basis points, not spell immunity;
+Paradox obeys the user-retained physical cap. Signed detached AI weighs damage
+protection against expected Morale/Luck output changes for either allegiance.
+All 78 earlier offline gates pass; final both-target Linux build `41010` passes.
+Native test fixtures now advance real rounds between Hero Actions and retain
+the full two-round refresh/expiry checks. Counts are not advanced before native
+verification. Native `61362` now passes all 13 cases without skips; the final
+content/perk gate passes 76/76, generated module matches, and final review finds
+no blocker. Coverage advances to 60/67 combat identities, 127/310 active perks,
+with ranks unchanged at 84/93. The failed detached preview retained a pre-cast
+unit pointer; the fixture now reacquires the mutation's clone and verifies its
+bonus, without weakening AI choice or authoritative submission. Wider
+future-threat/recast forecasts are Phase 2 findings; art and
+playable delivery remain separate. Preserve the live frozen Windows build.
+
 ### 2026-09-30 current slice — Berserk forced-action foundation
 
 UP-062 is implementing the mapped Chaos gap. Shared targeting owns a read-only
@@ -117,8 +151,11 @@ the user's clarification; implement unambiguous clauses without inventing it.
 Source checkpoint `63431ceb3cc0e216f9aff9785445e522fab7cddf` is pushed;
 remote identity matches with a clean checkpoint. Full Windows run
 [36719626047](https://github.com/thegandalf196/vcmi/actions/runs/36719626047)
-is in progress on that frozen source. Preserve its handle across continuations;
-this is not yet a Windows package or playable acceptance claim.
+completed successfully on that frozen source. The unexpired package artifact
+`11103922205` is `New-Horizons-Windows-x64-63431ceb3cc0e216f9aff9785445e522fab7cddf`
+(750719556 bytes). It contains Summon Boat/Misfortune, not the later Berserk or
+Shield source. This is compile/package evidence, not graphical acceptance.
+A matching newer full build should follow the reviewed Shield source checkpoint.
 
 ### 2026-09-30 next slice — Summon Boat existing-only policy
 

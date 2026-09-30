@@ -2175,6 +2175,12 @@ There should be no clean “correct” target.
 
 That is why the spell belongs at Level 5.
 
+Paradox Shield adds 10 percentage points after Shield of Chaos's own 80% formula
+cap. The ordinary total Physical Damage Reduction cap remains 80%; the perk
+does not raise or bypass it. Its Magical Damage Reduction can reach 90%, subject
+to the ordinary 95% total magical cap. The -10 Morale and -10 Luck penalties
+are unchanged.
+
 The resulting Chaos school now has a coherent escalation:
 
 **Level 1:** probability, position, and decision-making become unreliable.

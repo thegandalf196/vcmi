@@ -19,6 +19,14 @@ None.
 
 ## Integrated history
 
+### Paradox Shield and damage caps — 2026-09-30 (integrated)
+
+The user selected the existing physical cap: Paradox Shield adds ten percentage
+points after the spell's own formula cap, but total Physical Damage Reduction
+still cannot exceed 80%. Magical protection can reach 90%, subject to its
+ordinary 95% total cap. This clarification is integrated into the canonical
+Shield of Chaos section; implementation evidence belongs in UP-063.
+
 ### Hand of Fate secondary mitigation — 2026-09-30 (integrated)
 
 User-approved decision: after selecting the secondary recipient uniformly from
