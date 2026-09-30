@@ -319,20 +319,22 @@ acceptance, release publication or launcher promotion is inferred.
 
 ## UP-054 — Implement Wisdom Arcane Memory accepted scroll learning
 
-Status: In progress; separate runtime/test workers and reviewer, 2026-09-30.
+Status: Source reviewed and focused native verified; activation blocked on
+neutral Adventure acquisition policy, 2026-09-30.
 UP-023 Phase 1 candidate after Arcane Reservoir. A genuinely scroll-sourced
 accepted cast permanently teaches its spell only if current School acquisition
 rules permit it. Do not learn from spellbook/tome sources, failed casts, removed
-spells or a merely carried unused scroll. Shared `useChargeBasedSpell` prefers
-non-charge sources and identifies the actual charged artifact; capture scroll
-identity before discharge can remove it, then use authoritative `ChangeSpells`
+spells or a merely carried unused scroll. Ordinary scrolls are reusable; the
+canonical rule does not consume them. Prefer permanent non-scroll sources over
+scrolls, and reusable scrolls over charged artifacts. Capture actual scroll
+identity before effects, then use authoritative `ChangeSpells`
 and existing `canLearnSpell`. Both combat and ordinary adventure casts need
 coverage; preserve external-caster behavior. `CSpell::adventureCast` already
 returns a result, but `CGameHandler::castSpell` currently ignores that return
 before attempting discharge. The Boolean is not completion evidence: the
 mechanics return true for CANCEL and PENDING as well as OK; town-choice queries
 call `performCast` later. Map a genuine accepted completion hook before
-consuming/learning, including canceled and deferred selections.
+settling charges/learning, including canceled and deferred selections.
 No new saved counter: learned spells already persist. Confirm these event
 boundaries with focused native/build evidence, including rejected adventures.
 
@@ -342,7 +344,8 @@ for non-authoritative environments. Notify only in `performCast`'s successful
 effects branch after Mana/end-cast processing. `ServerSpellCastEnvironment`
 excludes external casters and delegates to the existing shared
 `useChargeBasedSpell` handler. That handler can capture true scroll provenance,
-discharge once, then learn through `ChangeSpells` when eligible. Remove the
+discharge only actually charged artifacts, then learn through `ChangeSpells`
+when eligible without consuming an ordinary reusable scroll. Remove the
 unconditional charge call from `CGameHandler::castSpell`; combat already calls
 the same handler after its accepted hero cast. The ordinary `CastAdvSpell`
 visitor bypasses `CGameHandler::castSpell`, so completion notification must
@@ -353,25 +356,101 @@ Review checkpoint: the first runtime slice builds successfully (client session
 10614); 74 focused offline content tests and module/diff checks pass. This is
 not final UP-054 verification. Review found a blocking source-provenance defect:
 Town Portal can visit a Guild and learn its spell before completion rescans
-sources, incorrectly leaving the used scroll unconsumed. Capture a settlement
+sources, substituting a newly acquired book source for the cast's actual source.
+Capture a settlement
 callback before effects inside `performCast`, after any pending selection has
 resolved, and invoke it only on successful completion. Avoid mutable pending
-state in the environment and preserve ordinary non-charge source priority.
+state in the environment and preserve permanent non-scroll source priority.
 The runtime worker repaired this before native verification. The frozen
 six-file runtime now captures the exact artifact instance and re-resolves it
-at successful settlement; learning requires actual discharge and a rechecked
-active perk/current rank. The repaired client rebuild (57887) succeeds, and
-independent production review reports no remaining blocking finding. Focused
-native tests are still pending; do not close this item or count it verified.
+at successful settlement. The repaired client rebuild (57887) succeeds.
+Test retry 28356 succeeds; native 94687 passes 4/6 with zero skips, exposing
+the incorrect charge-only assumption for reusable scrolls and a second Haste
+fixture rejection. Correct source classification and reusable-scroll
+expectations, preserve charges only where authored, and recheck active rank
+and learning eligibility. Review/build/native retry evidence is pending;
+do not close this item or count it verified. Failure evidence is retained in
+`NH_RELEASE_FAILURES.md`.
 
 Acquisition clarification pending: neutral Adventure Spells require no School
 rank, but the specification separately describes fixed Guild unlocks. The user
 has been asked whether Arcane Memory can permanently learn these spells from
-consumed scrolls or applies only to school combat spells. Do not silently
+reusable scrolls or applies only to school combat spells. Do not silently
 reinterpret that exception. Charge-lifecycle implementation can proceed while
-the answer is pending. The shipped legacy Tome artifacts' school identifiers
-also do not match the six-school roster; record that separate interaction for
-Phase 2 rather than claiming a test-only matching Tome bonus fixes shipped data.
+the answer is pending. The canonical artifact section deliberately excludes
+the four legacy elemental Tomes from random loot until six-school replacements
+are authored. A synthetic matching Tome bonus tests generic permanent-source
+priority only; it does not prove a shipped six-school replacement or expose an
+unintended remapping bug.
+
+Final provenance repair builds both client/test targets (4257). Native retry
+53830 passes all nine feature cases and two direct guards, 11/11, zero skips.
+Binary SHA-256: `7efa81f126a237daaf9a48bb0e47382b1de7aa9e26036a8e2de86df7f272b9bc`;
+reports: `NewHorizonsArcaneMemory-provenance-retry2-focused.log`/`.xml`.
+The exact legacy scroll bonus marker now resolves to matching equipped instance
+IDs without changing saves. Ordinary scrolls remain reusable. Review has no
+blocking source finding. Keep the production registry planned until the pending
+acquisition choice is resolved; positive tests explicitly activate the feature.
+Final dormant-registry client/test build 89441 succeeds; native retry 18008
+again passes 11/11, zero skips. Final binary SHA-256:
+`1928e181a8d676e4e9fcf8a0c5dceff75c7c8c0f194de4d963fb6f1f1d7f7002`.
+Reports: `NewHorizonsArcaneMemory-dormant-policy-final-focused.log`/`.xml`.
+74/74 offline gates, module mirror and diff checks pass. Final independent
+activation review has no blocker. No completed-perk coverage increase or
+playable delivery is claimed. Advance an unblocked queue item.
+
+## UP-055 — Implement Wisdom Archmage
+
+Status: Planned; bounded read-only implementation map complete, 2026-09-30.
+UP-023 Phase 1 candidate after UP-054. The first accepted Level 4 or Level 5
+combat spell in each combat costs 3 additional Mana less after Wisdom's
+percentage discount, minimum 1. Lower-level spells, rejected requests and
+creature casts must not consume its eligibility. Preserve Prepared Caster
+stacking, ordinary battlefield modifiers and separate Overcharge surcharges.
+Share the exact cost and completed-cast history with UI and hypothetical AI,
+persist combat state with append-only compatibility, and gate by captured
+active selection/current Expert rank. Include registration, legal progression,
+focused native/build evidence, and recorded Phase 2 interactions. Read-only
+mapping may proceed while Arcane Memory's focused test build runs; do not edit
+production or change verified coverage during that build.
+
+Map: append generic completed-level history to `SideInBattle`, exposed through
+real/proxy/hypothetical battle state. Exact saved levels 4 and 5 share one
+Archmage discount; never use the global spell's legacy level or `>=4`.
+Authoritative accepted packets and detached accepted-cast callbacks record the
+saved level. Extend the shared battle-cost getter after Wisdom/Prepared Caster,
+before battlefield modifiers, and append serialization with old-save defaults
+and loss-aware down-save protection. Existing runtime/AI fixtures are registered.
+No production edit or activation has been made for this candidate.
+
+## UP-056 — Complete canonical Adventure Spell effects
+
+Status: Planned; bounded five-spell source audit complete, 2026-09-30.
+UP-023 Phase 1 functional gaps, not merely Phase 2 hardening. Guild acquisition
+is implemented for all five spells; none is yet certified effect-complete.
+The source audit finds these remaining canonical clauses:
+
+- Summon Boat must summon an existing available boat, never create one at a
+  higher mastery. Update actual and AI creation paths together.
+- Water Walk already uses the shared 1.5x step multiplier; end-day land legality
+  remains unestablished in the mapped authoritative turn/movement path.
+- Town Portal must use the nearest controlled town, never a player-selected
+  destination, and exhaust remaining Movement. Current Advanced/Expert effects
+  permit selection and subtract fixed legacy Movement instead.
+- Fly already uses the shared 1.5x multiplier and ordinary landing rules;
+  scenario-protected barrier enforcement remains unestablished.
+- Dimension Door requires a visible legal tile within eight tiles, protected
+  barrier enforcement, and exhausted Movement. Existing effects use a legacy
+  rectangle, lack a mapped visibility/barrier guard, and subtract fixed Movement.
+
+Share legality/result policy with client targeting and AI; no frontend-only
+fix or polling. Root must inspect the existing deterministic nearest-town
+distance/tie-break rule rather than infer that the specification demands a new
+expensive route scan. Protected-barrier metadata and occupied-nearest-town
+semantics need evidence or clarification before inventing behavior. The forced
+Advanced Town Portal query in UP-054 is generic completion compatibility
+coverage, not canonical New Horizons nearest-town/movement acceptance.
+No production edit or activation has been made for this audit.
 
 ## UP-046 — Elemental Rebirth foundational effects
 

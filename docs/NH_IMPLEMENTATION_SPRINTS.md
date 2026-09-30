@@ -40,6 +40,44 @@ failed run merely because a later run succeeds.
 
 ## Current implementation priority — complete Skills perks and spells
 
+### 2026-09-30 Arcane Memory source verified; activation policy pending
+
+The seven-file provenance/completion implementation builds client and test
+targets (4257). Nine feature cases and two direct guards pass 11/11, zero skips,
+on `7efa81f126a237daaf9a48bb0e47382b1de7aa9e26036a8e2de86df7f272b9bc`.
+Both initial failures and successful repair evidence remain in the failure
+ledger. Production activation remains planned until neutral Adventure learning
+policy is answered. Explicit test-only activation preserves feature verification
+without publishing an unresolved acquisition rule. Final build 89441 succeeds;
+native 18008 again passes 11/11, zero skips, on
+`1928e181a8d676e4e9fcf8a0c5dceff75c7c8c0f194de4d963fb6f1f1d7f7002`.
+74 offline cases and module/diff checks pass; final review has no blocker.
+Coverage remains 124/310 active perks, not 125 completed. No launcher promotion.
+Next unblocked foundation: canonical Town Portal effect/shared AI policy (UP-056);
+Archmage's map (UP-055) remains available. Five Adventure identities/acquisition
+are registered, but all five retain missing canonical effect clauses, recorded
+individually in UP-056. This is Phase 1 missing functionality, not Phase 2 polish.
+
+Historical correction evidence:
+
+Repaired client 57887 and test retry 28356 build. The first isolated native
+slice 94687 passes four of six cases, zero skips, on binary
+`49c29fdd1feeba5b216e9092e6ae21d153187ac5d5af609f9c46044b9cf8d42c`.
+The run exposes an incorrect charge-only implementation assumption: ordinary
+scrolls are reusable, while the canonical perk learns from accepted scroll
+casts without requiring consumption. Repair source classification and retain
+ordinary scrolls; preserve authored charge costs for actually charged sources.
+The second rejected Haste fixture action also needs diagnosis. Native reports
+and the first fixture compile failure are retained in the failure ledger.
+No verified coverage increment or feature-delivery claim is made.
+
+The six-file runtime's pre-effect source snapshot remains necessary to avoid
+Town Portal/Guild source substitution. Neutral Adventure acquisition through
+Arcane Memory awaits clarification; fixed Guild unlocks remain a separate
+canonical rule. The four legacy Tomes are deliberately excluded pending
+authored replacements, not a four-to-six-school remapping defect. A bounded
+read-only Archmage map is complete (UP-055); implementation has not started.
+
 ### 2026-09-30 Windows Prepared Caster package checkpoint
 
 Full run `36680827103` succeeds on frozen `2b5a843d7d10ae68f8e53d40ee962fb27f4f72b9`.
