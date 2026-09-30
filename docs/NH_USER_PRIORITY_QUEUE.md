@@ -142,8 +142,8 @@ no Windows package or promoted Linux snapshot containing this perk is claimed.
 
 ## UP-050 — Implement Wisdom Prepared Caster
 
-Status: Planned; shared cost, accepted-cast state and AI map complete,
-2026-09-30. Next unblocked UP-023 Phase 1 slice.
+Status: Implemented; source/native verified, rendered/playable acceptance
+pending, 2026-09-30. UP-023 Phase 1 slice.
 
 The first hero spell in each combat costs 2 Mana less after Wisdom's percentage
 discount, minimum 1. Use `CBattleInfoCallback::battleGetSpellCost`, preserving
@@ -163,6 +163,60 @@ before workers edit distinct runtime/AI files. Require registration, ordinary
 progression/help, focused principal native/build and detached-cost evidence.
 No rule ambiguity was found. Bespoke art and rendered/playable acceptance remain
 separate, explicitly unverified requirements.
+
+Root contract: generic per-side `heroSpellCastCompleted`, read through
+`hasCompletedHeroSpellCast`, commits only after accepted hero casts and is
+versioned with old-load false and a downsave loss guard. Hypothetical state
+copies the marker and receives a generic completed-hero-cast notification
+after a target-valid hero projection; live state remains untouched. Existing
+StartAction history is deliberately not repurposed. Runtime owns shared state,
+cost, acceptance, serialization and its native fixture; AI owns detached state
+and its separate fixture; root owns registration, test wiring, builds and Git.
+
+Checkpoint: both Linux targets build (55809; final test-only rebuild 56500).
+All ten new runtime/actual-AI cases pass, zero skips. They exercise authoritative
+first/later costs across rounds, unchanged Overcharge surcharge, cost floor and
+battlefield ordering, rejected/creature exemption, legal Wizard perk selection,
+captured planned exclusion, current/old/downsave state, copied/nested/round AI
+state and actual evaluator submission without live-state preview mutation.
+The 31-case expanded run passes 30/31: the ten new cases plus 20 existing guards;
+one unchanged v2 synthetic fixture fails setup on v3-only `selectedPlacement`.
+Record that fixture migration for Phase 2; keep its failing report. The new
+ten-case rerun exits successfully. Binary SHA-256
+`ea8e481c14da2395f288408bece79ae470d0d2ad9534398c57e1bb37f5e815a0`.
+Offline content/perk/inventory passes 74/74; mirror/diff checks pass.
+Review has no blocking production finding; compile and initial-round fixture
+failures are retained in the failure ledger. Coverage is 121/310 active perks,
+189 planned, Wisdom 3/7 active/planned. Dedicated Adventure exclusion, broader
+interactions and old-save fresh-discount behavior remain Phase 2. Bespoke art
+is Not done; no rendered/playable acceptance or launcher promotion is claimed.
+
+## UP-051 — Implement Wisdom Meditation daily recovery
+
+Status: Planned; next unblocked Wisdom coverage slice, 2026-09-30.
+UP-023 Phase 1 candidate, after Prepared Caster's focused checkpoint.
+
+Canonical Advanced Meditation: ending the day with at least 25% of maximum
+Movement unspent restores an additional 15% of normal Maximum Spell Points.
+The day-start mana update is authored before Movement is refreshed:
+`NewTurnProcessor::generateNewTurnPack` calls `updateHeroesManaPoints` before
+`updateHeroesMovementPoints`, and both inspect the previous day's hero state.
+Use the existing `getManaNewTurn`/`SET_NORMAL` recovery path, not polling or a
+new day scheduler. `movementPointsLimit()` already selects the current land or
+boat layer. Use overflow-safe threshold arithmetic and floor the percentage;
+add recovery to ordinary regeneration, cap missing Normal, preserve Buffer and
+Mage Guild full-refill precedence. Gate captured active selection/current rank.
+First-day and tavern callers are mapped: day zero has no completed day and must
+not grant Meditation. The tavern pool currently refreshes Movement before
+computing mana; preserve the previous Movement for this check by computing mana
+first, and pass completed-day context from `NewTurn` (`pack.day > 1`). On-map
+updating can pass the pre-update calendar context explicitly. Do not add a
+serialized day marker or infer completion from the already incremented date.
+Do not claim a day-end mechanic solely from a pure regeneration getter test.
+Require legal Advanced progression, exact threshold/below-threshold checks,
+authoritative daily packet evidence, save/selection gating and focused build.
+AI heroes use the same passive daily path; strategic Movement reservation can
+be deferred explicitly rather than inventing a new mandatory AI behavior.
 
 ## UP-046 — Elemental Rebirth foundational effects
 
@@ -219,9 +273,12 @@ Bespoke art is Not done; neutral fallback is not final art. No launcher promotio
 
 Source delivery: `fcecc23d3d72ac6c67fd354bf8b2bfcb26234a5d` is committed
 and pushed; remote identity verified and worktree clean at this checkpoint.
-Full Windows run `36672365779` is pending on `dc50b5353` (contains that source),
-behind live Blink run `36670136812`. No Windows pass or playable promotion is
-claimed merely from dispatch.
+Full Windows run `36672365779` succeeds on frozen source
+`dc50b5353ceb86d8800eac9e162c69ad324ed4d6`, containing that source.
+Downloadable package artifact `11081176965` is available (750,646,843 bytes).
+This is Windows build/package evidence, not graphical acceptance or Linux
+launcher promotion. Later Combined Arms, Mysticism and Prepared Caster changes
+are not included in that frozen package.
 
 ## UP-043 — Implement Chaos Confusion and Confounder
 
