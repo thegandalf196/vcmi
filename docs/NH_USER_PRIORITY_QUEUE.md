@@ -9,7 +9,49 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-065 — Toxic Spines does not trigger in the user's playable battle
+
+Status: In progress, 2026-09-30. The user reports no Toxic Spines trigger,
+not merely missing Poison feedback. Prioritize actual authoritative application
+over further missing-feature work. Inspect the selected snapshot's perk data,
+saved hero/rank eligibility, Defend/melee/reflection path and Poison packet/state
+publication. Obtain the reported hero/stack/action or latest battle evidence;
+do not assume an unmet condition explains the report. Reproduce with focused
+native execution, fix an evidenced defect, and distinguish source verification
+from updated playable delivery. Preserve the user's live game and saves.
+
 ## UP-064 — New Horizons main-menu title art and visible product version
+
+Latest user delivery request, 2026-09-30: build all committed changes through
+`574f0571d` locally and select that exact candidate for the ordinary Linux launch
+script. Use a separate clean source checkout; preserve unfinished UP-063 edits.
+Acceptance requires successful optimized client compilation, matching frozen
+engine resources/content, focused validation and verified launcher selection.
+Do not launch the host GUI or claim user playtest acceptance from promotion.
+
+Local delivery completed: clean committed source
+`41d44ee49a0de4592ebc59e58752ebf5c9428aa4` includes the menu commit and two
+bounded delivery bug fixes. Release compilation with twelve jobs passes;
+sixteen offline checks and four native query regression cases pass. Final
+All for One headless smoke reaches thirty-six player turn starts through day 12
+without the startup gate's forbidden errors. Its timeout is intentional (124).
+Snapshot `a96183639bbc0dbad56f4e2a48a603baaa1debe62d0dbe40160926c092c946b0`
+is promoted; the ordinary `play-new-horizons-linux.sh --verify-only` resolves
+that exact frozen client/resources successfully. Source fixes are pushed.
+No host GUI/input or user save mutation occurred in this final validation.
+Menu visual acceptance remains for the user's manual test. Non-blocking AI
+`Stack ammo overuse` diagnostic repetition is recorded for Phase 2, not silently
+counted as a warning-free full-game acceptance.
+
+Historical delivery gate finding (repaired below): clean Release build and fifteen focused checks pass, but
+the frozen candidate's All for One headless run exited 139 during a day-2 AI
+battle. Do not promote it until this crash is understood. A first GDB wrapper
+incorrectly launched the executable outside the launcher's runtime asset-link
+directory, producing a missing-Complete-data fatal diagnostic.
+That diagnostic setup failure does not establish missing purchaser assets.
+Debugger retries must preserve the runtime asset root and unset desktop display
+variables to prevent error dialogs. Keep both first-run logs and do not conflate
+the diagnostic setup failure with the original AI crash.
 
 Status: Implemented (rendered/playable verification pending), 2026-09-30.
 User interrupts ordinary coverage work for
@@ -49,9 +91,10 @@ offline checks pass, and eight pixel comparisons confirm unchanged artwork
 outside the subtitle rectangles. Independent review has no blocking finding.
 Review repaired patch resource lookup, source CRC lookup precedence, and null
 generated-image fallback; the focused source guards cover these repairs.
-Actual menu rendering and playable delivery remain pending. The local build
-includes the preserved UP-063 working tree and must not be promoted as a clean
-menu-only candidate. No launcher snapshot was changed.
+Actual menu rendering acceptance remains pending. The first shared-tree build
+included preserved UP-063 changes and was not promoted. The separate clean
+committed candidate is now delivered as recorded at the start of this entry;
+unfinished UP-063 changes remain outside that selected snapshot.
 
 ## UP-045 — Implement Command Combined Arms
 
@@ -672,6 +715,48 @@ pushed; remote identity matches and the source checkpoint is clean. Full
 Windows run `36719626047` is in progress on that frozen source, including the
 later Summon Boat clause and this Misfortune foundation. Preserve the live run;
 dispatch does not establish compile/package or graphical acceptance.
+
+## UP-063 — Implement Shield of Chaos and Paradox Shield
+
+Status: Verified (delivery pending), 2026-09-30.
+The preceding answer-only turn verified an already-recorded Hand of Fate
+decision; it did not increase implementation coverage. Resume the next unblocked
+UP-023 Chaos identity rather than wait on Berserk's pending Morale decision.
+Shield of Chaos targets one friendly or enemy stack for two rounds, applies
+-10 Morale and -10 Luck, and independently reduces physical and magical damage
+by min(80%, 50% + 0.15% × Spell Power). Preserve fractional precision and the
+saved School/Spellcraft scaling of the Spell Power term. It is damage reduction,
+not magic immunity or resistance to non-damaging effects. Expert Paradox Shield
+adds ten percentage points to both reductions without changing the penalties.
+Audit the interaction with the canonical global physical reduction cap before
+claiming the perk. Reuse timed effects, authoritative mutation, saved-roster
+admission and detached AI; do not create polling or bypass casting validation.
+Acceptance: registered spell/perk and principal real casting/damage paths,
+friendly/enemy targeting, two-round lifetime, defenses distinct from spell
+immunity, fractional coefficients/caps, meaningful read-only AI valuation,
+focused native tests, successful builds and independent correctness review.
+Record broader integration findings for Phase 2 and bespoke art as Not done
+until an authored asset exists. Source verification is not playable delivery.
+
+User clarification: retain the existing 80% total physical cap. Paradox's ten
+points are added after the spell's own base cap; magical protection can reach
+90% under its ordinary 95% total cap. This is integrated into the canonical
+section and Pending Changes history. Runtime and signed AI source edits are
+reviewed without a blocking finding; builds/native verification remain pending.
+All 78 offline checks pass after the activation inventory correction. Deferred
+AI exposure/recast forecasting findings are recorded in the functional matrix.
+
+Final continuation checkpoint: both Linux targets build (`41010`); isolated
+native `61362` passes 13/13, zero skips, including accepted friendly/enemy AI
+casts, live-state/RNG preservation, fractional damage and caps, refresh/expiry,
+Dispel and bonus serialization. Reports `UP063-shield-final-retry3-focused.log`
+and `.xml`; 76 focused content/perk checks and module/diff gates pass.
+Final independent Astra review finds no blocker. Coverage advances to 60/67
+combat identities and 127/310 active perks. Existing launcher selection remains
+the clean committed menu/delivery snapshot; this slice is not promoted and no
+rendered acceptance is claimed. Next missing Chaos identity: Polymorph; preserve
+original army species/casualty accounting while implementing its battle-local
+same-tier form, exact aggregate HP, two-round reversion and detached AI.
 
 ## UP-062 — Complete canonical Berserk and Frenzied Curse
 
