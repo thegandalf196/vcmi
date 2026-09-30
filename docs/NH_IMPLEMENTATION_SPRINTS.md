@@ -42,6 +42,16 @@ failed run merely because a later run succeeds.
 
 ### 2026-09-30 ordinary spell acquisition policy source/native verified
 
+Source checkpoint `8e318e78431f8e14ffe7b39e96522ccb59dbdbcb` is pushed.
+Full Windows run [36703167717](https://github.com/thegandalf196/vcmi/actions/runs/36703167717)
+is confirmed in progress on that exact head. Preserve its live handle; dispatch
+is not a completed package or playable acceptance.
+The preceding Archmage run [36697665400](https://github.com/thegandalf196/vcmi/actions/runs/36697665400)
+completed successfully on `fffd9b81329e06bda04ec48d2253f5f4a890e0ab`.
+Its unexpired Windows x64 package is artifact `11090508152` (750686084 bytes),
+with matching head in its name; that package does not contain the later School
+or ordinary-acquisition corrections. No launcher/profile promotion.
+
 UP-059 adds an optional saved ordinary-acquisition marker independently of
 casting availability. Fresh Master Chain Lightning remains Solmyr's castable
 specialty but cannot enter ordinary learning/Guild/scroll offers; fresh
