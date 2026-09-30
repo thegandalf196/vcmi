@@ -40,6 +40,16 @@ failed run merely because a later run succeeds.
 
 ## Current implementation priority — complete Skills perks and spells
 
+### 2026-09-30 Windows Prepared Caster package checkpoint
+
+Full run `36680827103` succeeds on frozen `2b5a843d7d10ae68f8e53d40ee962fb27f4f72b9`.
+Artifact `11082744152` is the 750666994-byte unexpired Windows x64 package;
+its exact name is `New-Horizons-Windows-x64-2b5a843d7d10ae68f8e53d40ee962fb27f4f72b9`.
+This includes Combined Arms, Mysticism and Prepared Caster, not subsequent
+Meditation, Deep Knowledge or Arcane Reservoir. Build/package success is not
+graphical gameplay acceptance. Preserve this terminal success and its payload;
+dispatch the next full build at the next completed source checkpoint.
+
 ### 2026-09-30 Phase 1 native checkpoint — Wisdom Arcane Reservoir
 
 The Expert perk adds 25 Maximum Normal Spell Points after Knowledge and
