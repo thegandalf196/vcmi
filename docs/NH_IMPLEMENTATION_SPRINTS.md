@@ -40,6 +40,30 @@ failed run merely because a later run succeeds.
 
 ## Current implementation priority — complete Skills perks and spells
 
+### 2026-09-30 Phase 1 native checkpoint — Wisdom Mysticism
+
+UP-049 implements the missing Basic perk through the existing daily recovery
+getter and authoritative `SET_NORMAL`. Recovery is a floor of the greater of
+5 or floor(10% normal maximum), fills only missing Normal and leaves Buffer
+unchanged. Existing stronger regeneration and Mage Guild rest retain precedence.
+Captured active selection/rank gate the effect, preserving planned snapshots;
+no new persistent field, polling or scheduler. Generic AI acquisition and daily
+application already exercise this passive; strategic acquisition ranking remains
+Phase 2. Canonical help text is retained and bespoke art is Not done.
+
+Linux client build 55027 and final test build 92352 pass; six new cases plus
+30 directly relevant pool/capacity guards pass together, 36/36, zero skips.
+The real daily packet, Wizard offer selection/save-load, planned snapshot,
+rank removal, percentage floor/cap, Buffer and rest precedence are checked.
+Binary SHA-256 `0b565de19b837c0f2a3bc476c59009f61c99f570ba15c507d3737df7912be080`.
+Offline checks pass 74/74; mirror/diff checks pass. Independent review has no
+blocking finding. Coverage is 120/310 active perks, 190 planned, Wisdom 2/8;
+combat identities remain 58/67 and ranks 84/93. Broader interactions,
+rendered/playable acceptance and art remain deferred; no launcher promotion.
+The next unblocked candidate is Prepared Caster, with a shared first-accepted-
+combat-spell state/cost map underway. Diplomacy still awaits the authored-free-
+joining answer. Preserve Command Windows run `36672365779`.
+
 ### 2026-09-30 next coverage slices — Diplomacy and Mysticism
 
 UP-048's runtime and AI/UI maps plus independent policy review establish that
