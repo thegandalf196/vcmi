@@ -44,6 +44,26 @@ Registry coverage advances to 119/310 perks, Command 4/6 active/planned;
 combat identities and ranks are unchanged. Neutral fallback is not bespoke art.
 First failures and succeeding retry reports remain recorded, not overwritten.
 
+Source delivery: commit `25bd4b08219fd9ff25cbf541a4b1c7f32bd164c1` is
+pushed; local and remote branch identities match. Worktree is clean at this
+source checkpoint. This is not launcher promotion or Windows package evidence.
+
+## UP-047 — Commanding Presence recipient scope and implementation
+
+Status: Planned; shared-path map complete, recipient-scope answer pending,
+2026-09-30. UP-023 Phase 1 coverage candidate; no activation claimed.
+
+Implement the Advanced Command perk: friendly stacks currently affected by an
+Order treat negative Morale as zero for its duration. Existing shared morale
+calculation supports a zero floor; canonical Order states and detached AI do
+not yet supply this perk. Include authoritative activation, UI-visible morale,
+detached forecast and minimum Order valuation, registration and focused tests.
+The user is asked whether the floor applies only to covered recipients (such as
+Protect's pair or Second Wind's selected stack, versus eligible troops for
+army-wide Orders), or the entire army whenever any Order is active. Do not
+silently grant a whole-army aura to targeted Orders. Continue another unblocked
+Phase 1 item while awaiting this material scope decision.
+
 ## UP-046 — Elemental Rebirth foundational effects
 
 Status: Planned; read-only map complete, HP-basis clarification pending,
