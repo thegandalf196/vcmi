@@ -406,7 +406,8 @@ No launcher snapshot or live game profile was changed.
 
 ## UP-055 — Implement Wisdom Archmage
 
-Status: Planned; bounded read-only implementation map complete, 2026-09-30.
+Status: Implemented; source/native verified, playable acceptance pending,
+2026-09-30.
 UP-023 Phase 1 candidate after UP-054. The first accepted Level 4 or Level 5
 combat spell in each combat costs 3 additional Mana less after Wisdom's
 percentage discount, minimum 1. Lower-level spells, rejected requests and
@@ -426,7 +427,29 @@ Authoritative accepted packets and detached accepted-cast callbacks record the
 saved level. Extend the shared battle-cost getter after Wisdom/Prepared Caster,
 before battlefield modifiers, and append serialization with old-save defaults
 and loss-aware down-save protection. Existing runtime/AI fixtures are registered.
-No production edit or activation has been made for this candidate.
+Implementation ownership is split: runtime owns generic completed-level state,
+serialization, shared cost and actual-cast tests; AI owns detached state/callback
+and its focused projection tests. Root owns activation/data, builds and Git.
+Use an exact levels 1–5 mask, shared by all consumers, not an Archmage-only flag.
+Existing `usedSpellsHistory` is written at cast start, so it cannot substitute
+for this accepted-completion history. No activation/verified count is claimed
+before the focused gates; preserve all unrelated changes.
+
+Checkpoint: client/test crash-repair build 22317 succeeds; final test-only
+build 13005 succeeds. Native 18779 passes 21 runtime/AI cases plus three direct
+Time Stop/Pursuit guards, 24/24, zero skips, on binary
+`8e2222981acf90654d38166321ece81af245860deaf55a38680af0cc10dece52`.
+Reports: `NewHorizonsArchmage-score-retry4-focused.log`/`.xml`.
+Legal Expert offer, shared discount/floor, lower-level preservation, accepted
+Level 4/5 history, creature/rejected exemption, append-only save compatibility,
+nested detached copies and actual evaluator submission pass. A real stale-dead
+unit request admission hole is repaired before StartAction; its regression and
+living/Time Stop/Pursuit guards pass. Earlier failed/crashed attempts remain in
+the failure ledger. Offline gates pass 74/74, module/diff checks pass, independent
+review has no blocking finding. Coverage is 125/310 active perks, Wisdom 7/3;
+ranks and combat identities unchanged. Broad lifecycle/countering interactions,
+full save-world journeys, artwork and playable acceptance remain deferred.
+No launcher promotion or GUI run. Next unblocked item: UP-058.
 
 ## UP-056 — Complete canonical Adventure Spell effects
 
@@ -470,6 +493,45 @@ remaining Movement. The user is asked whether controlled means owner-only or
 team towns, and whether any positive Movement permits casting instead of the
 legacy 200/300 minimum. Do not silently choose those semantics. Archmage UP-055
 is the next unblocked implementation while answers remain pending.
+
+## UP-057 — Implement Chaos Hand of Fate
+
+Status: Planned; shared-effect/AI map complete, secondary mitigation resolved,
+2026-09-30.
+UP-023 Phase 1 missing combat identity. Canonical detailed roster controls over
+the abbreviated table: primary damage is `70 + 2.5 * SP`, with ordinary saved
+School/Spellcraft scaling on the SP term. After the primary hit, use actual HP
+lost, not attempted damage or overkill. Choose one other surviving stack
+uniformly, with friendly and enemy stacks equally eligible, and inflict half
+that actual loss. Do not filter the random choice by resistance, immunity or
+tactical value; the primary target is excluded. With no other surviving stack,
+there is no secondary hit. Respect ordinary target/casting legality and share
+expected collateral valuation with detached AI without consuming live RNG or
+state during inspection. Register the spell, expose existing casting/preview/log
+hooks, preserve legacy saved-roster isolation and validate principal actual/AI
+paths. No bespoke art or completed effect is claimed by a placeholder binding.
+Read-only mapping is complete; no implementation has been claimed. The existing
+damage script returns actual HP-clamped loss and supplies the post-hit pool;
+detached AI needs expected collateral value rather than one RNG-stub recipient.
+The user approved applying the secondary recipient's own magical defenses to
+half the primary actual loss. This does not influence selection or permit a
+reroll. The clarification is persisted in Pending Changes awaiting integration
+into the detailed canonical section. Continue UP-058 before this missing spell;
+no source writes during Archmage's frozen build.
+
+## UP-058 — Repair canonical combat-spell School assignments
+
+Status: Open; concrete data mismatches confirmed, 2026-09-30.
+UP-023 Phase 1 data/functional correctness, not a numerical balance change.
+The functional matrix already lists Implosion as Sorcery and Earthquake as
+Nature, but current `config/newHorizonsMagic.json` still assigns both to Havoc.
+Correct fresh saved profiles, mirrored module and relevant acquisition/School
+consumers/tests after the frozen Archmage gate. Preserve prior snapshots rather
+than silently reinterpret already saved rules. Audit the adjacent recorded
+roster corrections without treating an absent Counterspell row or a note as
+proof of every spell's effect. Archmage's present fixture intentionally tests
+the current saved Level 4; it does not establish correct Implosion School.
+No data edit or verified repair is claimed yet.
 
 ## UP-046 — Elemental Rebirth foundational effects
 

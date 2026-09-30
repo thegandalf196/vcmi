@@ -15,9 +15,14 @@ entries here and thereby recreate a permanent override layer.
 
 ## Awaiting integration
 
-No approved design amendment remains awaiting canonical integration. Runtime
-completion and playable delivery remain separately tracked in the priority
-queue.
+### Hand of Fate secondary mitigation — 2026-09-30
+
+User-approved decision: after selecting the secondary recipient uniformly from
+the surviving friendly/enemy pool, apply that recipient's own magical defenses
+to the hit whose base is half the primary target's actual HP loss. Defenses do
+not affect selection and must not cause a reroll. Integrate this clarification
+into the detailed Chaos / Hand of Fate section before completing UP-057.
+Runtime implementation and delivery remain tracked in the priority queue.
 
 ## Integrated history
 
