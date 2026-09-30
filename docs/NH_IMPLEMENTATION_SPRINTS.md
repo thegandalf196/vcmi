@@ -40,6 +40,20 @@ failed run merely because a later run succeeds.
 
 ## Current implementation priority — complete Skills perks and spells
 
+### 2026-09-30 corrected fresh School classifications
+
+UP-058 now maps Implosion to Sorcery and Earthquake to Nature in newly captured
+profiles without rewriting old saved rules. Both Linux targets build (74940),
+final test rebuild 76420 succeeds, and four focused native cases pass 4/4,
+zero skips, on `d492ad73bae4a628efb7f91dfdf49f18328722339a55bbebbbcff61d6b23f37f`.
+Fresh acquisition/rank, old Havoc world/BattleStart persistence, shared actual
+casting and the corrected Archmage AI submission are exercised. Offline gates
+pass 75/75; mirror and diff checks pass, no review blocker. Counts remain
+125/310 active perks, 58/67 combat identities and 84/93 ranks. This does not
+complete Implosion's percentage/pull or Earthquake's full effects.
+Next: UP-059 ordinary acquisition exclusions, then Hand of Fate (UP-057).
+No launcher, gameplay profile or GUI changed.
+
 ### 2026-09-30 Archmage implementation and focused validation underway
 
 Final checkpoint: client/test build 22317 and final test-only build 13005
@@ -52,6 +66,14 @@ combat identities unchanged. Offline/mirror/diff checks pass; no review blocker.
 This supersedes the earlier in-progress evidence below, not its failure history.
 Next: UP-058 School assignments, then UP-057 Hand of Fate with the approved
 secondary-recipient mitigation decision. No launcher or profile promotion.
+
+Source delivery: `fffd9b813` is pushed and remote equality was verified with
+a clean worktree. Windows run `36697665400` is queued on this exact source.
+The preserved prior run `36691148552` succeeded on `1f8177b97`; its unexpired
+Windows package is artifact `11087514647` (750678892 bytes). Preserve that
+successful payload while the newer build runs; no graphical acceptance.
+UP-058 now owns only fresh School data and focused fresh/old snapshot tests;
+root retains generated module, documentation, builds and Git integration.
 
 Independent runtime/AI workers implemented UP-055 and froze production files.
 Accepted hero casts record exact saved levels 1–5; the first Level 4 or 5 uses
