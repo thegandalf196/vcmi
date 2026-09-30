@@ -72,6 +72,34 @@ legal Magic Arrow competitor; all-canonical-Order tactical ranking and AI
 Warcasting interactions remain Phase 2. Runtime Warcasting/snapshot checks pass.
 Source/native evidence does not establish rendered/playable acceptance.
 
+Source delivery: committed and pushed as
+`fcecc23d3d72ac6c67fd354bf8b2bfcb26234a5d`; remote identity verified.
+Next unblocked coverage slice: Command's Combined Arms, after the read-only
+damage/admission/AI map. Confusion still awaits the two recorded design answers.
+
+### 2026-09-30 next-slice map — Combined Arms
+
+UP-045 is still missing, not activated. Actual damage and hypothetical AI share
+`CBattleInfoCallback::calculateDmgRange`; canonical Flank uses the direct Order
+damage payload, while Focus Fire currently uses a separate ranged-only premium
+and penalty flag. Do not reuse that flag for melee. The direct damage payload
+is currently integer-valued; preserve fractional half percentages through Lua
+until final damage rounding, without changing serialized Order identifiers or
+state unnecessarily. Flank's ranged extension excludes its flat base and
+distinct-side additions. Focus Fire's melee extension excludes shooter-only
+Target Caller additions and range/obstacle benefits.
+
+Admission also needs coverage: `battleCanConfirmHeroCommand` currently requires
+a legal shooter for Focus Fire, and `battlePrepareHeroOrderState` requires a
+melee attacker for Flank. The perk must make its newly useful army compositions
+eligible without weakening target/owner/ordinary-unit validation. Actual side
+recording already excludes ranged attacks in BattleActionProcessor; retain it.
+AI's canonicalOrderHeuristic needs the same exact half-component helpers and
+known-allied-perk checks; do not consult concealed opposing heroes. Validate
+target scope, physical-only damage, legal perk progression, round expiry,
+fractional damage, unchanged base/side bonuses and actual AI submission with
+focused tests. No source or execution completion is claimed by this map.
+
 ### 2026-09-30 next-slice read-only map — Confusion and Confounder
 
 UP-043 records the canonical Level-1/5-Mana forced-next-activation spell.

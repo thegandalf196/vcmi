@@ -9,6 +9,24 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-045 — Implement Command Combined Arms
+
+Status: Planned; read-only runtime/AI mapping in progress, 2026-09-30.
+UP-023 Phase 1 coverage slice.
+
+Focus Fire grants friendly melee attacks against its designated target half
+of its damage bonus. Flank grants friendly ranged attacks against its target
+half of its Attack-derived damage component only, not the flat base or any
+distinct-side bonuses; shooters never record additional Flank sides. Preserve
+fractional half bonuses until final damage rounding, ordinary Order legality,
+round expiry, ownership and physical-attack restrictions. Do not grant melee
+Focus Fire the shooting-only range/obstacle or Target Caller benefits. Audit
+admission for melee-only Focus Fire and ranged-only Flank armies with this perk.
+Share exact runtime damage with previews/hypothetical AI and add the minimum
+Order-selection AI hooks, legal perk progression, content registration and
+focused build/native evidence. Record broad interaction and rendered/playable
+verification for Phase 2; no launcher promotion.
+
 ## UP-044 — Implement Command's attribute-specific efficiency perks
 
 Status: Implemented (rendered/playable verification pending), 2026-09-30;
@@ -40,6 +58,9 @@ Magic Arrow competitor; all-canonical-Order tactical ranking and AI Warcasting
 interactions remain Phase 2. Runtime Warcasting and binary snapshot checks pass.
 The synthetic old-rules/new-active-registry Focus Fire edge remains deferred.
 Bespoke art is Not done; neutral fallback is not final art. No launcher promotion.
+
+Source delivery: `fcecc23d3d72ac6c67fd354bf8b2bfcb26234a5d` is committed
+and pushed; remote identity verified and worktree clean at this checkpoint.
 
 ## UP-043 — Implement Chaos Confusion and Confounder
 
