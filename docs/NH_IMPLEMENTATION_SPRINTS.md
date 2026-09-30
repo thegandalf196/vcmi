@@ -40,12 +40,53 @@ failed run merely because a later run succeeds.
 
 ## Current implementation priority — complete Skills perks and spells
 
+### 2026-09-30 Hand of Fate source/native checkpoint
+
+UP-057 adds the missing Level 3 Chaos damage spell to fresh saved rules and
+the content module: primary `70 + 2.5 × SP`, ordinary coefficient scaling,
+uniform secondary selection across other living battlefield stacks on either
+side, and a raw spill of half the primary's actual HP loss. The selected
+recipient's defenses apply without reroll or repeated caster damage bonuses.
+That user-approved mitigation decision is integrated into the canonical section
+and summary table, with its source hash refreshed. Lua secondary resolution
+retains the cast's original resistance rolls through application. AI uses a
+signed expected-damage value, including friendly harm, rather than a random
+stub recipient; preview forecasts only the selected primary. Dedicated spill
+log entries identify the recipient and damage before/after defenses.
+Luna runtime and AI workers own separate files; root owns the shared bridge,
+registration and final validation. Both Linux targets build; final native gate
+54761 passes 17/17, zero skips, and all 77 offline checks pass. Astra review
+found no principal-path blocker. Combat identity coverage becomes 59/67,
+Chaos 5/11; ranks 84/93 and active perks 125/310 are unchanged.
+Borrowed Magic Arrow icons/impact remain Not done art. Fate Dealer is still
+planned and is not activated by implementing the base spell.
+
+Read-only Astra review found no blocking principal-path defect. Deferred Phase 2:
+legacy Clone uses zero returned injury damage on destruction, whereas AI's
+health-delta expectation currently predicts collateral; fresh NH Clone is
+inactive and Phantom Army's separate Integrity path is unaffected. Explicit
+Time Stop pool-preservation, caster-bonus non-reapplication, full save/load and
+rendered log/impact checks remain outside the initial focused evidence. Retain
+that compatibility finding rather than treating the base spell as exhaustive
+cross-system certification. Initial build 2773 and failed fixture retries are
+preserved in the failure ledger. Client/test retry 28001 succeeds; final
+incremental build 90769 succeeds. Binary SHA-256
+`3ac2c0c602cb277c228164144ff86b2d448257b45cac526294c72cccdd7c09fd`;
+reports `UP057-hand-of-fate-isolated-ai-retry5-focused.log`/`.xml`.
+AI debugger confirms legitimate Order competition, not missing spell admission:
+Hold the Line scores 1215 versus spell candidates 852.056 and 801.586. The
+submission fixture therefore neutralizes Order coefficients, without changing
+production preference. Next: Fate Dealer's two-draw hostile selection, then
+the next missing Chaos identity; unresolved user-design questions remain queued.
+
 ### 2026-09-30 ordinary spell acquisition policy source/native verified
 
 Source checkpoint `8e318e78431f8e14ffe7b39e96522ccb59dbdbcb` is pushed.
 Full Windows run [36703167717](https://github.com/thegandalf196/vcmi/actions/runs/36703167717)
-is confirmed in progress on that exact head. Preserve its live handle; dispatch
-is not a completed package or playable acceptance.
+completed successfully on that exact head. Unexpired package artifact
+`11093750773`, `New-Horizons-Windows-x64-8e318e78431f8e14ffe7b39e96522ccb59dbdbcb`,
+is 750694392 bytes. It contains School/acquisition corrections, not Hand of Fate.
+Package publication is not playable acceptance; no launcher/profile promotion.
 The preceding Archmage run [36697665400](https://github.com/thegandalf196/vcmi/actions/runs/36697665400)
 completed successfully on `fffd9b81329e06bda04ec48d2253f5f4a890e0ab`.
 Its unexpired Windows x64 package is artifact `11090508152` (750686084 bytes),
