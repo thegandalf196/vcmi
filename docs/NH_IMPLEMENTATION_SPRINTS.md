@@ -62,6 +62,12 @@ broader interactions, bespoke art and rendered/playable acceptance are deferred.
 Next unblocked candidate: Expert Wisdom Arcane Reservoir's flat 25 normal
 capacity, distinct from the Tower Buffer-Mana building (UP-053).
 
+Source delivery: Deep Knowledge `a827bbb7b` and Meditation `d023766f9` are
+pushed, with matching branch identities and a clean source checkpoint.
+Windows run 36680827103 is still compiling frozen Prepared Caster `2b5a843d7`;
+it does not contain these two newer perks. Preserve that live run. No new
+Windows package or playable promotion is claimed for the current source.
+
 ### 2026-09-30 Phase 1 native checkpoint — Wisdom Meditation
 
 Implemented additional daily Normal recovery from the previous day's unspent
