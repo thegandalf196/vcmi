@@ -2560,6 +2560,9 @@ The difference from Earthquake is therefore clear:
 
 Hydra's Vitality magically exaggerates the target's biological resilience.
 
+Target: one friendly living organic stack, excluding Undead, nonliving
+constructs and war machines. The spell never gains a mass version from rank.
+
 For **3 rounds** :
 
 Maximum HP per creature increase = min(50%, 25% + 0.15% × SP)
@@ -2584,6 +2587,11 @@ becomes:
 
 It does **not** immediately gain those 40 HP.
 
+School proficiency strengthens only the Spell Power contribution to the
+percentage, leaving the fixed 25% base and 50% cap unchanged. Round the
+resulting maximum HP per creature down once. Recasting refreshes the same
+enchantment; it does not compound an earlier Hydra's Vitality capacity bonus.
+
 Instead, it begins filling that newly created capacity through its regeneration.
 
 This distinction prevents the spell from becoming Light-style instant healing.
@@ -2593,6 +2601,13 @@ If it survives long enough, it can eventually reach:
 140 / 140 HP
 
 Casualties are not restored.
+
+Regeneration fills each survivor's own missing body HP, rather than adding
+aggregate HP and reinterpreting that total as additional creatures. Fractional
+tenths of HP carry between genuine activations, so small creatures do not lose
+their regeneration to repeated rounding. A spell or Order continuation is not
+a creature activation. Empty capacity, current health and surviving count must
+remain distinct during damage and ordinary healing as well as regeneration.
 
 When Hydra's Vitality expires, maximum HP returns to normal.
 
