@@ -42,6 +42,12 @@ failed run merely because a later run succeeds.
 
 ### 2026-09-29 Phase 1 source/native checkpoint — Verdant Prison
 
+Committed and pushed as `758da1d99abc74fbe7aeefbb00249269b44c5ec3`.
+The full Windows build was dispatched on that exact source as
+[run 36659663956](https://github.com/thegandalf196/vcmi/actions/runs/36659663956).
+It was confirmed queued; this is not a Windows compile/package pass. Poll
+the same run to completion and persist any concrete failure before retrying.
+
 UP-040 follows pushed Summon Trolls commit `dd73972b7`. Reuse its exact-HP
 summon and prospective health paths for the canonical Dendroid ring, dividing
 one shared pool across legal placements rather than giving the full pool to
