@@ -40,6 +40,27 @@ failed run merely because a later run succeeds.
 
 ## Current implementation priority — complete Skills perks and spells
 
+### 2026-09-30 Phase 1 native checkpoint — Wisdom Meditation
+
+Implemented additional daily Normal recovery from the previous day's unspent
+Movement, with initial-day exclusion, additive regeneration, capacity cap and
+unchanged Buffer. Pooled heroes use the pre-expiry Movement maximum before
+daily refresh; no polling or new saved marker. AI heroes use the same passive
+daily event. Strategic reservation of Movement remains Phase 2.
+
+Client build 35691 links successfully and a follow-up build exits zero; test
+build 88236 passes. Native 84667 passes all five new cases plus 22 capacity
+guards, 27/27, zero skips. Binary SHA-256
+`280e5b226f1cb9fb651e64ad0fc9067581c25c4c25793729d01d495054c99530`.
+Reports: `NewHorizonsMeditation-capacity-guards.log` and `.xml` in the isolated
+runner. Offline gates pass 74/74, mirror/diff checks pass, independent review
+has no blocker. Coverage becomes 122/310 active perks, 188 planned, Wisdom 4/6;
+ranks 84/93 and combat identities 58/67 are unchanged. Broader interactions,
+bespoke art and rendered/playable acceptance are not claimed. No promotion.
+
+Next: Deep Knowledge modifies the shared Wisdom level-up chance consumed by
+authoritative rolls and hero-screen forecasts, preserving draw count/order.
+
 ### 2026-09-30 Phase 1 native checkpoint — Wisdom Prepared Caster
 
 UP-050 adds the combat-lifetime accepted-hero-cast foundation, shared cost
