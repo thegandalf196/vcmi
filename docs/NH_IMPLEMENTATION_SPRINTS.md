@@ -40,6 +40,32 @@ failed run merely because a later run succeeds.
 
 ## Current implementation priority — complete Skills perks and spells
 
+### 2026-09-30 current slice — Berserk forced-action foundation
+
+UP-062 is implementing the mapped Chaos gap. Shared targeting owns a read-only
+list of nearest movement-cost candidates; only the authoritative server draws
+among equal-distance stacks. Fresh v3 shooters must enter melee and walk toward
+the selected target when out of range, while legacy profiles retain their old
+shooting and deterministic tie behavior. BattleAI must preserve exact forced
+movement/no-action and evaluate friendly as well as hostile harm without live RNG.
+Two Luna workers own separate callback/test and AI/test files; root owns server,
+activation tests, integration and focused builds. No new perk is activated yet.
+Negative-Morale consumption and all-blocked approach remain unresolved clauses;
+the present edits do not establish next-activation expiry or Frenzied Curse.
+The targeting foundation now builds both Linux targets (final `27932`) and
+passes native `9314`: 21/21, zero skips, including obstacle-path nearest targets,
+seeded authoritative melee ties, defender movement, legacy casts and actual
+accepted/read-only AI. Binary
+`83356a9a474e1300cbe78c66616e4dd004ef9fcab7305d44310b813f8e1bdee3`;
+reports `UP062-berserk-foundation-final-focused.log`/`.xml`. All 77 offline
+checks and module/diff checks pass; independent review has no remaining blocker.
+Compile and fixture failures are retained with their repairs/debugger evidence.
+Counts remain 59/67 combat identities, 84/93 ranks and 126/310 active perks.
+Wider multi-activation tied-branch/forced-walk projection is deferred Phase 2.
+Full expiry and Frenzied remain Phase 1, pending the user's Morale decision.
+Next unblocked Chaos base-effect candidate: Shield of Chaos, before its Paradox
+Shield modifier. No graphical run or playable promotion occurred.
+
 ### 2026-09-30 current slice — Misfortune probability foundation
 
 UP-061 implements the missing canonical base effect before activating its
