@@ -77,7 +77,12 @@ clean source checkpoint. Windows run 36680827103 still builds frozen Prepared
 Caster `2b5a843d7`, not this newer capacity perk; no new package is claimed.
 UP-054's completed map identifies a generic post-success adventure environment
 notification plus the existing accepted combat charge helper as the shared
-Arcane Memory boundary. No design clarification or new saved counter is needed.
+Arcane Memory boundary. No new saved counter is needed. Subsequent review
+requires capturing the actual source before adventure effects: Town Portal can
+otherwise teach the spell at its destination before the completion scan. That
+repair is in progress. Neutral Adventure Spell permanent acquisition through
+Arcane Memory also awaits user clarification against fixed Guild unlock rules;
+see UP-054. Client session 10614 passes the initial slice, not the later repair.
 
 ### 2026-09-30 Phase 1 native checkpoint — Wisdom Deep Knowledge
 

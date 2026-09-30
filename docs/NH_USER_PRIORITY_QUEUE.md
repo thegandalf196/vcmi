@@ -349,6 +349,30 @@ visitor bypasses `CGameHandler::castSpell`, so completion notification must
 cover that path too. Test ordinary success, failed effects, cancellation,
 PENDING/valid reply and source priority; no new persisted marker or netpack.
 
+Review checkpoint: the first runtime slice builds successfully (client session
+10614); 74 focused offline content tests and module/diff checks pass. This is
+not final UP-054 verification. Review found a blocking source-provenance defect:
+Town Portal can visit a Guild and learn its spell before completion rescans
+sources, incorrectly leaving the used scroll unconsumed. Capture a settlement
+callback before effects inside `performCast`, after any pending selection has
+resolved, and invoke it only on successful completion. Avoid mutable pending
+state in the environment and preserve ordinary non-charge source priority.
+The runtime worker repaired this before native verification. The frozen
+six-file runtime now captures the exact artifact instance and re-resolves it
+at successful settlement; learning requires actual discharge and a rechecked
+active perk/current rank. The repaired client rebuild (57887) succeeds, and
+independent production review reports no remaining blocking finding. Focused
+native tests are still pending; do not close this item or count it verified.
+
+Acquisition clarification pending: neutral Adventure Spells require no School
+rank, but the specification separately describes fixed Guild unlocks. The user
+has been asked whether Arcane Memory can permanently learn these spells from
+consumed scrolls or applies only to school combat spells. Do not silently
+reinterpret that exception. Charge-lifecycle implementation can proceed while
+the answer is pending. The shipped legacy Tome artifacts' school identifiers
+also do not match the six-school roster; record that separate interaction for
+Phase 2 rather than claiming a test-only matching Tome bonus fixes shipped data.
+
 ## UP-046 — Elemental Rebirth foundational effects
 
 Status: Planned; read-only map complete, HP-basis clarification pending,
