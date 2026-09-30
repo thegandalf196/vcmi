@@ -42,6 +42,13 @@ failed run merely because a later run succeeds.
 
 ### 2026-09-30 Phase 1 source/native checkpoint — Hydra's Vitality
 
+Source committed and pushed as `75c8aea71b8c4be48d561d727a897ee88d62c9fb`;
+remote branch identity was verified and the worktree was clean. Full Windows
+preview [run 36665665686](https://github.com/thegandalf196/vcmi/actions/runs/36665665686)
+is queued on that exact source (`preflight_only=false`). Poll this same run;
+dispatch is not a Windows compile/package result. Do not cancel/restart it
+merely because an observation times out. No Linux launcher snapshot promotion.
+
 2026-09-30 final source/native gate: both Linux targets build successfully;
 the isolated refreshed Hydra filter passes 8/8 and existing health guards
 16/16, zero skips. Runtime and actual AI submission/activation parity are
