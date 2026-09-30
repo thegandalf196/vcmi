@@ -42,6 +42,14 @@ failed run merely because a later run succeeds.
 
 ### 2026-09-30 Phase 1 in-progress slice — Chaos Blink and Blinkmaster
 
+Source delivery: committed and pushed as
+`d6f976a1b4b071768172c18003a942adc760f888`; remote identity verified.
+Full Windows preview [run 36670136812](https://github.com/thegandalf196/vcmi/actions/runs/36670136812)
+is live on that exact source (`preflight_only=false`). Dispatch is not a
+Windows compile/package pass. Poll this run without restarting for a timeout;
+no Linux launcher snapshot promotion. Hydra's preceding full Windows run
+36665665686 succeeded and its artifact remains separate.
+
 Final source/native gate: client/test targets build; the isolated refreshed
 Blink filter passes 12/12 and focused immunity/Entangle guards pass 24/24,
 zero skips. Final test binary SHA-256 is
