@@ -42,6 +42,12 @@ failed run merely because a later run succeeds.
 
 ### 2026-09-30 Hand of Fate source/native checkpoint
 
+Source commit `8473b53e169067315fbd5f637182f76ccb6d28e1` is pushed; local
+and remote HEAD match. Full Windows run
+[36710097476](https://github.com/thegandalf196/vcmi/actions/runs/36710097476)
+is in progress on that frozen source head. Preserve the live handle rather
+than redispatching. This is not yet Windows package or playable evidence.
+
 UP-057 adds the missing Level 3 Chaos damage spell to fresh saved rules and
 the content module: primary `70 + 2.5 × SP`, ordinary coefficient scaling,
 uniform secondary selection across other living battlefield stacks on either
