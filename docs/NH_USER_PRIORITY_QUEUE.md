@@ -199,7 +199,8 @@ compile/package or Windows graphical evidence; preserve the live handle.
 
 ## UP-051 — Implement Wisdom Meditation daily recovery
 
-Status: Implemented; source/native verified, delivery pending, 2026-09-30.
+Status: Implemented; source/native verified and pushed, playable acceptance
+pending, 2026-09-30.
 UP-023 Phase 1 slice, after Prepared Caster's committed native checkpoint.
 
 Canonical Advanced Meditation: ending the day with at least 25% of maximum
@@ -237,9 +238,12 @@ Coverage is 122/310 active perks, Wisdom 4/6 active/planned. Neutral fallback
 is not bespoke art; rendered/playable acceptance and broad interactions remain
 open. No launcher promotion or Windows package evidence for this slice.
 
+Source delivery: `d023766f9beee766a9d4907bbb9f1add17a5dfc0` is pushed;
+local and remote identities match, with a clean source checkpoint.
+
 ## UP-052 — Implement Wisdom Deep Knowledge bonus-roll chance
 
-Status: Planned; next unblocked Wisdom content candidate, 2026-09-30.
+Status: Implemented; source/native verified, delivery pending, 2026-09-30.
 UP-023 Phase 1 slice after Meditation's focused checkpoint.
 
 Canonical Advanced Deep Knowledge adds ten percentage points to Wisdom's
@@ -258,6 +262,29 @@ selected: Advanced 20→30%, Expert 30→40%. Preserve row order and draw count.
 Primary rolls precede the level-up perk query, so a newly chosen perk affects
 subsequent rolls, not the already-applied roll. Automatic AI growth uses that
 shared path; acquisition preference remains a separate strategic concern.
+
+Checkpoint: client retry 98557 and test build 8638 pass; native retry 96534
+passes four new cases plus nine direct growth guards, 13/13, zero skips.
+Binary SHA-256 `c9b9cdfd304e9b9db3ef679da3d3d13352a73af892f519d88084d97c3dccac88`.
+Reports `NewHorizonsDeepKnowledge-retry1-growth-guards.log`/`.xml` retain
+separate first-failure evidence. Review has no remaining blocker; offline
+74/74 and mirror/diff checks pass. Registry coverage is 123/310, Wisdom 5/5.
+Strategic AI acquisition, broad interactions, bespoke art and rendered/playable
+acceptance remain deferred; no launcher promotion.
+
+## UP-053 — Implement Wisdom Arcane Reservoir capacity perk
+
+Status: Planned; shared capacity map complete, 2026-09-30.
+UP-023 Phase 1 slice after Deep Knowledge. This Expert perk is distinct from
+the Tower building of the same name: it adds 25 Maximum Normal Spell Points,
+not Buffer, and does not refill current Mana. Add the flat amount after the
+Knowledge/Intelligence calculation in the existing New Horizons `manaLimit`
+branch, with overflow-safe saturation and captured active/current rank gating.
+All ordinary capacity readouts, restoration and AI capacity estimates share
+that method. Perk selection already invalidates capacity reconciliation;
+rank loss must use the existing event-driven clamp and preserve Buffer.
+Require legal Expert selection, no refill, capacity/rank/save/planned guards
+and focused build/native evidence. No additional saved counter or polling.
 
 ## UP-046 — Elemental Rebirth foundational effects
 
