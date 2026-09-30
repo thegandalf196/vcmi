@@ -399,6 +399,11 @@ Reports: `NewHorizonsArcaneMemory-dormant-policy-final-focused.log`/`.xml`.
 activation review has no blocker. No completed-perk coverage increase or
 playable delivery is claimed. Advance an unblocked queue item.
 
+Source checkpoint: `1f8177b97a5bcc81ff0fbe6b6846088c4deee770` is pushed;
+local/remote identities match and worktree is clean. Full Windows run
+`36691148552` was observed queued on this exact source, not yet successful.
+No launcher snapshot or live game profile was changed.
+
 ## UP-055 — Implement Wisdom Archmage
 
 Status: Planned; bounded read-only implementation map complete, 2026-09-30.
