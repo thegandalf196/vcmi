@@ -306,9 +306,20 @@ rendered/playable acceptance, promotion or new Windows package is claimed.
 Source delivery: `bccb3bd16d33317db7f5c4a1be64a695a4e09a5b` is pushed;
 local and remote branch identities match with a clean source checkpoint.
 
+### 2026-09-30 Windows Prepared Caster checkpoint
+
+Preserved full run `36680827103` now completes successfully on frozen source
+`2b5a843d7d10ae68f8e53d40ee962fb27f4f72b9`. Package artifact `11082744152`,
+`New-Horizons-Windows-x64-2b5a843d7d10ae68f8e53d40ee962fb27f4f72b9`,
+is 750666994 bytes and unexpired at verification. Preflight `11081934464` and
+selected-CRT report `11082600293` also exist. This supplies Windows build/package
+evidence for Combined Arms, Mysticism and Prepared Caster, not the newer
+Meditation, Deep Knowledge or Arcane Reservoir source. No Windows graphical
+acceptance, release publication or launcher promotion is inferred.
+
 ## UP-054 — Implement Wisdom Arcane Memory accepted scroll learning
 
-Status: Planned; accepted completion map complete, 2026-09-30.
+Status: In progress; separate runtime/test workers and reviewer, 2026-09-30.
 UP-023 Phase 1 candidate after Arcane Reservoir. A genuinely scroll-sourced
 accepted cast permanently teaches its spell only if current School acquisition
 rules permit it. Do not learn from spellbook/tome sources, failed casts, removed
