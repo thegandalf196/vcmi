@@ -61,6 +61,21 @@ two-packet expiry presentation and rendered/playable acceptance remain Phase 2.
 No launcher promotion. Next unblocked exploration is Elemental Convergence;
 Nature's Wrath awaits its two recorded chain-rule clarifications.
 
+Next-slice read-only map: Elemental Convergence is unregistered, with a clear
+Level-5/22-Mana exact-HP summon path (`250 + 5 × SP`) reusable from Trolls.
+Elemental Conjurer's existing planned entry specifies +30% pool and +2
+Initiative in the first battlefield round. Runtime can share a typed mapping
+from resolved terrain/battlefield, Lua chosen-hex spawning and exact wounded
+count; AI owns location enumeration/projected summon valuation; UI extends the
+currently Troll-specific preview to dynamic creature/count/HP/footprint.
+Design questions remain: Dirt/Sand/Swamp are absent from the terrain table,
+magical overlay precedence is undefined, and Conflux's actual native Grass
+conflicts with the table's Conflux-to-Magic example. Two non-blocking user
+questions request Earth/Dirt+Sand and Water/Swamp defaults, plus magical-overlay
+and Conflux-town precedence. Do not silently choose these or implement a
+random/generic elemental substitute. Until resolved, select another unblocked
+missing canonical item; preserve the clean Hydra delivery checkpoint.
+
 UP-041 follows pushed Verdant Prison checkpoint `758da1d99` and its delivery
 record `740df792e`. A bare STACK_HEALTH enchantment would grant free body HP
 to every non-front survivor. Implement a compact current-health cohort ledger
