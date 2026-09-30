@@ -136,6 +136,34 @@ recorded. Coverage becomes 120/310 active perks, 190 planned, Wisdom 2/8
 active/planned; ranks and combat identities are unchanged. Bespoke art is
 Not done; neutral fallback is not artwork. No launcher promotion.
 
+Source delivery: commit `c03505830` is pushed to `origin/definitive-mvp`.
+The validated working-tree source is recorded separately from playable delivery;
+no Windows package or promoted Linux snapshot containing this perk is claimed.
+
+## UP-050 — Implement Wisdom Prepared Caster
+
+Status: Planned; shared cost, accepted-cast state and AI map complete,
+2026-09-30. Next unblocked UP-023 Phase 1 slice.
+
+The first hero spell in each combat costs 2 Mana less after Wisdom's percentage
+discount, minimum 1. Use `CBattleInfoCallback::battleGetSpellCost`, preserving
+ordinary spell variants and later battlefield modifiers. Adventure costs stay
+unchanged. `CGameInfoCallback::getSpellCost` already routes active combat to
+this callback, including ordinary spellbook previews; do not create a duplicate
+client cost formula.
+
+Existing per-round `castSpellsCount` and StartAction `usedSpellsHistory` cannot
+represent the first accepted combat-lifetime hero cast. Track its completion
+at `BattleSpellCast`, excluding creature casts and rejected requests, retaining
+accepted resisted/countered casts. Preserve state across rounds and save/load,
+copy/update it in hypothetical AI, and expose a shared read-only cost predicate.
+Do not consume the discount merely by opening a preview or evaluating AI.
+Root owns the exact generic state/API contract and serialization integration
+before workers edit distinct runtime/AI files. Require registration, ordinary
+progression/help, focused principal native/build and detached-cost evidence.
+No rule ambiguity was found. Bespoke art and rendered/playable acceptance remain
+separate, explicitly unverified requirements.
+
 ## UP-046 — Elemental Rebirth foundational effects
 
 Status: Planned; read-only map complete, HP-basis clarification pending,

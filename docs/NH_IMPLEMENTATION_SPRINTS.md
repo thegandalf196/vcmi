@@ -64,6 +64,15 @@ The next unblocked candidate is Prepared Caster, with a shared first-accepted-
 combat-spell state/cost map underway. Diplomacy still awaits the authored-free-
 joining answer. Preserve Command Windows run `36672365779`.
 
+Mysticism source is committed and pushed as `c03505830`; this is not a playable
+promotion. Prepared Caster's read-only map is complete (UP-050). Its shared
+cost callback already feeds the ordinary combat spellbook through
+`CGameInfoCallback::getSpellCost`; no parallel UI calculator is needed. The
+missing foundation is a combat-lifetime accepted-hero-cast state shared by
+authoritative packets, saved sides and hypothetical AI. Per-round counts and
+StartAction history are not substitutes. Define that API before parallel
+runtime/AI edits; preserve creature/rejected-cast and old-save boundaries.
+
 ### 2026-09-30 next coverage slices — Diplomacy and Mysticism
 
 UP-048's runtime and AI/UI maps plus independent policy review establish that
