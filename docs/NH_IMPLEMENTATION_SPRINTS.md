@@ -40,6 +40,28 @@ failed run merely because a later run succeeds.
 
 ## Current implementation priority — complete Skills perks and spells
 
+### 2026-09-30 Phase 1 native checkpoint — Wisdom Deep Knowledge
+
+The shared growth view raises only Wisdom's existing chance by ten percentage
+points for a captured active selection/current rank: Advanced 30%, Expert 40%,
+saturating custom chances at 100%. Actual rolls and growth-window percentages
+use that same view. Fixed class growth, independent draw order/count and legacy
+profiles are preserved. New selections affect later rolls, not the primary
+roll preceding the current perk query. No new saved field or AI roll path.
+
+Client retry 98557 and test build 8638 pass. Native retry 96534 passes four new
+cases plus nine direct growth guards, 13/13, zero skips. Binary SHA-256
+`c9b9cdfd304e9b9db3ef679da3d3d13352a73af892f519d88084d97c3dccac88`.
+Reports: `NewHorizonsDeepKnowledge-retry1-growth-guards.log`/`.xml`.
+First failed run 77666 and its fixture repair remain in the failure ledger.
+Offline 74/74 and mirror/diff checks pass; independent review has no remaining
+blocker. Coverage is 123/310 active perks, 187 planned, Wisdom 5/5; ranks 84/93
+and combat identities 58/67 remain unchanged. Strategic acquisition valuation,
+broader interactions, bespoke art and rendered/playable acceptance are deferred.
+
+Next unblocked candidate: Expert Wisdom Arcane Reservoir's flat 25 normal
+capacity, distinct from the Tower Buffer-Mana building (UP-053).
+
 ### 2026-09-30 Phase 1 native checkpoint — Wisdom Meditation
 
 Implemented additional daily Normal recovery from the previous day's unspent
