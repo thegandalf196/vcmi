@@ -40,6 +40,37 @@ failed run merely because a later run succeeds.
 
 ## Current implementation priority — complete Skills perks and spells
 
+### 2026-09-30 Archmage implementation and focused validation underway
+
+Final checkpoint: client/test build 22317 and final test-only build 13005
+succeed. Native 18779 passes 24/24, zero skips, on
+`8e2222981acf90654d38166321ece81af245860deaf55a38680af0cc10dece52`.
+The stale-dead request guard is verified, both authoritative spell levels and
+actual detached-AI submission pass, and all failed attempts remain recorded.
+Coverage advances to 125/310 active perks, 185 planned, Wisdom 7/3; ranks and
+combat identities unchanged. Offline/mirror/diff checks pass; no review blocker.
+This supersedes the earlier in-progress evidence below, not its failure history.
+Next: UP-058 School assignments, then UP-057 Hand of Fate with the approved
+secondary-recipient mitigation decision. No launcher or profile promotion.
+
+Independent runtime/AI workers implemented UP-055 and froze production files.
+Accepted hero casts record exact saved levels 1–5; the first Level 4 or 5 uses
+one shared discount after Wisdom/Prepared Caster, minimum one Mana. UI and AI
+read the same cost. The per-side history survives rounds and current saves,
+older loads default to zero, and lossy down-saves reject nonzero history.
+Client build 43488 and test build 78105 succeed. Offline gates pass
+74/74 and module/diff checks pass. Independent review has no production blocker;
+the two fixture mistakes recorded in the failure ledger were corrected before
+test compilation. Initial native execution passes seven cases then crashes on
+a Defend request for a dead active stack. Gdb confirms the live-stack admission
+hole before StartAction. A bounded authoritative guard, regression, and surviving
+cross-round fixture are being repaired; completed coverage increase remains pending.
+Broader Counterspell/resistance/Metamagic interactions, full save-world journeys
+and playable acceptance remain Phase 2. Old pre-mask battles cannot reconstruct
+completed levels from the start-of-cast history; the zero migration is explicit.
+Next bounded missing-spell map: Chaos Hand of Fate (UP-057), without source
+writes during the frozen build.
+
 ### 2026-09-30 Arcane Memory source verified; activation policy pending
 
 The seven-file provenance/completion implementation builds client and test
