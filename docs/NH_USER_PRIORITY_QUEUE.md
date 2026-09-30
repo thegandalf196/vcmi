@@ -9,6 +9,30 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-043 — Implement Chaos Confusion and Confounder
+
+Status: Planned; two design answers pending, 2026-09-30. UP-023 Phase 1 slice.
+
+Implement the canonical Level-1, 5-Mana enemy-stack spell: its next activation
+becomes random Attack, Defend or Wander. Attack chooses an enemy of that
+creature, never an ally, and uses ordinary attack/movement legality. Wander
+uses legal movement, without deliberately engaging an enemy. Confounder
+prevents consecutive identical resolved behaviors on that target. Require
+authoritative forced activation, serialized pending/history state, shared
+legal-choice geometry, detached AI expectations without live RNG, status/
+combat feedback, registration and focused build/native evidence.
+
+Read-only runtime mapping is complete. Reuse BattleFlowProcessor's automatic
+action path and normal action validation, not direct state mutation. The
+Berserk helper is only a reference: it targets allies and nearest creatures,
+unlike Confusion. CUnitState's JSON save/load and UnitChanges are the state
+propagation seam; hypothetical AI copies that state. Preserve genuine
+activation-start effects through makeAutomaticAction. Two user questions are
+pending: impossible behaviors/Confounder's sole-legal-result fallback, and
+whether a Morale/Berserk-consumed activation also consumes pending Confusion.
+Do not silently invent these gameplay rules. Other unblocked missing coverage
+can proceed; this is not a blocker for the entire Phase 1 goal.
+
 ## UP-042 — Implement Chaos Blink and Blinkmaster
 
 Status: Implemented (rendered/playable verification pending), 2026-09-30;
