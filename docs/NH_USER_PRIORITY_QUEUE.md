@@ -9,6 +9,39 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-042 — Implement Chaos Blink and Blinkmaster
+
+Status: Implemented (rendered/playable verification pending), 2026-09-30;
+UP-023 Phase 1 coverage slice.
+
+Implement Level-1/4-Mana Blink on any legal friendly or enemy creature stack:
+uniform random legal relocation within `min(4, 2 + floor(SP / 100))` radius,
+excluding the origin and accommodating the whole footprint. Ignore intervening
+terrain, obstacles, walls and Zones of Control; this is not voluntary movement
+and must not grant activation, retaliation, Initiative or movement-trigger
+benefits. Reject an empty destination set before Mana or Hero Action. School
+proficiency strengthens the SP-derived part, never adds a mass cast.
+Blinkmaster generates two random legal destinations and automatically uses
+the farther one, with deterministic hex-order ties. Reuse shared geometry for
+pre-cost validation, radius/legal-destination preview, authoritative execution
+and bounded detached AI evaluation without consuming live RNG. Require real
+AI submission, focused native/build evidence, acquisition/registration and
+feedback. Full save/load, broad status/obstacle interactions and rendered/
+playable acceptance remain Phase 2. Do not promote the normal launcher.
+
+Source/native checkpoint: both Linux targets link; the isolated Blink filter
+passes 12/12 and focused immunity/Entangle guards pass 24/24, zero skips.
+Evidence covers whole-footprint geometry, capped School-scaled radius, exact
+endpoint weights, legitimate Blinkmaster progression, pre-cost empty-ring
+rejection, friendly/hostile resistance and Mirror handling, and actual AI
+submission with live position/health/Mana/RNG immutability. Content/perk/
+inventory checks pass 74/74; UI source, mirror and diff guards pass.
+Independent review has no remaining blocker. Coverage is 58/67 combat
+identities, Chaos 4/11, perks 115/310. Art is Provisional. Failed fixtures
+and corrections are retained in NH_RELEASE_FAILURES.md. Broader save/status/
+obstacle interactions, tactical AI quality and rendered/playable acceptance
+remain Phase 2; no launcher promotion.
+
 ## UP-041 — Implement Hydra's Vitality and capacity-safe creature health
 
 Status: Implemented (rendered/playable verification pending), 2026-09-30;
@@ -44,8 +77,11 @@ two-packet expiry presentation, rendered/playable acceptance and art approval
 remain Phase 2. No normal profile or launcher snapshot was changed.
 
 Source delivery: committed and pushed as `75c8aea71`; full Windows preview
-run `36665665686` is queued on that source. This is not yet a Windows
-compile/package pass or Linux playable promotion.
+run `36665665686` succeeds on that source, including client compile and
+packaging. Downloadable artifact `11076608841` is named
+`New-Horizons-Windows-x64-75c8aea71b8c4be48d561d727a897ee88d62c9fb`.
+This is a Windows compile/package pass, not Windows graphical acceptance or
+Linux playable promotion.
 
 ## UP-040 — Implement Verdant Prison and Verdant Warden
 

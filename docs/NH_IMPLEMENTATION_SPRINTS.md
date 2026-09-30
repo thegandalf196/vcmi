@@ -40,6 +40,71 @@ failed run merely because a later run succeeds.
 
 ## Current implementation priority — complete Skills perks and spells
 
+### 2026-09-30 Phase 1 in-progress slice — Chaos Blink and Blinkmaster
+
+Final source/native gate: client/test targets build; the isolated refreshed
+Blink filter passes 12/12 and focused immunity/Entangle guards pass 24/24,
+zero skips. Final test binary SHA-256 is
+`d5e161815ab6ab3ce33c82a43b9de49ebe5962d9fb7f32f071df1950653baa68`.
+Actual AI submission and legal authoritative resolution pass with ordinary
+Orders enabled; live position, health, Mana and RNG remain unchanged during
+evaluation. No production scoring boost was used to repair the fixture.
+Content/perk/inventory checks pass 74/74; UI source, mirror and diff guards
+pass. Independent review has no remaining blocker. Coverage rises to 58/67
+combat identities, Chaos 4/11, perks 115/310. Full save/load, wider status/
+obstacle interaction, incoming ranged/Mirror AI valuation, tactical quality,
+hover legibility and rendered/playable acceptance remain Phase 2. No launcher
+promotion. Next unblocked missing identity: Confusion with Confounder.
+
+UP-042 is the next unblocked missing canonical spell while Nature's Wrath and
+Elemental Convergence await recorded design answers. Reuse teleport/relocation
+authority and share legal radius/footprint geometry with UI and AI. Runtime,
+client hover preview and bounded expected-value AI have separate worker-owned
+files; root owns registration, original Provisional art and validation. The
+content/perk/inventory suites pass 74/74 with Blink's school/cost/single-target/
+no-mass and native asset-size assertions. This is registration evidence, not execution.
+Preserve source checkpoint `ccd30f0ef` and live frozen Windows Hydra
+run `36665665686`; no implicit launcher promotion or coverage increase.
+
+Initial independent source review finds no blocker in the currently present
+geometry, runtime/Lua, registration and client preview; AI and native fixtures
+were not yet present and are not covered by that review. Phase 2 feedback
+finding: an empty legal landing set is correctly rejected before cost, but
+the client preview returns `nullopt` before its specific zero-destination
+explanation, leaving generic invalid-target feedback. Keep this diagnostic
+specificity and native-resolution hover-text length as deferred UI work.
+
+Native-tester delegation was rejected by the agent service's thread limit;
+reactivating the completed Luna UI worker was also rejected. Cancelling the
+unused pending Verdant AI thread did not release capacity for a retry. Root
+will therefore own focused native execution after the two implementation
+workers freeze and both targets build; do not pretend a tester was spawned
+or run stale binaries. The independent source reviewer did run.
+
+The first incremental Linux client build (`vcmiclient -j8`, session 12600)
+finishes with exit 0 after runtime/AI/client production files are explicitly
+frozen. It compiles the helper, spell mechanics, Lua bindings, evaluator and
+hover consumer and links the facade/client. Native fixtures are still being
+completed in separate files, so this is not yet a focused execution pass.
+
+Completed AI review finds no production blocker. Root repairs two validation
+defects before retry: the RNG-saving fixture's accidental const pointer and
+the equal-distance endpoint assertion's vector/hex-order mismatch. Retain the
+failed test-build session 35688 in the release ledger. Phase 2 AI work:
+incoming ranged pressure and hostile resistance/mirror outcome valuation;
+current scoring is a bounded direct-position heuristic over exact endpoint
+weights, not an exact full-combat expectation.
+
+Latest continuation: clean build session 10235 links both client and test
+targets. Binary `b59553d04e8f2984ba9b7049258e09100739980bdd4454b55057666cc17d4f8e`
+passes all ten Blink rules/runtime cases and 24 focused existing immunity/
+Entangle guards, zero skips. Both AI submission tests still select an Order,
+including the revised shooter-escape fixture. The AI worker is resumed for
+bounded ranking/fixture diagnosis; do not weaken the required actual Blink
+submission or count this candidate as verified coverage. Content/perk/inventory
+checks pass 74/74; UI source, module mirror and diff checks pass. Full Windows
+Hydra run 36665665686 remains live; no restart or launcher promotion.
+
 ### 2026-09-30 Phase 1 source/native checkpoint — Hydra's Vitality
 
 Source committed and pushed as `75c8aea71b8c4be48d561d727a897ee88d62c9fb`;
@@ -48,6 +113,12 @@ preview [run 36665665686](https://github.com/thegandalf196/vcmi/actions/runs/366
 is queued on that exact source (`preflight_only=false`). Poll this same run;
 dispatch is not a Windows compile/package result. Do not cancel/restart it
 merely because an observation times out. No Linux launcher snapshot promotion.
+
+Delivery update: full Windows run 36665665686 completed successfully. Client
+compilation, runtime staging and packaging pass; downloadable artifact
+`11076608841` (747899018 bytes) contains frozen source `75c8aea71`.
+This establishes Windows compile/package delivery, not graphical gameplay
+acceptance. The active Blink source changes are not in this Hydra artifact.
 
 2026-09-30 final source/native gate: both Linux targets build successfully;
 the isolated refreshed Hydra filter passes 8/8 and existing health guards
