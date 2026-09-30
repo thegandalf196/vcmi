@@ -243,7 +243,8 @@ local and remote identities match, with a clean source checkpoint.
 
 ## UP-052 — Implement Wisdom Deep Knowledge bonus-roll chance
 
-Status: Implemented; source/native verified, delivery pending, 2026-09-30.
+Status: Implemented; source/native verified and pushed, playable acceptance
+pending, 2026-09-30.
 UP-023 Phase 1 slice after Meditation's focused checkpoint.
 
 Canonical Advanced Deep Knowledge adds ten percentage points to Wisdom's
@@ -271,6 +272,12 @@ separate first-failure evidence. Review has no remaining blocker; offline
 74/74 and mirror/diff checks pass. Registry coverage is 123/310, Wisdom 5/5.
 Strategic AI acquisition, broad interactions, bespoke art and rendered/playable
 acceptance remain deferred; no launcher promotion.
+
+Source delivery: `a827bbb7b9faa3980a91b381b8da3a86dcdc4bf5` is pushed;
+local and remote identities match with a clean source checkpoint. The running
+Windows build 36680827103 remains frozen at Prepared Caster `2b5a843d7` and
+does not include Meditation or Deep Knowledge. Do not equate it with this
+source delivery or restart it solely because newer commits exist.
 
 ## UP-053 — Implement Wisdom Arcane Reservoir capacity perk
 
