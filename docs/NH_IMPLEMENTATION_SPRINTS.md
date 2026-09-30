@@ -66,6 +66,12 @@ Full expiry and Frenzied remain Phase 1, pending the user's Morale decision.
 Next unblocked Chaos base-effect candidate: Shield of Chaos, before its Paradox
 Shield modifier. No graphical run or playable promotion occurred.
 
+Source checkpoint `8c462143286f910e91eea0849afe9d83d4eb4209` is pushed and
+remote-matched. The existing full Windows run `36719626047` remains live on
+`63431ceb3`; it contains Misfortune/Summon Boat, not this newer Berserk slice.
+Preserve it and dispatch the next source checkpoint after its terminal result;
+do not restart or cancel merely because newer commits exist.
+
 ### 2026-09-30 current slice — Misfortune probability foundation
 
 UP-061 implements the missing canonical base effect before activating its
