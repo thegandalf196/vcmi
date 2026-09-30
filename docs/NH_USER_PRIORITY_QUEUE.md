@@ -105,7 +105,8 @@ separate lifecycle finding, not permission to invent a new gameplay rule.
 
 ## UP-049 — Implement Wisdom Mysticism daily Normal-Mana recovery
 
-Status: In progress; bounded daily-recovery map, 2026-09-30.
+Status: Implemented; source/native verified, rendered/playable acceptance
+pending, 2026-09-30.
 UP-023 Phase 1 coverage slice.
 
 At each day start, Mysticism restores the greater of 5 or 10% of normal
@@ -115,6 +116,25 @@ not an update/render scan. Gate by the hero's captured active perk, preserving
 legacy and planned snapshots. Require registration, ordinary selection/help,
 focused native daily-path and arithmetic checks, build and independent review.
 Track rendered/playable acceptance and broader interactions separately.
+
+Checkpoint: Mysticism now raises existing daily regeneration to at least
+`max(5, floor(normalMaximum / 10))`, without adding a second refill. The shared
+getter and authoritative daily `SET_NORMAL` preserve Buffer and capacity caps;
+Mage Guild rest and stronger regeneration retain precedence. Captured active
+selection and current Wisdom rank gate the effect; no new saved field, packet,
+scan or scheduler. Generic AI acquisition and daily application use existing
+paths; strategic acquisition ranking remains deferred.
+
+Linux client build 55027 and final test build 92352 pass. All six Mysticism
+cases plus 30 direct capacity/pool guards pass together (36/36, zero skips),
+including real NewTurn packet application, Wizard perk-offer selection,
+selection/save-load, planned snapshot, rank loss, floor/cap and Buffer checks.
+Binary SHA-256 `0b565de19b837c0f2a3bc476c59009f61c99f570ba15c507d3737df7912be080`.
+Offline content/perk/inventory passes 74/74; module and diff checks pass.
+Independent review has no blocking finding. Initial fixture failures remain
+recorded. Coverage becomes 120/310 active perks, 190 planned, Wisdom 2/8
+active/planned; ranks and combat identities are unchanged. Bespoke art is
+Not done; neutral fallback is not artwork. No launcher promotion.
 
 ## UP-046 — Elemental Rebirth foundational effects
 
