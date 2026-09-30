@@ -9,6 +9,34 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-037 — Implement Nature Entangle and Rootcaller
+
+Status: Implemented (verification pending), 2026-09-29; UP-023 Phase 1 coverage slice.
+
+Implement the canonical Level-1, 4-Mana single-enemy-ground-stack root.
+Voluntary movement becomes unavailable without changing Initiative or
+preventing adjacent attacks, retaliation, shooting, Wait, Defend, or
+nonmovement abilities. Base duration is `min(2, 1 + floor(SP / 100))`;
+School rank strengthens only the SP term, and Rootcaller adds one round
+up to three. Actual displacement and teleportation remove the root; mere
+activation, attacks and absent binding creatures do not. Preserve normal
+casting legality, saved-v3 boundaries and source-specific effect lifecycle.
+Provide AI choice/projection, status and combat feedback, registration,
+focused native tests and build evidence. Rendered/playable acceptance and
+unverified cross-system interactions remain separate Phase 2 work.
+
+Source/native checkpoint: both Linux targets link; the isolated active-profile
+`NewHorizonsEntangle*` filter passes 17/17, zero skips, exit 0. It includes
+actual AI selection/submission, duration/rank, Rootcaller plus Echoed Duration,
+preserved nonmovement actions, teleport/displacement, refresh/expiry and
+pre-cost legacy rejection that leaves Haste castable. Content passes 50/50,
+perk inventory 2/2, status wiring 4/4, module mirror and diff checks pass.
+Independent review's two blockers were repaired. Coverage is 53/67 combat
+identities and 112/310 active perks, Nature 5/11. Original Provisional art is
+bound; Rootcaller perk art is Not done. Combined classic Bind lifecycle,
+full save/load/Dispel, wider AI horizons, rendered/playable acceptance and
+launcher promotion remain open. Next missing Nature identity: Vengeful Vines.
+
 ## UP-036 — Implement Light Crusade! and Crusader
 
 Status: Implemented (verification pending), 2026-09-29; UP-023 Phase 1 coverage slice.

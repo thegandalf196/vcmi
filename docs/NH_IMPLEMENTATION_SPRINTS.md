@@ -40,6 +40,27 @@ failed run merely because a later run succeeds.
 
 ## Current implementation priority — complete Skills perks and spells
 
+### 2026-09-29 Phase 1 source checkpoint — Entangle and Rootcaller
+
+UP-037 adds the canonical Nature Level-1 movement-only root, Rootcaller
+duration extension, BattleAI targeting/valuation and existing-slot status.
+Registration increases to 53/67 combat identities and 112/310 active perks;
+Nature is 5/11 by identity. Both Linux targets link and all 17 focused native
+cases pass with zero skips, including actual AI casting and the required
+root/action/lifecycle paths. Content passes 50/50, perk inventory 2/2, status
+wiring 4/4; module mirror and diff checks pass. Independent review's blockers
+were repaired; fixture failures and repairs are in the release-failure ledger.
+Original Provisional spell art is retained with prompt/provenance and bound
+to the live spell. No playable snapshot is promoted by this source checkpoint.
+
+Independent review found two blockers before building: unconditional scoped
+spell decoding could throw in classic battles without the module, and a v2
+roster retaining Entangle could admit an ineffective cast. Repair both with
+safe lookup and authoritative pre-cost version rejection; keep regressions
+focused. Combined classic Bind lifecycle, save/load, Dispel, wider AI threat
+horizons and rendered/playable acceptance remain Phase 2 work. Next coverage
+item after this gate: Nature Vengeful Vines.
+
 ### 2026-09-29 Phase 1 native checkpoint — Crusade! and Crusader
 
 UP-036 completes the remaining Light combat-spell identity: a 24-Mana,
