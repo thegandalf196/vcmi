@@ -281,7 +281,7 @@ source delivery or restart it solely because newer commits exist.
 
 ## UP-053 — Implement Wisdom Arcane Reservoir capacity perk
 
-Status: Planned; shared capacity map complete, 2026-09-30.
+Status: Implemented; source/native verified, delivery pending, 2026-09-30.
 UP-023 Phase 1 slice after Deep Knowledge. This Expert perk is distinct from
 the Tower building of the same name: it adds 25 Maximum Normal Spell Points,
 not Buffer, and does not refill current Mana. Add the flat amount after the
@@ -292,6 +292,34 @@ that method. Perk selection already invalidates capacity reconciliation;
 rank loss must use the existing event-driven clamp and preserve Buffer.
 Require legal Expert selection, no refill, capacity/rank/save/planned guards
 and focused build/native evidence. No additional saved counter or polling.
+
+Checkpoint: client 7727 and test build 86291 pass; native 40452 passes four
+new cases plus 27 direct capacity guards, 31/31, zero skips. Binary SHA-256
+`4c55d6c999d3a0e64d6982e5403e4f182f5ff6d89f78614a82e2b390e141c3b3`.
+Reports are `NewHorizonsArcaneReservoir-capacity-guards.log`/`.xml`.
+Offline gates pass 74/74 and mirror/diff checks pass; review has no blocker.
+Coverage is 124/310, Wisdom 6/4 active/planned. Overflow saturation is reviewed
+but not separately reached within validated fixture limits. No bespoke art,
+rendered/playable acceptance, promotion or new Windows package is claimed.
+
+## UP-054 — Implement Wisdom Arcane Memory accepted scroll learning
+
+Status: Planned; shared scroll-source map identified, 2026-09-30.
+UP-023 Phase 1 candidate after Arcane Reservoir. A genuinely scroll-sourced
+accepted cast permanently teaches its spell only if current School acquisition
+rules permit it. Do not learn from spellbook/tome sources, failed casts, removed
+spells or a merely carried unused scroll. Shared `useChargeBasedSpell` prefers
+non-charge sources and identifies the actual charged artifact; capture scroll
+identity before discharge can remove it, then use authoritative `ChangeSpells`
+and existing `canLearnSpell`. Both combat and ordinary adventure casts need
+coverage; preserve external-caster behavior. `CSpell::adventureCast` already
+returns a result, but `CGameHandler::castSpell` currently ignores that return
+before attempting discharge. The Boolean is not completion evidence: the
+mechanics return true for CANCEL and PENDING as well as OK; town-choice queries
+call `performCast` later. Map a genuine accepted completion hook before
+consuming/learning, including canceled and deferred selections.
+No new saved counter: learned spells already persist. Confirm these event
+boundaries with focused native/build evidence, including rejected adventures.
 
 ## UP-046 — Elemental Rebirth foundational effects
 

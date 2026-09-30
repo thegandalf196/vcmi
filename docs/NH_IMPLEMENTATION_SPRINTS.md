@@ -40,6 +40,28 @@ failed run merely because a later run succeeds.
 
 ## Current implementation priority — complete Skills perks and spells
 
+### 2026-09-30 Phase 1 native checkpoint — Wisdom Arcane Reservoir
+
+The Expert perk adds 25 Maximum Normal Spell Points after Knowledge and
+Intelligence rounding, without refilling current Mana or touching Buffer.
+Saved active selection/current Expert rank gate it; existing rank-loss events
+clamp Normal only. All ordinary capacity readouts and AI capacity consumers use
+the same getter. The Tower building's Buffer grant is unchanged. No new saved
+state, cache or polling was added.
+
+Client build 7727 and test build 86291 pass. Native 40452 passes four new cases
+plus 27 direct capacity guards, 31/31, zero skips. Binary SHA-256
+`4c55d6c999d3a0e64d6982e5403e4f182f5ff6d89f78614a82e2b390e141c3b3`.
+Reports: `NewHorizonsArcaneReservoir-capacity-guards.log`/`.xml`.
+Offline gates pass 74/74 and mirror/diff checks pass; independent review has no
+blocker. Coverage is 124/310 active perks, 186 planned, Wisdom 6/4. Ranks 84/93
+and combat identities 58/67 remain unchanged. Integer saturation is reviewed;
+the validated fixture cannot reach overflow, so no such runtime case is claimed.
+Broader interactions, bespoke art and rendered/playable acceptance remain open.
+
+Next: Arcane Memory (UP-054). Trace actual completion rather than treating an
+adventure Boolean or initial packet as success, especially deferred queries.
+
 ### 2026-09-30 Phase 1 native checkpoint — Wisdom Deep Knowledge
 
 The shared growth view raises only Wisdom's existing chance by ten percentage
