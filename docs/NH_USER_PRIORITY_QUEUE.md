@@ -9,6 +9,37 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-038 — Implement Nature Vengeful Vines
+
+Status: Implemented (rendered/playable verification pending), 2026-09-29;
+UP-023 Phase 1 coverage slice.
+
+Implement the canonical Level-1, 5-Mana oriented six-hex winding attack.
+The caster selects an origin and one of six orientations, with affected-hex
+preview and rotation controls before committing. Hit intersected enemies
+once per stack for `20 + 1.1 × SP` Nature damage, then apply −2 movement
+Speed for two rounds without changing Initiative. School rank scales only
+the Spell Power damage term, never grants a mass variant. Author the clean
+hex template as requested by the specification; use shared geometry for
+authoritative validation, client preview and AI enumeration. Preserve Mana,
+Hero Action, target legality, resistance and saved-rule boundaries. Require
+focused native/build evidence; rendered/playable and broad interactions stay
+separate Phase 2 work. Do not promote the normal launcher implicitly.
+
+Source/native checkpoint: both Linux client/test targets link. The isolated
+active-profile geometry/runtime/AI filter passes 13/13, zero skips, including
+rank damage, movement-only Speed penalty, duration/Echoed Duration, malformed
+and stale pre-cost rejection, resistance/immunity, double-wide deduplication,
+friendly exclusion and actual AI forecast/submission/resolution parity.
+Content passes 51/51, perk inventory 2/2, UI source guard and module mirror
+pass; purpose-made Provisional art hashes/dimensions/runtime copies match.
+Independent review's preview mismatch and native fixture/rule findings are
+repaired and recorded in the failure ledger. Coverage is 54/67 combat
+identities, Nature 6/11, perks unchanged at 112/310. Full save/load, Dispel,
+combined movement statuses, hypnosis ownership, wider AI horizons, rendered
+keyboard/visual review and playable delivery remain separate Phase 2 work.
+Next missing Nature identity: Summon Trolls.
+
 ## UP-037 — Implement Nature Entangle and Rootcaller
 
 Status: Implemented (verification pending), 2026-09-29; UP-023 Phase 1 coverage slice.
