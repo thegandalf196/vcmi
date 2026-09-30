@@ -62,6 +62,13 @@ Broader interactions, bespoke art and rendered/playable acceptance remain open.
 Next: Arcane Memory (UP-054). Trace actual completion rather than treating an
 adventure Boolean or initial packet as success, especially deferred queries.
 
+Source delivery: `bccb3bd16` is pushed with matching branch identities and a
+clean source checkpoint. Windows run 36680827103 still builds frozen Prepared
+Caster `2b5a843d7`, not this newer capacity perk; no new package is claimed.
+UP-054's completed map identifies a generic post-success adventure environment
+notification plus the existing accepted combat charge helper as the shared
+Arcane Memory boundary. No design clarification or new saved counter is needed.
+
 ### 2026-09-30 Phase 1 native checkpoint — Wisdom Deep Knowledge
 
 The shared growth view raises only Wisdom's existing chance by ten percentage
