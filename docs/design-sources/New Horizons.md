@@ -2301,6 +2301,15 @@ X X X X X X
 
 The actual pattern should be designed cleanly for the hex grid and previewed before casting. Every enemy stack intersected by the vines suffers:
 
+The fixed template is a connected six-hex S-bend: include the selected
+starting hex, then take five neighboring steps in directions
+`d, d+1, d, d−1, d`, where `d` is the selected orientation and direction
+indices wrap around the six clockwise hex directions. The entire footprint
+must fit on playable battlefield hexes; do not truncate it at an edge.
+Preview this same footprint before confirmation. An intersected stack is
+affected once even if it occupies two of the six hexes. Friendly stacks are
+not affected.
+
 Damage = 20 + 1.1 × SP
 
 and:
@@ -2316,6 +2325,11 @@ At SP 100:
 2 Speed
 
 The Speed penalty affects battlefield movement only.
+
+School rank strengthens only the Spell Power-derived damage component
+through the shared 100% / 115% / 130% / 145% coefficient. The fixed −2
+Speed penalty and its two-round base do not scale with rank. Common
+cast-duration extensions such as Echoed Duration apply normally.
 
 It does **not** affect Initiative.
 

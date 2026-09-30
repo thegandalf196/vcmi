@@ -40,6 +40,26 @@ failed run merely because a later run succeeds.
 
 ## Current implementation priority — complete Skills perks and spells
 
+### 2026-09-29 Phase 1 source/native checkpoint — Vengeful Vines
+
+UP-038 implements the six-hex S-bend using one shared geometry function for
+authoritative targeting, full-footprint preview and BattleAI enumeration.
+Runtime, frontend and AI have separate file ownership; root owns registration,
+art integration, build and delivery. Content validation passes 51/51. The
+saved formula uses integer coefficient 11 with the common divisor 10, preserving
+the canonical `20 + 1.1 × SP` damage. Fixed Speed −2 and two-round duration
+are independent of School rank; rank strengthens the Spell Power term only.
+The purpose-made HoMM3-art icon has native/enlarged exports, exact prompt and
+provenance, and remains Provisional. Both Linux client/test targets link and
+the isolated active-profile filter passes 13/13, zero skips, including actual
+AI submission and projected/resolved damage parity. Independent review has no
+remaining blocker; preview mismatch and native failure repairs are retained
+in the release-failure ledger. Coverage is 54/67 combat identities, Nature
+6/11, and 112/310 active perks (unchanged). Full combat save/load, Dispel,
+combined movement statuses, hypnosis ownership, wider AI horizons and rendered
+keyboard/visual acceptance remain Phase 2 work. No playable snapshot is
+promoted. Next missing Nature identity: Summon Trolls.
+
 ### 2026-09-29 Phase 1 source checkpoint — Entangle and Rootcaller
 
 UP-037 adds the canonical Nature Level-1 movement-only root, Rootcaller
