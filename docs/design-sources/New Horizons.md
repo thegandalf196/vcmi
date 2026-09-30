@@ -2432,6 +2432,16 @@ At SP 100:
 
 That pool is divided evenly among all Dendroid stacks created.
 
+Use unupgraded Dendroid Guards on distinct legal empty hexes adjacent to the
+target's occupied footprint, including both hexes of a wide target. School
+proficiency strengthens only the Spell Power component; Verdant Warden
+increases the whole resulting pool by 25%. Round the final pool down once to
+whole HP, then distribute it evenly. Give any remaining whole HP one at a time
+to placements in ascending battlefield-hex order, so the ring retains the exact
+pool. Each stack uses `ceil(its HP / effective Dendroid HP)` creatures with a
+wounded final creature when necessary. With no legal placement, reject the
+cast before spending Mana or a Hero Action.
+
 If six positions are available:
 
 80 HP per Dendroid stack

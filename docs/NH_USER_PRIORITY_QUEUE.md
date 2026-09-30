@@ -9,6 +9,39 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-040 — Implement Verdant Prison and Verdant Warden
+
+Status: Implemented (rendered/playable verification pending), 2026-09-29;
+UP-023 Phase 1 coverage slice.
+
+Implement the canonical Nature Level-3, 12-Mana enemy-targeted prison using
+actual temporary Dendroid Guard stacks on legal empty hexes bordering the
+target's occupied footprint. Divide the shared `180 + 3 × SP` pool evenly
+across created stacks, retaining exact whole HP and wounded final creatures.
+School rank strengthens only SP; Verdant Warden increases the whole pool by
+25%. Preserve ordinary Dendroid abilities, Initiative, collision and temporary
+summon provenance; escape does not remove the summons. No abstract root or
+permanent troop/resource creation. Use shared effect geometry for legal ring,
+HP/count preview, authoritative execution and AI; reject empty/stale rings
+before Mana or Hero Action. Require registration, combat feedback, focused
+runtime/AI tests and build evidence. Record rendered/playable, full save/reload,
+reward and broad status interactions as separate Phase 2 work; no implicit
+launcher promotion.
+
+Source/native checkpoint: both Linux client/test targets link. The isolated
+active-profile Verdant filter passes 11/11, zero skips, including full/partial
+and double-wide rings, exact wounded-creature HP, legitimate Warden progression
+and 229-HP rounding, pre-cost empty-ring/v2/full-resistance rejection, reflected
+friendly placement, spawn/state JSON UPDATE, persistence after target movement,
+and actual AI selection/submission with per-hex forecast/resolution parity.
+Summon Trolls shared-path guard passes 10/10; content/inventory passes 55/55.
+Independent review has no remaining production blocker. Failures and fixture
+repairs are retained in the release-failure ledger. Coverage is 56/67 combat
+identities, Nature 8/11, and 114/310 active perks. Spell art remains Provisional,
+Warden art Not done. Full combat save/load, rewards/status interactions, AI
+tactical quality and rendered/playable acceptance remain Phase 2; no launcher
+promotion. Next missing Nature identity: Hydra's Vitality.
+
 ## UP-039 — Implement Summon Trolls and Beastcaller
 
 Status: Implemented (rendered/playable verification pending), 2026-09-29;
