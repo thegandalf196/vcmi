@@ -43,6 +43,10 @@ Full combat save/load and status interactions, reach-aware Order valuation,
 two-packet expiry presentation, rendered/playable acceptance and art approval
 remain Phase 2. No normal profile or launcher snapshot was changed.
 
+Source delivery: committed and pushed as `75c8aea71`; full Windows preview
+run `36665665686` is queued on that source. This is not yet a Windows
+compile/package pass or Linux playable promotion.
+
 ## UP-040 — Implement Verdant Prison and Verdant Warden
 
 Status: Implemented (rendered/playable verification pending), 2026-09-29;
