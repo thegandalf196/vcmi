@@ -68,6 +68,16 @@ completed-day context and previous Movement; preserve Normal/Buffer and rest
 precedence. Diplomacy and the recorded scope questions remain parked, not
 silently decided. Source delivery and the next Windows batch are separate gates.
 
+Prepared Caster source is committed and pushed as
+`2b5a843d7d10ae68f8e53d40ee962fb27f4f72b9`; local/remote identities match,
+with a clean worktree at that checkpoint. Full Windows run `36680827103` is
+queued on that exact source, including Combined Arms and Mysticism; no new
+package pass is claimed from dispatch. Preserve that handle. Meditation now
+has separate runtime/test ownership. Pool eligibility uses a previous-Movement
+maximum snapshot before bonus expiration without changing legacy daily
+restoration ordering or adding saved state. Its active coverage is not yet
+claimed.
+
 ### 2026-09-30 Windows Command package checkpoint
 
 The preserved full Windows run `36672365779` finishes successfully on frozen
