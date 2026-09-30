@@ -64,6 +64,58 @@ army-wide Orders), or the entire army whenever any Order is active. Do not
 silently grant a whole-army aura to targeted Orders. Continue another unblocked
 Phase 1 item while awaiting this material scope decision.
 
+## UP-048 — Deterministic Diplomacy foundation
+
+Status: Planned; runtime, AI/UI and independent policy maps complete;
+map-authored free-join clarification pending, 2026-09-30.
+UP-023 Phase 1 foundational coverage slice; no activation claimed.
+
+Audit and implement the canonical neutral-joining rule: Basic/Advanced/Expert
+thresholds of 25/50/75% of the hero's current Army Value, normal recruitment
+Gold, and explicit hostile/scripted exclusions. Preserve authoritative
+validation, map intent, legacy rules, and Leadership-safe admission. Preserve
+the existing accepted-join/garrison lifecycle until its remainder semantics
+are explicitly redesigned; do not silently introduce a partial-neutral
+persistence rule. Share deterministic willingness/cost/threshold
+forecast with encounter feedback and minimum adventure-AI use; do not consume
+RNG during inspection. Include registration, ordinary progression, focused
+native/build evidence and deferred integration findings. Negotiator, Common
+Cause and Grand Diplomat can use the same threshold foundation if their exact
+paths are clear; other Diplomacy perks remain separate missing requirements.
+Do not invent eligibility, overflow or map-authored joining semantics if the
+existing source and canonical design leave a material conflict unresolved.
+
+Read-only evidence: `CGCreature::takenAction` still uses legacy disposition,
+perceived strength and randomized initial aggression. Raw `getArmyStrength()`
+is the existing creature-AI-value sum closest to canonical Army Value.
+`getPerkState()` already exposes captured rank activation for old-save gating.
+`HOSTILE` and `SAVAGE` seed disposition, not an explicit joining prohibition;
+an explicit eligibility flag can avoid repurposing them. Script-controlled
+visits already bypass ordinary decisions. `COMPLIANT` supports authored free
+joins, so the user is asked whether these remain exceptions or also use the
+new paid threshold. No rank/perk is activated pending that decision.
+
+The shared pure forecast should serve visit feedback, permitted popup details
+and `AIGateway::showBlockingDialog`. AI must check Gold and legal usable
+admission. Existing joining percentages and full-stack pricing need an explicit
+implementation audit. `tryJoiningArmy` schedules neutral removal after accepted
+joining and provides a garrison for remaining troops; current tests transfer
+the remainder before closing, not preservation after dismissal. This is a
+separate lifecycle finding, not permission to invent a new gameplay rule.
+
+## UP-049 — Implement Wisdom Mysticism daily Normal-Mana recovery
+
+Status: In progress; bounded daily-recovery map, 2026-09-30.
+UP-023 Phase 1 coverage slice.
+
+At each day start, Mysticism restores the greater of 5 or 10% of normal
+Maximum Spell Points. Restore only missing Normal Spell Points, leaving Buffer
+unchanged. Reuse the existing daily authoritative recovery and shared forecast,
+not an update/render scan. Gate by the hero's captured active perk, preserving
+legacy and planned snapshots. Require registration, ordinary selection/help,
+focused native daily-path and arithmetic checks, build and independent review.
+Track rendered/playable acceptance and broader interactions separately.
+
 ## UP-046 — Elemental Rebirth foundational effects
 
 Status: Planned; read-only map complete, HP-basis clarification pending,

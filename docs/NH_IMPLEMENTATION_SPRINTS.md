@@ -40,6 +40,21 @@ failed run merely because a later run succeeds.
 
 ## Current implementation priority — complete Skills perks and spells
 
+### 2026-09-30 next coverage slices — Diplomacy and Mysticism
+
+UP-048's runtime and AI/UI maps plus independent policy review establish that
+ordinary Diplomacy still uses legacy disposition. The canonical paid thresholds
+are clear, but authored `COMPLIANT` free joins need a migration decision; the
+user has been asked whether to preserve those exceptions. An explicit eligibility
+marker avoids reinterpreting `HOSTILE`/`SAVAGE` disposition as a prohibition.
+No Diplomacy activation or coverage increase is claimed. Existing accepted
+joining/garrison removal behavior must not be silently redesigned.
+
+Continue UP-049, Wisdom's missing Mysticism perk, through the existing daily
+Normal-Mana recovery event. This is not polling, a new currency, or Buffer refill.
+Separate focused principal-path evidence from playable/rendered acceptance.
+The Command Windows run `36672365779` remains live on `dc50b5353`; preserve it.
+
 ### 2026-09-30 Phase 1 native checkpoint — Command component-specific perks
 
 UP-044 implements Aggressive Commander, Defensive Commander and Veteran
