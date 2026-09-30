@@ -451,6 +451,14 @@ ranks and combat identities unchanged. Broad lifecycle/countering interactions,
 full save-world journeys, artwork and playable acceptance remain deferred.
 No launcher promotion or GUI run. Next unblocked item: UP-058.
 
+Source delivery: `fffd9b81329e06bda04ec48d2253f5f4a890e0ab` is pushed;
+local/remote identities matched with a clean checkpoint. Full Windows run
+`36697665400` is queued on that frozen source, not yet a successful package.
+The previous full run `36691148552` succeeded on `1f8177b97`; its package
+artifact `11087514647` is 750678892 bytes and unexpired. That package includes
+the dormant Arcane Memory seam, not Archmage, and neither run establishes
+Windows graphical acceptance or Linux launcher promotion.
+
 ## UP-056 — Complete canonical Adventure Spell effects
 
 Status: Planned; bounded five-spell source audit complete, 2026-09-30.
@@ -521,7 +529,8 @@ no source writes during Archmage's frozen build.
 
 ## UP-058 — Repair canonical combat-spell School assignments
 
-Status: Open; concrete data mismatches confirmed, 2026-09-30.
+Status: Implemented; focused source/native verified, playable delivery pending,
+2026-09-30.
 UP-023 Phase 1 data/functional correctness, not a numerical balance change.
 The functional matrix already lists Implosion as Sorcery and Earthquake as
 Nature, but current `config/newHorizonsMagic.json` still assigns both to Havoc.
@@ -532,6 +541,38 @@ roster corrections without treating an absent Counterspell row or a note as
 proof of every spell's effect. Archmage's present fixture intentionally tests
 the current saved Level 4; it does not establish correct Implosion School.
 No data edit or verified repair is claimed yet.
+
+Final checkpoint supersedes the initial audit state: fresh Implosion is Sorcery
+and Earthquake is Nature; generated module matches. Both Linux targets build
+(74940), final test-only rebuild 76420 succeeds, and focused native 76202 passes
+4/4, zero skips. Binary
+`d492ad73bae4a628efb7f91dfdf49f18328722339a55bbebbbcff61d6b23f37f`;
+reports `NewHorizonsCanonicalSchools-retry1-focused.log`/`.xml`.
+Actual hero School-rank/acquisition policy uses the corrected fresh data;
+captured old Havoc classifications survive world save/load and BattleStart
+serialization; existing shared classification cast and updated Archmage AI
+submission pass. Offline gates pass 75/75, mirror/diff checks pass, independent
+review has no blocker. The Ice Bolt cast in the round-trip helper also retains
+Speed and Initiative in current profiles. Counterspell/Master Chain Lightning
+ordinary acquisition findings are separately UP-059, not fixed by this slice.
+Spell/perk/rank counts remain unchanged; Implosion percentage/pull and full
+Earthquake mechanics are not certified. No GUI/profile/snapshot promotion.
+
+## UP-059 — Exclude noncanonical and specialty-only Guild spells
+
+Status: Open; concrete fresh-roster admission mismatch confirmed, 2026-09-30.
+Adjacent UP-058 audit: Counterspell is absent from the detailed canonical
+roster but remains active in the fresh magic configuration. Master Chain
+Lightning is Solmyr's specialty, not an ordinary Guild spell; its definition's
+zero gain chance does not exclude it from fixed-school generation, which
+deliberately ignores weights. `CGameState::initTowns` currently admits ordinary
+combat definitions from the active saved roster without a specialty-only gate.
+Repair fresh ordinary acquisition using explicit saved eligibility, not spell
+weights or a global definition change that silently changes old saves. Preserve
+Solmyr's legitimate inscribed specialty and its casting, and distinguish
+noncanonical Counterspell from independently specified countering mechanics.
+Require focused Guild/teacher/acquisition evidence and retained saved-profile
+behavior. No implementation or verified coverage correction is claimed yet.
 
 ## UP-046 — Elemental Rebirth foundational effects
 
