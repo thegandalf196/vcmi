@@ -461,13 +461,14 @@ Windows graphical acceptance or Linux launcher promotion.
 
 ## UP-056 — Complete canonical Adventure Spell effects
 
-Status: Planned; bounded five-spell source audit complete, 2026-09-30.
+Status: Partial; Summon Boat existing-only clause source/native verified,
+2026-09-30. Remaining Adventure Spell effects and required targeting UI are open.
 UP-023 Phase 1 functional gaps, not merely Phase 2 hardening. Guild acquisition
 is implemented for all five spells; none is yet certified effect-complete.
 The source audit finds these remaining canonical clauses:
 
-- Summon Boat must summon an existing available boat, never create one at a
-  higher mastery. Update actual and AI creation paths together.
+- Summon Boat existing-only creation policy is now implemented in the
+  authoritative effect and AI; adjacent legal target selection/preview remains.
 - Water Walk already uses the shared 1.5x step multiplier; end-day land legality
   remains unestablished in the mapped authoritative turn/movement path.
 - Town Portal must use the nearest controlled town, never a player-selected
@@ -486,7 +487,21 @@ expensive route scan. Protected-barrier metadata and occupied-nearest-town
 semantics need evidence or clarification before inventing behavior. The forced
 Advanced Town Portal query in UP-054 is generic completion compatibility
 coverage, not canonical New Horizons nearest-town/movement acceptance.
-No production edit or activation has been made for this audit.
+2026-09-30 checkpoint: shared caster-aware policy blocks creation under captured
+New Horizons Adventure rules, forces existing-boat retrieval and rejects no-boat
+casts before the adventure packet, Mana payment or daily completion. Legacy
+Expert creation remains unchanged. Actual Nullkiller path generation cannot
+forecast creation but can summon a known available boat. Client build 54426 and
+test build 61522 pass; native 83331 passes 13/13, zero skips (five new cases,
+eight direct Adventure registration/state/AI guards). Binary SHA-256
+`a674e4a67a73b5cf18357ddbf4b1fafedad87fa8cc43df01eff666b69b5bc79b`;
+reports `UP056-summon-boat-existing-only-initial-focused.log`/`.xml`.
+All 77 offline checks and module/diff gates pass; independent review finds no
+blocker. Deferred: occupied/multiple boats and nearest ties, direct packet/
+completion observer assertions, broader interactions and rendered/playable
+acceptance. Required adjacent-target selection/preview remains Phase 1 work,
+not deferred polish. No GUI/profile/launcher promotion. Other Adventure design
+ambiguities remain unresolved; identity/rank/perk coverage does not increase.
 
 Town Portal policy map complete: existing squared planar distance and strict
 first-entry tie-break are deterministic; no route scan is required by the
@@ -536,6 +551,28 @@ reroll. The clarification is integrated into the detailed canonical section
 and its abbreviated table; Pending Changes records the integration. UP-058 and
 UP-059 admission corrections are source/native verified; this missing combat
 identity now has focused runtime and actual AI evidence.
+
+## UP-060 — Implement Chaos Fate Dealer
+
+Status: Planned; sampling-policy clarification requested, 2026-09-30.
+UP-023 Phase 1 slice after Hand of Fate. Advanced Chaos draws two random spill
+targets; if exactly one is hostile, use it, otherwise randomly choose a draw.
+Clarify whether draws are independent with replacement and whether “legal”
+retains Hand of Fate's defense-unfiltered pool before implementing a materially
+different selection distribution. Require captured active-perk/rank admission,
+runtime selection, matching read-only AI expectation, normal perk progression,
+registration, focused native/build evidence and recorded deferred interactions.
+Root owns registration/docs/builds; read-only policy worker owns the bounded map.
+No bespoke art, production activation or playable completion claimed.
+The user is asked whether the two draws permit duplicates (as Blinkmaster
+explicitly does) or must name different stacks when available. These produce
+different hostile-selection probabilities; do not silently choose one.
+Read-only map settles the pool: reuse Hand of Fate's other living on-field
+non-turret stacks, including protected stacks; defenses apply only after final
+selection. “Legal” does not override the detailed no-defense-filter rule.
+Blinkmaster code's with-replacement policy is precedent, not explicit canonical
+evidence for Fate Dealer's sampling distribution.
+Continue UP-056's unambiguous existing-boat-only correction meanwhile.
 
 ## UP-058 — Repair canonical combat-spell School assignments
 
