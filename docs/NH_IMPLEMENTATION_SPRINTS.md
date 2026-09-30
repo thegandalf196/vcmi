@@ -40,6 +40,38 @@ failed run merely because a later run succeeds.
 
 ## Current implementation priority — complete Skills perks and spells
 
+### 2026-09-30 Phase 1 native checkpoint — Command component-specific perks
+
+UP-044 implements Aggressive Commander, Defensive Commander and Veteran
+Commander. This opens ordinary Advanced and Expert Command progression,
+currently blocked by absent active Basic/Advanced perks. Runtime owns the
+shared Order coefficient and focused server
+fixture; AI owns its consumer trace and focused native fixture, with no
+duplicate scaler. Keep rank efficiency and additive Warcasting points, add
+20 efficiency points only to the matching Attack/Defense component, and leave
+flat bases unchanged. Veteran adds +25 points only to Leadership-derived
+terms, not to Leadership capacity. Root owns the
+three registry activations, module mirror, test registration, inventory and
+integration. Both Linux targets build; 11/11 focused runtime/progression/AI
+cases pass with zero skips. Content/perk/inventory checks pass 74/74; mirror
+and diff checks pass. Coverage is 58/67 combat identities and 118/310 active
+perks; existing Command Order guards additionally pass 13/13, zero skips.
+There are 192 planned perks, with Command 3/7 active/planned. Bespoke art is Not done;
+generic neutral fallback is not art. Binary SHA-256:
+`e228836aac3189c35ed63b803c2facd57ec22b5c006161537054ee860a13a2a3`.
+No launcher promotion or broad suite after this bounded feature.
+
+Production source review has no blocking finding: bonuses are source-specific
+efficiency points, flat bases/capacity are untouched, AI uses the same helpers,
+and the generic legacy bonus path excludes new perks. Deferred Phase 2
+compatibility: legacy contextual Focus Fire still calls the public coefficient,
+so a synthetic old-command/new-active-perk-registry hybrid could gain Aggressive
+scaling; ordinary historical saved perk registries keep these perks planned.
+Actual AI fixtures isolate each Order's shared coefficient consumer with a
+legal Magic Arrow competitor; all-canonical-Order tactical ranking and AI
+Warcasting interactions remain Phase 2. Runtime Warcasting/snapshot checks pass.
+Source/native evidence does not establish rendered/playable acceptance.
+
 ### 2026-09-30 next-slice read-only map — Confusion and Confounder
 
 UP-043 records the canonical Level-1/5-Mana forced-next-activation spell.
