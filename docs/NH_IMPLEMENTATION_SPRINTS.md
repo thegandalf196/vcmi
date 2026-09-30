@@ -40,6 +40,36 @@ failed run merely because a later run succeeds.
 
 ## Current implementation priority — complete Skills perks and spells
 
+### 2026-09-30 next slice — Summon Boat existing-only policy
+
+The previous cycle changed authoritative state: Hand of Fate is implemented,
+native verified and pushed. Fate Dealer's two-draw distribution is not specified
+well enough to choose replacement silently; the user question and policy map
+are recorded in UP-060. Its base defense-unfiltered pool remains authoritative.
+Continue the unblocked UP-056 Summon Boat clause instead: never create a new
+boat in captured New Horizons rules, and never let Nullkiller forecast creation
+that the authoritative spell rejects. Preserve legacy/custom spell behavior.
+The slice is now source/native verified: client build 54426 and test build
+61522 succeed. Native 83331 passes 13/13, zero skips, including the five new
+runtime/actual-AI cases plus eight direct guards. Binary SHA-256
+`a674e4a67a73b5cf18357ddbf4b1fafedad87fa8cc43df01eff666b69b5bc79b`;
+reports `UP056-summon-boat-existing-only-initial-focused.log`/`.xml`.
+All 77 offline checks and module/diff gates pass; independent source/test review
+has no blocker. No failed native/build retry for this slice. No GUI or launcher
+promotion. Adjacent target selection/preview remains missing Phase 1 UI, not
+polish; broad occupied/multiple-boat/tie and packet-observer coverage is Phase 2.
+Counts remain combat identities 59/67, ranks 84/93 and active perks 125/310:
+this repairs a missing clause of an already registered Adventure identity.
+Windows run 36710097476 remains live, now compiling its frozen Hand of Fate
+head; it does not contain this later Summon Boat slice. Preserve that run.
+Read-only Luna next-slice map finds a foundational Chaos gap: Misfortune still
+uses legacy -1/-2 Luck, not canonical positive-Luck suppression, and favorable
+creature probabilities have no shared runtime/AI policy. Its coefficient and
+Misfortune Weaver's ten-point decrement are unambiguous; eligible ability rolls
+must be classified explicitly. This outranks activating a tooltip-only Weaver
+perk. Record the missing base mechanic in the functional ledger and use this
+as the next unblocked Chaos foundation while Fate Dealer sampling is pending.
+
 ### 2026-09-30 Hand of Fate source/native checkpoint
 
 Source commit `8473b53e169067315fbd5f637182f76ccb6d28e1` is pushed; local
