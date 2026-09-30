@@ -11,21 +11,59 @@ entries and their validation/delivery evidence.
 
 ## UP-045 — Implement Command Combined Arms
 
-Status: Planned; read-only runtime/AI mapping in progress, 2026-09-30.
+Status: Implemented; source/native verified, rendered/playable acceptance
+pending, 2026-09-30.
 UP-023 Phase 1 coverage slice.
 
 Focus Fire grants friendly melee attacks against its designated target half
 of its damage bonus. Flank grants friendly ranged attacks against its target
 half of its Attack-derived damage component only, not the flat base or any
-distinct-side bonuses; shooters never record additional Flank sides. Preserve
+distinct-side bonuses; ranged attacks never record additional Flank sides. Preserve
 fractional half bonuses until final damage rounding, ordinary Order legality,
 round expiry, ownership and physical-attack restrictions. Do not grant melee
 Focus Fire the shooting-only range/obstacle or Target Caller benefits. Audit
 admission for melee-only Focus Fire and ranged-only Flank armies with this perk.
+Direct `Unit::isMeleeAttacker` inspection confirms that ordinary shooters
+already meet Flank's existing admission predicate; preserve and test that path
+rather than claiming a new admission fix there.
 Share exact runtime damage with previews/hypothetical AI and add the minimum
 Order-selection AI hooks, legal perk progression, content registration and
 focused build/native evidence. Record broad interaction and rendered/playable
 verification for Phase 2; no launcher promotion.
+
+Checkpoint: both Linux targets build (3217; final test-only rebuild 11676).
+Five runtime/actual-AI cases and 37 direct Command/Focus Fire guards pass, zero
+skips; content/perk/inventory passes 74/74 and mirror/diff checks pass. Exact
+fractional damage, frozen cohorts, target/physical guards, legacy isolation,
+authoritative submission and ranged side history are exercised. Binary SHA-256
+`9100b7e059bbe7822bc1b8df362b444a95e660f672ea40864ce35dc65bac2a5d`.
+Independent review has no blocking finding. Both AI fixtures explicitly isolate
+other Order coefficients with legal Magic Arrow competition; all-Order ranking
+and inherited Flank reachability/remaining-activation valuation remain Phase 2.
+Registry coverage advances to 119/310 perks, Command 4/6 active/planned;
+combat identities and ranks are unchanged. Neutral fallback is not bespoke art.
+First failures and succeeding retry reports remain recorded, not overwritten.
+
+## UP-046 — Elemental Rebirth foundational effects
+
+Status: Planned; read-only map complete, HP-basis clarification pending,
+2026-09-30. UP-023 Phase 1 coverage candidate; no effect activation claimed.
+
+Implement the Conflux rank effects: destroyed non-summoned allied stacks create
+temporary random Elite Elementals at their position with exact aggregate HP
+at 25/40/50%. Reborn units cannot recursively trigger the base effect. Include
+physical attacks and spell injury paths, legality/footprint, temporary casualty
+provenance, exact wounded-final-creature HP, authoritative packets, detached AI
+projection and summon/result feedback. Existing class assignment/metadata is
+not runtime coverage: all three rank effects and ten perks remain planned.
+
+Reuse pre/post damage reaction seams and existing temporary-summon helpers,
+not original same-stack REBIRTH. Capture the source position and HP basis before
+damage; the user is asked whether the basis is the original battle-start stack
+or remaining creatures immediately before the fatal hit. Do not choose this
+material rule silently. Later perk work requires serialized origin/original-HP
+and once-per-combat state, and terrain candidate sets still need clarification.
+While the question is unanswered, continue another unblocked Phase 1 item.
 
 ## UP-044 — Implement Command's attribute-specific efficiency perks
 

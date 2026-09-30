@@ -81,9 +81,36 @@ cancelled. Dispatch/queue state is not compile/package or playable evidence.
 Next unblocked coverage slice: Command's Combined Arms, after the read-only
 damage/admission/AI map. Confusion still awaits the two recorded design answers.
 
-### 2026-09-30 next-slice map — Combined Arms
+### 2026-09-30 Phase 1 in-progress slice — Combined Arms
 
-UP-045 is still missing, not activated. Actual damage and hypothetical AI share
+Final native checkpoint: the bounded slice is implemented and independently
+reviewed with no blocking finding. Both Linux targets build; final test-only
+rebuild 11676 passes. Five focused runtime/actual-AI cases and 37 direct
+Command/Focus Fire guards pass, zero skips, plus 74 content/perk/inventory
+checks and mirror/diff checks. Binary SHA-256:
+`9100b7e059bbe7822bc1b8df362b444a95e660f672ea40864ce35dc65bac2a5d`.
+The exact 5,375 endpoint passes. Both actual-AI fixtures now explicitly isolate
+other Order coefficients with legal Magic Arrow competition; Flank's army is
+shooter-only. All-Order ranking, inherited Flank reachability/remaining-activation
+valuation, broad interactions, bespoke art and rendered/playable acceptance
+remain deferred. No gameplay scores were tuned to force fixture selection.
+Coverage is now 119/310 active perks, 191 planned, Command 4/6 active/planned;
+58/67 combat identities and 84/93 active ranks are unchanged. No launcher
+promotion. Initial failures remain in the failure ledger and isolated reports.
+The source map and earlier in-progress evidence below are chronological records,
+not claims that the native gate is still pending.
+
+Windows status: Blink run `36670136812` succeeds on frozen source
+`d6f976a1b4b071768172c18003a942adc760f888`, downloadable artifact
+`11079313586` (`New-Horizons-Windows-x64-d6f976a1b4b071768172c18003a942adc760f888`,
+750649638 bytes). That package does not contain Command efficiency or Combined
+Arms. Command run `36672365779` is now in progress, not a package pass yet.
+Combined Arms Windows compilation and playable acceptance remain unverified;
+preserve the existing job rather than restarting it for this new source slice.
+
+UP-045 has bounded runtime and AI workers with separate file ownership; root
+owns registry, validation and integration. Coverage remains 118/310 active
+perks until the focused execution/build gate passes. Actual damage and AI share
 `CBattleInfoCallback::calculateDmgRange`; canonical Flank uses the direct Order
 damage payload, while Focus Fire currently uses a separate ranged-only premium
 and penalty flag. Do not reuse that flag for melee. The direct damage payload
@@ -94,9 +121,11 @@ distinct-side additions. Focus Fire's melee extension excludes shooter-only
 Target Caller additions and range/obstacle benefits.
 
 Admission also needs coverage: `battleCanConfirmHeroCommand` currently requires
-a legal shooter for Focus Fire, and `battlePrepareHeroOrderState` requires a
-melee attacker for Flank. The perk must make its newly useful army compositions
-eligible without weakening target/owner/ordinary-unit validation. Actual side
+a legal shooter for Focus Fire. The perk must make its newly useful melee army
+composition eligible without weakening target/owner/ordinary-unit validation.
+Flank's `isMeleeAttacker` predicate already returns true for ordinary shooters
+(`Unit.cpp:86`); the read-only map initially misinterpreted its name. No new
+shooter-only Flank admission gap is claimed: preserve and test it. Actual side
 recording already excludes ranged attacks in BattleActionProcessor; retain it.
 AI's canonicalOrderHeuristic needs the same exact half-component helpers and
 known-allied-perk checks; do not consult concealed opposing heroes. Validate
@@ -104,12 +133,59 @@ target scope, physical-only damage, legal perk progression, round expiry,
 fractional damage, unchanged base/side bonuses and actual AI submission with
 focused tests. No source or execution completion is claimed by this map.
 
+Source integration checkpoint: runtime and AI workers are frozen; independent
+review finds no remaining blocking production issue after repairing the
+canonical-only AI gate. The first Linux build (90955) fails on raw-pointer
+deduction for a shared callback; root repairs it and incremental build 3217
+is running. Content/perk/inventory passes 74/74 and mirror/diff checks pass.
+No native execution gate or coverage increase is claimed yet. The two actual
+AI fixtures explicitly isolate competing Order coefficients and do not certify
+all-Order ranking; the Flank fixture includes a melee ally, so selection is not
+uniquely attributable to the new ranged heuristic. Add a hand-derived fixed
+Angel endpoint before closing: NH suppresses passive hero Attack inheritance,
+so creature Attack/Defense remain 20/20; 100 Angels at 50 damage plus the
+7.5% half-snapshot bonus yield exactly 5,375, not the legacy-derived 17,125.
+This checks fractional preservation beyond same-engine projection parity.
+
+### 2026-09-30 read-only gap map — Commanding Presence
+
+The Advanced Command perk is still planned/data-only. Shared
+`moraleValAndBonusList` already supports a zero `MINIMUM_MORALE` floor;
+authoritative activation and detached AI forecast consume that shared value.
+Canonical Orders use state rather than broad stack bonuses; projected
+`setHeroOrderState` does not currently change morale. A shared active-recipient
+predicate is required before implementing the floor and AI valuation. Resolve
+whether "currently affected" means every eligible stack covered by a
+conditional standing Order or only its explicit recipients (especially Protect
+and Second Wind). No edits, builds, tests, or activation are claimed by this
+read-only map. Do not silently apply a whole-army aura to targeted Orders.
+
 Read-only worker map complete. The differing canonical wording resolves the
 component choice: Focus Fire's half includes its own flat base and Attack term;
 Flank's half explicitly excludes the flat base. Preserve existing Focus Fire
 snapshot values without a new save field where possible. Broadening admission
-for the newly benefited army composition is required to exercise the perk,
+for melee-only Focus Fire is required to exercise the perk,
 not permission to relax ownership, target or normal action restrictions.
+
+### 2026-09-30 foundational gap map — Elemental Rebirth
+
+Read-only Luna exploration confirms the Conflux Skill assignment exists, but
+none of the three rank effects or ten perks has a runtime/AI implementation.
+Do not count class assignment, metadata or art as completion. Base ranks need
+a shared pre/post-death reaction for physical attack and spell-injury packets,
+exact-health temporary Elemental spawning and a detached AI projection.
+`CGameHandler::sendAndApply` already provides post-damage reaction seams;
+`GameStatePackVisitor` has pre/post death tracking; `UnitInfo`/ADD already carries
+temporary summon provenance. Original same-stack REBIRTH is not a substitute.
+The missing UI hook is passive summon/result feedback, not another Hero Action.
+
+UP-046 records a material question: does maximum aggregate HP mean battle-start
+stack capacity or remaining creatures' capacity immediately before the fatal
+hit? An asynchronous user question is pending. Later perks need serialized
+Rebirth origin/original-HP and once-per-combat state, plus terrain candidate sets
+that distinguish Adaptive Element from Perfect Convergence. No source changes
+or coverage increase are claimed. Continue unblocked coverage while awaiting
+the HP-basis decision rather than inventing an answer or stopping the whole goal.
 
 ### 2026-09-30 next-slice read-only map — Confusion and Confounder
 
