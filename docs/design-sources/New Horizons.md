@@ -1564,7 +1564,7 @@ SP 160+   → 4 rounds
 
 For favorable random creature effects:
 
-− Probability Multiplier = max(25%, 75% 0.25% × SP)
+− Probability Multiplier = max(25%, 75% − 0.25% × SP)
 
 At SP 20:
 
