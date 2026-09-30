@@ -2277,6 +2277,14 @@ Duration = min(2, 1 + floor(SP / 100)) rounds Thus:
 
 SP 0–99  → 1 round SP 100+  → 2 rounds
 
+For Entangle, School rank scales only the `SP / 100` term through the
+shared 100% / 115% / 130% / 145% coefficient before flooring; the fixed
+one-round base and ordinary two-round cap do not scale. Rootcaller adds
+one round to this result, capped at three for that perk. Echoed Duration
+then adds its separate Metamagic-cast round through the common duration
+rule. Rooting sets voluntary movement to zero, not Initiative, and does
+not depend on a binding creature remaining alive or adjacent.
+
 Forced displacement breaks Entangle.
 
 Teleportation also removes the creature from the roots.
