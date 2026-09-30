@@ -191,10 +191,16 @@ failures are retained in the failure ledger. Coverage is 121/310 active perks,
 interactions and old-save fresh-discount behavior remain Phase 2. Bespoke art
 is Not done; no rendered/playable acceptance or launcher promotion is claimed.
 
+Source delivery: `2b5a843d7d10ae68f8e53d40ee962fb27f4f72b9` is committed
+and pushed; remote identity is verified and the worktree is clean at that
+checkpoint. Full Windows run `36680827103` is queued on this frozen source,
+including Combined Arms, Mysticism and Prepared Caster. Dispatch is not
+compile/package or Windows graphical evidence; preserve the live handle.
+
 ## UP-051 — Implement Wisdom Meditation daily recovery
 
-Status: Planned; next unblocked Wisdom coverage slice, 2026-09-30.
-UP-023 Phase 1 candidate, after Prepared Caster's focused checkpoint.
+Status: In progress; separate runtime and focused-test workers, 2026-09-30.
+UP-023 Phase 1 slice, after Prepared Caster's committed native checkpoint.
 
 Canonical Advanced Meditation: ending the day with at least 25% of maximum
 Movement unspent restores an additional 15% of normal Maximum Spell Points.
@@ -212,6 +218,9 @@ computing mana; preserve the previous Movement for this check by computing mana
 first, and pass completed-day context from `NewTurn` (`pack.day > 1`). On-map
 updating can pass the pre-update calendar context explicitly. Do not add a
 serialized day marker or infer completion from the already incremented date.
+Tavern bonus expiration also precedes ordinary recovery: snapshot the previous
+Movement maximum before expiration, then pass it to the shared recovery getter.
+Preserve legacy bonus-expiration/recovery ordering; do not add a saved snapshot.
 Do not claim a day-end mechanic solely from a pure regeneration getter test.
 Require legal Advanced progression, exact threshold/below-threshold checks,
 authoritative daily packet evidence, save/selection gating and focused build.
