@@ -40,6 +40,48 @@ failed run merely because a later run succeeds.
 
 ## Current implementation priority — complete Skills perks and spells
 
+### 2026-09-30 current slice — Misfortune probability foundation
+
+UP-061 implements the missing canonical base effect before activating its
+Weaver modifier: final positive-Luck cap (negative Luck preserved), capped
+SP-derived duration and favorable random creature probabilities. Shared
+basis-point bonuses retain ordinary timed expiry/Dispel and append-only
+serialization with loss-rejecting downsave guards. Explicit consumers cover
+Death Blow, attack-triggered spells, destruction/transmutation and binomial
+Death Stare; deterministic abilities, hero-owned machine chances and harmful
+Fear rolls remain unchanged. Weaver subtracts ten multiplier percentage points
+before the same 25% floor. AI has shared Luck and Death Blow expectation hooks.
+Luna runtime/AI workers froze disjoint files; Astra review finds no blocking
+source defect. Both Linux targets link after retained fixture compile
+corrections; final rebuild 84281 succeeds. Native 42389 passes 25/25, zero
+skips: 18 new runtime/AI/helper cases plus seven direct guards. It proves
+selected/unselected Weaver, coefficient/floor, actual Death Stare, positive
+versus negative Luck, legal Dispel/round expiry, v2 isolation, current/downsave
+marker representation, help and accepted/read-only AI. The initial permanent
+marker defect is fixed and its failure retained; the later expiry crash is
+attributed by gdb to a null test assertion after correct expiry, not runtime.
+Reports `UP061-misfortune-expiry-retry2-focused.log`/`.xml`; binary SHA-256
+`01f92c0564da87a2d21e2a471f692f2f95c6af4ce86df7370dbddcba9589629e`.
+All builds remain serialized at `-j12`. Source delivery is the next gate.
+Offline gates pass 77/77 after repairing the activation allowlist/inventory;
+the initial drift failures remain in the release failure register. Registration
+is 126/310 active perks, 184 planned, Chaos 2/8, with Weaver's principal path
+native verified. Combat identities remain 59/67 and ranks 84/93; no blanket
+Misfortune effect-complete count is claimed while resistance scope is pending.
+
+Innate creature Magic Resistance classification awaits the user's decision;
+do not reduce mixed hero/aura resistance silently. Phase 2 review gaps are
+effect-aware AI expectations for other favorable proc families, direct seeded
+fractional-roll and Sylvan/Perfect Moment execution tests, and custom
+Misfortune specialty modifiers (none configured canonically). Dedicated Weaver
+art remains Not done; no GUI/profile/snapshot promotion. The canonical formula's
+missing subtraction symbol is repaired from its own examples and its hash is
+refreshed; this is a transcription repair, not a new balance decision.
+Next highest-priority mapped Chaos work is UP-062 Berserk/Frenzied Curse:
+next-activation lifetime, shooter melee and movement-cost/random-tie selection,
+exact forced movement in AI and +2 Speed perk. Bad-Morale consumption is awaiting
+the user's clarification; implement unambiguous clauses without inventing it.
+
 ### 2026-09-30 next slice — Summon Boat existing-only policy
 
 The previous cycle changed authoritative state: Hand of Fate is implemented,
@@ -60,8 +102,10 @@ promotion. Adjacent target selection/preview remains missing Phase 1 UI, not
 polish; broad occupied/multiple-boat/tie and packet-observer coverage is Phase 2.
 Counts remain combat identities 59/67, ranks 84/93 and active perks 125/310:
 this repairs a missing clause of an already registered Adventure identity.
-Windows run 36710097476 remains live, now compiling its frozen Hand of Fate
-head; it does not contain this later Summon Boat slice. Preserve that run.
+Windows run 36710097476 subsequently succeeds on its frozen Hand of Fate
+head. Package artifact 11096561868 is unexpired (750709876 bytes); it does
+not contain this later Summon Boat slice or Misfortune. Preserve the completed
+run and dispatch a new full build only after the current checkpoint is pushed.
 Read-only Luna next-slice map finds a foundational Chaos gap: Misfortune still
 uses legacy -1/-2 Luck, not canonical positive-Luck suppression, and favorable
 creature probabilities have no shared runtime/AI policy. Its coefficient and
@@ -75,8 +119,10 @@ as the next unblocked Chaos foundation while Fate Dealer sampling is pending.
 Source commit `8473b53e169067315fbd5f637182f76ccb6d28e1` is pushed; local
 and remote HEAD match. Full Windows run
 [36710097476](https://github.com/thegandalf196/vcmi/actions/runs/36710097476)
-is in progress on that frozen source head. Preserve the live handle rather
-than redispatching. This is not yet Windows package or playable evidence.
+is successful on that frozen source head. Package artifact `11096561868`,
+`New-Horizons-Windows-x64-8473b53e169067315fbd5f637182f76ccb6d28e1`,
+is unexpired and 750709876 bytes. This is Windows compile/package evidence,
+not graphical gameplay acceptance or a package containing later commits.
 
 UP-057 adds the missing Level 3 Chaos damage spell to fresh saved rules and
 the content module: primary `70 + 2.5 × SP`, ordinary coefficient scaling,

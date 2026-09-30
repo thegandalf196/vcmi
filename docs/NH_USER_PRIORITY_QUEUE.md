@@ -547,10 +547,18 @@ damage script returns actual HP-clamped loss and supplies the post-hit pool;
 detached AI needs expected collateral value rather than one RNG-stub recipient.
 The user approved applying the secondary recipient's own magical defenses to
 half the primary actual loss. This does not influence selection or permit a
-reroll. The clarification is integrated into the detailed canonical section
+reroll. The asynchronous answer received on 2026-09-30 explicitly confirms
+"Apply the recipient's own magical defenses"; no change to the implemented
+behavior is required. The clarification is integrated into the detailed canonical section
 and its abbreviated table; Pending Changes records the integration. UP-058 and
 UP-059 admission corrections are source/native verified; this missing combat
 identity now has focused runtime and actual AI evidence.
+
+Windows full run `36710097476` succeeds on frozen Hand of Fate source
+`8473b53e169067315fbd5f637182f76ccb6d28e1`. Package artifact `11096561868`,
+`New-Horizons-Windows-x64-8473b53e169067315fbd5f637182f76ccb6d28e1`,
+is unexpired (750709876 bytes). It excludes subsequent Summon Boat and
+Misfortune changes and does not establish Windows graphical acceptance.
 
 ## UP-060 — Implement Chaos Fate Dealer
 
@@ -573,6 +581,77 @@ selection. “Legal” does not override the detailed no-defense-filter rule.
 Blinkmaster code's with-replacement policy is precedent, not explicit canonical
 evidence for Fate Dealer's sampling distribution.
 Continue UP-056's unambiguous existing-boat-only correction meanwhile.
+
+## UP-061 — Complete Chaos Misfortune and Misfortune Weaver
+
+Status: Unambiguous probability foundation implemented and source/native
+verified; innate-resistance scope and playable acceptance pending, 2026-09-30.
+UP-023 Phase 1 foundational probability-debuff gap. Current Misfortune is legacy
+-1/-2 Luck with single-stack targeting; canonical requires positive Luck cannot
+trigger, duration `min(4, 2 + floor(SP / 80))`, favorable random creature-effect
+probabilities multiplied by `max(25%, 75% - 0.25% * SP)`, and deterministic
+abilities unchanged. Basic Chaos Misfortune Weaver reduces that multiplier by
+ten percentage points, retaining the 25% floor. Introduce a shared timed
+representation and explicit creature-chance consumers with matching AI hooks;
+do not globally reduce unrelated RNG, hero effects, negative Luck or deterministic
+abilities. Preserve captured legacy rules, status expiry/Dispel and ordinary
+registration/progression. Root owns API/ownership partition and final gates.
+Require focused authoritative casts/chance/Luck/expiry and detached/actual-AI
+evidence; record unverified interaction classes for Phase 2. Weaver is active
+and principal-path verified; full effect-complete/playable delivery is not claimed.
+Runtime and AI workers own distinct files. The shared basis-point helper and
+timed Luck-cap representation are implemented; Death Blow, attack-triggered
+spells, destruction/transmutation and Death Stare are explicit consumers.
+Hero-owned machine bonuses and harmful Fear remain unchanged. Whether innate
+creature Magic Resistance is also a favorable probability is awaiting the
+user's scope decision; mixed hero/aura resistance must not be blanket-reduced.
+Canonical Misfortune's missing subtraction symbol is repaired from its own
+20/100/200-SP examples, without changing the intended formula.
+
+Checkpoint: both Linux targets build; final rebuild 84281 succeeds. Native
+42389 passes 25/25, zero skips (18 new cases plus seven direct guards), binary
+`01f92c0564da87a2d21e2a471f692f2f95c6af4ce86df7370dbddcba9589629e`.
+Reports `UP061-misfortune-expiry-retry2-focused.log`/`.xml`. Actual casts,
+Weaver floor/scaling, Death Stare, legal Dispel/round expiry, negative Luck,
+v2 isolation, shared state serialization/downsave, spell help and legal AI
+submission pass; forecasts leave live RNG/Mana/HP untouched. All 77 offline
+checks and module/diff gates pass; independent review has no remaining blocker.
+Failure ledger retains compile/fixture errors and the fixed permanent-marker
+production defect. Coverage increases to 126/310 active perks, 184 planned,
+Chaos 2/8; identities 59/67 and ranks 84/93 are unchanged. Phase 2 includes
+full proc-family AI valuation, direct fractional seeded roll and new-marker
+Sylvan/Perfect Moment execution, custom-specialty and full world-save journeys.
+Dedicated art remains Not done; no GUI/profile/snapshot promotion.
+
+## UP-062 — Complete canonical Berserk and Frenzied Curse
+
+Status: Planned; read-only runtime and AI maps complete, 2026-09-30.
+UP-023 missing Chaos base-mechanic slice. Canonical Berserk affects one enemy's
+next activation, forces melee even for shooters, selects by actual movement
+cost regardless of allegiance, randomizes equal-distance ties and approaches
+the nearest reachable target when an attack is out of range. Basic Frenzied
+Curse grants +2 Speed for that forced activation. Preserve legacy v1/v2 rules,
+authoritative action validation and detached/read-only AI forecasting.
+
+Current profile tests establish targeting only. Generic UNTIL_OWN_ATTACK
+lifetime persists after WALK/NO_ACTION; the shooter branch shoots and ranks by
+raw hex distance; ties use deterministic first-element order. STACK_ACTIVATION
+expiry infrastructure already exists. Perk has no live runtime consumer and
+remains planned. Required principal evidence includes forced shooter melee,
+path-cost/tie selection, movement-only expiry and perk speed restoration.
+Ask whether a negative-Morale skipped turn consumes Berserk or leaves it for
+the next usable activation; do not silently resolve that material lifecycle
+question. All-paths-blocked fallback also needs a bounded policy audit; do not
+claim complete Berserk from correcting only its target shape. No implementation,
+activation or playable evidence is claimed by this map.
+Minimum AI gap: shared forced WALK/NO_ACTION currently loses its exact target
+and destination in PotentialTargets and falls into ordinary tactical movement.
+No explicit projected next-activation Berserk value is present. Keep shared
+forced-action candidates deterministic/read-only for inspection, choose tied
+runtime targets authoritatively, and value friendly as well as hostile harm.
+The current empty-target helper indexing is also a crash-risk guard to repair
+with the bounded path work. Nullkiller uses BattleAI; no parallel adventure-AI
+forced-action implementation is needed.
 
 ## UP-058 — Repair canonical combat-spell School assignments
 
