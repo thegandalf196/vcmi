@@ -82,6 +82,12 @@ next-activation lifetime, shooter melee and movement-cost/random-tie selection,
 exact forced movement in AI and +2 Speed perk. Bad-Morale consumption is awaiting
 the user's clarification; implement unambiguous clauses without inventing it.
 
+Source checkpoint `63431ceb3cc0e216f9aff9785445e522fab7cddf` is pushed;
+remote identity matches with a clean checkpoint. Full Windows run
+[36719626047](https://github.com/thegandalf196/vcmi/actions/runs/36719626047)
+is in progress on that frozen source. Preserve its handle across continuations;
+this is not yet a Windows package or playable acceptance claim.
+
 ### 2026-09-30 next slice — Summon Boat existing-only policy
 
 The previous cycle changed authoritative state: Hand of Fate is implemented,
