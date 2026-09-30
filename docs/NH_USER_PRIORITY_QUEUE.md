@@ -9,6 +9,38 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-044 — Implement Command's attribute-specific efficiency perks
+
+Status: Implemented (rendered/playable verification pending), 2026-09-30;
+UP-023 Phase 1 coverage slice.
+
+Implement Aggressive Commander, Defensive Commander and Veteran Commander.
+Attack-derived Order
+components gain +20 percentage points of Command Efficiency from Aggressive;
+Defense-derived components gain +20 points from Defensive. Flat bases remain
+unchanged; Veteran adds +25 efficiency points to Leadership-derived terms.
+Rank efficiency still applies, and none of these increases Leadership
+capacity. Share exact per-component math between authoritative Order snapshots
+and AI evaluation; preserve Warcasting and legacy saved rules. Activate the
+canonical perk entries and ordinary progression, retain existing generic perk
+UI hooks, and require focused source/native/build and AI evidence. Record
+broader interactions and rendered/playable acceptance for Phase 2. No launcher
+promotion. Runtime and AI workers own distinct files; root owns registration,
+validation, documentation and Git integration.
+
+Source/native checkpoint: both Linux targets build; all 11 focused runtime,
+progression and actual-AI cases pass, zero skips. Content/perk/inventory passes
+74/74; mirror and diff checks pass. Independent review has no blocking finding.
+Existing Command Order guards also pass 13/13 with zero skips.
+Coverage advances to 118/310 active perks, Command 3/7 active/planned; combat
+identity coverage remains 58/67. Test binary SHA-256 is
+`e228836aac3189c35ed63b803c2facd57ec22b5c006161537054ee860a13a2a3`.
+AI cases isolate each Order's coefficient consumer while retaining a legal
+Magic Arrow competitor; all-canonical-Order tactical ranking and AI Warcasting
+interactions remain Phase 2. Runtime Warcasting and binary snapshot checks pass.
+The synthetic old-rules/new-active-registry Focus Fire edge remains deferred.
+Bespoke art is Not done; neutral fallback is not final art. No launcher promotion.
+
 ## UP-043 — Implement Chaos Confusion and Confounder
 
 Status: Planned; two design answers pending, 2026-09-30. UP-023 Phase 1 slice.
