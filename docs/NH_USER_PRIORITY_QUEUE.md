@@ -199,7 +199,7 @@ compile/package or Windows graphical evidence; preserve the live handle.
 
 ## UP-051 — Implement Wisdom Meditation daily recovery
 
-Status: In progress; separate runtime and focused-test workers, 2026-09-30.
+Status: Implemented; source/native verified, delivery pending, 2026-09-30.
 UP-023 Phase 1 slice, after Prepared Caster's committed native checkpoint.
 
 Canonical Advanced Meditation: ending the day with at least 25% of maximum
@@ -226,6 +226,38 @@ Require legal Advanced progression, exact threshold/below-threshold checks,
 authoritative daily packet evidence, save/selection gating and focused build.
 AI heroes use the same passive daily path; strategic Movement reservation can
 be deferred explicitly rather than inventing a new mandatory AI behavior.
+
+Checkpoint: client build 35691 links; confirming build exits zero. Test build
+88236 passes and native 84667 passes five new cases plus 22 direct capacity
+guards, 27/27, zero skips. Binary SHA-256
+`280e5b226f1cb9fb651e64ad0fc9067581c25c4c25793729d01d495054c99530`.
+Retained reports: `NewHorizonsMeditation-capacity-guards.log`/`.xml`.
+Offline 74/74 and mirror/diff checks pass; independent review has no blocker.
+Coverage is 122/310 active perks, Wisdom 4/6 active/planned. Neutral fallback
+is not bespoke art; rendered/playable acceptance and broad interactions remain
+open. No launcher promotion or Windows package evidence for this slice.
+
+## UP-052 — Implement Wisdom Deep Knowledge bonus-roll chance
+
+Status: Planned; next unblocked Wisdom content candidate, 2026-09-30.
+UP-023 Phase 1 slice after Meditation's focused checkpoint.
+
+Canonical Advanced Deep Knowledge adds ten percentage points to Wisdom's
+chance of granting +1 Knowledge on level-up. Trace the existing independent
+Skill-derived bonus rolls; change only the Wisdom roll's chance for a captured
+active selected perk/current rank. Do not change fixed twenty-point class
+growth, other Skills' rolls, +1 amount, RNG draw ordering, or legacy rules.
+Require ordinary Advanced perk selection, shared probability/help where used,
+focused deterministic chance/authoritative growth evidence, and registration.
+Reuse existing growth infrastructure; no new saved counter is implied.
+
+Read-only map: `CGHeroInstance::getPrimaryGrowthView` supplies the same
+opportunities to `GameRandomizer` and `HeroGrowthWindow`. Increase only its
+existing Wisdom row by ten points when the captured active Advanced perk is
+selected: Advanced 20→30%, Expert 30→40%. Preserve row order and draw count.
+Primary rolls precede the level-up perk query, so a newly chosen perk affects
+subsequent rolls, not the already-applied roll. Automatic AI growth uses that
+shared path; acquisition preference remains a separate strategic concern.
 
 ## UP-046 — Elemental Rebirth foundational effects
 
