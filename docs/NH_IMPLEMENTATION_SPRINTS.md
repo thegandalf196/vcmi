@@ -74,6 +74,10 @@ Source/native evidence does not establish rendered/playable acceptance.
 
 Source delivery: committed and pushed as
 `fcecc23d3d72ac6c67fd354bf8b2bfcb26234a5d`; remote identity verified.
+Full Windows run `36672365779` is pending on documentation checkpoint
+`dc50b5353ceb86d8800eac9e162c69ad324ed4d6`, containing that source.
+It is queued behind the live Blink run `36670136812`; neither is restarted or
+cancelled. Dispatch/queue state is not compile/package or playable evidence.
 Next unblocked coverage slice: Command's Combined Arms, after the read-only
 damage/admission/AI map. Confusion still awaits the two recorded design answers.
 
@@ -99,6 +103,13 @@ known-allied-perk checks; do not consult concealed opposing heroes. Validate
 target scope, physical-only damage, legal perk progression, round expiry,
 fractional damage, unchanged base/side bonuses and actual AI submission with
 focused tests. No source or execution completion is claimed by this map.
+
+Read-only worker map complete. The differing canonical wording resolves the
+component choice: Focus Fire's half includes its own flat base and Attack term;
+Flank's half explicitly excludes the flat base. Preserve existing Focus Fire
+snapshot values without a new save field where possible. Broadening admission
+for the newly benefited army composition is required to exercise the perk,
+not permission to relax ownership, target or normal action restrictions.
 
 ### 2026-09-30 next-slice read-only map — Confusion and Confounder
 

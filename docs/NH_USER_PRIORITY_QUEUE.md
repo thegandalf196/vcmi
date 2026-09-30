@@ -61,6 +61,9 @@ Bespoke art is Not done; neutral fallback is not final art. No launcher promotio
 
 Source delivery: `fcecc23d3d72ac6c67fd354bf8b2bfcb26234a5d` is committed
 and pushed; remote identity verified and worktree clean at this checkpoint.
+Full Windows run `36672365779` is pending on `dc50b5353` (contains that source),
+behind live Blink run `36670136812`. No Windows pass or playable promotion is
+claimed merely from dispatch.
 
 ## UP-043 — Implement Chaos Confusion and Confounder
 
