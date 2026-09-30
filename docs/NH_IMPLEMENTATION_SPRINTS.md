@@ -40,6 +40,20 @@ failed run merely because a later run succeeds.
 
 ## Current implementation priority — complete Skills perks and spells
 
+### 2026-09-30 next-slice read-only map — Confusion and Confounder
+
+UP-043 records the canonical Level-1/5-Mana forced-next-activation spell.
+Runtime mapping completed without edits: BattleFlowProcessor automatic actions
+and ordinary action validation provide execution; shared callback reachability
+provides legal attacks/movement; CUnitState save/load and UnitChanges carry
+pending/history state; hypothetical AI and PotentialTargets need a shared
+expected-outcome path. Do not reuse Berserk's ally targeting or nearest-target
+choice. Two user questions remain pending: impossible behaviors and the
+Confounder sole-legal-result fallback; consumption when Morale/Berserk already
+uses the activation. Preserve Time Stop's nonactivation behavior. No production
+Confusion implementation or coverage increase is claimed. This ambiguity
+does not block another unblocked Phase 1 item.
+
 ### 2026-09-30 Phase 1 in-progress slice — Chaos Blink and Blinkmaster
 
 Source delivery: committed and pushed as
