@@ -40,6 +40,46 @@ failed run merely because a later run succeeds.
 
 ## Current implementation priority — complete Skills perks and spells
 
+### 2026-09-30 Phase 1 native checkpoint — Wisdom Prepared Caster
+
+UP-050 adds the combat-lifetime accepted-hero-cast foundation, shared cost
+discount and detached AI state. The first hero spell receives two Mana off
+after Wisdom, minimum one; Overcharge surcharge and Empower eligibility remain
+separate. Creature/rejected attempts and previews do not spend the discount.
+The state persists across rounds, save/load and nested projections, with an
+append-only version and downsave loss guard. Ordinary spellbook/affordability
+already use the same callback. Generic perk offer/help exists; bespoke art does
+not. Existing histories are not repurposed because they record action start.
+
+Both Linux targets build (55809; final test-only rebuild 56500). All ten new
+runtime/actual-AI cases pass, zero skips, on binary
+`ea8e481c14da2395f288408bece79ae470d0d2ad9534398c57e1bb37f5e815a0`.
+The expanded 31-case filter passes 30/31: one unchanged legacy-v2 synthetic
+fixture retains v3 Quicksand `selectedPlacement` and is rejected during setup.
+That helper migration, direct Adventure exclusion, broader interactions and
+the approved old-load false boundary are tracked for Phase 2. Keep the failing
+and succeeding reports. Offline checks pass 74/74; review has no production
+blocker. Coverage increases to 121/310 active perks, 189 planned; Wisdom 3/7.
+Ranks remain 84/93, combat identities 58/67. No launcher promotion.
+
+Next unblocked slice: Meditation. Its daily map is complete, including first-
+day exclusion and the tavern pool's Movement-before-Mana ordering. Use explicit
+completed-day context and previous Movement; preserve Normal/Buffer and rest
+precedence. Diplomacy and the recorded scope questions remain parked, not
+silently decided. Source delivery and the next Windows batch are separate gates.
+
+### 2026-09-30 Windows Command package checkpoint
+
+The preserved full Windows run `36672365779` finishes successfully on frozen
+source `dc50b5353ceb86d8800eac9e162c69ad324ed4d6`.
+Package artifact `11081176965`,
+`New-Horizons-Windows-x64-dc50b5353ceb86d8800eac9e162c69ad324ed4d6`,
+is available (750,646,843 bytes, not expired at verification). This proves
+Windows build/package delivery for the Command efficiency checkpoint, not
+Windows graphical acceptance. Combined Arms, Mysticism and Prepared Caster
+postdate this frozen source and are not present in this package. Do not restart
+the successful handle or describe it as containing the latest working tree.
+
 ### 2026-09-30 Phase 1 native checkpoint — Wisdom Mysticism
 
 UP-049 implements the missing Basic perk through the existing daily recovery
