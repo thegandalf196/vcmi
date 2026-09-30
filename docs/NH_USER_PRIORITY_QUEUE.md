@@ -524,8 +524,8 @@ detached AI needs expected collateral value rather than one RNG-stub recipient.
 The user approved applying the secondary recipient's own magical defenses to
 half the primary actual loss. This does not influence selection or permit a
 reroll. The clarification is persisted in Pending Changes awaiting integration
-into the detailed canonical section. Continue UP-058 before this missing spell;
-no source writes during Archmage's frozen build.
+into the detailed canonical section. UP-058 and UP-059 admission corrections
+are source/native verified; this is the next missing combat identity.
 
 ## UP-058 — Repair canonical combat-spell School assignments
 
@@ -560,7 +560,7 @@ Earthquake mechanics are not certified. No GUI/profile/snapshot promotion.
 
 ## UP-059 — Exclude noncanonical and specialty-only Guild spells
 
-Status: Open; concrete fresh-roster admission mismatch confirmed, 2026-09-30.
+Status: Implemented; source/native verified, playable delivery pending, 2026-09-30.
 Adjacent UP-058 audit: Counterspell is absent from the detailed canonical
 roster but remains active in the fresh magic configuration. Master Chain
 Lightning is Solmyr's specialty, not an ordinary Guild spell; its definition's
@@ -572,7 +572,26 @@ weights or a global definition change that silently changes old saves. Preserve
 Solmyr's legitimate inscribed specialty and its casting, and distinguish
 noncanonical Counterspell from independently specified countering mechanics.
 Require focused Guild/teacher/acquisition evidence and retained saved-profile
-behavior. No implementation or verified coverage correction is claimed yet.
+behavior. Shared optional saved `ordinaryAcquisition` now separates learning
+and generated offers from casting; absent markers preserve historical eligibility.
+Fresh Master Chain Lightning disables ordinary acquisition while retaining
+Solmyr's inscription. Fresh Counterspell is inactive, with historical execution
+fixtures explicitly retaining their captured roster. Guild authored/random pools,
+hero learning, House of Wisdom generation and authoritative purchases use the
+policy. Random reward default pools also exclude ordinary-ineligible spells;
+explicit named references retain their prior roster/limiter/casting semantics.
+Adventure acquisition remains unchanged. Final client/test build 73711 succeeds,
+native 27381 passes 42/42, zero skips, on
+`e5a3ed12075a54ed827d1acb60c84b2b647263528ff33fc90eb17592f068f14e`;
+reports `UP059-acquisition-final-focused.log`/`.xml`. Solmyr known casting,
+actual Guild grants and constrained fresh/historical generation, House stock
+and purchase guards, random/default/named reward selection, schema admission
+and retained historical Counterspell AI paths pass. Content gates pass 76/76;
+module/diff checks pass; independent review has no remaining blocker.
+Failed compile/fixture runs are retained in the release failure ledger.
+Coverage counts remain unchanged. Broader world-save/teacher/scroll interaction
+journeys and rendered/playable acceptance remain Phase 2/delivery work.
+No GUI, snapshot or launcher-profile promotion.
 
 ## UP-046 — Elemental Rebirth foundational effects
 

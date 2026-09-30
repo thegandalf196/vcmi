@@ -40,6 +40,26 @@ failed run merely because a later run succeeds.
 
 ## Current implementation priority — complete Skills perks and spells
 
+### 2026-09-30 ordinary spell acquisition policy source/native verified
+
+UP-059 adds an optional saved ordinary-acquisition marker independently of
+casting availability. Fresh Master Chain Lightning remains Solmyr's castable
+specialty but cannot enter ordinary learning/Guild/scroll offers; fresh
+Counterspell is inactive without removing historical countering execution.
+Captured profiles without the marker retain their eligibility. Adventure
+acquisition is unchanged. Guild generation, shared learning and House of Wisdom
+generation/purchase admission and random reward default pools are wired.
+Explicit named references retain existing roster/casting semantics. Client/test
+build 73711 succeeds and native 27381 passes 42/42, zero skips, on
+`e5a3ed12075a54ed827d1acb60c84b2b647263528ff33fc90eb17592f068f14e`.
+Reports are `UP059-acquisition-final-focused.log`/`.xml`; earlier failed compile
+and fixture runs remain in the failure ledger. Offline gates pass 76/76 and
+module/diff checks pass; independent review has no blocker.
+Counts stay unchanged: this repairs admission, not missing spell effects.
+Broad acquisition/save-world journeys and graphical acceptance remain deferred.
+Next missing combat identity is Hand of Fate (UP-057), whose mitigation policy
+is resolved. No GUI, snapshot or launcher-profile promotion.
+
 ### 2026-09-30 corrected fresh School classifications
 
 UP-058 now maps Implosion to Sorcery and Earthquake to Nature in newly captured
