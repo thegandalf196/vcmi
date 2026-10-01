@@ -9,6 +9,46 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-100 — Field Workshop machine and fortification repair
+
+Status: In progress; read-only architecture map, 2026-10-01. UP-023 missing
+Advanced War Machines perk: the Tent may target allied war machines or friendly
+fortifications, repairing with its normal Siege-scaled healing output. Both
+target families are required; do not activate a machine-only substitute. Root
+selects this unblocked candidate after pushedadfabbc46 and a clean worktree;
+coverage151/310 remains unchanged. Separate Luna maps cover authority/shared
+output/persistence and UI/AI/real-siege fixture seams. Root owns architecture,
+ownership, registration/version integration, focused builds/native and Git.
+Acceptance: legal saved perk offer, accepted Tent machine repair and defended-
+town structural repair, exact shared output/current-max cap, hostile/full-health/
+absent-perk guards, ordinary troop-heal preservation and minimum AI selection.
+No art, GUI launch or playable snapshot promotion in this slice.
+Scope question is pending: surviving damaged targets only vs rebuilding destroyed
+machines/fortifications. Structural HP can represent restored walls, but tower
+destruction also removes its shooting unit; positive HP alone cannot reconstruct
+that unit. Occupied breaches likewise need a rebuilding policy. Continue mapping
+the unambiguous damaged-target paths; do not silently count a partial repair
+implementation as complete or fabricate destroyed-target behavior.
+Maps complete: share Tent eligibility/output across the callback, authoritative
+`doHealAction`, UI, AI and automatic-control admission. The latter skips Tents
+when its ordinary troop-only candidate list is empty *before* checking manual
+control, so it must include repair targets even with guaranteed Basic control.
+`getFirstAidHealValue` is a target-capped cloned heal, not raw Siege output;
+repairs need the full output before applying their own missing-HP cap. Machine
+eligibility must remain local to Field Workshop; do not globally loosen
+`CStack::canBeHealed`. Prioritize structural part routing on tower hexes, which
+also contain turret stacks. Existing unsigned CatapultAttack subtracts HP and is
+not a repair packet: add a generic authoritative structural-HP update with
+shared live/detached application, explicit wire/version compatibility, and a
+post-apply sprite refresh (siege wall images are cached). Existing structural HP
+already lives in SiegeInfo's saved payload. A rebuilt turret would additionally
+require its removed shooter unit to be restored; all-destroyed detached battles
+also currently lose the canonical-structural mode inferred from positive HP.
+Retained fixture leads: Surgeon real Tent/legal offers and Fortification Engineer
+real town/validated Citadel setup. Require actual accepted STACK_HEAL to wall hex,
+not merely direct structural packet injection, plus machine repair/AI selection.
+No production changes, build or activation are claimed by this mapping checkpoint.
+
 ## UP-099 — Master Gunner selectable second Ballista shot
 
 Status: Verified (playable delivery pending), 2026-10-01. UP-023 Basic War Machines perk: two
