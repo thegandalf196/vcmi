@@ -11,7 +11,7 @@ entries and their validation/delivery evidence.
 
 ## UP-091 — Reserve and Standard Bearer coverage
 
-Status: Reserve verified (playable delivery pending); Standard Bearer open,
+Status: Reserve and Standard Bearer verified (playable delivery pending),
 2026-10-01. UP-023 missing Basic Battlecraft
 Reserve: a stack gains +2 Speed only during its delayed activation after Waiting.
 Missing Advanced Discipline Standard Bearer: adjacency to at least one other
@@ -73,6 +73,53 @@ Astra review remained service-unavailable and is not claimed. Wider Wait-choice
 attack-catalogue regeneration and the pre-existing full CUnitState binary-snapshot
 contract remain Phase2 findings. Purpose-made art Not done; no playable promotion.
 Next: implement the retained Standard Bearer dynamic adjacency/Morale map.
+
+Standard Bearer implementation started: root chooses a contextual battle Morale
+query and a generic raw-before-cap adjustment, preserving ordinary immune/MAX/MIN
+semantics and existing non-battle behavior. The current BattleProxy returns itself
+and its virtual unit enumeration already merges candidate states; no broader
+enumeration rewrite is needed. One Luna owns shared lib/server calculation, a
+second owns AI valuation and existing client Morale refresh. The third tester
+spawn and old tester reuse were service-rejected; root owns the isolated fixture.
+No registration/coverage claim before focused validation. No new art or layout.
+
+Standard Bearer source is frozen. Independent Astra review finds no BLOCKING
+issue in production/fixture. Four cases cover legal Advanced selection, accepted
+supporter movement through real negative/positive Morale gates, nonstacking,
+raw-before-cap/MAX/MIN/immunity, current controller and candidate branch changes.
+Deferred Phase2 verification: explicit double-wide rear-hex adjacency and supporter
+death/resurrection. Sorrow/Doom valuation uses the existing detached context for
+both unit values; those spells do not change adjacency/control. No coverage yet.
+
+Standard Bearer acceptance: both-target68249 and repaired42607 exit0.
+Principal82873 passes4/4; activated native74455 passes39/39 with zero skips in
+10.603s (`UP091-standard-bearer-activated.log`/`.xml`), including four new cases
+and focused Battlecraft/Reserve/Rally/Sorrow/Doom/Shield of Chaos/Crusade gates.
+Binary SHA-256
+`f12c0d80bf4aa73ec033bfc80c6b68aa0bb36fed2fd7e92665e2a646ce10d261`.
+Data/inventory19/19 pass. Source and fixture-repair Astra reviews have no blocker.
+Both registry copies are active; coverage144→145/310 active, planned166→165,
+Discipline3active/7planned. Existing Morale panel uses the contextual value and
+refresh detects sibling-dependent changes; this is a source/compile hook, not
+graphical acceptance. Art Not done; no playable promotion. Explicit double-wide
+rear-hex and supporter death/resurrection cases remain Phase2 verification.
+
+## UP-092 — Hold Fast activation lifetime
+
+Status: Mapped; not implemented, 2026-10-01. Next UP-023 missing Advanced
+Discipline perk: Defend or Hold the Line grants protection from negative Morale
+until the next Creature Activation begins. Read-only map identifies authoritative
+Defend effect publication and Hold the Line's captured recipient anchors in
+BattleActionProcessor. Existing STACK_GETS_TURN survives rounds and is present at
+the bad-Morale gate, but also expires on HERO_SPELLCAST continuations and misses
+Second Wind HERO_COMMAND starts. Therefore do not reuse it unmodified or globally
+change unrelated legacy bonuses. Root direction: generic activation-begin expiry
+with live/detached parity and a versioned bonus-duration contract; grant a normal
+MINIMUM_MORALE=0 timed effect via authoritative Defend/Order paths. Test genuine
+queue/Morale/Second Wind starts, Hero/spell continuations, round boundaries and
+legal command recipients. Timed grants follow the ordinary buff lifecycle;
+control-change and broken-anchor interactions must be recorded, not mistaken for
+a permanent army-wide immunity. No feature activation or coverage claim yet.
 
 ## UP-090 — Implement Discipline Rally
 
