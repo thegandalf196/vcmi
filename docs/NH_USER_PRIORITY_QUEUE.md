@@ -186,6 +186,19 @@ view and legal relocation without live RNG, and wire the mean into real spell
 candidate scoring. Do not score RNGStub's middle draw as the expected outcome.
 A bounded read-only Luna mapper establishes the shared API and scoring seam;
 root retains architecture and assigns implementation ownership after that audit.
+
+Expected-outcome AI dependency verified, 2026-10-01: authoritative runtime and
+detached AI use the same typed complete uniform candidate pool and nearest-legal
+landing positions. AI computes a signed mean of actual native offensive profiles,
+retaining harmful outcomes and bypassing single RNGStub sample valuation while
+preserving accepted Hero Action/Counterspell validation. Build `52390` passes
+both targets; native `31943` passes 69/69, zero skips, including mixed-outcome
+mean, midpoint distinction, live JSON/RNG preservation and actual selected cast.
+Reports `UP066-UP068-focused-repaired.log`/`.xml`. The fixture failures and
+repairs are retained in NH_RELEASE_FAILURES.md. Polymorph remains inactive:
+Phantom composition and no-legal-original-footprint expiry require decisions,
+then lifecycle/activation verification. Combat identities remain 60/67;
+no playable promotion or rendered acceptance is claimed.
 Phantom composition and exceptional no-space expiry remain unanswered.
 
 ## UP-065 — Toxic Spines does not trigger in the user's playable battle
