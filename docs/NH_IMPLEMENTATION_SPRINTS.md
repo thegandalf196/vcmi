@@ -40,6 +40,32 @@ failed run merely because a later run succeeds.
 
 ## Current implementation priority — complete Skills perks and spells
 
+### 2026-10-01 verified slice — Estate Network / Quick Study
+
+UP-075 now has production, registration, focused server/query and AI evidence.
+Both-target20329 passes; native80431 passes29/29, zero skips, in10.865s;
+final data/inventory19/19 pass. Perks132→134/310, Estates2/10, Learning2/10;
+ranks84/93 and combat identities60/67 unchanged. Existing calendar/RNG/query
+snapshots suffice: no new counter or per-frame invariant was added. Purpose-made
+art remains Not done; no launcher promotion. Phase2 retains comparative economic
+perk valuation, pending-query/crash-recovery and custom calendar/script cases.
+The next missing foundation is deterministic Diplomacy (all three ranks and
+ordinary neutral joining); map authoritative shared eligibility/cost, Leadership
+transfer and minimum AI usage before implementing. Do not let additional tests
+around these verified perks displace that missing system.
+
+### 2026-10-01 current slice — Estate Network / Quick Study
+
+UP-075 maps two independent missing Advanced perks while Academic Study's
+first-visit timing awaits the user. Estate Network must use the authoritative
+weekly event, including the initial week, without granting ordinary daily
+income on setup day. Quick Study must redraw the whole initial level-up offer
+at reached levels5/10/etc before its query is presented, with only one primary
+growth award and no fresh draw on re-exposure. Existing saved calendar, RNG and
+query snapshots should be reused. Root owns integration/registration/builds;
+bounded Luna workers map separate weekly-income and hero-level-up paths.
+No activation, coverage increase or playable delivery is claimed yet.
+
 ### 2026-10-01 verified slice — Learning Mentor / AI market selection
 
 Mentor's field/town weekly teaching is source/native verified, including real
