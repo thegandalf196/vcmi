@@ -9,6 +9,104 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-106 — Estates Financier
+
+Status: Implemented (verification pending), 2026-10-01. Independent UP-023 missing
+Expert coverage while unresolved Logistics/Luck choices remain item-level
+blockers. Canonical perk: at the start of each week gain1% current Gold treasury
+as interest, capped at1000 Gold. Map and reuse the existing weekly income/resource
+aggregation and active saved-perk gate, including the treasury snapshot used
+for all eligible heroes. No daily polling or redundant per-week stored state if
+the authoritative calendar event already owns the once-weekly trigger. Separate
+Luna maps cover production and legal-offer/native/resource receipt evidence.
+Root owns architecture, activation, configuration, CMake/docs/build/native/Git.
+Acceptance: legal Expert offer, actual weekly resource packet/treasury gain,
+integer/cap/ordinary-day/inactive guards, minimum AI receipt, focused successful
+build/native/data gates. Coverage remains154/310 until verified; no GUI/promotion.
+Runtime source is frozen in NewTurnProcessor.cpp. Root contract uses one
+pre-NewTurn treasury snapshot, floor(max(0, Gold)/100), capped1000 per active
+holder, after ordinary income/handicap adjustments; the existing weekly event
+includes day0→1 and supplies cadence without redundant saved counters. Separate
+fixture ownership covers legal Expert offers and real packet/treasury receipts.
+Independent Astra review finds no blocker and no new deferred defect. Both-
+target build71297 is live with12 jobs (`UP106-shared-build.log`); re-poll that
+handle, do not run native tests or launch a competing build while it is live.
+Shared build71297 exits0; native96952 passes12/12 relevant Estate Network,
+Tax Collector and existing AI income/receipt tests, zero skips in4.367s
+(`UP106-shared.log`/`.xml`). This proves adjacent income regressions, not the
+new Financier principal path; registration/counts remain unchanged pending
+the isolated frozen fixture. No native or build process remains live.
+
+## UP-105 — Luck Perfect Fortune
+
+Status: Read-only map, 2026-10-01. Independent UP-023 missing-coverage candidate
+while Logistics items await explicit decisions. Canonical Expert perk: the
+first eligible attack made by the hero's army each combat triggers positive
+Luck automatically. Map shared eligibility, current-controller army ownership,
+once-per-combat saved/replicated expenditure and detached AI forecasts; do not
+silently redefine eligibility or substitute a chance boost for the guarantee.
+Root retains architecture, persistence/version/network, activation, build/native
+and Git. No implementation or coverage increase yet. Focused acceptance needs
+legal perk offers and actual attacks, one guaranteed eligible strike, subsequent
+ordinary Luck, inactive/immune guards and shared AI/save-state sanity.
+Resumption audit finds the existing UP-081 source map and pending No Luck
+immunity decision. This duplicate selection is superseded by UP-081; do not
+repeat its map or implement around that unresolved boundary. UP-106 Financier
+is selected instead. No new Perfect Fortune implementation is counted.
+
+## UP-104 — Logistics Pursuit March
+
+Status: Read-only map, 2026-10-01. Independent UP-023 missing-coverage candidate
+while UP-103 awaits its item-level stacking decision. Canonical Advanced perk:
+after winning combat recover10% maximum daily Movement, once per day. Map the
+authoritative victory reward, surviving winning hero, saved/replicated daily
+expenditure and minimum AI/native seams before root assigns safe ownership.
+No new implementation/activation/count is claimed. Root retains semantics,
+state/version/network integration, CMake/config/docs/build/native and Git.
+Acceptance: legal perk offer, accepted victory and exact recovery, once/day and
+next-day behavior, loss/inactive guards, persistence and focused native evidence.
+Runtime map complete: BattleResultProcessor::battleFinalize is the authoritative
+reward point after BattleResultsApplied and before hero removal. Current-mode
+movementPointsLimit supplies land/sea capacity; SetMovePoints replicates recovery.
+Castle Gate supplies a saved last-use-day/packet pattern. AI ChainActor consumes
+remaining Movement, but AIGateway::heroMovePointsChanged is currently a no-op;
+check an event-driven path invalidation rather than adding a polling scan.
+Item-level question asked: whether recovery caps at daily maximum and whether
+a zero-recovery victory spends the daily allowance. No production implementation
+while that materially different rule remains unresolved. A declared winner
+with surviving units is the eligible hero; do not silently narrow wins to only
+NORMAL results when the opponent's retreat/surrender still declares a winner.
+
+## UP-103 — Logistics Rapid Embarkation
+
+Status: Open; design-choice blocker, 2026-10-01. Continue UP-023 Phase1 missing
+perk coverage after pushed1b3088ec9 and a clean worktree. The canonical Advanced
+perk makes embarking/disembarking cost10% of maximum daily Movement. Map the
+complete boarding charge, source/destination pool conversion and admission;
+do not merely discount the adjacent step while retaining the old all-remaining
+charge. Separate Luna maps cover production and legal-offer/native/AI seams.
+Root owns semantics, architecture, configuration, CMake, build/native and Git.
+Preserve ordinary travel, blocked landing, boats/airship distinction, existing
+free-boarding effects and saved planned-registry gates. No GUI or promotion.
+Acceptance: legal perk acquisition, exact forecasts versus accepted boarding/
+deboarding spending, insufficient-Movement rejection, inactive guards, minimum
+AI route consumption, successful build and focused native/data gates. Coverage
+remains154/310 pending verified activation. Item-level ambiguities do not block
+other independent missing specification work.
+Item-level design question asked: Navigation halves boarding costs, while Rapid
+Embarkation specifies10% maximum daily Movement. Does their combination remain
+fixed10% (Navigation retains sea-capacity benefit), or halve again to5%? Do not
+silently select one stacking rule. Continue read-only maps; postpone production
+activation until resolved, and use another unblocked missing item if needed.
+Runtime map complete: CPathfinderHelper::getMovementCost supplies admission;
+CGHeroInstance::movementPointsAfterEmbark supplies total debit and proportional
+source/destination pool conversion. Apply any fixed fee in source-pool units
+before that conversion, and preserve SAIL-only transitions, ordinary WATER,
+blocked/coastal landing and the existing airship exclusion. TurnInfo can cache
+saved active-perk eligibility once; no new serialized state is required. Human
+and Nullkiller paths already share these routines and perk invalidation hooks.
+The source map is not implementation evidence; status stays planned.
+
 ## UP-102 — Logistics road and terrain movement perks
 
 Status: Verified (playable delivery pending), 2026-10-01. Continue UP-023
