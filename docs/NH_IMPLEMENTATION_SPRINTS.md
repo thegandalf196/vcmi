@@ -40,6 +40,17 @@ failed run merely because a later run succeeds.
 
 ## Current implementation priority — complete Skills perks and spells
 
+UP-092 Hold Fast is active and Phase1 verified. Both-target2758 exits0;
+principal85726 passes7/7 and activated69879 passes28/28, zero skips in8.612s.
+Data/inventory19/19 pass; independent Astra reviews have no remaining blocker.
+Coverage146/310 active,164 planned; Discipline4/6. The generic activation-begin
+duration, authoritative Defend/Hold Line grants, logs, AI forecasts and guarded
+bonus persistence are implemented. Canonical Defend completion and current-owner
+Second Wind activation/end defects were repaired, not bypassed by weaker fixtures.
+No art approval or playable promotion. Phase2 retains future negative-duration
+Purify consumers, within-activation controller changes and Morale forecast
+correlations. Next: source-aware Fearless immunity, mapped without source edits.
+
 UP-091 Standard Bearer is active and Phase1 verified. Both-target42607 exits0;
 principal82873 passes4/4 and activated74455 passes39/39 with zero skips in10.603s.
 Data/inventory19/19 pass; independent Astra reviews find no blocker. Coverage

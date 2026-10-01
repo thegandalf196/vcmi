@@ -106,7 +106,7 @@ rear-hex and supporter death/resurrection cases remain Phase2 verification.
 
 ## UP-092 — Hold Fast activation lifetime
 
-Status: Mapped; not implemented, 2026-10-01. Next UP-023 missing Advanced
+Status: Verified (playable delivery pending), 2026-10-01. UP-023 missing Advanced
 Discipline perk: Defend or Hold the Line grants protection from negative Morale
 until the next Creature Activation begins. Read-only map identifies authoritative
 Defend effect publication and Hold the Line's captured recipient anchors in
@@ -120,6 +120,57 @@ queue/Morale/Second Wind starts, Hero/spell continuations, round boundaries and
 legal command recipients. Timed grants follow the ordinary buff lifecycle;
 control-change and broken-anchor interactions must be recorded, not mistaken for
 a permanent army-wide immunity. No feature activation or coverage claim yet.
+
+Two Luna workers own generic duration/save/live-detached expiry and authoritative
+Defend/Order grants respectively. A new tester spawn was service-rejected; an
+available completed tester was successfully reused with isolated fixture ownership.
+Root owns CMake, registration, focused serialized builds and integration. The
+preceding scope-confirmation turn changed no source; this continuation resumes
+the next safe implementation item. No native acceptance or coverage change yet.
+
+Generic duration source is implemented: append-only bit14 and save feature,
+parser lookup/schema/docs and live/detached genuine-activation expiry. Independent
+Astra duration review finds no blocker and confirms pre-activation Morale ordering.
+Grant/fixture work remains in progress. Purify's explicit temporary-duration mask
+does not include the new duration; the present beneficial secondary-skill grant
+is unaffected. Record extension for future negative spell consumers in Phase2.
+
+Production and six-case fixture are frozen. Independent Astra production review
+finds no blocker. Root/tester repaired source-review fixture mistakes before the
+first build: protected moraleVal already includes the floor, -1 could be offset
+by Archangel/Discipline bonuses, copied Time Stop bonuses need selector removal,
+and the Second Wind capability query belongs on the battle callback. Both-target
+build77264 is live with12 jobs (`UP092-build.log`); revalidate this exact process
+handle on continuation, not a lock or elapsed time. Do not restart on observation
+timeout. No native pass, registration activation or coverage change yet.
+
+Acceptance checkpoint: repaired80348 and final controller2758 both-target builds
+exit0. Principal85726 passes7/7; activated69879 passes28/28, zero skips in8.612s
+(`UP092-verified.log`/`.xml`), including Hold Fast7, Reserve5, Rally4, Standard
+Bearer4, Battlecraft7 and one actual Second Wind damage/activation regression.
+Binary SHA-256
+`a20a31dee29b913dec0a59c64554e318093c9555858513839ec70aa6700d9bab`.
+Data/inventory19/19 pass; independent reviews have no remaining blocker.
+The 5/6 initial native result exposed canonical Defend→Second Wind eligibility
+and original-side bookkeeping defects. Production now recognizes canonical
+Defend completion and current-controller activation/start/end; the seventh case
+verifies actual hypnotized Defend/Second Wind and detached isolation. Both registry
+copies active; coverage145→146/310, planned165→164; Discipline4/6. Purpose-made
+art Not done; no GUI/promotion or playable acceptance. Phase2 retains future
+negative-duration Purify consumers, control changes during an activation and
+cross-perk Morale forecast correlations.
+
+## UP-093 — Discipline Fearless
+
+Status: Mapped; not implemented, 2026-10-01. Next unblocked UP-023 Advanced
+perk: immunity to explicitly non-magical fear, not negative Morale. Read-only map
+finds FEARFUL creature/commander ability bonuses and one authoritative turn-start
+roll before the fear trigger packet. No Dread spell or spell-sourced fear exists
+in current content. Classify source contributions before aggregation/publication;
+do not erase future spell fear or confuse the transient fear flag with immunity.
+Root must pin the source-aware helper, current-controller ownership, minimum AI
+hook and focused native evidence before activation. Existing source metadata is
+available; the result packet itself has no provenance. No edits/count change yet.
 
 ## UP-090 — Implement Discipline Rally
 
