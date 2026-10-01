@@ -11,7 +11,7 @@ entries and their validation/delivery evidence.
 
 ## UP-089 — Implement Luck Twist of Fate
 
-Status: Shared infrastructure implementation, 2026-10-01. UP-023 missing Expert Luck
+Status: Runtime implementation, 2026-10-01. UP-023 missing Expert Luck
 perk: reroll the first random combat roll each combat whose result is negative
 for the hero's army; deterministic effects cannot be rerolled. Map existing
 authoritative random-roll and adverse-result classification before choosing a
@@ -105,6 +105,82 @@ Six new infrastructure cases plus26 focused Luck regressions pass. Binary SHA
 Data/inventory19/19 pass; independent infrastructure review has no blocker.
 This releases the frozen candidate for runtime wiring but does not activate the
 global perk or add completed coverage. Counts remain141/310 active,169 planned.
+
+Verified infrastructure is committed/pushed as2220d6f5d. Root added live weighted
+bad-Luck/Morale stochastic classification and a frozen favorable-proc chance
+preparation seam; existing favorable rolls reuse that exact rounding. Attack/
+Morale worker is released to its two owned processors. Spell-worker retry was
+again service-rejected; its full approved scope remains queued, not omitted.
+No full-perk build/native evidence or completed coverage is claimed at this stage.
+
+The user explicitly reconfirmed the four-category adverse scope on resumption.
+Attack/Morale wiring is frozen for root review; the bounded spell worker is now
+running with exclusive BattleSpellMechanics ownership. A concurrent actual-runtime
+test-worker spawn was rejected by the service thread limit; retry after the spell
+worker completes. Canonical scope is unchanged, and global activation remains
+planned until actual runtime and minimum AI evidence pass their focused gates.
+
+Spell worker froze its bounded two-file slice without build/tests. Ordinary
+prepared hostile recipients and Mirror have source wiring, but root review found
+a blocking timing gap: Chain Lightning's `transformByChain` consults `wouldResist`
+during target preparation, and Hand of Fate's random collateral consults it later
+during application. Resolving only after `collectTargets` does not cover those
+actual recipients correctly. Before activation, root must move resolution to the
+actual resistance-consumer decision with cached legacy first draws, frozen chance,
+current-controller hostility, and once-per-recipient processing. Do not discard
+the approved scope or count the incomplete spell slice as completed coverage.
+Runtime source remains unverified; no build, commit or promotion of it is claimed.
+
+Root selected authoritative lazy resistance resolution at actual consumer queries,
+with per-recipient cached final decisions and scope-bound callback/RNG lifetime.
+The repair worker owns only spell-mechanics files. Root added first-attack negative
+Luck forecast awareness in the shared callback: a stochastic adverse probability
+is squared while the side's reroll is available, after existing suppression rules.
+Conditional future-roll correlations remain a Phase2 valuation finding, not a
+claim of exhaustive AI forecasting. Parallel tester retry was service-rejected.
+
+Lazy resistance source is frozen: `wouldResist` shares a once-resolved recipient
+cache with ordinary filtering, chain routing and late collateral; scoped callback
+cleanup covers exceptions and predictive evaluation suppresses authoritative
+resolution. Root integrated the detached AI callback's local packet transition
+and first-event hostile MR forecasts. After new tester spawns were again rejected,
+an idle Luna follow-up succeeded with exclusive new-test-file ownership. Production
+compile starts separately while that unregistered test file is written; no source
+owner may change the frozen production candidate during this gate.
+
+Production compile77876 exits0 (`UP089-runtime-build.log`). Existing focused
+Luck/infrastructure native59072 passes32/32, zero skips in8.445s
+(`UP089-runtime-regressions.log`/`.xml`); binary SHA-256
+`e1196ff56aa5e28adc2240fc7598099266a0d654b5a781abac1cec2bd0b2d7c2`.
+Data/inventory19/19 also pass. New actual-runtime cases remain unregistered and
+unbuilt pending the tester's frozen source; this gate proves regressions only,
+not the full approved adverse-result scope. Coverage/registration stay unchanged.
+
+Callsite audit found another required runtime slice before global activation:
+scripted Destruction/Transmutation still use generic actor-only combat chance,
+and Death Stare uses a binomial kill roll. These are successful hostile chance
+abilities too, not excluded damage variance. Add an explicit harmed-recipient
+script bridge preserving frozen chance and legacy RNG, and classify Death Stare's
+positive kill result as adverse with exactly one final full redraw. Ordinary
+random damage/target selection remain excluded. This is missing implementation,
+not a Phase2 excuse to narrow scope; the current native pass does not cover it.
+
+Runtime dependency checkpoint verified: both-target4456 exits0
+(`UP089-chain-fixture-build.log`); final native34416 passes35/35, zero skips
+in9.458s (`UP089-runtime-verified.log`/`.xml`). Binary SHA-256
+`e6bd7c8ccd8ee258a953e1e4103005def3be6210b51ca3d7e56d5a7efba5b852`.
+Three new cases verify actual primary MR during chain preparation (including
+unchanged secondary-hop HP), negative-Luck forecasts before/after expenditure,
+and local hypothetical resolver isolation. Independent Astra source review has
+no production blocker; its weak chain assertion finding is repaired and reviewed.
+Initial missing-header and unstarted-round failures remain recorded.
+
+Do not activate or count the perk yet. Next required slice is the scripted
+hostile-ability bridge, followed by focused actual negative-Luck/Morale, hostile
+proc/suppression and late-collateral evidence. Existing deterministic/state tests
+pass but do not substitute for these principal callsite cases. Broader multi-event
+AI valuation and reflection interaction matrices remain Phase2 integration work.
+No GUI, playable promotion or art completion is claimed.
 
 ## UP-088 — Implement Luck Opportunist
 

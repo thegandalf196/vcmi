@@ -78,6 +78,37 @@ Binary SHA `adefcb23c6001b687c0f425d29dafbc69ff9fbe749edbb31063a5c86275b08b8`.
 Freeze is released for actual runtime wiring. Registration/coverage unchanged;
 this is a verified dependency checkpoint, not completed Twist of Fate.
 
+Runtime continuation: attack/Morale and hostile-proc callsites are frozen. Root
+review rejected post-target-collection MR resolution because Chain Lightning
+routes during preparation and Hand of Fate chooses collateral during application.
+The repaired spell slice uses a shared per-recipient lazy final decision, preserving
+legacy first draws, with authoritative callback/RNG access scoped to the cast.
+Prediction suppresses it; reflection rebuilds the cache. Root added branch-local
+AI resolver application and first-event negative Luck/hostile MR forecasts.
+Broader conditional multi-event valuation remains a Phase2 finding.
+
+New concurrent worker spawns were service-rejected; an idle Luna follow-up now
+owns only the new actual-runtime fixture. Both-target compile77876 is live with
+12 jobs (`UP089-runtime-build.log`) while that test file remains unregistered.
+Data/inventory19/19 pass. No runtime-native pass, global activation, coverage
+increase, commit or playable promotion is claimed yet.
+
+Production compile77876 exits0; regression native59072 passes32/32 with zero
+skips in8.445s (`UP089-runtime-regressions.log`/`.xml`). Binary SHA-256
+`e1196ff56aa5e28adc2240fc7598099266a0d654b5a781abac1cec2bd0b2d7c2`.
+The new fixture is still being written and is not covered by this pass. Runtime
+acceptance and independent review remain pending; no perk-count increase yet.
+
+Runtime dependency checkpoint: both-target4456 exits0 and final native34416
+passes35/35, zero skips in9.458s (`UP089-runtime-verified.log`/`.xml`). Binary SHA
+`e6bd7c8ccd8ee258a953e1e4103005def3be6210b51ca3d7e56d5a7efba5b852`.
+Three new cases cover actual lazy chain MR with a secondary-hop guard, first-event
+Luck forecasting, and local hypothetical resolver expenditure. Independent source
+and fixture-repair reviews have no blocker; failures are retained in the failure
+register. No activation/count increase: scripted Destruction, Transmutation and
+Death Stare still need harmed-recipient reroll support, followed by principal
+attack/Morale/proc and late-collateral evidence. These are required Phase1 work.
+
 ### 2026-10-01 verified slice — Luck Chain of Fortune
 
 UP-087 follows the approved different-stack recipient and carry-until-used
