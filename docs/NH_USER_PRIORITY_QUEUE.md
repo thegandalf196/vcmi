@@ -23,6 +23,20 @@ outcomes, genuine activation expiry, shared AI prediction/branch isolation,
 save representation and focused gates. Serendipity's round1 question remains
 pending, not silently replaced by an assumption.
 
+Map complete: add an independent Gambler side flag and round-long first-attack
+expenditure to shared Luck state; use current controller for the first-strike
+bonus and include reactions. No Luck still prevents the+3 but consumes the
+first attack and qualifies for the non-positive penalty. Store the-2 on the
+unit through an ordinary LUCK bonus/SetStackEffect, not a side-owned recipient
+set, so it follows controller changes. STACK_GETS_TURN supplies the normal
+expiry seam; root must check Second Wind/HERO_COMMAND genuine activation
+before relying on it, because existing nextTurn paths skip that removal for
+HERO_COMMAND. Detached first-strike expenditure must happen even for uncertain
+Luck and remain branch-local. Conditional stochastic penalty correlation is
+Phase2 AI breadth, not permission to fabricate a guaranteed roll. Use separate
+Gambler fixtures and append-only side-state serialization. No activation yet;
+the root owns the final lifecycle decision and implementation partitions.
+
 ## UP-085 — Implement Luck Serendipity
 
 Status: Read-only architecture map, 2026-10-01. UP-023 missing Advanced Luck
