@@ -229,7 +229,7 @@ No source/count change; this question does not block other missing features.
 
 ## UP-095 — War Machines Surgeon
 
-Status: Mapped; shared foundation required, 2026-10-01. UP-023 Basic perk: First Aid Tent
+Status: Verified (playable delivery pending), 2026-10-01. UP-023 Basic perk: First Aid Tent
 healing removes one physical affliction, in priority order Poison, Disease,
 Bleeding, then other eligible physical afflictions by application order. One Luna
 maps the existing authoritative Tent/Cure status path, current-controller
@@ -248,6 +248,112 @@ groups as physical or call a two-affliction subset complete. Build a shared
 selection/removal contract before registration; minimum AI consumer is
 `CBattleAI::useHealingTent`, which currently only picks the most wounded stack.
 No source/count change. Root owns the next foundation choice and focused evidence.
+
+Foundation contract: an effect-neutral PHYSICAL_AFFLICTION bonus marker carries
+explicit kind and applicationOrder in existing JsonNode bonus parameters. Its
+source/sid identifies the removable effect group; do not infer physical eligibility
+from arbitrary negative magic. Poison, Disease and Bleeding precede other marked
+groups, which use application order. Stamp order at effect application, preserve
+it on refresh and replicate it in the authoritative effect packet. No polling or
+per-frame scan is introduced. Stored physical Poison remains a separate descriptor.
+One Luna owns marker/parser/schema/save plumbing, one owns shared live/detached
+selection and lifecycle, and one owns an isolated native fixture. Root owns packet
+integration, CMake, production consumers, build and activation. The marker plumbing
+is implemented but unverified; a pre-cast numeric-range issue found in root review
+was repaired before build. No Surgeon activation or coverage change yet; a marker
+foundation alone does not implement Bleeding or the real First Aid Tent consumer.
+
+Independent runtime review found a blocking detached-copy gap before build:
+the existing projection filter captures spell/Order sources only, so a parent-local
+generic non-spell affliction can survive child removal through recreated bonus
+pointer identities. The runtime owner is repairing capture of exact explicitly
+marked source/sid groups, including their underlying effects, without freezing
+unrelated attributes. A focused parent/child removal/refresh regression is assigned.
+The real Tent and AI consumer worker owns only BattleActionProcessor/BattleAI;
+registration remains planned until actual healing evidence passes. Marker parser
+and outgoing-packet review have no remaining blocker; data/inventory19/19 pass.
+No build has started while the runtime candidate is being repaired.
+
+Tent and AI consumer source is frozen and independently reviewed without a
+blocker: exactly one shared selection after actual friendly living Tent HP gain,
+authoritative group/stored-Poison removal, named feedback and current-controller
+AI target search. Foundation fixture has12 cases including parser, persistence
+and parent/child full-group removal/refresh; no native pass is claimed. Follow-up
+review cleared full-group removal but found marker-only removal followed by
+recapture/aging losing remaining non-spell effects. Root extends runtime ownership
+to StackWithBonuses.h for narrowly retained branch-owned captured group identities;
+they preserve projection provenance, not eligibility. Add the marker-only and
+grandchild regression before freeze/build. The real Surgeon fixture is separately
+assigned and will be registered only after it exists and is frozen. Coverage is
+unchanged; no build, activation, commit or playable promotion is claimed yet.
+
+Production and13-case foundation fixture are now frozen. The private detached
+source/sid history repair is independently cleared: capture, suppression,
+refresh, aging and descendant copies preserve underlying effects after marker
+removal without treating history as affliction eligibility. Both-target build
+31895 is live with12 jobs (`UP095-build.log`); revalidate that process handle on
+continuation, never restart from elapsed time or a log alone. No native pass or
+Surgeon activation yet. The unregistered actual-healing fixture is being written
+separately; it is not part of this frozen build candidate. No GUI or promotion.
+
+Build31895 is terminal exit1, not a live wait: PhysicalAffliction.cpp needs the
+direct BonusList.h include rather than a forward declaration. Root repairs the
+include and records the failure in NH_RELEASE_FAILURES; no assertions or gameplay
+scope are weakened. Retry and focused native evidence remain required.
+Retry88256 is live with12 jobs (`UP095-build-retry1.log`); preserve and re-poll
+this exact handle on continuation. No native test runs concurrently with build.
+
+Retry88256 is terminal exit1 in the foundation fixture (missing JsonBonus.h,
+ambiguous marker-removal overload and nonexistent STACKS_ATTACK). The tester
+repairs all three without weakening assertions; production source stays frozen.
+The four-case actual Surgeon fixture is independently reviewed, repaired and
+now registered for the next combined build. Require13 foundation and4 actual
+healing cases to pass before activation; synthetic generic Bleeding statuses
+exercise removal, not a claim that a production Bleeding damage source exists.
+Combined retry72892 is live with12 jobs (`UP095-build-retry2.log`). Re-poll that
+exact handle, then run the focused native filter only after terminal build success.
+
+Retry72892 is terminal exit1: the Surgeon fixture lacks direct definitions for
+CGameHandler, BattleProcessor and SetStackEffect. The tester owns the include-only
+repair; assertions and production behavior remain unchanged. Rebuild before the
+17-case principal gate; no activation or playable acceptance is claimed.
+The include-only repair is frozen. Retry67115 runs the combined targets with12
+jobs (`UP095-build-retry3.log`); preserve its handle until terminal completion.
+Retry67115 is terminal exit0 for both targets. Principal native90035 is now
+running the13 foundation and4 actual-healing cases (`UP095-principal.log`/`.xml`).
+Activation remains pending its terminal evidence; no GUI or promotion.
+Principal90035 is terminal exit139 in the first mock-based foundation case.
+GDB74245 identifies a null UnitInfoMock unitType during acquireState assignment,
+not an accepted Surgeon healing failure. The tester repairs valid fixture creature
+setup/lifetime without bypassing the state-copy path. No activation; rerun the
+17-case gate after a successful incremental build.
+The valid-creature fixture repair is frozen. Incremental80241 builds both targets
+with12 jobs (`UP095-build-retry4.log`); native retry must wait for terminal success.
+Incremental80241 exits0. Principal retry4916 exits1:13 foundation cases pass,
+all4 Surgeon cases fail in setup on a legacy capability-version/warMachineShop
+mismatch. The tester repairs current-schema fixture setup without deleting rules
+or weakening assertions. No perk activation until actual healing passes.
+The fixture now retains canonical capability v4 instead of forcing legacy v3;
+shop/progression data and all healing assertions remain intact. Incremental24147
+runs both targets with12 jobs (`UP095-build-retry5.log`).
+Incremental24147 exits0; principal retry37773 passes15/17. Stored-Poison cleansing
+and no-perk healing pass. Remaining fixture preconditions are healthy-target
+healing forecast and Tent auto-skip without a wounded friendly recipient. The
+tester verifies and repairs setup while preserving principal/negative assertions.
+The priority forecast now follows wounding and still requires40 HP and four real
+heals. A separate wounded legal friendly stack prevents Tent auto-skip in the
+negative-target case. Incremental64786 runs both targets (`UP095-build-retry6.log`)
+with12 jobs; independent fixture-delta review is assigned before acceptance.
+Final64786 exits0 for both targets. Principal29476 passes17/17 in1.997s; activated
+59354 passes34/34 in6.552s with zero skips, including relevant timed projection,
+Cure, Purify and Toxic Spines regressions. Data/inventory19/19 pass; Surgeon is
+active and the embedded module is regenerated. Independent final fixture review
+has no blocker. Coverage147→148/310, planned163→162; War Machines1/9. Binary
+`beb89e7e361cdd3f42e9b664a8b3de5d9b816b6d1662410896ca39a76d273e1d`.
+Bleeding producer remains separate content work; generic marked Bleeding removal
+is exercised. Phase2 retains packet-wide preprocessing rollback for later-unit
+errors, broader control-change interactions, producer-duration consistency and
+combat-log localization. No GUI, art approval or playable promotion claimed.
 
 ## UP-090 — Implement Discipline Rally
 
