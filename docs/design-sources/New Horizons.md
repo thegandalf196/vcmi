@@ -4635,10 +4635,14 @@ Luck governs favorable and unfavorable chance in combat. The exact -10 to +10 tr
 |Serendipity|Advanced|If no friendly positive Luck trigger occurred during the previous round, the first friendly attack of the new round receives +2 Luck for that attack.|
 |Lucky Recovery|Advanced|When a melee attack triggers positive Luck, surviving creatures in the attacker recover HP equal to 10% of actual damage dealt.|
 |Gambler|Advanced|The first friendly attack each round gains +3 Luck for that attack. If positive Luck does not trigger, the attacking stack suffers -2 Luck until its next activation.|
-|Chain of Fortune|Advanced|Once per round after a friendly positive Luck trigger, the next friendly stack to attack gains +1 Luck for that attack.|
+|Chain of Fortune|Advanced|Once per round after a friendly positive Luck trigger, the next different friendly stack to attack gains +1 Luck for that attack.|
 |Twist of Fate|Expert|The first random combat roll each combat that produces a negative result for the hero's army is automatically rerolled once. Deterministic effects cannot be rerolled.|
 |Perfect Fortune|Expert|The first eligible attack made by the hero's army each combat triggers positive Luck automatically.|
 
+Chain of Fortune cannot benefit another strike by the stack that supplied its
+positive Luck trigger. The once-per-round restriction limits triggering; it
+does not expire an unused benefit. That benefit waits for the next different
+friendly stack to attack, even if that attack occurs in a later round.
 
 
 ### Faction Skills

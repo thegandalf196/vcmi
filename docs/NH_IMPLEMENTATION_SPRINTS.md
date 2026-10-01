@@ -40,6 +40,30 @@ failed run merely because a later run succeeds.
 
 ## Current implementation priority — complete Skills perks and spells
 
+### 2026-10-01 verified slice — Luck Gambler
+
+UP-086 implements first-friendly-attack+3 Luck each round and failed-positive
+trigger-2 Luck on the attacking unit until its next genuine activation. Shared
+round expenditure is independent of whether a roll has a known outcome; the
+per-unit timed bonus follows controller changes. Only the Gambler bonus expires
+through battleBeginsActivation, including Second Wind, without broadening other
+legacy lifetimes. Runtime, AI and fixture work are partitioned; shared state,
+append-only version/setup/helpers/registration are root-owned. Staged activation
+does not increase completed coverage. Exact stochastic multihit/penalty
+correlation remains Phase2 breadth; principal paths and branch isolation must
+work now. No art or playable promotion claim.
+
+Final both-target76677 passes; native39678 passes20/20, zero skips in5.324s,
+reports `UP086-verified.log`/`.xml`. Six new cases cover the principal
+authoritative, packet/save and detached paths, with14 Luck regressions. Fixture
+visibility and ordinary Advanced Luck+2 baseline failures were repaired without
+production rule changes and retained in NH_RELEASE_FAILURES. Data/inventory
+19/19 pass; independent source review has no blocker. Coverage140/310 active,
+170 planned; Luck4/6. Art Not done and playable delivery pending. Chain of
+Fortune's approved different-stack/carry-until-used semantics are canonical;
+its implementation is next. Opportunist's movement-continuation map is ready,
+with a pending own-activation/reaction question.
+
 ### 2026-10-01 current slice — Luck Second Chance
 
 UP-084 implements the next unblocked Basic Luck perk. Independent battle-long active
