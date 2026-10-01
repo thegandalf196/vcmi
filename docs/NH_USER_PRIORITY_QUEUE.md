@@ -9,6 +9,70 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-102 — Logistics road and terrain movement perks
+
+Status: Verified (playable delivery pending), 2026-10-01. Continue UP-023
+Phase1 missing perk coverage after pushedbc39d04a7 and a clean worktree.
+Roadmaster reduces normal road movement cost by an additional25%; Wayfarer caps
+passable-terrain cost at125% of base clear-terrain cost. These provide missing
+Advanced/Expert Logistics progression and must apply through the shared movement
+calculation used by authority, player path prediction and AI, not a frontend-only
+discount. Preserve blocked terrain, movement modes, ordinary road/terrain rules,
+diagonal/end-of-day behavior and old-save activation gates. Map formula ordering
+and minimal actual-movement/native fixtures before assigning ownership. Root owns
+architecture, activation, registration, CMake/docs/builds/Git; no GUI or promotion.
+Acceptance: legal perk offers, exact road/capped terrain forecasts and accepted
+movement spending, absent-perk/ordinary mode guards, shared AI path usage, focused
+build/native gates and deferred integration findings. Counts stay152/310 until
+verified. Existing item-level design questions remain independent blockers.
+Shared map complete: CPathfinderHelper::getMovementCost feeds authoritative
+admission/spending, player CPathfinder and Nullkiller's AI pathfinder. Root chooses
+the canonical single-final-ceiling policy: cap the terrain multiplier at5/4 after
+Pathfinding, before roads and explicit travel multipliers; Roadmaster applies3/4
+to the road factor before that same final ceiling. Do not integer-round at an
+intermediate cap or discount the already-rounded cost. Cached TurnInfo flags are
+derived once from saved active perk/rank data, not queried for every path node.
+No new gameplay state/serialization is needed; old saved registries are not
+silently rewritten. The Luna cost mapper now owns the bounded shared helper/
+TurnInfo/CPathfinder production edit and pure formula tests; an independent
+consumer map prepares accepted-movement and AI evidence. Root retains activation,
+build/version integration, documentation and Git.
+The runtime/pure-formula source is frozen. The consumer map confirms existing
+HeroPerkChosen path invalidation reaches both human and Nullkiller caches; no
+parallel UI/AI cost implementation is required. An independent Astra reviews
+the shared candidate while a Luna owns an isolated legal-offer/accepted-movement
+fixture. Root starts only the frozen shared build; the not-yet-created fixture
+is not registered prematurely. Registration remains planned pending native gates.
+Shared build46311 exits0; native66894 passes21/21 pure formula and existing
+movement/boarding/Water Walk/Fly/legality cases, zero skips in3.521s. Independent
+Astra source review reports no blocker. This is shared-source evidence, not
+Roadmaster/Wayfarer accepted-offer completion. Separate Luna fixture owners now
+cover the real movement path and the isolated Nullkiller projected-route path;
+neither edits production/config/CMake or runs competing builds/native.
+The accepted-movement fixture is frozen and registered. Root corrected draft
+expectations before execution (adjacent versus multi-step cost and the active
+terrain cap); no production rule was weakened. Both-target build76132 is live
+with12 jobs (`UP102-movement-fixture-build.log`). AI fixture ownership remains
+separate and its unfinished source is not registered. Re-poll the same build
+handle; no native execution while it is live.
+Build76132 exits0; native72673 passes23/23, zero skips in4.249s, including
+two legal-offer/forecast/accepted-movement cases (`UP102-movement-fixture.log`
+and `.xml`). AI source is now frozen and registered; root repairs its source-
+terrain setup before execution, without changing the production formula.
+Both-target build20420 is live (`UP102-ai-fixture-build.log`). Full activation
+and coverage still await that focused AI route/cache gate.
+Final gate: both-target20420 exits0; activated28363 passes25/25, zero skips
+in4.827s (`UP102-activated.log`/`.xml`). Legal Scouting→Roadmaster→Wayfarer
+offers, literal forecasts and accepted spending, saved-planned/blocked guards,
+and actual Nullkiller projected routes after cache invalidation pass. Data/
+inventory19/19 and module drift check pass. Both registry copies are active;
+coverage152→154/310, planned158→156, Logistics5active/5planned. Binary SHA-256:
+`72dcd031ee08bc4342b2a472372608965f97c6f18cc46e7e82a2d7d8d898cfc2`.
+Independent production review has no blocker. Phase2 retains client visitor
+fan-out rather than direct interface-hook execution, wider multi-day/mode/perk
+interactions and full old-save loading evidence. No new serialized state; no
+GUI, artwork approval or playable snapshot promotion is claimed.
+
 ## UP-101 — Quartermaster extra war-machine activation
 
 Status: Verified (playable delivery pending), 2026-10-01. Continue UP-023 Phase1

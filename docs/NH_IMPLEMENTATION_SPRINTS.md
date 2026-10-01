@@ -40,6 +40,16 @@ failed run merely because a later run succeeds.
 
 ## Current implementation priority — complete Skills perks and spells
 
+Latest verified slice: UP-102 Logistics Roadmaster and Wayfarer. Shared rational
+costs and cached active-perk flags feed authority, player forecasts and AI routes.
+Both-target20420 exits0; activated28363 passes25/25, zero skips in4.827s,
+including legal offers, accepted movement and AI cache refresh. Data/inventory
+19/19 and module drift check pass. Coverage154/310 active,156 planned;
+Logistics5/5. Independent production review reports no blocker. Art and playable
+delivery remain pending; Phase2 retains full client visitor fan-out, broader
+multi-day/mode interactions and old-save loading. Next choose an unblocked
+missing specification item; do not turn these focused gates into a broad matrix.
+
 Latest verified slice: UP-101 Quartermaster. Genuine once-per-combat extra
 activation applies50% output to Ballista, Tent and Catapult, with side-owned
 versioned/replicated state, shared forecasts, AI Tent/Catapult consumers and
