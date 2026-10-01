@@ -49,7 +49,16 @@ adds +25 percentage points through existing LUCKY_STRIKE_DAMAGE_PERCENTAGE,
 opening Luck's ordinary advancement. Refresh its derived hero bonus only on
 existing perk/rank/reconstruction transitions; do not poll during damage or
 create a second multiplier. Shared Lua/server/AI already consume this bonus.
-Registration remains planned until production implementation and focused gates.
+Runtime and registration are now verified: the existing secondary-skill bonus
+rebuild derives +25 only for the active perk, and accepted Luck selections
+refresh it without requiring a rank change. Client build17957 exits0;
+data/inventory19/19 pass; independent source review finds no blocker. Final
+both-target56878 and native69200 pass,4/4 zero skips in1.398s, including legal
+offer/lifecycle, deterministic damage and detached AI expectation. Registry
+coverage137/310 active,173 planned; Luck1/9. Explicit save roundtrips, reaction
+combinations and Sylvan coexistence remain Phase2. No launcher promotion or art
+approval is implied. UP-081 Perfect Fortune is mapped but automatic-trigger
+eligibility needs a bounded decision before implementation.
 
 ### 2026-10-01 verified slice — Armorer Veteran
 
