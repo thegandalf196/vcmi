@@ -9,6 +9,62 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-077 — Implement Armorer Formation Fighting
+
+Status: Verified (delivery pending), 2026-10-01. UP-023
+missing Advanced perk: a stack adjacent to at least one friendly stack cannot
+be flanked and receives an additional10% physical damage reduction. Share live
+and detached battle geometry, actual allegiance and existing physical cap;
+include melee/ranged/retaliation, movement/death changes and two-hex footprints.
+Root owns activation, docs/builds/Git. Map exact production/test ownership before
+edits; no coverage or playable delivery claim yet. Diplomacy remains pending
+its authored free-join exception choice, not silently dropped.
+
+Source checkpoint: shared callback protection handles current allegiance,
+projected defender footprint and living allies, with no new saved state.
+Independent10% reduction uses the existing physical cap; Shroud and Flank
+melee/history are suppressed, Combined Arms ranged remains available. Root
+repaired review blockers: require the active Advanced perk, explicitly gate the
+ranged branch, and exclude detached self aliases by unit ID rather than pointer.
+Client build57962 passes (`UP077-client-build.log`); native prerequisite
+compile84365 passes (`UP077-native-prerequisite-build.log`). The standalone
+fixture was registered only after its actual file existed; subsequent builds
+and native evidence are recorded in the final checkpoint below.
+Phase2 retains synchronization of other allies' projected movement/death in
+multi-blow AI forecasts. No completed coverage or playable promotion yet.
+
+Final checkpoint: both-target74477 passes after fixture repairs. Native61868
+passes18/18, zero skips, in4.465s; reports `UP077-focused-final.log`/`.xml`.
+Binary SHA-256 `1ea4d9dba78922b514f2763f1a6353c5f87a4f5313abb637a50aee04a013f6e8`.
+Data/inventory19/19 pass. Independent source/fixture review has no remaining
+blocker. Coverage134→135/310, planned176→175; Armorer5/5 active/planned,
+ranks84/93 and combat identities60/67 unchanged. Starter-army isolation and
+owner-scoped AI views repair fixture assumptions, not production privacy.
+Keep failed runs and the separate Encirclement repeated-hit assertion in
+NH_RELEASE_FAILURES.md. Purpose-made art remains Not done; no launcher promotion.
+Next unblocked missing perk: Armorer Veteran's surviving-creature physical
+damage recovery; map authoritative activation/physical damage history and AI.
+
+## UP-076 — Implement deterministic Diplomacy foundation
+
+Status: In progress; bounded architecture map, 2026-10-01. UP-023 missing
+foundational rank/neutral encounter mechanic. Basic/Advanced/Expert eligible
+neutral joining thresholds are25/50/75% of the hero's current Army Value,
+paid at normal recruitment Gold cost; scripted/explicitly hostile encounters
+may remain ineligible. Shared authoritative eligibility/cost must feed AI and
+required pre-encounter feedback. Preserve Leadership and army-transfer validation,
+no rerolled joining chance or frontend state mutation. Map existing monster
+join/offer/query/cost, Army Value and AI encounter paths before assigning safe
+ownership. Root owns architecture, activation, docs/CMake/builds/Git. No rank
+activation, verified coverage or playable claim yet.
+
+Prior UP-048 map reused rather than repeated. New evidence confirms global
+joining percentage deliberately retains the original full-stack Gold price;
+per-object HotA percentage is parsed but ignored by existing admission. Authored
+COMPLIANT free-joining versus normal paid threshold remains a material design
+choice; concise question renewed. Keep rank activation on hold and continue
+UP-077 while awaiting direction. Preserve existing Leadership/garrison lifecycle.
+
 ## UP-075 — Implement Estates Estate Network and Learning Quick Study
 
 Status: Verified (delivery pending), 2026-10-01. UP-023 missing
@@ -53,7 +109,8 @@ progression. Ranks84/93 and spells60/67 unchanged. Preserve the original AI
 mixed-offer failure as a fixture lesson, not a repaired production valuation.
 Phase2 keeps comparative perk valuation, crash/pending-query recovery and
 custom-calendar/script interactions. Commit/push follows; no graphical journey,
-new art or immutable launcher promotion. Next highest-priority missing foundation:
+new art or immutable launcher promotion. Committed and pushed as7b5c4c21d.
+Next highest-priority missing foundation:
 deterministic Diplomacy ranks and joining path, with minimum AI/Leadership hooks.
 
 ## UP-074 — Implement Learning Academic Study

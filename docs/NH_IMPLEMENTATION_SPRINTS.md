@@ -40,6 +40,33 @@ failed run merely because a later run succeeds.
 
 ## Current implementation priority — complete Skills perks and spells
 
+### 2026-10-01 verified slice — Formation Fighting
+
+UP-077 implements current-controller friendly footprint protection, independent
+10% capped physical reduction, Shroud immunity and Flank melee/history immunity,
+while retaining Combined Arms ranged value. Final both-target74477 passes;
+native61868 passes18/18 without skips in4.465s; data/inventory19/19 pass.
+Coverage134→135/310 active perks, planned176→175; Armorer5/5 active/planned,
+ranks84/93 and combat identities60/67 unchanged. Independent source/fixture
+review blockers are repaired. Phase2 retains multi-blow other-ally projections,
+hidden foe perk uncertainty and the existing Encirclement repeated-hit fixture
+failure. No art or playable promotion. Next unblocked missing coverage:
+Armorer Veteran's activation-time surviving-creature physical damage recovery.
+
+### 2026-10-01 current slice — Formation Fighting / Diplomacy boundary
+
+UP-076 reuses the prior UP-048 Diplomacy map. Authored free-join exceptions
+remain awaiting user direction; ranks are not activated. The pricing audit
+confirms full original-stack Gold cost despite the global joining percentage
+is deliberate legacy configuration. Parsed per-object HotA percentage is a
+separate existing gap, not permission to silently alter map admission.
+UP-077 implements the unblocked Advanced Armorer Formation Fighting perk:
+live friendly adjacency provides flanking immunity and additional10% physical
+reduction through shared authoritative/detached damage evaluation. Geometry,
+current allegiance, movement/death and global cap must remain coherent.
+Bounded Luna mapping precedes source ownership. Coverage remains134/310
+perks, ranks84/93 and combat identities60/67 until focused build/native evidence.
+
 ### 2026-10-01 verified slice — Estate Network / Quick Study
 
 UP-075 now has production, registration, focused server/query and AI evidence.
