@@ -40,6 +40,42 @@ failed run merely because a later run succeeds.
 
 ## Current implementation priority — complete Skills perks and spells
 
+### 2026-10-01 current slice — random battle-form AI and Mana Conservation
+
+UP-066's next unblocked dependency uses a shared typed effect candidate API:
+the authoritative uniform draw and detached AI mean consume the same complete
+same-category pool and nearest-legal landing positions. The AI must retain
+unfavorable outcomes in that mean, price actual detached offensive profiles,
+and bypass RNGStub's single-draw cast evaluation without bypassing accepted
+Hero Action/Counterspell validation. Runtime and AI workers own disjoint files.
+Polymorph remains inactive pending Phantom composition and exceptional expiry
+decisions plus complete lifecycle wiring.
+
+UP-068 is independent UP-023 missing-perk coverage. Mana Conservation requires
+accepted-cost accounting rather than initial/final Mana subtraction: gross
+positive spell payments and Counterspell ward payments count, separate refunds
+do not erase expenditure, and hostile drains do not count as payments. Restore
+20% (floor), capped at 20, to Normal Spell Points after ordinary result cleanup,
+preserving Buffer and capacity. A separate worker owns replicated accounting
+and the battle-result path; root owns the serialization version, registration,
+builds, focused verification and Git. No coverage increase or promotion yet.
+
+Independent frozen-production review found no blocking issue. Phase 2 retains
+damage-obstacle movement costs (lazy forecast caches intentionally omit them),
+effective-ownership interactions with Hypnotize/Berserk, and later movement/status
+expiry rather than repeated current attack pressure in the two-round estimate.
+Mana Conservation's retreat/surrender and configured draw rewards are currently
+source-reviewed, not native-fixture certified. Applicability and candidate-pool
+footprint checks presently duplicate logic; no mismatch was found, but their
+boundary deserves a direct no-space API regression in the later integration pass.
+Both-target build `66640` passes. Native `65013` executes 69 cases, zero skips:
+all ten Mana Conservation cases pass, but one injected random-form AI valuation
+case fails its independent mean and real evaluator selection assertions. That
+bounded worker is repairing the discrepancy; retain the failure log and do not
+certify the AI slice yet. Mana Conservation advances active perks 128→129/310,
+planned 182→181 and Wisdom 7/3→8/2. Content/perk/inventory checks pass 78/78.
+No playable snapshot has been promoted.
+
 ### 2026-09-30 current slice — battle-form clone and presentation support
 
 Following cast/result commit `56715b367`, independent Luna workers own cloned
