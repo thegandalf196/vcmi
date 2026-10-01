@@ -162,7 +162,7 @@ cross-perk Morale forecast correlations.
 
 ## UP-093 — Discipline Fearless
 
-Status: Mapped; not implemented, 2026-10-01. Next unblocked UP-023 Advanced
+Status: Verified (playable delivery pending), 2026-10-01. UP-023 Advanced
 perk: immunity to explicitly non-magical fear, not negative Morale. Read-only map
 finds FEARFUL creature/commander ability bonuses and one authoritative turn-start
 roll before the fear trigger packet. No Dread spell or spell-sourced fear exists
@@ -170,7 +170,62 @@ in current content. Classify source contributions before aggregation/publication
 do not erase future spell fear or confuse the transient fear flag with immunity.
 Root must pin the source-aware helper, current-controller ownership, minimum AI
 hook and focused native evidence before activation. Existing source metadata is
-available; the result packet itself has no provenance. No edits/count change yet.
+available; the result packet itself has no provenance. No coverage change yet.
+
+Root classification contract: positive CREATURE_ABILITY contributions to FEARFUL
+are the current explicitly non-magical turn-start fear family. This does not
+classify every creature ability as non-magical. Preserve zero/negative caps and
+SPELL_EFFECT, OTHER and unclassified contributions. Commander requirements have
+no mapped runtime consumer; do not invent one in this slice. One Luna owns the
+shared query, authoritative trigger and minimum AI hook; another owns an isolated
+native fixture. Suppressed fear must not consume Twist of Fate or extra RNG.
+Require real turn-start, mixed-source, current-controller and detached-state
+evidence before activation. The user confirmed UP-089's explicit adverse-roll
+scope again; that scope is already recorded in the canonical Luck section.
+
+Production and five-case fixture are frozen; independent Astra runtime and
+fixture reviews find no BLOCKING issue. Root repaired fixture-root indexing and
+Unit/CStack helper assumptions before compilation and strengthened the protected
+Twist case to stochastic50% fear. Both-target build36048 is live with12 jobs
+(`UP093-build.log`). Revalidate that process handle rather than restarting on an
+observation timeout. Same-stacking-key cross-source fear, seeded-bias/Twist-aware
+AI forecasting and a direct unchanged-RNG-state assertion remain Phase2 findings.
+No registration activation or coverage claim before focused native evidence.
+
+Acceptance checkpoint: both-target36048, frozen follow-up and repaired24535
+builds exit0. Principal13527 passes5/5; activated30226 passes27/27, zero skips
+in9.008s (`UP093-activated.log`/`.xml`), including Fearless5, Hold Fast7, Rally4,
+Standard Bearer4 and Twist runtime7. Data/inventory19/19 pass. Binary SHA-256:
+`275f9ef5ddf86b424924369988ccb25fbd0dff0b9bf6e6ecc0b444df8438ead5`.
+Independent production/fixture reviews have no blocker. Initial4/5 was a fixture
+visibility error, repaired without exposing opposing heroes. Source and embedded
+module registries active; coverage146→147/310, planned164→163; Discipline5/5.
+Combat feedback describes a prevented check, not a realized RNG trigger. No new
+state/save feature is needed; existing perk persistence applies. Phase2 retains
+future same-key source stacking, nominal AI chance/history correlation and direct
+RNG-state evidence. Art Not done; no GUI/promotion/playable acceptance.
+
+## UP-094 — Remaining Discipline contract maps
+
+Status: Design clarification pending, 2026-10-01. Read-only next-item evidence.
+
+Next-item map, Heroic Spirit: blocked on activation wording, not on Fearless.
+The positive-Morale roll occurs before the immediate Morale Creature Activation;
+UNTIL_NEXT_CREATURE_ACTIVATION would expire the grant immediately. User asked
+whether the extra retaliation should survive that immediate activation and expire
+on the following activation. Do not silently change generic expiry. Retaliation
+totalCache also latches observed bonus capacity until round reset; a timed bonus
+alone cannot revoke unused capacity at activation expiry. Root must choose an
+activation-scoped allowance contract after the design answer, with live/detached
+parity. Read-only mapper evidence; no implementation or coverage claim.
+
+Veteran Cohesion read-only map: authoritative BattleAttack/StacksInjured pre/post
+health observation covers ordinary physical, spell and Poison damage. User asked
+whether the50% denominator is initial full stack capacity or surviving-creature
+capacity. Record the answer before implementing; do not invent a low-health
+trigger that cannot ordinarily occur. One-shot state must survive healing and
+resurrection, copy into detached branches and use explicit battle-save support.
+No source/count change; this question does not block other missing features.
 
 ## UP-090 — Implement Discipline Rally
 

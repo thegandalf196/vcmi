@@ -40,6 +40,17 @@ failed run merely because a later run succeeds.
 
 ## Current implementation priority — complete Skills perks and spells
 
+UP-093 Fearless is active and Phase1 verified. Both-target36048 and repaired24535
+exit0; principal13527 passes5/5 and activated30226 passes27/27, zero skips in9.008s.
+Data/inventory19/19 pass; independent Astra production/fixture review has no
+blocker. Coverage147/310 active,163 planned; Discipline5/5. Source-aware immunity,
+current-controller turn-start feedback and nominal AI forecast are implemented.
+The detached fixture was repaired to respect hero visibility, not bypass it.
+Phase2 retains future shared-stack-key sources, RNG-state assertions and seeded
+AI chance/history correlation. Art Not done; no playable promotion. Next-item
+maps identify Heroic Spirit activation timing and Veteran Cohesion HP denominator
+questions; clarification is pending without blocking other coverage work.
+
 UP-092 Hold Fast is active and Phase1 verified. Both-target2758 exits0;
 principal85726 passes7/7 and activated69879 passes28/28, zero skips in8.612s.
 Data/inventory19/19 pass; independent Astra reviews have no remaining blocker.
