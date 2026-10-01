@@ -9,7 +9,85 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
-## UP-098 — Fortification Engineer
+## UP-099 — Master Gunner selectable second Ballista shot
+
+Status: Verified (playable delivery pending), 2026-10-01. UP-023 Basic War Machines perk: two
+Ballista shots per activation, second60% normal damage and independently selected
+target. Read-only map confirms the generic extra-attack loop only repeats one
+submitted target at full damage, so it cannot satisfy this rule. Root selects a
+saved/replicated same-activation ranged follow-up allowance and dedicated turn
+reason, preserving activation serial/lifecycles through first-shot continuation.
+Pending follow-up permits a normal validated SHOOT or safe decline; invalid
+requests must retain it. Shared actual/preview damage and minimum AI selection
+must honor60%, with legal offer and accepted two-target native evidence before
+activation. Root owns architecture, version integration, config/docs/CMake/build/
+Git; workers have separate runtime, UI/AI and fixture ownership. No GUI/promotion
+or artwork change. Coverage remains150/310 until verified.
+Actual delegation is running: a Luna runtime writer owns shared unit/callback/
+packet/server and damage-script files; a separate Luna owns AI/client interaction
+files; the tester owns only a new isolated fixture. Root owns the single append-
+only save feature/version gate and all registration/build/Git integration. No
+build starts before required source owners freeze; no active-perk count yet.
+Root integration now contains the append-only version and BattleInfo sidecar
+declarations/tail. Runtime must guard nonzero pending state in both standalone
+unit updates and nested attack-state packets, not just the active-stack reason.
+The damage projection must honor copied pending state independently of live
+active-unit identity; action authorization remains separate. These are source
+requirements, not yet compilation/native evidence.
+
+Integration review: the isolated four-case fixture is frozen and registered;
+AI/client source has its pending-shot controls and shared estimates. Root requested
+an explicit AI Shoot fallback if ordinary evaluation picks Wait/movement despite
+a legal follow-up. Runtime authority/activation flow remains under implementation;
+no build, activation or coverage increase yet. Phase2 retains first-shot two-target
+lookahead, external extra-attack bonus stacking, combat-log localization, and full
+binary battle-snapshot coverage (the pre-existing Veteran history guard still
+fails closed). Unit JSON and continuation-packet evidence must not be represented
+as full binary battle-save verification.
+
+Production and fixture owners are frozen; independent Astra review finds no
+principal-path blocker. AI now independently selects a legal hostile second
+target rather than declining because its ordinary evaluator chose Wait/movement.
+Both-target build76640 runs with12 jobs (`UP099-build.log`); preserve its live
+handle. No native execution alongside this build and no activation yet.
+Build76640 exits1 on two raw field reads through the callback Unit interface.
+Root repairs those cleanup reads to the shared pending-state query; the failure
+is retained in `NH_RELEASE_FAILURES.md`. Repaired both-target20641 is running
+with12 jobs (`UP099-repaired-build.log`), no native/activation yet.
+Build20641 exits1 on the fixture's missing HypotheticBattle declaration; root's
+first header-name correction14515 also exits1. Source lookup identifies its
+actual owner `StackWithBonuses.h`. Both failures are retained; corrected
+both-target89421 runs with12 jobs (`UP099-header-repaired-build.log`). No test
+assertions were weakened; registration remains planned.
+Both-target89421 exits0. Principal88930 passes3/4, zero skips in1.445s;
+only the ratio baseline fails after accepted Defend changes the target's Defense.
+The fixture owner checks same-state normal/follow-up sampling before the repaired
+gate. Invalid-target retention, explicit decline, rank-loss spending and no-perk
+actual-shot guards pass. Master Gunner remains planned until all four cases pass.
+Final gates supersede the in-progress chronology: both-target76128 exits0;
+repaired principal71745 passes4/4, zero skips in1.450s with the same60% assertions.
+Activated74243 passes16/16 Master Gunner/Engineer/Piercing Bolts/Surgeon cases,
+zero skips in5.022s; data/inventory19/19 pass. Master Gunner is active;
+coverage150→151/310, planned160→159, War Machines4active/6planned. Test binary:
+`11b4dc190f413736f8868e88e654fb27276a81f87b8b652ab6b2ac49fbdebecb`.
+No GUI, art approval or snapshot promotion. Phase2 retains Second Wind
+interleaving, extra-attack stacking, controller-transfer compatibility, initial-
+shot multi-target lookahead, localization and full binary battle-save breadth.
+
+## UP-098 — Fortification Engineer (continuation evidence)
+
+Breachmaker's first map identifies a genuine adjacency gap: current structural
+HP and enum/hex identity exist, but no fortification-neighbor relation does.
+The user is asked neighboring outer-wall sections with the central keep excluded
+vs including the keep by nearest-section distance. Preserve this decision gate;
+do not silently treat enum order as geometry or implement overflow without it.
+
+2026-10-01 continuation: source checkpoint407788932 is pushed and the worktree
+is clean. This was progress, not an idle wait. Two read-only Luna maps prepare
+Breachmaker structural overflow and Master Gunner's independently selectable
+second shot. Root will select the next complete unblocked rule from evidence;
+no multiplier-only or same-target-only substitution is permitted. Coverage stays
+150/310 until the next principal path is implemented and verified.
 
 Next-item preparation: a read-only Luna maps Precision Bombardment's specific
 Catapult wall/gate/tower targeting and existing control/AI paths while UP-098

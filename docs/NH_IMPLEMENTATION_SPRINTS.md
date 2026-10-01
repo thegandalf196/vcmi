@@ -40,6 +40,38 @@ failed run merely because a later run succeeds.
 
 ## Current implementation priority — complete Skills perks and spells
 
+Latest completed slice: UP-099 Master Gunner. The second Ballista shot is a
+separately selected60% attack inside the same activation; shared state/forecast,
+authority, UI decline/Wait controls and fresh AI target selection are implemented.
+Both-target76128 exits0. Principal71745 passes4/4 and activated74243 passes16/16,
+zero skips in1.450s/5.022s; data/inventory19/19 pass. Coverage151/310 active perks,
+159 planned; War Machines4/6. Build/fixture failures and repairs are retained in
+`NH_RELEASE_FAILURES.md`. No GUI/art acceptance or playable delivery is implied.
+Phase2 retains Second Wind handoff between shots, extra-attack stacking,
+controller-transfer compatibility, first-shot lookahead, log localization and
+full binary battle snapshot verification. Next highest-priority prepared work is
+Breachmaker structural overflow, pending the asked fortification adjacency choice;
+other unblocked missing specification items remain available if that choice is
+not answered. Do not idle the full Phase1 goal on one content ambiguity.
+
+2026-10-01 continuation after pushed407788932: coverage150/310; clean worktree
+on resumption. Independent read-only maps prepare Breachmaker and Master Gunner.
+Breachmaker has raw pre-cap structural damage in ServerCallbackProxy and current
+per-part HP in SiegeInfo; shared CatapultAttack state application also drives AI
+projections. No fortification adjacency table exists. The keep/outer-wall topology
+choice is asked before implementation; enum or AI target order is not geometry.
+Retain NewHorizonsWarMachinesTest real-town and HypotheticWallTest parity leads.
+Master Gunner requires a selectable second shot within the same activation,
+not another generic activation or an automatic repeat at the first target.
+UP-099 is selected for implementation. Exclusive Luna owners cover shared/server
+state and damage, separate AI/client interaction paths, and an isolated fixture.
+Root appends NEW_HORIZONS_RANGED_FOLLOW_UP once and adds a bounded BattleInfo
+binary sidecar because CStack omits CUnitState in binary snapshots. UnitChanges
+JSON remains the replicated live state; old-format downgrade must fail rather
+than lose a pending shot. A dedicated continuation preserves activation lifecycle
+through the first shot. No build or new active count before source freeze and
+the accepted independently targeted second-shot/60% principal gate.
+
 Completed working slice: UP-095 War Machines Surgeon. Its Tent-triggered single
 physical-affliction cleanse needs Poison → Disease → Bleeding priority, then
 application order for other eligible physical afflictions. A Luna read-only map
