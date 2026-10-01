@@ -40,6 +40,36 @@ failed run merely because a later run succeeds.
 
 ## Current implementation priority — complete Skills perks and spells
 
+### 2026-09-30 current slice — battle-form clone and presentation support
+
+Following cast/result commit `56715b367`, independent Luna workers own cloned
+stack admission and one-hit cleanup, event-driven effective-creature sprite
+refresh, and generic form status in the existing stack panel. Root integrates
+the duration accessor, test wiring, focused builds/native validation and Git;
+an Astra review is required before this checkpoint is called verified.
+Time Stop must pause the form's timer. Existing creature portraits/animations
+are referenced, not extracted or replaced with newly invented artwork.
+
+This remains a partial Polymorph dependency slice. Phantom Army's separate
+Integrity/body profile, full expiry/Dispel geometry, expected-random-outcome AI,
+and accepted hero-action/Mana casting remain unfinished. The exceptional case
+where no original footprint can fit on expiry awaits the user's answer. Preserve
+the user's nearest-legal relocation decision and do not exclude a form because
+its old anchor cannot fit it. No activation, count increase, GUI acceptance or
+launcher promotion is claimed while these workers are running.
+
+Checkpoint outcome: final both-target build `57163` passes and isolated native
+retry `39543` passes 51/51, zero skips. Reports and binary hash are recorded in
+UP-066 and NH_RELEASE_FAILURES.md. Independent review and module/diff checks
+pass; clone destruction, paused duration with round-local Initiative reset,
+status helper/overflow and prior health/result/native-bonus guards are verified.
+The unchanged ordinary CloneApply tests exposed a missing no-form delegation
+fast path; that production repair is included and its failed run retained.
+Sprite refresh remains source/compile evidence, not graphical acceptance.
+Coverage remains 60/67 combat identities and 128/310 active perks. Next unblocked
+Polymorph dependency is expected-random-outcome AI; Phantom body/Integrity
+composition and no-space expiry await explicit design answers. No promotion.
+
 ### 2026-09-30 current slice — Polymorph casting and result projection
 
 The shared foundation was pushed in `786a19777`. This follow-up adds the native

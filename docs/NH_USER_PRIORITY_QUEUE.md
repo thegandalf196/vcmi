@@ -127,6 +127,38 @@ counts remain 60/67. Next: temporary-profile support, expiry/Dispel/Time Stop
 lifecycle, random-outcome AI and client form/status presentation. No GUI,
 launcher promotion, user-save mutation or final artwork claim occurred.
 
+Current bounded slice: a Luna worker owns cloned-stack form admission, retained
+one-hit destruction and source-ledger-safe death/ghost cleanup, plus the canonical
+Time Stop pause of form duration. A separate Luna worker owns event-driven battle
+sprite replacement using the effective creature's existing animation by reference;
+retain battle unit identity, facing, selection and authoritative relocation.
+Root owns integration, focused validation, documentation and Git. Phantom Army's
+separate Integrity/offensive-body profile and the no-legal-reversion expiry policy
+remain explicit gaps; neither clone support nor sprite refresh enables Polymorph
+or increases the combat-spell coverage count. No graphical acceptance is inferred.
+
+Phantom composition decision requested: its copied offensive creature body and
+separate smaller Integrity pool are not interchangeable. Ask whether Polymorph
+should repartition that copied body while retaining Integrity independently, or
+derive the transformed creature count from remaining Integrity. Do not silently
+make a new temporary-stack targeting exclusion permanent or reinterpret HP while
+that answer is pending. The distinct no-legal-position-at-expiry question also
+remains unanswered. Source review additionally caught current-round Initiative
+snapshot being paused with duration; the fix clears that snapshot on each round
+rollover while pausing only the form lifetime during Time Stop.
+
+Clone/presentation checkpoint verified: final both-target build `57163` passes;
+native retry `39543` passes 51/51, zero skips, including unchanged CloneApply
+regressions, real legacy-clone creation plus generic form packet application,
+clone JSON/recast/reversion/one-hit death, Time Stop duration/Initiative behavior,
+source-species results and compact status helpers. Reports
+`UP066-clone-presentation-focused-retry.log`/`.xml`; binary SHA-256
+`ebd913de4bb8a9f4ff5d7f726876b02910ecf97df6e55180450cbf65869dd164`.
+Review and module/diff checks pass. First missing-include probe and crashed
+native run, including the no-form detached-bonus fast-path repair, are retained
+in NH_RELEASE_FAILURES.md. Sprite refresh is compiled/source-reviewed, not
+rendered. Combat identities remain 60/67; no launcher promotion occurred.
+
 ## UP-065 — Toxic Spines does not trigger in the user's playable battle
 
 Status: In progress, 2026-09-30. The user reports no Toxic Spines trigger,
