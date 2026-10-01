@@ -40,6 +40,15 @@ failed run merely because a later run succeeds.
 
 ## Current implementation priority — complete Skills perks and spells
 
+Next working slice: UP-095 War Machines Surgeon. Its Tent-triggered single
+physical-affliction cleanse needs Poison → Disease → Bleeding priority, then
+application order for other eligible physical afflictions. A Luna read-only map
+has completed the read-only map: the centralized Tent cast and Poison/Disease
+removal seams exist, but generic physical eligibility/application order and
+Bleeding representation do not. Root must establish that shared foundation
+before complete registration. Do not count a Poison-only special case as complete Surgeon coverage.
+UP-094 Discipline questions remain pending, not a reason to idle the backlog.
+
 UP-093 Fearless is active and Phase1 verified. Both-target36048 and repaired24535
 exit0; principal13527 passes5/5 and activated30226 passes27/27, zero skips in9.008s.
 Data/inventory19/19 pass; independent Astra production/fixture review has no
