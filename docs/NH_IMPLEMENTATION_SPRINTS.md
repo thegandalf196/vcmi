@@ -77,14 +77,47 @@ preprocessing rollback on later-unit errors, control-change interactions,
 producer-duration consistency and combat-log localization.
 UP-094 Discipline questions remain pending, not a reason to idle the backlog.
 
-Next retained map after Surgeon validation: War Machines Piercing Bolts. Creature
+Completed working slice: UP-096 War Machines Piercing Bolts. Surgeon is pushed as
+424ed5a02 and its checkpoint worktree was clean. One Luna owns shared callback/
+damage payload/Lua; another owns an isolated real-shot fixture. Root owns review,
+CMake, registration and gates. Do not activate before principal evidence.
+Retained architecture map: Creature
 Defense is the early getDefense/getDefenseIgnored Lua attack-vs-Defense layer,
 not the later hero-Defense-based Bulwark mitigation. A current-controller,
 physical Ballista-shot contribution in the shared DamageAttackInfo payload can
 feed that same layer for actual damage, UI prediction and BattleAI, without
 mislabeling it as Archery or Arcane Breach. The existing canonical Ballista-shot
-fixture provides a small deterministic starting point. Read-only evidence only;
-no implementation or active count is claimed, and Surgeon remains priority.
+fixture provides a small deterministic starting point. Implementation is underway;
+no new active count is claimed. No new persistent state or artwork is required.
+Production is frozen and independently reviewed without a blocker; client70423
+builds successfully. The isolated native fixture is still being written and is
+not registered yet. No activation/count change. A separate Luna read-only map
+of Battlefield Medic's casualty-restoration and Tent/AI seams is assigned as the
+next candidate, without touching source or displacing Piercing Bolts gates.
+Phase2 fixture maintenance finding (source inspection, not a new failed run):
+the older NewHorizonsWarMachinesTest in NewHorizonsHeroGrowthTest loads current
+capability data then forces v3 without removing v4 warMachineShop, the same setup
+pattern rejected in the earlier Surgeon gate. Its explicit v3 expectations need
+a coherent historical fixture or current-schema migration. Do not use this old
+fixture as acceptance evidence for the current Piercing Bolts slice; the new
+fixture retains canonical current capability data.
+Battlefield Medic read-only map complete: post-cast doHealAction can restore from
+half the calculated Siege output via existing RESURRECT/provenance caps, separate
+from actual survivor HP gain. Surgeon must remain gated on survivor healing before
+any Medic restoration. Shared Tent prediction/AI needs restoration count feedback;
+no new casualty ledger is indicated. Persistence after combat is unspecified, so
+the user is asked permanent army restoration vs combat-only restoration. This
+candidate remains mapped, not implemented, until that design choice is settled.
+Final Piercing Bolts evidence supersedes the in-progress chronology: client70423
+and combined42241 exit0; principal18354 passes4/4 with zero skips in1.560s.
+Activated21661 passes all4 new cases,4 Surgeon and spell-like classification;
+two existing Archery fixtures fail at omitted earlier-tier perk prerequisites.
+Independent review classifies legal fixture setup repair as deferred Phase2,
+not a new damage regression; retain the9-pass/2-fail batch, do not call it green.
+Data/inventory19/19 pass. Piercing Bolts active, coverage149/310 with161 planned,
+War Machines2/8. Actual controller-transfer coverage remains Phase2. No GUI,
+art approval or playable promotion. Next candidate is Battlefield Medic, whose
+restored-creature post-combat persistence awaits clarification.
 
 UP-093 Fearless is active and Phase1 verified. Both-target36048 and repaired24535
 exit0; principal13527 passes5/5 and activated30226 passes27/27, zero skips in9.008s.
