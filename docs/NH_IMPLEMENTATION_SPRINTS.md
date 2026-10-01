@@ -70,6 +70,11 @@ Coverage now141/310 active,169 planned; Luck5/5. Data/inventory19/19 pass.
 Art and playable delivery remain pending. Next is Twist of Fate; the user
 approved its explicit adverse-roll classification, now canonical.
 
+Source commit0e403406d is pushed, with matching HEAD/origin. Launcher snapshot
+remains unchanged. Twist's bounded map proposes one affected-side/adverse-result
+resolver and a generic side-state packet for non-attack transitions; root must
+freeze controller/reflection/proc-chance contracts before runtime/AI delegation.
+
 ### 2026-10-01 verified slice — Luck Gambler
 
 UP-086 implements first-friendly-attack+3 Luck each round and failed-positive
