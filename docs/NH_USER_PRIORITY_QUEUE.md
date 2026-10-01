@@ -9,9 +9,59 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-088 — Implement Luck Opportunist
+
+Status: Read-only implementation map, 2026-10-01. UP-023 missing Basic Luck
+perk: after positive Luck on an attack, retain the stack's current Creature
+Activation for movement only, up to2 hexes using remaining movement, with no
+additional attack. Map existing Pursuit/Skirmisher activation continuations,
+positive strike aftermath and authoritative movement validation before selecting
+architecture. Preserve action/activation identity, Time Stop and reaction
+ordering; no extra activation or attack may be fabricated. Root owns shared
+architecture and final semantic decisions. No code changes while Gambler builds.
+Acceptance: an actual positive trigger exposes a legal bounded move, no attack
+or reused allowance, round/activation cleanup, principal AI/native verification.
+
+Map complete: Pursuit already supplies a saved/copied/replicated movement-only
+allowance, continuation reason, bounded shared path range, authoritative move/
+attack validation, generic client controls and an AI movement chooser. Its
+current trigger/flow is lethal melee/WALK_AND_ATTACK, so Opportunist must add
+actual positive-Luck and ranged paths without creating a new activation. The
+shared attack path also handles out-of-turn reactions; a user question asks
+whether "remains open" restricts this perk to the stack's own activation.
+No implementation or coverage increase yet. Keep the answer explicit rather
+than silently excluding reactions solely because Pursuit is easier to reuse.
+
+## UP-087 — Implement Luck Chain of Fortune
+
+Status: Read-only implementation map, 2026-10-01. UP-023 missing Advanced Luck
+perk: once per round after a friendly positive Luck trigger, the next friendly
+stack to attack gains+1 Luck for that attack. Map existing shared side history,
+authoritative strike packets, reactions and detached AI replay; preserve normal
+Luck caps/immunity and current-controller ownership. Determine whether existing
+code defines the pending recipient and round expiry before selecting architecture.
+No runtime edits while Gambler's frozen candidate builds. Root owns architecture,
+registration, serialization, integration and verification. Acceptance: first
+positive trigger arms at most one round-long benefit, correct next-attack
+consumption, side isolation, save/replication and principal native/AI evidence.
+Any genuine recipient or carry-over ambiguity must be surfaced, not guessed.
+
+Map complete: shared side state, chanceLuck, existing BattleAttack fortuneState
+and per-round lifecycle supply the authoritative/save/replication seams; detached
+AI already has branch-local pre-consumption outcomes and ordered replay. Caps
+and No Luck remain enforced by the shared callback. No extra canonical clause
+defines whether the same stack's second strike may receive the bonus or whether
+an unconsumed benefit survives the round boundary. Two user questions are
+answered: the recipient must be a different friendly stack. User directed the
+round policy to follow the wording; once per round limits triggering, not the
+lifetime of an unused benefit, so it carries until the next different stack
+attacks. Canonical Luck now records both decisions. A No Luck attack's
+consumption policy must be reconciled with this recipient rule. No implementation
+or validation was performed by the read-only worker; this map adds no coverage.
+
 ## UP-086 — Implement Luck Gambler
 
-Status: Read-only next-slice map, 2026-10-01. UP-023 missing Advanced Luck
+Status: Source/native verified; playable delivery pending, 2026-10-01. UP-023 missing Advanced Luck
 perk: the first friendly attack each round gains+3 Luck for that attack; if
 positive Luck does not trigger, its attacker suffers-2 Luck until its next
 activation. Map first-strike side history, post-roll penalty and activation
@@ -36,6 +86,44 @@ Luck and remain branch-local. Conditional stochastic penalty correlation is
 Phase2 AI breadth, not permission to fabricate a guaranteed roll. Use separate
 Gambler fixtures and append-only side-state serialization. No activation yet;
 the root owns the final lifecycle decision and implementation partitions.
+
+Root lifecycle decision: expire only the uniquely identified Gambler penalty
+when battleBeginsActivation is true, including Second Wind, in authoritative
+BattleInfo and detached AI. Do not broaden legacy STACK_GETS_TURN expiry for
+unrelated bonuses. Timed per-unit LUCK-2 uses the existing bonus/SetStackEffect
+wire and follows controller changes. Shared side gambler/round expenditure,
+setup, append-only NEW_HORIZONS_GAMBLER and registration are staged. Runtime
+processor, three AI files and a separate new native fixture have exclusive
+workers. Root owns shared helpers/state/config/CMake/docs/build/Git. No
+completed coverage or playable delivery is claimed before the focused gates.
+
+Frozen source checkpoint: independent review has no remaining blocking finding.
+Pre-consumption Luck outcomes survive detached replay, positive aftermath is
+applied once, and valid zero-probability curves are neutral rather than unknown.
+The damage cache accounts for the side perk and unit penalty after expenditure
+or control changes. Data/inventory checks pass19/19; both-target build49572
+is running with12 jobs (`UP086-build.log`). Native execution is pending; do not
+count this as completed coverage or playable delivery. Conditional stochastic
+penalty correlation, broader reaction/controller matrices, committed-replay
+recovery and detached-expiry fixture breadth remain Phase2 findings.
+
+Execution checkpoint: build49572 failed only on fixture probability fields
+declared private; repaired build68457 passes both targets. Native52671 passes
+15/20, zero skips: the five Gambler gameplay cases retain Advanced Luck+2
+despite their intended zero baseline. The tester is repairing fixture setup
+without changing rank or production rules. Keep coverage139/310 until the
+same focused selection passes. Failed runs are retained in NH_RELEASE_FAILURES.
+
+Final gates: both-target76677 exits0; native39678 passes20/20 with zero skips
+in5.324s (`UP086-verified.log`/`.xml`), including six new Gambler cases and14
+Luck regressions. Binary SHA-256
+`3ef29f6941beefed86678fe8ce02a0d383d3330f45d38eeca490b7f6568ab6da`.
+The fixture uses a local ordinary-2 compensation to isolate the+3 bonus while
+retaining legal Advanced Luck and Basic Fortune's Favor selection. Production
+rank rules are unchanged. Data/inventory19/19 pass; independent review blockers
+are repaired. Coverage139→140/310 active,171→170 planned; Luck4/6. Earlier
+failed builds/tests remain recorded. Art Not done; no launcher promotion or
+graphical acceptance is claimed. Phase2 findings remain listed above.
 
 ## UP-085 — Implement Luck Serendipity
 
