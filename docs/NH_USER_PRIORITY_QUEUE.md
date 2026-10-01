@@ -9,6 +9,29 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-089 — Implement Luck Twist of Fate
+
+Status: Read-only roll-contract map, 2026-10-01. UP-023 missing Expert Luck
+perk: reroll the first random combat roll each combat whose result is negative
+for the hero's army; deterministic effects cannot be rerolled. Map existing
+authoritative random-roll and adverse-result classification before choosing a
+generic once-per-combat interception. Do not silently reduce the rule to only
+negative Luck or invent a damage-roll threshold. Root owns scope/architecture,
+serialization and final semantic decisions. No implementation while Chain of
+Fortune's frozen candidate builds. Acceptance: specification-defined roll types,
+current-controller/side expenditure, exactly one reroll, deterministic exclusion,
+replicated/save state, principal focused native and AI evidence.
+
+Read-only map complete: no generic adverse-outcome/reroll layer exists. Luck,
+Morale, ability procs, hostile spell resistance and reflection use different
+random paths; the harmed side is not universally the RNG actor. Canonical wording
+does not classify failed benefits, damage variance or random target/form choices.
+The user approved this scope: negative Luck/Morale, failed hostile-spell resistance
+and successful hostile chance abilities, excluding damage variance, failed
+beneficial procs and random selections. Do not implement an invented threshold or
+silently narrow to bad Luck. The canonical document records this classification
+and the harmed army's expenditure; implementation follows after UP-087 gates.
+
 ## UP-088 — Implement Luck Opportunist
 
 Status: Read-only implementation map, 2026-10-01. UP-023 missing Basic Luck
@@ -34,15 +57,15 @@ than silently excluding reactions solely because Pursuit is easier to reuse.
 
 ## UP-087 — Implement Luck Chain of Fortune
 
-Status: Read-only implementation map, 2026-10-01. UP-023 missing Advanced Luck
+Status: Verified (delivery pending), 2026-10-01. UP-023 missing Advanced Luck
 perk: once per round after a friendly positive Luck trigger, the next friendly
 stack to attack gains+1 Luck for that attack. Map existing shared side history,
 authoritative strike packets, reactions and detached AI replay; preserve normal
 Luck caps/immunity and current-controller ownership. Determine whether existing
 code defines the pending recipient and round expiry before selecting architecture.
-No runtime edits while Gambler's frozen candidate builds. Root owns architecture,
+Gambler is verified and pushed as680d142c5. Root owns architecture,
 registration, serialization, integration and verification. Acceptance: first
-positive trigger arms at most one round-long benefit, correct next-attack
+positive trigger arms at most one pending+1 benefit, correct next-attack
 consumption, side isolation, save/replication and principal native/AI evidence.
 Any genuine recipient or carry-over ambiguity must be surfaced, not guessed.
 
@@ -58,6 +81,39 @@ lifetime of an unused benefit, so it carries until the next different stack
 attacks. Canonical Luck now records both decisions. A No Luck attack's
 consumption policy must be reconciled with this recipient rule. No implementation
 or validation was performed by the read-only worker; this map adds no coverage.
+
+Root implementation decision: keep one pending source unit ID and a separate
+round-trigger flag in the existing shared Luck state. A different stack's next
+attack consumes the pending benefit before its own positive outcome may arm
+another; No Luck/caps do not preserve an already consumed attack benefit.
+Same-stack follow-ups retain it. Round reset clears only trigger expenditure,
+not the pending gift. A carried gift remains one+1, not an accumulating token
+stack when the same source triggers again. Existing BattleAttack fortuneState
+replicates/saves the transition; append-only NEW_HORIZONS_CHAIN_OF_FORTUNE
+defaults older state inert and rejects lossy downgrade/disabled history.
+Runtime logging is frozen; AI and a separate fixture have exclusive workers.
+Independent review is active. Registration is staged, not completed coverage;
+counts remain140/310 until build and principal native gates pass.
+
+Frozen source checkpoint: all three implementation/fixture workers completed,
+and independent review has no remaining blocking finding. The shared callback
+already reads branch-local fortune through BattleProxy::getBattle returning
+this; speculative duplicated Luck formulas were rejected before integration.
+Loaded pending-source provenance is validated against recorded positive Luck.
+Six focused cases include actual native arm/consume, same-stack shots, round
+carry/reset, controlled reactions/No Luck, current/legacy packet state, malformed
+state guards, and certain/UNKNOWN candidate plus selected replay isolation.
+Data/inventory19/19 and diff checks pass. Both-target build74505 is running
+with12 jobs (`UP087-build.log`); native execution is pending. Counts remain
+140/310, not141, and no commit/promotion is claimed yet. Broad perk/reaction
+matrices and playable combat-log acceptance remain Phase2 findings.
+
+Final gate: both-target3912 exits0; native73716 passes26/26, zero skips in6.779s
+(`UP087-repaired-build.log`, `UP087-verified.log`/`.xml`). The failed24/26 run
+is retained in the failure register; both errors were fixture setup, repaired
+without production rule changes. Independent repair review has no blocker.
+Data/inventory19/19 pass. Coverage141/310 active,169 planned; Luck5/5.
+Source/native complete; art and playable promotion/acceptance remain pending.
 
 ## UP-086 — Implement Luck Gambler
 

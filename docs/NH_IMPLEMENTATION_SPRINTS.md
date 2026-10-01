@@ -40,6 +40,36 @@ failed run merely because a later run succeeds.
 
 ## Current implementation priority — complete Skills perks and spells
 
+### 2026-10-01 verified slice — Luck Chain of Fortune
+
+UP-087 follows the approved different-stack recipient and carry-until-used
+wording. Shared side state owns one pending origin and a once-per-round trigger
+flag; different-stack consumption precedes possible rearming, same-stack
+follow-ups do not consume, and No Luck retains immunity without preserving the
+benefit. Old state defaults inert through append-only serialization. Runtime,
+AI and fixture ownership are partitioned; root owns state/setup/config/CMake/
+build/Git. Registration is staged; completed coverage stays140/310. Focused
+native/save/packet/AI evidence is required before increasing it. No art or
+playable promotion is claimed. Gambler's source/native cycle is pushed as
+680d142c5; Opportunist's reaction question remains pending.
+
+Frozen source: independent review finds no blocker. Six new focused cases now
+include UNKNOWN candidate/selected replay and same-origin carry preservation.
+Data/inventory19/19 and diff checks pass. Both-target74505 runs with12 jobs,
+log `UP087-build.log`; native verification is pending. Broad perk/reaction
+matrices and playable-log acceptance remain Phase2, not blockers to counting
+the principal implementation once its focused execution gates pass.
+
+Final both-target3912 exits0 (`UP087-repaired-build.log`); native73716 passes
+26/26, zero skips in6.779s (`UP087-verified.log`/`.xml`). Initial24/26 failures
+were fixture errors: live RNG settings versus forecast chance tables, and an
+initiator's explicit retaliation-blocking bonus. Corrections preserve all
+principal assertions; independent repair review has no blocker. Binary SHA-256
+`9a0a233a0abb92f6eb1ca9ad570568301bc8e1d30fa784e4ecde484a599a180e`.
+Coverage now141/310 active,169 planned; Luck5/5. Data/inventory19/19 pass.
+Art and playable delivery remain pending. Next is Twist of Fate; the user
+approved its explicit adverse-roll classification, now canonical.
+
 ### 2026-10-01 verified slice — Luck Gambler
 
 UP-086 implements first-friendly-attack+3 Luck each round and failed-positive

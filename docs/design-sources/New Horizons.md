@@ -4644,6 +4644,14 @@ positive Luck trigger. The once-per-round restriction limits triggering; it
 does not expire an unused benefit. That benefit waits for the next different
 friendly stack to attack, even if that attack occurs in a later round.
 
+For Twist of Fate, an adverse random result means negative Luck, negative
+Morale, failed resistance against a hostile spell, or a successful hostile
+chance ability. The army suffering that result spends its own once-per-combat
+reroll, even when the roll originates from its opponent. Damage variance,
+failed beneficial procs, and random target or form selection do not qualify.
+Reroll the qualifying roll once; the reroll's result is final and cannot itself
+trigger another reroll.
+
 
 ### Faction Skills
 
