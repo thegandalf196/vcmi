@@ -21,6 +21,22 @@ consume the result. No activation or verified coverage increase yet. Root owns
 integration, registration, builds and Git; mapper does not edit source or run
 builds. Preserve the ongoing Mentor build and frozen source ownership.
 
+Read-only map complete: successful town entry/capture, town portal, Castle Gate
+and recruitment reach heroVisitCastle; map-authored replacement scripts can
+bypass it. mageGuildLevel supplies built levels0–5. The serialized hero
+visitedObjects set can represent town IDs, but ordinary town arrival does not
+currently populate it. Existing VISITOR_ADD_HERO also changes player/team
+history, so avoid those incidental effects when adding a hero-only marker.
+Mark before Learning-adjusted XP to keep level-up reentry idempotent; a zero-guild
+visit must have explicitly resolved first-visit semantics. Asked whether visits
+before learning Academic Study consume eligibility or whether its first visit
+after acquisition qualifies. Old saves cannot reconstruct historic town arrivals.
+Do not activate before resolving that timing choice. Minimal tests cover
+0/1/3/5 guild levels, rank/perk gates, repeats/other towns, later guild builds,
+save/load, marker/query order and ordinary AI selection/award. No extra hero
+history field is required if the existing set is reused safely. Destination XP
+valuation and authored-script overrides remain separate AI/integration work.
+
 ## UP-073 — Implement Learning Mentor
 
 Status: Verified (delivery pending), 2026-10-01. Unblocked UP-023 Basic perk progression while
@@ -58,7 +74,8 @@ Coverage131→132 active perks, planned179→178; Learning1/10. Preserve the fai
 fixture builds and first25-test run in NH_RELEASE_FAILURES.md. The unrelated
 Muster higher-tier fixture prerequisite failure is deferred to Phase2, along
 with comparative AI valuation/proactive meeting planning. No graphical run,
-purpose-made art or playable launcher promotion. Commit/push follows integration.
+purpose-made art or playable launcher promotion. Committed and pushed as
+07fe8d95c955d43dd2f9cb714937fce094feb6a0; origin/definitive-mvp matches.
 
 ## UP-072 — Implement Nature Elemental Convergence
 

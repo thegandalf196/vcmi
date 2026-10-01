@@ -57,6 +57,14 @@ Next unblocked missing feature: UP-074 Academic Study, mapped read-only while
 Mentor verification completes. Historian/Marketplace/Convergence choices wait
 at their recorded boundaries; do not guess those decisions.
 
+Mentor/market slice committed and pushed as07fe8d95c. UP-074's map confirms
+heroVisitCastle and reusable serialized visitedObjects, not a duplicate history
+field. Earlier visits before perk acquisition are not currently recorded for
+towns; the eligibility timing question has been sent to the user. Keep it
+unactivated until that choice is resolved; shared Learning-adjusted XP and
+marker-before-award are required regardless. Subsequent unblocked coverage may
+proceed without inventing the answer.
+
 ### 2026-10-01 current slice — Historian and Marketplace policy
 
 UP-073 Mentor is now the unblocked Learning runtime slice: replicate weekly
