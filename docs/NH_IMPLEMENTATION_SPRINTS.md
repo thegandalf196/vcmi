@@ -40,14 +40,51 @@ failed run merely because a later run succeeds.
 
 ## Current implementation priority — complete Skills perks and spells
 
-Next working slice: UP-095 War Machines Surgeon. Its Tent-triggered single
+Completed working slice: UP-095 War Machines Surgeon. Its Tent-triggered single
 physical-affliction cleanse needs Poison → Disease → Bleeding priority, then
 application order for other eligible physical afflictions. A Luna read-only map
 has completed the read-only map: the centralized Tent cast and Poison/Disease
 removal seams exist, but generic physical eligibility/application order and
 Bleeding representation do not. Root must establish that shared foundation
 before complete registration. Do not count a Poison-only special case as complete Surgeon coverage.
+The generic marker foundation is now in source: explicit physical-affliction
+identity and application order use existing bonus parameters, with parser/schema/
+docs and an upfront save downgrade guard. Disease has an explicit marker; outgoing
+effect packets stamp order before authoritative application. Shared live/detached
+lifecycle and isolated tests are still being implemented. Independent metadata/
+packet review repaired an MSVC floating-point-to-int64 boundary before build;
+data/inventory19/19 pass. Root runtime review identified duplicate-marker index
+and unset-order handling defects; the runtime owner is repairing them before
+freezing for compilation. No build/native or Surgeon completion is claimed.
+Independent runtime review then found non-spell marker groups surviving child AI
+removal because the old projection filter captures only spells/Orders. This is a
+blocking generic-state issue and is being repaired with a parent/child regression
+before compilation. Surgeon Tent/AI consumers are being implemented in parallel
+on separately owned files; no perk activation or coverage increase yet.
+Current gate: live/detached and Tent/AI source are frozen and reviewed. The
+marker-only removal/recapture/aging repair has its regression;13 foundation and4
+real-healing cases are registered. Three compile failures (direct headers and
+fixture declarations) were repaired without weakening assertions. Retry67115 is
+running both targets with12 jobs; native acceptance and activation remain pending.
+Final evidence supersedes the above in-progress chronology: both-target64786
+exits0; principal29476 passes17/17 and activated59354 passes34/34, zero skips
+in6.552s. Data/inventory19/19 pass; independent final review has no blocker.
+Surgeon is active; coverage148/310 with162 planned, War Machines1/9. Shared
+affliction marker lifecycle, four real priority heals, stored-Poison cleansing,
+negative guards and AI selection are verified. No Bleeding producer, artwork
+approval, GUI or playable promotion is claimed. Phase2 retains packet-wide
+preprocessing rollback on later-unit errors, control-change interactions,
+producer-duration consistency and combat-log localization.
 UP-094 Discipline questions remain pending, not a reason to idle the backlog.
+
+Next retained map after Surgeon validation: War Machines Piercing Bolts. Creature
+Defense is the early getDefense/getDefenseIgnored Lua attack-vs-Defense layer,
+not the later hero-Defense-based Bulwark mitigation. A current-controller,
+physical Ballista-shot contribution in the shared DamageAttackInfo payload can
+feed that same layer for actual damage, UI prediction and BattleAI, without
+mislabeling it as Archery or Arcane Breach. The existing canonical Ballista-shot
+fixture provides a small deterministic starting point. Read-only evidence only;
+no implementation or active count is claimed, and Surgeon remains priority.
 
 UP-093 Fearless is active and Phase1 verified. Both-target36048 and repaired24535
 exit0; principal13527 passes5/5 and activated30226 passes27/27, zero skips in9.008s.
