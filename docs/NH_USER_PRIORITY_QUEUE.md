@@ -9,6 +9,75 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-067 — Implement Spellcraft Arcane Focus
+
+Status: Verified (delivery pending), 2026-09-30. UP-023 missing Basic perk; independent bounded
+work while the Polymorph shared-form contract is mapped and UP-065 awaits its
+design answer. The first accepted hero spell in combat gains 20% on its Spell
+Power-derived numerical component only, not the flat base. Reuse the existing
+battle-long completed-hero-spell state; no duplicate counter. Creature casts and
+rejected actions must not consume it, and round advancement must not renew it.
+Authoritative mechanics and detached AI must share scaling and completion, with
+no mutation of live state/RNG during previews. Cover timed and damage principal
+paths and audit helper-based numerical consumers rather than certifying damage
+alone. Root owns configs, test wiring, docs, builds/Git; runtime owns lib/spells
+and its new server fixture; AI tester owns only its new AI fixture. Source
+registration is not completion; require successful build and focused execution.
+
+Resumed after recording UP-065's design blocker. The interrupted exploration
+made no runtime edits; premature activation/test-file registrations were removed.
+Reuse completed hero-cast history and propagate the cast-specific modifier into
+direct numerical helpers (including Quicksand and Sorrow), not just damage.
+
+Final both-target build `55273` passes; isolated native `49925` passes 27/27,
+zero skips, with actual AI selection/accepted casting, detached first/second
+casts, Sorrow after completion publication, rejected/creature casts and Land
+Mine count guards. Content/perk 76/76, placement/module/diff checks pass; review
+has no remaining blocker. Reports `UP067-arcane-focus-focused-retry.log`/`.xml`.
+Coverage advances 127→128 active perks, Spellcraft 2→3; no rank/spell identity
+change. Broader interactions and full battle save/load remain Phase 2. Artwork
+is Not done and launcher promotion/manual playable acceptance remain pending.
+
+## UP-066 — Implement Chaos Polymorph and battle-local creature forms
+
+Status: In progress; architecture/ownership checkpoint, 2026-09-30.
+UP-023 Phase 1 missing combat identity; UP-065 Basic Toxic Spines remains
+blocked on the requested design choice, not forgotten or silently rewritten.
+Canonical Polymorph is Level 3, 12 Mana, one enemy stack, random same-tier form
+from any faction for two rounds. Preserve exact aggregate creature HP through
+ceil(HP/new per-creature HP) plus a wounded final creature, and convert surviving
+HP back on expiry. Preserve owner, allegiance, current initiative position and
+transferable magic; replace creature stats, movement, attacks, abilities and
+resistances. Keep the same battle unit ID, original campaign-army species and
+casualty provenance. Normalize the form before early battle-result accounting;
+never persist the replacement species/count into the hero's permanent army.
+Authoritative and detached AI must share effective-form and HP rules, without
+original creature-bonus leakage or live RNG during previews. Registration,
+required targeting/status feedback, build and focused real cast/reversion/AI
+evidence are required before counting this identity. Shapeshifter's two-form
+lower-Army-Value selection is a separate modifier, not implied by the base spell.
+Root owns shared architecture, registration, docs, builds and Git; the bounded
+form-contract explorer is read-only. No implementation or playable delivery
+claimed at this initial checkpoint.
+
+Geometry decision resolved by the user: relocate to the nearest legal position
+when the replacement footprint cannot fit at the original anchor. Keep all
+same-tier forms eligible rather than excluding non-fitting forms. Ownership,
+allegiance and current Initiative queue position remain unchanged. The approved
+rule is integrated into canonical Polymorph; do not overlap blocked/occupied
+hexes. Authoritative and detached relocation must share the same legality rule.
+
+Read-only contract checkpoint: preserve CStack's original typeID/base/baseAmount
+for campaign army identity. Effective form belongs in shared CUnitState and must
+copy/save with detached state. Filter old CREATURE_ABILITY source-ID bonuses at
+the effective unit view, then add the replacement's native bonuses; do not mutate
+the original army stack or retain both species' abilities. CHealth's integer
+form counts cannot double as original casualties/remains: use an original-species
+HP/provenance ledger distinct from current-form count and wounded final creature.
+Normalize before BattleResultProcessor snapshots casualties/Necromancy, including
+early battle end. Current getKilled()/getUnusableRemains() arithmetic is not a
+safe form implementation. No source feature or coverage increase claimed.
+
 ## UP-065 — Toxic Spines does not trigger in the user's playable battle
 
 Status: In progress, 2026-09-30. The user reports no Toxic Spines trigger,

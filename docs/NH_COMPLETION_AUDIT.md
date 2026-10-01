@@ -3,7 +3,7 @@
 > Historical inventory snapshot. Its 2026-09-24 perk counts and per-Skill rows
 > are stale and must not be used as current Phase 1 coverage. The maintained
 > working-tree ledger is [NH_FUNCTIONAL_COMPLETION_MATRIX.md](NH_FUNCTIONAL_COMPLETION_MATRIX.md),
-> which currently records 95 active / 215 planned perks. Keep this audit for
+> where current counts and their evidence are maintained. Keep this audit for
 > its earlier evidence and unfinished-item history until its whole scope can
 > be reconciled, rather than updating one number and implying the rest is live.
 

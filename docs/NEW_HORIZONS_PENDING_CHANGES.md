@@ -19,6 +19,14 @@ None.
 
 ## Integrated history
 
+### Polymorph footprint relocation — 2026-09-30 (integrated)
+
+The user chose relocation to the nearest legal position when a replacement
+footprint cannot fit at the original hex. Integrated into canonical Polymorph:
+do not exclude the form solely for its original-position footprint; retain
+ownership, allegiance and current Initiative queue position. Runtime coverage
+and the shared form/HP foundation remain tracked under UP-066.
+
 ### Paradox Shield and damage caps — 2026-09-30 (integrated)
 
 The user selected the existing physical cap: Paradox Shield adds ten percentage
