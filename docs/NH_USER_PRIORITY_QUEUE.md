@@ -11,7 +11,7 @@ entries and their validation/delivery evidence.
 
 ## UP-101 — Quartermaster extra war-machine activation
 
-Status: In progress; read-only mapping, 2026-10-01. Continue UP-023 Phase1
+Status: Verified (playable delivery pending), 2026-10-01. Continue UP-023 Phase1
 coverage with the canonical Basic War Machines perk: once per combat, while
 the Ammo Cart survives, the first allied war machine other than the cart to
 complete an activation immediately receives an additional activation at 50%
@@ -62,6 +62,60 @@ consumer writer detached AI copy/projections and client status/preview; tester
 isolated new native fixture. Root owns append-only version/type registration,
 CMake, config/module/inventory/docs, serial build/native gates and Git. No
 production source or coverage increase is claimed by this completed map.
+Implementation delegation started: independent Luna runtime and consumer owners
+are active. The third fixture spawn was rejected by the service thread limit;
+assign it when a slot frees without duplicating source ownership. Root appends
+one save feature for the generic reduced extra activation and owns build/type
+registration. Keep Quartermaster planned until the principal action gates pass.
+The rejected third spawn was recovered by assigning the completed Luna mapper
+the isolated fixture task through a follow-up; four agents including root are
+now active. The tester owns only NewHorizonsQuartermasterTest.cpp. Confirmed
+consumer APIs share side state, activation output percent, raw scaled Tent
+healing and raw scaled Catapult structural output; ordinary client state
+application requires no new frontend-specific packet event.
+Fixture scope correction: Quartermaster and Master Gunner both require Basic,
+and the approved one-per-tier progression cannot legally select both for one
+hero. Preserve that model; do not rewrite perk requirements or bypass offers to
+manufacture a combined principal fixture. Quartermaster's accepted-action gate
+uses its legal offer alone. A detached generic percentage-composition check may
+prove 50% times60%, but is not evidence of a playable two-Basic-perk hero.
+Consumer source is frozen. An actual Astra reviewer is now inspecting the
+candidate; runtime and isolated fixture remain under their exclusive owners.
+Phase2 retains future-lookahead consumption of the copied reduced identity;
+principal current-branch forecasts must already match reduced output.
+Runtime, consumer and six-case fixture sources are frozen. Independent Astra
+review reports no remaining blocker after fixing terminal battle lifetime,
+lightweight Catapult proxy dereference and the missing Fire Wall activation hook.
+Root integrated a small production-AI Tent selection check after the tester
+follow-up was service-rejected; its returned action is submitted authoritatively.
+Both-target build88648 is running with12 jobs (`UP101-build.log`); preserve its
+live handle and do not execute native tests alongside it. Quartermaster remains
+planned and coverage151/310 until the six focused cases pass. No GUI, artwork
+approval or playable promotion is claimed.
+Build88648 exits1 on the AI heal amount's mutable-reference contract. Root uses
+a fresh per-target mutable copy, retaining the failed run and unchanged formula/
+fixture expectations. No native execution or activation yet; repaired build
+will reuse the same build tree and12-job limit after terminal failure is confirmed.
+Repaired build66614 is confirmed live through its original CMake/Ninja processes
+after the tool lost that session handle. A replacement observer monitors the same
+process; no competing build or native run was started. Preserve the repaired log
+and obtain terminal build evidence before the principal gate. The preceding
+implementation cycle was progress; this checkpoint is a verified process wait.
+The repaired build finishes both links and the subsequent target-freshness check
+exits0. Principal73624 runs six cases with zero skips: five pass; the siege case
+fails activation setup before structural-output checks. A new bounded Luna
+fixture owner diagnoses that failure. Registration stays planned and coverage
+unchanged until the repaired principal gate passes.
+Final gate: fixture build21374 exits0. Repaired principal47670 passes6/6 in2.277s;
+activated88418 passes22/22 Quartermaster/Master Gunner/Engineer/Piercing/Surgeon
+cases in8.107s, zero skips. Data/inventory19/19 pass. Quartermaster is active;
+coverage151→152/310, planned159→158; War Machines5active/5planned. Binary:
+`c0cad3f2435ba0886c286ce5bb311170cbec7a58b06af60fa2d57e96e3ade5d8`.
+The siege setup now survives opening tower shots without weakening output checks.
+Independent production review has no blocker. Deferred Phase2: simulated future
+activation consumption, zero-rounded Catapult fallback, broader Wait/Order/
+controller-transfer interactions and full binary battle snapshots. Perk-specific
+art remains Not done. No GUI, snapshot promotion or playable acceptance.
 
 ## UP-100 — Field Workshop machine and fortification repair
 
