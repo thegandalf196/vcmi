@@ -40,7 +40,19 @@ failed run merely because a later run succeeds.
 
 ## Current implementation priority — complete Skills perks and spells
 
-Latest completed item: UP-089 Twist of Fate is active and Phase1 verified.
+UP-090 Rally is active and Phase1 verified. Both-target build93251 exits0
+(`UP090-build.log`); principal3559 passes4/4, activated native7731 passes47/47,
+zero skips in13.611s, and data/inventory19/19 pass. Independent production review
+has no blocker; its stochastic-precedence and one-event-AI fixture findings were
+strengthened before the gate. Coverage143/310 active,167 planned; Discipline2/8.
+Exact AI first-trigger ordering/correlation remains Phase2. No purpose-made art
+approval, GUI launch or playable promotion. The next bounded
+Esprit de Corps map identifies separate mixed-faction and undead-presence Morale
+penalties, and hero context missing from Nullkiller's temporary-army projection.
+User clarification is requested on which composition penalties its total-1
+reduction covers; do not silently choose the narrower mixed-faction interpretation.
+
+Previous completed item: UP-089 Twist of Fate is active and Phase1 verified.
 Final both-target31690 and native95364 pass43/43, zero skips in12.421s; data19/19.
 Independent Astra activation review finds no blocker. Coverage142/310 active,
 168 planned; Luck6/4. No playable promotion or purpose-made art approval.
