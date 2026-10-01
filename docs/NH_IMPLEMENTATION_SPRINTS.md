@@ -40,6 +40,39 @@ failed run merely because a later run succeeds.
 
 ## Current implementation priority — complete Skills perks and spells
 
+Latest verified slice: UP-101 Quartermaster. Genuine once-per-combat extra
+activation applies50% output to Ballista, Tent and Catapult, with side-owned
+versioned/replicated state, shared forecasts, AI Tent/Catapult consumers and
+authoritative log feedback. Final both-target21374 exits0; principal47670 passes
+6/6 and activated88418 passes22/22 in8.107s, zero skips; data/inventory19/19.
+Coverage152/310 active,158 planned; War Machines5/5. Art and playable delivery
+remain pending. Phase2 retains future-lookahead state consumption, low-output
+Catapult fallback and broader activation/Order interactions. Next select an
+unblocked missing item from the priority queue; Field Workshop's destroyed-target
+question and Breachmaker adjacency remain independent design gates.
+
+Latest UP-101 gate: repaired build completes both executable links, and a fresh
+both-target check exits0. Principal73624 passes five of six cases, zero skips;
+the Catapult fixture fails activation setup before checking structural output.
+A bounded Luna fixture owner is diagnosing the cause. Keep registration planned
+and counts unchanged until the corrected six-case gate passes. Failed build and
+native evidence remain in NH_RELEASE_FAILURES.md.
+
+UP-101 source is frozen and reviewed without a remaining blocker. Both-target
+build88648 runs with12 jobs (`UP101-build.log`). Principal native filter is
+NewHorizonsQuartermasterTest.* (six cases), including legal offer, actual
+Ballista/Tent/Catapult output, Tent AI hook, no-perk/cart guards, versioned state
+and detached forecasts. Keep registration planned until the focused gate passes.
+Review repaired terminal battle UAF, lightweight Catapult proxy safety and Fire
+Wall lifecycle admission; lessons are retained in NH_RELEASE_FAILURES.md.
+
+UP-101 implementation is now delegated to separate Luna runtime and consumer
+owners. Root appends NEW_HORIZONS_REDUCED_EXTRA_ACTIVATION and wire type289;
+the requested isolated tester spawn was service-rejected, so assign it when an
+execution slot frees. No concurrent source owners share files. Quartermaster
+remains planned until focused compile/native evidence, and no GUI or playable
+snapshot promotion is authorized by this implementation checkpoint.
+
 2026-10-01 continuation: the preceding reply only confirmed an already-recorded
 Twist of Fate decision and made no new implementation progress. Clean worktree
 revalidated. UP-101 Quartermaster is selected while UP-100's destroyed-target
