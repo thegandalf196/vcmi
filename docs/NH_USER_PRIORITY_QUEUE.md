@@ -9,6 +9,69 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-086 — Implement Luck Gambler
+
+Status: Read-only next-slice map, 2026-10-01. UP-023 missing Advanced Luck
+perk: the first friendly attack each round gains+3 Luck for that attack; if
+positive Luck does not trigger, its attacker suffers-2 Luck until its next
+activation. Map first-strike side history, post-roll penalty and activation
+expiry through existing authoritative/replicated and detached AI lifecycles.
+Keep current-controller ownership and normal Luck immunity. Root owns shared
+architecture and configuration; no code edits before Second Chance freezes and
+the map is reviewed. Acceptance: first attack only, positive/non-positive
+outcomes, genuine activation expiry, shared AI prediction/branch isolation,
+save representation and focused gates. Serendipity's round1 question remains
+pending, not silently replaced by an assumption.
+
+## UP-085 — Implement Luck Serendipity
+
+Status: Read-only architecture map, 2026-10-01. UP-023 missing Advanced Luck
+perk: when no friendly positive Luck trigger occurred in the previous round,
+the first friendly attack of the new round receives+2 Luck for that attack.
+Map the existing Sylvan Serendipity history, authoritative first-strike
+consumption, shared damage forecast and detached AI replay. Do not conflate
+perk identities, invent additive coexistence, or activate from description
+alone. No runtime edits while UP-084's candidate builds. Root owns the reuse
+decision and any narrow design question; worker is read-only. Acceptance:
+positive/no-positive previous rounds, first-attack-only behavior, saved/replicated
+history, selected/rank gating, AI parity and focused native/data gates.
+
+Map complete: Sylvan's same-named Basic perk is combat-long+1 per stack until
+its first positive trigger, not the generic perk's previous-round+2 first-attack
+rule. Reuse the shared side-state/round/strike packet lifecycle but retain
+distinct flags and round history; combat-long positiveLuckUnits cannot answer
+the previous-round question. Detached AI must consume the first-attack window
+even for uncertain/no-Luck outcomes, not only guaranteed rolls. The first
+executed friendly attack consumes it even when No Luck prevents the bonus;
+do not bypass immunity. User question pending: whether round1 receives it or
+eligibility starts at round2 after an actual previous round. No activation yet.
+
+## UP-084 — Implement Luck Second Chance
+
+Status: Source/native verified; playable delivery pending, 2026-10-01. UP-023 missing Basic Luck
+perk: the first negative Luck trigger against the army each combat is ignored.
+Use independent once-per-combat eligibility/expenditure, not Sylvan Nature's
+Providence's resetting once-per-round flag. Map replicated/saved side state,
+authoritative roll suppression, detached AI expectation and branch expenditure.
+Root owns architecture/config/version/docs/CMake/build/Git. Acceptance: actual
+first negative trigger suppression, subsequent triggers unchanged across rounds,
+side isolation, current-controller ownership, serialization and focused AI/native
+evidence. No per-update scan or fabricated extra action. Map complete; root
+state/setup/append-only serialization and registration are staged. Runtime and
+AI have disjoint files, tester has a new isolated fixture. Data/inventory19/19
+pass. Final both-target23927 exits0; native6011 passes14/14, zero skips in3.859s
+(`UP084-verified.log`/`.xml`), including six new cases and eight Luck/Providence
+guards. Binary SHA-256
+`8a34b62c978fa1842b571c9d1e0c5344583d18aa4678e6c5f73f5d61cd553f5f`.
+Independent source/fixture review blockers are repaired: safe detached
+retaliation target lookup and positive/negative exclusivity. The old Providence
+fixtures now satisfy legal Basic Elven Precision before Advanced prerequisites;
+failed compile/runs and root's incorrect first prerequisite choice are retained
+in NH_RELEASE_FAILURES.md. Coverage138→139/310 active, planned172→171; Luck3/7.
+Probabilistic multihit, explicit stochastic-result replay, direct fully absorbed
+reaction/controller-change matrices remain Phase2. Purpose-made art Not done;
+no launcher promotion or rendered acceptance.
+
 ## UP-083 — Implement Luck Lucky Recovery
 
 Status: Read-only next-slice map, 2026-10-01. UP-023 missing Advanced Luck
