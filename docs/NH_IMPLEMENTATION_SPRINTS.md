@@ -40,6 +40,25 @@ failed run merely because a later run succeeds.
 
 ## Current implementation priority — complete Skills perks and spells
 
+### 2026-10-01 current slice — Luck Second Chance
+
+UP-084 implements the next unblocked Basic Luck perk. Independent battle-long active
+and spent flags are added to the existing replicated army Luck state; Nature's
+Providence keeps its independent round-long flag. Both first-trigger conditions
+qualify on the same rolled negative when both apply, without inventing an extra
+sequential shield. Append-only NEW_HORIZONS_SECOND_CHANCE protects binary/wire
+compatibility and old states default inert. Runtime/shared eligibility and
+detached AI branch consumption are source/native verified. Both-target23927
+passes; native6011 passes14/14, zero skips in3.859s, reports
+`UP084-verified.log`/`.xml`. Data/inventory19/19 pass; repaired independent review
+has no blocker. Coverage139/310 active,171 planned; Luck3/7. Actual first-trigger
+suppression, round persistence, side isolation, serialization, double shots,
+retaliation, forced-positive exclusivity and excluded sources have evidence.
+Probabilistic multihit distribution, explicit stochastic-result replay and
+fully absorbed reaction/controller-change breadth remain Phase2. Art Not done;
+no playable promotion. Serendipity's round1 question is pending; Gambler is the
+next unblocked read-only map.
+
 ### 2026-10-01 current slice — Luck Lucky Aim
 
 UP-082 implements the next unblocked Basic Luck perk while Perfect Fortune's
