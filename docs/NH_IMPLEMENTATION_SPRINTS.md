@@ -42,6 +42,23 @@ failed run merely because a later run succeeds.
 
 ### 2026-10-01 current slice — Twist of Fate shared reroll infrastructure
 
+Latest checkpoint: the scripted hostile boolean/count bridges and local AI
+callback are implemented. First build18304 exposed C++ callback/Unit interface
+mismatches, repaired without a rule change. Retry23124 builds both targets;
+native26641 passes39/39, zero skips in10.901s, including four actual negative
+Luck/Morale/suppression/hostile Death Blow cases. Data/inventory19/19 pass.
+Principal Lua scripted tests remain unregistered/unbuilt; full-perk activation,
+late-collateral evidence and independent scripted review are next. Coverage is
+still141/310 active,169 planned. No GUI or playable promotion.
+
+Scripted fixture checkpoint: both-target50122 exits0; combined native6674 passes
+42/42, zero skips in12.110s. Real Lua tests verify Destruction's failed final
+redraw, the exact final capped Death Stare kill count, and immune targets retaining
+Twist. Independent Astra scripted review remains service-unavailable after
+repeated retries; root reviewed the diff. Commit this verified bounded slice,
+then add late Hand of Fate collateral evidence before activating/counting Twist.
+Full attack-script dispatch and broader interaction/AI matrices belong to Phase2.
+
 UP-089's approved scope includes negative Luck/Morale, failed hostile resistance
 and successful hostile chance abilities; not damage variance, failed benefits
 or random selection. Root selected independent side-owned enabled/used state,

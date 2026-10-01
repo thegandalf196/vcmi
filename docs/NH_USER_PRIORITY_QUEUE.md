@@ -182,6 +182,55 @@ pass but do not substitute for these principal callsite cases. Broader multi-eve
 AI valuation and reflection interaction matrices remain Phase2 integration work.
 No GUI, playable promotion or art completion is claimed.
 
+Verified bounded runtime/AI checkpoint is pushed as1b57c9ac1; worktree was clean
+on resumption. Root selected the scripted extension: explicit harmed-recipient
+boolean proc bridge with one frozen favorable chance, plus a capped binomial
+count bridge whose positive result is adverse and whose entire reroll is final.
+Current controller determines the suffering army; original actor army retains
+its RNG stream. Inert/immune/friendly effects must not spend an allowance, and
+legacy first draws must be preserved. One Luna owns the bounded callback/server/
+Lua/script implementation; a parallel test-worker spawn was service-rejected.
+Registration and coverage remain unchanged pending full scope and focused gates.
+
+Root added the new boolean proc seam's detached AI implementation in its owned
+StackWithBonuses files: freeze the projected effective chance once, classify by
+current actor/recipient controllers, and spend only local branch state through
+the existing resolver. Lua count resolution will use that same generic local
+resolver. Predictive stochastic outcome quality remains the existing midpoint
+model; it must not fabricate a favorable reroll. No build/native claim yet.
+
+Resumption reconfirms the user-approved explicit scope without changing the
+canonical rule. Script implementation is frozen; root aligned invalid/invincible
+recipient guards in the authoritative, Lua-count and hypothetical paths. A Luna
+tester now owns an isolated scripted-runtime fixture. The concurrent Astra
+reviewer spawn was service-rejected and will be retried after the tester finishes.
+Root's four additional actual Luck/Morale/proc/suppression cases are unverified.
+Both-target build18304 is running with12 jobs (`UP089-scripted-build.log`);
+do not execute native tests until it exits or count this perk as complete yet.
+
+Build18304 failed on narrower callback/Unit C++ method names; the service rejected
+the bounded repair follow-up, so root repaired that API mismatch directly.
+Both-target retry23124 exits0 (`UP089-scripted-build-retry1.log`). Native26641
+passes39/39, zero skips in10.901s (`UP089-scripted-regressions.log`/`.xml`),
+including all four new actual Luck/Morale/suppression/Death Blow cases. Binary
+SHA-256 `a19116a05068cdb05e067c624335c5f3deec38f8e232358af3cd82ca076ee9d5`.
+Data/inventory19/19 pass. The tester's three real scripted-ability cases remain
+unregistered/unbuilt; this regression checkpoint does not complete the full perk.
+
+Scripted fixture is now registered and verified: both-target50122 exits0
+(`UP089-scripted-fixture-build.log`); principal native67689 passes3/3 in1.444s.
+The real Lua entry points exercise Destruction success→failed final redraw,
+exact full capped Death Stare count redraw, and immune-target non-consumption.
+Final combined native6674 passes42/42, zero skips in12.110s
+(`UP089-scripted-verified.log`/`.xml`); binary SHA-256
+`a18f4d8ed6cc97c933fa9ae37f1b5ab41b0b1be0559f28ac3e07d5416809cdd5`.
+Independent Astra scripted review remains unavailable after repeated spawn
+rejections, including after tester completion; root reviewed the bounded diff
+but does not claim independent approval. Full-attack script event collection,
+broader controller/immune/proc matrices and conditional AI valuation remain
+Phase2 evidence. Late Hand of Fate collateral is the next principal Phase1
+gate before full-perk activation. Coverage remains unchanged; no promotion.
+
 ## UP-088 — Implement Luck Opportunist
 
 Status: Read-only implementation map, 2026-10-01. UP-023 missing Basic Luck
