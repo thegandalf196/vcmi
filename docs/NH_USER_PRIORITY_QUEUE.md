@@ -11,7 +11,7 @@ entries and their validation/delivery evidence.
 
 ## UP-090 — Implement Discipline Rally
 
-Status: Bounded map complete; shared contract selected, 2026-10-01. UP-023 missing
+Status: Verified (playable delivery pending), 2026-10-01. UP-023 missing
 Basic perk: once per combat, cancel the first negative Morale trigger affecting
 a friendly stack. Preserve current-controller army ownership, ordinary Morale
 immunity, genuine activation flow, save/replication and detached AI state.
@@ -37,6 +37,35 @@ Its current per-unit Morale heuristic has no first-trigger ordering model;
 broader cross-stack/multi-round correlation belongs to Phase2. Future coexistence
 with unimplemented Unbreakable requires explicit suppression precedence before
 that Expert perk is added; it does not block Rally alone. No source activation.
+
+Shared state/packet source is frozen with its own append-only save feature and
+type288. Root wired the authoritative cancellation before cached-first-draw Twist
+resolution, ordinary activation and hero-named feedback. Detached AI copies its
+own allowance and adjusts only one prospective Morale event, leaving the rest of
+the duration exposed. Four status-spell valuation paths use that bounded helper;
+cross-stack realized-trigger ordering remains a Phase2 forecast limitation.
+The fixture worker owns only the new Rally test; an Astra reviewer inspects the
+frozen production slice. Registration remains planned until focused build/native
+gates pass. No completed coverage or playable promotion claimed yet.
+
+Independent Astra production review found no blocker. Its two fixture findings
+were addressed before build: seeded50% bad Morale on a hypnotized recipient now
+tests cancellation before eligible Twist, and AI horizon2 assertions show first
+delta-0.35 then spent delta-0.70 with sibling/live isolation. Four fixture cases
+are frozen. Serialized both-target build93251 is running with12 jobs
+(`UP090-build.log`); inspect this handle on resumption, never restart merely
+because an observation times out. Reviewer follow-up was service-rejected;
+the original review stands and root inspected the strengthened fixture.
+
+Build93251 exits0 for client and tests. Native3559 passes4/4 principal cases;
+after activation, native7731 passes47/47 with zero skips in13.611s
+(`UP090-activated-verified.log`/`.xml`). Binary SHA-256
+`f012740b9bf1a26fc50ea0a16a8fa4ae9b759401e3c972d812ff8d47ed5b1d2b`.
+Data/inventory19/19 pass; both registry copies are active. Coverage142→143/310
+active, planned168→167; Discipline2active/8planned. Broader AI first-trigger
+ordering and cross-stack/multi-round probability correlation remain Phase2.
+Future Unbreakable precedence must be decided before that perk is implemented.
+Purpose-made art is Not done; no GUI, snapshot promotion or playable acceptance.
 
 ## UP-089 — Implement Luck Twist of Fate
 
