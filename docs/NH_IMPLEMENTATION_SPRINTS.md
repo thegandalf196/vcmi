@@ -40,6 +40,17 @@ failed run merely because a later run succeeds.
 
 ## Current implementation priority — complete Skills perks and spells
 
+UP-091 Reserve is active and Phase1 verified. Both-target34777 exits0;
+activated native69809 passes16/16 with zero skips in4.778s, and data/inventory19/19
+pass. Actual delayed +2 movement, unchanged Initiative, immediate expiry,
+current-controller ownership, branch isolation and serialized sidecar/UnitChanges
+are verified. Coverage144/310 active,166 planned; Battlecraft2/8. Independent
+Astra review was service-rejected; root reviewed the slice without inventing that
+approval. Purpose-made art and playable promotion remain open. Phase2 retains
+Wait-choice attack-catalogue regeneration and the pre-existing full binary
+unit-state snapshot contract. Next: Standard Bearer, using the retained dynamic
+adjacency map rather than cached sibling-dependent bonus limiters.
+
 UP-090 Rally is active and Phase1 verified. Both-target build93251 exits0
 (`UP090-build.log`); principal3559 passes4/4, activated native7731 passes47/47,
 zero skips in13.611s, and data/inventory19/19 pass. Independent production review

@@ -9,6 +9,71 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-091 — Reserve and Standard Bearer coverage
+
+Status: Reserve verified (playable delivery pending); Standard Bearer open,
+2026-10-01. UP-023 missing Basic Battlecraft
+Reserve: a stack gains +2 Speed only during its delayed activation after Waiting.
+Missing Advanced Discipline Standard Bearer: adjacency to at least one other
+friendly stack grants +1 Morale, not one bonus per neighbor. Root owns activation
+and shared architecture; independent read-only maps identify lifecycle/AI seams.
+Require actual ordinary interaction, current-controller ownership, live and
+detached state parity, lifecycle/immunity boundaries and focused native gates.
+Do not activate or count either before validation. Entrench is already active;
+the current 1/1 baseline pass confirms it is not a missing item to reimplement.
+Esprit de Corps remains a separate scope question, not a blocker for these items.
+
+Reserve root contract: use a generic nonnegative per-unit activation movement
+bonus, not an until-next-turn SPEED bonus that persists beyond this activation.
+Grant only on the delayed waited TURN_QUEUE activation for the current controller;
+preserve through Hero/spell/pursuit continuations, clear at the existing terminal
+Creature Activation EndAction signal and on reset/round/removal. Do not change
+Initiative. Detached Wait forecasting must arm the same +2 before reachability.
+Current binary BattleInfo snapshots omit CUnitState, so append a version-gated
+unit-ID/value sidecar for this field rather than silently losing it or rejecting
+all current saves. Legacy defaults zero; nonzero downgrade must reject before
+writing. One Luna worker owns state/runtime/AI files; new tester spawn and previous
+tester reuse were service-rejected, so the completed Standard Bearer mapper slot
+is reused for the isolated Reserve fixture. No feature activation/coverage yet.
+
+Standard Bearer map: existing UNIT_ADJACENT limiter is creature-specific and lacks
+friendly ownership; sibling death/control cache invalidation and detached copied
+limiters make a direct reuse stale. Preserve ordinary recipient Morale immunity,
+but any living currently friendly supporting stack qualifies. A dynamic battle
+context query must use candidate positions/control, not live original-bearer
+limited bonuses. Serialize work after Reserve because CUnitState/AI ownership
+overlaps; the map is retained without pretending this is implemented.
+
+Reserve source is frozen. Independent reviewer spawn and previous-reviewer reuse
+were service-rejected; root reviews the frozen diff without inventing approval.
+Root hardened detached activation-end cleanup against a missing active unit.
+Phase2 forecast finding: BattleExchangeEvaluator refreshes delayed reachability
+after makeWait, but its Wait-choice loop still starts from the already-built
+possible-attack catalogue. Actual delayed AI activation sees the granted movement;
+regenerating every newly reachable Wait candidate is separate planner integration.
+
+Both-target build25950 exits1 (`UP091-build.log`): the isolated fixture has an
+unqualified CUnitState and an invalid Unit-to-CStack const_cast. Existing Luna
+owners are assigned bounded repairs: fixture namespace/ID lookup and legal local
+active perk offer; production compiled sidecar helpers to remove incomplete-type
+warnings and a UnitChanges older-version nonzero-state guard. The independent
+reviewer spawn is again service-rejected. No native pass or coverage activation.
+
+Reserve acceptance checkpoint: both-target repaired64222 and final controller
+build34777 exit0. Native55349 passes16/16, then activated native69809 passes16/16,
+zero skips in4.778s (`UP091-activated-verified.log`/`.xml`), including five Reserve,
+seven Battlecraft and four Rally cases. The principal accepted Wait → delayed
+extra-reach move → immediate expiry works; current-controller detached Wait,
+branch isolation, unchanged Initiative, sidecar/UnitChanges and immunity guards
+pass. Binary SHA-256
+`9fe6ca9152d6e666c651efbea2617ee173a5770b6c8100b571befa07030e6cce`.
+Data/inventory19/19 pass. Both registry copies active; coverage143→144/310,
+planned167→166, Battlecraft2active/8planned. Root reviewed production; independent
+Astra review remained service-unavailable and is not claimed. Wider Wait-choice
+attack-catalogue regeneration and the pre-existing full CUnitState binary-snapshot
+contract remain Phase2 findings. Purpose-made art Not done; no playable promotion.
+Next: implement the retained Standard Bearer dynamic adjacency/Morale map.
+
 ## UP-090 — Implement Discipline Rally
 
 Status: Verified (playable delivery pending), 2026-10-01. UP-023 missing
