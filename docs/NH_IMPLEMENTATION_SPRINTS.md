@@ -40,6 +40,39 @@ failed run merely because a later run succeeds.
 
 ## Current implementation priority — complete Skills perks and spells
 
+### 2026-10-01 verified slice — Grand Formula and Tax Collector
+
+Both perks are implemented, registered and independently reviewed. Final
+both-target build68608 passes; focused native45801 passes38/38 without skips,
+including actual casts, shared history, non-damage scaling, payout and AI.
+Data/inventory78/78 pass. Coverage129→131/310 active perks, planned181→179;
+Spellcraft4/10, Estates1/10, ranks84/93 and combat identities60/67 unchanged.
+Retain failed fixture builds/runs in NH_RELEASE_FAILURES.md. Phase2 keeps
+handicap/reload/ownership combinations and battle-specific tooltip math.
+No playable promotion or purpose-made art acceptance. Next mapped missing
+coverage: Steward's daily town contribution, pending two-resident stacking
+decision; Concentration, Polymorph and Basic Toxic Spines retain design blockers.
+
+### 2026-10-01 current slice — Spellcraft Grand Formula / Concentration boundary
+
+UP-069 selects another unblocked missing perk while UP-066 Phantom/expiry and
+UP-065 Basic Toxic Spines await design answers. Implement Grand Formula using
+the existing accepted-level history and a shared SP-only 150% factor before
+other multipliers. Audit Concentration's single-stack targeting boundary in
+parallel with independent focused-test mapping; resolve material ambiguity
+before implementing that perk. No new counter or per-frame scan is intended.
+Root retains registration, integration, builds/Git and evidence updates.
+
+UP-070 audits Estates Tax Collector in parallel as an independent first Basic
+perk/progression path. Existing daily income and AI forecasts must share the
+owned-town +50/cap500 amount; no spells ownership overlap and no recurring
+runtime scan outside income requests. Production client build passes and both
+sources have non-blocking review; native execution remains pending. The live
+town-count API reconstructs its vector from owned objects, not constant time.
+A read-only next-slice map locates Steward's daily owned-town event and AI seam
+while root finishes Grand Formula/Tax Collector verification. No Steward source
+implementation or activation is claimed.
+
 ### 2026-10-01 current slice — random battle-form AI and Mana Conservation
 
 UP-066's next unblocked dependency uses a shared typed effect candidate API:

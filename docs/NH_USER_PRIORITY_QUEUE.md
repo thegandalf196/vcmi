@@ -9,6 +9,82 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-070 — Implement Estates Tax Collector
+
+Status: Verified (delivery pending), 2026-10-01. Independent UP-023 missing Basic perk, formerly
+blocking ordinary Estates progression. Gain 50 Gold per day per owned town,
+capped at 500 Gold per day from this perk. Audit existing daily hero income and
+AI forecasts before editing; reuse the daily event, not a polling scan or a new
+mirrored treasury. Respect active perk/rank and saved rules. A read-only Luna
+map establishes exact runtime/test ownership outside lib/spells and the
+Spellcraft fixtures. Root owns activation, documentation, builds and Git.
+Require owned-town count/cap, absent/planned/rank gating and authoritative
+daily-income evidence before counting. No implementation or delivery claimed.
+
+Source checkpoint: dailyIncome adds the capped contribution before the existing
+handicap, and authoritative NewTurn payout and Nullkiller BuildAnalyzer consume
+that shared result. Independent production/fixture review found no blocker.
+getTowns reconstructs its collection from owned objects, so this is not O(1)
+end-to-end; it runs on income requests, not a per-frame invariant scan. Native
+test build `65937` is running; focused execution and coverage counting remain
+pending. Phase 2 retains handicap, reload and hero-ownership-transfer scenarios.
+
+Focused native `86706` passes all twelve economy cases and the Tax Collector AI
+case, zero skips, after the test rank-parameter repair. Both-target build
+`24828` passes. Overall selection is 35/38 due to separate Grand Formula fixture
+failures retained in NH_RELEASE_FAILURES.md. Tax Collector can advance
+independently after final integration; no playable promotion is claimed.
+
+Isolated native `25581` passes 13/13, zero skips, in 4.388s; reports
+`UP070-tax-collector.log`/`.xml`. The same production/test bytes were used as
+the combined run. Tax Collector is native verified; Grand Formula's remaining
+fixture repairs do not invalidate this independent payout result.
+
+## UP-069 — Implement Spellcraft Grand Formula and audit Concentration
+
+Status: Grand Formula verified (delivery pending); Concentration blocked on design, 2026-10-01. UP-023 missing-perk coverage. Grand Formula
+must scale the Spell Power-derived component of the first accepted Level 4 or
+Level 5 hero spell to 150% before other multipliers, retaining the flat base.
+Reuse completedHeroSpellLevels rather than add duplicate battle state; creature
+casts, rejected actions and ordinary round rollover must not consume/reset it.
+Authoritative mechanics and detached AI must share the multiplier for damage
+and other numerical consumers. Concentration's exact single-stack targeting
+boundary is being audited before choosing an implementation; do not silently
+equate selected aims with all affected stacks. Root owns architecture,
+activation, docs, builds and Git; independent Luna runtime/test maps are
+read-only until exact ownership is assigned. Require focused actual casting,
+shared forecast and first-combined-Level-4/5 evidence before activation/counting.
+No coverage increase or playable delivery is claimed at selection.
+
+Architecture checkpoint: Grand Formula snapshots the shared first-4-or-5 gate
+beside Arcane Focus in BaseMechanics. A generic cast-component percentage
+combines 150% Grand Formula with 120% Arcane Focus multiplicatively (180%,
+not additive 170%); all Mechanics-backed numerical helpers consume the same
+snapshot before accepted-cast publication. No new persisted field is required.
+Independent tests own separate new server/AI fixtures. Concentration remains
+planned: the user has been asked whether direct single-stack targeting alone
+qualifies or a spell affecting exactly one stack can qualify even if it is an
+area/global/chain spell. Do not resolve that distinction silently.
+
+Runtime checkpoint: the bounded Grand Formula source is implemented and
+independently reviewed without a core-mechanic blocker. Root corrected the
+spell-level lookup to the battle callback API before compile (IBattleInfo is
+not the spell-level callback). Object probe `89982` passes the changed mechanics
+and effect translation units; full build and focused runtime/AI cases remain
+pending. Ordinary hero-only descriptions still omit battle-specific modifier
+values, a deferred shared presentation limitation. No verification/counting or
+playable claim is made from this object compile alone.
+
+Final both-target build `68608` passes; native `45801` passes 38/38, zero skips,
+including all six Grand Formula runtime/AI cases and thirteen economy/AI cases.
+Reports `UP069-UP070-focused-repaired.log`/`.xml`; failed builds and fixture
+repairs are retained in NH_RELEASE_FAILURES.md. Content/inventory78/78 and
+independent final review pass. Coverage advances129→131/310 active perks,
+Spellcraft3→4 and Estates0→1; ranks/spell identities unchanged. No graphical
+acceptance, new artwork or launcher promotion is claimed. Concentration's
+targeting question remains unanswered. Steward's mapped daily-income seam is
+next; its two-resident stacking question is pending.
+
 ## UP-068 — Implement Wisdom Mana Conservation
 
 Status: Verified (delivery pending), 2026-10-01. UP-023 missing Advanced perk; independent
