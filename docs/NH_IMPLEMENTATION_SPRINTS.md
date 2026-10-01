@@ -76,6 +76,15 @@ certify the AI slice yet. Mana Conservation advances active perks 128→129/310,
 planned 182→181 and Wisdom 7/3→8/2. Content/perk/inventory checks pass 78/78.
 No playable snapshot has been promoted.
 
+Final checkpoint: both-target repair build `52390` passes; native `31943` passes
+69/69, zero skips, in 17.000s. The AI dependency now has expected-mean, harmful
+outcome, midpoint, live-state/RNG and real accepted-casting evidence. Independent
+review has no blocker; content/inventory 78/78 and generated module/diff gates
+pass. Mana Conservation is committed/pushed as `266c2c175`. Polymorph activation
+still awaits the recorded Phantom and exceptional expiry answers; no combat
+identity increase. Next unblocked Phase 1 coverage should target another missing
+generic perk rather than broadening this already-verified forecast matrix.
+
 ### 2026-09-30 current slice — battle-form clone and presentation support
 
 Following cast/result commit `56715b367`, independent Luna workers own cloned
