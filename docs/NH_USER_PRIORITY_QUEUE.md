@@ -11,7 +11,7 @@ entries and their validation/delivery evidence.
 
 ## UP-089 — Implement Luck Twist of Fate
 
-Status: Read-only roll-contract map, 2026-10-01. UP-023 missing Expert Luck
+Status: Shared infrastructure implementation, 2026-10-01. UP-023 missing Expert Luck
 perk: reroll the first random combat roll each combat whose result is negative
 for the hero's army; deterministic effects cannot be rerolled. Map existing
 authoritative random-roll and adverse-result classification before choosing a
@@ -43,6 +43,68 @@ Map identifies negative Luck/Morale, Fear, hostile discrete damage/on-hit procs
 and failed hostile resistance; no manual-control, damage-variance or random
 selection interception. AI uses branch-local state; wider cross-category
 probability correlations belong in Phase2. No implementation/coverage claimed.
+
+Root contract selected: store a separate AdverseCombatRerollState on each side,
+not within strike fortune snapshots. This prevents later BattleAttack packets
+from overwriting an allowance spent by a hostile proc or spell. A generic
+authoritative BattleProcessor resolver draws once, asks the harmed side's state
+to consume only a stochastic adverse outcome, publishes the transition before
+one final redraw, and provides combat feedback. Shared state/version/packet
+ownership is delegated separately from server/spell callsites. Registration
+remains planned until the full approved scope and focused native/AI gates work;
+this infrastructure adds no completed-perk coverage on its own.
+
+Shared implementation is frozen; root added the generic authoritative resolver
+and detached branch-local state copy. A first tester spawn was service-rejected
+by its thread limit, then succeeded once the shared worker finished. The reviewer
+spawn and existing-reviewer follow-up were also service-rejected; retry after the
+fixture freezes, otherwise record missing independent review without inventing
+approval. Registration is still planned and coverage unchanged.
+
+Runtime API map identifies ServerCallback (not only SpellCastEnvironment) as the
+spell bridge; its EffectPacketRecorder must forward. Resistance currently draws
+for all battlefield units before reflection and actual effect-target collection;
+do not spend Twist for untargeted units or a subsequently reflected original
+cast. Use actual prepared recipients/current controller after final reflection.
+Freeze fractional proc rounding once for both draws. Successful Mirror is adverse
+to the caster's army as a hostile redirect proc; the separate random recipient
+selection remains excluded. These contracts await runtime wiring, not more broad
+exploration.
+
+Frozen infrastructure checkpoint: six fixture cases exercise local legal Expert
+perk setup, state/packet current and legacy codecs, deterministic/favorable
+non-consumption, final adverse result without recursion, side/round persistence,
+spent state before nested redraw, server spell-environment bridge, and actual
+hypothetical packet visitor/nested-copy isolation. Reviewer retry succeeded after
+fixture completion; independent review is running. Both-target build1364 is live
+with12 jobs (`UP089-infrastructure-build.log`). Revalidate that exact handle on
+resume; do not restart because an observation times out. No native pass, commit,
+coverage increase or playable promotion is claimed yet.
+
+Independent infrastructure review completed with no blocking finding. Deferred
+direct assertions: resolver's invalid-side fallback and malformed current-version
+state deserialization. The implemented validation remains present; do not expand
+this infrastructure gate into broad certification. Actual gameplay interception
+and AI valuation are still required before counting Twist. Build1364 remains the
+serialized gate; focused execution follows it.
+
+Next runtime slice is assigned to one Luna worker with exclusive attack/Morale
+processor ownership, held read-only until build1364 and its infrastructure tests
+finish. All affected sides use current-controller lookup; original unitSide is
+retained only for existing RNG stream keys. Existing Providence/Second Chance
+suppression takes precedence, so a cancelled negative result cannot spend Twist.
+Root will expose frozen favorable-proc chance and weighted-curve stochastic
+classification helpers. The parallel spell-worker spawn was service-rejected;
+assign it when a slot opens. Its fixed contract preserves original MR first draws,
+then spends only on actual prepared hostile recipients after final reflection.
+
+Infrastructure verified: both-target1364 exits0; native73236 passes32/32, zero
+skips in8.536s (`UP089-infrastructure-build.log`, `UP089-infrastructure.log`/`.xml`).
+Six new infrastructure cases plus26 focused Luck regressions pass. Binary SHA
+`adefcb23c6001b687c0f425d29dafbc69ff9fbe749edbb31063a5c86275b08b8`.
+Data/inventory19/19 pass; independent infrastructure review has no blocker.
+This releases the frozen candidate for runtime wiring but does not activate the
+global perk or add completed coverage. Counts remain141/310 active,169 planned.
 
 ## UP-088 — Implement Luck Opportunist
 
