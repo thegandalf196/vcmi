@@ -40,6 +40,22 @@ failed run merely because a later run succeeds.
 
 ## Current implementation priority — complete Skills perks and spells
 
+2026-10-01 continuation: adfabbc46 is pushed and the worktree was clean. The
+previous cycle was verified progress, not a wait. UP-100 Field Workshop is the
+next complete unblocked candidate: implement both allied-machine and friendly-
+fortification Tent repairs at normal Siege output, with shared validation and
+forecasts plus minimum UI/AI hooks. Two independent read-only Luna maps prepare
+authority/state and consumer/fixture seams. Counts remain151/310 until verified;
+Breachmaker adjacency and other pending design questions remain item-level gates,
+not a reason to stop Phase1.
+Field Workshop maps are complete. Exact seams and the automatic-control empty-
+troop-list trap are retained under UP-100. Destroyed-target scope is a genuine
+design gate: repairing existing damaged targets is straightforward; rebuilding
+towers needs shooter reconstruction and occupied breaches need legality rules.
+Do not implement a silent exclusion and call the whole perk active. Coverage is
+still151/310. Other unblocked missing items can proceed after this map checkpoint;
+Quartermaster is the next War Machines candidate to map if the answer is absent.
+
 Latest completed slice: UP-099 Master Gunner. The second Ballista shot is a
 separately selected60% attack inside the same activation; shared state/forecast,
 authority, UI decline/Wait controls and fresh AI target selection are implemented.
