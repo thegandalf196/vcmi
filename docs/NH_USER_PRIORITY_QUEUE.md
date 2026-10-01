@@ -9,6 +9,40 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-083 — Implement Luck Lucky Recovery
+
+Status: Read-only next-slice map, 2026-10-01. UP-023 missing Advanced Luck
+perk: after positive Luck on a melee attack, surviving attacker creatures
+recover HP equal to10% actual damage. Existing Sylvan Luck has the same named
+effect; map shared authoritative/AI recovery without conflating independent
+perk identities or silently inventing a stacking policy. Map complete: existing
+server and detached AI use a shared side-state recovery flag and actual-HP heal.
+The user was asked whether both identically named10% perks provide one10%
+effect or additive20%. Await that answer before choosing an effective amount.
+No activation yet; other unblocked coverage work can continue.
+Acceptance: actual HP-loss healing, no resurrection, conditional melee/Luck
+eligibility, current-side ownership, AI parity, log feedback and focused gates.
+
+## UP-082 — Implement Luck Lucky Aim
+
+Status: Source/native verified; playable delivery pending, 2026-10-01.
+UP-023 missing Basic Luck perk: positive
+Lucky ranged attacks ignore 25% of target Creature Defense. Reuse the shared
+lucky ranged Defense-ignore payload and damage calculation; normal, negative
+Luck, melee and non-creature/non-physical damage must not gain this benefit.
+Root owns activation/config/docs/CMake/build/Git; runtime worker owns
+CBattleInfoCallback.cpp and tester owns a separate new native fixture.
+Acceptance: principal damage path, rank/selection gating, detached AI parity,
+both-target compilation and focused native/data evidence. No polling, new
+combat counter or save format is needed for this derived attack property.
+Final both-target62197 passes; native69961 passes8/8, zero skips in2.487s
+(`UP082-final.log`/`.xml`): three Lucky Aim, three Fortune's Favor and two
+existing Elven Precision cases. Data/inventory19/19 pass. Source/fixture review
+finds no blocker after correcting the fixture geometry and negative-factor
+composition; root integrated the failed-run repairs. Phase2 retains executed
+shot/reaction and dual-perk combinations plus general fractional-damage rounding.
+Artwork Not done; neutral fallback remains. No launcher promotion.
+
 ## UP-081 — Implement Luck Perfect Fortune
 
 Status: Read-only next-slice map, 2026-10-01. UP-023 missing Expert Luck

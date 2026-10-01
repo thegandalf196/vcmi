@@ -40,6 +40,22 @@ failed run merely because a later run succeeds.
 
 ## Current implementation priority — complete Skills perks and spells
 
+### 2026-10-01 current slice — Luck Lucky Aim
+
+UP-082 implements the next unblocked Basic Luck perk while Perfect Fortune's
+automatic-trigger immunity question awaits direction. Shared damage payload
+adds25% target Creature Defense ignore only for ordinary physical creature
+shots marked positive Luck; Elven Precision retains its25% and combines in the
+same capped target-side calculation. No polling, state field or new save format.
+Client73900 exits0; final both-target62197 passes. Native69961 passes8/8,
+zero skips in2.487s, including three new cases, Fortune's Favor regression and
+two older Elven Precision cases. Data/inventory19/19 pass; repaired independent
+review finds no blocker. Registry138/310 active,172 planned; Luck2/8.
+Failed fixture/API/geometry/formula runs remain recorded, with no production
+damage rule altered to satisfy the tests. Spell-like and war-machine attacks
+remain ineligible. Executed-shot/combined-perk matrices and fractional rounding
+remain Phase2; no new art approval or playable promotion.
+
 ### 2026-10-01 next slice — Luck Fortune's Favor / Last Stand boundary
 
 UP-078 is source/native verified. UP-079 Last Stand's map is complete, but
