@@ -40,6 +40,18 @@ failed run merely because a later run succeeds.
 
 ## Current implementation priority — complete Skills perks and spells
 
+Current selected implementation candidate: UP-106 Estates Financier. Its exact
+weekly1% treasury-interest/cap rule reuses the calendar income path; separate
+production and principal-fixture maps are running. Coverage remains154/310.
+UP-105 was a duplicate Perfect Fortune selection: UP-081 already records its
+map and unresolved immunity choice, so no further duplicate exploration occurs.
+UP-103 Rapid Embarkation is held at the Navigation
+stacking choice (fixed10% or halved5%). Its full-charge/shared-path source map
+is complete; no implementation is counted. UP-104 Pursuit March is the
+independent next candidate: map victory recovery and per-day saved expenditure
+with a separate focused fixture map. Continue from pushed1b3088ec9; do not
+let one item-level ambiguity block all missing specification implementation.
+
 Latest verified slice: UP-102 Logistics Roadmaster and Wayfarer. Shared rational
 costs and cached active-perk flags feed authority, player forecasts and AI routes.
 Both-target20420 exits0; activated28363 passes25/25, zero skips in4.827s,
