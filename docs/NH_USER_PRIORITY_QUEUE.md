@@ -9,6 +9,78 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-098 — Fortification Engineer
+
+Next-item preparation: a read-only Luna maps Precision Bombardment's specific
+Catapult wall/gate/tower targeting and existing control/AI paths while UP-098
+builds. No implementation overlap or activation is authorized by that map.
+Map complete: Basic War Machines already supplies100% Catapult direct control;
+existing CATAPULT UI and BattleAI submit specific attackable wall/gate/tower hexes.
+The Lua ability retains structural hit chances and randomly redirects misses.
+Precision Bombardment remains planned and unreferenced by production. Its literal
+selection benefit overlaps existing rank behavior; do not invent guaranteed hits
+or remove existing rank control without a design decision. Retain the shared
+attackable-part validator, CATAPULT action and real fortified-town fixture leads.
+
+Status: Verified (playable delivery pending), 2026-10-01. UP-023 Expert War Machines perk: when defending
+a fortified town, defensive towers use125% of the hero's Siege rating and may
+be manually targeted. This standalone rule is selected while Counter-Battery's
+targeting overlap is mapped and Battlefield Medic awaits persistence clarification.
+Root contract: shared current-controller/defending-fortified-town eligibility;
+existing tower damage output evaluated at floor(125% Siege), not125% total damage;
+deterministic manual control bypasses legacy RNG and uses existing validated shot
+UI. No new persistent state. One Luna owns callback/header/flow; another owns an
+isolated real-siege fixture. Root owns CMake, registration, review and gates.
+Require accepted manually chosen tower shot, exact shared forecast/output,
+eligibility exclusions and focused native build before activation. No GUI launch,
+new art or playable promotion in this slice; coverage remains149/310.
+Production is frozen and independently reviewed without a blocker. The shared
+query requires a living nonghost actual tower slot, original/current defender,
+fortified defended town and active saved perk; both boosted damage and manual
+control use it. Rating arithmetic is widened, floored and clamped before the
+existing saved output formula. Detached battle proxies retain town context.
+Client build is starting on frozen production while the separate unregistered
+fixture uses a real town and validated fortification construction. No activation.
+Client43691 runs with12 jobs (`UP098-client-build.log`); preserve its live handle.
+Do not register/change CMake or run native concurrently with that build.
+Client43691 is terminal exit0. The fixture is present with four cases using a
+real Castle-faction town and validated Citadel construction; final freeze,
+CMake registration and combined/native gates remain pending.
+Fixture review caught a missing `skills` registry level before native execution;
+the fixture owner corrected it and refroze. Root registered the four cases and
+started the serialized both-target12-job build (`UP098-build.log`). No activation
+or coverage change yet. Ordinary-control activation breadth remains Phase2.
+Final gates: both-target19393 exits0. Principal2955 passes4/4, zero skips in
+1.624s (`UP098-principal.log`/`.xml`), including an accepted manually selected
+real Citadel tower shot and exact pre-defense Siege output. Activated75235
+passes12/12 Engineer/Piercing Bolts/Surgeon cases, zero skips in3.960s
+(`UP098-activated.log`/`.xml`). Data/inventory19/19 pass. Engineer is active;
+coverage149→150/310, planned161→160; War Machines3active/7planned. Binary:
+`87d29702e613cd333db104a2266b8dd2231dc2a7416e15e1a03e7e94dbead788`.
+No new save state, GUI, artwork approval or playable snapshot promotion. Phase2
+retains broader controller-transfer and no-perk automatic-activation evidence.
+Independent final activation/fixture review finds no remaining blocker. Root
+will integrate this verified source checkpoint with a normal commit/push.
+
+## UP-097 — War Machines Expert targeting and damage
+
+Status: Read-only implementation map, 2026-10-01. Piercing Bolts50a85e3bf is
+pushed and the worktree was clean on resumption. Battlefield Medic remains mapped
+pending post-combat persistence clarification. A Luna maps Counter-Battery's
+deliberate enemy-machine targeting and+50% final damage alongside Fortification
+Engineer's explicit manual defensive-tower targeting and125% hero Siege. Do not
+register only a damage multiplier while omitting required targeting. Root owns
+the architecture/targeting contract and selection of the next unblocked full perk.
+Keep ownership, target validation, forecasts and minimum AI behavior shared;
+no new art, GUI launch or playable promotion in this implementation loop.
+Read-only map complete: ordinary enemy war-machine targets already pass the
+shared shot validator/UI, but unattended towers always prefer non-machines.
+Counter-Battery needs its+50% final damage and a pinned targeting decision, not
+only registration. The user is asked automatic machine preference with manual
+control reserved for Fortification Engineer vs Counter-Battery granting manual
+tower control too. No Counter-Battery implementation until clarified. Minimum
+AI map includes shared damage and AttackPossibility's dynamic cache policy.
+
 ## UP-096 — War Machines Piercing Bolts
 
 Status: Verified (playable delivery pending), 2026-10-01. UP-023 Advanced perk: Ballista attacks ignore50%
@@ -462,6 +534,12 @@ Future Unbreakable precedence must be decided before that perk is implemented.
 Purpose-made art is Not done; no GUI, snapshot promotion or playable acceptance.
 
 ## UP-089 — Implement Luck Twist of Fate
+
+2026-10-01 user reply reconfirms the already-integrated adverse-result scope:
+negative Luck, negative Morale, failed resistance against hostile spells, and
+successful hostile chance abilities; exclude damage variance, failed beneficial
+procs, and random target/form selection. The canonical Luck section already
+records this decision; no competing amendment or runtime scope change is needed.
 
 Latest continuation checkpoint: verified scripted slice is pushed as9a339f8c4;
 worktree was clean on resumption. Previous goal turn was progress, not an idle
