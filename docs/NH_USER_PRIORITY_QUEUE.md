@@ -9,6 +9,27 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-068 — Implement Wisdom Mana Conservation
+
+Status: Verified (delivery pending), 2026-10-01. UP-023 missing Advanced perk; independent
+coverage work alongside UP-066's expected-outcome AI. After combat restore
+20% of actual Mana spent during that combat, capped at 20, into Normal Spell
+Points only; preserve Buffer Spell Points and the current normal maximum.
+Do not infer expenditure from initial minus final Mana, since regeneration,
+refunds and Buffer grants make that incorrect. First audit existing accepted-cost
+accounting before adding state. Root owns architecture, activation, documentation,
+builds and Git; the Luna worker must obtain an exact ownership contract before
+editing. Require authoritative packet application and focused cost/result tests.
+Both-target build `66640` passes. Native `65013` passes all ten Mana Conservation
+cases: accepted/rejected/creature costs, successful ward payment, malformed
+metadata, floor/cap/current-capacity/Buffer handling, inactive perk/rank gates
+and versioned state/packet persistence. The total run is 68/69; its separate
+random-form AI failure is retained and under repair. Coverage increases
+128→129 active perks (181 planned); Wisdom 7/3→8/2. Retreat/surrender/draw
+native scenarios remain Phase 2 findings. No playable promotion is claimed.
+Isolated perk run `36603` passes 10/10, zero skips, in 2.823s; reports
+`UP068-mana-conservation.log`/`.xml`. Content/inventory checks pass 78/78.
+
 ## UP-067 — Implement Spellcraft Arcane Focus
 
 Status: Verified (delivery pending), 2026-09-30. UP-023 missing Basic perk; independent bounded
@@ -158,6 +179,14 @@ Review and module/diff checks pass. First missing-include probe and crashed
 native run, including the no-form detached-bonus fast-path repair, are retained
 in NH_RELEASE_FAILURES.md. Sprite refresh is compiled/source-reviewed, not
 rendered. Combat identities remain 60/67; no launcher promotion occurred.
+
+Expected-outcome AI is the next unblocked slice: enumerate the same complete
+uniform creature pool used by the runtime effect, project each form's HP/native
+view and legal relocation without live RNG, and wire the mean into real spell
+candidate scoring. Do not score RNGStub's middle draw as the expected outcome.
+A bounded read-only Luna mapper establishes the shared API and scoring seam;
+root retains architecture and assigns implementation ownership after that audit.
+Phantom composition and exceptional no-space expiry remain unanswered.
 
 ## UP-065 — Toxic Spines does not trigger in the user's playable battle
 
