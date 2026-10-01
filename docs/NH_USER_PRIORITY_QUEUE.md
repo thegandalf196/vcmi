@@ -9,6 +9,107 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-074 — Implement Learning Academic Study
+
+Status: In progress; read-only map, 2026-10-01. Independent UP-023 Advanced
+perk coverage after Mentor's Basic progression path. On the hero's first visit
+to each town, grant250 Experience for each Mage Guild level already built.
+Use authoritative town visits, existing recipient Learning composition and
+persisted per-hero/per-town first-visit provenance, never a periodic map scan.
+Map whether existing visit history can be reused and how AI previews/choices
+consume the result. No activation or verified coverage increase yet. Root owns
+integration, registration, builds and Git; mapper does not edit source or run
+builds. Preserve the ongoing Mentor build and frozen source ownership.
+
+## UP-073 — Implement Learning Mentor
+
+Status: Verified (delivery pending), 2026-10-01. Unblocked UP-023 Basic perk progression while
+Historian's primary-XP classification awaits the user. First lower-level allied
+hero met each week gains250×the mentor's captured meeting level, composed with
+the recipient's ordinary Learning XP rule. Handle field heroExchange and town
+visitor/garrison meetings; capture eligibility before the award and record a
+replicated per-mentor absolute-week use before granting XP. Level-up queries
+must not be hidden beneath a subsequently added exchange dialog. Persist used
+weeks and fail closed when an old format cannot retain them. Master Teacher
+remains planned; do not grant its second-recipient or500× benefit.
+Root owns activation, serialization feature version, CMake, docs/builds/Git.
+Runtime worker owns the declared hero/packet/visitor/server paths and isolated
+native fixture. Focus actual meeting/weekly eligibility, XP and query ordering,
+state roundtrip and ordinary AI exercise; no activation/counting yet.
+
+Frozen source checkpoint: field/town hooks snapshot levels and weekly use,
+replicate SetNewHorizonsLearningMentorState (append-only type286) before XP and
+put field exchange below any Mentor level-up query. Hero unused defaults remain
+readable in older saves; used state and new packet writes reject older formats
+under NEW_HORIZONS_LEARNING_MENTOR. Mentor is source-active with neutral icon
+fallback (art Not done), not native verified. Content/inventory78/78 pass;
+production review has no confirmed blocker. Client build93948 passes. New
+server/AI fixtures are frozen and reviewed. Phase2 retains nested town-building XP,
+mixed-owner allied meetings and save/load mid-prompt. Merchant Prince remains
+planned; its independent best-market selector is source-reviewed and wired.
+
+Both-target repair build81553 passes; focused native52779 passes24/24 with zero
+skips in7.070s, covering field/town meetings, XP composition, weekly eligibility,
+query ordering, marker persistence/wire guards and real Nullkiller perk choice
+and meeting. Reports `UP073-mentor-focused-repaired.log`/`.xml`; binary SHA-256
+`513b9d11767748e25f98f8e265fd6a71197caf8ec1c4f7be06991a9945dc92f4`.
+Final data/inventory19/19 pass; earlier broader checkpoint78/78 passes.
+Coverage131→132 active perks, planned179→178; Learning1/10. Preserve the failed
+fixture builds and first25-test run in NH_RELEASE_FAILURES.md. The unrelated
+Muster higher-tier fixture prerequisite failure is deferred to Phase2, along
+with comparative AI valuation/proactive meeting planning. No graphical run,
+purpose-made art or playable launcher promotion. Commit/push follows integration.
+
+## UP-072 — Implement Nature Elemental Convergence
+
+Status: In progress; read-only architecture map, 2026-10-01. UP-023 missing
+Level5 combat identity. Terrain chooses one of the five canonical Elementals
+using Experimental Values; summon exact250+5×SP HP with ceil-count and wounded
+last creature at a caster-selected legal position. Retain complete native
+abilities and remove the summon after battle. Share captured spell coefficients,
+placement/HP, serialization and AI forecast. Audit native Summon/Transfigure
+reuse before assigning files; no new mapping or creature type may be guessed.
+Root owns integration, registrations and builds/Git. No activation or coverage
+increase is claimed by this map.
+
+Mapping blocker: canonical terrain rows omit Dirt, Sand/Desert, Swamp and
+Wasteland; the engine also forces Sand for coastal arenas. Asked whether to
+use Earth for Dirt/Sand/Wasteland and Water for Swamp/coastal battlefields.
+Do not silently infer those mappings or activate an incomplete spell. Use the
+captured battle terrain rather than the hero's map tile; town/object arenas may
+override that terrain. Generic summon infrastructure may progress independently.
+
+## UP-071 — Implement Learning Historian; map Estates Merchant Prince
+
+Status: In progress, 2026-10-01. UP-023 missing Basic perk coverage and ordinary
+Learning progression. Historian grants +50% Experience from adventure objects
+whose primary reward is Experience, not combat or every source of XP. First
+map source classification, reward publication, ordinary Learning composition
+and AI forecasts. Independent read-only mapping locates Merchant Prince's
+shared Marketplace count/rate API while Steward's resident stacking decision
+is pending. Root owns architecture, activation, docs, builds and Git; no edits
+by explorers until exact disjoint ownership is assigned. Require authoritative
+reward/trade results, eligibility and principal AI/shared forecast evidence.
+No new activation, verification or playable delivery is claimed at selection.
+
+Merchant Prince map: CGTownInstance::getMarketEfficiency feeds the existing
+IMarket quote shared by UI, authoritative trade validation and Nullkiller.
+Outdoor markets are separate and must not inherit the town perk. Asked whether
+visiting/garrison holders both count, whether +2 applies once per town or per
+holder, and whether all existing rate-based exchanges qualify. Do not infer
+those boundaries. AI currently selects the first owned resource-market town;
+selecting the best applicable quote is required to exercise the perk reliably.
+
+Historian map: selected reward rows and the object itself have no explicit
+primary-XP classification. Learning Stone is pure XP; Treasure Chest has
+alternative XP/Gold/artifact rows; Tree of Knowledge grants a level; mixed
+Pandora/quest/custom bundles may contain XP secondarily. Asked whether XP
+Chest branches and Tree should qualify, with explicit metadata for mixed
+bundles. Do not insert a global XP multiplier affecting combat, altar trades,
+Sirens, scripts or cheats. Actual reward and displayed components must share
+the classification. Basic Mentor's fully specified weekly allied-meeting
+trigger is being mapped as an independent progression path while this waits.
+
 ## UP-070 — Implement Estates Tax Collector
 
 Status: Verified (delivery pending), 2026-10-01. Independent UP-023 missing Basic perk, formerly

@@ -40,6 +40,43 @@ failed run merely because a later run succeeds.
 
 ## Current implementation priority — complete Skills perks and spells
 
+### 2026-10-01 verified slice — Learning Mentor / AI market selection
+
+Mentor's field/town weekly teaching is source/native verified, including real
+Nullkiller selection and authoritative meeting, saved replicated usage and
+recipient Learning composition. AI resource trading selects the best eligible
+owned-town exchange effectiveness. Merchant Prince remains planned; this is its
+minimum AI prerequisite, not a second activated perk. Both-target81553 passes;
+native52779 passes24/24, zero skips; final data/inventory19/19 pass following
+the broader78/78 checkpoint. Perks131→132/310, Learning0/10→1/9; ranks84/93
+and combat identities60/67 unchanged. Preserve failed fixtures/builds and the
+existing Muster tier-prerequisite finding in NH_RELEASE_FAILURES.md. Phase2
+retains nested town-building XP, mixed-owner meetings, mid-prompt reload and
+comparative AI choices/proactive meeting paths. No art or launcher promotion.
+Next unblocked missing feature: UP-074 Academic Study, mapped read-only while
+Mentor verification completes. Historian/Marketplace/Convergence choices wait
+at their recorded boundaries; do not guess those decisions.
+
+### 2026-10-01 current slice — Historian and Marketplace policy
+
+UP-073 Mentor is now the unblocked Learning runtime slice: replicate weekly
+use before XP, handle both field/town meetings and maintain level-up query
+ordering. Historian, Merchant Prince and Convergence remain blocked at their
+recorded design boundaries. Merchant Prince's independent AI prerequisite
+selects the best shared resource-exchange effectiveness rather than the first
+town; source review has no blocker and its focused fixture is wired. No perk
+activation or coverage increase is claimed from that selection helper alone.
+
+Grand Formula/Tax Collector are committed and pushed in1fe1690c2. UP-071
+maps Learning Historian's adventure reward provenance and Estates Merchant
+Prince's existing shared rate API in parallel. Prefer missing Basic perk
+progression over additional broad testing of the verified prior slice. No
+generic all-XP modifier or duplicated trade formula is acceptable. Steward,
+Concentration and Polymorph retain their unresolved design boundaries.
+A third independent read-only map selects UP-072 Elemental Convergence, one
+of the seven missing combat identities. Reuse native summoning and captured
+terrain/HP rules; no guessed mapping or provisional description-only spell.
+
 ### 2026-10-01 verified slice — Grand Formula and Tax Collector
 
 Both perks are implemented, registered and independently reviewed. Final
