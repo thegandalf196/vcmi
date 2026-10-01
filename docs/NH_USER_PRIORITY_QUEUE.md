@@ -9,17 +9,39 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-081 — Implement Luck Perfect Fortune
+
+Status: Read-only next-slice map, 2026-10-01. UP-023 missing Expert Luck
+perk: the first eligible army attack each combat triggers positive Luck
+automatically. Map authoritative eligibility/roll timing, once-per-combat state
+and shared AI expectation without conflating Sylvan Luck's selected Perfect
+Moment. Do not activate or implement before the root reviews the map and assigns
+exclusive ownership. Map complete: use a distinct side token, shared resolved
+creature-strike eligibility and branch-local AI history; do not reuse opt-in
+Sylvan Perfect Moment. The user was asked whether No Luck prevents the automatic
+guarantee. First-blow/reaction scope must be resolved from canonical normal Luck
+eligibility before assigning implementation. Acceptance: registration, authoritative first eligible
+attack behavior, state persistence, AI parity and focused native evidence.
+
 ## UP-080 — Implement Luck Fortune's Favor
 
-Status: In progress; bounded source map, 2026-10-01. UP-023 missing Basic
+Status: Source/native verified; playable delivery pending, 2026-10-01.
+UP-023 missing Basic
 Luck perk: positive Lucky Strike damage multipliers increase by +0.25x.
 This opens ordinary Luck progression, currently blocked by zero active Basic
 perks. Reuse the existing LUCKY_STRIKE_DAMAGE_PERCENTAGE bonus/damage formula
 and hero perk lifecycle if they express the rule correctly; do not create a
 parallel damage multiplier or new polling. Map live melee/ranged/retaliation,
 shared AI and minimum native evidence. Root owns integration/activation/docs/
-CMake/build/Git. Read-only until Veteran's frozen candidate is verified and
-committed; no completed coverage claim yet.
+CMake/build/Git. Veteran is verified and committed as b626171da. Fortune's
+Favor derives its bonus through the existing secondary-skill rebuild and
+refreshes on accepted perk selection. Both-target56878 passes; native69200
+passes4/4, zero skips (1.398s); data/inventory19/19 pass. Independent production
+review finds no blocker. Legal offer acceptance, rank loss/reacquisition,
+reconstruction deduplication, ordinary/positive/negative damage and detached AI
+expected damage are covered. No new save fields or per-update work. Phase2
+retains explicit save roundtrips and ranged/retaliation/reaction/Sylvan matrices.
+Artwork is Not done, fallback remains neutral; no launcher promotion.
 
 ## UP-079 — Implement Armorer Last Stand
 
