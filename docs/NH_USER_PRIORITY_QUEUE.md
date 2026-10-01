@@ -9,9 +9,45 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-090 — Implement Discipline Rally
+
+Status: Bounded map complete; shared contract selected, 2026-10-01. UP-023 missing
+Basic perk: once per combat, cancel the first negative Morale trigger affecting
+a friendly stack. Preserve current-controller army ownership, ordinary Morale
+immunity, genuine activation flow, save/replication and detached AI state.
+Do not implement it as a reroll or as a chance multiplier. A canceled negative
+result must not also spend Twist of Fate, matching existing suppression precedence.
+Root owns the shared state/packet/API contract and registration; a worker may
+map the narrow live Morale and AI seams without changing the frozen Twist fixture.
+Acceptance: legal Basic perk selection, actual first-trigger cancellation,
+subsequent/next-round triggers unchanged, side/save/packet isolation, combat
+feedback and focused native/AI evidence. No coverage claimed at selection.
+
+Map confirms one authoritative bad-Morale gate and no existing Rally state.
+Root selects an independent side-long enabled/used suppression state and a
+monotonic dedicated transition packet, not a strike or reroll snapshot. The
+callsite draws once, cancels a realized negative result when Rally is available,
+then otherwise passes that cached first result to Twist's resolver before any
+final redraw. This preserves the exact original first RNG draw and excludes
+already-canceled results from Twist expenditure without expanding the generic
+resolver API. Deterministic negative triggers may be canceled by Rally; ordinary
+immunity/no-trigger leaves the allowance untouched. Detached AI must copy/spend
+candidate-local state without pretending all negative stacks become immune.
+Its current per-unit Morale heuristic has no first-trigger ordering model;
+broader cross-stack/multi-round correlation belongs to Phase2. Future coexistence
+with unimplemented Unbreakable requires explicit suppression precedence before
+that Expert perk is added; it does not block Rally alone. No source activation.
+
 ## UP-089 — Implement Luck Twist of Fate
 
-Status: Runtime implementation, 2026-10-01. UP-023 missing Expert Luck
+Latest continuation checkpoint: verified scripted slice is pushed as9a339f8c4;
+worktree was clean on resumption. Previous goal turn was progress, not an idle
+wait. A new Luna spawn was service-rejected; an existing tester follow-up succeeded
+with exclusive runtime-fixture ownership for the late Hand of Fate collateral
+gate. Root owns registration/coverage and will not activate until that principal
+path is verified. No GUI/promotion or completed coverage change yet.
+
+Status: Verified (playable delivery pending), 2026-10-01. UP-023 missing Expert Luck
 perk: reroll the first random combat roll each combat whose result is negative
 for the hero's army; deterministic effects cannot be rerolled. Map existing
 authoritative random-roll and adverse-result classification before choosing a
@@ -230,6 +266,20 @@ but does not claim independent approval. Full-attack script event collection,
 broader controller/immune/proc matrices and conditional AI valuation remain
 Phase2 evidence. Late Hand of Fate collateral is the next principal Phase1
 gate before full-perk activation. Coverage remains unchanged; no promotion.
+
+Full Phase1 checkpoint: the late Hand of Fate case passes after retaining a
+genuine caster-side escort and normal initiative admission. Current-controller
+resistance expenditure is verified without rerolling recipient selection.
+Twist is active in the registry/module and aligned with the inventory; art
+remains Not done. Both-target31690 exits0; final native95364 passes43/43, zero
+skips in12.421s (`UP089-activated-verified.log`/`.xml`), binary SHA-256
+`67ba01cfdc050aade2741bee5187d9e2d870ba93b06ffe13c3aaa4bf7b6d3d19`.
+Data/inventory19/19 pass. Independent Astra activation review now succeeds and
+finds no blocker; broader reflection/controller/cross-category ordering and
+conditional forecast breadth remain Phase2. Coverage141→142/310 active perks,
+planned169→168; Luck6active/4planned. Ranks84/93 and combat60/67 unchanged.
+No GUI, immutable playable promotion or art approval. Next unblocked slice is
+UP-090 Rally; its bounded map and suppression-before-Twist contract are recorded.
 
 ## UP-088 — Implement Luck Opportunist
 

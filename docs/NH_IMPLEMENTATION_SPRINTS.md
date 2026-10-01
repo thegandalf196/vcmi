@@ -40,6 +40,15 @@ failed run merely because a later run succeeds.
 
 ## Current implementation priority — complete Skills perks and spells
 
+Latest completed item: UP-089 Twist of Fate is active and Phase1 verified.
+Final both-target31690 and native95364 pass43/43, zero skips in12.421s; data19/19.
+Independent Astra activation review finds no blocker. Coverage142/310 active,
+168 planned; Luck6/4. No playable promotion or purpose-made art approval.
+Next UP-090 Rally: independent battle-long cancellation state, first actual bad
+Morale suppression before Twist, preserved cached first draw, ordinary activation,
+replication/save state and candidate-local AI. Cross-stack probabilistic ordering
+and future Unbreakable coexistence are explicit later integration/design work.
+
 ### 2026-10-01 current slice — Twist of Fate shared reroll infrastructure
 
 Latest checkpoint: the scripted hostile boolean/count bridges and local AI
