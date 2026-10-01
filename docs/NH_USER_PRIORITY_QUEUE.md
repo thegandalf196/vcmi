@@ -32,6 +32,18 @@ beneficial procs and random selections. Do not implement an invented threshold o
 silently narrow to bad Luck. The canonical document records this classification
 and the harmed army's expenditure; implementation follows after UP-087 gates.
 
+Architecture map complete, read-only. Proposed root contract: an authoritative
+resolver takes affected side, draw callback and explicit adverse predicate;
+consume allowance before one final redraw. Keep classification outside the RNG
+actor/stream keys. Existing side fortune state can store enabled/used, but a
+generic side-state packet is needed for Morale/spell transitions, unlike the
+attack-only fortune payload. Root must finalize controller ownership, reflected
+spell polarity and fixed effective proc chance before assigning callsites.
+Map identifies negative Luck/Morale, Fear, hostile discrete damage/on-hit procs
+and failed hostile resistance; no manual-control, damage-variance or random
+selection interception. AI uses branch-local state; wider cross-category
+probability correlations belong in Phase2. No implementation/coverage claimed.
+
 ## UP-088 — Implement Luck Opportunist
 
 Status: Read-only implementation map, 2026-10-01. UP-023 missing Basic Luck
@@ -114,6 +126,10 @@ is retained in the failure register; both errors were fixture setup, repaired
 without production rule changes. Independent repair review has no blocker.
 Data/inventory19/19 pass. Coverage141/310 active,169 planned; Luck5/5.
 Source/native complete; art and playable promotion/acceptance remain pending.
+
+Committed and pushed as0e403406d0da2df58efbf037267d160268ba74da. HEAD and
+origin/definitive-mvp match; working tree clean after that push. The launcher
+snapshot is unchanged, so this source commit is not a playable-delivery claim.
 
 ## UP-086 — Implement Luck Gambler
 
