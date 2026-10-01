@@ -9,6 +9,54 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-096 — War Machines Piercing Bolts
+
+Status: Verified (playable delivery pending), 2026-10-01. UP-023 Advanced perk: Ballista attacks ignore50%
+of the target's Creature Defense. Surgeon checkpoint424ed5a02 is pushed and the
+worktree was clean on selection. Root chooses an ephemeral shared damage-script
+payload contribution for physical ranged Ballista attacks using the current
+controlling hero's active perk. Preserve ordinary Creature Defense ignore
+composition and separate hero-Defense mitigation. One Luna owns callback/payload/
+Lua; another owns an isolated real-shot fixture. Root owns CMake, registration,
+review, build and focused evidence. Require no-perk/ineligible behavior and
+prediction/actual/AI consistency before activation; no new persistent state,
+art, GUI or promotion is needed for this source slice.
+Production is frozen: a distinct script payload field is set only for physical
+ranged Ballista attacks whose current controller has the active saved perk. Lua
+adds the independently floored50% contribution to existing target-Defense bypass,
+capped at total Defense; Frenzy's own-Defense trade and hero-based PDR are unchanged.
+Independent Astra review is assigned; the separate native fixture is still being
+written. Registration remains planned, coverage148/310 unchanged.
+Independent production review has no blocker and confirms the same calculation
+serves actual, UI and detached AI. Client build70423 is running with12 jobs
+(`UP096-client-build.log`) on frozen production source while the unregistered
+fixture is written. Do not alter CMake or run native tests during that build.
+Client70423 is terminal exit0. The native fixture is still in progress; its
+registration, combined target build and principal real-shot gate remain required.
+The four-case fixture is frozen and registered. Combined42241 runs both targets
+with12 jobs (`UP096-build.log`); independent final fixture review is assigned.
+Preserve the exact live build handle; no native run until terminal success.
+Combined42241 exits0 for both targets. Principal18354 passes4/4 in1.560s with
+zero skips, including accepted shot/forecast and detached parity. Both production
+and fixture reviews have no blocker; actual controller transfer is deferred to
+Phase2. Registry/module are active and regenerated; data/inventory19/19 pass.
+The small activated regression batch is running before commit/count finalization.
+Activated21661 is terminal exit1:9/11 pass, including all4 Piercing Bolts and4
+Surgeon cases. Two existing Archery fixtures directly select higher-tier perks
+without prerequisite perks and throw before exercising their mechanic. Failed
+batch evidence is retained in NH_RELEASE_FAILURES; independent classification is
+assigned. Do not call the whole batch green or weaken progression to accommodate
+old fixture setup. Record nonblocking fixture repair for Phase2.
+Independent Astra classification confirms both fixture setup defects occur at
+unchanged prerequisite validation before damage assertions; no UP-096 blocker.
+Fix their legal preceding selections in Phase2 without dropping assertions.
+Principal4/4 and activated4/4 new cases prove this bounded feature; full11-case
+batch remains9 pass/2 fail. Data/inventory19/19 pass. Coverage148→149/310,
+planned162→161; War Machines2/8, ordinary Expert progression opens. Binary:
+`bcd78c12f52089a2b50a24b8628c58eb82373dd4b9da4095d9446504b7cae427`.
+No art approval, GUI or playable promotion. Next Medic map is retained in Sprints;
+after-combat restoration persistence is asked, not silently chosen.
+
 ## UP-091 — Reserve and Standard Bearer coverage
 
 Status: Reserve and Standard Bearer verified (playable delivery pending),
