@@ -40,6 +40,48 @@ failed run merely because a later run succeeds.
 
 ## Current implementation priority — complete Skills perks and spells
 
+### 2026-10-01 next slice — Luck Fortune's Favor / Last Stand boundary
+
+UP-078 is source/native verified. UP-079 Last Stand's map is complete, but
+clone/Phantom eligibility and ending the saved stack's own activation await
+user answers. UP-080 is the next unblocked Basic foundation: Fortune's Favor
+adds +25 percentage points through existing LUCKY_STRIKE_DAMAGE_PERCENTAGE,
+opening Luck's ordinary advancement. Refresh its derived hero bonus only on
+existing perk/rank/reconstruction transitions; do not poll during damage or
+create a second multiplier. Shared Lua/server/AI already consume this bonus.
+Registration remains planned until production implementation and focused gates.
+
+### 2026-10-01 verified slice — Armorer Veteran
+
+UP-078 maps the next missing Advanced perk after Formation Fighting, committed
+and pushed as f774b24c3. Veteran restores 15% of physical creature damage
+suffered since the stack's previous activation at activation start, without
+resurrecting casualties. Runtime and detached AI must share provenance, surviving
+wound caps and actual activation semantics. Reuse existing damage/activation
+and saved state abstractions before adding history. Runtime and AI maps are
+bounded and read-only until the root assigns disjoint ownership. Coverage stays
+135/310 active perks, ranks84/93 and combat identities60/67 until implementation
+and focused native gates pass; no playable promotion or new art is implied.
+
+Source checkpoint: shared history/recovery and live/detached activation paths
+are implemented; content/inventory19/19 pass and client12894 compiles. Existing
+PHYSICAL_CREATURE provenance includes already-classified physical Poison and
+reflection; temporary/Guardian Spirit absorption never contributes to Veteran.
+Independent Astra review identifies a blocking AI Guardian Spirit double-
+absorption/pre-clamp defect, now assigned back to the AI worker with focused
+preview/commit HP-buffer-history regression coverage. Keep counts unchanged
+until the repaired source builds and native evidence passes. No broad suite,
+GUI automation, artwork change or launcher promotion is being performed.
+
+Final both-target8101 passes; native19447 passes14/14 without skips in4.124s.
+Reports `UP078-focused-buffer.log`/`.xml`, binary SHA-256
+`ef35142a822610a400a5f9dad60f358fb21645a2cb15736ce325a84f0428dca8`.
+Data/inventory19/19 pass; independent Astra review blockers are repaired.
+Coverage135→136/310 active perks, planned175→174; Armorer6/4 active/planned.
+Ranks84/93 and combat identities60/67 unchanged. Phase2 retains full-absorption
+multistrikes and Guardian reaction/Rain matrices; purpose-made art remains
+Not done. Failed runs are retained; no playable promotion or rendered claim.
+
 ### 2026-10-01 verified slice — Formation Fighting
 
 UP-077 implements current-controller friendly footprint protection, independent

@@ -9,6 +9,80 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-080 — Implement Luck Fortune's Favor
+
+Status: In progress; bounded source map, 2026-10-01. UP-023 missing Basic
+Luck perk: positive Lucky Strike damage multipliers increase by +0.25x.
+This opens ordinary Luck progression, currently blocked by zero active Basic
+perks. Reuse the existing LUCKY_STRIKE_DAMAGE_PERCENTAGE bonus/damage formula
+and hero perk lifecycle if they express the rule correctly; do not create a
+parallel damage multiplier or new polling. Map live melee/ranged/retaliation,
+shared AI and minimum native evidence. Root owns integration/activation/docs/
+CMake/build/Git. Read-only until Veteran's frozen candidate is verified and
+committed; no completed coverage claim yet.
+
+## UP-079 — Implement Armorer Last Stand
+
+Status: In progress; bounded architecture map, 2026-10-01. UP-023 missing
+Expert perk: once per combat, the first friendly stack that would be completely
+destroyed by a physical creature attack instead survives with one creature at
+1 HP and immediately Defends. Map authoritative attack damage, shared health
+and casualty handling, side-wide once-per-combat history, detached AI and
+replicated/saved state before assigning source ownership. Unlike Veteran, this
+rule says physical creature attack, not every physical damage source. Root owns
+architecture, activation/version/config/docs/CMake/build/Git. Read-only map
+can run while UP-078's frozen source undergoes focused validation; no activation
+or completed coverage claim yet.
+
+Map complete. Two consequential choices await user direction: whether surviving
+lethal retaliation and immediately Defending ends the stack's own activation,
+and whether clones/Phantom Integrity qualify. Preserve the physical-attack
+versus physical-damage distinction and actual creature-HP/casualty provenance.
+Continue an unblocked Basic Luck foundation while these answers are pending.
+
+## UP-078 — Implement Armorer Veteran
+
+Status: Verified (delivery pending), 2026-10-01. UP-023 missing
+Advanced Armorer perk: at the beginning of a stack's activation, restore 15%
+of physical creature damage suffered since its previous activation, limited
+to surviving creatures. Reuse authoritative damage provenance and activation
+events; do not resurrect casualties or restore Phantom Integrity. Share the
+history/recovery rule with detached AI, use saved/replicated state where needed,
+and preserve Wait versus actual activation semantics. Root owns architecture,
+activation/config/version/docs/CMake/build/Git. Workers initially read-only;
+no completed coverage or playable claim. Previous cycle was progress: UP-077
+committed and pushed as f774b24c3, final 18/18 native and 19/19 data checks.
+
+Architecture checkpoint: reuse existing PHYSICAL_CREATURE damage provenance,
+including sources already classified that way (physical Poison, reflection and
+Rain of Arrows). Record actual creature HP loss, not absorbed temporary or
+Guardian Spirit HP. Veteran says physical creature damage, unlike the narrower
+physical creature attack wording in Last Stand/Bastion. Recovery floors 15%,
+cannot resurrect, and consumes its interval only at a genuine activation.
+JSON unit updates preserve the counter; older wire formats reject nonzero
+history. Ordinary saving during combat is already blocked by CBattleQuery;
+unsupported binary battle snapshots must reject pending history rather than
+silently discard CUnitState. No polling or new packet type. Runtime implemented,
+AI and focused fixtures in progress; coverage remains unverified.
+
+Client12894 compiles; data/inventory19/19 pass. Independent Astra source review
+requires a repair before completion: Guardian Spirit is absorbed again when
+the AI commits a post-absorption strike payload, and incoming damage clamps
+omit its buffer. AI worker repairs raw incoming versus actual HP-loss handling;
+tester adds preview/commit HP-buffer-history assertions. Preserve this finding
+in NH_RELEASE_FAILURES.md; native verification and coverage increase pending.
+
+Final checkpoint: both-target8101 passes; native19447 passes14/14, zero skips,
+in4.124s, reports `UP078-focused-buffer.log`/`.xml`. Binary SHA-256
+`ef35142a822610a400a5f9dad60f358fb21645a2cb15736ce325a84f0428dca8`.
+Data/inventory19/19 pass. Astra review blockers are repaired. Coverage135→136/310
+active perks, planned175→174; Armorer5/5→6/4 active/planned. Rank84/93 and
+combat identity60/67 counts are unchanged. Focused principal live activation,
+survivor-only healing, JSON/wire safety, owner-scoped AI and real Guardian-buffer
+preview/replay evidence pass. Failed fixture runs remain preserved. Phase2
+retains fully absorbed multistrikes and Guardian reactions/Rain combinations.
+Purpose-made icon remains Not done; no GUI acceptance or launcher promotion.
+
 ## UP-077 — Implement Armorer Formation Fighting
 
 Status: Verified (delivery pending), 2026-10-01. UP-023
