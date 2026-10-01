@@ -40,6 +40,33 @@ failed run merely because a later run succeeds.
 
 ## Current implementation priority — complete Skills perks and spells
 
+### 2026-09-30 current slice — Polymorph casting and result projection
+
+The shared foundation was pushed in `786a19777`. This follow-up adds the native
+same-category cast effect, strict nearest-legal reversion API and original-form
+result projections. Separate Luna workers own the spell effect and battle-result
+consumer; root owns placement, JSON schema/documentation and build/test wiring.
+An Astra reviewer checks the bounded checkpoint. The helper explicitly reports
+no legal reversion position without mutating the stack. Whether expiry should
+retain the form and retry in that case is awaiting the user's answer.
+
+This is not yet Polymorph activation. Clone/Phantom profile support, lifecycle
+placement/Time Stop ordering, random-outcome AI valuation and required client
+presentation remain Phase 1 dependencies. A detached RNG returning the middle
+candidate does not establish expected-value AI support. No coverage-count or
+playable-delivery increase is claimed from adding a generic effect alone.
+
+Checkpoint outcome: build `70446` and focused-fixture rebuild `32737` pass;
+native retry `13545` passes 28/28 with zero skips. Native effect packet
+application, exact HP/identity/Initiative, strict relocation/reversion and
+original-species early-result/Necromancy/gated-reserve accounting are verified.
+Independent source/repair reviews and module/diff checks pass. First-run fixture
+admission failures are retained in NH_RELEASE_FAILURES.md. Polymorph remains
+inactive and combat identity coverage remains 60/67. Next highest-priority
+dependency is temporary-profile/lifecycle support, followed by random-outcome
+AI and client presentation; the exceptional no-space expiry rule awaits its
+answer. No playable snapshot was promoted.
+
 ### 2026-09-30 current slice — Polymorph shared form/HP foundation
 
 UP-066 is in progress, with two Luna workers owning disjoint shared-health and

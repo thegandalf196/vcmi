@@ -102,6 +102,31 @@ projected conditional-bonus interactions and clone/Phantom admission remain
 explicit integration work, not silently approved targeting exclusions.
 No GUI, launcher promotion, purchaser-asset or user-save mutation occurred.
 
+Next checkpoint: native BattleForm cast effect and original-species result
+projection are assigned to separate Luna workers; root owns shared safe
+reversion placement and wiring/builds. The reversion helper must leave form,
+HP and position unchanged if no original footprint can fit anywhere. The
+round-expiry policy in that exceptional case has been asked explicitly rather
+than silently extending duration or overlapping stacks. Clone/Phantom profiles
+remain a foundation gap, not a permanent canonical targeting exception. Do not
+activate/count Polymorph until lifecycle, random-outcome AI and presentation
+are wired; detached RNG isolation alone is not expected-outcome valuation.
+
+Cast/result checkpoint is now source/native verified: both-target build `70446`
+and fixture-repair rebuild `32737` pass. Native retry `13545` executes 28/28,
+zero skips, including uniform captured-category packet application, relocation
+with exact HP/identity/Initiative, safe reversion/no-space non-mutation, original
+army survivor counts, early-result living/undead casualty identities and gated
+reserve reconciliation. Reports `UP066-cast-result-focused-retry.log`/`.xml`;
+binary SHA-256 `0bff72dc620bb2d687e2bd5badd1c6ef4ff15f437eab1d2342b3c1f28a32d2c7`.
+Source and fixture-repair reviews have no blocker; module/diff checks pass.
+Preserve the initial 25/28 fixture failure report and repair explanation in
+NH_RELEASE_FAILURES.md. The cast fixture uses real state packets and mocked
+mechanics, not complete accepted hero-action/Mana accounting. Spell identity
+counts remain 60/67. Next: temporary-profile support, expiry/Dispel/Time Stop
+lifecycle, random-outcome AI and client form/status presentation. No GUI,
+launcher promotion, user-save mutation or final artwork claim occurred.
+
 ## UP-065 — Toxic Spines does not trigger in the user's playable battle
 
 Status: In progress, 2026-09-30. The user reports no Toxic Spines trigger,
