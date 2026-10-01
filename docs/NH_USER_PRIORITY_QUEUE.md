@@ -78,6 +78,30 @@ Normalize before BattleResultProcessor snapshots casualties/Necromancy, includin
 early battle end. Current getKilled()/getUnusableRemains() arithmetic is not a
 safe form implementation. No source feature or coverage increase claimed.
 
+Implementation checkpoint: shared health and native/detached bonus views are
+assigned to separate Luna workers; root owns deterministic nearest-legal
+placement, save-version/wiring and integration. An independent Astra reviewer
+is active. JSON unit state must round-trip the form and source-health ledger;
+binary battle snapshots currently omit CUnitState and must fail closed rather
+than silently discard a form. Full spell activation, expiry/result geometry,
+AI spell selection and required status presentation are not yet implemented.
+
+Foundation checkpoint: final both-target Linux build `85599` passes; focused
+native retry executes 21/21 with zero skips. Reports:
+`UP066-battle-form-focused-retry.log`/`.xml`; test binary SHA-256
+`86640d13acb1d17f121c8fe91ccab088ef0c75b70e6b50c72dc591d0b763aba8`.
+Checks cover exact HP/temp-pool repartition, original corpse/one-battle
+resurrection provenance, expiry, real acquired-CStack JSON/native-bonus views,
+nested AI rank eligibility, nearest strict placement, baseline Health and
+Shadow Gift guards. Independent source review and module/diff checks pass.
+The first compiler/native failures and fixture repairs remain recorded in
+NH_RELEASE_FAILURES.md. Combat identities remain 60/67; Polymorph is not
+activated by this foundation. Next: full cast/expiry-result geometry, AI spell
+selection and status feedback. Active capacity-buff/Time Stop ordering,
+projected conditional-bonus interactions and clone/Phantom admission remain
+explicit integration work, not silently approved targeting exclusions.
+No GUI, launcher promotion, purchaser-asset or user-save mutation occurred.
+
 ## UP-065 — Toxic Spines does not trigger in the user's playable battle
 
 Status: In progress, 2026-09-30. The user reports no Toxic Spines trigger,

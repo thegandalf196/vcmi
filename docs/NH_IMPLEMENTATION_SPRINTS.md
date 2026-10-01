@@ -40,6 +40,28 @@ failed run merely because a later run succeeds.
 
 ## Current implementation priority — complete Skills perks and spells
 
+### 2026-09-30 current slice — Polymorph shared form/HP foundation
+
+UP-066 is in progress, with two Luna workers owning disjoint shared-health and
+native/detached creature-bonus views. Root owns footprint relocation, wiring,
+serialization compatibility, integration and focused builds; an Astra reviewer
+checks the shared boundary. The user's nearest-legal-position decision is
+canonical. Placement must reject occupied hexes even if AI pathfinding predicts
+that their occupants could be destroyed. Preserve exact creature HP separately
+from temporary HP and original-species casualty/resurrection/remains provenance.
+No spell activation, coverage increment, playable delivery or build success is
+claimed at this implementation checkpoint. Full casting, expiry/result footprint
+handling, AI spell selection and status presentation remain the following slice.
+
+Foundation is now source/native verified: final both-target build `85599`
+passes and native retry passes 21/21, zero skips. Exact health/provenance,
+acquired-CStack JSON/native views, nested AI rank context and strict placement
+are covered alongside existing Health/Shadow Gift guards. Source review has no
+remaining blocker; module/diff checks pass. Retain all failed probe reports and
+fixture repairs. Full spell activation/result/geometry/status/AI selection and
+active capacity/Time Stop/clone integration remain unfinished. Combat identities
+stay 60/67, ranks 84/93 and active perks 128/310; no playable promotion.
+
 ### 2026-09-30 current slice — Arcane Focus
 
 UP-065's Basic Toxic Spines contradiction is diagnosed and awaits the user's
