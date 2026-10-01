@@ -9,6 +9,60 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-101 — Quartermaster extra war-machine activation
+
+Status: In progress; read-only mapping, 2026-10-01. Continue UP-023 Phase1
+coverage with the canonical Basic War Machines perk: once per combat, while
+the Ammo Cart survives, the first allied war machine other than the cart to
+complete an activation immediately receives an additional activation at 50%
+effectiveness. Two independent Luna maps cover shared/server lifecycle and
+UI/AI/fixture seams. Root owns architecture, registration, persistence/version
+integration, focused builds and Git. No substitute automatic second shot: this
+must be a genuine activation, including applicable damage, healing and siege
+output. Acceptance requires a legal saved perk offer, accepted principal actions,
+once-per-combat/cart-survival guards, shared output predictions and minimum AI
+use. Coverage remains151/310 until implementation and focused gates pass.
+Field Workshop's destroyed-target scope remains pending independently; do not
+silently resolve it or block all other missing implementation work on it.
+Consumer map complete: Tent forecasts cap healing by missing HP, so apply 50%
+to raw Siege output before that cap, not to the forecast result. Actual Tent
+healing enters `BattleActionProcessor::doHealAction`; human HEAL preview uses
+`getFirstAidHealValue`. Ballista uses the shared damage-script payload; Tent and
+Catapult bypass that calculator. Catapult raw structural output is converted in
+`luascript/api/callback/ServerCallback.cpp::catapultAttack` after hit quality and
+before packet application. Its existing UI preview is empty, and AI selects a
+legal non-destroyed part without evaluating structural damage. Tent AI currently
+chooses by missing HP; use the shared reduced-output forecast where relevant.
+Root category interpretation follows the canonical distinction between war
+machines and defensive structures: Ballista, Catapult and Tent qualify; Ammo
+Cart and turret stacks do not. Use current-controller hero/side ownership.
+Architecture direction: side-owned saved/replicated once-per-combat expenditure
+and active extra-activation identity/output, with a dedicated genuine turn reason.
+Do not duplicate the allowance in transient unit fields that CStack's binary
+serialization omits. Detached AI battle copies must retain the same state.
+Completion trigger belongs after same-activation continuation returns in
+`onActionMade`: Master Gunner's first shot must not trigger Quartermaster before
+its second shot or explicit decline ends that activation. Spend before dispatch,
+refresh actual activation lifecycle, and preserve the reduced output through
+Hero Actions and Master Gunner continuations. Clear it at real completion;
+exclude Morale recursion and duplicate ordinary queue turns. Principal fixtures
+should use legal perk offers and accepted Ballista/Tent/Catapult actions; direct
+CatapultAttack injection alone is insufficient accepted-action evidence.
+Runtime map is complete. Root corrected one mapping inference: current
+`CUnitState::afterGetsTurn` resets moved/cast flags only for Morale; the full
+waiting/moved/Morale reset is in `afterNewRound`, not automatic for every genuine
+turn reason. Quartermaster needs an explicit safe action-resource reset, without
+claiming the existing path already provides it or pretending it is Morale.
+Wait is not activation completion; its delayed activation must retain the
+reduced-output identity rather than prematurely spend/clear a second lifecycle.
+Master Gunner's second shot remains 60% of this activation's 50% output (30% of
+ordinary output), with independently chosen targets and no extra allowance.
+Prepared ownership: runtime writer shared state/callbacks/pack/server/output;
+consumer writer detached AI copy/projections and client status/preview; tester
+isolated new native fixture. Root owns append-only version/type registration,
+CMake, config/module/inventory/docs, serial build/native gates and Git. No
+production source or coverage increase is claimed by this completed map.
+
 ## UP-100 — Field Workshop machine and fortification repair
 
 Status: In progress; read-only architecture map, 2026-10-01. UP-023 missing
