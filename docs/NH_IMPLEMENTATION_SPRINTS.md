@@ -40,6 +40,20 @@ failed run merely because a later run succeeds.
 
 ## Current implementation priority — complete Skills perks and spells
 
+2026-10-01 continuation: the preceding reply only confirmed an already-recorded
+Twist of Fate decision and made no new implementation progress. Clean worktree
+revalidated. UP-101 Quartermaster is selected while UP-100's destroyed-target
+question remains open. Separate actual Luna explorations map runtime lifecycle
+and UI/AI/fixture seams before root chooses the shared 50%-effectiveness contract.
+No new activation, build, coverage or playable-delivery evidence yet.
+Both Quartermaster maps are now complete and their exact seams/root correction
+are retained under UP-101. Next execution is the bounded runtime, consumer and
+fixture implementation with exclusive file ownership, not another exploration
+of these same paths. The current lifecycle does not automatically refresh all
+action flags for a new turn reason; add explicit true-extra-activation handling.
+Half output applies before healing/structural caps and composes with Master
+Gunner's second-shot multiplier. Coverage151/310 remains unchanged.
+
 2026-10-01 continuation: adfabbc46 is pushed and the worktree was clean. The
 previous cycle was verified progress, not a wait. UP-100 Field Workshop is the
 next complete unblocked candidate: implement both allied-machine and friendly-
