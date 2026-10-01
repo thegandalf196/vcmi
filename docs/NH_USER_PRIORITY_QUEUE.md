@@ -9,6 +9,53 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-075 — Implement Estates Estate Network and Learning Quick Study
+
+Status: Verified (delivery pending), 2026-10-01. UP-023 missing
+Advanced perk coverage. Estate Network grants1 Wood and1 Ore per three owned
+towns, rounded down, minimum1 with any owned town, at the start of each week.
+Quick Study rerolls the initial level-up offer once before presentation at
+every fifth hero level. Reuse authoritative weekly income and saved level-up
+choice machinery; do not add polling, UI-side RNG or repeated rerolls on query
+re-exposure. Map shared AI paths and minimal native evidence in parallel.
+Root owns activation, integration, CMake, docs/builds/Git; workers initially
+read-only until disjoint source ownership is assigned. No coverage claim yet.
+
+Mapping approved: Estate Network uses current owned towns and eligible hero
+holders (including garrison heroes), exact grants after ordinary income/AI
+handicap calculations in NewTurn, including day0→1 but no setup-day daily
+income. Existing calendar/replicated resource application is the lifecycle;
+no new counter or polling. Worker owns NewTurnProcessor.cpp and existing
+economy/Estates-AI fixtures. Quick Study owns CGameHandler.cpp plus isolated
+NewHorizonsQuickStudyTest.cpp: reached level is hero.level+1; redraw complete
+skill/perk offer with saved RNG/fresh perk seed once after the initial draw,
+preserving one primary gain and final query snapshots. Human and AI consume
+the same offer; repeated candidates by chance are permitted. Prompt exposure
+must not redraw. Mid-query saving is already blocked. Source registration is
+being enabled for development, not verified/countable until builds/tests pass.
+
+Production checkpoint: both bounded runtime edits are frozen and independently
+reviewed with no blocking finding. Client retry51396 passes; data/inventory19/19
+pass. Root's premature CMake registration failure and repair are retained in
+NH_RELEASE_FAILURES.md; isolated Quick Study registration is deferred until
+the real fixture exists. Economy/AI and query fixtures remain in progress.
+No verified coverage increase, commit or playable promotion yet.
+
+Final checkpoint: both-target20329 passes after recorded fixture repairs;
+native80431 passes29/29 with zero skips in10.865s. Reports
+`UP075-focused-repaired.log`/`.xml`; test binary SHA-256
+`93bdab7a969ec6a92b2b6ce6210066f2c9930b1f1a60003941f78ee62c5373fd`.
+All four Estate Network server cases, both AI cases and all five Quick Study
+query cases pass with prior economy/Mentor regressions. Final data/inventory19/19
+pass; independent review has no remaining blocker. Coverage132→134/310 active
+perks, planned178→176; Estates2/10 and Learning2/10 open ordinary Expert
+progression. Ranks84/93 and spells60/67 unchanged. Preserve the original AI
+mixed-offer failure as a fixture lesson, not a repaired production valuation.
+Phase2 keeps comparative perk valuation, crash/pending-query recovery and
+custom-calendar/script interactions. Commit/push follows; no graphical journey,
+new art or immutable launcher promotion. Next highest-priority missing foundation:
+deterministic Diplomacy ranks and joining path, with minimum AI/Leadership hooks.
+
 ## UP-074 — Implement Learning Academic Study
 
 Status: In progress; read-only map, 2026-10-01. Independent UP-023 Advanced
