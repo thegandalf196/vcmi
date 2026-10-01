@@ -40,6 +40,16 @@ failed run merely because a later run succeeds.
 
 ## Current implementation priority — complete Skills perks and spells
 
+UP-091 Standard Bearer is active and Phase1 verified. Both-target42607 exits0;
+principal82873 passes4/4 and activated74455 passes39/39 with zero skips in10.603s.
+Data/inventory19/19 pass; independent Astra reviews find no blocker. Coverage
+145/310 active,165 planned; Discipline3/7. Dynamic current-friendly adjacency,
+raw-before-cap Morale, actual positive/negative gates, branch isolation and the
+existing panel's display/refresh hook are implemented. No new layout/art or
+playable promotion. Phase2 retains explicit double-wide and death/resurrection
+coverage. Next UP-092 Hold Fast: a generic genuine-activation expiry must not
+inherit STACK_GETS_TURN's premature Hero-spell expiry or missed Second Wind start.
+
 UP-091 Reserve is active and Phase1 verified. Both-target34777 exits0;
 activated native69809 passes16/16 with zero skips in4.778s, and data/inventory19/19
 pass. Actual delayed +2 movement, unchanged Initiative, immediate expiry,
