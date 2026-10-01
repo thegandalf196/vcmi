@@ -227,6 +227,28 @@ trigger that cannot ordinarily occur. One-shot state must survive healing and
 resurrection, copy into detached branches and use explicit battle-save support.
 No source/count change; this question does not block other missing features.
 
+## UP-095 — War Machines Surgeon
+
+Status: Mapped; shared foundation required, 2026-10-01. UP-023 Basic perk: First Aid Tent
+healing removes one physical affliction, in priority order Poison, Disease,
+Bleeding, then other eligible physical afflictions by application order. One Luna
+maps the existing authoritative Tent/Cure status path, current-controller
+ownership and AI prediction read-only. Root owns the shared cleansing contract,
+registration and focused real-healing evidence. Do not broaden this to magical
+Dispel, cleanse every affliction, or register before the principal path works.
+
+Read-only map complete: `BattleActionProcessor::doHealAction` centralizes real
+Tent casts and Siege output; `battleGetOwnerHero(tent)` supplies current control.
+Stored physical Poison needs a UnitChanges state update; Disease uses a timed
+spell-effect group removed by SetStackEffect. Existing Cure allowlist only covers
+Poison/Disease and sorts SpellID, not application order. No Bleeding producer or
+generic physical-affliction eligibility/application-order representation exists.
+This is an implementation-foundation gap, not permission to classify all magical
+groups as physical or call a two-affliction subset complete. Build a shared
+selection/removal contract before registration; minimum AI consumer is
+`CBattleAI::useHealingTent`, which currently only picks the most wounded stack.
+No source/count change. Root owns the next foundation choice and focused evidence.
+
 ## UP-090 — Implement Discipline Rally
 
 Status: Verified (playable delivery pending), 2026-10-01. UP-023 missing
