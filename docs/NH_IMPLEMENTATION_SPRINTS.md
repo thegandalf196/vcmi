@@ -40,6 +40,44 @@ failed run merely because a later run succeeds.
 
 ## Current implementation priority — complete Skills perks and spells
 
+### 2026-10-01 current slice — Twist of Fate shared reroll infrastructure
+
+UP-089's approved scope includes negative Luck/Morale, failed hostile resistance
+and successful hostile chance abilities; not damage variance, failed benefits
+or random selection. Root selected independent side-owned enabled/used state,
+not strike fortune snapshots, so attack packets cannot reset a spell/proc-spent
+allowance. Shared worker implemented append-only state and packet287 with
+monotonic validated application. Root added a generic authoritative resolver
+that publishes expenditure before one final redraw, hero-named combat feedback,
+ServerCallback/server-spell bridge and recorder forwarding, and detached copied
+branch state. A separate worker supplies six bounded infrastructure fixtures.
+Registration remains planned: no perk coverage increase until real callsites,
+actual-target resistance/reflection handling and AI forecasts are wired and
+verified. Coverage stays141/310 active,169 planned; Luck5/5.
+
+The tester's first spawn and reviewer spawn/follow-up were service-rejected by
+the thread limit; tester retry succeeded after the shared worker completed.
+Independent review and both-target/focused execution gates remain pending.
+No GUI, promotion or full-perk completion is claimed. Runtime mapping requires
+fixed effective fractional proc chance and MR spending only on actual prepared
+hostile recipients after reflection, never the current all-unit prepass.
+
+All source is frozen, including six fixtures. Independent Astra review retry
+succeeded after fixture completion. Both-target1364 is running with12 jobs,
+log `UP089-infrastructure-build.log`; focused infrastructure/Luck native execution
+awaits its terminal result. No native verification or source commit yet.
+
+Independent infrastructure review completed: no blocker. Deferred direct
+assertions for invalid-side resolver fallback and malformed current state loads
+are recorded for Phase2; runtime interception and AI valuation remain required
+Phase1 implementation work, not deferred integration substitutes.
+
+Infrastructure gate passed: both-target1364 exits0; native73236 passes32/32,
+zero skips in8.536s (`UP089-infrastructure.log`/`.xml`); data/inventory19/19 pass.
+Binary SHA `adefcb23c6001b687c0f425d29dafbc69ff9fbe749edbb31063a5c86275b08b8`.
+Freeze is released for actual runtime wiring. Registration/coverage unchanged;
+this is a verified dependency checkpoint, not completed Twist of Fate.
+
 ### 2026-10-01 verified slice — Luck Chain of Fortune
 
 UP-087 follows the approved different-stack recipient and carry-until-used
