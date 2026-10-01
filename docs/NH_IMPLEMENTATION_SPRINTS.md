@@ -40,6 +40,31 @@ failed run merely because a later run succeeds.
 
 ## Current implementation priority — complete Skills perks and spells
 
+### 2026-09-30 current slice — Arcane Focus
+
+UP-065's Basic Toxic Spines contradiction is diagnosed and awaits the user's
+reflection/rank decision. The previous interruption produced actionable trigger
+evidence, not a verified fix. Resume independent UP-067 while that decision is
+pending: first accepted hero spell receives +20% to its Spell Power component,
+with existing battle-long completion state shared by authoritative and detached
+AI execution. Capture eligibility before completion publication; cover direct
+Sorrow/Quicksand helpers as well as damage and temporary buffs. Two Luna workers
+own separate runtime/native and AI/native fixtures. Root owns activation, wiring,
+focused builds, review and Git. No coverage increment or playable promotion yet.
+
+Final source checkpoint: both targets build (`55273`), 27 focused native cases
+pass without skips (`49925`), content/perk checks pass 76/76, placement/module/
+diff gates pass, and review has no blocker. Land Mine's numerical count bypass
+is repaired across Lua/client/AI, with legacy raw thresholds preserved. The
+first AI fixture legitimately selected an Order with only 10 Spell Power; the
+corrected fixture uses 200 and proves real spell choice/accepted submission
+without disabling Orders. Active perks advance to 128/310, 182 planned;
+Spellcraft 3/10, ranks 84/93 and combat identities 60/67 unchanged. Wider perk
+interactions and full battle save/load remain Phase 2; art, graphical previews
+and playable delivery remain pending. Next: Polymorph shared form/HP foundation,
+including the user's approved nearest-legal-position relocation. UP-065 remains
+blocked on Basic reflection/rank choice.
+
 ### 2026-09-30 user-priority interruption — main-menu branding and version
 
 UP-064 takes precedence at the user's explicit request. Available Complete and

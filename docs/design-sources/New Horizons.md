@@ -1872,6 +1872,12 @@ It retains:
 
 - transferable magical effects.
 
+If the replacement creature's footprint cannot occupy the stack's current hex,
+relocate the transformed stack to the nearest legal battlefield position. The
+replacement is not excluded from the random draw merely because it does not fit
+at the original position. Relocation does not change its owner, allegiance or
+current position in the Initiative queue.
+
 This spell can produce spectacular outcomes.
 
 A terrifying Champion might become a Champion poorly suited to the current battle.
