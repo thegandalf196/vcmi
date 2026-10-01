@@ -118,6 +118,34 @@ Data/inventory19/19 pass. Piercing Bolts active, coverage149/310 with161 planned
 War Machines2/8. Actual controller-transfer coverage remains Phase2. No GUI,
 art approval or playable promotion. Next candidate is Battlefield Medic, whose
 restored-creature post-combat persistence awaits clarification.
+Current next-item map: UP-097 Counter-Battery/Fortification Engineer. A separate
+Luna traces deliberate enemy-machine targets, defensive-tower manual control,
+shared final damage and125% Siege output. Root must settle full targeting scope
+before selecting implementation; do not count a multiplier-only subset as the
+whole Counter-Battery perk. The pushed Piercing Bolts checkpoint is50a85e3bf.
+Current implementation selected: UP-098 Fortification Engineer. Its standalone
+125% Siege/manual defending-tower rule is clear and can progress while other
+design questions remain open. A Luna owns contextual callback/header/flow, and
+another owns a real fortified-town native fixture. Root owns integration/gates.
+Existing tower damage payload and validated manual-shot UI are reused; the bonus
+scales Siege before evaluating the output, not the entire damage value. No new
+stored state, source completion or active count is claimed before acceptance.
+Counter-Battery map confirms existing legal machine shots and shared UI; tower
+auto-selection deliberately prefers non-machines. Damage is+50% final against
+enemy war machines. Its manual-vs-automatic tower-targeting overlap with
+Fortification Engineer is asked, so Counter-Battery remains mapped, not active.
+Retain the shared final multiplier and AI cache/target-choice seams for that
+decision. Fortification Engineer's prototype rounding is floor(125% Siege) before
+the existing integer output formula, never125% of the total base-inclusive output.
+Final UP-098 checkpoint: client43691 and both-target19393 exit0. Principal2955
+passes4/4 real-siege/eligibility cases; activated75235 passes12/12 Engineer,
+Piercing Bolts and Surgeon cases, zero skips in3.960s. Data/inventory19/19 pass.
+Engineer is active, coverage150/310 with160 planned; War Machines3/7. No new
+persistent state, art approval, GUI or playable promotion. Ordinary automatic
+tower activation and controller-transfer breadth remain Phase2. Precision
+Bombardment's read-only map found existing Basic-rank target selection/control
+overlap, not a basis for silently guaranteeing structural hits or nerfing rank
+control. Counter-Battery/Medic still await their recorded design decisions.
 
 UP-093 Fearless is active and Phase1 verified. Both-target36048 and repaired24535
 exit0; principal13527 passes5/5 and activated30226 passes27/27, zero skips in9.008s.
