@@ -9,9 +9,23 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-107 — Estates Land Surveyor
+
+Status: Read-only map, 2026-10-01. Continue UP-023 Phase1 missing Basic perk
+coverage after Financier's focused verification. Canonical: the first mine
+captured by this hero each week immediately produces three days of normal
+output. Map the authoritative capture-success event, owner transition, per-hero
+weekly expenditure, resource replication and minimum AI/native seams. Do not
+trigger from merely visiting an already-owned mine or from an unsuccessful
+capture. Root owns architecture, save/version integration, activation, CMake,
+docs/build/native/Git. No GUI/promotion. Acceptance: legal Basic offer, accepted
+capture and correct output, once/week and next-week behavior, inactive guards,
+saved/replicated expenditure and focused build/native/data evidence. Mapping
+alone does not activate the perk or increase coverage.
+
 ## UP-106 — Estates Financier
 
-Status: Implemented (verification pending), 2026-10-01. Independent UP-023 missing
+Status: Verified (playable delivery pending), 2026-10-01. Independent UP-023 missing
 Expert coverage while unresolved Logistics/Luck choices remain item-level
 blockers. Canonical perk: at the start of each week gain1% current Gold treasury
 as interest, capped at1000 Gold. Map and reuse the existing weekly income/resource
@@ -36,6 +50,16 @@ Tax Collector and existing AI income/receipt tests, zero skips in4.367s
 (`UP106-shared.log`/`.xml`). This proves adjacent income regressions, not the
 new Financier principal path; registration/counts remain unchanged pending
 the isolated frozen fixture. No native or build process remains live.
+Focused fixture build25033 failed on the mastery namespace used as a type;
+owner repair uses MasteryLevel::Type. Both-target21766 exits0. Principal39424
+passes3/3 in58.108s, then activated95915 passes15/15 in61.975s, zero skips.
+Data/inventory19/19 and module check pass. Financier is now active; coverage
+155/310,155 planned; Estates3/7. Independent source and fixture reviews have
+no blocker. The planned-rule fixture proves offer exclusion, not suppression of
+an already-selected planned holder; selected-holder rank-loss suppression and
+broader calendar/save/client fan-out/AI weekly forecasts remain Phase2 evidence.
+Generic offer/description UI is provisional and authored art remains Not done.
+No GUI or snapshot promotion; playable delivery remains separate.
 
 ## UP-105 — Luck Perfect Fortune
 
