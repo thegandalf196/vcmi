@@ -92,6 +92,15 @@ bonus snapshots, not a spectator-only fixture. Next Bloodrage gaps: First Blood,
 Blood Scent, Rage Through Pain, Slayer and Avatar of Rage; UP-141 still awaits
 casualty rounding. Art/graphical/playable acceptance and broad matrices remain
 separate. Source commit/push is next.
+Source is now delivered as b99c49c32aff8beb8f0b615edc845d55435784c9;
+Windows notice preflight37049324047 is confirmed in_progress on this source.
+Next full Windows dispatch depends on its successful terminal result. First Blood
+and Slayer's overlapping increment count awaits a narrow user answer; next
+unblocked Bloodrage work is Blood Scent, Rage Through Pain and Avatar of Rage.
+Notice preflight37049324047 is terminal success; full Windows37049519240 is
+confirmed queued on b99c49c32aff8beb8f0b615edc845d55435784c9. Preserve/poll this
+run rather than restarting after an observation timeout. No Windows acceptance
+or new immutable local launcher snapshot is inferred from dispatch.
 
 2026-10-02 UP-143 threshold slice: implementing Unrelenting and Berserker
 through shared dynamic unit-environment hooks. Existing live creature-stat,
