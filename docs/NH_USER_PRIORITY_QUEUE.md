@@ -9,6 +9,75 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-117 — Nature's Wrath foundation and Worldroot
+
+Status: Mapping, 2026-10-02; next UP-023 missing combat identity while the
+frozen UP-115/116 candidate builds. Canonical Level5 Nature spell chains through
+at most17 distinct stacks by nearest unvisited proximity, deals Nature damage
+to enemies and ordinary survivor-only healing to allies, starts at110+2×SP,
+and retains93% power per jump. Worldroot adds two valid stacks and10% to the
+Spell Power-derived term. Map existing chain path, target defenses, healing,
+shared prediction/AI and preview infrastructure; identify unspecified chaining
+range/tie/eligibility rules rather than guessing. Read-only mapping is not
+implementation, activation or completed coverage. Root owns final semantics.
+
+Read-only map complete: existing Lua chain resolution has no jump-distance
+limit and uses the engine's deterministic closest-hex tie policy. Damage and
+survivor-only healing can share a custom effect and detached castEval, but the
+current affected-stack preview loses hop order. Asked for the missing range,
+healthy-ally/blocked-stack conduction, and resisted-hit continuation policies.
+Do not activate or silently infer those rules; retain mapping for the next
+implementation slice after answers. Worldroot's explicit two-extra-stack rule
+means19 maximum; its10% modifier affects only the Spell Power term.
+
+## UP-115 — Light Sanctuary Keeper
+
+Status: Verified (playable delivery pending), 2026-10-02. Sanctuary Keeper is
+active with exact source-linked+2 Morale snapshots, non-stacking recast,
+non-perk recast cleanup, Wait/Defend preservation and movement/attack/Dispel
+removal. Saved-v2 and materialized detached/live guards pass. Real BattleAI
+selects Sanctuary and the authoritative processor accepts the paid cast.
+Client90317 and final both-target10531 exit0. Principal20512 passes25/25
+in6.559s; activated76413 passes30/30 in7.833s, zero skips. Data/schema/inventory
+34/34 and module check pass. Independent review has no remaining blocker.
+Perks164->166/310 across UP-115/116; Light8->9/10, Nature5->6/10.
+Failures/repairs are persisted. Phase2 retains negative-Morale-only tactical
+selection, specialty and wider save/modifier interactions. Generic UI is
+Provisional; bespoke art Not done. No GUI or playable promotion.
+
+Original UP-023 Phase1 missing-specification continuation:
+Canonical Basic perk: a friendly stack protected by Sanctuary gains+2 Morale
+while Sanctuary remains active. Map the cast marker, action/removal lifecycle,
+existing bonus limiters and detached AI projection before choosing the smallest
+shared implementation. No extra saved counters or update polling. Require legal
+Basic acquisition, actual cast, exact+2 snapshot, refresh without stacking,
+movement/attack/Dispel removal, inactive/legacy guards and detached/live evidence.
+Root owns architecture/registration/build/Git; workers own disjoint runtime and
+fixture slices. No GUI/promotion or new art. Wider interactions belong to Phase2.
+
+## UP-116 — Nature Venomancer
+
+Status: Verified (playable delivery pending), 2026-10-02. Venomancer is active:
+whole stored integer Poison Base gains20%, including fixed20; Basic SP100
+stores92 and ticks92/138/184. School/Spellcraft/Empower composition, legal
+Basic offers, inactive/v2 guards, materialized detached/live parity and actual
+paid AI-selected cast pass. Toxic Spines retains its independent reflected-loss
+formula; its fixture now legally selects Basic perk then advances Bulwark to
+Advanced for nonzero reflection. Same UP-115 principal/activated/build/data
+gates pass; neither new saved fields nor per-update polling were added.
+Coverage166/310 active,144 planned. Broader interactions remain Phase2;
+neutral fallback art Not done, generic UI Provisional. No GUI/promotion.
+
+Original independent UP-023 Phase1 missing-specification slice:
+Canonical Basic perk increases Poison's Base Poison value by20%. Map the
+Nature spell's Poison cast-time snapshot, tick progression, School/Spellcraft scaling
+and detached AI before implementation. Physical Toxic Spines must not inherit
+this spell-casting perk (the resulting Poison is still a bodily affliction).
+Require legal Basic acquisition, exact boosted base and
+all three ticks, stored-once scaling, inactive/legacy guards, physical Poison
+exclusion and focused production/native/AI evidence. No numerical redesign,
+new polling, GUI or playable promotion. Keep file ownership separate fromUP-115.
+
 ## UP-112 — Shadow Blood Drinker and Painweaver
 
 Status: Verified (playable delivery pending), 2026-10-01. Both Basic perks are
