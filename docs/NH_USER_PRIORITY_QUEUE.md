@@ -11,6 +11,46 @@ entries and their validation/delivery evidence.
 
 ## UP-139 — Havoc Demolitionist
 
+Verified structural-foundation checkpoint, 2026-10-02: both-target retry4772
+exits0; principal35313 passes10/10 in2.669s, adjacent27391 passes6/6 in1.369s,
+zero skips. Python36/36 and generated-module drift pass. Reviewer reports no
+blocking finding. Runtime6 cases include obstacle-only casts, Spell Lock and
+double-wide geometry, fort/unit split, global both-side damage, markerless-v3
+fallback and detached/live parity. AI3 cases prove signed fort valuation,
+geometry retention and a paid AI spell under a validated zero-effect Order
+fixture profile, not normal-profile tactical superiority. Test binary SHA-256:
+ee004df30d8ebb25f768042b1c76e1f915851e134f754dab94e4fcff180f5467.
+Phase2: obstacle-clearing valuation, normal-profile AI choices, broader immunity
+interactions and feedback localization. Fixed-landmark destructibility and
+structural perk stacking remain unresolved Phase1 design choices, not waived
+coverage requirements. Demolitionist/Meteorologist remain planned; counts stay
+173/310 active,137 planned. No graphical or immutable playable promotion.
+Earlier paragraphs below are checkpoint history, not current gate status.
+
+Source implementation checkpoint: the optional structural producer, Lua binding,
+two spell registrations and geometry-aware signed AI fortification valuation
+exist. Root registered isolated runtime/AI fixtures and refreshed the generated
+module; 36 focused data/schema/inventory checks pass. Independent review found
+and repaired creature-filter-dependent impact metadata; native compile and
+principal runtime verification remain pending. This is not perk activation,
+full structural coverage, playable delivery or a numerical-balance claim.
+Client build20497 is running with12 jobs against the frozen production source.
+The isolated runtime fixture is still completing its moat/Spell Lock setup
+repair and is not part of that client target. Re-poll20497 before starting the
+test build; do not run the stale native binary or infer a build result.
+Client20497 exits0. Runtime/AI fixtures are now frozen, including valid moat,
+Spell Lock and outside-primary double-wide geometry. Root starts the serialized
+vcmitest build with12 jobs; principal native execution remains pending.
+Exact live test-build handle is48092. Pre-build review repairs are frozen;
+client20497 is terminal success. Run NewHorizonsHavocStructuresTest.*,
+NewHorizonsHavocStructuresAITest.* and the saved-v3 typed opt-in parser guard
+only after48092 exits0. Supplemental content inventory56/59 failures come from
+the old five-Mass-spell catalogue omission and are deferred in the failure ledger.
+Final static AI-fixture review corrects incompatible disabled-Order setup and
+an immunity/geometry assertion. The AI fixture compiled before this repair in
+48092, so re-run vcmitest build after48092 terminates before native acceptance.
+Only that new fixture changed; production stays frozen.
+
 Status: In progress (read-only map), 2026-10-02. Missing Basic perk adds50%
 damage to destructible objects/fortifications only for Havoc spells already
 able to affect them. Map existing structural paths and AI; do not invent new
@@ -22,6 +62,33 @@ coverage. Implement the specified Havoc structural paths before activating
 Demolitionist/Meteorologist. Binary obstacle destruction has no numeric HP
 quantity to boost. Structural stacking and tunable formula scope need root
 canonical review, not a claim that the perk is already functional.
+Implementation contract: optional saved-v3 structures block, omitted older
+snapshots retain their old behavior. Data prototypes use50% raw coefficient-aware
+spell damage against forts for Meteor Shower,100% for Armageddon. Ordinary
+scenery removal is binary; absolute scenery, moats and magical obstacles are
+not ordinary scenery. No new polling or gameplay counter. Runtime/AI/fixture
+ownership is separated; root owns data/schema, registration, build and Git.
+Asked additive+75% versus multiplicative+87.5% for the two structural perk boosts;
+base spell effects proceed while perk stacking/activation awaits the answer.
+Asked whether fixed absolute landmarks are destructible; the engine's absolute
+tag expresses placement, not destructibility. Runtime initially preserves that
+category pending review, while implementing usual scenery and actual fort HP.
+Do not claim the classification question is resolved or activate blocked perks.
+
+Next bounded coverage candidate: Havoc Cataclysm remains planned. Read-only
+mapping may proceed while the structural foundation compiles: identify the
+shared +20% Armageddon SP-component gate and ordinary magical-obstacle removal
+classification, with minimum AI hooks. No activation, production change or
+coverage claim is authorized from that map alone; resolve scope before writing.
+Mapping confirms this is existing UP-111, not a new uncovered item. Its hidden
+magical-obstacle/moat filter remains the previously asked design choice; the
+shared coefficient hook and detached obstacle removal already exist. Do not
+repeat that map or implement only its damage clause as the entire perk.
+Principal81936 passes6/6 runtime structural cases but fails1 parser and3 AI
+cases (10 total, zero skips). The typed-percentage parser is repaired; AI owner
+is diagnosing candidate lifecycle and actual action choice. Builds20497/48092
+and fixture rebuild43129 passed. Source is not accepted/committed from this
+partial native result; follow the focused repair through rebuild/retest.
 
 ## UP-138 — Havoc Conductor
 
@@ -353,6 +420,13 @@ The existing authored-free-join question was renewed on2026-10-02 after mapping;
 no answer or authority to override map semantics is inferred.
 
 ## UP-125 — Four-worker concurrency
+
+Renewed authorization verified, 2026-10-02: global configuration, AGENTS.md and
+the orchestration skill already permit four subagents excluding root. This
+session exposes five total concurrency slots. No lower file setting was found
+in the root check; no redundant configuration edit or gameplay change is needed.
+Independent read-only worker audit confirms no lower or contradictory override;
+the user-level AGENTS.md is empty. Configuration verification is complete.
 
 Latest user request rechecked, 2026-10-02: global capacity remains four;
 the repository `.codex` file is empty, and no profile/project agent-limit
