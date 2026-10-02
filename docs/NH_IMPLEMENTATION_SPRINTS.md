@@ -40,6 +40,13 @@ failed run merely because a later run succeeds.
 
 ## Current implementation priority — complete Skills perks and spells
 
+UP-133 verified subset committed/pushed7e02b092f; registry remains planned
+until the area scope question is answered. UP-134 Extend Spell mapping is
+complete: shared adjustEffectDuration plus accepted round allowance and detached
+copy/advance are required. Temporary terrain/summon scope and Counterspelled
+consumption remain design questions; no invented Time Stop round lifetime or
+permanent polling. Do not repeat this map.
+
 UP-133 bounded three-damage-area helper builds client48085/test18427;
 shared Controlled Blast regression89309 passes6/6 in2.658s, zero skips.
 New fixture90773 builds and principal96284 passes7/7 in2.238s, zero skips.

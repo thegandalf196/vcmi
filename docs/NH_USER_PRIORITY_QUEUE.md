@@ -11,11 +11,21 @@ entries and their validation/delivery evidence.
 
 ## UP-134 — Spellcraft Extend Spell
 
-Status: Mapping, 2026-10-02. Next missing Advanced Spellcraft perk:
+Status: Blocked on duration scope clarification, 2026-10-02.
+Next missing Advanced Spellcraft perk:
 once per round the first temporary hero spell lasts one additional round.
 Read-only duration/accepted-cast/detached-state map while UP-133's bounded
 fixtures are written. Identify real lifecycle prerequisites and scope conflicts
 before implementation; no activation or coverage increase is claimed.
+Mapping is complete. BaseMechanics::adjustEffectDuration is shared by ordinary
+and custom Lua round-based durations. A pre-cast snapshot plus accepted-cast
+per-side round allowance is required; actual effects follow BattleSpellCast
+application, and detached AI needs a copied/advanced allowance. Asked whether
+temporary terrain and summons qualify alongside creature enchantments. Time
+Stop uses action-bound stasis rather than round duration and must not gain an
+invented round. Accepted Counterspell-negated consumption is also unresolved,
+as in the already pending accepted-cast design clarification. Do not repeat the
+map or add permanent polling.
 
 ## UP-133 — Spellcraft Precise Casting
 
@@ -44,6 +54,9 @@ Armageddon and BattleAI viable central-target filtering. Registry stays planned
 because broader scope awaits clarification; coverage remains171/310 active.
 No GUI or playable promotion is claimed. Do not repeat the completed targeting
 map or principal three-spell tests in place of resolving the outstanding scope.
+Verified subset committed and pushed as7e02b092f. Independent fixture review
+has no blocker; Phase2 retains direct Inferno/hover assertions and actual AI
+utility ranking. No new save state or serialization version was needed.
 
 ## UP-132 — Spellcraft Cross-School Formula
 
