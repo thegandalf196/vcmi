@@ -40,6 +40,18 @@ failed run merely because a later run succeeds.
 
 ## Current implementation priority — complete Skills perks and spells
 
+UP-133 selected: implement Precise Casting's friendly central-stack exclusion
+for conventional area effects, with runtime, detached-AI and focused fixture
+mapping separated. Reuse Controlled Blast's existing center-identity path where
+appropriate, but do not mistake its three damage spells for proof of the broader
+perk's complete scope. Registration and coverage remain unchanged until actual
+production, compile and principal verification gates pass.
+Windows full37000555568 on7331e1056 now succeeds through compile, recursive
+package audit and preview upload. Its nonexpired751939717-byte artifact predates
+Broad Muster and Unbreakable. Their newer preflight37006272158 is confirmed
+in progress; Broad Muster preflight37002243267 is terminal cancelled, not passed.
+No Windows graphical acceptance or latest-feature playable claim is inferred.
+
 UP-131 verified: Unbreakable is active; both Linux targets build. Principal
 retry10314 passes10/10 in3.330s and activated69637 passes10/10 in3.303s, zero
 skips. Data/schema/inventory35/35, module drift and independent frozen review
