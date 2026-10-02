@@ -36,7 +36,16 @@ or weaken transfer persistence. No implementation or activation is claimed.
 
 ## UP-128 — Recruitment Broad Muster
 
-Status: Mapped (implementation next), 2026-10-02. Next unblocked Basic Recruitment perk: generated
+Status: Verified (playable delivery pending), 2026-10-02. Broad Muster is active.
+Both Linux targets build40839; principal54272 passes18/18 in3.701s and
+activated82143 passes18/18 in3.704s, zero skips. Data/schema/inventory35/35,
+module drift and static UI guards pass. Independent runtime/wire/fixture and
+AI/UI reviews have no blocking findings. Coverage169->170/310 active;
+Recruitment5->6/10. No saved gameplay counter or polling; append-only wire
+fields preserve solo compatibility. No GUI or playable promotion. Source
+commit/push is pending at this checkpoint.
+
+Original scope: Next unblocked Basic Recruitment perk: generated
 Core Muster recruits may be split between two Core dwellings in the same town.
 Map the authoritative atomic allocation, shared weekly allowance/target locks,
 exact split interaction and minimum AI path before implementation. Preserve
@@ -54,6 +63,43 @@ native fixture have separable ownership. Volunteer Network contributes only
 once to a derived total, but do not fake simultaneous legal Basic perk choices
 in the principal native fixture; test hypothetical modifier composition in the
 shared helper if needed. No new saved gameplay counter is required.
+Runtime, UI and AI workers are live with separate ownership. Fourth native
+worker activation was rejected by the service; root owns that bounded fixture
+and serialized build gate instead. Perk stays planned until native acceptance;
+this is actual delegation, not an activation or coverage claim.
+All three production workers are terminal and source is frozen. Root added
+legal-rank actual split/negative/overflow/save/wire fixtures and a localized
+two-dwelling note, updating the curated CMake text list as well as the module.
+Static UI/module checks and data/schema/inventory35/35 pass. Runtime/wire
+review has no blocking finding; AI/UI review and both-target build40839 are
+live. No native/activation evidence is claimed until that build and focused
+execution pass. No GUI launch or playable promotion.
+Final AI/UI review has no blocking finding. Phase2 retains long-label native
+row fit and actual UI/AI query execution; AI split valuation omits existing
+dwelling stock, Gold affordability and shared free army slots. The external
+negative fixture rejects at visit validation rather than isolating the later
+no-external-split check. Do not expand Phase1 into an exhaustive matrix here.
+
+## UP-129 — Deterministic Diplomacy foundation
+
+Status: Mapping complete; consolidated with blocked UP-048, 2026-10-02. Missing Version1.0 foundation for all three
+Diplomacy ranks and ten perks: eligible neutral joins use deterministic
+25/50/75% Army Value thresholds and normal recruitment Gold costs. Map current
+encounter eligibility, saved rules, exact pre-commit feedback, Leadership
+admission and adventure AI consumers while the Broad Muster candidate is
+verified. Do not revive random joining or bypass hostile/scripted exclusions.
+Preserve the accepted-join/garrison lifecycle until its remainder semantics are
+explicitly decided, as UP-048 already requires. This queue does not authorize
+an invented partial-neutral persistence rule. No activation/coverage claim.
+Supplemental mapping confirms the shared pure evaluator can serve server visit
+feedback and AI through existing BlockingDialog queries, without a new request.
+Scripted visits already retain their own control path. Authored COMPLIANT free
+joins versus the normal-Gold rule remain the existing unanswered UP-048 choice;
+raw Army Value versus legacy perceived/hero strength must remain explicit.
+Leadership-surplus dismissal/neutral-source AI handling needs a separate
+lifecycle decision, not an automatic rewrite. Do not repeat this map again.
+The existing authored-free-join question was renewed on2026-10-02 after mapping;
+no answer or authority to override map semantics is inferred.
 
 ## UP-125 — Four-worker concurrency
 
@@ -79,8 +125,10 @@ Existing saved markers/packets are reused. Full natural visit/window/AI run,
 full-army merging, mixed rows and restored queries are Phase2 deferrals.
 Bespoke icon remains Not done, UI Provisional; no GUI or playable promotion.
 Source committed/pushed as6cb08a8cb. Native gates are frozen pre-commit candidate
-evidence, not a promoted immutable package. Windows preflight36998928632 is
-confirmed live on6cb08a8cb; its result and the subsequent full build are pending.
+evidence, not a promoted immutable package. Windows preflight36998928632 passed
+on6cb08a8cb; full37000555568 was dispatched on7331e1056 (same functional source,
+later queue/sprint documentation). It does not contain the dirty Broad Muster
+candidate. Full Windows compile/package acceptance remains pending.
 
 Original scope: Continue unblocked UP-023 Basic perk coverage:
 the hero can spend the weekly Muster use at an owned external Core dwelling

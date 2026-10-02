@@ -1,5 +1,16 @@
 # New Horizons Linux build handoff
 
+## 2026-10-02 Phase 1 Broad Muster source gate
+
+UP-128 builds both Linux targets40839. Principal54272 passes18/18 in3.701s and
+production-enabled82143 passes18/18 in3.704s, zero skips. Frozen test SHA-256:
+e46a98b5b49da243fdabf34a2ae20f639ee433bab48fedcc751919470d94c600.
+Data/schema/inventory35/35, module drift and static UI checks pass; independent
+reviews have no blocker. These are pre-commit candidate gates, not an immutable
+playable snapshot. No GUI or launcher promotion. Windows preflight36998928632
+passed on6cb08a8cb; full37000555568 is running on7331e1056 and excludes this
+dirty Broad Muster candidate. Keep target-platform evidence separate.
+
 ## 2026-10-02 Phase 1 External Recruiter source gate
 
 UP-124 builds both Linux targets. Principal15376 passes11/11 in2.877s and
