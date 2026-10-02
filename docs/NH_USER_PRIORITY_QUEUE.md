@@ -9,6 +9,25 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-119 — Nature Mire Shaper
+
+Status: Blocked on design clarification, 2026-10-02. Continue UP-023 Phase1 coverage with Advanced
+Nature Mire Shaper: Quicksand creates one additional patch. Map the shared
+count formula and base cap, exact sequential placement, Lua validation and AI
+consumers before assigning ownership. Root owns semantics/configuration/builds
+and coverage; Luna owns bounded exploration and implementation. Require legal
+Advanced acquisition, count at low power and the base cap, actual authoritative
+paid placement, inactive/legacy guards and detached AI evidence. Do not add
+polling or saved counters. UI and spell help must agree with the required count.
+No GUI or playable promotion; bespoke perk art remains independently tracked.
+Read-only map confirms the shared quicksandPatchCount feeds Mechanics, Lua,
+server exact-count validation, placement UI and AI. No extra state is needed.
+The earlier Quicksand checkpoint explicitly preserved a cap ambiguity: does
+Mire Shaper allow six patches, or is five an absolute maximum? Asked the user;
+do not activate or claim coverage before that answer. Root's initial after-cap
+interpretation is a recommendation, not authority. Workers are freezing at a
+safe checkpoint. Existing spell and legacy profiles remain unchanged.
+
 ## UP-118 — Earthquake foundation and Geomancer
 
 Status: Verified (playable delivery pending), 2026-10-02. Earthquake's field

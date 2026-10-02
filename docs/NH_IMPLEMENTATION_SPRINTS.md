@@ -40,6 +40,16 @@ failed run merely because a later run succeeds.
 
 ## Current implementation priority — complete Skills perks and spells
 
+UP-119 mapping checkpoint, 2026-10-02: Mire Shaper's implementation surface
+is mapped by two Luna agents. Shared quicksandPatchCount already feeds spell
+help, Mechanics, server validation, Lua creation, placement UI and AI; no new
+state or polling is needed. Legal rank/perk acquisition and native test seams
+are identified. The previous Quicksand checkpoint explicitly left its extra
+patch's cap ordering unresolved. Asked whether six is allowed or five remains
+absolute; both agents finished without source edits. Perk remains planned;
+coverage stays167/310. Do not promote a recommended interpretation to authority.
+No build, GUI or playable promotion was needed for this read-only map.
+
 UP-118 consumer checkpoint, 2026-10-02: Earthquake field damage/Fractured Ground
 and selected-section siege structural damage are implemented; Geomancer is
 active. Both targets compile; final80978 exits0. Native91000 passes63/63
