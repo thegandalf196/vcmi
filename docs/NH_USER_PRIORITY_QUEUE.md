@@ -9,9 +9,22 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-125 — Four-worker concurrency
+
+Status: Resolved, 2026-10-02. User authorizes four concurrent workers. Inspected
+the local agent configuration: max_concurrent_threads_per_session is already4.
+Fresh spawn and a follow-up to an unavailable historical explorer were rejected;
+follow-ups to two completed workers still in the current team succeeded.
+Team inventory now confirms four running workers plus root: external runtime,
+external UI, AI and native fixture. Persisted bounded four-worker/reuse policy
+in AGENTS.md. No configuration increase or unrelated-thread interruption was
+necessary. Runtime setting changes are not falsely claimed.
+Policy committed and pushed as42ed09b7e. Concurrency was verified through the
+actual agent API/team inventory, not merely by editing a configuration file.
+
 ## UP-124 — Recruitment External Recruiter
 
-Status: Mapping, 2026-10-02. Continue unblocked UP-023 Basic perk coverage:
+Status: Implemented (verification pending), 2026-10-02. Continue unblocked UP-023 Basic perk coverage:
 the hero can spend the weekly Muster use at an owned external Core dwelling
 instead of a town, adding two Core recruits there. Map shared weekly allowance,
 dwelling ownership/category/pool validation, authoritative acceptance, required
@@ -19,6 +32,28 @@ adventure interaction and minimum AI hooks. Preserve the town path, Leadership
 admission and rejected-action non-consumption. No alternate weekly counter or
 frontend state mutation. Root owns architecture/config/build/Git; Luna maps
 before bounded implementation and focused native gates. No GUI/promotion.
+The completed map confirms existing hero/dwelling weekly markers and stock
+packets suffice. Runtime and native-recruitment UI workers have disjoint file
+ownership. Preserve free original tier-1 external recruitment through a shared
+dwelling cost method, not a client-only displayed discount. Bind external
+Muster to the exact active visit and keep Leadership admission authoritative.
+The service rejected a fresh third worker and an unavailable-explorer follow-up;
+reusing two completed workers now runs AI implementation and native fixture
+work in parallel with runtime and UI. Root owns the serialized build/test gate.
+
+Windows preflight36992596028 succeeded on source9d8c5f4d4. This is preflight
+evidence only, not a Windows compile/package or playable delivery.
+Full Windows build36994237037 was dispatched on6ca967db6 and is in progress;
+it contains the verified Spellward slice, not the uncommitted External Recruiter.
+All four workers finished and the candidate is frozen: runtime, native
+recruitment controls, minimum AI query/purchase hook and deterministic fixture.
+Root integrated localization/module generation and updated the static UI guard,
+which passes; module drift and diff checks pass. Perk stays planned until the
+principal native gate succeeds. No build/native or coverage increase is claimed.
+Next: serialize the vcmiclient+vcmitest build with12 jobs, run Recruitment
+Muster and Nullkiller2 Muster helper tests with the New Horizons test profile,
+repair material failures, review, then activate/register and recheck. No GUI,
+playable promotion or source commit is claimed for this candidate yet.
 
 ## UP-123 — Chaos Pandemonium and generic debuff counting
 

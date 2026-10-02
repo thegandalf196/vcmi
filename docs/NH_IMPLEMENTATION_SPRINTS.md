@@ -40,6 +40,21 @@ failed run merely because a later run succeeds.
 
 ## Current implementation priority — complete Skills perks and spells
 
+UP-124 implementation checkpoint, 2026-10-02: External Recruiter uses existing
+weekly hero allowance and dwelling target markers. Runtime and UI are assigned
+separate ownership; required AI/native verification follows when the service
+allows another worker. Preserve free tier-1 recruits using one shared cost rule,
+exact active-visit validation, fixed+2 Core stock and normal Leadership checks.
+No activation or coverage increase is claimed yet. Windows preflight36992596028
+passed on9d8c5f4d4; it did not compile or package the game.
+Four-worker concurrency was confirmed through the actual agent API by reusing
+completed allocated threads; policy is pushed as42ed09b7e. All four candidate
+workers are now terminal. External Recruiter runtime/UI/AI/fixture source is
+frozen, localization and module generation are integrated, static UI and drift
+guards pass. The next gate is the serialized client/test build plus focused
+Muster native tests; activation, review and source commit remain pending.
+Windows full build36994237037 is running on6ca967db6, not this dirty candidate.
+
 UP-123 map checkpoint, 2026-10-02: missing Chaos Pandemonium needs a generic
 effect-level DEBUFF classification, not a negative-spell list or a raw Bonus
 count. Physical-affliction grouping/state-backed Poison is reusable, but mixed
