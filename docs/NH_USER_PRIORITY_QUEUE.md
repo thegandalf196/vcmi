@@ -163,6 +163,10 @@ Activated gate39487 passes23/23 in25.382s, zero skips. Independent final review
 reports no blocker. Test binary SHA-256:
 c29e58c08a615bcf3406d43e6cca7c1a402b45dc96b8174243b12d4eaed49906.
 Source commit/push follows; graphical/playable delivery remains separate.
+Source delivered as401f80384451e0522ff8df8f035901863c03025a on
+origin/definitive-mvp; push exits0. Work moves next to the unblocked Bloodrage
+threshold/cap foundation. No new Linux launcher snapshot or Windows package is
+claimed for this commit.
 
 ## UP-143 — Bloodrage threshold perks
 
