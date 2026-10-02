@@ -40,6 +40,20 @@ failed run merely because a later run succeeds.
 
 ## Current implementation priority — complete Skills perks and spells
 
+Latest verified UP-114 continuation: Mass Bless/Litany is active. Distinct
+saved-v3 virtual grant, ally targeting, triple cost before Wisdom, capped School
+scaling and Benediction use the shared foundation. Principal fixtures found a
+real materialized Bless refresh defect; shared timed Lua explicitly replaces
+the family marker, and detached/live prior-status refresh and Curse removal now
+pass. Client23367 and both-target20799/28088 exit0; repaired31806 passes55/55
+in10.977s and activated5126 passes55/55 in11.867s, zero skips. Data/schema/
+inventory32/32 and module drift check pass. Coverage163/310 active,147 planned;
+Light8/2 and distinct variants3/5. Independent review has no material blocker;
+all required workers finished. The stale Bless tooltip assertion is repaired
+and included. No GUI or playable promotion. Next: Mass Regeneration/Verdant
+Communion, then distinct Mass Slow. Phase2 retains broad save/load, AI selection
+and modifier interactions. UP-113 remains item-gated on its normal chain limit.
+
 Latest verified UP-114 slice: distinct Mass Curse/Sorrow and Grand Malediction
 are active. Saved-v3 rows define the base family and perk grant; virtual entries
 require the selected active perk and physical Spellbook, never durable learning.

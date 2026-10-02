@@ -47,6 +47,20 @@ build/native/data evidence. No GUI or playable promotion.
 
 ## UP-114 — Distinct perk-granted Mass spell entries
 
+Latest continuation verified: Mass Bless and Advanced Litany are active.
+Bless-family capped School scaling, Benediction, triple listed cost before
+Wisdom, ally scope, both immunities, ordinary-source exclusion and virtual grant
+revocation have focused evidence. Ordinary and Mass Bless explicitly replace
+one family status; prior Bless refresh and Curse removal agree in detached and
+authoritative paths. Client23367 and both-target20799/28088 exit0. Repaired
+31806 passes55/55 in10.977s; activated5126 passes55/55 in11.867s, zero skips.
+Data/schema/inventory32/32 and module check pass; independent final review has
+no material blocker. Coverage162->163/310, Light7->8/10, distinct variants2->3/5.
+The stale Bless description assertion now passes and is no longer a deferred
+failure. Phase2 retains broad save/load, AI selection and modifier interactions.
+No GUI or playable promotion. Mass Regeneration/Verdant Communion is next;
+distinct Mass Slow remains missing. UP-114 remains open.
+
 Status: Partially verified (playable delivery pending), 2026-10-01. Mass Curse
 and Mass Sorrow plus Expert Grand Malediction are active. Saved-v3 perk-only
 virtual grants require a physical Spellbook and do not mutate durable knowledge.
