@@ -90,6 +90,8 @@ in5.197s, zero skips, including Mine Layer. Data/schema/inventory35/35 and
 module drift pass; source integration is ready for normal commit/push.
 Committed/pushed6f848c9a8. Windows notice preflight37018538339 queued on that
 source; poll its exact handle before a full build. No playable promotion.
+Notice37018538339 passed. Full Windows37018692299 queued ondf94df8ec;
+re-poll that exact build. No new platform/package acceptance is claimed yet.
 
 Retry48708 passes6/8 in2.622s, zero skips. Two fixture cases still fail:
 post-action baseline prediction reports1 versus actual3825, and a next-round
