@@ -15,17 +15,20 @@ entries here and thereby recreate a permanent override layer.
 
 ## Awaiting integration
 
-### Commanding Presence effective lifetime — 2026-10-02
+None.
+
+## Integrated history
+
+### Commanding Presence effective lifetime — 2026-10-02 (integrated)
 
 User-approved decision: its negative-Morale floor ends for a recipient when
 that recipient's Order benefit is spent or broken. It does not persist solely
 because the Order snapshot remains until round end. Examples include a consumed
 Charge, a broken/exhausted Protect pair, and the end of Second Wind's extra
 activation. Affected canonical section: Command perk pool, Commanding Presence.
-No unresolved lifetime question remains. Canonical integration is pending;
-implementation and validation belong in UP-142, not in this amendment.
-
-## Integrated history
+No unresolved lifetime question remains. Integrated into the canonical Command
+perk pool's Commanding Presence row. Implementation and validation belong in
+UP-142, not in this amendment.
 
 ### Polymorph footprint relocation — 2026-09-30 (integrated)
 
