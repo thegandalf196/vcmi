@@ -40,6 +40,27 @@ failed run merely because a later run succeeds.
 
 ## Current implementation priority — complete Skills perks and spells
 
+UP-131 verified: Unbreakable is active; both Linux targets build. Principal
+retry10314 passes10/10 in3.330s and activated69637 passes10/10 in3.303s, zero
+skips. Data/schema/inventory35/35, module drift and independent frozen review
+pass. Coverage171/310 active,139 planned; Discipline6/10. Failed positive-Morale
+fixture30730 and its ordinary-movement repair remain in the failure ledger.
+No GUI or promotion. Multi-round AI valuation and broader stochastic ordering
+are Phase2. UP-132 Cross-School Formula mapping is complete; actual multi-school
+memberships and Counterspelled source casts require user answers before source
+work. Do not repeat the map or invent accepted-cast history from StartAction.
+
+UP-131 selected, 2026-10-02: implement Expert Discipline Unbreakable using the
+existing shared negative-Morale suppression path. Runtime, detached AI and
+focused native fixture have separate ownership. A round-local allowance is
+distinct from Rally's combat-long use; consume the renewable allowance first
+without spending both or changing Twist's first draw. Append explicit saved
+state compatibility and reset at the existing round event, not by polling.
+Registration remains planned until build and principal gates pass. Coverage
+remains170/310; no GUI or playable promotion. UP-130 Esprit de Corps reconfirms
+the earlier unanswered mixed-faction/Undead scope question and is blocked;
+root interpretation is not authority to resolve that question.
+
 UP-128 verified checkpoint: Broad Muster is active. Both targets build40839;
 principal54272 passes18/18 in3.701s and activated82143 passes18/18 in3.704s,
 zero skips. Legal ranks, exact allocation, rejection/overflow atomicity, shared

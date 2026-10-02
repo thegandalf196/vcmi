@@ -9,6 +9,74 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-132 — Spellcraft Cross-School Formula
+
+Status: Blocked on multi-school/Counterspell clarification, 2026-10-02. Next UP-023 missing
+Basic Spellcraft perk: after casting from one school, the next spell from a
+different school before the end of the next round gains10% to its Spell
+Power-derived numerical component. Map completed-cast history, saved/detached
+state and shared numerical consumers without changing production bytes while
+UP-131's test build is live. Preserve flat bases, costs, action economy, rejected
+casts and canonical school identity. Root owns architecture/state/activation,
+builds and Git. No implementation or activation is inferred from the map.
+Mapping is complete: existing completion flags and level mask lack spell/round
+provenance; StartAction history is not an accepted-cast substitute. Add compact
+accepted source identity/round state at BattleSpellCast, copy/advance it in
+detached AI and reuse shared coefficient-only scaling after policy resolution.
+Current configured spells include multi-school membership, so the different-
+school relation is a real scope question. Asked whether it requires disjoint
+school sets or any new school, and whether accepted Counterspelled casts arm
+the source. Do not silently resolve either or repeat this map.
+
+## UP-130 — Discipline Esprit de Corps
+
+Status: Blocked on existing composition-scope clarification, 2026-10-02. Continue UP-023
+Phase1 missing Basic Discipline coverage: reduce army-composition Morale
+penalties by one without changing enemy-effect penalties or granting positive
+Morale to a composition without a penalty. Map the shared army-composition
+calculation, saved perk gates, live/detached AI and principal native fixture.
+Root owns architecture, registration, builds, docs and Git; independent Luna
+maps are read-only until ownership is assigned. No activation or coverage
+increase is claimed from mapping. No GUI or playable promotion.
+Mapping reconfirms the earlier sprint finding: mixed-faction and Undead-presence
+penalties are separate, and the unanswered scope choice must not be resolved by
+root implementation direction. No source implementation is authorized until
+that answer arrives. Temporary-army AI projections also need receiver context.
+
+## UP-131 — Discipline Unbreakable
+
+Status: Verified (playable delivery pending), 2026-10-02. Unbreakable is active.
+Client52523, test10838 and repaired fixture52313 build successfully. Principal
+retry10314 passes10/10 in3.330s; activated both-target98579 and native69637
+pass10/10 in3.303s, zero skips. Data/schema/inventory35/35, module check and
+independent frozen review pass. Coverage170->171/310, Discipline5->6/10.
+Phase2 retains multi-round AI valuation and broader stochastic interactions;
+generic UI Provisional, bespoke art Not done; no GUI or playable promotion.
+
+Original scope: Continue UP-023
+Expert Discipline coverage: ignore the first negative Morale trigger against
+the army each round. Reuse the established Rally suppression event while keeping
+Rally's once-per-combat allowance distinct, preserving current-controller and
+Twist of Fate ordering. Require authoritative trigger/reset behavior, saved and
+detached state, legal Expert acquisition and focused AI/native evidence. Root
+owns architecture, registration, versions, builds, docs and Git. No activation
+or coverage increase is claimed before principal validation; no GUI/promotion.
+Production and AI source are frozen. Four concurrent workers plus root were
+confirmed for runtime, AI, focused fixture and independent Astra review. The
+review finds no provisional blocking issue; it defers multi-round AI valuation.
+Data/schema/inventory35/35 and module drift checks pass while registration
+remains planned. Append-only state compatibility is present; actual trigger,
+save and detached principal gates and compilation remain pending.
+Production-only client build52523 is live with12 jobs while the isolated new
+fixture is completed. Its file is not yet in the test target. Freeze production
+bytes through this build; then register/build the fixture serially and run the
+focused Unbreakable/Rally gates. No native execution during compilation.
+Client52523 exits0. The new six-case fixture is registered and frozen; test
+build10838 is live with12 jobs. Root corrected packet-enable and deterministic
+Twist assumptions before compilation rather than weakening production rules.
+All workers are terminal. Re-poll this build handle before any native run;
+focused filter is NewHorizonsUnbreakableTest.*:NewHorizonsRallyTest.*.
+
 ## UP-126 — Recruitment Recruiter's Contacts
 
 Status: Blocked on multirow pool clarification, 2026-10-02. Next UP-023 Advanced Recruitment perk:
