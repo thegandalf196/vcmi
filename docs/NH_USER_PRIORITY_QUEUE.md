@@ -170,6 +170,15 @@ claimed for this commit.
 
 ## UP-143 — Bloodrage threshold perks
 
+Current implementation slice2026-10-02: Fury Unbound's shared live/detached
+Morale floor and UP-144's resolved cap. Friendly eligibility uses the current
+controller, consistently with Commanding Presence and other faction effects;
+the base Bloodrage damage query must use the same side rather than original
+unit side after Hypnotize. Unrelenting/Berserker remain missing next slices,
+not counted from shared foundations. Separate runtime, AI and fixture owners;
+root owns serialization feature, UI cap binding, activation, builds and Git.
+No new polling, actions or counter. Keep registration planned until native gates.
+
 Status: In progress (bounded read-only map), 2026-10-02. Map missing Unrelenting
 (+1 Speed at half the current Bloodrage cap or higher), Berserker (one additional
 retaliation at that threshold), and Fury Unbound (negative Morale floor0 while
@@ -186,6 +195,40 @@ path before assignment, and preserve future cap modifiers. No edits/tests from
 mapping are evidence of these perks being implemented.
 
 ## UP-144 — Bloodrage Endless Bloodshed
+
+Status: Verified (source/native; delivery pending), 2026-10-02. Principal66256
+passes4/4 in1.559s, zero skips. Fury Unbound and Endless Bloodshed are active
+after legal offers, live/detached72->80 cap saturation, Morale/current-control
+and cap serialization checks. Client91439/test68195 and both-target18196 pass;
+data36/36, module drift and UI source guard pass. Coverage177/310 active,
+133 planned, Bloodrage3/10, faction46/90; ranks84/93 unchanged. Activated
+adjacent gate has completed; see retry evidence below. No playable promotion.
+UP-143's Fury portion is implemented, not its remaining Speed/retaliation perks.
+Activated69374 has40/41 pass, zero skips; rankless legacy fixture's NH typed
+Hero Action setup is incompatible with its requested old format. Root applies
+a bounded fixture-profile repair without weakening save guards or changing
+assertions. The exact-source rebuild6389 exits0; activated retry20229 passes
+41/41 in29.684s, zero skips. Evidence: `UP144-activated-retry.log`/`.xml`.
+Original failure artifacts remain preserved; production save guards are unchanged.
+
+Implementation selected alongside Fury Unbound, which opens legitimate
+Advanced progression before this Expert perk. Snapshot the resolved cap per
+side, share it across live/AI/UI, and append one serialization feature with
+rank-only legacy fallback and rejection of lossy older writes. Counts remain
+175/310 active,135 planned; no coverage or playable claim until focused gates.
+Runtime and detached AI are frozen; pre-build review finds no blocker. Root
+starts the serialized12-job client build with logUP144-client-build.log. New
+unregistered fixture may finish independently; no production edits or competing
+build. Native execution and activation remain pending.
+Exact live client-build handle91439 must be re-polled before registering the
+test file or starting vcmitest. Source review finds no blocker; UI source guard
+passes against the shared saved cap. The generic panel design is unchanged.
+Client91439 exits0, reaching317/317. Principal fixture source is still finishing;
+register/build the test target only after its freeze. No native-pass claim from
+the client compile or source guards. Data36/36 and module drift pass.
+Four-case fixture is frozen/registered; independent final review has no blocker.
+Serialized12-job vcmitest build68195 is live, logUP144-test-build.log. Re-poll
+that exact handle; no native execution or competing build until terminal.
 
 Status: In progress (bounded read-only map), 2026-10-02. Expert perk increases
 Bloodrage's maximum damage cap by20 percentage points. Trace saved battle rank,

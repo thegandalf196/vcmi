@@ -83,6 +83,25 @@ failed run merely because a later run succeeds.
 
 ## Current implementation priority — complete Skills perks and spells
 
+2026-10-02 UP-143/144 activation checkpoint: principal66256 passes4/4, zero
+skips in1.559s; serialized client91439/test68195 and activated both-target18196
+builds pass. Shared live/detached Fury floor and saved80 cap are active. Data36/36,
+module drift and existing resource-panel source guard pass. Coverage177/310,
+133 planned; Bloodrage3/10, faction46/90; ranks84/93 unchanged. Activated adjacent
+gate69374 initially passed40/41; the isolated legacy fixture-profile repair builds
+in6389, and activated retry20229 passes41/41 in29.684s with zero skips.
+Evidence: `UP144-activated-retry.log`/`.xml`. No immutable playable promotion or broad save claim.
+Next highest-priority Bloodrage items are Unrelenting/Berserker's shared
+Speed/retaliation threshold hooks; UP-141 still awaits casualty clarification.
+
+2026-10-02 current slice UP-143/144: separate Luna runtime, detached-AI and
+focused fixture owners implement Fury Unbound and Endless Bloodshed. Root
+owns the append-only cap serialization feature, existing resource-panel getter
+binding, activation, builds and Git; Astra reviews material correctness. The
+other seven planned Bloodrage perks remain missing. Preserve ordinary legal
+Basic->Advanced->Expert acquisition, rank-sized increments and death exclusions.
+No per-update scan or new action; counts remain175/310 until acceptance.
+
 2026-10-02 UP-142 activation checkpoint: Commanding Presence's shared
 live/detached Morale floor is implemented against each recipient's effective
 Order benefit. Principal retry18653 passes9/9, zero skips in21.568s; both Linux
