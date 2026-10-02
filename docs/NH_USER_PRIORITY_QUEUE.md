@@ -9,6 +9,36 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-118 — Earthquake foundation and Geomancer
+
+Status: In progress, 2026-10-02; generic terrain foundation native verified,
+Earthquake and Geomancer consumers remain incomplete.
+Canonical Earthquake has selected-area siege structural damage and a radius2
+field mode dealing30+0.8×SP to grounded stacks, then creating3-round Fractured
+Ground that adds1 movement point per entered hex without reducing Initiative.
+Flying travel ignores the extra cost. Advanced Geomancer adds25% structural
+damage and one Fractured Ground round. Map both current paths, saved state,
+movement/accessibility, previews and AI before assigning exclusive runtime
+ownership. Do not treat the existing spell identity as completed behavior or
+activate the perk from metadata. Root owns architecture, config, builds and
+coverage. No GUI/promotion; focused validation and Phase2 deferrals.
+
+Bounded foundation checkpoint: generic spell-created obstacle movementCost is
+in source with JSON/network and append-only binary representation, zero-cost
+legacy defaults, overlap maximum and newly entered footprint charging. Flying
+reachability is unchanged. Root repaired a pre-validation double-count of the
+surcharge and avoids footprint work when no terrain cost exists. Client54585,
+test-target92767 and focused fixture build82811 exit0. Native72881 passes12/12
+in3.287s, zero skips: seven new weighted-cost/state cases and five existing
+detached obstacle guards. No complete spell/perk coverage is added. An additional independent reviewer
+spawn was rejected by the service thread limit; root owns direct review.
+This does not complete Earthquake or activate Geomancer. Before either consumer
+is enabled, separate weighted movement budget from actual traveled hexes in
+the server movement result (Charge/Pursuit), add authoritative field creation
+and feedback, and implement selected-area siege structural damage. Existing
+hero Earthquake currently uses legacy1-point damage against structural HP because
+the Catapult callback only supplies structuralDamage for a unit caster.
+
 ## UP-117 — Nature's Wrath foundation and Worldroot
 
 Status: Mapping, 2026-10-02; next UP-023 missing combat identity while the
