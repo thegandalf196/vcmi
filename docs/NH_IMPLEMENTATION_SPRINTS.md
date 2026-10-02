@@ -40,6 +40,18 @@ failed run merely because a later run succeeds.
 
 ## Current implementation priority — complete Skills perks and spells
 
+UP-118 prerequisite checkpoint, 2026-10-02: generic spell-created terrain now
+stores a bounded movement surcharge with packet/JSON and feature-gated binary
+state. Shared walking reachability charges newly entered footprint cells, uses
+the maximum overlapping cost and ignores expired fields; flight is unchanged.
+Client54585, test92767 and focused82811 exit0; native72881 passes12/12 in3.287s,
+zero skips. Root direct review repaired pre-run double charging; a separate
+reviewer spawn was service-rejected. Earthquake and Geomancer remain incomplete
+and coverage is unchanged166/310. Next: separate weighted budget from traveled
+hexes, implement authoritative field terrain/damage and selected-area siege
+structural damage, then activate Geomancer only after both paths have evidence.
+No GUI or playable promotion; wider integration stays recorded for Phase2.
+
 Verified UP-115/116 continuation, 2026-10-02: Basic Sanctuary Keeper and
 Venomancer are active. Exact linked Morale lifetime and20% whole-Base Poison
 snapshot, including physical-source exclusion, legal offers, inactive/legacy
