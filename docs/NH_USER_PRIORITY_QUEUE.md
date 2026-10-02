@@ -268,7 +268,7 @@ mapping are evidence of these perks being implemented.
 
 ## UP-146 — Simultaneous different Orders foundation
 
-Status: Verified (source/native; commit and playable delivery pending),2026-10-02. The user's approved
+Status: Verified (committed/pushed; playable delivery pending),2026-10-02. The user's approved
 rule keeps different Orders active for their normal durations when a perk allows
 more than one in a round. The current one-optional-Order-per-side model is missing
 foundational Phase1 coverage and blocks Double Command. Map authoritative
@@ -336,6 +336,12 @@ ends when the recipient's Order benefit is spent or broken. With simultaneous
 Orders, retain that floor only while at least one still-effective Order benefits
 the recipient; consuming one Order must not consume or erase another. This
 clarification is already canonical under UP-142, not a new round-long exemption.
+Source delivered asf57f58a84c8d82d49c9b5f555b12eb08f62e4585 on
+origin/definitive-mvp; push exits0. Earlier Windows37049519240 completed
+successfully onb99c49c32aff8beb8f0b615edc845d55435784c9, not this source.
+New-source notice preflight37060224004 is in progress onf57f58a84. Preserve
+and poll that exact run through terminal before dispatching the full Windows
+package build. No launcher snapshot or GUI delivery is claimed from source push.
 
 ## UP-147 — Command Double Command
 

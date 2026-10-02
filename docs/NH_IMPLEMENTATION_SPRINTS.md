@@ -32,6 +32,11 @@ Counts remain180/310 perks,84/93 ranks,49/90 faction perks; Double Command's
 actual trigger is the next dependent coverage item. Commit/push pending; no GUI,
 rendered acceptance or immutable playable promotion. Uncapped compound numeric
 matrices and wider control/save interactions remain explicitly deferred.
+Source is now committed/pushed asf57f58a84c8d82d49c9b5f555b12eb08f62e4585;
+push exits0. Notice preflight37060224004 is live on that source. Poll it through
+terminal, then dispatch the full Windows build; do not restart it for an
+observation timeout. Earlier fullWindows37049519240 is success onb99c49c32.
+Local immutable playable delivery remains pending.
 
 2026-10-02 UP-145 verified checkpoint: Blood Scent now active with capped,
 attack-local live/AI output and privacy-safe saved rank increments. Client50746,
