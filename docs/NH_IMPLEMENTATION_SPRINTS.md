@@ -18,6 +18,14 @@ working sequence.
 
 ## Maintenance contract
 
+2026-10-02 checkpoint: Mine Layer principal10/10 passes and registration is
+enabled. Activated retry70019 passes10/10; client build,35 data/schema/inventory
+tests, generated-module drift and independent registration review pass.
+Bastion retry6/8 leaves two fixture failures under investigation, so that perk
+stays planned. Windows
+full37008135705 completed successfully on8c5f5ec87; newer source is not included.
+Do not conflate native/source completion with playable delivery. Phase1 continues.
+
 Update this register whenever work is selected, materially changes state, is
 blocked, is committed, or obtains new target-platform/playable evidence. Never
 move an item to Done merely because source exists or a narrow static check passes.
@@ -39,6 +47,23 @@ failure, cause, repair, guard, and first succeeding target run. Never discard a
 failed run merely because a later run succeeds.
 
 ## Current implementation priority — complete Skills perks and spells
+
+UP-135 selected: Expert Armorer Bastion. Separate runtime, AI and fixture
+owners implement a per-stack round marker and shared Defend/Hold the Line
+recipient gate. Its70% final physical-damage factor is distinct from additive
+physical reduction and from Immovable's allowance. Accepted attack events spend
+the marker; comparing the round renews it without polling. Preserve current
+control, ordinary creature attack provenance and detached branch isolation.
+Registration stays planned until the principal build/native gates pass.
+Runtime/AI/fixture independent review has no blocker. Both-target79589 exits0
+after correcting the recorded Counterfire state-interface compile failure92791.
+Principal64640 passes4/8 with zero skips; the fixture's repeated action lifecycle
+and hidden defender-perk projection are under repair. Keep Bastion planned.
+UP-136 Defiant's distributed retaliation-denial map is complete and blocked on
+the asked source scope/linked Morale choices. UP-137 Mine Layer has a clear
+shared mechanics count seam plus a necessary server validator alignment; no
+new saved state/polling or general framework is needed. Implement after the
+Bastion candidate gate; do not repeat either completed map.
 
 UP-133 verified subset committed/pushed7e02b092f; registry remains planned
 until the area scope question is answered. UP-134 Extend Spell mapping is
