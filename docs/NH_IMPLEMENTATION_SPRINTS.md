@@ -83,6 +83,20 @@ failed run merely because a later run succeeds.
 
 ## Current implementation priority — complete Skills perks and spells
 
+2026-10-02 current slice: UP-140 Steadfast production/runtime/AI source and
+serialization prerequisite compile in both Linux targets; principal14/14 passes.
+The first failures led to fixture-cap/prerequisite repairs and a real added-stack
+aura initialization-order correction. Adjacent9/10 passes; the remaining existing
+whole-battle Veteran-history serialization rejection stays explicit for Phase2.
+Steadfast is active; activated23/23 passes with zero skips and final review has
+no blocker. Data36/36 and generated-module drift pass; source commit/push follows.
+UP-141 Miracle Worker awaits casualty-rounding clarification. UP-142 Commanding
+Presence map is complete; the user resolved its floor ends with the recipient's
+spent/broken Order benefit. Canonical integration/implementation follow Steadfast.
+UP-143 maps three missing Bloodrage threshold perks without altering the frozen
+Steadfast candidate. Current activation is174/310,136 planned,84/93 ranks.
+Older checkpoints below are historical, not the next-work selection.
+
 UP-135 selected: Expert Armorer Bastion. Separate runtime, AI and fixture
 owners implement a per-stack round marker and shared Defend/Hold the Line
 recipient gate. Its70% final physical-damage factor is distinct from additive
