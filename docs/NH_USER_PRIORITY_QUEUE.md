@@ -11,8 +11,16 @@ entries and their validation/delivery evidence.
 
 ## UP-118 — Earthquake foundation and Geomancer
 
-Status: In progress, 2026-10-02; generic terrain foundation native verified,
-Earthquake and Geomancer consumers remain incomplete.
+Status: Verified (playable delivery pending), 2026-10-02. Earthquake's field
+and selected siege paths and Advanced Geomancer are implemented and active.
+Final build80978 exits0; final native91000 passes63/63 in8.411s, zero skips.
+Data/schema/inventory35/35 and module drift check pass. Independent Astra
+review has no blocking findings. Coverage166->167/310 active perks,144->143
+planned; Nature6->7/10. Combat identity count remains60/67 plus five Mass
+variants: Earthquake was already catalogued, but its principal behavior now
+has evidence. No GUI, playable promotion or final-art acceptance.
+Phase2 retains wider save/Charge/Pursuit/return-movement interactions, special
+Metamagic-event forecast modifiers and optional destructible scenery handling.
 Canonical Earthquake has selected-area siege structural damage and a radius2
 field mode dealing30+0.8×SP to grounded stacks, then creating3-round Fractured
 Ground that adds1 movement point per entered hex without reducing Initiative.
@@ -22,6 +30,19 @@ movement/accessibility, previews and AI before assigning exclusive runtime
 ownership. Do not treat the existing spell identity as completed behavior or
 activate the perk from metadata. Root owns architecture, config, builds and
 coverage. No GUI/promotion; focused validation and Phase2 deferrals.
+
+Historical consumer integration checkpoint: field damage/terrain and deterministic selected
+siege sections are implemented through the saved-v3 marker and real Lua effect.
+Legacy profiles retain Catapult behavior. Structural damage is an explicit
+Phase1 tunable100 HP per section (Geomancer125), because no absolute amount is
+authored. Movement budget is distinct from physical travel in server and AI
+Charge paths; return movement checks weighted affordability. Geomancer remains
+planned until focused actual casts pass. The first Python gate's6 legacy-fixture
+conversion errors were repaired without relaxing old schemas;35 data checks now
+pass. Client/test build86453 is running. Independent Astra source review found
+no blocker. Borrowed Quicksand field art is Not done, not final Fractured Ground
+art; optional destructible scenery remains deferred because no destructibility
+marker exists. No playable promotion or graphical acceptance is claimed.
 
 Bounded foundation checkpoint: generic spell-created obstacle movementCost is
 in source with JSON/network and append-only binary representation, zero-cost

@@ -40,6 +40,20 @@ failed run merely because a later run succeeds.
 
 ## Current implementation priority — complete Skills perks and spells
 
+UP-118 consumer checkpoint, 2026-10-02: Earthquake field damage/Fractured Ground
+and selected-section siege structural damage are implemented; Geomancer is
+active. Both targets compile; final80978 exits0. Native91000 passes63/63
+in8.411s, zero skips; data/schema/inventory35/35 and module check pass. Actual
+paid AI cast, immunity exclusion, detached/live forecasts, weighted movement
+and strict legacy-profile guards are included. Independent Astra review has
+no blocking findings. Coverage166->167/310 active,144->143 planned; Nature7/3.
+Structural100 HP (Geomancer125) is a labelled tunable, not a new canonical rule.
+Borrowed field art remains Not done, generic UI Provisional; no GUI/promotion.
+Wider save/movement interactions, special Metamagic-event forecasts and optional
+scenery destruction remain Phase2. Next unblocked missing perk: Advanced Nature
+Mire Shaper; map the additional Quicksand patch against existing count/placement
+rules before implementation. Nature's Wrath/Worldroot remains design-blocked.
+
 UP-118 prerequisite checkpoint, 2026-10-02: generic spell-created terrain now
 stores a bounded movement surcharge with packet/JSON and feature-gated binary
 state. Shared walking reachability charges newly entered footprint cells, uses
