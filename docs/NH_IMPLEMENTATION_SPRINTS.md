@@ -51,6 +51,12 @@ retains natural visit/window/AI execution, full-army merging, mixed rows and
 restored queries. Source/native only; no playable promotion or GUI claim.
 Contacts (UP-126) and Drill Sergeant (UP-127) await distinct pool/cohort answers;
 continue another unblocked missing perk while those decisions remain open.
+External Recruiter source is committed/pushed as6cb08a8cb. Windows
+preflight36998928632 is confirmed live on that source, including453828742's
+MSVC repair. Broad Muster (UP-128) is mapped without a specification blocker:
+implement one atomic optional two-row request, explicit exact allocation UI,
+minimum AI split selection and focused malformed/duplicate/overflow guards.
+Its implementation remains next; do not claim coverage from the map.
 
 UP-124 implementation checkpoint, 2026-10-02: External Recruiter uses existing
 weekly hero allowance and dwelling target markers. Runtime and UI are assigned
