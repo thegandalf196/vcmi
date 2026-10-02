@@ -9,6 +9,22 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-133 — Spellcraft Precise Casting
+
+Status: In progress (broader area scope clarification pending), 2026-10-02.
+Implement the canonical Advanced perk:
+conventional area spells centered on an occupied friendly hex exclude that
+stack, while explicitly indiscriminate spells cannot benefit. Map authoritative
+target filtering and detached AI with separated ownership. Require legal perk
+selection, principal targeting verification and focused compile/native evidence
+before activation or coverage claims. No GUI or playable promotion is inferred.
+Controlled Blast supplies the existing shared Lua center-identity gate for
+Fireball, Inferno and Meteor Shower. Implement and verify those unambiguous
+cases without activating the perk prematurely. Asked whether Precise Casting
+also excludes Time Stop stasis and Earthquake's immediate field damage while
+leaving terrain unchanged. Canonical "conventional area spell" does not settle
+this broader scope; do not silently narrow the completed perk to three spells.
+
 ## UP-132 — Spellcraft Cross-School Formula
 
 Status: Blocked on multi-school/Counterspell clarification, 2026-10-02. Next UP-023 missing
@@ -52,9 +68,12 @@ pass10/10 in3.303s, zero skips. Data/schema/inventory35/35, module check and
 independent frozen review pass. Coverage170->171/310, Discipline5->6/10.
 Phase2 retains multi-round AI valuation and broader stochastic interactions;
 generic UI Provisional, bespoke art Not done; no GUI or playable promotion.
-Source committed/pushed asff18ed6b9. Windows preflight37006272158 is queued
-on that source; older full37000555568 remains confirmed in progress and is
-not cancelled. Native evidence is the frozen pre-commit candidate, not an
+Source committed/pushed asff18ed6b9. Windows preflight37006272158 remains
+confirmed in progress. Older full37000555568 completed successfully on
+7331e1056, including compile, recursive package audit and artifact upload;
+it does not contain Broad Muster or Unbreakable. Broad Muster preflight
+37002243267 is now terminal cancelled; do not treat it as a pass.
+Native evidence is the frozen pre-commit candidate, not an
 immutable promoted package. Windows compile/package acceptance remains pending.
 
 Original scope: Continue UP-023
@@ -176,6 +195,13 @@ The existing authored-free-join question was renewed on2026-10-02 after mapping;
 no answer or authority to override map semantics is inferred.
 
 ## UP-125 — Four-worker concurrency
+
+Latest user request rechecked, 2026-10-02: global capacity remains four;
+the repository `.codex` file is empty, and no profile/project agent-limit
+override was found. A fresh Luna spawn and completed-worker follow-up both
+succeeded. Added the four-subagent shared-capacity and reuse/error-reporting
+policy to the orchestration skill itself. No numeric setting change was
+needed; this check does not claim four simultaneously running agents.
 
 Status: Resolved, 2026-10-02. User authorizes four concurrent workers. Inspected
 the local agent configuration: max_concurrent_threads_per_session is already4.
