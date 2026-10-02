@@ -88,6 +88,8 @@ Retain Phase2 findings already listed; no GUI/artwork/playable acceptance.
 Activated build28218 exits0 for both targets. Combined67346 passes18/18
 in5.197s, zero skips, including Mine Layer. Data/schema/inventory35/35 and
 module drift pass; source integration is ready for normal commit/push.
+Committed/pushed6f848c9a8. Windows notice preflight37018538339 queued on that
+source; poll its exact handle before a full build. No playable promotion.
 
 Retry48708 passes6/8 in2.622s, zero skips. Two fixture cases still fail:
 post-action baseline prediction reports1 versus actual3825, and a next-round
