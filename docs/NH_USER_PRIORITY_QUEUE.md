@@ -11,13 +11,73 @@ entries and their validation/delivery evidence.
 
 ## UP-140 — Discipline Steadfast
 
-Status: In progress (bounded read-only map), 2026-10-02. Missing Basic perk:
+Next independent read-only preparation: UP-141 Miracle Worker, below. It must
+not mutate the frozen Steadfast candidate or replace its native acceptance.
+
+Status: Verified (source delivery pending), 2026-10-02. Basic perk:
 Morale penalties applied by enemy effects are reduced by1, to a minimum penalty
 of0. Identify source/controller provenance and the shared live/detached Morale
 calculation; do not reduce army composition, artifacts or friendly self-penalties
 merely because they are negative. Production/config/activation remain unchanged
 until root selects a faithful rule from evidence. Focused validation and minimum
 AI hooks are required; no repeated map of already blocked Discipline perks.
+Implementation checkpoint: root selected a limiter-applied unstacked query
+cached under the existing bonus-tree version, with target-relative
+`Bonus::appliedByEnemy` provenance captured on application. This is distinct
+from dynamic aura `bonusOwner`. Duration-only refresh retains original value
+and attribution; Hypnotize does not rewrite historical application hostility.
+Four bounded Luna lanes own the query foundation, runtime, AI and focused
+fixtures. Root owns binary/JSON/schema, registration, builds and Git. Same-key
+friendly/hostile penalties must be transformed before winner selection.
+Source is in progress; registry remains planned and counts are unchanged.
+Source/fixture freeze checkpoint: independent review reports no remaining
+blocking issue after preserving repeated Bonus pointer identity through live
+attenuation and AI capture/refresh/aging. Runtime and detached paths retain
+`ALWAYS` stacking and branch isolation. Both-target client/vcmitest build9276
+is running with12 jobs; exact log is
+`build/new-horizons-linux/testing/UP140-build.log`. Re-poll that handle before
+running native acceptance or starting another build. Data/schema/inventory36/36
+pass. Registration remains planned until native acceptance. Phase2 retains
+the existing Hypnotize/inherited-aura ownership interaction, reflected/refresh
+spell matrices and broader full-save integration. No playable promotion.
+Build9276 is terminal failure: recorder's base interface lacks battleGetOwner.
+Root corrected its constructor/member to the CBattleInfoCallback already
+provided by live and projected mechanics. Retry/native acceptance are pending;
+do not execute the stale test binary or mark activation from the initial build.
+Exact retry handle29668 is live for both targets with12 jobs. Log:
+`build/new-horizons-linux/testing/UP140-build-retry.log`. Re-poll that handle;
+an observation timeout is not a reason to restart it.
+Retry29668 is now terminal: the log reaches636/636 linking vcmitest and both
+executables exist; no build process remains. A reused Luna tester owns the
+sequential13-case principal and9-case adjacent native checks. No activation
+or native-pass claim until those exact results return.
+First native acceptance: principal13 runs9pass/4fail, adjacent9 runs4pass/5fail,
+zero skips. Three principal expectations conflict with the active global Morale
+cap; aura provenance needs investigation. Adjacent No Quarter fixtures use an
+obsolete acquisition shortcut and fail the earlier-perk gate. Separate Luna
+owners repair only the Steadfast and No Quarter fixtures; do not loosen production
+validation or activate from partial passes. Rebuild/retest remains pending.
+Aura tracing identifies a production initialization-order defect for packet-added
+base-null stacks, not just a fixture expectation. Root reverses creature/army
+attachment order so OwnerUpdater receives the owned stack context. Require
+friendly and enemy native aura verification alongside the cap fixture repairs.
+Fixture repairs are frozen, including legal double-wide friendly-dragon geometry.
+Both-target rebuild76129 is live with12 jobs, logUP140-fixture-rebuild.log.
+Re-poll that exact handle before executing14 principal cases and the focused
+adjacent No Quarter/Standard Bearer filter; no parallel build or stale binary.
+Latest checkpoint: rebuild76129 exits0. Principal14/14 passes in3.155s with
+zero skips. Adjacent9/10 passes; remaining whole-battle roundtrip hits existing
+Veteran damage-history serialization rejection (CStack binary omits CUnitState),
+tracked Phase2 rather than silently dropping the failing result. Root activates
+Steadfast, updates inventory and generated module:174/310 active,136 planned,
+Discipline7/10; ranks84/93 unchanged. Data36/36, module drift and activated
+both-target build pass. Frozen activated23-case bounded gate and review pending.
+Purpose-made art Not done, generic UI Provisional; no immutable playable promotion.
+Activated final gate passes23/23 in5.834s, zero skips. Reviewer reports no
+blocking finding. Test binary SHA-256:
+5413ec74489a3f1f5af9c1e7e132e77e639c78e79c78a6164b9d080cdb9afd4b.
+Full-battle serialization failure remains explicitly deferred. Source commit/push
+is next; rendered and immutable playable delivery remain separate.
 Map complete: shared battleGetMorale feeds live and detached AI. Generic Bonus
 source/SID does not capture serialized applying side; Shield of Chaos can
 penalize friend or foe, so blanket negative-Morale or SPELL_EFFECT attenuation
@@ -25,6 +85,59 @@ is wrong. Sorrow/Doom are hostile spell producers; No Quarter has a custom
 marker but no issuer side. Fear uses FEARFUL rather than MORALE. No gameplay
 wording ambiguity was found. Root must choose generic provenance/application
 infrastructure, not activate a Sorrow-only subset; no source edit is yet claimed.
+
+## UP-141 — Light Miracle Worker
+
+Status: In progress (bounded read-only map), 2026-10-02. Missing Expert perk:
+Resurrection restores25% more casualties than its normal calculated amount.
+Trace casualty restoration, minimum AI prediction and shared live/detached
+calculation, including the spell's casualty ceiling and living-target rules.
+Do not substitute ordinary surviving-creature healing for casualty output.
+No source edits, activation, build or coverage claim from this map. Steadfast's
+running build and principal native verification remain the immediate priority.
+Map finds the shared heal.lua preview/application path and CHealth casualty
+ceiling. Survivor healing precedes casualties. Asked whether25% scales residual
+casualty-restoration HP or the resulting integer creature count (floor); those
+produce materially different outcomes for partial restored creatures. Await
+that narrow clarification before implementing, not a global healing multiplier.
+
+## UP-142 — Command Commanding Presence
+
+Status: In progress (bounded read-only map), 2026-10-02. Missing Advanced perk:
+friendly stacks currently affected by one of the hero's Orders treat negative
+Morale as0 for that Order's duration. Map current Order recipient/lifetime
+representation and shared live/detached Morale path. Preserve simultaneous
+different Orders and target membership, do not grant an unconditional army-wide
+Morale floor or invent an extra action. No edits/activation during Steadfast's
+frozen build. UP-141 awaits casualty-output clarification; UP-140 acceptance
+remains the immediate delivery priority.
+Map complete: all eight Orders use round-scoped state, but recipient benefits
+can be consumed or broken earlier (Charge, Protect, Second Wind). Asked whether
+Commanding Presence follows that effective benefit lifetime or recipient
+membership until round end. User resolved2026-10-02: end the Morale floor when
+that recipient's Order benefit is spent or broken, not merely at round end.
+Record the accepted clarification in Pending Changes until canonical integration.
+Shared battleGetMorale
+covers live and detached AI. Existing state represents only one Order per side;
+Double Command's missing multiple-Order foundation remains explicit and must
+not be disguised as full Command coverage.
+
+## UP-143 — Bloodrage threshold perks
+
+Status: In progress (bounded read-only map), 2026-10-02. Map missing Unrelenting
+(+1 Speed at half the current Bloodrage cap or higher), Berserker (one additional
+retaliation at that threshold), and Fury Unbound (negative Morale floor0 while
+any increment is active). Trace authoritative state, current control, detached
+AI and shared attribute queries. Do not invent counters or per-update scans.
+Root must assign non-overlapping implementation ownership after reviewing the
+map; no activation or coverage claim yet. Steadfast acceptance remains first.
+Map complete: serialized per-side rank/increment already drives live and
+hypothetical deaths. Unrelenting needs the shared Speed/Initiative seam and
+cache invalidation; Berserker needs CRetaliations allowance/spending; Fury
+Unbound fits shared battleGetMorale. Root must resolve original-side versus
+current-controller eligibility consistently with the existing Bloodrage damage
+path before assignment, and preserve future cap modifiers. No edits/tests from
+mapping are evidence of these perks being implemented.
 
 ## UP-139 — Havoc Demolitionist
 
@@ -179,6 +292,9 @@ Committed/pushed6f848c9a8. Windows notice preflight37018538339 queued on that
 source; poll its exact handle before a full build. No playable promotion.
 Notice37018538339 passed. Full Windows37018692299 queued ondf94df8ec;
 re-poll that exact build. No new platform/package acceptance is claimed yet.
+Terminal evidence, 2026-10-02: full Windows37018692299 completed successfully
+on df94df8ec267c0ab07c0833bc1dd67a1c8c6d9ca. This proves that checkpoint's
+Windows workflow, not the later Havoc commit or Windows graphical gameplay.
 
 Retry48708 passes6/8 in2.622s, zero skips. Two fixture cases still fail:
 post-action baseline prediction reports1 versus actual3825, and a next-round
