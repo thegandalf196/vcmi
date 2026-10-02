@@ -40,6 +40,22 @@ failed run merely because a later run succeeds.
 
 ## Current implementation priority — complete Skills perks and spells
 
+Latest verified UP-114 continuation, 2026-10-02: all five distinct Mass entries
+are active. Mass Slow completes the set with Temporal Field's physical-book
+virtual grant,60% post-cap/specialty Initiative effect, normal duration and
+three-times listed cost before Wisdom. Ordinary and Mass Slow refresh one
+family status; old saved profiles retain their toggle/budget, while new ones
+reject that transport. No new saved counters or polling. Client33547 and final
+both-target53442 exit0; principal7002 passes22/22 in5.821s, activated47843 passes
+36/36 in9.512s, zero skips. Real AI selection/server acceptance, historical AI,
+Communion and Heavenly Gale pass after saved-family valuation and no-location
+projection repairs. Data/schema/inventory34/34 and module drift check pass;
+independent review has no blocker. Distinct variants5/5, active perks164/310,
+planned146, canonical identities60/67. Broader save/modifier/rendered checks
+remain Phase2. Source/native verification is not playable delivery; no promotion.
+Next unblocked missing feature: Light Basic Sanctuary Keeper's Sanctuary-linked
++2 Morale, including effect expiry/refresh/removal and detached AI projection.
+
 Latest verified UP-114 continuation, 2026-10-02: Mass Regeneration and Advanced
 Verdant Communion are active. Living-recipient eligibility, virtual grant and
 revocation, triple cost, ranked wound snapshots, survivor-only healing, shared
