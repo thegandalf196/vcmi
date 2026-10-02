@@ -18,6 +18,31 @@ working sequence.
 
 ## Maintenance contract
 
+2026-10-02 UP-145 verified checkpoint: Blood Scent now active with capped,
+attack-local live/AI output and privacy-safe saved rank increments. Client50746,
+test baseline25076, fixture40698/rebuild84207 and activated both-target build
+pass. Principal retry91133 passes5/5 in1.713s, activated62923 passes36/36 in8.312s,
+zero skips. Data36/36/module drift pass. Coverage180/310,130 planned; faction49/90,
+Bloodrage6/10; ranks84/93 unchanged. First3/5 fixture-math failure is preserved
+and repaired without changing production math. No graphical/playable promotion.
+Next missing Bloodrage entries: First Blood/Slayer await overlap decision,
+Avatar awaits attack-local cap interaction decision; Rage Through Pain requires
+personal-state persistence and lethal/control design review. Full Windows
+37049519240 remains live on prior b99c49c32, not this new source.
+
+2026-10-02 next coverage slice: Blood Scent's target-sensitive attack-local
+Bloodrage increment. Root owns architecture, serialization, builds and activation;
+independent runtime and AI/save maps are delegated. Preserve the saved cap and
+enemy-hero privacy. Counts remain179/310 pending focused acceptance. Existing
+Windows build37049519240 remains confirmed in_progress on b99c49c32; monitor that
+same run rather than dispatch a replacement.
+Next read-only Rage Through Pain map identifies damageInternal as the shared
+crossing event (not polling), per-unit JSON/copy state for live/AI replication,
+and the existing CStack binary omission as a required persistence seam. A future
+implementation must preserve its one-shot personal increment without advancing
+global Bloodrage or weakening lossy-save guards. Lethal/revival and control-change
+semantics require root design review before that slice; no activation from map.
+
 UP-139 verified checkpoint: retry4772 builds both targets; principal35313
 passes10/10 in2.669s and adjacent27391 passes6/6 in1.369s, zero skips.
 Python36/36/module drift and final reviewer gates pass. Commit this coherent
