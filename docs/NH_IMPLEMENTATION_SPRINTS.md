@@ -40,6 +40,17 @@ failed run merely because a later run succeeds.
 
 ## Current implementation priority — complete Skills perks and spells
 
+UP-133 bounded three-damage-area helper builds client48085/test18427;
+shared Controlled Blast regression89309 passes6/6 in2.658s, zero skips.
+New fixture90773 builds and principal96284 passes7/7 in2.238s, zero skips.
+Independent runtime Astra review has no blocker. Time Stop/Earthquake scope awaits
+the user; registration remains
+planned and coverage remains171/310. Do not equate shared regression with the
+new perk's principal acceptance.
+Unbreakable preflight37006272158 now succeeds. Full Windows37008135705 is
+queued on8c5f5ec87, containing Broad Muster and Unbreakable, but not the dirty
+Precise Casting candidate. Compile/package success is still pending.
+
 UP-133 selected: implement Precise Casting's friendly central-stack exclusion
 for conventional area effects, with runtime, detached-AI and focused fixture
 mapping separated. Reuse Controlled Blast's existing center-identity path where
