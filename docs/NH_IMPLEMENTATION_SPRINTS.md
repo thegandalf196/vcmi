@@ -29,6 +29,12 @@ without weakening production validation. Rendered chooser QA, wider interactions
 and generic hypothetical packet replay are Phase 2; no full midbattle save/resume
 or playable promotion is claimed. Next: UP-148 Battle Plan before round 1's first
 Creature Activation, preserving the normal Hero Action.
+Source is committed/pushed as 51340a3d48607a096acd1dcf2975bafdcfc03ef7.
+Notice preflight 37071300435 is running. Full Windows build and immutable
+playable delivery remain separate; no local launcher snapshot was promoted.
+That notice completed successfully; accidental run 37071223589 is terminal
+cancelled. Full Windows 37071436091 runs on 51340a3d4. Continue coverage work
+while polling this same run; no replacement job or Windows-success claim yet.
 
 2026-10-02 UP-147 implementation begins after the completed coexistence foundation.
 The accepted architecture uses one saved per-side contextual continuation with
