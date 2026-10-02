@@ -40,6 +40,18 @@ failed run merely because a later run succeeds.
 
 ## Current implementation priority — complete Skills perks and spells
 
+UP-124 verified checkpoint: External Recruiter is active. Final fixture rebuild
+8494 and activated client/test build exit0; principal15376 passes11/11 in2.877s,
+activated81048 passes11/11 in2.899s, zero skips. Data/schema/inventory35/35,
+module drift and Muster UI wiring pass; independent source/fixture reviews have
+no blocker. Coverage169/310 active,141 planned; Recruitment5/10. Shared weekly
+allowance/target locks, fixed+2 outside towns, free tier-one recruitment and
+Leadership remain authoritative. No saved-state addition or polling. Phase2
+retains natural visit/window/AI execution, full-army merging, mixed rows and
+restored queries. Source/native only; no playable promotion or GUI claim.
+Contacts (UP-126) and Drill Sergeant (UP-127) await distinct pool/cohort answers;
+continue another unblocked missing perk while those decisions remain open.
+
 UP-124 implementation checkpoint, 2026-10-02: External Recruiter uses existing
 weekly hero allowance and dwelling target markers. Runtime and UI are assigned
 separate ownership; required AI/native verification follows when the service
@@ -52,8 +64,14 @@ completed allocated threads; policy is pushed as42ed09b7e. All four candidate
 workers are now terminal. External Recruiter runtime/UI/AI/fixture source is
 frozen, localization and module generation are integrated, static UI and drift
 guards pass. The next gate is the serialized client/test build plus focused
-Muster native tests; activation, review and source commit remain pending.
-Windows full build36994237037 is running on6ca967db6, not this dirty candidate.
+Muster native tests; activation and source commit remain pending. Both targets
+built successfully (44293). Principal37505 passed9/11; two fixture failures
+require legal earlier perk tiers. Independent Astra production review has no
+blocker. A Luna tester owns the fixture repair; root serializes the retry.
+Windows full build36994237037 failed on6ca967db6 in an ambiguous MSVC source-ID
+declaration. Brace initialization is pushed as453828742; succeeding CI remains
+pending. UP-126 Recruiter's Contacts mapping is complete but multirow empty-pool
+semantics await clarification; do not activate it based on a guessed policy.
 
 UP-123 map checkpoint, 2026-10-02: missing Chaos Pandemonium needs a generic
 effect-level DEBUFF classification, not a negative-spell list or a raw Bonus

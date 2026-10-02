@@ -1,5 +1,15 @@
 # New Horizons Linux build handoff
 
+## 2026-10-02 Phase 1 External Recruiter source gate
+
+UP-124 builds both Linux targets. Principal15376 passes11/11 in2.877s and
+production-enabled81048 passes11/11 in2.899s, zero skips. Frozen test binary
+SHA-256:8862d77812f157de4fe9c8b243d658521d6c64724b5f086999055bdee24a0223.
+Data/schema/inventory35/35 and generated/module/UI checks pass. These are
+pre-commit candidate gates, not an immutable playable snapshot. No GUI launch
+or launcher promotion occurred. Windows full36994237037 failed on6ca967db6;
+MSVC parse repair453828742 is pushed, succeeding CI remains pending.
+
 ## Current coordination addresses
 
 Use named targets only: `HoMM3:Runtime`, `HoMM3:Frontend`, `HoMM3:Build`,
