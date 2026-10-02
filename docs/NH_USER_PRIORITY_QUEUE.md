@@ -3503,19 +3503,24 @@ source checkpoint. This is not launcher promotion or Windows package evidence.
 
 ## UP-047 — Commanding Presence recipient scope and implementation
 
-Status: Planned; shared-path map complete, recipient-scope answer pending,
-2026-09-30. UP-023 Phase 1 coverage candidate; no activation claimed.
+Status: Verified (source/native; playable delivery pending), 2026-10-02.
+Superseded implementation tracking: see UP-142 for canonical integration,
+focused validation and pushed commit401f80384451e0522ff8df8f035901863c03025a.
+The user's latest answer reconfirms the effective-benefit endpoint: negative
+Morale returns when that recipient's Order benefit is spent or broken, rather
+than waiting for round end. Charge consumption, Protect break/exhaustion and
+Second Wind completion have focused native coverage. This repeated answer does
+not require a new gameplay change or imply new playable delivery.
 
 Implement the Advanced Command perk: friendly stacks currently affected by an
 Order treat negative Morale as zero for its duration. Existing shared morale
 calculation supports a zero floor; canonical Order states and detached AI do
 not yet supply this perk. Include authoritative activation, UI-visible morale,
 detached forecast and minimum Order valuation, registration and focused tests.
-The user is asked whether the floor applies only to covered recipients (such as
-Protect's pair or Second Wind's selected stack, versus eligible troops for
-army-wide Orders), or the entire army whenever any Order is active. Do not
-silently grant a whole-army aura to targeted Orders. Continue another unblocked
-Phase 1 item while awaiting this material scope decision.
+The floor applies only to covered recipients (such as Protect's pair or Second
+Wind's selected stack, versus eligible troops for army-wide Orders), never an
+unconditional whole-army aura. The former pending scope/lifetime questions are
+resolved; do not reopen them solely because this historical entry was stale.
 
 ## UP-048 — Deterministic Diplomacy foundation
 
