@@ -52,6 +52,10 @@ pass10/10 in3.303s, zero skips. Data/schema/inventory35/35, module check and
 independent frozen review pass. Coverage170->171/310, Discipline5->6/10.
 Phase2 retains multi-round AI valuation and broader stochastic interactions;
 generic UI Provisional, bespoke art Not done; no GUI or playable promotion.
+Source committed/pushed asff18ed6b9. Windows preflight37006272158 is queued
+on that source; older full37000555568 remains confirmed in progress and is
+not cancelled. Native evidence is the frozen pre-commit candidate, not an
+immutable promoted package. Windows compile/package acceptance remains pending.
 
 Original scope: Continue UP-023
 Expert Discipline coverage: ignore the first negative Morale trigger against
