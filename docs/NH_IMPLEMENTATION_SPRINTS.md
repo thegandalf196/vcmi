@@ -40,6 +40,21 @@ failed run merely because a later run succeeds.
 
 ## Current implementation priority — complete Skills perks and spells
 
+Latest verified UP-114 slice: distinct Mass Curse/Sorrow and Grand Malediction
+are active. Saved-v3 rows define the base family and perk grant; virtual entries
+require the selected active perk and physical Spellbook, never durable learning.
+Base-family status IDs preserve normal/Mass refresh while actual variant IDs
+retain selection, action and Mana identity. Metadata is restricted to100% until
+the Mass Slow consumer exists. Both-target37060 exits0; principal99435 passes
+48/48 in7.091s and activated21991 passes48/48 in7.326s, zero skips. Data/schema/
+inventory32/32 and module check pass. Coverage162/310 active,148 planned;
+Shadow9/1 and distinct variants2/5. Independent review has no remaining blocker.
+All required workers finished. No GUI or playable promotion. Phase2 retains
+wider save/map-ban/counter/dispel interactions and the one explicitly excluded
+stale Bless tooltip-text assertion. Next missing slice: Mass Bless and Litany,
+including family-aware Bless duration and Benediction; then Mass Regeneration
+and distinct Mass Slow. UP-113 remains gated on its propagation-limit definition.
+
 Latest verified slice: UP-112 Blood Drinker and Painweaver. Three Luna workers
 owned separate Life Drain, Hex and detached AI fixture files; root integrated
 and independently reviewed the candidate. Blood Drinker uses its existing
