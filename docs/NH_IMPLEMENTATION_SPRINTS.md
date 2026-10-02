@@ -29,6 +29,9 @@ Next missing Bloodrage entries: First Blood/Slayer await overlap decision,
 Avatar awaits attack-local cap interaction decision; Rage Through Pain requires
 personal-state persistence and lethal/control design review. Full Windows
 37049519240 remains live on prior b99c49c32, not this new source.
+Blood Scent source is committed/pushed0a0914e1ce8ab1f22f5aa977e8284ceb6b6ff1c3.
+Poll the same live Windows run through terminal before the newer source's
+notice preflight/full build. No local launcher promotion is inferred.
 
 2026-10-02 next coverage slice: Blood Scent's target-sensitive attack-local
 Bloodrage increment. Root owns architecture, serialization, builds and activation;

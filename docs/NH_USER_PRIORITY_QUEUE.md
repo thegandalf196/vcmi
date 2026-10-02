@@ -276,6 +276,11 @@ Focused activated62923 passes36/36 in8.312s, zero skips. Coverage180/310 perks,
 fe5286f43e521d400d201c518081f32bf94a001ed1fe20076b5bceb1ce696ac5.
 Original3/5 failure artifacts remain preserved. Broader control/status/save and
 rendered feedback are Phase2; no immutable playable promotion. Commit/push next.
+Source delivered as0a0914e1ce8ab1f22f5aa977e8284ceb6b6ff1c3 on
+origin/definitive-mvp; push exits0. Current Windows37049519240 remains confirmed
+in_progress on older b99c49c32; it does not include Blood Scent. Preserve and poll
+that run, then preflight/build the newer commit without claiming CI acceptance
+from the native Linux gates. No launcher snapshot is promoted by this commit.
 
 Next read-only map: Avatar of Rage's25% Creature Defense penetration belongs in
 the shared target-defense stage, not Hero Order mitigation, with a resolved
