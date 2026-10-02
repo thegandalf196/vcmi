@@ -83,6 +83,24 @@ failed run merely because a later run succeeds.
 
 ## Current implementation priority — complete Skills perks and spells
 
+2026-10-02 UP-142 activation checkpoint: Commanding Presence's shared
+live/detached Morale floor is implemented against each recipient's effective
+Order benefit. Principal retry18653 passes9/9, zero skips in21.568s; both Linux
+targets build, data36/36 and generated-module drift pass. Coverage174->175/310,
+planned136->135, Command4->5/10; ranks84/93 unchanged. Activated adjacent gate39487
+passes23/23 in25.382s, zero skips; final review has no blocker. No immutable
+playable promotion. Next unblocked work is Bloodrage's
+threshold/cap foundation (UP-143/144), preserving legal Advanced progression.
+Miracle Worker still awaits its casualty-output clarification.
+
+2026-10-02 next slice: UP-142 Commanding Presence's recipient-lifetime decision
+is integrated into canonical Markdown and full registry help. A shared read-only
+effective-Order predicate and final Morale floor are under implementation, with
+a separate focused fixture owner. Steadfast is already committed/pushed.
+UP-144 maps Endless Bloodshed's shared cap path independently; no duplicate
+counter or UI-only maximum is acceptable. Counts remain174/310 and84/93 until
+Commanding Presence's principal execution/build gates pass.
+
 2026-10-02 current slice: UP-140 Steadfast production/runtime/AI source and
 serialization prerequisite compile in both Linux targets; principal14/14 passes.
 The first failures led to fixture-cap/prerequisite repairs and a real added-stack

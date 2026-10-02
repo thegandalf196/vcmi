@@ -108,7 +108,7 @@ that narrow clarification before implementing, not a global healing multiplier.
 
 ## UP-142 — Command Commanding Presence
 
-Status: In progress (bounded read-only map), 2026-10-02. Missing Advanced perk:
+Status: Verified (source/native; playable delivery pending), 2026-10-02. Advanced perk:
 friendly stacks currently affected by one of the hero's Orders treat negative
 Morale as0 for that Order's duration. Map current Order recipient/lifetime
 representation and shared live/detached Morale path. Preserve simultaneous
@@ -126,6 +126,43 @@ Shared battleGetMorale
 covers live and detached AI. Existing state represents only one Order per side;
 Double Command's missing multiple-Order foundation remains explicit and must
 not be disguised as full Command coverage.
+Implementation checkpoint: accepted clarification is integrated into the
+canonical Command row and registry help; Pending Changes marks it integrated.
+Canonical SHA-256 ccaa84fcd322b1e011ab5cac8094195f198b499026f5f78005b1a1a4eab93d21.
+Separate Luna runtime and native-fixture owners implement the shared effective
+recipient predicate and Morale floor without polling/action changes. Root owns
+registration, metadata, builds, docs and Git. Status remains planned until native
+acceptance; no coverage increase or playable claim from specification integration.
+Runtime source is frozen in shared CBattleInfoCallback. Review catches Focus
+Fire's Combined Arms melee eligibility missing the actual damage path's
+SPELL_LIKE_ATTACK exclusion; root aligns that branch and reuses the existing
+shooter-recipient predicate. A focused fixture guard is required. No new state
+or polling; multiple-Order representation remains independent missing work.
+Frozen production client build52957 is live with12 jobs, log
+build/new-horizons-linux/testing/UP142-client-build.log. Fixture owner may edit
+only its new unregistered test file; no overlapping source/build. Re-poll52957
+before test-target registration/build and do not infer native success yet.
+Client52957 exits0. Nine-case fixture is registered; serialized test build98920
+is live with12 jobs, logUP142-test-build.log. Re-poll that handle. Review repairs
+fixture-only assumptions about Charge movement and shooters' melee eligibility
+under Flank; do not narrow correct production behavior to match a faulty test.
+Rebuild the changed fixture after98920 terminates before native acceptance.
+Test build98920 and frozen incremental rebuild exit0. Principal56838 runs9
+cases:2 pass,7 fail, zero skips; positive Angel/army Morale invalidates the
+fixture's assumed net-1. Preserve UP142-principal.log/XML. Fixture owner repairs
+the negative baseline without weakening production; registration stays planned.
+Fixture rebuild15520 exits0. Principal retry18653 passes9/9 in21.568s, zero
+skips, with negative-before/zero-during/negative-after checks against the
+configured Morale lower cap. Root activates the perk and refreshes module/UI
+inventory. Both-target21780 exits0; data36/36 and module drift pass. Coverage
+175/310 active,135 planned, Command5/10; ranks84/93 unchanged. Activated23-case
+gate39487 is running; re-poll it before commit. No playable promotion. Phase2
+retains Protect control changes and Flank/Formation Fighting interactions;
+multiple-Order state is still separate missing Phase1 coverage.
+Activated gate39487 passes23/23 in25.382s, zero skips. Independent final review
+reports no blocker. Test binary SHA-256:
+c29e58c08a615bcf3406d43e6cca7c1a402b45dc96b8174243b12d4eaed49906.
+Source commit/push follows; graphical/playable delivery remains separate.
 
 ## UP-143 — Bloodrage threshold perks
 
@@ -143,6 +180,22 @@ Unbound fits shared battleGetMorale. Root must resolve original-side versus
 current-controller eligibility consistently with the existing Bloodrage damage
 path before assignment, and preserve future cap modifiers. No edits/tests from
 mapping are evidence of these perks being implemented.
+
+## UP-144 — Bloodrage Endless Bloodshed
+
+Status: In progress (bounded read-only map), 2026-10-02. Expert perk increases
+Bloodrage's maximum damage cap by20 percentage points. Trace saved battle rank,
+live/detached kill progression and generic resource maximum display; this cap
+foundation must support threshold perks without separate contradictory limits.
+No implementation/activation from mapping alone. Keep changes independent of
+Commanding Presence's callback/fixture ownership; root selects architecture.
+Map complete: resolve an active selected Expert perk at battle setup and snapshot
+the resulting cap (60->80) per side. Expose one cap getter to live deaths,
+detached projections, UI and future half-cap perks. Add append-only serialization
+feature with old rank-only fallback and rejection of dropping a nonbase cap.
+The12-point Expert increment stays unchanged. No design ambiguity; normal perk
+progression's missing Advanced Bloodrage prerequisite must also be addressed,
+not bypassed by silently force-activating a different perk in the product.
 
 ## UP-139 — Havoc Demolitionist
 
