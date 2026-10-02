@@ -537,6 +537,11 @@ faction49/90 unchanged. Test binarySHA-256:
 f26cef48474dc3b5f892cfb820d38c03a8ac9772cd3fdea227f2cea95267ece0.
 Original build failures remain retained. Commit/push is next; no launcher
 snapshot, Windows acceptance or rendered chooser acceptance is inferred.
+Source delivered as52c4f89a636923260ea0ac8d4e1a2c79aab76bda to
+origin/definitive-mvp; push exits0. Windows notice37076319236 is in_progress
+on that source. Earlier full Windows37071436091 is still in_progress on
+51340a3d4; preserve/poll it before dispatching the next full build. No new
+package or local snapshot is claimed.
 
 ## UP-149 — Command Iron Will
 

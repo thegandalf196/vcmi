@@ -28,6 +28,8 @@ Data/client34/34, module drift and final source review pass. Coverage182/310,
 broader opening interactions and exhausted grant-ID preflight handling are
 Phase2. No full midbattle resume or playable promotion is claimed. Next Iron
 Will is read-only mapped and awaits its same-command carryover lifetime answer.
+Source52c4f89a636923260ea0ac8d4e1a2c79aab76bda is pushed. Notice37076319236
+is running; preserve the existing full Windows37071436091 until terminal.
 
 2026-10-02 UP-148 implementation begins: Battle Plan's free opening Order.
 One resolved pre-combat state per side and a dedicated BATTLE_PLAN receipt
