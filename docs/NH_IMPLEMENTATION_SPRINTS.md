@@ -18,6 +18,21 @@ working sequence.
 
 ## Maintenance contract
 
+2026-10-02 UP-146 verified foundational slice: simultaneous different Orders.
+The canonical coexistence rule now has one authoritative collection per side,
+typed runtime/AI consumers, independent damage factors and state consumption,
+append-only saves and preservation-aware validated packets. Existing UI hooks
+show all Orders without granting actions. Both Linux targets build; principal
+retry75974 passes20/20 in31.867s, zero skips. Adjacent87780 passes38/46: all37
+Order/Iron Discipline/persistence cases pass; eight unchanged Vengeance fixtures
+fail before Order execution at the earlier-perk setup gate and are Phase2 work.
+Source guard7/7 and independent review pass. Original compile/native fixture
+failure artifacts remain preserved, corrected without weakening production.
+Counts remain180/310 perks,84/93 ranks,49/90 faction perks; Double Command's
+actual trigger is the next dependent coverage item. Commit/push pending; no GUI,
+rendered acceptance or immutable playable promotion. Uncapped compound numeric
+matrices and wider control/save interactions remain explicitly deferred.
+
 2026-10-02 UP-145 verified checkpoint: Blood Scent now active with capped,
 attack-local live/AI output and privacy-safe saved rank increments. Client50746,
 test baseline25076, fixture40698/rebuild84207 and activated both-target build
@@ -28,10 +43,12 @@ and repaired without changing production math. No graphical/playable promotion.
 Next missing Bloodrage entries: First Blood/Slayer await overlap decision,
 Avatar awaits attack-local cap interaction decision; Rage Through Pain requires
 personal-state persistence and lethal/control design review. Full Windows
-37049519240 remains live on prior b99c49c32, not this new source.
+37049519240 completed successfully on prior b99c49c32, not this new source,
+at2026-10-02T19:45:55Z; compile and packaging passed. This does not verify
+Blood Scent or the in-progress multiple-Order source.
 Blood Scent source is committed/pushed0a0914e1ce8ab1f22f5aa977e8284ceb6b6ff1c3.
-Poll the same live Windows run through terminal before the newer source's
-notice preflight/full build. No local launcher promotion is inferred.
+The previous full run is terminal; newer source still needs its notice preflight
+and full build after source delivery. No local launcher promotion is inferred.
 
 2026-10-02 next coverage slice: Blood Scent's target-sensitive attack-local
 Bloodrage increment. Root owns architecture, serialization, builds and activation;

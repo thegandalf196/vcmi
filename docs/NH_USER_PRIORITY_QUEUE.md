@@ -266,6 +266,91 @@ current-controller eligibility consistently with the existing Bloodrage damage
 path before assignment, and preserve future cap modifiers. No edits/tests from
 mapping are evidence of these perks being implemented.
 
+## UP-146 — Simultaneous different Orders foundation
+
+Status: Verified (source/native; commit and playable delivery pending),2026-10-02. The user's approved
+rule keeps different Orders active for their normal durations when a perk allows
+more than one in a round. The current one-optional-Order-per-side model is missing
+foundational Phase1 coverage and blocks Double Command. Map authoritative
+issuance/consumption/expiry, every shared live/AI consumer, client required hooks,
+and save/wire compatibility before selecting a collection model. Do not merely
+retain two labels while only the latest effect operates. Root owns architecture;
+three independent read-only lanes cover runtime, AI/shared effects and saves.
+Focused simultaneous damage/mitigation, independent consumption/expiry, detached
+branch isolation and legacy/current save gates are acceptance requirements.
+No source activation or coverage increase is claimed from mapping alone.
+Selected foundation: one authoritative bounded per-side Order collection,
+command-keyed state mutations, independent effect consumption, latest-order
+compatibility projection, append-only versioned collection serialization, and
+pre-byte rejection of lossy old-format writes. Runtime/transport, core state,
+shared effects/AI are separate Luna ownership lanes; root owns UI consumers,
+version/preflight, existing fixture migration, builds and delivery. Current-round
+same-Order issuance remains prohibited; collection updates grant no action.
+Source is not yet frozen or built. Focused native acceptance and independent
+review remain mandatory before claiming this foundation complete.
+Production freeze checkpoint: reviewer reports no remaining blocking issue after
+both packet visitors require unchanged issuance and monotonic progress before
+mutation. Client build23496 is running with12 jobs; log
+`build/new-horizons-linux/testing/UP146-client-build.log`. Re-poll that handle
+before another build or native acceptance. New bounded fixtures may finish while
+this client-only target builds; no further production edits during the build.
+Client23496 exits0. Root adjusts two existing help strings after the build to
+describe eligible Hero/Order actions accurately. The subsequent serialized
+both-target fixture build must include that bounded UI change; native acceptance
+is still pending, and no stale test binary is being used.
+Both-target baseline build20796 is live with12 jobs. Exact log:
+`build/new-horizons-linux/testing/UP146-test-baseline-build.log`. Re-poll that
+handle before registering/building the unregistered main fixture or executing
+native acceptance. The packet fixture is frozen and included; the main fixture
+may be written independently without entering this build.
+Baseline20796 exits0. Root registers the frozen six-case main fixture; incremental
+both-target build42111 is live with12 jobs, log
+`build/new-horizons-linux/testing/UP146-fixture-build.log`. Re-poll it before
+native acceptance; the candidate now includes both packet and live/AI fixtures.
+Fixture42111 exits1 on two standalone SideInBattle default constructors; root
+supplies explicit null callbacks only in the isolated serialization fixture.
+Retry96338 is live with12 jobs, logUP146-fixture-build-retry.log. The original
+failure log is retained; do not run native tests until this retry succeeds.
+Retry96338 exits0. First principal13014 passes19/20 in32.516s, zero skips.
+The client-visitor fixture uses the isolated wire helper's BattleID7 instead of
+the live ID; root corrects all three contextual packets without relaxing any
+assertion or production check. Rebuild62682 is live (UP146-visitor-fixture-build.log).
+Retain the initial failure log/XML and re-poll this build before native retry.
+Rebuild62682 exits0; principal retry75974 passes20/20 in31.867s, zero skips.
+This includes the accepted Commanding Presence lifetime, independent coexistence,
+legal action allowance/repeat gates, branch isolation and current/legacy saves.
+Adjacent87780 is running the bounded existing Order/persistence/Vengeance filter;
+log/XMLUP146-adjacent. Source/UI guard7/7 and diff check pass. No perk activation
+or immutable playable promotion is claimed; Double Command still needs its hook.
+Final bounded evidence: principal20/20 passes in31.867s, zero skips. Adjacent87780
+passes38/46 in12.558s: Order/Iron Discipline/persistence37/37 pass; eight unchanged
+Vengeance cases stop at missing earlier-perk fixture setup, recorded in
+NH_RELEASE_FAILURES.md for Phase2. Both targets build, UI source guard7/7 and
+diff check pass. Reviewer reports no remaining blocking source finding. Binary
+SHA-25642573c71f48dcd943238666c0e44772ca2999eec148aec0b9d7ff1d654fd4865.
+The simultaneous-Order foundation is complete enough for Phase1; counts stay
+180/310 perks,84/93 ranks,49/90 faction perks. Double Command's missing trigger
+is the next dependent coverage item. Commit/push is next; no GUI or promotion.
+User reaffirmed the Commanding Presence decision on2026-10-02: the Morale floor
+ends when the recipient's Order benefit is spent or broken. With simultaneous
+Orders, retain that floor only while at least one still-effective Order benefits
+the recipient; consuming one Order must not consume or erase another. This
+clarification is already canonical under UP-142, not a new round-long exemption.
+
+## UP-147 — Command Double Command
+
+Status: Open (next dependent Phase1 coverage item),2026-10-02. Implement the
+canonical Expert perk: the first time per combat the hero spends a Hero Action
+on an Order, immediately issue an additional different Order. UP-146 supplies
+independent coexistence, not this trigger or its once-per-combat state. Reuse
+authoritative typed allowances and shared live/AI seams; preserve the restriction
+against the same Order twice in the sequence. Map the immediate choice/continuation
+and failure/cancellation behavior before implementing it; do not silently turn
+the canonical immediate sequence into an arbitrary deferred round-long action.
+Required registration, save-state, minimum AI and existing UI hooks, builds and
+focused legal-trigger/once-budget/no-repeat tests precede activation. Independent
+art and broad cross-system matrices do not block this Phase1 execution path.
+
 ## UP-145 — Bloodrage Blood Scent
 
 Verified source/native checkpoint: fixture rebuild84207 exits0; principal
