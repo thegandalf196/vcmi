@@ -347,10 +347,15 @@ on7a90085cb0d96a9b379bf4afc83a2fe66354bf41, a documentation-only checkpoint
 after the gameplay commitf57f58a84. Preserve/poll that exact full run, do not
 launch a replacement while it remains live. No new Windows package is claimed
 until compilation and packaging actually succeed.
+Full Windows run 37060422101 completed successfully at 2026-10-02T21:29:11Z
+on 7a90085cb0d96a9b379bf4afc83a2fe66354bf41: compilation and packaging passed.
+It includes UP-146 coexistence, not the still-uncommitted UP-147 implementation.
+Windows graphical acceptance and local launcher promotion remain separate.
 
 ## UP-147 — Command Double Command
 
-Status: Open (next dependent Phase1 coverage item),2026-10-02. Implement the
+Status: Verified (source/native; source delivery pending),
+2026-10-02. Implement the
 canonical Expert perk: the first time per combat the hero spends a Hero Action
 on an Order, immediately issue an additional different Order. UP-146 supplies
 independent coexistence, not this trigger or its once-per-combat state. Reuse
@@ -361,6 +366,118 @@ the canonical immediate sequence into an arbitrary deferred round-long action.
 Required registration, save-state, minimum AI and existing UI hooks, builds and
 focused legal-trigger/once-budget/no-repeat tests precede activation. Independent
 art and broad cross-system matrices do not block this Phase1 execution path.
+Root resumed the three independent maps after UP-146 delivery: authoritative
+trigger/continuation, client/AI choice flow, and focused save/fixture acceptance.
+The existing typed ledger has no payload-restricted immediate Order continuation;
+granting an ordinary round-long ORDER allowance alone would not implement the
+canonical timing. In particular, an initial Second Wind must not start its
+Creature Activation before the additional Order choice resolves. Target-selection
+cancellation and an empty legal-choice set must not produce a stuck combat.
+Registration remains planned and coverage counts are unchanged during this map.
+Map completed. The canonical UI rule explicitly forbids an Activate/Decline
+perk prompt; independent review confirms that a mandatory ordinary Orders
+chooser is faithful without a new design decision. Cancelling target selection
+returns to that chooser; no legal different Order ends the opportunity on the
+authority and resumes the deferred flow. The actual HERO allowance receipt,
+not heroCommandUsed, supplies the first-use trigger. Separate Luna lanes now
+own runtime/core, AI projection/use, and a new focused fixture. Root owns UI,
+append-only feature version, registration, builds and final review. Do not
+activate or increase coverage before the complete production path builds and
+passes focused native acceptance.
+
+Frozen source checkpoint: runtime, AI and five native cases are frozen. Independent
+review found a deferred Second Wind scheduling hazard; root moved its scheduling
+before unrelated continuation returns and reviewer confirmed the blocker repaired.
+Shared branch nextRound now rejects unresolved continuation before ledger reset.
+Client source guards11/11 and diff check pass. Serialized12-job build37865 is
+running for vcmiclient and vcmitest, logUP147-build.log. Re-poll that same build;
+do not execute a stale test binary or activate from static checks alone.
+User reaffirmed the existing UP-142 spent/broken Commanding Presence lifetime;
+no new round-long exemption or canonical amendment is needed.
+Build37865 is terminal exit1 on the new fixture's IBattleInfo/concrete snapshot
+type mismatch and absent act helper. Runtime/AI/client objects compiled so far;
+do not infer both-target success or run the stale binary. Independent source
+review also found the mandatory AI mode still entering the ordinary queue
+forecast/early-victory decline; preserve the pending-round guard and bypass only
+that ordinary forecast. Separate owners repair the fixture and AI source, and
+add one actual evaluator-submit case before serialized rebuild/native acceptance.
+Retry build 68259 is running for both targets with 12 jobs; log
+UP147-build-retry.log. The AI forecast guard is repaired and independently
+source-reviewed. Five server cases and one actual AI-submit/server-accept case
+are frozen. Its defender first spends a real Hero Action on Haste while owning
+the active stack, then the fixture reanchors the attacker before triggering
+Double Command. This prevents an unused enemy Hero grant from masking the old
+forecast bug. Re-poll this exact build before native execution or activation.
+Retry 68259 exits 0: both Linux targets build. Principal native session 86481
+is running six cases, logs/XML UP147-principal. Registration remains planned
+until its actual terminal result; no source or graphical acceptance is inferred
+from the successful compile. Phase 2 retains generic hypothetical packet replay,
+rendered chooser QA and broader continuation combinations.
+Principal 86481 is terminal: 3/6 pass, zero skips, 95.212s. Actual AI submission,
+legal acquisition and no-choice exhaustion pass. Two invalid-target fixtures
+used UINT32_MAX, rejected by the action factory before submission; the tester
+replaces them with representable nonexistent IDs without changing rejection or
+no-spend assertions. The remaining failure validates anchor health while binary
+stack descriptors are still uninitialized. Runtime ownership now separates
+structural decode checks from full alive/controller checks after initialization;
+strict write-side and old-format loss guards remain. The fixture must describe
+descriptor persistence honestly: CStack binary omits runtime unit state and
+CGameState does not save ongoing battles. No fake midbattle resume or health
+initialization is added to make acceptance green. Preserve original principal
+artifacts; rebuild before retry. Coverage and registration remain unchanged.
+Boundary repair is frozen: descriptor-only validation on decode and before
+BattleStart initialization; full liveness/current-controller validation after
+initialization and before writes. The fixture uses one honest descriptor
+roundtrip, retains independent live AI branches, and checks missing-anchor
+rejection. Both-target build 47418 runs with 12 jobs; retain/poll
+UP147-build-boundary-retry.log before executing the repaired native cases.
+Build 47418 exits 0 for both targets. Post-build atomicity review finds grant-ID
+exhaustion must be rejected before consuming HERO or clearing projected effects.
+Root adds server/visitor prechecks; separate AI and fixture owners add the matching
+preparation guard and unchanged-state assertion. This small state-integrity fix
+requires an incremental rebuild before native retry, not a new broad suite.
+Pre-mutation grant checks and the unchanged-state assertion are frozen and
+independently reviewed without a remaining blocker. Incremental both-target
+build 82381 is running with 12 jobs, log UP147-build-atomic-retry.log. The 30
+focused registry/inventory/client checks pass; native acceptance remains pending.
+Incremental build 82381 exits 0 for both targets. Principal native retry 30525
+is running the same six cases, logs/XML UP147-principal-boundary-retry. The
+original failures remain retained; no activation before this terminal result.
+Principal retry 30525 passes 6/6, zero skips, 99.078s. Double Command is enabled
+in source registration and the generated module; the inventory marks its generic
+interaction Provisional and purpose-made art Not done. Data/client checks pass
+30/30 and module drift passes. Activated both-target build 47633 exits 0. The
+final adjacent native gate 99320 runs 47 cases including Commanding Presence,
+coexistence, packet persistence and typed action/spell allowances. Counts from
+the actual registry are 181/310 active, 129 planned; Command 6/10. Faction perks
+remain 49/90 and ranks 84/93. No graphical or immutable playable promotion.
+Final activated native 99320 passes 47/47 in 134.777s, zero skips. Both Linux
+targets build; generated-module drift, data/client 30/30 and independent review
+pass. The canonical spent/broken Commanding Presence lifetime is included in
+the gate. Original failing logs/XML remain preserved; no blocking issue remains
+for this Phase 1 slice. Commit and push this coherent implementation next, then
+run the Windows notice preflight before the full build. UP-148 is next.
+
+## UP-148 — Command Battle Plan
+
+Status: In progress (read-only preparation),2026-10-02. Next missing Command
+Basic perk: once per combat, immediately before the first Creature Activation
+of round1, issue one Order without spending that round's Hero Action. Map the
+opening flow boundary, per-side choice anchor, typed receipt, save state and
+minimum human/AI hooks while UP-147 is compiled and validated. No production
+edits or activation during the frozen Double Command build. Root must resolve
+the timing/controller contract before assigning implementation; focused legal
+acquisition, opening timing, retained HERO budget and once-use evidence are
+required. UP-147's retry/native acceptance remains the immediate priority.
+Map complete: the canonical pre-combat UI explicitly opens the Orders chooser.
+Insert after onTacticsEnded initializes round1 and its HERO ledgers, before
+activateNextStack performs regeneration/Morale/automatic turns. Use a nonactivation
+HERO_COMMAND anchor, saved per-side once-use/pending context and a dedicated
+ORDER-only source; this must not trigger Double Command or consume the normal
+HERO budget. Both eligible sides need their own opening choice before the first
+real activation, then initiative is recomputed. Deterministic side ordering and
+automatic exhaustion when no legal anchor/Order remains need root architecture,
+not an invented delayed round-long action. No source activation from this map.
 
 ## UP-145 — Bloodrage Blood Scent
 

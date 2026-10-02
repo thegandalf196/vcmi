@@ -18,6 +18,38 @@ working sequence.
 
 ## Maintenance contract
 
+2026-10-02 UP-147 verified checkpoint: Double Command is active. Principal retry
+30525 passes 6/6 in 99.078s; activated focused 99320 passes 47/47 in 134.777s,
+zero skips. Both Linux targets build; data/client 30/30, module drift and source
+review pass. Coverage is 181/310 perks, 129 planned; Command 6/10, ranks 84/93
+and faction perks 49/90 unchanged. Immediate distinct Order choice, deferred
+Second Wind, actual AI use, descriptor metadata and fail-before-spend grant
+exhaustion have focused evidence. Original failure logs remain retained, repaired
+without weakening production validation. Rendered chooser QA, wider interactions
+and generic hypothetical packet replay are Phase 2; no full midbattle save/resume
+or playable promotion is claimed. Next: UP-148 Battle Plan before round 1's first
+Creature Activation, preserving the normal Hero Action.
+
+2026-10-02 UP-147 implementation begins after the completed coexistence foundation.
+The accepted architecture uses one saved per-side contextual continuation with
+NONE / ORDER_REQUIRED / SECOND_WIND_READY phases and a combat-used bit. The
+accepted primary receipt must spend HERO on ORDER; an ORDER-only receipt cannot
+trigger it. A source-labelled dedicated grant pays only the immediate different
+Order, and ordinary actions cannot defer that sequence. The existing Orders pane
+opens automatically and target cancellation returns to it, with no perk
+Activate/Decline prompt. First-Order Second Wind activation waits for resolution;
+an empty legal-choice set closes authoritatively and resumes the deferred flow.
+Runtime/core, AI and native-fixture ownership are separate Luna lanes; root owns
+UI, version, integration, builds and registration. Source-only client guards
+pass11/11 including seven existing Perfect Moment guards. No C++ build or native
+acceptance is claimed yet, Double Command remains planned, and coverage stays
+180/310 perks,84/93 ranks,49/90 faction perks. No local playable promotion.
+Subsequent both-target retry 68259 passes. Principal 86481 passes 3/6, zero skips;
+the actual AI and exhaustion paths pass. Target-ID fixture corrections and a
+two-stage descriptor/live validation repair precede the next rebuild. Descriptor
+roundtrip checks do not certify ongoing-battle save/resume. Double Command stays
+planned until actual focused native acceptance; counts remain unchanged.
+
 2026-10-02 UP-146 verified foundational slice: simultaneous different Orders.
 The canonical coexistence rule now has one authoritative collection per side,
 typed runtime/AI consumers, independent damage factors and state consumption,
@@ -41,6 +73,10 @@ Notice37060224004 completed successfully. Full Windows37060422101 is live
 on7a90085cb0d96a9b379bf4afc83a2fe66354bf41 (doc-only checkpoint following
 f57f58a84 gameplay source). Poll the same run through terminal; no replacement
 full job or Windows-success claim while it remains in progress.
+That exact full run subsequently completed successfully at 2026-10-02T21:29:11Z:
+compile and package passed on 7a90085cb0d96a9b379bf4afc83a2fe66354bf41.
+This verifies the earlier coexistence source, not the uncommitted Double Command
+candidate. No Windows graphical acceptance or local snapshot promotion follows.
 
 2026-10-02 UP-145 verified checkpoint: Blood Scent now active with capped,
 attack-local live/AI output and privacy-safe saved rank increments. Client50746,
