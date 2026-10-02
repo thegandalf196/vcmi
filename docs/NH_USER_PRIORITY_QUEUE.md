@@ -9,6 +9,114 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-139 — Havoc Demolitionist
+
+Status: In progress (read-only map), 2026-10-02. Missing Basic perk adds50%
+damage to destructible objects/fortifications only for Havoc spells already
+able to affect them. Map existing structural paths and AI; do not invent new
+spell targets. Production, registration and coverage remain unchanged.
+Map finds a foundational coverage gap: Meteor Shower and Armageddon lack their
+canonical scenery/fortification effects. Only Nature Earthquake currently has
+a spell structural producer; do not boost that or unit damage to fake Havoc
+coverage. Implement the specified Havoc structural paths before activating
+Demolitionist/Meteorologist. Binary obstacle destruction has no numeric HP
+quantity to boost. Structural stacking and tunable formula scope need root
+canonical review, not a claim that the perk is already functional.
+
+## UP-138 — Havoc Conductor
+
+Status: Resolved (duplicate selection), 2026-10-02. Read-only inspection proves
+Conductor is already active, with a shared damage multiplier and focused
+ordinary/Master Chain tests. No new implementation or coverage increase is
+claimed. Do not re-explore this implemented perk merely to add more tests;
+select the next genuinely planned item from the live registry.
+
+## UP-137 — Havoc Mine Layer
+
+Verified (delivery pending): client27766 and test22177 build successfully.
+Principal51245 passes10/10 in2.899s, zero skips: legal acquisition,3/4/5
+counts, detached AI, authoritative placement/damage snapshot, atomic rejection,
+existing runtime and AI guards. Registration is active; generated-module and
+activated gates are next. Purpose-made artwork and playable promotion are not
+claimed. Broader GUI/placement interactions remain Phase2.
+Activated retry70019 passes10/10 in2.919s, zero skips. Client activation build
+exits0; data/schema/inventory35/35, module drift and independent activation
+review pass. Earlier paragraphs below are checkpoint history, not current status.
+
+Status: In progress (bounded map), 2026-10-02. Land Mine creates one additional
+mine with the active Havoc Mine Layer perk. Trace the shared mine-count and
+placement path, live/detached caster gates and focused verification. Root owns
+registration/build/Git. No source activation or coverage increase from mapping.
+Map complete: Mechanics::getNewHorizonsLandMinePatchCount is already consumed by
+client placement, obstacle Lua and AI. Add1 after the canonical2-to4 base cap;
+server validation currently recomputes the bare count and must use this shared
+accessor too. Land Mine itself has authoritative placement/trigger and AI tests.
+No new saved state or polling is needed; preserve non-hero/legacy gates.
+Production owner is authorized only for the named Havoc constant, shared
+ISpellMechanics count accessor and server validator count line. All build/native
+processes are terminal. Bastion regions stay frozen; its fixture and the new
+isolated Mine Layer fixture have separate writers. Registry remains planned.
+Production is frozen in the two scoped cpp regions; private constants leave
+the public header unchanged. Independent review has no blocking finding: UI,
+Lua, AI and both server checks use the same accessor, including five targets.
+Client27766 is live with12 jobs. Re-poll it before another build/native run;
+principal verification and registration remain pending.
+Client27766 exits0. Test72269 is now compiling with12 jobs, including the
+frozen repaired Bastion fixture. The unregistered Mine Layer fixture may finish
+independently; do not change production or CMake during72269.
+
+## UP-136 — Armorer Defiant
+
+Status: Blocked on retaliation-denial scope, 2026-10-02. Read-only map complete:
+No Quarter applies a non-magical NO_RETALIATION debuff, but innate blocking,
+Long Weapon geometry, Shroud flanking and ranged retaliation use separate gates.
+Asked whether Defiant covers both intrinsic attack mechanisms and applied
+debuffs, and whether blocking No Quarter also blocks its linked Morale penalty.
+Use actual accepted suppression, current control and round-local side state;
+do not implement a No Quarter-only subset as the entire perk or repeat the map.
+
+## UP-135 — Armorer Bastion
+
+Retry48708 passes6/8 in2.622s, zero skips. Two fixture cases still fail:
+post-action baseline prediction reports1 versus actual3825, and a next-round
+actor action is rejected. The fixture owner is investigating while preserving
+production validation and meaningful assertions; registration remains planned.
+
+Status: In progress, 2026-10-02. Implement Expert Armorer Bastion:
+while Defending or covered by Hold the Line, a stack's first physical creature
+attack received each round deals30% less final damage. Map the existing
+per-stack first-hit/round lifecycle and physical damage pipeline; preserve
+spell damage exclusion, final-damage ordering and current-controller perk gates.
+Runtime, detached AI and focused fixture work have separate ownership. Require
+production, legal selection, principal compile/native evidence and registration
+before increasing coverage. No GUI or playable promotion is inferred.
+Runtime and the four-case principal fixture are frozen; independent review finds
+no blocking issue. The server preserves constructor-derived spell-like attack
+classification. AI implementation and one isolated detached parity case remain
+in progress; root registered the fixture, but no build/native pass is claimed.
+Phase2 retains explicit absorbed/lethal hits, controlled ownership and stacking
+with Immovable. Coverage stays171/310 until the focused gates pass.
+Runtime and AI are now frozen and independently reviewed without blockers.
+Client build92791 is live with12 jobs; re-poll that exact handle before test
+build or native execution. The isolated detached fixture may finish independently
+but no production edits are permitted during compilation. Phase2 also retains
+Defend heuristic valuation when Hold the Line already grants baseline Bastion:
+baseline first-hit discounts are repeated in the forecast, underpricing Defend.
+Client92791 exits1 on a Counterfire state-interface read; the owner corrected
+it through acquireState and refroze. Both-target retry79589 is live with12 jobs.
+Five principal cases now include actual detached AttackPossibility/exchange
+spending and live-state isolation. Independent corrective/fixture review has no
+blocker. Do not run native until79589 is terminal successful.
+Both-target79589 exits0. Native64640 reports4/8 pass in2.607s, zero skips;
+fixture repairs are in progress for repeated spent actions/Defend lifetime and
+the player0 projection hiding the defending hero. Production stays frozen,
+registration remains planned, and no native/build handle is presently live.
+Fixture repairs are frozen and independently reviewed: distinct unused actors,
+an actual validated Defend, a slow reserve, and the spectator mechanics oracle
+preserve the assertions. Test72269 is live; re-poll it before native retry.
+Spectator parity is not proof that player-scoped AI sees hidden enemy perks;
+that visibility/valuation assertion remains Phase2.
+
 ## UP-134 — Spellcraft Extend Spell
 
 Status: Blocked on duration scope clarification, 2026-10-02.
