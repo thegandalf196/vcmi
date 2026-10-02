@@ -342,6 +342,11 @@ successfully onb99c49c32aff8beb8f0b615edc845d55435784c9, not this source.
 New-source notice preflight37060224004 is in progress onf57f58a84. Preserve
 and poll that exact run through terminal before dispatching the full Windows
 package build. No launcher snapshot or GUI delivery is claimed from source push.
+Notice37060224004 now exits success. Full Windows37060422101 is in progress
+on7a90085cb0d96a9b379bf4afc83a2fe66354bf41, a documentation-only checkpoint
+after the gameplay commitf57f58a84. Preserve/poll that exact full run, do not
+launch a replacement while it remains live. No new Windows package is claimed
+until compilation and packaging actually succeed.
 
 ## UP-147 — Command Double Command
 

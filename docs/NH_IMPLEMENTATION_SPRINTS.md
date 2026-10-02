@@ -29,7 +29,7 @@ fail before Order execution at the earlier-perk setup gate and are Phase2 work.
 Source guard7/7 and independent review pass. Original compile/native fixture
 failure artifacts remain preserved, corrected without weakening production.
 Counts remain180/310 perks,84/93 ranks,49/90 faction perks; Double Command's
-actual trigger is the next dependent coverage item. Commit/push pending; no GUI,
+actual trigger is the next dependent coverage item. Source is pushed; no GUI,
 rendered acceptance or immutable playable promotion. Uncapped compound numeric
 matrices and wider control/save interactions remain explicitly deferred.
 Source is now committed/pushed asf57f58a84c8d82d49c9b5f555b12eb08f62e4585;
@@ -37,6 +37,10 @@ push exits0. Notice preflight37060224004 is live on that source. Poll it through
 terminal, then dispatch the full Windows build; do not restart it for an
 observation timeout. Earlier fullWindows37049519240 is success onb99c49c32.
 Local immutable playable delivery remains pending.
+Notice37060224004 completed successfully. Full Windows37060422101 is live
+on7a90085cb0d96a9b379bf4afc83a2fe66354bf41 (doc-only checkpoint following
+f57f58a84 gameplay source). Poll the same run through terminal; no replacement
+full job or Windows-success claim while it remains in progress.
 
 2026-10-02 UP-145 verified checkpoint: Blood Scent now active with capped,
 attack-local live/AI output and privacy-safe saved rank increments. Client50746,
