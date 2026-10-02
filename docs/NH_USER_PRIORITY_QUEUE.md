@@ -9,6 +9,93 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-112 — Shadow Blood Drinker and Painweaver
+
+Status: Verified (playable delivery pending), 2026-10-01. Both Basic perks are
+active. Final both-target68123 exits0; principal6616 passes23/23 in6.246s and
+activated33834 passes29/29 in7.838s, zero skips. Data/inventory19/19 and module
+drift check pass. Coverage159->161/310; Shadow6->8/10. Legal offers, actual
+clipped75% healing, survivor-only repair,20% SP-only Hex snapshots, inactive/
+v2 guards and detached/authoritative injury parity pass. Independent review
+has no remaining blocker. Build/fixture failures and repairs are persisted.
+Phase2 retains strategic AI nonselection, reflected paired-spell semantics,
+recipient-healing preview and wider modifier/save interactions. No GUI or
+playable promotion; generic UI provisional, authored art Not done.
+
+Read-only mapping checkpoint: Blood Drinker already has a dormant 75% hook in
+`scripts/spells/lifeDrain.lua`; it uses actual clipped damage and ordinary healing.
+Require selected-perk native coverage before activation, not duplicate runtime
+code. Painweaver must modify Hex's cast-time Spell Power term only; its existing
+bonus snapshot carries the result through delayed triggers and detached AI.
+Extending the generic damage-perk helper alone does not reach Hex's custom Lua
+formula. No new save state is expected. Maps are evidence, not completed coverage.
+
+Implementation checkpoint: Three bounded Luna workers owned Life Drain
+coverage, Hex runtime/coverage, and detached AI fixtures in disjoint files.
+Root owned registration, build/native validation and integration. Continue
+UP-023's missing Phase1 coverage
+after the pushed Havoc slice. Basic Blood Drinker changes Life Drain's friendly
+healing from60% to75% of actual damage dealt. Basic Painweaver adds20% only to
+Hex of Pain's Spell Power-derived damage component. Map actual damage/overkill,
+paired targeting, delayed Hex state, shared prediction and AI consumers before
+implementation. Do not scale fixed bases, invent healing from theoretical
+damage, restore genuine casualties through ordinary healing, or reapply a
+stored damage bonus on each trigger. No activation or completed coverage from
+mapping. Root owns semantics and integration. Acceptance: legal Basic offers,
+exact authoritative effects, inactive guards, detached/live parity and focused
+build/native/data evidence. No GUI or playable promotion.
+
+## UP-114 — Distinct perk-granted Mass spell entries
+
+Status: Mapped, 2026-10-01; next foundational coverage implementation after UP-112.
+Read-only map complete: use ordinary SpellID action transport and the existing
+spell-source discovery/cast-admission seam, not another action flag or toggle.
+No generic perk-to-spell source exists yet. Ordinary-acquisition exclusions
+already exist but direct scroll sources also need the canonical perk-only gate.
+Shared base-family handling is necessary: Slow's scale is keyed to its old
+boolean mode, and Regeneration's single-target validation and wound markers
+are keyed to the base ID. Merely duplicating JSON entries would be incorrect.
+Current Temporal Field also has a once-per-combat ledger incompatible with the
+canonical permanent spell option; preserve old saved behavior deliberately,
+not as the new runtime rule. Root must choose family/grant and saved-profile
+architecture before splitting content, UI and AI ownership. No edits or tests
+were performed by the mapper; coverage remains0/5 distinct entries.
+Canonical Magic proficiency and casting variants requires distinct spell entries,
+not toggles or automatic Expert transformations: Mass Bless, Mass Curse, Mass
+Sorrow, Mass Regeneration and Mass Slow. Perk grants govern availability;
+ordinary learning sources must not grant these entries. Each costs three times
+the base listed Mana before Wisdom; Mass Slow alone uses60% of the base magnitude.
+Map the existing Mass Slow transport/AI/UI and generic spell-grant seams before
+choosing architecture. Grand Malediction depends on Mass Curse/Sorrow. Root owns
+the shared architecture and registration; no coverage claim from source searches.
+Acceptance: distinct selectable entries, proper grants/removal, cost/effect parity,
+eligible mass targeting, ordinary-acquisition exclusion, saved state and minimum
+AI hooks with focused build/native evidence. No GUI or playable promotion.
+
+## UP-113 — Shadow Plaguebearer
+
+Read-only mapping checkpoint: design ambiguity blocks this perk alone. Neither
+the canonical text nor runtime defines the normal propagation limit to which
+the perk adds one. Current infections each last three rounds, spread to one
+neighbor per processed activation, and reset spread attempts in descendants;
+there is no enforced chain-wide cap. Resolve whether the intended limit is
+per infection, per propagation path, or across the original cast before coding.
+Marker-local metadata can represent a path allowance; a total-cast budget needs
+shared lineage state. Do not invent a cap or activate the perk from this map.
+An asynchronous clarification asks the user for the normal limit's scope and
+number; continue independent Blood Drinker/Painweaver coverage meanwhile.
+
+Status: Read-only map, 2026-10-01. Missing Advanced Shadow perk: Plague may
+propagate one additional time beyond its normal limit. Map the shared chain
+limit, caster/source provenance and lifetime, status representation and AI
+forecast before choosing state ownership. Preserve ordinary Plague potency,
+targeting and propagation rules; do not silently increase damage or introduce
+unlimited recursive spread. Acceptance: legal Advanced offer, exact baseline
+versus perk propagation limit, accepted cast and real propagation, inactive
+guards, save/replica sanity where needed and focused build/native/data checks.
+Root owns architecture, serialization and shared integration. No activation
+or coverage increase from a map.
+
 ## UP-111 — Havoc Cataclysm
 
 Status: Read-only map, 2026-10-01. Next missing Expert Havoc perk while the

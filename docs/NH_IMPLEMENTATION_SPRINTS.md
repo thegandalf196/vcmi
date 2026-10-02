@@ -40,7 +40,24 @@ failed run merely because a later run succeeds.
 
 ## Current implementation priority — complete Skills perks and spells
 
-Latest verified slice: UP-109 Controlled Blast and UP-110 Pyromancer/Cryomancer.
+Latest verified slice: UP-112 Blood Drinker and Painweaver. Three Luna workers
+owned separate Life Drain, Hex and detached AI fixture files; root integrated
+and independently reviewed the candidate. Blood Drinker uses its existing
+actual-damage healing hook; Painweaver scales only Hex's cast-time Spell Power
+component. Existing bonus snapshots carry the result without new state/polling.
+Final both-target68123 exits0; principal6616 passes23/23 in6.246s and
+activated33834 passes29/29 in7.838s, zero skips. Data/inventory19/19 and
+module drift check pass. Coverage161/310 active,149 planned; Shadow8/2.
+Build/fixture failures and repairs are persisted. Phase2 retains observed
+strategic AI nonselection, reflected Life Drain paired-target semantics,
+recipient-healing preview and wider modifier/save interactions. Generic UI
+provisional; authored art Not done; no GUI/playable promotion. UP-113's
+undefined normal propagation limit awaits the recorded scope/number question.
+Next UP-114 read-only map is complete: distinct perk-granted Mass entries need
+generic grant/family support, ordinary-learning exclusion and deliberate old
+Temporal Field saved-profile compatibility. No coverage from mapping.
+
+Previous verified slice: UP-109 Controlled Blast and UP-110 Pyromancer/Cryomancer.
 Read-only maps are complete; three bounded Luna workers own disjoint runtime,
 damage and native-fixture files. Root owns shared integration, acquisition/AI
 fixtures, registration and focused build/native verification. Controlled Blast
