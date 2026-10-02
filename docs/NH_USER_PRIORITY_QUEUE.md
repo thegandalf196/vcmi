@@ -542,10 +542,15 @@ origin/definitive-mvp; push exits0. Windows notice37076319236 is in_progress
 on that source. Earlier full Windows37071436091 is still in_progress on
 51340a3d4; preserve/poll it before dispatching the next full build. No new
 package or local snapshot is claimed.
+Windows notice37076319236 subsequently succeeds. Full Windows37071436091
+completes successfully on51340a3d4 (Double Command source). Root then dispatches
+full Windows37077420212 on37dd359b871852bd43c56c46fe020b76c75da441,
+which includes Battle Plan; this new run is confirmed in_progress. Preserve and
+poll that exact run; no Battle Plan Windows acceptance is inferred from dispatch.
 
 ## UP-149 — Command Iron Will
 
-Status: In progress (read-only preparation),2026-10-02. Canonical Basic perk:
+Status: Awaiting design answer (map complete),2026-10-02. Canonical Basic perk:
 friendly stacks affected by an end-round-expiring Order retain that Order through
 their next Creature Activation. Map shared live/detached aging and recipient
 consumption while UP148 builds. Do not revive spent Charge, broken Protect or
@@ -562,6 +567,77 @@ several rounds while the same Order is reissued. Asked whether new same-command
 issuance replaces that older carry or preserves separate nonstacking instances;
 await this narrow lifetime decision before implementation. UP148 acceptance
 continues independently.
+
+## UP-150 — Command Crisis Command
+
+Status: Awaiting design answer (map complete),2026-10-02. Missing Advanced perk: once per
+combat, when a friendly stack is completely destroyed, immediately issue one
+Order without consuming the Hero Action. Trace authoritative casualty events,
+current-controller allegiance, action-resolution boundary and saved once-use
+state. The free choice must not be invented as an ordinary round-long action or
+trigger Double Command. Identify interruption/retaliation/ongoing-activation
+requirements before implementation; minimum human and AI hooks are required.
+Parallel read-only runtime and AI maps do not change production sources or
+coverage. UP149 awaits its same-command carryover answer; no blocked rule is
+silently decided. Root retains builds, integration, registration and delivery.
+AI/UI map complete: expose a shared read-only pending-Order choice context rather
+than another repeated client/AI boolean union. Crisis must retain responder side,
+choice anchor and distinct interrupted activation/action context; the destroyed
+stack's current controller need not own the active creature. Mandatory chooser
+and legal nonpositive Order ranking are reusable, but activeStack is currently
+a turn callback, not an off-turn response API. Saved entitlement must drive
+detached branches, without hidden opponent-hero perk inspection.
+Runtime finds BattleAttack/StacksInjured as hit-bearing destruction sources.
+The current action finishes retaliation and automatic post-attack effects before
+onActionMade handles later continuations. Asked whether Crisis opens after that
+complete action resolves (before subsequent continuations/activations), or
+interrupts individual hits. Await the timing answer before implementation; do
+not silently weaken "immediately" or expose a chooser inside packet visitors.
+Runtime map complete: capture controller before BattleAttack/StacksInjured
+lethal hits; rebirth survivors do not constitute complete destruction. Unlike
+Bloodrage, Crisis wording does not exclude summoned or cloned stacks. Ghost
+cleanup is not the trigger. Outside-action deaths also arise in opening spells,
+turn triggers and round-transition damage, so action-only draining is incomplete.
+The saved reaction must resume the original continuation exactly once; do not
+switch active stacks without recording that context. No source/activation claim.
+
+## UP-151 — Command Seize Initiative
+
+Status: Awaiting specification-conflict answer (map complete),2026-10-02. Missing Expert perk:
+the first HERO-paid Order once per combat makes the latest-scheduled friendly
+stack that has not completed its normal Creature Activation the next friendly
+stack to activate after the current activation ends. Map shared live/AI initiative
+selection and saved once-use/queue override while UP149 and UP150 await narrow
+answers. Preserve enemy ordering and normal-activation eligibility; no extra
+activation, HERO refund or secondary ORDER-receipt trigger may be invented.
+No source changes or activation from this map.
+Shared queue seam is CBattleInfoCallback::battleGetTurnOrder; Flow takes only
+its first entry, so any override must occur before truncation for execution,
+UI and detached AI consistency. Move into the next friendly slot without moving
+enemy entries. Existing moved flags are reset by some extra activations and
+cannot reliably prove normal-activation completion; a generic per-unit marker
+is needed. HERO-paid receipt projection is the once-use trigger seam; dedicated
+Battle Plan/Crisis/Double follow-up grants must not trigger it.
+Root audit finds a material canonical conflict: the detailed perk row describes
+moving a pending normal activation, the Morale paragraph5013 categorizes Seize
+as extra, and UI5407 explicitly distinguishes moved normal from extra activations.
+The current queue includes an unfinished active unit; selecting it can generate
+an extra activation instead of moving an existing future one. Asked whether
+Seize only moves an existing activation (excluding that current-unit repeat),
+or may grant an additional activation to the current stack. Do not silently
+adopt the map worker's extra-activation interpretation. Coverage is unchanged.
+
+## UP-152 — Discipline Esprit de Corps
+
+Status: Open (next unblocked coverage item),2026-10-02. Canonical Basic perk:
+army-composition Morale penalties are reduced by1. Implement the composition
+term specifically, preserving positive composition bonuses, hostile penalties
+and other Morale sources. Shared live/detached Morale calculation, legal perk
+acquisition, registration and focused mixed-faction/Undead evidence are required.
+Do not reuse Steadfast's enemy-application provenance attenuation for army makeup.
+UP149/150/151 await their recorded narrow decisions; continue this unblocked
+specified mechanic rather than silently choosing those outcomes. No source or
+activation claim yet.
 
 ## UP-145 — Bloodrage Blood Scent
 
