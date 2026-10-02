@@ -25,6 +25,10 @@ Bastion's final fixture build92361/native45892 pass8/8 in2.618s; it is now
 active following independent review. Combined activated gates remain next.
 Combined activated both-target28218/native67346 now pass18/18 in5.197s,
 zero skips, with35 data/schema/inventory tests and module drift green.
+Source commits779289300 (Mine Layer) and6f848c9a8 (Bastion) are pushed.
+Windows notice preflight37018538339 is queued on6f848c9a8. Re-poll that exact
+run before dispatching the full Windows build; queued is not passed. No Linux
+playable snapshot was promoted. Phase1 continues with Havoc structural effects.
 Earlier fixture failures and lessons are preserved in the failure register.
 Mine Layer is committed/pushed779289300. Next is the missing Havoc structural
 spell foundation, needed by Demolitionist/Meteorologist, rather than more tests
