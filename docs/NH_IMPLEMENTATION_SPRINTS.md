@@ -18,6 +18,28 @@ working sequence.
 
 ## Maintenance contract
 
+UP-139 verified checkpoint: retry4772 builds both targets; principal35313
+passes10/10 in2.669s and adjacent27391 passes6/6 in1.369s, zero skips.
+Python36/36/module drift and final reviewer gates pass. Commit this coherent
+structural foundation; retain the Phase1 design choices (absolute landmarks,
+perk stacking) and Phase2 AI utility/localization findings. No perk activation,
+new spell identity count or playable promotion is inferred. Cataclysm's next
+map confirms existing UP-111 scope ambiguity; do not repeat or silently bypass it.
+
+UP-139 current slice: implement the missing Havoc scenery/fortification producer
+before Demolitionist/Meteorologist. Three separate workers own runtime, AI and
+focused native fixtures; root owns data/schema and serialized builds. Numeric
+fortification output remains an explicit tunable prototype, not Phase3 balance.
+Empty/immune unit areas must still resolve legitimate structural effects; old
+profiles retain old behavior. Two design questions remain open (fixed landmarks,
+perk stacking). Scope is not reported complete while those are unanswered.
+Client20497 exits0 after a12-job rebuild. Frozen runtime/AI fixtures and a
+native parser opt-in test are registered; vcmitest48092 is live with12 jobs.
+Focused36 Python checks and generated-module drift pass. Supplemental content
+inventory56/59 exposes a pre-existing five-Mass-identity omission, tracked in
+NH_RELEASE_FAILURES.md for Phase2. Principal native acceptance remains pending;
+do not run a stale binary or promote an immutable playable snapshot from this.
+
 2026-10-02 checkpoint: Mine Layer principal10/10 passes and registration is
 enabled. Activated retry70019 passes10/10; client build,35 data/schema/inventory
 tests, generated-module drift and independent registration review pass.
