@@ -40,6 +40,21 @@ failed run merely because a later run succeeds.
 
 ## Current implementation priority — complete Skills perks and spells
 
+Verified UP-115/116 continuation, 2026-10-02: Basic Sanctuary Keeper and
+Venomancer are active. Exact linked Morale lifetime and20% whole-Base Poison
+snapshot, including physical-source exclusion, legal offers, inactive/legacy
+guards and materialized detached/live parity pass. Both real AI-selected casts
+are accepted with normal paid Mana. Client90317 and final both-target10531
+exit0; principal20512 passes25/25 in6.559s, activated76413 passes30/30 in7.833s,
+zero skips. Data/schema/inventory34/34 and module check pass; independent review
+has no remaining blocker. Coverage164->166/310, planned146->144; Light9/1,
+Nature6/4. Failure lessons are persisted. Phase2 retains negative-Morale-only
+AI selection and wider Morale/specialty/save/modifier interactions. No GUI or
+playable promotion; generic UI Provisional, authored perk art Not done.
+UP-117 maps Nature's Wrath; missing range/conduction/resistance decisions await
+answers. Next unblocked missing-content audit: Earthquake/Fractured Ground
+and Geomancer, without substituting a balance-only or polish task.
+
 Latest verified UP-114 continuation, 2026-10-02: all five distinct Mass entries
 are active. Mass Slow completes the set with Temporal Field's physical-book
 virtual grant,60% post-cap/specialty Initiative effect, normal duration and
