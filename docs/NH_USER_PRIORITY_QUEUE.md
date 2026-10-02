@@ -9,6 +9,78 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-122 — Warcasting Enchanted Command
+
+Status: Blocked on Order-recipient clarification, 2026-10-02. UP-023 Advanced perk while
+Spellward's frozen repair builds. An allied recipient of an Order empowered
+by Warcasting gains+1 Morale until its next activation. Map actual recipient
+sets, captured empowerment, next-activation cleanup and detached AI consumers
+before choosing the smallest shared implementation. Require legal Advanced
+acquisition, empowered/unempowered guards, correct recipients and duration,
+actual accepted Orders and detached parity. No polling or new duplicated state.
+Root owns architecture/data/build/Git; Luna is read-only during the frozen build.
+Mapping is not implementation or completed coverage. No GUI/promotion.
+Read-only map confirms captured HeroOrderState::warcastingBonusPercent is the
+trigger, not post-action readiness. Existing UNTIL_NEXT_CREATURE_ACTIVATION
+bonus expiry is mirrored by detached AI. The recipient question overlaps
+UP-047: Protect's pair and Second Wind's selected stack versus every troop in
+their broad declared coverage. Asked one shared scope question; do not infer
+an unrelated whole-army aura. No source changes or activation occurred.
+
+## UP-121 — Warcasting Combat Casting
+
+Status: Blocked on penetration composition, 2026-10-02; read-only mapping
+while UP-120's frozen candidate builds.
+Canonical Advanced perk: a hostile spell empowered by Warcasting ignores15%
+of the target's Magical Damage Reduction. Map captured Warcasting eligibility,
+shared penetration composition, collateral/delayed consumers, legal Advanced
+progression and focused native/AI seams. No source edits or activation during
+the UP-120 build. Identify consequential ambiguity rather than inventing a
+stacking rule. Root owns architecture/configuration/build/Git. Mapping is not
+implementation or completed coverage; finish Spellward's gate first.
+The15% trigger is authored and existing captured Warcasting state is reusable.
+Existing runtime takes the strongest penetration; canonical text gives each
+effect's fraction but does not explicitly settle simultaneous composition.
+Asked the user whether20% and15% combine independently to32%, add to35%, or
+retain only20%. This shared answer also affects future Overwhelming Formula
+and existing Spell Penetration/Focused Pairing/Annihilator combinations. Do not
+activate Combat Casting by silently choosing one; Spellward is independent.
+
+## UP-120 — Warcasting Spellward
+
+Status: Verified (playable delivery pending), 2026-10-02. Spellward is active;
+build80192 repairs detached parity and principal24023 passes21/21 in5.858s.
+Activated build12348 exits0; native60120 passes22/22 in6.000s, zero skips,
+including projected-only control flips without changing live stacks.
+Data/schema/inventory35/35 and module drift check pass. Independent Astra
+review has no blocker. Coverage167->168/310 active,143->142 planned;
+Warcasting4->5/10. No new saved state or polling. Bespoke art remains Not done,
+generic presentation Provisional. No GUI or playable promotion.
+
+Original UP-023 Basic perk candidate while
+Mire Shaper awaits its cap decision. Friendly stacks receive10% less magical
+damage; this replaces old Resistance, not hostile-spell rejection. Map the
+canonical multiplicative reduction/cap, existing inherited perk bonus lifecycle,
+authoritative and detached damage, and legal Basic offer/native seams. Root
+owns semantics/registration/builds/Git; Luna maps before bounded ownership.
+Require exact unprotected and combined-protection damage, nondamaging spell
+preservation, inactive/rank-loss guards and minimum AI parity. Do not add
+polling, mirrored state or spell resistance. No GUI or playable promotion.
+
+Architecture checkpoint: do not put this defense only in the original hero's
+static bonus DAG. Current controlling hero must govern friendly protection,
+including control changes and summoned/gated stacks. Resolve that hero through
+the existing battle callback, supply10% as an independent source to shared
+magical reduction before its95% cap/penetration, and include recipient collateral
+and scripted creature damage. This is on-demand damage resolution, not polling
+or a new persistent state field. Native worker owns an isolated fixture.
+
+Focused native21882 found detached AI damage220 instead of live198; other20
+cases passed. Proxy hero visibility discarded the opposing hero's protection.
+A narrow computed-defense override forwards the projected unit to the subject
+callback, preserving projected ownership and hidden hero information. Build80192
+is validating that repair; registry remains planned until parity passes.
+
 ## UP-119 — Nature Mire Shaper
 
 Status: Blocked on design clarification, 2026-10-02. Continue UP-023 Phase1 coverage with Advanced
@@ -1385,6 +1457,8 @@ Purpose-made art is Not done; no GUI, snapshot promotion or playable acceptance.
 
 2026-10-02 repeated user reply retains the explicit scope recorded below.
 Canonical wording already agrees; no design or runtime change is required.
+Latest confirmation: “Use that explicit scope.” This is confirmation of the
+existing rule, not authorization to expand the qualifying roll types.
 
 2026-10-01 user reply reconfirms the already-integrated adverse-result scope:
 negative Luck, negative Morale, failed resistance against hostile spells, and

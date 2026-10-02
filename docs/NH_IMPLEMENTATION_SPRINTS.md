@@ -40,6 +40,19 @@ failed run merely because a later run succeeds.
 
 ## Current implementation priority — complete Skills perks and spells
 
+UP-120 verified checkpoint, 2026-10-02: Spellward supplies independent10%
+magical protection under the current controller. Paid casts, combined/capped
+reduction, rank/inactive guards and detached castEval agree. The proxy repair
+returns computed defense without exposing hidden heroes and preserves projected
+control changes. Build80192 and activated12348 exit0; principal24023 passes
+21/21 in5.858s and activated60120 passes22/22 in6.000s, zero skips.
+Data/schema/inventory35/35 and generated module check pass. Independent Astra
+review has no blocking findings. Coverage168/310 active,142 planned;
+Warcasting5/5 active/planned. No state duplication or polling, GUI/promotion.
+Bespoke art is Not done and generic presentation Provisional. Wider save and
+magical-ability interactions remain Phase2. Mire Shaper, Combat Casting and
+Enchanted Command are mapped but await item-level design answers.
+
 UP-119 mapping checkpoint, 2026-10-02: Mire Shaper's implementation surface
 is mapped by two Luna agents. Shared quicksandPatchCount already feeds spell
 help, Mechanics, server validation, Lua creation, placement UI and AI; no new
