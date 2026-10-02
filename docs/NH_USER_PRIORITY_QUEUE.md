@@ -9,6 +9,99 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-111 — Havoc Cataclysm
+
+Status: Read-only map, 2026-10-01. Next missing Expert Havoc perk while the
+UP-109/110 candidate builds and remains frozen. Canonical: Armageddon gains
+20% to its Spell Power-derived damage component and destroys ordinary magical
+obstacles as well as physical ones. Map both clauses, obstacle exclusions,
+shared cast/prediction and detached AI paths before assigning implementation.
+Do not silently reduce this to a damage bonus, destroy permanent moats or
+fortifications without specification authority, or activate from a map.
+Root owns semantics and integration; no production writes during the current
+build/native gate. Acceptance: legal Expert offer, unchanged flat base, exact
+SP-only bonus, authoritative obstacle removal and exclusions, detached/live
+parity, inactive guards and focused build/native/data evidence.
+Read-only map is complete. Current Armageddon's damage-only Lua effect also
+lacks its baseline physical-obstacle cleanup; implement that clause as well,
+not merely the perk multiplier. The existing removeObstacle packet path is
+shared with detached forecasts. Ordinary scenery has a clear USUAL class;
+SPELL_CREATED also includes some moat representations, so it is not a safe
+blanket deletion category. The user is asked whether ordinary hazards/barriers
+include hidden Land Mines while all moats/permanent siege structures survive.
+Root must settle that filter before implementation. Hidden-obstacle visibility
+in AI projections is preserved; fortification damage is a separate clause.
+No source implementation, activation or coverage increase is claimed.
+
+## UP-110 — Havoc Pyromancer and Cryomancer
+
+Status: Verified (playable delivery pending), 2026-10-01. Adjacent missing Basic Havoc coverage,
+independent from Controlled Blast targeting if file ownership can be separated.
+Pyromancer adds15% to the Spell Power-derived damage of Fireball, Fire Wall and
+Inferno; Cryomancer adds20% to Ice Bolt and Frost Ring. Preserve flat bases and
+shared School/Spellcraft math; include Fire Wall's stored hazard damage and
+detached AI forecasts rather than changing only instant casts. Root owns
+architecture and assigns implementation only after the modifier/path map is
+complete. No new serialized state unless evidence requires it; no activation
+or coverage claim from mapping. Acceptance: legal Basic offers, exact
+SP-only scaling with unchanged bases, live casts/hazards, inactive guards,
+shared predictions/AI and focused build/native/data checks.
+The completed map identifies a damage-only coefficient shared by cast mechanics
+and spellbook estimates; do not increase raw Spell Power or the general
+coefficient, which would also strengthen Ice Bolt's slow and durations. Fire
+Wall snapshots the cast damage in its existing obstacle state and must not
+apply the perk again on contact. A bounded Luna worker owns the modifier and
+hazard fixture; root owns integration and accepted-offer/AI evidence. Registry
+activation and completed coverage await focused verification.
+Verified checkpoint: client38230, repaired both-target48589 and v3-fixture
+build10278 exit0. Repaired principal5598 passes20/20 in5.977s; activated19887
+passes28/28 in8.153s, zero skips. Both Basic perks are active in canonical and
+bundled registries. Data/inventory19/19 and module drift check pass. Flat bases,
+actual casts, prediction and exact Fire Wall snapshot/trigger are verified.
+Coverage156->159/310 active,154->151 planned; Havoc6active/4planned. No new
+saved state or polling. Phase2 retains wider coefficient/defense interactions,
+proxy/reflection cases and legacy hybrid-fixture audit. Authored art Not done,
+generic UI provisional; no GUI or playable promotion.
+
+## UP-109 — Havoc Controlled Blast
+
+Status: Verified (playable delivery pending), 2026-10-01. Continue UP-023 missing Phase1 coverage while
+Divine Mandate and Elemental Rebirth remain at their recorded item-level design
+gates. Canonical Advanced perk: when Fireball, Inferno or Meteor Shower is centered
+on a hex occupied by a friendly stack, exclude that stack from spell damage.
+Other stacks in the area are unchanged. Frost Ring already has a safe center;
+Armageddon remains indiscriminate. Map shared spell targeting/effect resolution
+and detached AI forecasts, saved active-perk eligibility and legal native offers
+before assigning bounded ownership. Root owns architecture, registration,
+CMake/docs/build/native/Git. No GUI/promotion. Acceptance: accepted centered
+casts, exact protected-center versus adjacent/enemy damage, inactive and excluded
+spell guards, minimum AI use/projection and focused build/native/data evidence.
+No implementation/activation/coverage increase is claimed by a source map.
+Runtime and fixture maps are complete. Root selected one shared effect-target
+filter in unitEffect's range transform, exposed through the existing Mechanics
+Lua proxy. It resolves the original center occupant and current controlling
+side, including either hex of a double-wide stack. This covers authoritative
+casts, detached AI projections, highlights and damage previews without changing
+area geometry or introducing saved state. Separate Luna workers own the proxy/
+script and principal acquisition/cast fixtures; root owns the AI parity fixture.
+Precise Casting remains a separate planned perk. Reflected-cast inheritance and
+wider status interactions are recorded for Phase 2, not broadened implicitly.
+Client38230 and repaired both-target48589 exit0. Principal73570 passes13/17
+with zero skips; four Controlled Blast setup failures come from an invalid
+hybrid v2 fixture retaining selectedPlacement. The owner is switching only
+these new/modified current-feature cases to savedV3Formula; assertions remain
+unchanged. Production, AI parity, legal acquisition/save-load and Pyro/Cryo
+damage/hazard cases already pass. Activation remains held pending repaired run.
+Repair verified: v3-fixture build10278 exits0, principal5598 passes20/20 and
+activated19887 passes28/28, zero skips. Selected current-controller center
+protection for all three spells, either double-wide footprint, adjacent friendly
+collateral, isolated hover, Frost Ring/Armageddon guards, real query/save-load
+and detached/accepted AI parity pass. Controlled Blast is now active in canonical
+and bundled registries; data/inventory19/19 and module check pass. No new state.
+Independent source/fixture review has no remaining blocker. Broad reflected-
+cast/status/save interactions remain Phase2. Generic UI is provisional and art
+Not done; no rendered/playable acceptance or snapshot promotion is claimed.
+
 ## UP-108 — Divine Mandate rank foundation
 
 Status: Read-only map, 2026-10-01. UP-023's missing faction rank effects outrank
