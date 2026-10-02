@@ -47,7 +47,21 @@ build/native/data evidence. No GUI or playable promotion.
 
 ## UP-114 — Distinct perk-granted Mass spell entries
 
-Status: Mapped, 2026-10-01; next foundational coverage implementation after UP-112.
+Status: Partially verified (playable delivery pending), 2026-10-01. Mass Curse
+and Mass Sorrow plus Expert Grand Malediction are active. Saved-v3 perk-only
+virtual grants require a physical Spellbook and do not mutate durable knowledge.
+Base-family statuses refresh one effect; both ordinary and variant immunities
+apply. Effect application now supports previously-mutated detached units.
+Final both-target37060 exits0; principal99435 passes48/48 in7.091s and activated
+21991 passes48/48 in7.326s, zero skips. Data/inventory/schema32/32 and module
+drift check pass. Coverage161->162/310; Shadow8->9/10; distinct variants0->2/5.
+Independent final review has no material blocker. Restrict this slice to100%
+until Mass Slow's60% consumer exists. Older-profile fixture adapters exclude
+new metadata rather than interpreting it under v1/v2. Phase2 retains wider
+save/map-ban/counter/dispel interactions and one known stale Bless tooltip-text
+assertion, explicitly excluded from the final filter. No new persistent state,
+polling, GUI execution or playable promotion. Mass Bless/Litany is next;
+Mass Regeneration and distinct Mass Slow remain missing. UP-114 stays open.
 Read-only map complete: use ordinary SpellID action transport and the existing
 spell-source discovery/cast-admission seam, not another action flag or toggle.
 No generic perk-to-spell source exists yet. Ordinary-acquisition exclusions
