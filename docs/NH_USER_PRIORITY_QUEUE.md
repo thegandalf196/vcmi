@@ -9,6 +9,23 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-140 — Discipline Steadfast
+
+Status: In progress (bounded read-only map), 2026-10-02. Missing Basic perk:
+Morale penalties applied by enemy effects are reduced by1, to a minimum penalty
+of0. Identify source/controller provenance and the shared live/detached Morale
+calculation; do not reduce army composition, artifacts or friendly self-penalties
+merely because they are negative. Production/config/activation remain unchanged
+until root selects a faithful rule from evidence. Focused validation and minimum
+AI hooks are required; no repeated map of already blocked Discipline perks.
+Map complete: shared battleGetMorale feeds live and detached AI. Generic Bonus
+source/SID does not capture serialized applying side; Shield of Chaos can
+penalize friend or foe, so blanket negative-Morale or SPELL_EFFECT attenuation
+is wrong. Sorrow/Doom are hostile spell producers; No Quarter has a custom
+marker but no issuer side. Fear uses FEARFUL rather than MORALE. No gameplay
+wording ambiguity was found. Root must choose generic provenance/application
+infrastructure, not activate a Sorrow-only subset; no source edit is yet claimed.
+
 ## UP-139 — Havoc Demolitionist
 
 Verified structural-foundation checkpoint, 2026-10-02: both-target retry4772
@@ -26,6 +43,9 @@ structural perk stacking remain unresolved Phase1 design choices, not waived
 coverage requirements. Demolitionist/Meteorologist remain planned; counts stay
 173/310 active,137 planned. No graphical or immutable playable promotion.
 Earlier paragraphs below are checkpoint history, not current gate status.
+Structural foundation committed and pushed as e538921a4; remote branch identity
+matches. The worktree is clean after that commit. This is source delivery, not
+playable promotion. The unresolved design choices still block perk completion.
 
 Source implementation checkpoint: the optional structural producer, Lua binding,
 two spell registrations and geometry-aware signed AI fortification valuation
