@@ -9,6 +9,31 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-126 — Recruitment Recruiter's Contacts
+
+Status: Blocked on multirow pool clarification, 2026-10-02. Next UP-023 Advanced Recruitment perk:
+once per week, visiting an owned external dwelling with an empty recruitment
+pool adds one normal week's growth. Map existing growth/ownership/visit hooks,
+weekly persistence and minimum AI/log/UI paths before implementation. Root
+owns architecture/state versioning and builds; read-only mapping while UP-124's
+frozen principal candidate compiles. Preserve existing Muster allowance; this
+is a distinct perk trigger, not another Muster use. No activation/coverage claim.
+Mapping is complete: same-owner visits reach the dwelling hook; normal weekly
+growth and SetAvailableCreatures are reusable. A separate persisted per-hero
+weekly cooldown and empty-dwelling AI eligibility/value are required. Asked
+whether a multirow dwelling must be entirely empty before all rows refill, or
+whether an empty row can trigger a partial refill. Do not silently choose.
+
+## UP-127 — Recruitment Drill Sergeant
+
+Status: Blocked on merged-cohort clarification, 2026-10-02. Canonical Basic perk
+grants hero-direct Core/Elite recruits+1 Morale for their first combat within
+seven days. Recruitment/battle/expiry seams are mapped, but same-creature recruits
+merge into existing stacks and ordinary split/join does not preserve stack-local
+bonuses. Asked whether the whole resulting stack receives the bonus or only the
+newly recruited cohort. Do not silently grant old creatures a cohort-only bonus
+or weaken transfer persistence. No implementation or activation is claimed.
+
 ## UP-125 — Four-worker concurrency
 
 Status: Resolved, 2026-10-02. User authorizes four concurrent workers. Inspected
@@ -24,7 +49,17 @@ actual agent API/team inventory, not merely by editing a configuration file.
 
 ## UP-124 — Recruitment External Recruiter
 
-Status: Implemented (verification pending), 2026-10-02. Continue unblocked UP-023 Basic perk coverage:
+Status: Verified (playable delivery pending), 2026-10-02. External Recruiter is
+active; both Linux targets build. Principal15376 passes11/11 in2.877s and
+activated81048 passes11/11 in2.899s, zero skips. Data/schema/inventory35/35,
+module drift and Muster UI wiring pass; independent source/fixture reviews have
+no blocking finding. Coverage168->169/310 active, Recruitment4->5/10.
+Existing saved markers/packets are reused. Full natural visit/window/AI run,
+full-army merging, mixed rows and restored queries are Phase2 deferrals.
+Bespoke icon remains Not done, UI Provisional; no GUI or playable promotion.
+Source commit/push remains pending at this checkpoint.
+
+Original scope: Continue unblocked UP-023 Basic perk coverage:
 the hero can spend the weekly Muster use at an owned external Core dwelling
 instead of a town, adding two Core recruits there. Map shared weekly allowance,
 dwelling ownership/category/pool validation, authoritative acceptance, required
@@ -43,8 +78,10 @@ work in parallel with runtime and UI. Root owns the serialized build/test gate.
 
 Windows preflight36992596028 succeeded on source9d8c5f4d4. This is preflight
 evidence only, not a Windows compile/package or playable delivery.
-Full Windows build36994237037 was dispatched on6ca967db6 and is in progress;
-it contains the verified Spellward slice, not the uncommitted External Recruiter.
+Full Windows build36994237037 on6ca967db6 failed in Discipline source-ID
+initialization under MSVC. Brace initialization repairs that parse ambiguity
+and is committed/pushed as453828742; a succeeding Windows build is still pending.
+The failed run contains Spellward, not the uncommitted External Recruiter.
 All four workers finished and the candidate is frozen: runtime, native
 recruitment controls, minimum AI query/purchase hook and deterministic fixture.
 Root integrated localization/module generation and updated the static UI guard,
@@ -52,7 +89,12 @@ which passes; module drift and diff checks pass. Perk stays planned until the
 principal native gate succeeds. No build/native or coverage increase is claimed.
 Next: serialize the vcmiclient+vcmitest build with12 jobs, run Recruitment
 Muster and Nullkiller2 Muster helper tests with the New Horizons test profile,
-repair material failures, review, then activate/register and recheck. No GUI,
+repair material failures, review, then activate/register and recheck. Both Linux
+targets now build (final44293 exits0). Principal37505 ran11 cases:9 passed,
+two fixtures failed because Advanced/Expert perks were selected without their
+required earlier tiers. Repair legal acquisition preconditions, not production
+enforcement; strengthen the free-recruitment case with actual zero resources.
+Independent Astra source review reports no blocking production finding. No GUI,
 playable promotion or source commit is claimed for this candidate yet.
 
 ## UP-123 — Chaos Pandemonium and generic debuff counting
