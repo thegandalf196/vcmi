@@ -629,15 +629,22 @@ adopt the map worker's extra-activation interpretation. Coverage is unchanged.
 
 ## UP-152 — Discipline Esprit de Corps
 
-Status: Open (next unblocked coverage item),2026-10-02. Canonical Basic perk:
-army-composition Morale penalties are reduced by1. Implement the composition
-term specifically, preserving positive composition bonuses, hostile penalties
-and other Morale sources. Shared live/detached Morale calculation, legal perk
-acquisition, registration and focused mixed-faction/Undead evidence are required.
-Do not reuse Steadfast's enemy-application provenance attenuation for army makeup.
-UP149/150/151 await their recorded narrow decisions; continue this unblocked
-specified mechanic rather than silently choosing those outcomes. No source or
-activation claim yet.
+Status: Retired duplicate of UP130,2026-10-02. Root's registry scan initially
+selected this planned perk without matching the earlier UP130 map. That existing
+entry already awaits mixed-faction versus Undead-presence penalty scope. Do not
+repeat its map or treat it as unblocked. No source or activation was performed.
+
+## UP-153 — Battlecraft Passing Lines
+
+Status: Open (next unblocked coverage item),2026-10-02. Canonical perk: friendly
+stacks may move through hexes occupied by friendly stacks, provided movement ends
+in a legal empty position. Implement shared movement/pathfinding eligibility,
+authoritative destination/path validation, client preview and detached AI hooks.
+Do not pass through enemy stacks, physical obstacles or illegally occupy friendly
+hexes at movement end. Current controller, double-wide footprints and ordinary
+movement-trigger behavior must remain correct. Preserve Ghost Walk semantics;
+this is not flight or teleportation. UP149/150/151 and UP130 retain their existing
+clarification blockers. No source, activation or coverage claim yet.
 
 ## UP-145 — Bloodrage Blood Scent
 
