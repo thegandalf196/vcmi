@@ -245,6 +245,13 @@ Do not delegate trivial work merely for parallelism.
 Do not let multiple implementation agents edit the same files without explicit ownership boundaries.
 User instructions always take precedence over this orchestration policy.
 
+The user authorizes up to four concurrent workers, excluding the root. Use
+independent, bounded ownership rather than inventing tasks to fill slots. When
+a spawn reports a thread limit, inspect the existing team and reuse completed
+workers with follow-up tasks before claiming a lower worker limit. Completed
+threads may remain allocated. Do not increase limits beyond four workers or
+interrupt unrelated user tasks to reclaim capacity.
+
 ## Persistent user-priority queue
 
 Read `docs/NH_USER_PRIORITY_QUEUE.md` before choosing or resuming work, including
