@@ -21,8 +21,14 @@ working sequence.
 2026-10-02 checkpoint: Mine Layer principal10/10 passes and registration is
 enabled. Activated retry70019 passes10/10; client build,35 data/schema/inventory
 tests, generated-module drift and independent registration review pass.
-Bastion retry6/8 leaves two fixture failures under investigation, so that perk
-stays planned. Windows
+Bastion's final fixture build92361/native45892 pass8/8 in2.618s; it is now
+active following independent review. Combined activated gates remain next.
+Combined activated both-target28218/native67346 now pass18/18 in5.197s,
+zero skips, with35 data/schema/inventory tests and module drift green.
+Earlier fixture failures and lessons are preserved in the failure register.
+Mine Layer is committed/pushed779289300. Next is the missing Havoc structural
+spell foundation, needed by Demolitionist/Meteorologist, rather than more tests
+around already functioning perks. Windows
 full37008135705 completed successfully on8c5f5ec87; newer source is not included.
 Do not conflate native/source completion with playable delivery. Phase1 continues.
 
