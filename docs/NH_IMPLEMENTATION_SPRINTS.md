@@ -49,6 +49,10 @@ No GUI or promotion. Multi-round AI valuation and broader stochastic ordering
 are Phase2. UP-132 Cross-School Formula mapping is complete; actual multi-school
 memberships and Counterspelled source casts require user answers before source
 work. Do not repeat the map or invent accepted-cast history from StartAction.
+Unbreakable source is committed/pushed asff18ed6b9. New-source Windows
+preflight37006272158 is queued behind the preserved older full37000555568
+and Broad Muster preflight37002243267. No Windows package or playable promotion
+is claimed. The native gates describe frozen pre-commit source bytes.
 
 UP-131 selected, 2026-10-02: implement Expert Discipline Unbreakable using the
 existing shared negative-Morale suppression path. Runtime, detached AI and
