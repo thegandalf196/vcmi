@@ -40,6 +40,30 @@ failed run merely because a later run succeeds.
 
 ## Current implementation priority — complete Skills perks and spells
 
+UP-128 verified checkpoint: Broad Muster is active. Both targets build40839;
+principal54272 passes18/18 in3.701s and activated82143 passes18/18 in3.704s,
+zero skips. Legal ranks, exact allocation, rejection/overflow atomicity, shared
+allowance, saved stock/markers, old solo wire and AI helpers are covered.
+Data/schema/inventory35/35, module/UI drift checks and independent reviews pass.
+Coverage170/310 active,140 planned; Recruitment6/10. No new gameplay counter or
+polling; appended wire feature preserves solo compatibility. Long-label fit,
+actual UI/AI query execution and broader stock/Gold/free-slot valuation remain
+Phase2. No GUI/promotion. Diplomacy map UP-129 is consolidated into existing
+UP-048's unanswered authored-free-join policy; do not repeat the same audit or
+change neutral-surplus lifecycle without a deliberate decision.
+
+UP-128 in-source checkpoint: one optional two-row Core request validates the
+shared total and both overflow bounds before one marker+stock transaction.
+Native scrollable choices show both destinations/counts; AI chooses a split
+only when Leadership-admitted value improves over every solo option. Root owns
+focused actual/negative/save/wire fixtures after the fourth worker activation
+was service-rejected. Static UI/module checks and data/schema/inventory35/35
+pass. Source is frozen and build40839 is live; Broad Muster stays planned until
+native acceptance. No coverage increase, GUI or playable delivery is claimed.
+Diplomacy's missing deterministic foundation (UP-129) is mapping read-only while
+this candidate builds. External Recruiter Windows preflight36998928632 passed;
+full37000555568 was dispatched on7331e1056, excluding dirty Broad Muster.
+
 UP-124 verified checkpoint: External Recruiter is active. Final fixture rebuild
 8494 and activated client/test build exit0; principal15376 passes11/11 in2.877s,
 activated81048 passes11/11 in2.899s, zero skips. Data/schema/inventory35/35,
