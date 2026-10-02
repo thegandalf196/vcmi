@@ -18,6 +18,27 @@ working sequence.
 
 ## Maintenance contract
 
+2026-10-02 UP-148 verified checkpoint: Battle Plan is active. Both Linux targets
+build; principal5/5 passes in13.180s and activated production-registry30/30 in
+45.567s, zero skips. Free opening Orders precede any Creature Activation for
+both eligible sides, retain HERO and do not trigger Double Command. Actual AI
+submission/server acceptance, no-anchor exhaustion and once-use have evidence.
+Data/client34/34, module drift and final source review pass. Coverage182/310,
+128 planned; Command7/10, ranks84/93 and faction49/90 unchanged. Rendered UI,
+broader opening interactions and exhausted grant-ID preflight handling are
+Phase2. No full midbattle resume or playable promotion is claimed. Next Iron
+Will is read-only mapped and awaits its same-command carryover lifetime answer.
+
+2026-10-02 UP-148 implementation begins: Battle Plan's free opening Order.
+One resolved pre-combat state per side and a dedicated BATTLE_PLAN receipt
+preserve the normal Hero Action and never trigger Double Command. Deterministic
+attacker/defender choices run after deployment and round initialization, before
+Morale, regeneration, movement resets or any genuine Creature Activation.
+The existing Orders chooser supplies automatic choice and target cancellation;
+15 focused client source guards pass. Runtime, AI and focused fixtures are
+separate lanes; root owns integration and activation. Coverage remains 181/310
+pending both-target build and actual native evidence. No playable promotion.
+
 2026-10-02 UP-147 verified checkpoint: Double Command is active. Principal retry
 30525 passes 6/6 in 99.078s; activated focused 99320 passes 47/47 in 134.777s,
 zero skips. Both Linux targets build; data/client 30/30, module drift and source
