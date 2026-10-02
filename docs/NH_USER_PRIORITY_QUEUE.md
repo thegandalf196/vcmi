@@ -14,7 +14,7 @@ entries and their validation/delivery evidence.
 Next independent read-only preparation: UP-141 Miracle Worker, below. It must
 not mutate the frozen Steadfast candidate or replace its native acceptance.
 
-Status: Verified (source delivery pending), 2026-10-02. Basic perk:
+Status: Verified (committed/pushed; playable delivery pending), 2026-10-02. Basic perk:
 Morale penalties applied by enemy effects are reduced by1, to a minimum penalty
 of0. Identify source/controller provenance and the shared live/detached Morale
 calculation; do not reduce army composition, artifacts or friendly self-penalties
@@ -78,6 +78,11 @@ blocking finding. Test binary SHA-256:
 5413ec74489a3f1f5af9c1e7e132e77e639c78e79c78a6164b9d080cdb9afd4b.
 Full-battle serialization failure remains explicitly deferred. Source commit/push
 is next; rendered and immutable playable delivery remain separate.
+Source delivered as be569afa4e2d9a3a4c1c47236bb86be3975f6340 on
+origin/definitive-mvp; push exits0. Phase1 moves next to UP-142's accepted
+effective-Order-lifetime rule and canonical integration. UP-141 still awaits its
+casualty-rounding answer. No new local playable snapshot or Windows package is
+claimed for be569afa4.
 Map complete: shared battleGetMorale feeds live and detached AI. Generic Bonus
 source/SID does not capture serialized applying side; Shield of Chaos can
 penalize friend or foe, so blanket negative-Morale or SPELL_EFFECT attenuation
