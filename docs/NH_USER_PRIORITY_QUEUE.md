@@ -354,7 +354,7 @@ Windows graphical acceptance and local launcher promotion remain separate.
 
 ## UP-147 — Command Double Command
 
-Status: Verified (source/native; source delivery pending),
+Status: Verified (source/native and pushed; Windows build in progress),
 2026-10-02. Implement the
 canonical Expert perk: the first time per combat the hero spends a Hero Action
 on an Order, immediately issue an additional different Order. UP-146 supplies
@@ -457,6 +457,19 @@ pass. The canonical spent/broken Commanding Presence lifetime is included in
 the gate. Original failing logs/XML remain preserved; no blocking issue remains
 for this Phase 1 slice. Commit and push this coherent implementation next, then
 run the Windows notice preflight before the full build. UP-148 is next.
+Source delivered as 51340a3d48607a096acd1dcf2975bafdcfc03ef7 on
+origin/definitive-mvp; push exits 0 and the worktree was clean. Verified test
+binary SHA-256: 48b70cc162325509a0cd8cdf522a72e966a5a57b51038ce5f1f2e650e8296d34.
+Notice preflight 37071300435 runs on that source. An accidental noncompiling
+preflight dispatch through the expensive full workflow (37071223589) was
+cancelled before compilation; preserve its run identity, do not confuse it with
+the intended full build or restart it. Dispatch the actual full build only after
+notice success and terminal cancellation. No launcher snapshot has changed.
+Notice 37071300435 is terminal success and 37071223589 is terminal cancelled.
+Full Windows build 37071436091 is running on source 51340a3d4. Poll that same
+run through terminal; observation timeouts do not justify a replacement build.
+Source/native Phase 1 acceptance is complete; Windows graphical/playable delivery
+is not inferred from dispatch. UP-148 remains the next implementation item.
 
 ## UP-148 — Command Battle Plan
 
