@@ -34,6 +34,27 @@ bonuses. Asked whether the whole resulting stack receives the bonus or only the
 newly recruited cohort. Do not silently grant old creatures a cohort-only bonus
 or weaken transfer persistence. No implementation or activation is claimed.
 
+## UP-128 — Recruitment Broad Muster
+
+Status: Mapped (implementation next), 2026-10-02. Next unblocked Basic Recruitment perk: generated
+Core Muster recruits may be split between two Core dwellings in the same town.
+Map the authoritative atomic allocation, shared weekly allowance/target locks,
+exact split interaction and minimum AI path before implementation. Preserve
+the current rank/perk amount; rejected allocations must not consume the use or
+mutate either pool. Root owns architecture/config/build/Git; Luna is read-only.
+No activation or coverage increase is inferred from the map. Mapping found no
+material specification blocker. Append optional second creature and first-row
+allocation to the existing request with an append-only wire feature; old solo
+requests remain unchanged. Server derives total, requires two distinct Core
+rows and positive exact-sum amounts, validates both overflows, then sends one
+marker and one combined stock update. Native scrollable allocation choices
+must name both destinations and amounts. AI may choose a split when Leadership
+admission makes it more useful, otherwise retain solo. Runtime, UI, AI and
+native fixture have separable ownership. Volunteer Network contributes only
+once to a derived total, but do not fake simultaneous legal Basic perk choices
+in the principal native fixture; test hypothetical modifier composition in the
+shared helper if needed. No new saved gameplay counter is required.
+
 ## UP-125 — Four-worker concurrency
 
 Status: Resolved, 2026-10-02. User authorizes four concurrent workers. Inspected
@@ -57,7 +78,9 @@ no blocking finding. Coverage168->169/310 active, Recruitment4->5/10.
 Existing saved markers/packets are reused. Full natural visit/window/AI run,
 full-army merging, mixed rows and restored queries are Phase2 deferrals.
 Bespoke icon remains Not done, UI Provisional; no GUI or playable promotion.
-Source commit/push remains pending at this checkpoint.
+Source committed/pushed as6cb08a8cb. Native gates are frozen pre-commit candidate
+evidence, not a promoted immutable package. Windows preflight36998928632 is
+confirmed live on6cb08a8cb; its result and the subsequent full build are pending.
 
 Original scope: Continue unblocked UP-023 Basic perk coverage:
 the hero can spend the weekly Muster use at an owned external Core dwelling
