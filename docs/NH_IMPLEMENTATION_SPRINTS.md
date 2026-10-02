@@ -92,6 +92,9 @@ passes23/23 in25.382s, zero skips; final review has no blocker. No immutable
 playable promotion. Next unblocked work is Bloodrage's
 threshold/cap foundation (UP-143/144), preserving legal Advanced progression.
 Miracle Worker still awaits its casualty-output clarification.
+UP-142 source is committed/pushed401f80384451e0522ff8df8f035901863c03025a.
+Native/source acceptance does not promote the launcher or certify a new Windows
+package; those delivery states remain separate.
 
 2026-10-02 next slice: UP-142 Commanding Presence's recipient-lifetime decision
 is integrated into canonical Markdown and full registry help. A shared read-only
