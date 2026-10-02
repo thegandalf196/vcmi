@@ -47,6 +47,23 @@ build/native/data evidence. No GUI or playable promotion.
 
 ## UP-114 — Distinct perk-granted Mass spell entries
 
+Current continuation verified, 2026-10-02: distinct Mass Slow is active. Temporal
+Field grants a permanent virtual spell source with a physical Spellbook; it
+cannot be ordinarily learned. Saved-v3 family scaling applies60% after the
+ordinary cap and specialty, preserves duration, charges triple listed Mana
+before Wisdom, and replaces one shared Initiative status. Repeat casting,
+both refresh directions, both immunities, Spell Lock and detached/live parity
+pass. Old snapshots retain their toggle/budget; new profiles reject it.
+Client33547 and final both-target53442 exit0. Principal7002 passes22/22 in5.821s;
+activated47843 passes36/36 in9.512s, zero skips, including actual AI selection
+and server acceptance, Communion and Heavenly Gale guards. Data/schema/
+inventory34/34 and module drift check pass. Independent review has no remaining
+blocker. Distinct variants4->5/5; active perks remain164/310 because Temporal
+Field was already active. Failures and repairs are recorded. Phase2 retains
+broader save/modifier and rendered interaction checks; no GUI or promotion.
+UP-114 is native verified, playable delivery pending. Next unblocked missing
+coverage: Light's Basic Sanctuary Keeper (Sanctuary-linked +2 Morale).
+
 Current continuation verified, 2026-10-02: Mass Regeneration and Advanced
 Verdant Communion are active. Saved-v3 physical-book virtual grants, living ally
 scope (excluding clone/phantom/siege/undead/nonliving/mechanical/locked/immune),
