@@ -9,9 +9,37 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-108 — Divine Mandate rank foundation
+
+Status: Read-only map, 2026-10-01. UP-023's missing faction rank effects outrank
+further hardening of completed perks in Phase1. Canonical Castle rank: after a
+Hero Action casts a Light Spell, immediately issue one Order, or after a Hero
+Action issues an Order, immediately cast one Light Spell; once/twice/three times
+per combat at Basic/Advanced/Expert. This is a precise paired exception, not a
+second general Hero Action currency. Map accepted action admission/resolution,
+current saved side state, UI continuation and AI consumers before architecture
+or implementation. No production edits during Land Surveyor's frozen build.
+Root owns semantics, action economy, persistence/version, ownership boundaries
+and integration. Report genuine opt-in/expiry/cancellation ambiguities; do not
+silently recreate the former forced Metamagic pending-action lock. Mapping does
+not activate any rank or count a mechanic. Acceptance needs accepted paired
+actions, Light-only restriction, usage limits, save/replica sanity and minimum
+human/AI access with focused compile/native checks.
+Read-only maps are complete. Reuse the typed per-side action allowance ledger
+with school-restricted Spell grants, not Metamagic's sequence-specific state or
+retired forced-action lock. Accepted Order StartAction and accepted BattleSpellCast
+are the commit hooks; shared callbacks, ordinary Orders/Spellbook consumers,
+generic Faction Skill statuses and detached AI projections all need matching
+admission. Canonical UI expressly forbids Activate/Decline prompts. Two item-
+level questions are pending: expiry on another accepted combat action versus
+round end, and spending usage on completed pair versus opportunity creation.
+Do not silently assume the ledger's normal round expiry resolves “immediately.”
+No production implementation/activation/count yet; this gate does not block
+independent missing coverage.
+
 ## UP-107 — Estates Land Surveyor
 
-Status: Read-only map, 2026-10-01. Continue UP-023 Phase1 missing Basic perk
+Status: Verified (playable delivery pending), 2026-10-01. Continue UP-023 Phase1 missing Basic perk
 coverage after Financier's focused verification. Canonical: the first mine
 captured by this hero each week immediately produces three days of normal
 output. Map the authoritative capture-success event, owner transition, per-hero
@@ -22,6 +50,35 @@ docs/build/native/Git. No GUI/promotion. Acceptance: legal Basic offer, accepted
 capture and correct output, once/week and next-week behavior, inactive guards,
 saved/replicated expenditure and focused build/native/data evidence. Mapping
 alone does not activate the perk or increase coverage.
+Root architecture reuses the single CGMine::flagMine capture-success path for
+ordinary and abandoned mines, including victorious guarded capture. The capturing
+hero is threaded through that path. After ownership changes, three times the
+mine's actual normal dailyIncome (including its ordinary bonuses/handicap) is
+granted once per hero per absolute week. A versioned last-use-week hero field
+is replicated by the existing SetObjectProperty packet; no new packet hierarchy,
+callback bridge or polling scan is needed. The marker is authored before the
+resource receipt and does not invalidate the bonus graph/Mana capacity. Root
+owns append-only save/wire gates; mine and minimal native-fixture writers have
+separate file ownership. This is implementation in progress, not activation.
+Production is frozen and independent review reports no blocker. Hardcoded English
+capture feedback is deferred polish; it is not artwork/rendered acceptance.
+Client-only build11819 is running while the separately owned test fixture is
+finished. Do not register/reconfigure test CMake or start a second build/native
+process before that handle exits. Active coverage remains155/310.
+Client build11819 exits0 (`UP107-client-build.log`). Principal fixture is being
+repaired before registration for adjacent accepted movement, neutral-owner income
+sampling and direct dependency includes; these are source-review findings, not
+a claimed failing native run. No build/native process remains live at this point.
+Frozen fixture independently reviewed without blocker; root bounds movement and
+routes around prior captured mines rather than traversing their garrison visit.
+Baseline13332 and both-target30265 exit0. Principal87442 passes3/3 in1.709s;
+activated61224 passes18/18 in7.206s, zero skips. Actual accepted capture/resource
+receipt, weekly limit/renewal, saved marker and serialized property replay are
+verified. Data/inventory19/19 and module drift check pass. Land Surveyor is
+active; coverage156/310,154 planned; Estates4/6. Phase2 retains independent
+holders, guarded/abandoned execution, old-format gates, broader fan-out/AI
+strategy. English feedback is deferred localization. No GUI/promotion; generic
+UI provisional and art Not done. No build/native remains live.
 
 ## UP-106 — Estates Financier
 

@@ -40,10 +40,24 @@ failed run merely because a later run succeeds.
 
 ## Current implementation priority — complete Skills perks and spells
 
-Current selected implementation candidate: UP-107 Estates Land Surveyor.
-Separate read-only runtime and principal-fixture maps are running for its first
-mine capture each week and three-day output grant. Mapping alone is not coverage.
-Latest verified slice: UP-106 Estates Financier. Its exact weekly1% treasury
+Latest verified slice: UP-107 Estates Land Surveyor.
+Native verified and activated: principal87442 passes3/3, activated61224 passes
+18/18 in7.206s, zero skips; client11819/baseline13332/both-target30265 exit0.
+Data/inventory19/19 and module drift check pass. Coverage156/310 active,154
+planned; Estates4/6. Source/fixture reviews have no blocker; Phase2 retains
+independent holders, guarded/abandoned execution, old-format gates and broader
+fan-out/AI strategy. Localization and authored art remain deferred; no GUI or
+playable promotion. No build/native is live. Next UP-108 Divine Mandate maps
+are complete, held at the expiry/use-accounting choices; this is an item-level
+design gate, not permission to block all remaining missing coverage.
+Production is frozen and independently reviewed with no blocker. A versioned
+hero weekly marker uses existing property replication and the shared successful
+mine capture hook; ordinary income supplies the output calculation. Root guards
+bounded adjacent capture routing against prior mine garrison visits. The minimal
+mine builder enables future mine-specific fixtures without modifying production
+map formats.
+
+Previous verified slice: UP-106 Estates Financier. Its exact weekly1% treasury
 interest uses one pre-turn snapshot with a1000 Gold cap per active holder.
 Both-target21766 exits0; principal39424 passes3/3, activated95915 passes15/15
 in61.975s, zero skips. Data/inventory19/19 and module drift check pass. Coverage
@@ -56,7 +70,7 @@ UP-103 Rapid Embarkation is held at the Navigation
 stacking choice (fixed10% or halved5%). Its full-charge/shared-path source map
 is complete; no implementation is counted. UP-104 Pursuit March is the
 independent mapped candidate, held at its recovery-cap/expenditure question.
-Continue from pushed526f6183c; do not
+Continue from pushed736ffe39e and the verified Land Surveyor slice; do not
 let one item-level ambiguity block all missing specification implementation.
 
 Latest verified slice: UP-102 Logistics Roadmaster and Wayfarer. Shared rational
