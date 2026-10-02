@@ -40,7 +40,29 @@ failed run merely because a later run succeeds.
 
 ## Current implementation priority — complete Skills perks and spells
 
-Latest verified slice: UP-107 Estates Land Surveyor.
+Latest verified slice: UP-109 Controlled Blast and UP-110 Pyromancer/Cryomancer.
+Read-only maps are complete; three bounded Luna workers own disjoint runtime,
+damage and native-fixture files. Root owns shared integration, acquisition/AI
+fixtures, registration and focused build/native verification. Controlled Blast
+filters only the friendly original center occupant for Fireball, Inferno and
+Meteor Shower; the shared Lua effect transform also serves detached forecasts.
+Damage perks modify only the Spell Power damage coefficient, including Fire
+Wall's existing snapshot, never durations or the flat base. The hover preview's
+empty-target fallback must remain Cure-only so it cannot reintroduce a protected
+damage target. Mapping alone did not count as completed coverage or delivery.
+The candidate is now native verified and activated: client38230, repaired
+both-target48589 and v3-fixture10278 exit0; principal5598 passes20/20 in5.977s,
+activated19887 passes28/28 in8.153s, zero skips. Data/inventory19/19 and module
+check pass. Coverage159/310 active,151 planned; Havoc6/4. Source/fixture review
+has no remaining blocker. The failed compile and invalid v2 setup run are
+persisted in the release-failures register, with repairs and succeeding evidence.
+Phase2 keeps wider defense/coefficient, proxy/reflection and hybrid v2 fixture
+interactions; authored art is Not done and generic UI provisional. No GUI or
+playable promotion. UP-111 Cataclysm map is complete: baseline Armageddon's
+physical-obstacle cleanup is also missing. Ordinary magical-obstacle scope is
+an item-level clarification gate, not permission to block independent coverage.
+
+Previous verified slice: UP-107 Estates Land Surveyor.
 Native verified and activated: principal87442 passes3/3, activated61224 passes
 18/18 in7.206s, zero skips; client11819/baseline13332/both-target30265 exit0.
 Data/inventory19/19 and module drift check pass. Coverage156/310 active,154
