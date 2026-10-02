@@ -43,7 +43,9 @@ module drift and static UI guards pass. Independent runtime/wire/fixture and
 AI/UI reviews have no blocking findings. Coverage169->170/310 active;
 Recruitment5->6/10. No saved gameplay counter or polling; append-only wire
 fields preserve solo compatibility. No GUI or playable promotion. Source
-commit/push is pending at this checkpoint.
+committed/pushed as0f2d8cac8. Native gates are frozen pre-commit candidate
+evidence, not an immutable playable package. Windows preflight37002243267 is
+queued on that source behind full37000555568; the running older job is preserved.
 
 Original scope: Next unblocked Basic Recruitment perk: generated
 Core Muster recruits may be split between two Core dwellings in the same town.

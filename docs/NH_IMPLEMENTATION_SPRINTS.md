@@ -51,6 +51,11 @@ actual UI/AI query execution and broader stock/Gold/free-slot valuation remain
 Phase2. No GUI/promotion. Diplomacy map UP-129 is consolidated into existing
 UP-048's unanswered authored-free-join policy; do not repeat the same audit or
 change neutral-surplus lifecycle without a deliberate decision.
+Broad Muster source committed/pushed as0f2d8cac8. New-source Windows
+preflight37002243267 is queued behind full37000555568; concurrency does not
+cancel that running older build. Native evidence above is the frozen pre-commit
+candidate, not a promoted package. Full Broad Muster Windows compilation still
+requires a successful preflight followed by its target build.
 
 UP-128 in-source checkpoint: one optional two-row Core request validates the
 shared total and both overflow bounds before one marker+stock transaction.
