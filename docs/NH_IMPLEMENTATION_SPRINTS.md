@@ -40,6 +40,17 @@ failed run merely because a later run succeeds.
 
 ## Current implementation priority — complete Skills perks and spells
 
+UP-123 map checkpoint, 2026-10-02: missing Chaos Pandemonium needs a generic
+effect-level DEBUFF classification, not a negative-spell list or a raw Bonus
+count. Physical-affliction grouping/state-backed Poison is reusable, but mixed
+Shield of Chaos and non-spell No Quarter require explicit metadata. Rational
+SP scaling and per-stack global preview are mapped. Repeated-debuff cardinality
+and Pandemonium Master's interpretation await two precise user answers. No
+registration, implementation or coverage increase is inferred from this map.
+UP-120's verified Spellward source slice is pushed as9d8c5f4d4; no playable
+snapshot was promoted. Continue another unblocked UP-023 item while these
+design decisions remain open.
+
 UP-120 verified checkpoint, 2026-10-02: Spellward supplies independent10%
 magical protection under the current controller. Paid casts, combined/capped
 reduction, rank/inactive guards and detached castEval agree. The proxy repair

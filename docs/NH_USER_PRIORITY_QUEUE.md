@@ -9,6 +9,44 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-124 — Recruitment External Recruiter
+
+Status: Mapping, 2026-10-02. Continue unblocked UP-023 Basic perk coverage:
+the hero can spend the weekly Muster use at an owned external Core dwelling
+instead of a town, adding two Core recruits there. Map shared weekly allowance,
+dwelling ownership/category/pool validation, authoritative acceptance, required
+adventure interaction and minimum AI hooks. Preserve the town path, Leadership
+admission and rejected-action non-consumption. No alternate weekly counter or
+frontend state mutation. Root owns architecture/config/build/Git; Luna maps
+before bounded implementation and focused native gates. No GUI/promotion.
+
+## UP-123 — Chaos Pandemonium and generic debuff counting
+
+Status: Blocked on debuff-count/perk clarification, 2026-10-02. Continue UP-023 Phase1 missing combat identities
+after Spellward's verified pushed slice9d8c5f4d4. Canonical Level5 Pandemonium
+deals D×(20+0.25×SP) to every stack, including allies, where D counts active
+DEBUFF-tagged effects; raw statistics and permanent creature traits do not count.
+Map a reusable classification/counting path for magical and physical statuses,
+effect identity/deduplication, immunity/defenses, forecast/UI and detached AI.
+Expert Pandemonium Master adds25% damage per counted debuff. Do not substitute
+Armageddon, a hardcoded spell list or a data-only activation. Root owns the
+generic architecture, registration, state versioning if required, builds and
+coverage. Workers are read-only until ownership is partitioned. No GUI/promotion.
+Both maps are complete. Existing physical-affliction groups and stored Poison
+can supply a shared derived tagged-effect view without new counters. Explicit
+effect metadata is required: Shield of Chaos has neutral spell flags but timed
+negative Morale/Luck, and No Quarter is a non-spell temporary Morale penalty;
+permanent Undead Morale must remain excluded. Count logical effects rather than
+each Bonus payload (Disease has a marker plus two penalties). A generic opt-in
+must cover future creature effects, with versioned Bonus metadata if added.
+The saved integer coefficient/divisor10 cannot exactly express0.25×SP; use a
+shared rational formula rather than rounding to0.2 or0.3. Global preview must
+show per-stack count/damage before commitment, including allies and zero count.
+Asked whether repeated stackable applications of one debuff count once or
+separately, and whether Pandemonium Master's25% accumulates with D or strengthens
+each damage contribution by25%. Neither interpretation is activated or canonical.
+No source edits, spell registration or coverage increase is claimed by mapping.
+
 ## UP-122 — Warcasting Enchanted Command
 
 Status: Blocked on Order-recipient clarification, 2026-10-02. UP-023 Advanced perk while
@@ -56,6 +94,8 @@ Data/schema/inventory35/35 and module drift check pass. Independent Astra
 review has no blocker. Coverage167->168/310 active,143->142 planned;
 Warcasting4->5/10. No new saved state or polling. Bespoke art remains Not done,
 generic presentation Provisional. No GUI or playable promotion.
+Source slice committed and pushed as9d8c5f4d4; build/native evidence above is
+pre-commit frozen-candidate evidence, not a promoted immutable playable package.
 
 Original UP-023 Basic perk candidate while
 Mire Shaper awaits its cap decision. Friendly stacks receive10% less magical
