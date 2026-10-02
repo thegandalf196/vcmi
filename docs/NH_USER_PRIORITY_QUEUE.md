@@ -170,6 +170,64 @@ claimed for this commit.
 
 ## UP-143 — Bloodrage threshold perks
 
+Status: Verified (source/native; commit and playable delivery pending),2026-10-02.
+Unrelenting, Berserker and the prior Fury Unbound slice are implemented and active.
+Snapshot46666 builds both Linux targets; principal retry64160 passes7/7 in2.554s,
+zero skips. Activated both-target build succeeds; focused70764 passes31/31
+in6.987s with zero skips. Data36/36/module drift/UI source guard pass. Current
+coverage179/310 active,131 planned; faction48/90; Bloodrage5/10; ranks84/93.
+The player-scoped enemy-AI failure is repaired without changing its six original
+behavior tests. Test binary SHA-256:
+cf67616ee55e5c617473e91238bd34ee66c0a8fef56eb65131e42181def5d981.
+Phase2 retains broader control/status/save, hidden-enemy hero and Shroud-cache
+interactions. Purpose-made artwork is Not done and generic UI Provisional.
+No immutable playable snapshot or Windows acceptance is claimed.
+
+2026-10-02 next implementation slice: Unrelenting and Berserker. Root selects
+generic unit-environment dynamic Speed and retaliation hooks, shared by live and
+detached units. Threshold uses the current controller's saved cap, never a fixed
+20/30 value. Speed does not raise separately defined Initiative. Berserker's
+allowance stays outside the ordinary retaliation cache so control/eligibility
+loss cannot preserve it; spent retaliations are not refunded. Separate Luna
+runtime and fixture owners, with read-only AI review. Registration remains
+planned pending builds and focused native acceptance; counts remain177/310.
+Runtime is frozen; Astra review finds no blocker. Serialized12-job client
+build66372 is live, log `UP143-threshold-client-build.log`. Re-poll that handle
+before test-target registration/build; fixture work remains unregistered and
+independent. Broader control/status/save matrices are deferred to Phase2.
+AI review confirms movement radius and retaliation allowance are read dynamically
+in isolated branches. Existing battle-form Initiative snapshots retain precedence:
+Unrelenting changes Speed, not separately defined Initiative. Phase2 finding:
+the existing unit-ID-only ReachabilityMapCache can retain controller-sensitive
+Shroud ghost-walk geometry after hypothetical Hypnotize; that cache is not the
+Bloodrage movement radius and this slice does not claim to repair it.
+Client66372 exits0, reaching268/268 and linking vcmiclient. Native acceptance
+awaits the frozen new fixture and serialized test build; do not run stale tests.
+Serialized vcmitest baseline build49398 is live for the changed shared headers,
+log `UP143-threshold-test-baseline-build.log`; the new fixture remains unregistered
+until it freezes and this build terminates. No native execution before the
+subsequent fixture registration/build succeeds.
+Six-case fixture is frozen; root adds the direct GameSettings include identified
+by independent review before registration. Data/schema/inventory36/36 pass
+before activation. Principal native acceptance is still pending; source review
+does not substitute for it.
+Baseline49398 exits0; both-target fixture build54931 succeeds. Principal30137
+passes5/6, zero skips. Detached defender Berserker fails after the branch crosses
+the threshold, despite correct per-side progress. Registration stays planned.
+Root coordinates read-only AI/fixture diagnoses before selecting a faithful
+repair; do not change the expected principal behavior to conceal the failure.
+Diagnosis confirms the player-scoped BattleProxy hides the defender hero. Root
+selects authoritative per-side resolved Speed/retaliation bonus snapshots instead
+of a spectator-only fixture or a global hidden-hero bypass. Hypothetical branches
+copy these mechanic values; current control and saved cap still determine benefit.
+Append one serialization feature, reject lossy older writes before bytes, validate
+0/1 values and required rank, and reset older-format bonuses to0 to preserve
+their prior inactive behavior. New save verification is required before activation.
+Snapshot repair and seventh savecase are frozen. Reviewer finds no blocker.
+Serialized12-job both-target rebuild46666 is live, log
+`UP143-threshold-snapshot-build.log`. Re-poll this handle before executing the
+unchanged six behavior cases and new binary case. No activation yet.
+
 Current implementation slice2026-10-02: Fury Unbound's shared live/detached
 Morale floor and UP-144's resolved cap. Friendly eligibility uses the current
 controller, consistently with Commanding Presence and other faction effects;
@@ -210,6 +268,10 @@ a bounded fixture-profile repair without weakening save guards or changing
 assertions. The exact-source rebuild6389 exits0; activated retry20229 passes
 41/41 in29.684s, zero skips. Evidence: `UP144-activated-retry.log`/`.xml`.
 Original failure artifacts remain preserved; production save guards are unchanged.
+Source delivered as ca1898435d61d664e8d95016924a11dc0b61c125 on
+origin/definitive-mvp; push exits0. Exact test binary SHA-256:
+3bf63e6fc70bc57bbc5b12d8fbc5c505a39b6dec172a704dc4e5c9126aca515d.
+No immutable playable promotion or Windows acceptance is claimed.
 
 Implementation selected alongside Fury Unbound, which opens legitimate
 Advanced progression before this Expert perk. Snapshot the resolved cap per

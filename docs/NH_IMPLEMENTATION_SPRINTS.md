@@ -83,6 +83,25 @@ failed run merely because a later run succeeds.
 
 ## Current implementation priority — complete Skills perks and spells
 
+2026-10-02 UP-143 activation checkpoint: principal retry64160 passes7/7 in2.554s,
+zero skips. Both-target snapshot46666 and activated builds succeed; final focused
+70764 passes31/31 in6.987s with zero skips. Data36/36, module drift and UI source
+guard pass. Coverage179/310 active,131 planned; faction48/90, Bloodrage5/10;
+ranks84/93 unchanged. The original5/6 failure was fixed with resolved per-side
+bonus snapshots, not a spectator-only fixture. Next Bloodrage gaps: First Blood,
+Blood Scent, Rage Through Pain, Slayer and Avatar of Rage; UP-141 still awaits
+casualty rounding. Art/graphical/playable acceptance and broad matrices remain
+separate. Source commit/push is next.
+
+2026-10-02 UP-143 threshold slice: implementing Unrelenting and Berserker
+through shared dynamic unit-environment hooks. Existing live creature-stat,
+movement/AI and retaliation paths will consume these queries; no new panel,
+counter or runtime scan. Current-controller eligibility follows half the saved
+cap, including Endless Bloodshed. Ordinary retaliation caching and spent usage
+remain intact; the conditional allowance is not cached. Runtime and focused
+fixture work are separate Luna lanes; AI and Astra reviews are bounded.
+Activation and increased counts require exact-source builds and native evidence.
+
 2026-10-02 UP-143/144 activation checkpoint: principal66256 passes4/4, zero
 skips in1.559s; serialized client91439/test68195 and activated both-target18196
 builds pass. Shared live/detached Fury floor and saved80 cap are active. Data36/36,
