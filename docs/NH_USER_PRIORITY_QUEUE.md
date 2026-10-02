@@ -9,6 +9,14 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-134 — Spellcraft Extend Spell
+
+Status: Mapping, 2026-10-02. Next missing Advanced Spellcraft perk:
+once per round the first temporary hero spell lasts one additional round.
+Read-only duration/accepted-cast/detached-state map while UP-133's bounded
+fixtures are written. Identify real lifecycle prerequisites and scope conflicts
+before implementation; no activation or coverage increase is claimed.
+
 ## UP-133 — Spellcraft Precise Casting
 
 Status: In progress (broader area scope clarification pending), 2026-10-02.
@@ -24,6 +32,18 @@ cases without activating the perk prematurely. Asked whether Precise Casting
 also excludes Time Stop stasis and Earthquake's immediate field damage while
 leaving terrain unchanged. Canonical "conventional area spell" does not settle
 this broader scope; do not silently narrow the completed perk to three spells.
+The bounded production helper is now in source; independent Astra review finds
+no blocker. Client48085 and test18427 build successfully. Existing shared-path
+Controlled Blast regression89309 passes6/6 in2.658s with zero skips, covering
+legal offers/save, friendly/current-control/double-wide centers, Armageddon and
+AI parity. These are regression evidence, not Precise Casting principal proof;
+isolated fixture build90773 now passes. Principal96284 passes7/7 in2.238s,
+zero skips: legal Basic/Advanced offers, accepted live/detached Fireball,
+unselected and planned gates, current-control double-wide Meteor Shower,
+Armageddon and BattleAI viable central-target filtering. Registry stays planned
+because broader scope awaits clarification; coverage remains171/310 active.
+No GUI or playable promotion is claimed. Do not repeat the completed targeting
+map or principal three-spell tests in place of resolving the outstanding scope.
 
 ## UP-132 — Spellcraft Cross-School Formula
 
@@ -68,8 +88,9 @@ pass10/10 in3.303s, zero skips. Data/schema/inventory35/35, module check and
 independent frozen review pass. Coverage170->171/310, Discipline5->6/10.
 Phase2 retains multi-round AI valuation and broader stochastic interactions;
 generic UI Provisional, bespoke art Not done; no GUI or playable promotion.
-Source committed/pushed asff18ed6b9. Windows preflight37006272158 remains
-confirmed in progress. Older full37000555568 completed successfully on
+Source committed/pushed asff18ed6b9. Windows preflight37006272158 now passes.
+Full Windows37008135705 is queued on8c5f5ec87, containing Broad Muster and
+Unbreakable; compile/package remains pending. Older full37000555568 completed successfully on
 7331e1056, including compile, recursive package audit and artifact upload;
 it does not contain Broad Muster or Unbreakable. Broad Muster preflight
 37002243267 is now terminal cancelled; do not treat it as a pass.
