@@ -40,6 +40,19 @@ failed run merely because a later run succeeds.
 
 ## Current implementation priority — complete Skills perks and spells
 
+Latest verified UP-114 continuation, 2026-10-02: Mass Regeneration and Advanced
+Verdant Communion are active. Living-recipient eligibility, virtual grant and
+revocation, triple cost, ranked wound snapshots, survivor-only healing, shared
+family refresh and materialized detached parity have native evidence. The real
+AI emits the no-location destination and the server accepts its selected cast.
+Final both-target55569 exits0; principal79005 passes26/26 in7.453s, activated
+81701 passes30/30 in8.697s, zero skips. Data/schema/inventory33/33 and module
+check pass; independent review has no remaining blocker. Coverage164/310 active,
+146 planned; Nature5/5 and distinct Mass variants4/5. Source/native verification
+is not playable delivery. Phase2 retains broad save/modifier interactions and
+the synthetic exclusion-roster round-advance diagnostic. Next: distinct Mass
+Slow/Temporal Field, including its60% magnitude consumer and permanent grant.
+
 Latest verified UP-114 continuation: Mass Bless/Litany is active. Distinct
 saved-v3 virtual grant, ally targeting, triple cost before Wisdom, capped School
 scaling and Benediction use the shared foundation. Principal fixtures found a

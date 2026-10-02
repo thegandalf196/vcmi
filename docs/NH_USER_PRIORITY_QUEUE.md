@@ -47,6 +47,21 @@ build/native/data evidence. No GUI or playable promotion.
 
 ## UP-114 — Distinct perk-granted Mass spell entries
 
+Current continuation verified, 2026-10-02: Mass Regeneration and Advanced
+Verdant Communion are active. Saved-v3 physical-book virtual grants, living ally
+scope (excluding clone/phantom/siege/undead/nonliving/mechanical/locked/immune),
+triple listed cost, ranked rate snapshots, future wounds, survivor-only healing,
+family refresh and already-mutated detached state pass focused native checks.
+Both-target55569 exits0; principal79005 passes26/26 in7.453s and activated81701
+passes30/30 in8.697s, zero skips. Real AI selection and server acceptance pass
+after fixing empty candidate destinations to emit the protocol's NO_LOCATION
+sentinel. Data/schema/inventory33/33 and module check pass. Independent review
+has no remaining material blocker. Coverage163->164/310, Nature4->5/10, distinct
+variants3->4/5. Build/test failures and repairs are recorded. Phase2 retains
+broad save/modifier interactions and diagnosis of round advance with the
+synthetic eligibility roster; the bounded minimal refresh roster passes.
+No GUI or playable promotion. Distinct Mass Slow/Temporal Field is next.
+
 Latest continuation verified: Mass Bless and Advanced Litany are active.
 Bless-family capped School scaling, Benediction, triple listed cost before
 Wisdom, ally scope, both immunities, ordinary-source exclusion and virtual grant
@@ -1211,6 +1226,9 @@ Future Unbreakable precedence must be decided before that perk is implemented.
 Purpose-made art is Not done; no GUI, snapshot promotion or playable acceptance.
 
 ## UP-089 — Implement Luck Twist of Fate
+
+2026-10-02 repeated user reply retains the explicit scope recorded below.
+Canonical wording already agrees; no design or runtime change is required.
 
 2026-10-01 user reply reconfirms the already-integrated adverse-result scope:
 negative Luck, negative Morale, failed resistance against hostile spells, and
