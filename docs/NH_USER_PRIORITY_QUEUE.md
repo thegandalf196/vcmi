@@ -170,7 +170,7 @@ claimed for this commit.
 
 ## UP-143 — Bloodrage threshold perks
 
-Status: Verified (source/native; commit and playable delivery pending),2026-10-02.
+Status: Verified (committed/pushed; playable delivery pending),2026-10-02.
 Unrelenting, Berserker and the prior Fury Unbound slice are implemented and active.
 Snapshot46666 builds both Linux targets; principal retry64160 passes7/7 in2.554s,
 zero skips. Activated both-target build succeeds; focused70764 passes31/31
@@ -182,6 +182,20 @@ cf67616ee55e5c617473e91238bd34ee66c0a8fef56eb65131e42181def5d981.
 Phase2 retains broader control/status/save, hidden-enemy hero and Shroud-cache
 interactions. Purpose-made artwork is Not done and generic UI Provisional.
 No immutable playable snapshot or Windows acceptance is claimed.
+Source delivered as b99c49c32aff8beb8f0b615edc845d55435784c9 on
+origin/definitive-mvp; push exits0. Windows notice preflight37049324047 is
+confirmed in_progress on this exact source. Check its terminal result before
+dispatching the next full Windows build; do not claim it is a playable package.
+Notice preflight37049324047 is terminal success. Full Windows build37049519240
+is confirmed queued on b99c49c32aff8beb8f0b615edc845d55435784c9:
+https://github.com/thegandalf196/vcmi/actions/runs/37049519240 . Track that exact
+run through terminal state; a queued dispatch is not Windows compile acceptance.
+
+Next Bloodrage design question: First Blood and Slayer each individually grant
+two increments. Asked whether their overlap on the first Elite/Champion death
+grants2,3(additive extra increments),or4; await that narrow stacking answer rather
+than silently choose. Blood Scent, Rage Through Pain and Avatar of Rage remain
+unblocked missing specification items. This does not block the whole Phase1 goal.
 
 2026-10-02 next implementation slice: Unrelenting and Berserker. Root selects
 generic unit-environment dynamic Speed and retaliation hooks, shared by live and
