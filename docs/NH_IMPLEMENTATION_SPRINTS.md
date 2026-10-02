@@ -89,7 +89,8 @@ The first failures led to fixture-cap/prerequisite repairs and a real added-stac
 aura initialization-order correction. Adjacent9/10 passes; the remaining existing
 whole-battle Veteran-history serialization rejection stays explicit for Phase2.
 Steadfast is active; activated23/23 passes with zero skips and final review has
-no blocker. Data36/36 and generated-module drift pass; source commit/push follows.
+no blocker. Data36/36 and generated-module drift pass; be569afa4 is committed
+and pushed. Next: UP-142 canonical integration and effective Order membership.
 UP-141 Miracle Worker awaits casualty-rounding clarification. UP-142 Commanding
 Presence map is complete; the user resolved its floor ends with the recipient's
 spent/broken Order benefit. Canonical integration/implementation follow Steadfast.
