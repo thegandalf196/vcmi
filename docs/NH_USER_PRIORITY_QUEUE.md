@@ -473,7 +473,7 @@ is not inferred from dispatch. UP-148 remains the next implementation item.
 
 ## UP-148 — Command Battle Plan
 
-Status: In progress (read-only preparation),2026-10-02. Next missing Command
+Status: Verified (source/native; playable delivery pending),2026-10-02. Command
 Basic perk: once per combat, immediately before the first Creature Activation
 of round1, issue one Order without spending that round's Hero Action. Map the
 opening flow boundary, per-side choice anchor, typed receipt, save state and
@@ -491,6 +491,72 @@ HERO budget. Both eligible sides need their own opening choice before the first
 real activation, then initiative is recomputed. Deterministic side ordering and
 automatic exhaustion when no legal anchor/Order remains need root architecture,
 not an invented delayed round-long action. No source activation from this map.
+Root architecture approved after UP-147 delivery: a generic saved pre-combat
+Order state resolves Battle Plan entitlement at battle setup, then deterministic
+attacker/defender choices after tactics and round 1 initialization. Dedicated
+BATTLE_PLAN Order receipts leave HERO intact and cannot trigger Double Command.
+Publish pending state before the temporary HERO_COMMAND anchor notification;
+do not run Creature Activation effects, Morale, regeneration or movement resets.
+No legal anchor/Order ends the opportunity authoritatively, without carrying it
+into later rounds. Runtime/core, AI and focused native fixtures are independent
+Luna lanes; root owns existing chooser interaction, version, CMake, activation,
+builds and delivery. Independent architecture review finds no blocker. Keep
+Battle Plan planned until both targets and focused native acceptance pass.
+Runtime, AI and fixture source are frozen. Independent source review finds no
+blocking issue; focused data/client guards34/34 and diff checks pass. Root's
+serialized12-job client/vcmitest build95660 is running, log
+`build/new-horizons-linux/testing/UP148-build.log`. Re-poll that handle before
+native acceptance; do not execute a stale binary or activate from source checks.
+Second Wind remains unavailable at opening under its existing spent-activation
+prerequisite. Phase2 records exhausted grant-ID handling in prospective preflight
+(throws without partial mutation), broader opening interactions and rendered QA.
+No playable snapshot promotion or Windows acceptance is claimed.
+Build95660 is terminal failure: the local prospective view inherits unimplemented
+pure BattleProxy methods. The runtime owner is repairing its read-only adapter;
+preserve the failed log and retry only after source freeze. No native acceptance
+or activation is inferred from the source review.
+Read-only adapter repair is frozen. Root's both-target12-job retry43682 is live,
+log`build/new-horizons-linux/testing/UP148-build-retry.log`. Re-poll43682 before
+native acceptance or any other build; all delegated source lanes have completed.
+Retry43682 is terminal failure: the read-only adapter requires a complete
+BattleLayout return type. Root added its defining header; both-target12-job
+retry26167 is live, log`build/new-horizons-linux/testing/UP148-build-retry2.log`.
+Re-poll that exact handle, preserving earlier failed logs. Native tests and
+registration remain pending.
+Retry26167 exits0,635/635, linking both targets. Principal native99345 is running
+the four server cases and one actual AI submission/server-acceptance case; logs
+are`build/new-horizons-linux/testing/UP148-principal.log/.xml`. Registration stays
+planned until those results establish the principal paths with zero skips.
+Principal99345 passes5/5 in13.180s, zero skips. Root activates production
+registry/module/inventory, then removes fixture-local activation overrides.
+Activated both-target build75589 exits0; native40531 passes30/30 in45.567s,
+zero skips, including Battle Plan5, Commanding Presence9, coexistence5 and
+allowance ledger11. Data/client34/34, module drift and final independent source
+review pass. Coverage182/310 active,128 planned; Command7/10, ranks84/93 and
+faction49/90 unchanged. Test binarySHA-256:
+f26cef48474dc3b5f892cfb820d38c03a8ac9772cd3fdea227f2cea95267ece0.
+Original build failures remain retained. Commit/push is next; no launcher
+snapshot, Windows acceptance or rendered chooser acceptance is inferred.
+
+## UP-149 — Command Iron Will
+
+Status: In progress (read-only preparation),2026-10-02. Canonical Basic perk:
+friendly stacks affected by an end-round-expiring Order retain that Order through
+their next Creature Activation. Map shared live/detached aging and recipient
+consumption while UP148 builds. Do not revive spent Charge, broken Protect or
+completed Second Wind benefits. Determine the saved per-recipient lifetime seam
+before implementation; do not reduce the feature to an army-wide expiry extension.
+No source changes, build, activation or coverage claim from this preparation.
+Map complete: carry must begin at normal round expiry, preserve unspent/unbroken
+recipient progress, and last through (not merely until the start of) the next
+genuine Creature Activation. Live and detached Order paths have direct round
+gates beyond the central benefit predicate; those require a shared effective
+lifetime query. Continuations do not finish an activation; Wait/Defend finish it
+when their normal action path does. A Time-Stopped recipient can carry across
+several rounds while the same Order is reissued. Asked whether new same-command
+issuance replaces that older carry or preserves separate nonstacking instances;
+await this narrow lifetime decision before implementation. UP148 acceptance
+continues independently.
 
 ## UP-145 — Bloodrage Blood Scent
 
