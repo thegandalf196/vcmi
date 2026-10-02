@@ -30,6 +30,12 @@ Phase2. No full midbattle resume or playable promotion is claimed. Next Iron
 Will is read-only mapped and awaits its same-command carryover lifetime answer.
 Source52c4f89a636923260ea0ac8d4e1a2c79aab76bda is pushed. Notice37076319236
 is running; preserve the existing full Windows37071436091 until terminal.
+Notice37076319236 subsequently succeeds; full37071436091 succeeds on older
+51340a3d4. New full Windows37077420212 is confirmed in_progress on37dd359b8,
+which includes Battle Plan. Poll this exact job; do not dispatch a replacement
+on observation timeout. UP150 Crisis and UP151 Seize Initiative are bounded
+maps; Crisis awaits the action-resolution timing answer, alongside UP149's
+same-command Iron Will carryover question. Coverage remains182/310.
 
 2026-10-02 UP-148 implementation begins: Battle Plan's free opening Order.
 One resolved pre-combat state per side and a dedicated BATTLE_PLAN receipt
