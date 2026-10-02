@@ -266,6 +266,57 @@ current-controller eligibility consistently with the existing Bloodrage damage
 path before assignment, and preserve future cap modifiers. No edits/tests from
 mapping are evidence of these perks being implemented.
 
+## UP-145 — Bloodrage Blood Scent
+
+Verified source/native checkpoint: fixture rebuild84207 exits0; principal
+retry91133 passes5/5 in1.713s, zero skips. Active registry/module/inventory now
+represent Blood Scent; data36/36, drift and activated both-target build pass.
+Focused activated62923 passes36/36 in8.312s, zero skips. Coverage180/310 perks,
+130 planned; faction49/90; Bloodrage6/10; ranks84/93 unchanged. Test binary SHA-256
+fe5286f43e521d400d201c518081f32bf94a001ed1fe20076b5bceb1ce696ac5.
+Original3/5 failure artifacts remain preserved. Broader control/status/save and
+rendered feedback are Phase2; no immutable playable promotion. Commit/push next.
+
+Next read-only map: Avatar of Rage's25% Creature Defense penetration belongs in
+the shared target-defense stage, not Hero Order mitigation, with a resolved
+per-side snapshot and saved-cap/current-controller gating. Asked whether Blood
+Scent's attack-local cap attainment should activate Avatar for that attack;
+await the narrow composition answer before implementing Avatar. Blood Scent's
+own implementation remains unblocked. No Avatar source/activation from the map.
+
+Status: Verified (source/native; delivery pending),2026-10-02. Implement the canonical
+Basic perk's temporary one-increment increase when the attacked enemy is strictly
+below50% maximum stack HP, bounded by the current Bloodrage cap. It must use the
+shared physical-damage path for live and detached AI, current controller, and
+authoritative resolved mechanic state rather than inspecting hidden enemy heroes.
+No persistent increment, threshold Speed/retaliation change or polling is granted
+by an attack-local bonus. Separate read-only runtime and AI/save maps precede root
+architecture; focused boundary, cap, control, branch and save evidence is required.
+Registration remains planned and coverage179/310 until execution/build acceptance.
+Runtime/AI/serialization source is frozen. Saved low-health increment is0 or the
+rank's5/8/12; the shared attack-only overload preserves the ordinary counterquery.
+Current binary saves preserve both side values; older lossy writes reject before
+bytes and old loads default0. Native fixture is independent and unregistered.
+Serialized12-job client build50746 is live; exact log
+`build/new-horizons-linux/testing/UP145-blood-scent-client-build.log`.
+Re-poll that handle before test-target registration/build. No activation yet.
+Client50746 exits0,317/317, linking vcmiclient. Serialized vcmitest baseline
+build25076 is live, logUP145-blood-scent-test-baseline-build.log, while the new
+fixture remains unregistered; re-poll25076, then register/freeze and
+rebuild its exact source before native execution. Data36/36, module drift and
+existing UI source guard pass. No native or playable acceptance yet.
+Baseline25076 exits0,320/320. Five-case fixture is frozen/registered; serialized
+both-target build40698 is live, logUP145-blood-scent-fixture-build.log. Re-poll
+it before executing the principal filter. Source review's dead-attacker guard
+was corrected before client compilation; native acceptance remains pending.
+Both-target40698 exits0. Principal61899 runs5 cases:3 pass,2 fail, zero skips
+in1.740s. HP boundary/cap/rank/save cases pass; payload cases incorrectly expect
+Bloodrage to multiply the already attribute-raised damage by1.05, while existing
+Lua adds its percentage to the raising factor. The independent fixture owner
+must verify/repair the deterministic reference, not change production damage math
+or weaken the intended attack-local result. Original principal log/XML retained;
+registration stays planned until repaired exact-source execution passes.
+
 ## UP-144 — Bloodrage Endless Bloodshed
 
 Status: Verified (source/native; delivery pending), 2026-10-02. Principal66256
