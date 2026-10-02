@@ -42,6 +42,8 @@ claimed. Broader GUI/placement interactions remain Phase2.
 Activated retry70019 passes10/10 in2.919s, zero skips. Client activation build
 exits0; data/schema/inventory35/35, module drift and independent activation
 review pass. Earlier paragraphs below are checkpoint history, not current status.
+Source committed and pushed as779289300; remote branch identity verified.
+This is not immutable playable promotion or graphical acceptance.
 
 Status: In progress (bounded map), 2026-10-02. Land Mine creates one additional
 mine with the active Havoc Mine Layer perk. Trace the shared mine-count and
@@ -76,6 +78,16 @@ Use actual accepted suppression, current control and round-local side state;
 do not implement a No Quarter-only subset as the entire perk or repeat the map.
 
 ## UP-135 — Armorer Bastion
+
+Verified (delivery pending): final fixture rebuild92361 exits0; principal45892
+passes8/8 in2.618s, zero skips. Legal offers, Defend/Hold the Line, first-hit
+reduction/expenditure, normal next-round renewal, spell-like exclusion and
+detached live-state isolation/JSON defaults pass. Registration is active;
+activated gates remain next. Earlier entries below are checkpoint history.
+Retain Phase2 findings already listed; no GUI/artwork/playable acceptance.
+Activated build28218 exits0 for both targets. Combined67346 passes18/18
+in5.197s, zero skips, including Mine Layer. Data/schema/inventory35/35 and
+module drift pass; source integration is ready for normal commit/push.
 
 Retry48708 passes6/8 in2.622s, zero skips. Two fixture cases still fail:
 post-action baseline prediction reports1 versus actual3825, and a next-round
