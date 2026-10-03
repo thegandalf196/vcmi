@@ -1099,16 +1099,91 @@ Broader Cleave/preemptive ordering, control and full combat-save restoration
 remain Phase2; purpose-made art Not done and generic UI Provisional. Final
 activation review reports no blocking finding and confirms those registry
 counts. Source commit/push is next, not a playable promotion.
+Source is now committed/pushed as04a6ecdd68f10d26fb35fab0f1fda8c9529096c3;
+push exits0 and the worktree is clean at that checkpoint. Matching Windows
+notice37103081203 passes on that exact source. Full Windows37102336709 remains
+live on preceding025ea810a; preserve it, with no competing full build. The
+Evasive source checkpoint is not a Windows package or local playable promotion.
 
 ## UP-172 — Shroud Ambusher
 
-Status: In progress (bounded read-only map),2026-10-03. Canonical Basic perk:
+Status: Source/native verified and active (commit pending),2026-10-03. Canonical Basic perk:
 the first flanking attack made by each friendly stack in a combat deals+20%
 damage. Map shared live/detached damage, accepted-hit consumption, per-stack
 battle/save representation and minimum AI projection. Do not substitute one
 trigger per army, every flank, a turn-local timer or an inert registration.
 Root chooses architecture after evidence; no edits/activation/coverage from
 this preparation. Preserve UP171's frozen acceptance and source checkpoint.
+Map finds no genuine design ambiguity. Root selects a per-stack spent marker:
+ONE_BATTLE duration, NONE type, SECONDARY_SKILL source/Shroud SID and a unique
+stacking key. Existing saved Bonus representation and detached branch-local
+bonus mutation preserve once-per-combat state without polling or new unit fields.
+Shared flanking damage adds20 while unspent. Capture accepted primary-flank
+eligibility before hit; consume after application before retaliation, including
+zero damage and a dead attacker. Ranged/collateral/front attacks do not consume;
+direct qualifying Cleave and retaliation retain the canonical classifier.
+Runtime owns Shroud helpers/shared damage callback/BattleActionProcessor, AI
+owns AttackPossibility/BattleExchangeVariant, tester owns one new unregistered
+fixture, reviewer checks architecture/source. Root owns builds/registration/Git.
+Registry remains planned and coverage190/310 unchanged until focused acceptance.
+Runtime/AI are frozen. Runtime review finds no blocker; the dead-but-existing
+stack accepts its spent marker and ordinary cleanup does not erase it. AI
+candidate/direct/replay paths consume locally, and current-controller plus
+parent-cache attacker history avoid stale first-hit premiums. Root starts the
+serialized client build40160 with12 jobs, log
+build/new-horizons-linux/testing/UP172-ambusher-client-build.log. Re-poll that
+handle before another build. Tester may edit only its unregistered new fixture;
+native acceptance, registration and coverage remain pending.
+Client40160 exits0. Independent frozen AI review also reports no blocker:
+candidate/selected/direct strikes consume once and collateral is excluded;
+visible ownership and cache histories preserve branch-local prediction.
+Await only the focused fixture before test registration/build and native gate.
+The bounded principal fixture is frozen/registered. It exercises legal Basic
+acquisition, front/ranged non-consumption, two actual direct strikes with the
+first premium spent before the second, an independent second friendly stack,
+candidate/selected AI branch isolation, actual Bonus-marker roundtrip and named
+quantitative combat feedback. Root starts both-target test build9218 with12 jobs,
+log testing/UP172-ambusher-test-build.log. Re-poll before native execution;
+no independent exact-formula, full-save or rendered claim is inferred.
+Combined9218 exits0; current test binary contains the registered fixture.
+Independent final source/fixture review finds no blocking issue. Tester owns
+the principal filter, with UP172-ambusher-native.log/XML retained. No activation
+until that current-binary accepted-action result is inspected.
+Principal1/1 passes with zero skips (0.354s test), including actual first/repeat
+strikes, per-stack independence, candidate/selected AI isolation and named+20%
+feedback. Root activates the registry/allowlist/inventory and generated module;
+data/inventory19/19, module drift and both-target incremental build pass. Final
+production-active1/1 passes, zero skips (0.346s test), without its planned-only
+override. Native binary SHA-256:
+5c9706054ccbc4f59f040e7ed901498fa3878aa0d9a3e471fdd063b83aba36e9.
+Direct recount191/310 active perks,119 planned; faction53/90,37 planned;
+Shroud4/10 and ranks84/93 unchanged. Marker Bonus persistence is executed;
+whole-combat-save restoration and broader control/order/form/clone interactions
+remain Phase2. UI Provisional, purpose-made artwork Not done, no rendered or
+immutable playable promotion. Final activation review/source checkpoint next.
+Final independent activation review finds no blocker and confirms the counts.
+Root proceeds to the coherent source commit/push; no package/runtime-GUI
+acceptance is inferred from that source checkpoint.
+
+## UP-173 — Shroud Shadow Assault
+
+Status: In progress (bounded read-only preparation),2026-10-03. The first
+flanking attack against each enemy stack ignores25% Creature Defense. Trace
+shared Creature-Defense calculation, accepted per-target consumption, marker
+persistence and AI branch/replay requirements. Do not replace this with Hero
+Defense reduction, a bonus on every flank, or one use per attacker. No source
+edit/activation/count from mapping. UP172 frozen build/native acceptance and
+coherent source checkpoint remain the immediate priority.
+Map complete: shared flank classifier and existing meleeDefenseIgnorePercent
+apply25 percentage points to Creature Defense only, composing with Armor
+Piercer/Charge under the existing cap. Capture accepted nonsecondary primary
+hit before packet application, then mark the target after application even if
+dead; another target retains its own first-flank allowance. Existing saved Bonus
+representation and AI branch mutation avoid new unit-state fields or polling.
+Keep the attacking/controller side in marker identity so one side does not
+consume the other side's eligibility after control changes. Candidate/replay
+and defender-keyed cache history need the corresponding transitions. No new
+source edit/activation/count is claimed yet.
 
 ## UP-170 — Shroud No Escape
 
