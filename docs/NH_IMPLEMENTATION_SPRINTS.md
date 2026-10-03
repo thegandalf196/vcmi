@@ -18,6 +18,26 @@ working sequence.
 
 ## Maintenance contract
 
+2026-10-02 UP-154 verified: Tactics is active. Core37002 and repaired both-target
+10000/39337 pass. Principal retry24146 passes8/8 in23.514s; adjacent11237
+passes10/10 in17.054s, zero skips. Data/inventory19/19 and module drift pass.
+Coverage184/310 active perks,126 planned; Battlecraft4/10, ranks84/93 and
+faction49/90 unchanged. Original interrupted build and7/8 fixture failure remain
+preserved. Constructor-order defect is repaired. Rendered/actualAI deployment
+handoff and wider siege/phase interactions are Phase2; no playable promotion.
+Next missing Basic Battlecraft Overwatch map is complete, awaiting Teleport/Blink
+scope clarification; no implementation is claimed from that map.
+
+2026-10-02 UP-154 source integration is in progress. Shared independent
+deployment state/packets and authoritative side/footprint guards are source-frozen;
+core target build37002 passes. Human/AI handoff and native fixture still require
+freeze, combined compilation and principal execution. Tactics registration is
+staged active for production acquisition tests, not yet accepted coverage:
+verified count remains183/310, Battlecraft3/10. Data/inventory19/19 and module
+drift pass. Interim review found no blocker; post-opening malformed deployment
+hardening belongs to Phase2. UP-155 Overwatch receives a read-only hook map while
+this source remains frozen; it must not consume the Tactics delivery checkpoint.
+
 2026-10-02 UP-153 verified: Passing Lines is active. Both-target build9087 and
 fixture retry38200 pass. Principal retry13004 passes6/6 in4.330s; adjacent87077
 passes10/10 in2.280s, zero skips. Data/inventory19/19, module drift and independent
