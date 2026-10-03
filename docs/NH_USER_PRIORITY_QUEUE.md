@@ -867,7 +867,7 @@ used-round marker alone cannot establish full midbattle save fidelity.
 
 ## UP-158 — Battlecraft Redeployment
 
-Status: Verified (source/native; commit and playable delivery pending),2026-10-02. Advanced perk: after
+Status: Verified (committed/pushed; playable delivery pending),2026-10-02. Advanced perk: after
 both armies complete initial deployment, retain the hero's normal deployment
 interface for exactly one final relocation of a friendly stack to another legal
 deployment hex before the first Creature Activation. Reuse the independent
@@ -923,6 +923,10 @@ Final activation gate passes4/4 in1.564s, zero skips; data/inventory19/19,
 module check and package91/91 pass. Both-target incremental build exits0.
 Independent activation review finds no blocker. Root integrates the coherent
 source checkpoint; Windows37087488369 still runs on older0721ee12b.
+Source is committed/pushed as27ae52f378984c8be70bf0dbf0b4ac483f92a0db;
+the worktree is clean at that checkpoint. Notice preflight37090616619 is queued
+on that exact source. Preserve the live older full Windows37087488369 and
+dispatch the new full build only after it terminates and the new notice passes.
 
 ## UP-157 — Battlecraft Pre-emptive Strike
 
