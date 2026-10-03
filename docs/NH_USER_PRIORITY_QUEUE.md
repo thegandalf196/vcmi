@@ -2117,6 +2117,21 @@ No production edit or coverage activation until the trigger boundary is resolved
 
 ## UP-179 — Chaos Reality Warp and Reality Breaker
 
+Read-only mapping completed: no canonical ambiguity found. Implementation
+needs transferable effect bundles, recipient legality and sidecar preservation
+for Regeneration and Guardian Spirit; Time Stop scheduler bookkeeping is not
+itself an effect to exchange. Cross-owner transfers need stable caster
+provenance rather than restamping historical appliedByEnemy from the Warp
+caster. Existing ordered BattleAction targets and paired client/AI seams are
+reusable. No source activation or accepted coverage from this map.
+
+2026-10-03 next independent read-only preparation is assigned while Pact's
+frozen test target compiles. Reuse existing effect/paired-target seams; enumerate
+all temporary magical state carriers, not only Bonus records. Preserve duration
+and illegal-target/non-transferable exclusions; return a full-effect ownership
+plan and actual ambiguity before source work. No activation or coverage from
+this preparation, and it does not replace UP129 native acceptance.
+
 Status: Bounded read-only preparation,2026-10-03. Missing canonical Level4
 combat identity swaps all transferable temporary magical buffs and debuffs
 between one friendly and one enemy stack, preserving remaining durations.
@@ -3082,6 +3097,25 @@ negative fixture rejects at visit validation rather than isolating the later
 no-external-split check. Do not expand Phase1 into an exhaustive matrix here.
 
 ## UP-129 — Deterministic Diplomacy foundation
+
+Recruitment Pact accepted source/native: client66210/test95539 exit0,
+UP129-pact-principal-retry.log/XML27/27 in6.764s, zero skips. Positive partial
+admission, discounted paid acceptance/refusal, inclusive expiry, zero-admission
+denial, exact threshold arithmetic and current/older wire verified. Coverage
+210/310, Diplomacy7/10. Remaining: Mercenary Captain, Loyal Mercenaries and
+Legendary Reputation. Historical pending entries below are superseded by this
+acceptance; no playable promotion or rendered acceptance is claimed.
+
+User reconfirmed 2026-10-03: an unaffordable Tribute must not consume its
+weekly use. Canon already states this explicitly; the focused native case
+InsufficientTributeGoldFallsThroughToCombatWithoutUsingTheQuota passes in
+UP129-pact-principal.log. No additional design amendment is needed.
+
+Recruitment Pact implementation released2026-10-03 after weekly46b9421b7:
+saved expiry/snapshot, exact shared discount and neutral-contact lifecycle, with
+independent focused fixtures. Accepted coverage remains209/310 until principal
+execution. Mercenary provenance question remains unresolved; do not replace
+per-creature recruitment identity with a blanket merged-stack benefit.
 
 Status: Six perks completed source/native, 2026-10-03; four further Diplomacy
 perks remain open under this item. Consolidated with UP-048. Historical mapping:
