@@ -1747,7 +1747,8 @@ Next is UP185 Master of Bones; full Windows37136224312 remains e8f2cb4b5 only.
 
 ## UP-185 — Necromancy Master of Bones
 
-Status: Bounded independent read-only preparation,2026-10-03. Map the canonical
+Status: Completed source/native,2026-10-03; playable delivery not claimed.
+Historical implementation trace follows. Map the canonical
 Expert perk's upgraded Skeleton output and the condition that the appropriate
 Necropolis upgrade is available to the player. Identify existing ownership,
 building/upgrade APIs, result representation and minimum AI consumers; flag
@@ -1760,6 +1761,58 @@ upgrade, not foreign ownership or a merely buildable upgrade. A new explicit
 Skeleton-output form in the result will be needed for mixed upgraded-Skeleton
 and Zombie output, with matching wire protection and UI consumption. This
 remains the next bounded coverage candidate after UP186, not current source.
+Implementation starts on committed12431082e after UP184 acceptance. Root selects
+current owned Necropolis towns with a built appropriate upgrade dwelling; mere
+buildability or foreign ownership cannot grant upgraded output. Resolve the
+configured Skeleton upgrade at post-battle authority time, apply it only to
+remaining Skeleton output, and retain independent Zombie/Wight conversion and
+atomic Leadership/slot admission. Three bounded Luna lanes own runtime, result
+UI consumption and focused fixtures; root owns serialization/version/packet
+guards, activation, builds and Git. No coverage claim before native acceptance.
+The new explicit skeletonCreature result field uses NONE for base/legacy output
+and the actual upgraded CreatureID when applicable, including mixed rewards.
+Notice37137524285 succeeds on12431082e; full Windows37136224312 still runs
+preceding e8f2cb4b5. No local playable promotion is inferred from either.
+Production runtime/UI/root guarded-wire integration is frozen. The form is
+appended under NEW_HORIZONS_NECROMANCY_SKELETON_FORM and requires positive
+Skeleton output; older records reset NONE, unsupported direct/outer writes
+reject before payload. Generated/conversion labels remain base Skeleton
+equivalents; delivered labels/components use actual output form. Registry is
+active for acceptance, not yet completed coverage. Data/inventory19/19,
+module consistency and result guard pass. Root client build57879 runs12 jobs,
+logUP185-client-build.log. Reviewer follow-up failed with a thread-limit error;
+team inspection and fresh bounded Astra reviewer spawn succeeded. Tests remain
+independently in progress; no stale-binary acceptance or playable promotion.
+Client57879 exits1 on an interface/concrete Creature upgrade-access mismatch in
+the new helper. Runtime owner repairs only the lookup; independent reviewer
+confirms the same compile blocker and otherwise reports coherent semantics.
+Preserve UP185-client-build.log and record lesson in NH_RELEASE_FAILURES.md.
+Do not execute the prior binary as new-source acceptance.
+Runtime repair uses the concrete creature registry, preserving the configured
+upgrade intersection. Astra reviewer confirms no remaining source blocker.
+Root incremental client retry43912 runs12 jobs, logUP185-client-retry-build.log.
+The independent runtime worker now maps only Death Lord/Grave Knowledge's
+weighted casualty seam read-only while this accepted-source build remains frozen.
+Client retry43912 exits0. Data/inventory19/19, generated module and result guard
+pass. Focused tests cover ordinary Expert selection plus owned built/unbuilt,
+foreign built and absent upgrade availability; root is waiting for their freeze
+before compiling vcmitest. Independent final fixture review is read-only.
+Fixtures frozen. Root test build65198 runs12 jobs, logUP185-test-build.log.
+Final fixture review has no blocking finding; building construction/capture
+refresh is explicitly deferred rather than certified by the prepared-town
+fixtures. Wait for this exact build before executing native tests.
+Final acceptance: test65198 exits0. Luna tester principal26/26 passes5.386s and
+adjacent9/9 passes1.707s, zero skips. Four map-town cases record production active,
+no override, ordinary BasicCP->AdvancedSoul->ExpertMaster selection and actual
+army output; owned built upgrades apply, owned unbuilt/foreign built/absent do
+not. Mixed-output form/atomicity and direct/outer version reset/rejection pass.
+Binary SHA-256b5612702c235e3d66403429999fe6838558e13635680337d701ace6e3ba276c9.
+Data/inventory19/19, generated module/result guard and independent review pass.
+Coverage198->199/310 active,112->111 planned; Necromancy5->6/10; faction57->58/90.
+Construction/capture roster refresh, broader interactions and full-AI/rendered
+acceptance remain Phase2. Dedicated art is missing; no playable promotion.
+Next prepared slice: Death Lord/Grave Knowledge weighted eligibility, recorded
+in the sprint register. Existing full Windows37136224312 remains e8f2cb4b5 only.
 
 ## UP-183 — Necromancy Corpse Preservation
 

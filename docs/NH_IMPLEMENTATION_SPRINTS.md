@@ -18,6 +18,37 @@ working sequence.
 
 ## Maintenance contract
 
+2026-10-03 UP185 accepted: Master of Bones upgrades remaining Skeleton output
+only with a currently owned, built appropriate Necropolis upgrade. Configured
+upgrade/actual roster checks, atomic form-aware admission and explicit packet/UI
+identity exist; base-equivalent conversion labels are retained. Client57879's
+concrete/interface mismatch was repaired; retry43912 and test65198 pass. Luna
+tester principal26/26 passes5.386s, adjacent9/9 passes1.707s, zero skips.
+Production active/no override and ordinary BasicCP->AdvancedSoul->ExpertMaster
+selection are recorded for the four town-availability cases. Binary SHA-256:
+b5612702c235e3d66403429999fe6838558e13635680337d701ace6e3ba276c9.
+Data/inventory19/19, module/result guard and independent Astra review pass.
+Coverage199/310 active,111 planned; Necromancy6/10; faction58/90,32 planned.
+Deferred: actual construction/capture roster refresh, broader interactions,
+full-AI/rendered acceptance and dedicated art. No playable promotion. Next is
+the prepared weighted-casualty slice below. Full Windows37136224312 targets
+e8f2cb4b5, not this source; notices37137524285 succeeds on12431082e.
+
+2026-10-03 next-slice read-only preparation (after UP185): Death Lord and Grave
+Knowledge need separate weighted casualty inputs, not normal-rate additions to
+the living Core/Elite counts. The current eligibility snapshot drops Undead and
+NON_LIVING species even when usable remains exist; extend provenance-filtered
+capture, never grant these pools from the unfiltered legacy casualty fallback.
+Original-form accounting, Corpse Preservation's magical-casualty gate and
+Disintegrate/unusable-remain exclusions remain authoritative. Current original
+Golems/Elementals use NON_LIVING; MECHANICAL is separate. Grave Knowledge's 20%
+is a fixed conversion rate; Death Lord is one quarter of the normal rate.
+For nonnegative values floor(floor(x)/4) equals floor(x/4), so that algebra is
+not a design blocker. Tier contributions must fund Dark/Soul conversions at
+their own rate, while remainders stay Skeletons. A versioned special-capture
+marker is required to distinguish new filtered pools from old snapshots.
+This is mapping, not implementation/activation; no coverage increment.
+
 2026-10-03 UP184 accepted: Soul Harvester raises the explicitly named Core Wight
 from complete groups of six Skeletons attributable to eligible Elite casualties.
 Independent Core Zombie conversion and global remainders are retained. Atomic
