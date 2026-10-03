@@ -3083,8 +3083,16 @@ no-external-split check. Do not expand Phase1 into an exhaustive matrix here.
 
 ## UP-129 — Deterministic Diplomacy foundation
 
-Status: Foundation completed source/native, 2026-10-03; seven further Diplomacy
+Status: Six perks completed source/native, 2026-10-03; four further Diplomacy
 perks remain open under this item. Consolidated with UP-048. Historical mapping:
+Weekly Peacemaker/Tribute accepted after client10506/test68471 exit0 and
+UP129-weekly-principal.log/XML21/21, zero skips/failures,5.119s. Insufficient
+Tribute Gold explicitly does not consume weekly use. Peacemaker takes priority,
+protects only its hero/current week and loses protection on deliberate attack
+without refunding use. Independent review has no blocking findings. Coverage
+209/310 perks,101 planned;Diplomacy6/10; ranks87/93 unchanged. Remaining:
+Mercenary Captain, Loyal Mercenaries, Recruitment Pact, Legendary Reputation.
+No rendered/playable promotion; deferred interaction findings remain in sprints.
 Missing Version1.0 foundation for all three
 Diplomacy ranks and ten perks: eligible neutral joins use deterministic
 25/50/75% Army Value thresholds and normal recruitment Gold costs. Map current
@@ -3200,6 +3208,21 @@ Data/inventory19/19, module--check and diffcheck pass. Accepted207/310 perks,
 103 planned; Diplomacy4/10; ranks87/93 unchanged. Six Diplomacy perks remain
 open. No rendered/playable acceptance. Next Peacemaker/Tribute share saved hero
 weekly state and real hero-aware guard filtering, not a message-only bypass.
+Envoy source delivered in commit6ef610550; matching Windows notice37152417973
+succeeds. Full Windows37150731428 remains live on foundationfad71a2fc. Weekly
+runtime state is frozen with three hero fields, an active-perk/current-week
+predicate, atomic state packet and one appended serialization boundary. Root
+review repaired a late hero down-save rejection into a pre-payload check; wire
+fixtures cover current roundtrip, seeded old resets and reject-before-bytes.
+These tests have not yet been built/run. Movement/encounter work is in progress;
+Peacemaker/Tribute remain planned and accepted coverage stays207/310.
+Weekly production subsequently freezes. Client build10506 runs with twelve jobs
+under UP129-weekly-client-build.log; tester finishes isolated real-movement,
+payment, expiry and deliberate-attack fixtures before the test target rebuild.
+Preserve the live handle on continuation; no production edits until terminal.
+Unsupported save writes reject before bytes, no-guardian pathfinding retains its
+cached fast path, and removal callbacks use captured IDs rather than freed stack
+pointers. This is source progress, not weekly acceptance or playable delivery.
 
 ## UP-125 — Four-worker concurrency
 
