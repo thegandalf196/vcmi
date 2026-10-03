@@ -1240,6 +1240,25 @@ Final independent activation review finds no blocker and recounts192/310 active
 perks,118 planned; faction54/90,36 planned; Shroud5/10 and ranks84/93. Broad
 control/form/clone/full-save and rendered-delivery validation remain Phase2.
 Root proceeds to coherent source commit/push, not a playable promotion.
+Source committed/pushed asbc979fdcde8f2447a57f06b8687045c42f406c8a; push exits0.
+Matching Windows notice37105388534 is dispatched on that exact source. Existing
+full Windows37102336709 remains running on025ea810a; no competing full build.
+
+## UP-174 — Shroud Deep Flank
+
+Status: Awaiting narrow design clarification,2026-10-03. Canonical row4793:
+friendly ranged attacks against a target currently attacked from at least two
+distinct melee sides gain half the current Shroud flanking bonus. Read-only
+map finds FLANK Order target-specific accepted-hit side history and a shared
+occupied-footprint directional mask; neither settles this independent perk's
+meaning. Clarify current positional contacts versus previously accepted hits;
+the historical interpretation also needs an explicit round/battle reset.
+Do not invent that lifetime or require an active FLANK Order. Half rank bonuses
+are12.5/20/30%, with existing fractional damage payload support. Shared ranged
+damage and AI callbacks are mapped; historical semantics would additionally
+need saved target state and branch-local AI transitions. No source activation,
+build or coverage increase from this map. Shadow Assault acceptance remains
+the preceding completed checkpoint.
 
 ## UP-170 — Shroud No Escape
 
