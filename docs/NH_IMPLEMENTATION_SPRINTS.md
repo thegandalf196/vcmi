@@ -18,6 +18,46 @@ working sequence.
 
 ## Maintenance contract
 
+Envoy accepted: client69085/test68817 exit0; final principal retry2 passes15/15
+in3.282s, zero skips. Binary024782815a9de49a138ebad07e2c7de5cead3f8a54ab4df629b176a94f2a2831.
+Data/inventory19/19, module--check and diffcheck pass. Accepted207/310 perks,
+103 planned, Diplomacy4/10; ranks87/93 unchanged. Prior independent production
+review and root final fixture review establish this checkpoint; a fresh review
+could not be allocated. Dedicated art/rendered UI remain unaccepted. Next saved
+weekly state and actual movement/pathfinding for Peacemaker, then paid Tribute.
+
+2026-10-03 resumed Envoy verification: retry2776 passes14/15, with hidden-target
+setup still revealing its neutral. Hero sight uses library settings rather than
+the attempted map override. Tester replaces the override with an authoritative
+sight penalty and fog-hide packet, retaining actual hidden-before-query checks.
+Focused rebuild68817 is live; no production edits during build. A fresh reviewer
+spawn and reuse attempt both hit the service thread limit; prior production
+review remains evidence, root rechecks the fixture diff, and no additional
+independent review is claimed. Peacemaker/Tribute planning remains read-only.
+
+2026-10-03 continuation: fad71a2fc pushed, clean at start. Matching Windows
+notices37150248875 succeeds; prior full37146835406 remains live onaeddb6900.
+Runtime narrowly maps saved weekly usage and real pass-through guard semantics
+for Peacemaker/Tribute. Independent Envoy implementation owns neutral tooltip
+files; tester owns focused fixtures. No additional activation/coverage yet.
+Full Windows37146835406 succeeds onaeddb6900. Matching notices37150248875
+succeeds forfad71a2fc; full Windows37150731428 is now confirmed live on that
+accepted Diplomacy-foundation source. Do not cancel/restart a live job for an
+observation timeout. Envoy is registered active for focused verification only;
+accepted206/310 remains unchanged until native range/visibility acceptance.
+User resolves weekly mechanics: pacification lasts through the current week,
+Peacemaker resolves before Tribute, and Tribute consumes only after payment.
+Canonical Diplomacy updated; SHA58a3cd1c20a1b47641ff65866b4e4f3cf9ddc3d5767ed742126b9e0442f2290f
+is synchronized to registry/module/matrix. Envoy client69085 passes; frozen
+fixtures include true hidden-target denial with reduced fixture scouting, then
+explicit reveal. Focused test build is running; no weekly production edits until
+this Envoy checkpoint is verified and committed.
+Envoy test68880 passes. First principal61370 passes10/15 in3.239s; new cases
+fail before exercising Envoy due to artwork-anchor/visitable-offset positioning
+and a Basic-perk argument supplied as Advanced. Tester owns focused fixture
+repairs; original log/XML retained. Production range and selection gates remain
+unchanged; accepted count remains206/310.
+
 2026-10-03 UP129 foundation accepted: final client67358/test39859 exit0;
 principal retry10/10 passes1.870s, zero skips. Three ranks and Negotiator/Common
 Cause/Grand Diplomat use shared deterministic forecasts, normal Gold/count,

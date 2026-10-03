@@ -4551,6 +4551,15 @@ remain as a neutral stack on the map. Present this consequence before closure.
 |Grand Diplomat|Expert|Increase the Diplomacy joining threshold by a further 25 percentage points, to a maximum of 100% of the hero's Army Value.|
 |Legendary Reputation|Expert|Once per calendar month, the first eligible neutral stack that qualifies to join through Diplomacy joins without a gold payment.|
 
+Peacemaker's selected stack permits that hero to pass through its guarded area
+until the current calendar week ends. The stack remains on the map and other
+heroes do not gain this protection. Deliberately attacking it ends the protection
+without refunding that week's Peacemaker use. When Peacemaker and Tribute both
+apply to an encounter, resolve Peacemaker's free passage first; do not charge
+Gold or consume Tribute for that encounter. Tribute consumes its weekly use
+only when its payment succeeds. An unaffordable refusal does not consume the
+use and follows ordinary encounter rules.
+
 
 
 ###### Estates
