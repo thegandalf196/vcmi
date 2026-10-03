@@ -121,6 +121,9 @@ can be consumed or broken earlier (Charge, Protect, Second Wind). Asked whether
 Commanding Presence follows that effective benefit lifetime or recipient
 membership until round end. User resolved2026-10-02: end the Morale floor when
 that recipient's Order benefit is spent or broken, not merely at round end.
+User's subsequent reply to question `call_ZE8GputCEgupMjebv9Ly6VXg`
+reaffirms this same ruling. No new round-long protection or design change is
+introduced; the canonical Commanding Presence row already incorporates it.
 Record the accepted clarification in Pending Changes until canonical integration.
 Shared battleGetMorale
 covers live and detached AI. Existing state represents only one Order per side;
@@ -713,6 +716,28 @@ Existing full Windows37082097577 remains confirmed in_progress on older
 Passing Lines7aaa48c1; preserve/poll it, then dispatch the newer full build after
 the cheap notice gate passes and the current full job reaches terminal state.
 Do not claim Windows compile/package acceptance from notice or native Linux tests.
+CI continuation: notice37086103464 is terminal success on Tacticsa85f2e44e.
+Older full Windows37082097577 is still live, now in packaging after compile;
+it does not contain Tactics. Wait for its terminal result before dispatching the
+newer full build, preserving that job and avoiding duplicate heavy compilation.
+Older full37082097577 reaches terminal success on Passing Lines7aaa48c1.
+After notice success, full Windows37086471771 is dispatched/queued on
+`b954d071f2b7b0d32d8a47088e3939a742863def`, which adds only delivery notes over
+Tacticsa85f2e44e. Re-poll this specific run; no newer compile/package acceptance
+until terminal success. No local snapshot is promoted.
+Full37086471771 subsequently terminates in failure before compilation: the
+package regression source guard still expects local `tacticsMode` rather than
+the production global `deploymentPhase` spell block. The91-case package gate
+has one failure. A bounded guard/mutation repair is assigned; preserve this run,
+record its lesson, and require repaired preflight before the next full build.
+Guard repair is committed/pushed as0721ee12b7f9db7250f25bc6dc2f0d8b3a6fd1ac.
+The focused resource wrapper5/5 and complete package preflight91/91 pass locally;
+all three global-deployment mutants are rejected. Cheap notice37087398608
+reaches terminal success on that revision. A replacement full build is dispatched
+only after those gates and the earlier full job's terminal failure; it does not
+include the still-uncommitted Defend prerequisite or imply graphical acceptance.
+Replacement full run37087488369 is confirmed in_progress on0721ee12b;
+preserve and poll that run rather than dispatching duplicate compilation.
 
 Status: Bounded read-only preparation,2026-10-02. Canonical Basic perk extends
 the army's deployment area two additional battlefield rows forward, subject to
@@ -817,6 +842,81 @@ serialization omits runtime unit state; do not claim full save support from
 detached/JSON copies. Asked whether player-chosen Teleport/Blink count as
 voluntary movement; await that genuine wording choice before implementation.
 Tactics acceptance remains unblocked and takes priority.
+
+## UP-157 — Battlecraft Pre-emptive Strike
+
+Status: Bounded read-only preparation,2026-10-02. Missing Advanced perk: the
+first melee attack each round against a Defending friendly stack triggers a
+50%-damage pre-emptive attack without consuming normal retaliation. Map accepted
+attack sequencing, effective Defend lifetime, existing Bulwark reaction seams,
+per-recipient round state and shared detached AI forecast. Do not implement a
+post-hit retaliation substitute or reuse an unrelated consumed marker. Root
+chooses architecture after evidence; no source activation or coverage increase
+from preparation. UP156's focused native prerequisite remains the immediate
+validation priority; no overlapping file ownership or additional build.
+Map complete: reuse authoritative pre-hit attack sequencing and damage resolution,
+but allocate an independent per-recipient round marker. Bulwark's existing marker
+resets on Defend and cannot silently consume Battlecraft's once-per-round award.
+The detached per-attack projection and Defend heuristic both require parity;
+JSON/network copies alone do not establish full binary-save preservation.
+Asked whether overlapping Battlecraft and Bulwark sources produce two independent
+strikes or one strike at the higher percentage. Await that composition ruling
+before implementation; the Defend prerequisite remains unblocked.
+
+## UP-156 — Battlecraft Battlefield Mastery
+
+Status: Bounded read-only preparation,2026-10-02. Implement the canonical
+Expert perk: the first friendly stack each round to Wait or Defend receives
+double the normal Battlecraft rank bonus for that action. Preserve the existing
+Wait one-shot/round expiry and Defend lifetime; do not double Entrench, Reserve
+or unrelated effects, grant extra actions, or add polling. Map authoritative
+accepted-action allocation, current-controller semantics, shared live/detached
+damage consumers and save/packet state. Root owns architecture and chooses the
+minimal event-driven representation before implementation. Overwatch awaits its
+Teleport/Blink clarification and is not silently redefined. Tactics is already
+source/native verified and pushed; Windows jobs remain separately monitored.
+No activation or coverage increase from this preparation.
+Prerequisite map confirms a base lifetime defect: afterNewRound clears the
+Defending flag and exact stance provenance before the canonical next activation,
+even though its STACK_GETS_TURN bonuses remain. Root selects a bounded repair:
+preserve those three values at round rollover; existing initialization and
+afterGetsTurn remain their clearing boundaries. Wait and per-round reaction
+resets are unchanged. Runtime source is frozen in CUnitState.cpp; an isolated
+native fixture follows in parallel. Mastery allocation itself remains planned;
+verified coverage184/310 is unchanged by this prerequisite repair.
+Review blocks the initial three-reset-only repair: willMove uses !defending,
+so retaining that dual-purpose flag would prevent the next normal activation.
+Baseline25126 builds successfully but is not accepted native evidence. Root
+chooses the existing authoritative UNIT_DEFENDING tag as persistent stance,
+not a redundant flag: defended() reads the action flag or the tag; rollover
+clears the action flag but retains stance provenance; existing next-activation
+bonus removal and afterGetsTurn expire both. The AI Defend candidate adds that
+same tag only on its clone. Isolated ownership/source freeze precede retry.
+Revised runtime and AI sources are frozen. Review identifies a newly introduced
+Second Wind eligibility risk if persistent `defended()` is used as proof of this
+round's completed action. Its callback now checks the current-round raw Defend
+flag instead; the native fixture must distinguish prior-round stance from a
+current-round Defend. Actual queue selection remains a required acceptance gate.
+Frozen production client retry84116 is running with12 jobs; log
+build/new-horizons-linux/testing/UP156-defend-client-retry.log. Re-poll that exact
+handle before registering/building the independent fixture; no stale native run.
+Client retry84116 exits0, linking the corrected shared library and client.
+Independent source review finds no remaining blocking issue after the Second
+Wind consumer repair. Native actual-queue/lifetime acceptance is still pending;
+extra-activation/Stasis expiry and broader vanilla interactions remain Phase2.
+Combined fixture98647 fails on a test-only rank parameter; the repaired fixture
+also retains a slower reserve to prevent an accidental double round advance.
+Retry27682 builds both targets successfully. Focused native37434 passes16/16
+in4.453s with zero skips: three new real-queue/lifetime/Second Wind/Wait cases,
+eight Battlecraft rule/runtime cases and five Reserve cases. Existing duration
+tags carry the stance without new saved fields; AI clone tagging remains local.
+Test binary SHA-256:
+2d7b257e890330470463df4420eaba27f2c5178b3dd35402520296f8a82d2e28.
+Prerequisite is source/native verified; Battlefield Mastery remains planned and
+coverage184/310 is unchanged. Client pose across rollover, extra-activation/Stasis
+expiry and broader vanilla/save interactions are Phase2; no snapshot promotion.
+Mastery map also exposes a genuine machine-eligibility wording gap; asked whether
+an ineligible War Machine consumes the award. Do not invent that exception.
 
 ## UP-145 — Bloodrage Blood Scent
 
