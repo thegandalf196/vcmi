@@ -1346,6 +1346,139 @@ perks,117 planned; faction55/90,35 planned; Shroud6/10 and ranks84/93 unchanged.
 The flying negative is a shared predicate check, not a flown movement action.
 Broad hazard/control/form, full-save and rendered-delivery checks remain Phase2.
 Root proceeds to coherent source commit/push; no immutable playable promotion.
+Source committed and pushed as003cd49cd869249aa4c96faf408f00e495f7fdd3.
+Matching Windows notice37108021258 is terminal success on that exact revision.
+Full Windows37106017377 remains live on3e0e96df6665926db35b2c35f768dc4772222ffc
+and therefore excludes Night Prowler. That full run subsequently completed
+successfully. Root dispatched full Windows37108695052 on003cd49cd869249aa4c96faf408f00e495f7fdd3;
+it is queued at dispatch and includes Night Prowler but not dirty UP178 source.
+Re-poll this exact new handle; notice success is not compiled-package acceptance.
+
+## UP-177 — Dungeon Portal of Summoning shared recruitment
+
+Status: Open (concrete functional gap identified),2026-10-03. Canonical row3283
+requires a weekly choice of one owned external dwelling. Dungeon recruitment
+must expose that dwelling's current stock and deduct from the same stock;
+the Portal never creates or duplicates troops. Current CGameHandler weekly
+Portal generation selects a creature randomly and creates a separate growth
+pool; ordinary recruitment deducts only the recruiting object's pool. Missing
+Phase1 work: saved source selection, authoritative source-linked deductions,
+selection/recruitment UI and minimum AI selection. Focused acceptance must
+recruit through both locations and prove that each observes the same remaining
+stock. Do not claim completion from a renamed building or a copied pool.
+No source changes or coverage increase from this read-only audit.
+Authority map complete: weekly setPortalDwelling creates an independent extra
+town recruitment row, while RecruitCreatures already carries actual dwelling
+ID, row, creature and quantity and deducts source stock. Save a Portal source
+identity rather than a pool mirror; validate built/owned Portal access and
+destination before reusing source cost/stock publication. Multiple source rows
+and upgraded IDs already have ordinary request representation. Portal selection
+UI and minimum AI selection still need a bounded map. Ownership loss must not
+permit recruitment; no extra midweek choice or cross-town shared choice is
+silently introduced. Root will establish the building-scoped selection rule
+before implementation; no unrelated source mutation during UP178 acceptance.
+Root selects building-scoped persistent source identity and last-selection
+absolute week, with one authorized replacement per week per built Portal town.
+Recruitment must carry explicit Portal-town context while retaining the actual
+source dwelling as the stock/cost target. Validate owned built town, matching
+saved source, still-owned eligible external dwelling, and a destination army
+in that town. Without Portal context, retain ordinary local-visit checks: mere
+source ownership must never authorize arbitrary remote recruitment. State and
+wire changes require appended serialization compatibility. No foundational
+blocker was found; implementation awaits completion of UP178 acceptance.
+
+## UP-178 — Warcasting Master Synthesis
+
+Status: Verified (source/native; commit and playable delivery pending),2026-10-03. Canonical Expert perk replaces the
+first Warcasting bonus consumed in combat with50% /50 percentage points.
+Map shared spell/Order preview, accepted action consumption, battle-long
+history, detached AI and saved state. Normal readiness must exist; the perk
+does not manufacture empowerment on the first unempowered action. Do not
+reset the first-consumption history at round boundaries or count typed bonus
+actions as ordinary Hero Actions. Root owns architecture/registration/builds;
+no source activation or coverage increase from mapping.
+Map complete: no principal-path ambiguity. Root selects generic battle-long
+positive-readiness consumption history in AlternatingHeroActionState, shared
+hero-aware effective bonus resolution, and an append-only saved feature.
+Runtime owner covers spell/Order preview and accepted consumption; AI/UI owner
+covers detached Order valuation and visible hero status; fixture owner covers
+legal Expert selection and focused actual action/state acceptance. Root owns
+serialization version, registration, builds and integration. Coverage remains
+193/310 until production activation after native acceptance. Asked whether
+Perfect Rhythm doubles Master Synthesis's replacement50 to100 or leaves50;
+Perfect Rhythm remains planned, so this future interaction is not silently
+implemented or claimed verified by the standalone Master Synthesis slice.
+Production source is frozen. Source review found typed/free action preview
+leakage; shared eligibility now excludes these actions from both normal and
+synthesized empowerment, matching accepted consumption. Legacy non-shared
+Focus Fire and spell paths retain their prior eligibility. Root adds inner and
+outer state/packet loss guards for the appended consumption history. Serialized
+client build37491 is live with12 jobs, log
+testing/UP178-master-synthesis-client-build.log. Re-poll that handle before a
+test build; fixture editing is isolated from this client-only target. No stale
+native execution, activation, or coverage increase from source freeze.
+Client37491 exits0 at317/317. Data/inventory19/19 and generated-module check
+pass while Master Synthesis remains planned. Independent production review
+finds no blocking issue; principal fixtures/native gate remain pending.
+Focused fixtures are frozen: three actual action cases cover legal Expert perk
+offers, Spell and Order first-consumption50, later30, exact Spell HP loss,
+typed exclusions, unused expiry and detached branch isolation. Four value-state
+cases cover consumption, expiry/clear, copying, current roundtrip and old-version
+loss guards; the prior zero-empowerment expectation now retains consumed history.
+Serialized vcmitest build6811 is live with12 jobs, log
+testing/UP178-master-synthesis-test-build.log. Require a final incremental build
+after this fixture freeze before native execution. No coverage activation yet.
+Test build6811 exits0 at339/339. Final frozen both-target incremental64587
+exits0, recompiling the final server fixture and linking vcmitest. Independent
+final source review finds no blocker. Designated tester now runs only seven
+MasterSynthesis cases, then the relevant existing Warcasting/state subset if
+principal passes. No stale binary or production-active evidence is assumed.
+Principal native acceptance passes7/7, zero skips, exit0,1.364s; fixture XML
+records the planned registry before its explicit test override. Adjacent gate
+passes58/64, zero skips,10.967s: all new cases pass. One old readiness assertion
+expects combat-long consumption history to disappear with expiry, and five
+older fixtures bypass earlier-tier perk prerequisites. A bounded fixture owner
+repairs those cases without weakening production prerequisites; independent
+review checks the failure classification. Registry remains planned pending the
+repaired adjacent gate and a subsequent production-active rerun. Exact evidence:
+testing/UP178-master-synthesis-{native,adjacent}.{log,xml}.
+Fixture-only repairs are frozen: legal Basic Spellward before Advanced Tactical
+Weaving, legal Basic Sorcery Overcharger before Countermage, and cleared
+readiness retaining consumed history. Independent review finds no material
+blocker and confirms the hidden-enemy Countermage assertions remain intact.
+Serialized both-target incremental57489 runs12 jobs; log
+testing/UP178-master-synthesis-fixture-repair-build.log. Re-poll the same handle
+before the designated tester's adjacent rerun. No activation yet.
+Repaired incremental57489 exits0. Adjacent-repaired gate passes64/64, zero
+skips,11.141s, exit0, including every new Master Synthesis case. XML records
+planned status before the fixture override. Rebuilt binary SHA-256:
+b206d126311f098c5964bc25a2b3e170e9b553eea4a62b97c75ff1286440d4ba.
+Root activates the exact registry/allowlist and records Provisional generic UI,
+Not done purpose-made art. Generated module, focused data gates and a fresh
+production-active rerun remain required before coverage/delivery acceptance.
+Activated data/inventory19/19, generated-module check and both-target incremental
+build pass. Production-active native passes7/7, zero skips,1.316s, exit0; XML
+confirms all three server fixtures see active status and bypass the planned-only
+override. Logs testing/UP178-master-synthesis-active.{log,xml}; binary SHA
+remainsb206d126311f098c5964bc25a2b3e170e9b553eea4a62b97c75ff1286440d4ba.
+Independent final review finds no blocker and recounts194/310 active perks,
+116 planned; Warcasting6/10, faction55/90 and ranks84/93 unchanged. Perfect
+Rhythm stacking, full battle-save restoration, broad interactions and rendered
+UI are deferred. Root proceeds to a coherent commit/push, not local promotion.
+
+## UP-179 — Chaos Reality Warp and Reality Breaker
+
+Status: Bounded read-only preparation,2026-10-03. Missing canonical Level4
+combat identity swaps all transferable temporary magical buffs and debuffs
+between one friendly and one enemy stack, preserving remaining durations.
+Orders, intrinsic/permanent/equipment effects, terrain, summon identity,
+transformations and explicitly non-transferable effects do not move. Effects
+with an illegal recipient remain on their original stack. Reality Breaker
+permits any two legal stacks instead of the friendly/enemy pair. Map the whole
+effect representation, paired targeting, accepted authority and minimum AI;
+do not substitute a bonus-only swap if other transferable effects use saved
+unit state. Master Synthesis's frozen build/native acceptance remains priority.
+No source edits, activation or coverage increase from this preparation.
 
 ## UP-176 — Shroud Vanish
 
