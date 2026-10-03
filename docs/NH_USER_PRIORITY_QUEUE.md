@@ -845,7 +845,7 @@ Tactics acceptance remains unblocked and takes priority.
 
 ## UP-161 — Learning Field Study
 
-Status: Bounded read-only preparation, 2026-10-03. Advanced perk grants +25%
+Status: Verified (source/native; commit and playable delivery pending), 2026-10-03. Advanced perk grants +25%
 additional Experience for defeating enemy heroes or wandering armies whose Army
 Value exceeded this hero's army at battle start. Map battle-start raw Army Value,
 opponent-kind eligibility, winner/casualty XP publication and ordinary Learning
@@ -865,6 +865,114 @@ receives the grant. Ordinary postbattle XP display and generic AI perk selection
 already consume the result; no separate action/UI currency is needed. Root will
 partition setup/state, result award and isolated result/AI fixtures after UP160
 acceptance. No edits or activation from this read-only map.
+UP160 acceptance is complete. Root now partitions three Luna lanes: shared
+battle snapshots/setup; generic XP composition plus winning-result consumer;
+isolated authoritative result fixture. Side snapshots use optional raw starting
+Army Value (unknown on old saves, zero remains meaningful) and a wandering-army
+classification, appended under BATTLE_INITIAL_ARMY_VALUE. Old loads do not
+reconstruct initial strength from surviving armies. Only the actual non-draw
+winner with active Field Study gets25 additional percentage points through the
+existing XP formula; equal/weaker enemies and other guards are excluded. Generic
+postbattle XP display/receipt and AI acquisition remain ordinary consumers.
+Registry stays planned until principal build/native evidence; no new count yet.
+Production lanes are frozen. Root added outer BattleInfo/BattleStart older-write
+pre-byte guards in addition to SideInBattle's direct guard. Core-only vcmi
+build29456 is live with12 jobs; log testing/UP161-field-study-core-build.log.
+Independent isolated result and AI-acquisition fixtures are outside that target
+and may finish without mutating compiled sources. Re-poll29456 before another
+build or CMake registration; no client/native acceptance or active count yet.
+Core29456 exits1 because BinaryDeserializer rejects direct uint64_t values.
+Root assigns a bounded wire-only repair: retain optional<uint64_t> in memory,
+serialize optional low/high uint32_t words with no truncation or range cap.
+Fixture adds zero/max-domain roundtrips; unknown legacy snapshots remain unknown.
+No principal native execution or registration activation occurred. Retry only
+after that repair is frozen; preserve the original build log.
+Wire repair is frozen. Core retry6495 is live with12 jobs, log
+testing/UP161-field-study-core-build-retry.log. The legal Advanced Nullkiller
+offer fixture is frozen; the isolated server fixture remains unregistered.
+Re-poll6495 before CMake registration or combined client/native build. No native
+run or new coverage is implied by source implementation or this compile.
+Core retry6495 exits0. Final production review finds no blocker. Root starts
+combined client/test baseline build with12 jobs while the new server fixture
+remains unregistered; all compiled production and existing AI-test files are
+frozen. Register the new frozen fixture only after this build is terminal,
+then incrementally build its target before runtime use. Core success is not
+principal-path or client/native acceptance; registry stays planned.
+Baseline57072 exits0 for both targets. Frozen nine-case result fixture is
+registered, then build16347 exits1 on three local fixture API/include errors:
+query ownership, missing local stackAt helper and unused CHero-dependent helper.
+The fixture owner repairs only that file; production APIs remain unchanged.
+Preserve the failed log and rebuild after freeze before running11 focused
+result/AI cases. No native acceptance or Field Study activation yet.
+Older Windows37091363403 succeeds on213b4a35e. After Investor notices pass,
+new full Windows37094808848 is live on21dbb224b; dirty Field Study is excluded.
+Fixture retry48428 exits0. The11-case principal gate exits139 after two hero
+victory cases pass, during the wandering-army case; remaining cases are not
+accepted and no XML is emitted. Keep registry planned. The designated tester
+traces that one case with a batch debugger before any broader rerun or edit.
+Retain the failed native log; source/build alone cannot close this crash.
+The isolated debugger reproduces a fixture-side dangling access: neutral victory
+removes the battle synchronously, unlike hero-vs-hero result dialogs; the XP
+assertion then reads the removed battle. Backtrace is retained as
+testing/UP161-field-study-monster-backtrace.log. Authorize only a fixture repair
+capturing expected inputs before completion; preserve actual XP receipt checks.
+No production lifecycle change or activation follows from this diagnosis.
+Fixture-only lifetime repair is independently reviewed with no blocker.
+Both-target rebuild31335 exits0. Isolated wandering-army retry passes1/1;
+full principal gate passes11/11 in4.059s, zero skips, including actual XP receipt,
+strict eligibility, snapshot roundtrips and legal AI acquisition. Logs/XML:
+UP161-field-study-lifetime-single and UP161-field-study-lifetime-native.
+Root activates Field Study after this evidence:187/310 perks,123 planned,
+Learning3/10;84/93 ranks and49/90 faction perks remain unchanged. Generated
+module/check and data/inventory19/19 pass; activated both-target build exits0.
+Final activated gate passes11/11 in3.697s, zero skips; independent review finds
+no blocker. Binary SHA-256:
+84b396ec5c21d9abc9ecb1a8209a4494aad37f92af1f2a6cb9f735500e996605.
+Full-game resume, unusual result/ownership
+transitions and comparative AI valuation remain Phase2. Purpose-made art is
+Not done; generic UI is Provisional. No immutable playable promotion.
+
+## UP-162 — Learning Eagle Eye preparation
+
+Status: Bounded read-only preparation,2026-10-03. After combat, learn the
+highest-level eligible Level1–3 spell cast by the enemy hero, breaking equal-level
+ties by first cast. Map existing accepted hero-cast history, postcombat learning
+policy and publication, rank/perk gates, saved battle history and AI receipt.
+No source edits while Field Study owners/builds are active. Reuse shared learning
+legality; do not grant removed/unavailable spells, bypass learning-school ranks,
+include creature spells or choose a later equal-level cast. Root chooses the
+implementation after this bounded map; exploration does not increase coverage.
+Map complete: accepted HERO_SPELL StartAction appends IDs to saved ordered
+usedSpellsHistory; creature casts are excluded. Existing canLearnSpell handles
+school acquisition, roster/map bans and already-known spells. battleFinalize's
+legacy Eagle Eye path is winner-only, random and may grant several spells;
+replace its selection with highest eligible Level1–3/earliest tie, not a new
+history counter. Existing BattleResultsApplied/ChangeSpells publishes learned
+spells and informational UI; generic active-perk AI selection is sufficient.
+Asked whether losing heroes surviving retreat/surrender also learn, or only
+the winner, or every participant including removed heroes. Canonical wording
+does not explicitly restrict victory; do not silently import legacy winner/unit
+gates. Await that scope answer while UP161 acceptance remains unblocked.
+
+## UP-163 — Learning Scholar preparation
+
+Status: Bounded read-only preparation,2026-10-03. When allied heroes meet,
+each teaches the other their highest-level legally learnable unknown spell;
+ties use canonical spellbook order, once per hero pair per week. Map the
+existing exchange/town-meeting hooks, shared acquisition legality, paired
+weekly history and replicated spell grants, with basic save/AI consumers.
+No production edits during Field Study's frozen builds. Preserve asymmetric
+eligibility (one hero may learn while the other cannot) and per-pair, not global
+weekly, accounting. Root will select architecture after the bounded map.
+Map complete: existing useScholarSkill is called by allied heroExchange and
+town visitor/garrison meetings; it currently grants all legal spells both ways
+under legacy level limits. Reuse canLearnSpell and ChangeSpells; add authoritative
+per-pair weekly provenance (Mentor's per-hero marker cannot represent this).
+Stored spellbooks use stable SpellID order, while rendered books sort partly by
+localized names. Asked whether one Scholar holder enables both directions,
+whether a meeting with no possible transfer consumes the weekly use, and whether
+stable stored SpellID order defines canonical tie order. Await those decisions
+instead of implicitly importing legacy behavior; Field Study remains unblocked.
 
 ## UP-160 — Estates Investor
 
@@ -941,6 +1049,9 @@ Final activated Investor gate passes5/5,zero skips in68.870s. Both native logs
 and XMLs retain the initial failure and bounded successful retry. Phase1
 principal implementation is accepted; next missing unblocked item is UP161
 Field Study. Source commit/push follows, with no playable-delivery claim.
+Investor source is committed/pushed as21dbb224b972668054b6b07bf50908229408a8fd;
+Windows notices37093465685 succeed on that source. Full Windows37091363403
+remains live on older213b4a35e; do not describe it as Investor validation.
 
 ## UP-159 — Battlecraft Rapid Response
 
