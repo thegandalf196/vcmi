@@ -707,6 +707,12 @@ is repaired, and valid movement remains asserted before fixture blockers.
 Rendered/actualAI handoff, broader siege layouts and malformed post-opening
 phase hardening remain Phase2. Descriptor roundtrips do not prove full midbattle
 resume; no immutable playable promotion. Source commit/push is next.
+Source is committed/pushed as`a85f2e44e303effe166badb5765422f4eeb6585a`;
+push exits0. Notice preflight37086103464 is queued on that exact source.
+Existing full Windows37082097577 remains confirmed in_progress on older
+Passing Lines7aaa48c1; preserve/poll it, then dispatch the newer full build after
+the cheap notice gate passes and the current full job reaches terminal state.
+Do not claim Windows compile/package acceptance from notice or native Linux tests.
 
 Status: Bounded read-only preparation,2026-10-02. Canonical Basic perk extends
 the army's deployment area two additional battlefield rows forward, subject to

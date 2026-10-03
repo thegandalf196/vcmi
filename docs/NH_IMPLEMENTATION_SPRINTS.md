@@ -27,6 +27,10 @@ preserved. Constructor-order defect is repaired. Rendered/actualAI deployment
 handoff and wider siege/phase interactions are Phase2; no playable promotion.
 Next missing Basic Battlecraft Overwatch map is complete, awaiting Teleport/Blink
 scope clarification; no implementation is claimed from that map.
+Tactics source`a85f2e44e303effe166badb5765422f4eeb6585a` is pushed.
+Notice37086103464 is queued; full Windows37082097577 is still live on older
+7aaa48c1. Preserve it and stage the newer full run after its terminal result and
+the newer notice success; no Windows package or local launcher promotion yet.
 
 2026-10-02 UP-154 source integration is in progress. Shared independent
 deployment state/packets and authoritative side/footprint guards are source-frozen;
