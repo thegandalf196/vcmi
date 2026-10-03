@@ -4521,6 +4521,11 @@ Logistics governs strategic movement: roads, difficult terrain, sea travel, emba
 
 Diplomacy turns neutral-creature interaction into a deterministic negotiation system rather than a save-scummable random roll. Scripted or explicitly hostile encounters may be marked ineligible.
 
+Map-authored guaranteed free joins remain exceptions to the normal Diplomacy
+threshold and Gold-payment rules. After an accepted join, troops left in the
+army-transfer window when it closes are permanently dismissed; they do not
+remain as a neutral stack on the map. Present this consequence before closure.
+
 ###### Skill progression
 
 |**Rank**|**Effect**|
@@ -4860,7 +4865,7 @@ Necromancy converts eligible enemy casualties into permanent Undead after victor
 |Grave Knowledge|Advanced|When defeating Undead enemies, 20% of their eligible casualties may be reclaimed as Skeletons even though they are not living.|
 |Ossuary|Advanced|If the hero cannot accept the raised creatures because of unavailable army slots or Leadership limits, they are sent to the nearest owned Necropolis town instead of being lost.|
 |Master of Bones|Expert|Skeletons raised by Necromancy are raised as their upgraded form when the appropriate Necropolis upgrade is available to the player.|
-|Lord of the Dead|Expert|After defeating an army containing at least one Champion-tier living creature, if the base Necromancy result contains at least 12 Skeletons, 12 are automatically replaced with 1 Bone Dragon, once per combat. This conversion resolves before other Necromancy conversion perks.|
+|Lord of the Dead|Expert|After defeating an army containing at least one Champion-tier living creature, if the base Necromancy result contains at least 12 Skeletons, 12 are automatically replaced with 1 Bone Dragon, once per combat. This conversion resolves before other Necromancy conversion perks. Consume the 12 Skeleton equivalents from Champion/unclassified contributions first, then Elite contributions, then Core contributions; only remaining contributions may fund the later conversions.|
 
 When partial Resurrection restores a stack with mixed casualty causes, it restores
 the most recent usable casualties first. Preserve that casualty order and damage
