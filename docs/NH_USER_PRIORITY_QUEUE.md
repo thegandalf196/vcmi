@@ -1356,7 +1356,7 @@ Re-poll this exact new handle; notice success is not compiled-package acceptance
 
 ## UP-177 — Dungeon Portal of Summoning shared recruitment
 
-Status: Verified (source/native; commit and playable delivery pending),2026-10-03. Canonical row3283
+Status: Verified (source/native committed/pushed; playable delivery pending),2026-10-03. Canonical row3283
 requires a weekly choice of one owned external dwelling. Dungeon recruitment
 must expose that dwelling's current stock and deduct from the same stock;
 the Portal never creates or duplicates troops. Current CGameHandler weekly
@@ -1445,6 +1445,99 @@ review finds no blocker. Data/inventory19/19 and module drift pass. This closes
 the missing building principal path, without changing194/310 perk or84/93 rank
 counts. Phase2 retains rendered UI/ack behavior, broader ownership transitions
 and full AI-turn scheduling. Coherent source commit/push is next; no promotion.
+Source is committed/pushed asbd4f08c49483a1f62ab7955d0167ae6f2e041596.
+Matching notice37120294892 succeeds. Full Windows37118407677 remains live
+one6fd45213318b7a3b7812e4bd7ade712af404a8d and does not include Portal; do
+not dispatch a competing full build while that exact handle is running.
+
+## UP-181 — Logistics Mountaineer
+
+Status: Source/native verified; commit/push and playable delivery pending,2026-10-03.
+Initial map: Missing Advanced perk: rough and
+mountainous passable terrain imposes no additional movement penalty. Map
+canonical terrain identities, saved-rule eligibility, shared human/server/AI
+movement-cost calculation and existing terrain fixtures. Do not grant passage
+through impassable rock or globally remove other difficult-terrain penalties.
+Root owns terrain semantics/activation/builds; no implementation or coverage
+claim from this map. Do not repeat the already completed Roadmaster/Wayfarer map.
+Map complete: TurnInfo's saved-rule-gated terrain exemption feeds the common
+human/server/AI movement-cost path; ROCK remains impassable independently of
+cost. Core data defines ROUGH and SUBTERRANEAN but no MOUNTAIN terrain/tag.
+Asked whether mountainous means Subterranean or only Rough should qualify.
+Do not waive Lava/other terrain costs by analogy or repeat the shared-path map.
+User resolved terrain identity: Rough and Subterranean. Canonical text and
+registry description now agree. Shared-cost production and legal-acquisition
+human/AI fixtures are frozen; build/native acceptance and activation pending.
+Root's serialized core build51743 is live with12 jobs; log
+testing/UP181-UP182-core-build.log. No native acceptance or activation yet.
+Core51743 exits0. Serialized client32699 is live with12 jobs, log
+testing/UP181-UP182-client-build.log. Focused data/inventory19/19 and generated
+module drift pass. Both new perks remain planned pending fresh native evidence.
+Client32699 exits0. Test15320 exits1: the new direct-header fixture exposes
+BattleDeploymentState's missing direct BattleHex.h dependency for BFIELD_WIDTH.
+Root makes the header self-contained; repaired test build18902 is live with12
+jobs, log testing/UP181-UP182-test-repair-build.log. Final incremental freeze
+check is required before running tests. This is a compile failure, not runtime
+acceptance, and no perk is activated yet.
+Repaired18902 exits1 at the new runtime fixture: MasteryLevel is a namespace,
+not a type. The fixture owner repairs the helper parameter; product code remains
+unchanged. Resume incrementally after fixture freeze, not from a clean build.
+Fixture correction is frozen; resumed test19165 is live with12 jobs, log
+testing/UP181-UP182-test-resume-build.log. No native execution on stale binaries.
+Resumed19165 exits0. Final frozen both-target98551 exits0, recompiling33 final
+dependencies and linking client/tests. Designated tester now runs12 principal
+deployment/Mountaineer cases, then adjacent Tactics/Redeployment/Logistics if they
+pass. Production registration still planned pending those gates.
+Principal12/12 passes, zero skips,2.818s; adjacent deployment3/3 and Logistics3/3
+pass, zero skips,6.424s/1.975s. Combined adjacent6/6 also passes7.874s. Logs:
+testing/UP181-UP182-native.*, UP181-adjacent.*, UP182-adjacent.*, and
+UP181-UP182-adjacent.*. Binary SHA:
+68ddef848092cde5f5499d29175416e74228985b47a339d32be64ee4092c4fa1.
+Root activates exact Grand Tactics/Mountaineer registry and allowlist; data and
+inventory19/19 pass. Generic UI is Provisional; purpose-made icons Not done.
+Fixtures now distinguish original active registration from planned-only override;
+final fixture rebuild and production-active12-case rerun remain required.
+Final fixture build31761 exits0. Production-active native12/12 passes, zero skips,
+2.618s; XML proves all four Grand Tactics and two Mountaineer cases see active
+registry status with no activation override. Binary SHA:
+22315f6c31d82de5b1caef29f33354cfc2ae0317ed422cbc0300995b176c5087.
+Logs testing/UP181-UP182-active.*. Perks196/310,114 planned; Battlecraft6/10,
+Logistics6/10; ranks84/93 and combat60/67 unchanged. Source/native verified;
+rendered/actual full AI deployment and playable delivery remain separate.
+
+## UP-182 — Battlecraft Grand Tactics
+
+Status: Source/native verified; commit/push and playable delivery pending,2026-10-03.
+Initial map: Missing Expert perk: reveal enemy
+deployment before this hero finalizes ordinary deployment. Map the existing
+Tactics/Redeployment shared deployment phase, authoritative hidden-state/access
+policy, human confirmation flow and minimum AI hook. Preserve ordinary scenario
+and siege deployment legality; do not substitute a separate perk action or
+merely activate a tooltip. Root owns architecture; no edits or coverage claim
+from this map. Report only genuine contradictory sequencing requirements.
+Map complete: all enemy stacks are already rendered; existing initial phase
+ordering is hardcoded attacker then defender. Grand Tactics requires sequencing,
+not a new secrecy/reveal action. Asked for the both-holder tie rule and whether
+the later Redeployment move is included. A holder without Basic Tactics should
+still use the ordinary one-row area, not gain the two Tactics extension rows.
+Root selects the unblocked prerequisite: generic saved initial-first-side
+ordering in BattleDeploymentState, defaulting to attacker for old/current
+ordinary battles. Preserve final-relocation order, authoritative transitions,
+callback routing and old-format loss guards. This foundation does not activate
+Grand Tactics or claim its complete coverage before the design answers.
+User resolved both-holder ties to normal attacker-then-defender order and scope
+to initial deployment only. Canonical text and registry description now agree.
+Generic saved ordering and setup source are frozen; actual authoritative
+deployment fixtures, build/native acceptance and activation remain pending.
+Independent source review found a missing outer BattleStart downgrade guard;
+root added it before payload, matching state/BattleInfo/deployment-update guards.
+Current core build51743 does not constitute fixture/native or UI acceptance.
+Four actual deployment fixtures are frozen, including exact immediately-prior
+save-version BattleStart zero-byte rejection. Independent final review finds no
+blocking issue; broader control/rendered handoff interactions are Phase2 deferrals.
+UP181's shared evidence above also covers this perk: active native12/12, zero
+skips, independent review no blocker and Battlecraft6/10. No rendered or playable
+acceptance is inferred from native movement/deployment tests.
 
 ## UP-178 — Warcasting Master Synthesis
 
@@ -1532,6 +1625,57 @@ Full37108695052 subsequently succeeds on003cd49. Root dispatches full Windows
 37118407677 one6fd452 after matching notice success; queued at dispatch. It
 includes Master Synthesis, not the dirty Portal implementation. Re-poll that
 exact handle, rather than creating a competing full job.
+Full Windows37118407677 now succeeds on exact e6fd45213318b7a3b7812e4bd7ade712af404a8d.
+This build includes Master Synthesis but excludes the later Portal source and
+current uncommitted Grand Tactics/Mountaineer work.
+
+## UP-183 — Necromancy Corpse Preservation
+
+Status: Bounded read-only map,2026-10-03. Missing Basic perk: ordinary magical
+damage casualties remain eligible for Necromancy unless an effect explicitly
+invalidates remains. Current runtime reads the perk but the coverage audit
+reports no eligibility effect. Map casualty provenance from actual damage
+through BattleResult/Necromancy, explicit corpse-destruction exclusions and
+minimum AI/value seams. Do not treat disintegrated casualties as eligible or
+limit the implementation to an inert registration flag. Root owns architecture
+and activation; no source changes or coverage claim from mapping.
+Map complete: ordinary magical deaths already qualify without the perk and
+the selected flag is only copied into the result summary. Explicit unusable
+remains from Disintegrate are correctly separate. Asked whether to exclude
+ordinary magical casualties without the perk or retain the baseline and redesign
+the redundant perk. A meaningful gating implementation would require saved
+per-casualty damage provenance (including restoration/form consistency), not
+an inert flag activation. Do not change baseline eligibility silently.
+User explicitly approved excluding ordinary magical casualties without Corpse
+Preservation. Disintegrate remains excluded even with the perk. Integrated this
+decision into the canonical Markdown and registry description. Runtime is still
+unchanged and the perk remains planned: next implement saved casualty provenance,
+restoration consistency, authoritative result filtering and focused real-damage
+tests. Do not claim this documentation decision implements the perk.
+Follow-up trace confirms common Lua spell damage currently reaches health as
+OTHER, despite native damage paths carrying explicit SPELL/PHYSICAL provenance.
+Both visible and original Battle Form health need the actual damage nature;
+Disintegrate destruction remains independent. A new genuine ambiguity is partial
+Resurrection after mixed physical/magical deaths: current aggregate restoration
+does not identify which casualties returned. Asked whether restoration takes
+most recent, physical-first or magical-first casualties. Do not silently choose
+an allocation, activate an inert perk, or claim the no-resurrection case is full
+coverage. Continue the unblocked UP181/182 acceptance meanwhile.
+User resolved restoration allocation: most recent usable casualties first.
+Integrated into the canonical Necromancy section. Restore in reverse casualty
+order, retain damage nature for remaining corpses, and assign the new cause on
+subsequent death. Explicit destroyed remains remain non-restorable. This resolves
+the design blocker; a saved ordered casualty ledger is now the next foundation,
+not a scalar magical-death counter with arbitrary restoration allocation.
+Root selects ordered usable casualty cohorts with damage nature and temporary
+restoration identity. Permanent restoration removes newest usable deaths;
+one-battle restoration keeps their prior cause/order for expiry, while re-death
+replaces the old identity with the new cause. Battle Form original-health ledger
+owns provenance; the transformed health view is only the HP projection. Legacy
+in-progress saves cannot reconstruct prior causes: retain unknown prior deaths
+as OTHER (legacy eligibility), never fabricate magical provenance. New damage
+receives explicit classification. Save/network loss guards must preserve ordered
+state. Implementation starts after UP181/182's frozen acceptance/commit boundary.
 
 ## UP-180 — Spellcraft Counterpressure
 

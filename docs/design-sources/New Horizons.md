@@ -4020,7 +4020,7 @@ Skill progression
 |Redeployment|Advanced|After both armies complete initial deployment, this hero's normal deployment interface remains open for one final relocation of a friendly stack to another legal deployment hex before the first Creature Activation. No separate perk action is created.|
 |Passing Lines|Advanced|Friendly stacks may move through hexes occupied by friendly stacks, provided they end movement in a legal empty position.|
 |Rapid Response|Advanced|Once per round after an enemy Creature Activation ends, if friendly stacks are still Waiting, the waiting friendly stack scheduled latest in the current initiative order automatically takes its delayed activation next.|
-|Grand Tactics|Expert|Enemy deployment is revealed before this hero's deployment is finalized. The hero then completes the ordinary deployment phase with full knowledge of the enemy formation.|
+|Grand Tactics|Expert|The hero completes initial deployment after the opponent's eligible initial deployment phase. If both heroes have Grand Tactics, initial deployment keeps the normal attacker-then-defender order. This changes initial deployment only; the later Redeployment stage is unchanged. A holder without Tactics uses the ordinary one-row area, not Tactics' two additional rows. Scenario restrictions and the ordinary deployment confirmation flow remain in force.|
 |Battlefield Mastery|Expert|The first friendly stack each round to Wait or Defend receives double the normal Battlecraft rank bonus for that action.|
 
 
@@ -4509,7 +4509,7 @@ Logistics governs strategic movement: roads, difficult terrain, sea travel, emba
 |Scouting|Basic|Adventure-map sight radius increases by 5 hexes.|
 |Forced March|Basic|Once per day after exhausting normal Movement, gain additional Movement equal to 10% of maximum Movement. The army begins its next combat that day with -1 Morale during round 1.|
 |Roadmaster|Advanced|Movement cost while travelling on roads is reduced by an additional 25% relative to the normal road cost.|
-|Mountaineer|Advanced|Rough and mountainous passable terrain imposes no additional movement penalty.|
+|Mountaineer|Advanced|Rough and Subterranean terrain impose no additional movement penalty. Impassable Rock remains impassable; other terrain penalties are unchanged.|
 |Rapid Embarkation|Advanced|Embarking or disembarking costs only 10% of maximum daily Movement.|
 |Pursuit March|Advanced|After winning a combat, recover 10% of maximum daily Movement. Once per day.|
 |Wayfarer|Expert|Passable terrain can never cost more than 125% of its base clear-terrain movement cost.|
@@ -4852,7 +4852,7 @@ Necromancy converts eligible enemy casualties into permanent Undead after victor
 |Perk|Requires|Effect|
 |---|---|---|
 |Bone Collector|Basic|Necromancy raises an additional +5 percentage points of eligible casualties as Skeletons.|
-|Corpse Preservation|Basic|Casualties caused by ordinary magical damage remain eligible for Necromancy unless an effect explicitly destroys or invalidates remains.|
+|Corpse Preservation|Basic|Casualties caused by ordinary magical damage become eligible for Necromancy. Without this perk, ordinary magical casualties are excluded. Effects that explicitly destroy or invalidate remains, such as Disintegrate, remain excluded even with the perk.|
 |Dark Conversion|Basic|When resolving Necromancy, every complete group of 3 Skeletons generated from eligible Core-tier casualties is automatically raised as 1 Zombie instead.|
 |Black Harvest|Basic|After Necromancy raises at least 10 creatures, recover 1 Mana per 10 creatures raised, up to 10 Mana.|
 |Soul Harvester|Advanced|When resolving Necromancy, every complete group of 6 Skeletons generated from eligible Elite-tier casualties is automatically raised as 1 Wight or the equivalent Necropolis Elite defined by the faction roster.|
@@ -4862,6 +4862,10 @@ Necromancy converts eligible enemy casualties into permanent Undead after victor
 |Master of Bones|Expert|Skeletons raised by Necromancy are raised as their upgraded form when the appropriate Necropolis upgrade is available to the player.|
 |Lord of the Dead|Expert|After defeating an army containing at least one Champion-tier living creature, if the base Necromancy result contains at least 12 Skeletons, 12 are automatically replaced with 1 faction-defined high-tier Undead, once per combat. This conversion resolves before other Necromancy conversion perks.|
 
+When partial Resurrection restores a stack with mixed casualty causes, it restores
+the most recent usable casualties first. Preserve that casualty order and damage
+nature when accounting for the remaining corpses; destroyed remains are never
+restored. Creatures that die again acquire the cause of their new death.
 
 
 ###### Stronghold — Bloodrage
