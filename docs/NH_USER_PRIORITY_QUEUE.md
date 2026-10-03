@@ -843,6 +843,87 @@ detached/JSON copies. Asked whether player-chosen Teleport/Blink count as
 voluntary movement; await that genuine wording choice before implementation.
 Tactics acceptance remains unblocked and takes priority.
 
+## UP-159 — Battlecraft Rapid Response
+
+Status: Bounded read-only preparation, 2026-10-02. Once per round after an
+enemy Creature Activation ends, the waiting friendly stack scheduled latest
+in the current initiative order takes its delayed activation next. Map the
+authoritative activation-end boundary, initiative selection, consumed-round
+state, save representation and detached AI projection. This reorders an
+existing delayed activation; it must not grant another activation or consume
+the opportunity for an invalid recipient. No source edits while UP-158's
+combined build is frozen. Return concrete seams and genuine design ambiguities;
+root selects architecture before implementation and activation.
+Map complete: use true completed-activation boundaries in onActionMade, not a
+blanket activateNextStack hook. Select the reverse-most eligible friendly waiter
+from battleGetTurnOrder's current-round queue, preserving initiative/tie rules.
+WAIT and same-activation Pursuit/ranged/Gating continuations are not completions.
+The unresolved timing choice is whether Rapid Response precedes immediately
+earned new activations (Morale, Quartermaster, Second Wind) or follows them.
+Interrupting those needs typed saved resumption rather than discarding an earned
+activation. Ask the user; no registration change until that choice is resolved.
+Binary CStack serialization omits existing runtime Wait state; a new per-side
+used-round marker alone cannot establish full midbattle save fidelity.
+
+## UP-158 — Battlecraft Redeployment
+
+Status: Verified (source/native; commit and playable delivery pending),2026-10-02. Advanced perk: after
+both armies complete initial deployment, retain the hero's normal deployment
+interface for exactly one final relocation of a friendly stack to another legal
+deployment hex before the first Creature Activation. Reuse the independent
+deployment descriptor and authoritative whole-footprint movement guards; do not
+grant a separate perk/Hero Action. Map stage transition, one-move consumption,
+saved/packet representation and minimum human/AI handoff. Root chooses the
+generic architecture before edits. Other mapped Battlecraft perks await their
+recorded narrow rulings; no source activation or coverage increase from mapping.
+Map complete and bounded implementation assigned. Root extends the generic
+descriptor with separately versioned final-relocation ranges/completion flags;
+all initial phases precede final phases, attacker then defender. A final-only
+hero receives the normal base range1; Tactics extends that range to3. Existing
+scenario restrictions and formation-enabled setting still apply. Runtime owns
+setup/guards/accepted-action transition, UI/AI owns existing phase consumers,
+tester owns a new isolated fixture. An accepted position-changing WALK consumes
+the opportunity automatically; END passes; no-op/invalid moves do not consume.
+Opening effects and first activation wait for all phases. Preliminary descriptor
+review finds no blocker; parent serialization pre-byte guards and activeDistance
+projections are mandatory. Registration remains planned, verified184/310.
+Production runtime and existing human/AI phase consumers are frozen. Review
+repairs same-controller initial-to-final UI selection; AI skips unchanged
+destinations and passes if an alive request causes no displacement. Server
+rejects unreachable/no-op final destinations before StartAction and retains the
+opportunity after a surviving zero-displacement outcome. One proposed trap case
+combines two Advanced Battlecraft perks and is not legally selectable; do not
+forge that selection to claim principal evidence. Dead-before-displacement and
+broader trap/callback interactions are Phase2. Four focused native cases use
+legal progression with a fixture-local planned-to-active registry override;
+production registration remains planned until acceptance. Root registers the
+fixture and begins one serialized12-job combined build; no stale native run.
+Combined95627 terminates with exit1 at TacticsHandler.cpp: the new descriptor
+query needs IBattleInfo's direct defining include, not its forward declaration.
+The AI owner has this bounded repair. Data/inventory19/19, module drift and
+package preflight91/91 pass. Preserve the failure log; native acceptance and
+activation remain pending. Full Windows37087488369 is still live on older
+0721ee12b; the Defend-source notice37088119439 has succeeded.
+Direct include repair is frozen. Serialized combined retry56408 is confirmed
+running with12 jobs, log build/new-horizons-linux/testing/UP158-redeployment-
+build-retry.log. Re-poll that exact handle before native acceptance or another
+build; observation timeout is not terminal. All delegated source/fixture/review
+lanes have completed. Required next gate: four Redeployment cases plus eight
+Tactics deployment and three Defend lifetime cases in the active private profile,
+with zero skips. Activate/register module and inventory only after principal
+acceptance, then commit/push; verified184/310 remains unchanged meanwhile.
+Retry56408 terminates with exit0 at517/517. Focused native acceptance passes
+15/15 in25.735s, zero failures/skips, using the private active module profile.
+All four Redeployment cases, eight Tactics deployment and three Defend lifetime
+cases pass. Production registration is now active; module/inventory synchronization
+and final focused checks follow. Coverage185/310,125 planned; Battlecraft5/10.
+No graphical handoff, full resume, rare trap/death or actual AI certification is
+claimed from this gate. No snapshot is promoted.
+Final activation gate passes4/4 in1.564s, zero skips; data/inventory19/19,
+module check and package91/91 pass. Both-target incremental build exits0.
+Independent activation review finds no blocker. Root integrates the coherent
+source checkpoint; Windows37087488369 still runs on older0721ee12b.
+
 ## UP-157 — Battlecraft Pre-emptive Strike
 
 Status: Bounded read-only preparation,2026-10-02. Missing Advanced perk: the
@@ -915,6 +996,10 @@ Test binary SHA-256:
 Prerequisite is source/native verified; Battlefield Mastery remains planned and
 coverage184/310 is unchanged. Client pose across rollover, extra-activation/Stasis
 expiry and broader vanilla/save interactions are Phase2; no snapshot promotion.
+Prerequisite source is committed/pushed as5f79306283cdb241db1679ea88de7cfe7c1473de;
+worktree was clean after push. Notice37088119439 is monitored on that revision.
+Full Windows37087488369 remains live on older0721ee12b and excludes this repair;
+preserve it and do not infer repair delivery from the older Windows job.
 Mastery map also exposes a genuine machine-eligibility wording gap; asked whether
 an ineligible War Machine consumes the award. Do not invent that exception.
 
