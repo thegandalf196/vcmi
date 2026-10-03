@@ -18,6 +18,32 @@ working sequence.
 
 ## Maintenance contract
 
+2026-10-03 UP189 accepted source/native: Lord of the Dead captures original
+living-Champion presence, consumes12 residual/Elite/Core equivalents before
+other conversions, and delivers one exact Bone Dragon via atomic Hero/Ossuary
+admission. Both targets build94998/27283. Principal40/40 passes9.199s,
+adjacent12/12 passes2.615s, zero skips; normal Expert selection/no override,
+actual armies and current/older wire are verified. Binary SHA256:
+690acea167f885c0dae1d4111d28705b43e32de4c4e8be577f2f76e1264459cb.
+Data/inventory19/19, module/UI guard and independent reviews pass.
+Coverage203/310 accepted,107 planned; Necromancy10/10; faction62/90,28 planned.
+Broader Champion/form/AI interactions and rendered feedback remain Phase2;
+dedicated art is missing. No playable promotion. Next UP129 Diplomacy.
+Full Windows37142169494 succeeds onb384196c1; next release candidate will
+include8822239c4 and this checkpoint after matching notices.
+
+2026-10-03 UP189 source implementation is frozen on8822239c4: original living
+Champion roster capture,12-equivalent residual/Elite/Core depletion before
+Dark/Soul, exact Bone Dragon fourth output, atomic Hero/Ossuary admission and
+packet-driven feedback. Registry active for focused acceptance only; accepted
+coverage stays202/310 and Necromancy9/10. Root client94998 runs12 jobs,
+logUP189-client-build.log; native fixtures and Astra review remain in progress.
+Data/inventory19/19 and UI source guard pass. No playable promotion.
+Client94998 exits0. Independent production and fixture reviews report no
+blocker; test27283 is live with12 jobs, logUP189-test-build.log. Production
+and fixtures remain frozen through compile/native acceptance. Matching Windows
+notices37144633554 succeeds for8822239c4; older full37142169494 remains live.
+
 2026-10-03 UP188 accepted source/native: whole-batch Ossuary town delivery,
 Hero Leadership/slot overflow, foreign-town exclusion and atomic nearest-town
 failure. Client retry67941 and test retry79662 exit0; principal37/37 passes
