@@ -843,6 +843,105 @@ detached/JSON copies. Asked whether player-chosen Teleport/Blink count as
 voluntary movement; await that genuine wording choice before implementation.
 Tactics acceptance remains unblocked and takes priority.
 
+## UP-161 — Learning Field Study
+
+Status: Bounded read-only preparation, 2026-10-03. Advanced perk grants +25%
+additional Experience for defeating enemy heroes or wandering armies whose Army
+Value exceeded this hero's army at battle start. Map battle-start raw Army Value,
+opponent-kind eligibility, winner/casualty XP publication and ordinary Learning
+composition, persistence and AI visibility. No edits while UP160 builds. Do not
+compare surviving armies or perceived hero-adjusted strength, include unrelated
+guardian battles, or replace the authored condition with a generic XP bonus.
+Root chooses architecture after the map; no activation/count from preparation.
+Map complete: snapshot each actual side army's raw getArmyStrength at setup,
+not Diplomacy-perceived or hero-adjusted strength. Existing SideInBattle saves
+identities but has no start-value snapshot; append versioned state with old-read
+defaults. Qualifying opponent has a fighting hero or map Obj::MONSTER identity;
+exclude other guards/town/garrison armies. Winning hero's battle XP is composed
+in BattleResultProcessor::endBattle, then calculateXp applies the existing
+HERO_EXPERIENCE_GAIN_PERCENT total (100+Learning rank). A conditional25 percentage
+point contribution follows that existing composition; only the non-draw winner
+receives the grant. Ordinary postbattle XP display and generic AI perk selection
+already consume the result; no separate action/UI currency is needed. Root will
+partition setup/state, result award and isolated result/AI fixtures after UP160
+acceptance. No edits or activation from this read-only map.
+
+## UP-160 — Estates Investor
+
+Status: Verified (source/native; playable delivery pending), 2026-10-03. At the start of each week,
+snapshot the hero owner's current treasury: Estates daily income for that week
+increases by50 Gold for each full5,000 Gold, capped at250 daily Gold. Map the
+existing weekly publication, hero income, saved hero state and shared AI quote.
+Do not recalculate against treasury on every income/render/AI update, apply
+weekly interest instead of daily income, or grant the perk retroactively at
+midweek selection. Root chooses architecture after mapping. Required evidence:
+legal acquisition, exact threshold/cap, weekly refresh, current owner, daily
+income receipt, persistence and minimum shared AI visibility.
+Map complete; root chooses a typed NewTurn per-hero weekly snapshot plus a saved
+hero daily-Gold value, default0. Weekly refresh includes clearing inactive or
+unowned old values and seeds day0->day1 without a special first-day payout.
+Sample pre-packet treasury, consistently with Financier; the new week's first
+regular receipt uses the prospective snapshot, not the old week's value.
+Income retains ordinary current-owner handicap and AI-income policy; the bonus
+is hero-bound for that week. Shared dailyIncome feeds Nullkiller without a second
+treasury calculation. Runtime owns hero/turn packet/visitor/processor files,
+tester owns an isolated server fixture, AI worker owns only the existing Estates
+AI fixture; root owns serialization version, CMake, activation and integration.
+Production and fixtures are source-frozen. The existing TavernHeroesPool daily
+loop clears expired Investor snapshots at week start before skipping unused
+heroes, preventing stale bonuses after a later rehire. Five server cases and
+three new AI cases are staged; rank income is measured separately from Investor.
+Data/inventory19/19, module drift and diff checks pass. Combined client/test
+build81506 runs with12 jobs, log testing/UP160-investor-build.log. Registration
+remains planned and coverage185/310 unchanged. Do not run a stale native binary.
+Review finds one fixture-only blocker: the old-format pre-byte hero assertion
+serializes a pointer, whose metadata is emitted before the hero guard. After
+81506 terminates, change only that guard test to serialize *firstHero and retain
+the separate pointer roundtrip. Do not weaken the zero-byte object guard or
+claim graph-level atomic serialization. The current candidate is not native
+accepted; build retry after that bounded fixture repair before the14-case
+Investor/Estates-AI/Financier gate. No production blocker found by review.
+Build81506 terminates with exit1: the new fixture has a redundant namespace
+close and missing defining ObjectTemplate/bonus updater/propagator includes for
+hero serialization. The fixture owner repairs those and the pointer-guard test
+without changing production or dropping persistence checks. Original build log
+is retained; no native acceptance or active coverage yet. Rebuild both targets
+once the repair is frozen, then run the14-case focused gate.
+Fixture repair is frozen: reuse FullGameSnapshotTypes.h, remove the redundant
+closing namespace and serialize *firstHero for the guarded-payload assertion.
+Pointer roundtrips and persistence checks are retained. Combined retry45920
+is confirmed live with12 jobs, log testing/UP160-investor-build-retry.log.
+Package preflight91/91 passes. Re-poll45920 before native execution or another
+build; stale binaries are not acceptance. Registration remains planned.
+Retry45920 terminates with exit1 on the new AI fixture's mutable town list.
+The quote needs a const PlayerState view, not a production API change. The AI
+owner repairs only the fixture; the server fixture now compiles. Hold native
+execution until a further serialized both-target retry exits0. Preserve both
+failed logs; registration and verified coverage remain unchanged.
+Combined retry2 40823 exits0 for both client and native-test targets, with12
+jobs; log testing/UP160-investor-build-retry2.log. The frozen candidate's14-case
+Investor/Estates-AI/Financier gate is running. No stale binary is used. Keep the
+registry planned until the principal gate completes; no playable promotion.
+Principal gate runs14 cases:13 pass,1 fails,zero skips in131.136s. The sole
+failure compares standalone copied-hero income to a live-hero rank-income
+baseline. CMemorySerializer::deepCopy does not rebuild the full bonus graph;
+CBonusSystemNode exports restored bonuses only for loadingGamestate. Diagnose
+using the copy's own baseline and preserve explicit active-perk, saved snapshot
+and exact250 income-delta assertions. Full-game resume remains Phase2, not
+acceptance implied by this isolated hero roundtrip. Preserve failed log/XML.
+The bounded copied-hero assertion is repaired; retry3 both-target build exits0
+and the single failed case passes1/1,zero skips in10.700s. Earlier13 passing
+cases remain unchanged. Investor registry/module is now active; data/inventory
+19/19, module drift and package91/91 pass. Activated build exits0 and five-case
+native gate runs against the frozen source. Final Astra review finds no blocker;
+full-game resume, unusual owner/rehire paths, rendered delivery and comparative
+AI valuation are Phase2. Coverage186/310 perks,124 planned,Estates5/10;
+ranks84/93 and faction perks49/90 unchanged. No snapshot promotion or GUI run.
+Final activated Investor gate passes5/5,zero skips in68.870s. Both native logs
+and XMLs retain the initial failure and bounded successful retry. Phase1
+principal implementation is accepted; next missing unblocked item is UP161
+Field Study. Source commit/push follows, with no playable-delivery claim.
+
 ## UP-159 — Battlecraft Rapid Response
 
 Status: Bounded read-only preparation, 2026-10-02. Once per round after an
@@ -927,6 +1026,8 @@ Source is committed/pushed as27ae52f378984c8be70bf0dbf0b4ac483f92a0db;
 the worktree is clean at that checkpoint. Notice preflight37090616619 is queued
 on that exact source. Preserve the live older full Windows37087488369 and
 dispatch the new full build only after it terminates and the new notice passes.
+Older full37087488369 succeeds; notice37091288150 succeeds on delivery-notes
+source213b4a35e. New full37091363403 is queued on213b4a35e, excluding UP160.
 
 ## UP-157 — Battlecraft Pre-emptive Strike
 
