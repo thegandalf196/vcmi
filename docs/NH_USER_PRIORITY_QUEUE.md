@@ -1260,6 +1260,114 @@ need saved target state and branch-local AI transitions. No source activation,
 build or coverage increase from this map. Shadow Assault acceptance remains
 the preceding completed checkpoint.
 
+## UP-175 — Shroud Night Prowler
+
+Status: Verified (source/native; playable delivery pending),2026-10-03. A stack using Ghost Walk to pass
+through an enemy stack's occupied hexes gains10% damage on its next attack
+that activation. Map actual accepted movement path, enemy occupancy/controller,
+next-attack consumption, activation expiry and shared AI movement/damage paths.
+Do not grant the bonus for ordinary movement, friendly occupancy, merely ending
+adjacent, or attacks in later activations. Deep Flank UP174 awaits its positional
+versus actual-hit-history clarification. No source activation/count from mapping.
+Map complete, no material design ambiguity. Root selects two existing melee/
+ranged PERCENTAGE_DAMAGE_BOOST bonuses of10, Shroud Skill source, unique keys,
+and STACK_ACTIVATION|UNTIL_ATTACK duration. Apply only after an actually committed
+non-flying, non-deployment Ghost Walk segment crosses a currently hostile living
+footprint, before an associated attack. Existing accepted-hit and activation-end
+expiration handle consumption and unused opportunities. Shared callback route
+predicate feeds independent AI candidate/replay projection, branch isolation and
+cache invalidation. Runtime, AI and isolated fixture have separate Luna owners;
+Astra reviews architecture/source. Root owns registration/builds/Git. No polling,
+new unit field or gameplay schema is intended; coverage192/310 remains unchanged
+until native acceptance and production activation.
+Independent architecture review finds no blocker; it requires first-strike AI
+consumption of both subtype bonuses and actual committed crossing, not endpoint
+inference. Full Windows37102336709 now succeeds on025ea810a. Matching notice
+37105388534 succeeds on Shadow Assaultbc979fdcd. Latest committed documentation
+checkpoint3e0e96df6 gets its own notice before a subsequent full build; dirty
+Night Prowler implementation is not included in that committed-source delivery.
+Latest-head notice37105938548 succeeds on3e0e96df6; root dispatches full Windows
+37106017377 on that exact committed revision after the preceding full build
+is terminal. It includes Evasive/Ambusher/Shadow Assault, not dirty UP175.
+Capture this same handle's terminal result before replacing its delivery lane.
+Runtime source is frozen in Shroud helpers, shared callback and authoritative
+movement hook. Independent review finds no blocker: typed bonuses apply after
+an actually committed hostile crossing and before the associated attack. Root
+starts only the frozen shared vcmiMain target while independent AI/fixture
+ownership remains active; no full client/test or coverage claim follows yet.
+Exact core build53687 uses12 jobs and log
+testing/UP175-night-prowler-core-build.log. Re-poll this same handle; do not start
+a second build while it is live.
+Core53687 exits0. Root's pre-freeze AI inspection catches unconditional per-
+candidate pathfinding even for heroes without Night Prowler, and missing pending
+defender-effect projection. Sole AI owner gates route work before pathfinding and
+completes preemptive/retaliation/whole-hit-set consumption. This is a source
+readiness correction, not an executed native failure or a coverage increase.
+AI source is frozen; exact-route prediction is gated before pathfinding and
+consumption now follows each striker's complete hit set. Root starts a serialized
+client build on frozen runtime/AI while the isolated unregistered fixture owner
+finishes its readiness corrections. No native test executes on stale bytes.
+Client handle17500 uses12 jobs, log testing/UP175-night-prowler-client-build.log.
+Independent AI review finds two blocking compile surfaces after dispatch:
+BEx lacks its local pending-bonus helper, and several candidate mutations call
+removeUnitBonus on CUnitState instead of branch-local StackWithBonuses. Retain
+the first build result; the sole AI owner repairs only after it is terminal,
+then root rebuilds and retests rather than treating this as native acceptance.
+Client17500 is terminalexit1. The retained log confirms four invalid candidate
+mutation receivers; the missing BEx helper is a separate source-review finding.
+Root assigns sole-owner repair through getForUpdate's StackWithBonuses, not a
+new CUnitState method. The repeat UP171 constraint is recorded in release lessons.
+Fixture source-only corrections use const BattleHex values, a non-flying mover,
+the real log wording and persistent Backstab for isolated repeat-hit baselines.
+The bounded AI receiver/scope repair is frozen and independently reviewed with
+no remaining blocker. The isolated three-case fixture is frozen and registered:
+accepted crossing/first versus follow-up damage/AI branches; unused move-only
+expiry with friendly/adjacent/flying negatives; typed current Bonus roundtrip.
+No invented old-writer rejection is claimed for these existing duration bits.
+Root proceeds to serialized both-target retry and principal native acceptance.
+Exact retry90975 uses12 jobs, log testing/UP175-night-prowler-retry-build.log.
+Re-poll this same handle before a native run or another build.
+Retry90975 exits0; client and vcmitest link, with the new fixture compiled at
+221/317. The designated tester now runs only the three Night Prowler principal
+cases in the private native profile. No activation/count until that gate passes.
+Principal native exits0:3/3 pass, zero skips, total1.110s and suite0.825s.
+Logs testing/UP175-night-prowler-native.log/XML. Binary SHA-256:
+537d5121058c8e16be5a5c1eab738ca0a4d9177a63984128650e3e3e9ac1c785.
+Accepted crossing/first-strike/unused expiry and minimum AI route/replay branches
+work. Root activates the exact perk and data allowlist, regenerates the module,
+and records honest Provisional UI/Not done art. Activated native gate remains
+pending; no immutable playable or rendered acceptance is claimed.
+Activated data/inventory19/19, module check and both-target incremental build
+pass. Production-active native exits0:3/3, zero skips, total1.110s,suite0.833s;
+its planned-only registry override is bypassed. Binary SHA remains
+537d5121058c8e16be5a5c1eab738ca0a4d9177a63984128650e3e3e9ac1c785.
+Final independent activation review finds no blocker and recounts193/310 active
+perks,117 planned; faction55/90,35 planned; Shroud6/10 and ranks84/93 unchanged.
+The flying negative is a shared predicate check, not a flown movement action.
+Broad hazard/control/form, full-save and rendered-delivery checks remain Phase2.
+Root proceeds to coherent source commit/push; no immutable playable promotion.
+
+## UP-176 — Shroud Vanish
+
+Status: Bounded read-only map,2026-10-03. Destroying an enemy with a flanking
+melee attack permits movement up to half Speed, without another attack. Map
+accepted kill classification and existing movement-only follow-up state,
+authoritative legality/action economy, required UI and AI. Do not substitute
+an extra full activation or force automatic movement. Night Prowler's frozen
+build90975/native acceptance remains the immediate priority; no edits/activation
+or coverage claim from mapping. Record any genuine rounding/stacking ambiguity.
+Read-only map is complete. Existing Pursuit supplies a saved, authoritative
+same-activation move-or-decline continuation with movement-only UI/AI, but its
+unused-approach allowance is not Vanish's half-Speed allowance. Existing half-
+Speed rules floor positive integers. Accepted direct nonsecondary flank/kill
+must be captured before/after the hit packet; broad destroyedEnemy includes
+collateral and is insufficient. Asked whether retaliation kills also grant a
+follow-up, and whether simultaneous Pursuit/Vanish allowances use their maximum
+or sum. Own-activation question explicitly includes a direct Cleave strike.
+Do not silently inherit Offense ownership or schedule an extra full activation.
+No source edit/activation/count from the map; retain the existing continuation
+seams for implementation after the narrow rulings.
+
 ## UP-170 — Shroud No Escape
 
 Status: Source/native verified and active,2026-10-03. A target suffering a flanking
