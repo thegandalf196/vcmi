@@ -18,6 +18,38 @@ working sequence.
 
 ## Maintenance contract
 
+2026-10-03 UP187 accepted: Death Lord and Grave Knowledge extend captured
+casualty eligibility at their specified independent rates, feed category-based
+automatic conversions and preserve atomic outputs. Root client13126 and
+test86643 pass; test-only retry17335 repairs the faster Vampire's legal action
+window without changing production. Final principal32/32 passes6.716s and
+adjacent12/12 passes2.607s, zero skips; original11/12 failure is retained.
+Production-active/no override, ordinary rank/perk selection, actual army counts,
+actual spell provenance and guarded current/older wire cases are verified.
+Binary212ea29fb37c2f95a844e452174c6b5db40da917d08d432abf4b57cacd77d07c.
+Data/inventory19/19, generated module/UI guard and Astra review pass.
+Coverage201/310 active,109 planned; Necromancy8/10; faction60/90,30 planned.
+Deferred: broad interactions, full AI play, rendered acceptance and dedicated
+art. No playable promotion. Next UP188 Ossuary; UP189 output species awaits
+user choice. Full Windows37136224312 succeeds on older e8f2cb4b5.
+Subsequent user choice resolves UP189: Bone Dragon is the output. Canonical
+row/registry identity are updated; paired UP188/189 implementation is next.
+
+2026-10-03 UP187 implementation: Death Lord/Grave Knowledge runtime, separate
+provenance-filtered capture, packet-driven result text and guarded appended wire
+fields are frozen. Registry is active for native acceptance, not yet counted as
+completed coverage. Data/inventory19/19, module generation and UI guard pass;
+independent Astra source review reports no blocker. Root client build13126 runs
+12 jobs, logUP187-client-build.log; focused native fixtures remain independent.
+Full Windows37136224312 is confirmed live on preceding e8f2cb4b5; preserve it.
+No local playable promotion or rendered acceptance is claimed. Next read-only
+preparation is Ossuary's owned-town fallback, without displacing this acceptance.
+UP188 scope resolved by user: both Leadership limits and unavailable army slots
+trigger fallback. Canonical source/hash and registry text are updated, still
+planned. Root interpretation uses normal visible town upper-army and atomic
+single-nearest fallback. UP189 Lord of the Dead map finds no explicit output
+species binding; asked Bone Dragon vs Ghost Dragon. Neither item is activated.
+
 2026-10-03 UP185 accepted: Master of Bones upgrades remaining Skeleton output
 only with a currently owned, built appropriate Necropolis upgrade. Configured
 upgrade/actual roster checks, atomic form-aware admission and explicit packet/UI
