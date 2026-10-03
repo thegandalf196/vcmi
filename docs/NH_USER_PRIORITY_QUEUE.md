@@ -1679,7 +1679,8 @@ No local playable promotion. Next is UP184's approved Wight conversion.
 
 ## UP-184 — Necromancy Soul Harvester
 
-Status: In progress (bounded read-only map),2026-10-03. Implement the canonical
+Status: Completed source/native,2026-10-03; playable delivery not claimed.
+Historical implementation trace follows. Implement the canonical
 Advanced perk's automatic conversion of complete groups of six Skeletons
 generated from eligible Elite casualties. Map category-specific generation,
 atomic multiple-output admission, post-battle feedback and minimum AI hooks.
@@ -1699,6 +1700,50 @@ User explicitly chose the named Wight. Canonical and registry descriptions now
 state that Wight remains Core-tier and only the input casualties are Elite-tier.
 The output ambiguity is resolved; the perk remains planned pending actual
 implementation after UP186's focused acceptance boundary.
+Implementation starts on committed e8f2cb4b5. Root selects the existing global
+base floor with separately floored Elite input and automatic six-Skeleton Wight
+groups; Core Zombie conversion remains independent and all remainders remain
+Skeletons. Capture explicit battle category rules and provenance-filtered
+casualties. Extend the authoritative result with Wight count and guarded wire
+representation, atomically admit all three outputs, and show actual result
+counts without frontend calculation. Three bounded Luna lanes own runtime,
+result-text/components and focused fixtures; root owns version/enclosing guards,
+activation, builds and Git. No coverage claim until native acceptance.
+Previous notices37135635152 succeed on e8f2cb4b5; previous full Windows build
+37127577580 succeeds on756d225818. Neither includes this new Soul source.
+Production runtime/UI/version integration is frozen; independent Astra review
+reports no blocking source finding. Soul is registered active for principal
+validation, not yet accepted as completed coverage. Data/inventory19/19 and UI
+result guard pass. Root client-only 12-job build95124 is running, with log
+UP184-client-build.log; focused fixtures are still being completed independently.
+Full Windows37136224312 runs committed e8f2cb4b5, not these uncommitted edits.
+Wight outputs append under NEW_HORIZONS_NECROMANCY_WIGHTS; older readers default
+zero, and unsupported nonzero outputs reject before result/outer payload writes.
+No local playable promotion or rendered acceptance is claimed.
+
+Client95124 exits0. Focused fixtures are frozen against the active production
+registry with no activation override. Root test build53850 runs12 jobs, log
+UP184-test-build.log. Independent final review has no blocker. Deferred Phase2:
+the combined category case checks group remainders but not fractional carry
+between category pools; broad full-AI play and rendered acceptance also remain.
+Native focused execution waits for this freshly rebuilt vcmitest binary.
+Test53850 exits1 on a fixture-only `final` declaration incompatible with Google
+Test's generated subclasses. Tester removes only that qualifier and freezes
+again; root resumed incremental build15042, logUP184-test-retry-build.log.
+Production sources remain unchanged. The regression lesson is recorded in
+NH_RELEASE_FAILURES.md; no stale-binary native acceptance is claimed.
+Final acceptance: retry15042 exits0. Luna tester principal20/20 passes4.193s
+and adjacent9/9 passes1.718s, zero skips. All five battle cases record active
+production registry/no override; four select Soul normally after Basic Dark
+Conversion and the negative control does not select it. Actual army/result
+counts, atomic rejection, direct/outer version reset and zero-byte downgrade
+guards pass. Final binary SHA-256:
+cf6fe68c13be8424f92e519508ddca19e1d6bb5d9f31f072b11fd553e6bc63f8.
+Data/inventory19/19, module check, UI guard and independent review pass.
+Coverage197->198/310 active,113->112 planned; faction56->57/90, Necromancy4->5/10.
+Broader interactions, fractional category carry, actual full-AI play/rendered
+acceptance remain Phase2. Dedicated art is missing. No playable promotion.
+Next is UP185 Master of Bones; full Windows37136224312 remains e8f2cb4b5 only.
 
 ## UP-185 — Necromancy Master of Bones
 

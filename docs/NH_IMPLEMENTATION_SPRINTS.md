@@ -18,6 +18,21 @@ working sequence.
 
 ## Maintenance contract
 
+2026-10-03 UP184 accepted: Soul Harvester raises the explicitly named Core Wight
+from complete groups of six Skeletons attributable to eligible Elite casualties.
+Independent Core Zombie conversion and global remainders are retained. Atomic
+three-output authority and explicit UI/wire counts exist for human/computer
+winners without conversion queries. Client95124 and test retry15042 pass;
+initial53850's fixture-only `final` failure is recorded, not concealed.
+Luna tester principal20/20 passes4.193s, adjacent9/9 passes1.718s, zero skips;
+production active/no-override properties present in all five battle cases.
+Binary cf6fe68c13be8424f92e519508ddca19e1d6bb5d9f31f072b11fd553e6bc63f8.
+Data/inventory19/19, generated module, result guard and Astra review pass.
+Coverage198/310 active,112 planned; Necromancy5/10; faction57/90,33 planned.
+Deferred: combined fractional carry, broader interactions, full-AI/rendered
+acceptance and missing perk artwork. No playable promotion. Next UP185 Master
+of Bones; existing full Windows37136224312 targets preceding e8f2cb4b5.
+
 2026-10-03 UP186 verified: Dark Conversion now automatically converts complete
 Core-derived groups only, retains global base rounding and all remainder
 Skeletons, and admits every output atomically. Human/computer winners share the
