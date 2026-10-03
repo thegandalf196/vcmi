@@ -1164,10 +1164,16 @@ immutable playable promotion. Final activation review/source checkpoint next.
 Final independent activation review finds no blocker and confirms the counts.
 Root proceeds to the coherent source commit/push; no package/runtime-GUI
 acceptance is inferred from that source checkpoint.
+Source is committed/pushed asdb96e718b3de383cf6c8cd8296b347ac0edfed89, push
+exits0 and the worktree is clean at the checkpoint. Matching Windows notice is
+dispatched on definitive-mvp; capture its exact handle before delivery claims.
+Full Windows37102336709 remains live on025ea810a; no competing full dispatch.
+Matching notice37104183936 succeeds on exactdb96e718b. Compile/package progress
+continues separately from source acceptance and does not certify Windows GUI.
 
 ## UP-173 — Shroud Shadow Assault
 
-Status: In progress (bounded read-only preparation),2026-10-03. The first
+Status: Verified (source/native; playable delivery pending),2026-10-03. The first
 flanking attack against each enemy stack ignores25% Creature Defense. Trace
 shared Creature-Defense calculation, accepted per-target consumption, marker
 persistence and AI branch/replay requirements. Do not replace this with Hero
@@ -1184,6 +1190,56 @@ Keep the attacking/controller side in marker identity so one side does not
 consume the other side's eligibility after control changes. Candidate/replay
 and defender-keyed cache history need the corresponding transitions. No new
 source edit/activation/count is claimed yet.
+UP172 is accepted and committed. Root selects distinct attacker/defender-side
+stacking keys on the target-carried hidden ONE_BATTLE/NONE marker, keeping
+current-controller first-enemy allowance independent between sides. Existing
+meleeDefenseIgnorePercent composes25 with Armor Piercer/Charge and only reduces
+Creature Defense. Shared prediction reads do not spend; accepted primary-hit
+application marks the target even if dead or no damage is dealt. Runtime owns
+Shroud helpers/shared damage/BattleActionProcessor, AI owns AP/BEx, tester owns
+one unregistered fixture and reviewer audits architecture/source. Root owns
+registration/builds/Git. Registry stays planned; coverage191/310 unchanged.
+Runtime is frozen and independently reviewed without a blocker. Root finds an
+AI cache-key mismatch during implementation: cached damage is keyed by unit IDs,
+not controller side. Therefore any target with recorded Shadow Assault history
+must bypass that cache after a control change, even when the new side lacks the
+perk. Sole AI owner fixes the parent-history predicate to ignore side for cache
+validity while keeping actual spent-marker eligibility side-specific. No broad
+control-matrix claim or gameplay amendment follows from that correction.
+Runtime/AI are now frozen and both independent reviews find no blocking issue.
+Root starts serialized client build10661 with12 jobs; log
+build/new-horizons-linux/testing/UP173-shadow-assault-client-build.log. Re-poll
+the exact handle before another build. Tester may edit only the unregistered
+new fixture; no native acceptance, activation or coverage increase yet.
+Client10661 exits0. The current production runtime/AI library links successfully;
+test registration/build awaits the isolated fixture freeze. Retain the build log
+and do not execute the previous test binary as Shadow Assault acceptance.
+Root pre-build fixture review catches a fatal-assert macro in a value-returning
+helper and a Castle defender incorrectly used for a Dungeon-locked perk. The
+sole fixture owner repairs typed failure handling and selects a distinct second
+allowed Dungeon hero; production faction/offer validation remains unchanged.
+No failed native run or test-build failure is claimed from that source finding.
+The repaired focused fixture is frozen/registered; final independent source
+review finds no blocker. Both legal acquirers are distinct Dungeon heroes and
+the helper uses typed failure handling. Root starts serialized both-target test
+build99818 with12 jobs, log testing/UP173-shadow-assault-test-build.log.
+Re-poll that handle before native acceptance. The initially observed AI header
+signature concern was transient; root confirms the frozen declaration/definition
+both take only defenderId. No production contract change was needed.
+Combined build99818 exits0. Principal native1/1 passes, zero failures/skips,
+test0.358s, wall0.67s. Logs testing/UP173-shadow-assault-native.log/XML;
+binary SHA-256 eb13b6ef7f9c69e416031ce74750cb7e7960eea303c1a551ade54c19dd84add1.
+Root enables the exact perk, data allowlist and honest UI/art inventory, then
+regenerates the module. Production-active native acceptance remains required;
+no immutable playable or rendered acceptance is claimed.
+Activated data/inventory19/19, module drift and both-target incremental build
+pass. Production-active native1/1 passes, zero failures/skips, test0.353s,
+wall0.66s; the fixture bypasses its planned-only override. Binary SHA remains
+eb13b6ef7f9c69e416031ce74750cb7e7960eea303c1a551ade54c19dd84add1.
+Final independent activation review finds no blocker and recounts192/310 active
+perks,118 planned; faction54/90,36 planned; Shroud5/10 and ranks84/93. Broad
+control/form/clone/full-save and rendered-delivery validation remain Phase2.
+Root proceeds to coherent source commit/push, not a playable promotion.
 
 ## UP-170 — Shroud No Escape
 
