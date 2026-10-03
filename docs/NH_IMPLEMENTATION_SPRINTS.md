@@ -18,6 +18,87 @@ working sequence.
 
 ## Maintenance contract
 
+Next Diplomacy mapping is complete (read-only Luna workers). Recruitment Pact
+must preserve the contacted offer's discount through its modal response; consume
+on the first contact even if unwilling, not only on a subsequent successful hire.
+Root will choose a query-scoped entitlement or atomic modal-resolution approach
+before releasing implementation. Legendary Reputation needs an explicit ruling
+on already-authored free joins. Mercenary Captain/Loyal Mercenaries require
+troop recruitment provenance through split/merge/transfer, not a stack-wide bool.
+Design review needed: mixed ordinary/recruited cohorts, casualty attribution and
+which completed combats count toward the first-three-combats benefit. Do not
+invent exact cohort ownership or activate these four perks from mapping alone.
+
+2026-10-03 weekly Diplomacy accepted: client10506 and test68471 exit0 with
+twelve build jobs. UP129-weekly-principal.log/XML establishes21/21 across three
+suites, zero failures/skips,5.119s. Test binary SHA256:
+cdbbb7cf064f63d3047d441cd6f3bccd00b26c043e67379d027c56eedf841ef0.
+Peacemaker protection, expiry, deliberate attack, precedence over Tribute,
+full-price Tribute removal, insufficient-Gold quota preservation, ordinary
+willing offers and versioned state validation pass. Independent Astra review
+has no blocking finding. Accepted perks207->209/310;101 planned;Diplomacy6/10.
+Ranks87/93 unchanged. Four missing perks: Mercenary Captain, Loyal Mercenaries,
+Recruitment Pact and Legendary Reputation. This is source/native acceptance,
+not rendered or playable delivery; no local snapshot promotion. Deferred
+guard/cursor/query and live AI integration findings remain recorded below.
+
+2026-10-03 continuation classifies the preceding turn as concrete progress:
+Envoy6ef610550 is pushed and weekly production/client compile completed. Test
+build68471 remains confirmed live; no restart for an observation timeout.
+Fresh Astra reviewer allocation succeeds this continuation. Independent weekly
+review finds no blocking defect; the tentative teleport lifetime concern is
+withdrawn after tracing the early blockingVisit return. Phase2 findings:
+Dimension Door cursor still uses hero-independent guard appearance; subsequent
+protected movement, another hero's actual encounter, overlaps and live client/
+NK2 path recalculation lack focused integration coverage. Root retains those
+findings without broadening every feature into a full certification exercise.
+Two Luna workers read-only plan Recruitment Pact/Legendary Reputation and
+Mercenary Captain/Loyal Mercenaries. No new production edits during build.
+
+Envoy checkpoint committed/pushed6ef610550. Matching notice37152417973 is live;
+full Windows37150731428 remains live on foundationfad71a2fc. No local playable
+promotion. Weekly implementation released with nonoverlapping ownership: Runtime
+owns three saved hero fields and the atomic typed state packet/version; movement
+worker owns CGCreature, hero-aware guardian callback and pathfinding call sites;
+root owns the client packet event invalidating human and NK2 path caches. Existing
+NewTurn invalidation handles logical week expiry, without global polling or
+bonus/stat scans. Tester plans focused actual passage/payment/wire fixtures.
+Peacemaker and Tribute remain planned pending source/build/native acceptance.
+Matching notice37152417973 subsequently succeeds on6ef610550. Weekly state and
+wire fixture sources are frozen; movement/encounter implementation remains live.
+Root review moves hero unsupported-write rejection ahead of payload bytes and
+repairs a fixture that attempted to write a new packet in an unsupported format:
+old-reader reset uses a documented synthetic heroId prefix, while the actual
+old packet writer remains rejected. No weekly native acceptance yet.
+Root review further requires cached no-guardian fast paths, visitable-coordinate
+comparisons, and captured IDs before a visit callback can remove its guardian.
+Actual movement Tribute is a required focused fixture. Registry/module and
+inventory now activate Peacemaker/Tribute solely for verification; accepted
+coverage remains207/310, not209. Future-day path prediction across week expiry,
+overlapping/scripted guard combinations, full AI valuation and rendered feedback
+are Phase2 unless focused execution exposes a foundational blocker.
+Weekly production is frozen; root client build10506 is confirmed live with
+twelve jobs, log UP129-weekly-client-build.log. Do not edit production or restart
+the build merely for observation timeout. Tester may finish its isolated fixture
+file while the client-only target compiles, then freeze before vcmitest build.
+Movement suppresses a same-guardian destination revisit if the callback pacifies
+or removes the stack. No removed object is read after the callback. Accepted
+coverage remains207/310 pending client/test/native outcomes; no weekly commit or
+playable promotion yet.
+Client10506 subsequently exits0: frozen weekly state, encounter, pathfinding,
+AI call sites and client cache event compile. Native weekly acceptance is still
+pending; tester completes isolated fixtures, then root rebuilds vcmitest. No
+production changes are needed to accommodate test setup or private-method calls.
+Tester subsequently freezes six new focused cases: real movement Peacemaker
+with funded Tribute precedence, hero-bound protection/week expiry, deliberate
+attack, successful movement Tribute, unaffordable combat fallback, ordinary
+willing offer, and versioned state (five encounter cases plus one wire case).
+Root test build68471 is confirmed live with twelve jobs; preserve the handle/log
+UP129-weekly-test-build.log. Next run NewHorizonsDiplomacy* against the fresh
+binary, retaining log/XML; do not accept209/310 from registry status alone.
+Data/inventory19/19 and diffcheck pass. No production or fixture edits during
+this test build. Full Windows37150731428 remains live onfad71a2fc.
+
 Envoy accepted: client69085/test68817 exit0; final principal retry2 passes15/15
 in3.282s, zero skips. Binary024782815a9de49a138ebad07e2c7de5cead3f8a54ab4df629b176a94f2a2831.
 Data/inventory19/19, module--check and diffcheck pass. Accepted207/310 perks,
