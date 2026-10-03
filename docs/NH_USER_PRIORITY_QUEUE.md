@@ -1814,6 +1814,87 @@ acceptance remain Phase2. Dedicated art is missing; no playable promotion.
 Next prepared slice: Death Lord/Grave Knowledge weighted eligibility, recorded
 in the sprint register. Existing full Windows37136224312 remains e8f2cb4b5 only.
 
+## UP-187 — Death Lord and Grave Knowledge special casualty conversion
+
+Status: Completed source/native, 2026-10-03; playable delivery not claimed.
+Historical implementation trace follows. Implement the two missing
+Advanced Necromancy perks from captured, provenance-filtered original-form
+casualties. Death Lord converts Construct/Elemental inputs at one quarter of
+the normal rank/Bone Collector rate; Grave Knowledge reclaims Undead at a fixed
+20%. Mechanical, summoned, cloned and destroyed remains do not qualify;
+ordinary magical casualties still require Corpse Preservation. Preserve the
+ordinary living pool's floor and separately floor each special pool, then
+combine category contributions before automatic Dark Conversion/Soul Harvester.
+Soul Harvester retains the explicitly approved Core Wight output.
+Three bounded Luna lanes own runtime, packet-driven result text and focused
+fixtures. Root owns the appended version boundary, direct/enclosing guards,
+activation, serialized builds and Git. Acceptance requires actual army outputs,
+perk-absent and old-capture negatives, atomic admission, category/rate tests and
+wire roundtrips/rejection. No coverage increase or playable delivery is claimed
+before focused acceptance; broad interactions remain Phase 2.
+Client13126 exits0. Data/inventory19/19, generated module and result UI guard
+pass; independent Astra source review has no blocker. Focused fixtures remain
+in progress, so no stale vcmitest run is accepted. Full Windows37136224312
+completed successfully on e8f2cb4b5; dispatch the next full only after this
+coherent checkpoint is committed and matching notices pass. No playable promotion.
+Fixtures are frozen after correcting the old-writer setup and ensuring actual
+Golem/Vampire magical casualties. Root test build86643 runs12 jobs, log
+UP187-test-build.log. Canonical Ossuary clarification changes source identity;
+registry hash and generated module were updated, data/inventory19/19 pass again.
+Wait for this fresh binary before native acceptance; no broad suite is required.
+Test86643 exits0. Principal32/32 passes6.689s, zero skips; adjacent11/12
+passes with one new Grave Knowledge Vampire spell-submission failure, before
+its casualty assertions. Preserve UP187-adjacent.log/XML. Tester diagnoses
+initiative/window setup before any repair; no weakened production validation or
+full acceptance claim. Actual new principal cases record active/no override and
+normal Basic-perk then Advanced selection. Native completion remains pending.
+Final acceptance: fixture-only retry17335 exits0. Principal32/32 passes6.716s
+and adjacent12/12 passes2.607s, zero skips; original failure remains preserved.
+Production active/no override and normal Basic-perk then Advanced selection are
+recorded, alongside actual army output, magical/Disintegrate capture and direct/
+enclosing current/old wire behavior. Binary SHA-256:
+212ea29fb37c2f95a844e452174c6b5db40da917d08d432abf4b57cacd77d07c.
+Data/inventory19/19, generated module/result guard and independent review pass.
+Coverage199->201/310 active,111->109 planned; Necromancy6->8/10;
+faction58->60/90. Broad interactions/full AI play/rendered acceptance remain
+Phase2, dedicated art remains missing. No local playable promotion.
+Next UP188 Ossuary; UP189 awaits the named high-tier output.
+
+## UP-188 — Necromancy Ossuary destination fallback
+
+Status: Read-only preparation, 2026-10-03. Implement the canonical nearest
+owned Necropolis fallback for raised creatures the hero cannot admit, preserving
+atomic multi-output planning and authoritative town-garrison mutations.
+The existing planner combines slot and Leadership failures into one empty result;
+asked whether Ossuary covers both causes or only unavailable army slots. Do not
+silently choose that gameplay scope. Existing nearest-town precedent uses squared
+two-dimensional distance over the owner's town list; no global town scan is
+needed. Town garrisons remain seven-slot armies without Hero Leadership caps.
+UI/result destination identity and guarded representation will be needed.
+This mapping does not activate the perk or displace UP187 native acceptance.
+User resolved the scope: both Leadership limits and unavailable army slots
+trigger the fallback. Canonical Markdown and registry descriptions now include
+both; the perk remains planned pending source/native implementation. Follow
+the town's normal visible upper-army destination, not a hidden town-only army
+when a garrison hero exists; do not transfer to its merely visiting hero.
+
+## UP-189 — Necromancy Lord of the Dead
+
+Status: Read-only preparation, 2026-10-03. Map the missing Expert perk's
+pre-conversion replacement of12 base Skeletons after a qualifying living
+Champion army. Check whether its faction-defined high-tier Undead output is
+actually specified/bound before implementing; do not silently choose a creature.
+One bounded Luna explores only this species/ordering seam while UP187 native
+acceptance remains the active source checkpoint. No activation or coverage claim.
+Map confirms no output binding in the canonical row, perk registry or category
+data. Necropolis's Champion line is Bone Dragon/Ghost Dragon, both Undead;
+asked which form should be the explicit Lord of the Dead output. Do not infer
+upgrade availability or substitute a species without resolution.
+User selected Bone Dragon. Canonical Markdown and registry descriptions now
+name that output explicitly; the species ambiguity is resolved. Runtime remains
+planned pending pre-conversion accounting, atomic output/admission and native
+acceptance. This clarification does not add a coverage item by itself.
+
 ## UP-183 — Necromancy Corpse Preservation
 
 Status: Completed source/native,2026-10-03; playable delivery not claimed.

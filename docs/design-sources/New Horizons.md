@@ -4858,9 +4858,9 @@ Necromancy converts eligible enemy casualties into permanent Undead after victor
 |Soul Harvester|Advanced|When resolving Necromancy, every complete group of 6 Skeletons generated from eligible Elite-tier casualties is automatically raised as 1 Wight. Wights remain Core-tier; the conversion's input is Elite-tier casualties, not its output.|
 |Death Lord|Advanced|Construct and Elemental casualties become eligible at 25% of the normal Necromancy conversion rate.|
 |Grave Knowledge|Advanced|When defeating Undead enemies, 20% of their eligible casualties may be reclaimed as Skeletons even though they are not living.|
-|Ossuary|Advanced|If the hero has no legal army slot for raised creatures, they are sent to the nearest owned Necropolis town instead of being lost.|
+|Ossuary|Advanced|If the hero cannot accept the raised creatures because of unavailable army slots or Leadership limits, they are sent to the nearest owned Necropolis town instead of being lost.|
 |Master of Bones|Expert|Skeletons raised by Necromancy are raised as their upgraded form when the appropriate Necropolis upgrade is available to the player.|
-|Lord of the Dead|Expert|After defeating an army containing at least one Champion-tier living creature, if the base Necromancy result contains at least 12 Skeletons, 12 are automatically replaced with 1 faction-defined high-tier Undead, once per combat. This conversion resolves before other Necromancy conversion perks.|
+|Lord of the Dead|Expert|After defeating an army containing at least one Champion-tier living creature, if the base Necromancy result contains at least 12 Skeletons, 12 are automatically replaced with 1 Bone Dragon, once per combat. This conversion resolves before other Necromancy conversion perks.|
 
 When partial Resurrection restores a stack with mixed casualty causes, it restores
 the most recent usable casualties first. Preserve that casualty order and damage
