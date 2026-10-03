@@ -18,6 +18,32 @@ working sequence.
 
 ## Maintenance contract
 
+2026-10-03 UP188 accepted source/native: whole-batch Ossuary town delivery,
+Hero Leadership/slot overflow, foreign-town exclusion and atomic nearest-town
+failure. Client retry67941 and test retry79662 exit0; principal37/37 passes
+8.395s, adjacent12/12 passes2.626s, zero skips. Actual winning-Hero Mana,
+normal Advanced selection/no override and guarded destination wire pass.
+Binaryca960a648600671a8ede1a8f918409d8de80fd323784169acb8c84ef68d53d8c.
+Data/inventory19/19, module/UI guard and independent Astra review pass.
+Coverage202/310 active,108 planned; Necromancy9/10; faction61/90,29 planned.
+Deferred visiting/garrison Hero variants, rendered popup and broader saved/
+concurrent battle/full AI interactions; dedicated art remains missing.
+No playable promotion. Next UP189 Lord of the Dead is design-resolved.
+
+2026-10-03 UP188 starts from committed/pushedb384196c1: Ossuary's whole-batch
+Hero-capacity fallback to the nearest owned Necropolis, normal upper army,
+no partial mutation or farther-town search. Three bounded Luna lanes own
+runtime/UI/focused fixtures; root owns version, guards, registration, builds/Git.
+No new coverage accepted yet (201/310, Necromancy8/10). UP189's Bone Dragon
+species is resolved but category depletion for its first12-Skeleton conversion
+is now asked explicitly; do not double-spend Core/Elite contributions. Windows
+notices37142047603 passes onb384196c1 and full37142169494 is live on that source.
+User subsequently resolves UP189 depletion as Champion/unclassified, then Elite,
+then Core. Diplomacy's existing-map questions are also resolved: authored free
+joins remain exceptions, accepted-transfer surplus is permanently dismissed on
+closure. These canonical decisions unblock future source work, not active ranks
+or additional coverage. Keep the source hash/module synchronized.
+
 2026-10-03 UP187 accepted: Death Lord and Grave Knowledge extend captured
 casualty eligibility at their specified independent rates, feed category-based
 automatic conversions and preserve atomic outputs. Root client13126 and

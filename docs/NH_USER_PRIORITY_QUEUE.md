@@ -1862,7 +1862,8 @@ Next UP188 Ossuary; UP189 awaits the named high-tier output.
 
 ## UP-188 — Necromancy Ossuary destination fallback
 
-Status: Read-only preparation, 2026-10-03. Implement the canonical nearest
+Status: Completed source/native, 2026-10-03; playable delivery not claimed.
+Implement the canonical nearest
 owned Necropolis fallback for raised creatures the hero cannot admit, preserving
 atomic multi-output planning and authoritative town-garrison mutations.
 The existing planner combines slot and Leadership failures into one empty result;
@@ -1877,6 +1878,49 @@ trigger the fallback. Canonical Markdown and registry descriptions now include
 both; the perk remains planned pending source/native implementation. Follow
 the town's normal visible upper-army destination, not a hidden town-only army
 when a garrison hero exists; do not transfer to its merely visiting hero.
+Implementation starts on b384196c1. Root selects projected atomic planning for
+the Hero first, then the single nearest owned Necropolis's normal upper army
+on a capacity failure. Invalid output data must not be disguised as overflow.
+Nearest-town tie/distance behavior follows the existing two-dimensional town
+lookup precedent; failing that one destination does not search farther towns.
+Three bounded Luna lanes own runtime, packet-driven delivery feedback and
+focused actual-army fixtures. Root owns guarded destination serialization,
+registration, builds and Git. Coverage remains201/310 pending native acceptance.
+Matching Windows notices37142047603 succeeds on b384196c1; full37142169494 is
+confirmed live on that same commit. Preserve that live run.
+Runtime/UI/root guarded destination integration is frozen; independent Astra
+production review reports no blocker. Registry active is for native acceptance,
+not yet an accepted coverage increment. Data/inventory19/19, module generation
+and result UI guard pass. Root client build62687 runs12 jobs, log
+UP188-client-build.log; fixtures remain in progress. No playable promotion.
+Client62687 exits1 at UIHelper's incomplete CCallback use in the town lookup.
+UI owner adds the required definition header; preserve the initial build log and
+do not accept a stale client/test binary. Runtime routing remains frozen.
+Concrete CCallback include is repaired; client retry67941 exits0. Data/UI gates
+and independent production review pass. Focused fixtures are still being
+completed before compiling vcmitest; native acceptance remains pending.
+Five focused actual-army fixtures are frozen, covering mixed delivery, foreign
+town exclusion, Leadership overflow/Black Harvest, absent/unselected fallback,
+and full nearest town without farther or partial delivery. Root test build40127
+runs12 jobs, logUP188-test-build.log. Canonical Lord/Diplomacy decisions were
+integrated and registry source hash/module synchronized; data/inventory19/19
+pass. Wait for this fresh binary before acceptance, no broad suite required.
+Independent fixture review found one contradictory town snapshot equality in
+the positive delivery case. Preserve live build40127; after it terminates,
+correct that assertion and add a minimal actual winning-Hero Mana check, then
+incrementally rebuild and run focused native cases. Do not treat the initial
+binary as final acceptance. Client retry67941 already exits0.
+Focused acceptance: retry79662 exits0; principal37/37 passes8.395s and
+adjacent12/12 passes2.626s, zero failures/skips. Normal Advanced offer/selection,
+active registry and no activation override are recorded in UP188-principal.xml.
+Actual town armies, atomic blocked/foreign/full-nearest cases, winner Normal
+Mana recovery and current/older destination serialization pass. Binary SHA256:
+ca960a648600671a8ede1a8f918409d8de80fd323784169acb8c84ef68d53d8c.
+Data/inventory19/19, module/UI guard and independent Astra review pass.
+Coverage201->202/310,109->108 planned; Necromancy8->9/10; faction60->61/90.
+Deferred Phase2: visiting/garrison Hero variants, rendered result popup,
+broader concurrent-battle/save interactions and full AI play. Dedicated art
+remains missing; no playable snapshot promoted. Next UP189 Lord of the Dead.
 
 ## UP-189 — Necromancy Lord of the Dead
 
@@ -1894,6 +1938,15 @@ User selected Bone Dragon. Canonical Markdown and registry descriptions now
 name that output explicitly; the species ambiguity is resolved. Runtime remains
 planned pending pre-conversion accounting, atomic output/admission and native
 acceptance. This clarification does not add a coverage item by itself.
+Follow-up ambiguity: spending12 base Skeletons before other conversions needs
+a category-consumption policy to preserve Core/Elite attribution without double
+spending. Asked whether uncategorized/Champion then Elite/Core, uncategorized/
+Champion then Core/Elite, or proportional depletion should apply. This holds
+only UP189's implementation; UP188 remains unblocked and proceeds.
+User selected Champion/unclassified contributions first, then Elite, then Core.
+Canonical row and planned registry description now state that depletion order;
+later conversions may use only the remaining category contributions. The design
+blocker is resolved; UP189 implementation follows UP188's focused acceptance.
 
 ## UP-183 — Necromancy Corpse Preservation
 
@@ -2993,6 +3046,19 @@ Leadership-surplus dismissal/neutral-source AI handling needs a separate
 lifecycle decision, not an automatic rewrite. Do not repeat this map again.
 The existing authored-free-join question was renewed on2026-10-02 after mapping;
 no answer or authority to override map semantics is inferred.
+2026-10-03 existing-map audit only: no repeated architecture exploration or new
+implementation. Renewed the two actionable choices together: whether authored
+guaranteed free joins remain exceptions, and whether troops left after an
+accepted transfer remain on the map, are dismissed, or require full admission
+before joining. Use the shared raw creature Army Value convention, not legacy
+hero-adjusted perceived strength; keep that choice explicit in implementation.
+Await resolutions without allowing this held item to stop unblocked UP188.
+User resolved both choices: authored guaranteed free joins remain exceptions,
+and troops left in an accepted transfer window are permanently dismissed when
+it closes. Integrated into the canonical Diplomacy section, including visible
+closure feedback; no partial-neutral persistence should be invented. The ranks
+remain planned until the deterministic threshold/payment/feedback/AI path is
+implemented and verified. This source clarification alone adds no coverage.
 
 ## UP-125 — Four-worker concurrency
 
