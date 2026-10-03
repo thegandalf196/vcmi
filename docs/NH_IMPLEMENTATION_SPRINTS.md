@@ -18,6 +18,79 @@ working sequence.
 
 ## Maintenance contract
 
+Pact test retry95539 exits0; principal retry85631 passes27/27 from3 suites
+in6.764s, zero skips. Original failures remain retained. Accepted coverage
+209->210/310,100 planned; Diplomacy6->7/10, ranks87/93 unchanged. Independent
+production and fixture review has no blocker. Data/inventory19/19, module
+check and diffcheck pass. No rendered acceptance or playable promotion.
+Deferred: manual Swap/Bulk intake, subsequent troop return, weekly-perk
+interactions and restored modal context. Next missing unambiguous slice is
+Reality Warp; remaining Diplomacy perks await recorded design decisions.
+
+Pact test retry87524 exits0. Fresh principal execution11141 runs27 tests:
+23 pass, four new encounter fixtures throw the preceding-perk-tier advancement
+exception during setup. Original principal log/XML retained. Tester corrects
+normal progression by selecting Basic Envoy before Advanced Recruitment Pact;
+no assertion weakening or production change. Coverage remains209/310 pending
+corrected execution. The user's Tribute quota decision is reconfirmed and its
+existing native case passes. Reality Warp read-only mapping completes without
+a design ambiguity; bundle/provenance and sidecar architecture precedes source.
+
+Test54732 exits1 on a test-only incomplete StackLocation type in the newly added
+accepted-offer fixture. Tester owns the missing defining include and new-warning
+brace correction; production/client acceptance remains unchanged. Original log
+UP129-pact-test-build.log retained. Retry/native acceptance pending; no coverage
+increase and no stale binary run.
+
+Discount-qualified acceptance fixture is frozen, including actual Gold debit,
+positive partial admission, closure and rearm on inclusive expiry day. Root
+test build54732 is live with twelve jobs; log UP129-pact-test-build.log. Next
+run NewHorizonsDiplomacy* on that fresh binary and retain principal log/XML.
+Do not edit frozen sources, run the stale binary or restart a live build for an
+observation timeout. A Windows status request for37155153392 receives HTTP504;
+this is not a terminal job result or authority to restart its build.
+
+Pact client66210 exits0 (UP129-pact-client-build.log): production state, encounter,
+admission hook, shared prediction and client compile. Native acceptance pending;
+test target waits only for the bounded discounted-acceptance fixture freeze.
+No production edits or playable promotion follow from client compile alone.
+
+Independent Astra review reuse now succeeds after execution lanes finish. No
+blocking production finding; deferred manual Swap/Bulk admission, subsequent
+troop return, Pact with weekly perks and restored modal context remain Phase2.
+Tester frozen source initially covers discount-qualified refusal but not actual
+discount-qualified acceptance. Root requests one principal acceptance/rearm
+fixture, while client-only compilation continues; this is not a broad matrix.
+
+Pact production lanes are frozen after root source review and clean diffcheck.
+Client compilation starts with twelve jobs, log UP129-pact-client-build.log;
+tester may finish only its isolated test file before the test-target build.
+Data/inventory19/19 and generated-module check pass; these are not native Pact
+acceptance. A second independent Astra reviewer spawn also hits the service
+thread limit. No review success is claimed; retry after tester completion.
+
+Recruitment Pact integration adds server-only accepted-visit context recording
+positive neutral-to-hero troop admission from authoritative Rebalance/Bulk/Swap
+packets. At visit completion, before deleting the source, the encounter callback
+arms the next Pact only when actual intake occurred. Manual transfer closure is
+included; accepting and dismissing everything without intake grants nothing.
+Root owns CGameHandler.cpp and VisitQueries.cpp/.h. No ongoing-dialog save support
+is inferred. Reviewer follow-up initially fails with the service thread limit;
+retry after an execution lane finishes, rather than inventing a lower capacity.
+
+2026-10-03 continuation: preceding cycle made concrete progress (weekly perks
+committed/pushed46b9421b7, client/test build and21/21 native acceptance). Windows
+37155153392 is confirmed in progress on that source, not restarted. Recruitment
+Pact is now released with bounded ownership: saved hero/snapshot/version lane,
+neutral encounter/shared threshold lane, and isolated focused-test lane. Root
+owns registration, integration, builds and Git. Arm after successful neutral
+recruitment; use the next neutral contact within seven elapsed game days,
+including day trigger+7. Contact resolution retains its discount through the
+blocking joining offer, consumes on that response including refusal, or consumes
+immediately when no joining offer exists. A successful contact rearms a new Pact.
+No per-frame scans or permanent monster discount flags. Accepted209/310 remains
+unchanged pending principal execution. Mercenary cohort question remains open.
+
 Next Diplomacy mapping is complete (read-only Luna workers). Recruitment Pact
 must preserve the contacted offer's discount through its modal response; consume
 on the first contact even if unwilling, not only on a subsequent successful hire.
