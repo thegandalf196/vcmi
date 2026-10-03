@@ -936,14 +936,96 @@ Notice37095711525 passes on that source. Full Windows37094808848 still runs
 on preceding Investor21dbb224b; do not claim it verifies Field Study or restart
 it merely because a later source commit exists.
 
-## UP-169 — Bloodrage Rage Through Pain preparation
+## UP-169 — Bloodrage Rage Through Pain
 
-Status: Bounded read-only preparation,2026-10-03. First time a friendly stack
+Status: Source/native verified and active (commit pending),2026-10-03. First time a friendly stack
 falls below50% maximum HP, it gains one personal Bloodrage increment for the
 rest of combat. Map shared live/detached damage application, saved unit state,
 current-controller eligibility and existing rank/cap/threshold consumers. Do
 not increment the whole army or limit the trigger to physical damage without
 authored authority. Root chooses architecture; no activation/count from mapping.
+The previous No Escape cycle is committed/pushed as9f59f66eb; notice37098685825
+passes and full Windows37098764803 is live on that exact source. Preserve it.
+Rage Through Pain is per stack, not an army-wide first proc. Shared unit damage
+must record the crossing once and retain the earned increment through healing
+and ordinary round/activation changes. The current CStack binary omits broader
+CUnitState; explicitly persist the new field rather than treating packet JSON
+roundtrip as proof of game-save representation. No activation/count yet.
+Root chooses an event-driven shared damage crossing using one pre-hit maximum
+HP reference and strict below-half comparison. A saved per-side selected-perk
+snapshot supplies the current controller's rank increment; the earned per-unit
+value is independent of the shared side meter. Effective combined damage and
+Unrelenting/Berserker/Fury thresholds use the normal current-side cap. Earned
+state is retained through healing, ordinary activation/round changes and death;
+alive/ghost/current-controller eligibility still gates benefits. One append-only
+binary feature will persist side profile and the new CStack field, with legacy
+zero defaults and earlier-writer loss rejection. No periodic normalization.
+Separate Luna owners implement shared/runtime/persistence, detached AI and an
+isolated native fixture; Astra independently reviews. Root owns accepted-hit
+combat feedback, builds, registration/data, integration and Git. The log hook
+reuses BattleAttack/StacksInjured's targeted event path, not a battle-wide scan.
+Registry stays planned and coverage188/310 until principal acceptance.
+Runtime, detached AI and four-case fixture are frozen. Root registered the
+fixture and started one combined vcmiclient/vcmitest build with12 jobs,
+session52291; log testing/UP169-rage-through-pain-baseline-build.log under
+build/new-horizons-linux. Re-poll this handle before native acceptance; do not
+restart it on an observation timeout. Pre-build review caught and repaired
+fixture-only retaliation prevention on victims instead of outgoing hitters.
+The fixture also rejects oversized and fractional JSON increments. Final
+outer-packet-guard review is pending; no native or activation claim yet.
+Frozen final Astra review reports no remaining BLOCKING finding. Outer battle,
+attack, injury and unit-update old-version guards precede payloads; CStack
+initialization preserves the explicit increment. Broader historical CUnitState
+binary restoration and rare controller/form/revival matrices remain Phase2.
+Build52291 is still running; native acceptance and activation remain pending.
+Continuation checkpoint: handle52291 is confirmed live beyond515/727 with no
+reported compiler error. Baseline registry/inventory19/19 pass using python3;
+the initial python command was unavailable and its log is retained separately.
+Direct registry recount confirms188 active/122 planned and84 active/9 planned
+ranks. Ledger's stale Estates and Learning rows are corrected to5/5 and3/7.
+Existing DirectDamageMechanicsTest.cpp:700 emits a non-blocking dangling-else
+warning; no unrelated fixture/source change is made during this build. Full
+Windows37098764803 remains live on9f59f66eb, excluding dirty UP169.
+Combined baseline build52291 now exits0; the new fixture compiled and vcmitest
+linked. A reused tester owns the four-case private-profile native gate with
+outputs UP169-rage-through-pain-native.log/XML. No stale-binary acceptance,
+registry activation or coverage increase is claimed before its results.
+Principal native acceptance exits0:4/4 pass in1.186s, zero skips. Baseline
+test binary SHA-256 fc1b4c90470cb164641e06ffc4be91220bedfb03776d788b212fba43a956e4d9.
+Root activates Rage Through Pain, regenerates the curated module and updates
+the asset inventory. Direct recount is189/310 active perks,121 planned;
+faction51/90 active,39 planned; Bloodrage7/10; ranks84/93 unchanged. Activated
+data/inventory19/19, module drift check and both-target incremental build pass.
+Final production-active native gate and source checkpoint are pending. No
+immutable playable promotion or rendered approval is claimed. Purpose-made
+art remains Not done and generic UI is Provisional; Phase2 retains the broad
+full-CUnitState binary gap and controller/form/revival interactions.
+Final production-active gate passes4/4 in1.183s with zero skips; fixture reads
+the active registry without its synthetic map override. SHA-256 is unchanged.
+Final independent review accepts the activation delta with no BLOCKING issue.
+Root proceeds to the coherent source commit/push; no full-game or rendered
+acceptance is implied by the focused gate.
+
+## UP-171 — Shroud Evasive Shroud preparation
+
+Status: Bounded read-only preparation,2026-10-03. After making a flanking attack,
+the attacker receives15% physical damage reduction until its next activation.
+Reuse the authoritative flanking classifier, normal physical cap, activation
+expiry and detached AI preview. Do not reinterpret the trigger as a hit on the
+victim or invent a hero action. Root chooses architecture after the map; no
+runtime edits, activation or coverage from preparation. UP169 build52291 and
+principal acceptance remain the immediate integration priority.
+Map complete: reuse the direct primary flanking-hit completion in
+BattleActionProcessor::makeAttack, with eligibility captured before the hit
+packet and a surviving-attacker refresh after application. The ordinary melee
+retaliation follows that seam, so protection can apply to it. Canonical wording
+does not require positive damage. A1500-basis-point physical-reduction bonus
+uses the normal global cap and existing UNTIL_NEXT_CREATURE_ACTIVATION expiry
+and serialization. Candidate-local AI can reuse No Escape's effect preview;
+selected BattleExchangeVariant replay also needs the transition, since replay
+does not generically copy newly added preview bonuses. No genuine design
+ambiguity was found. Root will choose ownership/implementation after UP169's
+principal acceptance, rather than mutate sources during the frozen build.
 
 ## UP-170 — Shroud No Escape
 
