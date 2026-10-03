@@ -936,6 +936,70 @@ Notice37095711525 passes on that source. Full Windows37094808848 still runs
 on preceding Investor21dbb224b; do not claim it verifies Field Study or restart
 it merely because a later source commit exists.
 
+## UP-169 — Bloodrage Rage Through Pain preparation
+
+Status: Bounded read-only preparation,2026-10-03. First time a friendly stack
+falls below50% maximum HP, it gains one personal Bloodrage increment for the
+rest of combat. Map shared live/detached damage application, saved unit state,
+current-controller eligibility and existing rank/cap/threshold consumers. Do
+not increment the whole army or limit the trigger to physical damage without
+authored authority. Root chooses architecture; no activation/count from mapping.
+
+## UP-170 — Shroud No Escape
+
+Status: Source/native verified and active,2026-10-03. A target suffering a flanking
+melee attack loses2 Speed until its next activation. Reuse actual accepted
+flanking classification, timed effects and shared AI projection. Do not apply
+to ordinary ranged attacks or unclassified attacks. Root chooses implementation
+after the bounded map; no activation/count from exploration.
+Map establishes an unblocked full path: shared battleIsShroudFlankingAttack
+classifies rear physical melee, excludes ranged/collateral, and includes a
+retaliation only when it itself qualifies. Capture eligibility before accepted
+damage; apply-2 Speed to the surviving direct target using the existing
+UNTIL_NEXT_CREATURE_ACTIVATION duration and nonstacking refresh. Existing saved
+bonus representation and HypotheticBattle expiry are reused, with no new polling
+or action. Separate Luna owners implement runtime/helper, candidate-local AI,
+and an isolated unregistered fixture. Root owns registration, builds and Git.
+Registry remains planned until principal native acceptance; counts unchanged.
+Dead-target/resurrection status interactions remain explicit Phase2 follow-up.
+Frozen runtime and candidate-local AI both compile: serialized root build42759
+exits0 for vcmiclient and vcmitest. Log:
+build/new-horizons-linux/testing/UP170-no-escape-baseline-build.log.
+Independent review finds no blocking runtime/AI defect. Eligibility belongs to
+the attacking stack's current-controller hero, not the victim's hero; detached
+preview uses visible heroes and keeps refreshes inside its candidate branch.
+Principal fixture remains pending; no activation or coverage increment yet.
+Visible feedback includes the actual reduced Speed value and an explicit combat
+log entry. The generic creature-window bonus list can display this description,
+but groups Speed bonuses and may show another modifier's description instead.
+Guaranteed separate status labeling is a Phase2 UI follow-up, not claimed here;
+there is no dedicated Speed tooltip or purpose-made perk artwork.
+Windows run37094808848 completes successfully on Investor21dbb224b. It does not
+include Field Study or this dirty No Escape work. The next full build requires
+a passing notice preflight for its exact committed source.
+Four-case principal fixture is registered; both-target build83393 exits0.
+Independent fixture review blocks acceptance: blockRetaliation on the victim
+does not suppress its response. Correct the fixture to prevent retaliation on
+the attacking stacks and assert surviving negative controls before native
+acceptance. This is a fixture-control defect, not a production failure.
+Initial native gate runs4 cases in8.101s:2 pass,2 fail,zero skips. The log
+confirms live No Escape triggered, but automatic queue progression activates
+the fast Angel victim before the post-action assertion, correctly expiring the
+bonus. Repair the observation interval: spend the victim's real activation
+first and retain an unacted reserve, then test refresh before its next genuine
+activation. Do not change production duration to satisfy a stale observation.
+Fixture-only const/interface compile repairs precede both-target retry3 build33849
+exit0. Principal retry passes4/4 in8.112s, zero skips. Root activates production
+registration/module/allowlist/inventory only after acceptance. Data/inventory
+19/19 and module drift pass; activated both-target build exits0. Final native
+gate passes4/4 in8.145s, zero skips, using the active registry without synthetic
+override. Independent final review finds no blocker. Coverage188/310 perks,
+122 planned; faction50/90 and Shroud2/10; ranks84/93 unchanged. Native SHA-256:
+a9cb4afb3fd1184af1e2825e6f55791a3d9b8a57a4353bcc5a0f002fa0fcb02e.
+Full-game resume, unusual activation/resurrection interactions, hidden-enemy
+valuation and separate status labeling remain Phase2. Purpose-made art is Not
+done; generic UI is Provisional. No immutable playable promotion.
+
 ## UP-164 — Learning Master Teacher
 
 Status: Blocked on Mentor-prerequisite answer (map complete),2026-10-03. Expert perk extends Mentor to
