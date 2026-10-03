@@ -18,6 +18,66 @@ working sequence.
 
 ## Maintenance contract
 
+UP179 prerequisites accepted source/native: client8019/test retry45423 exit0;
+principal47075 passes9/9 from2 suites in1.201s, zero skips. Log/XML retained.
+Binary SHA670d04c6d3c8d4241512402128876163f777510723cfb1bc2a7a97fc0ccfe715.
+Reciprocal bundles, independent timers, all three sidecars, exclusions/legality,
+detached snapshots, original-owner hostility, current/previous wire, lossy-write
+rejection, JSON validation and actual hostile/friendly cast stamping pass.
+Independent source review has no blocker; data/inventory19/19, module check
+and diffcheck pass. Combat spells60/67 and perks210/310 remain unchanged.
+No full Warp acceptance or playable promotion. Next live discovery/authority,
+paired UI and AI; resolve pending beneficiary-side clarification before deciding
+Focus Magic/Arcane Breach cross-side behavior. Retain prior failures below.
+
+UP179 test retry15193 terminates143 before link after179/320, with no compiler
+error in its log. Root confirms no remaining cmake/ninja/compiler processes
+before resuming; termination cause is unestablished. Preserve retry log and
+reuse objects in retry2, not a second concurrent build or stale test binary.
+Previous full Windows37155153392 is now completed success (46b9421b7); matching
+Pact notice37157406583 succeeded. Neither proves the uncommitted UP179 slice.
+
+UP179 test94692 exits1: new pure Bonus serialization fixture needs complete
+parameter/limiter/propagator/updater headers. Tester corrects owned includes;
+root will retry with retained compiled objects and a distinct build log. Client
+remains accepted, but native prerequisite acceptance has not run. Failure log
+is retained; no production weakening, stale test binary or coverage increase.
+
+UP179 tester freezes six planner/wire cases and three strengthened existing
+Steadfast cast/provenance cases. Root test build94692 is live with twelve jobs,
+log UP179-prerequisite-test-build.log; production remains frozen. Independent
+Astra review finds no blocking source issue. Reflected casts, special refresh
+versus duration refresh and eventual live exchange remain Phase2 interaction
+checks, not substitutes for completing the spell. Data/inventory19/19 and
+generated module check pass. After build run only the named nine-case filter
+on the fresh binary and retain log/XML. No accepted spell count increase.
+
+UP179 client8019 exits0. Root source review catches test-only invented BonusType
+names and a direct member-variable lambda capture before compiling the fixture;
+tester corrects both without changing product behavior. Next fresh vcmitest
+build and smallest planner/provenance/real-cast filter; no full spell coverage
+or playable promotion follows from this client build.
+
+UP179 prerequisite production sources frozen; root client build8019 is live
+with twelve jobs, log UP179-prerequisite-client-build.log. Test author owns
+only the new pure planner/wire fixtures and two existing real-cast provenance
+assertions. Runtime stamp is source- and actual/base-spell-ID guarded so Warp
+cannot attribute transported effects to itself. Planner carries Guardian,
+Regeneration and Hydra fractional-regeneration progress; actual creature HP and
+capacity baseline remain with their own stack. Independent source review is
+running. Do not edit production during this build or claim spell acceptance.
+
+Next slice UP179 Reality Warp: three independent bounded lanes now own
+caster-provenance representation, pure reciprocal bundle planning, and actual
+recipient/sidecar legality inventory. Root chose original caster ownership,
+not target-relative historical hostility or the Warp caster, as the provenance
+needed when a magical effect moves across owners. Existing legacy hostility
+remains unchanged until transfer; unknown old provenance is not guessed.
+Time Stop/Spell Lock endpoints remain illegal under their canonical immunity.
+Full spell coverage requires live discovery/application, data, paired UI/AI and
+focused native acceptance; prerequisites do not increase the60/67 spell count.
+Previous goal cycle is progress: Pact d520113ff pushed,27/27 focused tests pass.
+
 Pact test retry95539 exits0; principal retry85631 passes27/27 from3 suites
 in6.764s, zero skips. Original failures remain retained. Accepted coverage
 209->210/310,100 planned; Diplomacy6->7/10, ranks87/93 unchanged. Independent

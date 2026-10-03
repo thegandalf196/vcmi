@@ -2117,6 +2117,41 @@ No production edit or coverage activation until the trigger boundary is resolved
 
 ## UP-179 — Chaos Reality Warp and Reality Breaker
 
+Prerequisites accepted source/native, not the complete spell: client8019 and
+test45423 exit0; UP179-prerequisite-principal.log/XML9/9 passes1.201s, zero
+skips. Original caster provenance, exact reciprocal bundle/timer/sidecar
+preservation, wire/JSON compatibility and actual cast stamping verified.
+Independent source review has no blocker. Next live collection/application,
+paired human targeting and AI scoring; resolve the beneficiary-side question
+before deciding cross-side trigger semantics. Spells remain60/67, no promotion.
+
+Recipient-beneficiary clarification requested asynchronously: when Focus Magic
+or Arcane Breach crosses sides, should beneficiary-side behavior follow the new
+recipient or remain tied to the original caster (with incompatible recipients
+leaving the effect in place)? Canonical full exchange and captured side-specific
+trigger rules do not specify this transposition. Preserve strength, durations
+and stable original caster attribution either way; do not invent a side policy.
+This does not block the generic provenance/planner prerequisite verification.
+
+Live implementation map is now bounded: use static recipient descriptors for
+living/shooter/non-siege/mind/undead restrictions without rerunning original
+cost/resistance/ownership cast paths. Keep Soul Chain primary references and
+Focus Magic/Arcane Breach beneficiary-side payloads intact and check legal
+destinations. Hypnotize requires captured cast-ceiling metadata before live
+transfer; missing metadata is an implementation gap, not authority to exempt
+this effect permanently. Hydra health cohorts/reference maximum stay with each
+recipient; the spell's fractional regeneration progress travels. No activation
+until complete transferable-state collection and application exist.
+
+Implementation prerequisites released 2026-10-03 after Pact d520113ff:
+stable original caster ownership on magical Bonus records, versioned saved
+provenance, and a detached simultaneous effect-bundle exchange planner.
+Separate workers own provenance and new planner files; recipient-legality
+inventory is read-only. Root will integrate live bundle discovery, authoritative
+application, paired UI and AI after these contracts settle. Time Stop and Spell
+Lock prohibit further magical intervention, so locked endpoints are not legal
+Warp targets. No spell activation or coverage claim from prerequisites alone.
+
 Read-only mapping completed: no canonical ambiguity found. Implementation
 needs transferable effect bundles, recipient legality and sidecar preservation
 for Regeneration and Guardian Spirit; Time Stop scheduler bookkeeping is not
