@@ -3155,6 +3155,51 @@ cause unresolved. Record for Phase2; no assertion weakening or crash observed.
 Other Phase2 deferrals: restored/stale query provenance, full AI execution/
 valuation and rendered/localized feedback. No playable promotion. Next missing
 item within this foundation: Peacemaker, followed by the remaining six perks.
+2026-10-03 continuation starts from committed/pushedfad71a2fc (clean worktree).
+Previous turn is concrete progress, not a wait: foundation ranks/perks and
+focused native evidence were accepted. Matching Windows notices37150248875
+succeeds for that source; prior full Windows37146835406 remains confirmed live
+onaeddb6900 and must not be cancelled/restarted merely for observation timeout.
+Runtime maps only reusable authoritative weekly-use state and actual guard/
+movement semantics for Peacemaker/Tribute; Envoy worker owns CGCreature.cpp/.h
+read-only-information implementation and tester owns focused Diplomacy fixture
+extensions. Do not implement pass-by as only a message if guarded movement
+would immediately retrigger combat. Flag missing pacification lifetime or
+interaction precedence if it is genuinely absent from the canonical rule.
+Accepted counts remain206/310 perks,87/93 ranks until the next native gate.
+Full Windows37146835406 subsequently succeeds onaeddb6900; full37150731428
+is now confirmed live on accepted/pushedfad71a2fc after matching notices success.
+Envoy registered active for focused verification only. Range contract is same
+map level, squared adventure distance<=25, visible to the hero's owner and saved
+active Envoy selection; no fog or gameplay-state mutation. Existing Visions
+behavior remains unchanged. Purpose-made art remains missing.
+Peacemaker/Tribute narrow map finds real design blockers: weekly use does not
+define pacification lifetime; both perks can apply to one refusal without a
+defined precedence; unaffordable Tribute does not specify weekly consumption.
+Asked all three choices asynchronously. Hold their production activation/state
+changes pending answers; do not substitute a message-only pass or mutate the
+shared guardian map. Reuse hero weekly marker/SetObjectProperty authority,
+absoluteWeek utility and hero-aware guardian filtering when decisions resolve.
+Envoy production is frozen in CGCreature.cpp only: passive detailed popup,
+unchanged one-line hover and ordinary Visions. Client build is underway; tester
+owns range/visibility/Gold/normal-offer checks. Accepted coverage stays206/310.
+User resolves all three choices immediately: Peacemaker protection lasts until
+the current week ends (deliberate attack ends it without refund); Peacemaker's
+free passage precedes paid Tribute; Tribute only consumes weekly use on
+successful payment. Integrated the decisions into canonical Diplomacy. Weekly
+mechanics are now design-unblocked; preserve hero-specific guard filtering,
+actual movement/pathfinder hooks, authoritative packet state and ordinary
+deliberate-attack behavior. Do not count clarification as implementation.
+Envoy final focused acceptance: client69085/test68817 pass; principal retry2
+15/15 from3 suites passes3.282s, zero skips. Hidden fixture now uses actual
+authoritative sight/fog packets, not an ineffective map setting. Binary SHA
+024782815a9de49a138ebad07e2c7de5cead3f8a54ab4df629b176a94f2a2831.
+Prior independent production review and root final fixture review pass; fresh
+reviewer allocation/reuse both hit the service limit, without a new review claim.
+Data/inventory19/19, module--check and diffcheck pass. Accepted207/310 perks,
+103 planned; Diplomacy4/10; ranks87/93 unchanged. Six Diplomacy perks remain
+open. No rendered/playable acceptance. Next Peacemaker/Tribute share saved hero
+weekly state and real hero-aware guard filtering, not a message-only bypass.
 
 ## UP-125 — Four-worker concurrency
 
