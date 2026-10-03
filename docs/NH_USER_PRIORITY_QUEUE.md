@@ -1631,7 +1631,8 @@ current uncommitted Grand Tactics/Mountaineer work.
 
 ## UP-183 — Necromancy Corpse Preservation
 
-Status: Bounded read-only map,2026-10-03. Missing Basic perk: ordinary magical
+Status: Completed source/native,2026-10-03; playable delivery not claimed.
+Historical implementation trace follows. Missing Basic perk: ordinary magical
 damage casualties remain eligible for Necromancy unless an effect explicitly
 invalidates remains. Current runtime reads the perk but the coverage audit
 reports no eligibility effect. Map casualty provenance from actual damage
@@ -1672,10 +1673,52 @@ restoration identity. Permanent restoration removes newest usable deaths;
 one-battle restoration keeps their prior cause/order for expiry, while re-death
 replaces the old identity with the new cause. Battle Form original-health ledger
 owns provenance; the transformed health view is only the HP projection. Legacy
-in-progress saves cannot reconstruct prior causes: retain unknown prior deaths
+snapshots cannot reconstruct prior causes: retain unknown prior deaths
 as OTHER (legacy eligibility), never fabricate magical provenance. New damage
 receives explicit classification. Save/network loss guards must preserve ordered
 state. Implementation starts after UP181/182's frozen acceptance/commit boundary.
+UP181/182 source was committed/pushed as1c2b7cf2c5d7839f2dd6f15f2d93ec337191501f.
+Matching Windows notices37123346422 succeed. Full Windows37123447269 is live on
+that exact revision; it includes Portal/Grand Tactics/Mountaineer, not UP183's
+new dirty source. Re-poll that live handle, do not dispatch a competing full build.
+UP183 implementation is delegated with bounded ownership: health/CStack/ordered
+provenance, explicit Lua damage ingress, and focused actual-cast fixtures. Root
+owns authoritative result filtering, version/outer guards, registration and builds.
+Existing binary battle descriptors omit general CUnitState: do not append a
+casualty-only sidecar and claim it restores matching health/resurrection. JSON
+health/state packets preserve full provenance; binary descriptors fail closed on
+nonrepresentable provenance until real full combat-state serialization exists.
+Ordinary adventure saving remains supported. This is not a new midbattle-save
+feature or a claim of existing ongoing-battle save support.
+Core1826 and client18663 pass; test50692 is compiling. Follow-up independent
+review confirms one blocking legacy-JSON regression: omitted optional original-
+form health reaches the new validator as null. Root repaired null-as-absent
+handling while retaining non-object rejection; a focused legacy-snapshot fixture
+is being added. The ongoing compile is not a frozen final-candidate claim:
+rebuild affected targets after this repair before native execution. Do not run
+the tester against the earlier binary.
+Frozen all-target77992 passes after the null fix; binary SHA-256
+8ca510882e75aa39e0f7ed685c1ae747e383dd9096f499cf3cf609ec596be317.
+Principal9 runs with zero skips: pure health4 pass, battle fixtures5 fail.
+Retain UP183-principal.log/XML. Fixture-only causes include damage's in/out value
+being actual HP consumed (not remaining damage), removed initial troops counted
+as dead, injected troops lacking original-army result baseline, and wrong-side
+spell timing after a shot. Owner is replacing injected troops with real prebattle
+armies and legal action timing, preserving actual filtered raising assertions.
+No activation or accepted coverage yet; tester stops before adjacent execution.
+Final acceptance: fixture retry48299 passes after repairing34931's nonexistent
+getter. Principal9/9 and adjacent15/15 pass, zero skips,1.751s/1.740s. Registry
+is active; generated module and active both-target build pass. Production-active
+9/9 passes1.794s with all five XML properties active and override false.
+Data/inventory19/19 and module drift pass after repairing an inventory-column
+mix-up. Independent review passes; the legacy-null defect is repaired and its
+omitted-field/malformed-field regression assertions pass. Final binary SHA-256:
+001072515cdc1f22f068c038ffc242c304cfb4b84fe780c3128b37bd4650a77a.
+Coverage196->197/310 perks, planned114->113; Necromancy3->4/10, faction55->56/90.
+Ranks84/93 and spells60/67 unchanged. Broad restoration/form interactions and
+midbattle persistence remain Phase2; art Not done, generic UI Provisional.
+No local playable promotion. Windows37123447269 succeeds on the prior1c2b7cf2c
+source, not this new slice. Root proceeds to coherent commit/push.
 
 ## UP-180 — Spellcraft Counterpressure
 
