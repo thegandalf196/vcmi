@@ -18,6 +18,59 @@ working sequence.
 
 ## Maintenance contract
 
+2026-10-03 UP129 foundation accepted: final client67358/test39859 exit0;
+principal retry10/10 passes1.870s, zero skips. Three ranks and Negotiator/Common
+Cause/Grand Diplomat use shared deterministic forecasts, normal Gold/count,
+authored-free exceptions, explicit saved eligibility and minimum AI admission.
+Actual query/payment/transfer dismissal and current/old wire pass. Binary:
+94754dc4103f089d4097f2eb032903dbfe9eb9b257a4ab670379487d8077af5e.
+Accepted perks206/310,104 planned; ranks87/93,6 planned; Diplomacy3/10;
+faction62/90 unchanged. Adjacent7/8 passes2.440s; same-hero exact-fit merge
+rejection reproduces in isolation and is an unresolved Phase2 finding, not an
+assertion to weaken. Deferred restored/stale queries, full AI/valuation and
+rendered/localized feedback; dedicated perk art missing. No playable promotion.
+Next Peacemaker within the still-open seven-perk Diplomacy continuation.
+
+2026-10-03 UP129 starts on committed/pushedaeddb6900. Reuse the completed
+Diplomacy map and resolved authored-free/surplus-dismissal choices. Runtime
+implements the shared captured-profile deterministic forecast and author
+eligibility flag; AI consumes exact count/price components with Gold/usable
+admission checks; focused fixtures exercise real offers/payment/transfer.
+Root registers helper/test CMake entries and owns activation/build/Git.
+Ranks and Negotiator/Common Cause/Grand Diplomat are registered active for
+focused verification; accepted coverage stays203/310 until native acceptance.
+Other Diplomacy perks are separate.
+Matching notices37146642103 passes onaeddb6900; full37146835406 is live on
+that same source, following completed successful full37142169494.
+Initial client95849 exits1: AIGateway dynamic_cast used CGCreature without its
+defining include. LogUP129-client-build.log retains the failure. Root adds the
+explicit include and repairs refusal-response recomputation to disable joining
+after a declined offer; focused refusal regression requested from the tester.
+Client retry88847 exits1: HeroPtr's dereference operator returns a pointer,
+where the shared forecast requires a reference. Root uses *heroPtr.get(); log
+UP129-client-build-retry.log retains the failure. Retry2 is separately logged.
+Client retry2 handle11816 exits0. Independent frozen production/fixture review
+reports no blocker; vcmitest rebuild is now running with twelve jobs. Data and
+inventory gates pass19/19, module--check and diffcheck pass. No native acceptance
+or playable promotion yet; accepted coverage remains203/310.
+Test15477 exits1 on fixture translator/JSON constructor/binary type-definition
+errors; tester owns the narrow repairs. LogUP129-test-build.log is retained.
+Production client success is unchanged; focused native acceptance is pending.
+Tester repairs concrete translator/bonus/template includes, qualifies the object
+JSON overload, and supplies the supported optional resolver argument; current/
+old binary and JSON assertions remain intact. Test retry66042 is separately
+logged in UP129-test-build-retry.log. No production edits during the retry.
+Test retry66042 exits0. Before execution, reviewer catches a fixture-only
+populated-object JSON load; tester must use a fresh empty CGCreature and retain
+the original neutral for binary assertions. One-file rebuild follows the fix.
+Test retry2 handle77176 exits0. First principal56667 passes5/10 in1.766s;
+original log/XML retained. Tester used the core Diplomacy ID instead of the
+decoded NH skill; separately, runtime excluded real map monsters because their
+owner is UNFLAGGABLE, not NEUTRAL. Corrected decoded-ID fixture and production
+unowned-owner filter; actual map owner and player-owned exclusion are asserted.
+Independent review approves the bounded correction. Client67358 exits0; test
+retry3 is separately logged. Accepted coverage remains203/310 pending rerun.
+
 2026-10-03 UP189 accepted source/native: Lord of the Dead captures original
 living-Champion presence, consumes12 residual/Elite/Core equivalents before
 other conversions, and delivers one exact Bone Dragon via atomic Hero/Ossuary

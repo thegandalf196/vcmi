@@ -3083,7 +3083,9 @@ no-external-split check. Do not expand Phase1 into an exhaustive matrix here.
 
 ## UP-129 — Deterministic Diplomacy foundation
 
-Status: Mapping complete; consolidated with blocked UP-048, 2026-10-02. Missing Version1.0 foundation for all three
+Status: Foundation completed source/native, 2026-10-03; seven further Diplomacy
+perks remain open under this item. Consolidated with UP-048. Historical mapping:
+Missing Version1.0 foundation for all three
 Diplomacy ranks and ten perks: eligible neutral joins use deterministic
 25/50/75% Army Value thresholds and normal recruitment Gold costs. Map current
 encounter eligibility, saved rules, exact pre-commit feedback, Leadership
@@ -3114,6 +3116,45 @@ it closes. Integrated into the canonical Diplomacy section, including visible
 closure feedback; no partial-neutral persistence should be invented. The ranks
 remain planned until the deterministic threshold/payment/feedback/AI path is
 implemented and verified. This source clarification alone adds no coverage.
+Implementation starts on committed/pushedaeddb6900 after UP189 focused
+acceptance. Root chooses one shared captured-profile forecast for server/AI:
+raw Army Value thresholds25/50/75%, normal whole-stack Gold price, authored
+COMPLIANT free exception, explicit optional author eligibility flag rather than
+repurposing randomized HOSTILE disposition. Preserve SAVAGE never-join intent,
+scripted control and legacy fight/flee behavior; do not restore legacy random
+joining for New Horizons heroes. Negotiator/Common Cause/Grand Diplomat share
+this foundation; other seven perks remain planned. Runtime owns helper/object/
+eligibility serialization, AI owns actual join-dialog decisions, tester owns
+focused real offer/payment/admission fixtures. Root owns registration/CMake/
+builds/Git. The join offer warns that remaining transfer-window troops are
+permanently dismissed at closure; retain existing validated army transfer and
+remove-after-visit lifecycle, without partial-neutral persistence. No rank,
+perk or playable acceptance claimed yet. Accepted coverage stays203/310.
+The user reiterated permanent dismissal of transfer-window remainders. Source
+offer feedback explicitly warns before acceptance. Production review caught and
+repaired legacy aggression gating of otherwise valid deterministic offers and
+initial flee-response rejection. A further refusal-to-flee response finding
+requires disabling joining when recomputing the response after refusal; repair
+and focused regression are pending before native acceptance. Root client build
+is running with twelve jobs; do not edit production until that handle is terminal.
+Deferred Phase2: distinguishing a hypothetical stale JOIN-to-FLEE query from a
+normal flee query requires explicit query provenance, not an invented transient
+object flag. No global polling or new prompt-state architecture in this slice.
+Data gate initially caught reversed Implementation/Art inventory columns for
+three newly activated threshold perks; columns were corrected without weakening
+the test. Data/inventory gate then passed19/19. Dedicated icons remain Not done.
+Final client67358/test39859 builds pass. Principal retry10/10 passes1.870s,
+zero skips, including ordinary perk offers, full payment, Leadership-clamped
+admission and actual permanent dismissal at transfer-window closure. JSON/current/
+old eligibility wire, rank-zero authored-free exception and real UNFLAGGABLE
+map ownership pass. Binary SHA94754dc4103f089d4097f2eb032903dbfe9eb9b257a4ab670379487d8077af5e.
+Accepted perks203->206/310, ranks84->87/93; Diplomacy3/10. Source review,
+data/inventory19/19, module--check and diffcheck pass. Adjacent7/8 passes2.440s;
+same-hero OrdinaryMerge exact-fit request remains rejected in isolation, with
+cause unresolved. Record for Phase2; no assertion weakening or crash observed.
+Other Phase2 deferrals: restored/stale query provenance, full AI execution/
+valuation and rendered/localized feedback. No playable promotion. Next missing
+item within this foundation: Peacemaker, followed by the remaining six perks.
 
 ## UP-125 — Four-worker concurrency
 
