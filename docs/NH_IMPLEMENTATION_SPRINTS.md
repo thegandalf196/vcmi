@@ -27,6 +27,14 @@ preserved with lazy-view/activation-token fixture lessons. Phase2 retains wider
 hazard/gate/control combinations and tactical AI selection; no playable promotion.
 Windows37077420212 succeeds on older37dd359b8, including Battle Plan but not
 Passing Lines. Next coverage preparation is Basic Battlecraft Tactics.
+Passing Lines source7aaa48c1be92db6056973dfd4a3e6ad9164302c5 is pushed;
+notice37081984549 succeeds. Full Windows37082097577 is queued on that exact
+source, not yet compile/package evidence. Preserve this run while mapping Tactics.
+UP154 maps are complete. Tactics needs independent saved deployment progression
+for both armies, strict authoritative side/zone checks, and client/AI phase-switch
+notification. Root selects attacker-then-defender scheduling and existing
+scenario/siege accessibility restrictions; opening effects and round1 wait for
+all eligible phases. No implementation or new activation from the map.
 
 2026-10-02 UP-153 Passing Lines begins with bounded runtime, consumer and fixture
 maps. Shared transit eligibility must allow friendly occupancy only, with empty

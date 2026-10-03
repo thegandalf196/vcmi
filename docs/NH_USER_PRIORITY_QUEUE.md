@@ -647,6 +647,13 @@ Battlecraft3/10; ranks84/93 and faction49/90 unchanged. Test binary SHA-256:
 No immutable playable promotion or full tactical AI certification. The recorded
 Phase2 deferrals remain open. Existing Windows37077420212 now succeeds on
 older37dd359b8 (Battle Plan included; Passing Lines excluded). Commit/push next.
+Delivered source: `7aaa48c1be92db6056973dfd4a3e6ad9164302c5` is committed and
+pushed to origin/definitive-mvp; identity/privacy checks pass and the source
+worktree is clean. Cheap notice37081984549 succeeds on that exact revision.
+Full Windows37082097577 is confirmed queued on the same revision; preserve and
+poll that job rather than dispatch a replacement. Linux source/native acceptance
+does not imply Windows graphical acceptance or launcher snapshot promotion.
+Full Windows37082097577 subsequently reaches confirmed in_progress on7aaa48c1b.
 
 Status: In progress (bounded implementation map),2026-10-02. Canonical perk: friendly
 stacks may move through hexes occupied by friendly stacks, provided movement ends
@@ -699,6 +706,22 @@ not substitute legacy opposed-rank subtraction for two independent entitled
 armies. Root chooses architecture before source edits. Passing Lines commit
 and delivery remain the immediate integration checkpoint. No activation or
 coverage increase from this map; ordinary design blockers remain recorded.
+Maps complete without source edits. Legacy setup subtracts opposing reposition
+bonuses and selects only one side; it cannot express two independent NH armies.
+Human and AI receive only the initial tactics callback. Authoritative gaps must
+be repaired in this slice: END is not bound to the current deployment side, and
+movement's zone guard is only an assertion rather than release validation.
+Root architecture direction: resolve independent per-side entitlements/ranges,
+save explicit deployment progression and publish phase switches. Use deterministic
+attacker-then-defender sequencing (an architecture choice, not a new gameplay
+exception), and start opening effects/round1 exactly once after both finish.
+Retain layout.tacticsAllowed and ordinary siege wall/gate/footprint legality;
+do not invent an additional blanket siege prohibition. Reuse the existing
+deployment interface and AI handler, extending their side-switch notification.
+The legacy range defines its base row as1; the canonical extension is two rows
+forward, not opposed Skill-rank subtraction. Native acceptance must cover both
+sides, scenario-disabled deployment and forged side/out-of-zone requests.
+No implementation, registry activation or coverage increase from these maps.
 
 ## UP-145 — Bloodrage Blood Scent
 
