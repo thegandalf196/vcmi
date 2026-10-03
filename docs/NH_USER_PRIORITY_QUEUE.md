@@ -2117,6 +2117,34 @@ No production edit or coverage activation until the trigger boundary is resolved
 
 ## UP-179 — Chaos Reality Warp and Reality Breaker
 
+Hypnotize ceiling prerequisite accepted, 2026-10-03: production client retry26745
+and final focused test build39697 exit0. Native5489 passes22/22 from3 suites in
+5.958s, zero skips, in UP179-hypnotize-refresh-final.log/XML. It proves exact
+specialty-adjusted capture, at-ceiling/above-ceiling admission, accepted recast
+with duration restoration and original-ceiling retention, exact integer
+parser/wire preservation above2^53, malformed payload rejection and legacy
+absence. Test binary SHA256:
+cf19b031bdcb23bbc8246a4bc0405f32f93ac6b551f11abcd1af6d355d27b33b.
+Independent Astra review has no blocking finding; data/inventory19/19 and
+diffcheck pass. Canonical specification is unchanged. No full Warp acceptance,
+coverage increase or playable promotion. Phase2 retains detached refresh parity,
+Hypnotize original-side targeting interactions and binary-load consumer validation.
+Next: live effect collection/exchange, paired UI and AI, subject to the existing
+beneficiary-side clarification. Earlier failed gates remain recorded.
+
+Next unambiguous prerequisite, 2026-10-03: capture Hypnotize's original,
+target-specific HP ceiling in its existing saved bonus parameters at cast time.
+Use the same specialty-adjusted calculation as original target admission;
+never recalculate a transferred effect from the Warp caster. Preserve marker
+values, ordinary targeting and duration-only refresh semantics. Capture the
+exact int64 in the C++ effect recorder: the current Lua-to-JSON bridge converts
+numbers to floating point and cannot preserve every legal engine value.
+Runtime owns the recorder, narrow bonus parser and metadata documentation; the tester owns
+the existing real-cast fixture. Root owns integration and focused validation.
+This does not resolve the pending beneficiary-side question, activate Reality
+Warp, or increase spell coverage. Latest source4dad1c014's Windows notices
+37159609153 passed; full build37159608109 is confirmed live, not yet accepted.
+
 Prerequisites accepted source/native, not the complete spell: client8019 and
 test45423 exit0; UP179-prerequisite-principal.log/XML9/9 passes1.201s, zero
 skips. Original caster provenance, exact reciprocal bundle/timer/sidecar

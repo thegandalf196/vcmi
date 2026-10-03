@@ -18,6 +18,18 @@ working sequence.
 
 ## Maintenance contract
 
+2026-10-03 UP179 Hypnotize ceiling prerequisite accepted: client retry26745
+and final focused test build39697 exit0; native5489 passes22/22 in5.958s,
+zero skips (UP179-hypnotize-refresh-final.log/XML). Exact cast-time integer
+metadata and real duration-only refresh are verified without changing targeting
+or action rules. Independent review has no blocker; data/inventory19/19 pass.
+Combat spells60/67, perks210/310 and ranks87/93 remain unchanged. Full Reality
+Warp is not implemented or promoted. Next live collection/authoritative exchange,
+paired UI and AI; beneficiary-side question remains pending. Phase2 retains
+detached refresh parity, original-side Hypnotize targeting interactions and
+metadata validation by eventual binary-loaded transfer consumers. Prior failed
+builds/fixtures are retained in NH_RELEASE_FAILURES.md.
+
 UP179 prerequisites accepted source/native: client8019/test retry45423 exit0;
 principal47075 passes9/9 from2 suites in1.201s, zero skips. Log/XML retained.
 Binary SHA670d04c6d3c8d4241512402128876163f777510723cfb1bc2a7a97fc0ccfe715.
