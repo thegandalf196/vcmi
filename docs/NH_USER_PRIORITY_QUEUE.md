@@ -636,7 +636,19 @@ repeat its map or treat it as unblocked. No source or activation was performed.
 
 ## UP-153 — Battlecraft Passing Lines
 
-Status: Open (next unblocked coverage item),2026-10-02. Canonical perk: friendly
+Verified source/native checkpoint: both-target9087 and fixture retry38200 build
+successfully. Principal retry13004 passes6/6 in4.330s; adjacent87077 passes10/10
+in2.280s, zero skips. First4pass/2fail artifacts are preserved; fixture repairs
+pin the actual detached copy and capture the movement activation token before
+battle flow advances. Registry/module/inventory are active; data/inventory19/19,
+drift and final independent review pass. Coverage183/310 active,127 planned,
+Battlecraft3/10; ranks84/93 and faction49/90 unchanged. Test binary SHA-256:
+`386e58b7065922baa459741a35985108654292f31d5af4dce372ac59257fa191`.
+No immutable playable promotion or full tactical AI certification. The recorded
+Phase2 deferrals remain open. Existing Windows37077420212 now succeeds on
+older37dd359b8 (Battle Plan included; Passing Lines excluded). Commit/push next.
+
+Status: In progress (bounded implementation map),2026-10-02. Canonical perk: friendly
 stacks may move through hexes occupied by friendly stacks, provided movement ends
 in a legal empty position. Implement shared movement/pathfinding eligibility,
 authoritative destination/path validation, client preview and detached AI hooks.
@@ -645,6 +657,48 @@ hexes at movement end. Current controller, double-wide footprints and ordinary
 movement-trigger behavior must remain correct. Preserve Ghost Walk semantics;
 this is not flight or teleportation. UP149/150/151 and UP130 retain their existing
 clarification blockers. No source, activation or coverage claim yet.
+Separate runtime/shared, AI/client-consumer and focused-fixture read-only maps
+are assigned. Root owns architecture, registration, integration, builds and Git.
+The ordinary movement UI should consume shared reachability rather than a new
+visual control. No new artwork or graphical execution is in scope.
+Implementation architecture selected: transient reachability parameters carry a
+friendly-occupied transit mask, resolved from the mover's current controller and
+visibility-aware hero access. No duplicate saved capability is introduced.
+Original accessibility remains strict for endpoints; physical obstacles are not
+relaxed. Runtime, direct AI forecast consumers and a new bounded native fixture
+have separate file owners. Ordinary hazards must still trigger during transit,
+without committing an illegal occupied intermediate stop. Coverage remains
+182/310 until build and focused execution establish acceptance.
+Pre-implementation review requires legal segment endpoints at both hazard and
+gate boundaries. The existing Ghost Walk occupied-transit exception suppresses
+hazard segmentation and is not suitable for Passing Lines. The obstacle helper's
+`passed` argument excludes already handled tiles; it does not process crossed
+tiles. Focused acceptance must exercise an actual authoritative movement request
+across a friendly footprint with a Fire Wall, not merely call the trigger helper.
+Existing Ghost Walk interaction hardening remains a separate Phase2 finding.
+Source is frozen with six registered native cases. Registry/module activation is
+staged for validation, not counted as accepted coverage yet. Data/inventory
+checks pass19/19; module drift and whitespace checks pass. Independent runtime,
+AI and fixture review finds no blocking issue. Both-target12-job build9087 is
+live, log `build/new-horizons-linux/testing/UP153-build.log`.
+Phase2 deferrals: consecutive occupied-footprint interaction matrices,
+double-wide siege gates/moats, compound hazards, broader control changes and
+full tactical AI selection. Current AI evidence is shared/detached reachability,
+not tactical-choice certification. No saved-state addition or playable snapshot
+promotion is included. Existing Windows37077420212 is still confirmed compiling
+older37dd359b8; preserve it rather than start another full build.
+
+## UP-154 — Battlecraft Tactics deployment coverage
+
+Status: Bounded read-only preparation,2026-10-02. Canonical Basic perk extends
+the army's deployment area two additional battlefield rows forward, subject to
+scenario and siege restrictions. Map current deployment setup, authoritative
+relocation legality, human/AI consumers, both-side sequencing and focused native
+fixtures. Preserve scenario restrictions and Hero/Creature action budgets; do
+not substitute legacy opposed-rank subtraction for two independent entitled
+armies. Root chooses architecture before source edits. Passing Lines commit
+and delivery remain the immediate integration checkpoint. No activation or
+coverage increase from this map; ordinary design blockers remain recorded.
 
 ## UP-145 — Bloodrage Blood Scent
 

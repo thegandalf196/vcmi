@@ -18,6 +18,23 @@ working sequence.
 
 ## Maintenance contract
 
+2026-10-02 UP-153 verified: Passing Lines is active. Both-target build9087 and
+fixture retry38200 pass. Principal retry13004 passes6/6 in4.330s; adjacent87077
+passes10/10 in2.280s, zero skips. Data/inventory19/19, module drift and independent
+review pass. Coverage183/310 active perks,127 planned; Battlecraft3/10,
+ranks84/93 and faction49/90 unchanged. Original4pass/2fail artifacts remain
+preserved with lazy-view/activation-token fixture lessons. Phase2 retains wider
+hazard/gate/control combinations and tactical AI selection; no playable promotion.
+Windows37077420212 succeeds on older37dd359b8, including Battle Plan but not
+Passing Lines. Next coverage preparation is Basic Battlecraft Tactics.
+
+2026-10-02 UP-153 Passing Lines begins with bounded runtime, consumer and fixture
+maps. Shared transit eligibility must allow friendly occupancy only, with empty
+legal destinations and ordinary movement triggers. It is not Ghost Walk, flight
+or teleportation. Root owns architecture and all builds/Git. No source activation
+or coverage increase from mapping; current perks182/310. UP149/150/151 await
+their recorded decisions, and UP130 remains composition-scope blocked.
+
 2026-10-02 UP-148 verified checkpoint: Battle Plan is active. Both Linux targets
 build; principal5/5 passes in13.180s and activated production-registry30/30 in
 45.567s, zero skips. Free opening Orders precede any Creature Activation for
