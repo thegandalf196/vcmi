@@ -4855,7 +4855,7 @@ Necromancy converts eligible enemy casualties into permanent Undead after victor
 |Corpse Preservation|Basic|Casualties caused by ordinary magical damage become eligible for Necromancy. Without this perk, ordinary magical casualties are excluded. Effects that explicitly destroy or invalidate remains, such as Disintegrate, remain excluded even with the perk.|
 |Dark Conversion|Basic|When resolving Necromancy, every complete group of 3 Skeletons generated from eligible Core-tier casualties is automatically raised as 1 Zombie instead.|
 |Black Harvest|Basic|After Necromancy raises at least 10 creatures, recover 1 Mana per 10 creatures raised, up to 10 Mana.|
-|Soul Harvester|Advanced|When resolving Necromancy, every complete group of 6 Skeletons generated from eligible Elite-tier casualties is automatically raised as 1 Wight or the equivalent Necropolis Elite defined by the faction roster.|
+|Soul Harvester|Advanced|When resolving Necromancy, every complete group of 6 Skeletons generated from eligible Elite-tier casualties is automatically raised as 1 Wight. Wights remain Core-tier; the conversion's input is Elite-tier casualties, not its output.|
 |Death Lord|Advanced|Construct and Elemental casualties become eligible at 25% of the normal Necromancy conversion rate.|
 |Grave Knowledge|Advanced|When defeating Undead enemies, 20% of their eligible casualties may be reclaimed as Skeletons even though they are not living.|
 |Ossuary|Advanced|If the hero has no legal army slot for raised creatures, they are sent to the nearest owned Necropolis town instead of being lost.|

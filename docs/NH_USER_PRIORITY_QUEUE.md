@@ -1629,6 +1629,93 @@ Full Windows37118407677 now succeeds on exact e6fd45213318b7a3b7812e4bd7ade712af
 This build includes Master Synthesis but excludes the later Portal source and
 current uncommitted Grand Tactics/Mountaineer work.
 
+## UP-186 — Dark Conversion canonical execution gap
+
+Status: Verified source/native; playable delivery pending,2026-10-03.
+Historical audit and correction trace follows. Runtime previously
+offers a player/AI choice and converts Skeletons from every casualty tier. The
+canonical rule instead requires automatic conversion from eligible Core-tier
+casualties only. Active registration is not faithful completion of this rule.
+Correct production authority without restoring invalid remains or magical
+casualties lacking Corpse Preservation; retain unconverted Skeletons and atomic
+Leadership/slot admission. Human and AI winners must use the same automatic
+path, with no conversion-choice query. Focused category/remainder/admission and
+post-battle evidence are required. Preserve historical choice tests as evidence
+of the superseded runtime, not current acceptance. No activation count increase
+is claimed: the data row was already active.
+Production and fixtures are frozen. Client35092 exits0. Root both-target
+12-job build70772 is live, logUP186-frozen-build.log; re-poll this exact handle
+before native execution, do not restart on an observation timeout. Independent
+review reports no blocking finding. Planned principal12-case gate covers shared
+formula, real human/computer result paths and atomic admission; adjacent9 covers
+Corpse Preservation and ordered cohorts. Data/inventory19 and UI source guard
+pass; native acceptance and commit/push remain pending. No playable promotion.
+After the environment transition,70772's handle is missing and a process check
+confirms no surviving build/compiler. Its log ends77/257 without linking; this
+is an interrupted build, not acceptance. Resume the same incremental target
+withUP186-resumed-build.log; do not execute the stale test binary.
+Resume9620 exits0 (180/180). Tester remained pending initialization after the
+environment transition; root explicitly cancelled that assignment and ran the
+focused native gate directly. Principal12 runs11pass/1fail, zero skips,3.270s;
+retainUP186-principal.log/XML. The computer-winner fixture hits its ten-dialog
+limit with an ordinary HeroLevelUpDialog still open, not NecromancyChoice.
+Root increases only that bounded fixture drain to64, preserving no-choice and
+actual army assertions. Production is unchanged; retry22923 is live, log
+UP186-fixture-retry-build.log. Adjacent tests wait until principal acceptance.
+Retry22923 exits0 but principal retry still11/12 (19.373s): increasing the drain
+does not repair the fixture. Trace identifies missing onAdvInterfaceReady in the
+compact computer case; unprompted level-up packets are never emitted/applied.
+Root adds both simulated controller-ready signals, matching the admission
+fixture's existing setup, and restores the original ten-dialog bound. No
+production validation change. Ready-build71025 is live, logUP186-ready-build.log.
+Final acceptance:71025 exits0. Principal12/12 passes2.383s; adjacent9/9
+passes1.778s, zero skips. Data/inventory19/19, module consistency and result-text
+guard pass. Independent frozen production review finds no blocker. Final binary
+SHA-25670900e308674b933b1ba3835d5a78085aad55bbc5af83e85fd7f785086c9b5ae.
+No new registry activation:197/310 active,113 planned remains unchanged; this
+repairs already-active Dark Conversion's specification fidelity. Broader
+interactions, actual full-AI play and rendered delivery remain Phase2/acceptance.
+No local playable promotion. Next is UP184's approved Wight conversion.
+
+## UP-184 — Necromancy Soul Harvester
+
+Status: In progress (bounded read-only map),2026-10-03. Implement the canonical
+Advanced perk's automatic conversion of complete groups of six Skeletons
+generated from eligible Elite casualties. Map category-specific generation,
+atomic multiple-output admission, post-battle feedback and minimum AI hooks.
+The specification names Wight but its faction roster classifies Wight as Core;
+do not silently select a different Elite output. Check and flag this conflict.
+Acceptance requires faithful category filtering, retained remainders, actual
+raising, capacity rejection without partial mutation, registration and focused
+native evidence. No activation or coverage claim from exploration.
+Map complete: use captured battle category rules and eligible per-creature
+counts; do not infer tier from legacy creature levels. Wight is Core in both
+the canonical roster and runtime category data. Asked whether to retain the
+explicit named Wight or use an Elite output; no replacement chosen. Soul's
+implementation waits on that answer while UP186 repairs its Core conversion
+dependency. Preserve global base rounding and classify only source-tier
+generated whole Skeletons for tier-specific conversions.
+User explicitly chose the named Wight. Canonical and registry descriptions now
+state that Wight remains Core-tier and only the input casualties are Elite-tier.
+The output ambiguity is resolved; the perk remains planned pending actual
+implementation after UP186's focused acceptance boundary.
+
+## UP-185 — Necromancy Master of Bones
+
+Status: Bounded independent read-only preparation,2026-10-03. Map the canonical
+Expert perk's upgraded Skeleton output and the condition that the appropriate
+Necropolis upgrade is available to the player. Identify existing ownership,
+building/upgrade APIs, result representation and minimum AI consumers; flag
+genuine availability ambiguity before editing production. This preparation
+does not displace UP184 or claim implemented coverage.
+Map complete: owned towns expose built upgrade dwellings and their actual
+offered creatures; Skeleton's configured upgrade is Skeleton Warrior. The
+natural availability interpretation is a currently owned, built appropriate
+upgrade, not foreign ownership or a merely buildable upgrade. A new explicit
+Skeleton-output form in the result will be needed for mixed upgraded-Skeleton
+and Zombie output, with matching wire protection and UI consumption. This
+remains the next bounded coverage candidate after UP186, not current source.
+
 ## UP-183 — Necromancy Corpse Preservation
 
 Status: Completed source/native,2026-10-03; playable delivery not claimed.
