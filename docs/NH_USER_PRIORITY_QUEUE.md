@@ -697,6 +697,17 @@ older37dd359b8; preserve it rather than start another full build.
 
 ## UP-154 — Battlecraft Tactics deployment coverage
 
+Verified source/native checkpoint: core37002 and repaired both-target10000/39337
+exit0. Principal retry24146 passes8/8 in23.514s; adjacent11237 passes10/10
+in17.054s, zero skips. Data/inventory19/19, module drift and final source review
+pass. Coverage184/310 active perks,126 planned; Battlecraft4/10, ranks84/93
+and faction49/90 unchanged. Registration/module/inventory are active. Preserve
+the exit143 baseline and original7/8 principal artifacts. UI constructor crash
+is repaired, and valid movement remains asserted before fixture blockers.
+Rendered/actualAI handoff, broader siege layouts and malformed post-opening
+phase hardening remain Phase2. Descriptor roundtrips do not prove full midbattle
+resume; no immutable playable promotion. Source commit/push is next.
+
 Status: Bounded read-only preparation,2026-10-02. Canonical Basic perk extends
 the army's deployment area two additional battlefield rows forward, subject to
 scenario and siege restrictions. Map current deployment setup, authoritative
@@ -722,6 +733,84 @@ The legacy range defines its base row as1; the canonical extension is two rows
 forward, not opposed Skill-rank subtraction. Native acceptance must cover both
 sides, scenario-disabled deployment and forged side/out-of-zone requests.
 No implementation, registry activation or coverage increase from these maps.
+Implementation begins with three isolated Luna lanes: shared state/packets,
+authoritative flow/validation, and human/AI deployment handoff. Root owns the
+generic `BattleDeploymentState` header, one append-only serialization feature,
+type registration290, metadata/configuration, builds and Git. Distances and
+completion flags infer the current attacker-then-defender phase; existing scalar
+tactics fields are synchronized projections. No polling, extra action or custom
+visual control is added. Registration remains planned and coverage183/310 until
+focused build/native acceptance. Server lane becomes the bounded native tester
+after its implementation freezes, avoiding overlapping test-file ownership.
+Shared runtime is source-frozen: independent deployment snapshots, typed phase
+updates, scalar projections and pre-write compatibility guards are present.
+Root rejects independent snapshots with no entitled side and aligns available
+deployment destinations with the entire creature footprint. Server and human/AI
+handoff lanes are still integrating; no build/native acceptance or registry
+activation is claimed. The previous confirmation-only turn made no coverage
+progress; current source inspection and footprint correction resume UP-154.
+Existing Passing Lines Windows run37082097577 is confirmed live on7aaa48c1;
+preserve that run rather than dispatching a duplicate while it compiles.
+Tactics registration/module/inventory activation is staged for the principal
+fixtures; corrected data/inventory gate passes19/19 and module drift check passes.
+Counts remain183/310 verified until native acceptance. Serialized12-job frozen
+core build37002 is live, log`build/new-horizons-linux/testing/UP154-core-build.log`.
+Human/AI sources remain editable outside this target; the tester writes only its
+unregistered fixture. Re-poll37002 before starting another compile, then freeze
+all client/AI/test sources for the combined client/native build. Shared fixture
+setup now preserves real independent deployment instead of clearing its scalar
+distance; the new cases must use actual END actions, not synthetic beginCombat.
+Core build37002 exits0. This proves the shared target compiles, not client/native
+acceptance. Human/AI freeze and the unregistered fixture remain pending before
+the combined build. No source build or registry flag alone increases coverage.
+Human/AI lane is now frozen. Baseline combined build42019 is live with12 jobs,
+log`build/new-horizons-linux/testing/UP154-client-baseline-build.log`; the new
+deployment fixture remains unregistered while its owner writes it. Final source
+review runs read-only. Re-poll42019 before fixture registration or another build;
+no native acceptance, coverage increment or playable promotion yet.
+Root/follow-up review found a blocking AI-deployment constructor-order defect:
+tacticPhaseStarted(false) calls blockUI before stacksController exists. Repair
+is queued after42019 is terminal: move that call to deploymentPhaseChanged's
+inactive-local branch. Initial constructor blocking already occurs after controller
+initialization. Do not run the baseline binary before recompiling the repair.
+Baseline42019 is terminal exit143 at386/542, without a reported compiler error;
+process inspection confirms no surviving cmake/ninja/compiler child. Do not
+describe this interrupted build as success or infer its termination cause.
+The constructor-order repair is now applied and the frozen eight-case fixture
+is registered. A new combined incremental build must finish before native use.
+The fixture exercises authoritative requests and detached packet replay, not a
+client TacticsHandler callback queue; rendered/actual-AI handoff evidence remains
+Phase2. Source registration remains staged, verified counts unchanged.
+Repaired fixture build10000 is live with12 jobs, log
+`build/new-horizons-linux/testing/UP154-fixture-build.log`. Re-poll that handle
+before another compile or principal native run.
+Build10000 exits0 for both targets. Principal35799 runs8 cases:7pass/1fail,
+zero skips in23.519s. The movement case cannot find a reachable legal acceptance
+destination after assembling its rejection blockers; other assertions pass.
+Retain the original log/XML and diagnose fixture geometry without weakening
+movement rules or acceptance. The Luna fixture owner has this bounded repair;
+no coverage increment or source/native-complete claim yet.
+
+## UP-155 — Battlecraft Overwatch implementation map
+
+Status: Bounded read-only preparation,2026-10-02. Canonical Basic perk: a
+Waiting shooter makes one automatic50%-damage ranged reaction against the first
+enemy that voluntarily moves into its range before its delayed activation,
+provided that enemy is a legal target; once per round. Map authoritative movement
+segments, ranged target legality, reaction resolution and consumed/round state,
+plus detached AI representation. Do not implement while UP-154 source/build
+ownership is frozen. Root resolves architecture after the map; no perk activation
+or coverage increase from exploration. Tactics build/native acceptance remains
+the current delivery priority. No numerical redesign or bespoke art is requested.
+Read-only map complete: voluntary-path reactions must check traversed hexes,
+not just endpoints. Shared battleCanShoot supplies legality, while Counterfire
+provides the50%-reaction and published per-unit round-marker pattern; do not
+reuse its consumed marker. Ordinary moveStack also handles return-after-strike
+and gating, so movement cause must remain explicit. Native CStack descriptor
+serialization omits runtime unit state; do not claim full save support from
+detached/JSON copies. Asked whether player-chosen Teleport/Blink count as
+voluntary movement; await that genuine wording choice before implementation.
+Tactics acceptance remains unblocked and takes priority.
 
 ## UP-145 — Bloodrage Blood Scent
 
