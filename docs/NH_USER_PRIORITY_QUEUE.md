@@ -938,7 +938,7 @@ it merely because a later source commit exists.
 
 ## UP-169 — Bloodrage Rage Through Pain
 
-Status: Source/native verified and active (commit pending),2026-10-03. First time a friendly stack
+Status: Source/native verified and active (committed/pushed; playable delivery pending),2026-10-03. First time a friendly stack
 falls below50% maximum HP, it gains one personal Bloodrage increment for the
 rest of combat. Map shared live/detached damage application, saved unit state,
 current-controller eligibility and existing rank/cap/threshold consumers. Do
@@ -1005,10 +1005,15 @@ the active registry without its synthetic map override. SHA-256 is unchanged.
 Final independent review accepts the activation delta with no BLOCKING issue.
 Root proceeds to the coherent source commit/push; no full-game or rendered
 acceptance is implied by the focused gate.
+Source delivered as025ea810a740cff134d115dd7fab78cf232cca6d on
+origin/definitive-mvp; push exits0 with the approved author/committer identity.
+Matching notice preflight37101230223 is live. Full Windows37098764803 remains
+live on earlier9f59f66eb; preserve it and do not dispatch a competing full run.
+No local immutable playable snapshot has been promoted by this checkpoint.
 
 ## UP-171 — Shroud Evasive Shroud preparation
 
-Status: Bounded read-only preparation,2026-10-03. After making a flanking attack,
+Status: Source/native verified and active (commit pending),2026-10-03. After making a flanking attack,
 the attacker receives15% physical damage reduction until its next activation.
 Reuse the authoritative flanking classifier, normal physical cap, activation
 expiry and detached AI preview. Do not reinterpret the trigger as a hit on the
@@ -1026,6 +1031,84 @@ selected BattleExchangeVariant replay also needs the transition, since replay
 does not generically copy newly added preview bonuses. No genuine design
 ambiguity was found. Root will choose ownership/implementation after UP169's
 principal acceptance, rather than mutate sources during the frozen build.
+UP169 has now passed active native acceptance and is committed/pushed. Root
+selects the mapped shared flanking predicate and refreshable1500-basis-point
+bonus. Capture eligibility before applying the accepted primary hit; apply to
+the surviving attacker before ordinary retaliation. No new polling, action or
+binary feature is needed. Runtime owns NewHorizonsShroud.{h,cpp} and
+BattleActionProcessor.cpp; AI owns AttackPossibility.cpp and
+BattleExchangeVariant.cpp; tester owns a new unregistered Evasive fixture.
+Root owns registration, builds, data/activation, integration and Git. Registry
+remains planned and counts stay189/310 until the principal gate passes.
+Live helper/server sources are frozen: qualification is captured once for a
+direct primary flank, and surviving-attacker protection is applied before
+ordinary retaliation with quantitative grant/refresh feedback. AI and the
+isolated fixture remain in progress. Root identified the damage-cache lifecycle
+requirement: a cache built during protection must not reuse reduced values
+after expiry. AI ownership expands to AttackPossibility.h for bounded target-ID
+history, including initial cache capture and parent-chain queries. This does
+not depend on an unrelated Order forcing recalculation. No build or activation
+yet. UP169's matching notice37101230223 has completed successfully.
+UP171 runtime/AI and three-case fixture are frozen. Root registers the fixture
+and starts one combined client/vcmitest build92831 with12 jobs; log
+build/new-horizons-linux/testing/UP171-evasive-shroud-baseline-build.log.
+Re-poll that exact handle before native acceptance; no parallel or stale-binary
+run. Cache history is captured at initial population and queried through parent
+caches. The fixture includes actual flanking/retaliation protection, front/ranged
+negative cases, candidate/selected-replay isolation, narrow Bonus persistence,
+same-strike nonstacking refresh and genuine TURN_QUEUE activation expiry.
+Final source review is running; activation and counts remain unchanged.
+Build92831 is terminal failure: the generic selected-exchange helper invokes
+detached bonus methods on CUnitState rather than StackWithBonuses. Sole AI
+owner repairs this concrete receiver without expanding shared-state APIs.
+Failure log is retained; no stale test run, activation or coverage increment.
+The AI receiver repair is frozen: getForUpdate supplies the mutable branch-local
+StackWithBonuses. Root starts serialized both-target retry76200 with12 jobs;
+log testing/UP171-evasive-shroud-retry-build.log. Re-poll this handle before
+running the three-case native gate. Source review remains pending.
+Retry76200 exits0 for both targets; tester owns the three-case native gate with
+UP171-evasive-shroud-native.log/XML. Final review finds no remaining blocker.
+Root corrected an overrestrictive review prompt: canonical Cleave is a separate
+direct melee strike and Evasive has no authored Cleave exception, so a direct
+qualifying Cleave remains eligible in live/AI/replay. Secondary collateral is
+still excluded by the shared classifier. Broader Cleave/preemptive ordering
+coverage is Phase2, not a claimed executed matrix or gameplay amendment.
+Previous full Windows37098764803 succeeds on No Escape9f59f66eb. Matching notice
+37101230223 succeeds on Rage Through Pain025ea810a; root dispatches the next
+full Windows build on that committed source, not the dirty Evasive candidate.
+New full Windows37102336709 is confirmed live on025ea810a. The first Evasive
+native gate runs3cases:2pass/1fail, zero skips,5.463s. The target dies after
+three actual attacks, preventing the live-retaliation assertion; selected AI
+projection, refresh/real-expiry and narrow Bonus checks do not indicate a
+production failure. Sole tester repairs fixture survival bounds; activation
+and counts remain unchanged. Preserve original native log/XML and rebuild
+before retrying; no altered production coefficients or stale-binary claim.
+Fixture survival repair is frozen:3,000 peasants/20 Angels and current primary
+damage plus unprotected-retaliation bounds control the observation interval.
+Root starts serialized both-target fixture rebuild99526 with12 jobs; log
+testing/UP171-evasive-shroud-fixture-rebuild.log. Re-poll before native retry;
+principal live/AI/log assertions and negative controls are retained.
+Rebuild99526 exits0. Repaired principal3/3 passes in5.480s, zero skips;
+production activation follows, with data/inventory19/19, module drift and
+both-target incremental build passing. Final production-active3/3 passes
+in5.730s, zero skips, without the fixture's planned-only override. Binary
+SHA-256:3d302ce731c2f278dfc30093d4a3e6767b95c3ebe7da0efde8810a7f00a3ab09.
+Direct recount:190/310 active perks,120 planned; faction52/90,38 planned;
+Shroud3/10, ranks84/93 unchanged. Retain both failed and repaired logs/XML.
+Broader Cleave/preemptive ordering, control and full combat-save restoration
+remain Phase2; purpose-made art Not done and generic UI Provisional. Final
+activation review reports no blocking finding and confirms those registry
+counts. Source commit/push is next, not a playable promotion.
+
+## UP-172 — Shroud Ambusher
+
+Status: In progress (bounded read-only map),2026-10-03. Canonical Basic perk:
+the first flanking attack made by each friendly stack in a combat deals+20%
+damage. Map shared live/detached damage, accepted-hit consumption, per-stack
+battle/save representation and minimum AI projection. Do not substitute one
+trigger per army, every flank, a turn-local timer or an inert registration.
+Root chooses architecture after evidence; no edits/activation/coverage from
+this preparation. Preserve UP171's frozen acceptance and source checkpoint.
 
 ## UP-170 — Shroud No Escape
 
