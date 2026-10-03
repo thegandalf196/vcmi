@@ -18,6 +18,39 @@ working sequence.
 
 ## Maintenance contract
 
+2026-10-03 UP-183 verified: Corpse Preservation is active. Actual ordinary
+magical casualties require the perk; Disintegrate remains excluded. Ordered
+usable health cohorts implement newest-first restoration, temporary expiry and
+re-death cause replacement without fabricating Overheal corpses. Core1826,
+client18663 and test50692 pass; frozen77992 passes after the legacy-null repair.
+Initial principal4/9 and getter failure34931 remain preserved as fixture lessons;
+repaired48299 passes. Principal retry9/9 and adjacent15/15 pass, zero skips,
+1.751s/1.740s. Active both-target build passes; active9/9 passes1.794s, proving
+production registry active and test override false in all five battle cases.
+Data/inventory19/19 and module drift pass; the first inventory check caught
+swapped Implementation/Art columns, now repaired. Independent review finds no
+remaining blocker. Binary SHA-256:
+001072515cdc1f22f068c038ffc242c304cfb4b84fe780c3128b37bd4650a77a.
+Coverage197/310 active perks,113 planned; Necromancy4/10, faction56/90, ranks84/93
+and spells60/67 unchanged. Midbattle persistence, broad restoration/form
+interactions and rendered acceptance remain Phase2; purpose-made art Not done.
+No local playable snapshot promotion. Previous Windows37123447269 succeeds on
+1c2b7cf2c, without this new source. Next bounded coverage map: Soul Harvester's
+Elite-casualty conversion and multiple-output authority/AI seams.
+
+2026-10-03 UP-183 implementation checkpoint: Corpse Preservation's approved
+magical-casualty gate and newest-usable-first restoration policy are canonical.
+Production source is frozen: cause-aware health cohorts, temporary resurrection
+identity, surplus-safe Overheal, original-form ownership, explicit Lua spell
+ingress and authoritative eligibility filtering. Embedded health JSON preserves
+matching provenance; binary battle descriptors that omit health reject it rather
+than claim full midbattle persistence. Independent bounded review finds no
+blocker. Serialized core build1826 is running; actual-cast, filtered Necromancy,
+health-ledger and wire-guard fixtures still require native acceptance. The perk
+remains planned, with verified coverage196/310 unchanged. Data/inventory19/19
+passes. Preserve Windows37123447269 on the previous committed source; no local
+playable promotion or current-source Windows artifact is claimed.
+
 2026-10-02 UP-154 verified: Tactics is active. Core37002 and repaired both-target
 10000/39337 pass. Principal retry24146 passes8/8 in23.514s; adjacent11237
 passes10/10 in17.054s, zero skips. Data/inventory19/19 and module drift pass.
