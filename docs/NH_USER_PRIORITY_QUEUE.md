@@ -1356,7 +1356,7 @@ Re-poll this exact new handle; notice success is not compiled-package acceptance
 
 ## UP-177 — Dungeon Portal of Summoning shared recruitment
 
-Status: Open (concrete functional gap identified),2026-10-03. Canonical row3283
+Status: Verified (source/native; commit and playable delivery pending),2026-10-03. Canonical row3283
 requires a weekly choice of one owned external dwelling. Dungeon recruitment
 must expose that dwelling's current stock and deduct from the same stock;
 the Portal never creates or duplicates troops. Current CGameHandler weekly
@@ -1386,10 +1386,69 @@ in that town. Without Portal context, retain ordinary local-visit checks: mere
 source ownership must never authorize arbitrary remote recruitment. State and
 wire changes require appended serialization compatibility. No foundational
 blocker was found; implementation awaits completion of UP178 acceptance.
+UP178 is now committed/pushed. Three bounded Luna lanes implement Portal
+authority/state/request validation, town source selection/recruitment UI, and
+minimum AI buying. Root owns append-only version/type registration, focused
+fixture integration, builds and Git. Source selection persists across rollover
+until a legal weekly replacement. Named packs SelectPortalDwelling and
+SetPortalDwellingSource carry authority and replication; RecruitCreatures
+retains the real source ID with explicit optional Portal-town context. No
+stock mirror, arbitrary remote recruitment or coverage acceptance from edits.
+Three production lanes are source-frozen, but review catches a synchronous GUI
+ack wait that can deadlock the interface mutex. UI owner replaces it with an
+asynchronous replicated-state event and safe window-lifetime revalidation.
+AI owner repairs an undefined scheduler local, missing active-rule gates and
+unconditional legacy-row exclusion. Authority context validation otherwise
+passes material review. Focused native fixture creation is independently owned;
+no build, coverage increase or usable-UI claim yet.
+AI bounded repairs are frozen. Core-only vcmi build43329 runs12 jobs; exact log
+testing/UP177-portal-core-build.log. Only isolated fixture files and client-only
+deadlock repair may change while this target compiles. Root registers fixtures
+and builds client/tests after that handle is terminal. Re-poll rather than
+restart the live core build or run stale native bytes.
+Core43329 exits0 at207/207. Root changes the new selection callback to return
+its ordinary request ID, enabling exact-ID PackageApplied dispatch to the
+current castle window without synchronous GUI waiting. Authority-only target
+vcmiservercommon build99958 runs12 jobs, logUP177-portal-authority-build.log;
+client-only repair and isolated fixture creation remain in progress. Do not
+claim a full client/test build from the core or authority target alone.
+Authority99958 exits0. Client79950 exits1 at the castle UI: three callback
+locals incorrectly declare shared_ptr<CCallback> as auto pointers. The sole UI
+owner repairs those declarations without restoring synchronous GUI waiting.
+Both isolated fixtures are frozen (five authority/save cases and four AI
+candidate cases). Root starts a serialized client/test retry with12 jobs,
+logUP177-portal-client-test-retry-build.log. Focused data/inventory19/19,
+generated-module drift and diff whitespace gates pass; native acceptance is
+still pending and Portal is not yet counted complete.
+The exact retry handle is34651. Re-poll this existing build until terminal;
+do not restart it on an observation timeout or run the stale test executable.
+Retry34651 is terminal exit143 at272/374 with no compiler error recorded;
+read-only process inspection confirms the cmake/ninja process is absent. The
+cause of the termination is not established. Root resumes the incremental
+client/test build (completed objects retained), with a separate
+UP177-portal-client-test-resume-build.log. Preserve the interrupted log and
+require a successful fresh link before native execution.
+Exact resume handle75438 is live; root remains sole build owner.
+Resume75438 exits0 at103/103, linking vcmiclient and vcmitest. Both new
+fixtures compile successfully. The designated Luna tester runs the nine-case
+Portal principal filter in the existing private native profile, then the small
+recruitment/BuyArmy adjacent subset only if principal passes. No stale binary,
+coverage acceptance or playable promotion is inferred from compilation.
+Principal9/9 passes in3.987s; adjacent recruitment/Muster/BuyArmy8/8 passes
+in4.074s, zero skips and both exit0. Logs/XML are
+testing/UP177-portal-{native,adjacent}.{log,xml}; fresh vcmitest SHA-256:
+084fb8e102f7ec99f2bac6abcd42a90a8f9a5fb746db81ef6a504b95f2aec3a2.
+Actual Portal/local purchases deduct the same real stock/cost and receive troops;
+weekly choice, forged-context/ownership/Leadership rejection, full adventure
+save/load, old defaults/loss guards and AI candidates pass. Independent final
+review finds no blocker. Data/inventory19/19 and module drift pass. This closes
+the missing building principal path, without changing194/310 perk or84/93 rank
+counts. Phase2 retains rendered UI/ack behavior, broader ownership transitions
+and full AI-turn scheduling. Coherent source commit/push is next; no promotion.
 
 ## UP-178 — Warcasting Master Synthesis
 
-Status: Verified (source/native; commit and playable delivery pending),2026-10-03. Canonical Expert perk replaces the
+Status: Verified (source/native committed/pushed; playable delivery pending),2026-10-03. Canonical Expert perk replaces the
 first Warcasting bonus consumed in combat with50% /50 percentage points.
 Map shared spell/Order preview, accepted action consumption, battle-long
 history, detached AI and saved state. Normal readiness must exist; the perk
@@ -1465,6 +1524,35 @@ Independent final review finds no blocker and recounts194/310 active perks,
 116 planned; Warcasting6/10, faction55/90 and ranks84/93 unchanged. Perfect
 Rhythm stacking, full battle-save restoration, broad interactions and rendered
 UI are deferred. Root proceeds to a coherent commit/push, not local promotion.
+Source committed and pushed ase6fd45213318b7a3b7812e4bd7ade712af404a8d.
+Matching Windows notice37111101650 succeeds on that exact revision. Full
+Windows37108695052 remains live on003cd49 and excludes Master Synthesis;
+do not dispatch a competing full build while that exact run remains live.
+Full37108695052 subsequently succeeds on003cd49. Root dispatches full Windows
+37118407677 one6fd452 after matching notice success; queued at dispatch. It
+includes Master Synthesis, not the dirty Portal implementation. Re-poll that
+exact handle, rather than creating a competing full job.
+
+## UP-180 — Spellcraft Counterpressure
+
+Status: Bounded read-only preparation,2026-10-03. Missing Advanced perk:
+after an enemy hero casts a spell affecting the hero's army, the next spell
+before the end of the next round gains20% on its Spell Power-derived component.
+Map actual affected-target provenance, accepted cast timing, shared numerical
+consumers, saved state and detached AI. Preserve flat bases, spell costs and
+action economy. Portal's frozen build/native acceptance remains priority; no
+product edits, registration activation or coverage claim from this map. Report
+any genuine trigger/consumption ambiguity rather than silently narrowing scope.
+Map complete: BattleSpellCast affectedCres records resolved eligible recipients,
+not necessarily a changed effect (a no-op Dispel may still appear). Asked whether
+the trigger requires an actual stack change or merely a valid non-resisted
+recipient. Negated casts skip beforeCast and have no affected recipients;
+creature casts and rejected requests must not arm the perk. Use independent
+side-scoped R+1 readiness, snapshot the shared SP-term coefficient before accepted
+own-cast consumption, and copy/consume readiness only in the detached AI branch.
+If actual changes are required, reuse effect packet recording rather than infer
+them from targeting. Do not fold readiness into Warcasting or repeat this map.
+No production edit or coverage activation until the trigger boundary is resolved.
 
 ## UP-179 — Chaos Reality Warp and Reality Breaker
 
