@@ -1924,7 +1924,8 @@ remains missing; no playable snapshot promoted. Next UP189 Lord of the Dead.
 
 ## UP-189 — Necromancy Lord of the Dead
 
-Status: Read-only preparation, 2026-10-03. Map the missing Expert perk's
+Status: Completed source/native, 2026-10-03; playable delivery not claimed.
+Historical preparation: map the missing Expert perk's
 pre-conversion replacement of12 base Skeletons after a qualifying living
 Champion army. Check whether its faction-defined high-tier Undead output is
 actually specified/bound before implementing; do not silently choose a creature.
@@ -1947,6 +1948,60 @@ User selected Champion/unclassified contributions first, then Elite, then Core.
 Canonical row and planned registry description now state that depletion order;
 later conversions may use only the remaining category contributions. The design
 blocker is resolved; UP189 implementation follows UP188's focused acceptance.
+Implementation begins on committed/pushed8822239c4 after UP188 acceptance.
+Runtime owns original losing-army living-Champion capture before casualty
+updates, residual/Elite/Core depletion before Dark/Soul, atomic fourth output
+and guarded wire representation. Bounded Luna UI and fixture lanes own packet
+feedback and focused normal-selection/actual-army evidence. Root owns registry,
+builds and Git. Human/AI winners share post-battle authority; no extra query,
+polling or species-upgrade substitution. Coverage remains202/310 pending
+source/build/native acceptance. Full Windows37142169494 remains live onb384196c1;
+matching notices for8822239c4 were dispatched without interrupting it.
+Runtime/UI are frozen and registry active for focused acceptance, not a new
+accepted count. Data/inventory19/19 and UI source guard pass. Independent Astra
+review is running; root client build94998 runs12 jobs with log
+UP189-client-build.log. Focused native fixtures remain separate/in progress.
+One version covers original-Champion qualification and actual Dragon result;
+older reads reset defaults and unsupported populated writes reject prebytes.
+Root review corrected draft enum-macro UI guards and Dragon-only Ossuary/read
+ordering before compilation. No native/playable acceptance claimed yet.
+Independent frozen production/wire/UI review reports no remaining blocker or
+new deferred finding. Focused resolver, actual Expert-offer mixed Ossuary army
+and current/older Dragon-only summary/Champion-capture fixtures are now frozen;
+fixture review follows. Preserve client94998 and compile vcmitest only after
+that build is terminal, then execute NewHorizonsNecromancy.* plus existing
+admission/master/Ossuary and new NewHorizonsNecromancyLordOfTheDead* filters,
+with adjacent CorpsePreservation/CasualtyProvenance. Do not use the old binary.
+Matching notices37144633554 succeeds on8822239c4; full37142169494 is still live
+onb384196c1, so next full Windows dispatch remains serialized behind it.
+Final independent fixture review reports no core setup blocker; normal
+Basic Dark Conversion→Advanced Ossuary→Expert Lord selection and actual
+50 Pikemen+1 living Champion arithmetic/army outputs are sound. No native
+execution yet; do not turn reviewed expectations into execution evidence.
+Client94998 exits0. All source/fixtures are frozen and independent reviews
+report no blocker. Root starts fresh test build (UP189-test-build.log) with12
+jobs; no native execution until that candidate binary links successfully.
+Fresh test27283 exits0. Tester starts focused native acceptance on the frozen
+binary; an initial launcher-only env argument quoting error (repository spaces)
+must be retained and corrected without source/build changes. This is not a
+mechanic test failure or passing execution. Full Windows37142169494 succeeds
+onb384196c1; next full run may target the newest coherent accepted checkpoint
+after matching notices, including8822239c4 rather than rebuilding it separately.
+Focused acceptance passes on frozen binary: principal40/40 in9.199s,
+adjacent12/12 in2.615s, zero failures/errors/skips. XML records active Expert
+Lord selection via normal Basic Dark Conversion→Advanced Ossuary progression,
+no activation override. Actual original living-Champion army,12 consumed,
+Bone Dragon+Zombie delivery and unchanged full Hero army pass, as do ordered
+resolver gates and direct/outer/current/old wire guards. Binary SHA256:
+690acea167f885c0dae1d4111d28705b43e32de4c4e8be577f2f76e1264459cb.
+Client94998/test27283 exit0; data/inventory19/19 and module/UI guards pass.
+Independent production and fixture reviews have no blocker. Initial env
+launch quoting failure was corrected without source/build changes; its captured
+two-line error is retained separately from the successful principal log.
+Coverage202->203/310,108->107 planned; Necromancy9->10/10; faction61->62/90.
+Deferred Phase2: broader transformed/surviving-Champion interactions, full AI
+play and rendered result feedback; dedicated art remains missing. No local
+playable promotion. Next UP129 deterministic Diplomacy foundation.
 
 ## UP-183 — Necromancy Corpse Preservation
 
@@ -5140,7 +5195,8 @@ Artwork is Not done, fallback remains neutral; no launcher promotion.
 
 ## UP-079 — Implement Armorer Last Stand
 
-Status: In progress; bounded architecture map, 2026-10-01. UP-023 missing
+Status: Mapped, design choices resolved; consolidated into UP-129, 2026-10-03.
+UP-023 missing
 Expert perk: once per combat, the first friendly stack that would be completely
 destroyed by a physical creature attack instead survives with one creature at
 1 HP and immediately Defends. Map authoritative attack damage, shared health
@@ -5849,7 +5905,7 @@ resolved; do not reopen them solely because this historical entry was stale.
 ## UP-048 — Deterministic Diplomacy foundation
 
 Status: Planned; runtime, AI/UI and independent policy maps complete;
-map-authored free-join clarification pending, 2026-09-30.
+free-join and transfer-remainder choices resolved under UP-129, 2026-10-03.
 UP-023 Phase 1 foundational coverage slice; no activation claimed.
 
 Audit and implement the canonical neutral-joining rule: Basic/Advanced/Expert
