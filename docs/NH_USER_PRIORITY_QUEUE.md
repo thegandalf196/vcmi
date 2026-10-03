@@ -845,7 +845,7 @@ Tactics acceptance remains unblocked and takes priority.
 
 ## UP-161 — Learning Field Study
 
-Status: Verified (source/native; commit and playable delivery pending), 2026-10-03. Advanced perk grants +25%
+Status: Verified (committed/pushed; playable delivery pending), 2026-10-03. Advanced perk grants +25%
 additional Experience for defeating enemy heroes or wandering armies whose Army
 Value exceeded this hero's army at battle start. Map battle-start raw Army Value,
 opponent-kind eligibility, winner/casualty XP publication and ordinary Learning
@@ -931,6 +931,94 @@ no blocker. Binary SHA-256:
 Full-game resume, unusual result/ownership
 transitions and comparative AI valuation remain Phase2. Purpose-made art is
 Not done; generic UI is Provisional. No immutable playable promotion.
+Source committed/pushed as4c41c8aa0273b44fa538908a5ea017fc131bf0a0.
+Notice37095711525 passes on that source. Full Windows37094808848 still runs
+on preceding Investor21dbb224b; do not claim it verifies Field Study or restart
+it merely because a later source commit exists.
+
+## UP-164 — Learning Master Teacher
+
+Status: Blocked on Mentor-prerequisite answer (map complete),2026-10-03. Expert perk extends Mentor to
+the first two different lower-level allied heroes met each week, awarding500
+times the mentor's level to each. Map existing weekly meeting provenance,
+authoritative XP award, saved state, rank/prerequisite gates and minimum AI
+hooks. Reuse Mentor's existing trigger; do not introduce periodic polling or
+grant both ordinary and upgraded XP on the same meeting. Root chooses exact
+state representation after mapping; no activation/count from preparation.
+Map complete: current Mentor reuses authoritative exchange/town hooks and a
+single weekly marker. Two different recipients need saved recipient identities,
+not merely a second counter. Expert progression allows other Basic/Advanced
+Learning perks; canonical wording names Mentor without explicitly requiring
+its selection. Asked whether Master Teacher works independently or requires
+selected Mentor. Await that prerequisite answer before activation/implementation.
+
+## UP-165 — Learning Archivist preparation
+
+Status: Blocked on UP-054's existing Adventure-scroll policy,2026-10-03. Acquiring a spell scroll
+permanently teaches its spell immediately when legally eligible. Map artifact
+acquisition/transfer settlement and existing shared spell-learning policy.
+Inspect UP-054's pending neutral Adventure acquisition ruling before choosing
+work; do not activate a combat-only subset that silently drops authored scope.
+No edits or coverage claim from exploration; root chooses implementation after
+the map and records a shared blocker rather than repeating an unresolved ask.
+Map complete: direct gifts use NewArtifact, map pickup uses PutArtifact, and
+hero transfers use BulkMoveArtifacts. A complete authoritative postacceptance
+hook must cover all three, excluding same-hero rearrangement. ChangeSpells and
+canLearnSpell provide ordinary receipt/persistence/AI visibility; no extra saved
+counter is needed. Neutral Adventure spells have separate Guild unlock rules
+and the pending UP-054 policy determines legal scroll learning. Do not implement
+or activate a combat-only subset; no duplicate question is issued.
+
+## UP-166 — Estates Prospector preparation
+
+Status: Blocked on Gold-mine scope answer (map complete),2026-10-03. The first owned mine visited
+by the hero each week grants+2 of its common resource or+1 of its rare resource,
+according to normal output type. Map authoritative visit/ownership events,
+weekly saved hero provenance and existing AI/tooltip consumers. Check canonical
+resource classifications before inferring Gold behavior. No source activation
+or coverage claim from this preparation; prefer event-driven state over scans.
+Map finds campaign selectors classifying Wood/Ore as common and Mercury/Sulfur/
+Crystal/Gems as rare; Gold is neither. Asked whether Gold mines are excluded
+without spending the weekly use or have a separate Gold reward. SAME_PLAYER at
+visit entry is the eligible owned-mine event; capture remains Land Surveyor's
+separate hook. Existing last-use property/save pattern and selected-hero mine
+hover text are reusable. AI needs a one-shot hero/week value, not a change to
+recurring mine income. No implementation or activation before the scope answer.
+
+## UP-167 — Armorer Unyielding preparation
+
+Status: Blocked on missing displacement foundation (map complete),2026-10-03. Friendly stacks Defending or
+affected by Hold the Line cannot be forcibly displaced by non-magical effects.
+Map actual displacement producers and shared live/AI legality, reusing effective
+Order lifetime and Defending state. Do not blanket-disable magical relocation or
+ordinary voluntary movement. No source edits/count from preparation; root chooses
+the full event-path implementation after mapping.
+Map confirms the existing Deep Bulwark finding: no canonical nonmagical
+forced-displacement producer exists in current source. Ordinary moveStack is
+voluntary movement and spell relocation is magical, so neither is a faithful
+acceptance path. Defending and effective Hold the Line predicates already exist;
+do not activate inert protection or invent an unrequested knockback mechanic.
+Keep planned pending that foundation; no new design question is necessary.
+
+## UP-168 — Estates Magnate preparation
+
+Status: Blocked on ownership/stacking answers (map complete),2026-10-03. At week start, the most
+recently visited owned town from the previous week produces+500 Gold per day
+for the next7 days; no qualifying visit means no effect. Map existing town
+meeting provenance and weekly income publication, saved state and shared
+AI/tooltip consumers. No arbitrary town choice, polling or retroactive first-week
+bonus. Root chooses event-driven architecture and safe file ownership after
+mapping; no activation/count from preparation.
+Map complete: HeroVisitCastle is the entry event; current residence clears on
+leaving and is not historical provenance. Save the latest qualifying town per
+hero and consume/reset it at week boundaries. Publish a saved active town-income
+snapshot through NewTurn, with prospective week-start receipts like Investor.
+CGTownInstance::dailyIncome is shared by server receipts, town/kingdom UI and
+Nullkiller; no periodic map scan is needed. Day0 has no prior-week visit.
+Asked whether ownership is required both at visit and week start, whether capture
+ends the active bonus or transfers it to the new owner, and whether different
+Magnate holders stack at the same town. Await these payout-affecting decisions
+before implementing; do not silently select a recipient or stacking rule.
 
 ## UP-162 — Learning Eagle Eye preparation
 
