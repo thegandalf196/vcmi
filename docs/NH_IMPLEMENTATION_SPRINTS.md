@@ -18,6 +18,44 @@ working sequence.
 
 ## Maintenance contract
 
+2026-10-03 UP186 verified: Dark Conversion now automatically converts complete
+Core-derived groups only, retains global base rounding and all remainder
+Skeletons, and admits every output atomically. Human/computer winners share the
+same authority path without a conversion query. Client35092/resumed9620 pass;
+interrupted70772 is retained. Initial11/12 and retry11/12 were caused by missing
+simulated-controller readiness; only fixture setup was repaired. Ready71025
+passes. Principal12/12 passes2.383s, adjacent9/9 passes1.778s, zero skips.
+Data/inventory19/19, module consistency, UI result guard and independent review
+pass. Tester remained pending initialization after transition; root explicitly
+cancelled it and executed the focused gates. Final binary SHA-256:
+70900e308674b933b1ba3835d5a78085aad55bbc5af83e85fd7f785086c9b5ae.
+Registry197/310 active,113 planned unchanged; repaired faithful coverage rather
+than a new activation. Broader interactions/full-AI play/rendered acceptance
+remain Phase2; no playable promotion. Next UP184 Soul Harvester: approved Wight
+output from Elite casualty contribution, with Wight still Core-tier. UP185
+Master of Bones is mapped but not implemented. Windows37127577580 succeeds on
+previous756d225818; no UP186 Windows package yet.
+
+2026-10-03 UP186 in progress: Soul Harvester's map exposed a prerequisite gap.
+Dark Conversion is registered active but still optional/all-tier at runtime;
+correct it to the canonical automatic Core-only conversion. Preserve global
+base Skeleton rounding; floor the Core contribution only for complete
+three-Skeleton conversion groups. One worker owns shared resolver/authority;
+another owns focused existing fixtures. Root owns result wording, serialized
+builds, integration and Git. No coverage increase or native acceptance yet.
+Soul Harvester's output is resolved by the user: retain Wight, still Core-tier;
+only its input is Elite casualties. Canonical and registry descriptions agree.
+Master of Bones is mapped for next coverage work: currently owned built upgrade
+availability plus explicit result output form; it is not implemented.
+Previous UP183 source is756d22581875f34ada21409a78232d050beeed63, pushed clean.
+Notices37127483096 succeed on that revision; Windows37127577580 remains live
+on the same source and must not be replaced by a competing full run.
+Latest delivery checkpoint: Windows37127577580 now succeeds on756d225818,
+including Corpse Preservation but not the current UP186 correction. Native
+build70772 was interrupted during the environment transition; no process
+survived and its log ends77/257. Resume9620 uses the same incremental build root,
+logUP186-resumed-build.log. Do not execute the earlier test binary.
+
 2026-10-03 UP-183 verified: Corpse Preservation is active. Actual ordinary
 magical casualties require the perk; Disintegrate remains excluded. Ordered
 usable health cohorts implement newest-first restoration, temporary expiry and
