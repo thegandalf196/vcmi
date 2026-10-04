@@ -9,6 +9,72 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-217 — Canonical damage-spell specialty conversion
+
+Status: Verified (delivery pending),2026-10-04. Canonical5270 requires a fixed +15% to the
+specialized spell's Spell Power-derived damage component, not flat base damage
+and not a hero-level/target-tier multiplier. Deemer's alias and Ciele's authored
+bonus still scale whole results. Preserve explicit NH replacements (including
+Solmyr), ordinary artifact/Skill modifiers and legacy saved-rule behavior.
+
+Bounded read-only owners trace shared raw-component calculations, eligible
+producers and independent architecture risks. Root retains the saved-rule,
+exact-provenance, fractional-rounding and shared live/AI/proxy formula decisions.
+No production change or coverage credit from this preparation. Acceptance needs
+real eligible heroes, unchanged base damage, independence from target tier/hero
+level, accepted casts/forecast parity and saved/legacy guards. No parallel writers
+across the shared Hero/Spell files. Fire Wall/trigger is one family: suppress
+both Luna legacy producers, boost the cast snapshot once and never its trigger.
+
+Windows37215692312 remains confirmed in_progress on422f0ce0a, including UP216.
+Retain this exact handle; no duplicate dispatch, GUI or launcher promotion.
+
+Implementation decision: the completed producer audit finds seven surviving
+damage aliases plus Ciele and Luna (nine heroes, eight visible spell effects).
+Solmyr's explicit replacement and every non-damage alias remain unchanged.
+Optional saved damageSpellSpecialties version1/componentPercent15 and exact
+local provenance markers opt new instances into the conversion; absence retains
+legacy behavior. Zero-valued local clones suppress only audited legacy producers,
+without mutating prototypes or unrelated authored bonuses. The shared rational
+formula applies15% as23/20 before its single final floor, leaving fixed base
+damage unchanged. Live casts and scalar estimates share the factor; explicit
+raw overrides bypass it and Fire Wall stores it once at creation. Luna owns
+production, a separate Luna owns the new native fixture, Astra reviews, and root
+owns CMake/module registration, serialized12-job build and delivery. No coverage
+credit until focused execution establishes those paths.
+
+Production/native fixtures are frozen. Serialized12-job both-target build12061
+is live; log UP217-damage-specialty-build.log. Retain that exact process handle
+until authoritative completion; no duplicate build. Independent Astra review
+finds no blocking issue. Root caught and repaired widened-denominator signed
+remainder overflow before compilation; uint64 intermediate bounds and the new
+stress case preserve single-floor arithmetic. Phase2: detached HypotheticBattle
+execution, prototype-only tooltip surfaces and broader interactions. Acceptance
+remains pending build/native results; no GUI or launcher promotion.
+
+Build12061 is now terminal FAIL at the Lua registrar's three-versus-four member
+arity assertion. Keep its log/evidence. The repair preserves the existing
+three-argument Lua/C++ member and routes only new specialty recomputations through
+a distinctly named helper. Serialized12-job both-target retry9817 is confirmed
+live (UP217-damage-specialty-build-retry.log); no second simultaneous build.
+
+Final acceptance: both-target9817 and bounded fixture rebuild65610 succeed.
+Native23804 passes11/11 in3.504s, zero skips: new rational rounding/large-divisor
+checks, real Ciele accepted cast/estimate and save/marker/prototype controls,
+Deemer level/tier-independent accepted Meteor Shower, Luna stored Fire Wall
+damage and actual trigger, missing-rule legacy producers, and three adjacent
+creature-line controls. Private UP217-damage-specialty-final.log/XML retain
+execution evidence. The first native56236 controller-fixture error is repaired
+without weakening authority. Final Astra review finds no blocker. Module drift,
+12 hero-data checks and8 guild asset checks pass. This adds one native-verified
+specialty conversion family, not blanket completion of all six. Other spell,
+rank, perk and artifact counts remain unchanged. No local process remains live;
+Windows37215692312 is still confirmed live on422f0ce0a (excludes UP217).
+No GUI, promoted launcher or playable acceptance. Phase2 retains detached-AI
+execution, mixed diagnostic hero/magic snapshots, prototype-only tooltip surfaces
+and wider interactions. Next missing slice: Logistics specialties, all three
+surviving producers, both Land and Sea core effects without perk amplification.
+
 ## UP-216 — Canonical creature-line hero specialties
 
 Source422f0ce0aef4c39801e5264d286e562db660b2b6 is committed/pushed and

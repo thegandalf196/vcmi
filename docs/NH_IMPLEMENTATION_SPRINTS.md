@@ -18,6 +18,40 @@ working sequence.
 
 ## Maintenance contract
 
+UP217 source/native accepted2026-10-04. Both-target9817 and fixture rebuild65610
+succeed; native23804 passes11/11 in3.504s, zero skips. Ciele cast/estimate/save,
+Deemer level/tier, Luna stored Fire Wall/trigger, legacy and rational bounds pass,
+alongside three creature-line controls. Astra final review has no blocker.
+Module drift,12 hero-data and8 guild checks pass. First compile12061 exposed
+Lua arity, repaired by preserving its original method; first native56236 exposed
+a target-Initiative fixture error, repaired with explicit controller evidence.
+Failures remain in the ledger. This adds one specialty conversion family, with
+spell/rank/perk/artifact counts unchanged. Earlier active-build statements below
+are historical; no local process remains live. Windows37215692312 is live on
+422f0ce0a (excludes this slice). No GUI or playable promotion. Next: Logistics
+specialties for all three producers, both core pools without perk amplification.
+
+Current implementation UP217: fixed damage-spell specialty conversion. The
+producer audit identifies nine eligible heroes/eight visible spell effects;
+Solmyr's replacement and non-damage specialties are excluded. Production uses
+an optional saved version1 rule and stable exact-provenance local markers,
+not a global scan or prototype mutation. The15% bonus multiplies only the
+Spell Power term as23/20 inside the shared rational expression before flooring.
+Live and forecast formulas must agree; Fire Wall is boosted once when stored.
+Separate Luna production/native owners and Astra review are active. Root owns
+registration/build/Git. No coverage credit or playable delivery from this plan.
+
+Next bounded missing slice after UP217: Logistics Skill specialties for Kyrre,
+Gunnar and Dessa. Their exact specialty.secondary aliases survive; active NH
+Logistics has no generated specialty-target bonuses. Preserve alias provenance
+and opt-in saved rules, then scale only rank core Land/Sea10/20/30 to12/24/36
+before TurnInfo aggregation. Do not scale Navigation's independent25%, other
+perks, unrelated movement bonuses or non-specialists. Root resolves the scope
+from the new Skill identity: both Land and Sea are its core, not merely legacy
+Land. Check cached/live movement, rank invalidation and saved/legacy controls.
+No implementation/coverage credit yet; shared Hero/rules files stay frozen for
+UP217's build until explicitly released.
+
 Delivered source422f0ce0a is pushed/remote-verified with a clean worktree at
 that checkpoint. Full Windows37215692312 is confirmed queued on that source,
 preflight_only=false; retain the exact handle. Previous37211254873 is terminal
