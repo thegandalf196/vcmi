@@ -18,6 +18,17 @@ working sequence.
 
 ## Maintenance contract
 
+Delivered source checkpoint: Fortress34bf2fa1f and Orbsb6ef78e1b are pushed.
+Full Windows37207110382 is confirmed live onb6ef78e1b11f269f2ad1992ebdd999ea5e0d02c6;
+preflight_only=false explicitly requests compilation. Keep this handle through
+terminal observation; no duplicate job or launcher promotion.
+UP212 remaining art is enumerated in NH_GUILD_SCROLL_EXPORT_AUDIT.md (26 opaque
+source exports, no transparent alternatives). The Heroes III workflow produced
+one local scroll-only Holy Wrath candidate; user visual approval must precede
+live import/full-family expansion. Shared book/effect/scenario bindings stay
+unchanged. Avoid remapping Pursuit March:UP209/193 duplicate UP104's already
+mapped cap/zero-recovery questions and add no implementation progress.
+
 UP210 final native acceptance: build59223 and native71275 succeed. All nine
 Orb cases plus Fortress construction pass10/10 in4.479s, zero skips. The cap
 fixture preserves acting ownership with explicit low Initiative; production

@@ -11,6 +11,11 @@ entries and their validation/delivery evidence.
 
 ## UP-213 — Replace supplied Fortress Mage Guild level artwork
 
+Source committed/pushed34bf2fa1f. Full Windows37207110382 is confirmed live
+onb6ef78e1b11f269f2ad1992ebdd999ea5e0d02c6, including this replacement,
+UP212 parchment binding and UP210 Orbs. Retain that exact run; no duplicate
+dispatch, terminal-success or playable promotion claim.
+
 Status: Verified (delivery pending),2026-10-04. Source archive v9 is retained
 byte-for-byte (SHA256 recorded in its source README). All five native DEFs,
 campaign icons, masks and hall cards are imported reproducibly; Castle,
@@ -40,6 +45,16 @@ coherent reviewed commit/push; native-resolution in-game appearance remains a
 separate visual gate until authorized.
 
 ## UP-212 — Mage Guild spell icons on parchment
+
+Read-only export audit2026-10-04 is persisted in
+NH_GUILD_SCROLL_EXPORT_AUDIT.md:27 bindings use26 unique opaque RGB paintings
+(19 at32px,7 at44px), each matching its source export. No identity-matched
+transparent alternative/full83x61 composite exists in those source families.
+Do not overwrite shared book/effect/scenario files. A scroll-only Holy Wrath
+transparent candidate was generated using the Heroes III art workflow and
+exported locally at44/32 under ignored output/homm3/holy-wrath-scroll-v1;
+user visual acceptance is required before live import or26-file expansion.
+No candidate import or original parchment pixels are committed/distributed.
 
 Diagnosis,2026-10-04: SPELLSCR contains complete83x61 parchment+emblem
 frames for original spells, while several NH iconScroll bindings provide only
@@ -137,6 +152,10 @@ values with shared growth and AI consumers, not a new recurring scan. No blanket
 coverage credit from configuration inspection alone.
 
 ## UP-210 — Elemental damage Orb conversion
+
+Source committed/pushedb6ef78e1b. Full Windows37207110382 is confirmed live
+on that exact head; its completed predecessor37199468684 excludes this slice.
+No terminal Windows or playable delivery claim from dispatch alone.
 
 Status: Verified (delivery pending),2026-10-04. Production explicit element
 metadata and append-only final magical-damage bonus replace all four Orbs'
