@@ -9,6 +9,94 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-211 — Canonical creature-growth buildings
+
+2026-10-04 Conflux slice source/native verified. Both-target build7085 and
+fixture-only retry28194 succeed; native75381 passes3/3 in2.168s, zero skips,
+UP211-conflux-focused-retry.log/XML. Actual empty-town prerequisite construction,
+independent Pixie14/Sprite10 stocks, Garden18/13 growth, real week32/23 stocks,
+authoritative recruitment, eight-row save/load and AI built-dwelling forecasts
+pass. Old seven-row Conflux saves fail explicitly instead of indexing missing
+stock; no silent migration. Python13/13, module drift and Astra source review
+pass. Independent recruitment and Garden are accepted Phase1 coverage; visual
+hall/Fort/town-scene review and playable delivery remain pending. Vault of Ashes
+is still missing; ordinary Horde source audit is not blanket runtime evidence.
+
+2026-10-04 audit establishes a prerequisite gap: Conflux still offers Pixie/Sprite
+as one upgrade line, contrary to the explicit separate Core lines. Implement both
+independent recruitment and Garden growth together. Preserve existing seven
+dwelling indices and append Sprite in supported slot8; no numeric tier inference.
+Captured single-member lines supply Pixie14 and Sprite10 base growth; Pixie
+horde override4 and a Garden row8 growth bonus3 supply the two stated additions.
+Remove Pixie-to-Sprite upgrade access. Reuse authentic external artwork by
+reference, expose independent hall/Fort recruitment, and record rendered review
+as pending under the GUI hold. Require authoritative construction, real weekly
+stocks, saved data and shared AI growth. Existing ordinary Horde rows match by
+source/reference audit only; no native blanket credit. Vault of Ashes remains
+missing and will need its own building/content/UI slice, not silently included.
+
+Status: In progress; Conflux recruitment/Garden verified, remaining rows require
+their own evidence. Check every row of the canonical
+creature-growth building table against loaded NH/core definitions and actual
+weekly growth. Search prior queue maps first; do not duplicate blocked work.
+Independent Luna data/runtime and native-fixture maps; root retains architecture,
+content registration, build and integration. Implement genuinely missing explicit
+values with shared growth and AI consumers, not a new recurring scan. No blanket
+coverage credit from configuration inspection alone.
+
+## UP-210 — Elemental damage Orb conversion
+
+User ruling,2026-10-04: use actual spell element/theme independently of six
+Schools; neutral and necrotic spells remain untagged. Fireball=Fire, Ice Bolt=
+Water/Frost, Lightning Bolt=Air/Lightning. The tagging-policy blocker is resolved.
+Implement explicit metadata, final-damage Orb producer/consumer and shared AI
+forecasts; no legacy-affinity fallback or school-to-element conversion.
+
+2026-10-04 map complete; explicit element-tag policy question pending. Two
+independent maps confirm only legacy School affinities exist, not independent
+element tags. Shared final-damage and AI forecast seams are identified. Ask
+whether actual elemental damage/theme replaces legacy affinities; do not treat
+Magic Arrow's four old School memberships as four actual elements. No source
+activation or coverage credit. Continue the unblocked creature-growth audit.
+
+Status: Read-only map in progress, 2026-10-04. Canonical artifact row replaces
+legacy elemental+50% spell damage with+25% final magical damage for spells
+tagged with that element. Four core Orbs still carry legacy School-subtyped
+SPELL_DAMAGE50. Map true elemental metadata, six-School separation, shared
+caster/target damage and AI forecast before implementation. Do not reinterpret
+four elemental Orbs as four of the six Schools. Independent Luna runtime and
+data/native maps; root owns architecture, registration, builds and integration.
+Require actual equipment, matching/nonmatching/neutral spells and final-damage
+forecast parity. Mapping is not activation or coverage.
+
+## UP-208 — Rapid Embarkation
+
+Superseded duplicate, 2026-10-04. Existing UP103 already contains the complete
+map and pending Navigation10%-versus5% question. No new finding or source
+implementation; retain UP103 as the contract. Root stopped repeated exploration.
+
+Status: Read-only map in progress, 2026-10-04. Canonical Advanced Logistics
+perk makes embark/disembark cost10% of maximum daily Movement. Map the existing
+shared boarding-cost path, Navigation/free-boarding composition, land/sea
+conversion, authoritative acceptance and AI consumption before implementation.
+Luna owns bounded mapping; root owns architecture, registration and integration.
+Require legal perk selection, real boarding/disembarking and shared forecasts;
+an active flag alone is not coverage. No new ordinary-update scan.
+
+## UP-209 — Pursuit March
+
+Superseded duplicate, 2026-10-04. UP104/UP193 already contain the post-cleanup
+seam and pending recovery-cap/zero-recovery-use policy questions. No new
+finding or source implementation; retain UP104 as the contract. PerkState has
+no generic daily-use ledger. Do not substitute a default or remap again.
+
+Status: Independent read-only map in progress, 2026-10-04. Canonical Advanced
+Logistics perk recovers10% maximum daily Movement after winning combat, once
+per day. Map accepted-result events and existing per-hero daily history/state
+before adding a counter. Authoritative recovery, expenditure/day reset, saved
+state and minimum AI use must be covered; no polling or frontend mutation.
+Mapping does not activate the perk. Keep file ownership separate from UP208.
+
 ## UP-207 — Mana-regeneration artifact conversion
 
 Status: Read-only map complete; stacking clarification pending, 2026-10-04.

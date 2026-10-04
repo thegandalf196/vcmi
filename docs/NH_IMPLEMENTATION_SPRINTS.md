@@ -18,6 +18,55 @@ working sequence.
 
 ## Maintenance contract
 
+2026-10-04 UP210 ruling received: actual-element tags independent of Schools,
+neutral/necrotic untagged. Its design blocker is resolved; elemental Orbs are
+next after accepted UP211 delivery, ahead of the Vault map. No Orb coverage
+credit until production damage, equipment, forecast and focused evidence exist.
+
+UP211 Conflux recruitment/Garden source/native accepted2026-10-04. Both-target
+build7085 and fixture-only retry28194 succeed; native75381 passes3/3 in2.168s,
+zero skips, UP211-conflux-focused-retry.log/XML. Independent Core stocks14/10,
+Garden18/13 growth, next-week32/23 stocks, actual construction/recruitment,
+eight-row save/load, explicit old-seven-row rejection and built AI forecasts pass.
+Python13/13, module drift and Astra source review pass. Source delivery follows;
+no GUI acceptance or playable promotion. Counts remain214/310 perks and61/67
+combat identities. Next unblocked missing item: Vault of Ashes+2 Fire Elemental
+growth. Phase2 retains co-located art/layout and preconstruction Sprite/Garden
+AI valuation; do not reopen adequate native coverage to polish those now.
+
+Full Windows37194377145 is now terminal SUCCESS on cd416f22e72591f8132dc990dbf4067fb1b329f3,
+confirmed2026-10-04. It excludes UP205/UP206 and the current Conflux candidate.
+The next compiled checkpoint may be dispatched after the new source is accepted
+and committed; no dirty-source or duplicate build is being advertised as delivery.
+
+2026-10-04 current slice UP211: the prior reply confirmed an already implemented
+Puppet Master ruling and added no coverage. UP210's independent maps identify
+missing element metadata; its tagging-policy question is pending. Conflux growth
+audit finds Pixie/Sprite remain a legacy upgrade chain despite explicit separate
+Core lines14/10. Root selects existing eight-dwelling support, saved single-member
+growth lines and shared Garden growth, with independent data/UI and native/AI
+owners. Remove the upgrade path and exercise actual construction/weekly stocks,
+not just query-only values. Vault of Ashes remains a separate missing building.
+This preceding audit is now superseded by the focused acceptance above; no
+graphical acceptance or promotion. Full Windows37194377145 is terminal SUCCESS
+on cd416f22e and does not contain UP211.
+
+Resumption correction: deeper queue inspection finds UP208/UP209 repeat the
+complete UP103/UP104/UP193 maps and unanswered design choices. Both new maps
+are stopped and marked superseded; do not keep cycling through them. Select
+UP210 elemental-Orb conversion instead: canonical25% final matching-element
+damage, not a legacy School50% modifier. Parallel bounded runtime/data maps
+check actual tags, shared damage/AI and fixture surfaces. No activation/count
+from mapping. UP207 Mana stacking and Logistics questions remain unresolved.
+
+2026-10-04 next cycle: preceding UP205/UP206 cycle made verified progress and
+pushed runtime a8e8c4a55 plus delivery notes8c3d32c83; resumption tree is clean.
+Notice-only37196269759 now succeeds on a8e8c4a55. Full37194377145 remains live
+on cd416f22e, excluding those features. Preserve its handle. Parallel bounded
+Luna maps now cover Rapid Embarkation and Pursuit March, the two remaining
+Logistics perks; root retains architecture and waits for consequential rule
+boundaries before activation. UP207 stacking clarification remains unanswered.
+
 UP205/UP206 committed/pushed a8e8c4a55b66b1f95e233a6e5f085bc1e70047eb; tracked
 tree clean before these delivery notes. Notice-only37196269759 is queued on
 that source. Full37194377145 remains in_progress on cd416f22e, excluding this

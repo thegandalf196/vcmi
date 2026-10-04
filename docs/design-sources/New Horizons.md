@@ -5120,6 +5120,12 @@ Creature Leadership Requirements below are for the base creature. An upgraded fo
 |Conflux|Magic Elemental|Elite|3|320||
 |Conflux|Phoenix|Champion|1|650||
 
+Conflux's independent Sprite dwelling uses the existing eighth recruitment slot.
+Its experimental construction cost is 1,000 Gold and 5 Wood, and it requires a
+Fort rather than upgrading the Pixie dwelling. Pixies and Sprites cannot upgrade
+into one another. Existing Sprite dwelling artwork is reused by reference while
+the independent town-screen presentation awaits visual review.
+
 
 
 ###### Castle Griffin / Swordsman swap
@@ -5241,6 +5247,12 @@ Tower Library experimental values: +1 Mage / Arch Mage growth per week; construc
 |Elemental damage Orb|Old +50% elemental spell damage becomes +25% final magical<br>damage for spells tagged with that element.|
 |Resource / Gold artifact|Keep legacy income for the first economy pass unless a separate town/economy test shows inflation.|
 |Spell-duration / immunity artifact|Keep the original qualitative effect unless it refers to a removed school<br>or Adventure Spell.|
+
+Elemental Orb tags describe a spell's actual element/theme, independently of its
+Magic School memberships. Fireball is Fire, Ice Bolt is Water/Frost, and Lightning
+Bolt is Air/Lightning. Neutral and necrotic spells are untagged and receive no
+elemental Orb bonus. Do not preserve legacy Heroes III School affinities as
+element tags or infer elements from the six New Horizons Schools.
 
 
 
