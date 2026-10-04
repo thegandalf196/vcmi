@@ -11,6 +11,20 @@ entries and their validation/delivery evidence.
 
 ## UP-211 — Canonical creature-growth buildings
 
+Vault read-only map complete: unused HORDE_2/horde2 ID24 and fourth hall card
+in the special-building row are available. A CREATURE_GROWTH creatureLevel4+2
+producer can reuse shared town growth without assigning legacy hordeLvl[1].
+Its prospective AI valuation needs an explicit hook because HORDE_2 currently
+reads hordeLvl[1]=-1. No canonical cost/prerequisites or separate town-scene
+art placement exists. Confirm Fire-only versus its current Fire/Energy upgrade
+line scope before activation; no source/default or coverage credit from this map.
+UP210's newly resolved Orb ruling takes precedence next.
+
+Conflux/Garden source delivered69c18b19e1f08008834df67131701a0e0e26de6a.
+Notice-only37199469826 succeeds; full Windows37199468684 is in progress on that
+head. Local build is verified, but launcher promotion/visual acceptance are not
+claimed. Retain that full-build handle until terminal, without duplicate dispatch.
+
 2026-10-04 Conflux slice source/native verified. Both-target build7085 and
 fixture-only retry28194 succeed; native75381 passes3/3 in2.168s, zero skips,
 UP211-conflux-focused-retry.log/XML. Actual empty-town prerequisite construction,
@@ -52,14 +66,29 @@ Water/Frost, Lightning Bolt=Air/Lightning. The tagging-policy blocker is resolve
 Implement explicit metadata, final-damage Orb producer/consumer and shared AI
 forecasts; no legacy-affinity fallback or school-to-element conversion.
 
-2026-10-04 map complete; explicit element-tag policy question pending. Two
+Accepted implementation seam: explicit spell element metadata, distinct from
+Schools; shared BaseMechanics::adjustEffectValueImpl/CSpell::adjustRawDamage
+final multiplier after caster/Phantom adjustments and before received-damage cap.
+Keep existing qualitative multiplier behavior and damage caps. Four legacy Orb
+IDs79/80/81/82 map Air/Earth/Fire/Water respectively, replacing—not retaining—the
+old SPELL_DAMAGE50 producers. Bounded native fixture is
+NewHorizonsDirectDamageMechanicsTest with real NewArtifact equipment and accepted
+casts: matching Fireball, nonmatching Ice Bolt/Lightning Bolt, neutral Magic Arrow
+despite old four-School membership, removal and projected cast parity. Existing
+NewHorizonsMagicAITest cluster-Fireball case is the tactical decision anchor.
+No implementation or coverage credit yet; retain these mapped seams rather than
+repeating architecture exploration on resumption.
+
+Earlier2026-10-04 map completed with element-tag policy pending; superseded by
+the explicit user ruling above. Two
 independent maps confirm only legacy School affinities exist, not independent
 element tags. Shared final-damage and AI forecast seams are identified. Ask
 whether actual elemental damage/theme replaces legacy affinities; do not treat
 Magic Arrow's four old School memberships as four actual elements. No source
 activation or coverage credit. Continue the unblocked creature-growth audit.
 
-Status: Read-only map in progress, 2026-10-04. Canonical artifact row replaces
+Status: Map complete; ready for bounded implementation under the user ruling.
+Canonical artifact row replaces
 legacy elemental+50% spell damage with+25% final magical damage for spells
 tagged with that element. Four core Orbs still carry legacy School-subtyped
 SPELL_DAMAGE50. Map true elemental metadata, six-School separation, shared

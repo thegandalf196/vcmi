@@ -18,6 +18,11 @@ working sequence.
 
 ## Maintenance contract
 
+UP211 committed/pushed69c18b19e1f08008834df67131701a0e0e26de6a. Notice-only
+37199469826 succeeds on that head; full Windows37199468684 is in progress on
+the same head. Preserve its handle; no duplicate dispatch, compiled-success
+claim or local snapshot promotion. Source/native evidence remains separate.
+
 2026-10-04 UP210 ruling received: actual-element tags independent of Schools,
 neutral/necrotic untagged. Its design blocker is resolved; elemental Orbs are
 next after accepted UP211 delivery, ahead of the Vault map. No Orb coverage
