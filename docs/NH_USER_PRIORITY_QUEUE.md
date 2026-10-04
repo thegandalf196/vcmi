@@ -9,6 +9,29 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-229 — Required Movement UI breakdown
+
+Status: In progress (bounded read-only audit), 2026-10-04. Canonical P1
+town/movement UI requires current/maximum Movement and a tooltip breakdown of
+the 200-point base, percentage/flat modifiers, road and terrain costs, native
+qualification and special Water Walk/Fly costs, without creature Speed as a
+modifier. Inspect current hero/adventure Movement tooltip and shared calculation
+paths; identify an actual missing player-visible path before editing. Reuse
+native popup controls and existing art; no top-level redesign, new polling or
+gameplay rule change. Root read the UI style guide; source/functional validation
+and rendered/playable acceptance remain separate under the GUI hold.
+
+Selection audit: planned Havoc perks remain blocked under UP139/UP111; tracked
+remaining town/creature candidates retain UP197/UP200/UP201/UP226/UP046 choices.
+Do not manufacture a partial activation or restore retired hero aliases. Reissued
+the two foundation questions on Elemental Rebirth HP basis and Divine Mandate
+follow-up expiry/use consumption; no answer or design amendment is inferred.
+This bounded selection does not prove the entire remaining backlog blocked.
+User answers now resolve both foundations: Elemental Rebirth uses battle-start
+maximum aggregate HP; Divine Mandate follows Metamagic opportunity principles
+(round-end expiry, completed-pair spending, no action lock, automatic typed
+follow-up). Both decisions are integrated into the canonical document below.
+
 ## UP-228 — Generic Sorcery specialty to Spellcraft
 
 Status: Resolved (candidate inapplicable; no implementation credit), 2026-10-04.
@@ -5750,6 +5773,13 @@ Not done; no rendered/playable acceptance or snapshot promotion is claimed.
 
 ## UP-108 — Divine Mandate rank foundation
 
+Decision2026-10-04: the user directs the same principles as Metamagic. Root
+integrated round-end expiry, use spending only on completed paired follow-up,
+unused expiry without consumption, no recursive grant and no Creature Activation
+lock/Activate/Decline prompt into the canonical section. Retain Light/Order-only
+restrictions. The two historical decision gates below are resolved; foundation
+implementation is now unblocked, not yet implemented or active.
+
 Status: Read-only map, 2026-10-01. UP-023's missing faction rank effects outrank
 further hardening of completed perks in Phase1. Canonical Castle rank: after a
 Hero Action casts a Light Spell, immediately issue one Order, or after a Hero
@@ -8821,6 +8851,13 @@ journeys and rendered/playable acceptance remain Phase 2/delivery work.
 No GUI, snapshot or launcher-profile promotion.
 
 ## UP-046 — Elemental Rebirth foundational effects
+
+Decision2026-10-04: the user selects battle-start maximum aggregate HP. Canonical
+section now specifies capture at combat start, unaffected by intervening losses
+or temporary HP changes. The historical HP-basis gate below is resolved. Map
+only the exact captured basis and existing reaction/summon/AI/save seams before
+implementation; terrain-dependent perks retain their separate decisions. No
+rank activation or gameplay coverage is granted by the design amendment alone.
 
 Status: Planned; read-only map complete, HP-basis clarification pending,
 2026-09-30. UP-023 Phase 1 coverage candidate; no effect activation claimed.

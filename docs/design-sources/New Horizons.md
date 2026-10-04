@@ -4680,11 +4680,13 @@ Each faction has one unique Skill available to both of its hero classes. Faction
 
 Castle unites sacred intervention and military command. Divine Mandate creates a precise exception to the normal Spell-or-Order choice without introducing a second action currency.
 
+Divine Mandate follows the same opportunity principles as Metamagic. The paired Light Spell or Order becomes available automatically through its ordinary control and may be used until the end of the current round. Other combat actions do not cancel the opportunity. A use is consumed only when the paired follow-up is performed; if it expires unused, no use is consumed and a later qualifying Hero Action may create a new opportunity. The follow-up cannot recursively trigger Divine Mandate. It grants no general Hero Action, carries into no later round, and never locks Creature Activations or requires an Activate/Decline prompt.
+
 ###### Skill progression
 
 |**Rank**|**Effect**|
 |---|---|
-|Basic|Once per combat, when the hero uses the Hero Action to<br>cast a Light Spell, immediately issue one Order; or after<br>using the Hero Action to issue an Order, immediately cast<br>one Light Spell.|
+|Basic|Once per completed pair per combat, when the hero uses<br>the Hero Action to cast a Light Spell, gain one Order-only<br>follow-up usable until round end; or after using the Hero<br>Action to issue an Order, gain one Light-Spell-only<br>follow-up usable until round end.|
 |Advanced|Divine Mandate may be used twice per combat.|
 |Expert|Divine Mandate may be used three times per combat.|
 
@@ -4952,7 +4954,7 @@ Skill progression
 
 ###### **Faction-locked Skill.**
 
-Conflux answers destruction with temporary elemental life. When a normal allied stack is destroyed, Elemental Rebirth summons an Elite Elemental using the lost stack's maximum HP as the scale.
+Conflux answers destruction with temporary elemental life. When a normal allied stack is destroyed, Elemental Rebirth summons an Elite Elemental using the lost stack's battle-start maximum aggregate HP as the scale. Capture that HP basis at the start of combat; intervening casualties or temporary HP changes do not change it.
 
 ###### Skill progression
 
