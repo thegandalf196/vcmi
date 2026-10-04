@@ -18,6 +18,16 @@ working sequence.
 
 ## Maintenance contract
 
+UP213 Fortress Mage Guild v9 replacement is source/build verified: supplied
+all-five native DEFs, masks, campaign icons and hall0–4 imported reproducibly;
+71 runtime assets across retained packages,46 validated obsolete Fortress v8
+files removed with historical archive preserved. Eight asset tests pass;
+independent Astra review reports no blocking issue. Both-target build59223 and
+combined native71275 pass (10/10, zero skips), including sequential guild costs,
+prerequisites and all five loaded Fortress positions/bindings. Other towns and
+non-art rules are unchanged. Private decoded first-frame inspection is not
+graphical town-scene/playable acceptance; no launcher promotion.
+
 UP212 binding slice is source/build verified: client86675 succeeds, existing
 Mage Guild art/data controls pass5/5, and independent Astra review finds no
 blocking issue. Reference purchaser TPMAGES.DEF frame0 under standalone NH

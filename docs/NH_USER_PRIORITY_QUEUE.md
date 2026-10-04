@@ -9,6 +9,36 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-213 — Replace supplied Fortress Mage Guild level artwork
+
+Status: Verified (delivery pending),2026-10-04. Source archive v9 is retained
+byte-for-byte (SHA256 recorded in its source README). All five native DEFs,
+campaign icons, masks and hall cards are imported reproducibly; Castle,
+Stronghold and all non-art town rules remain unchanged. Old Fortress IV/V
+JSON descriptors,42 frame PNGs and2 hall cards were replaced; the historical
+v8 source remains recoverable. Independent Astra review has no blocking issue.
+Eight focused asset checks pass. Both-target build59223 succeeds; native71275
+passes the actual sequential construction/loaded-binding control alongside nine
+Orb controls (10/10, zero skips,4.479s). Private native first-frame inspection
+covers all five levels. No graphical game launch or launcher promotion: actual
+town-scene animation/mask appearance and playable acceptance remain pending.
+
+User supplies Drive file
+1z-cMdGxKqbV53uk73QPoOd-LSrnbGok3 and requests replacing Fortress Mage Guild
+levels. Download and inspect the archive safely; derive included levels from its
+manifest/artwork rather than guessing. Retain source archive in the repo's Mage
+Guilds source directory, use the existing reproducible importer, and replace only
+matching Fortress runtime animations/hall icons/placements. Preserve other towns,
+unaffected levels and gameplay rules. Inspect native frames/hall cards, validate
+archive paths/dimensions/animation registration and source-byte reproducibility.
+Record source/build versus graphical/playable acceptance separately, preserving
+the running Orb fixture work and GUI hold. No supplied executables are run.
+
+Acceptance: exact supplied frames/data bound to intended Fortress levels,
+focused Mage Guild asset tests, successful relevant build/packaging checks,
+coherent reviewed commit/push; native-resolution in-game appearance remains a
+separate visual gate until authorized.
+
 ## UP-212 — Mage Guild spell icons on parchment
 
 Diagnosis,2026-10-04: SPELLSCR contains complete83x61 parchment+emblem
