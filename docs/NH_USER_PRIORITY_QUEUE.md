@@ -19,6 +19,18 @@ and may not edit frozen Stables headers or run builds. Return actual shared
 bonus/damage/reward/siege paths, focused test surfaces and any true design
 ambiguity. Mapping is not coverage credit. UP201 Stables acceptance/integration
 remains the current checkpoint; UP200 aura choices remain unanswered.
+Read-only map complete: core Fortress special2 still has local Attack2, with
+no NH override. The visiting blessing fits per-hero/per-physical-building weekly
+rewardable history and ONE_BATTLE PERCENTAGE_DAMAGE_BOOST melee/ranged bonuses
+read by the shared damage script (not BONUS_DAMAGE_PERCENTAGE double damage).
+Siege Attack20 must affect only the actual defending hero during the siege.
+Before selecting its hook, trace hero-attribute propagation and HeroCommand
+consumers: do not blindly add20 creature Attack or leak outside battle via a
+town-wide PRIMARY_SKILL bonus. Existing Brimstone siege-only spell-power
+handling is a useful boundary reference, not proof that a new Attack bonus
+already works. No consequential design ambiguity or production change found.
+Root selects Blood Obelisk as the next unblocked complete building slice;
+minimum actual siege/visit/damage/save evidence remains required.
 
 ## UP-201 — Remaining Castle movement and Rampart Luck building coverage
 
@@ -35,6 +47,10 @@ inconsistent residence-reference hardening, allied-resident scenario coverage
 and strategic AI valuation. Source allows allied residents but that specific
 case is not claimed from the same-player fixture. Lighthouse remains blocked
 on departure scope; broader goal is active, not complete.
+Committed/pushed761ba562be91ca43488f6ff388d400e192943f16. Notice preflight
+37188732374 completed SUCCESS on that exact source. Existing full Windows
+37187930978 remains in_progress on5899674a0 and excludes Stables. Preserve
+its handle; no duplicate full dispatch or playable promotion occurred.
 
 Stables status: In progress, 2026-10-04. Root selects the day-start event path:
 after NewTurn expires old ONE_DAY bonuses, give eligible visiting and garrison

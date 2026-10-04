@@ -42,6 +42,13 @@ No coverage credit or playable promotion yet. Phase2 retains defensive checks
 for inconsistent town-resident references and broader strategic AI valuation.
 Existing full Windows37187930978 remains live on5899674a0, excluding this
 dirty Stables slice; no replacement or duplicate full build is dispatched.
+Stables is now committed/pushed761ba562be91ca43488f6ff388d400e192943f16;
+notice37188732374 completed SUCCESS on that exact source. Full37187930978
+is confirmed in_progress; preserve it. UP202 Blood Obelisk map is complete:
+the weekly melee/ranged physical blessing fits existing rewards, while siege
+Attack20 needs a precise defending-hero-only hook and HeroCommand propagation
+inspection, not a blanket creature Attack20 bonus. No design blocker found;
+this is the next unblocked implementation slice, not new coverage yet.
 
 UP201 Fountain native acceptance: final both-target23674 passes; native12287
 passes1/1 in1.136s, zero skips, UP201-fountain-final.log/XML. Actual construction,
