@@ -1938,6 +1938,9 @@ When its turn arrives, the caster may use it exactly as though it were friendly:
 
 The stack does not change allegiance mechanically.
 
+If the selected stack is already Berserk, a successful Puppet Master cast removes
+its existing Berserk effect. A rejected or resisted cast does not remove it.
+
 This distinction matters.
 
 Effects that trigger when attacking allies or enemies should still recognize its true owner.

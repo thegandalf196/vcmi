@@ -18,6 +18,24 @@ working sequence.
 
 ## Maintenance contract
 
+2026-10-03 UP190 Puppet Master/Lucidity is source/native verified.
+Separate action controller from allegiance; preserve physical-side unit packets,
+ordinary Morale and reaction relationships. Runtime, client/AI and isolated
+native fixtures have bounded Luna owners. Root integrates data/build/review.
+Registration/perk/inventory checks pass22/22; module metadata matches. Final
+client90585/test72097 builds exit0. Native97155 passes8/8 in2.290s, zero skips;
+adjacent Berserk guard71741 passes6/6 in1.986s, zero skips. Combat identities
+increase60->61/67, Chaos6->7/11; perks210/310 and ranks87/93 unchanged.
+The user subsequently answered the pre-existing Berserk question: successful
+Puppet Master removes that spell effect. Canonical rules are updated; apply the
+narrow correction is implemented and verified in the final cases above.
+No GUI or playable promotion. Dedicated Time Stop, multi-control/status/reaction
+matrices, move-only AI valuation and unused canCastWithoutSkip continuation
+cleanup remain Phase2. Full Reality Warp still awaits its beneficiary-side
+decision; do not count its accepted prerequisites as the completed spell.
+New Hypnotize13d4691f5 notice37163408746 succeeds; full Windows37164498532 is
+running on that committed prerequisite, not the dirty Puppet Master slice.
+
 2026-10-03 UP179 Hypnotize ceiling prerequisite accepted: client retry26745
 and final focused test build39697 exit0; native5489 passes22/22 in5.958s,
 zero skips (UP179-hypnotize-refresh-final.log/XML). Exact cast-time integer
