@@ -1,5 +1,11 @@
 # New Horizons implementation sprints
 
+UP228 bounded audit complete: all five old generic Sorcery specialty aliases
+are explicitly removed by the active halon.json module patch and replaced with
+NH specialties. Preserve the authored replacements; no eligible built-in slice,
+production edit, new test or coverage credit. This is an inapplicable candidate,
+not a design blocker and not evidence the remaining Phase1 backlog is blocked.
+
 Current checkpoint: Adela/Bless source0c5964b71 is committed/pushed with remote
 hash and author/committer verified. Eight native cases and twelve hero-data
 checks pass. UP228 next maps old generic Sorcery specialties to Spellcraft,

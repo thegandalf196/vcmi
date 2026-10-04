@@ -11,7 +11,17 @@ entries and their validation/delivery evidence.
 
 ## UP-228 — Generic Sorcery specialty to Spellcraft
 
-Status: In progress, read-only bounded map, 2026-10-04. Canonical legacy-skill
+Status: Resolved (candidate inapplicable; no implementation credit), 2026-10-04.
+Independent production and fixture maps find all five base secondary-Sorcery
+aliases (Malekith, Zydar, Styg, Sandro, Gird) explicitly removed by the active
+Content/config/heroes/halon.json patch via specialty.secondary:null. Their NH
+replacement specialties must remain intact. Starting-skill migration already
+maps core:sorcery to new-horizons:spellcraft; that is not specialty eligibility.
+Do not restore retired aliases to manufacture coverage. No runtime/data change,
+new test, family-completion credit or clarification blocker follows this map.
+Generic custom-alias support would be a separately scoped implementation.
+
+Preparation history: Canonical legacy-skill
 mapping explicitly rebuilds old generic Sorcery as Spellcraft; it is not the
 six-school Sorcery Skill. Audit actual built-in secondary-Sorcery specialty
 producers, saved-rule eligibility, Spellcraft SP-component efficiency and its
@@ -20,7 +30,8 @@ numerical contribution, not the baseline 100% efficiency or perks. Root will
 confirm the precise arithmetic and safe capture boundary before implementation.
 Preserve authored variants, unrelated producers, old saved lists, shared live/
 detached prediction and authoritative growth. No new polling or mirrored state.
-Mapping alone grants no coverage; require build and focused native evidence.
+Mapping alone grants no coverage; an actual eligible conversion would require
+build and focused native evidence.
 
 Adela/Bless checkpoint 0c5964b71 is committed/pushed with eight accepted native
 tests; remote hash and author/committer identity are verified. Current Windows job
