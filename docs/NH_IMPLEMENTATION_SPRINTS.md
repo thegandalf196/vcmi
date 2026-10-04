@@ -18,6 +18,33 @@ working sequence.
 
 ## Maintenance contract
 
+UP201 Fountain native acceptance: final both-target23674 passes; native12287
+passes1/1 in1.136s, zero skips, UP201-fountain-final.log/XML. Actual construction,
+visits, recipient isolation, independent hero/building weekly history, saved
+bonuses/visitors, accepted-result cleanup and next-week regrant pass. Two fixture
+setup assumptions were repaired without changing production behavior. Data/
+inventory20/20 and module drift pass; Astra production review finds no blocker,
+final fixture review pending. Add one specified town mechanic, not a perk or
+spell. Full battle/retreat/replay, strategic AI routing and graphics remain
+Phase2. Integrate this source checkpoint, then continue mapped Stables; do not
+claim that accepted-result cleanup proves a full battle or playable promotion.
+
+2026-10-04 UP201 Fountain of Fortune is the next unblocked building slice.
+The NH patch replaces local defending Luck2 with3 and adds a Luck2 ONE_BATTLE
+visiting reward using per-hero/per-physical-building history with weekly reset.
+No new runtime state, poller or art is needed. Data/inventory20/20, module drift,
+Astra source review and client build38823 pass. The isolated real-visit/save/
+week/combat-expiry fixture remains pending; no coverage credit or playable
+promotion yet. Castle Stables/Lighthouse are mapped real functional gaps,
+not tooltip changes; daily grant/refill ordering and town-source embarkation
+must be shared by authoritative movement/pathfinding/AI. The Lighthouse source
+scope question is asked; Fountain is independent of it and UP200 aura choices.
+Full Windows Resource Broker37182637895 is confirmed completed SUCCESS on
+a8046ec2fbc204237c4e17da6e335f8863bed8cb. It does not include UP198/199/201.
+Academy notice37185975539 completed SUCCESS on ce666c92c; it is a source
+preflight, not a compiled Academy package. Dispatch the next full build only
+after the next coherent source checkpoint, not as a replacement for a timeout.
+
 UP199 is committed and pushedce666c92c1b50ef02654ccc98cba9c11f630f769.
 Notice preflight37185975539 was dispatched once and is confirmed in_progress
 on that exact source. Existing full Windows Resource Broker37182637895 remains

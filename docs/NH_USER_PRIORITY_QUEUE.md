@@ -9,6 +9,54 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-201 — Remaining Castle movement and Rampart Luck building coverage
+
+Fountain status: Verified (delivery pending), 2026-10-04. Client38823 and
+final both-target23674 pass; native12287 passes1/1 in1.136s, zero skips,
+UP201-fountain-final.log/XML. Real authoritative construction/visits verify
+defending Luck3, hero-only next-combat Luck2, per-hero/per-physical weekly
+entitlement, independent Fountain/hero, saved bonus/history, accepted-result
+cleanup, same-week denial and next-week reuse. Data/inventory20/20, module
+drift and Astra production review pass; final fixture review pending. One
+specified town mechanic added, not a perk/rank/spell. Full battle/retreat/replay,
+strategic AI routing and rendered feedback are Phase2; no GUI or playable
+promotion. Stables remains open; Lighthouse departure-scope question is asked.
+Historical fixture setup/list-size failures are retained in NH_RELEASE_FAILURES.
+
+Status: Read-only coverage audit, 2026-10-04. UP200 aura distance/overlap
+choices remain unanswered; do not encode them or bypass their recorded blocker.
+Inspect the canonical Stables day-start +20% land Movement, Lighthouse embark
+penalty waiver/day-long +20% sea Movement, and Fountain of Fortune defending
++3 Luck plus per-hero/per-physical-building weekly next-combat +2 blessing.
+Current core content still supplies Stables flat400 on visit for a week,
+Lighthouse kingdom-wide sea500, and Fountain town Luck2. No corresponding NH
+overrides were found in uniqueBuildings.json. Two independent Luna read-only
+maps own Castle movement and Rampart visiting rewards respectively. Root will
+select an unblocked complete mechanic, with actual authority/expiry/save/AI
+evidence rather than counting names or tooltips as coverage. No production
+change or coverage increase yet. Castle Gate is not a new gap: the current
+authoritative teleportHero path already enforces Inferno source/destination,
+both Gates, ownership, saved once-per-day usage and zero remaining Movement.
+Fountain map confirms a data-only principal path: local town bonus3 applies
+to defending stacks, not the separate visiting-hero ancestry. NH content now
+replaces core Luck2 with3 and adds per-hero weekly visitor history plus a
+Luck2 ONE_BATTLE reward. Existing ordinary additive reward semantics are
+preserved; no unauthored nonstacking rule, engine poller or new state is added.
+Focused data/perk/inventory20/20 and module drift check pass. A Luna tester owns
+the isolated real-visit/save/week/combat-expiry fixture; source/native acceptance
+and coverage credit remain pending. No playable delivery or GUI claim.
+Castle map confirms two functional gaps. Stables requires day-start resident
+selection (visiting and garrison heroes) and coherent grant/refill ordering:
+NewTurn computes Movement before old ONE_DAY bonuses expire, so a naive bonus
+grant before the tick would immediately expire, and a grant after the tick
+without correcting refill would underfill. Reuse shared hero-based Movement,
+ordinary saved ONE_DAY bonuses and authoritative turn events, not polling.
+Lighthouse must remove the old PLAYER sea500 and use source-aware accepted
+embark projection shared by authority, pathfinding and AI; a global boarding
+bonus would improperly affect unrelated embark/disembark. What counts as a
+town departure and repeated same-day benefit need clarification before encoding
+those boundaries. Fountain is independently unblocked and remains this slice.
+
 ## UP-200 — Fortress Glyphs of Fear siege Defense and local Morale
 
 Status: Read-only preparation during UP199 verification,2026-10-04.
