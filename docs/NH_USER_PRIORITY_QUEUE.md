@@ -9,6 +9,68 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-192 — Logistics Forced March
+
+Status: Verified (delivery pending), 2026-10-04. Basic perk under UP023:
+once per day after exhausting normal Movement, gain10% of maximum Movement;
+the next combat that day starts with-1 Morale during round1. The legacy
+LOGISTICS_FORCED_MARCH mastery is a permanent land bonus, not this mechanic.
+Map accepted ordinary movement completion, per-hero daily use/penalty lifetime,
+saved/replicated state and shared human/AI forecasts. No polling, activation
+button, frontend mutation or automatic award from a rejected move or DD cast.
+Root owns architecture/state/version/registration/build/Git. Require legal
+Basic offer, actual exhaustion burst/one-day guard, first-combat first-round
+penalty and next-combat/day expiry, saved-state sanity and minimum AI evidence.
+Maps complete; production ownership assigned to runtime (hero daily state,
+typed packet/visitor, accepted movement), battle worker (generic per-side
+first-round Morale snapshot and accepted-start consumption), and tester (isolated
+real-movement/battle/state/AI fixtures). Root owns version/config/CMake/build/Git.
+State uses absolute last-use and pending-penalty days, with no reset scan.
+The exhausting accepted move records fatigue before any guard/object combat.
+Minimum AI evidence is actual awarded Movement followed by fresh pathing and
+spending; prospective unspent-burst forecasting is a Phase2 finding.
+No activation or count before focused native acceptance. Preserve legacy behavior.
+
+Final acceptance: client30904, base tests94869, fixture retries28857/93649/28173
+and active both-target build exit0. Native retry93754 passes5/5 in1.731s;
+active native91757 passes18/18 in5.867s, zero skips, including adjacent Logistics
+and Steadfast shared Morale guards. Data/inventory19/19, module check and diff
+check pass. Independent Astra frozen production and corrected-fixture review
+find no blocker. Registry/module activate the perk:211/310,99 planned;
+Logistics7/10; ranks87/93 and combat61/67 unchanged. Evidence is retained under
+UP192-forced-march-active-focused.log/XML. Initial compile/fixture failures and
+retry lessons are recorded in NH_RELEASE_FAILURES.md. No GUI or playable
+promotion. Deferred: prospective unspent-burst AI forecasting, automatic-path
+invalidation/autonomous target-selection proof, wider control/summoning/Morale
+matrix, vehicle/guard-path interaction fixtures and native visual acceptance.
+
+Core source frozen: accepted STANDARD positive-to-zero Movement grants the
+burst after applied vehicle transition and before guard/object visits. Typed
+state packet294 and append-only version preserve daily use and pending fatigue.
+Independent Astra frozen-core review reports no blocking issue; it excludes
+unfinished battle/test paths. Root catches an interim round-zero Morale gate:
+playable first round is1, so correct and test that boundary before acceptance.
+Build/native/config activation and full-freeze review remain pending.
+
+Battle source frozen: generic side snapshot applies through shared Morale only
+at engine round1; accepted BattleStart consumes the marker and replay preserves
+the original snapshot without consuming again. Overflow-safe additive calculation
+retains ordinary no-Morale/Steadfast/Standard Bearer behavior. Full source review
+is assigned to Astra. Client build30904 is live with12 jobs, retaining
+UP192-forced-march-client-build.log. Isolated fixture registration follows client
+build completion; test files are still being written, so no native acceptance.
+
+Independent Astra full frozen-production review finds no blocking issue in
+movement/state, round1 additive Morale, proxy/shared evaluation, accepted-start
+consumption, replay preservation and append-only legacy guards. Broader control,
+summoning and Morale interaction matrices are Phase2 deferrals. Client build
+remains live; review does not substitute for native execution or activation.
+
+Client build30904 exits0. Root starts base vcmitest compilation (isolated new
+fixture files still unregistered), retaining UP192-forced-march-test-base-build.log.
+This prepares the changed shared state/version dependencies, not native acceptance.
+New fixture registration/compile and actual focused execution remain required.
+
 ## UP-191 — Chaos Pandemonium and reusable debuff classification
 
 Status: Consolidated with UP-123; generic foundation source/native verified, 2026-10-03.
@@ -5534,7 +5596,11 @@ Artwork is Not done, fallback remains neutral; no launcher promotion.
 
 ## UP-079 — Implement Armorer Last Stand
 
-Status: Mapped, design choices resolved; consolidated into UP-129, 2026-10-03.
+Status: Blocked on the two mapped design choices below, 2026-10-04.
+Audit correction: the former resolved/consolidated-into-UP129 header had no
+answer evidence; UP129 is unrelated Diplomacy. Canonical/Pending Changes do not
+resolve lethal-retaliation activation or clone/Phantom eligibility. Keep the
+existing questions pending rather than claim implementation-ready status.
 UP-023 missing
 Expert perk: once per combat, the first friendly stack that would be completely
 destroyed by a physical creature attack instead survives with one creature at
@@ -6637,6 +6703,18 @@ the dormant Arcane Memory seam, not Archmage, and neither run establishes
 Windows graphical acceptance or Linux launcher promotion.
 
 ## UP-056 — Complete canonical Adventure Spell effects
+
+2026-10-04 protected-barrier map is complete, read-only. No authorable localized
+marker/consumer exists in TerrainTile, CGObjectInstance, CMap allowedSpells,
+map load/editor, AIR pathing or authoritative movement. Normal blocked objects,
+rocks, guards and quest gates are not automatically canonical protected barriers.
+Fly path/server steps lack the check; DD shared target legality validates its
+endpoint, not crossings. Asked whether authors should mark protected tiles
+(Fly cannot enter; straight-line DD crossing forbidden), or protected region
+boundaries. Do not implement an inferred geometry/marker before resolution.
+After the answer, share the query across Fly path/authority and DD live/UI/AI;
+require marker roundtrip, blocked crossing/no-spend and unmarked-terrain guards.
+No effect/coverage increase from this map. Work on an unblocked queue item.
 
 2026-10-04 accepted required DD warning hook: generic default-empty effect hint
 is NH-only; client localizes/caches it at selection entry, writes while hovering,
