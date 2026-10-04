@@ -18,6 +18,14 @@ working sequence.
 
 ## Maintenance contract
 
+Delivered source6b6afc677 is pushed and remote-verified; worktree was clean at
+that checkpoint. Windows37207110382 is terminal SUCCESS onb6ef78e1b (Fortress,
+parchment binding and Orbs). New full Windows37211254873 is confirmed in_progress on
+6b6afc677, including UP214; preflight_only=false. Keep this exact handle; no
+duplicate dispatch, GUI or launcher promotion. Earlier live-job statements below
+are historical. A bounded read-only selection now seeks one unexamined planned
+perk under UP023, excluding all previously mapped clarification blockers.
+
 UP214 source/native accepted2026-10-04. Both-target80140 and bounded fixture
 rebuild14491 succeed; native39842 passes6/6 in2.362s, zero skips. Shared live/
 explicitly detached resistance caps75 after unchanged artifact/innate and aura

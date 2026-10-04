@@ -11,6 +11,13 @@ entries and their validation/delivery evidence.
 
 ## UP-214 — Canonical total Magic Resistance cap
 
+Source committed/pushed6b6afc677337380783abf8e6e9988870f1688b57; remote revision
+and author/committer identity verified. Full Windows37207110382 is now terminal
+SUCCESS onb6ef78e1b, including UP213/UP212 binding/UP210 but excluding UP214.
+Fresh full Windows37211254873 is confirmed in_progress on6b6afc677, preflight_only=false.
+Preserve this exact handle through terminal observation; no duplicate dispatch
+or graphical/playable promotion claim. Earlier live statements are historical.
+
 Status: Verified (delivery pending),2026-10-04. Both-target build80140 and
 bounded penetration-fixture rebuild14491 succeed. Native39842 passes6/6 in
 2.362s, zero skips (UP214-magic-resistance-final.log/XML). Real Battle Dwarf
@@ -43,7 +50,7 @@ Read-only production review finds no blocking issue; all10,201 clamped
 base/aura combinations preserve legacy arithmetic. Data audit confirms core
 Dwarf20/Battle Dwarf40, Unicorn/War Unicorn aura20 and Garniture5/Surcoat10/
 Boots15 remain unchanged by NH overlays. Loaded equipment/cast execution is
-still pending. Phase2: untouched live recipients in HypotheticBattle can retain
+established by native39842 above. Phase2: untouched live recipients in HypotheticBattle can retain
 live aura adjacency after only the neighbor is projected; explicitly detached
 recipients use projected adjacency, and both retain the75% cap.
 
