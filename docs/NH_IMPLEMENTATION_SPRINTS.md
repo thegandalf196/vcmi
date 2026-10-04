@@ -1,5 +1,18 @@
 # New Horizons implementation sprints
 
+UP223 accepted checkpoint2026-10-04: Lord Haart Estates core150/300/600,
+perks/unrelated income untouched. Client39945 and builds16010/47106 pass;
+native95834 passes12/12 in4.501s, zero skips. Module drift/12 hero-data pass.
+Commit/push this slice. Windows37227083002 completed SUCCESS onaf17030fc;
+full37231394673 is live ond2921158e (UP222/UP220 remainder), excludes UP223.
+Next bounded missing coverage: Uland Cure specialty's SP component20%, followed
+by Alamar/Jeddite Resurrection. Detailed canonical sections control conflicting
+summary spell levels; audit Resurrection's Level3 config against detailedLevel5.
+Weakness/AnimateDead are inactive legacy IDs (not their active NH replacements)
+and Haste is unresolved; do not invent replacement specialties. Primary+5
+specialty family also lacks systematic conversion. Broader financial interaction
+and Lord Haart daily receipt verification stay Phase2, not a Phase1 retest loop.
+
 2026-10-04 checkpoint: UP222 Archery source/native accepted. Both-target46837
 and native35240 pass (12/12, zero skips,6.231s); UP220 remainder29 access
 exclusions remain accepted separately. Module drift/20 magic/12 hero-data gates

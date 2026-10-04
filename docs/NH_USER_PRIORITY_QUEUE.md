@@ -9,7 +9,46 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-223 — Estates Skill specialty core-effect conversion
+
+Status: Verified (delivery pending), 2026-10-04. Client39945 and both-target
+16010/47106 pass. Final native95834 passes12/12 in4.501s, zero skips
+(UP223-estates-accepted.log/XML): Lord Haart/ordinary all-rank income with
+unrelated Gold/Wood, Tax Collector, Investor, income handicap, save/load,
+rank removal and prior-four-alias retention, plus baseline, six Estates AI
+controls and Archery/parser compatibility. Review has no blocker; module
+drift/twelve hero-data checks pass. Failed stale-binary/prior-list fixture
+attempts are retained in NH_RELEASE_FAILURES.md. No GUI or promotion.
+Broader modded income/projection and actual Lord Haart daily treasury receipt
+remain Phase2; shared server/AI aggregation is exercised by adjacent controls.
+
+Canonical Skill specialty20% strengthens only
+Lord Haart's Estates core daily Gold125/250/500 to150/300/600. Append
+core:estates to optional saved-v1 supported aliases, preserving older lists,
+existing exact marker installation and legacy producer suppression. Scale only
+the actual NH Estates skill-produced Gold before income handicap; unrelated
+generators, resources, Tax Collector, Investor snapshots and other perks must
+remain unchanged. No polling, saved counter or NewTurnProcessor rewrite.
+
+Bounded production and focused existing-fixture owners; root owns module/docs/
+serialized12-job builds/Git; Astra reviews. Acceptance: real Lord Haart versus
+ordinary hero at each rank, unrelated generator/perk/handicap controls, saved
+marker and rank removal, older lists preserve legacy. Shared daily income feeds
+authoritative new-turn processing and AI forecast. No credit before execution.
+Frozen production uses exact per-instance rank-bonus clones, preserving source
+and SID; prototypes and the ordinary income aggregate remain unchanged.
+Client39945 passes; module drift and12 hero-data checks pass. Independent Astra
+review has no production blocker. Native acceptance is recorded above.
+
 ## UP-222 — Archery Skill specialty core-effect conversion
+
+Accepted source checkpoint d2921158e567b23ebb9196402b115145d3e9f94e contains
+UP222 and the UP220 remainder; pushed/remote verified with correct author and
+committer. Windows37227083002 completed SUCCESS on older af17030fc, excluding
+this checkpoint. Full Windows37231394673 is confirmed live on exact d2921158e
+with preflight_only=false; preserve this handle, no duplicate dispatch. It
+includes UP222/UP220 remainder and excludes uncommitted UP223. A running job
+is not a successful compiled package or graphical acceptance.
 
 Status: Verified (delivery pending), 2026-10-04. Both-target build46837 passes.
 Native35240 passes12/12 in6.231s, zero skips (UP222-archery-native.log/XML),
