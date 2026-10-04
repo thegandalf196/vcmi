@@ -1,5 +1,16 @@
 # New Horizons implementation sprints
 
+Cure sourcecb6cc9614 is pushed and remote-verified. UP225 source/native accepted:
+both-target5018/14793 pass; native8017 passes9/9 in4.758s, zero skips.
+Commit/push this foundation, then convert Alamar/Jeddite Resurrection specialties
+with historical Cure-only supported-list guards. No graphical promotion.
+UP225 implements the
+canonical Resurrection foundation with separate Luna production/native-fixture
+owners. Root owns module generation, registration, serialized12-job builds and
+Git; source inputs must freeze before builds. Principal shared healing/forecast,
+permanent casualty/cap, exclusions, old-row/save and cost/rank checks outrank
+broader integration matrices. No new spell identity or specialty alias credit.
+
 UP224 accepted checkpoint2026-10-04: Cure specialty production and three compact
 native cases pass. Independent reviews have no blocker; client52539 and twelve
 hero-data/module drift checks pass. Serialized12-job both-target3385/69675

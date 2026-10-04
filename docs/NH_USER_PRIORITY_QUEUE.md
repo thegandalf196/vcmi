@@ -9,7 +9,55 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-225 — Canonical Resurrection foundation
+
+Delivery observation2026-10-04: Windows37231394673 completed SUCCESS on
+d2921158e567b23ebb9196402b115145d3e9f94e. Its nonexpired downloadable artifact
+New-Horizons-Windows-x64-d2921158e567b23ebb9196402b115145d3e9f94e exists
+(750666045 bytes) and includes Fortress v9 commit34bf2fa1f. It excludes later
+Estates/Cure checkpoints and this uncommitted Resurrection slice. No GitHub
+Release exists; the user should use the Actions artifact, not preflight reports.
+Source/native acceptance2026-10-04: both-target5018/14793 pass; native8017
+passes9/9 in4.758s, zero skips (UP225-resurrection-native.log/XML), including
+five Resurrection cases, three Cure specialty controls and mixed-casualty LIFO.
+Permanent restoration, binding original-count cap, accessible full corpse,
+injured temporary exclusions, small wounds, fixed-base scaling, costs and saved
+legacy guards pass. Broader postbattle journeys and AI/modifier/creature
+composition remain Phase2. No GUI, launcher promotion or specialty conversion.
+Local baseline both-target5018 completed PASS. The final five-case fixture is
+frozen/registered after material review repairs: legal living active context,
+separate two-hex footprints, injured temporary targets, a sub-full-unit healing
+case and an actually binding battle-start cap. These exercise new principal
+clauses, not a broad integration matrix. Independent production and repaired
+fixture reviews have no blocker; fixture build/native execution pass;
+22 repaired offline magic/schema checks and module drift pass. Older-schema
+test helpers must strip the v3-only restoration marker rather than admitting
+that field into v1/v2 schemas. First failures are retained for final ledger entry.
+
+Status: Verified (delivery pending),2026-10-04. Derived Phase1 dependency of UP224 from the
+detailed canonical Level5 Resurrection section:22Mana,100+4SP restoration,
+School/Spellcraft scaling only the SP component, permanent real casualty
+restoration at all ranks, survivor wounds first and battle-start count ceiling.
+Allow friendly destroyed stacks with available corpse hexes; reject summons,
+clones/Phantom illusions and explicitly unresurrectable entities. Do not retain
+the legacy minimum-full-unit threshold or optional negative magical dispel.
+
+Use optional saved-v3 restoration:{version:1} row, strict Level5/four22
+validation and shared effect value/Lua Heal prediction/application paths. Older
+markerless v3 and v1/v2 snapshots retain their authored legacy mechanics. No
+new polling, state ledger, action or separate resurrected-count implementation.
+Luna production and focused fixture ownership are separate; root owns module,
+CMake/docs/build/Git. Acceptance: rank/cost/formula, accepted wound/casualty and
+dead-stack restoration/cap/permanence, exclusions, no unrelated dispel, saved
+marker and old-row guards, principal shared health prediction. Broader
+interaction matrices belong to Phase2. Alamar/Jeddite specialties follow this
+foundation; do not claim their conversion or full spell coverage prematurely.
+
 ## UP-224 — Non-damage spell specialty component conversion
+
+Cure accepted sourcecb6cc9614fa7d1a845dc4e8c54d276b8aca3512f committed/
+pushed with required author/committer; remote hash verified and worktree clean
+at that checkpoint. The complete non-damage family remains in progress.
 
 Bounded Cure slice source/native accepted2026-10-04. Client52539 and
 both-target3385/69675 pass; final native20053 passes22/22 in4.011s, zero skips,
@@ -52,6 +100,11 @@ wounds first and caps at original count; BattleInfo checks corpse accessibility.
 Use shared health prediction/projected AI, not duplicated restoration state.
 Alamar/Jeddite specialty conversion follows this foundation, not a whole-value
 multiplier. No Resurrection source change or acceptance from this read-only map.
+When that later conversion expands eligible prototype producers, fresh hero
+conversion must also check the saved supported-spell list before suppressing a
+producer. A historical Cure-only list must not suppress an unlisted Resurrection
+alias merely because today's handler can recognize it. Preserve exact pointer
+ownership and the fixed100 restoration term; no whole-value multiplier.
 
 ## UP-223 — Estates Skill specialty core-effect conversion
 
