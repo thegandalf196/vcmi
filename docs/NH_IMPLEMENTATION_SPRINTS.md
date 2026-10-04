@@ -18,6 +18,62 @@ working sequence.
 
 ## Maintenance contract
 
+2026-10-04 UP194 Forgetfulness and Chaos Mindbreaker are source/native accepted.
+Client retry5595 and test retry49144 build; final focused native retry2 passes
+24/24 across seven suites in5.855s with zero skips. Data/inventory19/19,
+modulecheck and diffcheck pass; canonical SHA remains unchanged. Independent
+Astra review finds no blocker. Active perks advance211->212/310 (98 planned),
+Chaos Magic3->4/10; combat spell identities61/67 (Chaos7/11) and ranks87/93
+are unchanged. Status is Verified (delivery pending), not a GUI or playable
+promotion. The creature-window status popup's legacy Forgetfulness text, broad
+cross-system interactions and external retaliation-grace behavior remain
+Phase2 follow-ups. The successful full Windows job37177603721 ran on
+e4946162f and excludes UP194; it is not Windows acceptance for this slice.
+See NH_RELEASE_FAILURES.md for the retained historical failure trail.
+
+The dated UP194 candidate/pending entries below are historical pre-acceptance
+checkpoints preserved for traceability; they are superseded by the accepted
+status above and do not describe current blockers.
+
+2026-10-04 UP194 candidate registration is active for legal-offer verification;
+accepted counts remain211/310 until focused native/build gates. Data/inventory
+pass19/19. Shared runtime and AI raw-baseline filtering are implemented; review
+identifies bounded known native special-attack classification omissions for
+correction before final freeze. No playable promotion or graphical testing.
+
+2026-10-04 Forced March notice37175786029 succeeds on e4946162f. Full Windows
+37177603721 is dispatched once and confirmed in_progress on that same revision.
+It excludes the uncommitted UP194 candidate. Preserve the exact job handle;
+successful preflight is not compiled/playable acceptance.
+
+2026-10-04 Windows37174334529 completes successfully on f534f59c4, including
+client compile/package. It excludes Forced March. Notice37175786029 is now
+confirmed in_progress on e4946162f; retain it before dispatching that revision's
+full build. Earlier live/pending statements below are historical observations.
+
+2026-10-04 UP194 implementation assigned after baseline audit. Canonical
+Forgetfulness is incomplete beyond shooting. Shared runtime and real-cast
+fixture owners implement full base restrictions plus Mindbreaker; root handles
+typed marker/version, Lua duration/cost/profile and integration. Astra review
+requires unsuppressed evaluated baselines for live/nested projected restoration,
+not trait deletion. A separate AI-worker spawn hit the service thread limit;
+reuse a Luna owner after freeze. No activation/count/build acceptance yet.
+
+2026-10-04 UP193 maps complete and reconfirm the prior UP104 contract, including
+its unresolved recovery cap and zero-recovery daily-expenditure choices. No
+production activation. Continue UP194 Mindbreaker: a bounded read-only map of
+Forgetfulness and passive offensive creature-ability suppression. Existing
+Discipline/Logistics design blockers are not remapped or silently resolved.
+Windows37174334529 remains confirmed in_progress on f534f59c4 and notice
+37175786029 pending on e4946162f; retain those exact handles.
+
+2026-10-04 next missing feature: UP193 Logistics Pursuit March. Runtime and
+focused-test owners map only the post-win recovery/day-state and real battle/AI
+seams. Preserve accepted Forced March e4946162f, its independent daily allowance
+and unchanged launcher snapshot. Counts remain211/310 until native acceptance.
+Windows full37174334529 remains live on f534f59c4; Forced March notice37175786029
+is pending on e4946162f. Do not replace either handle on an observation timeout.
+
 2026-10-04 UP192 Forced March source/native accepted and active. Standard
 accepted exhaustion grants10% post-transition maximum Movement once daily;
 typed day markers precede guard/object combat, and a generic side snapshot

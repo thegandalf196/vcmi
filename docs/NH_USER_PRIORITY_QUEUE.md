@@ -9,6 +9,86 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-194 — Chaos Mindbreaker
+
+Status: Verified (delivery pending), 2026-10-04. UP194 implements and accepts
+canonical base Forgetfulness restrictions plus the Chaos Magic Advanced
+Mindbreaker perk. The focused legal-offer, real-cast, suppression, expiry/Dispel,
+detached AI and BattleAI evidence passed; client retry5595 and test retry49144
+build, and the final focused native retry2 passes24/24 across seven suites in
+5.855s with zero skips. Data/inventory19/19, modulecheck and diffcheck pass;
+independent Astra review finds no blocker. Perks advance211->212/310 (98
+planned), Chaos Magic3->4/10; combat identities61/67 (Chaos7/11) and ranks87/93
+remain unchanged. No GUI or playable-delivery promotion is claimed.
+
+Phase2 follow-ups: the creature-window status popup still uses legacy
+Forgetfulness text; broad cross-system interactions and external retaliation-
+grace behavior remain unverified. The successful full Windows job37177603721
+ran on e4946162f and excludes UP194, so it is not Windows acceptance for this
+slice. The discovery and retry notes below are historical; any earlier
+candidate/pending status is superseded by this accepted status.
+Mapping found missing base Forgetfulness restrictions and canonical duration;
+implement that prerequisite alongside the passive-offense extension. Runtime
+owns shared view filtering/command admission, tester isolated real-cast fixtures,
+root typed marker/version/Lua/config/build. An attempted separate Luna AI spawn
+was rejected by the service thread limit; reuse the tester after fixture freeze.
+Astra architecture review identifies a blocking restoration requirement:
+preserve an unsuppressed evaluated baseline for live and nested AI projections,
+so removing/expiring the marker restores abilities. Do not filter native traits
+out of the underlying bonus source or use temporary mutation for raw queries.
+Explicit known capability categories preserve structural traits and unknown
+bonus types; breath and multi-target attack shapes are special attacks, while
+ordinary retaliation remains available. No build/activation before full freeze.
+Marker lookup must use the existing node-version request cache rather than
+allocating and scanning an unstacked list for every ordinary bonus query.
+Intrinsic reactive creature triggers are suppressed at base; externally granted
+spell or hero effects are not. NO_RETALIATION is a victim-side restriction,
+not an offensive advantage, and is not a Mindbreaker-removal category.
+Runtime source is frozen; candidate registry/module now enable Mindbreaker so
+legal-offer fixtures can exercise it. This is not accepted coverage yet.
+Data/inventory checks pass19/19. AI owns raw merged projection restoration and
+an isolated fixture. Independent review catches known special-attack omissions
+(multihex attack geometry and Ferocity) plus passive Revenge; classify them
+before final freeze. Focused added guards cover retaliation latches and School
+duration scaling. No native/build result or playable delivery is claimed.
+Final source review reports no remaining blocker after classifier and fixture
+corrections. Client61077/retry78695 fail on explicit helper headers; corrected
+retry5595 is running with12 jobs. Failures and fixture assumptions are recorded
+in NH_RELEASE_FAILURES.md. Server and AI fixtures are frozen; focused native
+execution remains pending. Preserve this build handle and launcher snapshot.
+Phase2 feedback finding: the creature-window status popup still starts from
+the legacy Forgetfulness description (CCreatureWindow.cpp:289), whereas the
+spellbook uses the updated canonical hero-aware description. The existing
+status icon exposes the applied spell, but its expanded text needs a marker-
+aware explanation. Record this rather than expanding the frozen mechanic
+build into visual/layout work; no rendered UI acceptance is claimed.
+Client retry5595 and test retry49144 pass. Native69745 runs20 cases in5.368s,
+zero skips,9 pass/11 fail; all4 AI cases pass. Acceptance remains blocked:
+Lua BonusDescriptor omits explicit status metadata, and dispatch-only admission
+lets rejected commands publish StartAction and mark the unit moved. Runtime
+owns narrow descriptor metadata forwarding and a shared pure whitelist used
+before StartAction and again at dispatch. Preserve Ogre expiry assertion until
+that state-integrity fix is tested; its failure may be downstream. Legacy
+damage-fixture cast rejection is being classified separately. No count/commit
+or playable promotion from the partial run.
+
+## UP-193 — Logistics Pursuit March
+
+Status: Read-only runtime/test map, 2026-10-04. Missing Advanced perk under
+UP023: after winning combat, recover10% maximum daily Movement once per day.
+Do not replace it with a permanent capacity bonus or award on loss/replay.
+Map actual post-battle cleanup, surviving victor, current vehicle maximum,
+ordinary restoration bounds, daily saved/replicated use and minimum AI spending.
+Root owns architecture/config/version/CMake/build/Git; runtime and focused
+test maps have separate ownership. No production activation or count from mapping.
+Acceptance requires legal Advanced offer, real win refund/daily guard, loss and
+next-day guards, saved/wire state, actual refreshed AI path spending and build.
+Maps complete: this duplicates UP104's existing post-cleanup seam and unresolved
+cap/zero-recovery daily-expenditure policy. Preserve UP104 as the implementation
+contract; await the two user answers rather than remapping or inventing policy.
+The actual AI Movement callback is a no-op and requires event-driven path
+invalidation for an eventual accepted recovery. No production edits or count.
+
 ## UP-192 — Logistics Forced March
 
 Status: Verified (delivery pending), 2026-10-04. Basic perk under UP023:
