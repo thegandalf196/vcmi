@@ -18,8 +18,37 @@ working sequence.
 
 ## Maintenance contract
 
+Current accepted UP056 DD subset: visible/legal rounded radius8, successful
+full-Movement spend, shared live/UI targeting and planned AI source/cost.
+Client retry55650 and combined retry22130 build; native43587 passes6/6 in2.086s,
+zero skips (UP056-dimension-door-policy-focused.log/XML). Module/diff gates pass.
+Independent Luna runtime/test review plus root integration finds no blocker;
+separate Astra reviewer spawn was service-rejected at the thread limit.
+Initial scope/header failures remain in NH_RELEASE_FAILURES.md. No full DD,
+new identity/perk/rank count or playable promotion. Protected barriers and the
+ends-Movement warning remain Phase1; next unblocked clause is that warning.
+Water Walk's stranded-hero policy remains unanswered and blocked.
+
 UP123 status foundation committed/pushed9d0b11405; no Pandemonium activation.
-Active unambiguous UP056 slice: Summon Boat highlights legal adjacent water
+Next UP056 slice: read-only Water Walk end-day land-legality map across shared
+pathing, authoritative movement/turn completion and AI, with a separate focused
+test-seam map. An independent Dimension Door map isolates its explicit
+range/visibility/movement clauses from unresolved barrier/threshold choices.
+Do not infer drowning/forced relocation or other Adventure design
+decisions. Summon Boat targeting is committed/pushed26efdd523.
+Water Walk map is complete and blocked on stranded-hero policy: existing movement
+can leave zero Movement on water; explicit EndTurn bypasses the last-move timer
+hint, which also fails to aggregate multiple heroes. A simple turn-end rejection
+could soft-lock or loop AI. Asked preventive unsafe-step rejection versus explicit
+emergency return; no policy is implemented before the answer. Existing cost/expiry
+tests do not prove the day-end rule. Dimension Door's independent map continues.
+Dimension Door map complete: minimumMovement is already zero; implement the
+unambiguous visible/legal radius8 and successful full-Movement expenditure
+clauses through shared live/UI/AI policy. Radius uses the engine's existing
+rounded DIST_2D convention, not a new metric. Runtime, AI and tests have bounded
+ownership; preserve legacy config. Protected barriers and the canonical UI
+casting-ends-Movement warning remain Phase 1 work and block full completion.
+Accepted source/native UP056 slice: Summon Boat highlights legal adjacent water
 destinations using shared spell legality and native map targeting visuals.
 Bounded Luna owners implement shared effect/capability APIs, client targeting,
 and isolated tests separately. Exact selected position is honored authoritatively;
@@ -52,8 +81,10 @@ both failed and retry logs preserved. No producer or count consumer is activated
 Special marker replacement metadata and
 additional wire/refresh/copy edge tests are deferred, not spell acceptance.
 UP190 is committed/pushed620b25eec. Its notice preflight37167546781 succeeds;
-older full Windows37164498532 succeeds on13d4691f5. Full37168548146 is live
-on620b25eec, not the uncommitted status foundation.
+older full Windows37164498532 succeeds on13d4691f5. Full37168548146 now succeeds
+on620b25eec; it excludes the later status foundation and Summon Boat targeting.
+Notice-only preflight37169597939 succeeds on9d0b11405. It is not a compiled
+package and does not establish acceptance of26efdd523 or the current DD slice.
 
 2026-10-03 UP190 Puppet Master/Lucidity is source/native verified.
 Separate action controller from allegiance; preserve physical-side unit packets,
