@@ -18,6 +18,48 @@ working sequence.
 
 ## Maintenance contract
 
+2026-10-04 UP196 Resource Broker source/native accepted. Client retry94429,
+baseline vcmitest13751 and both-target fixture retry38283 exit0. Native64173
+passes7/7 across two suites in1.373s, zero skips: legal Advanced offer, exact
+shared quotes/resources, local residence/direction guards and actual AI callback
+request through server validation. Reports UP196-resource-broker-focused.log/XML.
+Independent Astra source/fixture reviews find no blocker; data/inventory19/19,
+modulecheck and diffcheck pass. Perks212->213/310 (97 planned), Estates5->6/10;
+combat61/67 and ranks87/93 unchanged. No new stored state, art, GUI or playable
+promotion. Pair-aware AI best-market selection, broader perk composition and
+rendered feedback remain Phase2. Earlier UP196 pending/build observations below
+are historical and superseded by this acceptance; compile repairs remain in
+NH_RELEASE_FAILURES.md.
+
+2026-10-04 bounded remaining-item audit: Learning Master Teacher still awaits
+UP164's Mentor prerequisite ruling. Learning Sage is a distinct Expert perk
+from Wisdom Sage's extra-guild-spell reveal; its unimplemented first-visit award
+also depends on UP074's pre-acquisition visitation policy. Neither planned row
+is implemented by ordinary giveSpells. Do not conflate the two Sage identities
+or invent historical visit entitlement. Master Logistician likewise remains
+planned: the carry arithmetic in "up to15% of unused Movement" needs an explicit
+choice before activation. Resource Broker is the unblocked implementation in
+progress; these read-only findings do not increase coverage.
+
+UP196 client70173's private-member compilation error is corrected through
+getVisitedTown(); client retry94429 exits0. Serialized vcmitest baseline compile
+is running against the changed shared headers, before the new isolated fixture
+is registered. Retain UP196-resource-broker-test-baseline-build.log. Native
+acceptance and coverage increase remain pending; no launcher promotion.
+
+2026-10-04 UP196 Resource Broker production is frozen in IMarket and town
+resource-pair effectiveness hooks. The common quote path applies the20% rate
+once for Wood/Ore-to-rare trades while an active captured perk holder actually
+visits/garrisons the town. Null-hero town trades benefit; remote holders and
+other resource directions do not. Existing custom-market virtual dispatch and
+integer rounding are preserved. Independent Astra review finds no blocker;
+broader perk composition and rendered feedback remain Phase2. Candidate
+registry/module/inventory are active for normal-offer verification, not accepted
+coverage yet; counts remain212/310. Data/inventory19/19 pass. Client build70173
+runs with12 jobs, retaining UP196-resource-broker-client-build.log. Native and
+AI fixtures are being written separately and remain unregistered. Preserve the
+build handle and launcher snapshot; no GUI/art or playable promotion.
+
 UP194 source/native acceptance is committed and pushed as
 `1d3a8018580b1fc3631c77e7c627b20cebfb2f6e`. Windows notice preflight
 `37180892273` completed successfully on that exact source. Full Windows

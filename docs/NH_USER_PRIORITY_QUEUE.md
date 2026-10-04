@@ -9,6 +9,36 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-196 — Estates Resource Broker
+
+Status: Verified (delivery pending), 2026-10-04. Canonical4592:
+while this hero is in a town, its Wood/Ore-for-rare-resource Marketplace
+exchanges use a20% more favorable rate. Shared town-context quotes feed
+existing client feedback, authoritative trade recomputation and actual AI trade
+requests; a description or client-only discount is insufficient. Preserve all
+other exchange directions, legacy/no-perk rates and normal integer rounding.
+Use an actual visiting/garrison resident's active captured perk, not a remote
+hero or blanket kingdom bonus. This is a town Marketplace rate: ordinary
+town trades with no trading hero also benefit while its holder resides there.
+Both holders do not multiply the same20% benefit. No stored counters, polling
+or new art. Root corrected the initial narrower trading-hero proposal before
+any production edits. A resource-pair effectiveness hook in IMarket, overridden
+by the town, preserves existing client/server/AI quote interfaces and custom
+market behavior. Root owns architecture/config/CMake/build/Git; runtime and AI/test
+workers have bounded separate ownership. Acceptance requires legal Advanced
+offer, actual accepted discounted trade and exact resources, ineligible/location/
+direction guards, UI quote parity, AI use, build and focused native evidence.
+Accepted evidence: client retry94429, baseline vcmitest13751 and both-target
+fixture retry38283 exit0. Native64173 passes7/7 across two suites in1.373s,
+zero skips, including a normal Advanced perk offer, exact quote/actual resources
+and ResourceTrader's real serialized Marketplace request accepted by the server.
+Reports: UP196-resource-broker-focused.log/XML. Astra source/fixture reviews
+find no blocker; data/inventory19/19 and module check pass. Counts advance
+212->213/310 perks (97 planned), Estates5->6/10; other totals unchanged.
+The private-member and final-callback compile failures are retained with narrow
+repairs. No new saved state or playable promotion. Pair-aware best-market
+selection, broader perk composition and rendered feedback remain Phase2.
+
 ## UP-195 — Diplomacy Legendary Reputation
 
 Status: Bounded preparation; monthly-use boundary clarification pending,
