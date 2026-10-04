@@ -1,5 +1,21 @@
 # New Horizons implementation sprints
 
+UP224 Adela source/native accepted2026-10-04: client38169, both-target99683
+and final48936 pass. Native6322 passes8/8 in5.310s, zero skips; twelve hero-data
+checks/module drift and independent reviews pass. Commit/push exact-producer
+conversion and SP-only duration scaling. Four non-damage aliases converted,
+without new spell/rank/perk identity counts. Historical list/save controls remain
+meaningful. Broader composition and graphical delivery are Phase2; full Windows
+37241527929 is still live on older90aac5407 and excludes this slice.
+
+Current2026-10-04: previous full Windows37237106185 is SUCCESS; new full
+37241527929 is live on90aac5407 (Vault and Resurrection specialties included).
+Adela/Bless is the next bounded source slice: exact legacy-producer conversion,
+20% only on its numericalSP/80duration term, fixed2/cap4 unchanged. Separate
+production/test writers; root module/build/integration. Independent interpretation
+review agrees this follows the canonical component rule, not a new design choice.
+No native or playable credit before those gates; no new identity count.
+
 UP227 source71604c698 is pushed/remote-verified with the required identity;
 clean checkpoint. Windows37237106185 still packages older6cc6e9f05, excluding
 the Vault and specialty slices. Preserve that exact live build; no duplicate

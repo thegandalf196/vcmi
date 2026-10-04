@@ -13,8 +13,12 @@ entries and their validation/delivery evidence.
 
 Source committed/pushed71604c6984e050d368e9abd9981c4cd70a6573e8; remote head
 and author/committer identity verified. Worktree clean at that checkpoint.
-Windows37237106185 remains live on older6cc6e9f05 and excludes this slice;
-its packaging step is running, not yet an accepted downloadable artifact.
+Windows37237106185 is now terminal SUCCESS on older6cc6e9f05 and excludes this
+slice. After checking there was no equivalent live build, root dispatched full
+Windows37241527929 on90aac5407, preflight_only=false, now confirmed in progress.
+It includes the Vault and Resurrection specialty slices, not the pending Adela
+conversion. Preserve that exact handle; no duplicate dispatch or launcher
+promotion. Success on the older job is not delivery of the newer source.
 
 Status: Verified (delivery pending),2026-10-04. Repaired both-target84391
 passes with12 jobs; native97534 passes3/3 in2.695s, zero skips, including
@@ -131,6 +135,49 @@ interaction matrices belong to Phase2. Alamar/Jeddite specialties follow this
 foundation; do not claim their conversion or full spell coverage prematurely.
 
 ## UP-224 — Non-damage spell specialty component conversion
+
+Adela/Bless source/native accepted2026-10-04: client38169, both-target99683
+and final48936 succeed; native6322 passes8/8 in5.310s, zero skips. Evidence:
+UP224-adela-accepted.log/XML and final build log. Two real-Adela cases establish
+SP0/67/cap duration, authoritative cast/forecast, matched blessed-stack damage,
+unrelated bonus effectiveness, exact prototype/marker/save and historical-list
+retention; all six Cure/Res controls pass. Twelve hero-data/module gates and
+independent reviews pass. First callback compile and pointer-identity oracle
+failures are recorded, without weakening gameplay interfaces or saved semantics.
+Four mapped non-damage aliases now converted; no full-family, identity-count,
+GUI or playable claim. Broader modifier/proxy/variant and AI composition remain
+Phase2. Source is ready for scoped commit/push.
+
+Next bounded audit2026-10-04 after Vault acceptance: inspect real Adela/Bless
+and Xsi/Curse for the canonical non-numerical specialty +1 round clause. Restrict
+the map to active aliases, their exact captured producers and shared duration/
+AI/saved-rules paths. Do not invent replacements for removed legacy spells or
+count source descriptions as implemented duration behavior. Root owns conversion
+and suppression semantics; no production edit before the map is accepted.
+Map accepted with root interpretation: Bless's explicit SP/80 duration is a
+numerical SP-derived component, already processed by the shared coefficient
+pipeline. Apply20% to that term before flooring, leaving fixed2/cap4 unchanged;
+the +1 fallback is not applicable because this spell has an SP component.
+Independent Astra interpretation review concurs: no textual conflict or
+clarification blocker, and Bless explicitly forbids an extra damage multiplier.
+Seven production files are frozen, including the hero-aware displayed duration
+using the same coefficient. Client38169 passes; twelve hero-data checks/module
+drift pass. Independent production review finds no blocker. Focused Adela fixture
+is still being written; no native, alias-count or playable acceptance yet.
+Do not run a stale vcmitest against the newly expanded saved list. Root will
+build that target only after the fixture freezes, then check actual Bless cast
+duration, shared damage suppression, unrelated bonuses and historical lists.
+Review correction: Bless's player-facing specialty wording is already duration-
+specific. Only the public rules header's old Cure/Res-only support comment is
+stale; it is documentation-only debt, not an incorrect tooltip or API change.
+Defer that comment-only header churn to a meaningful header update rather than
+forcing a whole dependency rebuild for polish during Phase1.
+Xsi actually specializes Stone Skin, not Curse; no eligible Curse identity is
+inferred. Capture only Adela's exact authored legacy Bless damage producer,
+zero its per-instance converted clone, preserve prototypes/unrelated bonuses
+and older supported lists. Separate production and fixture ownership; no new
+state field/poller or claim before build/native acceptance. Spell-cost mismatch
+is a separate numerical finding, not part of this bounded specialty slice.
 
 Resurrection specialty source365cfca23d97a1ffb887bac5fde5c505dc4c6b52
 committed/pushed with required author/committer; remote hash verified and
