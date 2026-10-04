@@ -18,6 +18,44 @@ working sequence.
 
 ## Maintenance contract
 
+UP205/UP206 accepted source/native2026-10-04. Both-target retry68082 succeeds;
+native26470 passes6/6 in3.290s, zero skips, UP205-UP206-focused.log/XML. Master
+Logistician has actual legal progression/day/boat/pathfinder/Stables/save and
+legacy controls. Three Speed artifacts have matching Initiative with explicit
+and fallback live creatures, cache-refresh removals and detached AI projection.
+Python25/25, module drift and Astra reviews pass. Perks213->214/310, Logistics
+7->8/10; ranks87/93, faction perks62/90 and combat61/67 unchanged. Four targeted
+artifact-conversion families now have evidence. Future-day AI carry forecasting,
+projected creature-form limiter reevaluation, broad composition and graphics
+are Phase2. No GUI/playable promotion. Commit/push this coherent checkpoint;
+preserve full Windows37194377145, still in_progress on cd416f22e, which excludes
+these new features. Next read-only gap map is Mana-regeneration artifacts.
+
+2026-10-04 resumption: the preceding clarification turn verified an already
+implemented Puppet Master decision and made no new coverage progress. UP205
+native fixture remains delegated and running. Select independent UP206 next:
+conditional Initiative bonuses for the three Speed artifacts, with actual
+equipment/live-battle and detached-AI evidence. No new coverage credit yet;
+root retains serial builds and integration, workers have separate new files.
+
+Full Windows37194377145 is confirmed in_progress on committed
+cd416f22e72591f8132dc990dbf4067fb1b329f3, containing UP203/UP204 but not UP205.
+It was dispatched once after full37191507353 terminal SUCCESS. Preserve this
+handle and do not restart because an observation times out. UP205 client57328
+succeeds; selected registration/inventory19/19 now passes after updating the
+explicit activation expectation. Source Astra review finds no blocker;
+principal native day/boat/Stables/save acceptance is still pending.
+
+2026-10-04 UP205 selected: implement the mapped Master Logistician Expert perk
+through NewTurn, keeping ordinary maximum Movement unchanged and retaining the
+15% unused carry through Stables. Separate Luna source/fixture ownership;
+root owns integration/activation/build/Git. The preceding goal cycle made
+concrete progress: UP203 and three UP204 artifact rows are committed/native
+verified. The tree is clean at resumption. Notice37194146484 now succeeds on
+ef02ff1d72; full Windows37191507353 now succeeds on ebc1d58db. A subsequent
+meaningful full checkpoint may include the committed friendly-fire/artifact
+slice; do not confuse it with the still-uncommitted UP205 runtime.
+
 UP203/UP204 delivery checkpoint: committed and pushed
 ef02ff1d72b9ee9b68ac678644a12b03c4c8cea2; tracked tree clean and0ahead/behind
 before these evidence notes. Windows notice-only37194146484 is confirmed live

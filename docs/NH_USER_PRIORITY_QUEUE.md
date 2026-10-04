@@ -9,6 +9,60 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-206 — Speed artifacts also increase explicit Initiative
+
+Status: Verified (delivery pending), 2026-10-04. Both-target retry68082 passes;
+native26470 passes6/6 in3.290s, zero skips, including Master Logistician and
+adjacent Stables/primary-artifact cases, retained as UP205-UP206-focused.log/XML.
+Actual equipment/removal proves Mage/Archmage explicit and Genie fallback
+Speed/Initiative4->2->1->0, plus detached AI projection. Focused data/inventory
+25/25 and module drift pass. Independent Astra source/fixture review finds no
+blocker. One more canonical artifact-family row has targeted evidence; no
+blanket artifact certification. Projected creature-form limiter reevaluation,
+broad composition and rendered feedback remain Phase2. No GUI or promotion.
+
+Status: In progress, 2026-10-04. Canonical artifact conversion requires each
+old +1 Speed to grant +1 battlefield Speed and +1 Initiative. Ring of the
+Wayfarer, Necklace of Swiftness and Cape of Velocity retain their existing
+Speed bonuses. Creatures without explicit Initiative already inherit Speed;
+Magi and Arch Magi have creature-authored Initiative and currently miss the
+increase. Add matching conditional BASE_NUMBER Initiative bonuses through the
+existing HAS_ANOTHER_BONUS_LIMITER, requiring a creature-authored Initiative
+base. Do not double-count fallback Initiative or introduce a runtime scan.
+Luna owns an isolated NH artifact overlay and data/native fixtures; root owns
+registration, CMake, build and integration. Require actual equipped/removal
+Speed/Initiative results for explicit and fallback creatures and detached AI
+projection. Source/native acceptance is separate from playable delivery.
+
+## UP-205 — Master Logistician daily unused-Movement carry
+
+Status: Verified (delivery pending), 2026-10-04. Both-target retry68082 passes;
+native26470 passes6/6 in3.290s, zero skips, including adjacent Stables and
+artifact cases. Actual legal Expert progression, completed-day/first-day gates,
+unused100/99/zero, repeated land/boat days, no-perk/legacy controls, computer
+ownership, unchanged ordinary maximum, same-day pathfinder carry use, real
+Stables300+15 refill and saved Movement/perk/residence pass. Independent Astra
+production/fixture review, focused Python25/25 and module drift pass. Evidence:
+UP205-UP206-focused.log/XML. Perks213->214/310 and Logistics7->8/10; other counts
+unchanged. Future-day strategic carry forecasting, broader interactions and
+rendered feedback remain Phase2. No GUI or playable promotion claimed. Initial
+legacy fixture merge and Speed fixture compile failures are retained separately.
+
+Status: In progress, 2026-10-04. The canonical Expert Logistics perk carries
+15% of unused Movement at day end into the next day. Root selects the existing
+NewTurn refill event: add floor(15% of nonnegative prior remaining Movement)
+only after a completed day for an NH hero with the captured active perk. Keep
+the ordinary daily maximum unchanged; total current Movement may exceed it.
+No new counter, capacity bonus, ordinary-update scan or AI-only formula.
+The Stables day-start refill must preserve the carry while adding its own normal
+capacity increase. Use wide arithmetic and bounded stored Movement.
+Runtime Luna owns only NewTurnProcessor; tester Luna owns an isolated native
+fixture. Root owns activation, CMake/module, builds, review and Git. Require
+actual day events, first-day/no-perk gates, rounding/spent Movement, repeated
+days, sea path, real Stables, saved state and computer ownership before credit.
+Focused source/native acceptance is distinct from rendered/playable delivery.
+UP203/UP204 are verified source checkpoints, not requests for more UI polish.
+
 ## UP-203 — Indiscriminate-spell friendly-fire confirmation
 
 Status: Verified (delivery pending), 2026-10-04. Client retry16088 and final
