@@ -11,6 +11,11 @@ entries and their validation/delivery evidence.
 
 ## UP-227 — Conflux Vault of Ashes growth
 
+Source committed/pushed71604c6984e050d368e9abd9981c4cd70a6573e8; remote head
+and author/committer identity verified. Worktree clean at that checkpoint.
+Windows37237106185 remains live on older6cc6e9f05 and excludes this slice;
+its packaging step is running, not yet an accepted downloadable artifact.
+
 Status: Verified (delivery pending),2026-10-04. Repaired both-target84391
 passes with12 jobs; native97534 passes3/3 in2.695s, zero skips, including
 Garden/independent-row controls and new Vault construction, weekly stock,
@@ -3006,6 +3011,15 @@ Matching Windows notice37105388534 is dispatched on that exact source. Existing
 full Windows37102336709 remains running on025ea810a; no competing full build.
 
 ## UP-174 — Shroud Deep Flank
+
+Selection check2026-10-04: the planned Expert Encircled Doom clause has the
+same unresolved distinct-side interpretation/lifetime as this item. Current
+battleIsShroudFlankingAttack only classifies rear-facing adjacency; it is not a
+multi-side count. Do not infer current adjacent friendly bodies or historical
+attacks/reset as the canonical answer. Reuse this pending ruling rather than
+duplicate the map. Field Instructor shares UP127's cohort blocker, and Elemental
+Conjurer depends on unresolved UP072 terrain/Convergence. This bounded check
+does not prove every remaining specification item is blocked.
 
 Status: Awaiting narrow design clarification,2026-10-03. Canonical row4793:
 friendly ranged attacks against a target currently attacked from at least two

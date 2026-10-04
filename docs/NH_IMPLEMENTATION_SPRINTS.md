@@ -1,5 +1,14 @@
 # New Horizons implementation sprints
 
+UP227 source71604c698 is pushed/remote-verified with the required identity;
+clean checkpoint. Windows37237106185 still packages older6cc6e9f05, excluding
+the Vault and specialty slices. Preserve that exact live build; no duplicate
+full dispatch. Next candidate check finds Encircled Doom awaiting UP174's
+existing positional-versus-accepted-side/lifetime ruling, Field Instructor
+awaiting UP127 cohort semantics and Elemental Conjurer awaiting UP072. These
+are real blockers for those slices, not permission to activate partial perks
+or evidence that the entire remaining backlog is blocked. Phase1 remains active.
+
 UP227 source/native accepted2026-10-04: Vault of Ashes construction and Fire/
 Energy weekly growth now use the standard Horde2 path. Both-target84391 passes;
 native97534 passes3/3 in2.695s, zero skips. Five data guards/module drift and
