@@ -18,6 +18,25 @@ working sequence.
 
 ## Maintenance contract
 
+UP191 is consolidated with existing UP123: full Pandemonium's repeated-application
+count and perk-composition questions remain unanswered. The duplicate selection
+is corrected, not counted as new coverage. The unblocked prerequisite is generic
+Bonus statusTags/statusIdentity metadata with strict saved representation and
+refresh semantics; runtime and isolated fixture have separate Luna owners,
+Astra reviews. No count consumer, implicit producer classification or spell/perk
+activation is authorized by this foundation. Combat coverage61/67 unchanged.
+UP123 foundation client14349 builds successfully. Independent source review
+reports no blocker. Corrected combined build24367 passes; focused native gate
+passes14/14 in0.917s, zero skips (UP123-status-tags-focused.log/XML), including
+four new metadata cases and ten adjacent transfer/control serialization cases.
+Original90794 fails on a final GTest fixture; the qualifier is removed, with
+both failed and retry logs preserved. No producer or count consumer is activated.
+Special marker replacement metadata and
+additional wire/refresh/copy edge tests are deferred, not spell acceptance.
+UP190 is committed/pushed620b25eec. Its notice preflight37167546781 succeeds;
+older full Windows37164498532 succeeds on13d4691f5. Full37168548146 is live
+on620b25eec, not the uncommitted status foundation.
+
 2026-10-03 UP190 Puppet Master/Lucidity is source/native verified.
 Separate action controller from allegiance; preserve physical-side unit packets,
 ordinary Morale and reaction relationships. Runtime, client/AI and isolated
@@ -27,7 +46,7 @@ client90585/test72097 builds exit0. Native97155 passes8/8 in2.290s, zero skips;
 adjacent Berserk guard71741 passes6/6 in1.986s, zero skips. Combat identities
 increase60->61/67, Chaos6->7/11; perks210/310 and ranks87/93 unchanged.
 The user subsequently answered the pre-existing Berserk question: successful
-Puppet Master removes that spell effect. Canonical rules are updated; apply the
+Puppet Master removes that spell effect. Canonical rules are updated; the
 narrow correction is implemented and verified in the final cases above.
 No GUI or playable promotion. Dedicated Time Stop, multi-control/status/reaction
 matrices, move-only AI valuation and unused canCastWithoutSkip continuation

@@ -9,6 +9,53 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-191 — Chaos Pandemonium and reusable debuff classification
+
+Status: Consolidated with UP-123; generic foundation source/native verified, 2026-10-03.
+The duplicate map selection is corrected: full Pandemonium already awaits two
+explicit design answers in UP-123, and reviewer recommendations do not resolve
+them. Do not activate the spell/perk or adopt a repeated-application counting
+rule from this map. The unblocked prerequisite is explicit, versioned Bonus
+statusTags (DEBUFF) and optional statusIdentity, with strict JSON/wire validation,
+legacy defaults, pre-payload lossy-write guards, and refresh preserving original
+numerical strength/provenance while retaining classification. Runtime and test
+owners are separated; root owns serialization version, CMake and integration.
+This establishes status representation, not the complete spell or count policy.
+Production source is frozen; client build14349 exits0 with12 jobs, retaining
+UP123-status-tags-client-build.log. The isolated four-case BonusStatusTags
+fixture is registered. Combined build90794 fails because the new GTest fixture
+was final; root removes that qualifier and resumes objects in retry24367,
+retaining UP123-status-tags-final-build.log and the separate retry log.
+Retry24367 builds vcmiclient and vcmitest successfully. The focused native gate
+passes14/14 from4 suites in0.917s, zero skips, including four new metadata cases,
+nine adjacent effect-transfer planner cases and Puppet Master wire compatibility.
+Evidence: UP123-status-tags-focused.log/XML. Root corrected the
+initial proposed compatibility proof to use actual old-format bytes, not read
+new-format bytes through an old reader. Independent source review reports no
+blocker. Special physical-affliction/guardian-spirit replacement branches and
+additional malformed-read/inherited-refresh/copy tests remain deferred; revisit
+the replacement branches before enabling tagged producers. Data/inventory22/22,
+ten schema cases and module check pass. No status producer/count consumer or
+Pandemonium activation, GUI validation or playable promotion is claimed.
+Windows37164498532 succeeds on13d4691f5; Puppet620b25eec notice37167546781
+succeeds and full Windows37168548146 is live on620b25eec, not this dirty foundation.
+
+Original intended whole-spell scope: Level5,22-Mana Pandemonium affects every stack,
+including allies: damage is D*(20+0.25*SP), where D counts active effects tagged
+DEBUFF, not raw negative statistics, permanent creature traits or individual
+bonus components. Implement a general opt-in classification usable by spell
+and creature effects rather than a hardcoded spell-name whitelist. Pandemonium
+Master increases damage per counted debuff by25%. Required preview reports
+each affected stack's debuff count and projected damage. Preserve ordinary
+damage defenses, action/Mana validation and live RNG isolation in AI.
+Two independent Luna maps updated runtime/status representation and focused
+validation/AI/UI seams. Root retains architecture, registration, docs, builds
+and Git. No production activation or coverage increment from mapping.
+Acceptance requires actual cast and counts across distinct/multicomponent
+effects, refresh/nonstacking, permanent/raw-negative exclusions, friendly fire,
+rank/perk coefficient, defenses, branch-safe AI, persisted tag and useful preview,
+successful build and focused native/data evidence. No GUI or promotion.
+
 ## UP-190 — Chaos Puppet Master and Lucidity
 
 User decision, 2026-10-03: a successful Puppet Master cast removes existing
@@ -3475,6 +3522,18 @@ Independent Astra source review reports no blocking production finding. No GUI,
 playable promotion or source commit is claimed for this candidate yet.
 
 ## UP-123 — Chaos Pandemonium and generic debuff counting
+
+2026-10-03 prerequisite accepted: explicit Bonus statusTags/statusIdentity has
+strict JSON/current-wire validation, legacy empty defaults and pre-payload
+lossy-downsave rejection. Generic refresh retains strength/provenance and merges
+tags without collapsing distinct identities. Client14349 and combined retry24367
+build successfully; UP123-status-tags-focused.log/XML passes14/14 in0.917s,
+zero skips. Independent source review finds no blocker. Special physical-affliction
+and guardian-spirit replacement metadata must be revisited before tagged producers
+are activated; extra malformed-read/inherited-refresh/copy cases remain Phase2.
+This is saved representation only: spell/perk counts do not increase, full spell
+still awaits the two questions below. UP191 is consolidated here, not a duplicate
+spell task. No GUI or playable delivery.
 
 Status: Blocked on debuff-count/perk clarification, 2026-10-02. Continue UP-023 Phase1 missing combat identities
 after Spellward's verified pushed slice9d8c5f4d4. Canonical Level5 Pandemonium
