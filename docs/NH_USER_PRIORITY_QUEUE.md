@@ -9,6 +9,41 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-216 — Canonical creature-line hero specialties
+
+Status: Verified (delivery pending),2026-10-04. Canonical5269 requires +1 Speed and
++1 Initiative for the affected creature line and upgrades, plus flat Creature
+Attack/Defense +1 per five hero levels, capped at +6 at level30. Audited
+production still generates legacy percentage Attack/Defense and no explicit
+Initiative. Preserve unrelated specialty families and separately authored
+bonuses; never mutate shared prototype bonuses.
+
+Root decision: optional versioned creatureLineSpecialties rules are captured
+in the existing saved hero-development snapshot. Missing rules retain explicit
+legacy semantics, including pre-conversion saves. Fresh converted instances
+use persistent namespaced bonus markers; update their flat values only on
+creation/level changes. No polling or new serialized updater. Speed-derived
+fallback Initiative must not receive a second increment. Focused acceptance:
+real line/upgrades/unrelated controls, five-level thresholds/cap, cached and
+projected stats, saved marker/rule preservation and accurate existing tooltip.
+Old unmarked saved bonuses are not guessed/migrated. Native/source acceptance
+and playable delivery remain separate.
+
+Frozen production review finds no blocker. Root corrected the initial marker
+key from ObjectInstanceID to stable HeroTypeID: pooled heroes are initialized
+before recruitment assigns their map ID. Build32607 failed at the tooltip's
+unique_ptr-to-translator boundary; generaltexth.get() repairs it. Both-target
+retry4780 and bounded fixture rebuild77861 succeed. Native85455 passes7/7 in
+2.928s, zero skips: three new line/threshold/save/legacy cases, three resistance
+controls and the supplied guild construction/binding case. Native76737's
+legacy-control setup error is repaired without weakening production validation.
+This adds one native-verified specialty conversion family; other feature counts
+remain unchanged. Windows37211254873 is terminal SUCCESS on6b6afc677,
+including UP214 but excluding UP216. Phase2: prototype-only descriptions
+in CHeroOverview and CKingdomInterface, broader spell/Order/stat interactions,
+and a full recruited-hero gameplay journey. Hero/exchange live-instance tooltip
+paths are updated; no GUI or launcher promotion is implied.
+
 ## UP-215 — Reactive Weave readiness coexistence
 
 Status: Awaiting design answer,2026-10-04. Canonical4484: after an enemy hero's

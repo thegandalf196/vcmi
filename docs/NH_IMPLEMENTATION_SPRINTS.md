@@ -18,6 +18,30 @@ working sequence.
 
 ## Maintenance contract
 
+Current accepted implementation: UP216 creature-line specialties, canonical5269.
+Replace alias-generated legacy percentages with flat +1 Attack/Defense per five
+levels (cap6), +1 Speed and +1 Initiative. Explicit optional saved rules separate
+new instances from unmarked old saves; event-driven marked bonus refresh avoids
+polling and prototype mutation. Luna production/native fixture owners are
+separate; root owns existing tooltip wiring, registration, build and integration.
+Creation, level thresholds, line/upgrades, legacy/custom controls and saved-state
+preservation pass: both-target4780 and fixture rebuild77861 succeed, native85455
+passes7/7 in2.928s with zero skips. This adds one native-verified specialty
+conversion family; other feature counts remain unchanged. Independent production
+review finds no blocker. Prototype-only description surfaces and broader
+interactions remain Phase2. Windows37211254873 is now terminal SUCCESS on
+6b6afc677, excluding this slice. Earlier live statements below are historical.
+
+Next audited functional slice after UP216 freezes: canonical damage-spell
+specialties. Deemer's SPECIAL_SPELL_SCALING still scales the whole adjusted
+result by hero level/target tier; Ciele's SPECIFIC_SPELL_DAMAGE50 also scales
+the whole base. Canonical5270 instead specifies fixed +15% of the Spell Power
+component. Existing BattleSpellCastTest809 proves legacy behavior, not NH
+conversion. Preserve Solmyr's explicit replacement. Do not run a parallel
+writer over CHeroHandler/CGHeroInstance while UP216 owns those files. Non-damage
+and Skill specialty conversions also remain gaps; resource quantities retain
+the specified legacy behavior. Primary-specialty inventory remains unproven.
+
 Next bounded UP023 selection: Reactive Weave (UP215) awaits a newly asked
 full-versus-half readiness coexistence decision. No activation/coverage credit.
 The other checked candidates share existing blockers: SageUP074, recruited-
