@@ -18,6 +18,13 @@ working sequence.
 
 ## Maintenance contract
 
+Delivered source422f0ce0a is pushed/remote-verified with a clean worktree at
+that checkpoint. Full Windows37215692312 is confirmed queued on that source,
+preflight_only=false; retain the exact handle. Previous37211254873 is terminal
+SUCCESS on6b6afc677. No local build/native process remains live, and no GUI or
+launcher promotion occurred. The next functional slice is damage-spell specialty
+conversion, not repeated coverage of this accepted creature-line family.
+
 Current accepted implementation: UP216 creature-line specialties, canonical5269.
 Replace alias-generated legacy percentages with flat +1 Attack/Defense per five
 levels (cap6), +1 Speed and +1 Initiative. Explicit optional saved rules separate

@@ -11,6 +11,13 @@ entries and their validation/delivery evidence.
 
 ## UP-216 — Canonical creature-line hero specialties
 
+Source422f0ce0aef4c39801e5264d286e562db660b2b6 is committed/pushed and
+remote-verified with the required author/committer. Fresh full Windows
+37215692312 is confirmed queued on that exact source, preflight_only=false.
+Previous37211254873 is terminal SUCCESS on6b6afc677, including UP214 but not
+UP216. Preserve the new handle through terminal observation; no duplicate
+dispatch or launcher/graphical promotion. Local build/native handles are terminal.
+
 Status: Verified (delivery pending),2026-10-04. Canonical5269 requires +1 Speed and
 +1 Initiative for the affected creature line and upgrades, plus flat Creature
 Attack/Defense +1 per five hero levels, capped at +6 at level30. Audited
