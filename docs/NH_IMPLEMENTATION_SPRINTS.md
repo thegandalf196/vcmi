@@ -18,6 +18,22 @@ working sequence.
 
 ## Maintenance contract
 
+UP220 bounded access slice source/native accepted: builds78840/50252/25274
+succeed and native18192 passes18/18 in2.044s with zero skips. Module drift,
+19 offline magic/schema and12 hero-data checks pass. Actual acquisition/start
+paths, rejected authorized Hero Spell, actual creature effect and old save
+round-trip are covered. Production approved; fixture overlap repaired before
+native acceptance. No graphical/playable delivery. Next: remaining legacy rows
+including core:shield, Haste clarification and authored obsolete specialties.
+
+Completed bounded slice UP220: separate saved-v3 hero-access permission from world spell
+membership for six confirmed noncanonical legacy spells. Stop guild/default
+book/hero-source leaks while retaining actual creature casts and effect storage.
+Focused native acceptance requires real producers and rejection without spend,
+not helper assertions alone. Haste remains unchanged pending clarification;
+obsolete hero specialties require authored replacements, not guessed bonuses.
+Acceptance above applies only to the named six rows, not the entire roster.
+
 UP219 source/native accepted: builds21618/2116 succeed; native12882 passes
 13/13 in6.135s with zero skips. Module drift/twelve hero-data checks pass and
 Astra reports no blocker. First native30347 failures are retained; fixture

@@ -11,6 +11,11 @@ entries and their validation/delivery evidence.
 
 ## UP-219 — Armorer Skill specialty core-effect conversion
 
+Source2ec433cb23c08ea273defbeaefd4f2dc76c7dd04 is committed/pushed and
+remote-verified with required author/committer. The worktree was clean at this
+checkpoint; local build/native/push handles are terminal. Windows37221556231
+remains confirmed live on the earlierdbd5c7da1 source and excludes UP219.
+
 Status: Verified (delivery pending),2026-10-04. Both-target21618 and bounded
 fixture-repair build2116 succeed. Final native12882 passes13/13 in6.135s,
 zero skips (UP219-armorer-specialty-final.log/XML). All three aliases/ranks,
@@ -58,7 +63,19 @@ Final native acceptance is recorded above; playable acceptance remains pending.
 
 ## UP-220 — Canonical spell roster versus legacy acquisition and starting grants
 
-Status: Open,2026-10-04. Bounded read-only audit finds Stone Skin, Bloodlust,
+Status: In progress (six-row access slice verified),2026-10-04. Client78840,
+native build50252 and bounded fixture-repair25274 succeed. Native18192 passes
+18/18 in2.044s, zero skips, UP220-hero-spell-access-native.log/XML. Actual
+Castle guild/Conflux House stock, six real default hero books, explicit-book/
+scroll bypasses, authoritative rejection with no mana/action/completed-cast
+change, actual Ogre Mage Bloodlust effect and old markerless saved-game
+round-trip pass. Module drift,19 offline magic/schema and12 hero-data checks
+pass. Astra approves production; its fixture hex-overlap finding was repaired
+and an explicit acting-controller assertion now passes. No GUI or playable
+promotion. This accepts only the named slice; Haste, other legacy roster rows
+and authored specialty/profile replacements are not blanket complete.
+
+Bounded read-only audit finds Stone Skin, Bloodlust,
 Prayer, Precision, Slayer, Disrupting Ray and Haste rows omit both active and
 ordinaryAcquisition markers. The saved-roster helpers default those markers to
 true; Mage Guild/House of Wisdom stock can therefore admit them, subject to map
@@ -78,6 +95,45 @@ Acceptance requires current-profile acquisition and initial-book reconciliation,
 focused real guild/start/casting evidence, and preserved hidden-effect/legacy
 controls. Root must decide the saved membership versus effect representation
 boundary; merely setting ordinaryAcquisition:false is not complete acceptance.
+
+Architecture investigation: BattleSpellMechanics applies active/world membership
+to creature modes too, so active:false cannot preserve hidden casting consumers.
+Consider a separate optional saved-v3 hero-access permission, defaulting to old
+behavior when absent, with ordinary acquisition disabled. Preserve world effect
+definitions, costs and status processing. The hero/default-book/UI paths must
+share the permission rather than hardcode six names in engine code. Haste's
+ordinary access has been asked asynchronously; leave it unchanged pending the
+answer. No arbitrary replacement spells/specialties are authorized by this fix;
+authored hero-profile gaps remain explicitly incomplete.
+
+Approved bounded implementation: optional saved-v3 heroAccess permission and
+shared spellAllowedByHeroRoster helper, default true when absent. Six rows
+Stone Skin/Bloodlust/Prayer/Precision/Slayer/Disrupting Ray opt out of hero access
+and ordinary acquisition while retaining active world membership. Filter fresh
+default grants, hero casting/learning/source/inscription APIs and spellbook cache
+admission, without deleting stored saved entries. Independent Luna production
+and fixture ownership; Astra approves architecture, root owns generated module,
+CMake, serialized12-job build and Git. Native acceptance must include actual
+guild/start paths, authoritative rejection without spend, artifact/preset bypass
+guards, saved compatibility and an unaffected actual creature cast. Haste and
+replacement specialties remain unresolved parts of UP220; no full-closure claim.
+
+Production is frozen and independently reviewed with no blocker. Generated
+module matches current rules;19 offline magic/schema and12 hero-data checks
+pass. Native fixture/build acceptance remains pending. Synthetic v1/v2 fixture
+helpers strip the new v3-only field before their existing compatibility checks;
+production validation still rejects the field in old formats. Windows37221556231
+is terminal SUCCESS ondbd5c7da1, including UP217/UP218 but excluding UP219/UP220.
+Do not restart that completed job or claim it covers these newer sources.
+
+Remaining authored specialty gaps observed by the fixture worker include
+Merist/Labetha (Stone Skin), Inteus (Bloodlust), Loynis (Prayer), Zubin
+(Precision), Coronius (Slayer), and Aenain (Disrupting Ray). Do not invent new
+bonuses or silently report those profiles complete. Further roster audit must
+also examine the user's reported core:shield and other legacy-only rows; the
+six-row acceptance does not establish whole-roster exclusion. Cure is a
+canonical Light spell and needs its current behavior distinguished from its
+legacy display name rather than indiscriminate removal.
 
 ## UP-218 — Logistics Skill specialty core-effect conversion
 
