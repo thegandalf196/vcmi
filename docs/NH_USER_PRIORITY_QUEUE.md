@@ -37,7 +37,7 @@ additional malformed-read/inherited-refresh/copy tests remain deferred; revisit
 the replacement branches before enabling tagged producers. Data/inventory22/22,
 ten schema cases and module check pass. No status producer/count consumer or
 Pandemonium activation, GUI validation or playable promotion is claimed.
-Windows37164498532 succeeds on13d4691f5; Puppet620b25eec notice37167546781
+Foundation committed/pushed9d0b11405. Windows37164498532 succeeds on13d4691f5; Puppet620b25eec notice37167546781
 succeeds and full Windows37168548146 is live on620b25eec, not this dirty foundation.
 
 Original intended whole-spell scope: Level5,22-Mana Pandemonium affects every stack,
@@ -6635,6 +6635,34 @@ the dormant Arcane Memory seam, not Archmage, and neither run establishes
 Windows graphical acceptance or Linux launcher promotion.
 
 ## UP-056 — Complete canonical Adventure Spell effects
+
+2026-10-03 active bounded slice: Summon Boat legal-adjacent-water destination
+selection/highlighting and hover preview. Reuse shared authoritative spell
+legality and native adventure-map visual treatment; no new artwork or unrelated
+dialog redesign, frontend state mutation, boat creation or inferred Town Portal/
+protected-barrier decisions. Acceptance requires legal adjacent water highlight,
+invalid/occupied/nonadjacent exclusions, cancellation and valid command targeting,
+focused tests and successful build. Native evidence is distinct from rendered
+or playable acceptance. This completes a required UI path, not a new spell identity.
+The completed map finds the effect currently ignores selected coordinates, and
+the renderer assumes selected spells are ranged. Implement generic targeting
+capabilities, shared adjacent-water legality and authoritative explicit placement;
+preserve legacy behavior and exact (-1,-1,-1) AI fallback. Existing native range
+mask shades invalid destinations, leaving legal tiles bright; no new artwork.
+Runtime, client and isolated fixture have bounded Luna owners and are frozen.
+Independent source review reports no blocker; native-resolution contrast and
+selection/cancellation review remain deferred visual evidence. The narrow
+client source-contract guard passes (not GUI acceptance). Root owns
+architecture/integration/build/Git. Combined build7395 fails on a missing direct
+IGameInfoCallback include; root adds it and retry39815 builds both targets.
+Retain UP056-summon-boat-targeting-build.log and separate retry log. Native49715
+passes8/8 from2 suites in2.563s, zero skips: explicit non-first destination,
+exact sentinel fallback, illegal/nonwater/nonadjacent/off-level/occupied/hidden
+targets preserving Mana/day/boats, missing boats, legacy creation and three AI
+planning/action guards. Evidence: UP056-summon-boat-targeting-focused.log/XML.
+Source/native targeting requirement is verified; no GUI/playable promotion.
+Other UP056 spell clauses and existing design questions remain open; no new
+spell identity, rank or perk count is claimed.
 
 Status: Partial; Summon Boat existing-only clause source/native verified,
 2026-09-30. Remaining Adventure Spell effects and required targeting UI are open.
