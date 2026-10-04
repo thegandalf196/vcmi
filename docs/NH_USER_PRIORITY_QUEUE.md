@@ -9,6 +9,76 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-199 — Dungeon Battle Scholar Academy proportional training
+
+Status: Read-only preparation complete; next after UP198 principal acceptance,
+2026-10-04. Canonical3285 requires each physical Academy to grant each hero
+25% of the Experience currently missing for the next level once. The core
+Dungeon special4 reward still grants a fixed1000 XP. Existing per-building
+VISIT_HERO visitor state already provides once-per-physical-building behavior.
+Implement a reusable bounded percentage-of-next-level reward field with shared
+calculation for actual grant and Experience-component preview, parser/schema,
+JSON and append-only saved reward support. Old records read zero; reject older
+writes that would discard a nonzero field. Override only NH Academy content;
+preserve core/legacy1000 XP and existing fixed rewards. Root selects ordinary
+reward conventions: floor the base percentage using wide arithmetic, then use
+the recipient's existing calculateXp path (including Learning), not a new
+special-case XP system. No new per-hero history, poller or UI/art is required.
+Acceptance: real visits at differing levels/current XP, next-level saturation,
+correct preview/grant, repeats and distinct physical buildings/heroes, legacy
+behavior, saved reward/visitor evidence, minimum AI town-entry execution and
+focused build/native validation. Runtime map complete; no production change or
+coverage increase for this item yet. Root owns architecture/version/content/
+CMake/build/Git; assign non-overlapping implementation/test owners next.
+
+## UP-198 — Necropolis Amplifier visiting-hero raising bonus
+
+Final status: Verified (delivery pending),2026-10-04. Client68479 and final
+both-target build96096 pass. Native4614 passes19/19 across five focused suites
+in1.692s, zero skips, retained in UP198-amplifier-accepted.log/XML. Real visits,
+class/build/hero-local guards, exact saved1/7-day durations, cross-building
+refresh and latest expiry, actual computer-winner20% raising and adjacent
+legacy/resolver guards pass. Data/inventory20/20, module drift and Astra review
+pass. Perk/rank/spell totals unchanged; one specified town mechanic is now
+verified. Duplicate-entry consolidation/duration presentation and proactive
+AI visit valuation are Phase2. No GUI run or playable promotion occurred.
+The implementation/checkpoint history below is retained, not a current blocker.
+
+Status: Bounded implementation map,2026-10-04. Canonical3275: a visiting
+Necropolis hero receives+10 percentage points of Necromancy raising for7 days;
+multiple Amplifiers do not stack and another visit refreshes the duration.
+The core building currently grants a permanent kingdom-propagated raising
+bonus, while the NH post-battle resolver calculates only rank/Bone Collector.
+Audit the NH patch and actual reward/raising paths; neither existing behavior
+proves the visiting-hero rule. Root owns architecture, content, CMake/build/Git;
+runtime and isolated test ownership will be disjoint. Prefer the existing
+versioned hero bonus and day-expiry machinery, not new polling or mirrored
+daily counters. Require real building visits, Necropolis/other-faction guards,
+exact raising percentage/output, refresh/nonstack/7-day expiry, no kingdom-wide
+leak, legacy behavior, saved bonus sanity and minimum AI reward consumption.
+Source/data/native/playable acceptance remain separate. Do not activate/count
+this building from a description or a synthetic resolver-only test.
+Production frozen: the NH Necropolis special2 patch clears its permanent
+kingdom aura and grants an unlimited-visit reward restricted to the two
+Necropolis classes. Existing N_DAYS7 bonuses carry the named Amplifier key.
+The shared hero getter reads the maximum positive matching town-structure
+effect; the resolver adds it before existing casualty/conversion arithmetic.
+Repeated visits may retain bounded overlapping stored bonuses: each expires
+through ordinary daily processing, and the10-point effect must survive until
+the newest one's seven-day expiry. This semantic refresh requires explicit
+day-tick evidence; no unsafe source-wide RemoveBonus is used. Duplicate-entry
+consolidation and duration presentation are Phase2 follow-ups, not asserted
+mutated-duration behavior. Astra production review finds no blocking issue;
+the focused data guard and module drift check pass. Client build68479 completed
+successfully with12 jobs (293 steps). Baseline vcmitest41059 remains confirmed
+live; retain its handle, do not run a stale native binary. The isolated fixture
+covers real visits, cross-building refresh/day expiry, saved benefit and actual
+computer-winner raising. Review found a pre-rank getter assertion mismatch;
+the tester is correcting the fixture without weakening the production guard.
+Register it only after the baseline build finishes and the source is frozen.
+Focused Python checks pass20/20. No accepted coverage increase or playable
+promotion yet.
+
 ## UP-197 — Necropolis Skeleton Transformer HP conversion
 
 Status: Bounded runtime map; selection-rounding clarification pending,

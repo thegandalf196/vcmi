@@ -18,6 +18,41 @@ working sequence.
 
 ## Maintenance contract
 
+2026-10-04 UP198 accepted: final both-target96096 exits0; native4614 passes
+19/19 across five focused suites in1.692s with zero skips, retained as
+UP198-amplifier-accepted.log/XML. Real visit/save/refresh/day expiry and actual
+computer-winner raising pass. Data/inventory20/20, module drift and Astra review
+pass. One specified town mechanic added;213/310 perks,87/93 ranks,62/90 faction
+perks and61/67 combat identities unchanged. No GUI/playable promotion.
+UP199 Academy proportional XP is next; root will integrate the accepted
+Amplifier before permitting its runtime/test writers to change the next slice.
+
+2026-10-04 UP198 Necromancy Amplifier is the next unblocked functional building
+slice. Its canonical visiting-hero7-day bonus was absent: the core aura was
+kingdom-wide and ignored by the NH raising resolver. Production/configuration
+are frozen and independently reviewed without a blocker; data guard/module
+check pass. Client68479 is running with12 jobs. Preserve it until terminal;
+the separate native fixture is being written and remains unregistered. Exact
+visit, nonstack/refresh/expiry, actual raising, save and AI evidence are pending.
+The generic stored-bonus expiry path is reused, with no new poller or counter.
+All existing coverage totals remain unchanged until the principal gates pass.
+Client68479 completed successfully (293 build steps). Baseline vcmitest41059
+is now live with12 jobs against the changed headers; the new isolated fixture
+remains unregistered. Focused Python data/inventory20/20 and module drift pass.
+Mindbreaker full Windows37180938926 completed successfully on1d3a80185;
+Resource Broker37182637895 is now in_progress on a8046ec2f. Both exclude dirty
+UP198. Retain the existing handles; no duplicate full build was dispatched.
+Next unblocked building UP199 is mapped: Academy still grants fixed1000 XP
+rather than25% remaining-to-next-level. Reuse generic reward/preview/visitor
+paths, ordinary floor/Learning conventions and guarded saved reward data.
+Implementation waits for UP198 principal acceptance; mapping is not coverage.
+UP198 baseline41059 reached its final link and its process is terminal. The
+registered fixture build45525 then failed on missing direct CHero and
+CSkillHandler includes; retain UP198-amplifier-fixture-build.log. The tester
+owns the narrow include fix. Final semantic fixture review found no blocker,
+including exact stored1/7-day durations across save/load and actual computer
+winner raising. Native acceptance is still pending; no stale test was run.
+
 2026-10-04 continuation: Resource Broker notice preflight37182430857 completed
 successfully on d4e0e996a. Full Windows37182637895 was dispatched once and
 confirmed queued on a8046ec2fbc204237c4e17da6e335f8863bed8cb, whose only
