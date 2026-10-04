@@ -9,6 +9,76 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-219 — Armorer Skill specialty core-effect conversion
+
+Status: Verified (delivery pending),2026-10-04. Both-target21618 and bounded
+fixture-repair build2116 succeed. Final native12882 passes13/13 in6.135s,
+zero skips (UP219-armorer-specialty-final.log/XML). All three aliases/ranks,
+core forecasts and accepted attack, initial-XP sampler timing, save/load,
+rank removal, legacy retention, prototypes and independent perk values pass,
+alongside Logistics and existing physical/growth controls. Module drift and
+twelve hero-data checks pass; independent Astra review has no blocker. The
+first native30347 fixture failures are retained in NH_RELEASE_FAILURES.md.
+Source/native acceptance is not GUI acceptance or launcher promotion.
+
+Canonical Armorer specifies5/10/15% physical
+creature-attack reduction and10/20/30% Defense-growth chance; the specialty
+table gives20% stronger core effects, never stronger perks. The surviving exact
+legacy aliases belong to Mephala, Tazar and Neela. Implement both effects as
+6/12/18% reduction and12/24/36% growth chance, preserving physical caps and
+separate reductions such as Pavise and Formation Fighting.
+
+Root architecture: extend the optional saved supported-Skill list to include
+core:armorer while accepting older Logistics-only snapshots. Reuse exact alias
+producer metadata and stable local markers, suppressing only converted legacy
+producer copies. Match active NH rank/growth identities separately from legacy
+alias identity. The hero-aware shared reduction helper feeds live/forecast
+payloads; growth is adjusted once in getPrimaryGrowthView, already consumed by
+the authoritative GameRandomizer. No second sampler multiplier, new save field,
+polling or shared prototype mutation. Install eligible fresh markers before
+initial automatic level-ups, not afterward; unmarked old heroes must not gain
+conversion from installed defaults. Marker installation must be idempotent.
+
+Luna production and native-fixture owners are separate, Astra reviews, root
+owns registration/module generation, serialized12-job build, docs and Git.
+Acceptance: all three real aliases/ranks, ordinary controls, accepted physical
+attack and forecast, both growth view and sampler including initial-XP timing,
+rank removal, unrelated modifiers/prototypes, save/load and legacy guards.
+No coverage credit until focused execution. Phase2 retains broad interaction
+coverage. Windows37221556231 remains confirmed in_progress ondbd5c7da1;
+preserve that exact handle, no duplicate build or launcher promotion.
+
+Frozen source/fixture review finds no blocking issue. Module drift and twelve
+hero-data checks pass. Build21618/2116 and native30347/12882 are now terminal;
+preserve their logs rather than restarting. Phase2 follow-ups are seeded
+threshold-specific growth outcomes, active Formation Fighting composition and
+detached AI projections. The initial-XP fixture calls the real GameRandomizer
+and captures the specialty-adjusted chance at the actual sampling boundary.
+Final native acceptance is recorded above; playable acceptance remains pending.
+
+## UP-220 — Canonical spell roster versus legacy acquisition and starting grants
+
+Status: Open,2026-10-04. Bounded read-only audit finds Stone Skin, Bloodlust,
+Prayer, Precision, Slayer, Disrupting Ray and Haste rows omit both active and
+ordinaryAcquisition markers. The saved-roster helpers default those markers to
+true; Mage Guild/House of Wisdom stock can therefore admit them, subject to map
+and level filters. Default hero profiles also preload these spells, and casting
+checks membership rather than ordinaryAcquisition. Acquisition-only exclusion
+would not resolve the user's reported legacy starting-spell leakage.
+
+Reconcile each identity against canonical detailed spell/hero sections before
+changing it. Preserve hidden effect definitions, old saved effects and creature
+consumers: Enchanter candidates use several names, Disrupting Ray has persistent
+effects, and Haste is explicitly referenced by Dispel/Reality Warp. Crusade's
+Prayer-like package and Bloodrage's Slayer perk are not the corresponding core
+spell. Haste's ordinary-acquisition intent remains unclear. Do not infer whole
+roster completion from this seven-row audit or globally delete effect handlers.
+
+Acceptance requires current-profile acquisition and initial-book reconciliation,
+focused real guild/start/casting evidence, and preserved hidden-effect/legacy
+controls. Root must decide the saved membership versus effect representation
+boundary; merely setting ordinaryAcquisition:false is not complete acceptance.
+
 ## UP-218 — Logistics Skill specialty core-effect conversion
 
 Source dbd5c7da1f8d19ef55eb11e8c504c5aace739b9c is committed/pushed and

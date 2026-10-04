@@ -18,6 +18,30 @@ working sequence.
 
 ## Maintenance contract
 
+UP219 source/native accepted: builds21618/2116 succeed; native12882 passes
+13/13 in6.135s with zero skips. Module drift/twelve hero-data checks pass and
+Astra reports no blocker. First native30347 failures are retained; fixture
+repairs preserve exact marker identity and canonical perk prerequisites.
+No GUI or launcher promotion. Skill-specialty family remains partial.
+
+Completed slice UP219: Armorer specialties for Mephala/Tazar/Neela,
+covering both core physical reduction6/12/18 and Defense-growth chance12/24/36.
+Reuse saved supported aliases and exact producer markers. Fresh markers must
+exist before automatic initial-XP level-ups; adjust the growth view once because
+the production sampler already consumes it. Separate Luna owners/Astra review,
+root registration/build/Git. Acceptance evidence is above.
+
+Next mapped specialty slices: Crag Hack/Gundula Offense and Orrin Archery
+require both12/24/36 core damage contributions and12/24/36 Attack-growth
+chances. Scale only their exact Skill contributions, not the aggregated damage
+factor or perks. Offense is a source-stamped bonus consumed by Lua; Archery's
+core contribution is supplied by the shared combat callback. Lord Haart's
+Estates separately requires150/300/600 daily Gold, excluding other generators,
+perks and handicap scaling. Orrin/Lord Haart fixtures must explicitly grant the
+active Skill because Might starting-skill migration can replace its old slot.
+These are mapped omissions, not coverage credit. Queue UP220 records the higher
+priority legacy spell admission/starting-grant mismatch and effect boundaries.
+
 UP218 production dbd5c7da1f8d19ef55eb11e8c504c5aace739b9c is pushed and
 remote-verified. Local handles are terminal. Full Windows37221556231 is queued
 on that source (includes UP217/UP218); preserve it, no duplicate dispatch.
