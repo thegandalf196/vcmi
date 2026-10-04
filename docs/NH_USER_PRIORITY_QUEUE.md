@@ -11,6 +11,16 @@ entries and their validation/delivery evidence.
 
 ## UP-226 — Bloodrage Avatar of Rage
 
+Selection correction2026-10-04: existing UP145 already maps Avatar and records
+the unanswered Blood Scent attack-local cap-attainment question. This is a
+duplicate preparation, not an unblocked implementation. Root stopped renewed
+mapping; preserve UP145's blocker and do not select a stacking answer silently.
+Reissued the narrow question2026-10-04: should Blood Scent's temporary increment
+reaching the attack-specific cap activate Avatar for that attack? Current shared
+callback supports either policy; no activation or production edit until resolved.
+Existing detached rage/cap getters and physical-creature predicate can be reused;
+Avatar must read the saved cap, not hard-code60. No new ledger is justified.
+
 Status: Read-only map,2026-10-04. Next unblocked UP023 Phase1 coverage candidate
 after UP224 specialty acceptance: canonical Expert perk makes friendly creature
 attacks ignore25% Creature Defense at maximum Bloodrage. Inspect the existing
@@ -80,6 +90,11 @@ interaction matrices belong to Phase2. Alamar/Jeddite specialties follow this
 foundation; do not claim their conversion or full spell coverage prematurely.
 
 ## UP-224 — Non-damage spell specialty component conversion
+
+Resurrection specialty source365cfca23d97a1ffb887bac5fde5c505dc4c6b52
+committed/pushed with required author/committer; remote hash verified and
+worktree clean at that checkpoint. Windows37237106185 remains live on older
+foundation6cc6e9f05 and excludes this slice; no duplicate full build dispatched.
 
 Next slice2026-10-04: UP225 foundation accepted/pushed6cc6e9f05. Separate
 Luna owners implement Alamar/Jeddite Resurrection component20% and focused
