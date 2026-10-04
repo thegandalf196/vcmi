@@ -1,5 +1,14 @@
 # New Horizons implementation sprints
 
+UP224 accepted checkpoint2026-10-04: Cure specialty production and three compact
+native cases pass. Independent reviews have no blocker; client52539 and twelve
+hero-data/module drift checks pass. Serialized12-job both-target3385/69675
+succeed; final native20053 passes22/22 in4.011s, zero skips, covering real
+Uland/control forecasts, accepted healing, save/legacy guards and adjacent
+damage-component controls. First stale-v3 oracle failure and narrow repair are
+retained in NH_RELEASE_FAILURES.md. No playable/graphical or whole-family credit.
+Commit/push this slice; next implement Resurrection's mapped canonical foundation.
+
 UP223 accepted checkpoint2026-10-04: Lord Haart Estates core150/300/600,
 perks/unrelated income untouched. Client39945 and builds16010/47106 pass;
 native95834 passes12/12 in4.501s, zero skips. Module drift/12 hero-data pass.

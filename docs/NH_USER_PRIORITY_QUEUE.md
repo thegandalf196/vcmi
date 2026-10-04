@@ -9,7 +9,54 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-224 — Non-damage spell specialty component conversion
+
+Bounded Cure slice source/native accepted2026-10-04. Client52539 and
+both-target3385/69675 pass; final native20053 passes22/22 in4.011s, zero skips,
+UP224-cure-accepted.log/XML. Three real Uland/control cases cover all School
+ranks, fractional SP, separate Healer rounding, accepted health/mana/action,
+unchanged casualty count, prototype/unrelated bonus and marked/legacy save
+controls. Strict optional-rule validation, adjacent damage specialties and
+rational/parser controls pass. Twelve hero-data checks/module drift and
+independent reviews pass. First stale-v3 parser oracle failure is retained in
+NH_RELEASE_FAILURES.md; only that test contract was repaired. No graphical or
+playable acceptance, full non-damage family credit or spell-total increment.
+Mixed hero/magic legacy profiles, broader modifier/proxy and AI composition
+remain Phase2. Next implement the mapped Resurrection foundation below.
+
+Status: In progress, 2026-10-04. Implement the canonical20% SP-component
+specialty, starting with actual Uland/Cure (25 +1.5SP; fixed25 unchanged).
+Use optional saved hero rules and exact producer markers/suppression, preserving
+unrelated authored bonuses and old markerless snapshots. Reuse shared rational
+component arithmetic before final rounding and existing School/Healer/caster
+modifiers. Do not multiply the composed heal or mutate prototypes. Required
+shared forecast and accepted cast, real alias, ranks/levels, fractional cases,
+unrelated source, save and old-rules controls. No new polling/action/currency.
+
+Read-only audit identifies Resurrection aliases Alamar/Jeddite as next candidates,
+but their base spell still uses legacy Level3/costs and formula/heal permanence.
+Detailed canonical Level5/22Mana/100+4SP supersedes the old summary. Audit and
+repair that foundation before claiming those specialties work. Weakness/Animate
+Dead aliases reference inactive legacy IDs; Haste access remains unresolved.
+Do not replace excluded spell identities or authored hero profiles arbitrarily.
+Primary-attribute specialty+5 family also lacks systematic conversion. No whole
+family acceptance or combat-spell count increment from this map.
+
+Resurrection foundation map is complete: opt-in v3 row restoration:{version:1}
+can preserve old saved rows while selecting Level5/four22 costs, shared raw
+100+4SP, permanent Heal at all masteries, no minimum-full-creature threshold,
+summon/illusion rejection and removal of the old optional secondary magical
+dispel. Runtime seams are NewHorizonsMagic parser/accessor, BaseMechanics,
+Lua Mechanics API and shared heal/dispel effect scripts. Existing CHealth heals
+wounds first and caps at original count; BattleInfo checks corpse accessibility.
+Use shared health prediction/projected AI, not duplicated restoration state.
+Alamar/Jeddite specialty conversion follows this foundation, not a whole-value
+multiplier. No Resurrection source change or acceptance from this read-only map.
+
 ## UP-223 — Estates Skill specialty core-effect conversion
+
+Source24d2807995dfe7eb625086836bacc07f06ee0a4f committed/pushed and
+remote verified with required identity. Worktree clean at that checkpoint.
 
 Status: Verified (delivery pending), 2026-10-04. Client39945 and both-target
 16010/47106 pass. Final native95834 passes12/12 in4.501s, zero skips
