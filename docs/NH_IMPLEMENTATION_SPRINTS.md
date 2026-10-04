@@ -18,6 +18,46 @@ working sequence.
 
 ## Maintenance contract
 
+UP203/UP204 accepted source/native2026-10-04: friendly-fire confirmation uses
+actual effect recipients (including possible Hand of Fate collateral) and the
+native yes/no dialog; three artifact-conversion rows now have78 corrected bonus
+records across43 NH overrides with truthful descriptions. Client retry16088 and
+both-target64537 pass. Native71900 passes6/6 in1.610s, zero skips, plus focused
+Python24/24, module drift and diff checks. Independent Astra reviews find no
+blocking source/fixture issue. Initial compiler/fixture failures are retained.
+Phase1 continues; perks213/310, ranks87/93, combat61/67 unchanged. Phase2 retains
+rendered confirmation/callbacks, broad spell interactions, assembled artifact/
+save roundtrips and strategic artifact valuation. No GUI/playable promotion.
+Next highest-priority mapped unblocked perk: Master Logistician, using NewTurn
+events and preserving its carry through Stables refill. Full Windows37191507353
+remains live on ebc1d58db053243a9d201169974adc26853366c6 and excludes this slice.
+
+2026-10-04 next selected slices: UP203 implements the canonical friendly-fire
+confirmation using actual effect destinations and the native yes/no dialog;
+UP204 supplies the missing NH-only Primary Attribute and flat Movement artifact
+conversions. Separate Luna workers own those independent surfaces and focused
+fixtures. Root retains CMake/module registration, builds, integration and Git.
+Master Logistician is mapped as an unblocked subsequent perk, including the
+Stables refill interaction; it is not silently substituted for required UI.
+No new coverage credit until compiled principal-path evidence passes.
+Full Windows37191507353 is confirmed in_progress on ebc1d58db053243a9d201169974adc26853366c6.
+The previous answer turn verified an already-recorded Puppet Master ruling;
+it added no implementation coverage. This cycle proceeds with concrete edits.
+
+2026-10-04 post-UP202 selection audit: root revalidated the clean source and
+live full Windows37187930978, preserving its handle. Two independent Luna
+read-only audits check planned perks/foundations and creature/artifact/specialty/
+required-UI gaps for genuinely unblocked next items. Existing unanswered rules
+are not silently defaulted; already documented architecture is reused. Root
+corrected stale breadth counts from the current canonical tables:37 grouped
+unique-building rows and10 artifact-conversion rows, not33/nine. No mechanic
+activation or completion credit follows from inventory correction.
+Full Windows37187930978 completed SUCCESS on5899674a0. Root dispatched one
+new meaningful checkpoint only after that terminal success: full37191507353
+is queued on ebc1d58db053243a9d201169974adc26853366c6, incorporating Stables
+and Blood Obelisk. Preserve this new handle; no duplicate job or playable
+promotion. Notice-only37191098623 already passed on the Blood Obelisk source.
+
 UP202 Blood Obelisk accepted2026-10-04. Client32362 and both-target20101 pass;
 native31232 passes4/4 in2.870s, zero skips, UP202-blood-obelisk-final.log/XML.
 The actual siege defender gains20 hero Attack and corresponding HeroCommand

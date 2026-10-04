@@ -9,6 +9,64 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-203 — Indiscriminate-spell friendly-fire confirmation
+
+Status: Verified (delivery pending), 2026-10-04. Client retry16088 and final
+both-target64537 succeed. Native71900 passes6/6 in1.610s, zero skips, retained
+as UP203-UP204-focused.log/XML. Actual Armageddon recipients/damage, effective
+Hypnotize ownership, immune exclusion, Hand of Fate potential collateral,
+unchanged health/Mana/RNG during preview, and one-shot/stale confirmation gate
+pass. Independent Astra helper/controller/fixture review finds no blocker.
+All ordinary and custom hero submissions in BattleActionsController use the
+adapter; remaining BattleInterface selectors have no identified indiscriminate
+damage path. Fire Wall requires empty placement hexes, so future voluntary
+entry is not a current affected-stack preview. Existing native yes/no controls
+are reused without new art. Rendered callbacks/dialog acceptance and broader
+spell interaction coverage remain Phase2; no GUI or playable promotion claimed.
+Data/adjacent/perk/inventory24/24, module drift and diff checks pass.
+
+Status: In progress, 2026-10-04. Canonical combat UI requires a confirmation
+previewing affected friendly stacks for Armageddon and other indiscriminate
+spells, without warning when targeting/perks exclude friendlies. Current ordinary
+no-location and targeted hero casts submit immediately. Root selects a read-only
+preview derived from actual effect targeting/filtering and the existing native
+yes/no dialog, not bespoke artwork. Cancel submits nothing; confirmation must
+revalidate battle, hero, casting session, round, legality and affected friendlies
+before sending exactly one ordinary authoritative spell request. No frontend
+state mutation, resistance RNG roll or gameplay change. Luna owns the isolated
+preview, client adapter and focused fixtures; root owns build registration and
+integration. Native preview/guard evidence and client compilation are required;
+rendered/playable acceptance remains separate under the GUI hold.
+
+## UP-204 — Canonical primary and Movement artifact conversions
+
+Status: Verified (delivery pending), 2026-10-04. Both-target64537 succeeds;
+native71900 passes6/6 including the artifact case, zero skips. Exact inventory
+guard verifies78 converted records across43 NH artifact overrides and truthful
+descriptions, with core definitions and Vial's dragon-only+5 unchanged.
+Live equip/removal verifies positive/negative hero ratings, Knowledge and Normal
+Mana60-to10 clamping, all four Movement artifacts through current/future limits,
+and Vial's creature-only contribution. Fixture removal uses actual loaded IDs
+and legal slots, with Sea Captain's Hat separate from Ocean Guidance. Initial
+fixture crash and repair remain in NH_RELEASE_FAILURES. No new runtime poller
+or saved state is added. Source/native coverage now includes the three canonical
+primary/land/sea conversion rows, not the other seven artifact-framework rows.
+Independent Astra review finds no blocker; assembled-artifact interactions,
+save/load roundtrips, strategic AI valuation and rendered tooltips are Phase2.
+No GUI/playable promotion claimed. Focused Python24/24 and module drift pass.
+
+Status: In progress, 2026-10-04. The canonical artifact framework requires all
+legacy Primary Attribute bonuses and penalties multiplied by five, and flat
+land/sea Movement bonuses divided by ten. Existing core values remain unscaled
+and no corresponding NH overlay was found. Luna owns an NH-only artifact overlay
+and isolated data/native fixtures; preserve core artifact definitions and all
+unrelated bonuses. Root owns module registration, build and integration.
+Acceptance requires complete source inventory, actual equipped positive/negative
+primary values and shared Movement results, with Knowledge-capacity anti-swap
+behavior retained. This does not claim the other artifact-conversion families
+complete. Master Logistician is separately mapped as an unblocked future perk;
+do not substitute it for the required friendly-fire UI path.
+
 ## UP-202 — Fortress Blood Obelisk functional coverage audit
 
 Status: Verified (delivery pending), 2026-10-04. Client retry32362 and final
