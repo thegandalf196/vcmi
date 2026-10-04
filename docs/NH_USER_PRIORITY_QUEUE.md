@@ -138,6 +138,20 @@ coverage credit from configuration inspection alone.
 
 ## UP-210 — Elemental damage Orb conversion
 
+Status: Verified (delivery pending),2026-10-04. Production explicit element
+metadata and append-only final magical-damage bonus replace all four Orbs'
+legacy School damage producers. Shared caster/proxy damage and AI forecasts
+use the same final multiplier, before received-damage cap; neutral/necrotic
+spells remain untagged. Hidden Fire Wall/Land Mine abilities carry explicit
+Fire tags, preserving raw obstacle snapshots. Both-target build59223 passes;
+native71275 passes all nine Orb cases plus Fortress construction (10/10,
+zero skips,4.479s). Actual four-Orb equip/save/load/removal, accepted matching
+casts and detached forecasts, untagged Implosion, damage-cap order, Fire Wall
+snapshot and current/old serialization guards pass. Data gates8/8 and module
+drift pass. This supersedes the historical mapping/no-credit statements below.
+No graphical/playable promotion. Phase2 retains broad artifact/proxy/spell
+interaction matrices and strategic artifact valuation.
+
 2026-10-04 implementation started from a clean delivered tree. Root selects
 append-only ELEMENTAL_SPELL_DAMAGE with custom element subtypes and explicit
 SpellDamageElement metadata; no VariantIdentifier reorder. Caster's generic

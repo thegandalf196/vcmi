@@ -18,6 +18,15 @@ working sequence.
 
 ## Maintenance contract
 
+UP210 final native acceptance: build59223 and native71275 succeed. All nine
+Orb cases plus Fortress construction pass10/10 in4.479s, zero skips. The cap
+fixture preserves acting ownership with explicit low Initiative; production
+authentication is unchanged. Four real equipment/save/removal/forecast/cast
+paths and explicit element/cap/obstacle/wire controls are accepted. Targeted
+artifact-family coverage4->5 of10. Eight data checks and module drift pass.
+Broad spell/artifact/proxy composition and strategic AI valuation remain Phase2;
+no GUI/launcher promotion. This supersedes historical8/9/no-credit statements.
+
 UP213 Fortress Mage Guild v9 replacement is source/build verified: supplied
 all-five native DEFs, masks, campaign icons and hall0–4 imported reproducibly;
 71 runtime assets across retained packages,46 validated obsolete Fortress v8
