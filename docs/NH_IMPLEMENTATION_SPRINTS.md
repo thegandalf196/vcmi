@@ -18,6 +18,24 @@ working sequence.
 
 ## Maintenance contract
 
+UP123 status foundation committed/pushed9d0b11405; no Pandemonium activation.
+Active unambiguous UP056 slice: Summon Boat highlights legal adjacent water
+destinations using shared spell legality and native map targeting visuals.
+Bounded Luna owners implement shared effect/capability APIs, client targeting,
+and isolated tests separately. Exact selected position is honored authoritatively;
+only the production (-1,-1,-1) sentinel falls back to the first legal neighbor.
+Use native range-mask brightness contrast, not new marker artwork or a forged
+ranged-spell class. Preserve legacy and AI fallback; no global polling.
+All candidate source is frozen; independent source review finds no blocker and
+the narrow UI source-contract guard passes. Combined build7395 fails on a missing
+callback include; root adds it and retry39815 builds both targets. Native49715
+passes8/8 in2.563s, zero skips (UP056-summon-boat-targeting-focused.log/XML).
+Selected/fallback placement, invalid/hidden target rejection, missing boats,
+legacy and existing AI planning pass. Required targeting is source/native
+verified; rendered/playable acceptance remains pending. Identity totals unchanged.
+Do not resolve other Adventure design questions or count a new spell identity.
+Focused source/native gates first; rendered/playable evidence remains separate.
+
 UP191 is consolidated with existing UP123: full Pandemonium's repeated-application
 count and perk-composition questions remain unanswered. The duplicate selection
 is corrected, not counted as new coverage. The unblocked prerequisite is generic
