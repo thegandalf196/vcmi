@@ -18,6 +18,27 @@ working sequence.
 
 ## Maintenance contract
 
+UP218 source/native accepted2026-10-04. Both-target95053 and bounded repair41124
+succeed; native33370 passes15/15 in6.804s, zero skips. All three Logistics
+specialists, all ranks/both pools, Navigation, unrelated bonuses, reused cache
+removal, save/load and exact legacy retention pass with adjacent controls.
+Module drift and twelve hero-data checks pass; Astra has no blocker. The first
+native failure46075 exposed the legacy-versus-active Skill identity mismatch;
+the release-failure ledger retains it. One Skill specialty slice is accepted,
+not the whole family. Combined source-modifier runtime coverage and broad
+interactions remain Phase2. Windows37215692312 is terminal SUCCESS422f0ce0a;
+no GUI or launcher promotion. Next: Armorer for Mephala/Tazar/Neela, scaling
+both its core physical reduction and its core Defense-growth chance, not perks.
+
+Current slice UP218 is in production/native implementation: Logistics specialties
+for Kyrre, Gunnar and Dessa, both core movement pools and no perk amplification.
+Root selects explicit saved supported-Skill rules and exact alias provenance,
+with inert stable local markers and shared TurnInfo numerical transformation.
+The20% factor applies before ordinary source modifiers, never to the aggregate
+or Navigation25. Cached bonus values/prototypes stay untouched; old snapshots
+without the optional rule/marker retain their behavior. Separate Luna owners,
+Astra review, root registration/build/Git. No acceptance or count from the plan.
+
 UP217 source87ef2600039d94e6a192fb4eb600a854c2e9d278 is pushed and
 remote-verified with correct author/committer. Local handles are terminal;
 Windows37215692312 remains confirmed in_progress on422f0ce0a, excluding UP217.

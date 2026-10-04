@@ -9,6 +9,62 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-218 — Logistics Skill specialty core-effect conversion
+
+Status: Verified (delivery pending),2026-10-04. Both-target95053 and bounded
+repair rebuild41124 succeed. Native33370 passes15/15 in6.804s, zero skips:
+all three specialists at all ranks, both pools224/248/272, ordinary controls,
+Navigation sea274, unrelated bonuses, reused caches through rank removal,
+saved markers and absent-rule legacy preservation, plus adjacent movement,
+damage and creature-specialty controls. Module drift and twelve hero-data
+checks pass. Astra final review has no blocker. The first native46075 failure
+is retained in the release-failure ledger, not hidden by weaker assertions.
+The precise scaling predicate accepts both legacy and active NH Skill source
+identities; the water fallback retains its original predicate. The core alias
+does have generated legacy bonuses, despite the separate NH entity's empty
+specialty list. Exact suppression and missing-rule retention are verified.
+This accepts one Skill specialty slice, not every Skill specialty. Combined
+source-modifier runtime checks, broad interactions and prototype-only tooltip
+surfaces remain Phase2. No GUI or launcher promotion; source push pending.
+Next mapped slice: Armorer for Mephala, Tazar and Neela, including both physical
+reduction and the core Defense-growth chance. Offense, Archery and Estates
+aliases also remain; explicit NH replacements are excluded from that inventory.
+
+2026-10-04 integration checkpoint: production is frozen, module drift and twelve
+hero-data checks pass. Independent review found no blocking issue; its fallback
+compatibility concern was repaired by retaining the original source-only
+predicate for water copying and using the stricter predicate only for specialty
+scaling. Native fixture/build acceptance remains pending. Windows37215692312
+is now terminal SUCCESS on422f0ce0a; it excludes UP217 and UP218.
+
+Initial plan,2026-10-04. Canonical5273 gives Skill specialties20% more
+core numerical effect, without amplifying perks. The completed producer audit
+finds three surviving Logistics aliases: Kyrre, Gunnar and Dessa. NH Logistics
+has an empty specialty-target list, but its legacy core alias separately
+generates bonuses; conversion must distinguish those identities. Both Land
+and Sea are core effects of the new Skill;
+the legacy Land-only affinity does not narrow the canonical conversion.
+
+Root decision: optional saved skillSpecialties version1/coreBonusPercent20 with
+the explicit supported skills list containing core:logistics. Capture exact
+secondary-alias provenance even when generated bonuses are empty. Fresh eligible
+heroes get a stable HeroType/Skill inert local marker; suppress only generated
+alias pointers, never shared prototypes or unrelated authored bonuses. Missing
+saved rules or unmarked old heroes retain existing behavior. A generic getter
+feeds TurnInfo: scale only core Logistics MOVEMENT/PERCENT_TO_BASE raw values
+before existing source modifiers and aggregation, for Land/Sea and the water
+fallback. Do not mutate cached BonusLists or scale Navigation25, other perks,
+custom bonuses or the final aggregate. Existing rank/tree-version invalidation
+provides the lifecycle; no polling, new serialized hero field or new Bonus type.
+
+Luna production and native fixture owners are separate; Astra reviews. Root owns
+CMake/module registration, serialized12-job builds, docs and Git. Acceptance:
+all three actual heroes/ranks, both pools224/248/272 from base200, ordinary
+non-specialist220/240/260, Basic plus Navigation sea274, unrelated/prototype
+preservation, cached/live/rank parity and saved/legacy guards. No coverage credit
+from the plan; no graphical launch or playable promotion. Windows37215692312 is
+still confirmed live on422f0ce0a; preserve that exact handle.
+
 ## UP-217 — Canonical damage-spell specialty conversion
 
 Source87ef2600039d94e6a192fb4eb600a854c2e9d278 is committed/pushed and
@@ -187,6 +243,13 @@ live aura adjacency after only the neighbor is projected; explicitly detached
 recipients use projected adjacency, and both retain the75% cap.
 
 ## UP-213 — Replace supplied Fortress Mage Guild level artwork
+
+2026-10-04 repeated-request check: the supplied Drive ID matches this existing
+replacement exactly. Archive SHA256 and all eight focused asset tests were
+rechecked successfully; commit34bf2fa1f is included in origin/definitive-mvp.
+Windows37207110382 has now completed successfully onb6ef78e1b. Linux promoted
+snapshot delivery and in-game visual acceptance remain pending; do not reimport
+the same archive or claim that the launcher's old snapshot contains it.
 
 Source committed/pushed34bf2fa1f. Full Windows37207110382 is confirmed live
 onb6ef78e1b11f269f2ad1992ebdd999ea5e0d02c6, including this replacement,
