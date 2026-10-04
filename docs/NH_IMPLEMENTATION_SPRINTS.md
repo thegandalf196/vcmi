@@ -18,6 +18,18 @@ working sequence.
 
 ## Maintenance contract
 
+2026-10-04 UP056 DD ends-Movement warning hook accepted: generic NH-only text ID
+and existing statusbar entry/hover/exit lifecycle, no new panel/art/gameplay rule.
+Dedicated Adventure text map and generator/CMake parity pass; two focused
+translation checks and manual UI wiring/module guards pass. Build1721 succeeds;
+native38925 passes13/13 in3.979s, zero skips (UP056-dimension-door-hint-focused.log/XML).
+Independent Luna UI/data review finds no blocker. Rendered text/input evidence,
+manual-guard CMake wiring and pre-existing stale mastery version fixture remain
+recorded, not counted as graphical acceptance. Protected barriers still block
+full DD completion. Combat61/67, perks210/310 and ranks87/93 unchanged. No playable
+promotion. Next scope: protected-barrier representation/enforcement mapping,
+without inventing a map-author rule; Water Walk policy question remains open.
+
 Current accepted UP056 DD subset: visible/legal rounded radius8, successful
 full-Movement spend, shared live/UI targeting and planned AI source/cost.
 Client retry55650 and combined retry22130 build; native43587 passes6/6 in2.086s,
@@ -28,6 +40,10 @@ Initial scope/header failures remain in NH_RELEASE_FAILURES.md. No full DD,
 new identity/perk/rank count or playable promotion. Protected barriers and the
 ends-Movement warning remain Phase1; next unblocked clause is that warning.
 Water Walk's stranded-hero policy remains unanswered and blocked.
+DD checkpoint committed/pushed ae32ac3c4; notice-only preflight37172296610 is
+in progress. Next bounded read-only UI map is a localized casting-ends-Movement
+hint in existing native targeting/status surfaces. No panel/art or gameplay
+change. Source/wiring/native gates and rendered acceptance remain distinct.
 
 UP123 status foundation committed/pushed9d0b11405; no Pandemonium activation.
 Next UP056 slice: read-only Water Walk end-day land-legality map across shared
