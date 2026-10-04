@@ -18,6 +18,32 @@ working sequence.
 
 ## Maintenance contract
 
+UP202 Blood Obelisk accepted2026-10-04. Client32362 and both-target20101 pass;
+native31232 passes4/4 in2.870s, zero skips, UP202-blood-obelisk-final.log/XML.
+The actual siege defender gains20 hero Attack and corresponding HeroCommand
+coefficient, not raw creature Attack. Shared cancellation/results cleanup,
+restart, no-hero isolation, real weekly per-hero/per-physical visits, both damage
+subtypes, saved blessing/history, accepted-result consumption and next-week
+reuse pass; Stables/Fountain remain green. Data/inventory22/22 and module drift
+pass. Independent Astra production review found no blocker; its fixture review
+caught a null layout argument before execution, repaired by the tester. Root
+corrected compile/baseline assumptions and inspected the final fixture. One
+specified town mechanic added; perk/rank/spell counts unchanged. Complete damage
+resolution, strategic AI valuation and graphics remain Phase2, as do generic
+setup-snapshot producer limitations. Integrate this source checkpoint; preserve
+full Windows37187930978 on5899674a0, still compiling and excluding this slice.
+
+2026-10-04 UP202 Blood Obelisk implementation is in progress. Generic
+defendingHeroBonuses content applies only to the actual siege defender hero;
+reserved building-scoped bonus identity supports cancellation/results cleanup
+without consuming visiting blessings. Independent runtime and fixture workers
+have disjoint ownership. Root has added Fortress content and a focused data
+guard; data/perk/inventory20/20 and module drift pass. These checks do not
+establish runtime coverage. The previous turn confirmed an already implemented
+Puppet Master decision, not a new coverage item. Current full Windows37187930978
+remains live on5899674a0, now compiling the Windows client; no replacement
+dispatch, GUI run or playable promotion occurred.
+
 UP201 Stables accepted2026-10-04: client56799 and both-target62880 exit0;
 native71208 passes2/2 in1.894s, zero skips, UP201-stables-focused.log/XML.
 Both resident slots, shared exact Movement/refill, save, expiry/nonstacking,

@@ -11,6 +11,37 @@ entries and their validation/delivery evidence.
 
 ## UP-202 — Fortress Blood Obelisk functional coverage audit
 
+Status: Verified (delivery pending), 2026-10-04. Client retry32362 and final
+both-target20101 exit0; native31232 passes4/4 in2.870s, zero skips, including
+Stables/Fountain, retained as UP202-blood-obelisk-final.log/XML. Actual hero
+Attack/HeroCommand rise20 without blind creature Attack20; attacker/outside
+and no-hero siege remain unaffected. Cancel/restart and result cleanup remove
+only the scoped siege bonus. Real computer-owned visits verify melee/ranged
+reward descriptors, per-hero/per-physical weekly history, saved blessing and
+visitors, accepted-result consumption, same-week denial and next-week reuse.
+Data/adjacent/perk/inventory22/22, module drift, diff checks and Astra production
+review pass. One specified town mechanic added; perk/rank/spell totals unchanged.
+Phase2 retains complete physical-damage resolution, strategic prebattle AI
+valuation, rendered feedback and generic setup-snapshot producer validation.
+No GUI, ongoing-battle save/resume or playable promotion claimed.
+
+Client retry32362 exits0 after correcting free-helper private access. Runtime
+source is frozen and independently Astra-reviewed with no blocking finding.
+Focused data/adjacent/perk/inventory22/22 and module drift pass. The isolated
+native fixture is still being authored; no runtime coverage credit, commit,
+GUI acceptance or playable promotion is claimed yet. First failed build61032
+is retained in NH_RELEASE_FAILURES with its specific cause and repair.
+
+Status: In progress, 2026-10-04. Root selects a generic building-owned
+defendingHeroBonuses list instantiated on the actual siege defender through
+BattleStart. Scoped cleanup on cancellation/results must preserve unrelated
+visiting ONE_BATTLE blessings. Runtime owns parser/schema/shared visitor/docs;
+tester owns only the isolated native fixture; root owns content, data guard,
+CMake, build and integration. The weekly physical blessing uses ordinary
+per-hero/per-physical reward history and both melee/ranged damage subtypes.
+No coverage credit until compiled principal paths and focused native evidence
+pass; ordinary saves do not support ongoing battle resumption.
+
 Status: Read-only preparation, 2026-10-04. Check the canonical defending-siege
 hero Attack20 and visiting next-combat physical-damage10% weekly blessing
 against existing runtime/content before choosing implementation. Root owns
