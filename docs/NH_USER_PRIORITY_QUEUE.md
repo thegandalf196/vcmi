@@ -9,6 +9,78 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-190 — Chaos Puppet Master and Lucidity
+
+User decision, 2026-10-03: a successful Puppet Master cast removes existing
+Berserk, rather than temporarily suppressing it. Recorded in the canonical
+spell section. Rejected/resisted casts leave existing effects untouched.
+Final acceptance: client retry90585 and test retry72097 exit0. Native97155
+passes8/8 in2.290s, zero skips, including successful Berserk removal and
+rejected/resisted target preservation. Adjacent Berserk runtime/AI guard71741
+passes6/6 in1.986s, zero skips. Evidence: UP190-puppet-final.log/XML and
+UP190-berserk-adjacent.log/XML under build/new-horizons-linux/testing.
+Data/inventory22/22 and generated-module check pass. Combat identities61/67,
+Chaos7/11; perks210/310 and ranks87/93 unchanged. No GUI or playable promotion.
+Earlier failed builds and fixture runs below are historical, retained evidence.
+
+Status: Verified (delivery pending), 2026-10-03. Phase1 Level4,16-Mana combat spell.
+Implement complete control of one enemy stack for one Creature Activation,
+without changing allegiance, original owner or ally/enemy effect relationships.
+Move, melee, shooting, Wait, Defend and creature abilities must use ordinary
+validated action paths. Wait defers the same activation under existing rules:
+control persists through the resumed activation, then ends on completion.
+After completion apply fixed two-round Lucidity, protecting against explicitly
+tagged mental domination/control (including Puppet Master, Berserk, Confusion),
+not ordinary debuffs, damage, relocation, transformation or Reality Warp.
+Separate action controller from allegiance for authority, dispatch and AI;
+do not reuse Hypnotize's allegiance-changing interpretation. Require real spell
+and action execution, unchanged-allegiance assertions, lifecycle/immunity and
+state propagation, minimum AI hooks, native UI interaction, build and focused
+validation before activation. Root owns architecture/registration/build/Git;
+bounded worker ownership follows the completed runtime map. No GUI or playable
+promotion in this source slice. Existing broad integration concerns belong in
+Phase2 unless they expose a foundational defect.
+
+Runtime map is complete. Runtime owns lib/server; a separate Luna worker owns
+client/AI, and the tester owns isolated new native fixtures. Root retains data,
+CMake, evidence and integration. Suppression of a pre-existing Berserk forced
+action during control is required by complete control; the initial question
+about removal versus resumption is now resolved by the user decision above.
+Successful application removes the existing spell bundle, not innate traits.
+This was an item-level
+design boundary, not permission to replace allegiance or activate incomplete
+content. Full Windows37159608109 now succeeds on4dad1c014; newer Hypnotize
+13d4691f5 notice37163408746 completes successfully (source preflight only,
+not a compiled playable package). Puppet Master registration/perk/inventory
+checks pass22/22; native execution and build remain pending worker freeze.
+Full Windows37164498532 now runs once on committed13d4691f5; this does not
+include the still-uncommitted Puppet Master implementation. Track that handle
+without replacing it on timeout or confusing preflight with compiled delivery.
+
+Interim independent review before runtime freeze found blocking action seams:
+selected Sanctuary checks inverted hostility; physical-side Time Stop passes
+versus controller authority; active creature ability caster context; AI attack
+valuation treating deliberate controlled attacks as friendly-fire penalties.
+Runtime owns the first three corrections, client/AI worker owns valuation,
+tester owns focused real action/ability and AI evidence. Do not accept from
+registration alone. AI move-only tactical scoring and broad reaction/status
+matrices remain Phase2 unless a principal-path failure proves blocking.
+
+Runtime/client/AI and both focused fixtures are frozen. Independent final
+source review finds no remaining blocker after fixing hex-only human targeting.
+Root combined client/vcmitest build72676 runs with12 jobs, retaining
+UP190-puppet-build.log. After linking run only NewHorizonsPuppetMasterTest.*
+and NewHorizonsPuppetMasterAITest.* on the fresh NH-preset binary, zero skips.
+Do not mutate production mid-build or claim native acceptance from this start.
+Deferred: canCastWithoutSkip abilities could expire control before a continued
+activation; reviewer found no current configured NH use. Dedicated Time Stop
+interaction proof and broad cross-status matrix remain Phase2 checks.
+Initial build72676 and retry17836 exit1 on missing explicit Selector/BonusList
+includes in the new helper. Root adds both headers after each terminal failure;
+retry2 (session 23198) runs once with retained objects and a distinct log. The helper now
+compiles. Preserve all failed logs; native acceptance remains pending linking.
+
+
 ## UP-140 — Discipline Steadfast
 
 Next independent read-only preparation: UP-141 Miracle Worker, below. It must
