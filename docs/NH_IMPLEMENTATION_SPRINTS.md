@@ -18,6 +18,25 @@ working sequence.
 
 ## Maintenance contract
 
+2026-10-04 continuation: Resource Broker notice preflight37182430857 completed
+successfully on d4e0e996a. Full Windows37182637895 was dispatched once and
+confirmed queued on a8046ec2fbc204237c4e17da6e335f8863bed8cb, whose only
+additional change is this tracking document. Retain that handle; do not replace
+the running Mindbreaker37180938926 or claim compiled delivery from a queued run.
+The worktree was clean before this record. Phase1 continues with a bounded
+audit for the next unblocked missing functional item; existing quota/design
+questions remain blockers for their specific entries, not for the whole goal.
+The next concrete missing building is UP197 Skeleton Transformer: the legacy
+type-only conversion does not implement the authored HP-based output. Runtime
+and interaction/test maps are complete; pooled-selection versus per-slot
+rounding is awaiting one explicit answer. Existing vector trades can represent
+a combined selection, but the window currently emits individual requests.
+Output preview and minimum AI conversion hooks are missing. Do not declare the
+building complete from a single-stack calculator or a registration flag.
+Independent ledger review verifies213/310 perks,87/93 ranks and62/90 faction
+perks and the corrected Necromancy/Diplomacy rows. No production code changed
+in this audit cycle; no broad test suite or local playable build was run.
+
 UP196 Resource Broker is committed/pushed as
 `d4e0e996a711c4d7be8544f0687b0c70c9057518`. Notice preflight `37182430857`
 was dispatched once and confirmed queued on that exact source. Retain that

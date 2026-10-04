@@ -9,6 +9,37 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-197 — Necropolis Skeleton Transformer HP conversion
+
+Status: Bounded runtime map; selection-rounding clarification pending,
+2026-10-04. Canonical3276 requires whole Skeletons representing50% of the
+aggregate sacrificed HP. The existing CREATURE_UNDEAD path only changes each
+selected stack's type, retaining its old count, and is not this mechanic.
+Current UI sends one request per selected slot; the server then honors legacy
+SKELETON_TRANSFORMER_TARGET exceptions. Under the canonical NH rule the output
+is explicitly Skeletons; retain custom legacy targets only in legacy worlds.
+Asked whether one selection pools HP before rounding, or each selected stack
+rounds separately. Do not silently adopt per-slot rounding solely because it
+fits the old request path. Root owns the transaction architecture, activation,
+builds and Git. Runtime and test/interaction maps have separate read-only owners.
+Acceptance requires exact HP-derived output, hero/town conversions, ordinary
+ownership/market admission, projected Leadership and last-stack integrity,
+atomic rejection without partial conversion, matching selected-output feedback,
+legacy behavior, focused native build/test evidence and minimum AI hooks.
+No production conversion, new artwork, coverage increase or playable delivery
+is claimed from mapping. Record any additional consequential transaction
+ambiguity before implementation rather than narrowing the authored mechanic.
+Read-only interaction/test map complete: Necropolis special3 enables the
+creature-undead market mode; CPlayerInterface opens the existing Transformer
+window. TradeOnMarketplace already supports vectors, but the window submits
+individual slots. IMarket::getOffer has no undead-conversion quote; the window
+shows only source counts. No current AI transformer path or named conversion
+fixture was found. Use TinyMapGameTest and an actual serialized trade request
+for principal evidence, following the Resource Broker loopback pattern. A
+single-stack formula check is necessary but cannot prove pooled-selection
+semantics or minimum AI support. These are implementation requirements, not
+Phase2 deferrals that would justify calling the whole building complete.
+
 ## UP-196 — Estates Resource Broker
 
 Status: Verified (delivery pending), 2026-10-04. Canonical4592:
