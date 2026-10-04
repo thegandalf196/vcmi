@@ -17,11 +17,17 @@ UP201-fountain-final.log/XML. Real authoritative construction/visits verify
 defending Luck3, hero-only next-combat Luck2, per-hero/per-physical weekly
 entitlement, independent Fountain/hero, saved bonus/history, accepted-result
 cleanup, same-week denial and next-week reuse. Data/inventory20/20, module
-drift and Astra production review pass; final fixture review pending. One
+drift and Astra production review pass; root inspected the passing fixture.
+The reviewer returned its production assessment only; independent fixture audit
+is retained for Phase2, not represented as completed. One
 specified town mechanic added, not a perk/rank/spell. Full battle/retreat/replay,
 strategic AI routing and rendered feedback are Phase2; no GUI or playable
 promotion. Stables remains open; Lighthouse departure-scope question is asked.
 Historical fixture setup/list-size failures are retained in NH_RELEASE_FAILURES.
+Committed/pushed12fc078e844ed269a71c53d33d653a107287c4e1. Notice preflight
+37187847868 is confirmed in_progress on that exact source. Earlier full Windows
+Resource Broker37182637895 completed SUCCESS; it excludes this runtime slice.
+No playable promotion occurred. Root keeps the Phase1 goal active.
 
 Status: Read-only coverage audit, 2026-10-04. UP200 aura distance/overlap
 choices remain unanswered; do not encode them or bypass their recorded blocker.

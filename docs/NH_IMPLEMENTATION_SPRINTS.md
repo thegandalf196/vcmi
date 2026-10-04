@@ -23,11 +23,16 @@ passes1/1 in1.136s, zero skips, UP201-fountain-final.log/XML. Actual constructio
 visits, recipient isolation, independent hero/building weekly history, saved
 bonuses/visitors, accepted-result cleanup and next-week regrant pass. Two fixture
 setup assumptions were repaired without changing production behavior. Data/
-inventory20/20 and module drift pass; Astra production review finds no blocker,
-final fixture review pending. Add one specified town mechanic, not a perk or
+inventory20/20 and module drift pass; Astra production review finds no blocker.
+Root inspected the passing native fixture; separate independent fixture audit
+remains Phase2 (the reviewer returned its production assessment only).
+Add one specified town mechanic, not a perk or
 spell. Full battle/retreat/replay, strategic AI routing and graphics remain
 Phase2. Integrate this source checkpoint, then continue mapped Stables; do not
 claim that accepted-result cleanup proves a full battle or playable promotion.
+Fountain is committed/pushed12fc078e844ed269a71c53d33d653a107287c4e1;
+notice37187847868 is confirmed live on that exact source. Preserve its handle
+and dispatch the next full Windows build after this preflight, once only.
 
 2026-10-04 UP201 Fountain of Fortune is the next unblocked building slice.
 The NH patch replaces local defending Luck2 with3 and adds a Luck2 ONE_BATTLE
