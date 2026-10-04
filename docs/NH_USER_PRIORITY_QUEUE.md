@@ -11,6 +11,12 @@ entries and their validation/delivery evidence.
 
 ## UP-217 — Canonical damage-spell specialty conversion
 
+Source87ef2600039d94e6a192fb4eb600a854c2e9d278 is committed/pushed and
+remote-verified with the required author/committer. Worktree is clean at that
+checkpoint. Local build/native/push handles are terminal. Full Windows37215692312
+remains confirmed in_progress on422f0ce0a (includes UP216, excludes UP217).
+Retain that exact live job; do not duplicate/restart it. No launcher promotion.
+
 Status: Verified (delivery pending),2026-10-04. Canonical5270 requires a fixed +15% to the
 specialized spell's Spell Power-derived damage component, not flat base damage
 and not a hero-level/target-tier multiplier. Deemer's alias and Ciele's authored

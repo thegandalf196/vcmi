@@ -18,6 +18,12 @@ working sequence.
 
 ## Maintenance contract
 
+UP217 source87ef2600039d94e6a192fb4eb600a854c2e9d278 is pushed and
+remote-verified with correct author/committer. Local handles are terminal;
+Windows37215692312 remains confirmed in_progress on422f0ce0a, excluding UP217.
+Preserve that exact job. The next goal cycle should implement the already-mapped
+Logistics specialty slice, not repeat damage-family exploration or broad tests.
+
 UP217 source/native accepted2026-10-04. Both-target9817 and fixture rebuild65610
 succeed; native23804 passes11/11 in3.504s, zero skips. Ciele cast/estimate/save,
 Deemer level/tier, Luna stored Fire Wall/trigger, legacy and rational bounds pass,
