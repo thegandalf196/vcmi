@@ -1,5 +1,13 @@
 # New Horizons implementation sprints
 
+UP224 Resurrection specialty accepted2026-10-04: client51670 and both-target
+5985 pass; native49136 passes12/12 in6.477s, zero skips. Alamar/Jeddite component
+conversion preserves fixed100 and historical Cure-only producers. Commit/push
+this slice; UP226 Avatar of Rage is the next unblocked mapped perk candidate.
+Primary Attribute audit found no eligible built-in flat hero-stat specialty;
+do not convert creature-limited bonuses or invent an authored hero identity.
+Windows37237106185 remains live on foundation6cc6e9f05, excluding this slice.
+
 Cure sourcecb6cc9614 is pushed and remote-verified. UP225 source/native accepted:
 both-target5018/14793 pass; native8017 passes9/9 in4.758s, zero skips.
 Commit/push this foundation, then convert Alamar/Jeddite Resurrection specialties

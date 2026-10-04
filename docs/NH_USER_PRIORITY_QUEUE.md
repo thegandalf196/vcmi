@@ -9,7 +9,33 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-226 — Bloodrage Avatar of Rage
+
+Status: Read-only map,2026-10-04. Next unblocked UP023 Phase1 coverage candidate
+after UP224 specialty acceptance: canonical Expert perk makes friendly creature
+attacks ignore25% Creature Defense at maximum Bloodrage. Inspect the existing
+shared attack-specific rage/cap, defense penetration, live and detached AI paths
+before assigning a bounded implementation. Preserve personal/Blood Scent state,
+Endless Bloodshed cap, ordinary Defense modifiers and non-creature exclusions;
+do not invent a polling scan, new mirrored rage ledger or unconditional ignore.
+Require legal Expert acquisition, below/at-cap controls, accepted attacks and
+shared prediction, inactive/legacy and save-state sanity. Mapping alone grants
+no activation or coverage. Wider combinations remain Phase2.
+
+Primary Attribute specialty audit2026-10-04 found no eligible built-in flat
+hero-stat producer. Current PRIMARY_SKILL specialty entries are creature-limited,
+including Fiur/Ignissa Attack and Thunar/Erdamon Defense; do not convert these
+into hero stats. Canonical+5 conversion requires an authored eligible source
+before activation. Existing HeroGrowth negative regression covers this boundary;
+no implementation or family-completion claim from the map.
+
 ## UP-225 — Canonical Resurrection foundation
+
+Accepted source6cc6e9f05c13820b819a9c70e0f05b5d155bdd56 committed/pushed;
+author/committer and remote hash verified, worktree clean at checkpoint.
+Full Windows37237106185 is confirmed in progress on that exact head;
+preflight_only=false. Preserve this handle; no duplicate dispatch. A running
+build is not an accepted downloadable package. Launcher remains unpromoted.
 
 Delivery observation2026-10-04: Windows37231394673 completed SUCCESS on
 d2921158e567b23ebb9196402b115145d3e9f94e. Its nonexpired downloadable artifact
@@ -54,6 +80,27 @@ interaction matrices belong to Phase2. Alamar/Jeddite specialties follow this
 foundation; do not claim their conversion or full spell coverage prematurely.
 
 ## UP-224 — Non-damage spell specialty component conversion
+
+Next slice2026-10-04: UP225 foundation accepted/pushed6cc6e9f05. Separate
+Luna owners implement Alamar/Jeddite Resurrection component20% and focused
+existing HealingSpecialty fixture extensions. Production scope: optional-rule
+supported list expands to unique Cure/Res entries, exact prototype producer
+capture and saved-list membership checked before suppression, shared rational
+4SP scaling with fixed100 unchanged. Historical Cure-only lists remain valid
+and retain unlisted legacy Resurrection producers. Root owns generated module,
+docs/build/Git; no native/whole-family acceptance until compiled focused tests.
+
+Production and extended existing fixture are frozen. Independent reviews find
+no blocker; client51670 passes, four production C++ syntax checks and twelve
+hero-data checks/module drift pass. Both-target build5985 passes;
+native49136 passes12/12 in6.477s, zero skips, recorded in
+UP224-resurrection-specialty-native.log/XML. Source/native acceptance includes
+three new specialty cases plus Cure, Resurrection and mixed-casualty controls.
+No graphical/playable or whole-family acceptance. Mixed hero/magic legacy
+profiles, broader proxy/modifier/AI composition remain Phase2.
+Fixture adds real Alamar/Jeddite, ranks/fractional component/fixed100,
+authoritative cast versus Lua health forecast, unrelated source/prototype/save,
+strict supported subsets/duplicates and historical Cure-only producer retention.
 
 Cure accepted sourcecb6cc9614fa7d1a845dc4e8c54d276b8aca3512f committed/
 pushed with required author/committer; remote hash verified and worktree clean
