@@ -18,6 +18,47 @@ working sequence.
 
 ## Maintenance contract
 
+UP199 Academy accepted2026-10-04: client77558, baseline19532 and both-target
+retry82390 build successfully; native49376 passes10/10 in3.561s, zero skips,
+retained as UP199-academy-focused.log/XML. Real visits/preview/grant/history/save
+and reward parser/version/cap/Learning guards pass. Adjacent Spell Point reward
+tests remain green. Data/inventory21/21, module drift and Astra reviews pass.
+One specified town mechanic added, no perk/rank/spell count changes. No playable
+promotion. Root integrates this coherent slice before UP200 implementation;
+Glyphs of Fear is still read-only mapped, not an implemented area aura.
+
+UP199 baseline19532 completed successfully. Root registered the frozen Academy
+fixture and both-target33367 failed on forward-declared Bonus serialization
+types in that fixture. The tester owns a direct-header correction; retain
+UP199-academy-fixture-build.log. Production/client already builds; native
+acceptance is still pending. Do not widen this to an unrelated integration run.
+
+UP198 is committed and pushed90c7d41331bb37586dce062a38dc3b194489d8f3.
+Its notice preflight37184744361 completed successfully on that exact source.
+Full Windows Resource Broker37182637895 remains live on a8046ec2f and excludes
+Amplifier. Retain the existing handle; no competing full build was dispatched.
+UP199 runtime and isolated-fixture writers are now active with disjoint files.
+The NH Dungeon special4 content uses once-per-hero25% remaining XP and zero
+fixed XP; its focused Python guard passes. No source/native coverage increase
+or playable promotion is claimed until the actual shared reward and visits pass.
+UP199 production is frozen and Astra source-reviewed without a blocker. Client
+build77558 is live with12 jobs; retain its handle and frozen headers. New
+isolated Academy tests may be written unregistered during compilation; root
+alone registers CMake after this build terminates. Data/inventory21/21 pass.
+The percentage helper reuses Learning, shared preview/grant and existing
+physical-building visitor history. New reward data is append-only versioned,
+old reads default zero and populated old writes reject before Reward payload.
+Inherited extreme-XP calculateXp multiplication overflow is deferred to Phase2.
+Client77558 completed successfully (323 steps). Baseline vcmitest compilation
+is started next against the same frozen production bytes; the separate Academy
+fixture remains unregistered until its bounded source corrections are frozen.
+Do not claim native acceptance or run the stale pre-Academy test binary.
+Baseline19532 is confirmed live. The two-case Academy fixture is now frozen
+and independently Astra-reviewed without a blocker; register only after the
+build ends. Required worker/reviewer tasks are complete, not left running.
+The focused filter is NewHorizonsBattleScholarAcademyTest.*. Real town-visit
+execution for a computer-owned hero does not claim Nullkiller route/valuation.
+
 2026-10-04 UP198 accepted: final both-target96096 exits0; native4614 passes
 19/19 across five focused suites in1.692s with zero skips, retained as
 UP198-amplifier-accepted.log/XML. Real visit/save/refresh/day expiry and actual

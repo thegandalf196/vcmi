@@ -9,10 +9,49 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-200 — Fortress Glyphs of Fear siege Defense and local Morale
+
+Status: Read-only preparation during UP199 verification,2026-10-04.
+Canonical3305 requires the defending hero to gain20 Defense during a siege,
+and enemy heroes within8 adventure-map tiles to suffer1 Morale while in the
+area. Core special3 still supplies only2 Defense. Map a shared actual effect
+that adventure hero UI, combat and AI can all read; a battle-only snapshot is
+not the authored adventure-area rule. Prefer existing bonus/query machinery
+and event-driven ownership/build/movement corrections where required, not a
+periodic all-hero scan. Record any consequential distance/overlap/alliance or
+map-level ambiguity before implementing. Root owns architecture and content;
+no production change or coverage increase yet. UP199 remains the acceptance
+priority; this bounded preparation must not mutate its frozen build surface.
+Read-only map complete: no generic enemy-radius bonus limiter exists. The
+smallest complete proposed path refreshes affected hero bonuses on accepted
+movement before guard/visit combat, and on building/raze/owner transitions;
+shared hero Morale then feeds adventure UI, battle and AI. No periodic scan
+or battle-only substitute. Enemy relation uses the existing ENEMIES API, not
+owner inequality. The authored20 Defense replaces the core2, for the defending
+hero during siege; exact bonus ancestry still needs focused verification.
+Asked two consequential design choices: circular inclusive8-tile radius on
+the same map level versus square radius, and a single1-point penalty versus
+stacking1 per overlapping Fortress. Recommendations: circular/same-level and
+single penalty. Await answers before encoding those choices; mapping is not
+production coverage. UP199 source/native acceptance is independent.
+
 ## UP-199 — Dungeon Battle Scholar Academy proportional training
 
-Status: Read-only preparation complete; next after UP198 principal acceptance,
-2026-10-04. Canonical3285 requires each physical Academy to grant each hero
+Final status: Verified (delivery pending),2026-10-04. Client77558, baseline
+vcmitest19532 and both-target retry82390 pass. Native49376 passes10/10 across
+three focused suites in3.561s, zero skips, retained as UP199-academy-focused.log/
+XML. Real computer-owned visits prove preview/grant, differing XP/levels,
+once-per-hero/per-physical-building, distinct Academy/hero and save persistence.
+Floor/Learning/cap, fixed-XP compatibility, strict parsing, current/old-format
+roundtrip/alignment and pre-payload downsave rejection pass, alongside eight
+adjacent Spell Point reward cases. Data/inventory21/21, module drift and Astra
+source/fixture reviews pass. One specified town mechanic added; perk/rank/spell
+totals unchanged. Strategic AI route/valuation and extreme-XP arithmetic remain
+Phase2. No GUI, artwork approval or playable promotion. Historical checkpoints
+below are retained and are not current blockers.
+
+Status: In progress after UP198 principal acceptance,2026-10-04.
+Canonical3285 requires each physical Academy to grant each hero
 25% of the Experience currently missing for the next level once. The core
 Dungeon special4 reward still grants a fixed1000 XP. Existing per-building
 VISIT_HERO visitor state already provides once-per-physical-building behavior.
@@ -27,9 +66,30 @@ special-case XP system. No new per-hero history, poller or UI/art is required.
 Acceptance: real visits at differing levels/current XP, next-level saturation,
 correct preview/grant, repeats and distinct physical buildings/heroes, legacy
 behavior, saved reward/visitor evidence, minimum AI town-entry execution and
-focused build/native validation. Runtime map complete; no production change or
-coverage increase for this item yet. Root owns architecture/version/content/
-CMake/build/Git; assign non-overlapping implementation/test owners next.
+focused build/native validation. Runtime worker owns generic reward/parser/
+schema/version and developer/modder documentation; tester owns one isolated
+Academy fixture. Root owns architecture/content/CMake/build/Git. NH special4
+now has the once-per-hero25% reward and explicit zero fixed XP; its focused
+content guard passes. Runtime, native and playable acceptance remain pending;
+no coverage increase is inferred from the content patch.
+Production reward/parser/schema/version and developer/modder docs are frozen.
+The shared helper floors the current missing gap, applies ordinary Learning,
+returns zero percentage XP at map/engine cap, preserves fixed-positive grants
+and old negative-fixed no-grant behavior, and clamps the component preview to
+int32. Binary append/old-read-zero/incompatible pre-payload write rejection are
+implemented. Astra source review finds no blocker. Data/inventory21/21 pass;
+client compilation has started while the separate fixture stays unregistered.
+Inherited extreme-XP multiplication overflow in calculateXp is recorded for
+Phase2 arithmetic hardening; no broad arithmetic refactor is part of this slice.
+Client77558 exits0 (323 steps). Baseline vcmitest19532 is confirmed live;
+preserve the handle. Academy fixture is frozen with two focused cases and
+independently reviewed without a blocker. It covers real computer-owned
+authoritative visits, preview/grant, distinct XP gaps, per-hero/per-building
+visitation and save persistence, floor/Learning/cap, fixed reward compatibility,
+strict parsing, current/old-format alignment and pre-payload downsave rejection.
+Register it after19532 terminates, rebuild then run only the focused filter.
+No native acceptance or new coverage count yet. Strategic AI routing and visit
+valuation remain explicitly unverified, not implied by computer-owned visits.
 
 ## UP-198 — Necropolis Amplifier visiting-hero raising bonus
 
@@ -43,6 +103,10 @@ pass. Perk/rank/spell totals unchanged; one specified town mechanic is now
 verified. Duplicate-entry consolidation/duration presentation and proactive
 AI visit valuation are Phase2. No GUI run or playable promotion occurred.
 The implementation/checkpoint history below is retained, not a current blocker.
+Committed and pushed90c7d41331bb37586dce062a38dc3b194489d8f3. Notice
+preflight37184744361 was dispatched once on that exact source. Full Windows
+Resource Broker37182637895 remains confirmed live on a8046ec2f; it excludes
+Amplifier. No replacement/duplicate full build or launcher promotion was made.
 
 Status: Bounded implementation map,2026-10-04. Canonical3275: a visiting
 Necropolis hero receives+10 percentage points of Necromancy raising for7 days;
