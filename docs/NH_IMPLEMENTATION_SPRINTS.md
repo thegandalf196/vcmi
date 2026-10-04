@@ -18,6 +18,14 @@ working sequence.
 
 ## Maintenance contract
 
+Next bounded UP023 selection: Reactive Weave (UP215) awaits a newly asked
+full-versus-half readiness coexistence decision. No activation/coverage credit.
+The other checked candidates share existing blockers: SageUP074, recruited-
+cohort trainingUP127, EspritUP130, and Veiled Movement's absent reaction producer.
+Do not repeat those maps or turn generic move dispatch into inert protection.
+This does not establish that every remaining specification item is blocked.
+Phase1 remains active; preserve Windows37211254873's confirmed live handle.
+
 Delivered source6b6afc677 is pushed and remote-verified; worktree was clean at
 that checkpoint. Windows37207110382 is terminal SUCCESS onb6ef78e1b (Fortress,
 parchment binding and Orbs). New full Windows37211254873 is confirmed in_progress on

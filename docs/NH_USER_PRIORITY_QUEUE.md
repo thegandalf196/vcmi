@@ -9,6 +9,24 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-215 — Reactive Weave readiness coexistence
+
+Status: Awaiting design answer,2026-10-04. Canonical4484: after an enemy hero's
+spell affects this hero's army, the next Order before the end of the next round
+receives half the normal Spell-to-Order Warcasting bonus. The existing full
+bonus may already be armed. Asked whether the stronger bonus wins without
+stacking, or the half bonus adds to the full bonus. This changes actual Order
+efficiency; do not silently choose it or activate a tooltip-only perk. Root
+retains the shared event/readiness architecture and implementation decision.
+No source activation or coverage credit from this bounded preparation.
+
+Other checked candidates remain blocked: Veiled Movement lacks a movement-
+reaction attack producer; generic move events alone are not protection. Field
+Instructor/Reinforcement Drill share UP127's recruited-cohort/merged-stack
+ambiguity. Both Sage rows share UP074's pre-acquisition visit timing; Esprit
+remains UP130/retired duplicateUP152. Do not duplicate those maps/questions.
+This is a bounded candidate check, not proof that every remaining perk is blocked.
+
 ## UP-214 — Canonical total Magic Resistance cap
 
 Source committed/pushed6b6afc677337380783abf8e6e9988870f1688b57; remote revision
