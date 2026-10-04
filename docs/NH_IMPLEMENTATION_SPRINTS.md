@@ -1,5 +1,13 @@
 # New Horizons implementation sprints
 
+Current checkpoint: Adela/Bless source0c5964b71 is committed/pushed with remote
+hash and author/committer verified. Eight native cases and twelve hero-data
+checks pass. UP228 next maps old generic Sorcery specialties to Spellcraft,
+using112/124/136% efficiency and12/24/36% SP-growth chances; independent
+interpretation review agrees. Mapping is not implementation coverage. Windows
+37241527929 remains live on90aac5407, now compiling after successful dependency
+preflight; it excludes Adela. Earlier live/next-action notes below are history.
+
 UP224 Adela source/native accepted2026-10-04: client38169, both-target99683
 and final48936 pass. Native6322 passes8/8 in5.310s, zero skips; twelve hero-data
 checks/module drift and independent reviews pass. Commit/push exact-producer

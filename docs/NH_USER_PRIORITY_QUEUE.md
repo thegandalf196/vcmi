@@ -9,6 +9,26 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-228 — Generic Sorcery specialty to Spellcraft
+
+Status: In progress, read-only bounded map, 2026-10-04. Canonical legacy-skill
+mapping explicitly rebuilds old generic Sorcery as Spellcraft; it is not the
+six-school Sorcery Skill. Audit actual built-in secondary-Sorcery specialty
+producers, saved-rule eligibility, Spellcraft SP-component efficiency and its
+level-up SP roll. Apply the canonical Skill-specialty +20% to the Skill's own
+numerical contribution, not the baseline 100% efficiency or perks. Root will
+confirm the precise arithmetic and safe capture boundary before implementation.
+Preserve authored variants, unrelated producers, old saved lists, shared live/
+detached prediction and authoritative growth. No new polling or mirrored state.
+Mapping alone grants no coverage; require build and focused native evidence.
+
+Adela/Bless checkpoint 0c5964b71 is committed/pushed with eight accepted native
+tests; remote hash and author/committer identity are verified. Current Windows job
+37241527929 remains live on older 90aac5407 and excludes that Adela checkpoint.
+Do not launch an equivalent duplicate build or claim playable delivery.
+Independent Astra interpretation review confirms Spellcraft specialty efficiency
+112/124/136% and SP-growth chances12/24/36%, excluding baseline100% and perks.
+
 ## UP-227 — Conflux Vault of Ashes growth
 
 Source committed/pushed71604c6984e050d368e9abd9981c4cd70a6573e8; remote head
@@ -144,9 +164,10 @@ unrelated bonus effectiveness, exact prototype/marker/save and historical-list
 retention; all six Cure/Res controls pass. Twelve hero-data/module gates and
 independent reviews pass. First callback compile and pointer-identity oracle
 failures are recorded, without weakening gameplay interfaces or saved semantics.
-Four mapped non-damage aliases now converted; no full-family, identity-count,
+Source committed/pushed as0c5964b71; remote identity/hash verified. Four mapped
+non-damage aliases now converted; no full-family, identity-count,
 GUI or playable claim. Broader modifier/proxy/variant and AI composition remain
-Phase2. Source is ready for scoped commit/push.
+Phase2. Windows37241527929 builds older90aac5407 and excludes this slice.
 
 Next bounded audit2026-10-04 after Vault acceptance: inspect real Adela/Bless
 and Xsi/Curse for the canonical non-numerical specialty +1 round clause. Restrict
