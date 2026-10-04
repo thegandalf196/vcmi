@@ -38,7 +38,9 @@ the replacement branches before enabling tagged producers. Data/inventory22/22,
 ten schema cases and module check pass. No status producer/count consumer or
 Pandemonium activation, GUI validation or playable promotion is claimed.
 Foundation committed/pushed9d0b11405. Windows37164498532 succeeds on13d4691f5; Puppet620b25eec notice37167546781
-succeeds and full Windows37168548146 is live on620b25eec, not this dirty foundation.
+succeeds and full Windows37168548146 now succeeds on620b25eec, excluding this
+foundation and later Summon Boat targeting. Notice-only preflight37169597939 is
+successful on9d0b11405; it is not a compiled package or acceptance of26efdd523.
 
 Original intended whole-spell scope: Level5,22-Mana Pandemonium affects every stack,
 including allies: damage is D*(20+0.25*SP), where D counts active effects tagged
@@ -6636,6 +6638,54 @@ Windows graphical acceptance or Linux launcher promotion.
 
 ## UP-056 — Complete canonical Adventure Spell effects
 
+2026-10-03 next bounded slice: establish Water Walk's end-day legal-land
+requirement across shared pathing, authoritative movement/turn completion and
+AI. Runtime and test owners map these narrow seams read-only before selecting
+an implementation. Do not infer drowning, forced relocation or a new spell rule
+from an unestablished path; no global scan/polling. Acceptance requires a real
+principal path and focused native evidence, not merely path-cost checks.
+An independent read-only Dimension Door map isolates the explicit visible/legal
+eight-tile range and movement-exhaustion clauses from unresolved protected-barrier
+and movement-threshold questions. No implementation or full-spell count is claimed
+from either map; do not silently resolve those choices.
+Dimension Door map is complete; its existing minimum is already zero (requires
+positive Movement), so Town Portal's unresolved 200/300 threshold is not this
+spell's blocker. Proceed with explicit caster-owner visibility, legal same-level
+target within radius8 using the existing rounded DIST_2D tile-range convention,
+and full remaining-Movement expenditure on successful casts. Share source-origin
+targeting and caster-aware expenditure with live/UI and planned AI positions.
+Preserve legacy configuration and other spells; protected-barrier enforcement
+and the canonical casting-ends-Movement warning remain unimplemented and
+prevent full-spell acceptance. These are Phase 1 requirements, not deferred
+polish. Bounded runtime, AI
+and focused-test ownership precedes implementation; no count increase yet.
+Bounded DD source/native acceptance: client retry55650 and combined retry22130
+build successfully after retaining initial AI scope/header failures. Native43587
+passes6/6 in2.086s, zero skips (UP056-dimension-door-policy-focused.log/XML):
+actual visible radius8 cast consumes all Movement, hidden/out-of-range/blocked
+rejections preserve position/Mana/day/Movement, legacy hidden-map rectangle and
+configured cost, legal/fog AI paths and existing daily-action guard. Independent
+Luna runtime/test review and root integration find no blocker; a separate Astra
+reviewer spawn is service-rejected at the thread limit, not silently claimed.
+Module/diff gates pass. This closes only those explicit source/native clauses;
+barriers and the required warning remain open. No full-spell count, GUI or
+playable promotion. Next unblocked DD clause is the ends-Movement warning.
+Water Walk map complete: moveHero accepts a water step spending all remaining
+Movement; the per-player timer endTurnAllowed flag only reflects the last moved
+hero, resets at turn start and does not gate explicit EndTurn. A different hero's
+land move can overwrite it. TurnOrderProcessor::onPlayerEndsTurn has no current
+water-location guard. Nullkiller has no established land-ending day boundary
+and retries EndTurn while its turn remains active. A bare rejection can therefore
+soft-lock a stranded zero-Movement hero or loop AI. Existing cost/expiry tests
+do not establish the canonical rule. Block this clause pending the newly asked
+policy: prevent water steps that leave no affordable route to legal land, versus
+an explicit emergency return to the last legal land position. No drowning,
+relocation or rejection-only implementation is authorized by this map.
+After resolution, use the authoritative turn-end seam plus matching movement/AI
+legality and a real spell/movement/end-turn/expiry fixture; iterate only owned
+heroes at the event, not the entire map. No new source or coverage from mapping.
+Summon Boat targeting source/native checkpoint is committed/pushed26efdd523.
+
 2026-10-03 active bounded slice: Summon Boat legal-adjacent-water destination
 selection/highlighting and hover preview. Reuse shared authoritative spell
 legality and native adventure-map visual treatment; no new artwork or unrelated
@@ -6670,8 +6720,8 @@ UP-023 Phase 1 functional gaps, not merely Phase 2 hardening. Guild acquisition
 is implemented for all five spells; none is yet certified effect-complete.
 The source audit finds these remaining canonical clauses:
 
-- Summon Boat existing-only creation policy is now implemented in the
-  authoritative effect and AI; adjacent legal target selection/preview remains.
+- Summon Boat existing-only creation policy and adjacent destination selection
+  are now source/native verified (26efdd523); rendered/playable review remains.
 - Water Walk already uses the shared 1.5x step multiplier; end-day land legality
   remains unestablished in the mapped authoritative turn/movement path.
 - Town Portal must use the nearest controlled town, never a player-selected
