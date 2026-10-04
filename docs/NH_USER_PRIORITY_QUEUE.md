@@ -9,7 +9,47 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-202 — Fortress Blood Obelisk functional coverage audit
+
+Status: Read-only preparation, 2026-10-04. Check the canonical defending-siege
+hero Attack20 and visiting next-combat physical-damage10% weekly blessing
+against existing runtime/content before choosing implementation. Root owns
+architecture and priority; a Luna mapper owns only bounded source inspection
+and may not edit frozen Stables headers or run builds. Return actual shared
+bonus/damage/reward/siege paths, focused test surfaces and any true design
+ambiguity. Mapping is not coverage credit. UP201 Stables acceptance/integration
+remains the current checkpoint; UP200 aura choices remain unanswered.
+
 ## UP-201 — Remaining Castle movement and Rampart Luck building coverage
+
+Stables final status: Verified (delivery pending), 2026-10-04. Client56799 and
+both-target62880 pass. Native71208 passes2/2 in1.894s, zero skips, including
+adjacent Fountain, retained as UP201-stables-focused.log/XML. Actual building
+construction and day events verify both visiting/garrison residents, computer
+ownership, shared current/future max, exact200-to240 refill, no midday or old
+flat400 grant, slow/fast army parity, saved bonus/residence, departed-hero expiry
+and resident daily regrant without stacking. Data/inventory21/21, module drift,
+diff checks and Astra production review pass. One specified town mechanic added;
+perk/rank/spell totals unchanged. No GUI or playable promotion. Phase2 retains
+inconsistent residence-reference hardening, allied-resident scenario coverage
+and strategic AI valuation. Source allows allied residents but that specific
+case is not claimed from the same-player fixture. Lighthouse remains blocked
+on departure scope; broader goal is active, not complete.
+
+Stables status: In progress, 2026-10-04. Root selects the day-start event path:
+after NewTurn expires old ONE_DAY bonuses, give eligible visiting and garrison
+Castle residents a saved ONE_DAY land-Movement20 PERCENT_TO_BASE town bonus,
+then refill each beneficiary to its fresh shared current-day maximum. Canonical
+Movement percentages are additive (line65), not a new multiplicative20% stage.
+No ordinary movement/rendering scan, new saved counter, visit grant or weekly
+flat400 remains in NH. Root content clears the legacy reward configuration and
+mapObjectLikeBonuses alias. Runtime owns only NewTurnProcessor.cpp/.h; tester
+owns only the isolated new Stables fixture; root owns content/CMake/build/Git.
+Require actual day ticks, both residents and outside hero, entry/departure,
+daily expiry/nonstacking, refill/projection agreement, save and army-Speed
+independence before coverage credit. Phase1 continues; Fountain is accepted
+separately. Full Windows37187930978 is confirmed in_progress on5899674a0
+and excludes these uncommitted Stables changes. Preserve that handle.
 
 Fountain status: Verified (delivery pending), 2026-10-04. Client38823 and
 final both-target23674 pass; native12287 passes1/1 in1.136s, zero skips,

@@ -18,6 +18,31 @@ working sequence.
 
 ## Maintenance contract
 
+UP201 Stables accepted2026-10-04: client56799 and both-target62880 exit0;
+native71208 passes2/2 in1.894s, zero skips, UP201-stables-focused.log/XML.
+Both resident slots, shared exact Movement/refill, save, expiry/nonstacking,
+midday isolation and slow/fast army parity pass, plus adjacent Fountain. Data/
+inventory21/21, module drift and Astra production review pass. Root inspected
+the focused fixture. One specified town mechanic added, no perk/rank/spell
+count changes. Integrate this source checkpoint while UP202 Blood Obelisk is
+read-only mapped. Source supports legitimate allied residents; explicit allied
+scenario coverage, inconsistent-reference hardening and strategic AI valuation
+remain Phase2. No graphical run or playable promotion is claimed. Preserve
+the existing full Windows37187930978 on5899674a0; it excludes Stables.
+
+2026-10-04 UP201 Stables production is frozen and Astra-reviewed with no
+blocking finding. Day-start after NewTurn expiry grants visiting/garrison
+Castle residents a saved ONE_DAY land-Movement20 PERCENT_TO_BASE town bonus,
+then refills the beneficiary from the shared current-day maximum. Legitimate
+allied residents qualify; nonresidents and legacy movement are unchanged.
+The NH override clears the old flat400/week visiting reward and alias.
+Data/inventory21/21, module drift and diff checks pass. Client56799 is building
+with12 jobs; the isolated fixture remains unregistered until build terminal.
+No coverage credit or playable promotion yet. Phase2 retains defensive checks
+for inconsistent town-resident references and broader strategic AI valuation.
+Existing full Windows37187930978 remains live on5899674a0, excluding this
+dirty Stables slice; no replacement or duplicate full build is dispatched.
+
 UP201 Fountain native acceptance: final both-target23674 passes; native12287
 passes1/1 in1.136s, zero skips, UP201-fountain-final.log/XML. Actual construction,
 visits, recipient isolation, independent hero/building weekly history, saved
