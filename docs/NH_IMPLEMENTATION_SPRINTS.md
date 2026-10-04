@@ -18,6 +18,17 @@ working sequence.
 
 ## Maintenance contract
 
+UP218 production dbd5c7da1f8d19ef55eb11e8c504c5aace739b9c is pushed and
+remote-verified. Local handles are terminal. Full Windows37221556231 is queued
+on that source (includes UP217/UP218); preserve it, no duplicate dispatch.
+Next bounded coverage slice: Armorer specialties for Mephala, Tazar and Neela.
+Core-only20% means reduction5/10/15 becomes6/12/18 and Defense-growth chance
+10/20/30 becomes12/24/36, without scaling perks. Reuse exact secondary alias
+metadata, saved opt-in and stable markers; trace both legacy alias and active
+NH effect identities. Extend the shared combat and level-up/view paths together.
+This mapping is not implementation credit. Offense, Archery and Estates are
+the remaining live legacy Skill aliases; explicit NH replacements stay intact.
+
 UP218 source/native accepted2026-10-04. Both-target95053 and bounded repair41124
 succeed; native33370 passes15/15 in6.804s, zero skips. All three Logistics
 specialists, all ranks/both pools, Navigation, unrelated bonuses, reused cache

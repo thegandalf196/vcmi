@@ -11,6 +11,14 @@ entries and their validation/delivery evidence.
 
 ## UP-218 — Logistics Skill specialty core-effect conversion
 
+Source dbd5c7da1f8d19ef55eb11e8c504c5aace739b9c is committed/pushed and
+remote-verified with required author/committer. Local build/native/push handles
+are terminal; worktree was clean at that checkpoint. Full Windows37221556231
+is confirmed queued on that exact source, preflight_only=false, including
+UP217/UP218. Preserve this handle; do not dispatch a duplicate build. No launcher
+promotion. The next cycle should implement the mapped Armorer slice rather
+than repeat accepted Logistics exploration or broad validation.
+
 Status: Verified (delivery pending),2026-10-04. Both-target95053 and bounded
 repair rebuild41124 succeed. Native33370 passes15/15 in6.804s, zero skips:
 all three specialists at all ranks, both pools224/248/272, ordinary controls,
