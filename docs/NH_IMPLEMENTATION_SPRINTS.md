@@ -18,6 +18,48 @@ working sequence.
 
 ## Maintenance contract
 
+UP212 binding slice is source/build verified: client86675 succeeds, existing
+Mage Guild art/data controls pass5/5, and independent Astra review finds no
+blocking issue. Reference purchaser TPMAGES.DEF frame0 under standalone NH
+icons, preserving original complete83x61 scrolls, full hitboxes and native
+small-emblem sizes; oversized aliases fit within54x45. No template pixels or
+new dependency shipped. Opaque painted backgrounds/proper transparent scroll
+emblems and actual rendered acceptance remain open UP212 work; no final-art or
+playable promotion claim. Frozen Orb native controls now pass8/9, with a single
+cap-cast fixture rejection under bounded diagnosis; do not credit it yet.
+
+Full Windows37199468684 is terminal SUCCESS, confirmed2026-10-04, on committed
+69c18b19e1f08008834df67131701a0e0e26de6a. It covers Conflux/Garden, not the
+current uncommitted Orb or Mage Guild fixes. A fresh compiled checkpoint may
+be dispatched after those changes pass focused gates and are committed.
+
+UP212 resumption evidence: plain iconScroll images are not complete83x61
+parchments; some are opaque RGB paintings with their own dark background.
+Adding that square over a blank is not visual acceptance. Inspect native blank
+frames and preserve proper role composition, transparency and native hitboxes.
+The old worker service handles disappeared at goal continuation; root rechecked
+the team (root only) and delegated the bounded asset inventory to Luna
+guild_parchment_assets. No new art or original-pixel import is authorized here.
+UP210 retry34064 also lost its handle, with no cmake/ninja/compiler process
+remaining and no terminal-success log. Root verified stoppage before resuming
+the incremental native-only build65339,12 jobs; do not advertise the interrupted
+retry as a successful build.
+
+New priority UP212,2026-10-04: Mage Guild new spell emblems are missing from
+their parchments. Independent Luna UI/asset diagnosis now takes priority, using
+the original rendering and VCMI Extras blank parchment reference. Preserve the
+frozen Orb production source and safely finishing focused fixture owner. Do not
+start another backlog feature or claim visual acceptance from code-only checks.
+No GUI/input authorization is inferred. Root will serialize combined builds.
+
+Current slice UP210 implements the approved actual-element Orb conversion.
+Generic metadata and caster/proxy final damage are delegated independently from
+real equipment/cast/forecast fixtures. Root owns append-only Bonus and save-format
+guards plus registry/data and one12-job build. Ten explicit elemental tag rows
+are approved from canonical descriptions; neutral/necrotic/physical spells have
+no inferred affinity. Do not credit until production paths and focused native
+acceptance pass. Full Windows37199468684 remains live on Conflux69c18b19e.
+
 UP211 committed/pushed69c18b19e1f08008834df67131701a0e0e26de6a. Notice-only
 37199469826 succeeds on that head; full Windows37199468684 is in progress on
 the same head. Preserve its handle; no duplicate dispatch, compiled-success

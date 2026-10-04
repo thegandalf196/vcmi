@@ -9,7 +9,55 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-212 — Mage Guild spell icons on parchment
+
+Diagnosis,2026-10-04: SPELLSCR contains complete83x61 parchment+emblem
+frames for original spells, while several NH iconScroll bindings provide only
+32x32/44x44 artwork. The Mage Guild currently treats both as complete scrolls.
+Preserve complete composites; wrap standalone emblems in the correct parchment
+without changing acquisition/casting. The identified blank template is in the
+Modder Tools Pack, not Extras. Its mixed-content blanketCC-BY-SA declaration
+does not establish per-file redistribution rights; do not ship that template
+until provenance is resolved. Inspect purchaser-provided TPMAGES/SPELLSCR blank
+frames for a clean runtime-reference solution before inventing artwork.
+Bounded archive inspection locates both DEF resources in H3sprite.lod, not
+H3bitmap.lod; frame appearance is still under inspection. Some supplied NH
+icons are opaque square paintings, so a parchment wrapper alone is insufficient
+visual evidence; do not call an opaque square pasted over the blank a final fix.
+
+Status: Implemented (verification pending),2026-10-04; binding slice only,
+not full art/visual acceptance. Native H3sprite.lod inspection confirms
+TPMAGES.DEF group0 frame0 is the blank open83x61 parchment; frame1 is rolled.
+The client now references that purchaser resource underneath standalone NH
+scroll icons, preserving complete83x61 sprites, native32/44 emblems and full
+scroll hitboxes. Oversized book aliases aspect-fit within54x45 rather than
+covering rolled edges. No original/template pixels are copied or shipped.
+Opaque painted icon backgrounds still need purpose-made transparent emblems or
+proper scroll-role exports; wrapper/build success must not close that art defect.
+Client build86675 succeeds; independent Astra review finds no blocking source
+issue, and existing Mage Guild asset checks pass5/5. These do not establish
+composed-widget/opaque-art acceptance. No GUI or playable promotion.
+The user-reported visual defect takes priority over new
+backlog work. New spells in Mage Guild are missing their spell emblems on the
+parchment, unlike original spells. Inspect the actual Mage Guild icon binding
+and compare original spell rendering. User identifies a blank parchment in
+VCMI Extras: locate and inspect it before inventing or extracting art. Reuse
+clean authentic components by reference where permitted, retaining the correct
+native dimensions, transparency and spell artwork. No unrelated spell-icon
+substitution, pasted frame collage or new artwork without the Heroes III art
+skill. Keep gameplay/spell selection semantics unchanged.
+
+Acceptance: correct loaded asset/binding for new spells, original-spell control,
+focused source/data checks and build, with native-resolution visual acceptance
+and delivery tracked separately under the existing GUI hold. Preserve safely
+running UP210 source/review work; bounded UI ownership must not overlap it.
+
 ## UP-211 — Canonical creature-growth buildings
+
+Full Windows37199468684 is now terminal SUCCESS on69c18b19e, confirmed
+2026-10-04; prior in-progress statements below are historical. This is compiled
+delivery evidence, not native-resolution hall/town-scene acceptance or launcher
+promotion, and it excludes the uncommitted UP210/UP212 changes.
 
 Vault read-only map complete: unused HORDE_2/horde2 ID24 and fourth hall card
 in the special-building row are available. A CREATURE_GROWTH creatureLevel4+2
@@ -59,6 +107,21 @@ values with shared growth and AI consumers, not a new recurring scan. No blanket
 coverage credit from configuration inspection alone.
 
 ## UP-210 — Elemental damage Orb conversion
+
+2026-10-04 implementation started from a clean delivered tree. Root selects
+append-only ELEMENTAL_SPELL_DAMAGE with custom element subtypes and explicit
+SpellDamageElement metadata; no VariantIdentifier reorder. Caster's generic
+element-bonus getter forwards through proxies, preserving hero/unit inheritance.
+Approved positive tags: Fireball/Land Mine/Fire Wall/Inferno Fire; Ice Bolt/Frost
+Ring Water; Lightning Bolt/Chain Lightning/Master Chain Lightning Air; Meteor
+Shower Earth from actual falling rocks. Armageddon's unspecified catastrophic
+magic remains untagged, as do neutral/necrotic/Nature/physical damage. Removed
+Fire Shield is not restored. Independent Luna runtime and native/data ownership;
+root owns bonus/serialization types, registration, build, coverage and delivery.
+Source in progress, not yet verified or credited.
+Execution audit also requires the two hidden Land Mine/Fire Wall trigger spells
+to carry Fire tags, since damage resolves through those abilities. Preserve
+their raw damage snapshot and apply the final Orb multiplier once at resolution.
 
 User ruling,2026-10-04: use actual spell element/theme independently of six
 Schools; neutral and necrotic spells remain untagged. Fireball=Fire, Ice Bolt=
