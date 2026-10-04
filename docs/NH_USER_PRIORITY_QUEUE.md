@@ -24,6 +24,13 @@ review pass. One specified town mechanic added; perk/rank/spell totals unchanged
 Phase2 retains complete physical-damage resolution, strategic prebattle AI
 valuation, rendered feedback and generic setup-snapshot producer validation.
 No GUI, ongoing-battle save/resume or playable promotion claimed.
+Committed/pushed cd1b1f93c4c99659beaefa75f59b711605375693. Windows notice
+preflight37191098623 completed SUCCESS on that exact source. Existing full
+Windows37187930978 remains in_progress on5899674a0 and excludes Blood Obelisk
+and Stables; preserve the handle rather than launch a duplicate full job.
+The next mapped town gaps are Glyphs of Fear, Lighthouse and Skeleton
+Transformer; their recorded design questions remain unresolved, not silently
+defaulted. Continue with another unblocked Phase1 queue item when available.
 
 Client retry32362 exits0 after correcting free-helper private access. Runtime
 source is frozen and independently Astra-reviewed with no blocking finding.

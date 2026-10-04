@@ -32,6 +32,9 @@ specified town mechanic added; perk/rank/spell counts unchanged. Complete damage
 resolution, strategic AI valuation and graphics remain Phase2, as do generic
 setup-snapshot producer limitations. Integrate this source checkpoint; preserve
 full Windows37187930978 on5899674a0, still compiling and excluding this slice.
+Source committed/pushed cd1b1f93c4c99659beaefa75f59b711605375693; notice-only
+Windows37191098623 completed SUCCESS on that source. No compiled Windows or
+playable delivery claim follows from notice preflight. Preserve the full run.
 
 2026-10-04 UP202 Blood Obelisk implementation is in progress. Generic
 defendingHeroBonuses content applies only to the actual siege defender hero;
