@@ -49,6 +49,10 @@ source/fixture reviews pass. One specified town mechanic added; perk/rank/spell
 totals unchanged. Strategic AI route/valuation and extreme-XP arithmetic remain
 Phase2. No GUI, artwork approval or playable promotion. Historical checkpoints
 below are retained and are not current blockers.
+Committed/pushedce666c92c1b50ef02654ccc98cba9c11f630f769. Notice preflight
+37185975539 is confirmed in_progress on that exact source. Full Windows
+Resource Broker37182637895 remains live on a8046ec2f and excludes this slice.
+Preserve its handle; no duplicate full dispatch or playable promotion occurred.
 
 Status: In progress after UP198 principal acceptance,2026-10-04.
 Canonical3285 requires each physical Academy to grant each hero

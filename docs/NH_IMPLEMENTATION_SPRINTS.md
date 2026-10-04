@@ -18,6 +18,15 @@ working sequence.
 
 ## Maintenance contract
 
+UP199 is committed and pushedce666c92c1b50ef02654ccc98cba9c11f630f769.
+Notice preflight37185975539 was dispatched once and is confirmed in_progress
+on that exact source. Existing full Windows Resource Broker37182637895 remains
+in_progress on a8046ec2f; it excludes Amplifier/Academy. Retain both handles;
+no duplicate or replacement full build was dispatched. UP200 Glyphs of Fear
+map is complete; radius/layer and overlap-stacking answers are pending. No
+production aura or extra town coverage is inferred from mapping. Phase1 goal
+remains active; this design choice blocks that slice, not the full backlog.
+
 UP199 Academy accepted2026-10-04: client77558, baseline19532 and both-target
 retry82390 build successfully; native49376 passes10/10 in3.561s, zero skips,
 retained as UP199-academy-focused.log/XML. Real visits/preview/grant/history/save
