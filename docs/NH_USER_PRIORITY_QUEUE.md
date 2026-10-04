@@ -9,6 +9,44 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-214 — Canonical total Magic Resistance cap
+
+Status: Verified (delivery pending),2026-10-04. Both-target build80140 and
+bounded penetration-fixture rebuild14491 succeed. Native39842 passes6/6 in
+2.362s, zero skips (UP214-magic-resistance-final.log/XML). Real Battle Dwarf
+and three equipped artifacts, Unicorn aura, detached aura/bonus movement/removal,
+actual seeded74-resist/75-hit casts on raw100 targets, positive Haste, independent
+immunity, legacy76/100 behavior and penetration/Twist controls pass. Independent
+Astra production and final fixture reviews find no blocking issue. Artifact
+conversion families5->6 of10; spell/perk/rank counts unchanged. Generated module
+drift and seven adjacent artifact-data checks pass. No GUI or launcher promotion.
+Windows37207110382 remains live onb6ef78e1b, excluding UP214.
+
+Phase1 specification audit found the explicit
+75% total Magic Resistance cap (canonical5012/5246) absent from production.
+AFactionMember/CStack allow100%; hostile target legality, authoritative rolls,
+AI and overcharge UI all consume that value. Detached StackWithBonuses also
+omits live adjacent-aura composition. Keep printed artifact percentages and
+additive innate/artifact bonuses, retaining existing aura composition before
+the final cap. Use one battle/environment-aware live/projected accessor,
+without a getter recursion, polling, saved counter or legacy-world change.
+Independent Astra read-only mapping confirms this is a real gap, not a duplicate.
+Misfortune's separately pending innate-resistance classification is not decided.
+
+Root owns architecture, registration/build/docs/Git. Luna production and native
+fixture owners are separate. Acceptance: real resistance artifacts plus innate
+bonus,75% cap at resolved hostile roll, capped100%-raw targets remain legal,
+positive spell/immunity/legacy controls, projected bonus/aura parity and UI
+getter agreement, focused build/data/native checks. Mapping grants no credit.
+
+Read-only production review finds no blocking issue; all10,201 clamped
+base/aura combinations preserve legacy arithmetic. Data audit confirms core
+Dwarf20/Battle Dwarf40, Unicorn/War Unicorn aura20 and Garniture5/Surcoat10/
+Boots15 remain unchanged by NH overlays. Loaded equipment/cast execution is
+still pending. Phase2: untouched live recipients in HypotheticBattle can retain
+live aura adjacency after only the neighbor is projected; explicitly detached
+recipients use projected adjacency, and both retain the75% cap.
+
 ## UP-213 — Replace supplied Fortress Mage Guild level artwork
 
 Source committed/pushed34bf2fa1f. Full Windows37207110382 is confirmed live

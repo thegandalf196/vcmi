@@ -18,6 +18,52 @@ working sequence.
 
 ## Maintenance contract
 
+UP214 source/native accepted2026-10-04. Both-target80140 and bounded fixture
+rebuild14491 succeed; native39842 passes6/6 in2.362s, zero skips. Shared live/
+explicitly detached resistance caps75 after unchanged artifact/innate and aura
+composition. Real equipment, seeded74/75 accepted hostile casts, positive Haste,
+independent immunity, legacy76/100 and penetration/Twist controls pass. Module
+drift and seven adjacent artifact-data checks pass; Astra final review has no
+blocker. Targeted artifact-family coverage5->6 of10, other counts unchanged.
+Phase2: untouched-recipient projected aura previews, shared historical-v2
+fixture sanitation and broad interactions/rendered feedback. Scroll candidate
+still awaits user approval. No graphical launch or playable promotion.
+The mapping and build-in-progress paragraphs below are historical; all local
+build/test handles named here are now terminal. Windows37207110382 remains live
+onb6ef78e1b and does not include UP214; no duplicate dispatch.
+
+UP214 is the next unblocked functional gap. Canonical total Magic Resistance
+caps75%, but existing raw/live/AI/UI consumers allow100% and target legality
+treats that as immunity. Root selects one shared battle-aware calculation,
+optional unit-environment forwarding and projected adjacency; retain additive
+artifact/innate values and existing aura composition/rounding. Legacy behavior,
+Spell immunity and Misfortune's separately pending policy stay unchanged.
+Production and native fixture ownership are separate; root retains integration,
+one serialized12-job build and source delivery. No count until focused principal
+execution passes. Scroll candidate remains held for user visual approval.
+
+UP214 frozen production review finds no blocking issue: raw bonuses avoid getter
+recursion and all 10,201 clamped base/aura combinations preserve legacy results.
+Phase2 finding: HypotheticBattle may return an untouched live recipient while
+only its aura-bearing neighbor is projected. That recipient still uses live
+adjacency; explicitly detached recipients use projected adjacency. The75% cap
+holds in both cases. Focused acceptance must not imply untouched-recipient aura
+preview parity. Native fixture/build acceptance remains pending.
+
+UP214 fixture is frozen with three principal native cases: real equipment and
+Unicorn aura, detached adjacency/bonus changes, accepted seeded74/75 hostile
+casts, independent immunity, positive Haste and legacy76/100 controls. Build
+session39401 is live (`vcmitest vcmiclient`,12 jobs); production and AI objects
+compile, final link/native execution remain pending. Preserve this handle until
+terminal observation rather than starting a second local build.
+
+Build39401 and diagnostic32791 terminated with a fixture-only raw-enum variant
+error; corrected to typed SpellID. Retry58491 terminated on root's selector
+conjunction mistake; use the existing typed hasBonusFrom API for Haste instead.
+Lessons/logs are retained in NH_RELEASE_FAILURES.md. Current resumed build80140
+is live at12 jobs; the corrected native fixture object compiles successfully,
+but final link/execution and all coverage credit remain pending.
+
 Delivered source checkpoint: Fortress34bf2fa1f and Orbsb6ef78e1b are pushed.
 Full Windows37207110382 is confirmed live onb6ef78e1b11f269f2ad1992ebdd999ea5e0d02c6;
 preflight_only=false explicitly requests compilation. Keep this handle through
