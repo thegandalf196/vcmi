@@ -18,6 +18,33 @@ working sequence.
 
 ## Maintenance contract
 
+2026-10-04 UP192 Forced March source/native accepted and active. Standard
+accepted exhaustion grants10% post-transition maximum Movement once daily;
+typed day markers precede guard/object combat, and a generic side snapshot
+applies-1 Morale only in playable round1. Accepted battle startup consumes
+pending fatigue; replay keeps its original snapshot. Client and tests build;
+active native91757 passes18/18 in5.867s, zero skips, data/inventory19/19 and
+module check pass. Independent Astra production/fixture review finds no blocker.
+Coverage210->211/310 perks,99 planned; Logistics6->7/10. Initial failures retained
+with narrow corrections; no graphical/playable promotion. Prospective AI burst
+forecasting and broader vehicle/guard/control/Morale matrices remain Phase2.
+Next missing Logistics candidate: Pursuit March, a win-triggered daily refund,
+not a replacement for this perk or a permanent Movement capacity bonus.
+
+2026-10-04 next missing feature selected: UP192 Logistics Forced March. The
+existing mastery is not the canonical perk. Runtime and test/AI maps are complete;
+bounded hero/movement, battle snapshot and isolated-test owners now implement.
+Absolute-day markers plus a generic first-round Morale snapshot avoid polling
+and timed-stack-bonus lifecycle mistakes. Serialization version is append-only.
+Implement the complete exhaustion burst plus first-round penalty, not a flat
+capacity bonus or a button. No count increase before native/registration gates.
+
+2026-10-04 protected-barrier map finds no authorable localized representation
+or Fly/DD crossing consumer. Asked tile markers with straight-line DD crossing
+versus region boundaries; blocked until marker/geometry is defined. No speculative
+rock/guard/quest-gate classification or one-sided UI enforcement. Continue an
+independent unblocked Version1.0 combat/perk gap; coverage explorer is read-only.
+
 2026-10-04 UP056 DD ends-Movement warning hook accepted: generic NH-only text ID
 and existing statusbar entry/hover/exit lifecycle, no new panel/art/gameplay rule.
 Dedicated Adventure text map and generator/CMake parity pass; two focused
@@ -40,8 +67,11 @@ Initial scope/header failures remain in NH_RELEASE_FAILURES.md. No full DD,
 new identity/perk/rank count or playable promotion. Protected barriers and the
 ends-Movement warning remain Phase1; next unblocked clause is that warning.
 Water Walk's stranded-hero policy remains unanswered and blocked.
-DD checkpoint committed/pushed ae32ac3c4; notice-only preflight37172296610 is
-in progress. Next bounded read-only UI map is a localized casting-ends-Movement
+DD checkpoint committed/pushed ae32ac3c4; notice-only preflight37172296610
+completed successfully. Hint checkpoint f534f59c4 notice37173593409 also succeeds;
+full Windows37174334529 now runs on that exact committed source, excluding
+the uncommitted Forced March slice. Neither notice is a compiled playable
+package. Next bounded read-only UI map is a localized casting-ends-Movement
 hint in existing native targeting/status surfaces. No panel/art or gameplay
 change. Source/wiring/native gates and rendered acceptance remain distinct.
 
