@@ -24,6 +24,10 @@ entry is not a current affected-stack preview. Existing native yes/no controls
 are reused without new art. Rendered callbacks/dialog acceptance and broader
 spell interaction coverage remain Phase2; no GUI or playable promotion claimed.
 Data/adjacent/perk/inventory24/24, module drift and diff checks pass.
+Committed/pushed ef02ff1d72b9ee9b68ac678644a12b03c4c8cea2. Windows notice-only
+preflight37194146484 is confirmed in_progress on that exact source; it is not a
+compiled Windows package. Full37191507353 remains live on ebc1d58db and excludes
+this slice. Preserve both handles; no duplicate full build or promotion.
 
 Status: In progress, 2026-10-04. Canonical combat UI requires a confirmation
 previewing affected friendly stacks for Armageddon and other indiscriminate
@@ -54,6 +58,8 @@ primary/land/sea conversion rows, not the other seven artifact-framework rows.
 Independent Astra review finds no blocker; assembled-artifact interactions,
 save/load roundtrips, strategic AI valuation and rendered tooltips are Phase2.
 No GUI/playable promotion claimed. Focused Python24/24 and module drift pass.
+Committed/pushed in the same ef02ff1d72b9ee9b68ac678644a12b03c4c8cea2 checkpoint.
+Windows notice37194146484 is live; full37191507353 predates these source changes.
 
 Status: In progress, 2026-10-04. The canonical artifact framework requires all
 legacy Primary Attribute bonuses and penalties multiplied by five, and flat

@@ -18,6 +18,15 @@ working sequence.
 
 ## Maintenance contract
 
+UP203/UP204 delivery checkpoint: committed and pushed
+ef02ff1d72b9ee9b68ac678644a12b03c4c8cea2; tracked tree clean and0ahead/behind
+before these evidence notes. Windows notice-only37194146484 is confirmed live
+on that source, not a compiled package. Full37191507353 remains live on its
+previous ebc1d58db source; preserve the job rather than duplicate it. Root owns
+the next meaningful full checkpoint once this job is terminal. Phase1 goal stays
+active; next implementation is the mapped Master Logistician perk, not polishing
+the already focused-verified confirmation or artifact framework.
+
 UP203/UP204 accepted source/native2026-10-04: friendly-fire confirmation uses
 actual effect recipients (including possible Hand of Fate collateral) and the
 native yes/no dialog; three artifact-conversion rows now have78 corrected bonus
