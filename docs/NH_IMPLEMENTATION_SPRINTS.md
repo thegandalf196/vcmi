@@ -18,6 +18,18 @@ working sequence.
 
 ## Maintenance contract
 
+UP194 source/native acceptance is committed and pushed as
+`1d3a8018580b1fc3631c77e7c627b20cebfb2f6e`. Windows notice preflight
+`37180892273` completed successfully on that exact source. Full Windows
+`37180938926` was dispatched once and confirmed queued on the same source;
+retain its handle. Earlier full Windows `37177603721` completed successfully
+on `e4946162f`, excluding UP194. Neither observation is UP194 compiled-package
+or graphical acceptance; the launcher snapshot remains unchanged.
+Next missing candidate is UP195/UP129 Legendary Reputation. Its production
+forecast/join/state seams are mapped; the monthly quota boundary after refusal
+or zero admission awaits the user's answer. Do not replace mercenary-provenance
+or other already recorded blockers with speculative gameplay decisions.
+
 2026-10-04 UP194 Forgetfulness and Chaos Mindbreaker are source/native accepted.
 Client retry5595 and test retry49144 build; final focused native retry2 passes
 24/24 across seven suites in5.855s with zero skips. Data/inventory19/19,

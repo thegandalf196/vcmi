@@ -9,6 +9,25 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-195 — Diplomacy Legendary Reputation
+
+Status: Bounded preparation; monthly-use boundary clarification pending,
+2026-10-04. Consolidated with UP129's remaining Expert perk. Canonical4555
+requires the first eligible neutral stack qualifying through Diplomacy each
+calendar month to join without Gold. The existing deterministic forecast,
+qualification, accepted-join and replicated Diplomacy state paths are mapped;
+the registry remains planned. Add saved per-hero monthly provenance without
+polling, a shared free-price forecast and revalidation, and minimum AI admission
+support. Root owns architecture/version/config/build/Git; use isolated native
+fixtures. Required evidence: legal Expert offer, actual free recruitment,
+ordinary thresholds/ineligible guards, subsequent paid join, next-month reset,
+save/wire sanity and AI acceptance. Do not substitute authored-free exceptions
+for the perk or bypass Leadership admission.
+Asked whether refusal or accepted zero admission retains the monthly benefit
+until positive recruitment, versus consuming on the first qualifying offer.
+Do not silently decide that quota boundary or activate/count the perk before
+the answer and focused gates. No new production edits or playable promotion.
+
 ## UP-194 — Chaos Mindbreaker
 
 Status: Verified (delivery pending), 2026-10-04. UP194 implements and accepts
