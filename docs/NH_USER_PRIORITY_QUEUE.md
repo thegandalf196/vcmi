@@ -9,7 +9,40 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-222 — Archery Skill specialty core-effect conversion
+
+Status: Verified (delivery pending), 2026-10-04. Both-target build46837 passes.
+Native35240 passes12/12 in6.231s, zero skips (UP222-archery-native.log/XML),
+including two compact Orrin/older-rule cases and adjacent Armorer, Logistics
+and parser controls. Real ranks, shared forecasts/accepted shot, independent
+OTHER and Target Caller contributions, unchanged melee, growth, saved marker
+and rank removal pass. Twenty magic-policy and12 hero-data checks plus module
+drift pass. Production review has no blocker. Review's proposed Focus Fire
+helper assertion change was rejected from source evidence: the helper returns
+base5; Target Caller adds5 separately to the payload. Broader modifier/AI
+composition and seeded initial-XP sampling remain Phase2. No GUI or promotion.
+
+Canonical Skill specialty core-only20% applies
+to Orrin's core:archery alias. Core physical ranged damage10/20/30% becomes
+12/24/36%, as does the independent NH Archery Attack-growth chance. Preserve
+other ranged bonuses, Archery perks, melee damage, old supported lists and
+unmarked heroes. Reuse saved exact alias markers/producer suppression; no new
+save fields, polling or prototype mutation. Add a hero-aware shared core helper
+to the existing callback payload, retaining its rank overload for old callers.
+
+Independent bounded production and test ownership. Root owns module generation,
+registration, serialized12-job builds, docs and Git; Astra reviews. Acceptance:
+actual Orrin ranks versus ordinary control, forecast/accepted ranged attack,
+independent perks/other bonuses and melee unchanged, growth timing, rank removal,
+save/load and older-list/marker guards. Starting-skill migration may replace
+Orrin's Archery slot; grant the active Skill explicitly in fixtures, not an
+arbitrary authored hero-profile change. No coverage credit before execution.
+
 ## UP-221 — Offense Skill specialty core-effect conversion
+
+Source b32d1f5355c1a201de4ce4b38dec1b7f7b75d7c4 is committed/pushed and
+remote-verified with required author/committer; worktree clean at checkpoint.
+Windows37227083002 remains confirmed live on af17030fc and excludes UP221.
 
 Status: Verified (delivery pending), 2026-10-04. Client80060 and both-target
 repair builds22982/50115 succeed. Final native91027 passes15/15 in7.752s,
@@ -106,6 +139,27 @@ Final native acceptance is recorded above; playable acceptance remains pending.
 
 ## UP-220 — Canonical spell roster versus legacy acquisition and starting grants
 
+Remainder slice accepted: build7593 succeeds after fixture-only unique_ptr
+repairs to first build95706. Native55749 passes19/19 in2.067s, zero skips,
+UP220-remainder-native.log/XML: all35 guild/House/world/known-book access
+guards,13 actual starters including all seven Shield heroes, authorized
+rejection without spend, actual Ogre Mage/Master Genie/Storm Elemental effects,
+old Stone Skin/Shield saved-game restoration, schema/version and supported-list
+controls. Twenty offline magic/schema checks and twelve hero-data checks pass;
+module drift and independent review pass. Haste and authored replacement
+profiles remain incomplete, so UP220 is not closed. Phase2: random Genie spell
+selection itself, broader teacher/source interactions and rendered acceptance.
+No game launch or playable snapshot promotion.
+
+Current remainder slice,2026-10-04: implement heroAccess:false and
+ordinaryAcquisition:false for all29 audited default-access legacy rows besides
+Haste, not merely Shield/Air Shield. The prior six exclusions remain unchanged;
+all35 underlying world effects remain active. Expand the existing focused
+guild/House/default-book/source/save fixture; seven actual Shield starters and
+actual creature Shield/Air Shield/Conflux Protection casts must pass. No guessed
+replacement spells/specialties. Separate Luna data/native fixture ownership;
+root generation/build/Git and independent review. No acceptance credit yet.
+
 Source af17030fc43b89059ebddca3f708519760fa1187 is committed/pushed and
 remote-verified; the worktree was clean before this continuation. Full Windows
 37227083002 is confirmed in progress on that exact source, including UP219 and
@@ -113,7 +167,8 @@ the UP220 six-row slice. Preserve this job; no duplicate dispatch or success
 claim. Older Windows37221556231 completed successfully on dbd5c7da1 and does
 not cover these newer changes. No launcher promotion.
 
-Status: In progress (six-row access slice verified),2026-10-04. Client78840,
+Status: In progress (35-row access cleanup verified; design/profile gaps remain).
+Historical six-row checkpoint,2026-10-04: Client78840,
 native build50252 and bounded fixture-repair25274 succeed. Native18192 passes
 18/18 in2.044s, zero skips, UP220-hero-spell-access-native.log/XML. Actual
 Castle guild/Conflux House stock, six real default hero books, explicit-book/
@@ -182,9 +237,10 @@ mitigation references, not authored hero-spell entries; the earlier Shield of
 Faith summary is superseded by detailed Holy Armor. Master Genie random buffs
 still consume both effects, so the next bounded UP220 slice should disable
 heroAccess/ordinaryAcquisition only, retaining active world membership.
-Piquedram, Neela, Theodorus, Styg, Galthran, Nimbus and Jaegar currently start
-with Shield and require authored profile replacements separately. This is audit
-evidence, not implemented access exclusion or native acceptance yet.
+Piquedram, Neela, Theodorus, Styg, Galthran, Nimbus and Jaegar had authored
+Shield starts and require profile replacements separately. This historical audit
+is now followed by the access-exclusion/native acceptance above; replacements
+remain unimplemented.
 
 Full row audit additionally identifies default-access legacy identities absent
 from the detailed roster: airElemental, antiMagic, blind, counterstrike,

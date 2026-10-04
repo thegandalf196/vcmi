@@ -1,5 +1,13 @@
 # New Horizons implementation sprints
 
+2026-10-04 checkpoint: UP222 Archery source/native accepted. Both-target46837
+and native35240 pass (12/12, zero skips,6.231s); UP220 remainder29 access
+exclusions remain accepted separately. Module drift/20 magic/12 hero-data gates
+pass. Commit/push this coherent batch, then implement the mapped Estates
+specialty for Lord Haart. Existing Windows37227083002 is still live on older
+af17030fc, excluding this batch; no duplicate dispatch or Linux promotion.
+Phase2 retains broad modifier/AI interactions and authored legacy profile gaps.
+
 ## Purpose and authority
 
 This is the durable execution register for completing New Horizons. It answers:
@@ -17,6 +25,20 @@ the broad requirement inventory; this file turns that inventory into an ordered
 working sequence.
 
 ## Maintenance contract
+
+UP220 remainder accepted:29 further audited rows excluded only from hero access
+and ordinary acquisition,35 total. Build7593 and native55749 pass19/19 in2.067s,
+zero skips, covering real stocks/13 starters, known-spell sources, authorized
+rejection, actual creature effects and old-save restoration.20 offline magic/
+schema and12 hero-data checks pass; module drift/review pass. First fixture
+compile failures are retained. Haste and authored replacements remain open;
+random Genie selection/broader interactions remain Phase2. No playable delivery.
+
+Current independent slice UP222: Orrin Archery core damage/growth12/24/36,
+with unrelated bonuses/perks and melee unchanged. Production is frozen and
+independently reviewed without a blocker; focused native fixture is pending.
+Shared hero-aware core helper feeds live/forecast/AI callback payloads, exact
+saved markers preserve prior supported lists. No coverage credit yet.
 
 Completed bounded slice UP221: Crag Hack/Gundula Offense specialties,
 core melee physical damage and Attack-growth chances 12/24/36 rather than
