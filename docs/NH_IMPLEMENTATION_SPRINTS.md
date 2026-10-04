@@ -18,6 +18,13 @@ working sequence.
 
 ## Maintenance contract
 
+UP196 Resource Broker is committed/pushed as
+`d4e0e996a711c4d7be8544f0687b0c70c9057518`. Notice preflight `37182430857`
+was dispatched once and confirmed queued on that exact source. Retain that
+handle before dispatching a full build. Mindbreaker full Windows `37180938926`
+remains confirmed in_progress on `1d3a80185`, excluding Resource Broker.
+No source/native acceptance is promoted into graphical or playable delivery.
+
 2026-10-04 UP196 Resource Broker source/native accepted. Client retry94429,
 baseline vcmitest13751 and both-target fixture retry38283 exit0. Native64173
 passes7/7 across two suites in1.373s, zero skips: legal Advanced offer, exact
