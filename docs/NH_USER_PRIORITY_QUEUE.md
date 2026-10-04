@@ -55,6 +55,11 @@ transparent candidate was generated using the Heroes III art workflow and
 exported locally at44/32 under ignored output/homm3/holy-wrath-scroll-v1;
 user visual acceptance is required before live import or26-file expansion.
 No candidate import or original parchment pixels are committed/distributed.
+One permitted correction is retained at output/homm3/holy-wrath-scroll-v2.
+Independent local QA confirms44px has no hard beam clipping or opaque square;
+32px skull identity remains weak and its glow nearly touches the edge. The
+44px private parchment comparison is ready for user review, not approved art.
+Do not regenerate further or expand/import the family without that review.
 
 Diagnosis,2026-10-04: SPELLSCR contains complete83x61 parchment+emblem
 frames for original spells, while several NH iconScroll bindings provide only
