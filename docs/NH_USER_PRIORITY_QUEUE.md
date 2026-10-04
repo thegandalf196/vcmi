@@ -9,6 +9,42 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-227 — Conflux Vault of Ashes growth
+
+Status: Verified (delivery pending),2026-10-04. Repaired both-target84391
+passes with12 jobs; native97534 passes3/3 in2.695s, zero skips, including
+Garden/independent-row controls and new Vault construction, weekly stock,
+Fire/Energy upgrade, shared AI growth estimates and current save restoration.
+Evidence: UP227-vault-build-repaired.log and UP227-vault-native.log/XML.
+Five offline Conflux guards and generated-module drift pass; independent Astra
+review finds no blocker. No spell/rank/perk identity count changes. Dedicated
+Vault art is Not done; related native Fire-dwelling hall reference is provisional
+and not rendered acceptance. No GUI, launcher promotion or playable claim.
+Phase2 retains old saved category snapshots without the Fire override, actual
+strategic AI building choice and wider town/bonus composition. Older snapshots
+keep their captured growth rules; no silent migration is claimed. Source changes
+add the canonical Fire/Energy base4 line as well as its Horde2 addition2.
+
+Preparation: UP211 identifies Vault of Ashes as
+missing; canonical Experimental Values specify+2 Fire Elemental growth/week.
+Audit existing building binding, growth producer/row, construction requirements,
+weekly stock and shared AI forecast. Reuse existing town/growth machinery and
+external original assets by reference, not a new growth poller or new artwork.
+Preserve Garden's independent Pixie/Sprite lines and old-row rejection contract.
+Root owns interpretation, integration/build/Git. Require actual construction,
+correct Fire Elemental-only growth/weekly stock, inactive/unbuilt controls and
+minimum shared AI/save evidence before acceptance. Mapping adds no coverage.
+Map accepted and bounded implementation assigned: standard Horde2 id24 targets
+row3, saved Fire/Energy growth-line hordeGrowthOverride2 supplies both forms,
+without an additional growth bonus. Ordinary Fire/Energy upgrade-line behavior
+is retained; other creature rows are unaffected. Require Fire dwelling; prototype
+cost1000 Gold/5 Ore is a Phase1 balance parameter, not a canonical amendment.
+Add a fourth independent unique-building hall card. Root owns original-asset
+reference binding and its honest Not-done status; no bespoke art is generated.
+Separate Luna production/data and existing Conflux fixture writers; no new
+save fields, polling or C++ growth mechanism. Older category snapshots lacking
+the new override need an explicit compatibility finding, not blanket save credit.
+
 ## UP-226 — Bloodrage Avatar of Rage
 
 Selection correction2026-10-04: existing UP145 already maps Avatar and records

@@ -1,5 +1,14 @@
 # New Horizons implementation sprints
 
+UP227 source/native accepted2026-10-04: Vault of Ashes construction and Fire/
+Energy weekly growth now use the standard Horde2 path. Both-target84391 passes;
+native97534 passes3/3 in2.695s, zero skips. Five data guards/module drift and
+independent review pass. Commit/push this slice. Dedicated art/rendered delivery,
+older category snapshots and strategic AI choice remain separate. Avatar is
+still awaiting its existing Blood Scent clarification, not an unblocked task.
+Phase1 continues with another unblocked missing specification item; no broad
+integration suite or GUI promotion is needed for this source checkpoint.
+
 UP224 Resurrection specialty accepted2026-10-04: client51670 and both-target
 5985 pass; native49136 passes12/12 in6.477s, zero skips. Alamar/Jeddite component
 conversion preserves fixed100 and historical Cure-only producers. Commit/push
