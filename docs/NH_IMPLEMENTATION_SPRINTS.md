@@ -18,6 +18,26 @@ working sequence.
 
 ## Maintenance contract
 
+Completed bounded slice UP221: Crag Hack/Gundula Offense specialties,
+core melee physical damage and Attack-growth chances 12/24/36 rather than
+10/20/30. Actual source-stamped contribution must be isolated from unrelated
+bonuses/perks; shared damage forecasts and live resolution must agree. Separate
+Luna production/test ownership and Astra review. Client80060, repair builds
+22982/50115 succeed; final native91027 passes15/15 in7.752s, zero skips.
+Real aliases/ranks, forecasts/live hits, source-removal projection, independent
+bonuses/perk, initial-XP sampler, save/load, rank removal and older lists pass.
+Module drift/twelve hero-data checks pass. Compile/oracle fixture failures are
+retained; no graphical/playable delivery. Whole Skill-specialty family remains
+partial. Phase2 retains future magical-melee semantics and broader compositions.
+UP220's full legacy-row audit is persisted in the queue; next implement Shield/
+Air Shield hero-only exclusion with actual starter/creature controls, then the
+remaining mapped absent-roster rows. Leave ambiguous Haste unchanged.
+
+Full Windows37227083002 is confirmed live on
+af17030fc43b89059ebddca3f708519760fa1187, covering UP219 and UP220's six-row
+access slice. Previous Windows37221556231 completed successfully on dbd5c7da1.
+No duplicate build or launcher promotion; newer source acceptance is pending.
+
 UP220 bounded access slice source/native accepted: builds78840/50252/25274
 succeed and native18192 passes18/18 in2.044s with zero skips. Module drift,
 19 offline magic/schema and12 hero-data checks pass. Actual acquisition/start

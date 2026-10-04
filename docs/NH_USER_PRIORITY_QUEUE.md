@@ -9,12 +9,55 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-221 — Offense Skill specialty core-effect conversion
+
+Status: Verified (delivery pending), 2026-10-04. Client80060 and both-target
+repair builds22982/50115 succeed. Final native91027 passes15/15 in7.752s,
+zero skips, UP221-offense-specialty-final.log/XML. Both real aliases/ranks,
+exact source values, shared forecasts and accepted attacks, unchanged ranged/
+OTHER/Executioner contributions, projected core removal, initial-XP sampler,
+rank removal, save/load and old supported-rule lists pass alongside Armorer,
+Logistics and growth controls. Module drift and twelve hero-data checks pass;
+Astra finds no production blocker. First compile/native failures are retained
+in NH_RELEASE_FAILURES.md. Source/native acceptance is not playable promotion
+or graphical acceptance. Archery and Estates specialties remain missing.
+
+Canonical Skill specialties strengthen only
+core numerical effects by 20%. Convert the surviving Crag Hack/Gundula
+core:offence aliases: melee physical contribution 10/20/30% becomes
+12/24/36%, as does the independent Attack-growth chance. Preserve perks,
+unrelated damage bonuses, ranged attacks, old unmarked heroes, shared prototypes
+and old saved supported-Skill lists. Reuse exact producer markers and saved
+rules; install fresh markers before initial XP growth. No new polling/save field.
+
+Independent Luna production/native-fixture ownership; root owns registration,
+generated module, serialized twelve-job build and Git; Astra reviews material
+correctness. Acceptance requires real aliases/ranks, forecast and accepted melee
+attack, ranged/unrelated controls, growth sampling timing, rank removal and
+save/load/legacy guards. Source changes alone do not close this item.
+
+UP220's read-only remaining-roster audit is persisted below, including the
+reported Shield. Haste and authored replacement profiles remain unresolved;
+no speculative spell replacement is authorized.
+
+Frozen UP221 production uses exact per-instance NH Offense rank-bonus clones;
+no new damage payload or Lua multiplier. Rank changes rebuild from prototypes,
+so scaling does not compound and projected bonus removal cannot be reconstructed
+from hero rank. Client80060 succeeds; module drift and twelve hero-data checks
+pass. Astra finds no blocking production issue. Native acceptance is recorded
+above; the earlier pending gate is resolved. Phase2: the existing Lua factor
+has no explicit physical-only check;
+current magical attack paths use the untouched ranged subtype, but future
+magical-melee support must revisit this boundary. Coverage credit is limited
+to this Offense specialty slice, not the whole Skill-specialty family.
+
 ## UP-219 — Armorer Skill specialty core-effect conversion
 
 Source2ec433cb23c08ea273defbeaefd4f2dc76c7dd04 is committed/pushed and
 remote-verified with required author/committer. The worktree was clean at this
 checkpoint; local build/native/push handles are terminal. Windows37221556231
-remains confirmed live on the earlierdbd5c7da1 source and excludes UP219.
+completed successfully on the earlier dbd5c7da1 source and excludes UP219.
+The newer full Windows37227083002 is live on af17030fc and includes UP219.
 
 Status: Verified (delivery pending),2026-10-04. Both-target21618 and bounded
 fixture-repair build2116 succeed. Final native12882 passes13/13 in6.135s,
@@ -62,6 +105,13 @@ and captures the specialty-adjusted chance at the actual sampling boundary.
 Final native acceptance is recorded above; playable acceptance remains pending.
 
 ## UP-220 — Canonical spell roster versus legacy acquisition and starting grants
+
+Source af17030fc43b89059ebddca3f708519760fa1187 is committed/pushed and
+remote-verified; the worktree was clean before this continuation. Full Windows
+37227083002 is confirmed in progress on that exact source, including UP219 and
+the UP220 six-row slice. Preserve this job; no duplicate dispatch or success
+claim. Older Windows37221556231 completed successfully on dbd5c7da1 and does
+not cover these newer changes. No launcher promotion.
 
 Status: In progress (six-row access slice verified),2026-10-04. Client78840,
 native build50252 and bounded fixture-repair25274 succeed. Native18192 passes
@@ -125,6 +175,30 @@ helpers strip the new v3-only field before their existing compatibility checks;
 production validation still rejects the field in old formats. Windows37221556231
 is terminal SUCCESS ondbd5c7da1, including UP217/UP218 but excluding UP219/UP220.
 Do not restart that completed job or claim it covers these newer sources.
+
+Additional read-only audit confirms core:shield and core:airShield are absent
+from the controlling detailed spell roster. Original Shield/Air Shield are
+mitigation references, not authored hero-spell entries; the earlier Shield of
+Faith summary is superseded by detailed Holy Armor. Master Genie random buffs
+still consume both effects, so the next bounded UP220 slice should disable
+heroAccess/ordinaryAcquisition only, retaining active world membership.
+Piquedram, Neela, Theodorus, Styg, Galthran, Nimbus and Jaegar currently start
+with Shield and require authored profile replacements separately. This is audit
+evidence, not implemented access exclusion or native acceptance yet.
+
+Full row audit additionally identifies default-access legacy identities absent
+from the detailed roster: airElemental, antiMagic, blind, counterstrike,
+deathRipple, destroyUndead, disguise, earthElemental, fireElemental, fireShield,
+forceField, fortune, frenzy, hypnotize, magicMirror, mirth, protectAir,
+protectEarth, protectFire, protectWater, removeObstacle, sacrifice, scuttleBoat,
+viewAir, viewEarth, visions and waterElemental, plus ambiguous Haste. Retain
+world effects for random creature buffs and all four direct Conflux Protection
+casts. Further displaced starter profiles include Axsis/Sephinroth/Nagash/
+Aeris/Oris (Protect Air), Verdish (Protect Fire), Melodia/Daremyth (Fortune),
+Septienna (Death Ripple), Astral (Hypnotize), Ayden (View Earth). Resolve hero
+access with the shared permission, not deletion of definitions; no aliasing these
+rows to missing canonical spells. Haste remains unchanged pending clarification.
+This list is an audit result, not a completed implementation count.
 
 Remaining authored specialty gaps observed by the fixture worker include
 Merist/Labetha (Stone Skin), Inteus (Bloodlust), Loynis (Prayer), Zubin
