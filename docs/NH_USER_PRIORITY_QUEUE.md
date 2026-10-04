@@ -9,7 +9,29 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-207 — Mana-regeneration artifact conversion
+
+Status: Read-only map complete; stacking clarification pending, 2026-10-04.
+Canonical tiers replace Charm/Talisman/Mystic Orb's old daily1/2/3 with
+max(5,5% maximum)/max(10,10%)/max(15,15%) recovery. No NH overlay or native
+coverage exists. The shared manaRegain currently takes one maximum across
+aggregated flat and percentage bonuses, not the sum of independent per-item
+maxima. Ask whether the intended contributions are independently additive or
+aggregate-before-max; do not silently substitute the easier existing aggregate
+semantics. Wizard's Well is a separate legacy100% Normal-refill descriptor,
+not one of these explicitly converted numerical tiers. Preserve that scope
+unless separately amended. Ordinary NewTurn restores Normal only, caps capacity
+and preserves Buffer; AI already recognizes both regeneration bonus families.
+No new updater or recurring scan is necessary. Read-only mapping adds no
+coverage. While the question is pending, continue another unblocked item;
+Rapid Embarkation remains a missing mapped-neighborhood Logistics candidate.
+
 ## UP-206 — Speed artifacts also increase explicit Initiative
+
+Committed/pushed a8e8c4a55b66b1f95e233a6e5f085bc1e70047eb with UP205.
+Windows notice-only37196269759 is queued on that exact source; it does not
+compile a playable package. Full37194377145 remains live on cd416f22e72591f8132dc990dbf4067fb1b329f3
+and excludes UP205/UP206. Preserve these handles; no duplicate full dispatch.
 
 Status: Verified (delivery pending), 2026-10-04. Both-target retry68082 passes;
 native26470 passes6/6 in3.290s, zero skips, including Master Logistician and
@@ -35,6 +57,9 @@ Speed/Initiative results for explicit and fallback creatures and detached AI
 projection. Source/native acceptance is separate from playable delivery.
 
 ## UP-205 — Master Logistician daily unused-Movement carry
+
+Committed/pushed in the same a8e8c4a55b66b1f95e233a6e5f085bc1e70047eb checkpoint.
+Notice-only37196269759 is queued; full37194377145 predates this source.
 
 Status: Verified (delivery pending), 2026-10-04. Both-target retry68082 passes;
 native26470 passes6/6 in3.290s, zero skips, including adjacent Stables and

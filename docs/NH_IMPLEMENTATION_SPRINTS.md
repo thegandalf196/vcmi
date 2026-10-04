@@ -18,6 +18,16 @@ working sequence.
 
 ## Maintenance contract
 
+UP205/UP206 committed/pushed a8e8c4a55b66b1f95e233a6e5f085bc1e70047eb; tracked
+tree clean before these delivery notes. Notice-only37196269759 is queued on
+that source. Full37194377145 remains in_progress on cd416f22e, excluding this
+slice; no duplicate full dispatch or playable promotion. UP207 mana-artifact
+map identifies a real per-item-versus-aggregate maximum boundary; clarification
+is requested and queued, not silently defaulted. Wizard's Well is outside the
+explicit old1/2/3 conversion. Next unblocked candidate: missing Logistics Rapid
+Embarkation, mapping the existing shared boarding-cost path and actual AI use.
+The Phase1 goal remains active;96 perks and six combat identities remain planned.
+
 UP205/UP206 accepted source/native2026-10-04. Both-target retry68082 succeeds;
 native26470 passes6/6 in3.290s, zero skips, UP205-UP206-focused.log/XML. Master
 Logistician has actual legal progression/day/boat/pathfinder/Stables/save and
