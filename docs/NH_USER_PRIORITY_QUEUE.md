@@ -6638,6 +6638,18 @@ Windows graphical acceptance or Linux launcher promotion.
 
 ## UP-056 — Complete canonical Adventure Spell effects
 
+2026-10-04 accepted required DD warning hook: generic default-empty effect hint
+is NH-only; client localizes/caches it at selection entry, writes while hovering,
+and clearIfMatching-clears on both submission and cancellation. Dedicated
+Adventure text map is merged by generator/CMake. Build1721 passes both targets;
+native38925 passes13/13 in3.979s, zero skips (UP056-dimension-door-hint-focused.log/XML).
+Two focused translation union/private-preview checks, manual source guard and
+module/diff gates pass. Independent Luna UI/data review finds no blocker.
+Rendered statusbar fit and actual input/cancellation remain unverified; no
+new art, full-DD identity or playable promotion. Barriers and other Adventure
+questions remain Phase1. Stale mastery fixture version and CMake wiring of the
+manual guard are recorded Phase2 findings, not reasons to discard the hook.
+
 2026-10-03 next bounded slice: establish Water Walk's end-day legal-land
 requirement across shared pathing, authoritative movement/turn completion and
 AI. Runtime and test owners map these narrow seams read-only before selecting
@@ -6655,9 +6667,8 @@ target within radius8 using the existing rounded DIST_2D tile-range convention,
 and full remaining-Movement expenditure on successful casts. Share source-origin
 targeting and caster-aware expenditure with live/UI and planned AI positions.
 Preserve legacy configuration and other spells; protected-barrier enforcement
-and the canonical casting-ends-Movement warning remain unimplemented and
-prevent full-spell acceptance. These are Phase 1 requirements, not deferred
-polish. Bounded runtime, AI
+remains unimplemented and prevents full-spell acceptance. The required warning
+hook is accepted above, with rendered evidence still pending. Bounded runtime, AI
 and focused-test ownership precedes implementation; no count increase yet.
 Bounded DD source/native acceptance: client retry55650 and combined retry22130
 build successfully after retaining initial AI scope/header failures. Native43587
@@ -6670,6 +6681,12 @@ reviewer spawn is service-rejected at the thread limit, not silently claimed.
 Module/diff gates pass. This closes only those explicit source/native clauses;
 barriers and the required warning remain open. No full-spell count, GUI or
 playable promotion. Next unblocked DD clause is the ends-Movement warning.
+Checkpoint committed/pushed ae32ac3c4; its notice-only preflight37172296610 is
+in progress, not a compiled package. Map the smallest native status-bar hint
+capability next; no new dialog/art, casting confirmation or gameplay semantics.
+Acceptance requires a localized NH-only warning during destination selection,
+ordinary cancellation/exit clearing, preserved legacy behavior, focused wiring
+and effect-policy checks, successful build. Rendered evidence stays separate.
 Water Walk map complete: moveHero accepts a water step spending all remaining
 Movement; the per-player timer endTurnAllowed flag only reflects the last moved
 hero, resets at turn start and does not gate explicit EndTurn. A different hero's
