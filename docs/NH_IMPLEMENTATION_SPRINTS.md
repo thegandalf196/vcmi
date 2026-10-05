@@ -1,5 +1,20 @@
 # New Horizons implementation sprints
 
+Phase1 checkpoint2026-10-05: Pre-emptive Strike's independent authoritative
+reaction and detached AI path are accepted. Separate per-stack round stamp,
+exact50% pre-hit, retained normal retaliation, same-round re-Defend suppression,
+next-round eligibility, legal melee and disabled-state rules are implemented.
+Both-target67320 and fixture-only4257 pass with12 jobs; focused99767 passes
+22/22 in6.291s, zero skips, including seven new cases. Initial24408 passes17/22
+with fixture Tactics/adjacent-attack setup failures retained and repaired; do not
+call it green. Data/inventory19/19, module drift and independent review pass.
+Coverage225/310 perks (154/220 generic), Battlecraft7/10; faction71/90 and combat
+61/67 unchanged. Bulwark composition, comparative Defend value and complete
+midbattle world saves remain Phase2. No GUI or playable snapshot promotion.
+Metamagic/Gating source-consumer audits correct stale labels without count credit.
+Next missing candidate UP156 first-action Mastery is mapped; its unanswered
+War Machine consumption question has been resurfaced, not silently resolved.
+
 Delivery checkpoint2026-10-05: source3ee74704f6721dc5d7853b592d2ef98babcf9068
 is committed/pushed, required author/committer and remote verified. Existing
 full37308848380 started, so root dispatches latest full once:37318395313 is

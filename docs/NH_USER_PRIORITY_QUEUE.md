@@ -4610,6 +4610,61 @@ source213b4a35e. New full37091363403 is queued on213b4a35e, excluding UP160.
 
 ## UP-157 — Battlecraft Pre-emptive Strike
 
+Status: Verified source/native (delivery pending),2026-10-05. Both-target67320
+and fixture-only4257 are terminal PASS. Repaired focused99767 passes22/22 in
+6.291s, zero skips: seven new authoritative/state/AI cases plus adjacent base
+Battlecraft, stance lifetime and independent Bulwark controls. Evidence:
+UP157-preemptive-build.log, UP157-preemptive-build-repaired.log and
+UP157-preemptive-native-repaired.log/XML. Initial17/22 logs remain preserved;
+fixture setup repairs do not weaken production rules. Registration/inventory
+19/19, generated-module drift and independent Astra reviews pass. Coverage
+224->225/310 (generic154/220), Battlecraft7/10; faction71/90 and combat61/67
+unchanged. Perk-specific art remains Not done; rendered/playable acceptance,
+Bulwark overlap and full ongoing-battle world-save support remain separate.
+No GUI launch, pointer automation or Linux snapshot promotion.
+
+Initial validation2026-10-05: both-target67320 exits0 (732 build steps).
+Focused native24408 passes17/22 in6.333s, zero skips. Four new fixture failures
+occur at accepted end-Tactics/Defend setup with Tactics selected as their legal
+Basic prerequisite; the AI case permits an adjacent melee despite zero Movement
+and correctly selects it. Assigned fixture writer repairs only these setups,
+using a nondeployment Basic prerequisite and a distant non-overkill melee threat.
+Retain UP157-preemptive-native.log/XML; do not relax production validation or
+credit coverage before the principal tests pass. The build handle is terminal,
+not a reason to restart a live process. No GUI or snapshot promotion.
+
+Frozen-source validation checkpoint2026-10-05: independent Astra production
+and fixture reviews report no remaining blocker after the documented repairs.
+Five new authoritative/state tests and two detached-AI tests are registered.
+Fresh-stack controls independently prove eligibility before Time Stop/NOT_ACTIVE
+suppression; normal retaliation remains separately asserted. One serialized
+both-target build67320 is live with12 jobs, log
+build/new-horizons-linux/testing/UP157-preemptive-build.log. Re-poll this exact
+handle; no restart on an observation timeout. Native acceptance and counts await
+its terminal result and focused execution. Comparative AI Defend superiority,
+Bulwark composition and full midbattle world saves remain Phase2.
+
+Pre-build review checkpoint2026-10-05: production/state slices are frozen.
+Independent review repaired inverted hostile-owner eligibility and excluded
+disabled stacks via canMove(), which retains legal Defending stacks but rejects
+NOT_ACTIVE and Time Stop. Ordinary physical melee Magog remains eligible;
+synthetic pre-hit/Brace markers prevent recursion. AI forecast stops on a lethal
+pre-hit, retains the independent round stamp and values Defend separately from
+Bulwark. Registration/module plus inventory checks pass19/19; native fixtures
+are still being completed. No accepted-count increase, build or delivery claim.
+
+Implementation started2026-10-05 after verified/pushed Perfect Moment. Root
+rechecks clean worktree and canonical Advanced perk. Three disjoint Luna lanes
+own round-state/transport, authoritative pre-hit plus AI behavior, and focused
+new native/AI fixtures; independent Astra review shares the fourth worker slot.
+Round stamp expires by comparing battle round, not by clearing on another
+Defend. Reuse normal damage and pre-hit machinery; consume no retaliation,
+create no Hero Action or button, add no polling. Perk activation stays planned
+until all required source paths exist and principal build/execution gates pass.
+Bulwark's separate source remains untouched; overlap resolution is Phase2,
+not accepted by the independent-path test. Current Windows37318395313 is
+pending on3ee74704f;37308848380 compilesb8d243076. Preserve both handles.
+
 Reclassification2026-10-05: canonical independent trigger, damage and retaliation
 rules suffice to implement this perk. Earlier Bulwark overlap question is a
 Phase2 composition finding, not a blocker to the full independent principal
@@ -4645,6 +4700,15 @@ strikes or one strike at the higher percentage. Await that composition ruling
 before implementation; the Defend prerequisite remains unblocked.
 
 ## UP-156 — Battlecraft Battlefield Mastery
+
+Next-feature recheck2026-10-05 confirms the missing first-action award, not
+another base Wait/Defend lifetime repair. No production consumer for the planned
+Mastery ID exists. Existing shared rank damage/reduction and native Battlecraft
+fixtures provide the implementation seam. The previously unanswered War Machine
+consumption question is resurfaced while UP157 validates: should an ineligible
+machine consume the award, or reserve it for the first eligible ordinary stack?
+No answer or exception is inferred, and UP157's independent round marker must
+not be reused for Mastery's per-army award.
 
 Status: Bounded read-only preparation,2026-10-02. Implement the canonical
 Expert perk: the first friendly stack each round to Wait or Defend receives
@@ -12073,6 +12137,17 @@ entries are also priority work, ahead of the ordinary backlog. Dependencies
 may determine execution order; explicitly record any blocker or reprioritization.
 
 ## UP-003 — Revised Metamagic and Grand Metamagic
+
+Bounded source audit2026-10-05: all three ranks and ten active perks have
+principal consumers in HeroSpellAllowanceTransition, ISpellMechanics,
+BattleSpellMechanics, BaseMechanics, Focus Magic and GameStatePackVisitor.
+Existing focused fixtures cover follow-up payment/uses, school/target bonuses,
+duration, marks, closure restoration, Buffer expiry and automatic Grand
+continuation, with AI projection/submission consumers. No missing principal
+source clause was verified; retired Spell Echo/Countersequence are historical
+compatibility, not active perks. This audit did not rerun tests, build or promote
+a playable snapshot. Native/playable verification obligations remain separate;
+no new perk coverage credit is taken from correcting the stale audit marker.
 
 Status: Source implemented; native and playable verification pending.
 
