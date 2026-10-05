@@ -10688,6 +10688,22 @@ playable snapshot promotion.
 
 ### UP-023 — Complete all missing Skills, perks, and spells before further art
 
+Cyclops siege-AI principal acceptance2026-10-05: generic creature CATAPULT
+selection now routes both Cyclops forms through the existing legal action and
+wall-target policy. A useful hostile closed-gate breach may replace a useful
+ordinary action when separate allied ground troops need entry; WAIT remains
+untouched. Without breach need, valuable attacks remain ordinary; movement /
+defense may use a useful wall shot. Mandatory Orders, Hero Actions, Time Stop,
+Pursuit, ranged continuations and normal action bookkeeping retain priority.
+Both-target build92551 exits0. Native35852 passes6/6 in2.190s, zero skips:
+actual AI selection and authoritative gate damage/activation completion for
+Cyclops and King; ordinary-shot preservation; no-wall and WAIT guards; existing
+Hero Action controls. Independent Astra review has no blocking finding. Failed
+API, callback and WAIT-scenario gates are retained in the failure ledger/logs.
+Broader siege valuation and controller interactions remain Phase2 work. Counts
+stay224/310 perks and61/67 combat identities: this closes a minimum-AI path,
+not a new content identity. No Linux promotion or graphical acceptance claimed.
+
 Crown and Altar decision2026-10-05: user prefers the less-clicky alternative.
 Root selects the proposed automatic second-action redesign, with no pair-target
 preselection or additional button. Canonical row and planned registry now say:

@@ -1,12 +1,15 @@
 # New Horizons implementation sprints
 
-Next actual Phase1 implementation: Cyclops/Cyclops King minimum BattleAI
-wall-shot hook. Creature ability/data/human/server path exist, but activeStack
-only routes actual Catapult machines to CATAPULT. Generic legal ability plus
-useful hostile gate-breach policy is assigned separately from a real-siege
-AI/native fixture. Preserve Hero/typed action windows and ordinary attack
-choices; no stat/identity count. Crown and Altar's previously unrecorded first-
-effect/second-target timing choice is asked and persisted, not silently decided.
+Phase1 checkpoint2026-10-05: Cyclops/Cyclops King minimum BattleAI wall-shot
+hook accepted. Actual AI-selected gate shots for both forms resolve through
+authority; ordinary-shot/no-wall/WAIT and Hero Action controls pass. Both-target
+build92551 exits0; native35852 passes6/6 in2.190s, zero skips. No new content
+identity count. Broader siege valuation/controller matrix deferred to Phase2.
+Next mapped perk: Crown and Altar's automatic second-action bonus. User's
+less-clicky decision is canonical and pushed in15ff7c8c3; recipient qualification
+shares UP108's unanswered Shared Purpose decision. Do not activate before that
+answer or re-explore the documented state/targeting map. Continue another
+unblocked Version1.0 item while the question remains pending.
 
 Windows checkpoint2026-10-05: Frenzied37286838037 succeeded onf46e375ee,
 nonexpired game artifact11338641211 is802646349bytes. Last-stack37289192606
