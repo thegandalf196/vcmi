@@ -1522,6 +1522,26 @@ those boundaries. Fountain is independently unblocked and remains this slice.
 
 ## UP-200 — Fortress Glyphs of Fear siege Defense and local Morale
 
+Siege-clause acceptance2026-10-05: repaired both-target build55816 and final
+build exit0. Native88293 passes4/4 in1.466s, zero skips, including the3 real
+Glyphs construction/BattleStart cases and loaded machine HP. Defender-only
+20 Defense, unchanged raw creature Defense, field/unbuilt controls and
+accepted-result cleanup pass; offline data guard and Astra review pass.
+Evidence: UP200-machine-hp-final-build.log and final.log/XML. The adventure
+Morale aura remains blocked below; this is partial-building source/native
+acceptance, not complete building or rendered/playable delivery. No GUI/promotion.
+
+Independent siege-clause implementation2026-10-05: correct the explicitly
+authored defending-hero20 Defense through the existing defendingHeroBonuses
+path accepted by Blood Obelisk and Brimstone. Remove the old town2 Defense
+producer; no new engine state or scan is needed. This complete siege clause
+does not settle or replace the separate8-tile adventure Morale aura: distance
+and overlapping-Fortress behavior remain blocked below, so the building stays
+partially implemented. Require actual construction/BattleStart defender-only
+grant, unbuilt/field controls and accepted-result cleanup. Root owns integration,
+builds and module generation; a separate fixture worker owns only its new test.
+No full-building coverage credit or playable delivery from a data edit alone.
+
 Status: Read-only preparation during UP199 verification,2026-10-04.
 Canonical3305 requires the defending hero to gain20 Defense during a siege,
 and enemy heroes within8 adventure-map tiles to suffer1 Morale while in the
@@ -10701,6 +10721,25 @@ Source checkpoint `e6545354a` was pushed to `origin/definitive-mvp` on
 playable snapshot promotion.
 
 ### UP-023 — Complete all missing Skills, perks, and spells before further art
+
+War-machine durability acceptance2026-10-05: native before27834 proves four
+legacy values250/1000/75/100, then the bounded registered creature overlay
+corrects them to canonical300/500/250/250. Final88293 passes4/4 in1.466s,
+zero skips including adjacent Glyphs siege cases. Both targets build; exact
+offline HP/registration guard and Astra review pass. Loaded-definition coverage
+is4/4, not full Siege gameplay. Costs/abilities/outputs unchanged. Broader
+machine combat/save interactions remain Phase2; no graphical/playable promotion.
+Keep UP200-machine-hp-before.log/XML, final-build.log and final.log/XML.
+
+War-machine durability audit2026-10-05: canonical machine HP is Ballista300,
+Catapult500, First Aid Tent250 and Ammo Cart250. Existing NH output formulas
+and fortification structural HP do not set machine creature HP; the definitions
+still inherit legacy resource values. A separate focused fixture will compare
+actual loaded definitions (and battle unit HP where practical) without injected
+health overrides before correcting demonstrated mismatches through a bounded
+NH creature overlay. Preserve core assets, outputs, abilities and costs. Root
+owns registration/generation/builds and data integration; no family-wide Siege
+completion or playable delivery claim from the audit.
 
 Canonical growth acceptance2026-10-05: audit build67485 succeeds; before native
 fails on11 real values: Archer9->10, Monk3->4, Cavalier/Unicorn/Naga2->3,

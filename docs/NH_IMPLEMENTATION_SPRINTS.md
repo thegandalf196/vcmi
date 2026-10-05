@@ -1,5 +1,16 @@
 # New Horizons implementation sprints
 
+Phase1 checkpoint2026-10-05: Glyphs siege20 Defense and all four authored
+machine HP values accepted. Native88293 passes4/4 in1.466s, zero skips after
+the before gate proved legacy250/1000/75/100 HP. Both-target repaired/final
+builds pass; two exact offline guards and independent review pass. Glyphs
+area-Morale remains blocked, so do not mark the entire building complete.
+Machine battle/save compositions and played sieges remain Phase2; no new
+perk/spell identity count or playable promotion. Preserve Windows pending
+37302451874 on94147b24a and in-progress37295572917 onc675456fe, rechecked
+this cycle; no replacement dispatch. Next: select an unblocked missing
+specification clause from the queue rather than remapping unanswered choices.
+
 Phase1 checkpoint2026-10-05:11 actual weekly-growth data mismatches corrected
 through existing saved growth lines. Loaded lookup now matches64/64 authored
 roster rows, up from53/64, with checked upgraded forms. Both-target83259 passes;
