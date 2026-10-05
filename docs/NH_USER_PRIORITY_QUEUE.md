@@ -13084,7 +13084,27 @@ unrelated test run is insufficient. Existing GUI/input restrictions remain.
 
 ## UP-012 — Hero redesign workbook and biography rewrite
 
-Status: Implemented (native loading and playable verification pending). Originals
+Phase 1 resumption, 2026-10-05: the recorded native-loading gate is still
+unproven. Add bounded production-loader evidence for the 52 accepted biography
+overrides, the 92 inherited entries and map-authored biography precedence.
+Do not copy purchaser originals, rewrite prose, change hero mechanics or infer
+rendered acceptance. This closes an existing principal content-path gate rather
+than expanding an already adequately verified feature's integration matrix.
+
+Native-loading checkpoint, 2026-10-05: both Linux targets build with 12 jobs;
+the two registered native cases pass with zero skips. All 144 loaded hero
+identities resolve through production text APIs: 52 match the retained reviewed
+rewrites and New Horizons registration provenance, and 92 have no New Horizons
+biography override and resolve nonempty inherited text. A live hero's custom
+text identifier takes precedence. This verifies instance precedence, not H3M
+custom-biography parsing or rendered/editorial re-approval. Five focused Python
+guards and module drift pass; independent review has no remaining blocker.
+Initial fixture interface-access compile failure is repaired without changing
+the public API. Logs: `build/nh-up012-validation/build.log`,
+`build-repaired.log`, `native.log` and XML. No original prose is copied or printed,
+no hero mechanics change and no playable snapshot is promoted.
+
+Status: Verified (rendered/playable verification pending). Originals
 remain available for every entry that did not pass review.
 
 2026-09-27 selective-activation checkpoint: all 144 standard heroes were matched
