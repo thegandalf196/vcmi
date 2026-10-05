@@ -1,5 +1,28 @@
 # New Horizons implementation sprints
 
+Accepted2026-10-05: UP046 Primal Burst, Greater Essence and Elemental Ward.
+Repaired both-target build68374 passes; native92485 passes23/23 in6.366s, zero
+skips, plus17 data guards/module drift and independent review. Perks217/310,
+faction perks65/90, Rebirth3/10; ranks93/93 and combat61/67 unchanged. Retained
+failed fixture compiler logs and direct-type/include lessons are in the failure
+ledger. Wider Guardian/native-Rebirth survival and representative valuation
+accuracy remain Phase2. No GUI or playable promotion; remaining seven Rebirth
+perks are not implicitly enabled. Next mapped foundation is Swift Rebirth.
+Dispatch the full Windows build after pushing this checkpoint.
+
+In progress2026-10-05: UP046's next slice covers Primal Burst, Greater Essence
+and Elemental Ward. Primal Burst supplies the missing real Basic prerequisite
+for normal Advanced-perk selection; do not bypass tier requirements or activate
+a placeholder. Separate runtime/AI/helper ownership shares captured perk state,
+non-spell magical-ability damage reduction, adjacent current-owner targeting
+and exact HP arithmetic. Candidate data gates pass17/17; counts stay214/310
+until frozen builds and focused legitimate-acquisition/runtime/AI cases pass.
+First build64934 failed on a fixture SpellID enum wrapper and is retained in
+the failure ledger. Memory's Elemental Morale scope is asked; UP072's terrain
+gaps remain separate. No broad suites, GUI launch or playable promotion.
+Windows source-only preflight37259200414 succeeds on135725aa2; dispatch a full
+build after the next accepted source push so it includes the new checkpoint.
+
 Current2026-10-05: UP046 base ranks source/native accepted. Client8888 and final
 test build81405 pass; native64752 passes12/12 in3.755s with zero skips, including
 eight new runtime/AI cases and four adjacent controls.17 data checks/module

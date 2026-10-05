@@ -8988,6 +8988,54 @@ No GUI, snapshot or launcher-profile promotion.
 
 ## UP-046 — Elemental Rebirth foundational effects
 
+Three-perk acceptance2026-10-05: repaired full build68374 passes, and native92485
+passes23/23 in6.366s with zero skips (19 Rebirth cases and four adjacent controls).
+UP046-three-perks-build-repaired.log and UP046-three-perks-native.log/XML retain
+the evidence.17 data guards, module drift, diff checks and independent runtime/
+AI review pass. Primal Burst, Greater Essence and Elemental Ward now count as
+source/native verified:217/310 perks,65/90 faction perks, Rebirth3/10. The
+remaining seven perks, full combat save/resume and rendered/playable delivery
+remain open. No GUI or snapshot promotion. Historical candidate notes follow.
+
+Continuation2026-10-05: base feature135725aa2 is pushed; Mage Guild residual
+Arabic-name correction26bb4d5a5 is also pushed. Windows preflight37259200414
+is confirmed in progress on135725aa2 (dependency graph/source archive step);
+it is not a playable build. Next bounded slice implements Greater Essence and
+Elemental Ward with shared captured saved-perk decisions, authoritative unit
+bonuses and detached AI parity. Runtime/helper/native and AI/native ownership
+are separated. Keep both planned until focused build/native acceptance; no
+terrain choices, other eight perks, GUI launch or snapshot promotion inferred.
+Windows preflight37259200414 subsequently completed SUCCESS. Dispatch the full
+build at the next accepted pushed checkpoint, not an obsolete duplicate.
+Reachability finding: no active Basic Rebirth perk exists, so normal selection
+cannot yet reach the two Advanced perks. Do not bypass prerequisite validation.
+Elemental Memory's interaction with Elemental Morale immunity is now asked
+explicitly; terrain-dependent perks retain UP072's unmapped-terrain question.
+Primal Burst/Swift Rebirth are being checked for an unambiguous Basic prerequisite.
+Primal Burst is selected as the genuine Basic prerequisite: canonical taxonomy
+defines it as a non-spell magical ability. It consumes target magical damage
+reduction, not hostile-spell Resistance, Spell Lock or spell-specific immunity.
+Apply to unique adjacent current-allegiance enemies after exact Rebirth HP and
+Ward installation, through ordinary injury packs and shared detached damage.
+Provisional integer policy: floor reborn HP/10, divide that budget equally with
+integer floor per target; discard the remainder rather than unequal hits or
+minimum-one damage that creates energy. Numerical refinement remains Phase3.
+Candidate registry now marks exactly these three perks active, but coverage
+stays214/310 until legitimate Basic-to-Advanced acquisition and principal paths
+pass. First build64934 failed on a test enum's `.toSpell()` call; preserve
+UP046-perks-build.log, repair the fixture, then rebuild the frozen new slice.
+Runtime/helper and AI are now frozen. Core targets pass after the direct
+BonusList include repair; full client/native build66091 is running with12 jobs
+in UP046-three-perks-build.log. Independent final AI review finds no blocker:
+owned frozen pre-hit bonus inputs, batched damage before death reactions and
+new-record-only collateral valuation are retained. Allegiance is battleGetOwner
+on both units, not Puppet Master's action controller. Broader native-Rebirth/
+Guardian survival composition and representative valuation accuracy remain
+Phase2. Two pre-run fixture repairs preserve the intended oracle: aggregate HP
+is compared with count times per-creature maximum, and the split-Burst source
+has enough starting HP for both recipients to take positive post-MDR damage.
+No new native acceptance or coverage increase is inferred yet.
+
 Status: Base ranks source/native verified,2026-10-05; ten perks remain planned.
 Client8888 and final vcmitest81405 pass with12 jobs. Final native64752 passes
 12/12 in3.755s, zero skips: six authoritative rank/frozen-basis/exclusion/format
