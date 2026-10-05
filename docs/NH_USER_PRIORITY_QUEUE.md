@@ -10754,6 +10754,15 @@ playable snapshot promotion.
 
 ### UP-023 — Complete all missing Skills, perks, and spells before further art
 
+Source delivery2026-10-05: Perfect Moment correction3ee74704f6721dc5d7853b592d2ef98babcf9068
+committed/pushed with required author and committer; remote exact hash verified.
+After confirming37308848380 in_progress and no pending full build, dispatched
+exactly one full Windows candidate37318395313 on3ee74704f, confirmed pending.
+It includes tower258266904 and this correction; no package-success, rendered
+acceptance or Linux snapshot promotion yet. Preserve both live handles; do not
+dispatch a replacement while37318395313 remains pending. Next implementation
+is UP157, whose independent map is complete; no remapping required.
+
 Perfect Moment principal acceptance2026-10-05: client26695/native59248 both
 build successfully. Native22333 passes19/19 in4.540s, zero skips: automatic
 undeclared+5 attacks, +4 with chance-only Serendipity rejected, multi-shot first

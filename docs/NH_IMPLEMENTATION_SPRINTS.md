@@ -1,5 +1,11 @@
 # New Horizons implementation sprints
 
+Delivery checkpoint2026-10-05: source3ee74704f6721dc5d7853b592d2ef98babcf9068
+is committed/pushed, required author/committer and remote verified. Existing
+full37308848380 started, so root dispatches latest full once:37318395313 is
+confirmed pending on3ee74704f. Preserve both handles; no replacement dispatch
+while pending, no graphical acceptance or Linux snapshot promotion.
+
 Phase1 checkpoint2026-10-05: Perfect Moment now follows the canonical automatic
 first eligible primary attack at current Luck+5, rather than a manual declaration.
 Shared target-aware Luck excludes only Serendipity's chance-only+1, with no copied
