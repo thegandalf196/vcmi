@@ -1,5 +1,14 @@
 # New Horizons implementation sprints
 
+Delivery checkpoint2026-10-05: Pre-emptive Strike source2ffeaa1297ce5bef225c9eadcd0fb618007f4b36
+is committed/pushed with verified author/committer and exact remote hash.
+Windows37308848380 is terminal SUCCESS onb8d243076; nonexpired game artifact
+11352155062 is802672095bytes. Existing37318395313 started on3ee74704f, so root
+dispatches latest full once:37324887768 is confirmed pending on2ffeaa129.
+Preserve both handles; no replacement dispatch while pending, no graphical
+acceptance or Linux snapshot promotion. Accepted coverage225/310 perks and
+61/67 combat identities; next planned Mastery waits its recorded machine ruling.
+
 Phase1 checkpoint2026-10-05: Pre-emptive Strike's independent authoritative
 reaction and detached AI path are accepted. Separate per-stack round stamp,
 exact50% pre-hit, retained normal retaliation, same-round re-Defend suppression,

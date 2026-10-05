@@ -4610,6 +4610,16 @@ source213b4a35e. New full37091363403 is queued on213b4a35e, excluding UP160.
 
 ## UP-157 — Battlecraft Pre-emptive Strike
 
+Delivery checkpoint2026-10-05: source2ffeaa1297ce5bef225c9eadcd0fb618007f4b36
+is committed/pushed, required author/committer identity and exact remote hash
+verified. Worktree was clean. Previous full Windows37308848380 is terminal
+SUCCESS onb8d243076; nonexpired game artifact11352155062 is802672095bytes,
+excluding later tower/Perfect Moment/Pre-emptive Strike changes. Existing
+37318395313 started on3ee74704f, so root dispatched latest full exactly once:
+37324887768 is confirmed pending on2ffeaa129. Preserve both live handles;
+do not replace the pending run or equate it with playable acceptance. The Linux
+resolver remains unpromoted; source/native acceptance is not snapshot delivery.
+
 Status: Verified source/native (delivery pending),2026-10-05. Both-target67320
 and fixture-only4257 are terminal PASS. Repaired focused99767 passes22/22 in
 6.291s, zero skips: seven new authoritative/state/AI cases plus adjacent base
