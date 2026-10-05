@@ -87,6 +87,16 @@ faction-background or native-terrain change. Animated creature previews already
 use the supplied desert `NH_academy/ui/tpcastow.png` and `crbkgtow.png`; preserve
 those working assets. The handoff contains no replacement creature portraits.
 
+Asset-separation checkpoint: all fourteen Tower large portraits (TWCRPORT frames
+30–43) are opaque 58×64 images with no subject transparency or reusable background
+key. Preserve their subjects using explicit per-portrait mattes or reviewed authored
+replacements; do not remove snow by colour heuristics, which would damage pale
+creatures. CPRSMALL frames are already transparent 32×32 creature cutouts, so they
+require no snowy-background replacement. Root inspected extracted Gremlin and
+Gargoyle references at native size and nearest-neighbour enlargement. Private
+original-colour references stay in ignored `build/nh-up239-validation/`; no new
+portrait artwork or runtime replacement has been implemented yet.
+
 ## UP-235 — Academy art handoff integration
 
 Status: In progress, 2026-10-05. User supplied Drive file
