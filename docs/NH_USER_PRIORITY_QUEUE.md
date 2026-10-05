@@ -9,6 +9,60 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-237 — Academy Town Hall construction crash
+
+Status: Verified (delivery pending), 2026-10-05. User reports building Town Hall crashes the
+promoted Academy version `f32aad57c`. Latest client log confirms the server
+successfully applies BuildStructure and NewStructures; the client stops while
+loading the Academy small town icon during the update. Trace the crash/core and
+construction/render paths before selecting a correction. Do not launch GUI or
+use host input. Acceptance: evidence-backed cause, focused regression covering
+the failed path, build and corrected playable delivery. Preserve user saves and
+the prior snapshots; do not treat headless startup as construction acceptance.
+
+Diagnosis checkpoint: the simulation accepts the building, then the client town
+list requests the built-today icon. At UI scale greater than 1, the compositor's
+original DEF frames are eagerly scaled; scaled lookup follows Academy's faction
+animation aliases back into the same compositor before its cache entry exists.
+The kernel reports a runNetwork stack-overflow-shaped segfault and the client
+log repeatedly loads the normal icon. Raw DEF-frame locators now have a distinct
+cache identity and bypass scaled alias/HD substitution in both SDL backends.
+The Linux client build and focused route guard pass; independent review finds
+no blocking source defect. Actual dummy-display consumer regression passes 1/1
+with zero skips: all four built icons at scales 1–4, correct native dimensions,
+unchanged body outside the lower-right badge region and expected marker pixels.
+Root independently repeats the focused CTest successfully. The fixture builds
+with 12 jobs and never uses the host display/input. Full Town Hall click-through
+and aesthetic acceptance remain user playtest gates; playable delivery follows
+below. Crash logs/comparison references stay
+under ignored `build/nh-up237-validation/`, not in public source documentation.
+
+## UP-238 — Academy faction icons match native town icons
+
+Status: In progress, 2026-10-05. User reports Academy's faction-selection and adventure
+town-list icons differ too much from the other factions, with yellow instead of
+white lettering. After the UP-237 crash correction, inspect the actual native
+large/small icon framing, scale, composition and letter treatment; revise Academy
+icons to match those roles with white lettering. Use the HoMM3 art skill for any
+creative raster changes. Preserve authored-source provenance and the normal/built
+runtime marker distinction; do not copy original town scenes into the repository.
+Acceptance: native-size comparison across both roles and revised playable assets;
+do not infer visual acceptance from registration checks.
+
+Source checkpoint: original HoMM3-Art fort/village masters, exact prompts and
+reviewed exports are preserved in `assets/new-horizons/academy/icon-revisions/v2/`.
+Closer ivory architecture, teal roofs and stronger light/shadow separation replace
+the distant sandy views. Large exports remain 58×64; small exports remain 48×32
+with the native black one-pixel frame. All faction names now use white text;
+existing activated borders retain selection feedback. Four normal/built pairs
+are installed from the pinned revision; built fallbacks contain no original badge
+pixels. Native-size and nearest-neighbor comparisons were inspected. Six focused
+art checks, pinned importer `--check`, mechanical exporter `--check` and independent
+review pass. The original handoff is retained and reimport cannot revert v2.
+Play delivery is pending below; aesthetic approval remains a user playtest gate,
+not an inferred Final-art classification. Private native-reference sheets remain
+under ignored `build/nh-up238-validation/`.
+
 ## UP-235 — Academy art handoff integration
 
 Status: In progress, 2026-10-05. User supplied Drive file
