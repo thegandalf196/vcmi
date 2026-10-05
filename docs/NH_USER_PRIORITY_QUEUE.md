@@ -12,6 +12,9 @@ entries and their validation/delivery evidence.
 ## UP-229 — Required Movement UI breakdown
 
 Status: Verified (rendered/playable delivery pending), 2026-10-04.
+Source5b87014e9ee1fb223a9742e7e11a308ac3404ae0 is committed/pushed;
+remote hash and required author/committer identity verified. Phase1 remains
+active; next is UP108 Divine Mandate's now-unblocked rank foundation.
 Current gate: client43390 and both-target61049/26637 are terminal PASS.
 Repaired native34473 passes15/15 in2.498s, zero skips, including three new
 real-hero capacity breakdown cases and adjacent movement rules/perks.
