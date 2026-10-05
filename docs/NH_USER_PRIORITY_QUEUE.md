@@ -10688,6 +10688,24 @@ playable snapshot promotion.
 
 ### UP-023 — Complete all missing Skills, perks, and spells before further art
 
+Accepted Adventure-artifact principal paths2026-10-05: final client/native
+build79874 passes; native70394 passes20/20 in6.541s, zero skips. Equipped Boots
+and Wings grant temporary unlearned Water Walk/Fly sources at20/40 Spell Points
+and use the ordinary shared daily gate. Genuine cast effects survive removal;
+historical v2 passive behavior and real NK2 current/next-day routes pass. Seven
+data checks/module drift and independent review pass. Preserve the first failed
+native log; the early capability-layer daily gate was removed because it ran
+before destination-day rollover. No new permanent learning, state/schema or
+spell/perk identity count. Deferred generic whole-route budgeting, combined
+artifact cases, rendered access/audio and strategic valuation; no GUI or
+snapshot promotion. Source delivery does not close rendered acceptance.
+
+Native artifact checkpoint2026-10-05: repaired build69581 passes. First focused
+execution20 cases yields16 pass/4 fail in6.296s, zero skips. Actual paid casts
+and daily gates pass; v2 fixture schema and three next-day AI route failures
+remain blocking slice acceptance. Preserve first log/XML, repair causes without
+weakening assertions. Runtime and fixture follow-ups have separate ownership.
+
 Next unblocked functional gap2026-10-05: canonical Adventure-artifact exceptions
 are not implemented. Angel Wings/Boots of Levitation still supply passive
 FLYING_MOVEMENT/WATER_WALKING consumed directly by TurnInfo, without paying
@@ -10702,6 +10720,15 @@ compatibility boundary before edits and owns builds/registration/integration.
 No conversion credit from mapping. Artifact framework now has an explicit
 ten-row ledger: six focused conversion rows, two retained-baseline unverified,
 one partial qualitative exception audit, one blocked regeneration conversion.
+Implementation candidate checkpoint: hero sources/cost, exact-source passive
+filter, raw movement-cache reads, day0/future path admission and client movement
+audio are frozen; text-only descriptions are registered. Client35563 passes;
+seven artifact data tests/module drift and independent production/fixture review
+pass. Native build61323 remains live; no executed acceptance or coverage credit
+yet. Five new cases cover actual equipped/unlearned casts,20/40 payment,
+insufficient Mana, daily TP/DD gate, removal/retained effects, v2 passives and
+NK2 reservation/rollover. No created Spellbook, permanent inscription, new
+serialized state, GUI or playable promotion. Preserve the live build handle.
 
 Status: In progress; reprioritized by the user on 2026-09-27 ahead of the
 Fortress faction-completion lane and nonessential artwork.

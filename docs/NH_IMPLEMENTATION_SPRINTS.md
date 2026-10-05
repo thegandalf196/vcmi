@@ -1,5 +1,42 @@
 # New Horizons implementation sprints
 
+UP023 paid Adventure-artifact slice accepted2026-10-05: final both-target
+build79874 exits0; native70394 passes20/20 in6.541s, zero skips. Exact equipped,
+unlearned Boots/Wings casts pay20/40 and consume the shared daily opportunity;
+removal, genuine cast effects, historical v2 passives and real NK2 current/next-
+day routes pass. Seven data checks/module drift and independent review pass.
+The failed first native run is retained with both causes and repairs in the
+failure ledger. No new perk/spell identity count: two explicit artifact
+exceptions now have principal-path evidence. Generic helper layer availability
+remains capability-only; NK2 validates the prepared destination day. Deferred:
+generic whole-route hypothetical cast budgeting, combined artifacts, rendered
+access/audio and strategic valuation. No GUI or Linux snapshot promotion.
+
+Earlier checkpoint: repaired native69581 exits0. First focused execution20 cases has16 pass/4 fail
+in6.296s: authentic v2 fixture construction and three real next-day AI routes
+need repair. Runtime and fixture owners have non-overlapping follow-up tasks;
+preserve logs/assertions. No native acceptance, source commit or promotion yet.
+
+Artifact native build61323 is terminal failed on the AI fixture's missing
+TurnInfo include. Minimal include repair is applied without changing assertions;
+retry69581 is live. Preserve both logs; no second concurrent build or acceptance
+claim. Client35563 and production/fixture review remain passed.
+
+UP023 Adventure-artifact runtime candidate is frozen. Current saved v3 rules
+grant exact equipped Boots/Wings sources with20/40 cost and suppress only their
+passive artifact bonuses; v1/v2 and genuine spell/OTHER effects retain behavior.
+TurnInfo caches raw type lists and filters at presence/value reads. Shared
+current-day path admission and movement audio use the same distinction; future
+path days remain available. No new state/schema or permanent spell learning.
+Client35563 passes297 build steps with12 jobs. Production and five new fixture
+reviews have no blocking findings. Seven focused artifact data checks and module
+drift pass. Native build61323 is live (UP023-adventure-artifacts-native-build.log);
+actual cast/path execution has not yet been run or credited. Preserve this
+handle; no second build/GUI/snapshot promotion. Deferred: rendered access/audio,
+combined-artifact interactions, strategic value tuning and generic CPathfinder's
+hypothetical within-route cast-budget dimension. NK2 already has per-node daily
+flags; its two real artifact-route cases must pass before minimum AI acceptance.
+
 Next Phase1 slice: paid Adventure casts supplied by Boots of Levitation and
 Angel Wings. Canonical20/40 costs and daily action are explicit; current free
 passive movement is a real production gap, not a design ambiguity. Map saved-
