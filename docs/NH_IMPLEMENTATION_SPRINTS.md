@@ -1,5 +1,24 @@
 # New Horizons implementation sprints
 
+Accepted2026-10-05: UP108 Chaplain's Reserve. Repaired client/native build25165
+passes; native96092 passes22/22 in2.672s, zero skips, including five actual-action
+reward cases and both real AI pair directions.17 data guards, generated-module
+drift and independent review pass. Perks218/310, faction perks66/90, Divine
+Mandate1/10; ranks93/93 and combat61/67 unchanged. Retain the first compile log
+and direct-interface/include repairs in the failure ledger. AI Mana-recovery
+valuation, wider perk composition and full battle save/resume remain Phase2.
+No GUI launch or playable promotion. Next map: Sacred Command and Consecrated
+Casting through typed follow-up selection, with shared live/detached component
+math. Earlier in-progress paragraphs below are checkpoint history.
+
+In progress2026-10-05: UP108 Chaplain's Reserve supplies a real Basic perk,
+restoring3 Normal Spell Points on the first completed pair. Separate runtime,
+native-fixture and minimum AI-execution fixture ownership is assigned; no
+polling, new usage counter or save-format change is justified. Spell recovery
+occurs after payment/effects, preserving Buffer and capacity. Keep counts217/310
+until frozen build/native acceptance. Rebirth Chain/Phoenix Spark await their
+explicit25%/other-perk interaction choices; Swift/Morale precedence is pending.
+
 Delivery checkpoint: source45f659b7c is committed/pushed with required author
 and committer identity. Full Windows run37263037998 is confirmed in progress
 on45f659b7cfc0e307352c7f7393d2e45ed3b2a2f3; no artifact or Windows acceptance

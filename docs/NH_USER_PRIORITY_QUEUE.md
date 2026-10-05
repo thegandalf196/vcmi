@@ -11,6 +11,16 @@ entries and their validation/delivery evidence.
 
 ## UP-230 — Mage Guild spell symbols, exterior purchase hotspot and tier names
 
+User reaffirmed all three requirements with the same rdMqGPr screenshot on
+2026-10-05. Re-audit the existing implementation and actual delivery identity;
+do not regenerate retained symbols or confuse committed source with the older
+launcher snapshot. Existing Chaplain's Reserve changes remain preserved.
+Recheck passes11/11 symbol/faction asset tests plus the exterior-access source
+guard. Current launcher snapshot a96183639 was created2026-09-30, before these
+corrections; it is not delivery of the current source. The existing full Windows
+run37263037998 includes the corrections and remains in progress. No snapshot
+promotion or rendered acceptance is claimed by this re-audit.
+
 Read-only recheck2026-10-05: symbol guards2/2, faction asset/name guards9/9
 and exterior access source guard pass. One residual shared Adventure Spell
 tier formatter still used Roman numerals in row labels/locked-tier hints;
@@ -5858,6 +5868,33 @@ Not done; no rendered/playable acceptance or snapshot promotion is claimed.
 
 ## UP-108 — Divine Mandate rank foundation
 
+Next coverage slice2026-10-05: Chaplain's Reserve is the unambiguous missing
+prerequisite. Accepted after repaired build25165 and focused native96092:
+22/22 pass in2.672s, zero skips, including five new actual-action reward cases,
+both existing AI pair directions and allowance/counter controls.17 perk-data
+checks, module drift and independent review pass. First completed-pair recovery
+is3 Normal Spell Points after payment, capped normally, with Buffer unaffected
+by recovery. No repeat reward, unused/rejected opportunities grant nothing.
+Legal Basic-perk acquisition is exercised. Perks218/310, faction perks66/90,
+Divine Mandate1/10; nine perks remain missing. AI Mana valuation and wider
+composition remain Phase2, not unsupported full-AI claims. No GUI/promotion.
+Evidence: UP108-reserve-build-repaired.log and UP108-reserve-native.log/XML.
+Next bounded source map: Sacred Command and Consecrated Casting. The original
+in-progress plan below is preserved as checkpoint history.
+Chaplain's Reserve is the unambiguous missing
+Basic prerequisite. It restores3 Normal Spell Points after the first completed
+pair only, preserving Buffer and the ordinary capacity clamp. Reuse the existing
+completed-pair0->1 transition, not a second once-use ledger. Spell-side recovery
+must occur after effects and Mana payment, not at the earlier BattleSpellCast
+packet; Order-side accepted completion uses the existing authoritative action
+transition. Separate runtime/shared helper, isolated native fixture and existing
+AI fixture ownership are assigned. Existing AI must legally complete both pair
+directions and receive the actual reward without speculative real-hero mutation.
+Mana-resource valuation beyond existing AI execution remains Phase2. Keep this
+perk planned and counts217/310 until frozen build/principal native gates pass.
+Rebirth Chain/Phoenix Spark's25%/Greater Essence and secondary-spawn perk
+questions remain pending under UP046; do not invent their interaction.
+
 Status: Source/native verified,2026-10-04; playable delivery remains separate.
 Incremental retry79510 builds vcmiclient/vcmitest successfully. Six new native
 tests and21 adjacent allowance/projection/provider checks pass, zero skips.
@@ -8987,6 +9024,21 @@ journeys and rendered/playable acceptance remain Phase 2/delivery work.
 No GUI, snapshot or launcher-profile promotion.
 
 ## UP-046 — Elemental Rebirth foundational effects
+
+Continuation2026-10-05: clean204227394, previous three-perk cycle is progress.
+Full Windows37263037998 remains confirmed live on45f659b7c (toolset setup).
+Swift's precedence question is pending, not a global blocker. Separate bounded
+runtime/state and AI read-only workers now map Rebirth Chain and Phoenix Spark
+for the next missing canonical slice. Root will pin lineage, exact HP,
+once-per-combat replication and legality before assigning edits. Keep both
+planned and counts217/310 until build/native acceptance. No GUI or promotion.
+Maps find no explicit Rebirth lineage/original-summon-HP or once-use state.
+Chain needs immutable first-output identity/HP, replicated per-side use history
+and detached branch copies. The user is asked whether Phoenix Spark's explicit
+25% is changed by Greater Essence and whether Chain's second output receives
+other selected Rebirth perks. These candidates await those choices; UP108's
+Chaplain's Reserve is selected next rather than guessing. No lineage or new
+save fields are implemented by this read-only map.
 
 Source45f659b7c is pushed and identity-verified. Full Windows37263037998 is
 in progress on that exact revision; record its terminal result before claiming
