@@ -1,5 +1,18 @@
 # New Horizons implementation sprints
 
+Phase1 checkpoint2026-10-05: Perfect Moment now follows the canonical automatic
+first eligible primary attack at current Luck+5, rather than a manual declaration.
+Shared target-aware Luck excludes only Serendipity's chance-only+1, with no copied
+history hotpath or new state. AI no longer offers a weaker opt-out forecast; the
+checkbox/local arming UI is removed. Client26695 and native59248 build successfully
+with12 jobs. Native22333 passes19/19 in4.540s, zero skips;11 UI source guards and
+independent Astra review pass. The wider21000 run passes31/35 in8.997s: four
+unrelated fixture/state/downsave guard failures are retained for Phase2, not
+called green. Counts remain224/310 perks and61/67 combat identities; this repairs
+a registered perk clause rather than activating another identity. No GUI run or
+Linux promotion. Next highest-priority clear missing feature: UP157 Pre-emptive
+Strike's full independent live/AI path; Bulwark overlap is Phase2 composition.
+
 Phase1 checkpoint2026-10-05: missing no-hero defensive-tower base output is
 implemented through saved town rules at Siege0. Client91717 and final both-target
 44376 pass; native22240 passes8/8 in2.703s, zero skips, including real automatic

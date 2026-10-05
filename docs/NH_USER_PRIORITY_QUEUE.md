@@ -4610,6 +4610,22 @@ source213b4a35e. New full37091363403 is queued on213b4a35e, excluding UP160.
 
 ## UP-157 — Battlecraft Pre-emptive Strike
 
+Reclassification2026-10-05: canonical independent trigger, damage and retaliation
+rules suffice to implement this perk. Earlier Bulwark overlap question is a
+Phase2 composition finding, not a blocker to the full independent principal
+path. Preserve separate sources; do not claim overlap acceptance. Concrete
+map complete: independent CUnitState last-triggered-round stamp defaults-1,
+survives copied/projected/unit-change state, and is NOT reset on another Defend.
+Use effective Defend and existing pre-hit50% recursive attack path; normal
+retaliation remains available. AI needs AttackPossibility pre-hit projection,
+BattleEvaluator Defend valuation and BattleExchangeVariant consumed-state merge.
+Append serialization feature and use existing enclosing packet downsave guards;
+do not claim full ongoing-battle world save. Focused principal gate: legal perk
+selection, real accepted Defend/melee pre-hit50%, retained retaliation, same-round
+repeat blocked, next-round renewal, no-perk/non-Defending controls and detached
+AI parity. This is the next full feature after Perfect Moment's core correction;
+do not launch an overlapping writer on server/AI files before that slice freezes.
+
 Status: Bounded read-only preparation,2026-10-02. Missing Advanced perk: the
 first melee attack each round against a Defending friendly stack triggers a
 50%-damage pre-emptive attack without consuming normal retaliation. Map accepted
@@ -10737,6 +10753,71 @@ Source checkpoint `e6545354a` was pushed to `origin/definitive-mvp` on
 playable snapshot promotion.
 
 ### UP-023 — Complete all missing Skills, perks, and spells before further art
+
+Perfect Moment principal acceptance2026-10-05: client26695/native59248 both
+build successfully. Native22333 passes19/19 in4.540s, zero skips: automatic
+undeclared+5 attacks, +4 with chance-only Serendipity rejected, multi-shot first
+strike only, eligible attack killed before striking preserves the use,
+Skirmisher, detached AI selection/history isolation and existing rules/wire
+controls. All11 client source guards and independent Astra review pass. The
+broader21000 run is31/35 in8.997s, NOT green: GenuineActivation constructs an
+invalid Second Wind Order shape; two Advanced-perk fixtures skip Basic-tier
+prerequisites; LegacySave downsaves a whole modern battle without initial Army
+Value support. Review traces each failure to existing unchanged guards rather
+than this automatic trigger. Retain logs/XML and defer these fixture repairs
+to Phase2; do not weaken shape/perk/save validation. Full movement/reaction
+compositions and fresh legal perk acquisition remain separate. Coverage stays
+224/310 perks,61/67 combat identities; the missing registered clause is repaired.
+Next full unblocked feature: UP157 independent Pre-emptive Strike. No graphical
+acceptance, Linux playable promotion or entire Sylvan-family certification.
+
+Perfect Moment implementation frozen2026-10-05: target-aware current-Luck
+threshold excludes only Serendipity's chance-only contribution; accepted primary
+strikes trigger automatically, and AI no longer offers a weaker opt-out variant.
+Obsolete checkbox/local arming removed, unrelated Order cancellation retained.
+Wire bit remains a validated compatibility hint, not a forcing bypass. Client
+26695 passes119/119 build actions;11 client source guards pass. Native target
+59248 is live with12 jobs; execution acceptance still pending. Independent
+production review finds no principal blocker; movement/reaction composition,
+fresh legal acquisition and full battle-save claims are deferred. Existing
+fixture post-hit battle-copy guard remains intact for native verification.
+Windows37302451874 now SUCCESS on94147b24a; artifact11348142758 is nonexpired,
+802661190bytes. Existing37308848380 started onb8d243076; do not replace it.
+Neither candidate contains this uncommitted correction or tower258266904.
+
+Selection audit completed2026-10-05: the previous clarification reply repeated
+an already-recorded Crown and Altar decision and made no new implementation
+progress. Revalidated source now exposes a concrete Sylvan Luck defect:
+Perfect Moment lacks its canonical +5 current-Luck threshold, and a native
+fixture incorrectly expects success at negative Luck. Repair the shared
+eligibility used by authority and AI, with +4 rejection/+5 acceptance and
+chance-only Serendipity isolation; retain the first-strike/use bookkeeping.
+An active registry flag does not prove this clause. Bounded audits find actual
+consumers for the other nine Sylvan perks and no new unblocked qualitative
+artifact gap. Next full missing feature is UP157 Pre-emptive Strike; its core
+mechanic is specified, while cross-perk Bulwark composition belongs to Phase2.
+No threshold repair acceptance, perk-count increase or playable delivery is
+claimed before focused build/native gates. Existing Windows handles rechecked:
+37302451874 compiling94147b24a,37308848380 pendingb8d243076; preserve both.
+
+Root full-scope follow-up2026-10-05: Perfect Moment also incorrectly requires
+a manual client declaration. Canonical first eligible +5-Luck attack is
+automatic. Repair authority and detached AI selection together, remove obsolete
+checkbox/armed-state UX without altering unrelated action controls, and retain
+wire compatibility. Do not accept a threshold-only patch which preserves the
+wrong manual mechanic. Native execution must prove an undeclared eligible
+primary attack triggers once, below-threshold attacks do not spend the use,
+and later arrows/reactions do not gain a second forced strike. GUI rendering
+remains under the hold; the visual change removes a control and uses no new art.
+
+Next-selection audit2026-10-05 after pushed258266904: Field Workshop remains
+blocked on destroyed-target scope. Independent read-only Luna checks now cover
+planned Battlecraft/Recruitment eligibility, remaining qualitative artifact
+families, and whether all ten active Sylvan Luck entries have real production
+behavior. Do not equate active registry flags with coverage, remap previously
+settled architecture, or choose unanswered design rules. Current Windows
+37302451874 is confirmed compiling94147b24a;37308848380 remains pendingb8d243076.
+Preserve both handles; no latest-tower Windows delivery or Linux promotion.
 
 Unmanned-tower acceptance2026-10-05: client91717 and repaired both-target
 96872/44376 pass; native22240 passes8/8 in2.703s, zero skips. Real hero-less
