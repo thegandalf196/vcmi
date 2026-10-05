@@ -1,5 +1,13 @@
 # New Horizons implementation sprints
 
+Current Phase1 checkpoint: Purifying Mandate source/native accepted. Client15739
+and repaired native build30070 pass; native4954 passes43/43 in7.802s, zero skips.
+Data/inventory19/19, module drift and independent review pass. Coverage223/310
+perks,71/90 faction perks, Divine Mandate6/10. No new persistent state, GUI or
+snapshot promotion. Broader interactions and heuristic tuning remain Phase2.
+Next unblocked slice: UP056 Town Portal's nearest-town/zero-Movement behavior,
+with shared runtime and AI policy; legacy profiles retain their original rules.
+
 Delivery checkpoint: Mandate source44e4442bc is committed/pushed with required
 identity/remote verified. Full Windows37276837622 is confirmed queued on that
 exact source, dispatched once. Earlier37273443600 remains pending and

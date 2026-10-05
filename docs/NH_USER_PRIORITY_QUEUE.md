@@ -5897,6 +5897,46 @@ Not done; no rendered/playable acceptance or snapshot promotion is claimed.
 
 ## UP-108 — Divine Mandate rank foundation
 
+Purifying Mandate accepted2026-10-05: client15739 and repaired native build30070
+exit0; focused native4954 passes43/43 in7.802s, zero skips. Actual paired casting,
+normal Purifier ordering, one-affliction priority, ordinary-cast exclusion,
+physical-only legacy groups, detached AI and historical V2 controls pass.
+Data/inventory19/19, module drift and independent review pass. Coverage223/310
+perks,71/90 faction perks, Divine Mandate6/10. Preserve first failed native and
+fixture-compile logs alongside UP108-purifying-native-repaired.log/XML.
+Broad status combinations/heuristic tuning remain Phase2; no GUI or promotion.
+Next unblocked coverage slice: UP056 Town Portal's canonical effect clauses.
+Earlier candidate/live-build paragraphs below are historical checkpoints.
+
+Purifying gate checkpoint: corrected runtime/classifier, AI production and five
+server cases are frozen; production/server review finds no blocker. Client-only
+build15739 is live with12 jobs, logUP108-purifying-client-build.log, while the AI
+owner finishes only its test file. Native target build/execution follow that
+freeze; never run overlapping builds. Data/inventory19/19 and module drift pass.
+Accepted coverage remains222/310 perks and70/90 faction perks pending gates.
+
+Latest Windows checkpoint2026-10-05: Sacred37270206987 is terminal SUCCESS on
+cb5cd56de9c4719b127d196a59a89c56124f653f, nonexpired game artifact11330154488
+(802610789 bytes). Knightly37273443600 is terminal cancelled, not a compile
+failure; no agent cancellation was issued. Heaven37276837622 is in_progress on
+44e4442bc and includes Knightly plus Sacred. Preserve that live handle, without
+restarting the older cancelled checkpoint or claiming a Heaven artifact yet.
+
+Purifying review correction: legacy Poison/Disease can use SPELL_EFFECT
+transport while remaining physical afflictions. Extra cleansing must qualify
+the selected source group against shared physical-affliction classification
+before ordinary removal; map-key presence alone is insufficient. Runtime and
+AI now consume the same classification helper, with a physical-only legacy
+group regression being added. Base Purify eligibility/cleanup is unchanged.
+This pre-build blocking finding is not yet an accepted fix until native gates.
+
+Purifying Mandate implementation started2026-10-05. Runtime, detached AI and
+focused actual-cast tests have separate file owners. Candidate activation is
+for legal acquisition/behavior gates; accepted counts remain222/310 perks,
+70/90 faction perks and Divine Mandate5/10 until build/principal gates pass.
+Reuse existing physical-affliction priority after ordinary cleanup, with no
+new state, source request flag, polling, GUI or snapshot promotion.
+
 Delivery checkpoint: Mandate of Heaven source44e4442bc7c4ba245f244b16c4fae31a3e04e559
 is committed/pushed; required author/committer and remote hash verified. Full
 Windows37276837622 is confirmed queued on that exact source, dispatched once
