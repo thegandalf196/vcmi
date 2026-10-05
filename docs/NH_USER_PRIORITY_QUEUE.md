@@ -11,8 +11,28 @@ entries and their validation/delivery evidence.
 
 ## UP-229 — Required Movement UI breakdown
 
-Status: In progress (bounded read-only audit), 2026-10-04. Canonical P1
-town/movement UI requires current/maximum Movement and a tooltip breakdown of
+Status: Verified (rendered/playable delivery pending), 2026-10-04.
+Current gate: client43390 and both-target61049/26637 are terminal PASS.
+Repaired native34473 passes15/15 in2.498s, zero skips, including three new
+real-hero capacity breakdown cases and adjacent movement rules/perks.
+Evidence: UP229-native-build-repaired.log and UP229-movement-native-repaired.log/XML.
+Two source/UI guards,17 perk-data checks, generated-module drift and independent
+Astra reviews pass. No spell/rank/perk identity count changes. GUI text fit,
+localization, rare conflicting-bound wording and wider modifier composition
+remain Phase2; no graphical acceptance or launcher promotion.
+Earlier live-build and first-failure observations below are checkpoint history.
+Both-target61049 is terminal PASS with12 jobs. First focused native49710 ran
+15 cases:13 passed, two failed because the TinyH3M Kyrre fixture did not assign
+the required Logistics starting Skill. Preserve UP229-movement-native.log/XML;
+repair fixture setup rather than weakening the exact capacity assertions.
+
+Delivery observation: full Windows37241527929 is terminal SUCCESS on90aac5407.
+Its nonexpired downloadable artifact is
+New-Horizons-Windows-x64-90aac5407da04d2853ae9b173f56c856a3f869f4
+(750688325 bytes). It excludes Adela, the later canonical foundation decisions
+and this Movement UI slice; no GUI acceptance or launcher promotion is implied.
+
+Canonical P1 town/movement UI requires current/maximum Movement and a tooltip breakdown of
 the 200-point base, percentage/flat modifiers, road and terrain costs, native
 qualification and special Water Walk/Fly costs, without creature Speed as a
 modifier. Inspect current hero/adventure Movement tooltip and shared calculation
@@ -20,6 +40,14 @@ paths; identify an actual missing player-visible path before editing. Reuse
 native popup controls and existing art; no top-level redesign, new polling or
 gameplay rule change. Root read the UI style guide; source/functional validation
 and rendered/playable acceptance remain separate under the GUI hold.
+Production is now frozen: an on-demand current-day capacity DTO reuses exact
+TurnInfo aggregation, source percentages, Logistics specialty, sea fallback,
+Navigation and bounds. Native Hero-window popup reports both pools and cost
+rules; no persistent state, per-pathfinder mirrored fields, polling or gameplay
+change. Independent Astra review finds no blocker; rare bounds wording, native
+text fit and localization remain Phase2. Two source/UI guards pass. Client
+build43390 is live with12 jobs, UP229-movement-client-build.log; focused native
+fixture is still in progress. Do not run a stale test binary or claim acceptance.
 
 Selection audit: planned Havoc perks remain blocked under UP139/UP111; tracked
 remaining town/creature candidates retain UP197/UP200/UP201/UP226/UP046 choices.
@@ -5779,6 +5807,14 @@ unused expiry without consumption, no recursive grant and no Creature Activation
 lock/Activate/Decline prompt into the canonical section. Retain Light/Order-only
 restrictions. The two historical decision gates below are resolved; foundation
 implementation is now unblocked, not yet implemented or active.
+Canonical/data amendment e6ba582a9 is committed/pushed;17 perk-data checks pass,
+generated module matches, remote hash and author/committer identity verified.
+Bounded adaptation map: reuse the typed allowance ledger with a distinct Divine
+Mandate source and round expiry, plus one versioned completed-pair counter per
+side. Accepted Order/hero-spell receipts establish grants and completion; Light
+admission must match shared callbacks, ordinary spellbook and detached BattleAI.
+Do not reuse Metamagic-specific sequence transitions or introduce a second
+pending ledger. Save rejection for unsupported grant/counter versions is required.
 
 Status: Read-only map, 2026-10-01. UP-023's missing faction rank effects outrank
 further hardening of completed perks in Phase1. Canonical Castle rank: after a
@@ -8858,6 +8894,20 @@ or temporary HP changes. The historical HP-basis gate below is resolved. Map
 only the exact captured basis and existing reaction/summon/AI/save seams before
 implementation; terrain-dependent perks retain their separate decisions. No
 rank activation or gameplay coverage is granted by the design amendment alone.
+Canonical/data amendment e6ba582a9 is committed/pushed;17 perk-data checks pass.
+An independent bounded Luna map now checks actual battle-start HP capture,
+physical/spell death reactions, temporary summons, exact wounded HP, AI branches
+and serialization seams. It does not redesign terrain-dependent perks or grant
+runtime activation. Current Movement writers retain their isolated ownership.
+Exact capture map: freeze maximum aggregate HP after battle-start health.init,
+once the stack is attached to its starting bonus graph; never recompute after
+buffs/casualties. Reuse authoritative BattleAttack/StacksInjured reactions and
+temporary BattleUnitsChanged summons with exact wounded-final-creature HP.
+Binary active-battle save persistence and detached BattleAI death projections
+are required; JSON unit snapshots alone do not preserve disk battle saves.
+Exclude native Rebirth, clones and summoned sources; validate full footprints.
+No new foundational blocker was found, and no implementation credit follows
+the read-only map.
 
 Status: Planned; read-only map complete, HP-basis clarification pending,
 2026-09-30. UP-023 Phase 1 coverage candidate; no effect activation claimed.

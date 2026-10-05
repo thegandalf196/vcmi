@@ -1,5 +1,21 @@
 # New Horizons implementation sprints
 
+Current2026-10-04: user resolves UP046 battle-start maximum aggregate HP and
+UP108 Metamagic-like round-end/completed-pair follow-ups. Canonical/data source
+e6ba582a9 is pushed/remote-verified;17 perk-data checks pass. Foundation maps
+now prepare exact existing death/summon/HP and typed-action/UI/AI/save seams,
+not terrain-perk redesign or activation. UP229 Movement tooltip source/native
+acceptance now passes: client43390 and both-target61049/26637; native34473
+15/15 in2.498s, zero skips; two source guards,17 data checks/module drift and
+independent review. First13/15 fixture failure is retained, setup repaired
+without weakening exact assertions. Commit/push this bounded slice, then
+implement the unblocked Divine Mandate rank foundation via typed allowances,
+completed-pair counter, Light restriction and shared live/UI/AI admission.
+Rebirth's frozen-HP/death/summon/save/AI map is also ready; serialize shared
+foundation file ownership. No GUI/promotion or rank/perk count increase yet.
+Windows37241527929 is SUCCESS on older90aac5407 with a nonexpired downloadable
+artifact (750688325 bytes); it excludes Adela, decisions and Movement UI.
+
 UP228 bounded audit complete: all five old generic Sorcery specialty aliases
 are explicitly removed by the active halon.json module patch and replaced with
 NH specialties. Preserve the authored replacements; no eligible built-in slice,
