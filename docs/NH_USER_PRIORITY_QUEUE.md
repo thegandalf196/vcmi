@@ -5891,6 +5891,13 @@ Not done; no rendered/playable acceptance or snapshot promotion is claimed.
 
 ## UP-108 — Divine Mandate rank foundation
 
+Delivery checkpoint: accepted Knightly source1bd450fa62d6842c19c1ab59f55ca776bc81de17
+is committed/pushed with required author/committer and remote hash verified.
+Full Windows37273443600 is confirmed pending on that exact source
+(preflight_only=false), dispatched once. Sacred-source37270206987 remains
+in_progress. Retain both handles without duplicate dispatch or cancellation.
+No Knightly artifact, graphical acceptance or Linux promotion is claimed.
+
 Knightly Sequence accepted2026-10-05: client/native79514 exits0; focused native
 77528 passes32/32 in5.541s, zero skips, including six new actual-action/packet
 cases. Legal Basic prerequisite and Advanced selection, Wisdom-before-discount,

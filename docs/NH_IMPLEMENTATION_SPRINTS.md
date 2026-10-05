@@ -1,5 +1,11 @@
 # New Horizons implementation sprints
 
+Delivery checkpoint: accepted Knightly source1bd450fa6 is committed/pushed;
+required identity and remote hash verified. Full Windows37273443600 confirmed
+pending on1bd450fa62d6842c19c1ab59f55ca776bc81de17, preflight_only=false;
+Sacred-source37270206987 remains in_progress. Dispatch only once; retain live
+handles. No Knightly artifact or Linux snapshot promotion is implied.
+
 Accepted Phase1 checkpoint2026-10-05: Knightly Sequence. Both-target79514 passes;
 native77528 passes32/32 in5.541s, zero skips, six new cases. Data/inventory19/19,
 module check, numerical Order/sidebar source guards and independent review pass.
