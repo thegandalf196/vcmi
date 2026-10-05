@@ -9,6 +9,99 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-234 — Three-hex Vengeful Vines, centered spell UI and House scrolls
+
+Status: Implemented (rendered/playable verification pending), 2026-10-05.
+Approved implementation plan: Vengeful
+Vines selects three distinct connected playable hexes (line, bend or triangle)
+and submits on the third legal click, with Backspace undo and Escape cancel.
+Preserve damage, Speed, duration, costs and saved-profile gates. Share geometry
+between client, simulation and bounded AI enumeration; supersede UP-038's
+origin/orientation six-hex interface and canonical description.
+
+Center all NH casting-choice/confirmation panels in the viewport, including
+the shared selection panel and cursor-anchored Temporal Field/Selective Dispel.
+Center custom spellbook frames inside their loaded school borders without
+changing vanilla DEF offsets or artwork. House of Wisdom must reuse native
+parchment composition for standalone spell symbols, preserve complete scroll
+frames and filter stale persisted offers without rerolling stock. Removed
+spells remain unavailable; retained Cure/Bless and currently eligible Haste
+are not silently removed. No new raster artwork or original-asset copies.
+
+Acceptance: focused geometry/runtime/AI tests, UI layout checks, stale-stock
+purchase rejection with unchanged resources/inventory, successful client build.
+Rendered evidence and playable delivery are separate gates; source checks
+alone cannot resolve the visual reports. Preserve existing UP-232/UP-004 work.
+
+Implementation evidence: shared three-location validation, cached connected
+AI candidates, third-click client submission, Backspace undo, viewport-centered
+casting panels, custom-icon centering and shared parchment presentation exist.
+House offers filter saved-roster, ordinary-acquisition and map restrictions
+before dereferencing IDs; persisted stock is unchanged. Native layout separates
+title, parchment and price strips using loaded asset heights. Astra review has
+no blocking finding. Linux client/test targets build with 12 jobs; focused
+geometry, execution, AI and House tests pass 15/15 with zero skips. Three UI
+source guards, Magic Arrow guard, Vines metadata test and module drift check
+pass. Logs: `build/nh-up234-validation/build-final.log`,
+`build-fixture-final.log`, `native-final.log` and `native-final.xml`.
+Two fixture-only compilation/schema mistakes were repaired; unrelated content
+inventory failures are recorded in the release-failure ledger for Phase 2.
+No graphical acceptance or launcher promotion occurred. Existing snapshot
+6e1e8ce3 remains the default; unfinished UP-232/UP-004 source stays separate.
+
+## UP-233 — Bring the Linux launcher executable up to date
+
+Status: Resolved for committed-source delivery, 2026-10-05. User explicitly requests updating the Linux
+executable to the latest build. This authorizes a local build and promotion,
+not GUI/pointer testing. Preserve unfinished UP232/UP004 source work separately
+from the immutable playable candidate. Latest successful Windows package is
+3ee74704f; newer 2ffeaa129 is running and d8b32e15d pending. User explicitly
+selected all newer committed fixes. Pin source256176fae (including d8b32e15d
+Town Portal, Breakthrough and Pre-emptive Strike), not the older successful
+Windows package. Pin candidate source and resources, build with12 jobs,
+perform focused non-GUI validation, freeze/checksum and atomically promote the
+default play-new-horizons-linux.sh snapshot. Retain previous snapshot for rollback.
+Acceptance: exact source/binary/resource identity, successful build and focused
+checks, resolver points at the promoted candidate. Do not claim rendered
+acceptance or automatically include incomplete uncommitted mechanics.
+
+Delivery evidence: isolated clean Release/Ninja source256176fae built744 steps
+with12 jobs (75377, exit0); serialized version-stamp refresh6046 builds4 steps
+and exits0. Executable --version reports256176fae; matching library resolves
+without missing dependencies. Snapshot6e1e8ce3d60566c4e4a3374efc206ba5b7c80d1e562070affc03f3169b05b2c1
+is frozen, verified and promoted; default script --verify-only and resolver pass.
+Previous snapshota96183639 remains available. Client SHA256
+9b78342fb664d5206f5633fa1f461a4841e6d5952ff363896664da3eb5d281b9;
+library bbe5aba1a95b786dfefd46f8335535a646f4e6c88003f6f85c557c931a6feba1.
+Eleven snapshot/source-tool tests and the synthetic launcher test pass.
+Exact frozen candidate headless All for One startup initializes gamestate,
+loads the curated module and runs multiple AI turns; bounded20-second run is
+terminated intentionally (124), not a completed-game or graphical acceptance.
+Initial smoke invocation refused an existing unmanaged empty test directory;
+retry uses a new child profile and passes startup. Original user saves/profile
+and desktop input are untouched. Repeated AI ammo-overuse warnings (2851) remain
+an integration finding; startup success does not certify their correctness.
+Logs: UP233-configure.log, UP233-build.log, UP233-stamped-build.log,
+UP233-tool-tests.log, UP233-launcher-test.log and UP233-headless-smoke-repaired.log
+under the ignored testing directory. Unfinished UP232/UP004 changes are excluded.
+
+## UP-232 — Arcane Ballistics Physical Damage Reduction penetration
+
+Status: In progress, 2026-10-05. Source audit found the active Sorcery perk
+`new-horizons:sorceryMagic.countermage` lacks its canonical three-mark PDR
+penetration. Root selects a generic attack-local payload consumed in the shared
+damage script: ignore 25% of combined capped Physical Damage Reduction after
+source composition. Preserve separate Creature Defense penetration and final
+multipliers. Require three valid existing Arcane Breach marks for the attacker's
+beneficiary side and an active perk, hostile ordinary physical creature shots,
+and the saved New Horizons damage stage; machines and melee are excluded.
+The shooter need not carry Focus Magic. Preview must use the same eligibility.
+Acceptance: actual accepted shot, equivalent-visibility detached forecast,
+independent 20%/30% source oracle, cap and invalid-mark/perk/melee controls;
+focused build/native evidence and contextual hover feedback. No new saved
+state, graphical acceptance or content-identity count credit. Disjoint Luna
+production and fixture writers; Astra review; root owns builds and integration.
+
 ## UP-231 — Breakthrough and explicit Defend reduction channels
 
 Verification checkpoint, 2026-10-05: shared Lua scales the complete Battlecraft
@@ -9921,6 +10014,11 @@ Linux playable promotion.
 Status: Implemented (rendered/playable verification pending), 2026-09-29;
 UP-023 Phase 1 coverage slice.
 
+Superseded geometry, 2026-10-05: UP-234 replaces the historical six-hex
+origin/orientation interaction below with three connected hex selections and
+third-click submission. Retain this entry as historical validation evidence,
+not a competing design rule.
+
 Implement the canonical Nature Level-3, 12-Mana enemy-targeted prison using
 actual temporary Dendroid Guard stacks on legal empty hexes bordering the
 target's occupied footprint. Divide the shared `180 + 3 × SP` pool evenly
@@ -12448,9 +12546,16 @@ pass. `BattleWindow::refreshHeroBattleStatus` collects generic `CombatStatusEntr
 records separately from action counts. Rendered layout and complete provider
 behavior remain verification work; a passing source guard is not closure.
 
-Display Metamagic points through a reusable combat-resource presentation, not a
-hardcoded Metamagic-only field beneath Actions. Keep Hero Actions, Spell Actions,
-and Order Actions distinct. Support another defined resource through the same
+2026-10-05 canonical reconciliation: the newer detailed action/UI specification
+supersedes the historical three-counter presentation. Show the one normal Hero
+Action as Available/Spent, and typed exceptional opportunities contextually on
+ordinary Spell/Order controls with source and expiry. Preserve generic skill
+status providers. Source correction is in progress; earlier source/render
+evidence does not certify this revised panel.
+
+Display Metamagic state through a reusable combat-resource presentation, not a
+hardcoded Metamagic-only field beneath Actions. Do not present Hero, Spell and
+Order Actions as independent general currencies. Support another defined resource through the same
 interface without inventing a new gameplay resource. Respect leather background,
 red/gold framing, readable spacing, icons, and explanations.
 

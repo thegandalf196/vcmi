@@ -2310,22 +2310,19 @@ Entangle therefore attacks **position** , not Initiative and not the creature's 
 
 ###### **Vengeful Vines**
 
-Vengeful Vines gives Nature a low-level damage spell, but with unusual battlefield geometry. After selecting a starting hex, the player chooses one of six orientations.
+Vengeful Vines gives Nature a low-level damage spell with a player-selected
+footprint of exactly three distinct connected playable hexes. Each hex after
+the first must touch at least one previously selected hex. Straight lines,
+bent chains and triangles are legal; occupied and obstacle hexes are allowed.
 
-The vines erupt through a fixed winding pattern rather than a circle or straight line. Conceptually:
-
-X X X X X X
-
-The actual pattern should be designed cleanly for the hex grid and previewed before casting. Every enemy stack intersected by the vines suffers:
-
-The fixed template is a connected six-hex S-bend: include the selected
-starting hex, then take five neighboring steps in directions
-`d, d+1, d, d−1, d`, where `d` is the selected orientation and direction
-indices wrap around the six clockwise hex directions. The entire footprint
-must fit on playable battlefield hexes; do not truncate it at an edge.
-Preview this same footprint before confirmation. An intersected stack is
-affected once even if it occupies two of the six hexes. Friendly stacks are
-not affected.
+Show the selected hexes and a legal hovered candidate on the battlefield,
+with a running selection count. The third legal click casts immediately,
+without an orientation choice or separate confirmation. Backspace removes
+the last selection; Escape cancels without spending Mana or the Hero Action.
+An illegal third click leaves the first two selections intact. The final
+footprint must intersect at least one receptive enemy stack. Each intersected
+enemy stack is affected once, even if it occupies two selected hexes;
+friendly stacks are unaffected. Every affected enemy stack suffers:
 
 Damage = 20 + 1.1 × SP
 
@@ -5459,7 +5456,7 @@ Battle logs record meaningful combat interactions with actor, cause, target, mec
 |Magic Arrow Overcharge|After selecting a target, open a compact centered<br>segmented Overcharge modal in the Heroes III leather,<br>red, and gold visual style: - and + controls or a slider,<br>current Overcharge, maximum allowed by Spell Power,<br>base Wisdom-adjusted Mana cost, additional<br>Overcharge Mana, total Mana, and live projected<br>damage and estimated casualties both with and without<br>the selected Overcharge. Recalculate from the shared<br>battle forecast whenever Overcharge changes, using<br>current target health, partial casualties, temporary HP,<br>resistance, and mitigation. Disable unaffordable values<br>before confirmation and label uncertain outcomes as<br>estimates rather than guaranteed kills.|
 |Perk casting modifiers|Perks never add optional Mana surcharges,<br>activation toggles, or cast-confirmation<br>modes. Automatic perk modifiers must be<br>reflected directly in the displayed Mana cost,<br>projected result, target preview, or duration.<br>Spell-intrinsic controls such as Magic Arrow<br>Overcharge remain part of the Spell itself.|
 |Multi-target selector|Storm of Daggers needs selection of 1-5 enemy stacks<br>with numbered markers, running target count, total<br>damage pool, and projected damage on each selected<br>stack.|
-|Area / orientation templates|Vengeful Vines, Fire Wall, Frost Ring, Inferno, Meteor<br>Shower, Earthquake, Time Stop, and similar geometry<br>spells require hex overlays before confirmation.<br>Orientation-based spells need rotation controls and a<br>preview of every affected hex.|
+|Area / orientation templates|Vengeful Vines selects exactly three connected hexes<br>with a live overlay and casts on the third legal click;<br>Backspace undoes the last selection and Escape cancels.<br>Fire Wall, Frost Ring, Inferno, Meteor Shower,<br>Earthquake, Time Stop, and similar geometry spells<br>preview every affected hex. Orientation-based spells<br>need rotation controls where applicable. Casting-choice<br>and confirmation panels are centered in the viewport.|
 |Repeated placement spells|Land Mine and Quicksand require sequential placement<br>of the exact number of patches/mines, a remaining-<br>placement counter, undo-last-placement, confirm, and<br>caster-only visualization for concealed objects.|
 |Relocation and transformation|Teleport highlights every legal destination. Blink<br>previews its possible radius rather than pretending the<br>destination is deterministic. Transfigure Matter<br>highlights valid obstacles and previews the resulting<br>summon HP / count before confirmation. Until purpose-<br>made final art is approved, Transfigure Matter<br>deliberately uses Remove Obstacle's spell icon rather<br>than an unrelated placeholder.|
 |Summons and prisons|Summon Trolls, Verdant Prison, Elemental<br>Convergence, Phantom Army, and similar spells<br>preview legal placement, resulting aggregate HP /<br>count, footprint, and any choice of creature type before<br>the spell is committed.|
