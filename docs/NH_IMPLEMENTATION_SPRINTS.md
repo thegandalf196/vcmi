@@ -1,5 +1,16 @@
 # New Horizons implementation sprints
 
+Delivery checkpoint: source45f659b7c is committed/pushed with required author
+and committer identity. Full Windows run37263037998 is confirmed in progress
+on45f659b7cfc0e307352c7f7393d2e45ed3b2a2f3; no artifact or Windows acceptance
+is claimed while it runs. This includes the preceding Mage Guild corrections.
+The Linux launcher snapshot remains unchanged.
+Swift Rebirth's read-only map is complete: shared queue insertion, serializable
+pending/used markers, extra-activation admission and detached mirrors are required.
+Its conflict with an already-earned Morale activation is asked explicitly before
+implementation; no perk activation or precedence is inferred. UP046 retains
+the map and remaining acceptance requirements.
+
 Accepted2026-10-05: UP046 Primal Burst, Greater Essence and Elemental Ward.
 Repaired both-target build68374 passes; native92485 passes23/23 in6.366s, zero
 skips, plus17 data guards/module drift and independent review. Perks217/310,

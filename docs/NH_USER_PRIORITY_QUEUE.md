@@ -8988,6 +8988,21 @@ No GUI, snapshot or launcher-profile promotion.
 
 ## UP-046 — Elemental Rebirth foundational effects
 
+Source45f659b7c is pushed and identity-verified. Full Windows37263037998 is
+in progress on that exact revision; record its terminal result before claiming
+downloadable delivery. Linux snapshot remains unchanged. Next read-only map:
+Swift Rebirth's current-cycle insertion; no additional perk is activated.
+Bounded read-only map identifies the shared recomputed battleGetTurnOrder seam,
+authoritative spawn/activation consumption, round reset and detached AI mirrors.
+Its one-activation cap must also exclude Morale, Quartermaster and Second Wind
+extra activations, without forbidding same-activation continuations. A bare
+CUnitState flag would not serialize; use existing serializable marker plumbing
+or an explicit versioned sidecar. Before implementation, the user is asked
+whether Swift insertion precedes a Morale extra activation already earned by
+the current actor. No ordering default is inferred. Multiple simultaneous
+spawns also require a stable deterministic tie-break. This bounded slice awaits
+the interaction decision; it is not a global Phase1 blocker.
+
 Three-perk acceptance2026-10-05: repaired full build68374 passes, and native92485
 passes23/23 in6.366s with zero skips (19 Rebirth cases and four adjacent controls).
 UP046-three-perks-build-repaired.log and UP046-three-perks-native.log/XML retain
