@@ -1,5 +1,19 @@
 # New Horizons implementation sprints
 
+Phase1 checkpoint2026-10-05: Brimstone siege Spell Power and four Castle
+role-stat rows accepted. Both-target91972 exits0; native85598 passes5/5
+in1.765s, zero skips, plus two exact offline data guards/module drift and
+independent Astra review. Actual scoped siege grant/accepted-result cleanup
+and loaded creature definitions pass; no new engine state or polling. Counts
+remain224/310 perks,61/67 combat identities and126 creature forms. Full native
+recruitment/battle journeys, strategic valuation and rendered delivery remain
+separate. Next selection: continue bounded unexamined Version1.0 principal-path
+audit; do not revisit accepted building/artifact maps or unanswered perk choices.
+Death Stare already executes on AI attacks; improved expected-kill valuation is
+recorded for Phase2, not treated as a missing action path. Qualitative artifact
+source/binding audit found no unblocked rewrite. Windows37295572917 remains
+pending behind compiling37289192606; do not replace that pending full run.
+
 Phase1 checkpoint2026-10-05: Cyclops/Cyclops King minimum BattleAI wall-shot
 hook accepted. Actual AI-selected gate shots for both forms resolve through
 authority; ordinary-shot/no-wall/WAIT and Hero Action controls pass. Both-target

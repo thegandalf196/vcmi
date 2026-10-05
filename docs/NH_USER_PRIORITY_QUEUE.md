@@ -10688,6 +10688,53 @@ playable snapshot promotion.
 
 ### UP-023 — Complete all missing Skills, perks, and spells before further art
 
+Brimstone/Castle acceptance2026-10-05: final both-target build91972 exits0;
+native85598 passes5/5 in1.765s, zero skips. Brimstone tests prove defender-only
+siege20 Spell Power and accepted-result packet cleanup, with field/unbuilt
+controls; existing town test proves Sulfur1 in shared daily-income calculation.
+Castle loaded-world test proves all four authored rows' stats/growth/cost,
+categories/Leadership and inherited upgrade/double-attack/retaliation definitions.
+Two exact offline data guards/module drift and independent Astra reviews pass.
+No gameplay identity-count increase: one missing town clause and four authored
+creature rows now have principal-path evidence. Keep first API failure in the
+failure ledger. No new state/polling, broad suite, GUI or playable promotion.
+Evidence: UP023-building-castle-build-repaired.log and
+UP023-building-castle-native.log/XML. Broader live battle/recruitment journeys,
+AI strategic valuation and rendered delivery are Phase2/separate obligations.
+
+Next missing town clause2026-10-05: Brimstone Stormclouds currently supplies
+Sulfur1/day but omits the canonical defending-hero20 Spell Power. Core's old
+unscoped2-point bonus is explicitly cleared and not equivalent. Reuse the
+existing defendingHeroBonuses parser/BattleStart one-battle grant; bounded data
+writer owns uniqueBuildings.json, separate tester owns an isolated real-siege
+fixture. Root owns registration, offline guard, review/build/Git. Require actual
+Inferno siege defender20, attacker/field/unbuilt exclusions and normal cleanup;
+preserve daily income. No new serialization/state/polling or perk/spell count.
+Castle four-form stat-table discrepancy is queued for confirmation afterward.
+Death Stare already executes for AI attacks; additional expected-kill valuation
+is Phase2 AI quality work, not a missing action hook or new creature mechanic.
+
+Confirmed second independent gap2026-10-05: Castle category swap exists, but
+the four authored Swordsman/Crusader/Griffin/Royal Griffin combat/economy rows
+have no content overlay and still inherit old Complete statistics. Apply exact
+canonical5133-5142 values through a separate Castle creature JSON; preserve
+abilities, upgrades, animations and already-configured categories/Leadership.
+Data writer and native-loaded-stat fixture have separate ownership; root owns
+module generation, focused offline guards/CMake/build/Git. Require actual loaded
+stats/cost/growth, retained double attack/retaliations and category/Leadership
+before acceptance. This implements an explicit authored row, not speculative
+balance tuning or an additional creature identity.
+
+Bounded qualitative-artifact audit2026-10-05: Conjuring/Magi duration bonuses,
+named spell immunities, Armageddon's Blade and Dragonfather immunity remain
+generic consumed producers. Access grants are filtered by saved-roster rules:
+Sea Captain's Hat cannot bypass the retired Scuttle Boat gate; Tomes remain
+random-pool-excluded; Titan Bolt retains explicitly documented special handling.
+Destroy Undead is an extant world-effect row with heroAccess:false, not authority
+to strip Pendant of Death immunity. No unblocked behavior rewrite found; this
+is source/binding evidence, not full native artifact-family acceptance. Ledger
+now records these exact boundaries so the next selection does not repeat them.
+
 Cyclops siege-AI principal acceptance2026-10-05: generic creature CATAPULT
 selection now routes both Cyclops forms through the existing legal action and
 wall-target policy. A useful hostile closed-gate breach may replace a useful
