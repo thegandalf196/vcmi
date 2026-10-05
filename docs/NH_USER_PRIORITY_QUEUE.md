@@ -5880,6 +5880,30 @@ Divine Mandate1/10; nine perks remain missing. AI Mana valuation and wider
 composition remain Phase2, not unsupported full-AI claims. No GUI/promotion.
 Evidence: UP108-reserve-build-repaired.log and UP108-reserve-native.log/XML.
 Next bounded source map: Sacred Command and Consecrated Casting. The original
+Consecrated Casting is the next implementation slice: capture the qualifying
+Divine Mandate Spell allowance before commitment. Now source/native accepted:
+client97140 and repaired both-target55168 pass. Three new actual-effect/projection
+cases pass, including initial Hero Action/no-perk controls, applied Bless2->3 at
+75 SP, detached prediction/nonmutation and other-source/creature exclusions.
+Focused run5534 passes21/21 in5.491s, zero skips;17 data checks, module drift and
+independent review pass. The first22-case batch18598 passes21/22; only Grand
+Formula's final binary deepCopy fails the older casualty-provenance save guard.
+Retain the failed log/XML; that whole-battle save/fixture expectation is Phase2,
+and the accepted filter explicitly excludes only that known case. Perks219/310,
+faction perks67/90, Divine Mandate2/10; eight perks remain missing. Required
+actual-cast feedback identifies Consecrated's10% SP-component bonus. No GUI or
+playable promotion. Next: Sacred Command's distinct persistent Order contribution
+and shared live/detached math, with explicit compatibility. Earlier plan follows.
+Capture the qualifying
+Divine Mandate Spell allowance before commitment, and apply its10% multiplier
+only to the Spell Power-derived component through shared BaseMechanics. Keep
+initial Hero Action spells, creature casts, other allowance sources and fixed
+terms unchanged. Separate production/native fixture ownership; root owns
+registry/build/integration. No new persistent state, polling or Warcasting reuse.
+Counts remain218/310 until its build and actual target-effect gates pass. Sacred
+Command needs a distinct captured Order descriptor contribution, not a falsely
+labelled Warcasting bonus; map that subsequent slice before editing it.
+The original
 in-progress plan below is preserved as checkpoint history.
 Chaplain's Reserve is the unambiguous missing
 Basic prerequisite. It restores3 Normal Spell Points after the first completed

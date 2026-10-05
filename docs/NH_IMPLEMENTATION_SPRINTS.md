@@ -1,5 +1,26 @@
 # New Horizons implementation sprints
 
+Accepted2026-10-05: Consecrated Casting. Client97140 and repaired both-target
+55168 pass; all three new native actual-effect/projection/control cases pass.
+Focused accepted run5534 passes21/21 in5.491s, zero skips, plus17 data guards,
+module drift and independent review. Initial22-case run18598 passes21/22; its
+sole failure is an older casualty-provenance binary battle-copy rejection in
+Grand Formula's final deepCopy oracle. Retain both result sets and defer the
+whole-battle save/fixture expectation to Phase2; the accepted filter explicitly
+excludes only that case. Perks219/310, faction perks67/90, Divine Mandate2/10;
+ranks93/93 and combat61/67 unchanged. No GUI/promotion. Next: Sacred Command,
+with distinct Order snapshot contribution/version compatibility and actual AI
+payload-aware valuation, not a mislabeled Warcasting field.
+The following in-progress paragraphs are checkpoint history.
+
+In progress2026-10-05: Consecrated Casting, a second Divine Mandate Basic perk.
+Capture the actual selected Divine Mandate Spell source pre-commit and scale only
+the SP-derived component by110%, shared by live/detached mechanics. No state or
+save-format change, new action, Warcasting alias or fixed-term buff. Separate
+production and focused actual-effect fixture writers; root registry/build/Git.
+Keep accepted counts218/310 until its principal native/build gates pass.
+Reserve source7074e1509 is pushed/remote-verified with required identity.
+
 Accepted2026-10-05: UP108 Chaplain's Reserve. Repaired client/native build25165
 passes; native96092 passes22/22 in2.672s, zero skips, including five actual-action
 reward cases and both real AI pair directions.17 data guards, generated-module
