@@ -11,6 +11,12 @@ entries and their validation/delivery evidence.
 
 ## UP-230 — Mage Guild spell symbols, exterior purchase hotspot and tier names
 
+Read-only recheck2026-10-05: symbol guards2/2, faction asset/name guards9/9
+and exterior access source guard pass. One residual shared Adventure Spell
+tier formatter still used Roman numerals in row labels/locked-tier hints;
+it now uses Arabic numerals, with a focused source guard against recurrence.
+Rendered acceptance and launcher promotion remain pending; no GUI launched.
+
 Status: Verified (rendered/playable delivery pending),2026-10-04. User screenshot rdMqGPr requests three changes:
 1. New spell icons must display only the spell symbol, with no painted rectangular
 background, following original Heroes III spell presentation. Audit actual icon
