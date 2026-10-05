@@ -1,5 +1,14 @@
 # New Horizons implementation sprints
 
+Delivery checkpoint2026-10-05: source94147b24aa181a06faed5e6459fada090b298041
+is committed/pushed with verified author/committer and remote. Last-stack full
+Windows37289192606 is terminal SUCCESS on1755ee0d4; nonexpired game artifact
+11341399297 is802641850bytes. Paid-artifact37295572917 has started onc675456fe.
+After confirming no other pending full run, root dispatched latest full once:
+37302451874 is confirmed pending on94147b24a, including Cyclops AI and these
+Brimstone/Castle changes. Preserve both handles; no duplicate/replacement or
+playable acceptance from pending state. Linux snapshot remains unpromoted.
+
 Phase1 checkpoint2026-10-05: Brimstone siege Spell Power and four Castle
 role-stat rows accepted. Both-target91972 exits0; native85598 passes5/5
 in1.765s, zero skips, plus two exact offline data guards/module drift and

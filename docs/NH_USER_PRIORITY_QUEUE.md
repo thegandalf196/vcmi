@@ -10688,6 +10688,15 @@ playable snapshot promotion.
 
 ### UP-023 — Complete all missing Skills, perks, and spells before further art
 
+Source/delivery checkpoint2026-10-05: Brimstone/Castle source94147b24a is
+committed/pushed with author/committer and remote verified; source worktree clean.
+Last-stack Windows37289192606 completed SUCCESS on1755ee0d4 with nonexpired
+game artifact11341399297 (802641850bytes). Paid-artifact37295572917 is now
+in_progress onc675456fe. With no pending full run remaining, root dispatched
+latest full37302451874 once; confirmed pending on94147b24a, including Cyclops
+AI and Brimstone/Castle. Preserve exact handles, no duplicate/cancellation.
+No accepted latest Windows package, Linux promotion or graphical claim.
+
 Brimstone/Castle acceptance2026-10-05: final both-target build91972 exits0;
 native85598 passes5/5 in1.765s, zero skips. Brimstone tests prove defender-only
 siege20 Spell Power and accepted-result packet cleanup, with field/unbuilt
