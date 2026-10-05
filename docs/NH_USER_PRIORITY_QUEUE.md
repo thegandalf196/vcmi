@@ -87,7 +87,16 @@ under the ignored testing directory. Unfinished UP232/UP004 changes are excluded
 
 ## UP-232 — Arcane Ballistics Physical Damage Reduction penetration
 
-Status: In progress, 2026-10-05. Source audit found the active Sorcery perk
+Resumption checkpoint, 2026-10-05: UP-234's reviewed spell-UI slice is committed
+and pushed as `f71a81e79`. Resume the preserved Arcane Ballistics implementation
+with separate production and fixture owners; register its new native fixture
+and require an accepted shot plus independent combined-source/cap damage
+oracles. UP-004's preserved canonical UI reconciliation is audited concurrently
+with disjoint ownership. Root serializes builds and Git; no launcher promotion
+or graphical acceptance is inferred.
+
+Status: Verified (playable delivery pending), 2026-10-05.
+Source audit found the active Sorcery perk
 `new-horizons:sorceryMagic.countermage` lacks its canonical three-mark PDR
 penetration. Root selects a generic attack-local payload consumed in the shared
 damage script: ignore 25% of combined capped Physical Damage Reduction after
@@ -101,6 +110,20 @@ independent 20%/30% source oracle, cap and invalid-mark/perk/melee controls;
 focused build/native evidence and contextual hover feedback. No new saved
 state, graphical acceptance or content-identity count credit. Disjoint Luna
 production and fixture writers; Astra review; root owns builds and integration.
+
+Verification checkpoint: Linux client/test targets build with 12 jobs. The
+registered fixture proves legal Basic-to-Advanced perk acquisition, three
+actual Focus Magic breach marks, an accepted ordinary-shooter attack without
+Focus Magic, detached forecast parity, independent 20%/30% PDR sources (67%
+damage after penetration), the 80% cap (40% damage), and mark/perk/side/expiry/
+melee/nonphysical/machine controls. Three new cases plus three neighboring
+Sorcery/Focus Magic cases pass 6/6 with zero skips. The shared hover guard and
+module drift check pass; independent review has no blocker. Initial adjacent
+shooter fixture failure is retained and repaired without changing gameplay.
+Logs: `build/nh-up232-validation/build-repaired.log`, `native-final.log`/XML.
+No identity-count increase: the perk was already registered active but missing
+this principal effect. Broad final-multiplier interaction coverage and rendered
+hover acceptance remain Phase 2; no graphical run or launcher promotion.
 
 ## UP-231 — Breakthrough and explicit Defend reduction channels
 
