@@ -1,5 +1,10 @@
 # New Horizons implementation sprints
 
+UP021 source1755ee0d405c680d1fde5d771565a20b5d0d0eda is committed/pushed;
+required identity and remote hash verified. Full Windows37289192606 is pending
+on that exact source, dispatched once behind live Frenzied37286838037. No new
+artifact, GUI acceptance or Linux playable promotion is inferred.
+
 Accepted Phase1 principal-path repair: UP021 last-stack transfer. Client39538
 and native build88200 pass; native26444 passes13/13 in3.908s, zero skips.
 Ordinary/radial routes retain the last creature, transfer available Leadership

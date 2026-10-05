@@ -11154,6 +11154,11 @@ and playable/in-game acceptance remains explicitly separate where still needed.
 
 ### UP-021 — Fix Shift stack split/combine crash and Leadership-aware combining
 
+Delivery checkpoint: source1755ee0d405c680d1fde5d771565a20b5d0d0eda is
+committed/pushed with required author/committer identity and remote verified.
+Full Windows37289192606 is pending on that source, dispatched once behind
+Frenzied37286838037. No artifact or playable/rendered acceptance claim yet.
+
 Source/native acceptance2026-10-05: ordinary empty/occupied clicks and radial
 transfers explain the required last creature using localized modal feedback.
 Larger radial transfers use authoritative whole-stack intent, preserving one
