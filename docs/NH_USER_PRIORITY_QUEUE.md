@@ -12573,8 +12573,17 @@ behavior remain verification work; a passing source guard is not closure.
 supersedes the historical three-counter presentation. Show the one normal Hero
 Action as Available/Spent, and typed exceptional opportunities contextually on
 ordinary Spell/Order controls with source and expiry. Preserve generic skill
-status providers. Source correction is in progress; earlier source/render
-evidence does not certify this revised panel.
+status providers. Source correction is verified by the Linux client build and
+focused Metamagic/Warcasting source guards; independent review finds no blocker.
+The one normal Hero Action is Available/Spent, while ordinary Spell/Order
+controls show additional typed opportunities with source and expiry. No saved
+allowance or spending semantics changed. Earlier rendered evidence does not
+certify this revised panel: sticky/non-sticky, short viewport, simultaneous
+status, z-order, hover/right-click and playable delivery remain pending.
+Build evidence is `build/nh-up232-validation/build-repaired.log`; the prior
+UP-234 build compiled these same preserved UI changes. No new raster artwork
+or launcher promotion occurred. Arcane Ballistics is committed separately as
+`e72d7c42b`.
 
 Display Metamagic state through a reusable combat-resource presentation, not a
 hardcoded Metamagic-only field beneath Actions. Do not present Hero, Spell and
