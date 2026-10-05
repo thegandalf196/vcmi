@@ -1,5 +1,9 @@
 # New Horizons implementation sprints
 
+Latest delivery evidence: Heaven37276837622 succeeded on44e4442bc; nonexpired
+game artifact11332920803 is802616768bytes and excludes later Purifying code.
+Purifying37280908002 remains in_progress on71dc35eda; no artifact claim yet.
+
 Purifying source71dc35eda is committed/pushed with verified identity and remote.
 Full Windows37280908002 is pending on that exact source; dispatched once.
 Heaven37276837622 remains in_progress. No artifact or playable promotion claim.

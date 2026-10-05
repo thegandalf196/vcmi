@@ -5897,6 +5897,13 @@ Not done; no rendered/playable acceptance or snapshot promotion is claimed.
 
 ## UP-108 — Divine Mandate rank foundation
 
+Windows checkpoint2026-10-05: Heaven37276837622 is terminal SUCCESS on
+44e4442bc7c4ba245f244b16c4fae31a3e04e559. Nonexpired game artifact11332920803
+is New-Horizons-Windows-x64-44e4442bc7c4ba245f244b16c4fae31a3e04e559
+(802616768 bytes), including Mandate of Heaven but excluding Purifying Mandate.
+Purifying37280908002 is confirmed in_progress on71dc35eda. Preserve its handle;
+no restart, Purifying artifact or Linux snapshot promotion is claimed.
+
 Divine Discipline lifetime map2026-10-05: capture selected DIVINE_MANDATE
 Order provenance at issuance; preserving orderStates across nextRound alone is
 insufficient because live/Protect/Brace/AI predicates require issuedRound=current.
