@@ -11,6 +11,32 @@ entries and their validation/delivery evidence.
 
 ## UP-234 — Three-hex Vengeful Vines, centered spell UI and House scrolls
 
+Committed-source checkpoint, 2026-10-05: `f71a81e79` is pushed; UP-232 and
+UP-004 are subsequently committed as `e72d7c42b` and `0e645f79b`. The working
+tree is clean. The historical unfinished-work statement below describes the
+initial UP-234 delivery boundary, not current uncommitted work. Linux snapshot
+6e1e8ce3 remains unchanged; no rendered acceptance is inferred.
+Windows notice preflight 37348507197 succeeds on exact source `0e645f79b`.
+Full Windows run 37348640988 is confirmed pending on that source behind live
+run 37333267686 on `d8b32e15d`; the older job has compiled and packaged and is
+uploading its artifact. Preserve both jobs and poll their actual handles.
+Follow-up authoritative poll: older run 37333267686 completes successfully;
+nonexpired game artifact 11361458394 is the Windows package for `d8b32e15d`
+(802672029 bytes). It does not include the three newer commits. Run 37348640988
+has started on `0e645f79b` and is installing its toolset; it is not a completed
+package. A notes-only later commit does not change this pinned gameplay source.
+
+Phase 1 selection audit: all six missing combat identities retain their recorded
+design questions. The planned Discipline/War Machines/Recruitment, faction,
+Command/Warcasting/Logistics/Diplomacy/Estates groups likewise retain specific
+scope, lifecycle, producer or provenance holds; no item is activated by a map.
+This bounded audit does not claim that all 85 planned perks or every required
+Version 1.0 surface has been exhaustively audited. Fresh Field Workshop and
+Veteran Cohesion questions are presented; Battlefield Mastery is still awaiting
+its War Machine-consumption answer. Do not repeatedly remap these same holds
+without new evidence. Check another unblocked queue path, or monitor the live
+Windows job, before considering a project-wide blocked status.
+
 Status: Implemented (rendered/playable verification pending), 2026-10-05.
 Approved implementation plan: Vengeful
 Vines selects three distinct connected playable hexes (line, bend or triangle)
@@ -4868,6 +4894,14 @@ before implementation; the Defend prerequisite remains unblocked.
 
 ## UP-156 — Battlecraft Battlefield Mastery
 
+Resumption audit, 2026-10-05: the War Machine consumption question remains
+unanswered after UP-232/UP-004 source delivery. Do not activate the perk or
+infer a response from automatic goal continuation. Root also rechecks other
+unimplemented queue families rather than treating this one question as a
+project-wide blocker. The six missing spell identities and planned faction
+perks retain their separately recorded design/producer holds; none are silently
+waived as Phase 2 integration work.
+
 Next-feature recheck2026-10-05 confirms the missing first-action award, not
 another base Wait/Defend lifetime repair. No production consumer for the planned
 Mastery ID exists. Existing shared rank damage/reduction and native Battlecraft
@@ -6875,6 +6909,11 @@ art remains Not done. No GUI, snapshot promotion or playable acceptance.
 
 ## UP-100 — Field Workshop machine and fortification repair
 
+Clarification resurfaced, 2026-10-05: root asks whether repair is restricted
+to surviving damaged targets or also rebuilds destroyed ones. The full perk
+remains planned pending the answer. The structural-HP packet/application/client
+refresh seam is still missing; its map is not implementation or perk coverage.
+
 Destroyed-target scope resurfaced2026-10-05: surviving damaged machines and
 fortifications only versus rebuilding destroyed targets. No answer inferred;
 unmanned-tower baseline is independent and proceeds while this remains planned.
@@ -7332,6 +7371,9 @@ capacity. Record the answer before implementing; do not invent a low-health
 trigger that cannot ordinarily occur. One-shot state must survive healing and
 resurrection, copy into detached branches and use explicit battle-save support.
 No source/count change; this question does not block other missing features.
+The denominator question is presented again in the 2026-10-05 continuation;
+recommended basis is battle-start maximum HP. No answer is inferred from the
+separate Elemental Rebirth decision or automatic goal continuation.
 
 ## UP-095 — War Machines Surgeon
 
