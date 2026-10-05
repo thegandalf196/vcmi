@@ -1,5 +1,30 @@
 # New Horizons implementation sprints
 
+Current2026-10-05: UP046 base ranks source/native accepted. Client8888 and final
+test build81405 pass; native64752 passes12/12 in3.755s with zero skips, including
+eight new runtime/AI cases and four adjacent controls.17 data checks/module
+drift and independent review pass. Rank effects90->93/93; faction ranks24->27/27;
+perks remain214/310 and combat61/67. First compile and fixture failures are
+retained with their repairs, not discarded. Broader HP/status/death composition,
+stochastic/initiative and unknown-opponent AI forecasting remain Phase2. No GUI
+or promotion; full combat save/resume remains unsupported. Next: Greater
+Essence and Elemental Ward, then the other unblocked missing specified content.
+
+Implementation start2026-10-04: UP046 Elemental Rebirth base-rank implementation follows
+pushedb81ee74bf. Runtime owns startup HP capture, pure reaction/spawn helpers,
+versioned descriptors and authoritative injury reactions; AI owns detached
+physical/spell consumers and focused native fixtures. Root registers files/data,
+serializes builds, reviews integration and keeps coverage at90/93 ranks until
+principal paths pass. No ten-perk activation, terrain redesign, polling, GUI
+launch or playable promotion is included. Full stochastic AI candidate averaging
+and full midbattle save/resume remain deferred, not false acceptance claims.
+After the base gate, the next bounded coverage slices are Greater Essence
+(Advanced40->55%, Expert50->65% Rebirth HP) and Elemental Ward (20% magical
+damage reduction on Rebirth outputs). Both are explicit, terrain-independent
+canonical perks. Their saved-perk decisions must be shared by authority and
+detached AI; each stays planned until its own implementation/build/native gate.
+This map does not activate the other eight perks or resolve terrain mapping.
+
 UP108 implementation resumed2026-10-04 from clean pushedaa6ff84c5.
 Acceptance: client/native retry79510 passes after correcting a test-only
 `MasteryLevel::Type` parameter. Six new Divine Mandate native tests and21

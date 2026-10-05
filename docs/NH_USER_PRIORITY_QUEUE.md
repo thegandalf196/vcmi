@@ -24,8 +24,9 @@ purchase window, costs, authority, unlocks and refresh behavior.
 Level IV/V substitutions. Audit all faction bindings rather than one screenshot.
 Acceptance needs exact asset/binding inventory, focused source/native/build
 checks and native-resolution visual evidence. Source changes do not prove
-rendered/playable delivery. This user-priority item precedes UP108; no Divine
-Mandate production work has started. Preserve existing snapshots and GUI hold.
+rendered/playable delivery. This user-priority item preceded UP108; its source
+gates now pass and Divine Mandate's foundation is pushed. Preserve existing
+snapshots and the GUI hold; rendered acceptance remains a delivery obligation.
 Implementation checkpoint: exterior-window hotspot source is frozen and
 client92271 builds with12 jobs. The separate Adventure Spells icon/label is
 removed; all guilds use their actual faction/tier picture bounds/position and
@@ -8981,6 +8982,75 @@ No GUI, snapshot or launcher-profile promotion.
 
 ## UP-046 — Elemental Rebirth foundational effects
 
+Status: Base ranks source/native verified,2026-10-05; ten perks remain planned.
+Client8888 and final vcmitest81405 pass with12 jobs. Final native64752 passes
+12/12 in3.755s, zero skips: six authoritative rank/frozen-basis/exclusion/format
+cases, two owning-side legal spell/physical AI cases and four adjacent controls.
+Final evidence: UP046-native-build-legal-cast.log and
+UP046-native-legal-cast.log/XML.17 perk-data checks/module drift/diff checks and
+independent review pass. Registry recount:93 active rank entries,214 active and
+96 planned perks. Coverage90->93/93 ranks and24->27/27 faction ranks. No perk or
+combat-spell identity increase. Retain earlier failed logs and diagnosis below.
+No GUI acceptance or playable snapshot promotion. Full combat save/resume,
+wider HP/status/death composition and full stochastic/initiative or unknown-
+opponent AI forecasting remain Phase2. Next unambiguous perks are Greater
+Essence and Elemental Ward; neither depends on unresolved terrain mapping.
+
+Implementation resumed2026-10-04 after Divine Mandate foundation source/native
+acceptance and pushb81ee74bf. Worktree is clean at selection. Separate runtime
+and AI/native-fixture workers prepare exact interfaces before edits; root owns
+architecture, registration, activation, serialized build and coverage. Scope is
+the three base ranks, not the ten perks or unresolved terrain mapping. No polling,
+GUI launch or playable snapshot promotion. Capture/save/death/summon/projection
+requirements below remain acceptance gates, not inferred completed work.
+Architecture review requires pre-hit capture and post-hit alive-to-dead checks,
+deduplicated per victim, before battle termination; native Rebirth survivors do
+not trigger. Use the five canonical Air/Water/Fire/Earth/Magic Elemental lines,
+full-footprint corpse-position legality and effective inherited creature HP.
+Provisional integer scaling rounds the HP pool down, minimum1 for a positive
+basis, then rounds creature count up and wounds the top creature to that pool.
+Detached AI uses a private representative draw and includes the resulting unit;
+full stochastic branch averaging is deferred to Phase2. Persist the frozen basis
+without claiming full midbattle save/resume, which already fails closed for
+unsupported health/provenance state.
+Candidate registry now enables the three rank entries;17 perk-data checks pass
+and the generated module is refreshed. Coverage remains90/93 until principal
+native/build gates pass. Pre-build root review caught and assigned corrections
+for actual faction gating, invalid decoded IDs, garrison-side HP capture and a
+wrong partial-health damage return-value check. These are source-review findings,
+not observed playable failures. Exact wounded HP is a required native case.
+Runtime source is frozen. Independent review reports no principal runtime
+blocker. Detached physical, spell-injury, start-turn Poison and Hex of Pain
+death paths now call the shared reaction; explicit replacement-unit scoring
+avoids silently discarding temporary summons in spell/exchange valuation.
+Pre-build AI review caught an inclusive RNG upper-bound error and persistent
+source-ID dedup that would suppress a restored original's later death. The
+worker is repairing those bounded divergences and preparing focused native
+cases before the serialized build. Do not count candidate registry activation
+as verified coverage or use the old native binary to validate these changes.
+Production and both native fixtures are now frozen. Client build8888 passes
+with12 jobs (UP046-client-build.log). The serialized vcmitest build9902 is live
+with12 jobs (UP046-native-build.log); the new native tests have not run yet.
+Two detached AI cases check spell replacement and physical score; six runtime
+cases check25/40/50%, prior casualties, both hit-pack routes, summoned/clone/
+native-Phoenix exclusions, descriptor-basis roundtrip and old-writer rejection.
+This does not establish GUI acceptance, whole-combat saves or playable delivery.
+First native build9902 stopped on a missing concrete CPlayerBattleCallback
+include in the AI fixture (shared-pointer conversion). Production/client had
+already compiled. Root added that include and repaired the clone fixture's
+separate CLONE_KILLED expectation after the build was terminal. Incremental
+retry76658 is live; preserve both build logs. No runtime/count acceptance yet.
+Retry76658 and final strict-score build40926 pass. First native75375 runs12
+cases:9 pass,3 fail. All three rank HP paths, frozen basis, native Phoenix and
+descriptor basis roundtrip pass. Exclusion setup incorrectly toggled public
+flags rather than slot-based summons/authoritative clone state; its initial
+clone oracle correction also misunderstood killed(), which includes both
+KILLED and CLONE_KILLED. The test owner is repairing the real-state setup.
+Both AI cases use an attacker-scoped callback to query the defender's hidden
+faction skill. The owning-side fixture must exercise this reaction without
+bypassing callback visibility; unknown opponent-skill forecasting remains a
+Phase2 limitation. Keep first native log/XML; counts remain90/93 pending retry.
+
 Decision2026-10-04: the user selects battle-start maximum aggregate HP. Canonical
 section now specifies capture at combat start, unaffected by intervening losses
 or temporary HP changes. The historical HP-basis gate below is resolved. Map
@@ -9002,8 +9072,9 @@ Exclude native Rebirth, clones and summoned sources; validate full footprints.
 No new foundational blocker was found, and no implementation credit follows
 the read-only map.
 
-Status: Planned; read-only map complete, HP-basis clarification pending,
-2026-09-30. UP-023 Phase 1 coverage candidate; no effect activation claimed.
+Historical2026-09-30 checkpoint: Planned; read-only map complete, HP-basis
+clarification then pending. UP-023 Phase1 coverage candidate; no effect activation
+was claimed. The2026-10-04 decision above resolves that question.
 
 Implement the Conflux rank effects: destroyed non-summoned allied stacks create
 temporary random Elite Elementals at their position with exact aggregate HP
