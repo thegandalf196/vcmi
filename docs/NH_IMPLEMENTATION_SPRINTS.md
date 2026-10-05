@@ -1,5 +1,29 @@
 # New Horizons implementation sprints
 
+Next actual Phase1 implementation: Cyclops/Cyclops King minimum BattleAI
+wall-shot hook. Creature ability/data/human/server path exist, but activeStack
+only routes actual Catapult machines to CATAPULT. Generic legal ability plus
+useful hostile gate-breach policy is assigned separately from a real-siege
+AI/native fixture. Preserve Hero/typed action windows and ordinary attack
+choices; no stat/identity count. Crown and Altar's previously unrecorded first-
+effect/second-target timing choice is asked and persisted, not silently decided.
+
+Windows checkpoint2026-10-05: Frenzied37286838037 succeeded onf46e375ee,
+nonexpired game artifact11338641211 is802646349bytes. Last-stack37289192606
+is in_progress on1755ee0d4; paid-artifact37295572917 is pending on exactsource
+c675456fe, dispatched once after the prior pending job started. Preserve both
+handles; no duplicate dispatch, new accepted artifact or Linux promotion claim.
+
+Current continuation2026-10-05: previous cycle is progress; sourcec675456fe is
+pushed with verified identity/remote and clean worktree. Phase1 coverage audit
+now enumerates the six canonical specialty-conversion rows, with actual accepted
+slices and blockers rather than a made-up completion fraction. Bounded read-only
+workers check previously unexamined Stronghold/Rampart creature clauses and
+Castle/Rampart/Necropolis unique-building effects for the next concrete missing
+mechanic. Resource-specialty producer retention is audited separately. Do not
+re-map known unanswered perk choices or substitute exhaustive testing of accepted
+features. No new active perk/spell count from ledger work.
+
 UP023 paid Adventure-artifact slice accepted2026-10-05: final both-target
 build79874 exits0; native70394 passes20/20 in6.541s, zero skips. Exact equipped,
 unlearned Boots/Wings casts pay20/40 and consume the shared daily opportunity;

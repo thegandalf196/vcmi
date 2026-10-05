@@ -10688,6 +10688,41 @@ playable snapshot promotion.
 
 ### UP-023 — Complete all missing Skills, perks, and spells before further art
 
+Next concrete missing minimum-AI path2026-10-05: canonical creature conversion
+defaults retain Cyclops/Cyclops King's wall-shot ability, but default BattleAI
+only sends CATAPULT for the actual Catapult war machine. Human legality and
+authoritative cyclopsShot resolution already exist. Implement bounded generic
+creature CATAPULT selection for a useful hostile closed-gate breach, preserving
+ordinary creature attacks, action-controller ownership, Hero Actions, mandatory
+Orders, Time Stop, Pursuit and ranged-only continuations. Production BattleAI
+and real-siege fixture have independent ownership; root owns registration,
+builds/review/Git. Require actual AI submission and authoritative structural
+damage, no-wall/defender/ordinary-attack controls before acceptance. No new
+creature stat, ability, perk or spell identity count from this AI hook.
+
+Coverage-audit finding2026-10-05: Crown and Altar was planned but had no explicit
+item-level timing disposition. Its canonical20% boost to both same-target paired
+components is not retrospective by definition: the first action can resolve
+before the second target is selected, with intermediate activations allowed.
+Asked whether to declare a shared target before starting the pair or redesign
+the perk to boost only the second action. Keep planned; neither UI precommitment
+nor a second-only rule is inferred. Elemental Conjurer and the three terrain-
+dependent Rebirth perks reuse UP072's existing terrain-map blocker, not new asks.
+
+Bounded audit2026-10-05: Castle/Rampart/Necropolis unique-building checks found
+no new unblocked gap; Skeleton Transformer and Lighthouse retain their existing
+selection/rounding and departure-scope decisions. Resource-specialty13-source
+retention has config/shared-income evidence, not full native certification.
+
+Source delivery2026-10-05: paid Adventure-artifact implementationc675456fe56091137bb22f0ac586349094f27c2b
+is committed/pushed with required author/committer and remote hash verified.
+Full Windows37295572917 is confirmed pending on that exact source, dispatched
+once after last-stack37289192606 entered in_progress. Frenzied37286838037 is
+terminal SUCCESS onf46e375ee with nonexpired game artifact11338641211,
+802646349bytes. That package excludes the later transfer/artifact changes;
+do not infer them from its success. Preserve both current handles without
+duplicate dispatch/cancellation. No Linux snapshot promotion or GUI acceptance.
+
 Accepted Adventure-artifact principal paths2026-10-05: final client/native
 build79874 passes; native70394 passes20/20 in6.541s, zero skips. Equipped Boots
 and Wings grant temporary unlearned Water Walk/Fly sources at20/40 Spell Points
