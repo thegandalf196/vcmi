@@ -1,5 +1,26 @@
 # New Horizons implementation sprints
 
+Phase1 checkpoint2026-10-05: missing no-hero defensive-tower base output is
+implemented through saved town rules at Siege0. Client91717 and final both-target
+44376 pass; native22240 passes8/8 in2.703s, zero skips, including real automatic
+damage and legacy setup, custom77 and all four Engineer controls. Independent
+review and module drift pass. Fixture header/lifecycle/override-merge failures
+are retained in the failure ledger. No new perk/spell identities; broader v2,
+full-save and siege composition checks belong to Phase2. No graphical or Linux
+promotion. Narrow Field Workshop destroyed-target, Scholar holder, and
+Academic Study/Sage pre-acquisition-visit questions were resurfaced; no answers
+are inferred. Next highest-priority full feature: Field Workshop's shared
+machine/fortification repair once its scope is resolved. Do not remap its
+already-recorded architecture while waiting; other unblocked clauses may proceed.
+
+Windows checkpoint2026-10-05: paid-artifact run37295572917 is terminal SUCCESS
+onc675456fe56091137bb22f0ac586349094f27c2b. Nonexpired game artifact11345085085
+is802647746bytes. Existing37302451874 on94147b24a has started, so root queued
+one full latest build37308848380 onb8d2430765f0a9653f303ea65fb9474af2a49d03;
+confirmed pending. That candidate includes canonical growth, Glyphs siege and
+machine HP. Preserve both current handles; no duplicate/replacement dispatch.
+Package success is not graphical acceptance or Linux snapshot promotion.
+
 Phase1 checkpoint2026-10-05: Glyphs siege20 Defense and all four authored
 machine HP values accepted. Native88293 passes4/4 in1.466s, zero skips after
 the before gate proved legacy250/1000/75/100 HP. Both-target repaired/final

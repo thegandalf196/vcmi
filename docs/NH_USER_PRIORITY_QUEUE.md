@@ -4412,6 +4412,18 @@ gates. Await that scope answer while UP161 acceptance remains unblocked.
 
 ## UP-163 — Learning Scholar preparation
 
+Narrow eligibility question resurfaced2026-10-05: should one selected Scholar
+enable both teaching directions, or must both meeting heroes hold it? No answer
+is inferred; reciprocal output itself is already canonical.
+
+Blocker precision review2026-10-05: current canonical wording already resolves
+reciprocal consideration and once-per-pair weekly accounting; neither is an
+open design choice. Canonical spellbook order is also the required policy.
+Outstanding: one-holder versus two-holder trigger eligibility, no-op meeting
+consumption, and which stable engine order represents canonical spellbook order.
+Do not infer these answers from the resolved bilateral wording. No implementation
+or coverage credit from this clarification audit.
+
 Status: Bounded read-only preparation,2026-10-03. When allied heroes meet,
 each teaches the other their highest-level legally learnable unknown spell;
 ties use canonical spellbook order, once per hero pair per week. Map the
@@ -6607,6 +6619,10 @@ controller-transfer interactions and full binary battle snapshots. Perk-specific
 art remains Not done. No GUI, snapshot promotion or playable acceptance.
 
 ## UP-100 — Field Workshop machine and fortification repair
+
+Destroyed-target scope resurfaced2026-10-05: surviving damaged machines and
+fortifications only versus rebuilding destroyed targets. No answer inferred;
+unmanned-tower baseline is independent and proceeds while this remains planned.
 
 Status: In progress; read-only architecture map, 2026-10-01. UP-023 missing
 Advanced War Machines perk: the Tent may target allied war machines or friendly
@@ -10721,6 +10737,38 @@ Source checkpoint `e6545354a` was pushed to `origin/definitive-mvp` on
 playable snapshot promotion.
 
 ### UP-023 — Complete all missing Skills, perks, and spells before further art
+
+Unmanned-tower acceptance2026-10-05: client91717 and repaired both-target
+96872/44376 pass; native22240 passes8/8 in2.703s, zero skips. Real hero-less
+siege uses canonical60 or custom saved77; legacy world's actual BATTLE_SETUP
+script and automatic tower-shot damage pass, alongside all four Engineer
+controls. Independent review and module drift pass. Keep
+UP023-unmanned-tower-native-build-merge-repaired.log and native-merge-repaired.log/XML;
+header/lifecycle/merge fixture failures remain in the failure ledger. Shared
+saved-town output now fills the missing no-hero case without new state or scans.
+No new perk/spell count, GUI/promotion or full-Siege completion. Older-v2, whole
+save and broader siege combinations remain Phase2.
+
+Unmanned-tower slice2026-10-05: explicit canonical60 base output is missing
+when a fortified town has no defending hero. Shared damage callback supplies
+canonical machineBaseDamage only for hero-owned Siege weapons, leaving unmanned
+towers on legacy building-count output. Correct via the defended town's saved
+capability rules with Siege0; preserve hero/Engineer formulas and legacy worlds.
+No attacker-hero rules borrowing, new state or scan. Separate Luna production
+and real no-hero siege fixture ownership; root owns registration/build/review.
+Require actual tower forecast/resolution, saved custom-base and legacy controls
+before acceptance; no source or full-Siege credit merely from a map.
+Production is frozen and independent Astra review finds no blocker. Root starts
+only client build91717 with12 jobs while the isolated no-hero fixture is written;
+do not register/reconfigure tests or run native until that build is terminal.
+Log: UP023-unmanned-tower-client-build.log. No gameplay acceptance yet.
+
+Windows delivery checkpoint2026-10-05: run37295572917 succeeds onc675456fe;
+nonexpired artifact11345085085 is the802647746-byte game package. It predates
+canonical growth and machine HP/Glyphs. Run37302451874 on94147b24a has started;
+latest full37308848380 is confirmed pending onb8d243076, containing those later
+changes. No replacement build, GUI acceptance or Linux promotion. Current
+selection audits target unblocked authored clauses, not unanswered perk policies.
 
 War-machine durability acceptance2026-10-05: native before27834 proves four
 legacy values250/1000/75/100, then the bounded registered creature overlay
