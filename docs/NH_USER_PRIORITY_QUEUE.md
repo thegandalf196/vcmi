@@ -9170,6 +9170,14 @@ same-tier form, exact aggregate HP, two-round reversion and detached AI.
 
 ## UP-062 — Complete canonical Berserk and Frenzied Curse
 
+Frenzied source delivery: f46e375ee2d2264bded8dc9ccade2c0ac6d3cf38 is committed
+and pushed with required author/committer identity and matching remote hash.
+Full Windows run37286838037 is confirmed pending on that exact source:
+https://github.com/thegandalf196/vcmi/actions/runs/37286838037 . Dispatched once;
+track this handle without duplicate dispatch or cancellation. Earlier Purifying
+run37280908002 remains in_progress on71dc35eda; preserve its actual handle.
+No Windows artifact, GUI acceptance or Linux snapshot promotion is claimed.
+
 Frenzied Curse accepted2026-10-05: client78683 and final native build64062 exit0;
 native42075 passes30/30 in6.265s, zero skips, retaining all original cases and
 the two Puppet controls. Actual cast provenance, expanded accepted melee reach,

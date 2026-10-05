@@ -1,5 +1,12 @@
 # New Horizons implementation sprints
 
+Frenzied sourcef46e375ee is committed/pushed with verified identity/remote.
+Full Windows37286838037 is confirmed pending on that exact source, dispatched
+once; Purifying37280908002 remains in_progress. Preserve both handles, not
+duplicates or cancellation. No new package, graphical acceptance or Linux
+snapshot promotion is inferred. Next is the unresolved Berserk skipped-turn
+lifetime; the concise question is resurfaced and no answer is assumed.
+
 Current Phase1 checkpoint: UP062 Frenzied Curse source/native accepted.
 Client78683 and final native build64062 pass; native42075 passes30/30 in6.265s,
 zero skips. Data/inventory19/19, module drift and independent review pass.
