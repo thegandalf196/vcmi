@@ -9170,6 +9170,45 @@ same-tier form, exact aggregate HP, two-round reversion and detached AI.
 
 ## UP-062 — Complete canonical Berserk and Frenzied Curse
 
+Frenzied Curse accepted2026-10-05: client78683 and final native build64062 exit0;
+native42075 passes30/30 in6.265s, zero skips, retaining all original cases and
+the two Puppet controls. Actual cast provenance, expanded accepted melee reach,
+movement-only +2 travel, owner/inactive controls, cleanup and detached AI parity
+pass. Data/inventory19/19, module drift and independent review pass. Coverage
+223->224/310 perks, generic153/220, Chaos Magic4->5/10; faction71/90 and combat
+identities61/67 unchanged. No new saved state, GUI or snapshot promotion.
+Evidence: UP062-frenzied-client-build.log,
+UP062-frenzied-native-build-repaired-v4.log and UP062-frenzied-native-final.log/XML.
+Keep failed/repaired logs and lessons in NH_RELEASE_FAILURES.md. Broader existing
+stopped-unit Berserk valuation and interaction coverage remain Phase2.
+Base Berserk still partial: negative-Morale skipped-activation consumption was
+resurfaced as a concise user question; do not silently choose or claim spell
+completion from this perk. Bounded selection audits found pending choices among
+the checked planned perks and creature/town/artifact/functional-UI items, not
+proof the entire Version1.0 backlog is blocked. Source delivery follows gates.
+
+Earlier Frenzied gate checkpoint: runtime/helper, PotentialTargets and both fixtures are
+frozen; independent review finds no blocker. Client78683 exits0 with12 jobs.
+Native build89833 exits1 on a raw spell-enum BonusSourceID constructor in the AI
+fixture; owner repairs the typed wrapper before a sequential rebuild. Preserve
+UP062-frenzied-client-build.log and UP062-frenzied-native-build.log. Data and
+inventory19/19 and module drift gates pass. No acceptance/count increase yet.
+
+Frenzied Curse implementation resumed2026-10-05 as an unblocked bounded slice.
+The explicit +2 Speed applies only during an actual forced Berserk action; the
+unanswered negative-Morale consumption question still governs base Berserk and
+is not silently resolved. Capture the original spell caster's saved active perk
+through existing Berserk owner metadata; unstamped/legacy effects fail closed.
+Authoritative entry follows Morale/Puppet checks, grants Speed before reachable
+candidate calculation and removes it after every forced action, including WALK
+and NO_ACTION. Do not grant at spell inscription/casting or leave it until an
+eventual attack, which would affect ordinary initiative or linger beyond the
+activation. Runtime, detached AI and native fixture have disjoint Luna owners;
+root owns wiring, registration, builds and integration. Accepted counts remain
+223/310 perks,71/90 faction perks and61/67 combat identities pending gates.
+Require real cast/perk/provenance controls, expanded legal reach, accepted action,
+speed cleanup and detached non-mutation. No new GUI/art or snapshot promotion.
+
 Status: Partial; targeting foundation source/native verified, 2026-09-30.
 
 The preceding answer-only turn confirmed an already-recorded Hand of Fate

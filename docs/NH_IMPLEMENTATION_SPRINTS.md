@@ -1,5 +1,17 @@
 # New Horizons implementation sprints
 
+Current Phase1 checkpoint: UP062 Frenzied Curse source/native accepted.
+Client78683 and final native build64062 pass; native42075 passes30/30 in6.265s,
+zero skips. Data/inventory19/19, module drift and independent review pass.
+Coverage224/310 perks, generic153/220, Chaos Magic5/10; faction71/90 and combat
+identities61/67 unchanged. Action-scoped +2 Speed uses original-caster provenance
+and live/AI cleanup without a new saved counter. Broader interactions and existing
+stopped-unit valuation remain Phase2; no GUI or snapshot promotion. Next missing
+foundation is base Berserk's skipped-activation lifetime, pending the resurfaced
+negative-Morale decision. Bounded planned-perk and creature/town/artifact/UI audits
+found recorded choices blocking their checked candidates; not a whole-goal
+blockage claim. Reuse those maps rather than remapping unanswered choices.
+
 Latest delivery evidence: Heaven37276837622 succeeded on44e4442bc; nonexpired
 game artifact11332920803 is802616768bytes and excludes later Purifying code.
 Purifying37280908002 remains in_progress on71dc35eda; no artifact claim yet.
