@@ -10688,6 +10688,21 @@ playable snapshot promotion.
 
 ### UP-023 — Complete all missing Skills, perks, and spells before further art
 
+Next unblocked functional gap2026-10-05: canonical Adventure-artifact exceptions
+are not implemented. Angel Wings/Boots of Levitation still supply passive
+FLYING_MOVEMENT/WATER_WALKING consumed directly by TurnInfo, without paying
+40/20 Spell Points or the shared daily Adventure Spell allowance. General
+Adventure Spell gates do not prove these equipment paths. Implement equipped,
+temporary spell availability and shared cost/admission while suppressing only
+the NH artifact-derived passive movement; preserve legacy worlds and actual
+spell-derived effects. Required evidence: actual equipment/no learned spell,
+authoritative payment/effect, same-day chaining rejection, removal, legacy and
+AI/pathfinder planning. Runtime mapping owns hero/TurnInfo seams; root decides
+compatibility boundary before edits and owns builds/registration/integration.
+No conversion credit from mapping. Artifact framework now has an explicit
+ten-row ledger: six focused conversion rows, two retained-baseline unverified,
+one partial qualitative exception audit, one blocked regeneration conversion.
+
 Status: In progress; reprioritized by the user on 2026-09-27 ahead of the
 Fortress faction-completion lane and nonessential artwork.
 

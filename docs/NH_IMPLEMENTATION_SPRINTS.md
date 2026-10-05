@@ -1,5 +1,19 @@
 # New Horizons implementation sprints
 
+Next Phase1 slice: paid Adventure casts supplied by Boots of Levitation and
+Angel Wings. Canonical20/40 costs and daily action are explicit; current free
+passive movement is a real production gap, not a design ambiguity. Map saved-
+rules suppression/availability/cost and all shared consumers before bounded
+runtime/test ownership. Preserve legacy worlds, no polling or frontend state
+mutation. Artifact framework ledger now enumerates its exact ten rows without
+claiming baseline producer existence as acceptance. Coverage counts unchanged.
+Bounded parallel audits find the checked Bless/Earthquake/Guardian/Spell Lock/
+Time Stop/Poison/Sorrow rank consumers and Tower Mage/Arch Mage penalty/cost
+abilities already implemented. This is not full School or126-form certification;
+do not invent a patch or remap recorded design blockers. The explicit artifact
+gap takes precedence. Runtime and native-fixture maps are read-only until root
+partitions all passive-consumer and compatibility seams.
+
 UP021 source1755ee0d405c680d1fde5d771565a20b5d0d0eda is committed/pushed;
 required identity and remote hash verified. Full Windows37289192606 is pending
 on that exact source, dispatched once behind live Frenzied37286838037. No new
