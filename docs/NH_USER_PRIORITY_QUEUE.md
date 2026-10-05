@@ -5897,6 +5897,13 @@ Not done; no rendered/playable acceptance or snapshot promotion is claimed.
 
 ## UP-108 — Divine Mandate rank foundation
 
+Delivery checkpoint: Mandate of Heaven source44e4442bc7c4ba245f244b16c4fae31a3e04e559
+is committed/pushed; required author/committer and remote hash verified. Full
+Windows37276837622 is confirmed queued on that exact source, dispatched once
+with preflight_only=false. Earlier Knightly37273443600 remains pending and
+Sacred37270206987 in_progress. Retain all handles; no cancellation, duplicate
+dispatch, completed Heaven artifact or Linux promotion is claimed.
+
 Mandate of Heaven source/native accepted2026-10-05: both-target25480 exits0;
 focused native55540 passes49/49 in6.848s, zero skips. Legal Expert offers,
 expired unused opportunities, actual four alternating pairs/fifth rejection,

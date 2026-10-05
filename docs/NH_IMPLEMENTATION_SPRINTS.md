@@ -1,5 +1,11 @@
 # New Horizons implementation sprints
 
+Delivery checkpoint: Mandate source44e4442bc is committed/pushed with required
+identity/remote verified. Full Windows37276837622 is confirmed queued on that
+exact source, dispatched once. Earlier37273443600 remains pending and
+37270206987 in_progress; preserve handles without duplicate dispatch or
+cancellation. Package and graphical acceptance are not yet established.
+
 Accepted Phase1 slice2026-10-05: Mandate of Heaven. Both-target25480 exits0;
 native55540 passes49/49 in6.848s, zero skips. Existing total counter, real four
 pairs/fifth rejection, first-only Reserve, inactive saved selection, detached AI
