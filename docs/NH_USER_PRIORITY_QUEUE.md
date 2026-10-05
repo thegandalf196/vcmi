@@ -5897,6 +5897,18 @@ Not done; no rendered/playable acceptance or snapshot promotion is claimed.
 
 ## UP-108 — Divine Mandate rank foundation
 
+Divine Discipline lifetime map2026-10-05: capture selected DIVINE_MANDATE
+Order provenance at issuance; preserving orderStates across nextRound alone is
+insufficient because live/Protect/Brace/AI predicates require issuedRound=current.
+Reuse a shared effective-lifetime query and recipient carry, distinct from
+current-round authorization, ending after the next genuine completed Creature
+Activation rather than UntilGetsTurn's start. No implementation/activation yet.
+Same-Order reissue while a carry exists is the existing UP149 design blocker:
+replacement versus separate nonstacking instances. A focused question now asks
+that shared decision; different Orders continuing together remain approved.
+Rapid Embarkation's UP103 Navigation10%-versus5% blocker is unchanged; do not
+repeat its completed architecture map or silently activate the perk.
+
 Next-work correction: UP056 Town Portal remains blocked by its already-asked
 ownership and minimum-Movement choices; its completed map is not implementation.
 Read-only bounded maps now examine Divine Discipline's activation expiry and

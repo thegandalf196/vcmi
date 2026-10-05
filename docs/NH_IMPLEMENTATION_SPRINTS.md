@@ -11,8 +11,12 @@ perks,71/90 faction perks, Divine Mandate6/10. No new persistent state, GUI or
 snapshot promotion. Broader interactions and heuristic tuning remain Phase2.
 Town Portal's shared runtime/AI map is complete, but implementation remains
 blocked by previously asked town-ownership and minimum-Movement choices.
-Next bounded maps: Divine Discipline expiry and Rapid Embarkation; choose an
-unambiguous queue slice rather than silently resolving those design choices.
+Divine Discipline's lifetime map is complete: shared live/AI recipient carry
+must survive round expiry until the next completed genuine activation, without
+changing current-round authorization. Same-Order reissue awaits replacement
+versus separate nonstacking-instance choice (UP149); focused question asked.
+Rapid Embarkation reuses UP103's complete map and remains blocked by the existing
+Navigation10%-versus5% choice. No activation or coverage inferred from mapping.
 
 Delivery checkpoint: Mandate source44e4442bc is committed/pushed with required
 identity/remote verified. Full Windows37276837622 is confirmed queued on that
