@@ -8168,6 +8168,12 @@ purpose-made art or playable launcher promotion. Committed and pushed as
 
 ## UP-072 — Implement Nature Elemental Convergence
 
+Phase1 next-item ruling resurfaced,2026-10-05: confirm the existing proposal
+Earth for Dirt/Sand/Wasteland and Water for Swamp/coastal arenas, versus Earth
+for coastal Sand too. This narrow missing mapping blocks the spell and three
+terrain-dependent Rebirth perks. No response or mapping is inferred; reuse the
+existing source/placement architecture after the answer, rather than re-map it.
+
 Named dependent perks2026-10-05: Elemental Attunement, Adaptive Element and
 Perfect Convergence explicitly share the terrain-mapping blocker below. Their
 registry entries remain planned; the collective Rebirth audit was not approval
@@ -9067,6 +9073,12 @@ is New-Horizons-Windows-x64-3ee74704f6721dc5d7853b592d2ef98babcf9068
 The previously pending full37324887768 is now running on2ffeaa1297ce5bef225c9eadcd0fb618007f4b36,
 including Pre-emptive Strike but excluding these two later repairs. Do not
 replace it or confuse successful older package evidence with current source.
+
+Delivery follow-up: source d8b32e15d020e41ced39cd6e6a59323ec3d51b8e is pushed,
+with required author/committer identity verified. Full Windows37333267686 is
+confirmed pending on that exact revision, including UP231 and Town Portal
+exhaustion. Full37324887768 remains running; preserve both handles rather than
+dispatching replacements. Pending is not compiled/playable acceptance.
 
 Phase1 clause selection,2026-10-05: Town Portal's successful-cast Movement
 exhaustion is explicit and independent of the held owner/team destination pool
