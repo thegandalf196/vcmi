@@ -5804,6 +5804,15 @@ or coverage increase from a map.
 
 ## UP-111 — Havoc Cataclysm
 
+Current map correction2026-10-05: the baseline physical-obstacle/fortification
+gap described below is historical, superseded by UP-139's accepted structural
+foundation e538921a4. Armageddon is bound to havocStructures; its authoritative
+path deletes USUAL scenery and damages attackable fortifications. Existing
+NewHorizonsHavocStructuresTest covers actual global damage/removal and the
+markerless-v3 fallback. Do not implement this foundation again. Cataclysm's
+magical-obstacle scope and absolute-landmark destructibility remain unresolved;
+the perk stays planned. This source audit adds no coverage or new test claim.
+
 Status: Read-only map, 2026-10-01. Next missing Expert Havoc perk while the
 UP-109/110 candidate builds and remains frozen. Canonical: Armageddon gains
 20% to its Spell Power-derived damage component and destroys ordinary magical
