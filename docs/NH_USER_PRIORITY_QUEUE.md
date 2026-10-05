@@ -79,6 +79,14 @@ details and Fort where applicable), with user visual approval separate from
 source registration/build. This turn records and diagnoses the request; it does
 not claim replacement portraits have been generated or delivered.
 
+Read-only diagnosis: army slots use static `CPRSMALL` (32×32) or `TWCRPORT`
+(58×64) creature icons with separately overlaid counts. Gremlin/Gargoyle lack
+`graphics.iconSmall/iconLarge` overrides, so their snowy backdrops remain baked
+into the original frames. Target per-creature portrait overrides, not another
+faction-background or native-terrain change. Animated creature previews already
+use the supplied desert `NH_academy/ui/tpcastow.png` and `crbkgtow.png`; preserve
+those working assets. The handoff contains no replacement creature portraits.
+
 ## UP-235 — Academy art handoff integration
 
 Status: In progress, 2026-10-05. User supplied Drive file
