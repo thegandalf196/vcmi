@@ -9,8 +9,10 @@ and repaired native build30070 pass; native4954 passes43/43 in7.802s, zero skips
 Data/inventory19/19, module drift and independent review pass. Coverage223/310
 perks,71/90 faction perks, Divine Mandate6/10. No new persistent state, GUI or
 snapshot promotion. Broader interactions and heuristic tuning remain Phase2.
-Next unblocked slice: UP056 Town Portal's nearest-town/zero-Movement behavior,
-with shared runtime and AI policy; legacy profiles retain their original rules.
+Town Portal's shared runtime/AI map is complete, but implementation remains
+blocked by previously asked town-ownership and minimum-Movement choices.
+Next bounded maps: Divine Discipline expiry and Rapid Embarkation; choose an
+unambiguous queue slice rather than silently resolving those design choices.
 
 Delivery checkpoint: Mandate source44e4442bc is committed/pushed with required
 identity/remote verified. Full Windows37276837622 is confirmed queued on that

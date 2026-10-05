@@ -5897,6 +5897,11 @@ Not done; no rendered/playable acceptance or snapshot promotion is claimed.
 
 ## UP-108 — Divine Mandate rank foundation
 
+Next-work correction: UP056 Town Portal remains blocked by its already-asked
+ownership and minimum-Movement choices; its completed map is not implementation.
+Read-only bounded maps now examine Divine Discipline's activation expiry and
+Rapid Embarkation's runtime/AI seam to identify the next unambiguous queue slice.
+
 Purifying delivery checkpoint: source71dc35eda6bbe0ac4e07b309aa5ea52c3ec8090b
 is committed/pushed with required author/committer identity and remote verified.
 Full Windows37280908002 is confirmed pending on that exact source, dispatched
