@@ -19,6 +19,18 @@ None.
 
 ## Integrated history
 
+### Crown and Altar automatic second-action bonus — 2026-10-05 (integrated)
+
+In response to predeclaring a pair target versus redesigning the perk, the user
+preferred the less-clicky option. The canonical perk now automatically boosts
+the second action's rating-derived components by20% on friendly recipients
+also affected by the first, in either pair direction. No additional button,
+target-preselection dialog or retrospective first-action change is introduced.
+The first action is unchanged. Integration verified in the Divine Mandate perk
+pool; its planned registry description is synchronized. Runtime implementation,
+recipient provenance, AI and focused evidence remain work tracked in UP108/
+UP023, not claimed complete by this specification change.
+
 ### Commanding Presence effective lifetime — 2026-10-02 (integrated)
 
 User-approved decision: its negative-Morale floor ends for a recipient when

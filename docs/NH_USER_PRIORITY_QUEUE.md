@@ -10688,6 +10688,34 @@ playable snapshot promotion.
 
 ### UP-023 — Complete all missing Skills, perks, and spells before further art
 
+Crown and Altar decision2026-10-05: user prefers the less-clicky alternative.
+Root selects the proposed automatic second-action redesign, with no pair-target
+preselection or additional button. Canonical row and planned registry now say:
+second action's rating-derived components gain20% on friendly recipients also
+affected by the first, in either pair direction; first action is not changed
+retroactively. Keep planned until actual live/AI/shared-target provenance and
+focused execution/build pass. Next after the current Cyclops AI slice: map and
+implement this timing-resolved Expert Divine Mandate perk once recipient
+qualification is settled. It reuses Shared Purpose's already-recorded question:
+successful Light targets intersect accepted Order recipients, or both effects
+must actually trigger. Resurfaced that shared question in the new perk context;
+no qualification answer inferred from the less-clicky preference. No gameplay
+count credit from the design amendment alone.
+
+Crown and Altar bounded implementation map2026-10-05: reuse the pending
+DIVINE_MANDATE grant's existing direction/expiry and retain first-action
+recipient IDs there, rather than adding a second pair counter. Successful
+Spell snapshots can use BattleSpellCast affectedCres; Orders need a generic
+accepted-recipient snapshot (current HeroOrderState only has command-specific
+anchors/targets). Apply the second-Spell boost per recipient, not through the
+cast-wide coefficient; second Orders require a frozen intersection/modifier
+on their state. Live GameStatePackVisitor and detached StackWithBonuses /
+BattleEvaluator transitions must agree. Any new serialized fields need a
+save/protocol feature and enclosing downsave preflight checks. This is a map,
+not implemented state. Conditional Order/no-op Spell qualification remains
+the shared outstanding decision; do not re-explore these mapped paths merely
+because the answer is pending.
+
 Next concrete missing minimum-AI path2026-10-05: canonical creature conversion
 defaults retain Cyclops/Cyclops King's wall-shot ability, but default BattleAI
 only sends CATAPULT for the actual Catapult war machine. Human legality and

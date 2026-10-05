@@ -4705,7 +4705,7 @@ Divine Mandate follows the same opportunity principles as Metamagic. The paired 
 |Knightly Sequence|Advanced|If the Order is performed first, the paired Light Spell costs 2 less Mana; if the Light Spell is performed first, the paired Order gains +5 additional percentage points of efficiency.|
 |Royal Standard|Advanced|Friendly stacks affected by an Order issued through Divine Mandate treat negative Morale as 0 for that Order's duration.|
 |Mandate of Heaven|Expert|The first Divine Mandate sequence each combat does not count against the Skill's normal per-combat usage limit.|
-|Crown and Altar|Expert|If the paired Light Spell and Order both affect the same friendly stack, both their rating-derived numerical components are increased by 20%.|
+|Crown and Altar|Expert|The second action of a Divine Mandate pair automatically gains +20% to its rating-derived numerical components on each friendly stack also affected by the first action. This applies in either Spell-then-Order or Order-then-Spell order. It requires no extra button or target-preselection step and does not retroactively change the first action.|
 
 
 
