@@ -65,7 +65,8 @@ under ignored `build/nh-up238-validation/`.
 
 ## UP-240 — Academy adventure-map sprite style feedback
 
-Status: Open (visual review), 2026-10-05. User screenshot `yTf1B6Y.jpeg`
+Status: In progress, 2026-10-05. User explicitly approved revising the materials
+while preserving architecture and silhouette. User screenshot `yTf1B6Y.jpeg`
 shows Academy's adventure-map town and notes that it is beautiful but too
 smooth/polished compared with surrounding Heroes III scenery. Preserve the
 approved architecture and silhouette; assess native-scale material texture,
@@ -74,6 +75,18 @@ Prefer weathered masonry, less uniform surfaces and native-scale light/shadow
 definition, not blanket noise, sharpening or a new architectural design.
 Creative raster revisions require the HoMM3 art skill. This is recorded feedback,
 not a claim that new map artwork has been generated or visually accepted.
+
+Draft checkpoint: built-in image generation through HoMM3 Art produced the fort
+material revision, preserved with its exact prompt under
+`assets/new-horizons/academy/map-revisions/v2/`. Root inspected the master;
+native-size registration, family consistency and runtime integration remain
+pending. It is Provisional and is not installed in the playable game.
+
+Cabir feasibility question, 2026-10-05: user asks whether an original Cabir-inspired
+creature could replace Gremlins. Assess the complete base/upgraded animation,
+portrait, recruitment, sound and data workload; do not treat this question as
+authorization to replace the roster or import Heroes VII assets. Consistent
+production animation is the principal art risk, not creature registration.
 
 ## UP-239 — Academy creature portrait backgrounds
 
@@ -108,6 +121,13 @@ require no snowy-background replacement. Root inspected extracted Gremlin and
 Gargoyle references at native size and nearest-neighbour enlargement. Private
 original-colour references stay in ignored `build/nh-up239-validation/`; no new
 portrait artwork or runtime replacement has been implemented yet.
+
+Mask feasibility checkpoint: a built-in-generated Gremlin subject matte was
+tested against the external original frame and existing authored desert backdrop
+at 58×64. It incorrectly retains the left snowy Tower spire and approximates
+the subject outline. Reject this draft for runtime use; the ignored comparison
+is `build/nh-up239-validation/gremlin-twcrport-frame30-matte-validation-native-and-8x.png`.
+No original colour extraction or faulty mask has been installed or committed.
 
 ## UP-235 — Academy art handoff integration
 
