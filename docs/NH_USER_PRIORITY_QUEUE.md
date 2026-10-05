@@ -63,6 +63,18 @@ Play delivery is pending below; aesthetic approval remains a user playtest gate,
 not an inferred Final-art classification. Private native-reference sheets remain
 under ignored `build/nh-up238-validation/`.
 
+## UP-240 — Academy adventure-map sprite style feedback
+
+Status: Open (visual review), 2026-10-05. User screenshot `yTf1B6Y.jpeg`
+shows Academy's adventure-map town and notes that it is beautiful but too
+smooth/polished compared with surrounding Heroes III scenery. Preserve the
+approved architecture and silhouette; assess native-scale material texture,
+local contrast, edge softness and base integration before proposing a revision.
+Prefer weathered masonry, less uniform surfaces and native-scale light/shadow
+definition, not blanket noise, sharpening or a new architectural design.
+Creative raster revisions require the HoMM3 art skill. This is recorded feedback,
+not a claim that new map artwork has been generated or visually accepted.
+
 ## UP-239 — Academy creature portrait backgrounds
 
 Status: Open, 2026-10-05. User screenshot `NaFHGAy.png` shows Gremlin/Gargoyle
