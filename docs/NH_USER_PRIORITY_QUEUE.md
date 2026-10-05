@@ -9,6 +9,39 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-231 — Breakthrough and explicit Defend reduction channels
+
+Verification checkpoint, 2026-10-05: shared Lua scales the complete Battlecraft
+and Bulwark Defend-derived fields by the existing ignore fraction before
+composition/cap, without rounding fractional basis points. Historical factor
+consumers use the same helper. Both-target builds52099/53299 pass; focused
+native30605 passes8/8 in2.745s, zero skips, including legal Basic/Advanced
+acquisition, accepted Defend/melee, equivalent all-knowing detached parity,
+fractional combined fields, cap, ranged/nonphysical controls and existing
+Battlecraft/Shared Cover/Immovable behavior. Initial build33121 and native40482
+failures are retained in the failure ledger. Two old Offense fixtures require
+earlier-tier setup repair; they are not silently counted as passing. Legacy
+factor execution, passive-source exhaustive controls and broader mundane-state
+taxonomy remain Phase2; player-scoped forecasts cannot know hidden enemy ranks.
+Counts remain225/310 perks and61/67 combat identities. No GUI or promotion.
+
+Status: Verified (playable delivery pending),2026-10-05. Bounded Offense audit identifies an active-perk
+principal mismatch: Breakthrough's50% ignore currently removes only the ordinary
+Defend Creature Defense contribution, not Battlecraft/Bulwark's explicit
+Defend-granted physical reduction. Canonical3930 and4020/4933 provide a clear
+rule for these channels; independent Astra architecture review finds no design
+blocker. Correct shared Lua physical-stage and historical factor paths using
+the existing hostile-melee Defend provenance, not new state or polling. The
+Battlecraft field includes Entrench; Bulwark includes Mireborn/Shared Cover:
+halve the entire explicit Defend-derived contribution, not falsely describe
+this as rank-only. Preserve passive Armorer, magical reductions and independent
+final multipliers, including Immovable. Broader Orders/formation/other mundane
+state taxonomy remains separate and is not certified by this repair. Require
+exact independent/fractional/cap damage controls, no-perk/ranged/nonphysical
+boundaries and live/shared detached parity. No new perk identity/count credit,
+GUI or snapshot promotion. Root owns integration/build/Git; disjoint routine
+Lua and native-fixture writers, independent reviewer.
+
 ## UP-230 — Mage Guild spell symbols, exterior purchase hotspot and tier names
 
 Latest repeated-request audit2026-10-05: the two symbol export tests, nine
@@ -4117,6 +4150,14 @@ source, not this new slice. Root proceeds to coherent commit/push.
 
 ## UP-180 — Spellcraft Counterpressure
 
+Phase1 blocker triage2026-10-05: independent review distinguishes the clear
+ordinary damaging/debuffing trigger from the narrow no-op recipient boundary.
+This is not an unmapped principal mechanic; reuse the accepted-cast/effect
+recording map below. The outstanding boundary is resurfaced: require actual
+stack change, or accept any valid non-resisted recipient? No answer is inferred
+and the earlier explicit activation hold remains. Avoid repeating architecture
+or broad integration tests while awaiting this one policy decision.
+
 Status: Bounded read-only preparation,2026-10-03. Missing Advanced perk:
 after an enemy hero casts a spell affecting the hero's army, the next spell
 before the end of the next round gains20% on its Spell Power-derived component.
@@ -5103,6 +5144,14 @@ as in the already pending accepted-cast design clarification. Do not repeat the
 map or add permanent polling.
 
 ## UP-133 — Spellcraft Precise Casting
+
+Phase1 blocker triage2026-10-05: principal implementation and7/7 native evidence
+already exist; do not describe this as an entirely missing consumer or rerun its
+completed map. Outstanding Time Stop/Earthquake scope is resurfaced as one
+choice between conventional area-damage spells only and including those two
+centered effects. No answer is inferred and the planned registry hold remains.
+After a ruling, apply it to the existing shared/live/AI path with focused scope
+controls rather than reconstructing the feature.
 
 Status: In progress (broader area scope clarification pending), 2026-10-02.
 Implement the canonical Advanced perk:
