@@ -1,5 +1,29 @@
 # New Horizons implementation sprints
 
+Accepted Phase1 slice2026-10-05: Mandate of Heaven. Both-target25480 exits0;
+native55540 passes49/49 in6.848s, zero skips. Existing total counter, real four
+pairs/fifth rejection, first-only Reserve, inactive saved selection, detached AI
+and direct/enclosing compatibility pass. Data/inventory19/19, module check,
+Order/sidebar guards and independent review pass. Coverage222/310 perks,
+70/90 faction perks, Divine Mandate5/10. Logs/XML: UP108-heaven*.
+Broad combinations, full-battle saves and rendered/playable delivery remain
+separate. No GUI or promotion. Next unblocked slice: Purifying Mandate.
+
+Next unblocked map: Purifying Mandate. Capture the selected Divine Mandate Spell
+source before consumption; only targets with actually removed negative magical
+effects receive one additional physical-affliction removal, after ordinary
+Purify/Purifier cleanup. Reuse the existing deterministic Poison, Disease,
+Bleeding, then oldest-other selection and authoritative effect/unit packets.
+Physical-only cleansing and no-op removals do not trigger the perk. No new state
+is required. This map is not implementation or activation evidence.
+AI map identifies the existing selected Divine Mandate candidate in
+`BattleEvaluator.cpp`, Purify's chosen negative groups and detached cleanup in
+`StackWithBonuses.cpp`. The next slice must project the same extra physical
+removal and value it, without a client-supplied source flag or extra action
+payload. Existing server/AI Purify fixtures provide focused actual-cast,
+ordinary-cast, physical-only and Purifier-composition controls. Broader status
+matrices remain Phase2 rather than blocking this bounded implementation.
+
 Delivery checkpoint: accepted Knightly source1bd450fa6 is committed/pushed;
 required identity and remote hash verified. Full Windows37273443600 confirmed
 pending on1bd450fa62d6842c19c1ab59f55ca776bc81de17, preflight_only=false;

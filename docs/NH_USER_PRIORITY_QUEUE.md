@@ -11,6 +11,12 @@ entries and their validation/delivery evidence.
 
 ## UP-230 — Mage Guild spell symbols, exterior purchase hotspot and tier names
 
+Latest repeated-request audit2026-10-05: the two symbol export tests, nine
+guild asset/name tests and exterior purchase UI source guard pass. Full Windows
+run37267127209 remains completed/success on4af518137. The Linux resolver still
+selects snapshot-a96183639, predating these corrections. No GUI or promotion
+performed; the linked image remains inaccessible through the web reader.
+
 Latest Windows package checkpoint2026-10-05: run37267127209 is terminal SUCCESS
 on4af5181377917139d292621ee0a3d92deae9dd04. Nonexpired game artifact11328478994
 is New-Horizons-Windows-x64-4af5181377917139d292621ee0a3d92deae9dd04
@@ -5890,6 +5896,35 @@ cast/status/save interactions remain Phase2. Generic UI is provisional and art
 Not done; no rendered/playable acceptance or snapshot promotion is claimed.
 
 ## UP-108 — Divine Mandate rank foundation
+
+Mandate of Heaven source/native accepted2026-10-05: both-target25480 exits0;
+focused native55540 passes49/49 in6.848s, zero skips. Legal Expert offers,
+expired unused opportunities, actual four alternating pairs/fifth rejection,
+first-pair Reserve recovery, creature Defend, selected-but-inactive saved rules,
+detached/accepted AI fourth pair and direct/enclosing count4 compatibility pass.
+Data/inventory19/19, module drift, Order/sidebar guards and independent review
+pass. Perks222/310, faction70/90, Divine Mandate5/10; ranks/spell counts unchanged.
+Evidence: UP108-heaven-build.log and UP108-heaven-native.log/XML. Broader status
+combinations and rendered/playable delivery remain Phase2/separate obligations;
+no GUI or snapshot promotion. Next unblocked: Purifying Mandate, using existing
+physical-affliction priority after ordinary Purify/Purifier cleanup. Earlier
+live-build notes below are checkpoint history, not current acceptance status.
+
+Mandate of Heaven gate checkpoint2026-10-05: runtime, detached AI case and five
+new native/serialization cases are frozen. The selected-but-inactive control
+retains the selected identity rather than merely checking an unselected perk.
+Single both-target build25480 is live with12 jobs, logUP108-heaven-build.log.
+Data/inventory19/19, module drift, Order/sidebar source guards and diff checks
+pass; production/AI review finds no blocker. Fixture review and actual native
+execution remain pending, so accepted coverage is unchanged.
+
+Mandate of Heaven implementation resumed2026-10-05. Separate runtime and native
+fixture workers extend the existing completed-pair cap, while a bounded AI/UI
+audit checks hardcoded limits. Candidate registry activation supports legal
+Expert acquisition tests; accepted coverage stays221/310 perks and69/90 faction
+perks until build/principal gates pass. No extra currency, duplicate free-pair
+flag, polling, GUI or snapshot promotion. Save compatibility explicitly gates
+the new count4 without changing the serialized ledger layout.
 
 Delivery checkpoint: accepted Knightly source1bd450fa62d6842c19c1ab59f55ca776bc81de17
 is committed/pushed with required author/committer and remote hash verified.
