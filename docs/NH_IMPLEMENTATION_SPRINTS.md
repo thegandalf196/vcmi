@@ -1,5 +1,12 @@
 # New Horizons implementation sprints
 
+Delivery checkpoint: accepted Sacred Command source cb5cd56de is pushed and
+remote/identity verified. Full Windows37270206987 is confirmed pending on that
+source; earlier full37267127209 is still in progress on4af518137. The older
+candidate excludes Sacred Command. Do not cancel or duplicate either run based
+on observation timeouts; compilation/package evidence remains distinct from
+graphical/playable acceptance.
+
 Accepted checkpoint 2026-10-05: Sacred Command. Client3475 and repaired
 both-target44913 pass; native86438 passes26/26 (4.654s), zero skips; focused
 data/inventory19/19, module drift and independent review pass. Counts220/310

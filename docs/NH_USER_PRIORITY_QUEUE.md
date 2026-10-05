@@ -5876,6 +5876,13 @@ Not done; no rendered/playable acceptance or snapshot promotion is claimed.
 
 ## UP-108 — Divine Mandate rank foundation
 
+Delivery checkpoint: accepted source cb5cd56de9c4719b127d196a59a89c56124f653f
+is committed/pushed with required author and committer identity; remote verified.
+Full Windows run37270206987 is confirmed pending on that exact source
+(preflight_only=false). Prior run37267127209 remains confirmed in progress on
+4af518137 and does not contain Sacred Command. Retain both handles; no duplicate
+dispatch, cancellation, artifact claim or playable Linux promotion.
+
 Sacred Command accepted 2026-10-05: client3475 and repaired both-target44913
 pass; focused native86438 passes26/26 in4.654s, zero skips. The six new cases
 exercise legal acquisition, actual Light-first Order and later damage, unchanged
