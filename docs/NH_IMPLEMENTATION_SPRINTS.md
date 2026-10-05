@@ -1,5 +1,29 @@
 # New Horizons implementation sprints
 
+Current user-priority slice, 2026-10-05: UP-235 integrates the supplied Academy
+art handoff while preserving current Tower gameplay and externally referenced
+original assets. UP-236 repairs the arched Mage Guild hover highlight and the
+adventure-spell unlock panel, including popup components accidentally attached
+at the main window's origin. These three requested changes precede backlog work.
+After reviewed source integration, build a Linux candidate containing every
+latest commit and promote the existing launcher pointer; retain the old snapshot.
+No graphical or host-input authorization is inferred. Windows run 37348640988
+has completed successfully on source `0e645f79b`; it does not contain this new
+Academy/UI work. Preserve the completed artifact rather than replacing its identity.
+
+UP235/236 source checkpoint: supplied Academy art/Sand registration and guild
+visual repairs pass focused import, art (3), Tower progression (2), existing
+guild assets (9), UI guards, independent review and client/native builds.
+Production content-loading checks pass 2/2; bounded headless startup and AI turns
+work after the four built-icon resource fallbacks remove the Tower schema error.
+Native rendered acceptance remains pending. Record static artwork, construction
+stages, click/highlight geometry, flags, siege seams and puzzle reveal for visual
+playtesting; do not claim a completed visual report from source guards alone.
+Phase 1 coverage remains 225/310 perks and 61/67 combat spell identities: this
+user-priority art/UI delivery adds no mechanic-identity credit. Next action is
+the authorized latest-commit Linux snapshot freeze, smoke check and promotion;
+preserve the previous playable snapshot. Do not resume unrelated backlog first.
+
 Delivery checkpoint2026-10-05: Pre-emptive Strike source2ffeaa1297ce5bef225c9eadcd0fb618007f4b36
 is committed/pushed with verified author/committer and exact remote hash.
 Windows37308848380 is terminal SUCCESS onb8d243076; nonexpired game artifact

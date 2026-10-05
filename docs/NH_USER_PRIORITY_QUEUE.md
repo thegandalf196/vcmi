@@ -9,6 +9,75 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-235 — Academy art handoff integration
+
+Status: In progress, 2026-10-05. User supplied Drive file
+`1HHj5x6LlCx6gWUn_T1dTHXFgIDhZT-u5` and requested download and appropriate
+integration. Download succeeds; ZIP identifies itself as the New Horizons Academy
+definitive art package, not an installable mod. Audit its manifests and mappings
+against current Tower replacement content before integration. Preserve current
+New Horizons gameplay, costs, dwellings and requirements; do not overwrite them
+with the bundled upstream configuration snapshot. Exclude purchaser-original
+comparison imagery and retained original gate pixels from committed assets.
+Record layer separation, ownership colours and incomplete animation limitations.
+The user explicitly confirmed Sand as Academy's native terrain. Replace Snow
+affinity without repainting existing maps or changing their blocking/entrances.
+Acceptance: resources/config resolve, focused registration checks and build;
+native visual and playable acceptance remain distinct pending gates.
+
+Integration checkpoint: Academy label and Sand affinity are registered after
+Tower's current progression patch. Authored town, construction, recruitment,
+guild, siege and puzzle assets are installed; building masks follow new art.
+Genie/Mage semantic swaps, costs, requirements and map geometry are preserved.
+Independent review finds no blocking issue; the production-registration offline
+800x374 composite is coherent. Import/module checks and focused Academy (3),
+Tower progression (2), existing Mage Guild (9) and UI route checks pass.
+Native content-loading tests pass 2/2; a bounded headless new game initializes
+and runs AI turns. Its initial run flags four virtual built-icon paths during
+schema validation: add generated-normal-art fallbacks with narrowly scoped
+runtime compositor precedence, then repeat validation before promotion.
+Known AI ammo-overuse diagnostics remain a separate Phase 2 finding. Native
+click/highlight placement, construction stages, ownership flags, siege seams and
+puzzle reveal remain visual acceptance work, not inferred from offline checks.
+
+Final source checkpoint: the four clean fallbacks are byte-identical to authored
+normal icons. Both renderer backends prefer the compositor only for these four
+names, including native-base loading; ordinary image precedence is unchanged.
+The repeated headless resource load no longer reports invalid Tower data.
+Focused import/module/art/progression/UI checks and independent review pass;
+Linux client and native-test targets build successfully. Source implementation
+is complete; freeze and validate the latest committed candidate before the
+authorized launcher promotion. Keep rendered acceptance pending user playtest.
+
+Delivery instruction, 2026-10-05: after UP-235 and both UP-236 visual fixes,
+build the Linux candidate with all committed changes and promote it through the
+existing play script. This explicitly authorizes promotion, not host input or
+GUI automation. Preserve the previous playable snapshot for recovery.
+
+## UP-236 — Mage Guild window silhouette and adventure-spell dialog
+
+Status: In progress, 2026-10-05. User screenshots `bolVxhs.png` and
+`SAEqZfQ.png` report incorrect presentation. Trace the exterior window opening
+with the hover highlight instead of boxing the surrounding masonry. Rework the
+adventure-spell purchase dialog as one coherent dense Heroes III leather panel:
+remove the stray overlapping icon/text, use consistent row proportions and clear
+cost/status placement, and unobstructed tactile purchase controls. Preserve all
+unlock/purchase behavior. Acceptance: focused layout checks, build, native-scale
+visual evidence; do not close the report on source checks alone.
+
+Source checkpoint: cached hotspot-local silhouette strokes replace the rectangle,
+with an arch fallback for opaque pictures. Popup components are created only on
+right-click, not during main-window construction. A native generated 640x440
+leather surface holds one dense recessed list; duplicate BUY text is removed.
+The focused UI guard and independent review pass; the Linux client compiles
+successfully with 12 jobs. Native rendered/purchase acceptance remains pending.
+
+Source commit `516ffb50a` contains the guild UI and runtime Academy layer helpers.
+Both Linux client and native-test targets compile successfully with 12 jobs.
+External icon-frame inspection confirms the built-marker differences are confined
+to the bottom-right badge region; it is not a copy of the original town scene.
+This is not yet the final Academy import or promoted playable snapshot.
+
 ## UP-234 — Three-hex Vengeful Vines, centered spell UI and House scrolls
 
 Committed-source checkpoint, 2026-10-05: `f71a81e79` is pushed; UP-232 and

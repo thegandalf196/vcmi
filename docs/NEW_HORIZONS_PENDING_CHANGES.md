@@ -19,6 +19,15 @@ None.
 
 ## Integrated history
 
+### Academy visual identity — 2026-10-05 (integrated)
+
+The user supplied the Academy definitive art handoff and requested integration.
+Its visual direction is integrated into the canonical Tower section: Academy
+display name and scholarly sandstone presentation, existing Tower identity and
+New Horizons gameplay preserved. The user separately confirmed Sand as Academy's
+native terrain; existing authored map terrain is not repainted. Original retained pixels remain externally
+referenced. Asset integration and playable evidence are tracked in UP-235.
+
 ### Crown and Altar automatic second-action bonus — 2026-10-05 (integrated)
 
 In response to predeclaring a pair target versus redesigning the perk, the user

@@ -3206,6 +3206,23 @@ Unique buildings are balanced for faction identity rather than artificial cross-
 
 ### Tower creature rebalance
 
+#### Academy visual identity
+
+The supplied October 2026 Academy art handoff replaces Tower's snowy town
+presentation with a Persian/Central Asian scholarly civilization: warm sandstone,
+astronomy, alchemy and magical engineering. Academy is the displayed faction
+name; the existing Tower faction identity, hero classes, creature identities,
+Sorcery/Havoc pairing and Metamagic remain unchanged. Integrate the authored town,
+guild, recruitment, construction, adventure-map, siege and puzzle resources by
+their existing semantic roles, preserving the Mage/Genie dwelling changes below.
+The art handoff is not permission to restore its bundled upstream gameplay
+configuration. Academy's native terrain is Sand, replacing Tower's Snow
+affinity; this applies to the faction's normal native-terrain mechanics.
+Changing that affinity does not repaint terrain on existing authored maps.
+Retained purchaser-original imagery must remain external game-resource references,
+not redistributed raster copies. Construction stages, ownership colours, clicking
+and damage states must remain functional rather than becoming a flattened scene.
+
 Magi and Arch Magi return to the stronger offensive role associated with Heroes II. They are intended to be premium Elite shooters: more dangerous and more expensive than Liches in focused ranged combat, while Liches retain their own area-pressure identity. Genies are correspondingly shifted downward in raw offense and toward mobility/support. These are prototype values pending the full creature-stat pass.
 
 New Horizons renames Tower's Alchemist hero class to Battle Mage. Mage and Genie dwelling levels, building-card positions, costs, prerequisites, recruitment presentation, and upgrade dependencies are swapped as one coherent town change; both creature lines remain Elite. The Library stays associated with Mage and Arch Mage growth and follows the Mage dwelling's resulting position and prerequisites rather than the old Genie slot.
