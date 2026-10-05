@@ -9042,6 +9042,43 @@ Windows graphical acceptance or Linux launcher promotion.
 
 ## UP-056 — Complete canonical Adventure Spell effects
 
+Town Portal Movement exhaustion accepted,2026-10-05: exact Town Portal plus
+saved NH Adventure rules selects a shared planned-source deduction of all
+remaining Movement. The live SetMovePoints packet is sent only after successful
+teleport; actual Nullkiller portal nodes carry zero Movement on the cast day,
+with full remaining-day cost and further travel starting tomorrow. Other AI
+TownPortalEffect identities retain the original movementRequired calculation;
+legacy live casts retain configured movementTaken. No destination/minimum policy
+was inferred. Both-target build46722 exits0; native73990 passes8/8 in2.608s,
+zero skips: accepted NH cast with exact Mana/day use, legacy300 deduction,
+no-town cancellation, actual NH/legacy portal nodes and next-day continuation,
+plus three existing daily/legacy action guards. Retain
+UP056-townportal-movement-build.log and native.log/XML. Independent Astra review
+finds no principal blocker. UP056 remains partial; nearest-only policy, held
+owner/team and admission thresholds, protected barriers and Water Walk end-day
+policy remain open. Counts stay225/310 perks and61/67 combat identities.
+No new state, polling, GUI or playable promotion. Broader query interruption,
+occupied/failed-move cases and alternate planned-source paths remain Phase2.
+
+Windows delivery checkpoint,2026-10-05: full run37318395313 is terminal SUCCESS
+on3ee74704f6721dc5d7853b592d2ef98babcf9068. Nonexpired game artifact11355435537
+is New-Horizons-Windows-x64-3ee74704f6721dc5d7853b592d2ef98babcf9068
+(802660038 bytes); it excludes this Town Portal repair and Breakthrough UP231.
+The previously pending full37324887768 is now running on2ffeaa1297ce5bef225c9eadcd0fb618007f4b36,
+including Pre-emptive Strike but excluding these two later repairs. Do not
+replace it or confuse successful older package evidence with current source.
+
+Phase1 clause selection,2026-10-05: Town Portal's successful-cast Movement
+exhaustion is explicit and independent of the held owner/team destination pool
+and minimum-Movement decisions. Read-only map finds live endCast still subtracts
+a fixed legacy amount and actual Nullkiller destination nodes forecast the same
+residual Movement. Root requests independent architecture review of a bounded
+saved-NH exhaustion repair, preserving existing selection/minimum and legacy
+Reinforcements behavior. Acceptance would use an owned, unoccupied town and
+ample Movement, actual accepted cast, exact zero-Movement AI destination and
+legacy subtraction/no-spend controls. No full Town Portal completion or spell
+identity credit follows; nearest-only and the existing choices remain open.
+
 2026-10-04 protected-barrier map is complete, read-only. No authorable localized
 marker/consumer exists in TerrainTile, CGObjectInstance, CMap allowedSpells,
 map load/editor, AIR pathing or authoritative movement. Normal blocked objects,
