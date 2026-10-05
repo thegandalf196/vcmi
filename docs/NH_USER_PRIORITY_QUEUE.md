@@ -11,6 +11,14 @@ entries and their validation/delivery evidence.
 
 ## UP-230 — Mage Guild spell symbols, exterior purchase hotspot and tier names
 
+Windows delivery checkpoint2026-10-05: full run37263037998 is terminal SUCCESS
+on45f659b7c, including these corrections. Nonexpired artifact11326508028 is
+New-Horizons-Windows-x64-45f659b7cfc0e307352c7f7393d2e45ed3b2a2f3
+(802590171 bytes). This is downloadable package evidence, not in-game visual
+acceptance. The Linux launcher snapshot is unchanged. New full37267127209 runs
+on4af518137 and additionally includes the two accepted Divine Mandate perks;
+do not confuse the older artifact with that newer candidate.
+
 User reaffirmed all three requirements with the same rdMqGPr screenshot on
 2026-10-05. Re-audit the existing implementation and actual delivery identity;
 do not regenerate retained symbols or confuse committed source with the older

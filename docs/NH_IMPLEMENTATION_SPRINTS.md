@@ -1,5 +1,16 @@
 # New Horizons implementation sprints
 
+Delivery checkpoint2026-10-05: accepted source4af518137 is committed/pushed,
+remote hash and required author/committer verified; both new Divine Mandate perks
+are included. Earlier full Windows37263037998 is terminal SUCCESS on45f659b7c.
+Its nonexpired artifact11326508028 is
+New-Horizons-Windows-x64-45f659b7cfc0e307352c7f7393d2e45ed3b2a2f3
+(802590171 bytes): it includes Mage Guild corrections, not the two new perks.
+New full Windows37267127209 is confirmed in progress on
+4af5181377917139d292621ee0a3d92deae9dd04, preflight_only=false. Retain that
+specific handle; no duplicate dispatch or playable Linux promotion. Compilation/
+packaging does not prove Windows graphical acceptance.
+
 Accepted2026-10-05: Consecrated Casting. Client97140 and repaired both-target
 55168 pass; all three new native actual-effect/projection/control cases pass.
 Focused accepted run5534 passes21/21 in5.491s, zero skips, plus17 data guards,
