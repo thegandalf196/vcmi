@@ -1,5 +1,9 @@
 # New Horizons implementation sprints
 
+Purifying source71dc35eda is committed/pushed with verified identity and remote.
+Full Windows37280908002 is pending on that exact source; dispatched once.
+Heaven37276837622 remains in_progress. No artifact or playable promotion claim.
+
 Current Phase1 checkpoint: Purifying Mandate source/native accepted. Client15739
 and repaired native build30070 pass; native4954 passes43/43 in7.802s, zero skips.
 Data/inventory19/19, module drift and independent review pass. Coverage223/310

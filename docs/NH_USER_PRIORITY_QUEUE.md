@@ -5897,6 +5897,12 @@ Not done; no rendered/playable acceptance or snapshot promotion is claimed.
 
 ## UP-108 — Divine Mandate rank foundation
 
+Purifying delivery checkpoint: source71dc35eda6bbe0ac4e07b309aa5ea52c3ec8090b
+is committed/pushed with required author/committer identity and remote verified.
+Full Windows37280908002 is confirmed pending on that exact source, dispatched
+once with preflight_only=false. Heaven37276837622 remains in_progress; preserve
+both handles. No completed Purifying artifact or Linux promotion is claimed.
+
 Purifying Mandate accepted2026-10-05: client15739 and repaired native build30070
 exit0; focused native4954 passes43/43 in7.802s, zero skips. Actual paired casting,
 normal Purifier ordering, one-affliction priority, ordinary-cast exclusion,
