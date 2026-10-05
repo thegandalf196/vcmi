@@ -9,6 +9,52 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-230 — Mage Guild spell symbols, exterior purchase hotspot and tier names
+
+Status: Verified (rendered/playable delivery pending),2026-10-04. User screenshot rdMqGPr requests three changes:
+1. New spell icons must display only the spell symbol, with no painted rectangular
+background, following original Heroes III spell presentation. Audit actual icon
+bindings and approved source masters; retain the parchment as the guild surface,
+not part of the symbol. New/revised art must use the HoMM3 art skill.
+2. Remove the separate Adventure Spells access icon/button. Make the existing
+exterior window in every faction's Mage Guild illustration clickable instead,
+with a gold hover outline matching building interaction. Preserve the existing
+purchase window, costs, authority, unlocks and refresh behavior.
+3. Correct Mage Guild tier names to consistent Arabic levels1–5; no isolated
+Level IV/V substitutions. Audit all faction bindings rather than one screenshot.
+Acceptance needs exact asset/binding inventory, focused source/native/build
+checks and native-resolution visual evidence. Source changes do not prove
+rendered/playable delivery. This user-priority item precedes UP108; no Divine
+Mandate production work has started. Preserve existing snapshots and GUI hold.
+Implementation checkpoint: exterior-window hotspot source is frozen and
+client92271 builds with12 jobs. The separate Adventure Spells icon/label is
+removed; all guilds use their actual faction/tier picture bounds/position and
+the same saved-rules-gated purchase window. Five explicit Castle/Stronghold/
+Fortress IV/V names now use Mage Guild Level4/5; nine-faction data checks9/9
+and hotspot source guard pass. Independent review finds no blocker; rectangular
+gold hover appearance and deactivation status cleanup remain unverified.
+Art audit identifies26 custom families/78 opaque RGB runtime icons; all require
+symbol-only revisions, not a parchment-compositor patch. Root used image_gen
+and the HoMM3 art skill to create/inspect all26 RGBA masters and native exports.
+All26 master and native32/44 comparison sheets were inspected for recognizable
+subjects, complete silhouettes and absence of painted rectangular backdrops.
+All78 runtime PNGs are integrated at their unchanged paths. The two focused
+manifest/alpha/hash/native-dimension/binding-linkage tests pass after freeze
+(0.951s); the eight affected content-binding checks also pass. No family is
+omitted: manifest counts26 converted/0 pending. Module drift and diff checks pass.
+Retained original sources and new symbol-v2 prompts/manifests preserve provenance.
+All new art remains Provisional, not user-approved Final. No gameplay/rank/perk
+count increase, rendered GUI acceptance or playable promotion is claimed.
+Export manifests use repository-relative retained-master references rather than
+host-generation paths. Commit/push evidence follows when the reviewed batch is
+published. The next source-coverage priority remains UP108, but graphical
+acceptance of this UI correction is still a delivery obligation under this entry.
+Non-blocking existing data findings: the64-case content test has three stale
+roster/inventory failures (its fixed set omits six previously registered Mass/
+Puppet identities); Holy Armor has one stale inactive-Aegis source assertion.
+Its icon-binding case and all eight affected spell-binding checks pass. These
+unrelated fixture refreshes belong to Phase2, not a reason to undo active perks.
+
 ## UP-229 — Required Movement UI breakdown
 
 Status: Verified (rendered/playable delivery pending), 2026-10-04.

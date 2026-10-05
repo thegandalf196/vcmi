@@ -1,5 +1,20 @@
 # New Horizons implementation sprints
 
+Current user priority UP230 supersedes the following UP108 next-action notes:
+finish all26 custom spell families as transparent symbols, remove the separate
+Adventure Spells entrance button in favor of the native guild exterior hover/
+click region, and restore Arabic guild tier names. All26 original-preserving
+symbol masters/30/32/44px exports are created and inspected; all78 runtime PNGs
+are integrated, with no omitted family. Two final alpha/hash/native-dimension/
+binding-linkage tests, eight spell-binding checks and module drift pass.
+Root owns art generation/source
+exports and Git/build; isolated worker owns live raster copies and alpha/hash
+manifest guard. Hotspot client92271/source guard and nine-faction guild-name
+checks9/9 pass. Do not resume Divine Mandate or ordinary coverage before the
+source/native acceptance of UP230; those focused gates now pass. Return to UP108
+after the reviewed commit/push. Rendered delivery remains separate; no GUI/
+promotion is authorized by this task.
+
 Current2026-10-04: user resolves UP046 battle-start maximum aggregate HP and
 UP108 Metamagic-like round-end/completed-pair follow-ups. Canonical/data source
 e6ba582a9 is pushed/remote-verified;17 perk-data checks pass. Foundation maps
