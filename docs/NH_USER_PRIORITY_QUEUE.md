@@ -63,6 +63,22 @@ Play delivery is pending below; aesthetic approval remains a user playtest gate,
 not an inferred Final-art classification. Private native-reference sheets remain
 under ignored `build/nh-up238-validation/`.
 
+## UP-239 — Academy creature portrait backgrounds
+
+Status: Open, 2026-10-05. User screenshot `NaFHGAy.png` shows Gremlin/Gargoyle
+army portraits retaining the snowy Tower backdrop beside Academy's new desert
+town art. Correct the shared Academy creature portrait backgrounds, covering
+all affected base/upgraded creatures and small/large portrait roles wherever
+those assets are used. Preserve creature identity, silhouettes, poses and UI
+frames; use consistent sandy Academy architecture/terrain, native contrast and
+scale rather than recoloring snowy scenes or changing gameplay/native terrain.
+Use the HoMM3 art skill for creative raster changes. Inspect whether backgrounds
+are baked or separately composed before selecting an implementation. Acceptance:
+native-size comparisons and shared-consumer checks (army, recruitment, creature
+details and Fort where applicable), with user visual approval separate from
+source registration/build. This turn records and diagnoses the request; it does
+not claim replacement portraits have been generated or delivered.
+
 ## UP-235 — Academy art handoff integration
 
 Status: In progress, 2026-10-05. User supplied Drive file
