@@ -11,8 +11,9 @@ Root owns art generation/source
 exports and Git/build; isolated worker owns live raster copies and alpha/hash
 manifest guard. Hotspot client92271/source guard and nine-faction guild-name
 checks9/9 pass. Do not resume Divine Mandate or ordinary coverage before the
-source/native acceptance of UP230; those focused gates now pass. Return to UP108
-after the reviewed commit/push. Rendered delivery remains separate; no GUI/
+source/native acceptance of UP230; those focused gates now pass. Sourcefa9310b51
+is committed/pushed/remote-verified; return to UP108. Rendered delivery remains
+separate; no GUI/
 promotion is authorized by this task.
 
 Current2026-10-04: user resolves UP046 battle-start maximum aggregate HP and

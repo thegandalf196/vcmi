@@ -46,8 +46,9 @@ Retained original sources and new symbol-v2 prompts/manifests preserve provenanc
 All new art remains Provisional, not user-approved Final. No gameplay/rank/perk
 count increase, rendered GUI acceptance or playable promotion is claimed.
 Export manifests use repository-relative retained-master references rather than
-host-generation paths. Commit/push evidence follows when the reviewed batch is
-published. The next source-coverage priority remains UP108, but graphical
+host-generation paths. Sourcefa9310b51fcaf8079ff3e9f8f3971487c6ec80f2 is
+committed/pushed with required author/committer identity and remote verified.
+The next source-coverage priority remains UP108, but graphical
 acceptance of this UI correction is still a delivery obligation under this entry.
 Non-blocking existing data findings: the64-case content test has three stale
 roster/inventory failures (its fixed set omits six previously registered Mass/
