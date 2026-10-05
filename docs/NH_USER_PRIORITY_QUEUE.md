@@ -7993,6 +7993,11 @@ purpose-made art or playable launcher promotion. Committed and pushed as
 
 ## UP-072 — Implement Nature Elemental Convergence
 
+Named dependent perks2026-10-05: Elemental Attunement, Adaptive Element and
+Perfect Convergence explicitly share the terrain-mapping blocker below. Their
+registry entries remain planned; the collective Rebirth audit was not approval
+to infer missing terrain identities.
+
 Status: In progress; read-only architecture map, 2026-10-01. UP-023 missing
 Level5 combat identity. Terrain chooses one of the five canonical Elementals
 using Experimental Values; summon exact250+5×SP HP with ceil-count and wounded
@@ -10696,6 +10701,38 @@ Source checkpoint `e6545354a` was pushed to `origin/definitive-mvp` on
 playable snapshot promotion.
 
 ### UP-023 — Complete all missing Skills, perks, and spells before further art
+
+Canonical growth acceptance2026-10-05: audit build67485 succeeds; before native
+fails on11 real values: Archer9->10, Monk3->4, Cavalier/Unicorn/Naga2->3,
+Skeleton12->18, Wolf Rider9->8, Air/Water6->5, Magic2->3 and Phoenix2->1.
+Existing growth-line data now specifies those11 families and both forms, with
+no changes to core resources, costs, abilities or horde overrides. Final
+both-target83259 exits0; native47814 passes3/3 in1.177s, zero skips. All64
+authored roster rows and checked upgraded forms match loaded-world lookup;
+current-v2, historical-v2 missing-row and v1 rule-object roundtrips pass, as
+does adjacent Castle data. One exact offline guard/module drift and independent
+Astra review pass. This advances authored base-growth lookup53/64->64/64,
+not perk/spell/creature identity totals. Whole-world saves, weekly stocks and
+recruitment journeys remain Phase2; no GUI or Linux snapshot promotion.
+
+Planned-perk disposition audit2026-10-05: registry still has86 planned entries.
+Exact name/ID matching finds83 in this queue; Elemental Attunement, Adaptive
+Element and Perfect Convergence are the three collectively documented terrain-
+dependent Rebirth perks and explicitly share UP072's pending terrain mapping.
+Name matching is not a complete item-by-item resolution audit. Perfect Rhythm
+still shares UP178's unresolved Master Synthesis composition choice; no default
+is inferred. Existing midbattle-save limitations are deliberate/deferred, not
+an unblocked Wait-only patch. These audits add no active-perk coverage.
+
+Loaded-growth audit2026-10-05: canonical creature rows specify weekly growth,
+but several faction rows currently fall back to purchaser-supplied core values.
+Missing overrides alone do not establish a defect. A bounded Conflux-first
+native fixture will compare the real saved-world getCreatureBaseGrowth values
+against the authored table, without test-only growth overrides. Correct any
+demonstrated mismatches through existing versioned growth-line data, preserving
+abilities, upgrades, costs and old saved rules. No coverage credit until focused
+execution passes. Root owns registration/builds/data/integration; the worker
+owns only the new fixture. This is specified data, not balance tuning.
 
 Source/delivery checkpoint2026-10-05: Brimstone/Castle source94147b24a is
 committed/pushed with author/committer and remote verified; source worktree clean.

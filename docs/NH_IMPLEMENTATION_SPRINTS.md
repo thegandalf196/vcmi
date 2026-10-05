@@ -1,5 +1,17 @@
 # New Horizons implementation sprints
 
+Phase1 checkpoint2026-10-05:11 actual weekly-growth data mismatches corrected
+through existing saved growth lines. Loaded lookup now matches64/64 authored
+roster rows, up from53/64, with checked upgraded forms. Both-target83259 passes;
+native47814 passes3/3 in1.177s, zero skips, plus exact offline guard/module drift
+and Astra review. Rule-object current/historical roundtrips do not certify full
+world saves, stocks or recruitment. Those journeys remain Phase2. Perk/spell
+counts unchanged. Next selection must use named outstanding decisions rather
+than repeatedly mapping their seams; three Rebirth perks now explicitly link
+to UP072, and Perfect Rhythm retains UP178's composition question. Further
+unexamined specified data/town consumers can be audited for a concrete gap.
+No GUI or Linux snapshot promotion. Preserve the two live Windows build handles.
+
 Delivery checkpoint2026-10-05: source94147b24aa181a06faed5e6459fada090b298041
 is committed/pushed with verified author/committer and remote. Last-stack full
 Windows37289192606 is terminal SUCCESS on1755ee0d4; nonexpired game artifact
