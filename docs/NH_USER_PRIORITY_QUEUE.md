@@ -5876,6 +5876,50 @@ Not done; no rendered/playable acceptance or snapshot promotion is claimed.
 
 ## UP-108 — Divine Mandate rank foundation
 
+Sacred Command accepted 2026-10-05: client3475 and repaired both-target44913
+pass; focused native86438 passes26/26 in4.654s, zero skips. The six new cases
+exercise legal acquisition, actual Light-first Order and later damage, unchanged
+ordinary/no-perk Orders, detached same-Order comparison, immutable snapshots,
+current/old reads and direct/enclosing zero-byte downsave rejection. Actual
+feedback and existing numerical UI include the contribution. Data/inventory
+19/19, module drift and independent review pass. Perks220/310, faction68/90,
+Divine Mandate3/10. Logs: UP108-sacred-client-build.log,
+UP108-sacred-native-build-repaired.log, UP108-sacred-native.log/XML. First
+native compile45324 is retained; its pointer-vs-ID/constness fixture error was
+repaired without weakening assertions. Broad perk/Order combinations,
+representative AI valuation accuracy, whole-combat save/resume and rendered
+acceptance remain Phase2/separate delivery work. The chooser's existing
+prepared-Hold baseline can understate modifiers when Hold itself is unavailable
+while another Order is legal; that cross-Order preview/cache audit is deferred.
+No GUI or playable snapshot promotion. Knightly Sequence is the next unblocked
+implementation; Shared Purpose awaits the user's recipient-semantics choice.
+
+Shared Purpose next-slice map: pending grants do not retain recipient history.
+Implementation needs first-action recipient context and an activation-scoped
+Morale bonus. Recipient semantics are blocked pending the user's choice:
+successfully affected Light targets intersected with eligible Order recipients,
+or only stacks on which both effects actually trigger. Conditional Orders and
+Counterspell make this distinction material; do not silently activate the perk.
+Knightly Sequence is the next independently unblocked bounded mapping task.
+Its read-only map is complete: selected Divine Mandate SPELL/ORDER grants
+already identify pair direction, so no orientation ledger is required. Shared
+`battleGetSpellCost` applies the Order-first -2 flat discount after Wisdom and
+retains the canonical minimum-one floor. Spell-first +5 efficiency needs its
+own captured contribution, including Focus Fire's materialized percentage;
+never relabel it as Sacred Command's +10. Preserve actual payment/forecast
+parity, flat terms, legal Advanced acquisition and additive perk composition.
+No Knightly production or activation has been made by this map.
+
+Sacred Command implementation resumed 2026-10-05. The root owns the distinct
+captured Order efficiency architecture; runtime, AI and native/packet fixtures
+have separate ownership. Candidate data enables the perk for legal acquisition
+tests, but accepted coverage remains 219/310 until compile and principal action
+gates pass. Capture +10 percentage points only from the selected Divine Mandate
+Order allowance, apply it to attribute-derived terms (including Second Wind's
+Leadership component), and leave flat terms unchanged. Preserve the contribution
+through accepted packet/state snapshots with append-only compatibility, not a
+polling check or a falsely labelled Warcasting bonus. No GUI or promotion.
+
 Next coverage slice2026-10-05: Chaplain's Reserve is the unambiguous missing
 prerequisite. Accepted after repaired build25165 and focused native96092:
 22/22 pass in2.672s, zero skips, including five new actual-action reward cases,

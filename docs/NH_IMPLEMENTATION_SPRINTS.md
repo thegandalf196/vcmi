@@ -1,5 +1,25 @@
 # New Horizons implementation sprints
 
+Accepted checkpoint 2026-10-05: Sacred Command. Client3475 and repaired
+both-target44913 pass; native86438 passes26/26 (4.654s), zero skips; focused
+data/inventory19/19, module drift and independent review pass. Counts220/310
+perks,68/90 faction perks,Divine Mandate3/10. Retain failed45324 and repaired
+build/native logs under UP108-sacred*. Broad composition, chooser-cache edge
+cases and rendered/playable acceptance stay separate. Next unblocked is
+Knightly Sequence; Shared Purpose awaits recipient semantics. Earlier notes
+below preserve the implementation/validation checkpoints, not current counts.
+
+Current Phase 1 slice (2026-10-05): Sacred Command. Runtime captures a distinct
+Divine-Mandate-paid Order efficiency contribution; independent workers own AI
+valuation and focused actual-action/packet fixtures. Root integrates activation,
+registration, append-only compatibility and build evidence. Accepted counts
+remain 219/310 perks and 67/90 faction perks pending principal validation.
+Shared Purpose awaits the user's recipient-semantics choice. The next unblocked
+slice is Knightly Sequence: source-qualified -2 Spell cost (after Wisdom,
+minimum 1) or a distinct captured +5-point Order efficiency contribution.
+Its read-only map is complete; no Knightly activation is claimed. No graphical automation or
+playable snapshot promotion is part of this cycle.
+
 Delivery checkpoint2026-10-05: accepted source4af518137 is committed/pushed,
 remote hash and required author/committer verified; both new Divine Mandate perks
 are included. Earlier full Windows37263037998 is terminal SUCCESS on45f659b7c.
