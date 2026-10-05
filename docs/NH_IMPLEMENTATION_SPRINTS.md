@@ -1,5 +1,22 @@
 # New Horizons implementation sprints
 
+UP108 implementation resumed2026-10-04 from clean pushedaa6ff84c5.
+Acceptance: client/native retry79510 passes after correcting a test-only
+`MasteryLevel::Type` parameter. Six new Divine Mandate native tests and21
+adjacent allowance/projection/provider tests pass, zero skips; independent review
+has no blocker. Rank coverage advances87->90/93 and faction ranks21->24/27;
+perks remain214/310. All ten Divine Mandate perks remain planned. Wider perk
+compositions/full battle save-resume remain Phase2. No playable promotion or GUI
+acceptance is inferred. Next foundation: UP046 Elemental Rebirth.
+Shared/server runtime, client continuation/status and detached AI/native fixtures
+are being implemented in parallel with separate file ownership. The shared
+contract reuses the per-side typed allowance ledger, including its completed-
+pair counter and payload-aware selection/commitment; no second pending ledger
+or forced creature-action lock. Root registers the generic status provider,
+owns data activation/build and obtains independent review. Coverage remains
+90/93 ranks and214/310 perks after principal native/build gates pass. GUI and
+playable promotion remain separate delivery obligations, not inferred authority.
+
 Current user priority UP230 supersedes the following UP108 next-action notes:
 finish all26 custom spell families as transparent symbols, remove the separate
 Adventure Spells entrance button in favor of the native guild exterior hover/

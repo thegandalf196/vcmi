@@ -5851,6 +5851,49 @@ Not done; no rendered/playable acceptance or snapshot promotion is claimed.
 
 ## UP-108 — Divine Mandate rank foundation
 
+Status: Source/native verified,2026-10-04; playable delivery remains separate.
+Incremental retry79510 builds vcmiclient/vcmitest successfully. Six new native
+tests and21 adjacent allowance/projection/provider checks pass, zero skips.
+Both accepted pair directions,1/2/3 caps, no recursion, creature-action
+persistence, unused expiry, non-Light fallback and counter save/downsave have
+focused evidence. All three ranks are active; ten perks remain planned and
+ordinary perk-gated advancement is not yet complete. Independent review reports
+no blocker. Wider perk composition/full battle save-resume and six stale
+Spellcraft/Diplomacy inventory expectations remain Phase2. No GUI launch or
+playable promotion. Next missing faction foundation is UP046 Elemental Rebirth.
+
+Implementation resumed2026-10-04 after UP230's source/asset gates passed.
+Runtime owns shared/server state and append-only serialization; independent UI
+and AI/native-fixture workers own client and AI/test files respectively. Root
+owns architecture, activation/data registration, build integration and coverage.
+No rank is counted active until accepted paired paths, focused validation and
+client/native builds succeed. No GUI launch or playable promotion is authorized
+by this continuation; UP230's rendered acceptance remains a delivery obligation.
+Initial gates:17 perk-data checks pass. The old Metamagic prompt source guard
+fails its blanket ban on `metamagicGrand`, because the already-existing shared
+preview helper reads the authoritative action value. This is not evidence of a
+new manual control. A narrow exact preview pass-through exception restores the
+guard's pass without removing authoritative preview parity or permitting a
+player-selected Grand control. Candidate-selection assertions will also follow
+the final shared Divine Mandate API.
+Production/UI/AI source is frozen; independent review finds no blocker. Both
+narrow review findings are repaired (pre-feature LOAD rejection after reading
+grants, and candidate-aware Battle Meditation). Candidate registry enables the
+three ranks; client/native build32263 is live with12 jobs. The coverage ledger
+retains the previous verified87/93 rank checkpoint until native/build gates pass.
+Native profile is isolated; GUI/playable snapshots remain unchanged.17 perk-data
+checks and the updated Metamagic/sidebar source guard pass. The general Skill-
+entity suite has six stale planned-status expectations for existing Spellcraft
+and Diplomacy ranks (three each); Divine Mandate's rows do not fail. Record those
+fixture inventory updates for Phase2, alongside wider perk composition and full
+battle save/resume. Current focused fixture includes both accepted AI pair
+directions, creature-action persistence, caps1/2/3, no recursion, unused expiry,
+non-Light fallback and completed-counter save/downsave, but has not run yet.
+Build32263 stopped on a test fixture parameter naming `MasteryLevel` rather than
+`MasteryLevel::Type`; production objects had compiled. The exact parameter is
+repaired and incremental build79510 is running. Native validation remains gated
+on that build; this compile result is not runtime acceptance.
+
 Decision2026-10-04: the user directs the same principles as Metamagic. Root
 integrated round-end expiry, use spending only on completed paired follow-up,
 unused expiry without consumption, no recursive grant and no Creature Activation
