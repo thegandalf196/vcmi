@@ -1,5 +1,25 @@
 # New Horizons implementation sprints
 
+Accepted Phase1 principal-path repair: UP021 last-stack transfer. Client39538
+and native build88200 pass; native26444 passes13/13 in3.908s, zero skips.
+Ordinary/radial routes retain the last creature, transfer available Leadership
+capacity and use normal localized modal feedback, without changing numeric
+split semantics. Three source guards and independent review pass. No count
+increase, GUI or snapshot promotion; rendered/playable delivery remains pending.
+Next: select an unblocked missing specification path using existing maps.
+
+Windows delivery: Purifying37280908002 is terminal SUCCESS on71dc35eda6bbe0ac4e07b309aa5ea52c3ec8090b.
+Nonexpired game artifact11335635403 is802632735bytes. Frenzied37286838037
+is confirmed in_progress onf46e375ee; preserve its live handle without restart.
+
+Current Phase1 work: UP021 reopened last-stack transfer principal acceptance.
+Source is implemented but its original native gate remains pending. Bounded
+source/test audits identify the smallest server-authoritative exact-one,
+all-but-one, receiving-capacity, conservation and stale-request checks; root
+executes once, repairing only concrete failures. This is not broad army
+integration hardening or graphical acceptance. No GUI/profile/snapshot changes.
+Perk224/310, Chaos5/10 and combat61/67 counts remain unchanged.
+
 Frenzied sourcef46e375ee is committed/pushed with verified identity/remote.
 Full Windows37286838037 is confirmed pending on that exact source, dispatched
 once; Purifying37280908002 remains in_progress. Preserve both handles, not

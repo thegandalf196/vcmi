@@ -11154,6 +11154,45 @@ and playable/in-game acceptance remains explicitly separate where still needed.
 
 ### UP-021 — Fix Shift stack split/combine crash and Leadership-aware combining
 
+Source/native acceptance2026-10-05: ordinary empty/occupied clicks and radial
+transfers explain the required last creature using localized modal feedback.
+Larger radial transfers use authoritative whole-stack intent, preserving one
+creature and clamping to receiving Leadership; explicit numeric splits remain
+exact. Client39538 and native build88200 pass with12 jobs. Native26444 passes
+13/13 in3.908s, zero skips, including exact-one empty/occupied garrison rejection,
+partial/exact/zero fits, stale requests, conservation and legacy uncapped rules.
+All three routing/split-lifecycle/owner-layout guards and independent review pass.
+Evidence: UP021-last-stack-client-build.log, UP021-last-stack-native-build.log,
+UP021-last-stack-native-repaired.log/XML. The first exact-fit failure was caused
+by the single-player fixture awarding victory after the partial merge; a second
+active player fixes the fixture without weakening success assertions. Rendered
+and playable delivery remain pending; no GUI/profile/snapshot change. Coverage
+counts remain224/310 perks and61/67 combat identities.
+
+Concrete continuation finding2026-10-05: radial/Alt+Ctrl empty-slot last-stack
+move still uses an exact count-minus-one split and full-amount Leadership
+preflight, so a capacity-limited move silently fails instead of transferring
+the maximum. Exact-one radial moves silently return; occupied same-creature
+clicks can reach server complain and its generic serverProblem wrapper.
+Repair client ordinary routes without changing explicit numeric splitting.
+Valid direct last-creature rejection must use the existing player-specific
+localized InfoWindow, not a system-error broadcast. Three disjoint owners:
+client/routing guard, server notification and native admission fixture. Root
+owns builds/integration. First focused native75985 passes11/12 in3.595s;
+OrdinaryMerge's third exact-fit request fails and awaits diagnosis, not weakened
+assertions. Existing exact-one test wrongly accepts SystemMessage as ordinary
+feedback; replace with actual InfoWindow/no-system-error proof. No coverage-count
+change, GUI or playable acceptance is claimed from the audit.
+
+Resumed2026-10-05 for the still-missing principal native acceptance gate, not
+broad army hardening. Last-stack source checkpoint below remains unverified:
+one creature must produce a normal explanation/no split, while larger last
+stacks transfer the largest legal amount and conserve the retained creature.
+Independent bounded source and existing-test audits reuse the mapped paths;
+root owns smallest native execution/build and records any concrete failure.
+No GUI, user-save/profile changes or playable snapshot promotion. Berserk's
+skipped-turn choice remains unanswered; no design assumption is made.
+
 Status: Reopened by playable last-stack transfer defect on 2026-09-27. The
 original crash repair is playable-confirmed and the empty-slot/split-label
 follow-up is Windows-build verified, but transferring the complete final hero
