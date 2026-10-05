@@ -11,6 +11,21 @@ entries and their validation/delivery evidence.
 
 ## UP-230 — Mage Guild spell symbols, exterior purchase hotspot and tier names
 
+Latest Windows package checkpoint2026-10-05: run37267127209 is terminal SUCCESS
+on4af5181377917139d292621ee0a3d92deae9dd04. Nonexpired game artifact11328478994
+is New-Horizons-Windows-x64-4af5181377917139d292621ee0a3d92deae9dd04
+(802605583 bytes). It includes these UI corrections, Chaplain's Reserve and
+Consecrated Casting; it excludes later Sacred Command and Knightly Sequence.
+Package success is not graphical acceptance or Linux launcher promotion.
+
+Latest request recheck2026-10-05: all11 symbol/faction asset tests and the
+Adventure Guild UI source guard pass again. The launcher resolver still selects
+snapshot-a96183639bbc0dbad56f4e2a48a603baaa1debe62d0dbe40160926c092c946b0,
+which predates commitsfa9310b51 and26bb4d5a5. No new art, GUI run, build or
+snapshot promotion was performed. Existing unrelated Knightly Sequence edits
+are preserved and are not a playable candidate. The supplied Imgur URL was
+unavailable through the web reader; no fresh screenshot inspection is claimed.
+
 Windows delivery checkpoint2026-10-05: full run37263037998 is terminal SUCCESS
 on45f659b7c, including these corrections. Nonexpired artifact11326508028 is
 New-Horizons-Windows-x64-45f659b7cfc0e307352c7f7393d2e45ed3b2a2f3
@@ -26,7 +41,7 @@ launcher snapshot. Existing Chaplain's Reserve changes remain preserved.
 Recheck passes11/11 symbol/faction asset tests plus the exterior-access source
 guard. Current launcher snapshot a96183639 was created2026-09-30, before these
 corrections; it is not delivery of the current source. The existing full Windows
-run37263037998 includes the corrections and remains in progress. No snapshot
+run37263037998 includes the corrections and subsequently succeeded. No snapshot
 promotion or rendered acceptance is claimed by this re-audit.
 
 Read-only recheck2026-10-05: symbol guards2/2, faction asset/name guards9/9
@@ -5875,6 +5890,64 @@ cast/status/save interactions remain Phase2. Generic UI is provisional and art
 Not done; no rendered/playable acceptance or snapshot promotion is claimed.
 
 ## UP-108 — Divine Mandate rank foundation
+
+Knightly Sequence accepted2026-10-05: client/native79514 exits0; focused native
+77528 passes32/32 in5.541s, zero skips, including six new actual-action/packet
+cases. Legal Basic prerequisite and Advanced selection, Wisdom-before-discount,
+min1, actual Buffer-first payment/paid-cost ledger, independent0/5 plus Sacred
+0/10 composition, detached parity, unchanged fixed terms, immutable snapshots,
+current/old reads and direct/enclosing zero-byte rejection pass. Data/inventory
+19/19, module drift, numerical Order/UI source guards and independent review
+pass. Perks221/310, faction69/90, Divine Mandate4/10. Evidence:
+UP108-knightly-build.log and UP108-knightly-native.log/XML. Broader compositions,
+full-battle health/provenance saves and rendered/playable acceptance remain
+Phase2/separate delivery; no GUI or snapshot promotion. Earlier pending gate
+observations below are checkpoint history.
+
+Next unambiguous missing perk: Mandate of Heaven. Preserve the existing completed-
+pair counter as total accepted pairs; selected active Expert perk derives maximum
+4 instead of3, equivalent to the first pair being free. No redundant free-pair
+counter. Needs shape/transition bound4, append-only compatibility for count4 with
+direct/enclosing prewrite downsave rejection, legal Expert acquisition, actual
+four pairs/fifth rejection, ordinary max3 and unchanged first-pair Reserve.
+Never clamp historical count if respec lowers the derived cap; deny further
+grants instead. Shared Purpose/Royal Standard decisions remain outstanding.
+
+Current validation checkpoint2026-10-05: Knightly production and six new actual-
+action/packet cases frozen; independent review finds no blocker. Local both-
+target build79514 is live with12 jobs (UP108-knightly-build.log); accepted
+coverage unchanged pending build/native gates. Data/UI inventory19/19 and
+module check pass. Earlier Windows37267127209 succeeded on4af518137 with
+nonexpired game artifact11328478994; Sacred-source37270206987 is now confirmed
+in_progress oncb5cd56de. Neither contains the uncommitted Knightly candidate.
+
+Knightly Sequence implementation resumed2026-10-05 after the repeated UP230
+re-audit. Separate runtime, AI and native-fixture owners complete the interrupted
+slice. Candidate registry activation is for legal acquisition tests, not accepted
+coverage: counts remain220/310 and68/90 until build/principal gates pass.
+The paired spell uses the shared candidate-aware cost callback; paired Orders
+capture a distinct0/5 contribution alongside Sacred0/10. Numerical previews and
+AI consume the aggregate without changing fixed terms. No GUI or promotion.
+
+Royal Standard next-slice read-only map2026-10-05: shared Morale callback
+already supplies server rolls and AI. Needs distinct captured selected-Divine-
+Mandate provenance; do not infer it from Sacred/Knightly being selected. Its
+wording “for that Order's duration” differs from Commanding Presence's explicit
+spent/broken-benefit expiry. User asked whether protection remains through the
+scheduled Order expiry or ends with the benefit. Await that choice; do not
+silently reuse Commanding Presence's early-expiry predicate. Divine Discipline's
+future extension must use the same lifetime. No Royal Standard activation.
+
+Purifying Mandate read-only map2026-10-05: current qualifying Light removal
+spell is Purify. Capture selected Divine Mandate Spell provenance before casting;
+apply the extra removal only for targets whose negative magical source groups
+were actually removed by applyPurifyAction. Existing physicalAfflictions helpers
+support bonus-group removal; stored physical Poison requires replicated unit
+state. Purify already has manual/automatic physical-Poison removal, so the perk
+must compose with that path without double-removing or rewarding physical-only
+cleansing. Existing helper priority is Poison, Disease, Bleeding, then oldest;
+confirm the narrow recipient/selection policy before activation. No broader
+spell-scripting refactor, implementation or coverage increase by this map.
 
 Delivery checkpoint: accepted source cb5cd56de9c4719b127d196a59a89c56124f653f
 is committed/pushed with required author and committer identity; remote verified.

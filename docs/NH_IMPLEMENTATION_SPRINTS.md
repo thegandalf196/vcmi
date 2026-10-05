@@ -1,5 +1,31 @@
 # New Horizons implementation sprints
 
+Accepted Phase1 checkpoint2026-10-05: Knightly Sequence. Both-target79514 passes;
+native77528 passes32/32 in5.541s, zero skips, six new cases. Data/inventory19/19,
+module check, numerical Order/sidebar source guards and independent review pass.
+Coverage221/310 perks,69/90 faction perks,Divine Mandate4/10. Logs/XML under
+UP108-knightly*. Broad combinations, full-battle saves and rendered/playable
+delivery remain separate. Next unambiguous slice: Mandate of Heaven, derive one
+extra completed-pair capacity with the existing counter and explicit count4 save
+compatibility. No GUI, new artwork or Linux promotion. Earlier live-build notes
+below are checkpoint history.
+
+Latest validation/delivery2026-10-05: Knightly source/fixtures frozen and reviewed
+without blocking findings. Both-target local79514 runs12 jobs, log
+UP108-knightly-build.log; data/inventory19/19 and module drift pass. Accepted
+coverage remains unchanged until principal gates. Windows37267127209 terminal
+SUCCESS on4af518137, nonexpired game artifact11328478994 (802605583 bytes);
+Sacred-source37270206987 is now in_progress oncb5cd56de. No Knightly package,
+graphical acceptance or Linux promotion is implied. Earlier observations below
+are checkpoint history.
+
+Current Phase1 slice2026-10-05: Knightly Sequence, resumed after UP230 recheck.
+Runtime, AI and actual-action/packet fixtures have independent owners; root
+integrates existing numerical previews, activation and builds. Accepted coverage
+remains220/310 perks,68/90 faction perks,Divine Mandate3/10 until focused gates
+pass. No graphical automation or playable snapshot promotion. Current Windows
+handles revalidated:37267127209 in_progress,37270206987 pending.
+
 Delivery checkpoint: accepted Sacred Command source cb5cd56de is pushed and
 remote/identity verified. Full Windows37270206987 is confirmed pending on that
 source; earlier full37267127209 is still in progress on4af518137. The older
