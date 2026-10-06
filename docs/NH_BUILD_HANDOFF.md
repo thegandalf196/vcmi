@@ -1,5 +1,23 @@
 # New Horizons Linux build handoff
 
+## 2026-10-06 Castle Gate minimum AI hook — source/native verified
+
+Nullkiller2 now plans an explicit Castle Gate action and executes the ordinary
+server-validated CastleTeleportHero request. Projected gate use is separate from
+the daily Adventure Spell opportunity and resets at day rollover. Gate Movement
+expenditure applies only to the gate edge, not a spell edge departing that town.
+Server rejects uncontrolled departure and occupied destinations before spending
+Movement or recording use. Repaired client build53 steps and test-target29 steps
+pass with12 jobs; subsequent fixture-only rebuilds each pass3 steps. Current
+principal run passes2/2 in1.509s and adjacent pathfinding run9/9 in0.903s, zero
+skips/errors/disabled. Actual request, relocation, Movement exhaustion, daily
+state and next-day projected return pass; independent review finds no blocker.
+Binary SHA-256:
+`76ecdccecf09fe09c8385f7beb1991507a9d12b4037d8b3cd53857a29e201e3a`.
+Receipts remain under ignored `castle-gate-*` testing outputs; the original
+failed fixture run is preserved. Full autonomous goal selection and compound
+routes remain Phase2. No GUI run or frozen launcher snapshot promotion occurred.
+
 ## 2026-10-06 Astronomy Tower first-use correction — source/native verified
 
 The37-row town audit identifies a missing immediate construction forecast.
