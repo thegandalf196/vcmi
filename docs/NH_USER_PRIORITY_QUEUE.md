@@ -11588,6 +11588,28 @@ playable snapshot promotion.
 
 ### UP-023 — Complete all missing Skills, perks, and spells before further art
 
+Chain Lightning coverage checkpoint, 2026-10-06: canonical ordinary damage
+retention is 100/70/50/35/25 percent across five recipients, but the shared Lua
+damage path previously used geometric halving. Runtime correction now builds
+with12 jobs and passes7/7 focused native cases in2.282s, zero skips/errors.
+Authoritative casting and cumulative-prefix/detached predictions agree; live
+HP/Mana/actions/RNG remain unchanged by forecasting. V1/v2 retain halving and
+their four-target limit; Conductor and Master controls pass. Independent review
+finds no blocker; module drift/diff checks pass. Source verification is not
+playable delivery. Counts remain61/67 combat identities and225/310 perks.
+Receipts are retained under ignored `build/nh-chain-falloff.QBFEQLeX/`:
+`build.log`, `fixture-build.log`, and `native-repaired.log/.xml`.
+Runner SHA256: `a2cae4b1e47b9a8f5203bf4917ab9fc7e01f583e2b217e87d4783b4793f67bd2`.
+The initial `native-initial.log/.xml` is3/8, not green: four stale fixture
+profiles were repaired; `BattleSpellCastTest.chainLightningChainsToDistinctUnits`
+still cannot begin casting in the curated context, retained for Phase2 diagnosis.
+The existing final damage floor remains unchanged: the specification's rounded
+310-damage examples (109/78) differ from floor results (108/77); record that
+rounding discrepancy for Phase 2 rather than changing general rounding here.
+The separate required ordered propagation/per-stack preview UI remains missing:
+current hover names the primary recipient but reports an aggregate chain total.
+No graphical acceptance or playable promotion is implied by this checkpoint.
+
 Source delivery2026-10-05: Perfect Moment correction3ee74704f6721dc5d7853b592d2ef98babcf9068
 committed/pushed with required author and committer; remote exact hash verified.
 After confirming37308848380 in_progress and no pending full build, dispatched
