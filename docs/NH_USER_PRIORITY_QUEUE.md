@@ -135,6 +135,15 @@ Reference pixels remain outside the repository pending provenance review.
 
 ## UP-239 — Academy creature portrait backgrounds
 
+Latest playable delivery: source `9540b0643` committed/pushed and built with
+twelve jobs. Frozen snapshot
+`bad986b13d1b1711a93d901a1749b73568d078291a01bb2644f39c2e64342011`
+loaded content, initialized a map and completed six AI turns before the
+intentional eight-second timeout. Existing ammo-overuse remains deferred.
+Promotion and checksum-verified resolve pass; unchanged play script now
+delivers12/14 provisional portraits. Prior snapshots and user profiles remain
+intact. Gargoyles and user visual approval remain open; no roof repair included.
+
 Twelve-portrait source checkpoint: Titan v3 is provisionally accepted after
 root/independent native review found intact anatomy and no obvious retained
 building. The five isolated boundary uncertainties are deferred aesthetic

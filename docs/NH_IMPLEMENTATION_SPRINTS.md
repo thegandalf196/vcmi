@@ -1,5 +1,12 @@
 # New Horizons implementation sprints
 
+Latest delivery: source `9540b0643` is built and promoted as snapshot
+`bad986b13d1b1711a93d901a1749b73568d078291a01bb2644f39c2e64342011`.
+Twelve portraits delivered; exact frozen content/map/AI smoke succeeds. Existing
+ammo-overuse remains deferred. Obsidian v2/v3 mechanical exports reproduce but
+are still rejected art, not new coverage. Next: a different Gargoyle extraction
+approach, preserving purchaser-original references outside committed source.
+
 Latest source checkpoint: Titan v3 integrated as portrait12, provisionally
 accepted with five small boundary uncertainties deferred. Client/fixture build,
 actual scale1–4 consumer (zero skips), three Python checks, exporter and source
