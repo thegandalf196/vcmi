@@ -1,15 +1,15 @@
 # New Horizons implementation sprints
 
-Current checkpoint, 2026-10-05: the Academy crash/icon candidate `f04b8dff8`
-has been built and promoted to the existing Linux launcher; prior snapshots are
-retained. User native acceptance remains separate from that delivery. UP239
-targets opaque large creature portraits, not the already-transparent small
-cutouts; the first generated mask fails native review and is not installed.
-UP240 is the next unblocked user-priority edit: weather the three Academy map
-sprite material finishes without changing architecture, registration, ownership
-flags, shadows or gameplay. HoMM3-Art masters are being reduced and reviewed
-at native scale before reproducible importer integration. No Cabir roster change
-is authorized by the user's feasibility question.
+Current checkpoint, 2026-10-05: the committed `a3487aacf` candidate has been
+built, checked headlessly and promoted to the existing Linux launcher, including
+UP240's reviewed weathered Academy map bodies. Prior snapshots are retained;
+user native visual acceptance remains separate from delivery. UP239 is the next
+unblocked edit: opaque large creature portraits, not transparent small cutouts.
+The corrected Gremlin geometry matte is provisionally accepted; a bounded worker
+is implementing the original-pixel-preserving renderer consumer while root
+authors the remaining masks through HoMM3 Art. UP241's confusing hall roof is
+diagnosed as painted geometry, not duplicate rendering; no roof correction is
+yet implemented. No Cabir roster change is authorized by the feasibility question.
 
 Functional coverage remains225/310 perks and61/67 combat-spell identities.
 The five Adventure Spell acquisition paths exist, but their effect audit is not

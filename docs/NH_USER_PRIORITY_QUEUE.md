@@ -109,6 +109,16 @@ restore the original handoff's smoother art. Eight focused art tests, importer
 all three checks. No gameplay, renderer, ownership or shadow logic changes.
 Playable delivery and user aesthetic acceptance remain separate pending gates.
 
+Delivery checkpoint, 2026-10-05: native client at committed revision `a3487aacf`
+built successfully with twelve jobs. Its exact frozen candidate loaded all
+content, initialized the map and ran successive AI turns in a bounded dummy-SDL
+headless run. Existing ammo-overuse diagnostics remain deferred, not resolved by
+this art change. Promotion and subsequent snapshot verification succeeded;
+the unchanged Linux play script selects this candidate. This delivers the map
+material revision, not the hall roof or unfinished static creature portraits.
+User visual acceptance remains pending. Private delivery evidence is retained
+under ignored `build/nh-up240-validation/`.
+
 Cabir feasibility question, 2026-10-05: user asks whether an original Cabir-inspired
 creature could replace Gremlins. Assess the complete base/upgraded animation,
 portrait, recruitment, sound and data workload; do not treat this question as
@@ -125,7 +135,7 @@ Reference pixels remain outside the repository pending provenance review.
 
 ## UP-239 — Academy creature portrait backgrounds
 
-Status: Open, 2026-10-05. User screenshot `NaFHGAy.png` shows Gremlin/Gargoyle
+Status: In progress, 2026-10-05. User screenshot `NaFHGAy.png` shows Gremlin/Gargoyle
 army portraits retaining the snowy Tower backdrop beside Academy's new desert
 town art. Correct the shared Academy creature portrait backgrounds, covering
 all affected base/upgraded creatures and small/large portrait roles wherever
@@ -138,6 +148,15 @@ native-size comparisons and shared-consumer checks (army, recruitment, creature
 details and Fort where applicable), with user visual approval separate from
 source registration/build. This turn records and diagnoses the request; it does
 not claim replacement portraits have been generated or delivered.
+
+2026-10-05 additional art checkpoint: Master Gremlin's generated geometry mask
+passes root native/8× composition review provisionally. Stone and Obsidian
+Gargoyle drafts retain snowy architecture beneath their wings and are rejected,
+not runtime assets. All four available mask reductions reproduce; independent
+review finds no exporter/provenance blocker. The single approved Gremlin renderer
+consumer is delegated and remains in progress; the full fourteen-portrait family
+is not complete. Original-colour references/comparisons remain ignored build
+data, not committed assets. Exact prompts and rejection dispositions are retained.
 
 Read-only diagnosis: army slots use static `CPRSMALL` (32×32) or `TWCRPORT`
 (58×64) creature icons with separately overlaid counts. Gremlin/Gargoyle lack
