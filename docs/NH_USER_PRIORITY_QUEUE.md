@@ -86,6 +86,31 @@ DEF-frame surface before its original palette is saved, with its immutable
 mapping in the shared-image cache key; late instance palette filters do not
 recolour already cached RGBA upscales. No broad integration suite was needed.
 
+Content-alias checkpoint,2026-10-06: explicit authored maps and JSON-only
+references now bind Arch Mage battle animation and ordinary Mage projectile;
+the Academy large-portrait compositor is being routed through its Arch Mage
+source alias. All133 CAMAGE and nine PMAGEX source frames retain their exact
+group/frame references. These are provisional numerical palette instructions,
+not generated or redistributed original artwork. Native rendered validation,
+animation-wide semantic review and playable delivery remain open. Small icons
+and adventure creature sprites are not covered yet. Focused portrait guards
+needed updating for the newly approved animation/missile fields, rather than
+rejecting every graphics field except iconLarge; those five adjacent checks
+now pass. Do not treat this source checkpoint as closing UP262.
+Native content verification: full Linux client and focused renderer fixture
+build successfully. Ten focused Python checks pass; activated native CTest
+passes1/1 with zero skips in2.37s. It checks all133/9 frame locators and exact
+native RGB/alpha/geometry for representative holding, shooting, projectile and
+portrait frames, requiring an actual changed pixel. Existing1x–4x alias/cache
+controls remain healthy. Private opt-in outputs were visually inspected:
+grey cloth, retained gold/skin, red staff glow and red-white projectile are
+visible. This is selected-frame review, not an animation-wide or in-game
+approval. Independent review has no remaining source blocker. Receipt:
+ignored build/new-horizons-linux/UP262-palette-content-native.log.
+Deferred: full motion review, small/map portrait colours, SDL3 execution and
+the compositor's exact source-filename guard (native fixture checks TWCRPORT).
+Normal Linux still selects30bc6ea; no playable promotion is claimed here.
+
 ## UP-261 — Proposed recruitment and transfer Leadership demand
 
 Status: Verified (delivery/rendered acceptance pending),2026-10-06. Canonical Leadership UI explicitly requires
