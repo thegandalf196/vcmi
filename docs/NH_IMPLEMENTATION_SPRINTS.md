@@ -1,5 +1,14 @@
 # New Horizons implementation sprints
 
+Latest source checkpoint: UP239 now integrates eight of fourteen large portraits,
+adding Genie and corrected Master Genie v2. Root client/native builds with twelve
+jobs succeed; actual pixel/alias fixture passes three consecutive scale1–4 runs,
+zero skips. Three Python checks, runtime exports, twelve draft reductions and
+independent review pass. Next: integrate provisionally accepted Naga mask and
+correct Queen's internal foreground holes/lines; six portraits remain unfinished.
+No new gameplay identity credit or launcher promotion. Both old Master Genie
+sources and rejected drafts are preserved; no original colour pixels are shipped.
+
 Latest source checkpoint: UP239 now integrates six of fourteen large portraits,
 adding reviewed Mage/Arch Mage geometry through the unchanged compositor.
 Root client/native builds with twelve jobs succeed; actual SDL-dummy pixel/alias

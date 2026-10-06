@@ -135,6 +135,28 @@ Reference pixels remain outside the repository pending provenance review.
 
 ## UP-239 — Academy creature portrait backgrounds
 
+Eight-portrait source checkpoint: Genie and corrected Master Genie v2 are now
+integrated through the same compositor, IDs36/37 and external frames38/39.
+Base Genie's plume gap/curved luminous weapon pass bounded independent anatomy
+review; Master v2 restores the six incorrectly removed clothing pixels. Two minor
+edge changes remain documented as Provisional. Root builds client and native
+fixture with twelve jobs; the actual eight-portrait consumer passes three
+consecutive scale1–4 runs, zero skips, with all foreground/background pixels,
+TWCRPORT/CPRSMALL aliases and async shutdown verified. Three focused Python
+checks, runtime export validation, twelve draft reductions and independent source
+review pass. Eight of fourteen are source-integrated; six remain unfinished.
+Naga's new mask passes root native/8× review provisionally but is unregistered;
+Naga Queen's initial draft is rejected for internal foreground holes/lines.
+Next: integrate Naga and correct Queen, then the remaining Gargoyle/Giant families.
+No gameplay identity credit; the launcher still delivers two Gremlin portraits.
+
+Genie review checkpoint: the Master Genie draft has a verified internal hole
+through six red/gold clothing pixels, not background. One focused HoMM3-Art
+built-in revision fills it and is preserved non-destructively with its exact
+prompt. Native reduction also changes two contour pixels; review its composition
+before selecting it. Base Genie luminous contours/head gap remain under bounded
+independent review. No new runtime registrations or playable delivery yet.
+
 Six-portrait source checkpoint, 2026-10-05: Mage and Arch Mage masks pass root
 native/8× review provisionally. The apparent upper-left spire is part of the
 authored desert backdrop, not retained original scenery; independent all-pixel
