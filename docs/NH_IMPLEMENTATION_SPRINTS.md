@@ -1,5 +1,15 @@
 # New Horizons implementation sprints
 
+Delivered UP241: source `cadab569a` is committed/pushed, built and promoted as
+snapshot `3b7e155aec10506da961d94c6dfce24117bb11700879c903354da078cb23ceac`
+after independent2277-file verification and bounded AI smoke through day7.
+The existing ammo diagnostic recurs and stays deferred; no user visual approval
+is inferred. The next bounded Steward selection confirms its already recorded
+two-resident stacking hold (UP070/UP071); the question is presented again, not
+silently decided. Next functional work must select another unblocked user-queue
+clause or use an actual answer, not repeat that mapped hold. Windows batch
+37429818459 is confirmed live at client compilation on the earlier3eda8ac03.
+
 Current UP241 checkpoint,2026-10-06: pinned Provisional Village Hall roof
 revision is source-integrated after native/registered-scene review; original
 master/native, placement, alias and masks stay unchanged. Eleven focused art

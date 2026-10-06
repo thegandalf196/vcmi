@@ -164,7 +164,7 @@ under ignored `build/nh-up238-validation/`.
 
 ## UP-241 — Academy hall double-roof appearance
 
-Status: Verified (delivery and user visual acceptance pending), 2026-10-06. User screenshot
+Status: Verified (Linux delivered; user visual acceptance pending), 2026-10-06. User screenshot
 `https://i.imgur.com/lSvdSIZ.png` shows apparently overlapping roof planes on
 Academy's low hall building. Inspect the live hall image, underlying landscape
 and replacement-stage registration to distinguish painted geometry from two
@@ -202,6 +202,21 @@ Academy art tests and export/check reproducibility pass. Full original-handoff
 archive import/check is unavailable because that ZIP is no longer present.
 Playable delivery and user visual acceptance remain separate; no gameplay
 identity or Final-art credit is awarded.
+
+Committed/pushed as `cadab569a`; exact committed client build succeeds with12
+jobs. Frozen snapshot
+`3b7e155aec10506da961d94c6dfce24117bb11700879c903354da078cb23ceac`
+passes independent2277-file verification, exact frame/alias/mask checks and a
+corrected20-second dummy-SDL All for One run through the start of AI day7
+(expected timeout124), then is promoted and resolved by the default script.
+No crash/action-rejection markers; the known ammunition-overuse diagnostic
+recurs290 times and remains deferred, not silently called clean. The initial
+unsupported CLI-flag attempt and owned-child cleanup are retained separately
+in the failure ledger; no host pointer or GUI automation. Receipts under
+ignored `build/nh-up241-validation/candidate-3b7e155aec10506d/`. Prior snapshot
+`a36a456b06` is retained. Windows run37429818459 is compiling the earlier
+`3eda8ac03` batch and does not contain this roof revision. User visual approval
+remains open; this is Provisional artwork.
 
 ## UP-240 — Academy adventure-map sprite style feedback
 
