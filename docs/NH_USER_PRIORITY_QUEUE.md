@@ -84,6 +84,17 @@ Root inspected corrected all-nine/native Tower compositions: the opaque crop
 still replaces desk texture with a visible blurred rectangle. Transparent
 variants/masks are under comparison; do not promote the opaque patch as visually
 accepted. Original/native diagnostic pixels stay in ignored private storage.
+Clean-plate continuation: HoMM3 Art restores only the old ribbon footprint in
+a private generated plate. Optional paired, hash-pinned importer inputs now
+produce nine67x85 sparse RGBA overlays at378,344. The692-pixel repair mask and
+resized book alpha define the only changed region; all-nine pixel checks confirm
+no changes outside their union. Root inspected the native Tower overlay and
+earlier full-room composition. Ten synthetic importer tests and the combined
+opt-in native fixture pass1/1, zero skips,3.21s. Independent source review has
+no blocker. Correct private output is build/nh-magic-assets-private-v2; the
+superseded full-room output is preserved with an explicit superseded suffix.
+No derived purchaser pixels enter Git. Actual guild UI/user acceptance and normal
+launcher delivery remain pending; legacy opaque mode is labelled unaccepted.
 
 Status: Open,2026-10-06. Integrate the nine approved faction book/ribbon designs
 from Downloads new-horizons-magic-assets-v1.zip at native guild scale, preserving
