@@ -11,6 +11,20 @@ entries and their validation/delivery evidence.
 
 ## UP-260 — Cache combat-row source descriptions on bonus changes
 
+Playable checkpoint, 2026-10-06: UP257–UP260 are delivered in the normal Linux
+snapshot `990be55af9137e1752890019411e1156dd48154c52bee968fdc7ce2604686334`,
+compiled from committed `48d5a2b3f`. Its 2,278-file manifest and client/library
+hashes remain unchanged after one bounded true-headless smoke. AI reaches day6;
+timeout124 is deliberate termination, not completed-game acceptance. Processes
+and temporary runtime are gone and the isolated profile lock is released.
+Independent review finds no development-promotion blocker. Promotion and normal
+launcher `--verify-only` succeed; prior536e86 remains available. Rendered fit,
+FPS, pointer interaction and privacy execution remain unverified. Deferred
+diagnostics: Shield of Chaos defaults to NEUTRAL, redundant masterChainLightning
+namespace, and five NK2 pathfinding node-capacity warnings while turns continue.
+Windows notice preflight37483116278 succeeds on48d5a2b3f; full build37483347788
+remains in progress. Do not claim a new downloadable Windows package yet.
+
 Status: Verified (delivery pending),2026-10-06. Root caller audit finds the existing
 BattleStacksController::updateHoveredStacks timer reaches refreshDefendStatus
 for an unchanged hovered stack on each frame. UP257's new source descriptions
