@@ -6423,6 +6423,10 @@ merge into existing stacks and ordinary split/join does not preserve stack-local
 bonuses. Asked whether the whole resulting stack receives the bonus or only the
 newly recruited cohort. Do not silently grant old creatures a cohort-only bonus
 or weaken transfer persistence. No implementation or activation is claimed.
+2026-10-06: resurfaced this shared Drill Sergeant/Field Instructor prerequisite
+as one concise choice: whole merged-stack bonus versus strict recruited-cohort
+tracking/effect rules. No answer is inferred; retain the canonical wording and
+planned registry until the choice arrives.
 
 ## UP-128 — Recruitment Broad Muster
 
