@@ -25,6 +25,20 @@ repair and both forms' Fire resistance/Water weakness. Implement authoritative
 ranged registration/ammunition and human/AI targeting plus distinct appropriate
 shot animations for each form. Do not call the base form completed with a tooltip
 only or a missing shot group. Record in canonical/Pending Changes as appropriate.
+2026-10-06 implementation continuation: integrated the ranged rule into the
+canonical Academy ability paragraph and roster. Both source definitions now
+explicitly supply SHOOTER,8 shots and the existing Master fire projectile.
+Three focused merged-config checks pass. Base-specific front/directional firing
+art is being authored with HoMM3 Art; no melee frame is relabeled as shooting.
+Base-specific front/up/down shooting groups14/15/16 now contain actual generated
+fire-palm poses, not melee aliases. Nine new native PNG resources are installed;
+the previous18 base frames are unchanged. Nine focused export checks and seven
+config/repair checks pass. Rebuilt native fixture passes1/1, zero skips,2.67s,
+checking both loaded shooters/ammunition/melee penalty, shot resources/climax,
+original projectile and selection feedback. Independent source review finds no
+blocker; generic human/server/AI shooting paths need no species-specific branch.
+Both-forms shooting is Verified (delivery pending). Gait, cruder visual style,
+projectile-origin/motion approval and normal launcher delivery remain open.
 
 Art-direction correction: user again rejects the smooth HD-looking Cabir and
 requests a cruder, visibly native-resolution prerendered-3D treatment. Research

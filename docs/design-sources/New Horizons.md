@@ -5076,6 +5076,9 @@ Creature Leadership Requirements below are for the base creature. An upgraded fo
 
 Academy's Gremlin and Master Gremlin presentation is replaced by original Cabir
 and Cabir Master. Both use their bare hands, with no golden pot or fire vessel.
+Both are ranged attackers, shooting fire from their bare hands with ordinary
+ammunition and ranged targeting. The base form is not melee-only. Both retain
+ordinary shooter melee penalties; this does not grant No Melee Penalty.
 Both take 50% less Fire damage and 25% more Water/Frost damage (provisional values).
 These are damage modifiers, not chances to resist an entire spell. Cabir Master
 additionally repairs surviving allied Golem and Gargoyle stacks, including both
@@ -5109,7 +5112,7 @@ and assets use Cabir. Provisional artwork follows the Heroes III Art workflow.
 |Rampart|Dendroid|Elite|3|280||
 |Rampart|Unicorn|Elite|3|420||
 |Rampart|Green Dragon|Champion|1|650||
-|Tower|Cabir|Core|16|50|Cabir Master upgrade; elemental defenses on both forms, repair on upgraded form; unrelated Gremlin-line gameplay retained|
+|Tower|Cabir|Core|16|50|Cabir Master upgrade; both forms shoot fire with bare hands and have elemental defenses; repair on upgraded form; unrelated Gremlin-line gameplay retained|
 |Tower|Stone Gargoyle|Core|9|80||
 |Tower|Stone Golem|Core|6|140||
 |Tower|Mage|Elite|3|300|Premium shooter|

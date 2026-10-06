@@ -11,7 +11,11 @@ source-corrected:13 focused Python checks pass, client/fixture builds pass and
 dummy-SDL native resource fixture passes1/1, zero skips,2.64s. Optional casting
 and guild hooks/importer build and review pass; private873 PNGs remain ignored.
 Native book/casting fit and local playable integration remain pending, not Final.
-Both-forms shooting is an approved Pending Change, not implemented yet. Gait
+Both-forms shooting is integrated in the canonical design; both source creature
+definitions have SHOOTER/8 shots, with three focused config checks passing.
+Base shot-art export is installed and nine export checks plus seven config/repair
+checks pass. Rebuilt native fixture passes1/1, zero skips,2.67s; independent
+source review has no blocker. Normal Linux delivery remains pending. Gait
 drafts still repeat poses/are too smooth and are not installed. Do not lose these
 user tasks or revert to ordinary perk backlog before their remaining gates.
 
