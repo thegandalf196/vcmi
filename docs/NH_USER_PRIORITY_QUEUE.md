@@ -40,6 +40,10 @@ must retain dark foreground as well as remove the old architectural fringe.
 The targeted second pass also fails native review: it retains some facial
 features but still removes actual wing/body pixels. Both passes are withheld;
 UP252 remains unfinished, with no Gargoyle runtime registration changed.
+Efficient completion route awaiting user choice: permit manual pixel-level
+cleanup of the HoMM3-Art-generated cutout geometry, without repainting or
+committing original creature colours. Generated-only revisions repeatedly
+clip real subject pixels. Continue other unblocked queue work meanwhile.
 
 ## UP-251 — Academy Golem portrait pale outline
 
@@ -91,7 +95,7 @@ and avoid sending an illegal ArrangeStacks packet. This is not an AI retry.
 
 ## UP-249 — Zero-ammo overuse diagnostic
 
-Status: Open,2026-10-06. User reports repeated `Stack ammo overuse. total: 0,
+Status: Verified (playable delivery pending),2026-10-06. User reports repeated `Stack ammo overuse. total: 0,
 used: 0, requested: 1`. The same warning predates the Cabir preview and occurs
 in its bounded headless content run. The emitting guard is CAmmo::use in
 lib/battle/CUnitState.cpp, shared by shots and casts; the text alone does not
@@ -99,6 +103,29 @@ identify the caller or prove actual shots are being spent. Trace live versus
 detached AI/effect execution before correcting behavior. Do not simply mute the
 warning or infer a Cabir-specific regression. Acceptance: evidenced caller,
 focused regression and unchanged legal ammunition/ability behavior.
+
+2026-10-06 causal checkpoint: a bounded dummy-SDL GDB run caught the error
+branch before logging. The resource is CShots (used=0, cached total=0), and
+the caller is the detached `BattleExchangeVariant::trackAttack` projection
+from `BattleExchangeEvaluator::calculateExchange`'s attack-candidate loop,
+through `findBestTarget` and normal BattleAI action selection. It passes
+shooting=true to `CUnitState::afterAttack` for a zero-shot projected stack.
+This establishes an AI projection defect, not a Cabir charge/retaliation issue.
+The first diagnostic run lacked Maps in its temporary mount; that fixture
+error was corrected before the causal capture. No host GUI/input was used.
+Fix the projected attack choice and prove legal/exhausted behavior without
+muting the resource guard or changing authoritative state.
+Source checkpoint: the candidate probe now uses the acting stack's existing
+`shooting` flag, including its projected ammo/blocking decision. Client build
+passes with12 jobs. A private20-second dummy-SDL smoke advances through AI day6
+with multiple battles and no recorded ammo-overuse, crash or request rejection.
+Timeout is deliberate and this is not exact-seed replay/full-game acceptance.
+Focused deterministic regression and three adjacent ammunition/retaliation
+checks pass:4/4, zero skips,1.480s. The new fixture exercises the production
+exchange evaluator with a zero-shot melee Ogre and two shoot-capable candidates,
+asserting no overuse diagnostic and unchanged live ammunition. Independent
+review finds no blocking issue. Broader exchange combinations remain Phase2;
+the resource guard and authoritative state validation are unchanged.
 
 ## UP-248 — Cabir implementation status and replacement scope
 
