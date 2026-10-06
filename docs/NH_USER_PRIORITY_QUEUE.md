@@ -8727,6 +8727,17 @@ purpose-made art or playable launcher promotion. Committed and pushed as
 
 ## UP-072 — Implement Nature Elemental Convergence
 
+2026-10-06 selection checkpoint: after verified Castle Gate/Reservoir AI fixes,
+bounded Portal, artifact and custom-creature audits find no further unblocked
+principal omission in those areas. The highest-leverage recorded terrain ruling
+is requested again: Earth for Dirt/inland Sand/Wasteland, Water for Swamp/coastal
+arenas, versus keeping coastal Sand Earth as well. The engine's coastal Sand is
+not the same thing as an approved gameplay mapping. No response is yet recorded;
+preselected recommendations do not authorize canonical or production changes.
+Elemental Convergence, Elemental Attunement, Adaptive Element and Perfect
+Convergence remain unimplemented/planned until that ruling. Reuse the existing
+architecture map after the answer; no partial terrain table or count credit.
+
 Phase1 next-item ruling resurfaced,2026-10-05: confirm the existing proposal
 Earth for Dirt/Sand/Wasteland and Water for Swamp/coastal arenas, versus Earth
 for coastal Sand too. This narrow missing mapping blocks the spell and three
