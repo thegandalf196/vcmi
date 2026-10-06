@@ -319,6 +319,28 @@ many holders/long translated names remains unverified; no GUI or promotion.
 
 ## UP-253 — Cabir coarser Heroes III visual treatment
 
+Portrait production checkpoint: compatibility IDs28/29 now display Cabir/Cabir
+Master and use unique original large58x64/small32x32 portraits. Root inspected
+native exports and enlarged previews. Six portrait export tests, four updated
+legacy/Cabir binding guards, four Repair content guards and module drift pass.
+Native renderer fixture builds successfully and passes1/1 in2.17s after the
+recorded mount-prefix fixture correction; it proves exact TWCRPORT/CPRSMALL
+alias pixels and dimensions across all four scaling profiles. Independent
+source/fixture reviews find no blocker. Animation opt-in is not yet exercised;
+portrait source integration is not full Cabir/playable delivery.
+
+2026-10-06 continuation: original barehanded Master repair source now exists
+with exact prompt and hash recorded in v3/ANIMATION_DRAFTS.md. Root inspected
+the four poses. Parallel bounded workers own the common-scale battle exporter,
+full original portraits and opt-in native resource checks respectively. Root
+owns production bindings; no worker owns Git or builds. Native casting selects
+group31 (with intentional directional repair aliases), not an ordinary shooting
+fallback. Existing CPRGOGX fire projectile may be referenced externally, never
+copied into the repository. Master walk's two isolated alpha17/19 specks may be
+removed under the user's explicit transparency-cleanup permission, with exact
+coordinates recorded and all surviving body pixels preserved. These are ongoing
+implementation steps, not verified motion or playable delivery.
+
 Barehanded animation-source progress: six new original HoMM3-Art sheets add
 base directional melee and Master front/directional melee, front/directional
 shooting and reaction/death. Exact prompts and SHA256 identities are retained
