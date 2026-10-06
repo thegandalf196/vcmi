@@ -110,6 +110,29 @@ ignored build/new-horizons-linux/UP262-palette-content-native.log.
 Deferred: full motion review, small/map portrait colours, SDL3 execution and
 the compositor's exact source-filename guard (native fixture checks TWCRPORT).
 Normal Linux still selects30bc6ea; no playable promotion is claimed here.
+Linux development delivery checkpoint,2026-10-06: source2081b5441 is rebuilt,
+frozen and selected as snapshot86eaae127d049f4f710c0ddb553981a9931723122a7185462dcbe1b057f7f03d.
+Its2,355 payload files verify before and after one20-second explicit-candidate
+true-headless run. The version banner matches2081b5441; AI reaches red day7.
+Exit124 is intentional timeout, not completed-match or graphical acceptance.
+Owned client/runtime are gone and the private profile lock is released.
+Independent review has no development-promotion blocker; promotion and the
+normal script's read-only preflight pass. Prior30bc6ea remains available.
+Client SHA25631504d97079e5fb6944a948f7ffea1ed6629d014f68b6b1e37f5e0e2418cad72;
+library SHA2561c5e380de6c3bcf75af60b8b35dd89a7abb5235e5283576d84a8fb930277b11d.
+Deferred diagnostics remain four Cabir Repair schema `type` warnings, Shield
+of Chaos neutral default, redundant namespace and NK2 node-allocation warnings
+while turns continue. Receipt: ignored build/new-horizons-linux/UP262-candidate-smoke.log.
+Remaining-role audit: the actual Arch Mage small icon is CPRSMALL group0 frame37
+(Mage frame36); encounter views use AvWattak group0 frames70/71 (Mage68/69).
+Unique frame aliases must not modify their shared palettes globally. Existing
+large portrait alias is used by the production Academy compositor, not merely
+the test. A two-line opt-in diagnostic extension exports these original
+resources only to a guarded private /tmp destination; rebuilt native fixture
+passes1/1, zero skips in2.37s. Root inspected the still-burgundy small icon and
+still-green encounter staff. Those roles remain open, with independent palette
+mapping needed; adventure standing resource still needs exact identification.
+No original diagnostic pixels are committed. UP262 remains In progress.
 
 ## UP-261 — Proposed recruitment and transfer Leadership demand
 
