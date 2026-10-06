@@ -319,6 +319,20 @@ many holders/long translated names remains unverified; no GUI or promotion.
 
 ## UP-253 — Cabir coarser Heroes III visual treatment
 
+Battle production checkpoint: both forms now use unique original custom JSON
+animations with real walk, directional melee, reaction and death poses. Master
+adds bare-hand shooting and an authored Repair gesture; its shooting directions
+share ready/windup/release/recovery with climax3. CPRGOGX is referenced from
+external original data, never copied. Root inspected uniform2x contacts and
+native group previews; focused offline8/8 pass, including installed byte parity.
+The pinned exporter's --check reproduces both frozen bundles. Client/resource fixture builds
+with12 jobs; activated native resource check passes1/1 in2.28s, proving actual
+creature bindings, frame loads, Master projectile/climax and four-scale portrait
+aliases. Independent review confirms exact exported/runtime bytes after fixing
+a stale base descriptor copy. Gait, projectile-origin alignment and battlefield
+timing remain provisional; map animation/attack roles and playable delivery
+remain open. Do not equate this checkpoint with a finished Cabir.
+
 Portrait production checkpoint: compatibility IDs28/29 now display Cabir/Cabir
 Master and use unique original large58x64/small32x32 portraits. Root inspected
 native exports and enlarged previews. Six portrait export tests, four updated
