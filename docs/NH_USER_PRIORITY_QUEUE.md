@@ -185,6 +185,24 @@ This is bounded smoke evidence, not full-game or graphical acceptance.
 
 ## UP-248 — Cabir implementation status and replacement scope
 
+Independent original-art slice selected, 2026-10-06: create the first Cabir
+Master standing draft in a new isolated version directory while Windows CI
+continues. Use the rougher base v2 as identity/style reference; distinguish the
+upgrade with restrained worn brass equipment and compact flame rather than
+modern gloss or dense detail. HoMM3 Art/built-in generation and mechanical
+native/nearest-neighbor previews only. No runtime installation, gameplay change,
+manual alpha cleanup or animation-completion claim. Full base/upgraded animation
+and presentation bindings remain required; this is not a substitute for them.
+Result: first candidate and one transparency-only correction remain rejected
+after worker and root native/4x review. Both retain detached bright pixels and
+faint exterior alpha, which expands the crop and shrinks the actual body. Their
+original masters, exact prompts, relative metadata and mechanical exports are
+retained under `assets/new-horizons/creatures/cabir-master/v1/` and `v2/`, with
+a rejection README. No third generation, manual cleanup or runtime binding.
+The historical prompt's inaccurate approved-v2 reference is annotated, not
+rewritten. This is an evidenced unsuccessful art pass, not completed upgraded
+standing art, animation coverage or a gameplay identity increase.
+
 Status: Open, 2026-10-06. User asks where the Cabir is. The earlier UP240
 concept/feasibility discussion has not produced a runtime creature: Gremlins
 remain in the roster. Report that honestly; inventory any authored drafts and
