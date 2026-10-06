@@ -59,6 +59,12 @@ Full Windows build `37458617656` is subsequently confirmed in progress on the
 same source. Preserve and re-poll that exact job, not a stale status file.
 Do not mistake notice validation for compilation or claim newer Linux fixes
 are already in the Windows download before this package is produced.
+Live delivery follow-up,2026-10-06: authoritative run37458617656 on exact
+dc5de4c483dfc1975ed83661471fbd151658129d reports client compilation and
+runtime/resource staging successful. The recursive-PE/source/license packaging
+step remains in progress. No downloadable-artifact or Windows gameplay success
+is claimed; keep polling this handle. Later offline-art/docs commits are outside
+the selected build and do not change its runtime payload.
 Animation checkpoint: two built-in generation attempts fail gait/clean-alpha
 review; no accepted walk master or runtime installation. Root confirms the
 large strict-alpha bounds include faint debris: alpha>=16 subject heights are
