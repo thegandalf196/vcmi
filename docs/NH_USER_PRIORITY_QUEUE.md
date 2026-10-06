@@ -336,6 +336,51 @@ Cabir Master, consuming its ordinary activation. These are tunable Phase1 values
 not additional user-approved balance claims. Dedicated repair targeting must
 exclude entirely destroyed, hostile and non-Golem/Gargoyle stacks. Incoming
 Fire/Water modifiers use explicit element tags, never Magic School membership.
+Source checkpoint: generic recipient-side ELEMENTAL_SPELL_DAMAGE_RECEIVED is
+wired to both compatibility creature IDs (-50 Fire, +25 Water). Dedicated Repair
+is registered as a nonmagical creature ability, with upgraded-only cast/power
+bonuses. It uses authoritative healing and AI health-change preview, rejecting
+dead/hostile/unrelated targets. Independent source reviews have no remaining
+blocker after the recorded packet-capture repair. Content guard passes4/4 and
+module drift passes. Native build/repaired-cast execution are pending; do not
+equate this with delivered Cabir mechanics or complete creature presentation.
+Native-test development also exposes a missing authoritative target check in
+ordinary creature spell requests. A dispatch-time gate is insufficient because
+StartAction has already marked the activation spent. Root adds shared mechanics
+canBeCastAt validation before StartAction, casting, Sanctuary removal and spellcast
+events, rather than trusting only client selection. Random spell resolution is
+retained in the prepared action, without a second roll during execution.
+Independent narrow review has no blocker; direct invalid
+Repair request/resource-preservation tests are being added. Global/random/Puppet
+Master compatibility execution remains Phase2 follow-up, not a new game rule.
+Build93239 completes successfully. Activated native filter runs nine cases,
+zero skips: five incoming-element/serialization checks and the Magi control
+pass; three Repair cases fail on legitimate targets/zero health forecast.
+Repair is not accepted or delivered. Diagnose the actual Lua/content path,
+preserving permanent restoration, legal-target and unspent-invalid-action checks.
+Final verification: summoned-placeholder fixtures are replaced with original
+army stacks; friendly unusable casualties have a separate independent case.
+The remaining genuine admission defect is repaired with stack.canCast() before
+StartAction/random preparation. Two adjacent synthetic spellcaster fixtures now
+include their required CASTS allowance, preserving behavior assertions.
+Build6174 succeeds for client/native and fixture build31314 succeeds. Activated
+final filter passes13/13 in3.478s, zero skips; four content guards and module
+drift pass. It proves Repair healing/permanent restoration/forecast agreement,
+invalid/exhausted request preservation, phantom healing limits, incoming element
+math/serialization and adjacent Puppet Master/Sanctuary/Hold Fast behavior.
+Independent review has no blocker. Runner SHA256:
+582c56bbd182819d9a86cdc37fb08ddec71ad6b5deba97a1f9733886a00ff2cb.
+Receipts: ignored UP253-cabir-final-native.log/XML in the Linux build root.
+Full barehanded animation/runtime art, UI/native presentation and playable
+delivery remain open. Broader random/global casts, packet downgrade execution
+and provenance combinations are deferred Phase2; normal snapshot is unchanged.
+
+Barehanded source-art checkpoint baa072971 is committed and pushed. v3 base walk
+has alpha-only cleanup with26,581 removed pixels, opacity1–9; original/retained
+art stays unchanged. Four native450x400 frames share scale/anchor/y268 ground.
+Root and independent offline review find no export blocker; sixteen focused
+export/cleanup tests pass. Fringe specks/motion approval and all runtime bindings
+remain open. Normal Linux snapshot990be55 is unchanged.
 
 Priority update,2026-10-06: user explicitly directs focus on finishing Cabir.
 User approves manual transparency cleanup and frame alignment of generated Cabir
