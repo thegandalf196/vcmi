@@ -1,5 +1,14 @@
 # New Horizons implementation sprints
 
+Current UP241 checkpoint,2026-10-06: pinned Provisional Village Hall roof
+revision is source-integrated after native/registered-scene review; original
+master/native, placement, alias and masks stay unchanged. Eleven focused art
+tests and reproducible reduction pass. No gameplay identity count changes
+(61/67 combat spells,225/310 perks). Next: source review/commit and exact Linux
+candidate delivery, then resume unblocked user-priority implementation items;
+do not repeat asset polishing or broad tests in place of missing mechanics.
+Full Windows batch37429818459 remains live on3eda8ac03, without this newer art.
+
 Current Gargoyle gate: authored full-colour alternative and reproducible58×64
 preview exist under portrait-revisions/v2. It changes creature rendering as
 well as background, so user choice is pending before runtime replacement.

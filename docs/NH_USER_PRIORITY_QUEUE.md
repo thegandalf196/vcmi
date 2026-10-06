@@ -164,7 +164,7 @@ under ignored `build/nh-up238-validation/`.
 
 ## UP-241 — Academy hall double-roof appearance
 
-Status: Open (diagnosis), 2026-10-05. User screenshot
+Status: Verified (delivery and user visual acceptance pending), 2026-10-06. User screenshot
 `https://i.imgur.com/lSvdSIZ.png` shows apparently overlapping roof planes on
 Academy's low hall building. Inspect the live hall image, underlying landscape
 and replacement-stage registration to distinguish painted geometry from two
@@ -178,6 +178,30 @@ appearance is already painted into that single authored Village Hall image.
 Its live animation descriptor references one group0/frame0 PNG. Do not attribute
 this defect to duplicate rendering without separate evidence. A roof-geometry
 art correction must preserve the facade and scene registration and use HoMM3 Art.
+
+Selected correction: a focused built-in HoMM3-Art edit of the authored master,
+joining the blue-tile planes and front pediment into one plausible gabled roof.
+Preserve the facade, footprint, scale and transparent asset role; retain the
+original master and registration. Inspect a mechanically reduced native
+comparison before deciding whether a Provisional revision can replace the live
+frame. Do not earn visual acceptance from a metadata/hash test or infer a new
+architecture from this correction. Root owns generation; a bounded read-only
+pipeline audit supplies the export/registration invariants.
+
+Source checkpoint: the pinned Provisional v2 replaces only the live177×75
+Village Hall frame. Original master/native, one-frame alias, x0/y259/z2 and
+area/border masks remain unchanged; mask generation explicitly uses preserved
+baseline alpha. Reimport skips the generic legacy runtime copy and accepts only
+exact baseline or pinned v2 bytes, refusing unknown local art. Root and
+independent art review inspect native/4× comparisons; ignored registered
+VillageHall-stage scenes differ only inside `(0,261,177,334)` on800×374.
+The retained layout omits VillageHall, so that preview inserts its configured
+layer and excludes later hall stages; it is not a game screenshot. Existing
+landscape prepainting is not revised by this frame correction. Eleven focused
+Academy art tests and export/check reproducibility pass. Full original-handoff
+archive import/check is unavailable because that ZIP is no longer present.
+Playable delivery and user visual acceptance remain separate; no gameplay
+identity or Final-art credit is awarded.
 
 ## UP-240 — Academy adventure-map sprite style feedback
 
