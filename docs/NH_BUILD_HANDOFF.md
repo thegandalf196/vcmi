@@ -1,5 +1,22 @@
 # New Horizons Linux build handoff
 
+## 2026-10-06 Arcane Reservoir minimum AI hook — source/native verified
+
+AI town interaction now claims the owned Tower Reservoir's eligible manual
+weekly reward through ordinary VisitTownBuilding validation, before taking the
+AI-state mutex. Existing global VISIT_ONCE/reset state is reused; no polling or
+new saved counter. Client builds5 steps with12 jobs; existing-server and repaired
+new-fixture test increments each build3 steps. Focused combined current run
+passes6/6 in2.027s with zero skips/errors/disabled: authoritative town entry
+followed by actual AI interaction and validated visit, unchanged Normal/+50
+Buffer, repeat/unbuilt/inactive controls,
+weekly reset and adjacent Guild purchase controls. Review has no blocker.
+Binary SHA-256:
+`c64cc7e6b9866e5cb94cb702c21d92feb5cf4765debd2be4b7e2565d4c94fa5b`.
+Receipts are ignored `reservoir-ai-*` outputs; the earlier weekly run and failed
+compiler log remain preserved. Full autonomous town-goal valuation and broader
+visit composition remain Phase2. No GUI or frozen snapshot promotion occurred.
+
 ## 2026-10-06 Castle Gate minimum AI hook — source/native verified
 
 Nullkiller2 now plans an explicit Castle Gate action and executes the ordinary
