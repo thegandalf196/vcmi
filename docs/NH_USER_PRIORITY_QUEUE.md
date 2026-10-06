@@ -465,6 +465,18 @@ No graphical acceptance or launcher promotion occurred. Existing snapshot
 
 ## UP-233 — Bring the Linux launcher executable up to date
 
+Cross-platform delivery refresh: latest successful full Windows run
+`37348640988` is now terminal-success on `0e645f79b`, older than the Academy
+renderer/portrait changes already delivered on Linux. Exact pushed source
+`9c7c4880f` passes 91 package preflight tests, zero skips, plus Academy/Guild/
+Tower guards (8/9/2 tests respectively); independent source review finds no
+Windows portability blocker. Notice run `37403527818` succeeds. Full Windows
+run `37403632207` is confirmed in progress on that source (MSVC toolset
+installation), not yet a compile or
+package success. Monitor the existing handle rather than dispatching a
+duplicate. Linux's current twelve-portrait snapshot is unchanged. This updates
+delivery evidence, not gameplay coverage or visual acceptance.
+
 Status: Resolved for committed-source delivery, 2026-10-05. User explicitly requests updating the Linux
 executable to the latest build. This authorizes a local build and promotion,
 not GUI/pointer testing. Preserve unfinished UP232/UP004 source work separately

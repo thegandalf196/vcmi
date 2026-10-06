@@ -1,5 +1,28 @@
 # New Horizons Linux build handoff
 
+## Current Windows checkpoint — Academy renderer and portraits
+
+Exact source: `9c7c4880f00eaaeb722abdd3ea034025af81c241`.
+The older full Windows run `37348640988` completed successfully on
+`0e645f79b`; it does not contain the later Academy raw-frame/cache correction
+and twelve-portrait compositor integration. Current-source packaging preflight
+passes 91/91 with zero skips; Academy registration, supplied Guild assets and
+Tower progression checks pass 8/8, 9/9 and 2/2. Independent Windows-oriented
+source review finds no blocking C++ portability issue. SDL3 runtime acceptance
+and actual Windows gameplay remain unverified.
+
+Cheap notice run `37403527818` succeeds on the exact source above. One full
+Windows run is dispatched and confirmed in progress (MSVC toolset installation):
+https://github.com/thegandalf196/vcmi/actions/runs/37403632207
+This is not a successful compile or downloadable package yet. Monitor this
+same run to terminal state, inspect failed steps before retrying, and verify
+game-artifact identity after success. Do not dispatch a duplicate. Always use
+explicit `--repo thegandalf196/vcmi` for GitHub operations: the CLI's inferred
+default repository currently resolves to upstream `vcmi/vcmi`.
+
+The existing Linux snapshot remains unchanged and already delivers the twelve
+portraits. No gameplay identity coverage increases from this build checkpoint.
+
 ## 2026-10-02 Phase 1 Broad Muster source gate
 
 UP-128 builds both Linux targets40839. Principal54272 passes18/18 in3.701s and
