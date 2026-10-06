@@ -1043,6 +1043,22 @@ No graphical acceptance or launcher promotion occurred. Existing snapshot
 
 ## UP-233 — Bring the Linux launcher executable up to date
 
+Independent package audit,2026-10-06: exact artifact11414801242 is downloaded
+under ignored `build/nh-win-artifact-o9aNnb/`. Outer SHA256SUMS passes for all
+three files; root independently reproduces this check. Worker verifies ZIP CRC,
+safe paths, no duplicates/symlinks and all2540 internal payload hashes. Identity
+matchesdc5de4c483dfc1975ed83661471fbd151658129d/run37458617656/attempt1.
+Required README/source notice/root and dependency licenses are present; all218
+notice references across32 dependencies resolve. No purchaser Data/Maps/Mp3/
+Saves/LOD files are included. Game ZIP SHA256:
+`3d05094daa2710d575a76d11d17e6220e03c27e6f2955fedd4df3e41d68995fb`.
+Source archive SHA256:
+`fa299b3f3d17daf30503c75f9fd8586e7b04dc70b9d8c6cd6d0cbcb59cd8b7e2`.
+Dependency source SHA256:
+`11aa2afc3df844925e8392f4aa77594ce87e47b669df513689728816c3de0036`.
+This closes scoped download-integrity/metadata inspection, not complete source
+comparison, Windows binary execution, graphical acceptance or Release publication.
+
 Windows counterpart,2026-10-06: exact full run37458617656 is terminal SUCCESS
 on dc5de4c483dfc1975ed83661471fbd151658129d, including the committed UP249
 ammo-forecast and UP250 saturated-merge fixes already in the normal Linux
