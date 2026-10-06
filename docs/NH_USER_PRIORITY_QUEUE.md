@@ -2601,6 +2601,18 @@ minimum actual siege/visit/damage/save evidence remains required.
 
 ## UP-201 — Remaining Castle movement and Rampart Luck building coverage
 
+Canonical hold review, 2026-10-06: the Lighthouse row explicitly identifies
+embarking **from this town**, not arbitrary nearby/global boarding. Independent
+bounded review agrees that source-town eligibility is implementable without
+deciding the separate repeated-day sea-capacity bonus policy. Next functional
+slice: source-aware embarkation penalty waiver, shared by authoritative movement
+and projected pathfinding/AI. Do not inspect only the hero's current visitedTown
+when forecasting a later departure; use the projected source tile. Preserve
+ordinary adjacent movement cost, disembarkation, airships, legacy rules and
+unbuilt/non-Lighthouse origins. The +20% same-day benefit remains held on
+retrigger/stacking semantics; this partial clause cannot close the whole building.
+No source change, acceptance or coverage increase from this review.
+
 Stables final status: Verified (delivery pending), 2026-10-04. Client56799 and
 both-target62880 pass. Native71208 passes2/2 in1.894s, zero skips, including
 adjacent Fountain, retained as UP201-stables-focused.log/XML. Actual building
@@ -2845,6 +2857,16 @@ Focused Python checks pass20/20. No accepted coverage increase or playable
 promotion yet.
 
 ## UP-197 — Necropolis Skeleton Transformer HP conversion
+
+Canonical hold review, 2026-10-06: independent bounded review finds the authored
+**aggregate sacrificed HP** wording resolves pooling across the selected
+transaction; per-source-slot rounding would not preserve that aggregate basis.
+Narrow the outstanding decision to final whole-Skeleton integer conversion
+(floor/nearest/ceil and discarded remainder), not pooled versus per-slot input.
+The general rounding section explicitly requires mechanic-specific integer
+rounding and supplies no Transformer default. Preserve atomic transaction,
+Leadership/last-stack admission and shared output preview requirements below.
+No production activation or coverage increase from this review.
 
 Status: Bounded runtime map; selection-rounding clarification pending,
 2026-10-04. Canonical3276 requires whole Skeletons representing50% of the
