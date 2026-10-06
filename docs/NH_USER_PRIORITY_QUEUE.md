@@ -133,6 +133,33 @@ passes1/1, zero skips in2.37s. Root inspected the still-burgundy small icon and
 still-green encounter staff. Those roles remain open, with independent palette
 mapping needed; adventure standing resource still needs exact identification.
 No original diagnostic pixels are committed. UP262 remains In progress.
+Next source slice is assigned with separate ownership: resource-specific
+small/encounter palette audit, optional JSON-only descriptor generation, and
+client image consumers/native readback. Small alias selects only CPRSMALL37;
+encounter aliases select only AvWattak70/71. Mage36/68/69 and original source
+palettes must remain unchanged. Preserve icon32x32 and encounter source canvas,
+alpha/shadows, no fallback substitution for present invalid descriptors, and
+all gameplay. The current86eaae127d playable payload stays frozen during edits.
+Remaining-role source checkpoint: resource-specific small/encounter aliases and
+all30 AVWmagx0 map frames are now bound. Initial native run verified small and
+encounter pixels but exposed missing-image validation for generated-only names
+and a test-only identifier overload error. Use the engine's existing
+`alias:group:frame` image paths instead of placeholder PNGs or schema exceptions;
+explicit string lookups repair the fixture. Map geometry and final native
+rerun remain pending. No new spell/perk identity credit or playable promotion.
+Remaining-role native checkpoint: full client/fixture rebuild succeeds. Activated
+SDL2 dummy test passes1/1, zero skips, in2.44s;11 Python checks and the adjacent
+route guard pass. Actual registered CPRSMALL37, encounter references and all30
+map-frame refs preserve mapped RGB/native alpha/geometry; 2x2 anchor and all8
+approaches pass, and original Mage resources remain unchanged. Native consumer
+checks exposed two alias seams, repaired in both backends: colon ImageLocators
+resolve animation layouts, and requested blit modes override cached layout modes.
+Resolved/caller flips compose and reach the rendered instance. Missing-image
+schema diagnostics are gone; existing isolated missing-music and Cabir Repair
+schema warnings remain deferred. Root inspected selected private small/encounter/
+map outputs, not full motion or user-final approval. Independent review has no
+remaining blocker. Receipt: ignored `build/new-horizons-linux/UP262-remaining-native.log`.
+Normal Linux86eaae127d remains unchanged; verified source, delivery pending.
 
 ## UP-261 — Proposed recruitment and transfer Leadership demand
 
