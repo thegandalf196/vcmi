@@ -9,6 +9,17 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-249 — Zero-ammo overuse diagnostic
+
+Status: Open,2026-10-06. User reports repeated `Stack ammo overuse. total: 0,
+used: 0, requested: 1`. The same warning predates the Cabir preview and occurs
+in its bounded headless content run. The emitting guard is CAmmo::use in
+lib/battle/CUnitState.cpp, shared by shots and casts; the text alone does not
+identify the caller or prove actual shots are being spent. Trace live versus
+detached AI/effect execution before correcting behavior. Do not simply mute the
+warning or infer a Cabir-specific regression. Acceptance: evidenced caller,
+focused regression and unchanged legal ammunition/ability behavior.
+
 ## UP-248 — Cabir implementation status and replacement scope
 
 Status: Open, 2026-10-06. User asks where the Cabir is. The earlier UP240
@@ -367,6 +378,18 @@ not an inferred Final-art classification. Private native-reference sheets remain
 under ignored `build/nh-up238-validation/`.
 
 ## UP-241 — Academy hall double-roof appearance
+
+Causal correction checkpoint,2026-10-06: root and independent inspection
+identify the extra hall painted into the supplied town landscape underneath
+the separate Village Hall sprite. Background revision v2 removes that painted
+hall through a retained HoMM3-Art master and bounded native ROI export. Pixels
+outside `(0,254)-(177,335)` remain identical; the neighboring house remains.
+The actual hall sprite, placement, masks and gameplay are unchanged. Root
+reviewed the native registered scene and installed the exact pinned landscape
+in source. Twenty focused Academy checks, exporter reproduction and independent
+review pass. Full handoff archive reimport is unavailable. Status: Verified
+(source/native composition; playable delivery and user acceptance pending).
+Earlier roof-only evidence below is historical, not proof this defect was fixed.
 
 Renewed current-delivery report, 2026-10-06: after being told that the Linux
 script selects the updated bea86a2c3 candidate, the user still sees the double
