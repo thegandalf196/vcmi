@@ -9,6 +9,61 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-253 — Cabir coarser Heroes III visual treatment
+
+Status: In progress,2026-10-06. After seeing the temporary sprite preview, user finds
+the Cabir attractive but too pretty/detailed. Retain the creature design/pose
+and fire vessel, but revise toward Heroes III's cruder, darker fantasy, low-detail
+and slightly pixelated native battle treatment. Avoid glossy modern rendering.
+Use HoMM3 Art, retain earlier drafts, show native and enlarged revision before
+expanding its full animation family. Do not claim the static preview as complete.
+
+## UP-252 — Gargoyle Academy portrait backgrounds
+
+Status: In progress,2026-10-06. User still sees missing Academy backgrounds on Gargoyles;
+Gremlin backgrounds are acceptable. Finish both Gargoyle mattes rather than
+registering earlier rejected masks with snowy architecture/fringe. Preserve
+external original pixels by runtime composition; no purchaser colour extracts
+may be committed. Cabir portraits will need their own original future treatment.
+Acceptance: clean native composite with Academy background, correct source
+bindings and playable delivery, using HoMM3 Art for mask revisions.
+
+## UP-251 — Academy Golem portrait pale outline
+
+Status: Open,2026-10-06. User reports ugly white/pale pixels around a Golem
+against the new Academy portrait background. Inspect both registered Golem
+portraits and their retained masters/masks, preserving the known internal-ID
+label reversal. Correct only the matte/outline defect coherently with HoMM3 Art;
+preserve creature identity, geometry and background. Do not globally erase
+white metal highlights or repaint unrelated portraits. Acceptance: native-size
+before/after inspection, reproducible correct binding and playable delivery.
+
+## UP-250 — Rejected army transfer with Leadership 875
+
+Status: Verified (playable delivery and manual click verification pending),2026-10-06.
+Client guards now suppress saturated same-type merge requests in ordinary
+garrison clicks, quick moves and hero exchange. Positive headroom still uses
+authoritative partial transfer; server validation is unchanged. Both client and
+native test targets build. The routing guard passes, and four focused native
+Leadership merge/empty-slot/cross-hero/legacy tests pass with zero skips.
+Independent review found no blocking defect. This is source/behavioral evidence,
+not an observed rendered replay of the user's two-click sequence.
+
+User reports three Leadership-limit errors: twice
+17 creatures at50 each, then6 at140 each, hero capacity875. The current Cabir
+preview log records authoritative ArrangeStacks rejection for each, not a
+recruitment packet. Trace the client operation/source and target capacity before
+changing gameplay. Preserve server validation and creature conservation; apply
+the approved maximum-affordable transfer behavior where the operation permits
+partial transfer. A whole-stack swap is not automatically equivalent to a merge.
+Acceptance: identified operation, focused transfer regression, no illegal army
+or silent losses. Main loop termination follows a user quit dialog, not a crash.
+User reproduction: human turn, click a garrison stack then the hero army;
+the maximum affordable amount transfers correctly. Click the remaining
+garrison stack again, then the now-full matching hero stack; the Leadership
+error appears. Saturated same-type merging should leave the remainder unchanged
+and avoid sending an illegal ArrangeStacks packet. This is not an AI retry.
+
 ## UP-249 — Zero-ammo overuse diagnostic
 
 Status: Open,2026-10-06. User reports repeated `Stack ammo overuse. total: 0,
