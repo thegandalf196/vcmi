@@ -9,6 +9,31 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-254 — Investor treasury-tooltip contribution readback
+
+Status: Implemented (rendered verification and playable delivery pending),2026-10-06.
+Coverage review finds canonical Estates perk
+feedback requires Investor's current weekly income scaling in treasury help,
+but the resource popup exposes only aggregate income. Reuse the existing
+native resource popup and localized text; display owned active holders' saved
+weekly daily-Gold contributions without recomputing from current treasury.
+Do not change payouts, ownership/handicap rules, gameplay state or introduce
+economic action buttons. Acceptance: read-only eligibility/snapshot checks,
+focused presentation validation, successful client build and independent review.
+Rendered/native-fit and playable delivery remain separate gates; no new perk
+identity credit follows this required UI completion.
+
+Source acceptance: CResDataBar's existing resource popup lists current-owner
+active Investor holders and each saved weekly daily-Gold snapshot, including
+zero. Localized copy distinguishes pre-handicap bonus from aggregate income;
+custom hero text IDs are retained. No treasury recalculation, global polling,
+state mutation or payout changes. Root client build83191 succeeds with12 jobs;
+focused wiring guard, five translation/generator checks, the live canonical
+translation-union test, module drift and diff checks pass. Independent Astra
+review finds no blocker. A stale test-only0.14.0 version expectation is changed
+to read the canonical version file (currently0.15.0). Native popup fit with
+many holders/long translated names remains unverified; no GUI or promotion.
+
 ## UP-253 — Cabir coarser Heroes III visual treatment
 
 Status: In progress,2026-10-06. After seeing the temporary sprite preview, user finds
