@@ -24,6 +24,23 @@ four-frame idle atlas has returned, but its changing scale/foot alignment still
 requires correction; it is not accepted as a finished idle loop. No screenshot
 composition may be labelled an actual game render. Preserve the existing host
 input/GUI safety hold; ask separately before any conflicting execution.
+User explicitly chose "Temporary in-game preview now". Use an isolated copy
+of the promoted resource module and separate launcher profile; do not change
+the normal snapshot pointer. Both core Gremlin identities may temporarily show
+the approved base Cabir standing sprite in all battle states, with static
+movement/attack/death clearly disclosed. This exception is for preview only,
+not acceptance of the full replacement. User launches manually; no host input
+automation is authorized.
+Preview handoff: detached copied resources and manual launcher are under ignored
+`build/nh-cabir-ingame-preview.uXstSRLz/`. The graphics-only patch routes both
+Gremlin identities to the approved sprite on a450x400 canvas. All32 animation
+groups are present as static single frames. Three focused checks and independent
+routing review pass; exact export pixels and protected output paths are checked.
+A bounded8s SDL-dummy headless run loads the module and initializes the map,
+then times out as intended; existing ammo-overuse diagnostics remain and this
+does not verify rendered appearance. The normal snapshot pointer/hash remains
+unchanged. User manual visual verification is pending. This adds no completed
+creature-mechanic or animation-set coverage.
 Scope approved, 2026-10-06: replace Gremlins and Master Gremlins with Cabir and
 Cabir Master, retaining their current gameplay initially. Create original full
 base/upgraded art and animation sets; a portrait-only substitution is not
