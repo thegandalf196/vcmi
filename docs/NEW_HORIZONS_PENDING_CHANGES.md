@@ -15,7 +15,13 @@ entries here and thereby recreate a permanent override layer.
 
 ## Awaiting integration
 
-None.
+### Both Cabir forms are ranged — 2026-10-06
+
+User explicitly directs both Cabir and Cabir Master to shoot. Apply to the
+canonical Academy creature roster/ability section; this supersedes inherited
+basic Gremlin melee-only gameplay. Preserve both forms' elemental defenses and
+Master's repair ability. Ranged art and ordinary ammunition/targeting must be
+implemented together; no implication of No Melee Penalty is granted.
 
 ## Integrated history
 

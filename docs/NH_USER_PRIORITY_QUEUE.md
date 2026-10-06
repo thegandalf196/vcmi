@@ -9,7 +9,90 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-265 — Cabir walking and icon background defects
+
+Source checkpoint: both forms' large/small portraits are transparent RGBA at
+58x64/32x32, with the existing approved source/crop/scale preserved. v1 exports
+are retained and separate portrait-export-v2 bundles are installed in source.
+Both battle descriptors now request generateOverlay1; the real dummy-SDL
+selected/unselected frame check passes. Client/fixture build passes,13 focused
+Python checks pass, activated native resource CTest passes1/1 with zero skips
+in2.64s. Normal playable snapshot is unchanged. Gait/cruder style, both-forms
+shooting, rendered contour quality and user acceptance remain open.
+
+Gameplay amendment: BOTH basic Cabir and Cabir Master must shoot. Retain Master's
+repair and both forms' Fire resistance/Water weakness. Implement authoritative
+ranged registration/ammunition and human/AI targeting plus distinct appropriate
+shot animations for each form. Do not call the base form completed with a tooltip
+only or a missing shot group. Record in canonical/Pending Changes as appropriate.
+
+Art-direction correction: user again rejects the smooth HD-looking Cabir and
+requests a cruder, visibly native-resolution prerendered-3D treatment. Research
+Greg Fulton's original production account using attributable sources. Do not
+equate nearest-neighbour display or pixelation alone with the original modeled
+surface/lighting/silhouette treatment. New gait drafts remain unapproved; revise
+with HoMM3 Art and inspect at actual battle/map sizes before integration.
+
+Additional report: screenshot cj3sf8R.png and no selection outline in combat.
+Investigate PNG-backed creature contour/selection rendering rather than drawing
+a rectangular outline. Separate icon/backdrop correctness from the selection
+feedback path. Screenshot retained privately for diagnosis, not committed.
+
+Status: Open,2026-10-06. User reports that Cabirs vibrate between nearly identical
+poses instead of walking, and carry a background in their icon. Inspect the
+actual battle/map frame bindings and rendered asset alpha before fixing; distinct
+file hashes alone are not evidence of a convincing gait. Preserve the approved
+bare-handed creature design and gameplay. All new poses use HoMM3 Art. Background
+location clarification is requested without blocking the walking investigation.
+Acceptance: native gait contact sheet/animation showing alternating weight-bearing
+legs and arm/body motion, correctly transparent relevant assets, focused binding
+checks, and separately identified playable delivery/user visual review.
+
+## UP-264 — Preferred-school Mage Guild tome bookmarks
+
+Source hook and importer checkpoint: optional guildBooks manifest adds a
+noninteractive native67x85 book patch at378,344, without changing guildWindow.
+Private derived pixels remain ignored, with nine faction bindings prepared.
+Client build and five synthetic importer checks pass; malformed metadata now
+falls back before indexing. Native crop edge fit and delivery remain pending.
+
+Status: Open,2026-10-06. Integrate the nine approved faction book/ribbon designs
+from Downloads new-horizons-magic-assets-v1.zip at native guild scale, preserving
+the separate guildWindow vista. Replace the original red ribbon with the two
+approved ribbons. Pairs left/right: Castle Light/Sorcery; Rampart Nature/Light;
+Academy Sorcery/Havoc; Inferno Chaos/Havoc; Necropolis Shadow/Sorcery; Dungeon
+Havoc/Shadow; Stronghold Chaos/Nature; Fortress Nature/Shadow; Conflux Havoc/Nature.
+Private purchaser-derived exports must not be committed or redistributed; inspect
+provenance and use external assets by reference/local installation where needed.
+Acceptance: clean native alignment and alpha, all faction bindings, unchanged
+guildWindow interaction, focused resource checks and identified delivery.
+
+## UP-263 — Six-school casting glows for all standard hero sprites
+
+Source hook and importer checkpoint: actual saved-rules spell School selects
+per-caster cached overlay only on matching eight-frame nativeDEF group4; exact
+DEF spelling/margins/mirroring are retained and state clears outside casting.
+The private manifest supplies18x6x8 frames, no shared base-frame mutation or
+timing change. Client build passes after adding the actual IBattleState defining
+header; optional malformed metadata guards pass independent source review.
+Private asset fit/reset/rendered acceptance and playable delivery remain pending.
+
+Status: Open,2026-10-06. Integrate corrected v6 package from Downloads
+new-horizons-magic-assets-v1.zip. Use actual spell School and loaded DEF, not class
+or strongest skill; preserve original clock/frame-four hold, defender mirroring,
+flags and all noncasting frames. Keep Elementalist cape unchanged. Unsupported
+or ambiguous variants retain original art. Package class config is reference only.
+Private original frames cannot enter repository/distribution. Acceptance: eighteen
+sprite mappings by six Schools, overlay alignment/reset and isolated instances,
+focused renderer/resource checks, and separately identified playable delivery.
+
 ## UP-262 — Magi / Arch Magi robe and magic colour treatment
+
+Reopened visual detail,2026-10-06: user screenshot Asx0Tu1.png shows residual
+red in the Arch Magi robe. Inspect all relevant source palette entries and motion
+frames; retain red staff/projectile accents deliberately. Current palette/native
+checks do not establish complete robe recolouring. Acceptance needs all-frame
+robe review, not merely new hashes or three sampled frames.
 
 Status: In progress,2026-10-06. User requests Arch Magi robes grey in the spirit of
 HeroesII; Magi robes remain unchanged. Both Magi and Arch Magi projectiles change
@@ -177,6 +260,13 @@ while the prior input incident remains unresolved. This visual gate must not
 silently be called passed; another unblocked priority item can proceed.
 
 ## UP-261 — Proposed recruitment and transfer Leadership demand
+
+New reproduction report,2026-10-06: moving a hero into a garrison produces
+`at most 3 creatures ... 240 Leadership each; hero Leadership 875` complaint.
+Clarification requested whether this is town hero-portrait garrison entry or a
+creature-stack transfer. Preserve authoritative capacity validation; investigate
+UI admission/partial-transfer behavior instead of suppressing the error. Exact
+save is requested for faithful reproduction. This remains open.
 
 Status: Verified (delivery/rendered acceptance pending),2026-10-06. Canonical Leadership UI explicitly requires
 additional Leadership required by the proposed stack, alongside receiving

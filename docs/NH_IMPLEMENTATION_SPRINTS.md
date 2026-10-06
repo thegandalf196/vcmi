@@ -1,6 +1,19 @@
 # New Horizons implementation sprints
 
-## Current checkpoint — 2026-10-06, after Arch Mage delivery
+## Current checkpoint — 2026-10-06, magic handoff / Cabir correction
+
+Explicit user work supersedes the ordinary UP156 candidate: UP263 school casting
+glows and UP264 faction tome bookmarks from the supplied v6 ZIP; UP265 Cabir
+gait/cruder art, portrait background, selection contour and both-forms shooting;
+UP262 residual burgundy robe pixels; UP261 new hero/garrison Leadership report.
+These are persisted in the priority queue. Both Cabir portraits/contour are
+source-corrected:13 focused Python checks pass, client/fixture builds pass and
+dummy-SDL native resource fixture passes1/1, zero skips,2.64s. Optional casting
+and guild hooks/importer build and review pass; private873 PNGs remain ignored.
+Native book/casting fit and local playable integration remain pending, not Final.
+Both-forms shooting is an approved Pending Change, not implemented yet. Gait
+drafts still repeat poses/are too smooth and are not installed. Do not lose these
+user tasks or revert to ordinary perk backlog before their remaining gates.
 
 Phase1 remains active. Linux now selects immutable2af95e81a6 from87c630a2b;
 native1/1,2,358-file verification and bounded headless progression pass. UP262
