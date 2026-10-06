@@ -9636,6 +9636,35 @@ Windows graphical acceptance or Linux launcher promotion.
 
 ## UP-056 — Complete canonical Adventure Spell effects
 
+2026-10-06 daily-indicator source acceptance: localized Available/Used status
+and read-only hover/right-click help now use the native spellbook surface.
+Used canonical Adventure Spell entries keep their names, tiers and Mana costs
+with unavailable text colors. Mode/page refresh reads the replicated hero
+state; battle books, acquisition selection and legacy contexts omit the status.
+Casting and daily-state spending are unchanged. Client target builds with12
+jobs; the new daily-status guard, adjacent Guild and centering guards, module
+drift and diff checks pass. Existing native
+`NewHorizonsMagicStateTest.AdventureSpellUsesOneSharedDailyOpportunityAndRoundTrips`
+passes1/1 in1.165s with zero skips, establishing shared use/save/next-day reset
+of the existing state, not rendered UI acceptance. Native runner SHA256
+`c64cc7e6b9866e5cb94cb702c21d92feb5cf4765debd2be4b7e2565d4c94fa5b`;
+receipts are retained under ignored `build/nh-adventure-daily-status.WHYRDIYM/`.
+Independent Astra review finds no blocker. Native rendered fit, translated-text
+width, live refresh/input and playable delivery remain pending. No gameplay
+identity or saved field is added; the Adventure effect design holds below remain.
+
+2026-10-06 unblocked required-UI slice: the canonical Adventure Spell section
+requires a clear daily used/available indicator. The authoritative daily state
+and cast rejection exist, but CSpellWindow does not expose them before a cast
+attempt. Add a localized native-scale label on the existing book surface,
+refresh it on mode/page changes, and use unavailable slot colors after the
+daily opportunity is spent. Preserve spell names, tiers, costs, acquisition
+selection mode, legacy books and all casting/validation semantics. Client
+worker owns CSpellWindow and a focused guard; root owns text data, integration,
+builds and Git. Acceptance: focused state/gating source checks and successful
+client build. Native-size visual/input acceptance and playable delivery remain
+separate; no additional raster art or gameplay identity activation is needed.
+
 Town Portal Movement exhaustion accepted,2026-10-05: exact Town Portal plus
 saved NH Adventure rules selects a shared planned-source deduction of all
 remaining Movement. The live SetMovePoints packet is sent only after successful
