@@ -9,6 +9,37 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-243 — Required Sylvan Luck combat-state readback
+
+Status: Verified (delivery pending), 2026-10-06. The canonical Faction Skill UI clause requires
+Sylvan Luck's temporary Luck effects in statuses/tooltips. The synchronized
+SylvanLuckState already supplies per-stack Luck gifts and Forest's Favor speed,
+but the client has no readback consumer. Extend the existing stack status/help
+surface, with named contributors and grounded duration/readiness information;
+hide absent states and include them in refresh snapshots. Preserve gameplay,
+network state, generic Luck displays and other faction statuses. No new panel,
+artwork or held mechanics decisions. Acceptance: production callback readback,
+focused deterministic state/presentation checks, client build and independent
+review. Native rendering and playable delivery remain separate evidence.
+
+Source/native checkpoint: the existing Luck-row help reads synchronized state
+for the current controller's visible hero, guarded to saved-v3 Sylvan Luck and
+ordinary creatures. Shared/Cascading Fortune, Forest's Favor, chance-only
+Serendipity and conditional Fortunate Aim are distinguished from the capped
+attack baseline; Gambler/Chain contributions are identified when ready.
+Snapshot equality participates in existing event-driven refresh. No new panel,
+artwork, gameplay mutation or saved field. Repaired client/native builds with12
+jobs pass; five new presentation cases plus three adjacent Battlecraft controls
+pass8/8 in0.293s, zero skips/errors. Source guard, module drift and independent
+review pass. Receipts under ignored `build/nh-sylvan-readback.M9yNqddv/` retain
+the initial incomplete-IBattleInfo compile failure and explicit-header repair.
+Runner SHA256:
+`78b0fecf1a3d57c6f6f963fff5b3a7738b5c59ebcaebf180613dde054188091d`.
+Rendered tooltip fit, explanatory-text localization and private-controller UI
+execution remain Phase2; pure tests do not certify those paths. This closes the
+demonstrated temporary Luck/speed readback gap, not whole faction certification
+or a new spell/perk identity.
+
 ## UP-242 — Required town-building training-state feedback
 
 Source delivery checkpoint: weekly feedback committed/pushed as `4a9782c63`,
