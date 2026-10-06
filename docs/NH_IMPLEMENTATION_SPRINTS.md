@@ -1,5 +1,17 @@
 # New Horizons implementation sprints
 
+Current priority: UP248's approved Cabir presentation replacement and the
+reported Academy roof, ownership-flag and Astronomy Tower connection defects.
+The first Cabir standing master and proposed60px preview are shown before
+animation expansion; they are not a runtime animation set. HoMM3 Art owns
+creative raster revisions; existing mechanics and internal creature IDs remain.
+
+UP245's required Flank side identity/proposed-position readback passes the
+client/native build and seven focused cases, zero skips, in2.325s. Independent
+review finds no blocker. Source integration/Git and playable delivery remain
+separate; rendered fit/localization remain Phase2. No new spell/perk identities.
+Windows37437598557 finished successfully on exactbea86a2c3; do not restart it.
+
 Latest checkpoint: UP244's accepted prerequisite is committed/pushed asbea86a2c3.
 Exact committed Linux source builds, freezes and passes independent2277-file
 verification plus bounded headless AI progression through day7; the normal script
