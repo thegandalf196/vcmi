@@ -6028,6 +6028,49 @@ source, not this new slice. Root proceeds to coherent commit/push.
 
 ## UP-180 — Spellcraft Counterpressure
 
+Latest acceptance,2026-10-06: ordinary-path partial runtime passes the client/test
+build and15/15 activated native cases in2.099s, zero skips/errors. Receipts:
+`UP180-damage-repair-build.log`, `UP180-projection-fixture-build.log` and
+`nh-counterpressure-native.5tayVH/results/native-final.log/XML` under the ignored
+build directory. Initial failures below are preserved: scripted damage lacked
+the packet fields the first filter assumed; detached fixture used an illegal
+enemy cast through an attacker-only view. Repair uses cast-local positive injury
+provenance and an all-knowing test view with explicit legality assertions, without
+weakening production visibility or the tests. Independent source/delta review
+reports no blocking issue. Native executable SHA256:
+`fb7348665aecc06785481bf8404a614976866816d4b6e3f50dfa59e2f1f3f062`.
+Partial, inactive: no-op trigger policy/full activation and the recorded Phase2
+interactions remain outstanding. No completed-identity credit or playable
+promotion; normal Linux stays on the previously delivered immutable snapshot.
+
+2026-10-06 source checkpoint: ordinary actual damage/debuff and beneficial-effect
+Dispel removal now arm the affected side after resolution. The next accepted
+own hero spell snapshots +20% for its Spell Power-derived component before
+consuming readiness; rejected requests, Orders and creature casts do not consume
+it. Readiness covers the trigger round and the following round, then clears on
+the round transition. Live and detached paths use the same replicated state
+update; only the affected hero needs the perk to receive a response. Original
+hero provenance prevents a reflected self-hit from creating an enemy-hero
+trigger. Old reads default empty; lossy downgrades and malformed/future stamps
+fail closed. No Mana or action grants are added.
+
+Independent source review reports no blocking ordinary-path issue. Fifteen
+focused state/packet/server tests are source-integrated; runtime acceptance is
+pending the client/test build (`UP180-build.log` under the ignored Linux build
+directory). No native pass, source commit or playable delivery is claimed yet.
+Registration remains planned/inactive and completed-perk counts stay unchanged.
+Phase2 findings: Puppet-controlled ownership, wider reflected/countered AI
+interactions and typed-action interaction coverage. The no-op recipient policy
+is still a design/activation hold, not silently treated as a Phase2 defect.
+Focused runtime correction,2026-10-06: the repaired client/test build succeeds.
+The active-module native run executes15 cases with zero skips:11 pass,4 fail.
+All failures originate in actual damaging Magic Arrow casts not arming readiness,
+in both live and detached paths, despite confirmed target HP loss. Debuff
+arming/expiry and the nine state/packet cases pass. This principal-path failure
+is blocking acceptance and is being repaired, not deferred or worked around by
+weakening the tests. Private receipt: `nh-counterpressure-native.5tayVH` under
+the ignored build directory. No commit, activation or promotion yet.
+
 Phase1 bounded implementation decision,2026-10-06: independent review confirms
 ordinary accepted damage/debuff triggers and next-spell readiness/expiry are
 unambiguous. Root lifts the blanket no-production-edits hold only for that
@@ -6045,7 +6088,9 @@ stack change, or accept any valid non-resisted recipient? No answer is inferred
 and the earlier explicit activation hold remains. Avoid repeating architecture
 or broad integration tests while awaiting this one policy decision.
 
-Status: Bounded read-only preparation,2026-10-03. Missing Advanced perk:
+Status: Partial ordinary path verified,2026-10-06; registration remains
+planned/inactive pending the trigger boundary. Earlier read-only preparation:
+2026-10-03. Missing Advanced perk:
 after an enemy hero casts a spell affecting the hero's army, the next spell
 before the end of the next round gains20% on its Spell Power-derived component.
 Map actual affected-target provenance, accepted cast timing, shared numerical
@@ -6062,7 +6107,9 @@ side-scoped R+1 readiness, snapshot the shared SP-term coefficient before accept
 own-cast consumption, and copy/consume readiness only in the detached AI branch.
 If actual changes are required, reuse effect packet recording rather than infer
 them from targeting. Do not fold readiness into Warcasting or repeat this map.
-No production edit or coverage activation until the trigger boundary is resolved.
+The earlier no-production-edit hold is superseded only by the bounded decision
+above. Full activation and completed-identity coverage still await the trigger
+boundary answer and focused runtime acceptance.
 
 ## UP-179 — Chaos Reality Warp and Reality Breaker
 

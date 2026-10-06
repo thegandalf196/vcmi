@@ -12,6 +12,19 @@ Registry-derived coverage:31/31 Skills,93/93 ranks,225/310 active perks
 (154/220 generic,71/90 faction),61/67 combat identities,8/8 Orders. Registration
 does not certify every effect, required UI or integration class.
 
+Latest functional checkpoint: UP180 Counterpressure's ordinary accepted damage/debuff
+path, independent per-side readiness through the end of the following round,
+next accepted hero spell's Spell Power-term snapshot/consumption, and detached
+AI parity passes the client/test build and15/15 focused native cases in2.099s,
+zero skips/errors, after correcting scripted injury provenance and an illegal
+detached-fixture viewpoint. Independent source/delta review has no blocker.
+Keep registration
+planned/inactive until the outstanding no-op recipient boundary is resolved;
+this partial implementation earns no completed-perk identity credit. No playable
+promotion; normal Linux remains the previous immutable delivery. Next bounded
+principal-path candidate: UP156 Battlefield Mastery's ordinary-stack rank bonus,
+subject to its unresolved machine-allocation boundary and inactive registration.
+
 Next implementation-unlocking decisions currently presented: UP072 coastal
 terrain mapping (spell plus dependent perks), UP180 Counterpressure's resolved
 recipient trigger, UP156 Battlefield Mastery's ineligible-machine consumption.
