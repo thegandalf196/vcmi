@@ -82,11 +82,29 @@ material revision, preserved with its exact prompt under
 native-size registration, family consistency and runtime integration remain
 pending. It is Provisional and is not installed in the playable game.
 
+Source checkpoint: all three weathered-material masters and exact prompts are
+preserved; root and independent reviewer inspected native192×192 before/after
+comparisons. Existing silhouettes, registration boxes, entrances and pennants
+remain intact. The three runtime body PNGs now equal pinned v2 exports. Importer
+preflights all three targets and rejects unrecognized pixels; reimport cannot
+restore the original handoff's smoother art. Eight focused art tests, importer
+`--check`, exporter `--check` and independent source review pass; root repeats
+all three checks. No gameplay, renderer, ownership or shadow logic changes.
+Playable delivery and user aesthetic acceptance remain separate pending gates.
+
 Cabir feasibility question, 2026-10-05: user asks whether an original Cabir-inspired
 creature could replace Gremlins. Assess the complete base/upgraded animation,
 portrait, recruitment, sound and data workload; do not treat this question as
 authorization to replace the roster or import Heroes VII assets. Consistent
 production animation is the principal art risk, not creature registration.
+
+Concept reference: user supplied `https://i.imgur.com/rvYSXFR.jpeg` for sketch
+review, showing Cabir with a fire vessel and Cabir Master with smithing tools,
+ivory fabric, turquoise/gold trim and volcanic skin. Treat it as a concept
+reference, not approved runtime sprites, animation, stats or a canonical roster
+replacement. Keep base/upgraded silhouettes recognizably the same small worker;
+evaluate simplified detail at battle size before commissioning the full set.
+Reference pixels remain outside the repository pending provenance review.
 
 ## UP-239 — Academy creature portrait backgrounds
 
@@ -128,6 +146,13 @@ at 58×64. It incorrectly retains the left snowy Tower spire and approximates
 the subject outline. Reject this draft for runtime use; the ignored comparison
 is `build/nh-up239-validation/gremlin-twcrport-frame30-matte-validation-native-and-8x.png`.
 No original colour extraction or faulty mask has been installed or committed.
+
+Corrected-proof checkpoint: one focused HoMM3-Art revision removes the background
+spire. Root inspected the private58×64/8× composite and accepted the corrected
+Gremlin silhouette provisionally. Geometry-only master and native matte are
+preserved under `assets/new-horizons/academy/portrait-revisions/v1/`; no original
+colour pixels are committed. The renderer consumer and thirteen remaining large
+portraits are still missing. This does not close UP239 or imply user acceptance.
 
 ## UP-235 — Academy art handoff integration
 

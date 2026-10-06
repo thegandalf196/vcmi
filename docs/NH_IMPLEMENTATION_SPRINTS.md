@@ -1,5 +1,22 @@
 # New Horizons implementation sprints
 
+Current checkpoint, 2026-10-05: the Academy crash/icon candidate `f04b8dff8`
+has been built and promoted to the existing Linux launcher; prior snapshots are
+retained. User native acceptance remains separate from that delivery. UP239
+targets opaque large creature portraits, not the already-transparent small
+cutouts; the first generated mask fails native review and is not installed.
+UP240 is the next unblocked user-priority edit: weather the three Academy map
+sprite material finishes without changing architecture, registration, ownership
+flags, shadows or gameplay. HoMM3-Art masters are being reduced and reviewed
+at native scale before reproducible importer integration. No Cabir roster change
+is authorized by the user's feasibility question.
+
+Functional coverage remains225/310 perks and61/67 combat-spell identities.
+The five Adventure Spell acquisition paths exist, but their effect audit is not
+complete. This art slice receives no mechanic-identity credit. A bounded worker
+is checking remaining planned items for an unambiguous functional next slice;
+already recorded design questions must not be silently answered or re-mapped.
+
 Current user-priority slice, 2026-10-05: UP-235 integrates the supplied Academy
 art handoff while preserving current Tower gameplay and externally referenced
 original assets. UP-236 repairs the arched Mage Guild hover highlight and the

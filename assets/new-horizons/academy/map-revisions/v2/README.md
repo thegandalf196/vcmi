@@ -1,6 +1,7 @@
-# Academy map materials — revision v2 draft
+# Academy map materials — revision v2
 
-Status: Provisional draft; not installed in the playable game.
+Status: Provisional; installed in source. User in-game aesthetic acceptance remains
+pending; launcher delivery is recorded separately in the priority queue.
 
 User-approved direction (UP240): preserve the existing Academy architecture and
 silhouette while reducing its overly smooth finish. The first fort material edit
@@ -8,12 +9,27 @@ is in `masters/fort.png`. It was generated with the built-in image generator usi
 the HoMM3 Art skill and the previously authored `masters/adventure/avctowx0.png`
 as its edit target. No original-game colour extraction is included.
 
-Root inspected the returned master: masonry has deeper crevices and varied worn
-stone, roofs use less uniform slate/teal. Native-size registration and comparison
-remain pending; do not replace runtime map sprites from this master without them.
-Village and Capitol need corresponding revisions before the family is complete.
+Corresponding Village and Capitol masters are preserved with exact prompts in
+`masters/`. They use their respective previously authored sprite as the edit
+target, with the fort draft as a material reference only. All three returned
+masters are 1254×1254 RGBA images with transparent exterior.
+
+Root inspected each master and each before/after native 192×192 comparison:
+masonry has deeper crevices and varied worn stone, roofs use less uniform
+slate/teal. The existing architecture, entrance, footing and pennants are retained.
+Mechanical exports use the exact prior registered master and destination boxes,
+not arbitrary alpha bounds including incidental low-alpha shadow.
 Runtime ownership flags and shadows must retain their existing external-resource
 composition; no gameplay, entrance or blocking changes are authorized here.
+
+`tools/export_new_horizons_academy_map_v2.py --check` reproduces exports and native
+comparisons from retained authored v1 masters, independently of the active runtime
+images. The importer pins `manifest.json`, including source registration, original
+authored and revised master hashes, exact prompt hashes, geometry and export hashes.
+It installs all three reviewed body exports, rejecting unknown replacement pixels
+before changing any body. Reimporting the supplied handoff cannot revert v2.
+The eight focused art tests, importer check, exporter check and independent source
+review pass. The renderer's existing external ownership/shadow composition is unchanged.
 
 The prior supplied art and its provenance remain intact. This directory does not
 assign a new licence to the underlying supplied artwork or claim user acceptance.
