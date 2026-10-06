@@ -10025,6 +10025,36 @@ same-tier form, exact aggregate HP, two-round reversion and detached AI.
 
 ## UP-062 — Complete canonical Berserk and Frenzied Curse
 
+Completed forced-action expiry verified,2026-10-06: saved-v3 Berserk now removes
+its exact spell-origin control marker after an accepted forced WALK or NO_ACTION,
+through ordinary SetStackEffect transport. Melee retains ordinary own-attack
+expiry. Six detached BattleEvaluator consumers use the same source-filtered
+helper after projected actions. No new saved fields or global polling.
+Client/native build passes with12 jobs; focused activation/AI suites pass19/19
+in5.758s, zero skips/errors. Module drift, diff checks and independent Astra
+review pass. Receipts remain under ignored `build/nh-berserk-expiry.KENNuTgf/`
+(`build.log`, `native.log`, `native.xml`); runner SHA256
+`cb3f5f79ba4a3ebb33573345cc4af209291aa78e9fb31664faefd653a46ce1fd`.
+The rejection test covers a non-active player request, not automatic-dispatch
+rejection. The AI test covers helper removal in a detached child, not direct
+private evaluator-hook execution. Those broader checks remain Phase2, alongside
+activation-start death and forecast interactions. Negative-Morale skip remains
+unchanged and unresolved. Base Berserk is still partial; counts remain61/67
+combat spells and225/310 perks. No GUI acceptance or playable promotion claimed.
+
+Completed forced-activation expiry selected,2026-10-06: the current spell marker
+still uses UNTIL_OWN_ATTACK, so an accepted forced WALK or NO_ACTION leaves it
+active. Correct only the completed forced-action path and its detached AI replay,
+using shared saved-v3/source/type eligibility and normal effect-removal packets.
+The negative-Morale skip happens before this branch and remains unchanged pending
+its existing ruling. Do not globally change the cast's duration to STACK_ACTIVATION
+or remove intrinsic/other spell forced-attack traits. Rejected actions must not
+consume the effect. No new state field or numerical tuning is required.
+Acceptance: accepted walk/no-action/attack expiry, legacy and intrinsic controls,
+untouched skipped path, detached forecast/non-mutation, client/native build,
+focused native cases and independent review. This earns a missing lifecycle
+clause, not full Berserk completion or another spell/perk identity.
+
 Frenzied source delivery: f46e375ee2d2264bded8dc9ccade2c0ac6d3cf38 is committed
 and pushed with required author/committer identity and matching remote hash.
 Full Windows run37286838037 is confirmed pending on that exact source:
