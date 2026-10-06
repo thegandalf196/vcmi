@@ -95,7 +95,7 @@ and avoid sending an illegal ArrangeStacks packet. This is not an AI retry.
 
 ## UP-249 — Zero-ammo overuse diagnostic
 
-Status: Verified (playable delivery pending),2026-10-06. User reports repeated `Stack ammo overuse. total: 0,
+Status: Verified (manual play acceptance pending),2026-10-06. User reports repeated `Stack ammo overuse. total: 0,
 used: 0, requested: 1`. The same warning predates the Cabir preview and occurs
 in its bounded headless content run. The emitting guard is CAmmo::use in
 lib/battle/CUnitState.cpp, shared by shots and casts; the text alone does not
@@ -126,6 +126,13 @@ exchange evaluator with a zero-shot melee Ogre and two shoot-capable candidates,
 asserting no overuse diagnostic and unchanged live ammunition. Independent
 review finds no blocking issue. Broader exchange combinations remain Phase2;
 the resource guard and authoritative state validation are unchanged.
+Delivery: fix committed/pushed as `4a8729506`; exact committed client rebuilt
+with12 jobs and frozen in snapshot `4af281d505a5e4ea0b3518859a9eaf8711322f453c4c91a6ac4864c25aca75ec`.
+Its private20-second dummy-SDL smoke reached AI day5 with multiple battles and
+no recorded ammo-overuse/crash/request-rejection markers; timeout was deliberate.
+Snapshot verification/promotion passed. The normal Linux play script now selects
+this candidate; older snapshots and the isolated Cabir preview remain retained.
+This is bounded smoke evidence, not full-game or graphical acceptance.
 
 ## UP-248 — Cabir implementation status and replacement scope
 
