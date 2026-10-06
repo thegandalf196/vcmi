@@ -545,6 +545,24 @@ bounds shrink the body and leave stray pixels. Do not auto-threshold or warp
 the rejected sheet into a claimed completed animation. Static v2 preview and
 normal snapshot remain unchanged; full Cabir art/animation scope stays open.
 
+Next bounded map-art task: add unique adventure-map animation descriptors for
+`core:gremlin`/`core:masterGremlin` (Cabir/Cabir Master) from the reviewed provisional
+standing/walk masters, plus separate static map-attack images if reviewed source
+poses support them. Core currently has no explicit `graphics.map`; its imported
+map DEFs are `AVWgrem0.def` and `AVWgrex0.def`, each group 0 with eight frames on
+64x64 canvases. Any `graphics.map` override clears the old templates, so set
+`graphics.mapMask` explicitly to the inherited 2x2 monster footprint
+`["VV", "VA"]`; retain inherited `visitableFrom` `["+++", "+-+", "+++"]`.
+The archived `.msk` size header confirms 2x2 geometry only; it is not the JSON
+tile mask or the approach-direction definition. `mapAttackFromLeft/Right` are
+independent static images (not frames of the map animation); keep their 64x64
+canvas and calibrate content placement visually from a native preview. Metadata
+alone does not establish Cabir subject scale or directional pose fit. Do not
+modify shared original DEF/LOD resources or claim map-role completion before
+focused visitability/resource validation.
+Audit Workshop/upgrade descriptions and creature-specialty labels for remaining
+displayed Gremlin wording without renaming the compatibility identifiers.
+
 ## UP-252 — Gargoyle Academy portrait backgrounds
 
 Status: In progress,2026-10-06. User still sees missing Academy backgrounds on Gargoyles;
