@@ -2601,17 +2601,22 @@ minimum actual siege/visit/damage/save evidence remains required.
 
 ## UP-201 — Remaining Castle movement and Rampart Luck building coverage
 
-Canonical hold review, 2026-10-06: the Lighthouse row explicitly identifies
-embarking **from this town**, not arbitrary nearby/global boarding. Independent
-bounded review agrees that source-town eligibility is implementable without
-deciding the separate repeated-day sea-capacity bonus policy. Next functional
-slice: source-aware embarkation penalty waiver, shared by authoritative movement
-and projected pathfinding/AI. Do not inspect only the hero's current visitedTown
-when forecasting a later departure; use the projected source tile. Preserve
-ordinary adjacent movement cost, disembarkation, airships, legacy rules and
-unbuilt/non-Lighthouse origins. The +20% same-day benefit remains held on
-retrigger/stacking semantics; this partial clause cannot close the whole building.
-No source change, acceptance or coverage increase from this review.
+Embarkation geometry correction, 2026-10-06: the attempted independent waiver
+slice is held before runtime edits. Root and runtime worker establish that
+IBoatGenerator::bestLocation uses the town's visitable position plus Castle
+offsets (-1,+2)/(+1,+2), both distance2. Normal accepted embark is adjacent and
+therefore starts on intervening land, not the town entrance. CGBoat retains no
+source-town/shipyard provenance; construction preserves position/type/owner only.
+The earlier canonical-only review overstated source-town eligibility as resolved.
+An exact-town-origin predicate and manually adjacent test boat would miss the
+ordinary shipyard journey, not implement the intended rule.
+Asked whether eligibility means boarding at the town's dock/launch tile or the
+first embark that day after visiting the town. Preserve the separate unresolved
+same-day +20% sea-capacity retrigger/stacking decision. Required implementation
+still includes shared authority/pathfinder/AI eligibility, ordinary step cost,
+non-origin/unbuilt/legacy/disembark/airship guards and Navigation/free-boarding
+composition. No product edits, builds, fabricated fixture, coverage increase or
+GUI automation occurred. Resume an independent unblocked queue item meanwhile.
 
 Stables final status: Verified (delivery pending), 2026-10-04. Client56799 and
 both-target62880 pass. Native71208 passes2/2 in1.894s, zero skips, including
