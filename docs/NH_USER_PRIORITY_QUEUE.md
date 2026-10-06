@@ -160,6 +160,21 @@ schema warnings remain deferred. Root inspected selected private small/encounter
 map outputs, not full motion or user-final approval. Independent review has no
 remaining blocker. Receipt: ignored `build/new-horizons-linux/UP262-remaining-native.log`.
 Normal Linux86eaae127d remains unchanged; verified source, delivery pending.
+Superseding Linux development delivery,2026-10-06: source87c630a2b is rebuilt
+and normal launcher now selects immutable snapshot2af95e81a63f2f4245da3adebb2d014673ef5a66620210745e7028fffef0e87b.
+Activated native test passes1/1, zero skips, in2.38s. All2,358 payload files
+verify before/after an explicit-candidate20-second true-headless run; banner
+matches87c630a2b and AI progresses through tan day3. Exit124 is deliberate timeout,
+not completed-match acceptance. Owned client/runtime are gone; profile lock is
+released, promotion and normal-launcher read-only preflight pass. Prior86eaae127d
+is retained. Client SHA25685b8375961d4a74d5c6a08334ad8c4df7cc3686f0fa720e57eb75edd394be3d6;
+library901bca4f7e099fa3c17b5e7688bcac26fcb7836ce3bc745dd018854e25167036.
+Receipt: ignored `build/new-horizons-linux/UP262-remaining-candidate-smoke.log`.
+Independent review has no source-level development-promotion blocker. Existing
+Cabir Repair schema/Shield of Chaos warnings remain deferred. Full motion and
+user-final visual approval remain open: no host GUI/input automation is authorized
+while the prior input incident remains unresolved. This visual gate must not
+silently be called passed; another unblocked priority item can proceed.
 
 ## UP-261 — Proposed recruitment and transfer Leadership demand
 
