@@ -10144,6 +10144,19 @@ No GUI, snapshot or launcher-profile promotion.
 
 ## UP-046 — Elemental Rebirth foundational effects
 
+Next bounded prerequisite, 2026-10-05: independent map confirms that the first
+Rebirth output's exact `SpawnHealth.targetAggregateHP` is discarded after ADD.
+Rounded full creature capacity and later current HP cannot recover the canonical
+"original HP" required by Rebirth Chain. Preserve a distinct immutable
+`rebirthOriginalAggregateHP` (zero for unrelated units) through UnitInfo,
+CStack's explicitly versioned binary state and detached AI copies. The shared
+spawn factory supplies its exact value. Keep battle-start source HP separate.
+Focused acceptance must cover exact non-divisible output, later damage,
+packet/save round trips, legacy defaults, older-writer rejection and detached
+parity. A positive value identifies the first-generation output for this
+prerequisite; do not activate Chain, add secondary-spawn inheritance, or decide
+Phoenix/Swift interactions here. No implementation or coverage credit yet.
+
 Continuation2026-10-05: clean204227394, previous three-perk cycle is progress.
 Full Windows37263037998 remains confirmed live on45f659b7c (toolset setup).
 Swift's precedence question is pending, not a global blocker. Separate bounded

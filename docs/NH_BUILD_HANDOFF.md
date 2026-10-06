@@ -2,6 +2,12 @@
 
 ## Current Windows checkpoint — Academy renderer and portraits
 
+Successor: source `975c6f011` contains the reviewed libiconv cache fallback.
+All 92 packaging checks pass with zero skips. Notice run `37405378013` is
+terminal-success at that exact source. Full Windows run `37405475795` is
+confirmed in progress; monitor that run before retrying or claiming delivery.
+Linux remains unchanged. The older failed checkpoint below is retained.
+
 Exact source: `9c7c4880f00eaaeb722abdd3ea034025af81c241`.
 The older full Windows run `37348640988` completed successfully on
 `0e645f79b`; it does not contain the later Academy raw-frame/cache correction
