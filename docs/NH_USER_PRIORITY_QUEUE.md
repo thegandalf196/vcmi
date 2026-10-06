@@ -9,9 +9,64 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-256 — Candidate headless battle-side error and shutdown diagnosis
+
+Status: Open (spectator diagnosis deferred to Phase 2; candidate delivery verified),
+2026-10-06. During delivery validation of committed
+adf92c01d, the initial CLI-corrected dummy-SDL All for One smoke loads content
+but repeatedly reports "Cannot find player red in battle!" and
+"battleGetFightingHero wrong argument". The bounded launch does not shut down
+cleanly and requires containment of its exact owned child. New snapshot
+536e86f685ef was initially withheld; normal4af281d5 remained selected. Preserve private
+logs and trace the producing callback before suppressing diagnostics or
+attributing the issue to economic tooltip edits. Distinguish a testmap observer
+problem from a production battle/AI failure. No host GUI/input is authorized.
+Acceptance: causal source/debugger evidence, scoped fix if needed, focused
+verification and a valid bounded candidate load/cleanup before promotion.
+Initial profile-overlap rejection and malformed --savefrequency0 invocation
+were preparation errors, not valid gameplay smoke evidence; retain them apart
+from the corrected run. No original assets, profile/log content or private
+workstation paths may be committed.
+
+Containment checkpoint: corrected run reached map/battle initialization but
+did not establish completed AI progress or a clean shutdown. Both exact owned
+test clients have been stopped; their private profile locks are released.
+Snapshot manifest and client/library hashes remain unchanged. Read-only source
+tracing identifies a possible nonparticipant spectator callback route; the
+invocation omitted --headless, so dummy SDL alone does not exclude that route.
+This remains a hypothesis pending a producing callstack, not an attributed
+gameplay failure or a reason to weaken callback visibility. Promotion was withheld
+at this checkpoint.
+
+Debugger checkpoint: one fresh managed reproduction cannot attach because of
+the host ptrace restriction. No callstack is obtained and no permission change
+or retry is attempted. Exact owned processes are gone, profile lock is released
+and candidate manifest/hashes remain unchanged. The documented smoke already
+uses --headless; equivalent explicit candidate instructions are added and pass
+independent review. One corrected true-headless smoke is assigned separately;
+the spectator route remains unattributed and is not silently declared fixed.
+
+Corrected-path acceptance: the same unchanged candidate is tested once with
+explicit --headless, dummy SDL and a fresh private profile. The20-second window
+records13 player-turn starts across days1–5,12 NK2 turn cycles and BattleAI entry,
+without either target diagnostic. Expected timeout124 is followed by exited
+owned processes, removed runtime links and an unlocked profile. The full log
+still contains Shield of Chaos's missing-positiveness/default-NEUTRAL warning;
+retain that non-blocking finding. Manifest2278 files and client/library hashes
+remain unchanged. Independent review finds no demonstrated Phase1 promotion
+blocker, while explicitly withholding causal or ordinary-GUI acceptance.
+Root promotes536e86 and verifies the normal script selects it without executing
+the client. Previous4af281 remains retained. Private receipts:
+`build/new-horizons-linux/nh-up256-headless-H9DlTa/` and the debugger receipt above.
+The original non-headless spectator failure remains open for Phase2; this
+working smoke path does not prove its cause or fix it.
+
 ## UP-255 — Resource Broker Marketplace contribution tooltip
 
-Status: Implemented (rendered verification and delivery pending),2026-10-06.
+Linux delivery: normal script now selects verified snapshot536e86 on adf92c01d;
+UP256 records bounded headless acceptance and its remaining limitations.
+
+Status: Implemented and delivered (rendered verification pending),2026-10-06.
 Canonical Estates feedback requires the
 Marketplace to identify Resource Broker's current contribution. Existing quotes
 already include the effect, but only display final quantities. Add localized
@@ -39,7 +94,10 @@ by the wiring guard; retain these integration/rendered limits for Phase2.
 
 ## UP-254 — Investor treasury-tooltip contribution readback
 
-Status: Implemented (rendered verification and playable delivery pending),2026-10-06.
+Linux delivery: normal script now selects verified snapshot536e86 on adf92c01d;
+UP256 records bounded headless acceptance and its remaining limitations.
+
+Status: Implemented and delivered (rendered verification pending),2026-10-06.
 Coverage review finds canonical Estates perk
 feedback requires Investor's current weekly income scaling in treasury help,
 but the resource popup exposes only aggregate income. Reuse the existing
