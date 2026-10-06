@@ -319,6 +319,26 @@ many holders/long translated names remains unverified; no GUI or promotion.
 
 ## UP-253 — Cabir coarser Heroes III visual treatment
 
+Barehanded animation-source progress: six new original HoMM3-Art sheets add
+base directional melee and Master front/directional melee, front/directional
+shooting and reaction/death. Exact prompts and SHA256 identities are retained
+in v3/ANIMATION_DRAFTS.md. Root viewed all outputs. Base front melee/reactions
+have whole-component faint-alpha separation and readable native preview contacts,
+not quadrant crops; masters remain unchanged. Cross-action scale, motion,
+repair/projectile/map/portrait roles and runtime bindings remain unfinished.
+All new artwork is Provisional; normal playable snapshot remains unchanged.
+The Master walk-v1 alpha-cleaned native bundle is reproducible via a pinned
+wrapper, but retained coloured specks and unverified gait keep it withheld from
+runtime. Root viewed the contact. Base pose previews now depend on a standalone
+tracked helper, not the obsolete untracked aligner; explicit action-root guards
+and byte-parity tests preserve existing outputs. Source/export work does not
+close the full Cabir task or authorize normal snapshot promotion.
+Focused offline validation: preview/parity/root guards5/5, whole-component
+separation3/3, alpha cleanup4/4 and atlas exports8/8 (20/20 total). The Master
+wrapper's --check passes. Independent frozen-source review has no blocker;
+its requested explicit Master-artifact/withheld note is incorporated in README.
+No C++ build or game launch is needed or claimed for this source-only checkpoint.
+
 Superseding user decision,2026-10-06: both Cabir and Cabir Master use bare hands,
 with NO golden pot/fire vessel. Both gain Fire resistance and Water weakness;
 Cabir Master repairs allied Golem and Gargoyle creature lines. This explicitly
