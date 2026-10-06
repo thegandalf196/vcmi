@@ -1,5 +1,18 @@
 # New Horizons implementation sprints
 
+Current Phase1 checkpoint,2026-10-06: UP244 implements the missing last-three ordinary
+Hero-paid Spell/Order history in the existing shared readiness state. Production
+and focused fixtures have separate owners; root runs the serialized client/native
+build and independent review. Repaired builds pass;30/30 focused native cases
+pass in2.319s with zero skips/errors. Perfect Rhythm remains inactive pending its
+Master Synthesis ruling; no perk identity credit is earned by this prerequisite.
+The repeated UP241 screenshot reopens visual acceptance and is being compared
+against baseline/v2 before another art revision. Preserve the current candidate.
+Windows37429818459 completed compile/staging/package/upload on the earlier
+3eda8ac03 batch; artifact metadata is inspected, not independent Windows play.
+Next: commit/push this accepted prerequisite, then another unblocked queue
+clause or an answered mechanics ruling. No exhaustive suite or art repetition.
+
 Delivered UP241: source `cadab569a` is committed/pushed, built and promoted as
 snapshot `3b7e155aec10506da961d94c6dfce24117bb11700879c903354da078cb23ceac`
 after independent2277-file verification and bounded AI smoke through day7.

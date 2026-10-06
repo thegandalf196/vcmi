@@ -9,6 +9,40 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-244 — Ordinary Hero Action sequence foundation
+
+Status: Verified (source/native; delivery pending),2026-10-06. Perfect Rhythm's principal third-action clause
+needs the last three Hero-paid Spell/Order actions, which current alternating
+readiness cannot reconstruct after expiry or repeated same-kind actions.
+Implement a small generic recent-action history inside the existing shared
+AlternatingHeroActionState, using its already receipt-filtered authoritative
+and detached accepted-action hooks. Preserve readiness, expenditure and all
+current bonuses. Spell/Order-only grants and creature actions do not enter this
+history; readiness expiry must not erase it. Append one versioned serialization
+feature, initialize old reads to empty history and reject lossy old writes
+before outer state bytes. Require focused sequence, expiry, wire/old-version,
+actual accepted actions and detached branch tests plus build and review.
+This is a prerequisite, not Perfect Rhythm activation: its Master Synthesis
+stacking decision (UP178) remains held. No new perk count until the full perk
+has its decision, production effect and principal acceptance.
+
+Source checkpoint: five production files and two focused test files are frozen.
+The first client build passes; review caught the missing enclosing BattleStart
+guard, which is repaired before packet bytes. Independent source/fixture review
+now finds no blocker. Final serialized rebuild49074 failed in the synthetic
+MalformedStateReader, which lacked an array overload. The focused test owner
+repairs scalar/array decoding and adds a malformed-history read; independent
+review confirms that it reaches shape validation rather than reader exhaustion.
+Repaired client/native build4000 passes with12 jobs. The matching isolated
+runner passes30/30 focused cases in2.319s, zero skips/errors:23 state cases plus
+seven actual ordinary-sequence, typed-allowance, outer-writer, Counterspell and
+detached cases. Evidence: ignored `build/nh-action-sequence.QSR769/native.log`
+and `native.xml`; runner SHA256
+`5c1cbbf5db046374edfe0e9b20537d8e33c0718932f8d85729d38262d6037197`.
+Independent source/fixture review passes. Exact exception-message assertions,
+broad composition and whole-battle save support remain Phase2/separate; no
+Perfect Rhythm activation or playable promotion claimed.
+
 ## UP-243 — Required Sylvan Luck combat-state readback
 
 Status: Verified, 2026-10-06 (Linux delivered; rendered acceptance pending). The canonical Faction Skill UI clause requires
@@ -46,6 +80,14 @@ UP233 records the delivered snapshot and limits. Windows batch37429818459 is
 live on the same source; no successful Windows package is yet claimed.
 
 ## UP-242 — Required town-building training-state feedback
+
+Windows batch37429818459 is now completed successfully on exact3eda8ac03.
+Compile, staging, full packaging and upload steps pass. The nonexpired artifact
+`New-Horizons-Windows-x64-3eda8ac03791dcc627bf8cc96839249a4e76d5ee`
+is present (974706228 bytes; API digest
+`sha256:94c6b31868b011149fd7fb10f4ffd73dd3a014caa369fe780e75338d9ca01dd3`).
+This inspection confirms CI steps/artifact metadata, not independent ZIP-content
+or Windows gameplay acceptance. It excludes later roof and UP244 sources.
 
 Source delivery checkpoint: weekly feedback committed/pushed as `4a9782c63`,
 with required author/committer identity and verified origin branch. Windows
@@ -163,6 +205,24 @@ not an inferred Final-art classification. Private native-reference sheets remain
 under ignored `build/nh-up238-validation/`.
 
 ## UP-241 — Academy hall double-roof appearance
+
+Renewed user report,2026-10-06: the linked screenshot visibly retains a blue
+flat roof behind a pitched front roof. Root confirms that appearance, but the
+image alone does not identify the running snapshot or prove v2 is displayed.
+Reopen visual acceptance: compare the screenshot against preserved baseline
+and pinned v2 before changing art again. Require one coherent roof silhouette;
+metadata, native export checks and headless startup are not visual acceptance.
+Preserve the delivered snapshot and running implementation work during this
+check. Do not infer duplicate engine layers from painted roof geometry.
+
+Comparison checkpoint: independent read-only review and root native/4x
+inspection find the linked roof geometry closer to the preserved baseline than
+v2. The live frame remains byte-identical to the pinned v2 export
+(`117e8ae670dda32e7cee0c76d78d4a12acb3a22bd3467b6b6d2cfd74173763cd`).
+The278x148 RGB screenshot is not the177x75 RGBA asset and has no build identity;
+it therefore cannot establish that the delivered revision is displayed or has
+failed. Do not regenerate another roof solely from this repeated reference.
+User visual acceptance remains pending, not resolved by the comparison.
 
 Status: Verified (Linux delivered; user visual acceptance pending), 2026-10-06. User screenshot
 `https://i.imgur.com/lSvdSIZ.png` shows apparently overlapping roof planes on
