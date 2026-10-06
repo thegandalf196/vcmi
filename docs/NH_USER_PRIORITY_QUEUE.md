@@ -135,6 +135,16 @@ Reference pixels remain outside the repository pending provenance review.
 
 ## UP-239 — Academy creature portrait backgrounds
 
+Eleven-portrait source checkpoint: Giant ID40/frame42 uses its approved native
+matte through the existing compositor. Client and fixture build with twelve
+jobs; actual eleven-portrait scale1–4 consumer passes (1/1, zero skips), with
+three Python checks, exporter and independent source review passing. Small
+icons and gameplay are unchanged. Titan v2/v3 masters, exact prompts and native
+reductions are preserved as unregistered drafts. V3 fills the hand slit but
+also fills the separately retained sky pixel(6,15) and changes four contour
+pixels; root has not approved it. Both Gargoyles still require correction.
+Source coverage is11/14; the latest playable delivery below remains10/14.
+
 Latest delivery: committed/pushed source `6e600fc89` built with twelve jobs.
 Frozen snapshot `bed369d0736cdef3ec6072b7e6ba1e62c859f9e75ca27507dd4ebc0233b927fa`
 loaded content, initialized a map and ran five AI turns in a bounded headless

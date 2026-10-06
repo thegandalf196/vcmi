@@ -1,5 +1,22 @@
 # New Horizons implementation sprints
 
+Bounded next-functional selection audit: Adventure effects, artifacts,
+town/building mechanics, recruitment and minimum AI hooks did not expose an
+unambiguous missing source path. Skeleton Transformer HP conversion still awaits
+the recorded pooling/rounding ruling; remaining Adventure restrictions,
+Lighthouse/Glyphs scope and artifact regeneration aggregation have explicit
+design holds. Recruitment bands/stat cards and universal War Machine shop are
+implemented; outstanding rendered evidence is not new source coverage. This
+does not prove all V1 items are blocked or authorize changing specified rules.
+Continue unblocked user-queue work and surface rulings before those slices.
+
+Source checkpoint: Giant is integrated as portrait11; focused consumer passes
+at scales1–4 with zero skips and both Linux targets build. Three Python checks,
+runtime export and independent review pass. Titan v2/v3 remain draft only;
+v3 violates the requested preserved sky pixel and changes four contour pixels.
+Next: correct Titan and rejected Gargoyles, then deliver the remaining family.
+Latest promoted Linux candidate remains the ten-portrait source below.
+
 Latest playable checkpoint: source `6e600fc89` is committed, pushed, built and
 promoted. The script selects verified snapshot
 `bed369d0736cdef3ec6072b7e6ba1e62c859f9e75ca27507dd4ebc0233b927fa` containing
