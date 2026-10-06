@@ -5067,9 +5067,20 @@ Let M = Attack growth + Defense growth for the hero class. Experimental class Le
 Creature Leadership Requirements below are for the base creature. An upgraded form normally uses 120% of the base requirement, rounded to the nearest 10. Stack capacity remains floor(Hero Leadership / Creature Leadership Requirement). No Skill or Recruitment effect applies a percentage discount to these requirements.
 
 Academy's Gremlin and Master Gremlin presentation is replaced by original Cabir
-and Cabir Master. Initially retain the existing creatures' gameplay, upgrade
-relationship, growth and Leadership requirements; this is not a new ability or
-stat redesign. Supply complete original base/upgraded creature art and battle
+and Cabir Master. Both use their bare hands, with no golden pot or fire vessel.
+Both take 50% less Fire damage and 25% more Water/Frost damage (provisional values).
+These are damage modifiers, not chances to resist an entire spell. Cabir Master
+additionally repairs surviving allied Golem and Gargoyle stacks, including both
+base and upgraded forms: repair heals wounds and restores fallen creatures within
+that stack. It does not target an entirely destroyed stack. These
+user-requested abilities supersede the initial unchanged-gameplay restriction;
+retain unrelated existing stats, upgrade relationship, growth and Leadership
+requirements. The initial tunable repair prototype is one use per combat,
+restoring up to 10 HP per Cabir Master in the acting stack; it consumes that
+stack's normal creature activation. These values are not inferred from Heroes VII.
+Elemental modifiers use explicit damage-element tags, not the six Magic Schools;
+untagged damage is unchanged. Supply complete
+original base/upgraded creature art and battle
 animation sets, with consistent army and recruitment portraits. Internal
 Gremlin identities may remain for map/save compatibility while displayed names
 and assets use Cabir. Provisional artwork follows the Heroes III Art workflow.
@@ -5090,7 +5101,7 @@ and assets use Cabir. Provisional artwork follows the Heroes III Art workflow.
 |Rampart|Dendroid|Elite|3|280||
 |Rampart|Unicorn|Elite|3|420||
 |Rampart|Green Dragon|Champion|1|650||
-|Tower|Cabir|Core|16|50|Cabir Master upgrade; initially retains Gremlin-line gameplay|
+|Tower|Cabir|Core|16|50|Cabir Master upgrade; elemental defenses on both forms, repair on upgraded form; unrelated Gremlin-line gameplay retained|
 |Tower|Stone Gargoyle|Core|9|80||
 |Tower|Stone Golem|Core|6|140||
 |Tower|Mage|Elite|3|300|Premium shooter|

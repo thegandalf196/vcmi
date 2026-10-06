@@ -19,6 +19,19 @@ None.
 
 ## Integrated history
 
+### Barehanded Cabir and repair abilities — 2026-10-06 (integrated)
+
+User explicitly removes the golden pot/fire vessel from both forms. Both get
+Fire resistance and Water weakness; Cabir Master repairs Golems and Gargoyles.
+Integrated into the canonical Academy creature presentation/ability rule,
+superseding the initial unchanged-gameplay restriction for these specified
+abilities only. User subsequently approves provisional50% less Fire damage and
+25% more Water/Frost damage, and healing plus restoration of fallen creatures
+within a surviving stack. These answers are integrated in the same canonical
+rule. The canonical implementation prototype now specifies one repair per
+combat, 10 HP per acting Cabir Master and a normal creature activation. These
+remain tunable values; implementation and artwork status remain in UP253.
+
 ### Cabir replacement — 2026-10-06 (integrated)
 
 User-approved decision: replace Academy's Gremlins and Master Gremlins with

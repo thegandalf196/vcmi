@@ -22,6 +22,24 @@ never committed extracted/recoloured purchaser sprites. Acceptance: correct
 base/upgraded bindings, native colour/motion review, resource/build checks and
 playable delivery, separately from user visual approval. Cabir completion remains
 the current explicit focus; this is next user art work, not a replacement task.
+User reiterates: remove No Melee Penalty from BOTH Magi and Arch Magi. Current
+module override already nulls that ability for both; verify effective loaded
+bonuses and guard against legacy reintroduction. This is not implemented by
+colour changes. Preserve their distinct ranged-distance/obstacle capabilities.
+2026-10-06 source check: both `core:mage` and `core:archMage` already override
+`abilities.noMeleePenalty` to null in the New Horizons Tower creature config.
+The existing native regression `MagiUseShooterMeleePenaltyWithoutLosingRangedAbilities`
+checks both effective bonuses and preserves their other ranged capabilities.
+An isolated-profile invocation skipped because New Horizons was not active;
+this is not a passing runtime check. Effective-bonus verification remains pending.
+Subsequent isolated active-module verification succeeds: the existing native
+test passes 1/1, zero skips, in 336ms. Root inspected its XML/log under ignored
+`build/nh-magi-active-test.J4QzMD/results/`. It confirms BOTH lack No Melee Penalty
+while retaining Shooter, No Distance Penalty and allied spell-cost reductions,
+plus Arch Magi's No Wall Penalty. This closes the effective-bonus check, not the
+separate robe/projectile artwork or playable visual-delivery work.
+The normal Linux snapshot990be55's Tower config also contains both null
+overrides; this request does not need a new binary to change those definitions.
 
 ## UP-261 — Proposed recruitment and transfer Leadership demand
 
@@ -301,6 +319,24 @@ many holders/long translated names remains unverified; no GUI or promotion.
 
 ## UP-253 — Cabir coarser Heroes III visual treatment
 
+Superseding user decision,2026-10-06: both Cabir and Cabir Master use bare hands,
+with NO golden pot/fire vessel. Both gain Fire resistance and Water weakness;
+Cabir Master repairs allied Golem and Gargoyle creature lines. This explicitly
+supersedes both pot-based presentation and the old unchanged-gameplay restriction
+for these abilities. Preserve previous drafts as superseded, never install them
+as the final creature. Pot-based alignment worker stopped safely: only unrun
+tools/align_new_horizons_cabir_animation.py draft exists, no tests/exports/process.
+New barehanded original art must use HoMM3 Art. User confirms healing AND
+restoring fallen creatures within a surviving stack, and provisional50% less
+Fire damage /25% more Water/Frost damage. Whole destroyed-stack resurrection is
+not inferred. Audit existing repair/spell/element infrastructure
+before implementing, preserve unrelated Gremlin-line stats and compatibility IDs.
+Implementation prototype,2026-10-06: one repair per battle, 10 HP per acting
+Cabir Master, consuming its ordinary activation. These are tunable Phase1 values,
+not additional user-approved balance claims. Dedicated repair targeting must
+exclude entirely destroyed, hostile and non-Golem/Gargoyle stacks. Incoming
+Fire/Water modifiers use explicit element tags, never Magic School membership.
+
 Priority update,2026-10-06: user explicitly directs focus on finishing Cabir.
 User approves manual transparency cleanup and frame alignment of generated Cabir
 art on2026-10-06. Preserve untouched masters and surviving artwork; all newly
@@ -334,6 +370,12 @@ No C++/runtime change or build is implied by these offline asset tools.
 Independent separation review finds no offline commit blocker. Next: explicit
 cross-action body scale/pivots, remaining draft silhouette extraction, native
 motion review, upgraded missing action families and actual resource bindings.
+Active continuation: dedicated aligner owns offline alignment-v1 plan/exports,
+using explicit source landmarks and one physical body scale per source sheet,
+not bounding-height normalization of death or extended attacks. Read-only
+tester inspects directional/base and ranged/upgraded component geometry;
+integration explorer maps actual descriptor/shooting offsets. Root authors
+missing upgraded action poses using HoMM3 Art and owns runtime installation.
 
 Status: In progress,2026-10-06. After seeing the temporary sprite preview, user finds
 the Cabir attractive but too pretty/detailed. Retain the creature design/pose
