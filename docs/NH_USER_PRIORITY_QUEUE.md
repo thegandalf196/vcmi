@@ -22,6 +22,30 @@ Draft checkpoint: v2 master, exact prompt and mechanical 64x60/4x previews
 are retained in `assets/new-horizons/creatures/cabir/v2/`. The native comparison
 was shown to the user, with v1 left and v2 right. Darker/coarser treatment is
 provisional; no animations or runtime bindings were replaced by this draft.
+Next delivery slice: prepare a separate v2 static in-game preview from the
+current immutable Linux snapshot (source `4a8729506`), preserving the v1
+preview, normal playable pointer and separate profile. This addresses the
+user's requested rougher art in an exercisable preview, not full base/upgraded
+animation completion. Mechanical exports only; no original colour assets.
+Exporter checkpoint: explicit v1/v2 sources are pinned independently; v1
+remains the default. Five focused checks pass and independent source review
+finds no blocker. Root withheld the first new detached setup before execution:
+its current executable was paired with old-preview config/scripts/module.
+Require all resource provenance from the current4af281 snapshot except the
+explicit v2 graphics overlay and its copied-module registration. Matching
+libvcmi is already selected beside the current client by the managed launcher.
+Delivery checkpoint: corrected isolated preview is frozen under ignored
+`build/nh-cabir-ingame-preview-v2.0iKT62/`; manual launcher is
+`Play-Cabir-Preview.sh`, using its own profile. Root confirms config/scripts
+match current4af281 and the module differs only by the three static-preview
+assets and appended registration. Exporter verification and5/5 focused tests
+pass; independent review finds no blocker. A private8-second dummy-SDL load
+initializes the map and reaches AI day3, with no recorded ammo/crash/request-
+rejection markers; timeout is deliberate. No host GUI/input was used and this
+does not establish actual battle rendering or final art approval. Both Gremlin
+identities use one v2 standing sprite in all32 groups: attacks/death/movement
+remain static. Normal snapshot and v1 preview remain unchanged. Full Cabir
+art/animation replacement is still open; no creature-completion count added.
 
 ## UP-252 — Gargoyle Academy portrait backgrounds
 
