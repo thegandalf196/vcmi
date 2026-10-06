@@ -158,6 +158,18 @@ consumer is delegated and remains in progress; the full fourteen-portrait family
 is not complete. Original-colour references/comparisons remain ignored build
 data, not committed assets. Exact prompts and rejection dispositions are retained.
 
+Two-portrait source checkpoint: Gremlin and Master Gremlin large icons now use
+one raw-frame/mask compositor. Only their `graphics.iconLarge` fields change;
+small transparent CPRSMALL icons and gameplay remain unchanged. Packaged masks
+are byte-identical to reviewed authored masks; background/fallback PNGs contain
+only the authored Academy desert crop. Exporter and two focused Python tests
+pass. Root rebuilt and executed the actual SDL-dummy consumer fixture: 1/1 pass,
+zero skips, both generated routes and active TWCRPORT aliases at scales1–4,
+every foreground/background pixel checked, CPRSMALL alias pixels unchanged.
+The test-only C-string/bool identifier-overload mistake was corrected explicitly,
+not worked around by changing production identifiers. Build/delivery and user
+visual approval remain separate; twelve portraits are still missing.
+
 Read-only diagnosis: army slots use static `CPRSMALL` (32×32) or `TWCRPORT`
 (58×64) creature icons with separately overlaid counts. Gremlin/Gargoyle lack
 `graphics.iconSmall/iconLarge` overrides, so their snowy backdrops remain baked
