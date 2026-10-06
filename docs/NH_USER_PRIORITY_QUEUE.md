@@ -319,6 +319,33 @@ many holders/long translated names remains unverified; no GUI or promotion.
 
 ## UP-253 — Cabir coarser Heroes III visual treatment
 
+Map source/resource checkpoint,2026-10-06: both forms now use original v3
+64x64 four-frame map animations and separate left/right encounter images.
+Legacy AVWgrem0/AVWgrex0 descriptor aliases reuse those four frames twice,
+preserving eight frame slots for embedded H3M object templates. No purchaser
+pixels or archives are copied/modified. Root inspected native and enlarged
+contact previews; artwork remains Provisional, with gait/timing approval open.
+Loaded handler templates retain the 2x2 [VV,VA] footprint and all eight approach
+directions. Client/resource builds pass; the activated dummy-SDL resource check
+passes1/1 in2.38s with zero skips, including exact legacy alias locator/pixel
+parity, four distinct map frames and both encounter bindings. Thirty-one focused
+Python checks pass, including map/battle/portrait/Repair parity and Tower building
+guards. The inherited Workshop descriptions now use authored Cabir wording;
+the bounded specialty audit found no stale literal specialty label. This closes
+map-role source binding, not actual battlefield/map motion or playable delivery.
+Final frozen recheck reproduces both bundles, passes31/31 focused checks and
+the native resource fixture1/1 in2.38s. Independent review finds no blocker.
+Native receipt: ignored `build/new-horizons-linux/UP253-cabir-map-native.log`.
+Normal Linux snapshot990be55 remains unchanged; UP253 is still open.
+
+2026-10-06 map-role continuation: bounded workers export original v3 map and
+encounter derivatives, extend actual native resource/template checks and audit
+displayed legacy creature labels. Root owns runtime bindings and preserves
+the inherited 2x2 footprint and eight approach directions. H3M embedded
+templates retain legacy animation names, so compatibility descriptor aliases
+must also resolve to the new original art. Source bindings are being prepared;
+exports, native verification and playable delivery are not yet accepted.
+
 Battle production checkpoint: both forms now use unique original custom JSON
 animations with real walk, directional melee, reaction and death poses. Master
 adds bare-hand shooting and an authored Repair gesture; its shooting directions
