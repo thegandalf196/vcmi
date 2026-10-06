@@ -6028,6 +6028,15 @@ source, not this new slice. Root proceeds to coherent commit/push.
 
 ## UP-180 — Spellcraft Counterpressure
 
+Phase1 bounded implementation decision,2026-10-06: independent review confirms
+ordinary accepted damage/debuff triggers and next-spell readiness/expiry are
+unambiguous. Root lifts the blanket no-production-edits hold only for that
+shared principal-path implementation. Keep the perk planned/inactive and record
+Partial; do not infer the outstanding no-op Dispel policy, ship an undocumented
+exclusion, or claim a completed identity. Reuse the existing accepted-effect map.
+The exact trigger-boundary question has been resurfaced; full activation awaits
+its answer. No new gameplay implementation is claimed by this decision.
+
 Phase1 blocker triage2026-10-05: independent review distinguishes the clear
 ordinary damaging/debuffing trigger from the narrow no-op recipient boundary.
 This is not an unmapped principal mechanic; reuse the accepted-cast/effect
@@ -12967,6 +12976,19 @@ Source checkpoint `e6545354a` was pushed to `origin/definitive-mvp` on
 playable snapshot promotion.
 
 ### UP-023 — Complete all missing Skills, perks, and spells before further art
+
+Next-item triage,2026-10-06 after Linux87c630a2b delivery: exact registry counts
+are31 Skills,93 active ranks,225 active perks and85 planned perks. Independent
+canonical/queue review finds no newer ruling clearing the six missing spell
+identities: Confusion(UP043), Polymorph(UP066), Reality Warp(UP179),
+Pandemonium(UP123/191), Nature's Wrath(UP117), Elemental Convergence(UP072).
+Do not repeat their architecture maps. Resurfaced three implementation-unlocking
+questions: Convergence coastal-Sand/Water mapping; Counterpressure actual-change
+versus non-resisted-recipient trigger; Battlefield Mastery ineligible machine
+consumption. No response is inferred from automatic continuation or preselection.
+A bounded85-perk hold index is being prepared from the existing queue, not a new
+design layer. These observations do not certify project-wide blockage or change
+coverage; check genuinely unblocked required content/functional clauses next.
 
 Bounded source audits,2026-10-06: Sorcery's canonical three rank clauses and ten
 active perks have production consumers and focused fixture definitions; the

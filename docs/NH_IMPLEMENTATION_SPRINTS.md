@@ -1,5 +1,26 @@
 # New Horizons implementation sprints
 
+## Current checkpoint — 2026-10-06, after Arch Mage delivery
+
+Phase1 remains active. Linux now selects immutable2af95e81a6 from87c630a2b;
+native1/1,2,358-file verification and bounded headless progression pass. UP262
+is development-delivered, not full-motion/user-approved. Source evidence and
+remaining visual gates stay in the priority queue; do not repeat completed
+colour bindings or blocked Gargoyle prompts.
+
+Registry-derived coverage:31/31 Skills,93/93 ranks,225/310 active perks
+(154/220 generic,71/90 faction),61/67 combat identities,8/8 Orders. Registration
+does not certify every effect, required UI or integration class.
+
+Next implementation-unlocking decisions currently presented: UP072 coastal
+terrain mapping (spell plus dependent perks), UP180 Counterpressure's resolved
+recipient trigger, UP156 Battlefield Mastery's ineligible-machine consumption.
+Reuse existing maps after answers, assign disjoint runtime/data/test ownership,
+implement principal paths and minimum AI hooks, then focused validation/commit.
+Do not activate a planned entry merely to increase counts. The reusable pending
+perk hold index is preparation, not new gameplay coverage or proof that every
+Version1.0 category is blocked. Older checkpoints below are historical.
+
 Current priority: UP248's approved Cabir presentation replacement and the
 reported Academy roof, ownership-flag and Astronomy Tower connection defects.
 The first Cabir standing master and proposed60px preview are shown before
