@@ -11,6 +11,30 @@ entries and their validation/delivery evidence.
 
 ## UP-265 — Cabir walking and icon background defects
 
+Immediate preview request,2026-10-06: user asks to see the new reference-based
+Cabir in-game. Prepare an isolated paired standing-frame preview from current
+client/resources, preserving normal snapshot and saves. Distinct base/Master
+graphics only; do not alter shooter, Repair, defenses or other gameplay. Supply
+a user-manual launcher and quick original preview map if feasible. Explicitly
+disclose static movement/action/death art and incomplete full animation set.
+No desktop/input automation is authorized by this request. Private source
+provenance remains pending; keep derived preview pixels out of public Git.
+
+Paired private preview delivery,2026-10-06: launcher is
+build/nh-cabir-preview-v4.mjk0wHvH/Play-Cabir-Preview.sh, selecting unpromoted
+snapshot-d91fc25c352ab05cd9e8060374a9d5eccfde307ad87084ac979b51386dbbe966
+from rebuilt08146b703 client/library. Distinct base/Master standing frames,
+graphics-only registration; all other2367 baseline resources preserved except
+detached manifest registration. New original36x36 manual map starts Red Solmyr
+with5of each beside one Peasant. Nine exporter checks and focused map export,
+gzip roundtrip/native load check pass; client/test build passes. True-headless
+candidate smoke initializes the authored map and completes a game without crash;
+this is not rendered visual acceptance. Initial detached JSON serialization
+escaped Unicode unsupported by engine; private manifest now retains UTF-8.
+Normal launcher pointer/source and normal saves untouched. Separate manual user
+profile; private pixels not committed. Walking/attack/death remain static and
+full-animation acceptance is still Open.
+
 New user reference,2026-10-06: https://i.imgur.com/m7qkfJk.png. Root inspected
 the supplied sheet: tailed red-scaled base Cabir with blue/gold Academy collar,
 apron and belt tools; Master has gold scale armor, reinforced cuffs and blue/gold
