@@ -46,6 +46,31 @@ does not establish actual battle rendering or final art approval. Both Gremlin
 identities use one v2 standing sprite in all32 groups: attacks/death/movement
 remain static. Normal snapshot and v1 preview remain unchanged. Full Cabir
 art/animation replacement is still open; no creature-completion count added.
+Next animation slice: author a four-frame original walking loop using the
+rougher v2 design and a mechanical atlas exporter with one common scale/anchor.
+Do not rescale every pose independently, animate the standing sprite by warping,
+or count a generated sheet as an accepted animation before native motion review.
+Keep this in a new versioned draft directory; static preview and normal game
+remain untouched. Runtime installation requires a coherent reviewed sequence.
+Parallel delivery checkpoint: GitHub's latest successful full Windows package
+remains `37437598557` on `bea86a2c3`; no full Windows build was live at selection.
+Notice preflight `37458491906` completes successfully on exact `dc5de4c48`.
+Full Windows build `37458617656` is subsequently confirmed in progress on the
+same source. Preserve and re-poll that exact job, not a stale status file.
+Do not mistake notice validation for compilation or claim newer Linux fixes
+are already in the Windows download before this package is produced.
+Animation checkpoint: two built-in generation attempts fail gait/clean-alpha
+review; no accepted walk master or runtime installation. Root confirms the
+large strict-alpha bounds include faint debris: alpha>=16 subject heights are
+490/490/490/491, so do not misreport this as proven huge body-scale variation.
+Opposite contact poses remain unclear. The second candidate and exact prompt
+are retained as rejected, not approved artwork. The new mechanical exporter
+uses a common crop/scale/anchor and preserves all alpha; five focused synthetic
+checks pass and independent review finds no blocker. A private native export
+under `build/nh-cabir-walk-review.DtidAm/exports/` confirms the contaminated
+bounds shrink the body and leave stray pixels. Do not auto-threshold or warp
+the rejected sheet into a claimed completed animation. Static v2 preview and
+normal snapshot remain unchanged; full Cabir art/animation scope stays open.
 
 ## UP-252 — Gargoyle Academy portrait backgrounds
 
