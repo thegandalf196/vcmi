@@ -135,6 +135,20 @@ Reference pixels remain outside the repository pending provenance review.
 
 ## UP-239 — Academy creature portrait backgrounds
 
+Six-portrait source checkpoint, 2026-10-05: Mage and Arch Mage masks pass root
+native/8× review provisionally. The apparent upper-left spire is part of the
+authored desert backdrop, not retained original scenery; independent all-pixel
+comparison confirms both previews use current masks/background. Their large
+routes now use core IDs34/35 and external frames36/37. Root builds both client
+and native fixture with twelve jobs; the actual six-portrait SDL-dummy consumer
+passes three consecutive runs at scales1–4, zero skips. Three Python checks,
+runtime export validation, ten available draft reductions and independent review
+pass. No small-icon or gameplay changes. Six of fourteen are source-integrated,
+all Provisional; eight remain unfinished. Genie/Master Genie masks have private
+comparisons but remain unapproved and unregistered: review luminous contours and
+small internal gaps before runtime use. Existing launcher still delivers only
+the two Gremlin portraits; source completion is not playable delivery.
+
 Four-portrait source checkpoint, 2026-10-05: both Golem masks pass root native/8×
 composition review provisionally and use the existing original-pixel-preserving
 compositor. Internal ironGolem/stoneGolem IDs remain unchanged despite their

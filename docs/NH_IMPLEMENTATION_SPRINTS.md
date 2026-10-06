@@ -1,5 +1,14 @@
 # New Horizons implementation sprints
 
+Latest source checkpoint: UP239 now integrates six of fourteen large portraits,
+adding reviewed Mage/Arch Mage geometry through the unchanged compositor.
+Root client/native builds with twelve jobs succeed; actual SDL-dummy pixel/alias
+fixture passes three consecutive scale1–4 runs, zero skips. Three Python checks,
+runtime export validation and independent review pass. Eight portraits remain
+unfinished; Genie/Master Genie private comparisons are available but need
+luminous-contour/internal-gap review before approval. No gameplay identity credit,
+host GUI run or launcher promotion. Existing e48e04550 playable snapshot retained.
+
 Latest source checkpoint, 2026-10-05: UP239 now integrates four of fourteen large
 portraits (Gremlins and Golems), all Provisional. Three Python checks and pinned
 exports pass; rebuilt native fixture passes ten consecutive scale1–4 runs after
