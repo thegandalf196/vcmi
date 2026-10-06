@@ -9,6 +9,145 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-248 — Cabir implementation status and replacement scope
+
+Status: Open, 2026-10-06. User asks where the Cabir is. The earlier UP240
+concept/feasibility discussion has not produced a runtime creature: Gremlins
+remain in the roster. Report that honestly; inventory any authored drafts and
+the remaining base/upgraded animation, portrait, sound and data work. Do not
+claim a concept is an implemented creature or silently import Heroes VII art.
+
+Immediate preview request,2026-10-06: user asks to see the approved Cabir
+in-game now. Inspect an isolated standing-sprite preview route without silently
+promoting incomplete animations into the normal playable version. A proposed
+four-frame idle atlas has returned, but its changing scale/foot alignment still
+requires correction; it is not accepted as a finished idle loop. No screenshot
+composition may be labelled an actual game render. Preserve the existing host
+input/GUI safety hold; ask separately before any conflicting execution.
+Scope approved, 2026-10-06: replace Gremlins and Master Gremlins with Cabir and
+Cabir Master, retaining their current gameplay initially. Create original full
+base/upgraded art and animation sets; a portrait-only substitution is not
+completion. Preserve creature behavior and existing save/content identities
+where feasible, with any incompatible change explicitly reviewed. Required
+surfaces include battle animations, portraits, recruitment/army displays,
+names/descriptions and asset bindings. Use HoMM3 Art even for provisional art;
+retain provenance and report any incomplete animation states honestly.
+
+User preview requirement, 2026-10-06: show the first Cabir sprite as soon as it
+exists, before expanding the full animation family. Present it at native battle
+size as well as enlarged, and label draft versus runtime integration honestly.
+
+First-sprite checkpoint: the built-in HoMM3-Art standing master and proposed
+60px preview plus4x enlargement are retained under
+`assets/new-horizons/creatures/cabir/v1/` with exact prompt and content-reference
+provenance. Root inspected and showed them to the user. Exact native creature
+registration remains pending; no runtime creature or full
+animation completion is claimed. User approved this design with "Keep this
+design" on2026-10-06. Preserve its identity across the animation family; this
+approval does not establish complete animations or runtime acceptance.
+Keep internal Gremlin creature identities
+for the gameplay-preserving presentation replacement unless evidence requires
+a reviewed compatibility change.
+
+## UP-247 — Astronomy Tower attachment to fort
+
+Status: Verified (source/native scene; delivery pending), 2026-10-06. User reports a small empty gap between Academy's
+Astronomy Tower and fort. Inspect the registered scene and native artwork;
+correct the connection coherently, preserving construction and gameplay rules.
+Acceptance requires native scene comparison and delivery of the corrected
+assets, not merely descriptor validation. Use HoMM3 Art for raster revisions.
+
+Read-only evidence: special2 inherits `(409,82)` and the fort uses `(304,0)`.
+Their current opaque masks overlap at only one pixel. An Academy-only horizontal
+offset of7-8px left is a bounded candidate for real attachment, requiring native
+fort-stage review and checks against the later fortification stages before
+integration. Existing castle-stage previews do not validate the fort gap.
+
+Selected source correction: Academy-only special2.x=402, a7px left shift.
+Worker and root inspect native fort/citadel/castle composites; the smallest
+coherent offset joins the fort without repainting sprites. Existing area/border
+masks share the structure anchor and remain unchanged. The importer emits the
+same pinned x, guards inherited y/z and routes, and generated-patch parity is
+covered by focused checks. Twelve Academy art tests pass; independent review
+finds no blocker. Reproducible preview helper and ignored scene receipts are
+under `tools/preview_new_horizons_astronomy_tower_attachment.py` and
+`build/nh-up247-validation/`. This is a registered composite review, not in-game
+user acceptance or playable delivery. No numerical/gameplay rules change.
+
+## UP-246 — Academy map miniature baked yellow flags
+
+Status: Verified (source/native assets; delivery pending), 2026-10-06. User reports yellow flags underneath player-colored
+flags on the adventure-map Academy town. Inspect baked artwork and ownership
+overlays across the town stages; remove inappropriate baked flags while
+preserving the normal ownership-color flags and registration. Acceptance:
+native-size comparison of the affected stages, focused asset validation and
+playable delivery. Use HoMM3 Art for authored raster corrections.
+
+Inspection checkpoint: all current town body stages have baked yellow entrance
+flags; the engine independently composes ownership-color overlays from the
+original flag-only resource masks. The selected c172340f snapshot contains the
+same affected body bytes. The v2 material prompts explicitly preserved these
+flags. A built-in HoMM3-Art flag-removal edit of the Fort master is retained in
+`assets/new-horizons/academy/map-revisions/v3/`, Provisional and not installed.
+Root inspected the master and its192x192 preview, exported with the existing
+Fort registration boxes unchanged. Both yellow entrance flags are absent.
+Remaining stages, importer integration and delivery are still pending. Keep
+ownership overlays and shadows untouched.
+
+Integration checkpoint: all three Village/Fort/Capitol v3 exports are installed
+in source and match their reviewed native previews exactly. Registration boxes
+and engine-owned flags/shadows remain unchanged. Both source revisions are
+retained; the importer accepts only exact legacy/v2/v3 pixels and preflights the
+whole body family before writing. Fifteen focused Academy art/map tests and the
+reproducible exporter check pass. Independent review finds no blocker. Full
+handoff ZIP reimport remains unverified because that archive is unavailable;
+this is not playable delivery or user visual acceptance.
+
+## UP-245 — Required Flank side identity and proposed-position readback
+
+Status: Verified (source/native; delivery pending),2026-10-06. Canonical required UI
+row "Flank side tracking" requires the contributed attack sides and the bonus
+for a proposed attack position. BattleHeroActionWindow currently reduces the
+synchronized sideMask to a count; the creature Order indicator only says
+"marked target". These do not identify which sides contributed. Existing melee
+hover uses a proposed attackerPos and shared damage estimation, but needs an
+explicit Flank contribution readback rather than independent UI arithmetic.
+Use the existing Order tooltip/readback and attack-hover surfaces, with readable
+direction labels relative to the target. Preserve authoritative history,
+ownership, Formation Fighting, double-wide contact geometry, Combined Arms,
+multiple Orders and all damage math. No new art, panel, clicks or saved state.
+Root owns any shared callback contract; partition runtime and client ownership.
+Acceptance: shared proposed-position coefficient parity and no live mutation,
+direction-mask presentation checks, actual client wiring, focused native tests,
+client build and independent review. Native rendered fit remains separate;
+no coverage credit or playable delivery is claimed at selection.
+
+Final source/native checkpoint: build83993 passes for client and native runner.
+The corrected strike fixtures block retaliation on the attacker and assert its
+count is preserved, without weakening forecast/history assertions. Independent
+review finds no blocker; run98399 from the correct bin resource root passes7/7,
+zero skips,2.325s (`native-repaired-bin.log/xml`). Initial6/7 and intervening
+wrong-CWD resource failures remain in the failure ledger. Required UI/forecast
+clause is implemented; no spell/perk identity count changes. Rendered fit and
+localization remain Phase2; the promoted Linux snapshot is not yet replaced.
+
+The verified slice is committed/pushed as16aa2fba6. Playable delivery remains
+pending; the normal script still selects its earlier promoted snapshot.
+
+Source checkpoint: runtime and client slices are frozen. Shared callback masks
+use both proposed footprints with independent live-position fallback; the same
+read-only Flank contribution supplies production damage and hover. Existing
+Order help and marked-target tooltips name contributed directions. Root review
+corrects original-side gating to current-controller gating and catches the
+console's two-line truncation: use a compact first-line bonus prefix, not a
+third appended line. Initial client build78940 passes111/111; the one-file
+prefix repair requires a final small client rebuild. Native fixture build57312
+is live; no native result is yet claimed. Independent runtime/client/fixture
+review finds no blocker. Exact focused filter has seven cases, including both
+projected positions, accepted Flank/Encirclement, wide contact, Formation Fighting
+with Combined Arms and direction formatting. Receipts are under ignored
+`build/nh-flank-readback.xSWIhS2Q/`. Native rendered fit/localization remain Phase2.
+
 ## UP-244 — Ordinary Hero Action sequence foundation
 
 Status: Verified (source/native; Linux delivered),2026-10-06. Perfect Rhythm's principal third-action clause
@@ -211,6 +350,14 @@ not an inferred Final-art classification. Private native-reference sheets remain
 under ignored `build/nh-up238-validation/`.
 
 ## UP-241 — Academy hall double-roof appearance
+
+Renewed current-delivery report, 2026-10-06: after being told that the Linux
+script selects the updated bea86a2c3 candidate, the user still sees the double
+roof. Reopen the defect as Open (visual correction pending). Previous v2
+comparisons and hash verification do not establish that the visual requirement
+is met. Inspect the actually selected frame together with its town background;
+do not dismiss this report as a stale screenshot. Preserve the promoted
+snapshot until a corrected candidate is verified and delivered.
 
 Renewed user report,2026-10-06: the linked screenshot visibly retains a blue
 flat roof behind a pitched front roof. Root confirms that appearance, but the
