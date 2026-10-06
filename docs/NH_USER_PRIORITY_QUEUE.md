@@ -61,6 +61,13 @@ location clarification is requested without blocking the walking investigation.
 Acceptance: native gait contact sheet/animation showing alternating weight-bearing
 legs and arm/body motion, correctly transparent relevant assets, focused binding
 checks, and separately identified playable delivery/user visual review.
+Gait continuation,2026-10-06: a new HoMM3-Art four-pose contact/passing draft
+again repeats the same foot phase on both rows. Root rejected it before export
+or installation; distinct images and lifted knees are not a complete gait.
+A targeted opposite-foot lower-row revision also repeats the same foot phases;
+root and independent inspection reject it. Neither draft is installed. Preserve
+the current runtime until alternating phases are actually evident; author the
+opposite contacts individually rather than accepting cosmetic pose differences.
 
 ## UP-264 — Preferred-school Mage Guild tome bookmarks
 
@@ -69,6 +76,14 @@ noninteractive native67x85 book patch at378,344, without changing guildWindow.
 Private derived pixels remain ignored, with nine faction bindings prepared.
 Client build and five synthetic importer checks pass; malformed metadata now
 falls back before indexing. Native crop edge fit and delivery remain pending.
+2026-10-06 native-layout audit reconstructs the original800x600 TPMAGE background
+and faction141x217 guildWindow at332,76. The67x85 patch at378,344 is51px below the
+window and does not overlap it. Initial offline colors were wrong because the
+24-bit PCX stores BGR; corrected conversion follows the actual SDL loader.
+Root inspected corrected all-nine/native Tower compositions: the opaque crop
+still replaces desk texture with a visible blurred rectangle. Transparent
+variants/masks are under comparison; do not promote the opaque patch as visually
+accepted. Original/native diagnostic pixels stay in ignored private storage.
 
 Status: Open,2026-10-06. Integrate the nine approved faction book/ribbon designs
 from Downloads new-horizons-magic-assets-v1.zip at native guild scale, preserving
@@ -90,6 +105,17 @@ The private manifest supplies18x6x8 frames, no shared base-frame mutation or
 timing change. Client build passes after adding the actual IBattleState defining
 header; optional malformed metadata guards pass independent source review.
 Private asset fit/reset/rendered acceptance and playable delivery remain pending.
+2026-10-06 review finds production image existence checks used unprefixed paths,
+while the renderer resolves SPRITES/, DATA/, then raw image names. Both optional
+casting/guild helpers now follow that same order. A new opt-in native fixture
+mounts the private fragment only when requested and checks all864 overlay frames
+against original DEF geometry/alpha, with representative mirrored composition
+and source/cache immutability. Client/fixture build passes; the combined opt-in
+native check passes1/1, zero skips,3.25s after the robe additions. All864 frame
+geometry checks pass. Representative Light composition changes1264 pixels in
+each facing across the sequence; the final glow frame is intentionally empty.
+The supplied samples have binary alpha, so no partial-alpha sample is claimed.
+This does not execute actual BattleHero school-selection/reset lifecycle.
 
 Status: Open,2026-10-06. Integrate corrected v6 package from Downloads
 new-horizons-magic-assets-v1.zip. Use actual spell School and loaded DEF, not class
@@ -107,6 +133,12 @@ red in the Arch Magi robe. Inspect all relevant source palette entries and motio
 frames; retain red staff/projectile accents deliberately. Current palette/native
 checks do not establish complete robe recolouring. Acceptance needs all-frame
 robe review, not merely new hashes or three sampled frames.
+All133 external battle frames were inspected privately. Seven cloth-only indices
+191/192/200/203/209/210/212 now map to gray in the authored map and generated alias;
+staff accents are preserved. Eight focused palette tests, descriptor parity and
+combined native loading/rendering check pass. Independent review finds no source
+blocker. Mixed robe/staff index136 and uncertain99/149 remain excluded, so the
+residual-red report is not closed. No original pixels enter Git.
 
 Status: In progress,2026-10-06. User requests Arch Magi robes grey in the spirit of
 HeroesII; Magi robes remain unchanged. Both Magi and Arch Magi projectiles change
