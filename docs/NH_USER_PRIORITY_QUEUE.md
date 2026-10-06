@@ -135,6 +135,21 @@ Reference pixels remain outside the repository pending provenance review.
 
 ## UP-239 — Academy creature portrait backgrounds
 
+Four-portrait source checkpoint, 2026-10-05: both Golem masks pass root native/8×
+composition review provisionally and use the existing original-pixel-preserving
+compositor. Internal ironGolem/stoneGolem IDs remain unchanged despite their
+historically reversed display names. Three Python checks, four-portrait runtime
+export validation and all eight draft matte reductions pass. The native fixture
+initially segfaulted intermittently; GDB and ten unchanged repeats passed without
+a backtrace. Review found its missing production shutdown contract, so it now
+drains asynchronous scaling before clearing ENGINE, including cleanup. The rebuilt
+fixture passes ten consecutive runs at scales1–4, zero skips, with async scaling
+and all pixel/alias assertions retained. The crash cause is not conclusively
+established; details and separate scaler coupling are in NH_RELEASE_FAILURES.md.
+Four of fourteen large portraits are integrated in source; ten remain unfinished.
+Mage/Arch Mage corrected masks await native approval; Genie masters are drafts.
+Playable delivery is still the two-Gremlin e48e04550 snapshot, not these new assets.
+
 Status: In progress, 2026-10-05. User screenshot `NaFHGAy.png` shows Gremlin/Gargoyle
 army portraits retaining the snowy Tower backdrop beside Academy's new desert
 town art. Correct the shared Academy creature portrait backgrounds, covering

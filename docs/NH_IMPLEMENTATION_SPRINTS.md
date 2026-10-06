@@ -1,5 +1,15 @@
 # New Horizons implementation sprints
 
+Latest source checkpoint, 2026-10-05: UP239 now integrates four of fourteen large
+portraits (Gremlins and Golems), all Provisional. Three Python checks and pinned
+exports pass; rebuilt native fixture passes ten consecutive scale1–4 runs after
+adopting production's async-drain-before-reset contract. Initial intermittent
+segfault and unconfirmed cause remain recorded in the failure ledger; no broad
+integration suite or host GUI run. Ten portraits remain unfinished; next is native
+review of corrected Mage/Arch Mage masks, then runtime registration if accepted.
+The launcher remains on validated e48e04550 (two portraits); source validation
+is not playable delivery. Perks225/310 and combat identities61/67 are unchanged.
+
 Current checkpoint, 2026-10-05: the committed `a3487aacf` candidate has been
 built, checked headlessly and promoted to the existing Linux launcher, including
 UP240's reviewed weathered Academy map bodies. Prior snapshots are retained;
