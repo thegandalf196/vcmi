@@ -13394,6 +13394,23 @@ migration with implementation completion.
 
 Status: Open; prior isolated passes do not close the reported match regression.
 
+2026-10-05 focused diagnostic refresh: the three registered
+`NewHorizonsLeadershipAdmissionTest.AcceptedWanderingFollowers*` native cases
+pass with zero skips (2.07 seconds), using a cloned private New Horizons test
+profile. The current single-remainder case directly exercises the accepted
+Followers offer, the resulting garrison query and an authoritative
+`ArrangeStacks` transfer into an empty hero slot. It verifies that the query
+permits the exchange, the player remains active, `PackageApplied.result` is
+true, creature counts are conserved and no Leadership complaint appears.
+The earlier single-remainder failure below remains historical evidence; this
+narrow current path is now covered and passing. Its original failure cause
+has not been established. Independent read-only source review confirms that
+the recent last-stack restriction does not apply to `CGCreature`, whose
+`needsLastStack()` is false. No gameplay code changed for this refresh.
+This does not explain or close the reported 45,829 ms turn, the unrelated
+AI-smoke Leadership rejection or the unattributed signal-11 run. Those still
+require their own reproduction and evidence; the entry remains open.
+
 2026-09-28 unrelated fresh-profile `All for One` smoke of the current
 unpromoted combined-source build reached 24 turn starts in 25 seconds but
 logged one authoritative Leadership-limit rejection during an AI battle:
