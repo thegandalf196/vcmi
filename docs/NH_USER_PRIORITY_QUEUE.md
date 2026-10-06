@@ -11,7 +11,7 @@ entries and their validation/delivery evidence.
 
 ## UP-243 — Required Sylvan Luck combat-state readback
 
-Status: Verified (delivery pending), 2026-10-06. The canonical Faction Skill UI clause requires
+Status: Verified, 2026-10-06 (Linux delivered; rendered acceptance pending). The canonical Faction Skill UI clause requires
 Sylvan Luck's temporary Luck effects in statuses/tooltips. The synchronized
 SylvanLuckState already supplies per-stack Luck gifts and Forest's Favor speed,
 but the client has no readback consumer. Extend the existing stack status/help
@@ -40,16 +40,24 @@ execution remain Phase2; pure tests do not certify those paths. This closes the
 demonstrated temporary Luck/speed readback gap, not whole faction certification
 or a new spell/perk identity.
 
+Committed/pushed as `3eda8ac03`; exact committed Linux client rebuilt with12
+jobs, frozen and independently checksum/smoke verified before promotion.
+UP233 records the delivered snapshot and limits. Windows batch37429818459 is
+live on the same source; no successful Windows package is yet claimed.
+
 ## UP-242 — Required town-building training-state feedback
 
 Source delivery checkpoint: weekly feedback committed/pushed as `4a9782c63`,
 with required author/committer identity and verified origin branch. Windows
-notice/source-only preflight37427380065 is confirmed in_progress on exact
+notice/source-only preflight37427380065 succeeded on exact
 `4a9782c63ece01d7f64109aa101b1357ea5ec09d`:
-https://github.com/thegandalf196/vcmi/actions/runs/37427380065 . Poll this handle;
-do not duplicate dispatch. It is not a full compile/package run. Once successful,
-dispatch the full Windows batch build on the current committed branch. No
-Windows artifact or Linux playable promotion is claimed by this checkpoint.
+https://github.com/thegandalf196/vcmi/actions/runs/37427380065 . Full Windows
+compile/package batch37429818459 is confirmed in_progress on
+`3eda8ac03791dcc627bf8cc96839249a4e76d5ee`, including the Sylvan readback:
+https://github.com/thegandalf196/vcmi/actions/runs/37429818459 . Poll this exact
+handle; do not duplicate dispatch. No new Windows artifact is claimed until
+the game-producing steps and uploaded payload are inspected. Linux delivery
+is tracked separately; source-only preflight is not a game build.
 
 Weekly Reservoir feedback verified,2026-10-06: existing hover/help now reads
 the building-global VISIT_ONCE state and shows authored available/used weekly
@@ -555,6 +563,23 @@ No graphical acceptance or launcher promotion occurred. Existing snapshot
 6e1e8ce3 remains the default; unfinished UP-232/UP-004 source stays separate.
 
 ## UP-233 — Bring the Linux launcher executable up to date
+
+Latest Linux delivery,2026-10-06: exact committed source
+`3eda8ac03791dcc627bf8cc96839249a4e76d5ee` rebuilt with12 jobs and frozen as
+`a36a456b06bb4991978768107a6539258b4f419794306c714f42bc1c8a5c5f4f`.
+Independent verification checks all2277 payload files and explicit candidate
+launcher paths. A bounded20-second dummy-SDL headless run loads content,
+initializes All for One and progresses AI through day5; timeout124 is expected,
+with no residual client/launcher or runtime tree. No crash, assertion, request
+rejection or ammo-overuse diagnostic appears in this run. Namespace/default-
+positiveness and NK allocation warnings remain recorded integration findings.
+Promotion and subsequent checksum resolve pass; the unchanged Linux play script
+selects this candidate and retains prior `bad986b13` for rollback. No snapshots,
+saves or user profiles were removed. Recent committed functional changes are
+delivered, not a hall-roof correction or rendered UI acceptance. Receipts:
+ignored `build/nh-sylvan-readback.M9yNqddv/`. Windows preflight37427380065 succeeds;
+full compile/package37429818459 remains live on the same source. Monitor that
+handle rather than dispatching duplicates. Older checkpoints below are history.
 
 Cross-platform delivery refresh: latest successful full Windows run
 `37348640988` is now terminal-success on `0e645f79b`, older than the Academy
