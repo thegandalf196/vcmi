@@ -10144,7 +10144,23 @@ No GUI, snapshot or launcher-profile promotion.
 
 ## UP-046 — Elemental Rebirth foundational effects
 
-Next bounded prerequisite, 2026-10-05: independent map confirms that the first
+Original-output HP prerequisite accepted, 2026-10-06: runtime, ADD transport,
+versioned binary metadata and detached AI now preserve the exact first-output
+HP independently of wounds and the source stack's battle-start basis. Full
+client/native build passes796/796 with12 jobs; fixture increments pass3/3.
+Root's repaired focused run passes25/25 in6.413s, zero skips (17 runtime,
+two perk-rule and six AI cases). XML/log are
+`UP046-original-hp-native-repaired` under ignored build testing evidence;
+binary SHA-256 `e0b93eb769cbc21bcd359a2262861603bb46a9a9590bca0bf026210d1c48069f`.
+Independent review's older-reader mismatch is corrected. The injury test's
+source count is17 so a nonlethal hit is possible; production numbers are
+unchanged. Retain the initial24/25 valid-profile receipt as fixture-failure
+evidence. The earlier wrong-profile attempt was overwritten accidentally and
+is not acceptance evidence. No new perk is activated or counted, no GUI is run
+and no snapshot is promoted. Chain/Phoenix composition and full combat save/
+resume remain separate design/integration gates.
+
+In-progress prerequisite, 2026-10-05: independent map confirms that the first
 Rebirth output's exact `SpawnHealth.targetAggregateHP` is discarded after ADD.
 Rounded full creature capacity and later current HP cannot recover the canonical
 "original HP" required by Rebirth Chain. Preserve a distinct immutable
@@ -10155,7 +10171,18 @@ Focused acceptance must cover exact non-divisible output, later damage,
 packet/save round trips, legacy defaults, older-writer rejection and detached
 parity. A positive value identifies the first-generation output for this
 prerequisite; do not activate Chain, add secondary-spawn inheritance, or decide
-Phoenix/Swift interactions here. No implementation or coverage credit yet.
+Phoenix/Swift interactions here. Runtime/state/server-fixture and detached-AI/
+AI-fixture ownership are assigned separately. Focused validation and review
+must precede source acceptance; no perk activation or coverage credit yet.
+
+Frozen source checkpoint: runtime/transport and AI metadata paths are present;
+client/native build passes796/796 with12 jobs in `UP046-original-hp-build.log`.
+Independent review's fixture-only correction is applied: the legacy
+CMemorySerializer reader now uses the prior writer's explicit PREEMPTIVE_STRIKE
+version, not CURRENT. The repaired test target passes3/3. Run the focused suites
+with the separate
+`UP046-native.KKEDJdV9` New Horizons-enabled XDG profile. Do not claim source
+acceptance from a stale binary, skipped tests, or the in-progress build.
 
 Continuation2026-10-05: clean204227394, previous three-perk cycle is progress.
 Full Windows37263037998 remains confirmed live on45f659b7c (toolset setup).

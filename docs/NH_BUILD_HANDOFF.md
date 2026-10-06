@@ -1,11 +1,22 @@
 # New Horizons Linux build handoff
 
+## 2026-10-06 Rebirth original-output HP source gate
+
+Full client/native build passes796 steps with12 jobs. Fixture corrections
+each rebuild3 steps; focused native acceptance passes25/25 in6.413s with zero
+skips, using the separate New Horizons-enabled UP046 XDG profile. Logs/XML
+remain under ignored build testing outputs (`UP046-original-hp-*`). This
+verifies immutable first-output HP metadata and AI parity, not completed
+Rebirth Chain or full combat save/resume. No GUI or snapshot promotion.
+
 ## Current Windows checkpoint — Academy renderer and portraits
 
 Successor: source `975c6f011` contains the reviewed libiconv cache fallback.
 All 92 packaging checks pass with zero skips. Notice run `37405378013` is
 terminal-success at that exact source. Full Windows run `37405475795` is
 confirmed in progress; monitor that run before retrying or claiming delivery.
+Latest observation: source-cache/preflight gates pass and client compilation
+is active. This establishes the mirror repair's runner path, not package success.
 Linux remains unchanged. The older failed checkpoint below is retained.
 
 Exact source: `9c7c4880f00eaaeb722abdd3ea034025af81c241`.
