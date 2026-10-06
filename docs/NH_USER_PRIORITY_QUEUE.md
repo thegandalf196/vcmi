@@ -18,6 +18,11 @@ and slightly pixelated native battle treatment. Avoid glossy modern rendering.
 Use HoMM3 Art, retain earlier drafts, show native and enlarged revision before
 expanding its full animation family. Do not claim the static preview as complete.
 
+Draft checkpoint: v2 master, exact prompt and mechanical 64x60/4x previews
+are retained in `assets/new-horizons/creatures/cabir/v2/`. The native comparison
+was shown to the user, with v1 left and v2 right. Darker/coarser treatment is
+provisional; no animations or runtime bindings were replaced by this draft.
+
 ## UP-252 — Gargoyle Academy portrait backgrounds
 
 Status: In progress,2026-10-06. User still sees missing Academy backgrounds on Gargoyles;
@@ -48,6 +53,12 @@ native test targets build. The routing guard passes, and four focused native
 Leadership merge/empty-slot/cross-hero/legacy tests pass with zero skips.
 Independent review found no blocking defect. This is source/behavioral evidence,
 not an observed rendered replay of the user's two-click sequence.
+
+Linux delivery: commit `f2a6f3c9f` is built and selected by the normal play
+script in immutable snapshot `d5b344341f75675c41b07d8a5b713591113cca106f6de4733d477e7e99112fd4`.
+A private dummy-SDL, 20-second headless smoke loaded the map and advanced AI
+turns without a recorded crash or Leadership rejection; timeout was deliberate.
+This does not replace manual verification of the reported click sequence.
 
 User reports three Leadership-limit errors: twice
 17 creatures at50 each, then6 at140 each, hero capacity875. The current Cabir
