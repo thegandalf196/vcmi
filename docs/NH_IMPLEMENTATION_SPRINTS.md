@@ -1,13 +1,33 @@
 # New Horizons implementation sprints
 
-Latest source checkpoint: UP239 now integrates eight of fourteen large portraits,
+Latest playable checkpoint: source `6e600fc89` is committed, pushed, built and
+promoted. The script selects verified snapshot
+`bed369d0736cdef3ec6072b7e6ba1e62c859f9e75ca27507dd4ebc0233b927fa` containing
+ten portraits. Focused native checks and bounded headless map/AI run pass;
+ammo-overuse is still deferred. Next portrait slice: integrate approved Giant,
+correct/classify Titan holes, revise rejected Gargoyles. No roof repair claimed.
+Older delivery statements below describe their historical checkpoints.
+
+Latest source checkpoint, 2026-10-05: UP239 integrates ten of fourteen large
+portraits. Naga (core ID38/frame40) and Naga Queen (ID39/frame41) are registered
+through the compositor; Queen uses the provisionally accepted v2 matte
+(`aa282c71f59b720ccc2604e81b3bc1527b8e58b7ab60403eee9fb28eb9f64c30`) and
+preserves its prior master/mask. Native `nhAcademyBuiltIconRuntimeTest` passes
+all ten at scales1–4 with zero skips in `build/new-horizons-linux/Testing/Temporary/LastTest.log`;
+client and fixture builds passed in the prior cycle. Four portraits remain
+unintegrated: Gargoyle drafts are rejected, Giant is provisional but unregistered,
+and Titan remains unapproved pending anatomy review. A mechanical matte check is
+not approval. No gameplay identity credit or newer playable portrait promotion:
+`e48e04550` remains the two-portrait playable snapshot. UP-241's hall-roof
+correction is still open.
+
+Earlier eight-portrait checkpoint: UP239 integrated eight of fourteen large portraits,
 adding Genie and corrected Master Genie v2. Root client/native builds with twelve
 jobs succeed; actual pixel/alias fixture passes three consecutive scale1–4 runs,
 zero skips. Three Python checks, runtime exports, twelve draft reductions and
-independent review pass. Next: integrate provisionally accepted Naga mask and
-correct Queen's internal foreground holes/lines; six portraits remain unfinished.
-No new gameplay identity credit or launcher promotion. Both old Master Genie
-sources and rejected drafts are preserved; no original colour pixels are shipped.
+independent review passed. Naga was accepted but unregistered and Queen needed
+correction at that checkpoint; those states are superseded above. No original
+colour pixels were shipped.
 
 Latest source checkpoint: UP239 now integrates six of fourteen large portraits,
 adding reviewed Mage/Arch Mage geometry through the unchanged compositor.

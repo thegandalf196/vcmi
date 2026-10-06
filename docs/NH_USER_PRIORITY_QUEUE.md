@@ -135,7 +135,31 @@ Reference pixels remain outside the repository pending provenance review.
 
 ## UP-239 — Academy creature portrait backgrounds
 
-Eight-portrait source checkpoint: Genie and corrected Master Genie v2 are now
+Latest delivery: committed/pushed source `6e600fc89` built with twelve jobs.
+Frozen snapshot `bed369d0736cdef3ec6072b7e6ba1e62c859f9e75ca27507dd4ebc0233b927fa`
+loaded content, initialized a map and ran five AI turns in a bounded headless
+check. Timeout124 was intentional; existing ammo-overuse remains deferred.
+Promotion and checksum-verified resolve succeeded. The unchanged Linux script
+now delivers ten provisional portraits; prior snapshots are retained. Four
+portraits and user aesthetic acceptance remain unfinished. No roof fix included.
+
+Ten-portrait source checkpoint, 2026-10-05: Naga (core ID38, TWCRPORT frame40)
+and Naga Queen (core ID39, frame41) now join the eight previously integrated
+portraits through the production compositor. Root provisionally accepts both
+native compositions; Queen uses native matte `mattes/nagaQueen-v2.png` (SHA256
+`aa282c71f59b720ccc2604e81b3bc1527b8e58b7ab60403eee9fb28eb9f64c30`), while
+the original Queen master and matte remain preserved. The native
+`nhAcademyBuiltIconRuntimeTest` log proves all ten portraits at scales1–4,
+PASS with zero skips; client and fixture builds passed in the prior cycle.
+Four of fourteen portraits remain outside runtime source: both Gargoyle drafts
+are rejected, Giant is provisionally accepted but not registered, and Titan is
+unapproved pending review of interior-looking holes near the hand/bolt junction
+and right beard/neck/armor. Mechanical mask checks are not art approval. No
+gameplay identity credit is due; the validated playable portrait snapshot
+remains `e48e04550` with two portraits. This checkpoint does not fix UP-241's
+painted hall roof.
+
+Earlier eight-portrait source checkpoint: Genie and corrected Master Genie v2 are now
 integrated through the same compositor, IDs36/37 and external frames38/39.
 Base Genie's plume gap/curved luminous weapon pass bounded independent anatomy
 review; Master v2 restores the six incorrectly removed clothing pixels. Two minor
