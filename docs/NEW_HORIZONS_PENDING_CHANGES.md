@@ -19,6 +19,18 @@ None.
 
 ## Integrated history
 
+### Cabir replacement — 2026-10-06 (integrated)
+
+User-approved decision: replace Academy's Gremlins and Master Gremlins with
+original Cabir and Cabir Master artwork and names, retaining the current
+creatures' gameplay initially. Integrate into the canonical Academy roster;
+do not invent new stats or abilities from the Heroes VII reference. Full
+base/upgraded battle animation sets and all creature presentation bindings are
+required, not just portraits. Original artwork must use HoMM3 Art, including
+provisional assets. Integrated into the canonical creature roster and its
+Academy presentation rule. Implementation and delivery are tracked in UP248;
+the approved standing-frame draft is not a completed runtime animation set.
+
 ### Academy visual identity — 2026-10-05 (integrated)
 
 The user supplied the Academy definitive art handoff and requested integration.

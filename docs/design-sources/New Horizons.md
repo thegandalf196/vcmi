@@ -5066,6 +5066,14 @@ Let M = Attack growth + Defense growth for the hero class. Experimental class Le
 
 Creature Leadership Requirements below are for the base creature. An upgraded form normally uses 120% of the base requirement, rounded to the nearest 10. Stack capacity remains floor(Hero Leadership / Creature Leadership Requirement). No Skill or Recruitment effect applies a percentage discount to these requirements.
 
+Academy's Gremlin and Master Gremlin presentation is replaced by original Cabir
+and Cabir Master. Initially retain the existing creatures' gameplay, upgrade
+relationship, growth and Leadership requirements; this is not a new ability or
+stat redesign. Supply complete original base/upgraded creature art and battle
+animation sets, with consistent army and recruitment portraits. Internal
+Gremlin identities may remain for map/save compatibility while displayed names
+and assets use Cabir. Provisional artwork follows the Heroes III Art workflow.
+
 |Faction|Creature line|Category|Weekly growth|Leadership|Notes|
 |---|---|---|---|---|---|
 |Castle|Pikeman|Core|14|60||
@@ -5082,7 +5090,7 @@ Creature Leadership Requirements below are for the base creature. An upgraded fo
 |Rampart|Dendroid|Elite|3|280||
 |Rampart|Unicorn|Elite|3|420||
 |Rampart|Green Dragon|Champion|1|650||
-|Tower|Gremlin|Core|16|50||
+|Tower|Cabir|Core|16|50|Cabir Master upgrade; initially retains Gremlin-line gameplay|
 |Tower|Stone Gargoyle|Core|9|80||
 |Tower|Stone Golem|Core|6|140||
 |Tower|Mage|Elite|3|300|Premium shooter|
