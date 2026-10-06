@@ -63,6 +63,23 @@ Play delivery is pending below; aesthetic approval remains a user playtest gate,
 not an inferred Final-art classification. Private native-reference sheets remain
 under ignored `build/nh-up238-validation/`.
 
+## UP-241 — Academy hall double-roof appearance
+
+Status: Open (diagnosis), 2026-10-05. User screenshot
+`https://i.imgur.com/lSvdSIZ.png` shows apparently overlapping roof planes on
+Academy's low hall building. Inspect the live hall image, underlying landscape
+and replacement-stage registration to distinguish painted geometry from two
+simultaneously rendered layers before selecting a correction. Preserve hall
+function, construction requirements and existing scene placement. Acceptance:
+evidence-backed source of the duplicate appearance and native visual comparison;
+do not claim a roof fix from registration tests alone.
+
+Root inspected `masters/town/buildings/tbtwhall.png`: the overlapping roof
+appearance is already painted into that single authored Village Hall image.
+Its live animation descriptor references one group0/frame0 PNG. Do not attribute
+this defect to duplicate rendering without separate evidence. A roof-geometry
+art correction must preserve the facade and scene registration and use HoMM3 Art.
+
 ## UP-240 — Academy adventure-map sprite style feedback
 
 Status: In progress, 2026-10-05. User explicitly approved revising the materials
