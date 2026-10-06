@@ -40,6 +40,26 @@ plus Arch Magi's No Wall Penalty. This closes the effective-bonus check, not the
 separate robe/projectile artwork or playable visual-delivery work.
 The normal Linux snapshot990be55's Tower config also contains both null
 overrides; this request does not need a new binary to change those definitions.
+2026-10-06 colour source checkpoint: Arch Mage's five procedural beam rays now
+use symmetric red RGB bands without changing their alpha, climax frame8 or
+inherited missile geometry. Focused merged-config check passes1/1; independent
+review finds no blocking source issue. Effective loaded verification and playable
+colour delivery remain pending. Base Mage uses PMAGEX.DEF; Arch Mage uses
+CAMAGE.DEF plus procedural rays. Grey robes/red staff glow and the base Mage
+projectile are not implemented. Existing affine palette filtering is insufficient
+for role-specific colours, and flattened Canvas aliases risk losing layered
+rendering. Next: confirm a selective source-palette treatment before upscaling,
+with alias cache isolation and native semantic palette review, then implement
+only confirmed robe/glow entries. Original sprites remain external/read-only.
+Native checkpoint: `nhAcademyBuiltIconRuntimeTest` rebuild succeeds; active-module
+CTest passes1/1, zero skips, in2.30s with the Cabir resource checks enabled too.
+The engine-loaded Arch Mage ray values and climax8 are checked, as are the
+ordinary Mage CMAGE/PMAGEX bindings and both shooter/melee bonuses. This is not
+a rendered beam/motion approval or a new normal Linux promotion. Independent
+review finds no blocking issue. Selective recolour must be baked into each fresh
+DEF-frame surface before its original palette is saved, with its immutable
+mapping in the shared-image cache key; late instance palette filters do not
+recolour already cached RGBA upscales. No broad integration suite was needed.
 
 ## UP-261 — Proposed recruitment and transfer Leadership demand
 

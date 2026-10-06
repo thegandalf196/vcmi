@@ -3225,6 +3225,14 @@ and damage states must remain functional rather than becoming a flattened scene.
 
 Magi and Arch Magi return to the stronger offensive role associated with Heroes II. They are intended to be premium Elite shooters: more dangerous and more expensive than Liches in focused ranged combat, while Liches retain their own area-pressure identity. Genies are correspondingly shifted downward in raw offense and toward mobility/support. These are prototype values pending the full creature-stat pass.
 
+Both Magi and Arch Magi use ordinary shooter melee penalties; neither has No
+Melee Penalty. For presentation, Magi retain their existing robe colours, while
+Arch Magi wear grey robes inspired by Heroes II. Both fire red rather than green
+magic, and the Arch Magi's staff-top glow is red. These colour changes do not
+change their other abilities, animation timing or creature identities. Retained
+original sprites remain external references; colour treatments must not require
+redistributing extracted purchaser artwork.
+
 New Horizons renames Tower's Alchemist hero class to Battle Mage. Mage and Genie dwelling levels, building-card positions, costs, prerequisites, recruitment presentation, and upgrade dependencies are swapped as one coherent town change; both creature lines remain Elite. The Library stays associated with Mage and Arch Mage growth and follows the Mage dwelling's resulting position and prerequisites rather than the old Genie slot.
 
 New Horizons Solmyr remains a Wizard and begins with Metamagic, Havoc Magic, and Stormcaller. He begins with Master Chain Lightning instead of ordinary Chain Lightning and cannot learn the ordinary version. Master Chain Lightning retains ordinary Chain Lightning's Mana cost and first-target damage, loses less damage on later jumps, and improves jump retention as Solmyr gains levels. Legacy-mode Solmyr is unchanged. This is the first authored three-starting-development profile; do not invent third starting choices for other heroes before their profiles are authored.
