@@ -9,6 +9,69 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-260 — Cache combat-row source descriptions on bonus changes
+
+Status: Verified (delivery pending),2026-10-06. Root caller audit finds the existing
+BattleStacksController::updateHoveredStacks timer reaches refreshDefendStatus
+for an unchanged hovered stack on each frame. UP257's new source descriptions
+are therefore reformatted each frame despite snapshot equality preventing
+widget reconstruction. This is an avoidable formatting cost, not reproduced
+evidence of the user's old game-lag regression. Cache the Morale/Luck source
+descriptions per panel using unit identity, existing bonus-tree version and
+current player-scoped description-callback identity. Rebuild only when those
+keys change, and gate work on saved New Horizons rules. Preserve exact shared
+numeric/status refresh, source changes at equal effective value, immunity and
+override suppression, legacy behavior and callback visibility. No new polling
+loop, global scan, state/serialization or broad UI-framework rewrite. Acceptance:
+source-format cache wiring, focused snapshot/source-change controls, client/native
+build and independent review. No rendered performance/FPS claim or identity credit.
+
+Source acceptance: a per-panel optional unit/tree-version/scoped-callback key
+guards both Bonus::Description loops, with the saved-NH gate preceding cache
+work. Exact shared numeric values still refresh independently in the existing
+hovered-frame path. No new polling loop or global scan is introduced; the
+earlier source-acceptance wording must not be read as proof that the existing
+hover refresh itself is event-only. Both-target build76103, both row guards and
+native14/14 in4.384s (zero skips) pass. The pure key case proves equality of
+unchanged keys and independent unit/version/callback changes, not actual GUI
+format-call counts. Independent review has no blocker. Source-object name or
+visibility changes without either version/callback change can leave text stale;
+record this bounded invalidation edge case for Phase2. No native FPS/rendering
+or playable delivery is claimed at this checkpoint.
+
+## UP-259 — Required compact combat Luck value and source feedback
+
+Status: Verified (delivery pending),2026-10-06. Canonical Morale/Luck UI requires exact current
+values and sources across the full range. The compact combat Luck row has no
+generic value/source help; its existing helper appears only for active Sylvan
+Luck status. Reuse that row with one composed tooltip, not overlapping hitboxes.
+Read ordinary-attack Luck from the shared battle calculation with no selected
+target and chance-only Serendipity excluded; label that context explicitly.
+Preserve separate target-dependent/chance-only explanation and existing Sylvan
+status details. Bonus descriptions must use the current player-scoped callback;
+neutral stacks must not require a hero. Suppress misleading sources for NO_LUCK,
+explain maximum-Luck overrides/caps, and refresh when value or sources change.
+Use the existing saved-NH gate, native help surface and icon; no gameplay-state,
+probability-curve, polling, action, panel or raster changes. Acceptance: localized
+production consumer, focused readback/refresh cases, shared-value guards, build,
+module drift and independent review. Rendered fit and playable delivery remain
+separate gates. No spell/perk identity credit.
+
+Source acceptance: one existing Luck-row hitbox composes localized general
+readback and existing Sylvan details. NH icon/value uses shared target-neutral
+attack Luck excluding chance-only Serendipity; legacy raw-Luck behavior remains.
+Current-player-scoped descriptions, NO_LUCK suppression, MAX_LUCK precedence
+and applicable MAXIMUM_LUCK cap explanations are preserved without copying the
+Luck curve. UP260 caches the source formatting. Client/native build76103 passes;
+the exact14-case native filter passes14/14, zero skips, including six new
+readback/key/shared-query cases, two live Sylvan context controls and the six
+previous Morale controls. Both row guards, five translation/generator tests,
+module drift and independent reviews pass. Receipts: ignored
+build/new-horizons-linux/UP259-cache-luck-native.log and .xml; runner SHA256
+151cdd1057b3479eed299e7a9b94dc077a77372c32eebbb337328810de8b0232.
+Rendered fit, actual UI refresh/privacy execution and playable delivery remain
+open; no perk/spell identity credit. Normal Linux536e86 is unchanged here.
+
 ## UP-258 — School Skill acquisition-cap descriptions
 
 Status: Verified (delivery pending), 2026-10-06. Canonical School Skill feedback must identify
@@ -5755,6 +5818,17 @@ and the pending UP-054 policy determines legal scroll learning. Do not implement
 or activate a combat-only subset; no duplicate question is issued.
 
 ## UP-166 — Estates Prospector preparation
+
+Required-feedback audit,2026-10-06: the mine tooltip requirement is genuinely
+absent, but it is not an independent UI-only task while this perk remains
+planned. There is no production Prospector trigger or saved claim marker to
+read. Land Surveyor's weekly capture marker is a different effect and must not
+be relabeled. CGMine currently lacks the hero-aware hover overload, although
+the adventure consumer passes the selected hero. After the existing Gold-scope
+decision and full mechanic implementation, expose saved weekly claim state
+through that hero-aware mine tooltip seam; do not derive it from recurring mine
+income or add polling. No duplicate blocker question, activation or identity
+credit. Magnate retains its separate UP168 ownership/stacking hold.
 
 Status: Blocked on Gold-mine scope answer (map complete),2026-10-03. The first owned mine visited
 by the hero each week grants+2 of its common resource or+1 of its rare resource,
