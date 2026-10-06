@@ -11,6 +11,27 @@ entries and their validation/delivery evidence.
 
 ## UP-242 — Required town-building training-state feedback
 
+Weekly Reservoir feedback verified,2026-10-06: existing hover/help now reads
+the building-global VISIT_ONCE state and shows authored available/used weekly
+text with or without a hero. Per-hero training readback remains unchanged.
+Client/native build passes with12 jobs; two focused actual-visit tests pass2/2
+in0.926s, zero skips/errors, including shared denial, day8 reset, unchanged
+Normal Mana and +50 Buffer. Module drift, diff and independent source/fixture
+review pass. Receipts: ignored `build/nh-reservoir-feedback.0SsOUleF/`
+(`build.log`, `native.log`, `native.xml`); runner SHA256
+`c0efaf1935fba7f17dd5cfc2e9d1e40fd4fab571aff21ceac0e7a73e26065d23`.
+No reward/reset/state model changes, polling, new artwork or playable promotion.
+Rendered hover fit and live refresh remain Phase2. Counts stay61/67 spells and
+225/310 perks; this closes required feedback rather than adding an identity.
+
+Weekly-feedback extension selected,2026-10-06: Reservoir's canonical once-per-
+week availability is missing from town hover/help. Add authored state messages
+to its existing VISIT_ONCE/reset7 configuration and read replicated global visit
+state, including when no hero is present. Preserve per-hero training feedback,
+Normal/Buffer rules, manual visit and legacy gating. Acceptance: initial/global
+availability, consumed state shared by both heroes, no-hero safety, next-week
+reset, focused native execution and build. No new state fields or polling.
+
 Status: Verified (delivery pending),2026-10-06. Canonical Unique-building UI requires hero-specific
 training state. Brotherhood's mechanic and authored visited/not-visited text
 exist, but town hover and right-click show only the building name/static help.
