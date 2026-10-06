@@ -1043,6 +1043,15 @@ No graphical acceptance or launcher promotion occurred. Existing snapshot
 
 ## UP-233 — Bring the Linux launcher executable up to date
 
+Windows counterpart,2026-10-06: exact full run37458617656 is terminal SUCCESS
+on dc5de4c483dfc1975ed83661471fbd151658129d, including the committed UP249
+ammo-forecast and UP250 saturated-merge fixes already in the normal Linux
+snapshot. Compile/staging/package/upload pass. Nonexpired downloadable artifact
+11414801242 is New-Horizons-Windows-x64-dc5de4c483dfc1975ed83661471fbd151658129d
+(993113981 bytes), created2026-10-06T12:53:54Z. Independent contents/checksum
+audit is assigned; Windows gameplay and manual defect reproduction remain
+unverified. Later offline-art/docs commits are not this package's source.
+
 Latest committed Linux delivery,2026-10-06: source
 `bea86a2c3e8a70c72fecb711b61183aef1d0680e` rebuilds with12 jobs and freezes as
 `c172340f050ef3b4b09566f3b508ee335563f39c4bcb8d6321f127b7f2ed80d5`.
