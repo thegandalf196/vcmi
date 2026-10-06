@@ -319,6 +319,28 @@ many holders/long translated names remains unverified; no GUI or promotion.
 
 ## UP-253 — Cabir coarser Heroes III visual treatment
 
+Linux development delivery,2026-10-06: normal `play-new-horizons-linux.sh`
+now selects snapshot30bc6ea4591b67c6103f59d1d6e20cdbfcd06cece2655ea904f44fd06039a152,
+built from committed360b91d06 with12 jobs. Its2,352-file payload includes all
+committed Cabir mechanics, original portraits, battle/map/encounter resources
+and UP261 Leadership readback. Client SHA256:
+eedbee0458681db94ce8655574d40a6666deee8e3484a1daa3862990cdc2d072;
+library SHA256:6b2c413b016dc778a9cd0c246338c880906195bf9b87e0bcff187fda5dede56c.
+Candidate/source byte parity and independent promotion review pass. Focused
+mechanics13/13 pass with zero skips in3.579s; native resource fixture1/1 passes
+in2.41s after rebuilding. An explicit-candidate true-headless20s smoke reaches
+red's day8 without crash, ammo-overuse or rejected gameplay requests; timeout124
+is intentional termination, not completed-game acceptance. Owned process/runtime
+are gone and the isolated profile lock is released. Initial overlapping-profile
+attempt is rejected before client execution; corrected profile is outside inputs.
+Normal launcher --verify-only and checksummed promotion pass; previous990be55
+is retained. Gait, projectile origins, rendered interaction and user artwork
+approval remain unverified, so this is development delivery, not Final art or
+whole-creature graphical acceptance. Four known Repair-schema type warnings,
+Shield of Chaos neutral default and redundant namespace diagnostic remain
+tracked for Phase2. Receipts: ignored UP253-cabir-delivery-native.log/XML and
+nh-cabir-candidate-smoke.SvbGK0/candidate-headless.log under build/.
+
 Map source/resource checkpoint,2026-10-06: both forms now use original v3
 64x64 four-frame map animations and separate left/right encounter images.
 Legacy AVWgrem0/AVWgrex0 descriptor aliases reuse those four frames twice,
