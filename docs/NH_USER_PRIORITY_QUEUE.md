@@ -11,6 +11,15 @@ entries and their validation/delivery evidence.
 
 ## UP-242 — Required town-building training-state feedback
 
+Source delivery checkpoint: weekly feedback committed/pushed as `4a9782c63`,
+with required author/committer identity and verified origin branch. Windows
+notice/source-only preflight37427380065 is confirmed in_progress on exact
+`4a9782c63ece01d7f64109aa101b1357ea5ec09d`:
+https://github.com/thegandalf196/vcmi/actions/runs/37427380065 . Poll this handle;
+do not duplicate dispatch. It is not a full compile/package run. Once successful,
+dispatch the full Windows batch build on the current committed branch. No
+Windows artifact or Linux playable promotion is claimed by this checkpoint.
+
 Weekly Reservoir feedback verified,2026-10-06: existing hover/help now reads
 the building-global VISIT_ONCE state and shows authored available/used weekly
 text with or without a hero. Per-hero training readback remains unchanged.
