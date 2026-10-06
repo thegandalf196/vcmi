@@ -1,5 +1,18 @@
 # New Horizons Linux build handoff
 
+## 2026-10-06 Astronomy Tower first-use correction — source/native verified
+
+The37-row town audit identifies a missing immediate construction forecast.
+NewStructures now carries an optional authoritative preview, applied before
+the existing client building refresh. No daily state is advanced. Day-zero
+initialization preserves a previously authored preview. The client build passes
+321 steps with12 jobs; repaired test-target increment passes100 steps. Focused
+native acceptance passes7/7 in0.919s with zero skips/errors/disabled using the
+isolated NH profile. Actual forced construction, forecast consumption and
+matching dwelling growth pass. Source review finds no remaining blocker.
+Logs/XML remain under ignored `astronomy-construction-*` outputs. Graphical
+acceptance and playable delivery remain pending; no launcher snapshot changed.
+
 ## 2026-10-06 Rebirth original-output HP source gate
 
 Full client/native build passes796 steps with12 jobs. Fixture corrections
@@ -14,9 +27,11 @@ Rebirth Chain or full combat save/resume. No GUI or snapshot promotion.
 Successor: source `975c6f011` contains the reviewed libiconv cache fallback.
 All 92 packaging checks pass with zero skips. Notice run `37405378013` is
 terminal-success at that exact source. Full Windows run `37405475795` is
-confirmed in progress; monitor that run before retrying or claiming delivery.
-Latest observation: source-cache/preflight gates pass and client compilation
-is active. This establishes the mirror repair's runner path, not package success.
+terminal-success. Its unexpired artifact `11389625197` is named
+`New-Horizons-Windows-x64-975c6f011445049690b39c501128684a0cc64e5b`.
+Compilation and packaging/PE closure/license/source gates pass. This proves
+the workflow/package checkpoint, not Windows gameplay or a separate release
+publication. This source excludes the later Rebirth and Astronomy corrections.
 Linux remains unchanged. The older failed checkpoint below is retained.
 
 Exact source: `9c7c4880f00eaaeb722abdd3ea034025af81c241`.
