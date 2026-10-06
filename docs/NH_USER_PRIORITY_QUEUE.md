@@ -9,6 +9,62 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-258 — School Skill acquisition-cap descriptions
+
+Status: Verified (delivery pending), 2026-10-06. Canonical School Skill feedback must identify
+the maximum spell level currently unlocked for ordinary acquisition. All six
+live School Skill rank descriptions instead retain the obsolete Wisdom access
+wording and omit the cap. Correct Basic/Advanced/Expert descriptions to Levels
+3/4/5, independently of permission to cast already-inscribed spells. Preserve
+each existing school coefficient/effect and all acquisition/casting behavior.
+The shared descriptions feed Hero-screen skill help, level-up rank choices and
+teacher Skill components; no new panel or art is needed. Acceptance: all18
+rank texts match the canonical rules, entity/module data tests and drift check,
+client content-loading/build gate and independent review. Perk-browser header
+and rendered presentation remain separately scoped; no rank identity credit.
+
+Source acceptance: all18 descriptions now identify the ordinary Level3/4/5
+acquisition caps and independent casting of legitimately inscribed spells.
+Existing coefficients/effects remain exact. Two focused School test methods,
+five mastery-data translation/generator tests and generated-module drift pass.
+Both-target build39366 exits0; the isolated six-case combat run loads current
+content with zero skips. Independent review finds no blocker. This is not a
+rendered teacher/level-up/Hero-screen acceptance; normal Linux536e86 remains
+selected and does not contain this source change. Six unrelated stale non-School
+test subcases are recorded in NH_RELEASE_FAILURES for Phase2, not hidden.
+
+## UP-257 — Required compact combat Morale value and floor-source feedback
+
+Status: Verified (delivery pending), 2026-10-06. Canonical Morale/Luck UI requires exact current
+values and sources, and real/effective Morale when a negative value is treated
+as zero. StackInfoBasicPanel currently shows only the legacy Morale icon using
+battleGetMorale; there is no generic numeric/source help on its Morale row.
+Reuse that existing row and native tooltip surface; no new panel or art.
+Expose shared pre-floor and effective Morale rather than using stack.moraleVal
+as a substitute, since Standard Bearer, Steadfast and first-round modifiers
+also affect combat Morale. Preserve Commanding Presence/Fury Unbound behavior,
+privacy, Luck/Sylvan help and existing status refresh. No polling or saved state.
+Acceptance: production shared calculation/readback, existing-row integration,
+focused negative/floored/no-floor and modifier cases, client/native build and
+independent review. Rendered fit and playable delivery remain separate gates.
+No spell/perk identity credit is implied by this required UI completion.
+
+Source acceptance: exported shared snapshot preserves existing effective-Morale
+rules while exposing calculated pre-floor value, actual combat contributions
+and applied floor reason. Saved-NH-gated existing-row help uses player-scoped
+source descriptions, suppresses immune sources, and refreshes on full snapshot
+changes even when effective Morale stays0. Both-target retry39366 exits0 after
+the direct-header integration repair recorded in NH_RELEASE_FAILURES. The exact
+six-case native filter passes6/6 in3.639s, zero skips: Commanding Presence and
+Fury lifecycles, real combat Steadfast/Standard Bearer/opening-round modifiers,
+and three pure readback cases. Source guard, translation/module checks and
+independent reviews pass. Receipts: ignored build/new-horizons-linux/
+UP257-morale-native.log and .xml. Native runner SHA256:
+3e9ac4e9f9ea6d5ceb5d73de620b50bb842340ad4fa0faaa1ddcd7073b6f0fd0.
+Rendered fit, executed UI refresh/privacy boundaries and ordinary pointer
+acceptance remain Phase2 gates. No state/serialization/polling changes or
+playable promotion; normal Linux536e86 remains selected.
+
 ## UP-256 — Candidate headless battle-side error and shutdown diagnosis
 
 Status: Open (spectator diagnosis deferred to Phase 2; candidate delivery verified),
