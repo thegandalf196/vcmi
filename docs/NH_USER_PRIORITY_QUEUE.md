@@ -135,6 +135,18 @@ Reference pixels remain outside the repository pending provenance review.
 
 ## UP-239 — Academy creature portrait backgrounds
 
+Twelve-portrait source checkpoint: Titan v3 is provisionally accepted after
+root/independent native review found intact anatomy and no obvious retained
+building. The five isolated boundary uncertainties are deferred aesthetic
+polish, not a Phase1 coverage blocker. Core ID41/frame43 now uses native mask
+`titan-v3.png`, SHA256
+`df23c30a56d0f08f7b24e16d05d6de2e55acedfa75bcbfe3143577f5fc3b8092`.
+Client/fixture build and actual twelve-portrait scale1–4 consumer pass, zero
+skips; exporter, three Python checks and independent source review pass.
+Both Gargoyles remain unregistered: Stone v3 leaves the incorrect left building;
+Obsidian v2 retains it and v3 invents shapes/internal holes. Preserve those
+failed masters/prompts, do not install them. Source12/14, promoted playable10/14.
+
 Eleven-portrait source checkpoint: Giant ID40/frame42 uses its approved native
 matte through the existing compositor. Client and fixture build with twelve
 jobs; actual eleven-portrait scale1–4 consumer passes (1/1, zero skips), with

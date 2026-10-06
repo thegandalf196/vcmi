@@ -1,5 +1,13 @@
 # New Horizons implementation sprints
 
+Latest source checkpoint: Titan v3 integrated as portrait12, provisionally
+accepted with five small boundary uncertainties deferred. Client/fixture build,
+actual scale1–4 consumer (zero skips), three Python checks, exporter and source
+review pass. Stone v3 and Obsidian v2/v3 corrections fail material geometry
+requirements and remain out of runtime. Next: change Gargoyle correction
+strategy rather than repeat the same failed prompts, then deliver the family.
+Playable remains10/14; gameplay counts unchanged.
+
 Bounded next-functional selection audit: Adventure effects, artifacts,
 town/building mechanics, recruitment and minimum AI hooks did not expose an
 unambiguous missing source path. Skeleton Transformer HP conversion still awaits
