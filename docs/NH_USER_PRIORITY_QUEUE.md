@@ -33,6 +33,14 @@ may be committed. Cabir portraits will need their own original future treatment.
 Acceptance: clean native composite with Academy background, correct source
 bindings and playable delivery, using HoMM3 Art for mask revisions.
 
+Mask checkpoint: first new v3 geometry drafts were rejected in native composite
+review because they removed dark facial/stone pixels and exposed the desert
+through eyes and mouth. They are not registered. A targeted mask correction
+must retain dark foreground as well as remove the old architectural fringe.
+The targeted second pass also fails native review: it retains some facial
+features but still removes actual wing/body pixels. Both passes are withheld;
+UP252 remains unfinished, with no Gargoyle runtime registration changed.
+
 ## UP-251 — Academy Golem portrait pale outline
 
 Status: Open,2026-10-06. User reports ugly white/pale pixels around a Golem
@@ -42,6 +50,12 @@ label reversal. Correct only the matte/outline defect coherently with HoMM3 Art;
 preserve creature identity, geometry and background. Do not globally erase
 white metal highlights or repaint unrelated portraits. Acceptance: native-size
 before/after inspection, reproducible correct binding and playable delivery.
+
+Revision checkpoint: generated Golem v2 geometry masks were reviewed and
+withheld. Frame34 still retains a pale contour; frame35 trims genuine dark
+forearm detail. Masters, exact prompts, binary exports and the rejection note
+are retained under portrait-revisions/v1. Runtime masks remain unchanged;
+these unsuccessful candidates do not close UP251.
 
 ## UP-250 — Rejected army transfer with Leadership 875
 
