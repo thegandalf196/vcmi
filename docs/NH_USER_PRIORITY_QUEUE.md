@@ -9,6 +9,38 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-261 — Proposed recruitment and transfer Leadership demand
+
+Status: Verified (delivery/rendered acceptance pending),2026-10-06. Canonical Leadership UI explicitly requires
+additional Leadership required by the proposed stack, alongside receiving
+per-slot capacity and resulting legal maximum. Existing recruitment and army
+hover consumers show per-creature requirement/count limits but omit aggregate
+added demand. Reuse shared receiving-hero capacity and actual proposal counts;
+show added Leadership and any excess above that slot's capacity without implying
+an army-wide pooled budget. Preserve partial transfers, validation, source-last-
+stack rules, recruitment cost and all authoritative state. Use localized native
+help rather than another panel or new raster. Include the explicit split-dialog
+proposal through existing owner-marker help, without intercepting count inputs.
+Whole-source hover is a request, not guaranteed movement: authoritative whole
+transfers can be capped, whereas numeric split requests remain exact. Acceptance: correct receiving
+hero/proposal wiring, overflow-safe readback controls, client build, focused
+validation, module drift and independent review. Rendered fit and delivery are
+separate gates; no perk/spell identity credit.
+
+Source acceptance: shared overflow-safe readback uses the receiving hero's
+existing per-slot capacity. Recruitment slider/selection and split owner-marker
+help refresh on proposal changes; hover distinguishes requested and legal count.
+Help clears/disables for ineligible destinations. Existing limits and commands
+are unchanged. Retry55262 builds client/native after the recorded lambda-capture
+repair. Five new pure readback cases and two adjacent authoritative admission
+controls pass7/7 in947ms, zero skips. The new guard, three adjacent routing/
+split guards, five translation/generator tests and module drift pass; independent
+review has no blocker. Receipts: ignored build/new-horizons-linux/
+UP261-leadership-readback-native.log and .xml; runner SHA256
+50b3ae64e3d63dd7092dcc605a8e50b296a2cf9e5e05d898610ff1000d899aad.
+Rendered fit/status-bar truncation, actual input/privacy behavior and delivery
+remain open. Normal Linux990be55 and Windows37483347788 do not include UP261.
+
 ## UP-260 — Cache combat-row source descriptions on bonus changes
 
 Playable checkpoint, 2026-10-06: UP257–UP260 are delivered in the normal Linux
