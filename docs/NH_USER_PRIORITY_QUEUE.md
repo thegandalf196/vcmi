@@ -170,6 +170,16 @@ The test-only C-string/bool identifier-overload mistake was corrected explicitly
 not worked around by changing production identifiers. Build/delivery and user
 visual approval remain separate; twelve portraits are still missing.
 
+Playable checkpoint: committed/pushed game revision `e48e04550` built successfully
+with twelve jobs. Root repeated the native fixture after final linking (1/1,
+zero skips) and validated the exact frozen candidate headlessly: content loaded,
+map initialized and successive AI turns ran before the intentional timeout.
+Promotion and subsequent resolve succeeded; the unchanged Linux script now
+selects that candidate. Prior snapshots are retained. This delivers two of
+fourteen large portraits, not the rejected Gargoyle drafts or hall-roof repair.
+User visual acceptance remains pending. Private receipt/logs are retained in
+ignored `build/nh-up239-validation/`.
+
 Read-only diagnosis: army slots use static `CPRSMALL` (32×32) or `TWCRPORT`
 (58×64) creature icons with separately overlaid counts. Gremlin/Gargoyle lack
 `graphics.iconSmall/iconLarge` overrides, so their snowy backdrops remain baked
