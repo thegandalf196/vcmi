@@ -9,6 +9,36 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-242 — Required town-building training-state feedback
+
+Status: Verified (delivery pending),2026-10-06. Canonical Unique-building UI requires hero-specific
+training state. Brotherhood's mechanic and authored visited/not-visited text
+exist, but town hover and right-click show only the building name/static help.
+Connect the existing replicated rewardable state and current visiting-or-garrison
+hero to those consumers; preserve Astronomy's preview and legacy behavior.
+Use authored messages, not new gameplay rules or decorative art. Other rewardable
+buildings may share the same generic feedback where their configuration supplies
+it. Acceptance: available-to-trained state and second-hero independence, no-hero
+safety, client build, focused source wiring and native controls. Graphical fit
+and playable delivery remain separate. No credit before implementation.
+
+Source/native checkpoint: built New Horizons rewardable buildings with authored
+VISIT_HERO messages now append current visiting-hero (else garrison-hero) state
+to hover and right-click help. No hero/message yields no addition; Astronomy's
+preview and legacy behavior remain intact. The native fixture uses actual
+Brotherhood visits by two heroes, verifies independent available/trained text,
+null-hero safety and each +100 Leadership reward. The first run exposed the
+engine's notVisitedText/notVisitedTooltip registration mismatch; canonical
+registration is repaired while retaining the historical alias and @reference
+behavior. Repaired client/native build with12 jobs and7/7 focused UI/training
+cases pass in0.810s, zero skips/errors; independent source/fixture review passes.
+Receipts under ignored `build/nh-development-ui.AL3Xx2lM/` retain initial and
+repaired logs/XML. Runner SHA256
+`32c1a6e1b0e8d6d30283e08f24357007613a8c5492804c212e2859a3e4aced12`.
+Rendered hover width, live visitor/garrison switching and playable promotion
+remain separate. Arcane Reservoir's weekly feedback is not implemented by this
+per-hero training slice. No spell/perk identity count changes.
+
 ## UP-237 — Academy Town Hall construction crash
 
 Status: Verified (delivery pending), 2026-10-05. User reports building Town Hall crashes the
@@ -13339,6 +13369,30 @@ Acceptance: tests covering progression and exceptional grants, correct offers
 and class eligibility, no lost choices, and identified playable delivery.
 
 ## UP-006 — Browse all perks from a skill
+
+Tier-state source/native verified,2026-10-06: existing Hero tier cells now show
+Acquired/Available/Locked/Unavailable and remain inspectable when empty.
+Selection placement uses authored tier, not saved selection order. The read-only
+browser keeps learned distinctions and exposes eligibility and full lock reasons;
+planned entries never appear available. Shared presentation reads saved rank,
+ordered prerequisites, occupied tiers and cap without acquiring anything.
+Client/native build and6 focused eligibility cases pass (within the7-case
+UP242 repaired run); perk-browser/skill-odds guards, module drift and independent
+review pass. Receipts/runner identity are recorded in UP242. Rendered compact
+fit, translations and live callbacks remain Phase2; defensive invalid ranks
+above3 are untested/non-authoritative and cannot arise from current hero readers.
+This closes required UI, not another perk identity or playable delivery.
+
+Required tier-state extension selected,2026-10-06: canonical Hero development
+UI requires Acquired/Available/Locked states and explanations for empty perk
+tiers. CHeroWindow currently disables blank cells; the alternate HeroGrowthWindow
+status implementation is unreachable. Extend the existing three tier cells and
+read-only ten-perk browser, without opening another panel or acquiring perks.
+Use saved rank/selection/active-entry rules, including earlier-perk prerequisites;
+never call planned entries available. Bind selected perks by authored tier rather
+than selection order. Acceptance: native eligibility controls, client build,
+focused source wiring check and independent review; rendered/playable acceptance
+remains separate. Root owns integration; one client writer and one test writer.
 
 Status: Implemented (visual/input verification pending); playable delivery pending.
 
