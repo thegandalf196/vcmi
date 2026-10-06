@@ -9,6 +9,20 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-262 — Magi / Arch Magi robe and magic colour treatment
+
+Status: Open,2026-10-06. User requests Arch Magi robes grey in the spirit of
+HeroesII; Magi robes remain unchanged. Both Magi and Arch Magi projectiles change
+from green to red, and Arch Magi's green staff-top glow becomes red. Preserve
+all gameplay, identity, silhouettes, animation groups and ordinary shooter melee
+penalties. Apply coherently across relevant battle frames and presentation roles;
+use HoMM3 Art for art revisions, including drafts. Purchaser originals remain
+external/read-only: ship a lawful runtime treatment or original replacement,
+never committed extracted/recoloured purchaser sprites. Acceptance: correct
+base/upgraded bindings, native colour/motion review, resource/build checks and
+playable delivery, separately from user visual approval. Cabir completion remains
+the current explicit focus; this is next user art work, not a replacement task.
+
 ## UP-261 — Proposed recruitment and transfer Leadership demand
 
 Status: Verified (delivery/rendered acceptance pending),2026-10-06. Canonical Leadership UI explicitly requires
@@ -286,6 +300,40 @@ to read the canonical version file (currently0.15.0). Native popup fit with
 many holders/long translated names remains unverified; no GUI or promotion.
 
 ## UP-253 — Cabir coarser Heroes III visual treatment
+
+Priority update,2026-10-06: user explicitly directs focus on finishing Cabir.
+User approves manual transparency cleanup and frame alignment of generated Cabir
+art on2026-10-06. Preserve untouched masters and surviving artwork; all newly
+created poses still use HoMM3 Art. This permission is Cabir-specific.
+Finish the actual base/upgraded creature asset set and integration before ordinary
+Phase1 coverage work. Preserve current gameplay and the rougher standing design;
+do not equate another static preview with completion. Work from original generated
+poses with coherent scale/ground anchors, including movement, melee, ranged,
+hit/reaction, death and remaining required engine groups plus portrait/icon roles.
+Retain failed drafts, use HoMM3 Art even provisionally, and independently review
+native motion before runtime delivery. Existing host GUI/input hold remains.
+
+Animation checkpoint: walk-v2 candidate02 now has user-authorized faint-alpha
+cleanup and a reviewed provisional four-frame native export. Only22,851 exterior
+alpha pixels, maximum opacity10, are cleared; RGB and retained RGBA unchanged.
+The source master/hash stays intact. Independent review finds no offline blocker;
+four-row-major native450x400 frames share scale/anchor/ground baseline. Existing
+normal/static-preview delivery remains unchanged. New original melee-front,
+up/down melee, hit/brace/dying/dead, single dead, upgraded standing and front-shot
+candidates use HoMM3 Art. Real alpha inspection disproves an apparent opaque
+reaction backdrop; poses instead cross nominal grid boundaries, requiring
+silhouette separation before calibrated alignment. Keep original drafts and
+receipts; exact prompts/hashes and production scope are in Cabir v2
+ANIMATION_DRAFTS.md. No completed-creature or new gameplay identity credit.
+Pinned melee/reaction sheets now have four archival separated poses each with
+original-scale global offsets retained. Excluded pixels are faint only:
+melee18,609/maxalpha5, reactions7,473/maxalpha6. Deterministic re-export hashes
+match receipts; source masters unchanged. Focused Python discovery passes20/20
+(eight atlas, four cleanup, three separation, five static-preview methods).
+No C++/runtime change or build is implied by these offline asset tools.
+Independent separation review finds no offline commit blocker. Next: explicit
+cross-action body scale/pivots, remaining draft silhouette extraction, native
+motion review, upgraded missing action families and actual resource bindings.
 
 Status: In progress,2026-10-06. After seeing the temporary sprite preview, user finds
 the Cabir attractive but too pretty/detailed. Retain the creature design/pose
