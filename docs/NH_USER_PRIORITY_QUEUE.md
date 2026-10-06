@@ -11588,6 +11588,23 @@ playable snapshot promotion.
 
 ### UP-023 — Complete all missing Skills, perks, and spells before further art
 
+Bounded source audits,2026-10-06: Sorcery's canonical three rank clauses and ten
+active perks have production consumers and focused fixture definitions; the
+functional matrix's stale "Evidence audit required" label is corrected. Fortress
+creature conversion intentionally retains inherited special abilities, and the
+roster's shooter/spell-after-attack/flight/petrification/death-stare/poison/Hydra
+paths exist. Do not turn absent species-specific acceptance into an invented
+missing mechanic or claim the entire creature roster certified. Required
+Pre-emptive Strike interruption explanation is already supplied by its visible
+combat log; Quartermaster's log and actual scaled machine forecasts also exist.
+Extra ready/spent badges are polish, not the next demonstrated Phase1 gap.
+No runtime edit, suite rerun, new identity, GUI acceptance or promotion is claimed
+by these audits. Reality Warp's beneficiary-side and Pandemonium's counting/
+scaling holds still apply; an automatic goal continuation is not an answer.
+Next bounded check: distinguish UP062's unambiguous completed Berserk activation
+expiry from its unanswered negative-Morale skipped-activation rule. Do not
+resolve the latter implicitly or claim the whole spell complete from one clause.
+
 Combat UI checkpoint,2026-10-06: both selected slices below are source verified
 (playable/rendered acceptance pending). Ordered Chain Lightning and Master Chain
 recipient forecasts now feed cached native highlights/numbers and the existing
