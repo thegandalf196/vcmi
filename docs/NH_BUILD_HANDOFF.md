@@ -12,11 +12,14 @@ source review finds no blocking C++ portability issue. SDL3 runtime acceptance
 and actual Windows gameplay remain unverified.
 
 Cheap notice run `37403527818` succeeds on the exact source above. One full
-Windows run is dispatched and confirmed in progress (MSVC toolset installation):
+Windows run completed with failure before compilation:
 https://github.com/thegandalf196/vcmi/actions/runs/37403632207
-This is not a successful compile or downloadable package yet. Monitor this
-same run to terminal state, inspect failed steps before retrying, and verify
-game-artifact identity after success. Do not dispatch a duplicate. Always use
+The complete dependency-source preflight could not download libiconv 1.17 from
+either configured GNU endpoint after bounded connection retries. This is not
+an Academy compile failure or a downloadable package. A checksum-pinned GNU
+mirror cache seed is being implemented using the existing dav1d mechanism;
+preserve full-graph source verification and validate the repair before retrying.
+Always use
 explicit `--repo thegandalf196/vcmi` for GitHub operations: the CLI's inferred
 default repository currently resolves to upstream `vcmi/vcmi`.
 

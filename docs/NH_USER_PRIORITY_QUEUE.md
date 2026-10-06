@@ -471,10 +471,11 @@ renderer/portrait changes already delivered on Linux. Exact pushed source
 `9c7c4880f` passes 91 package preflight tests, zero skips, plus Academy/Guild/
 Tower guards (8/9/2 tests respectively); independent source review finds no
 Windows portability blocker. Notice run `37403527818` succeeds. Full Windows
-run `37403632207` is confirmed in progress on that source (MSVC toolset
-installation), not yet a compile or
-package success. Monitor the existing handle rather than dispatching a
-duplicate. Linux's current twelve-portrait snapshot is unchanged. This updates
+run `37403632207` completed with failure before compilation: both configured
+GNU endpoints timed out fetching libiconv 1.17 during complete source preflight.
+A checksum-pinned official-mirror cache seed is being repaired and independently
+reviewed before a successor dispatch. No package success is claimed.
+Linux's current twelve-portrait snapshot is unchanged. This updates
 delivery evidence, not gameplay coverage or visual acceptance.
 
 Status: Resolved for committed-source delivery, 2026-10-05. User explicitly requests updating the Linux
