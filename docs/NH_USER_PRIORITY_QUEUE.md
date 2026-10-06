@@ -11,7 +11,7 @@ entries and their validation/delivery evidence.
 
 ## UP-262 — Magi / Arch Magi robe and magic colour treatment
 
-Status: Open,2026-10-06. User requests Arch Magi robes grey in the spirit of
+Status: In progress,2026-10-06. User requests Arch Magi robes grey in the spirit of
 HeroesII; Magi robes remain unchanged. Both Magi and Arch Magi projectiles change
 from green to red, and Arch Magi's green staff-top glow becomes red. Preserve
 all gameplay, identity, silhouettes, animation groups and ordinary shooter melee
@@ -51,6 +51,31 @@ for role-specific colours, and flattened Canvas aliases risk losing layered
 rendering. Next: confirm a selective source-palette treatment before upscaling,
 with alias cache isolation and native semantic palette review, then implement
 only confirmed robe/glow entries. Original sprites remain external/read-only.
+Implementation underway: immutable frame-locator paletteRemap, fresh native
+DEF-frame palette replacement before upscaling, exact-source loading and cache
+isolation in both SDL backends. Per-frame and animation-default JSON support
+keeps creature-specific colour decisions in content. Separate native tests and
+explicit /tmp-only palette inspection are assigned with non-overlapping ownership.
+Do not bind guessed robe/staff indices; runtime infrastructure alone is not the
+finished visual request.
+Selective renderer checkpoint: both backends now parse bounded RGB palette
+maps on exact DEF-frame locators, include them in cache identity and apply them
+before upscaling. SDL2 backend/client-common/native fixture builds succeed.
+Focused native test passes1/1 with zero skips across actual1x–4x outputs,
+red/blue alias isolation, unchanged original source, native alpha/unmapped
+pixels and left/right projectile mirroring. Independent source review reports
+no blocking issue. SDL3 dependencies are unavailable locally; execution there
+is deferred, not inferred from source parity. Original palette diagnostics were
+explicitly exported only to a fresh local /tmp directory for inspection.
+Root inspected original CAMAGE, TWCRPORT Arch Mage and PMAGEX previews: burgundy
+cloth/gold trim, green battle staff glow and green projectile. Grey cloth/red
+glow and the ordinary Mage red-projectile content bindings remain open. Original
+sprite pixels are not committed, and this is not a normal Linux promotion.
+Fixture corrections: direct DEF resource lookup requires SPRITES/; VCMI's
+verticalFlip mirrors across the vertical axis (left/right), not top/bottom.
+Capture the unmapped baseline before loading remapped aliases for independent
+cache-mutation evidence. Initial in-flight-header CMake regeneration was retried
+only after all source writers froze.
 Native checkpoint: `nhAcademyBuiltIconRuntimeTest` rebuild succeeds; active-module
 CTest passes1/1, zero skips, in2.30s with the Cabir resource checks enabled too.
 The engine-loaded Arch Mage ray values and climax8 are checked, as are the
