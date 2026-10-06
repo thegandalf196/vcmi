@@ -11588,6 +11588,51 @@ playable snapshot promotion.
 
 ### UP-023 — Complete all missing Skills, perks, and spells before further art
 
+Combat UI checkpoint,2026-10-06: both selected slices below are source verified
+(playable/rendered acceptance pending). Ordered Chain Lightning and Master Chain
+recipient forecasts now feed cached native highlights/numbers and the existing
+console. Battlecraft shows its live one-use Wait bonus and Defend/Entrench values
+in the existing stack status row/help. No gameplay mutation, save field, raster
+art or new click is added. Client/native build with12 jobs passes; native filter
+passes15/15 in3.421s, zero skips/errors, comprising three presentation cases,
+seven Chain prediction/cast controls and five Battlecraft rank/lifetime/Wait
+controls. Source guards and module drift pass; independent Astra review finds
+no blocker. Counts remain61/67 combat identities and225/310 active perks.
+Receipts: ignored `build/nh-chain-ui.VHicYRM1/build.log` (initial failure: missing
+Colors include), `build-repaired.log` (pass), `native.log` and `native.xml` (pass).
+Runner SHA256: `12133b41a91f6985c6bf425ac1e412e1b289d5e4b06bdaaa196159d50a5c25c6`.
+Phase2 retains live asynchronous cache refresh, native label overlap/console fit,
+translation width and legacy Defend terminology. The adjacent old Bulwark guard
+has stale refresh/priority assertions and old round-end wording; do not report it
+as green or undo the actual next-activation lifetime to satisfy it. Overwatch's
+held movement semantics remain excluded. No launcher snapshot is promoted.
+
+Battlecraft state readback selected, 2026-10-06: the canonical required UI
+calls for visible Wait/Defend temporary bonuses, but current stack help omits
+their exact Battlecraft values. Extend the existing compact status row and
+tooltip using shared rank/reduction helpers and the live one-shot Wait predicate.
+Use player-scoped hero visibility, include the values in the existing refresh
+snapshot, preserve Bulwark/Soul Chain help and add no controls or art. Correct
+the old round-end Defend tooltip to the implemented next-normal-activation
+lifetime. Overwatch's held movement decision is not part of this slice.
+Acceptance: client/native build, focused presentation and mechanic controls,
+source-wiring guard and independent review; rendered/native input and playable
+delivery remain separate. The adjacent Bulwark source guard already fails two
+stale assertions before this edit (refresh predicate and status priority),
+retained in `build/nh-chain-ui.VHicYRM1/bulwark-baseline.log` for Phase2.
+
+Ordered Chain Lightning UI slice selected, 2026-10-06: use existing battle
+console for compact numbered per-recipient damage/kills and native battlefield
+hex highlights with matching hop numbers. No extra click, new dialog or raster
+asset is required. Compute from the ordered mechanics target and cumulative
+prefix forecasts, not pointer-sorted affected stacks or singleton estimates.
+Cache only presentation values on hover/action changes; drawing must not run
+Lua targeting or damage calculations. Invalidate when casting/action context
+or hover changes. Explicitly identify the no-chance-resistance assumption.
+Acceptance: client build, focused source-wiring guard, existing native forecast
+parity controls and independent review. Native rendered readability remains a
+separate provisional visual gate; no playable delivery is inferred.
+
 Chain Lightning coverage checkpoint, 2026-10-06: canonical ordinary damage
 retention is 100/70/50/35/25 percent across five recipients, but the shared Lua
 damage path previously used geometric halving. Runtime correction now builds
