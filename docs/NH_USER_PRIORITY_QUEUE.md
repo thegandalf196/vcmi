@@ -8727,6 +8727,24 @@ purpose-made art or playable launcher promotion. Committed and pushed as
 
 ## UP-072 — Implement Nature Elemental Convergence
 
+2026-10-06 exact-HP prerequisite audit: legacy `scripts/spells/summon.lua`
+floors health-based creature counts, but this is not a missing engine capability.
+`summonTrolls.lua` and `transfigureMatter.lua` already use effective summoned
+creature HP, ceil-count, authoritative ADD followed by a copied-state wound and
+UPDATE to retain an exact pool. Reuse that established path for Convergence;
+do not change legacy summon rounding or add a new stored health field merely
+to support this spell. Selected existing native cases pass5/5 in1.733s with
+zero skips: Troll exact pool/state transport and additive health bonus,
+Troll detached-AI/authoritative Elixir parity, and Transfigure exact pool/health
+bonus. Runner SHA256
+`c64cc7e6b9866e5cb94cb702c21d92feb5cf4765debd2be4b7e2565d4c94fa5b`.
+Receipts `convergence-prerequisite-curated-native.log/.xml` are retained in the
+ignored native validation directory. The first missing-profile attempt skipped
+all five cases and remains separately retained; it earns no acceptance credit.
+These receipts establish reusable infrastructure, not Elemental Convergence
+execution, its terrain policy or its dependent perks. No identity activation,
+coverage increase, gameplay build or playable promotion occurs in this audit.
+
 2026-10-06 selection checkpoint: after verified Castle Gate/Reservoir AI fixes,
 bounded Portal, artifact and custom-creature audits find no further unblocked
 principal omission in those areas. The highest-leverage recorded terrain ruling
