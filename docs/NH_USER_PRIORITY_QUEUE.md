@@ -11,7 +11,7 @@ entries and their validation/delivery evidence.
 
 ## UP-244 — Ordinary Hero Action sequence foundation
 
-Status: Verified (source/native; delivery pending),2026-10-06. Perfect Rhythm's principal third-action clause
+Status: Verified (source/native; Linux delivered),2026-10-06. Perfect Rhythm's principal third-action clause
 needs the last three Hero-paid Spell/Order actions, which current alternating
 readiness cannot reconstruct after expiry or repeated same-kind actions.
 Implement a small generic recent-action history inside the existing shared
@@ -42,6 +42,12 @@ and `native.xml`; runner SHA256
 Independent source/fixture review passes. Exact exception-message assertions,
 broad composition and whole-battle save support remain Phase2/separate; no
 Perfect Rhythm activation or playable promotion claimed.
+
+Source committed/pushed as `bea86a2c3` with required identity; exact committed
+client rebuilt and delivered through UP233's c172340f snapshot below. Perfect
+Rhythm's Master Synthesis question is presented again, without inferring an
+answer from its recommended selection. Counts remain225/310 perks and61/67
+combat identities; this is an accepted prerequisite, not a completed perk.
 
 ## UP-243 — Required Sylvan Luck combat-state readback
 
@@ -662,6 +668,25 @@ No graphical acceptance or launcher promotion occurred. Existing snapshot
 6e1e8ce3 remains the default; unfinished UP-232/UP-004 source stays separate.
 
 ## UP-233 — Bring the Linux launcher executable up to date
+
+Latest committed Linux delivery,2026-10-06: source
+`bea86a2c3e8a70c72fecb711b61183aef1d0680e` rebuilds with12 jobs and freezes as
+`c172340f050ef3b4b09566f3b508ee335563f39c4bcb8d6321f127b7f2ed80d5`.
+Independent before/after checks verify all2277 files and exact executable/library
+version stamps. The pinned Academy hall frame/alias/masks remain present.
+A fresh-profile20-second dummy-SDL All for One smoke reaches AI day7 and exits
+with expected timeout124; owned processes/runtime directory are gone and the
+profile lock is released. Root separately confirms the owned client is absent.
+No crash/assertion/server-rejection marker is observed. Three nonfatal
+DISPEL.transformTarget invalid-spell diagnostics are recorded for Phase2 in
+NH_RELEASE_FAILURES; absent ammunition diagnostics in this run do not prove
+their repair. No graphical/full-game acceptance is inferred.
+Promotion and subsequent resolver verification pass; the unchanged normal
+script selects c172340f. Prior3b7e155a and older snapshots/profiles remain intact.
+Receipts: ignored `build/nh-action-sequence.QSR769/candidate/run.4pT5lm/`.
+Windows37429818459 completed successfully on older3eda8ac03. The new full
+Windows37437598557 is confirmed live on exactbea86a2c3; poll that handle rather
+than duplicate dispatch. Its success/artifact is not yet claimed.
 
 Latest Linux delivery,2026-10-06: exact committed source
 `3eda8ac03791dcc627bf8cc96839249a4e76d5ee` rebuilt with12 jobs and frozen as

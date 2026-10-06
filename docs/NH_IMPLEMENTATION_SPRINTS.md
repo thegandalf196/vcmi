@@ -1,5 +1,17 @@
 # New Horizons implementation sprints
 
+Latest checkpoint: UP244's accepted prerequisite is committed/pushed asbea86a2c3.
+Exact committed Linux source builds, freezes and passes independent2277-file
+verification plus bounded headless AI progression through day7; the normal script
+now selects c172340f. Three nonfatal Dispel preview diagnostics stay Phase2, not
+silently called clean. Windows37429818459 succeeded on older3eda; full successor
+37437598557 is live onbea and must be monitored without duplicate dispatch.
+Next selection: bounded principal-path audits of artifacts/specialties, required
+hero-development UI, creatures and buildings. The registry-derived audit confirms
+the planned-perk holds, including Wisdom Sage's distinct UP074 visit-timing
+question; it does not establish that all Version1.0 categories are blocked.
+Perfect Rhythm remains inactive while its explicit stacking question is pending.
+
 Current Phase1 checkpoint,2026-10-06: UP244 implements the missing last-three ordinary
 Hero-paid Spell/Order history in the existing shared readiness state. Production
 and focused fixtures have separate owners; root runs the serialized client/native
