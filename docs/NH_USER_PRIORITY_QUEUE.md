@@ -9,6 +9,34 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-255 — Resource Broker Marketplace contribution tooltip
+
+Status: Implemented (rendered verification and delivery pending),2026-10-06.
+Canonical Estates feedback requires the
+Marketplace to identify Resource Broker's current contribution. Existing quotes
+already include the effect, but only display final quantities. Add localized
+read-only feedback to the existing Deal control's hover/right-click help for
+an eligible selected town trade, using the shared effective pair rate and its
+ordinary baseline. Restore ordinary help for deselection/ineligible trades.
+Do not alter rates, rounding, trade requests, controls or state; no economic
+action button is added. Acceptance: focused eligibility/rate readback guards,
+client build and independent review. Native rendering and playable delivery
+remain separate; no new perk identity credit.
+
+Source/build checkpoint: selected owned-town trades compare the shared final
+pair effectiveness with the qualified ordinary IMarket baseline. Positive finite
+increases are shown as a localized percentage in the existing Deal right-click
+help; original hover text remains unchanged to avoid status-bar crowding. Every
+selection refresh and deselection restores base help before any annotation.
+No copied hero/resource eligibility, hard-coded20% bonus, quote/rounding change,
+new button or gameplay mutation. Client build38007 passes with12 jobs. Focused
+source guard, six translation/generator checks, module drift and diff checks pass.
+These are source/build gates, not native tooltip rendering or pointer acceptance.
+Independent Astra review finds no blocker, including qualified-rate attribution,
+current-owner privacy, constructor refresh and Windows32-bit lround safety.
+Executed selection transitions, numeric boundaries and native fit are not proved
+by the wiring guard; retain these integration/rendered limits for Phase2.
+
 ## UP-254 — Investor treasury-tooltip contribution readback
 
 Status: Implemented (rendered verification and playable delivery pending),2026-10-06.
