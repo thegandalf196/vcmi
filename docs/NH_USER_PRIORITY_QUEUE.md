@@ -135,6 +135,16 @@ Reference pixels remain outside the repository pending provenance review.
 
 ## UP-239 — Academy creature portrait backgrounds
 
+Gargoyle strategy checkpoint: repeated built-in matte revisions retain buildings
+or remove actual foreground. A new HoMM3-Art full-colour Stone Gargoyle master
+under `portrait-revisions/v2/` is a preview-only alternative. Independent review
+finds recognizable stone/red-eye/crouched-wing identity, but newly interpreted
+head/anatomy/silhouette. This is not background-only preservation; user choice
+is requested before runtime replacement (retain original creature pixels versus
+accept newly rendered portraits after native review). Do not infer permission
+from the broader Phase1 goal. Preserve all current12 runtime portraits and the
+promoted candidate; no coverage increase from this preview.
+
 Latest playable delivery: source `9540b0643` committed/pushed and built with
 twelve jobs. Frozen snapshot
 `bad986b13d1b1711a93d901a1749b73568d078291a01bb2644f39c2e64342011`

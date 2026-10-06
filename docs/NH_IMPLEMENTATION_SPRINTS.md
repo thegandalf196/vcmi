@@ -1,5 +1,13 @@
 # New Horizons implementation sprints
 
+Current Gargoyle gate: authored full-colour alternative and reproducible58×64
+preview exist under portrait-revisions/v2. It changes creature rendering as
+well as background, so user choice is pending before runtime replacement.
+Do not silently resolve that scope choice or repeat failed mask prompts.
+The bounded Tower-creature/specialty review found implemented principal paths
+or recorded holds, not new gameplay coverage; do not generalize it to all126
+creature forms. Current playable12/14 portraits and gameplay counts unchanged.
+
 Latest delivery: source `9540b0643` is built and promoted as snapshot
 `bad986b13d1b1711a93d901a1749b73568d078291a01bb2644f39c2e64342011`.
 Twelve portraits delivered; exact frozen content/map/AI smoke succeeds. Existing
