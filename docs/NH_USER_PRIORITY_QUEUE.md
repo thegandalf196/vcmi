@@ -11,6 +11,23 @@ entries and their validation/delivery evidence.
 
 ## UP-265 — Cabir walking and icon background defects
 
+New user reference,2026-10-06: https://i.imgur.com/m7qkfJk.png. Root inspected
+the supplied sheet: tailed red-scaled base Cabir with blue/gold Academy collar,
+apron and belt tools; Master has gold scale armor, reinforced cuffs and blue/gold
+tabard. Both shoot fire from bare hands. Use this as the new design/pose reference
+through HoMM3 Art, preserving approved ranged/repair/elemental gameplay. Current
+older charcoal/lava-trouser gait draft is superseded and must not be installed.
+Do not assume the sheet's few poses are a complete walk/attack animation. Review
+new native-scale art before animation expansion and keep reference pixels private
+until provenance is established.
+New standing draft checkpoint: original HoMM3-Art base/Master masters, exact
+prompts and60px mechanical previews are saved privately in ignored
+output/homm3/cabir-reference-v4. Master edge cleanup removes only six disconnected
+alpha1 samples in a new copy; original/RGB/all other alpha remain unchanged.
+Root/independent native review finds readable costume/tail/armor distinction,
+but busy fine texture and thin colored fringe remain. No runtime binding or
+launcher changes, completed gait, final approval or source publication is claimed.
+
 Source checkpoint: both forms' large/small portraits are transparent RGBA at
 58x64/32x32, with the existing approved source/crop/scale preserved. v1 exports
 are retained and separate portrait-export-v2 bundles are installed in source.
@@ -136,6 +153,13 @@ or ambiguous variants retain original art. Package class config is reference onl
 Private original frames cannot enter repository/distribution. Acceptance: eighteen
 sprite mappings by six Schools, overlay alignment/reset and isolated instances,
 focused renderer/resource checks, and separately identified playable delivery.
+Bounded lifecycle review,2026-10-06: actual HeroCastAnimation resolves Schools
+from saved battle rules and the cast spell, sets the caster overlay before
+CAST_SPELL, and clears it when leaving casting. Each BattleHero owns its cache;
+render uses the same frame/position and defender flip. The native fixture proves
+resource/composition, not real BattleInterface instances. Full battle-UI lifecycle
+execution is deferred to Phase2; do not refactor working production state solely
+to broaden Phase1 tests. No source defect was found in this bounded review.
 
 ## UP-262 — Magi / Arch Magi robe and magic colour treatment
 
@@ -324,6 +348,14 @@ Clarification requested whether this is town hero-portrait garrison entry or a
 creature-stack transfer. Preserve authoritative capacity validation; investigate
 UI admission/partial-transfer behavior instead of suppressing the error. Exact
 save is requested for faithful reproduction. This remains open.
+Read-only authoritative trace,2026-10-06: garrisonSwap first validates moveArmy
+atomically, then changes hero roles. An oversized town stack rejects both
+operations; existing GarrisonSwapRejectsAnOversizedTownStackAtomically explicitly
+requires this. Creature merge/empty-slot whole transfer already cap legal incoming
+troops and retain the source remainder; numeric splits stay exact. For875/240,
+maximum3 is correct. Allowing portrait entry with excess left behind needs a
+separate placement policy, not suppression of validation. No new test run or
+faithful save reproduction is claimed; the user's interaction remains unclear.
 
 Status: Verified (delivery/rendered acceptance pending),2026-10-06. Canonical Leadership UI explicitly requires
 additional Leadership required by the proposed stack, alongside receiving
