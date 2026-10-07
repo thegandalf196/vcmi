@@ -2,6 +2,13 @@
 
 ## 2026-10-07 Library AI production forecast checkpoint
 
+Sourceb17e1f8fc4fb040140e2371199d5f21ea025f680 is committed/pushed.
+Windows full build37603677097 is confirmed queued on that exact source:
+[Build run](https://github.com/thegandalf196/vcmi/actions/runs/37603677097).
+It includes UP277/278; preserve this handle and poll it rather than dispatching
+a duplicate. Dispatch is not package success or Windows gameplay acceptance.
+The successful older860f19693 package below remains available.
+
 UP278 shares the authoritative Library fixed-growth contribution with Nullkiller
 construction valuation and resolves the actual Mage/Arch Mage dwelling row.
 Client20397/test86567 build with12 jobs; native87272 passes6/6 in3.574s,

@@ -11,6 +11,9 @@ entries and their validation/delivery evidence.
 
 ## UP-278 — Library production value in AI construction forecast
 
+Sourceb17e1f8fc is committed/pushed. Windows37603677097 is queued on the exact
+source; no successful newer package or normal Linux promotion is inferred.
+
 Status: Verified (delivery pending), 2026-10-07. Client20397 and test86567
 build successfully with12 jobs. Focused native87272 passes6/6 in3.574s,
 zero skips/errors/disabled: three new Library helper/candidate cases and three
