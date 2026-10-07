@@ -69,6 +69,21 @@ play. Combined map starts with all four forms and40 adjacent Peasants. Focused
 Cabir4/4, Wisp3/3 and composer/isolation4/4 checks pass; combined and original
 map export/reload each pass. Independent source review finds no blocker.
 Actual candidate loading, delivery and rendered acceptance remain separate.
+Combined Linux candidate69304233a93371f1e5862d0bc122f37b27b63150da581560c4b8cbeccf0037db
+uses exact12-job built/pushed932b8016244d00ca1f42bc1c2b2e3cf0a5242de5 source.
+Fresh-profile true-headless combined scenario completes normally (exit0, Red
+victory day4, BattleAI exercised); no crash, request-rejection, Leadership or
+ammo-overuse marker. Owned runtime removed and profile lock released. Existing
+NH settings/cabirRepair schema warnings remain deferred. Private receipt:
+build/nh-creature-preview-validation-932b80162/headless.log. Normal snapshot
+pointer hash remains4f2e450bb3f5855e4d858914c838806eeef9524de9a9a2a8073dbb156179f68b.
+Playable selection/independent inventory audit and manual visual acceptance
+are separate; this does not close final Wisp rules or missing Cabir state art.
+Independent candidate audit caught Wisp battle descriptors missing generated
+selection overlays. Builder now sets generateOverlay1 on all32 groups/form;
+focused tests4/4 and deterministic selection-v2 output check pass. All PNG
+bytes remain unchanged. Candidate69304233a933 is superseded for selection
+and was never promoted; freeze and validate the corrected candidate next.
 
 ## UP-287 — Phantom Army Integrity and legal landing preview
 
