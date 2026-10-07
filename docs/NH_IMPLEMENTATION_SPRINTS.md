@@ -1,5 +1,18 @@
 # New Horizons implementation sprints
 
+## Delivery receipt — 2026-10-07, Windows f8d593dd3
+
+Exact full Windows run37616860622 succeeds on source
+f8d593dd3c49e8a1a95d2535a85e30d29ae75419. Published package artifact11483637048,
+New-Horizons-Windows-x64-f8d593dd3c49e8a1a95d2535a85e30d29ae75419,
+1,047,290,971 bytes; expires2026-11-06. Artifact-container SHA256 is
+b5ebd445fafee6b60c2045ae25cf14cd87c029e933a9670fb36ac9846a4e87e5.
+This is GitHub artifact metadata, not the inner executable/ZIP checksum or manual
+gameplay acceptance. Package includes UP279/280/283, excludes UP284/285 and
+uninstalled Gargoyle/Cabir drafts. Normal Linux4de7cd42f uses the same source.
+Latest source checkpoint e1aa29c91 is pushed with UP285 and focused12/12 native
+validation; it is not yet the selected normal Linux or published Windows build.
+
 ## Current checkpoint — 2026-10-07, saved Morale foundation
 
 PHASE1. UP285 fixes the production three-tier cap/legacy-curve gap discovered
