@@ -11,6 +11,15 @@ entries and their validation/delivery evidence.
 
 ## UP-287 — Phantom Army Integrity and legal landing preview
 
+Linux delivery,2026-10-07: selected immutable52867cdf4a5db9461966069d637e0d10
+f3d5d3c6c08efc0355c30e9cae2f2d9e/source1c3e854fc includes this preview and
+UP286. Independent2367-file version/checksum/payload audit passes. Exact-source
+12-job rebuild72797 passes; fresh-profile20s true-headless All for One reaches
+day5, exits on expected timeout124 without crash/request-rejection/ammo-overuse
+markers, and owned process/runtime/profile-lock cleanup passes. Known schema
+warnings remain; no rendered/manual/completed-game acceptance. Private receipt:
+ignored build/nh-recorder-delivery-20261007.klVssUWx/combined-native.log.
+
 Status: Verified (delivery/rendered verification pending),2026-10-07;
 bounded Phase1 P0 audit. Canonical summons/prisons UI
 requires legal placement, aggregate HP/count and footprint before commitment.
@@ -42,6 +51,10 @@ Rendered console fit/controller execution and playable delivery remain separate;
 normal Linux08f1828f8c does not yet contain this UI slice. Identity counts unchanged.
 
 ## UP-286 — Level-up Skill card current-to-offered rank
+
+Linux delivery,2026-10-07: normal launcher selects52867cdf4a/source1c3e854fc,
+which includes this source slice after the independent audit/headless/cleanup
+gates recorded in UP287. Actual card rendering/translated wrapping stays open.
 
 Status: Implemented (rendered verification/delivery pending),2026-10-07;
 bounded Phase1 P1 audit. Canonical level-up cards show
