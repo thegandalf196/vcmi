@@ -31,6 +31,18 @@ preview. The battle alias's seven extra cloth indices do not fix this different
 resource. Next: native small-frame/card visual inspection and role-specific cloth
 selection, then missing Gargoyle masks/composition. No rendered fix claimed.
 
+Follow-up pixel/consumer audit: the existing native CPRSMALL37 runtime alias
+already has grey robes, with gold/orb, face/beard and outlines retained. Both
+compact recruitment cards and the town strip use the registered icon route;
+no stale-animation-cache or bypass was found. Legacy recruitment cards instead
+use CCreaturePic's battle animation. A screenshot of the reported panel was
+requested to distinguish these consumers; do not recolor an already-grey alias
+or claim the reported panel fixed from an alias-only capture. New Stone and
+Obsidian Gargoyle geometry masks were generated with HoMM3 Art and reviewed
+privately at native size. They remain drafts, not runtime replacements; the
+Obsidian draft incorrectly includes background architecture in its foreground.
+Original indexed portraits and comparisons remain ignored/private.
+
 ## UP-283 — Combat quick-spell toolbar pressed-state legacy icon flash
 
 Status: Implemented (rendered/playable verification pending),2026-10-07.
@@ -40,6 +52,8 @@ SPELLINT's stateful base frames0/1/2/3 beneath its selected id+1 symbol; pressed
 frame1 is Summon Boat. All base states now retain existing neutral frame0,
 preserving the separate symbol, press nudge, cast callback and disabled overlay.
 Native button/hold rendering has not been executed; no normal Linux promotion.
+Source checkpoint committed and pushed as aafddaa5a; this is not delivery to
+the selected playable snapshot.
 Holding the mouse on a new spell in the combat quick
 toolbar briefly reveals Summon Boat behind its icon. Inspect normal/pressed/
 hover/disabled button frames and custom-symbol composition for the real toolbar.
