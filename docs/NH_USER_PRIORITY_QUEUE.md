@@ -16592,6 +16592,18 @@ migration with implementation completion.
 
 Status: Open; prior isolated passes do not close the reported match regression.
 
+2026-10-07 bounded follow-up to the new day3 Fafner rejection: current neutral
+join planning and Nullkiller acceptance/garrison paths already use projected
+Leadership capacities and partial transfers. No missing principal AI hook is
+proven in this sample. The log lacks attempted resulting count, destination slot,
+operation and packet request ID, so it cannot attribute the rejection to the
+initial join or later redistribution. Existing Followers tests exercise server
+queryReply, not AIGateway decision/garrison callbacks. If pursuing reproduction,
+capture those fields at validateLeadershipStack/caller and accepted offer plus
+per-slot transfer/remainder at tryJoiningArmy. Do not weaken command validation
+or infer the older long-turn cause. The later20s combined UI-candidate smoke
+does not show a rejection, but does not close this intermittent report.
+
 2026-10-05 focused diagnostic refresh: the three registered
 `NewHorizonsLeadershipAdmissionTest.AcceptedWanderingFollowers*` native cases
 pass with zero skips (2.07 seconds), using a cloned private New Horizons test
