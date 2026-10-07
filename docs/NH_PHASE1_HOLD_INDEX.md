@@ -6,14 +6,17 @@ canonical [New Horizons design](design-sources/New%20Horizons.md). That Markdown
 remains the sole authority for gameplay. The queue and functional matrix record
 current implementation questions and dependencies.
 
-Registry-derived inventory: 31 Skills, 93 active rank effects, 227 active perks,
-and 83 planned perks: 64 generic and 19 faction. This index covers only those 83
+Registry-derived inventory: 31 Skills, 93 active rank effects, 228 active perks,
+and 82 planned perks: 63 generic and 19 faction. This index covers only those 82
 perks; the six inactive combat spells are tracked separately. The current
 selection audit in [NH_FUNCTIONAL_COMPLETION_MATRIX.md](NH_FUNCTIONAL_COMPLETION_MATRIX.md)
 historically reported item-specific questions or dependencies. The user has now
 resolved Battlefield Mastery and Last Stand. Mastery is now source/native verified
 and active (removed from this planned-only table); Last Stand is now source/native
-verified and active too. That is not evidence that the whole Version1.0 backlog is blocked.
+verified and active too. Perfect Rhythm is also active after its seven focused
+and eleven adjacent native cases pass; the old same-tier Master Synthesis
+composition hold is inapplicable. That is not evidence that the whole
+Version1.0 backlog is blocked.
 
 Status meanings:
 
@@ -85,7 +88,6 @@ new-horizons:wisdom.sage	question	UP-074	Pre-acquisition visit timing is recorde
 new-horizons:warcasting.enchantedCommand	question	UP-122	Shared rule decision remains pending.
 new-horizons:warcasting.combatCasting	question	UP-121	Shared rule decision remains pending.
 new-horizons:warcasting.reactiveWeave	question	UP-215	Half-strength readiness replacing versus stacking with stronger existing readiness remains unresolved.
-new-horizons:warcasting.perfectRhythm	question	UP-178	Master Synthesis stacking/composition remains unresolved; prerequisite sequence work does not activate the perk.
 new-horizons:logistics.rapidEmbarkation	question	UP-103,UP-208	Navigation composition: 10% final boarding cost versus halved 5% remains unresolved.
 new-horizons:logistics.pursuitMarch	question	UP-104,UP-209,UP-193	Daily recovery cap and zero-effective-recovery use consumption remain unresolved.
 new-horizons:diplomacy.mercenaryCaptain	dependency	UP-129	Deterministic recruitment/cohort provenance is a prerequisite.

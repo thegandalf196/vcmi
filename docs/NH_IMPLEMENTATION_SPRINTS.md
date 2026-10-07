@@ -2,6 +2,31 @@
 
 ## Current checkpoint — 2026-10-06, magic handoff / Cabir correction
 
+Accepted Perfect Rhythm checkpoint supersedes the pending notes below: all
+three builds pass, principal7/7 and activated7/7 native cases pass, adjacent11/11
+pass, zero skips (2.065s/2.045s/2.259s). Three focused registry tests/module drift
+pass and independent source/fixture review has no blocker. Registry active,
+coverage228/310 (157/220 generic,71/90 faction),82 planned; Warcasting7/10.
+No new persisted state or polling. Phase2 retains AI choice quality, rendered
+UI and wider control/extra-action combinations; no playable promotion. Next
+coverage slice must come from an actual ready item or a newly answered hold,
+not repeating the now-inapplicable same-Expert-slot composition question.
+
+Perfect Rhythm is the next implementation slice: the old Master Synthesis
+composition hold is inapplicable because valid progression permits one Expert
+perk per Skill. Shared candidate-action history/bonus helpers are source-frozen
+and independently reviewed without a blocker; client build14693 passes. Focused
+live/detached fixtures remain in progress, registry planned until acceptance.
+No new serialized state, polling or completed-perk credit. Private validation
+profile: testing/perfect-rhythm-20261006.5B6wPT1I under the Linux build root.
+Both fixture files are frozen, with five live/detached cases and two pure state
+cases; independent final review has no blocker. Test build37210 is confirmed
+live with12 jobs. Log: build-test.log under that profile. Re-poll this exact
+session before native execution or another build; current binary is stale for
+these seven cases. Source remains planned/uncommitted pending native acceptance.
+Separately, the stale specification hash in the perk registry is repaired and
+module metadata regenerated; its previously failing identity test now passes.
+
 Windows package37557751116 completed SUCCESS on
 ce1b5547cf0207575b357f5e1e540de6bc6a2d23,2026-10-07UTC. Root inspected terminal
 job status, packaging READY and finalized upload logs. Artifact11457695378 is

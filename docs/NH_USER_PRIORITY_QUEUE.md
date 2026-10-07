@@ -5904,6 +5904,29 @@ acceptance is inferred from native movement/deployment tests.
 
 ## UP-178 — Warcasting Master Synthesis
 
+Perfect Rhythm accepted source/native checkpoint,2026-10-07: registry is active.
+Client14693, test37210 and activated both-target4309 builds pass. Seven principal
+cases pass before and after activation (2.065s/2.045s), plus eleven adjacent
+Warcasting/history cases (2.259s), zero skips. Three registry/source/module tests
+and module drift pass. Independent helper/fixture review has no blocker. Coverage
+228/310, Warcasting7/10. Existing history/candidate helper doubles only matching
+unexpired readiness; accepted Spell/Order, flat-term preservation and detached
+branch isolation are tested. No new serialization or polling. Receipts are in
+testing/perfect-rhythm-20261006.5B6wPT1I under the Linux build. Phase2 retains
+actual AI selection quality, rendered UI and broader control/typed-action
+interactions; no normal Linux promotion or Windows delivery yet.
+
+Perfect Rhythm implementation,2026-10-06: readiness audit and root validation
+establish that the old Master Synthesis composition question is inapplicable to
+valid heroes: both perks require Expert and PerkState permits exactly one perk
+per Skill tier. Canonical Perfect Rhythm doubles normal matching Warcasting
+readiness on the third ordinary Hero Action in Spell/Order/Spell or Order/Spell/
+Order. Existing accepted-action history and shared live/detached bonus consumers
+are available. Runtime and focused fixture workers have nonoverlapping ownership;
+root owns activation/build/review. No new state, coverage or native acceptance
+is claimed before principal tests pass. Preserve the historical question below
+without using an impossible selection as a continuing implementation blocker.
+
 Status: Verified (source/native committed/pushed; playable delivery pending),2026-10-03. Canonical Expert perk replaces the
 first Warcasting bonus consumed in combat with50% /50 percentage points.
 Map shared spell/Order preview, accepted action consumption, battle-long
