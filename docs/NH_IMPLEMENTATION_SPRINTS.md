@@ -1,5 +1,20 @@
 # New Horizons implementation sprints
 
+## Current checkpoint — 2026-10-07, Historian primary-XP foundation
+
+PHASE1 remains active. UP276 adds explicit primary fixed-XP classification,
+authored Learning Stone data and shared preview/authoritative award calculation.
+Historian remains planned; this is partial prerequisite progress, not a completed
+perk. Final client/test build44322 and focused native2/2 pass in0.708s with zero
+skips/errors/disabled; independent source/fixture review and module checks pass.
+Failed compile/crash/query-fixture attempts remain in the failure ledger and
+ignored historian-foundation-20261007.WJF9wFMe receipts. No graphical acceptance
+or normal Linux promotion. Full Historian next needs Chest/Tree/mixed-source
+classification (question renewed) and perk-aware AI valuation. Counts remain
+228/310 active perks,31 Skills/93 ranks,61/67 combat identities and8/8 Orders.
+The bounded missing-spell/faction-perk audit retains their specific design holds,
+without claiming the entire remaining backlog is blocked.
+
 ## Current checkpoint — 2026-10-07, creature Order badge metadata
 
 Bounded next-functional audit: Mercenary Captain/Loyal Mercenaries still await

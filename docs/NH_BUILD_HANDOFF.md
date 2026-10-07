@@ -1,5 +1,31 @@
 # New Horizons Linux build handoff
 
+## 2026-10-07 Historian primary-XP foundation checkpoint
+
+UP276 adds explicit default-false reward classification with Learning Stone
+authored true and a shared fixed-XP preview/grant calculator. Historian stays
+planned; this is not full-perk delivery. Combined client/test build44322 passes
+with12 jobs. Focused native2/2 pass in0.708s, zero skips/errors/disabled. Retain
+all failed receipts and the passing build-ready-repaired.log and
+native-ready-repaired.log/XML under ignored testing/
+historian-foundation-20261007.WJF9wFMe. Source/module checks and independent
+review pass. No graphical launch or normal Linux snapshot promotion.
+Phase2 retains enclosing world-save journeys and unprompted-reply hardening;
+full Historian still needs remaining source classifications and AI valuation.
+
+## 2026-10-07 Initiative-origin Windows package available
+
+Windows37583664987 is terminal SUCCESS on
+5ae48a71787af96b3c0c4d67e311f4c1021d0ec7. Compile, staging, package and upload
+steps succeed. Nonexpired game artifact11467459384 is1,047,250,237 bytes,
+expires2026-11-06T07:40:13Z:
+[Windows x64 download](https://github.com/thegandalf196/vcmi/actions/runs/37583664987/artifacts/11467459384).
+Artifact-container SHA256:
+`5d62fb38b25fe5c63ef46ce5b00672d91100ecc2fe1670322e7cf40579e98419`.
+This is not the inner game ZIP checksum or Windows gameplay acceptance.
+Includes UP269–272; excludes later UP273–276. No independent full1GB archive
+audit or normal Linux promotion. Preserve older successful packages.
+
 ## 2026-10-07 Order-badge metadata checkpoint
 
 UP275 client/test rebuild20554 exits0 with12 jobs after retained translator-

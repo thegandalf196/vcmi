@@ -9,6 +9,41 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-276 — Historian primary-Experience reward foundation
+
+Status: Foundation verified (delivery pending),2026-10-07. Final client/test
+build44322 succeeds with12 jobs; focused native checks pass2/2 in0.708s,
+zero skips/errors/disabled. Actual Stone visits, ordinary Learning composition,
+preview parity, unclassified/percentage controls and JSON/binary compatibility
+are exercised. Retained failed builds/runs and final receipts live under ignored
+testing/historian-foundation-20261007.WJF9wFMe; native-ready-repaired.log/XML
+and build-ready-repaired.log are the passing evidence. Failure lessons document
+fixture headers, configuration-reference lifetime and interface readiness.
+No full-perk/count or normal Linux promotion changes. Independent review finds no
+blocking issue: legacy JSON/binary reads reset classification false, explicit
+malformed JSON is rejected, unsupported true binary writes reject before the
+Reward payload, and preview/accepted reward share the calculator. Module drift
+and diff-whitespace checks pass. Rendered execution and delivery remain
+unverified. UP071's full Historian
+scope remains open:
+Treasure Chest XP choices, Tree of Knowledge and mixed/custom bundles await
+classification. Learning Stone is unambiguously a primary-XP source. Implement
+an explicit default-false reward classification, with Learning Stone authored
+true, and shared +50 percentage-point XP calculation using existing Learning
+composition. Authority and reward components must use the same calculator.
+Persist classification with backward-compatible default false and reject lossy
+older writes. Do not insert a global XP multiplier or infer other site classes.
+Keep Historian planned/unavailable; focused diagnostics may activate it only in
+an isolated map snapshot to exercise the production foundation. This is progress
+toward the full perk, not a narrowed replacement or perk-completion credit.
+Acceptance: accepted Stone XP and preview parity, ordinary Learning composition,
+unclassified/inactive/legacy guards, classification save/JSON handling, focused
+build/native checks. Existing AI pursues Learning Stones through its ordinary
+visit path; its skill priority does not yet quote the boosted XP. Perk-aware
+valuation remains part of full Historian completion, not current AI evidence.
+Root owns schema/version/authored config/docs/Git;
+runtime worker owns reward parsing/calculation/serialization; tester owns fixture.
+
 ## UP-275 — Creature Order badge source and expiry help
 
 Status: Implemented (rendered/playable verification pending),2026-10-07.
