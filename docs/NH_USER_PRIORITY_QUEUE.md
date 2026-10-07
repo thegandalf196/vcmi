@@ -11,6 +11,32 @@ entries and their validation/delivery evidence.
 
 ## UP-288 — Cabir and Wisp supplied complete handoffs
 
+Usual-launcher correction requested,2026-10-07: user starts the ordinary Linux
+script and sees neither new Cabirs nor Magi. Root confirms ordinary store still
+selects52867cdf4a while only the creature-preview store selects452cbf72. This is
+a delivery-selection mistake, not a reason to alter validated creature bindings.
+Copy the exact validated3120-file/source01ffcf6bd creature candidate into the
+ordinary snapshot store, verify byte identity, and select it for the usual script.
+Do not build unfinished Transformer drafts, mutate running sessions or erase
+saves. Recommend a new game for the revised Conflux roster. Preserve the previous
+ordinary snapshot for rollback. Acceptance: ordinary resolver selects the same
+validated digest; exact executable version and preflight pass.
+Correction completed: ordinary current.json now selects452cbf72 with52867cdf4a
+retained as previous. Digest verification, executable01ffcf6bd and usual-script
+--verify-only all pass. No game window or existing save was modified. The user
+must restart the current session to load the newly selected resources.
+
+Latest delivery,2026-10-07: commit01ffcf6bd is pushed and built at10 jobs.
+Selected creature-preview snapshot452cbf726cf3d4dd4c6c8a24c2b311db72cdbae5a5a86708d001b5c9e807c338
+passes3120-file integrity verification and exact-candidate fresh-profile
+headless scenario completion (exit0, Red victory). Preview launcher resolves
+that snapshot; launch command delivered to the user. Normal snapshot52867cdf4a
+is unchanged. Supplied-handoff implementation/build/delivery is resolved;
+rendered animation and audio approval remain separate open acceptance work.
+Ignored logs: nh-handoff-01ffcf6bd-headless.log and
+new-horizons-linux/nh-handoff-delivery-receipt-build.log. Existing user drafts
+are untouched. Subsequent source work must not mutate this frozen preview.
+
 Delivery validation checkpoint: functional source4f2f847db is committed/pushed.
 Exact-source ten-job client/test build passes; private snapshot16724c2d passes
 independent3120-file digest/reference audit and fresh-profile true-headless
@@ -1338,6 +1364,17 @@ opposite contacts individually rather than accepting cosmetic pose differences.
 
 ## UP-264 — Preferred-school Mage Guild tome bookmarks
 
+Normal-launcher delivery,2026-10-07: combined immutable candidate b26652d8
+retains every byte of the3120-file/source01ffcf6bd creature snapshot and adds
+only864 casting PNGs,nine sparse guild PNGs and their optional resolver config.
+Independent digest/reference review passes. Exact-candidate fresh-profile
+headless scenario reaches Red victory on day4 and exits0 with clean shutdown.
+Ordinary launcher now selects b26652d8, preserving452cbf72 for rollback;
+usual-script preflight passes. Original-derived pixels remain private/ignored.
+The historical matching-runtime native fixture validates864 casting frames,
+not current guild-window rendering or battle-UI lifecycle. User visual acceptance
+remains open; this completes normal local resource delivery, not Final art.
+
 Private manual delivery checkpoint,2026-10-06: combined UP263/264 launcher
 build/nh-magic-preview.awlVtY6Y/Play-Magic-Preview.sh selects immutable
 snapshot-f732642de31e708ea38ec77cf1d09af3a8c129b0e36fa89ef07e88951c5723ae,
@@ -1392,6 +1429,13 @@ Acceptance: clean native alignment and alpha, all faction bindings, unchanged
 guildWindow interaction, focused resource checks and identified delivery.
 
 ## UP-263 — Six-school casting glows for all standard hero sprites
+
+Normal local delivery,2026-10-07: the UP264 combined-candidate receipt also
+delivers all eighteen-caster/six-School glows through the ordinary launcher.
+Source01ffcf6bd, snapshot b26652d8,874 additive private resources; baseline
+creature bytes are unchanged. Resource integrity and headless gameplay pass.
+Actual current BattleHero overlay selection/reset and rendered alignment remain
+Phase2/user acceptance work; native frame geometry is not that execution proof.
 
 Source hook and importer checkpoint: actual saved-rules spell School selects
 per-caster cached overlay only on matching eight-frame nativeDEF group4; exact
@@ -5068,6 +5112,32 @@ Focused Python checks pass20/20. No accepted coverage increase or playable
 promotion yet.
 
 ## UP-197 — Necropolis Skeleton Transformer HP conversion
+
+User resolves final rounding,2026-10-07: pool aggregate sacrificed HP across
+the selected transaction, take50%, floor to whole Skeletons and discard leftover
+HP. Implement atomic server conversion, matching shared output preview and
+minimum AI path; do not retain per-stack count substitution in NH. Existing
+ownership, Leadership and last-stack integrity requirements remain unchanged.
+Status: In progress; approved rounding removes the former design hold.
+
+Implementation checkpoint: root adds an optional saved v4 capability marker,
+strict parser/schema support and marker round-trip fixture. Capability parser
+and native fixture objects compile; seven data guards pass, independent review
+finds no blocker. Shared planner declaration is frozen; UI uses its READY/status
+readback, safe stale-slot reconciliation and one vector request. Nullkiller
+uses bounded town-entry subset evaluation and projected whole-army value, not
+an ordinary-update scan. Both consumer translation units compile successfully
+at10 jobs (nh-transformer-consumer-objects.log). Root repaired
+the HeroPtr dereference/vector-overload compile errors and wrong rules snapshot
+argument before retry. No full linked build, native conversion execution,
+feature-completion credit or playable delivery is claimed.
+Two narrow safety rulings requested: fill existing Skeleton stacks then spread
+overflow across freed selected slots versus reject overflow; reject zero-output
+selections unchanged versus permit destructive zero-output sacrifice. Runtime
+implementation waits for those answers; do not invent them. No placeholder
+planner implementation or server mutation was committed. Frozen creature
+preview remains usable and unchanged while this source slice is in progress.
+
 
 Readiness refresh,2026-10-07: current server still performs legacy per-stack
 type substitution, UI still submits one trade per selected slot, and no dedicated
