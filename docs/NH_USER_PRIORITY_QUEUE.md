@@ -9,6 +9,32 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-277 — Learning Stone classified-XP AI forecast prerequisite
+
+Status: Verified (delivery pending),2026-10-07. Client84036/test rebuild30300
+pass with12 jobs after retained role-namespace and insertion-ID fixture failures.
+Focused native3/3 pass in0.996s, zero skips/errors/disabled, including actual
+Stone awards, shared score ratio/controls and classification compatibility.
+Source/fixture review and module/whitespace checks pass. Receipts: ignored
+testing/historian-ai-20261007.VZdeE7Uz, client-build.log,
+test-build-id-repaired.log and native-id-repaired.log/XML; failures retained.
+No full AI turn, visibility/custom-reward matrix, perk activation or normal Linux
+promotion. Full Historian remains planned with other classifications unresolved.
+
+UP276's shared reward calculation is available,
+but Nullkiller2's Learning Stone branch returns its fixed level heuristic before
+reading reward XP. Scale that existing score by the available classified reward's
+shared actual/ordinary XP ratio; calculate the ordinary baseline with classification
+disabled on a value copy, not duplicated perk arithmetic. Keep unmarked, absent,
+ineligible or nonpositive rewards unchanged. Use existing available-reward queries,
+not hero/object scans, timers or new saved fields. Root owns scope/integration;
+worker owns PriorityEvaluator.cpp; tester owns the existing Historian fixture.
+Acceptance: real initialized Stone score with isolated active Historian and ordinary
+Learning, nonholder/unclassified/unavailable controls, nonmutation, focused build/
+native checks. This is another full-Historian prerequisite, not a completed perk
+or production activation. Other source classifications remain UP071 holds;
+full autonomous visit selection and broader custom reward composition are Phase2.
+
 ## UP-276 — Historian primary-Experience reward foundation
 
 Source860f19693 is committed/pushed. Windows37592494066 is confirmed live on
@@ -42,8 +68,8 @@ toward the full perk, not a narrowed replacement or perk-completion credit.
 Acceptance: accepted Stone XP and preview parity, ordinary Learning composition,
 unclassified/inactive/legacy guards, classification save/JSON handling, focused
 build/native checks. Existing AI pursues Learning Stones through its ordinary
-visit path; its skill priority does not yet quote the boosted XP. Perk-aware
-valuation remains part of full Historian completion, not current AI evidence.
+visit path. UP277 now supplies direct shared-XP score evidence; full autonomous
+visit selection and other classified sources remain separate acceptance work.
 Root owns schema/version/authored config/docs/Git;
 runtime worker owns reward parsing/calculation/serialization; tester owns fixture.
 
@@ -4377,6 +4403,14 @@ Focused Python checks pass20/20. No accepted coverage increase or playable
 promotion yet.
 
 ## UP-197 — Necropolis Skeleton Transformer HP conversion
+
+Readiness refresh,2026-10-07: current server still performs legacy per-stack
+type substitution, UI still submits one trade per selected slot, and no dedicated
+AI conversion path was found. This is missing functional coverage, not a cosmetic
+or test-only issue. Renewed the narrowly outstanding whole-Skeleton rounding
+question (floor recommended, discard leftover HP). No answer inferred from the
+preferred option. Once resolved, implement the atomic pooled transaction, shared
+preview and minimum AI path together; do not activate legacy count conversion.
 
 Canonical hold review, 2026-10-06: independent bounded review finds the authored
 **aggregate sacrificed HP** wording resolves pooling across the selected

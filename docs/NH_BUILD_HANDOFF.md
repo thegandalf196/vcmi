@@ -1,5 +1,17 @@
 # New Horizons Linux build handoff
 
+## 2026-10-07 Learning Stone AI forecast checkpoint
+
+UP277 keeps the existing Stone level heuristic and scales it by shared actual/
+unboosted XP for available classified rewards, without scans or new saved state.
+Client84036 and test30300 build with12 jobs. Focused native3/3 pass in0.996s,
+zero skips/errors/disabled, with source/fixture review and module checks.
+Receipts: ignored testing/historian-ai-20261007.VZdeE7Uz client-build.log,
+test-build-id-repaired.log and native-id-repaired.log/XML. Initial failed fixture
+build/run are retained in the failure ledger. No full AI turn, graphical execution,
+Historian activation or normal Linux promotion. Windows37592494066 remains live
+on older source860f19693 and excludes UP277; do not duplicate or replace it.
+
 ## 2026-10-07 Historian primary-XP foundation checkpoint
 
 Source860f196937ad49ec19e934b4a8dde05db4c71f84 is committed/pushed.

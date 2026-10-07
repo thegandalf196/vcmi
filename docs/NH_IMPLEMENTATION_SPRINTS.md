@@ -1,5 +1,17 @@
 # New Horizons implementation sprints
 
+## Current checkpoint — 2026-10-07, Learning Stone AI forecast
+
+PHASE1. UP277 supplies the previously absent classified-XP Stone priority hook,
+using shared reward forecasts rather than duplicating Historian arithmetic.
+Client84036/test30300 build; focused3/3 native pass in0.996s, zero skips/errors/
+disabled, with independent review/module checks. Full autonomous selection,
+visibility/custom reward composition remain Phase2. Historian remains planned;
+other XP-source rulings are still required. Coverage228/310 perks,61/67 combat
+identities and8/8 Orders unchanged. The remaining generic-perk audit preserves
+specific design holds; Transformer HP conversion is a real missing UI/server/AI
+system awaiting its narrowed rounding question. No graphical/Linux promotion.
+
 ## Current checkpoint — 2026-10-07, Historian primary-XP foundation
 
 PHASE1 remains active. UP276 adds explicit primary fixed-XP classification,
