@@ -11,6 +11,17 @@ entries and their validation/delivery evidence.
 
 ## UP-265 — Cabir walking and icon background defects
 
+New producer path,2026-10-06: read-only tool discovery finds /usr/bin/blender
+already installed. Build an original articulated technical blockout/joint guide
+under ignored output/homm3/cabir-reference-v4/rigged-pose-guide-v1, rendered with
+--background only. No original 3D models or proprietary pixels are reused; no
+package installation, GUI/input automation, runtime asset or playable change.
+Verify opposite supporting legs, joint coordinates, fixed root/camera and native
+legibility before another HoMM3-Art/imagegen creature-pixel attempt. Technical
+guide renders are pose-planning diagrams, not provisional/final Cabir artwork.
+This materially differs from the rejected independent-pose studies; no gait
+completion credit until final sprite footfall/translated-motion evidence passes.
+
 Pose-guided producer checkpoint,2026-10-06: initial study plus one targeted
 revision are retained under ignored output/homm3/cabir-reference-v4/
 pose-guided-walk-v1 with prompts/reference hashes. Root inspected the native56
