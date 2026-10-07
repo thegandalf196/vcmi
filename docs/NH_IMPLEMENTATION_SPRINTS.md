@@ -1,5 +1,24 @@
 # New Horizons implementation sprints
 
+## Current checkpoint — 2026-10-07, recipient-specific spell learning help
+
+PHASE1. UP280 adds the recipient's required School rank to reward/teacher
+spell-component help only when rank is the sole learning blocker. Client does
+not infer a selected hero; learning/casting eligibility is unchanged. Localized
+optional Component metadata has append-only current/older serialization.
+Client/test92291 and focused repair6213 pass with12 jobs; native3/3 passes
+in0.919s with zero skips/errors/disabled, module check and independent review.
+Compile repairs and first1/3 invalid Anti-Magic fixture remain recorded; no
+assertions or roster restrictions were weakened. Counts remain228/310 perks,
+61/67 combat identities and8/8 Orders; required acquisition UI coverage improves.
+Rendered help, multilingual grammar and wider source/query execution are Phase2.
+No normal Linux promotion. Newest Windows37603677097 succeeds onb17e1f8fc,
+excluding recruitment/toolbar/help changes; a new source checkpoint needs CI.
+Next: continue user-priority gaps using concrete production omissions, while
+UP282 waits for the reported recruitment-view screenshot and manual mask choice.
+A bounded acquisition/town-growth/minimum-AI audit found no further ready gap in
+that sample; this does not certify the entire remaining Version1 backlog.
+
 ## Current checkpoint — 2026-10-07, recruitment routing and quick-spell state
 
 PHASE1. UP279 adds the shared requested-count-aware destination to authority,

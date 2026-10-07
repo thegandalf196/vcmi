@@ -94,7 +94,22 @@ variation remain; no full motion, runtime installation or approval claim.
 
 ## UP-280 — Recipient-specific School rank explanation on spell rewards
 
-Status: Open, implementation-ready, 2026-10-07. Follow-up to UP258/UP220 and
+Status: Verified (rendered/playable delivery pending), 2026-10-07.
+Client/test rebuild92291 and focused incremental repair6213 pass with12 jobs.
+Native repaired run passes3/3 in0.919s, zero skips/errors/disabled: actual reward
+components retain the recipient's localized required rank/School, other blockers
+and scroll/legacy controls avoid false reasons, and current/older Component
+serialization preserves identity/value with compatible optional metadata.
+The first1/3 run selected excluded legacy Anti-Magic; replace that invalid
+School-only fixture with active Level4 Chain Lightning and explicit roster/
+ordinary-acquisition preconditions, without relaxing production eligibility.
+Retain failed/repaired build and native log/XML receipts under ignored
+testing/spell-reward-help-20261007.4QAy1XE6. Independent review finds no blocker.
+Rendered tooltip, multilingual grammar and broader teacher/query interactions
+remain Phase2; no normal Linux snapshot promotion or blanket acquisition-UI
+completion claim. Identity counts remain228/310 perks and61/67 combat spells.
+
+Follow-up to UP258/UP220 and
 the user's School/legacy-spell reports. Canonical required acquisition UI
 explains the School rank needed for visible unavailable spell offers.
 Reward::loadComponents currently encodes only generic unlearnable (-1), and the
@@ -114,7 +129,18 @@ reason with versioned serialization (older presentation may omit it), retaining
 the normal spell description and disabled subtitle. Produce it from shared
 acquisition classification, not duplicated School/roster rules or negative-value
 School masks. Known/no-book/excluded/special/banned controls must not falsely
-claim School proficiency is their sole blocker. No implementation yet.
+claim School proficiency is their sole blocker. This was the pre-implementation
+representation decision; current evidence is recorded above.
+
+Current implementation slice: shared Hero classification reuses the existing
+learning evaluator and bypasses only School proficiency in a quiet second
+evaluation, solely to establish that it is the only failed gate. The normal
+boolean API keeps predicate order and warnings. Component carries optional
+localized MetaString helpReason with append-only COMPONENT_HELP_REASON wire/
+save feature; older presentation defaults absent. Reward spells use the actual
+recipient and retain disabled value -1; scrolls are not annotated. Runtime,
+transport/UI and focused native fixtures have separate ownership. Compile,
+native acceptance, independent review and playable delivery remain pending.
 
 ## UP-279 — Recruitment into a later legal duplicate army slot
 

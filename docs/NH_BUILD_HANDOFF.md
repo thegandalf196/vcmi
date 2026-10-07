@@ -1,5 +1,28 @@
 # New Horizons Linux build handoff
 
+## 2026-10-07 Spell-reward School help checkpoint
+
+UP280 client/test rebuild92291 and focused incremental6213 succeed with12 jobs.
+Repaired native3/3 passes in0.919s, zero skips/errors/disabled; module drift and
+independent review pass. Current/older localized Component help metadata and
+actual recipient-specific reward components are covered, not rendered dialogs.
+Retain all build/native failure and repaired receipts under ignored
+testing/spell-reward-help-20261007.4QAy1XE6. The first native1/3 selected removed
+Anti-Magic rather than an ordinarily learnable spell; no eligibility was relaxed.
+No game launch or normal Linux snapshot promotion. This dirty-source build's
+banner remains precedingc9941c1ab; it is not a frozen post-commit delivery.
+
+## 2026-10-07 Windows Library checkpoint completed
+
+Full run37603677097 is terminal SUCCESS on exact source
+b17e1f8fc4fb040140e2371199d5f21ea025f680. Compile/stage/package/upload all succeed;
+downloadable artifact11478236975 is1,047,276,107 bytes, unexpired until
+2026-11-06T11:00:57Z. GitHub artifact-container SHA256:
+96924b2668a13ba684c59bbcf6d52d4c5e60537597c3a23906b4ce8dfee4016f.
+This is not an inner ZIP checksum or Windows gameplay acceptance. The package
+excludes later UP279/UP283 and in-progress UP280. No duplicate run was started
+while this handle was live; the normal Linux pointer remains unchanged.
+
 ## 2026-10-07 Recruitment routing / quick-spell source checkpoint
 
 UP279's shared selector routes one request to a fitting duplicate or empty slot,
