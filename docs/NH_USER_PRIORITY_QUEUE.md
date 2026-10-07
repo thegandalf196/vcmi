@@ -403,6 +403,34 @@ broader interaction matrices remain separate; this does not add a perk identity.
 
 ## UP-265 — Cabir walking and icon background defects
 
+Single-pose artwork checkpoint,2026-10-07: built-in HoMM3-Art initial study and
+one focused camera/pose revision are preserved privately with exact prompts,
+source/reference hashes and mechanical native exports. Initial master SHA256
+`93c58691d18e0209103a72983b2ec5e1769e23d87c3080579f17ddffcb76334d`;
+revision SHA256
+`19f0c1393282a98d871aee29f5a05f5b1676ff05398c2e233e8baaa946803d7b`.
+Root views both masters and native comparisons: revision is more side-on with
+clearer forward/trailing feet, but narrower/taller and with more tail exposed
+than the current standing identity. Exact anatomical near/far identity and
+camera correspondence are not established. Both absolute-Python --check
+commands pass; untouched RGBA masters and all nonzero-alpha crop bounds are
+retained. Separate72x72 derivatives target56px meaningful height; three-panel
+comparison uses one standing-anchored scalar, not per-source height normalization
+(studies about60px). Faint exterior colored pixels remain, not cleaned or
+mistaken for opaque scenery. Neither study is installed, a completed walk or
+Final art. Independent review concurs: usable private pose reference, not a
+clean frame-ready export or verified weight-bearing key. Do not extend it into a cycle without shared-proportion evidence;
+native review alone does not transfer the rig's world-contact guarantees.
+
+Pose-art continuation,2026-10-07: use built-in HoMM3-Art for one far-support
+contact-B study guided by the newly proportioned rig frame05 and current Cabir
+identity, rather than another full atlas. Preserve exact prompt/master/reference
+hashes privately in proportioned-contact-b-v1. Acceptance before expanding:
+unmistakable opposite planted support, stable identity/camera/proportions and
+native56 silhouette with genuine alpha and unclipped bounds. Native reduction
+is mechanical only; no warped limbs, repaint or invented feet. This study alone
+cannot establish a coherent full walk or authorize normal runtime installation.
+
 Proportion-guide checkpoint,2026-10-07: new private v3-proportions producer
 adapts shared rest meshes/bones once, then reuses v2 IK/contact/render helpers.
 Hip height1.50->1.32; thigh/shin lengths0.66/0.64->0.594643/0.566481;

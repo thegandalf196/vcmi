@@ -1,5 +1,18 @@
 # New Horizons implementation sprints
 
+## Current checkpoint — 2026-10-07, Cabir contact artwork study
+
+PHASE1 remains active under the explicit Cabir user priority. Built-in HoMM3-Art
+creates one contact pose and a targeted camera revision from the proportioned
+rig. Native export checks pass for both; root compares masters/native silhouettes.
+The revision improves side-on foot separation but changes body width/height/tail,
+so it is a private provisional pose reference, not a completed animation or live
+asset. Exact prompts/master/ref hashes and unchanged source-alpha evidence are
+retained; no code, gameplay, launcher or coverage-count changes. Perks228/310,
+combat61/67 and Orders8/8 remain. Next Cabir work must establish shared model/
+proportion continuity, not independently generate another full sheet or claim
+that one contact pose solves the reported vibration/moonwalking.
+
 ## Current checkpoint — 2026-10-07, Cabir shared-rig proportions
 
 PHASE1 remains active, with the user's Cabir priority taking precedence over the
