@@ -1,5 +1,15 @@
 # New Horizons Linux build handoff
 
+## 2026-10-07 Spell-reward source pushed; Windows preflight live
+
+Source689091081045ca72f74a57e8bbf9f911ffeb75b2 is committed/pushed and the
+remote branch matches. Windows notice preflight37614491287 is confirmed
+in progress on that exact source:
+[Preflight run](https://github.com/thegandalf196/vcmi/actions/runs/37614491287).
+Poll this handle; do not dispatch a duplicate or full compilation until it
+finishes successfully. Dispatch is not package success. Normal Linux pointer
+and private preview launchers remain unchanged.
+
 ## 2026-10-07 Spell-reward School help checkpoint
 
 UP280 client/test rebuild92291 and focused incremental6213 succeed with12 jobs.
