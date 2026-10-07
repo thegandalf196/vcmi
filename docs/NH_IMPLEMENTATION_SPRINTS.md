@@ -1,5 +1,22 @@
 # New Horizons implementation sprints
 
+## Current checkpoint — 2026-10-07, required combat UI coverage
+
+Phase1 continues. UP269's listed/current spell-cost stages and explicit follow-
+up base are source/native verified (client/test builds,7/7 in2.472s); source
+commit949cde69e is pushed. UP270 detailed real/effective Morale is implemented
+(client build,6/6 shared cases in3.631s); commit6c73ed1e7 is pushed. UP271's
+detailed target-neutral Luck/overrides/Sylvan feedback is implemented (client
+build,7/7 focused cases in0.917s). Native checks establish shared producers,
+not rendered widget execution. One extra Wild Chance fixture fails the earlier-
+tier prerequisite before effect assertions; retain it for Phase2 repair/rerun.
+No gameplay/state/art or mechanic identities change:228/310 perks,82 planned,
+61/67 combat identities,31/31 Skills,93/93 ranks and8/8 Orders. Required UI
+coverage increases. Normal Linux snapshot remains unchanged, and live Windows
+37577480623 compiles older UP268. Next Phase1 work must follow the priority
+queue and actual unimplemented canonical paths, not reimplement these accepted
+consumers or treat all item-specific design holds as a whole-project blocker.
+
 ## Current checkpoint — 2026-10-06, magic handoff / Cabir correction
 
 Perfect Rhythm source is committed/pushed as be78e0758416cabdffd537253fd9250e92a74393

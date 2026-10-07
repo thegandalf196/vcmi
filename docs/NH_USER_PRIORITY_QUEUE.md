@@ -9,6 +9,36 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-271 — Detailed battle-creature combat Luck readback
+
+Status: Implemented (rendered/playable verification pending),2026-10-07.
+Client19490 builds successfully with12 jobs; seven direct Luck readback/shared-
+query/Sylvan target-neutral cases pass7/7 in0.917s, zero skips/errors/disabled.
+Binding guards and independent source review pass. Root catches and repairs
+the Luck hover index7 versus Morale4 before build. Initial adjacent eight-case
+run91570 passes7/8: Wild Chance's existing fixture throws an earlier-tier
+prerequisite error before its behavior assertions; record legal-fixture repair
+and Nature-summon rerun for Phase2, not a passing check or relaxed validation.
+Receipts: testing/spell-cost-20261007.fvX8ZAvh build-luck-client.log,
+native-luck.log/XML and native-luck-principal.log/XML. Native checks establish
+shared producers, not rendered widget execution. Rendered fit, open-window
+refresh and executed privacy checks remain Phase2; no Linux promotion or
+mechanic identity increase.
+
+Independent bounded audit finds the detail
+MoraleLuckBox still uses generic luckValAndBonusList, unlike UP259's compact
+shared target-neutral battleGetAttackLuck/Sylvan readback. Canonical all-display
+Luck/source feedback requires the detail value and tooltip to include actual
+temporary combat Luck and maximum overrides. Extend the existing battle-only
+overload and use the same qualified source/Sylvan presentation as the compact
+row. Do not expose hidden hero perks, invent target-specific Fortunate Aim
+value in a target-neutral view, or change gameplay/legacy/nonbattle handling.
+Acceptance: shared value/override/source bindings, client build, focused small
+existing Luck/Sylvan native controls and independent source review; rendered
+widget execution/open-window refresh and playable delivery remain separate.
+Frontend worker owns CCreatureWindow and MiscWidgets only; root owns guard,
+docs, serialized build and Git. No new art or mechanic identity.
+
 ## UP-270 — Detailed battle-creature Morale floor readback
 
 Status: Implemented (rendered/playable verification pending),2026-10-07.

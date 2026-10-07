@@ -1,5 +1,15 @@
 # New Horizons Linux build handoff
 
+## 2026-10-07 Detailed creature Luck checkpoint
+
+UP271 client19490 builds with12 jobs; seven focused direct Luck/Sylvan readback
+cases pass7/7 in0.917s, zero skips/errors/disabled. Guards and review pass. The
+initial adjacent run passes7/8; Wild Chance fixture prerequisite failure is
+retained/deferred (see NH_RELEASE_FAILURES), not a successful Nature-summon test.
+Receipts: testing/spell-cost-20261007.fvX8ZAvh build-luck-client.log,
+native-luck.log/XML and native-luck-principal.log/XML. No rendered widget or
+normal Linux promotion claim. Windows37577480623 builds earlier UP268.
+
 ## 2026-10-07 Detailed creature Morale checkpoint
 
 UP270 client15101 builds successfully with12 jobs; six shared-Morale native
