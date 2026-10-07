@@ -11,7 +11,7 @@ entries and their validation/delivery evidence.
 
 ## UP-287 — Phantom Army Integrity and legal landing preview
 
-Status: Open,2026-10-07; bounded Phase1 P0 audit. Canonical summons/prisons UI
+Status: In progress,2026-10-07; bounded Phase1 P0 audit. Canonical summons/prisons UI
 requires legal placement, aggregate HP/count and footprint before commitment.
 Phantom Army already supplies hpDelta=Integrity and unitsDelta=copied count
 through shared SpellEffectValue, with native preview-to-spawn evidence. The
@@ -22,6 +22,10 @@ shared query as runtime; preserve action, Mana, randomization and casting rules.
 Acceptance: shared effect/landing parity, scope and no-state-mutation controls,
 focused UI wiring/native tests and client compile. Rendering/delivery separate.
 Do not start until the current candidate spell-recorder SIGSEGV is repaired.
+The repair is now committed and accepted in a bounded fresh-candidate headless
+check. UI worker owns the two battle controllers/header; independent tester
+owns the Phantom Army native fixture/source wiring check; root owns localized
+text, integration/build and review. No artwork or cast-behavior changes.
 
 ## UP-286 — Level-up Skill card current-to-offered rank
 
@@ -35,6 +39,18 @@ perk-card/original controls, focused validation/client build; rendering separate
 Phantom Army's P0 preview and the candidate crash outrank this P1 slice.
 
 ## UP-285 — Saved New Horizons Morale range and roll curve
+
+Delivery checkpoint,2026-10-07: repair346c43424506ca7df3b718b84dab860d8edbdedc
+is committed/pushed. Exact-source12-job client rebuild passes; immutable
+08f1828f8c04c5a9830e36dea83fc9fdd11ac7531b1806c074329341900189f4
+is now selected by the normal Linux launcher. Independent2367-file checksum/
+version/payload audit passes. Fresh-profile20s true-headless All for One reaches
+day6, ends on expected timeout124 without SIGSEGV, and leaves no owned client,
+runtime or held profile lock. Private receipt: ignored
+build/nh-recorder-delivery-20261007.klVssUWx/native.log. One AI Leadership
+rejection remains an open Phase2 integration finding; no completed-game,
+rendered UI, sanitizer or Windows-package acceptance is inferred.
+UP284 and UP285 are delivered on Linux; rendered checks remain open.
 
 Crash source/native repair checkpoint: snapshot now retains its shared BonusList
 through iteration and defensively skips null entries. Client66261/test55280
