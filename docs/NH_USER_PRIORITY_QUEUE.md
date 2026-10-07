@@ -9,6 +9,37 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-274 — Protect's persistent battlefield Protector/Ward link
+
+Status: Implemented (rendered/playable verification pending),2026-10-07.
+Combined client/test rebuild85404 succeeds with12 jobs after repairing the
+fixture's const damage argument (failed78888 retained). Native26552 passes6/6
+in1.992s, zero skips/errors/disabled: real accepted pair/current double-wide
+footprints, exhausted interceptions, separation/reunion, expiry and death;
+legacy/no-order and invalid-side absence controls. Binding/module guards and
+independent source/fixture review pass. Receipts: ignored testing/
+protect-link-20261007.PexT2J24 build.log, build-repaired.log, native.log/XML.
+Movement result application is tested, not movement-command validation; legacy
+absence is not a seeded legacy-state test. Actual rendered SDL2/SDL3 execution,
+arrow visibility beneath sprites and playable delivery remain unverified.
+No gameplay identity, saved field or normal Linux promotion changes.
+
+Bounded source audit confirms that the synced
+Protect pair has only targeting highlights, a one-shot accepted animation and
+global textual IDs; there is no persistent visual connector. Canonical P0 Order
+state explicitly requires visually linking Protector and Ward. Render a modest
+directed ground-level link from current unit footprints while shared
+battleOrderBenefitAppliesTo confirms the pair is effective; disappear on spent,
+broken, expired, dead/nonadjacent or controller-ineligible states. Reuse native
+Canvas primitives without new art, gameplay fields or polling of all heroes.
+Keep targeting/click semantics unchanged. Required targeting highlights already
+show the legal adjacent Ward candidates; do not replace them with a new dialog.
+Acceptance: shared-state link readback after actual Protect, current footprint,
+spent/broken/expiry controls, saved/legacy gates, client build and focused source/
+native checks. Rendered/native visual fit and playable delivery remain separate.
+Worker owns battlefield renderer and isolated link helper; tester owns focused
+fixture. Root owns architecture, registration, validation, ledger and Git.
+
 ## UP-273 — Astral Nexus current-hero Normal Mana refill feedback
 
 Status: Implemented (rendered/playable verification pending),2026-10-07.

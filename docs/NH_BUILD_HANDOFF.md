@@ -1,5 +1,15 @@
 # New Horizons Linux build handoff
 
+## 2026-10-07 Protect battlefield-link checkpoint
+
+UP274 combined client/test rebuild85404 exits0 with12 jobs after retained
+fixture const-reference failure78888. Native26552 passes6/6 in1.992s, zero
+skips/errors/disabled; source/module guards and independent review pass.
+Receipts: ignored testing/protect-link-20261007.PexT2J24 build.log,
+build-repaired.log and native.log/XML. No executed renderer/backend acceptance
+or normal Linux snapshot promotion. Windows37583664987 remains a separate
+live earlier-source build5ae48a717; this local source slice is not included.
+
 ## 2026-10-07 Astral Nexus status checkpoint
 
 UP273 client/test build2077 exits0 with12 jobs; focused native39078 passes3/3

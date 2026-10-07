@@ -1,5 +1,21 @@
 # New Horizons implementation sprints
 
+## Current checkpoint — 2026-10-07, Protect battlefield link
+
+Phase1 UP274 increases required combat UI coverage: synchronized current
+Protector/Ward footprints and shared lifecycle now drive a directed ground
+connector. No new gameplay/save state, input change or bitmap art. Rebuild85404
+passes with12 jobs after retained fixture failure78888; native26552 passes6/6
+in1.992s, zero skips/errors/disabled, with source/module guards and independent
+review. Native checks exercise accepted Protect/readback and result-packet
+movement/death, not rendered execution or movement-command validation. Arrow
+visibility/backend fit and playable delivery remain separate Phase2 work.
+Counts unchanged:228/310 perks,82 planned,31/31 Skills,93/93 ranks,61/67 combat
+spells,8/8 Orders. Adjacent audit confirms Charge/Hold/Brace/marked-target badges
+already exist in detailed stack popups; next ready required-UI slice is explicit
+badge source/expiry wording, not a duplicate status system. Normal Linux remains
+unchanged; preserve the live Windows run37583664987 on older5ae48a717.
+
 ## Current checkpoint — 2026-10-07, Astral Nexus state readback
 
 Phase1 required building UI coverage increases under UP273, with no gameplay/
