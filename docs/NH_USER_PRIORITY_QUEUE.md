@@ -44,7 +44,10 @@ uses a constant walk translation, and emits only groups0/2/12/15;6 tests and
 exact-output verification pass. Candidate build/nh-cabir-handoff-overlay-v1-reviewed
 is not installed or playable; no derived colour pixels are staged. Local12-job
 client build passes. User wants both in a Linux preview; asked approval for
-borrowed Wisp stats and explicit Cabir placeholder states, no answer yet.
+borrowed Wisp stats and explicit Cabir placeholder states: user approved both
+on2026-10-07. Build a separate combined art-preview candidate and launch command;
+keep the normal playable snapshot untouched. These temporary rules/states do
+not establish final Wisp gameplay or complete Cabir animation coverage.
 Source committed/pushed6d207b2964b9c5be13ca131133b27339020a156c.
 Exact-source12-job Linux client build succeeds; immutable no-promote candidate
 8fa4b46fc8ff320d74d20aa0a77d19885cdceb5f6a5697f720df051f99667be7
@@ -56,6 +59,16 @@ directory digest; executable reports source6d207b296. All six Wisp descriptors
 match committed source. Existing81 Cabir-related payload entries are unchanged
 from selected52867cdf4a; no supplied handoff fragment is installed. These are
 integrity/version checks only, not gameplay or rendered acceptance.
+Approved combined preview implementation: detached Cabir builder supplies32
+battle groups per form, with missing states explicitly aliased (standing death);
+only graphics change. Detached Wisp builder aliases Psychic/Magic IDs to Wisp
+art with borrowed Core shooter profiles,8 shots and50/60 Leadership; removes
+inherited Elemental abilities and restores the approved seven-row Conflux
+roster in this preview only. Separate launcher/store/profile preserve normal
+play. Combined map starts with all four forms and40 adjacent Peasants. Focused
+Cabir4/4, Wisp3/3 and composer/isolation4/4 checks pass; combined and original
+map export/reload each pass. Independent source review finds no blocker.
+Actual candidate loading, delivery and rendered acceptance remain separate.
 
 ## UP-287 — Phantom Army Integrity and legal landing preview
 
