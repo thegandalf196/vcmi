@@ -2,6 +2,11 @@
 
 ## 2026-10-07 Perfect Rhythm Windows package available
 
+Latest-source follow-up: full Windows run37570969461 is confirmed queued on
+3a970a62372445c651f9c9de3345f4186fa3821b, including UP266/UP267. Do not restart
+or duplicate it because a polling observation expires. Queued is not compile,
+package or gameplay acceptance; the successful older artifact below remains.
+
 Run37565586139 is terminal SUCCESS on
 be78e0758416cabdffd537253fd9250e92a74393. Compile, staging, recursive PE
 closure/license/source packaging and preview upload all complete successfully.
