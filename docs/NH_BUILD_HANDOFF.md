@@ -1,5 +1,26 @@
 # New Horizons Linux build handoff
 
+## 2026-10-07 Perfect Rhythm battle-status readback audit
+
+Independent bounded source audit confirms no missing principal UI readback:
+BattleWindow::refreshHeroBattleStatus uses the visible hero and next eligible
+Spell/Order with newHorizonsWarcasting::effectiveBonus, including Perfect
+Rhythm's doubled candidate bonus and readiness expiry. Hidden opponent heroes
+fall back to public raw readiness rather than exposing private perk details.
+BattleInterface refreshes this status after round changes, spell casts and
+EndAction after authoritative state application. The separate Available/Spent
+Hero Action and contextual extra opportunities match the canonical UI rule.
+The existing check-new-horizons-metamagic-prompt.py guard fails at its blanket
+metamagicGrand token ban: current damage-preview/cache paths contain that token.
+Independent origin audit classifies this as a stale assertion: the client never
+assigns Grand to the requested action, and server validation rejects a submitted
+Grand flag. The occurrences only copy preview inputs or distinguish cache keys.
+Phase2 should narrow the guard's exceptions to those exact references while
+retaining manual-control/request rejection. Do not claim a passing guard. No production edit,
+new feature count, rendered acceptance or launcher promotion is claimed.
+Windows run37565586139 remains live compiling be78e0758 at this checkpoint;
+it excludes the later Bulwark combat-log commits. Preserve that exact run.
+
 ## 2026-10-06 Arcane Reservoir minimum AI hook — source/native verified
 
 AI town interaction now claims the owned Tower Reservoir's eligible manual
