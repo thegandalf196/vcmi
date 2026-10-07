@@ -43,7 +43,8 @@ normal Linux08f1828f8c does not yet contain this UI slice. Identity counts uncha
 
 ## UP-286 — Level-up Skill card current-to-offered rank
 
-Status: Open,2026-10-07; bounded Phase1 P1 audit. Canonical level-up cards show
+Status: Implemented (rendered verification/delivery pending),2026-10-07;
+bounded Phase1 P1 audit. Canonical level-up cards show
 current -> offered rank. GUIClasses currently passes only current+1 into the
 SEC_SKILL component, which renders offered rank/name but not the current rank.
 Add localized rank transition to Skill-rank cards only, preserving selection,
@@ -51,6 +52,21 @@ legality, ordinary component inspection and original-mode presentation.
 Acceptance: actual current/offered value mapping, rank0/Basic/Advanced cases,
 perk-card/original controls, focused validation/client build; rendering separate.
 Phantom Army's P0 preview and the candidate crash outrank this P1 slice.
+Both preceding source gates now pass. Worker owns GUIClasses.cpp only, using
+the existing card subtitle override and saved-NH-rules gating; no serialized
+fields or global component changes. Root owns localized text/module generation,
+build/integration; tester owns focused source guard and independent review.
+Source/build checkpoint: saved-NH Skill cards override only their caption with
+localized current -> offered rank and the Skill name. Unlearned -> Basic,
+Basic -> Advanced and Advanced -> Expert map to the actual current rank; the
+integer offered value still supplies icon and mechanical help. Perk, generic
+component and original-mode paths remain unchanged. Client45095 builds with12
+jobs, focused source guard and module check pass; independent review finds no
+blocker. These are source/build checks, not instantiated-widget/native rendering
+acceptance. The adjacent old layout guard fails on its pre-existing English
+"Learned" literal expectation; record Phase2 maintenance rather than changing
+unrelated localized perk-browser code. Native card fit/translated wrapping and
+playable delivery remain open. Identity counts unchanged.
 
 ## UP-285 — Saved New Horizons Morale range and roll curve
 
