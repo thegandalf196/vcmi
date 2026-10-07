@@ -45,7 +45,11 @@ Original indexed portraits and comparisons remain ignored/private.
 
 ## UP-283 — Combat quick-spell toolbar pressed-state legacy icon flash
 
-Status: Implemented (rendered/playable verification pending),2026-10-07.
+Status: Implemented (Linux delivered; rendered verification pending),2026-10-07.
+Normal launcher now resolves immutable4de7cd42f from sourcef8d593dd3 after
+independent inventory/version checks and bounded headless startup/cleanup.
+Actual pressed-button rendering remains unverified; delivery alone does not
+close the reported visual defect. UP233 records the full qualified smoke.
 Client/test rebuild41564 passes with12 jobs. The source-only routing/state
 checker passes2/2 and independent review finds no blocker. QuickSpellPanel used
 SPELLINT's stateful base frames0/1/2/3 beneath its selected id+1 symbol; pressed
@@ -53,7 +57,8 @@ frame1 is Summon Boat. All base states now retain existing neutral frame0,
 preserving the separate symbol, press nudge, cast callback and disabled overlay.
 Native button/hold rendering has not been executed; no normal Linux promotion.
 Source checkpoint committed and pushed as aafddaa5a; this is not delivery to
-the selected playable snapshot.
+the selected playable snapshot at that checkpoint. The later UP233 delivery
+is recorded above.
 Holding the mouse on a new spell in the combat quick
 toolbar briefly reveals Summon Boat behind its icon. Inspect normal/pressed/
 hover/disabled button frames and custom-symbol composition for the real toolbar.
@@ -94,7 +99,9 @@ variation remain; no full motion, runtime installation or approval claim.
 
 ## UP-280 — Recipient-specific School rank explanation on spell rewards
 
-Status: Verified (rendered/playable delivery pending), 2026-10-07.
+Status: Verified (Linux delivered; rendered verification pending), 2026-10-07.
+UP233 delivers this source in immutable4de7cd42f; recipient tooltip rendering
+and broader query/source execution remain unverified.
 Client/test rebuild92291 and focused incremental repair6213 pass with12 jobs.
 Native repaired run passes3/3 in0.919s, zero skips/errors/disabled: actual reward
 components retain the recipient's localized required rank/School, other blockers
@@ -132,7 +139,7 @@ School masks. Known/no-book/excluded/special/banned controls must not falsely
 claim School proficiency is their sole blocker. This was the pre-implementation
 representation decision; current evidence is recorded above.
 
-Current implementation slice: shared Hero classification reuses the existing
+Initial implementation slice: shared Hero classification reuses the existing
 learning evaluator and bypasses only School proficiency in a quiet second
 evaluation, solely to establish that it is the only failed gate. The normal
 boolean API keeps predicate order and warnings. Component carries optional
@@ -140,11 +147,15 @@ localized MetaString helpReason with append-only COMPONENT_HELP_REASON wire/
 save feature; older presentation defaults absent. Reward spells use the actual
 recipient and retain disabled value -1; scrolls are not annotated. Runtime,
 transport/UI and focused native fixtures have separate ownership. Compile,
-native acceptance, independent review and playable delivery remain pending.
+native acceptance, independent review and delivery were pending at that point;
+the newer evidence above supersedes that gate status.
 
 ## UP-279 — Recruitment into a later legal duplicate army slot
 
-Status: Verified (delivery pending),2026-10-07. Client/test build47394 and final
+Status: Verified (Linux delivered; manual UI/AI acceptance pending),2026-10-07.
+UP233 delivers this source in immutable4de7cd42f; the short headless map smoke
+does not prove the specific duplicate-slot human/AI recruitment journey.
+Client/test build47394 and final
 rebuild41564 pass with12 jobs. Focused native25434 passes8/8 in2.563s, zero
 skips/errors/disabled: six recruitment admission controls plus two Portal
 stock/Leadership regressions. Initial7/8 run retained: the Portal rejection
@@ -2822,6 +2833,32 @@ No graphical acceptance or launcher promotion occurred. Existing snapshot
 6e1e8ce3 remains the default; unfinished UP-232/UP-004 source stays separate.
 
 ## UP-233 — Bring the Linux launcher executable up to date
+
+Delivered refresh,2026-10-07: client34280 rebuilds committed source
+f8d593dd3c49e8a1a95d2535a85e30d29ae75419 with12 jobs. Immutable candidate
+4de7cd42fb13e2c788a4fdda80e0a839bcab717906aea3cbc596432c39fc0d0b passes
+independent verification of all2367 payload files, matching binary versions and
+unchanged source/snapshot hashes. One fresh-profile20s dummy-SDL true-headless
+All for One run completes AI days1–4 and reaches day5; timeout124 is intentional.
+Owned client/runtime are gone and the private profile lock is released. No
+crash/assertion, command-rejection or ammo-overuse marker is found. Known
+diagnostics remain: four Cabir Repair schema warnings, six Dispel invalid-spell
+errors,114 obstacle-access warnings and one obstacle-placement debug exception.
+These are recorded Phase2 findings, not a clean-log or completed-game claim.
+Promotion and subsequent checksum resolve select this exact candidate in the
+unchanged normal play script. Prior2af95e81a and other snapshots/saves/profiles
+remain intact. Receipts: ignored build/nh-delivery-refresh-20261007.upSE5U43,
+run.VG31HGqM. Includes UP279/280/283 and all preceding committed gameplay fixes;
+does not complete the Lizardman Cabir, Gargoyle masks or rendered UI acceptance.
+
+Prior refresh plan,2026-10-07: the then-selected normal Linux snapshot
+predated accepted recruitment routing, quick-spell pressed-state and
+recipient School-help changes. Rebuild the latest committed source with12 jobs,
+freeze a distinct immutable candidate, independently verify its inventory and
+version, and run the existing bounded dummy-SDL/headless fresh-profile map smoke.
+Promote only that exact candidate after acceptance; preserve previous snapshots,
+normal saves/profiles and private art previews. This is delivery of verified
+source, not a new Cabir animation, Gargoyle mask or rendered UI acceptance.
 
 Independent package audit,2026-10-06: exact artifact11414801242 is downloaded
 under ignored `build/nh-win-artifact-o9aNnb/`. Outer SHA256SUMS passes for all

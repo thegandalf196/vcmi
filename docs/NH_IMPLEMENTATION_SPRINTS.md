@@ -1,5 +1,21 @@
 # New Horizons implementation sprints
 
+## Current checkpoint — 2026-10-07, Linux delivery refresh
+
+PHASE1. Normal launcher now selects immutable4de7cd42f from committedf8d593dd3,
+including UP279 recruitment, UP283 quick-spell pressed state and UP280 recipient
+School help. Client34280 rebuilds with12 jobs; independent2367-file/version
+checks and one20s fresh-profile true-headless All for One run pass qualified
+startup/AI progression/cleanup (days1–4 complete, day5 begun, timeout124).
+Known Cabir Repair schema, Dispel and obstacle diagnostics remain Phase2; no
+rendered, manual-input or completed-match claim. Previous snapshots/profiles
+remain intact. Windows preflight37614491287 succeeds; full build is next.
+Bounded Fortress/Academy ability audits find existing consumers, Mage cost
+ordering/nonstacking and Cabir repair AI comparison; no new missing principal
+path is demonstrated in those samples. Counts remain228/310 perks,61/67 combat
+identities and8/8 Orders. Transformer still needs its integer-output ruling;
+Cabir/Gargoyle artwork and reported recruitment-view identification remain open.
+
 ## Current checkpoint — 2026-10-07, recipient-specific spell learning help
 
 PHASE1. UP280 adds the recipient's required School rank to reward/teacher

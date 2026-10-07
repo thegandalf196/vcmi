@@ -1,5 +1,32 @@
 # New Horizons Linux build handoff
 
+## 2026-10-07 Windows full refresh is live
+
+Preflight37614491287 succeeds on689091081. Full run37616860622 is confirmed
+in progress on exactf8d593dd3c49e8a1a95d2535a85e30d29ae75419, matching the
+source of the selected Linux4de7cd42f candidate:
+[Full Windows run](https://github.com/thegandalf196/vcmi/actions/runs/37616860622).
+Poll this handle through terminal status; no duplicate dispatch, artifact or
+Windows gameplay acceptance is claimed. Later receipt-only commits do not
+change this frozen source. The older successfulb17e1f8fc package remains valid.
+
+## 2026-10-07 Normal Linux launcher refreshed
+
+Exact sourcef8d593dd3c49e8a1a95d2535a85e30d29ae75419 rebuilds client34280 with
+12 jobs and freezes as4de7cd42fb13e2c788a4fdda80e0a839bcab717906aea3cbc596432c39fc0d0b.
+Independent before/after inventory verifies all2367 files and matching executable/
+library versions. A single fresh-profile20s dummy-SDL true-headless All for One
+run progresses through four complete AI days and begins day5; expected timeout124,
+owned client/runtime absent and profile lock released. No crash/assertion,
+request-rejection or ammo-overuse markers. Known Cabir Repair schema/Dispel/
+obstacle diagnostics remain Phase2; do not call this a clean or completed match.
+Promotion and subsequent resolve now select4de7cd42f in the unchanged normal
+script; previous2af95e81a and all snapshots/saves/profiles are preserved.
+Receipts: ignored build/nh-delivery-refresh-20261007.upSE5U43/run.VG31HGqM.
+This delivers UP279/280/283 and prior source changes, not new Cabir movement,
+Gargoyle mask correction or rendered verification. Windows preflight37614491287
+is terminal SUCCESS on689091081; subsequent source changes so far are docs only.
+
 ## 2026-10-07 Spell-reward source pushed; Windows preflight live
 
 Source689091081045ca72f74a57e8bbf9f911ffeb75b2 is committed/pushed and the
