@@ -11,6 +11,41 @@ entries and their validation/delivery evidence.
 
 ## UP-288 — Cabir and Wisp supplied complete handoffs
 
+New delivery request,2026-10-07: user supplies three refreshed Downloads handoffs:
+magi-vcmi-full-handoff-v1.zip, cabir-home-agent-handoff-v1.zip and
+wisp-complete-handoff-v3.zip. Inspect current archive manifests and instructions,
+compare same-named Cabir/Wisp archives with prior imported packages, and execute
+their authorized integration requirements. Do not assume unchanged package
+contents from filenames or silently invent final Wisp rules. Preserve unrelated
+drafts, purchaser-derived asset privacy, normal saves and actual delivery evidence.
+Independent package streams own detached assets/tools; root integrates shared
+configuration, builds and documentation. Acceptance: required bindings/states,
+focused checks, build and candidate loading; visual acceptance remains separate.
+User additionally requests a Linux version built with every latest commit after
+these integrations. Commit coherent changes, rebuild exact latest source, verify
+candidate version/resources, and deliver its launch command; do not deliver an
+older snapshot merely because an earlier preview already compiled.
+
+Refreshed handoffs,2026-10-07: complete private Cabir/Magi importers and detached
+graphics-only merger committed/pushed f076d3112. Cabir supplies160 authored
+battle frames; Magi supplies266; all source PNG bytes are preserved. Fourteen
+focused importer/merge checks pass; independent binding review passes, including
+the corrected build-directory-only merge guard. Original-derived art remains
+ignored/private. This is source/import acceptance, not playable delivery.
+User approves the supplied Wisp v4 gameplay proposal provisionally, including
+outgoing no-retaliation and direct clear-corridor Long Reach. Integrate additive
+Wisp identities, restored Pixie/Sprite shared line, Pass-through, Long Reach5,
+95% magical reduction, supplied sounds and provisional stats. Root owns final
+build and exact-latest-commit private Linux selection. User lowers build concurrency
+to10 jobs on2026-10-07 because12 disrupts other activity; use10 for remaining
+local builds unless changed. Running12-job Ninja was interrupted safely, with
+completed objects preserved, then resumed at10. Runtime integration
+passes18/18 focused native checks after correcting three fixture assumptions;
+client and test builds pass at10 jobs, and genuine six-form preview VMAP export
+and reload pass. Exact-latest-source candidate assembly, headless acceptance
+and candidate selection remain pending; the old shooter-alias preview is not
+the requested updated candidate.
+
 Status: In progress,2026-10-07. User requests implementation of Downloads
 cabir-home-agent-handoff-v1.zip and wisp-complete-handoff-v3.zip. Inspect both
 handoffs and provenance before importing, follow their explicit integration

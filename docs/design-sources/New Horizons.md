@@ -5160,7 +5160,7 @@ and assets use Cabir. Provisional artwork follows the Heroes III Art workflow.
 |Fortress|Wyvern|Elite|2|430||
 |Fortress|Hydra|Champion|1|650||
 |Conflux|Pixie|Core|14|45|Upgrades to Sprite; restored single Core line|
-|Conflux|Wisp|Core|Pending|Pending|Second Core line; violet-blue upgraded form; gameplay values awaiting user rules|
+|Conflux|Wisp|Core|8|140|Second Core line; upgraded form Leadership 170; provisional supplied values|
 |Conflux|Air Elemental|Elite|5|180||
 |Conflux|Water Elemental|Elite|5|200||
 |Conflux|Fire Elemental|Elite|4|220||
@@ -5170,9 +5170,30 @@ and assets use Cabir. Provisional artwork follows the Heroes III Art workflow.
 The Wisp handoff roster decision supersedes the independent Sprite Grove and
 eighth recruitment slot: restore the Pixie dwelling's Sprite upgrade. The former
 Psychic/Magic Elemental dwelling line becomes the Wisp base/upgrade dwelling,
-using the intended Altar of Magic artwork. Wisp's statistics, abilities, attack
-type, price, growth and Leadership remain pending explicit provisional rules;
-the supplied shooting and flight artwork does not grant those mechanics.
+using the intended Altar of Magic artwork. Preserve the original Psychic and
+Magic Elemental identities for existing maps and saves, but exclude them from
+this town's recruitment roster. Wisps use separate stable creature identities.
+
+Both Wisp forms are non-shooters. Pass-through permits traversal through occupied
+or blocked battlefield positions, but movement must end on an ordinarily legal,
+unoccupied hex and uses the normal movement budget. It is not Flying, does not
+grant adventure-map bypass, and grants neither immobilization nor hazard immunity.
+Long Reach 5 permits physical melee attacks across five intervening hexes
+(maximum hex distance 6). Their innate 95% Magical Damage Reduction uses normal
+magical penetration rules and does not block status spells or reduce physical
+damage. Shooting artwork does not grant ammunition or Shooter capabilities.
+
+Use the supplied prototype values initially: Wisp Attack/Defense 7/4, damage
+2–3, Health 12, Speed/Initiative 5/6, Gold 160; upgraded Wisp 9/6, damage 3–4,
+Health 16, Speed/Initiative 6/7, Gold 240. Both share weekly growth 8. The upgrade's
+provisional display name is Greater Wisp. Its outgoing attacks prevent retaliation,
+including adjacent attacks; it retains normal retaliation when attacked adjacently.
+Long Reach requires a direct clear hex corridor: intermediate stacks, intact walls
+and solid obstacles block attacks. When hex geometry admits multiple equally direct
+corridors, any clear one suffices. Pass-through movement does not bypass this attack
+restriction. These supplied rules and values are approved provisionally for playtesting.
+Attack uses MAGICBLT.wav once per physical attack; movement uses AELMMOVE.wav,
+and hit reactions use AELMWNCE.wav. These sounds do not turn attacks into spells.
 
 
 
@@ -5195,7 +5216,9 @@ Until a faction receives a dedicated creature-stat pass, its old Heroes III Comp
 
 ###### Conflux Elementals and terrain mapping
 
-The five Elite Elemental lines are Air, Water, Fire, Earth, and Magic. Pixie and Sprite are independent Core lines rather than an upgrade pair. Phoenix remains the Champion.
+The four Elite Elemental lines are Air, Water, Fire and Earth. Pixie upgrades to
+Sprite as one Core line; Wisp and its upgrade form the second Core line. Phoenix
+remains the Champion. The earlier five-Elite/independent-Sprite roster is superseded.
 
 |**Battlefield terrain**|**Elemental Convergence result**|
 |---|---|
