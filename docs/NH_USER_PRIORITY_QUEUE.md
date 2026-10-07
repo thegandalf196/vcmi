@@ -184,6 +184,18 @@ checks; normal Linux snapshot remains4de7cd42f and does not contain this slice.
 
 ## UP-282 — Academy Gargoyle background and recruitment Arch Mage colours
 
+2026-10-07 bounded art correction: HoMM3 Art/built-in generation produced Stone
+matte r6, then one focused r7 revision. Mechanical58x64 comparisons restore
+the torso holes, but independent native/enlarged review still rejects a lower-
+left fragment (approximately x6–17,y30–51) that appears to retain architecture.
+Both stay private/unregistered; no runtime or playable fix is claimed. Exact
+prompts, masters and comparisons are retained in ignored
+output/homm3/academy-gargoyle-up282/mask-r6 and mask-r7. Asked permission to
+manually trace/clean the geometry matte while preserving the original silhouette
+and keeping original/derived colour pixels private; no answer yet. Do not loop
+unchanged generation or install a failed mask. The existing58x64 runtime matte
+compositor can consume an accepted mask without publishing original art.
+
 Renewed user report,2026-10-07: Gargoyle still shows the old background and
 Arch Mage still appears non-grey in the little recruitment panel. Recheck the
 actual consumer and selected playable payload before changing aliases. These
