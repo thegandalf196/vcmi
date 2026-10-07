@@ -1,5 +1,15 @@
 # New Horizons Linux build handoff
 
+## 2026-10-07 Astral Nexus status checkpoint
+
+UP273 client/test build2077 exits0 with12 jobs; focused native39078 passes3/3
+in1.204s, zero skips/errors/disabled. Data/source/module checks and review pass.
+Initial adjacent8478 passes3/4; unchanged old above-capacity Normal expectation
+fails before later visit/save assertions. Retain build.log, failed native.log/XML
+and green native-principal.log/XML under ignored testing/
+nexus-status-20261007.uILCkRnT. No rendered town execution or normal Linux
+promotion. Existing Windows37583664987 builds5ae48a717, excluding this slice.
+
 ## 2026-10-07 Initiative-origin checkpoint
 
 Source5ae48a71787af96b3c0c4d67e311f4c1021d0ec7 is committed/pushed.

@@ -1,5 +1,20 @@
 # New Horizons implementation sprints
 
+## Current checkpoint — 2026-10-07, Astral Nexus state readback
+
+Phase1 required building UI coverage increases under UP273, with no gameplay/
+saved-field or mechanic identity change. Existing unlimited Astral Nexus had
+no current-hero tooltip status. Authored Normal/max/restore/Buffer tokens now
+flow through the existing saved-rule Town helper and hover/right-click consumer.
+Build2077 passes with12 jobs; native39078 passes3/3 in1.204s, zero skips, with
+data/source/module checks and source review. Initial adjacent3/4 failure is an
+unchanged old test expecting above-capacity SET_NORMAL; record explicit-Buffer
+fixture repair/full restoration-save rerun for Phase2. Rendered acceptance and
+normal Linux promotion remain separate. Movement/Chain Lightning/source cleanse
+feedback are already covered; do not reimplement them. Functional Field Workshop
+still awaits destroyed-target scope; no partial perk activation. Windows run
+37583664987 continues on earlier5ae48a717 and does not include UP273.
+
 ## Current checkpoint — 2026-10-07, initiative origin feedback
 
 Phase1: UP272 adds required initiative-bar distinction for implemented extra

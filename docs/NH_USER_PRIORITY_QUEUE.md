@@ -9,6 +9,35 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-273 — Astral Nexus current-hero Normal Mana refill feedback
+
+Status: Implemented (rendered/playable verification pending),2026-10-07.
+Combined client/test build2077 exits0 with12 jobs. Principal native39078
+passes3/3 in1.204s, zero skips/errors/disabled: translated deficit/full/Buffer/
+no-hero readback with nonmutation, existing finite training and weekly Reservoir
+controls. Focused authored-data/source/module guards pass; independent source
+review finds no blocker. Initial adjacent run8478 passes3/4: the old combined
+training/refill fixture asserts above-capacity Normal Mana after SET_NORMAL and
+fails before later save assertions. Its stale fixture repair/rerun is Phase2,
+not a passing restore/save check or permission to relax the clamp. Receipts:
+testing/nexus-status-20261007.uILCkRnT build.log, native.log/XML (failed control)
+and native-principal.log/XML. Actual town rendering/visibility execution remains
+unverified; no new mechanic identity or Linux promotion.
+
+Bounded source audit finds that Astral Nexus
+is an unlimited rewardable building, so the existing town visit-status helper
+returns no current-hero state. Canonical unique-building feedback includes it;
+the implemented ordinary refill itself is not missing. Extend authored unlimited
+building status through the existing hover/right-click consumer: current Normal/
+maximum, missing Normal restored, Buffer unchanged and unlimited visits.
+Use the existing visitor-then-garrison selection and saved-rule/owned-town
+visibility gate. No used flag, polling, new panel or change to restoration.
+Acceptance: real initialized hero/building Normal-only preview, Buffer retained,
+full-capacity and no-hero controls, existing finite visit statuses unchanged;
+focused client/test build and source bindings. Rendered execution and playable
+delivery remain separate. Worker owns the status helper; tester owns the native
+building fixture; root owns authored configuration, checks, integration and Git.
+
 ## UP-272 — Initiative-bar extra-activation origin feedback
 
 Source5ae48a717 is committed/pushed. Windows37583664987 is confirmed live on
