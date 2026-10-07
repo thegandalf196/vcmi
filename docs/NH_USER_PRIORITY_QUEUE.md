@@ -84,6 +84,20 @@ selection overlays. Builder now sets generateOverlay1 on all32 groups/form;
 focused tests4/4 and deterministic selection-v2 output check pass. All PNG
 bytes remain unchanged. Candidate69304233a933 is superseded for selection
 and was never promoted; freeze and validate the corrected candidate next.
+Corrected preview delivered,2026-10-07: selected only in the separate
+cabir-wisp-preview-snapshots store:
+b5ec300972e3e7171b3c65e878466087ccc2dc81229d4c2fc46635c4f91b78ca,
+source96fdd26c677ac524c38bf2272dc7aa26593dbe9d (built12 jobs, committed/pushed).
+Independent2654-file integrity/resource audit passes; all32 Wisp and Cabir
+battle groups enable generated selection overlays. Only JSON terminal-newline
+formatting differs on WispUpgradeMap; parsed data is identical. Exact candidate
+headless scenario completes exit0/day4 victory with BattleAI, no crash/rejection/
+Leadership/ammo markers; owned runtime cleanup and lock release pass. Separate
+launcher verify-only passes; normal pointer unchanged. Launch
+play-new-horizons-creature-preview-linux.sh, select Cabir and Wisp Art Preview,
+play Red/Solmyr. Final Wisp rules and Cabir missing art remain open; actual
+rendered selection, alignment, timing and town interaction acceptance are pending.
+Private final receipt: build/nh-creature-preview-validation-96fdd26c6/headless.log.
 
 ## UP-287 — Phantom Army Integrity and legal landing preview
 
