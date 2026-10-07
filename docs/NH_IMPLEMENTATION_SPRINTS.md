@@ -2,6 +2,16 @@
 
 ## Current checkpoint — 2026-10-06, magic handoff / Cabir correction
 
+Five-row Spellcraft readiness audit rechecks canonical clauses4433–4442 against
+UP132/069/134/133/121. No new ready principal slice is established. Cross-School
+multi-school relation, Concentration target-count policy and penetration
+composition are now presented as three narrow user choices; awaiting actual
+answers, not treating recommended defaults as approval. Extend Spell's terrain/
+summon scope and Precise Casting's Time Stop/Earthquake scope remain held.
+Accepted-cast conventions may remove older Counterspell questions, but that
+cross-reference alone is not a ruling for these two perks. Refreshed planned-row
+evidence now covers51 rows; no coverage or runtime change.
+
 The rig-guided eight-pose Cabir art export is frozen privately. Root confirms
 eight 72x72 GIF frames at 130ms; raw-cell integrity and pre-composite meaningful
 alpha bounds pass. Independent visual review accepts only a provisional human

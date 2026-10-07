@@ -7607,6 +7607,12 @@ utility ranking. No new save state or serialization version was needed.
 
 ## UP-132 — Spellcraft Cross-School Formula
 
+Readiness refresh,2026-10-06: exact canonical clause rechecked. A narrow
+multi-school choice is presented: disjoint School sets versus at least one new
+School. Await the user's actual answer; a recommended default is not approval.
+Later accepted-cast convention may supersede the old Counterspell concern,
+but this still requires direct convention verification before implementation.
+
 Status: Blocked on multi-school/Counterspell clarification, 2026-10-02. Next UP-023 missing
 Basic Spellcraft perk: after casting from one school, the next spell from a
 different school before the end of the next round gains10% to its Spell
@@ -8059,6 +8065,10 @@ their broad declared coverage. Asked one shared scope question; do not infer
 an unrelated whole-army aura. No source changes or activation occurred.
 
 ## UP-121 — Warcasting Combat Casting
+
+Readiness refresh,2026-10-06: penetration composition is presented as a narrow
+choice, with20% and15% yielding32% independently,35% additively or20% strongest
+only. This also gates Overwhelming Formula. No answer or activation is inferred.
 
 Status: Blocked on penetration composition, 2026-10-02; read-only mapping
 while UP-120's frozen candidate builds.
@@ -10808,6 +10818,11 @@ the combined run. Tax Collector is native verified; Grand Formula's remaining
 fixture repairs do not invalidate this independent payout result.
 
 ## UP-069 — Implement Spellcraft Grand Formula and audit Concentration
+
+Readiness refresh,2026-10-06: Concentration's exact canonical clause rechecked.
+A narrow choice is presented: explicitly single-stack spells only versus any
+spell whose realized effect reaches exactly one stack. This changes area/global/
+chain eligibility; await the actual answer before activating the planned perk.
 
 Status: Grand Formula verified (delivery pending); Concentration blocked on design, 2026-10-01. UP-023 missing-perk coverage. Grand Formula
 must scale the Spell Power-derived component of the first accepted Level 4 or
