@@ -51,6 +51,11 @@ Exact-source12-job Linux client build succeeds; immutable no-promote candidate
 contains Wisp resources but no playable Wisp definitions/new Cabir replacement.
 Do not present this as the requested combined art preview or change the normal
 launcher before that preview scope is approved and actually implemented.
+Independent candidate audit passes2575 file checksums, manifest/inventory and
+directory digest; executable reports source6d207b296. All six Wisp descriptors
+match committed source. Existing81 Cabir-related payload entries are unchanged
+from selected52867cdf4a; no supplied handoff fragment is installed. These are
+integrity/version checks only, not gameplay or rendered acceptance.
 
 ## UP-287 — Phantom Army Integrity and legal landing preview
 
