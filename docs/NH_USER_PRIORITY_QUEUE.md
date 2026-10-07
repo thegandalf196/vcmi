@@ -9,6 +9,31 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-275 — Creature Order badge source and expiry help
+
+Status: Implemented (rendered/playable verification pending),2026-10-07.
+Client/test rebuild20554 passes with12 jobs after retained missing translator-
+header failure83580. Focused native checks pass2/2 in0.915s, zero skips/errors/
+disabled: translated side/round, invalid/noncurrent metadata and nonmutation.
+Binding/module guards and independent source/fixture review pass. Receipts:
+ignored testing/order-badge-20261007.MM5ju8m8 build.log, build-repaired.log,
+native.log/XML. These are metadata/translation tests, not executed badge
+eligibility, privacy, round-transition rendering or visual-fit acceptance.
+No gameplay identity, saved field or normal Linux promotion changes.
+
+Canonical required creature Order badges include
+source and duration. Existing detailed stack badges already show Charge/Hold/
+Brace readiness and designated targets; do not duplicate their mechanics or
+add a new always-on panel. Append localized issuing-side and explicit end-of-
+round expiry help to each current badge, noting benefits can end earlier when
+used or broken. Read synchronized issuedRound; do not add timers, saved fields
+or infer hidden hero perks/identity. Preserve badge eligibility, layout, clicks,
+art and gameplay. Acceptance: focused translated source/round formatting and
+expired/invalid controls, source consumer binding, client/test build and review.
+Rendered fit and playable delivery remain separate. Frontend worker owns the
+isolated helper and creature window consumer; tester owns focused fixture;
+root owns authored texts, registration, validation, ledger and Git.
+
 ## UP-274 — Protect's persistent battlefield Protector/Ward link
 
 Status: Implemented (rendered/playable verification pending),2026-10-07.

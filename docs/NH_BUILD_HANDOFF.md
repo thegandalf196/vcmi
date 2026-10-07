@@ -1,5 +1,14 @@
 # New Horizons Linux build handoff
 
+## 2026-10-07 Order-badge metadata checkpoint
+
+UP275 client/test rebuild20554 exits0 with12 jobs after retained translator-
+header failure83580. Native2/2 passes in0.915s, zero skips/errors/disabled;
+binding/module checks and independent review pass. Receipts: ignored testing/
+order-badge-20261007.MM5ju8m8 build.log, build-repaired.log and native.log/XML.
+No executed badge rendering or normal Linux promotion. Live Windows37583664987
+still compiles older5ae48a717, excluding UP273/274/275.
+
 ## 2026-10-07 Protect battlefield-link checkpoint
 
 UP274 combined client/test rebuild85404 exits0 with12 jobs after retained

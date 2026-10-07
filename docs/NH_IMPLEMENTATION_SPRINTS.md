@@ -1,5 +1,18 @@
 # New Horizons implementation sprints
 
+## Current checkpoint — 2026-10-07, creature Order badge metadata
+
+Phase1 UP275 adds the specified source/duration help to existing Order badges,
+without new UI/art/state or eligibility changes. Issuing side and saved current
+round drive localized text; hidden hero identity is not queried. Rebuild20554
+passes with12 jobs after retained fixture header failure83580; native2/2 passes
+in0.915s with zero skips/errors/disabled, source/module checks and review.
+Executed badge transitions, rendered fit and playable delivery remain separate.
+Counts unchanged:228/310 perks,82 planned,31 Skills/93 ranks,61/67 combat spells,
+8/8 Orders. Next functional candidate audit must use existing recorded design
+holds and resolved choices rather than invent a duplicate Order subsystem.
+Windows37583664987 remains live on older5ae48a717; normal Linux is unchanged.
+
 ## Current checkpoint — 2026-10-07, Protect battlefield link
 
 Phase1 UP274 increases required combat UI coverage: synchronized current
