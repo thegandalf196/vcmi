@@ -2,6 +2,11 @@
 
 ## Current checkpoint — 2026-10-06, magic handoff / Cabir correction
 
+Perfect Rhythm source is committed/pushed as be78e0758416cabdffd537253fd9250e92a74393
+with required author/committer identity. Full Windows run37565586139 is queued
+on that exact source, dispatched once after prior37557751116 completed SUCCESS.
+No Windows result or Linux promotion is inferred from the new dispatch.
+
 Accepted Perfect Rhythm checkpoint supersedes the pending notes below: all
 three builds pass, principal7/7 and activated7/7 native cases pass, adjacent11/11
 pass, zero skips (2.065s/2.045s/2.259s). Three focused registry tests/module drift
