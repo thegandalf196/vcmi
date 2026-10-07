@@ -11,6 +11,22 @@ entries and their validation/delivery evidence.
 
 ## UP-265 — Cabir walking and icon background defects
 
+Targeted full-sheet revision,2026-10-06: built-in HoMM3-Art v2 preserves exact
+prompt/master privately. Independent review rejects it as a gait correction:
+the prominent arm/torso presentation still changes4→5;6 and8 remain similar
+extended-leg poses interrupted by raised-knee7, not a convincing progressive
+return; fine surface detail remains. Do not install or claim improvement from
+new image bytes. Further same-atlas regeneration has weak evidence of benefit.
+Next creative attempt needs individually verified contact/passing/recovery
+silhouettes and shared body geometry, not another unchanged whole-sheet prompt.
+The technical rig is available, but no final rigged Cabir model is established.
+Root independently viewed the native v1/v2 comparison and confirms no material
+gait improvement. Whole-cell comparison uses a uniform56px first-frame scale
+per atlas and fixed cell-center placement, not anatomical root normalization;
+it does not establish footplant or absence of alignment jitter. Source v2 SHA256
+`df6f924f507805b4043b2fd88d5fdbdc52f0e8aff4806246e23f02af5f9c1b19`;
+exact crop/alpha-edge/pre-composite bounds checks pass. No GIF or installation.
+
 Full-sheet art attempt,2026-10-06: one built-in HoMM3-Art eight-pose master now
 uses the complete shared-root rig contact sheet plus the approved identity,
 rather than independently generating each pose. Private rig-guided-walk-sheet-v1
