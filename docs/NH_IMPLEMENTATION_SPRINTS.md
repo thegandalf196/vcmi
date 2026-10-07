@@ -2,6 +2,16 @@
 
 ## Current checkpoint — 2026-10-06, magic handoff / Cabir correction
 
+Windows notice preflight37556334450 completed SUCCESS on10dc2428c. Full package
+37557751116 is confirmed live compiling the Windows client on ce1b5547cf;
+the intervening source difference is documentation-only. No duplicate dispatch,
+restart, success claim or Linux promotion. Cabir's original articulated
+three-pose guide is frozen and validated; one generated contact is rejected and
+the focused revision has opposite support but native56 confirms proportion and
+camera drift. GenuineRGBA/source hashes and mechanical exports are recorded;
+these private studies are not installed/full gait coverage. Next gait producer
+needs shared Cabir proportions, not another independent same-camera claim.
+
 Final uncertain-row pass inspects twelve more planned perk rows and all six
 inactive base combat identities; exact recorded holds are restated in the hold
 index. Combined39 planned perks have refreshed evidence. Existing producers

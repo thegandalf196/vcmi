@@ -11,6 +11,24 @@ entries and their validation/delivery evidence.
 
 ## UP-265 — Cabir walking and icon background defects
 
+Rig-guide checkpoint,2026-10-06: the original articulated three-pose producer
+is frozen privately with reproducible headless Blender scripts, evaluated joint
+checks and native56 contact comparison. Near support is planted through passing;
+the opposite contact uses Far support. Recorded root progression is0/0.27/0.54,
+with the Near support toe fixed at worldX0.54 through passing. This is a technical
+half-cycle guide, not Cabir artwork or a complete translated walk.
+Two genuine built-in HoMM3-Art contact studies use approved identity plus that
+guide. Initial output repeats Near-forward support and is rejected. The single
+geometry-focused revision shows Far-forward/Near-trailing support and rougher
+materials. Native56 comparison confirms a narrower/taller body and camera drift
+against the standing identity; alpha extrema0/255 are genuine, but faintalpha
+outside the meaningful silhouette affects the all-alpha crop. Retain as a
+provisional opposite-support reference, not a runtime-ready animation frame.
+Masters and exact prompts remain private in rig-guided-contact-b-v1 and
+rig-guided-contact-b-revision-v1. No runtime installation or gait acceptance.
+Next producer must preserve shared Cabir proportions/camera across the cycle;
+independent pose refinement alone is still insufficient for a coherent walk.
+
 New producer path,2026-10-06: read-only tool discovery finds /usr/bin/blender
 already installed. Build an original articulated technical blockout/joint guide
 under ignored output/homm3/cabir-reference-v4/rigged-pose-guide-v1, rendered with
