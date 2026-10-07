@@ -10262,6 +10262,24 @@ existing Last Stand map, focusing on shared lethal physical-attack resolution,
 Guardian absorption ordering, side-wide history and immediate Defend/retaliation
 activation termination. No activation or coverage credit before implementation.
 
+Selected implementation contract: resolve a pure lethal incoming-damage cap
+immediately before CStack::prepareAttacked, accounting for Guardian absorption
+before normal health/casualties/Rebirth; never resurrect a dead stack afterward.
+An actual accepted physical creature attack is required: PHYSICAL_CREATURE
+provenance alone also includes nonattack sources and is insufficient. Reserve
+the first eligible lethal target in ordered multi-target resolution with a
+side-wide spent flag independent of unit death/rounds. Publish real Defend
+UNIT_DEFENDING lifetime/stance provenance without manufacturing a voluntary
+action. Use explicit activation-ended provenance for lethal retaliation, not
+a broad defended() test. Shared live/detached cap and branch-local side history
+must preserve raw incoming versus post-Guardian HP-loss semantics.
+Focused fixtures reuse Bastion/Veteran legal perk offers, Guardian-buffer tests
+and detached evaluate/replay:1HP/one-survivor, real stance, consumed opportunity,
+independent enemy side, excluded sources/clone/Phantom and stopped second attack.
+Keep production registration planned until source/build/native acceptance;
+fixture-local active rule override permits legal testing without early coverage.
+This is an architecture/fixture handoff, not implemented Last Stand.
+
 User rulings,2026-10-06: lethal retaliation triggering Last Stand ends the
 surviving attacker's current activation; protect ordinary stack health only,
 excluding clones/Phantom Integrity. Both integrated into the canonical perk
