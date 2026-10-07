@@ -10384,6 +10384,13 @@ Artwork is Not done, fallback remains neutral; no launcher promotion.
 
 ## UP-079 — Implement Armorer Last Stand
 
+Windows delivery checkpoint,2026-10-07UTC: full run37557751116 completes SUCCESS
+on ce1b5547cf0207575b357f5e1e540de6bc6a2d23, with only documentation changes
+since Last Stand source10dc2428c. Finalized downloadable artifact11457695378
+contains the Windows preview and corresponding source/checksums. Root inspected
+terminal status, packaging READY and upload finalization. Windows gameplay and
+normal Linux playable promotion remain unverified; this does not close them.
+
 Source/native verified (playable delivery pending),2026-10-06: client and
 vcmitest build23204 pass. Principal72648 passes13/13, zero skips,4.124s;
 activated Last Stand/Mastery/Veteran30900 passes22/22, zero skips,7.029s.

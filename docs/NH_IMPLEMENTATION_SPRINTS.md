@@ -2,6 +2,17 @@
 
 ## Current checkpoint — 2026-10-06, magic handoff / Cabir correction
 
+Windows package37557751116 completed SUCCESS on
+ce1b5547cf0207575b357f5e1e540de6bc6a2d23,2026-10-07UTC. Root inspected terminal
+job status, packaging READY and finalized upload logs. Artifact11457695378 is
+1,047,198,549bytes; uploaded artifact-container SHA256 is
+`9bdd173632eee2ee0db5325140136d5a35b08c4cee4ce82b2b1aa3bcd342d64b`.
+[Download artifact](https://github.com/thegandalf196/vcmi/actions/runs/37557751116/artifacts/11457695378).
+The source difference from Last Stand10dc2428c is documentation-only. Thus this
+package includes Last Stand, not the private generated walking studies. This is
+compile/package/upload evidence, not an independently downloaded package audit,
+Windows gameplay acceptance or Linux promotion. No duplicate dispatch needed.
+
 Five-row Spellcraft readiness audit rechecks canonical clauses4433–4442 against
 UP132/069/134/133/121. No new ready principal slice is established. Cross-School
 multi-school relation, Concentration target-count policy and penetration
