@@ -45,6 +45,12 @@ exact-output verification pass. Candidate build/nh-cabir-handoff-overlay-v1-revi
 is not installed or playable; no derived colour pixels are staged. Local12-job
 client build passes. User wants both in a Linux preview; asked approval for
 borrowed Wisp stats and explicit Cabir placeholder states, no answer yet.
+Source committed/pushed6d207b2964b9c5be13ca131133b27339020a156c.
+Exact-source12-job Linux client build succeeds; immutable no-promote candidate
+8fa4b46fc8ff320d74d20aa0a77d19885cdceb5f6a5697f720df051f99667be7
+contains Wisp resources but no playable Wisp definitions/new Cabir replacement.
+Do not present this as the requested combined art preview or change the normal
+launcher before that preview scope is approved and actually implemented.
 
 ## UP-287 — Phantom Army Integrity and legal landing preview
 
