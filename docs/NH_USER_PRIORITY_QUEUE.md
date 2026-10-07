@@ -9,7 +9,44 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-268 — Quick-recruitment inline creature statistics
+
+Status: In progress, 2026-10-07. Bounded independent source audit identifies a
+required recruitment presentation clause absent from the quick-recruit cards.
+Canonical Core / Elite / Champion UI requires per-card name, portrait,
+availability, weekly growth, Attack, Defense, Damage, Health, Speed,
+Initiative and Leadership Cost using the creature-stat icons. Fort's roster
+already supplies those rows, while CreaturePurchaseCard::initView supplies
+portrait/category/quantities/slider/cost and a separate right-click detail only.
+QuickRecruitmentWindow currently arranges category groups in one horizontal
+strip, not separate category bands. Confirm the quick-recruit interaction's
+scope against the canonical complete roster before changing its layout; a
+popup is not evidence of inline-stat completion.
+
+Implement readable native-resolution category/stat presentation by reusing
+existing structural UI and stat icons. Preserve upgrade switching, sliders,
+resource costs, Muster and authoritative purchase/Leadership validation. Do
+not manufacture new art or silently change recruitment semantics.
+Acceptance: all intended rows remain accessible, stat/name/growth values update
+when the displayed upgrade changes, long labels do not collide with values,
+legacy/custom fallback remains usable, focused source/layout checks and client
+build pass. Rendered acceptance and playable delivery remain separate from
+source verification. This adds no spell/perk identity.
+
+Ownership: Frontend worker owns QuickRecruitmentWindow and CreaturePurchaseCard
+source/header changes; independent tester audits native dimensions, roster and
+upgrade invariants. Root owns focused guards, serialized build and integration.
+At compact widths, statistic icons and values may carry names/descriptions in
+tooltips rather than crowding the card with full labels. All authored category
+bands and footer controls must fit the actual viewport, including Conflux.
+No GUI/input run is authorized by this source implementation checkpoint.
+
 ## UP-267 — Bulwark pre-emptive strike combat-log result
+
+Windows delivery,2026-10-07: run37570969461 is terminal SUCCESS on3a970a623.
+Game artifact11462852770 includes this entry and UP266; terminal compile,
+packaging READY and upload/API inventory are inspected. See NH_BUILD_HANDOFF
+for download/digest. No Windows rendered acceptance or Linux promotion claimed.
 
 Windows delivery checkpoint,2026-10-07: run37565586139 is terminal SUCCESS
 and uploads game artifact11460741726 for be78e0758 (Perfect Rhythm). That

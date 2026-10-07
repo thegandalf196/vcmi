@@ -1,5 +1,22 @@
 # New Horizons Linux build handoff
 
+## 2026-10-07 Bulwark result-log Windows package available
+
+Run37570969461 is terminal SUCCESS on
+3a970a62372445c651f9c9de3345f4186fa3821b. Compile, runtime staging,
+recursive PE/license/corresponding-source packaging and upload succeed;
+packager reports READY. Nonexpired game artifact11462852770 is
+New-Horizons-Windows-x64-3a970a62372445c651f9c9de3345f4186fa3821b,
+1047202717 bytes. GitHub artifact-container SHA256:
+6cf5ce424f5a318356a53bb2196b7fabddb3e14a70ddb1b91f0aec50bea9d915.
+Download: https://github.com/thegandalf196/vcmi/actions/runs/37570969461/artifacts/11462852770
+This includes UP266/UP267's Bulwark reflection/pre-emptive result logs and
+Perfect Rhythm. The newer UP268 quick-recruitment source work is not included.
+Terminal step statuses, packaging READY and uploaded inventory/digest are
+inspected, not an independent full archive download or native Windows gameplay.
+Normal Linux snapshot remains unchanged. Preserve the older successful package;
+no duplicate build is required for documentation-only changes.
+
 ## 2026-10-07 Perfect Rhythm Windows package available
 
 Latest-source follow-up: full Windows run37570969461 is confirmed queued on
