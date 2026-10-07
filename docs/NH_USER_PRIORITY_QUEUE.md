@@ -9,6 +9,37 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-266 — Bulwark reflection combat-log result
+
+Status: Verified (source/native; playable delivery pending),2026-10-07.
+Both Linux client and test targets build with12 jobs. Five focused native cases
+pass with zero skips in1.767s: attributed Advanced reflection with actual
+casualties and HP loss, non-Defending exclusion, full Guardian absorption,
+Vengeful Mire and Toxic Spines. Independent frozen-source review has no blocker.
+Receipts: ignored build/new-horizons-linux/testing/
+bulwark-log-20261007.DFu6TN2q build.log, build-repaired.log, final.log/XML.
+The initial failed fixture assumption and log-name placeholder correction were
+repaired before acceptance; the failed principal log/XML are retained.
+No gameplay/RNG/save fields change. Coverage remains228/310 active perks and
+61/67 combat identities; required result-feedback breadth increases, not identities.
+Phase2 retains localization, rendered presentation and wider mitigation accounting.
+No Linux launcher promotion; live Windows37565586139 builds the earlier Perfect
+Rhythm source and does not include this later change.
+
+Bounded source audit of the canonical combat
+log requirement identifies an omitted principal interaction: Bulwark reflection
+sends an authoritative StacksInjured result but no log naming its cause, source,
+target, damage and casualties. The client injury path supplies animation, not
+that attribution; the adjacent Toxic Spines line only reports Poison.
+
+Add a server-authored BattleLogMessage from the resolved reflected hit, using
+existing translated creature names and actual packet damage/casualties. Preserve
+Guardian Spirit absorption, reflection eligibility, all combat state and RNG.
+Acceptance: accepted reflection logs match authoritative injury results;
+non-reflecting attacks do not claim reflection; focused native tests and client
+build pass. No new artwork or action control. Rendered/playable acceptance and
+broader interaction matrices remain separate; this does not add a perk identity.
+
 ## UP-265 — Cabir walking and icon background defects
 
 Targeted full-sheet revision,2026-10-06: built-in HoMM3-Art v2 preserves exact
