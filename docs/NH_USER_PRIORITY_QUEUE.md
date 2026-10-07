@@ -9,6 +9,38 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-285 — Saved New Horizons Morale range and roll curve
+
+Status: Verified (delivery/rendered verification pending),2026-10-07;
+foundational audit after UP284.
+Production AFactionMember still clamps against global three-entry Morale arrays;
+battleGetMoraleInfo and authoritative rolls inherit that limit/legacy curve.
+Canonical range is -10..+10 and current experimental curve is3% per point.
+Tests that override only map chance arrays do not fix the global range clamp.
+Implement a shared context-aware range policy for heroes/army/battle/detached AI
+units and optional versioned Morale data in the already-saved magic-rule JSON.
+Rolls and stochastic classification must consume that same saved curve. Absent
+new context preserves old/original settings; do not change engine-global defaults
+or tune bias. Align UP284 presentation with actual shared values after integration.
+Acceptance: actual NH live/detached/hero bounds and caps, saved curve/context
+normalization and legacy controls, focused build/native tests and independent
+review; rendering/playable delivery separate. Root owns architecture/tests/build/
+integration; runtime and saved-context workers have disjoint file ownership.
+
+Source/native checkpoint: optional saved Morale block, shared hero/army/live/
+detached ranges, authoritative rolls and stochastic classification are wired.
+Older absent-block contexts retain legacy limits/rolls; generic UI follows actual
+bounds. Engine-global defaults and existing bias remain unchanged. Client/test
+12-job build79094 and repaired43894 pass. Focused native12/12 passes in2.494s,
+zero skips/failures/errors/disabled; independent production/fixture review finds
+no blocker. Initial explicit-JsonNode compilation errors and11/12 native fixture
+failure (same-faction baseline1, not0) are retained alongside repaired receipts
+under ignored testing/saved-morale-20261007.ltoI0LEl. No assertions were removed.
+Save round-trip, broader interaction and rendered refresh checks remain Phase2;
+existing strict magic JSON-schema omissions are separate deferred drift.
+Normal Linux4de7cd42f and Windows37616860622/sourcef8d593dd3 exclude this slice.
+Counts remain228/310 perks,61/67 combat spells and8/8 Orders.
+
 ## UP-284 — Generic hero/adventure Luck and Morale readback
 
 Status: Verified (delivery/rendered verification pending),2026-10-07;

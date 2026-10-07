@@ -1,5 +1,23 @@
 # New Horizons implementation sprints
 
+## Current checkpoint — 2026-10-07, saved Morale foundation
+
+PHASE1. UP285 fixes the production three-tier cap/legacy-curve gap discovered
+after UP284. Heroes, army stacks, live units and detached AI use saved bounds;
+authoritative rolls and stochastic classification use optional saved curves.
+New contexts use canonical +/-10 and experimental3% per point; absent fields
+preserve legacy behavior. Generic UI follows actual context; no global defaults
+or bias tuning. Client/test79094 and repaired43894 build with12 jobs; native
+12/12 passes in2.494s without skips/errors/disabled. Production/fixture review
+finds no blocker. Failed compilation and11/12 initial fixture receipts remain.
+Required foundational path coverage increases, identities unchanged228/310,
+61/67 and8/8. Save round-trip, rendering and broader interactions are Phase2;
+existing stale strict magic-schema fields are deferred separately.
+No promotion: normal Linux4de7cd42f and live Windows37616860622 exclude UP285.
+Next priority remains UP282's portrait composition and reported recruitment-view
+identification, then the next unblocked specification item. Do not replace these
+open visual tasks with another claim based on an alias-only preview.
+
 ## Current checkpoint — 2026-10-07, generic Luck/Morale readback
 
 PHASE1. UP284 repairs hero/kingdom/exchange generic presentation: saved NH gate,
