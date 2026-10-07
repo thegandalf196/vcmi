@@ -9,6 +9,33 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-278 — Library production value in AI construction forecast
+
+Status: Verified (delivery pending), 2026-10-07. Client20397 and test86567
+build successfully with12 jobs. Focused native87272 passes6/6 in3.574s,
+zero skips/errors/disabled: three new Library helper/candidate cases and three
+adjacent authoritative Library/Conflux growth regressions. Tower data guards
+pass3/3; independent production/fixture review finds no blocker. Receipts:
+ignored testing/library-ai-20261007.ralZijJp client-build.log, test-build.log,
+native.log/XML and data-guards.log. No full autonomous AI turn or playable
+promotion; prerequisite propagation is source-reviewed, not directly exercised.
+Follow-up to the user-requested Tower building
+and growth work: authoritative Library growth already grants +1 Mage/Arch Mage
+per week, but Nullkiller's construction candidate has no associated creature
+production value. Share the existing fixed growth contribution with the AI;
+resolve its creature from the actual configured/current dwelling row, not the
+legacy Mage/Genie position. Preserve gameplay, ordinary Horde/dwelling estimates,
+saved-state format and existing prerequisite handling. No periodic scans.
+Root owns architecture, integration and documentation; runtime worker owns town
+growth helper and BuildAnalyzer; tester owns the existing Conflux growth fixture.
+Acceptance: prospective Library candidate production value, upgraded-row choice,
+accepted construction's authoritative growth, inactive/wrong-target controls,
+focused build/native checks and independent material review. Grail/handicap
+marginal forecasting and full autonomous construction selection are explicitly
+unverified Phase 2 interactions, not implied by a fixed-contribution estimate.
+Cabir final-art continuity remains blocked under UP265; these AI changes do not
+resolve that visual defect or change the normal Linux launcher.
+
 ## UP-277 — Learning Stone classified-XP AI forecast prerequisite
 
 Status: Verified (delivery pending),2026-10-07. Client84036/test rebuild30300
@@ -402,6 +429,21 @@ build pass. No new artwork or action control. Rendered/playable acceptance and
 broader interaction matrices remain separate; this does not add a perk identity.
 
 ## UP-265 — Cabir walking and icon background defects
+
+Reference correction,2026-10-07: the two new proportioned-contact studies used
+the superseded assets/cabir/v3 lava/trousers identity. UP265's latest m7qkfJk
+reference and output/homm3/cabir-reference-v4 standing pair instead require
+red-brown scales, heavy curved tail and blue/brass collar/apron; Master has gold
+scale armor. Mark those recent studies superseded for creature identity; retain
+their private evidence but do not install, extend or describe them as current
+Cabir art. The rig's mathematical motion checks remain technical evidence, not
+proof of latest-design proportions. Root is correcting the baseline; shared
+final-art geometry/camera continuity remains a production blocker. The concise
+`NH_CABIR_ART_REFERENCE.md` now pins the actual current pair and explicitly
+distinguishes runtime bindings from replacement-art authority. Read it before
+any further Cabir generation/proportion adaptation. Work on other
+unblocked user-queue items while that blocker remains, rather than generate more
+unchanged independently drifting poses or return to ordinary balance/testing.
 
 Single-pose artwork checkpoint,2026-10-07: built-in HoMM3-Art initial study and
 one focused camera/pose revision are preserved privately with exact prompts,

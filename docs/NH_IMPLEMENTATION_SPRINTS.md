@@ -1,5 +1,29 @@
 # New Horizons implementation sprints
 
+## Current checkpoint — 2026-10-07, reference correction and Library AI
+
+PHASE1. Revalidation identifies the recent Cabir proportion/contact studies as
+using the superseded v3 lava/trousers identity, not the latest selected red-scaled
+Academy design. UP265 remains open with shared final-art continuity blocked;
+NH_CABIR_ART_REFERENCE.md now records the correct baseline. Private studies are
+not installed. Continue the unblocked user-requested building work: UP278 shares
+Library's existing +1 Mage/Arch Mage contribution with the AI construction
+forecast, using the actual swapped dwelling row. Client20397/test86567 builds
+pass with12 jobs; native87272 passes6/6 in3.574s, zero skips/errors/disabled,
+plus Tower data3/3 and independent production/fixture review. Receipt directory:
+testing/library-ai-20261007.ralZijJp (ignored). Prerequisite propagation remains
+source-reviewed only; full AI turns and Grail/handicap marginal forecasting are
+Phase2, playable delivery separate. Identity coverage
+remains228/310 perks and61/67 combat spells; no gameplay activation is planned.
+Windows37592494066 is now terminal SUCCESS on860f19693, excluding UP277/278;
+normal Linux launcher remains unchanged.
+
+Next priority: continue the remaining user-queue functional gaps using the
+recorded design holds; Transformer remains a missing atomic conversion/UI/AI
+system awaiting aggregate-HP rounding, while Cabir requires a coherent current-
+design model rather than another independently drifting pose. Neither is closed
+by the Library forecast. Do not resume unrelated balance or broad test hardening.
+
 ## Current checkpoint — 2026-10-07, Cabir contact artwork study
 
 PHASE1 remains active under the explicit Cabir user priority. Built-in HoMM3-Art

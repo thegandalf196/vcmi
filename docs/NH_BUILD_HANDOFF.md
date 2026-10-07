@@ -1,5 +1,28 @@
 # New Horizons Linux build handoff
 
+## 2026-10-07 Library AI production forecast checkpoint
+
+UP278 shares the authoritative Library fixed-growth contribution with Nullkiller
+construction valuation and resolves the actual Mage/Arch Mage dwelling row.
+Client20397/test86567 build with12 jobs; native87272 passes6/6 in3.574s,
+zero skips/errors/disabled, Tower data guards3/3 and independent review pass.
+Receipts: ignored testing/library-ai-20261007.ralZijJp client-build.log,
+test-build.log, native.log/XML, data-guards.log. No gameplay rule or saved-state
+change; no normal Linux snapshot promotion. Full AI selection, directly executed
+prerequisite propagation and Grail/handicap marginal valuation remain Phase2.
+
+## 2026-10-07 Historian foundation Windows package available
+
+Run37592494066 is terminal SUCCESS on
+860f196937ad49ec19e934b4a8dde05db4c71f84. The nonexpired Windows game artifact
+11472611244 is1,047,260,974 bytes and expires2026-11-06T09:24:14Z:
+[Windows x64 download](https://github.com/thegandalf196/vcmi/actions/runs/37592494066/artifacts/11472611244).
+Artifact-container SHA256:
+`c1f041881b0f1c59fb838f8bc34dbccbcf5050cc712f1603cf3a9ba72a762238`.
+This is not the inner ZIP checksum or Windows gameplay acceptance. Includes
+UP273–276; excludes UP277 and current Library AI work. No independent full
+archive audit or normal Linux snapshot promotion is claimed.
+
 ## 2026-10-07 Learning Stone AI forecast checkpoint
 
 UP277 keeps the existing Stone level heuristic and scales it by shared actual/
