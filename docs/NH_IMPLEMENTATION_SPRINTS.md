@@ -1,5 +1,20 @@
 # New Horizons implementation sprints
 
+## Current checkpoint — 2026-10-07, Cabir shared-rig proportions
+
+PHASE1 remains active, with the user's Cabir priority taking precedence over the
+ordinary backlog. UP265 now has a new private shared-rest proportion producer:
+shorter/thicker legs, broader body/head/hands and opposed arm swing reuse the
+constant-length walk pipeline. Nine-key preflight and eight fixed-root/eight
+translated renders pass; root reviewed the native56 contact sheet. Original
+guides and all runtime resources remain unchanged. This is technical geometry,
+not new Cabir artwork, gait acceptance or playable delivery. Independent saved
+half-key checks confirm mesh/bone correspondence and fixed camera, but identify
+0.02946 world-unit stance drift against0.025 tolerance; continuous-contact result
+is CHECK, not PASS. Retain as deferred technical interpolation work. Coverage
+remains228/310 perks,61/67 combat identities and8/8 Orders. Next: coherent HoMM3-Art creature treatment
+against the shared poses, without repeating rejected whole-atlas regeneration.
+
 ## Current checkpoint — 2026-10-07, Learning Stone AI forecast
 
 PHASE1. UP277 supplies the previously absent classified-XP Stone priority hook,

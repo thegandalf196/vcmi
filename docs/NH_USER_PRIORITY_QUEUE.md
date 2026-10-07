@@ -403,6 +403,39 @@ broader interaction matrices remain separate; this does not add a perk identity.
 
 ## UP-265 — Cabir walking and icon background defects
 
+Proportion-guide checkpoint,2026-10-07: new private v3-proportions producer
+adapts shared rest meshes/bones once, then reuses v2 IK/contact/render helpers.
+Hip height1.50->1.32; thigh/shin lengths0.66/0.64->0.594643/0.566481;
+broader trunk/head/hands and modest opposing rigid arm swing are visible in the
+root-reviewed native56 contact sheet. Nine-key preflight and16 rendered frames
+pass evaluated toe-ring/constant-length/unit-scale/closure/world-travel checks.
+Initial camera clipping was repaired by one fixed camera shift, not per-frame
+recentering. Full walk blend SHA256
+`e1a9e75779f3390b99d87785e00019c45b83bcce833aa12c40a30253b6a745c4`;
+eight-frame translated GIF SHA256
+`0f0723a02af1b8ba2a3f5c013efa127ccc5501cdfa37414054caf11e9e906559`.
+Original v1/v2 hashes remain unchanged. This is a technical producer prerequisite,
+not Cabir artwork, approved motion or a completed specification identity. Independent
+saved-blend half-key review confirms mesh/bone toe agreement below2e-7, constant
+lengths/unit scales and fixed camera, but finds worst stance drift0.02946 world
+units at frame5.5 (CHECK against0.025 threshold). Retain the report under ignored
+build/nh-up265-animation-review/v3-proportions-independent; do not label continuous
+contact PASS. Between-key Bezier slip is deferred technical work; whole-sole contact, actual creature
+materials/native styling and runtime movement remain open. Normal Linux stays
+unchanged. Windows37592494066 is still live on860f19693, not this art checkpoint.
+
+Shared-skeleton continuation,2026-10-07: user again proposes adapting an existing
+creature skeleton. Original HeroesIII assets are sprite sequences, not available
+3D rigs. Reuse the project-owned constant-length technical rig instead, adapting
+its shared rest geometry to the current Cabir's broad body, large head and short
+legs in a new private v3-proportions directory. Preserve v1/v2 and all runtime
+assets. Acceptance for this prerequisite: evaluated mesh toe contact, constant
+segment lengths/unit scale, opposite support, cycle closure and fixed-camera
+native previews with actual world translation. This is a movement blockout,
+not new game artwork, completed gait or playable delivery. HoMM3-Art remains
+mandatory for subsequent creative creature artwork. Root owns direction/docs;
+one Luna worker owns the private producer, with independent verification next.
+
 Targeted full-sheet revision,2026-10-06: built-in HoMM3-Art v2 preserves exact
 prompt/master privately. Independent review rejects it as a gait correction:
 the prominent arm/torso presentation still changes4→5;6 and8 remain similar
