@@ -1,5 +1,17 @@
 # New Horizons implementation sprints
 
+## Current checkpoint — 2026-10-07, generic Luck/Morale readback
+
+PHASE1. UP284 repairs hero/kingdom/exchange generic presentation: saved NH gate,
+current +/-10 values, computed labels and localized source/override context.
+Client/test75669 passes with12 jobs; focused native3/3 passes without skips/errors,
+plus independent no-blocking review. This is required UI path coverage, not
+perk identity activation:228/310 and61/67 counts unchanged. Actual widget/
+bonus-collection and rendered refresh/layout remain Phase2; no promotion.
+Windows37616860622 is confirmed live compiling older sourcef8d593dd3 and excludes
+UP284. Preserve its exact handle; next action is terminal artifact/failure
+inspection and another unblocked specification clause, not a duplicate build.
+
 ## Current checkpoint — 2026-10-07, Linux delivery refresh
 
 PHASE1. Normal launcher now selects immutable4de7cd42f from committedf8d593dd3,

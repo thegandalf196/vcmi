@@ -9,6 +9,34 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-284 — Generic hero/adventure Luck and Morale readback
+
+Status: Verified (delivery/rendered verification pending),2026-10-07;
+Phase1 specification audit follow-up to UP270/271.
+Canonical all-display requirements include current values/sources and the
+New Horizons -10..+10 range. Hero, kingdom and exchange MoraleLuckBox consumers
+still use the generic legacy three-tier Morale cap, and optional labels use the
+raw modifier sum rather than computed value. Add a saved-NH-rules-gated generic
+presentation calculation with immunity/NO/MAX/MIN guards and source explanations;
+preserve original-mode behavior and the separate live battle-stack readback.
+Do not change gameplay state, global chance settings or balance. Exact chance
+percentages remain outside this slice because the canonical UI requirement
+conditions them on a finalized curve. Acceptance: focused boundary/override/
+source and original-mode controls, client build, independent review, separate
+rendered/playable delivery evidence. Worker owns client readback/test source;
+root owns translations, registration, builds and integration. Counts unchanged.
+
+Source/native checkpoint: NH generic widget now uses saved-rule gating and a
+pure +/-10 calculation, computed-value label, localized context and source/
+override explanations; original-mode branch and battle overload remain intact.
+Client/test build75669 passes with12 jobs. Focused native3/3 passes, zero skips,
+errors or disabled cases, covering inactive-rules fallback, Luck caps/overrides,
+and Morale floor/immunity/overrides. Independent review finds no blocker.
+Receipts: ignored testing/hero-morale-luck-20261007.PGhM3qmc/native.log/XML.
+These are presentation-arithmetic tests, not actual widget execution or hero
+bonus collection/rendering. Phase2 retains those interaction/refresh/layout
+checks; normal Linux snapshot remains4de7cd42f and does not contain this slice.
+
 ## UP-282 — Academy Gargoyle background and recruitment Arch Mage colours
 
 Status: Open,2026-10-07. User still sees Gargoyle's old background and a
