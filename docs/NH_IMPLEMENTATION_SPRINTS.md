@@ -2,6 +2,43 @@
 
 ## Current checkpoint — 2026-10-06, magic handoff / Cabir correction
 
+Accepted checkpoint supersedes pending/failure notes below: Last Stand is active,
+client/test build23204 passes; principal72648 passes13/13 and activated adjacent
+30900 passes22/22, zero skips. Module drift/canonical-data pass and independent
+review reports no blocker. Coverage227/310 (156/220 generic,71/90 faction),83
+planned; Armorer8/10. Phase2 control/revival/composition remains recorded; no
+normal playable promotion. Prepare scoped source commit/push. Cabir guided
+study/revision are both rejected and uninstalled; no gait completion credit.
+
+Latest Last Stand gate: client/test retry5034 passes after the defining
+NewHorizonsHeroRulesFixture include repair. Native principal89965 runs12 cases,
+7 pass and5 fail, zero skips. Keep inactive/coverage unchanged. Bounded fixture
+and read-only runtime workers investigate final-state versus accepted-packet
+timing, absent retaliation and Veteran descriptor history; do not weaken core
+survival/termination assertions. principal.log/XML retain the exact failures.
+
+Last Stand client retry49003 completed successfully. Root integrated stable
+primary-first AI hit ordering after independent review; serialized client/test
+build11858 is running against that source. Review identified a fixture-only
+retaliation blocker (the acting attacker was given BLOCKS_RETALIATION); remove
+that grant after the live build finishes, then rebuild before native execution.
+Build11858 subsequently failed on a fixture-only typed SpellID source; corrected
+that enum conversion and removed the retaliation-blocking grant. Incremental
+client/test retry45899 is live. No completed coverage or playable delivery is
+claimed from these build steps.
+
+Next-slice evidence: UP159 Rapid Response is genuinely absent, not merely a
+planned label. Its accepted activation-end seam is mapped, but immediate enemy
+extra-activation precedence is unresolved; root requested that narrow ruling.
+Do not infer all remaining Version1.0 work is blocked from hold-index labels.
+
+UP079 implementation is underway with three nonoverlapping runtime, detached-AI
+and fixture workers. Shared Armorer lethal cap/Defend builder, side-wide use and
+activation-ended state are landing; root registers CMake and performs serialized
+focused builds/review. Production remains planned until accepted principal paths
+pass. No coverage increase from partial source. Private validation profile:
+build/new-horizons-linux/testing/last-stand-20261006.Y5mzBuFn.
+
 Mastery acceptance supersedes the pending-build checkpoint below: both targets
 build;4/4 focused cases and16/16 adjacent cases pass with zero skips. Module
 drift/canonical data checks pass; independent source review has no blocker.

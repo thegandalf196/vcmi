@@ -11,6 +11,24 @@ entries and their validation/delivery evidence.
 
 ## UP-265 — Cabir walking and icon background defects
 
+Pose-guided producer checkpoint,2026-10-06: initial study plus one targeted
+revision are retained under ignored output/homm3/cabir-reference-v4/
+pose-guided-walk-v1 with prompts/reference hashes. Root inspected the native56
+contact comparison: single-support passing is improved but opposite contact
+still repeats the leading leg and the finish is too polished. Both are rejected,
+uninstalled studies, not a completed walk. Further independent-pose generation
+is not evidence of progress without an explicit alternating-support constraint.
+
+User proposes an existing creature's skeleton/animation as a guide,2026-10-06.
+Use authored walk poses/joint landmarks, alternating planted contacts, root
+motion and timing as private reference rather than independent text-only poses.
+Original assets provide rendered sprites, not available original3D rigs. New
+Cabir frames must still be authored with HoMM3 Art; do not paste/recolour original
+creature pixels or redistribute extracted reference sheets. Gremlin chronology
+is a candidate guide, not a completed Cabir correction. Current rejected GIF is
+alignment-only and remains uninstalled; next art producer needs explicit pose
+guidance and native translated-motion review.
+
 User feedback,2026-10-06: the sixpose draft appears to moonwalk; inspect other
 creatures too. Audit pose/footplant sequence, default facing and runtime mirroring
 against original walk cycles, plus customCabir/Master animation bindings. Do not
@@ -27,6 +45,14 @@ groups contain8/6/8 frames respectively. Gargoyles retain original DEFs; Mage's
 body is unchanged; Arch Mage palette aliases retain original group/frame indices.
 No comparable direction-order defect is evidenced in these creatures. This is a
 source/descriptor and private contact-sheet comparison, not rendered acceptance.
+
+Follow-up root review,2026-10-06: rechecked CreatureAnimation::incrementFrame
+and nextFrame; both facings select the same chronological index, with image
+mirroring only. The shared-root sixpose native sheet still repeats the leading
+leg rather than showing a distinct opposite supporting contact. Original Mage
+walk-sheet comparison retains its authored eight-frame cycle. Do not apply a
+global frame reversal or claim other creatures are fixed from this limited
+sample; Cabir correction and actual translated in-game acceptance remain open.
 
 Mechanical study native-shared-root-v1 pins the same source hash, a shared56px
 scale, pelvis root and row ground reference; no nonzero-alpha pixels are removed.
@@ -10253,6 +10279,49 @@ retains explicit save roundtrips and ranged/retaliation/reaction/Sylvan matrices
 Artwork is Not done, fallback remains neutral; no launcher promotion.
 
 ## UP-079 — Implement Armorer Last Stand
+
+Source/native verified (playable delivery pending),2026-10-06: client and
+vcmitest build23204 pass. Principal72648 passes13/13, zero skips,4.124s;
+activated Last Stand/Mastery/Veteran30900 passes22/22, zero skips,7.029s.
+Module drift/canonical-data checks pass; independent review finds no blocker.
+Registry is active; coverage227/310, Armorer8/10. Tests establish accepted
+one-creature/1HP cap, Guardian ordering, actual passive Defend bonuses,
+once-per-side history, excluded spell/clone/Phantom/machine cases, lethal
+retaliation stopping the extra strike, real next-activation cleanup, fail-closed
+descriptor contracts and own-player detached AI parity. Logs/XML retained in
+testing/last-stand-20261006.Y5mzBuFn. No normal launcher promotion or midcombat
+save/resume claim. Control/death/revival and broader interactions are Phase2.
+Earlier failed native cases were corrected fixture timing/retaliation/result
+field assumptions, not relaxed production behavior; keep failure evidence.
+
+Implementation in progress,2026-10-06: bounded runtime worker owns shared
+Armorer rule/side history, accepted attack transport, passive Defend and activation
+termination; detached-AI worker owns attack evaluation/replay; fixture worker
+owns focused live/AI tests. Root owns CMake, registration, integration/build,
+review and delivery. The shared cap treats Guardian absorption separately from
+ordinary available health. Retaliation saving the current acting attacker ends
+that activation, including a qualifying preemptive retaliation; unrelated
+physical damage provenance alone does not qualify. Production remains planned
+until principal execution and focused acceptance pass; no coverage credit yet.
+
+Pre-build review fixes: accept a valid zero-damage rescue of a1HP stack; preserve
+an existing activation-ended marker on later hits without treating it as a fresh
+trigger; validate exact one-creature/1HP projected survivor before mutation;
+reject current BattleStart transient-state loss before payload bytes; keep
+spell-like exclusion specific to ranged mode. Root also repaired next-activation
+reset that incorrectly edited acquireState()'s detached copy rather than the
+live authoritative stack. Fixture correction is underway to distinguish actual
+state from detached copies and add normal own-player AI retaliation projection.
+Validation is still pending, not an implemented/verified coverage claim.
+
+Build gate71389 failed at the Last Stand server cap: CBattleInfoCallback exposes
+IBattleInfo, not BattleInfo::activeStack. Root replaced direct member access with
+the shared getActiveStackID() interface. Serialized client retry49003 passed;
+logs are retained in the private last-stand-20261006.Y5mzBuFn profile. Frozen
+production source review has no remaining blocker after stable primary-first AI
+hit ordering. Client/test rebuild11858 is running; native acceptance remains
+pending. The new own-player retaliation fixture mistakenly disables retaliation;
+remove that grant after the build is terminal and rebuild before execution.
 
 Current selection,2026-10-06: Mastery is source/native verified and pushed.
 The Cabir's bounded opposite-contact attempt fails review; keep that art task

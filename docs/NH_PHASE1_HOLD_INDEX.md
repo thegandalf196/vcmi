@@ -6,14 +6,14 @@ canonical [New Horizons design](design-sources/New%20Horizons.md). That Markdown
 remains the sole authority for gameplay. The queue and functional matrix record
 current implementation questions and dependencies.
 
-Registry-derived inventory: 31 Skills, 93 active rank effects, 226 active perks,
-and 84 planned perks: 65 generic and 19 faction. This index covers only those 84
+Registry-derived inventory: 31 Skills, 93 active rank effects, 227 active perks,
+and 83 planned perks: 64 generic and 19 faction. This index covers only those 83
 perks; the six inactive combat spells are tracked separately. The current
 selection audit in [NH_FUNCTIONAL_COMPLETION_MATRIX.md](NH_FUNCTIONAL_COMPLETION_MATRIX.md)
 historically reported item-specific questions or dependencies. The user has now
 resolved Battlefield Mastery and Last Stand. Mastery is now source/native verified
-and active (removed from this planned-only table); Last Stand is implementation-ready,
-not design-blocked. That is not evidence that the whole Version1.0 backlog is blocked.
+and active (removed from this planned-only table); Last Stand is now source/native
+verified and active too. That is not evidence that the whole Version1.0 backlog is blocked.
 
 Status meanings:
 
@@ -44,7 +44,6 @@ multiple comma-separated queue entries.
 ID	Status	UPref	Existing recorded issue / reason
 new-horizons:armorer.unyielding	lack-producer	UP-167	No nonmagical forced-displacement producer; ordinary movement and spell relocation are not substitutes.
 new-horizons:armorer.defiant	question	UP-136	Matrix records Defiant among Armorer perks awaiting design choices.
-new-horizons:armorer.lastStand	implementation-ready	UP-079	Retaliation ends activation; clones/Phantom Integrity excluded. Sequential runtime slice after Mastery.
 new-horizons:battlecraft.overwatch	question	UP-155	Teleport/Blink interaction clarification remains open.
 new-horizons:battlecraft.rapidResponse	needs-review	UP-159	Relevant preparation exists; exact current hold is not restated here.
 new-horizons:warMachines.precisionBombardment	needs-review	UP-098	War Machines continuation reference; exact item-level hold not restated here.
