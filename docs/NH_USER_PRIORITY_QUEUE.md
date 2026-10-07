@@ -136,6 +136,20 @@ Fixture now includes an opponent so accepted transfer cannot prematurely end
 the game in victory. Source committed346d6620b; actual modal gameplay and
 playable delivery remain pending. No fakequery or weakenedserver validation.
 
+Delivery candidate checkpoint: all solid source pushed through46dd80346,
+exact ten-job client build frozen in5b293ac52e. Base approved fidget, Mage
+safe-inset resources, both Conflux Wisp portraits/threshold64 descriptors,
+Core dwelling data and all864 magic casting frames are composed. Fresh-profile
+headless preview finishes exit0/day4 victory with clean shutdown; no Leadership
+rejection/ammo-overuse/crash appears. Independent audit verifies3998files,
+exact46dd client/lib, six Mage exports, both Wisp portraits/all32groups,
+preserved original frames and all864 casting frames/config; no blocker.
+Normal launcher promoted to5b293ac52e, b26652d8 retained for rollback; usual
+--verify-only passes. Gameplay visual/audio/modal acceptance remains open;
+Master group1 is still absent. Original Transformer drafts restored safely from
+stash9f398b242f71e604891b5735167b91e3548ca04c after freeze; stash backup retained.
+Do not rebuild these unfinished planner consumers into normal delivery.
+
 ## UP-288 — Cabir and Wisp supplied complete handoffs
 
 Usual-launcher correction requested,2026-10-07: user starts the ordinary Linux
