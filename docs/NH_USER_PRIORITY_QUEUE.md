@@ -9,6 +9,37 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-267 — Bulwark pre-emptive strike combat-log result
+
+Status: Verified (source/native; playable delivery pending),2026-10-07.
+Client/test build60991 exits0 with12 jobs. Native50924 passes8/8 in2.664s,
+zero skips: Basic and Bog Ambush resolved pre-emptive results, repeat/Defend
+controls, the five adjacent reflection cases and Battlecraft's own first-hit
+path. Exact log assertions use distinct pre-hit creature names and packet
+damage/casualties, not nominal multipliers. Independent source/fixture review
+finds no blocker. Temporary AttackDescriptor provenance is not serialized or
+replicated and changes no combat formula, eligibility or RNG.
+Evidence: ignored build/new-horizons-linux/testing/
+bulwark-preemptive-log-20261007.N0IiV30X build.log and native.log/XML.
+Review caught an unintended earlier-fixture edit and a too-fragile creature
+choice before build; both were repaired without altering prior verified setup.
+Phase2 retains explicit equal-strength Battlecraft/Brace negative log assertions,
+localization and rendered acceptance. Perk identities remain228/310 active,
+combat identities61/67. No Linux promotion; Windows37565586139 still builds
+the earlier Perfect Rhythm source and excludes this slice.
+
+Canonical interaction logs require cause,
+actor, target and realized result. Bulwark's accepted pre-emptive attack currently
+emits only generic damage/casualty lines, unlike Battlecraft's explicit source.
+Add temporary server-local attack provenance and format the actual resolved
+hit with Bulwark cause, source, target, damage and casualties. Do not infer the
+cause from damage percentage, because Battlecraft can use the same percentage.
+No damage/RNG/eligibility/network/save changes or new artwork.
+Acceptance: accepted first pre-emptive hit's attributed line matches its packet;
+repeat and non-Defending controls do not falsely claim another Bulwark hit;
+focused native verification and client build pass. Rendered/localized feedback
+and broader cross-system combinations remain separate.
+
 ## UP-266 — Bulwark reflection combat-log result
 
 Status: Verified (source/native; playable delivery pending),2026-10-07.
