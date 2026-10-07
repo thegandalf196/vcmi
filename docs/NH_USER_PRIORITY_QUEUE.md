@@ -184,6 +184,11 @@ checks; normal Linux snapshot remains4de7cd42f and does not contain this slice.
 
 ## UP-282 — Academy Gargoyle background and recruitment Arch Mage colours
 
+Renewed user report,2026-10-07: Gargoyle still shows the old background and
+Arch Mage still appears non-grey in the little recruitment panel. Recheck the
+actual consumer and selected playable payload before changing aliases. These
+reports remain open; source bindings alone are not visual acceptance.
+
 Status: Open,2026-10-07. User still sees Gargoyle's old background and a
 non-grey Arch Mage in the small recruitment panel. Follow up existing Academy
 portrait/UP262 work; inspect each actual consumer's resource/frame, not just the
@@ -226,6 +231,11 @@ the requested screenshot; the existing grey small alias is not evidence that
 the user's different panel is correct.
 
 ## UP-283 — Combat quick-spell toolbar pressed-state legacy icon flash
+
+Renewed user report,2026-10-07: holding a new spell's quick-toolbar button
+briefly exposes Summon Boat behind it. Compare the delivered neutral-base fix
+with the actual running build and pressed-state composition; do not close this
+report solely because the source guard passes.
 
 Status: Implemented (Linux delivered; rendered verification pending),2026-10-07.
 Normal launcher now resolves immutable4de7cd42f from sourcef8d593dd3 after
@@ -16598,6 +16608,26 @@ migration with implementation completion.
 ## UP-011 — AI turn times and leadership failures
 
 Status: Open; prior isolated passes do not close the reported match regression.
+
+2026-10-07 diagnostic source/native checkpoint: rejection-only operation/count/
+capacity tracing and debug-guarded accepted-neutral transfer plans are implemented.
+Admission rules, returns, state and player messages are unchanged. Independent
+review finds no production blocker; its fixture DEBUG-level finding was repaired
+with scoped restoration. Client/test build with12 jobs passes; focused admission
+3/3 passes in1.223s, zero skips/failures/errors, including actual diagnostic capture
+and unchanged rejected stacks. Private receipts: ignored
+build/nh-leadership-trace-20261007.Sq7Q18tE. Actual intermittent AI attribution and
+candidate reproduction remain pending; this does not close UP011 or increase
+spell/perk identity coverage. Normal playable snapshot is unchanged.
+
+2026-10-07 diagnostic slice in progress: capture operation, destination/creature,
+attempted count and capacity only when authoritative admission rejects, plus
+the Leadership-limited join plan at debug level. Worker owns CGameHandler;
+tester owns the existing focused admission fixture if a real logger seam exists.
+Root schedules one build/native filter and one bounded fresh-profile headless
+reproduction. Preserve all admission results, queries, state and player messages;
+no polling or new gameplay state. This is evidence for the reported defect,
+not new perk/spell coverage or permission for a broad Phase2 investigation.
 
 2026-10-07 bounded follow-up to the new day3 Fafner rejection: current neutral
 join planning and Nullkiller acceptance/garrison paths already use projected
