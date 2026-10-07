@@ -68,6 +68,24 @@ normal active-turn visual feedback and playable promotion remain pending.
 
 ## UP-289 — Recruitment layout, clipped Mage portrait and Cabir feedback
 
+Recruitment revision in progress,2026-10-07: bounded Sol Medium worker owns
+QuickRecruitmentWindow/CreaturePurchaseCard presentation and its focused layout
+guard. Replace the narrow fixed-width cards/tiny portraits with adaptive repeated
+cards and native58x64 portraits, separating stat, count, slider and cost regions.
+Preserve recruitment, Leadership, upgrade selection and callbacks. Root's
+unfinished GUIClasses Transformer drafts are outside this ownership boundary.
+Focused geometry/compile evidence is not rendered or playable acceptance.
+Source checkpoint: adaptive native58x64 TWCRPORT cards, aligned eight-stat
+column, separate remaining/selected counts and compact cost footer are now
+implemented. Three-band outer height589px fits800x600; sparse376px minimum
+contains the optional Muster button. Shared-surface repaint and zero-cost
+clearing are corrected. Recruitment/Muster guards and independent Sol High
+review pass; ten-job linked vcmiclient build session98065 exits0. Legacy paths,
+Leadership, recruitment arithmetic and callbacks remain intact. Rendered/input
+acceptance and normal-launcher delivery remain open. Transformer drafts were
+isolated under stash45b51182f8a4a2c20943fa014b33f34ba90c1762 for this build;
+they are not part of this source change or executable.
+
 Additional screenshot: Mage also clips in the Academy's small dwelling icon,
 not only quick recruitment. Inspect shared CPRSMALL custom portrait geometry,
 binding and crop/offset policy; preserve deliberate red staff/projectile accents.
