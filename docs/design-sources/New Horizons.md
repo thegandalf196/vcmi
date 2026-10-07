@@ -5011,7 +5011,7 @@ Elementals created by Elemental Rebirth are temporary summons and cannot themsel
 
 - Creature tiers use Core / Elite / Champion rather than the old seven-tier labels. The categories describe roster role and progression rather than simply renaming contiguous old levels; individual lines may move between bands when faction identity or balance benefits.
 
-- Castle test mapping: Pikemen, Archers and Swordsmen are Core; Griffins, Monks and Cavaliers are Elite; Angels are Champion. The Griffin and Swordsman lines therefore swap bands relative to a simple 1-3 / 4-6 / 7 conversion. Conflux keeps Pixies and Sprites as two separate Core creatures with no upgrade relationship, five Elemental lines as Elites, and Phoenix as Champion. Full faction mappings and experimental numbers are in Experimental Values.
+- Castle test mapping: Pikemen, Archers and Swordsmen are Core; Griffins, Monks and Cavaliers are Elite; Angels are Champion. The Griffin and Swordsman lines therefore swap bands relative to a simple 1-3 / 4-6 / 7 conversion. Conflux has two Core lines: Pixie upgraded to Sprite, and Wisp upgraded to its violet-blue form (upgrade name pending). Air, Water, Fire and Earth are the four Elite Elemental lines; Phoenix is Champion. Psychic/Magic Elementals leave the recruitable Conflux roster, and their dwelling line recruits Wisps instead. Existing Psychic/Magic Elemental identities remain valid for old maps and saves. Full faction mappings and experimental numbers are in Experimental Values.
 
 # Experimental Values
 
@@ -5075,8 +5075,10 @@ Let M = Attack growth + Defense growth for the hero class. Experimental class Le
 Creature Leadership Requirements below are for the base creature. An upgraded form normally uses 120% of the base requirement, rounded to the nearest 10. Stack capacity remains floor(Hero Leadership / Creature Leadership Requirement). No Skill or Recruitment effect applies a percentage discount to these requirements.
 
 Academy's Gremlin and Master Gremlin presentation is replaced by original Cabir
-and Cabir Master. Both use their bare hands, with no golden pot or fire vessel.
-Both are ranged attackers, shooting fire from their bare hands with ordinary
+and Cabir Master. Both have empty hands, with no golden pot or fire vessel.
+The approved Cabir home-agent handoff v1 supersedes the earlier hand-fired visual:
+both forms spit fire from the mouth. Base Cabir has bare scales; Cabir Master
+retains the approved light brass collar and cuffs. Both are ranged attackers with ordinary
 ammunition and ranged targeting. The base form is not melee-only. Both retain
 ordinary shooter melee penalties; this does not grant No Melee Penalty.
 Both take 50% less Fire damage and 25% more Water/Frost damage (provisional values).
@@ -5157,20 +5159,20 @@ and assets use Cabir. Provisional artwork follows the Heroes III Art workflow.
 |Fortress|Gorgon|Elite|3|340||
 |Fortress|Wyvern|Elite|2|430||
 |Fortress|Hydra|Champion|1|650||
-|Conflux|Pixie|Core|14|45|No upgrade|
-|Conflux|Sprite|Core|10|60|Separate Core line; no<br>upgrade|
+|Conflux|Pixie|Core|14|45|Upgrades to Sprite; restored single Core line|
+|Conflux|Wisp|Core|Pending|Pending|Second Core line; violet-blue upgraded form; gameplay values awaiting user rules|
 |Conflux|Air Elemental|Elite|5|180||
 |Conflux|Water Elemental|Elite|5|200||
 |Conflux|Fire Elemental|Elite|4|220||
 |Conflux|Earth Elemental|Elite|4|240||
-|Conflux|Magic Elemental|Elite|3|320||
 |Conflux|Phoenix|Champion|1|650||
 
-Conflux's independent Sprite dwelling uses the existing eighth recruitment slot.
-Its experimental construction cost is 1,000 Gold and 5 Wood, and it requires a
-Fort rather than upgrading the Pixie dwelling. Pixies and Sprites cannot upgrade
-into one another. Existing Sprite dwelling artwork is reused by reference while
-the independent town-screen presentation awaits visual review.
+The Wisp handoff roster decision supersedes the independent Sprite Grove and
+eighth recruitment slot: restore the Pixie dwelling's Sprite upgrade. The former
+Psychic/Magic Elemental dwelling line becomes the Wisp base/upgrade dwelling,
+using the intended Altar of Magic artwork. Wisp's statistics, abilities, attack
+type, price, growth and Leadership remain pending explicit provisional rules;
+the supplied shooting and flight artwork does not grant those mechanics.
 
 
 

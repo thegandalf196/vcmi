@@ -1,6 +1,38 @@
 # New Horizons implementation sprints
 
-## Active checkpoint — 2026-10-07, full Windows build
+## Active user slice — 2026-10-07, supplied Cabir/Wisp handoffs
+
+UP288 takes priority. Both Downloads archives are extracted privately and their
+supplied validators pass: Cabir166 hashes/38 frames/6 icons/9 projectile angles;
+Wisp299 hashes/211 PNGs/310 resolving references. Cabir approved mouth-spit,
+base bare scales/Master brass replaces earlier hand-fired visual directions;
+canonical presentation is amended without changing stats/repair/defences.
+Its missing death/hit/turn/directional/repair artwork prevents full replacement;
+do not install a partial descriptor that fails CreatureAnimation's required
+death/holding states or combine it with rejected creature artwork.
+Wisp resources are authored original art, suitable for resource-only integration.
+User will supply Wisp gameplay values. Roster is resolved: restore Pixie->Sprite
+Core upgrade, add Wisp as second Core, retain four classic Elemental Elite lines,
+replace Psychic/Magic recruitment with Wisp at their dwelling. Canonical amended;
+no invented stats/abilities or premature recruitment bindings. Parallel bounded
+owners: Cabir private importer/tool; Wisp resource-only imports; independent
+asset/reference audit. Root owns shared configs, specification, review/build.
+Existing Windows run37637414435/source8d8db3eb1 now passes compilation and
+staging and is packaging; it excludes these newer handoffs. Normal Linux remains
+unchanged. Never equate asset import with new playable creature coverage.
+
+## Delivery receipt — 2026-10-07, Windows 8d8db3eb1
+
+Full run37637414435/source8d8db3eb12e440fce51d89e8f06608a2e76d6b10
+is terminal success. Actual job log confirms compile/stage and final upload of
+game artifact11494128402, New-Horizons-Windows-x64-8d8db3eb12e440fce51d89e8f06608a2e76d6b10,
+1,047,325,491 bytes, nonexpired until2026-11-06. Artifact-container SHA256:
+33b302b94760037d529f43977bca5a739012b7ae137eccc11a01c5cf7673dde6.
+This is upload/metadata evidence, not a downloaded executable hash, independent
+final-package audit or manual gameplay acceptance. It excludes UP288 handoffs.
+The prior live compile checkpoint below is historical, not a current wait.
+
+## Historical checkpoint — 2026-10-07, full Windows build
 
 Hosted precompile evidence inspected independently: nonexpired reports artifacts
 11491254376 (7218 bytes) and11490704812 (849 bytes) match this run/source.

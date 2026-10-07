@@ -9,6 +9,43 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-288 — Cabir and Wisp supplied complete handoffs
+
+Status: In progress,2026-10-07. User requests implementation of Downloads
+cabir-home-agent-handoff-v1.zip and wisp-complete-handoff-v3.zip. Inspect both
+handoffs and provenance before importing, follow their explicit integration
+contracts, preserve gameplay except explicitly supplied changes, and do not
+overwrite unrelated Cabir drafts. Acceptance: installed base/upgraded animation,
+portrait/projectile/adventure bindings as supplied, asset reference and frame
+validation, focused relevant tests and successful build. Source, visual review,
+and playable delivery must be recorded separately. Root owns shared configuration
+and integration; parallel workers may own non-overlapping creature assets/tools.
+Keep original-game reference/derivative pixels private pending provenance review.
+Both archive validators pass (Cabir166 hashes; Wisp299 hashes/310 references).
+User confirms they will supply Wisp provisional gameplay rules; no stat,
+ability or recruitment defaults are authorized from the artwork. Its roster
+decision is now approved: restore Pixie->Sprite Core upgrade; Wisp is the
+second Core line; Air/Water/Fire/Earth are the four Elite lines; remove
+Psychic/Magic Elementals from recruitment and use their dwelling for Wisps.
+Keep old elemental identities valid. Canonical roster amended; runtime roster
+change waits for complete approved Wisp gameplay rather than installing empty
+definitions. Cabir handoff's explicitly approved mouth-spit
+presentation is reflected in the canonical design, superseding hand-fired art
+only; existing Shooter/repair/elemental rules remain unchanged. Missing Cabir
+death/holding-compatible full-state coverage prevents live installation of a
+supplied-only partial descriptor; private fragment/export must disclose this.
+Source checkpoint: Wisp202 supplied PNGs are byte-identical; six installed
+descriptors resolve256 frame references, with32 selection-overlay battle groups
+per form. Runtime projectile descriptors expose only nine-angle group0 because
+the engine reserves group1 for generated mirrors; alternative phase PNGs remain
+preserved. Focused guard and independent reference/geometry audit pass. Cabir
+private importer pins the reviewed manifest identity, preserves supplied pixels,
+uses a constant walk translation, and emits only groups0/2/12/15;6 tests and
+exact-output verification pass. Candidate build/nh-cabir-handoff-overlay-v1-reviewed
+is not installed or playable; no derived colour pixels are staged. Local12-job
+client build passes. User wants both in a Linux preview; asked approval for
+borrowed Wisp stats and explicit Cabir placeholder states, no answer yet.
+
 ## UP-287 — Phantom Army Integrity and legal landing preview
 
 Linux delivery,2026-10-07: selected immutable52867cdf4a5db9461966069d637e0d10
