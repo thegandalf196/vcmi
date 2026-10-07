@@ -11,6 +11,31 @@ entries and their validation/delivery evidence.
 
 ## UP-265 — Cabir walking and icon background defects
 
+Full-sheet art attempt,2026-10-06: one built-in HoMM3-Art eight-pose master now
+uses the complete shared-root rig contact sheet plus the approved identity,
+rather than independently generating each pose. Private rig-guided-walk-sheet-v1
+retains exact prompt/source. Native shared-scale/torso-root, alpha/clipping and
+opposite-support review is complete for a provisional preview only. No
+installation or full-gait acceptance. Avoid synthesizing missing toes or warping individual limbs to make
+an incorrect generated pose pass.
+
+Native art checkpoint,2026-10-06: 1642x958RGBA source has no meaningful edge
+clipping (last-column clear margins39/32px); border residue is alpha1 only.
+Eight72x72native PNGs and eight-frame130ms fixed-root GIF use one shared
+56px-reference scale and waist-buckle-based translations. Independent review
+finds no blocker to a private, explicitly provisional human preview, not a
+moonwalking-fixed claim: contact1/5 differs and the rear foot advances, while
+return-half6–8 and torso/arm change4→5 remain less convincing. Style approval,
+grounded stride calibration and in-game motion remain open. Rig world-contact
+guarantees do not transfer to these generated proportions. No runtime install,
+normal launcher change or new completed specification identity.
+
+Frozen export evidence: private fixed-root-walk.gif SHA256
+`a13a635d732528d2089e78d37f5eb47f07a6dd4060b558141c7dc482b2ad0b78`;
+root independently confirms eight 72x72 frames at 130ms. Exporter checks raw
+cell integrity and meaningful-alpha bounds before compositing, not merely
+after clipping to the destination canvas. No source repaint or alpha cleanup.
+
 Full-cycle technical continuation,2026-10-06: new private rigged-walk-guide-v2
 producer must use one shared original blockout and constant-length leg chains,
 alternating support and an actually translated world-root/ground-grid GIF.

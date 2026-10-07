@@ -2,6 +2,23 @@
 
 ## Current checkpoint — 2026-10-06, magic handoff / Cabir correction
 
+The rig-guided eight-pose Cabir art export is frozen privately. Root confirms
+eight 72x72 GIF frames at 130ms; raw-cell integrity and pre-composite meaningful
+alpha bounds pass. Independent visual review accepts only a provisional human
+preview: return-half gait and torso/arm continuity remain incomplete. No runtime
+installation, gait acceptance or coverage increase. Exact evidence is in UP265
+and the asset register.
+
+Bounded non-perk readiness audit finds no ready principal slice in its inspected
+building/artifact/specialty set: Castle Lighthouse UP201 needs departure/duration
+scope; Skeleton Transformer UP197 needs conversion rounding scope; Glyphs of
+Fear UP200 needs aura geometry/overlap; regeneration artifacts UP207 need
+per-item versus aggregate conversion. Existing building producers/minimum AI
+paths must not be reimplemented or counted twice. This is not a claim that every
+remaining Version1.0 item is blocked. Coverage remains227/310 active perks.
+Windows37557751116 has completed compilation and resource staging and is now
+confirmed live packaging the client, PE dependency closure and source notices.
+
 Cabir technical producer now supplies a sampled eight-phase constant-length
 cycle, evaluated mesh foot-plant checks, actual translated world motion and
 local stride closure. Root's independent saved-blend probe and native56 review
