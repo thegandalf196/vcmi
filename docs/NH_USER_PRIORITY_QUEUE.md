@@ -11,7 +11,8 @@ entries and their validation/delivery evidence.
 
 ## UP-287 — Phantom Army Integrity and legal landing preview
 
-Status: In progress,2026-10-07; bounded Phase1 P0 audit. Canonical summons/prisons UI
+Status: Verified (delivery/rendered verification pending),2026-10-07;
+bounded Phase1 P0 audit. Canonical summons/prisons UI
 requires legal placement, aggregate HP/count and footprint before commitment.
 Phantom Army already supplies hpDelta=Integrity and unitsDelta=copied count
 through shared SpellEffectValue, with native preview-to-spawn evidence. The
@@ -26,6 +27,19 @@ The repair is now committed and accepted in a bounded fresh-candidate headless
 check. UI worker owns the two battle controllers/header; independent tester
 owns the Phantom Army native fixture/source wiring check; root owns localized
 text, integration/build and review. No artwork or cast-behavior changes.
+Source checkpoint: localized hover shows shared copied count/Phantom Integrity,
+one-based landing coordinates and footprint size; the field shades the legal
+getAvailableHex footprint rather than the selected source. Guards preserve
+invalid targets and use caster-side placement without excluding a controlled
+source by its original side. Client/test12-job build76274 and fixture-repair11535
+pass. New native placement cases2/2 pass, zero skips/failures/errors, proving
+single/double-hex spawn parity and unchanged preview state; source wiring/module
+checks pass and review finds no blocker. Black Dragon's immunity invalidated the
+first double-wide fixture; Cavalier fixes the fixture without weakening immunity.
+The separate older school-rank repeated-cast test still fails and remains Phase2.
+Private receipts: ignored build/nh-recorder-delivery-20261007.klVssUWx.
+Rendered console fit/controller execution and playable delivery remain separate;
+normal Linux08f1828f8c does not yet contain this UI slice. Identity counts unchanged.
 
 ## UP-286 — Level-up Skill card current-to-offered rank
 
