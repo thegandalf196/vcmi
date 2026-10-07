@@ -16609,6 +16609,17 @@ migration with implementation completion.
 
 Status: Open; prior isolated passes do not close the reported match regression.
 
+2026-10-07 bounded diagnostic candidate: pushed sourceccd2edb3b was rebuilt
+and frozen as8de7d4686f32d1e47ad392940ab45802dae247bb8a5d93c799199d3e25ff2447.
+Independent2367-file checksum/digest and binary-version audit passes. A single
+fresh-profile20s true-headless All for One run reaches day6, exits on expected
+timeout124, and shows no Leadership rejection, crash or ammo-overuse markers.
+Owned client/runtime cleanup and released profile lock are verified. Existing
+schema warnings remain. The intermittent failure was not reproduced; its cause
+and original long-turn report remain open. Candidate is retained but not selected
+by the normal launcher; no rendered/full-game/Windows acceptance is implied.
+Private headless receipt is alongside the source/native receipts below.
+
 2026-10-07 diagnostic source/native checkpoint: rejection-only operation/count/
 capacity tracing and debug-guarded accepted-neutral transfer plans are implemented.
 Admission rules, returns, state and player messages are unchanged. Independent
