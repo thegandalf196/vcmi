@@ -11,6 +11,9 @@ entries and their validation/delivery evidence.
 
 ## UP-276 — Historian primary-Experience reward foundation
 
+Source860f19693 is committed/pushed. Windows37592494066 is confirmed live on
+that exact source; no successful package or normal Linux promotion inferred.
+
 Status: Foundation verified (delivery pending),2026-10-07. Final client/test
 build44322 succeeds with12 jobs; focused native checks pass2/2 in0.708s,
 zero skips/errors/disabled. Actual Stone visits, ordinary Learning composition,

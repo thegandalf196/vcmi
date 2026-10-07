@@ -2,6 +2,13 @@
 
 ## 2026-10-07 Historian primary-XP foundation checkpoint
 
+Source860f196937ad49ec19e934b4a8dde05db4c71f84 is committed/pushed.
+Windows run37592494066 is confirmed in_progress on that exact source:
+[Build run](https://github.com/thegandalf196/vcmi/actions/runs/37592494066).
+Dispatch is not a compile/package result; preserve this handle and poll it rather
+than starting a duplicate. It includes committed UP273–276 changes. The last
+successful downloadable package remains37583664987 below.
+
 UP276 adds explicit default-false reward classification with Learning Stone
 authored true and a shared fixed-XP preview/grant calculator. Historian stays
 planned; this is not full-perk delivery. Combined client/test build44322 passes
