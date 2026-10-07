@@ -9,7 +9,61 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-287 — Phantom Army Integrity and legal landing preview
+
+Status: Open,2026-10-07; bounded Phase1 P0 audit. Canonical summons/prisons UI
+requires legal placement, aggregate HP/count and footprint before commitment.
+Phantom Army already supplies hpDelta=Integrity and unitsDelta=copied count
+through shared SpellEffectValue, with native preview-to-spawn evidence. The
+generic creature-spell formatter returns on unitsDelta and drops Integrity;
+the overlay shades the selected source, not getAvailableHex's legal landing.
+Add a read-only Phantom-specific formatter and landing footprint using the same
+shared query as runtime; preserve action, Mana, randomization and casting rules.
+Acceptance: shared effect/landing parity, scope and no-state-mutation controls,
+focused UI wiring/native tests and client compile. Rendering/delivery separate.
+Do not start until the current candidate spell-recorder SIGSEGV is repaired.
+
+## UP-286 — Level-up Skill card current-to-offered rank
+
+Status: Open,2026-10-07; bounded Phase1 P1 audit. Canonical level-up cards show
+current -> offered rank. GUIClasses currently passes only current+1 into the
+SEC_SKILL component, which renders offered rank/name but not the current rank.
+Add localized rank transition to Skill-rank cards only, preserving selection,
+legality, ordinary component inspection and original-mode presentation.
+Acceptance: actual current/offered value mapping, rank0/Basic/Advanced cases,
+perk-card/original controls, focused validation/client build; rendering separate.
+Phantom Army's P0 preview and the candidate crash outrank this P1 slice.
+
 ## UP-285 — Saved New Horizons Morale range and roll curve
+
+Crash source/native repair checkpoint: snapshot now retains its shared BonusList
+through iteration and defensively skips null entries. Client66261/test55280
+build with12 jobs. Focused recorder/Counterpressure native7/7 passes in2.404s,
+zero skips/failures/errors/disabled, including detached existing Slow refresh
+without perk selection and unchanged authoritative state. Independent source/
+fixture review finds no blocker. This is not ASan lifetime certification,
+sibling-branch coverage or renewed candidate acceptance. Record source first;
+rebuild committed identity and repeat bounded headless/inventory/cleanup before
+promotion. All crash/debugger evidence is retained.
+
+Debugger evidence: a second bounded headless run reproduces SIGSEGV during
+day10 in EffectPacketRecorder::snapshot, BattleSpellMechanics.cpp489.
+Its range-for dereferences a temporary shared BonusList. Detached AI mergeBonuses
+allocates an uncached list; under C++20 its owner can be destroyed before the
+range iteration. Independent review confirms this ownership defect, not a
+Morale-rule failure. Runtime worker retains the list locally; tester owns a
+detached spell-effect snapshot regression. Private gdb.log retained with first
+crash receipt; no candidate promotion until repair and renewed validation.
+
+Delivery blocker,2026-10-07: candidate327a39b90f from committedfe309b06e
+build48560 passes compile but its bounded true-headless All for One smoke exits
+139 during day2 AI battle creation. Not promoted; normal4de7cd42f remains intact.
+Private receipt build/nh-morale-delivery-20261007.rMByhchB/native.log retained.
+Investigate the actual SIGSEGV with a bounded debugger capture before further
+feature work or promotion; do not attribute its cause to Morale without evidence.
+Acceptance requires a concrete repair/negative test if reproducible and renewed
+exact-candidate startup, cleanup and inventory checks. Existing focused12/12
+results remain valid only for their declared native scope, not candidate health.
 
 Status: Verified (delivery/rendered verification pending),2026-10-07;
 foundational audit after UP284.
