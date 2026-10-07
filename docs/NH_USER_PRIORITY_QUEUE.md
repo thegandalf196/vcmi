@@ -11,7 +11,19 @@ entries and their validation/delivery evidence.
 
 ## UP-270 — Detailed battle-creature Morale floor readback
 
-Status: In progress,2026-10-07. Independent bounded audit confirms UP257
+Status: Implemented (rendered/playable verification pending),2026-10-07.
+Client build15101 exits0 with12 jobs. The focused shared-Morale filter11441
+passes6/6 in3.631s, zero skips/errors/disabled: pure readback, real combat
+Steadfast/Standard Bearer/opening modifier, Fury floor and Commanding Presence
+expiry. Extended source guard confirms the detail widget uses the same shared
+values, localized floor/source text and scoped descriptions; independent review
+finds no blocker. These native cases establish the shared producer, not rendered
+widget execution. Rendered fit, open-window refresh and broader privacy
+interaction checks remain Phase2. Receipts: testing/spell-cost-20261007.fvX8ZAvh
+build-morale-client.log and native-morale.log/XML. No new gameplay/state/art,
+mechanic identity or Linux promotion.
+
+Independent bounded audit confirms UP257
 implements the compact battle row, but CCreatureWindow's in-battle MoraleLuckBox
 still reads generic moraleValAndBonusList rather than battleGetMoraleInfo. It
 can display negative real Morale without explaining Commanding Presence/Fury's

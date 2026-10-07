@@ -1,5 +1,15 @@
 # New Horizons Linux build handoff
 
+## 2026-10-07 Detailed creature Morale checkpoint
+
+UP270 client15101 builds successfully with12 jobs; six shared-Morale native
+cases pass6/6 in3.631s with zero skips/errors/disabled. Extended detail/compact
+source guard and independent review pass. Receipts remain in testing/
+spell-cost-20261007.fvX8ZAvh build-morale-client.log and native-morale.log/XML.
+These are shared-producer and source/build checks, not rendered detail-widget
+execution. Open-window refresh/rendered fit and normal Linux promotion remain
+separate. Windows37577480623 still builds the earlier UP268 source.
+
 ## 2026-10-07 Spell-cost readback checkpoint
 
 UP269 client51094/test35093 builds succeed with12 jobs. Native54019 passes7/7
