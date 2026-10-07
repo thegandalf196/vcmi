@@ -2,6 +2,15 @@
 
 ## Current checkpoint — 2026-10-07, creature Order badge metadata
 
+Bounded next-functional audit: Mercenary Captain/Loyal Mercenaries still await
+recruited-cohort versus merged-stack scope; Breachmaker awaits fortification-
+neighbor/keep scope; Precision Bombardment lacks a resolved distinction from
+existing Basic machine targeting. None is a stale hold. Accepted Peacemaker/
+Tribute rulings are already canonical and active. This audit does not certify
+all82 planned items as blocked; do not reopen the resolved perks or silently
+choose those missing rules. Root also confirms UP226's Avatar cap-composition,
+UP166's Gold-mine scope and UP100's destroyed-repair scope remain unanswered.
+
 Phase1 UP275 adds the specified source/duration help to existing Order badges,
 without new UI/art/state or eligibility changes. Issuing side and saved current
 round drive localized text; hidden hero identity is not queried. Rebuild20554
