@@ -9,6 +9,36 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-272 — Initiative-bar extra-activation origin feedback
+
+Status: Implemented (rendered/playable verification pending),2026-10-07.
+Combined client/test rebuild50608 exits0 with12 jobs after repairing CLabel's
+image-only visibility API misuse; initial11477 failure is retained. Four pure
+origin/continuation/reset/current-entry cases pass4/4 in0.300s, zero skips,
+errors or disabled cases. Post-apply dispatch/source and module guards pass;
+independent source review finds no blocker. Actual event dispatch/locking and
+rendered placement remain Phase2, not established by pure fixtures. Receipts:
+testing/queue-origin-20261007.nyYSMQjB build.log, build-repaired.log and native
+log/XML. No gameplay/save changes, new mechanic identity or Linux promotion.
+
+Independent bounded audit confirms the bar
+recomputes turn order during activation/action transitions, but StackBox receives
+only unit/turn/round and cannot distinguish a genuinely additional activation
+from a moved ordinary one. Canonical required initiative feedback applies to
+implemented Morale, Quartermaster and Second Wind. Seize/Rapid Response design
+holds remain separate; do not invent their scheduling rules.
+Forward existing authoritative BattleSetActiveStack reason through client
+events and keep only transient presentation provenance. Preserve that origin
+across same-activation control returns, clear it on a new ordinary activation/
+round, and identify Second Wind through its actual active recipient state, not
+every HERO_COMMAND reason. Mark only the current corresponding queue entry,
+not future copies of that creature or speculative Morale. Reuse native text/
+bar surfaces, preserve clicking and creature popups; no new art/gameplay/save
+fields or polling. Acceptance: pure origin/continuation/clear/recipient cases,
+focused source bindings and client build; rendered fit and playable delivery
+remain separate. Frontend worker owns initiative event/queue integration;
+tester owns isolated fixture; root owns metadata, builds and Git.
+
 ## UP-271 — Detailed battle-creature combat Luck readback
 
 Status: Implemented (rendered/playable verification pending),2026-10-07.
@@ -9448,6 +9478,13 @@ controller-transfer interactions and full binary battle snapshots. Perk-specific
 art remains Not done. No GUI, snapshot promotion or playable acceptance.
 
 ## UP-100 — Field Workshop machine and fortification repair
+
+2026-10-07 bounded production audit confirms the missing damaged-target repair
+producer across authority, client HEAL targeting, Tent auto-control admission
+and AI selection; no implementation or coverage credit. The destroyed-target
+question is presented again as one explicit choice. Preserve the full specified
+machine/fortification scope and planned registry; a surviving-target foundation
+must not be reported as completed Field Workshop before scope is resolved.
 
 Clarification resurfaced, 2026-10-05: root asks whether repair is restricted
 to surviving damaged targets or also rebuilds destroyed ones. The full perk

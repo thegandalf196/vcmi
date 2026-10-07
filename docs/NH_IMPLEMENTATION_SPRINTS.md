@@ -1,5 +1,21 @@
 # New Horizons implementation sprints
 
+## Current checkpoint — 2026-10-07, initiative origin feedback
+
+Phase1: UP272 adds required initiative-bar distinction for implemented extra
+activations, not new scheduling rules or gameplay state. Root integrates the
+default post-apply event through CPlayerInterface, saved/current-unit/round
+readback and only the first queue entry; worker/tester ownership is separate.
+Combined rebuild50608 passes with12 jobs after a retained label visibility API
+failure. Four pure origin/reset/continuation cases pass4/4 in0.300s, zero skips;
+source/module guards and independent review pass. Executed UI dispatch/locking
+and native rendered acceptance remain Phase2. Coverage identities unchanged:
+228/310 perks,82 planned,31/31 Skills,93/93 ranks,61/67 combat spells,8/8 Orders.
+Full Field Workshop repair remains the next functional candidate pending its
+destroyed-target scope decision; do not implement a machine-only substitute.
+Windows37577480623 now succeeds on UP268's c338c671f; later UI is excluded.
+Normal Linux snapshot and user-owned Cabir work remain preserved.
+
 ## Current checkpoint — 2026-10-07, required combat UI coverage
 
 Phase1 continues. UP269's listed/current spell-cost stages and explicit follow-

@@ -1,5 +1,29 @@
 # New Horizons Linux build handoff
 
+## 2026-10-07 Initiative-origin checkpoint
+
+UP272 combined client/test rebuild50608 exits0 with12 jobs; pure activation
+origin cases pass4/4 in0.300s, zero skips/errors/disabled. First build11477's
+CLabel visibility API failure is repaired and retained for recurrence tracking.
+Source/module checks and independent review pass. Receipts: ignored testing/
+queue-origin-20261007.nyYSMQjB build.log, build-repaired.log and native.log/XML.
+No executed event dispatch/locking, rendered acceptance or normal Linux
+snapshot promotion is claimed. Windows37577480623 excludes this slice.
+
+## 2026-10-07 Quick-recruitment Windows package available
+
+Run37577480623 is terminal SUCCESS on
+c338c671f79a5fa6fe67ee7f6cbd794b2f2fb359. Compile, recursive dependency/
+license/source packaging READY and upload are inspected. Nonexpired game
+artifact11465226480 is1,047,228,527 bytes, expires2026-11-06T06:44:54Z:
+[Windows x64 download](https://github.com/thegandalf196/vcmi/actions/runs/37577480623/artifacts/11465226480).
+Artifact-container SHA256:
+`6a11f96a0a5708aebd732ad7f8ee6ef3106fa6556ad7559addcac4433a984b85`.
+This is not the inner game ZIP checksum. Includes UP268 quick recruitment;
+excludes UP269/270/271/272. No independent1GB member audit or Windows gameplay
+acceptance is inferred. Older successful artifacts and normal Linux snapshot
+are preserved. A new latest-source run may start only after this terminal state.
+
 ## 2026-10-07 Detailed creature Luck checkpoint
 
 UP271 client19490 builds with12 jobs; seven focused direct Luck/Sylvan readback
