@@ -9,6 +9,133 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-293 — Persistent artwork review location
+
+Status: Resolved,2026-10-07. User requires every artwork preview awaiting review
+to be placed in `$HOME/Downloads/provisory/`. Rule recorded in AGENTS.md.
+Current Cabir idle draft copied to `provisory/cabir-idle-v1/`: native and4x GIFs,
+native and4x frame comparisons, and manifest. Copied4x GIF SHA256 matches source
+211851f076742dbdebde79f225b744cfdf514e8173b58000d1ec0dc86d363a65.
+This resolves preview placement only; animation approval and installation remain
+open under UP-289. Preserve previous review versions.
+
+## UP-292 — Orchestrator worker model change
+
+Status: Resolved,2026-10-07. User changes every new/current worker to
+GPT-6.1 Sol Medium, with reviewers explicitly allowed Sol High. Update the
+orchestrator skill and actual future spawn arguments; safely stop old-model
+threads rather than pretending follow-up changes their model. Root model is
+not changed by this request. Verify actual replacement spawns; report a service
+capacity failure accurately. Preserve all unfinished edits and bounded handoffs.
+Updated skill validates; stale Luna/Astra worker instructions and nonexistent
+role-file assumptions are removed. Old-model running workers were stopped.
+Actual new spawns magi_portrait_fit, garrison_transfer_admission and
+wisp_core_integration use gpt-6.1-sol/medium; garrison_core_review uses
+gpt-6.1-sol/high. Existing old-model results remain historical, not relabelled.
+
+## UP-291 — Wisp selection outline, Conflux portraits and Core dwelling
+
+Status: Open,2026-10-07. User reports new Wisp lacks the gold active-turn
+silhouette outline and Conflux portrait background. Check both base/Greater
+forms, actual delivered descriptor alpha/overlay flags and shared portrait roles;
+do not draw a rectangular selection frame or overwrite supplied creature pixels.
+Its dwelling still has legacy Elite appearance/order/prerequisites/cost despite
+the approved second-Core roster. Audit actual hall ordering, construction chain,
+dwelling data/upgrade linkage and provisional cost; align with second-Core role
+without reviving Psychic/Magic Elemental recruitment. Numerical balance may be
+provisional, but record exact changed values and preserve existing IDs/saves.
+Acceptance: loaded outline/background bindings, coherent hall placement and
+construction/recruit path, focused checks/build and playable visual evidence.
+New creative assets, including provisional ones, require HoMM3 Art.
+Source checkpoint: Wisp hall now follows Pixie,Wisp,Air,Water / Fire,Earth,Phoenix.
+Same dwellingLvl6/upLvl6 IDs; base requires Fort, prototype1500Gold/5Wood/5Ore;
+upgrade1000Gold/5Ore, base-link prerequisite retained, MageGuild2 removed.
+Phoenix requires Fire/Earth directly, preserving its old transitive chain.
+Eight focused data tests and independent Sol High review pass. Build/delivery
+remain pending. Actual delivered Wisp descriptors already enable overlays;
+SDL outlines inherit near-zero fringe opacity. Supplied portrait cutouts lack
+Conflux scenery. Both visual defects remain open, not fixed by dwelling data.
+
+Further checkpoint: optional overlayAlphaThreshold64 added to both backends;
+default0 matches legacy mask over10500 comparisons. Descriptor-only Wisp
+staging opts all32 groups/form in; all110 unique frames pass solid-silhouette
+checks without source-alpha edits. Actual loaded root64/group0/group128, distinct
+cache entries and native/2x SDL2 checks pass after fixing string-frame inheritance.
+Conflux TPCASELE backdrop exports preserve native foreground geometry and small
+icon bytes (six focused checks). Private corrected candidate loads successfully;
+upgrade prerequisites use [allOf], not crash-inducing emptyvector. SDL3 compile,
+normal active-turn visual feedback and playable promotion remain pending.
+
+## UP-289 — Recruitment layout, clipped Mage portrait and Cabir feedback
+
+Additional screenshot: Mage also clips in the Academy's small dwelling icon,
+not only quick recruitment. Inspect shared CPRSMALL custom portrait geometry,
+binding and crop/offset policy; preserve deliberate red staff/projectile accents.
+Hero popup and battle stack sidebar show the same crop too. Treat all four
+reported roles as shared portrait acceptance: quick recruit, town dwelling,
+hero popup and battle sidebar. Avoid isolated per-window placement workarounds
+if the custom source/export canvas or common binding is responsible.
+
+Status: Open,2026-10-07. User screenshot shows the Mage head clipped in the
+quick-recruitment panel and requests a coherent layout revision. Inspect actual
+portrait animation bounds/offsets and native repeated-card geometry; follow the
+HeroesIII UI style guide, preserve recruitment/Leadership/transfer behavior,
+avoid pasted separators and keep icon/value rows readable. No new artwork is
+required merely to repair placement; any creative raster revision uses HoMM3 Art.
+User also reports no Cabir idle animation on combat hover. Trace native mouse-on
+animation selection against supplied base/Master groups; use authored suitable
+motion, not duplicated standing frames or fictional completeness claims.
+User approves the base Cabir four-frame fidget preview on2026-10-07 ("ok, it is
+good"). Review GIFs are in Downloads/provisory/cabir-idle-v1. Install this
+approved sequence as MOUSEON without replacing supplied battle actions; the
+upgraded form still needs its own matching sequence. Approval is not delivery.
+Matching Master draft generated with HoMM3Art; native/4x GIFs, frames, master,
+prompt and manifest are in Downloads/provisory/master-cabir-idle-v1. It remains
+uninstalled/unapproved. Base approved group1 overlay preserves all supplied
+frames; five focused staging checks pass. Magi shared resource safe-inset
+candidates stage under unchanged bindings; three focused composition checks
+pass, but actual four-role gameplay acceptance remains open. Ranged/claw sound
+references are installed in source, existing REGENER repair cue retained; four
+sound/config and five repair-schema checks pass. Audio has not been auditioned.
+Both Cabirs: ranged sound should be a fitting breath, melee a claw strike.
+Find an appropriate upgraded repair sound among existing read-only assets.
+Reuse sounds by resource reference, not copied purchaser audio in Git.
+Acceptance: focused binding/layout checks, relevant build, candidate delivery,
+and distinct rendered/hover/audio playtest evidence. Root owns integration;
+separate bounded UI and creature-feedback ownership avoids Transformer drafts.
+
+## UP-290 — Hero-to-garrison transition still rejects Leadership overflow
+
+Status: Reopened,2026-10-07. User still reproduces repeated server Leadership
+rejections while trying to move a visiting hero into an over-capacity town
+garrison: Leadership650, Mage cost300, limit2. Trace the actual hero-position
+transition and resulting combined town/hero army, not ordinary stack click
+transfer. Existing bounded transfer/overflow admission requirements apply;
+preserve all troops, ownership, last-stack integrity and authoritative validation.
+Do not silence the error by removing capacity checks or silently deleting units.
+Acceptance needs a deterministic reproduction of this exact transition with
+surplus, safe supported admission/transfer behavior, no repeated rejected requests,
+focused build/test and delivered playable correction. Existing source-only fixes
+or unrelated split tests do not close this newly reproduced defect.
+User resolves admission behavior: open the army-transfer dialog and keep the
+hero visiting until all troops fit. Never partially merge then switch positions:
+getUpperArmy selects the garrison hero and would hide leftover town troops.
+Server retains full atomic admission; add client preflight/transfer interaction,
+matching safe AI prediction and focused exact-report acceptance.
+Source checkpoint: shared full-merge projection feeds client and AI. Overflow
+opens CGarrisonWindow directly with no query-answer callback, then returns before
+the swap request. No transfer or position change occurs merely on opening/closing.
+Relevant four translation units compile at10 jobs; independent Sol High review
+finds no blocking issue. Added Wizard650/Mage300 predicate regression; actual
+authoritative transfer/admission test, linked build and playable UI delivery
+remain pending. Keep original server rejection for invalid direct requests.
+
+Linked ten-job client/test build and20/20 focused native garrison checks now
+pass, including exact Wizard650/Mage300 authoritative transfer then admission.
+Fixture now includes an opponent so accepted transfer cannot prematurely end
+the game in victory. Source committed346d6620b; actual modal gameplay and
+playable delivery remain pending. No fakequery or weakenedserver validation.
+
 ## UP-288 — Cabir and Wisp supplied complete handoffs
 
 Usual-launcher correction requested,2026-10-07: user starts the ordinary Linux
