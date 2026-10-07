@@ -1,5 +1,27 @@
 # New Horizons implementation sprints
 
+## Active checkpoint — 2026-10-07, full Windows build
+
+PHASE1. Full run37637414435 is confirmed in_progress on exact committed source
+8d8db3eb12e440fce51d89e8f06608a2e76d6b10:
+https://github.com/thegandalf196/vcmi/actions/runs/37637414435
+Mode: preflight_only=false, repack_run_id empty. It includes UP284/285, recorder
+repair346c43424, UP286/287 and UP011 diagnostic tracing; excludes uninstalled
+Gargoyle/Cabir drafts. Root retains this handle through terminal result, inspects
+failed step if any, and verifies actual game artifact identity on success. Do not
+dispatch a duplicate while this run is live or call it a downloadable game yet.
+Local package/source/PE/privacy regressions92/92 pass, zero skips/errors;
+dependencies, Conan profiles, presets, workflow and packagers are unchanged from
+the last successful fullf8d593dd3 route. Hosted full-graph notice/source and CRT
+gates still precede compilation; that runner evidence remains pending. Source
+coverage counts stay228/310 perks,61/67 combat spells and8/8 Orders.
+Parallel bounded P0 preview audits found the Chain Lightning, Summon Trolls and
+Verdant Prison principal source paths already implemented; do not repeat those
+features or equate source review with rendered acceptance. Pending design choices
+and Academy portrait reports remain open. Normal Linux52867cdf4a is unchanged;
+diagnostic8de7d468 is retained but not promoted. Private preflight report:
+ignored build/nh-leadership-trace-20261007.Sq7Q18tE/windows-package-regressions.json.
+
 ## Delivery receipt — 2026-10-07, Windows f8d593dd3
 
 Exact full Windows run37616860622 succeeds on source
