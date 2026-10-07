@@ -2,6 +2,12 @@
 
 ## 2026-10-07 Initiative-origin checkpoint
 
+Source5ae48a71787af96b3c0c4d67e311f4c1021d0ec7 is committed/pushed.
+Full Windows run37583664987 is confirmed in progress on that exact source,
+dispatched once after37577480623's terminal SUCCESS. Includes UP269–272;
+preserve this handle and re-poll it, never infer a package from dispatch.
+Subsequent receipt-only documentation does not change candidate gameplay bytes.
+
 UP272 combined client/test rebuild50608 exits0 with12 jobs; pure activation
 origin cases pass4/4 in0.300s, zero skips/errors/disabled. First build11477's
 CLabel visibility API failure is repaired and retained for recurrence tracking.

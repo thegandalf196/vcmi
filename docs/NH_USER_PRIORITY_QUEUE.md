@@ -11,6 +11,9 @@ entries and their validation/delivery evidence.
 
 ## UP-272 — Initiative-bar extra-activation origin feedback
 
+Source5ae48a717 is committed/pushed. Windows37583664987 is confirmed live on
+that exact revision; no package or Linux promotion inferred from dispatch.
+
 Status: Implemented (rendered/playable verification pending),2026-10-07.
 Combined client/test rebuild50608 exits0 with12 jobs after repairing CLabel's
 image-only visibility API misuse; initial11477 failure is retained. Four pure
