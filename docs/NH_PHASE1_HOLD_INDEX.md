@@ -46,29 +46,29 @@ new-horizons:armorer.unyielding	lack-producer	UP-167	No nonmagical forced-displa
 new-horizons:armorer.defiant	question	UP-136	Matrix records Defiant among Armorer perks awaiting design choices.
 new-horizons:battlecraft.overwatch	question	UP-155	Teleport/Blink interaction clarification remains open.
 new-horizons:battlecraft.rapidResponse	needs-review	UP-159	Relevant preparation exists; exact current hold is not restated here.
-new-horizons:warMachines.precisionBombardment	needs-review	UP-098	War Machines continuation reference; exact item-level hold not restated here.
-new-horizons:warMachines.breachmaker	needs-review	UP-098	War Machines continuation reference; exact item-level hold not restated here.
+new-horizons:warMachines.precisionBombardment	question	UP-098	Basic War Machines already selects attackable structural parts; distinct perk benefit remains unresolved.
+new-horizons:warMachines.breachmaker	question	UP-098	Fortification neighbor geometry and central-keep participation remain unresolved; enum order is not adjacency.
 new-horizons:warMachines.battlefieldMedic	question	UP-098	Matrix says persistence awaits clarification.
 new-horizons:warMachines.fieldWorkshop	question	UP-100	Destroyed-target repair scope remains pending.
-new-horizons:warMachines.counterBattery	needs-review	UP-097,UP-098	War Machines targeting/continuation references; exact current hold not restated here.
+new-horizons:warMachines.counterBattery	question	UP-097,UP-098	Automatic enemy-machine tower preference versus additional manual targeting remains unresolved; multiplier alone is incomplete.
 new-horizons:discipline.espritDeCorps	question	UP-152,UP-130	Composition scope awaits clarification.
 new-horizons:discipline.veteranCohesion	question	UP-094	Whether the 50% trigger uses initial maximum HP or surviving-creature capacity awaits clarification.
 new-horizons:discipline.heroicSpirit	question	UP-094	Extra-retaliation expiry across the immediate Morale activation awaits clarification.
-new-horizons:recruitment.drillSergeant	needs-review	UP-127	Recruitment cohort/provenance family reference; exact item-level hold not restated here.
-new-horizons:recruitment.fieldInstructor	needs-review	UP-127	Recruitment cohort/provenance family reference; exact item-level hold not restated here.
+new-horizons:recruitment.drillSergeant	question	UP-127	Whole merged-stack bonus versus strict recruited-cohort provenance remains unresolved.
+new-horizons:recruitment.fieldInstructor	question	UP-127	Merged-stack versus recruited-cohort scope remains unresolved; required UI depends on that rule.
 new-horizons:recruitment.recruiterSContacts	question	UP-126	Empty-pool eligibility for multirow external dwellings remains unresolved.
-new-horizons:recruitment.reinforcementDrill	needs-review	UP-215	Readiness coexistence reference; exact item-level hold not restated here.
+new-horizons:recruitment.reinforcementDrill	question	UP-127	Newly recruited stack identity after merging remains unresolved; UP215 cross-reference alone did not establish its hold.
 new-horizons:command.ironWill	question	UP-149	Recorded Command rule ruling remains pending.
 new-horizons:command.crisisCommand	question	UP-150	Recorded Command rule ruling remains pending.
 new-horizons:command.seizeInitiative	question	UP-151	Recorded Command rule ruling remains pending.
 new-horizons:lightMagic.miracleWorker	needs-review	UP-141	Light perk reference; exact current hold is not restated here.
 new-horizons:shadowMagic.plaguebearer	question	UP-113	Normal-limit definition remains pending.
-new-horizons:natureMagic.mireShaper	needs-review	UP-119	Nature perk reference; exact current hold is not restated here.
+new-horizons:natureMagic.mireShaper	question	UP-119	Five-patch absolute cap versus sixth perk patch remains unresolved; narrow ruling requested.
 new-horizons:natureMagic.worldroot	dependency	UP-117	Nature's Wrath/Worldroot base chain rules remain held.
 new-horizons:natureMagic.elementalConjurer	dependency	UP-072	Depends on the unresolved Elemental Convergence terrain mapping.
-new-horizons:havocMagic.demolitionist	needs-review	UP-139	Havoc perk reference; exact current hold is not restated here.
-new-horizons:havocMagic.meteorologist	needs-review	UP-139	Havoc perk reference; exact current hold is not restated here.
-new-horizons:havocMagic.cataclysm	needs-review	UP-111,UP-139	Havoc perk/base-spell references; exact current hold is not restated here.
+new-horizons:havocMagic.demolitionist	question	UP-139	Structural-perk stacking and fixed-landmark destructibility remain unresolved; baseline structural producer is verified.
+new-horizons:havocMagic.meteorologist	question	UP-139	Structural stacking and fixed-landmark destructibility remain unresolved.
+new-horizons:havocMagic.cataclysm	question	UP-111,UP-139	Eligible magical-obstacle and fixed-landmark filters remain unresolved.
 new-horizons:chaosMagic.confounder	dependency	UP-043	Confusion identity/implementation is a prerequisite.
 new-horizons:chaosMagic.shapeshifter	dependency	UP-066	Polymorph battle-local creature-form behavior is a prerequisite.
 new-horizons:chaosMagic.fateDealer	needs-review	UP-060	Chaos perk reference; exact current hold is not restated here.
@@ -86,26 +86,26 @@ new-horizons:warcasting.enchantedCommand	question	UP-122	Shared rule decision re
 new-horizons:warcasting.combatCasting	question	UP-121	Shared rule decision remains pending.
 new-horizons:warcasting.reactiveWeave	needs-review	UP-215	Readiness-coexistence reference; exact current hold is not restated here.
 new-horizons:warcasting.perfectRhythm	question	UP-178	Master Synthesis stacking/composition remains unresolved; prerequisite sequence work does not activate the perk.
-new-horizons:logistics.rapidEmbarkation	needs-review	UP-208	Embarkation policy/geometry reference; exact current remaining hold is not restated here.
-new-horizons:logistics.pursuitMarch	needs-review	UP-209,UP-193	Pursuit March references exist; exact current hold is not restated here.
+new-horizons:logistics.rapidEmbarkation	question	UP-103,UP-208	Navigation composition: 10% final boarding cost versus halved 5% remains unresolved.
+new-horizons:logistics.pursuitMarch	question	UP-104,UP-209,UP-193	Daily recovery cap and zero-effective-recovery use consumption remain unresolved.
 new-horizons:diplomacy.mercenaryCaptain	dependency	UP-129	Deterministic recruitment/cohort provenance is a prerequisite.
 new-horizons:diplomacy.loyalMercenaries	dependency	UP-129	Deterministic recruitment/cohort provenance is a prerequisite.
 new-horizons:diplomacy.legendaryReputation	needs-review	UP-195,UP-129	Diplomacy implementation/provenance references; exact remaining hold is not restated here.
 new-horizons:estates.prospector	question	UP-166	Gold is neither a common nor rare resource; Gold-mine eligibility/reward remains unresolved.
-new-horizons:estates.merchantPrince	needs-review	UP-071	Market-selector mapping/source review exists, but the perk remains planned; exact current hold is not restated here.
+new-horizons:estates.merchantPrince	question	UP-071	Visitor/garrison qualification, holder stacking and eligible exchange types remain unresolved.
 new-horizons:estates.steward	question	UP-071	Two-resident stacking remains pending.
-new-horizons:estates.magnate	needs-review	UP-168	Estates preparation exists; exact current item-level hold is not restated here.
-new-horizons:learning.scholar	needs-review	UP-163	Learning preparation reference; exact current hold is not restated here.
-new-horizons:learning.eagleEye	needs-review	UP-162	Learning preparation reference; exact current hold is not restated here.
-new-horizons:learning.historian	needs-review	UP-071	Experience-source classification is recorded; exact remaining hold is not restated here.
+new-horizons:estates.magnate	question	UP-168	Visit/week-start ownership, capture and multiple-holder stacking remain unresolved.
+new-horizons:learning.scholar	question	UP-163	One-holder reciprocal scope, no-transfer use and canonical spellbook-order representation remain unresolved.
+new-horizons:learning.eagleEye	question	UP-162	Winner-only versus other combat participants' eligibility remains unresolved.
+new-horizons:learning.historian	question	UP-071	Primary-XP reward classification for Chest/Tree/mixed rewards remains unresolved.
 new-horizons:learning.academicStudy	question	UP-074	First-visit/acquisition timing remains pending.
-new-horizons:learning.archivist	needs-review	UP-165	Learning preparation reference; exact current hold is not restated here.
+new-horizons:learning.archivist	dependency	UP-165,UP-054	Neutral Adventure-scroll acquisition policy remains unresolved; combat-only partial cannot complete full scope.
 new-horizons:learning.sage	question	UP-074	Pre-acquisition visit timing is recorded for both Sage rows; keep Learning Sage distinct from Wisdom Sage.
-new-horizons:learning.masterTeacher	needs-review	UP-164	Learning preparation reference; exact current hold is not restated here.
-new-horizons:luck.opportunist	needs-review	UP-088	Luck perk reference; exact current hold is not restated here.
-new-horizons:luck.serendipity	needs-review	UP-085	Luck perk reference; exact current hold is not restated here.
-new-horizons:luck.luckyRecovery	needs-review	UP-083	Luck perk reference; exact current hold is not restated here.
-new-horizons:luck.perfectFortune	needs-review	UP-081	Luck perk reference; exact current hold is not restated here.
+new-horizons:learning.masterTeacher	question	UP-164	Whether Mentor must also be selected remains unresolved; two recipient identities are required.
+new-horizons:luck.opportunist	question	UP-088	Movement-only continuation from reactions versus own activation remains unresolved.
+new-horizons:luck.serendipity	question	UP-085	Round-one eligibility for the first-attack +2 Luck bonus remains unresolved; narrow corrected ruling requested.
+new-horizons:luck.luckyRecovery	question	UP-083	Generic/Sylvan 10% recovery stacking versus shared single effect remains unresolved.
+new-horizons:luck.perfectFortune	question	UP-081	No Luck and first-blow/reaction eligibility scope remains unresolved.
 new-horizons:divineMandate.sharedPurpose	question	UP-108	Whether success qualifies by accepted Light target overlap or both effects actually triggering remains unanswered.
 new-horizons:divineMandate.divineDiscipline	needs-review	UP-108	Divine Mandate paired-recipient foundation reference; exact item-level hold not restated here.
 new-horizons:divineMandate.royalStandard	needs-review	UP-108	Divine Mandate paired-recipient foundation reference; exact item-level hold not restated here.
@@ -119,15 +119,26 @@ new-horizons:bloodrage.slayer	needs-review	UP-143	Bloodrage threshold-perk refer
 new-horizons:bloodrage.avatarOfRage	needs-review	UP-226,UP-143	Avatar implementation and threshold-family references; exact remaining hold is not restated here.
 new-horizons:bulwarkOfTheMire.deepBulwark	lack-producer	UP-167	No canonical nonmagical forced-displacement producer exists.
 new-horizons:elementalRebirth.elementalAttunement	dependency	UP-072	Depends on unresolved Elemental Convergence terrain mapping.
-new-horizons:elementalRebirth.swiftRebirth	needs-review	UP-046	Rebirth first-output/provenance foundation is recorded; this does not itself implement the perk.
-new-horizons:elementalRebirth.elementalMemory	needs-review	UP-046	Rebirth foundation reference; exact current item-level hold is not restated here.
+new-horizons:elementalRebirth.swiftRebirth	question	UP-046	Precedence versus earned Morale activation and multi-spawn tie order remain unresolved.
+new-horizons:elementalRebirth.elementalMemory	question	UP-046	Inherited Morale versus Elemental immunity remains unresolved.
 new-horizons:elementalRebirth.adaptiveElement	dependency	UP-072	Depends on unresolved Elemental Convergence terrain mapping.
-new-horizons:elementalRebirth.rebirthChain	needs-review	UP-046	Original-output HP metadata prerequisite is now implemented; Chain behavior/composition remains unimplemented and unspecified here.
+new-horizons:elementalRebirth.rebirthChain	question	UP-046	Exact first-output HP producer exists; secondary-output inheritance of other Rebirth perks remains unresolved.
 new-horizons:elementalRebirth.perfectConvergence	dependency	UP-072	Depends on unresolved Elemental Convergence terrain mapping.
-new-horizons:elementalRebirth.phoenixSpark	needs-review	UP-046	Rebirth foundation reference; exact current item-level hold is not restated here.
+new-horizons:elementalRebirth.phoenixSpark	question	UP-046	Greater Essence composition with the fixed 25% replacement remains unresolved.
 ```
 
 ## Selection result
+
+Bounded canonical/queue/source audit,2026-10-06:27 planned entries across
+War Machines, Recruitment, Logistics, Estates, Learning, Nature/Havoc, Luck and
+Elemental Rebirth have item-specific holds restated above. This audit adds no
+implementation credit and does not certify the remaining56 planned entries as
+blocked. Baseline structural/Quicksand/Rebirth producers and separate Sylvan
+Luck perks are not substitutes for their planned perk behavior. Recruitment's
+Reinforcement Drill hold points to UP127, not merely UP215. Narrow rulings for
+Rapid Response precedence and Mire Shaper's cap are requested; corrected generic
+Serendipity question concerns +2 Luck on the first attack, never an extra Hero
+Action. Do not repeat these mapped neighborhoods while awaiting those decisions.
 
 The user has cleared Battlefield Mastery and Last Stand for implementation.
 Mastery is now active with4/4 focused and16/16 adjacent native cases passing;

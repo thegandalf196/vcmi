@@ -6846,6 +6846,12 @@ remains live on older213b4a35e; do not describe it as Investor validation.
 
 ## UP-159 — Battlecraft Rapid Response
 
+Narrow ruling requested,2026-10-06: when an enemy activation earns immediate
+Morale/Quartermaster/Second Wind activations, should those finish before Rapid
+Response, or should it interrupt and resume them later? Recommended selection
+is finish immediate extras first. No answer received yet; preserve both earned
+activations and the once-per-round delayed-activation reordering contract.
+
 Status: Bounded read-only preparation, 2026-10-02. Once per round after an
 enemy Creature Activation ends, the waiting friendly stack scheduled latest
 in the current initiative order takes its delayed activation next. Map the
@@ -8031,6 +8037,10 @@ callback, preserving projected ownership and hidden hero information. Build80192
 is validating that repair; registry remains planned until parity passes.
 
 ## UP-119 — Nature Mire Shaper
+
+Narrow ruling renewed,2026-10-06: does the extra patch allow six when the base
+Quicksand count is capped at five, or is five absolute? Recommended extra patch
+is after the base cap. No answer received; registry remains planned.
 
 Status: Blocked on design clarification, 2026-10-02. Continue UP-023 Phase1 coverage with Advanced
 Nature Mire Shaper: Quicksand creates one additional patch. Map the shared
@@ -10162,6 +10172,12 @@ failed builds/tests remain recorded. Art Not done; no launcher promotion or
 graphical acceptance is claimed. Phase2 findings remain listed above.
 
 ## UP-085 — Implement Luck Serendipity
+
+Corrected narrow ruling requested,2026-10-06: canonical generic Serendipity
+grants +2 Luck to the first friendly attack after a round without positive Luck;
+does round one qualify without a previous round? Recommended start is round two.
+This is not the distinct Sylvan perk and does not grant any Hero Action.
+No answer received; registry remains planned.
 
 Status: Read-only architecture map, 2026-10-01. UP-023 missing Advanced Luck
 perk: when no friendly positive Luck trigger occurred in the previous round,

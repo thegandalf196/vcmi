@@ -2,6 +2,17 @@
 
 ## Current checkpoint — 2026-10-06, magic handoff / Cabir correction
 
+Last Stand source10dc2428c is pushed and remote-head verified with the required
+identity. Prior Windows package37549855253 completed SUCCESS on b9fe600c4.
+New notice preflight37556334450 is confirmed live on10dc2428c; do not restart
+it on observation timeouts. Functional next-slice audits inspect specific
+needs-review queue records in parallel, not assuming those labels mean blocked.
+That bounded audit now restates27 exact canonical/queue holds in the planned
+index. No new activation, broad tests or speculative partial implementation.
+Remaining56 planned entries are not thereby declared blocked. Three small
+pending choices can unlock Rapid Response, Mire Shaper and generic Serendipity;
+record their actual answers before implementation.
+
 Accepted checkpoint supersedes pending/failure notes below: Last Stand is active,
 client/test build23204 passes; principal72648 passes13/13 and activated adjacent
 30900 passes22/22, zero skips. Module drift/canonical-data pass and independent
