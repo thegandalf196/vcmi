@@ -19,6 +19,14 @@ None currently awaiting integration.
 
 ## Integrated history
 
+### Battlefield Mastery and Last Stand scope — 2026-10-06 (integrated)
+
+User resolves Battlefield Mastery's award in favor of the first eligible ordinary
+stack: an ineligible War Machine leaves it available. Last Stand protects ordinary
+stack health, not clones/Phantom Integrity; when lethal retaliation triggers it,
+the surviving attacker's current activation ends. Integrated into both canonical
+perk rows. Production completion and delivery remain separate in UP-156/UP-079.
+
 ### Both Cabir forms are ranged — 2026-10-06 (integrated)
 
 User explicitly directs both Cabir and Cabir Master to shoot. Apply to the

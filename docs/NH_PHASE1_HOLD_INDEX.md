@@ -6,15 +6,20 @@ canonical [New Horizons design](design-sources/New%20Horizons.md). That Markdown
 remains the sole authority for gameplay. The queue and functional matrix record
 current implementation questions and dependencies.
 
-Registry-derived inventory: 31 Skills, 93 active rank effects, 225 active perks,
-and 85 planned perks: 66 generic and 19 faction. This index covers only those 85
+Registry-derived inventory: 31 Skills, 93 active rank effects, 226 active perks,
+and 84 planned perks: 65 generic and 19 faction. This index covers only those 84
 perks; the six inactive combat spells are tracked separately. The current
 selection audit in [NH_FUNCTIONAL_COMPLETION_MATRIX.md](NH_FUNCTIONAL_COMPLETION_MATRIX.md)
-reports an item-specific question or dependency for each planned perk and no
-fully unblocked perk in this set. That is not evidence that the whole Version
-1.0 backlog is blocked.
+historically reported item-specific questions or dependencies. The user has now
+resolved Battlefield Mastery and Last Stand. Mastery is now source/native verified
+and active (removed from this planned-only table); Last Stand is implementation-ready,
+not design-blocked. That is not evidence that the whole Version1.0 backlog is blocked.
 
 Status meanings:
+
+- `implementation-ready`: user answered the recorded design questions; source
+  work is still missing.
+- `in-progress`: source/AI/focused validation is underway, not completed coverage.
 
 - `question`: the cited records identify an explicit rule, composition, timing,
   scope, or policy question.
@@ -27,8 +32,8 @@ Status meanings:
   in this bounded index. Do not infer that the mechanic is ambiguous or fully
   blocked from this label.
 
-No row is classified as unblocked or as merely delayed implementation without
-direct supporting evidence. `needs-review` is intentional uncertainty, not a
+Implementation-ready/in-progress rows require direct supporting user rulings.
+`needs-review` is intentional uncertainty, not a
 new user question. Preserve the cited queue records rather than reopening the
 same mapping without new evidence.
 
@@ -39,10 +44,9 @@ multiple comma-separated queue entries.
 ID	Status	UPref	Existing recorded issue / reason
 new-horizons:armorer.unyielding	lack-producer	UP-167	No nonmagical forced-displacement producer; ordinary movement and spell relocation are not substitutes.
 new-horizons:armorer.defiant	question	UP-136	Matrix records Defiant among Armorer perks awaiting design choices.
-new-horizons:armorer.lastStand	question	UP-079	Matrix records Last Stand among Armorer perks awaiting design choices.
+new-horizons:armorer.lastStand	implementation-ready	UP-079	Retaliation ends activation; clones/Phantom Integrity excluded. Sequential runtime slice after Mastery.
 new-horizons:battlecraft.overwatch	question	UP-155	Teleport/Blink interaction clarification remains open.
 new-horizons:battlecraft.rapidResponse	needs-review	UP-159	Relevant preparation exists; exact current hold is not restated here.
-new-horizons:battlecraft.battlefieldMastery	question	UP-156	Whether an ineligible War Machine consumes the first-award opportunity remains unanswered.
 new-horizons:warMachines.precisionBombardment	needs-review	UP-098	War Machines continuation reference; exact item-level hold not restated here.
 new-horizons:warMachines.breachmaker	needs-review	UP-098	War Machines continuation reference; exact item-level hold not restated here.
 new-horizons:warMachines.battlefieldMedic	question	UP-098	Matrix says persistence awaits clarification.
@@ -126,7 +130,9 @@ new-horizons:elementalRebirth.phoenixSpark	needs-review	UP-046	Rebirth foundatio
 
 ## Selection result
 
-No fully unblocked candidate was identified within the 85 planned perk entries.
+The user has cleared Battlefield Mastery and Last Stand for implementation.
+Mastery is now active with4/4 focused and16/16 adjacent native cases passing;
+Last Stand remains the next design-cleared runtime slice after user priorities.
 This conclusion is limited to the current queue/matrix record for these IDs; it
 does not assert that all remaining Version 1.0 implementation work is blocked.
 Uncertain row-level dispositions are deliberately marked `needs-review` above.
@@ -137,6 +143,9 @@ Independent Phase1 review identifies ordinary principal paths that can progress
 without treating narrow disputed boundaries as settled: Battlefield Mastery
 (ordinary stacks), Counterpressure (accepted damaging/debuffing effects), and
 Last Stand (ordinary defender surviving a lethal physical creature attack).
+Subsequent user answers clear Battlefield Mastery and Last Stand for full
+implementation; their historical partial/inactive restriction below no longer
+applies. Counterpressure remains partial/inactive pending its separate answer.
 These are candidates for **Partial, inactive** implementation, not permission
 to activate a perk with an undocumented exclusion or claim completed coverage.
 Counterpressure is the next selected partial slice; its no-op Dispel boundary

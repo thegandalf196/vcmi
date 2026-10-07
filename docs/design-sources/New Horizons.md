@@ -3983,7 +3983,7 @@ Armorer is learned expertise in surviving physical creature combat. Defense rema
 |Unyielding|Advanced|Friendly stacks that are Defending or affected by Hold the Line! cannot be forcibly displaced by non-magical effects.|
 |Veteran|Advanced|At the beginning of its activation, a stack restores 15% of physical creature damage suffered since its previous activation, limited to surviving creatures.|
 |Defiant|Advanced|The first non-magical enemy effect each round that would prevent a friendly stack from retaliating is ignored.|
-|Last Stand|Expert|Once per combat, the first friendly stack that would be completely destroyed by a physical creature attack instead survives with one creature at 1 HP and immediately Defends.|
+|Last Stand|Expert|Once per combat, the first friendly stack that would be completely destroyed by a physical creature attack instead survives with one creature at 1 HP and immediately Defends. Protects ordinary stack health only, not clones or Phantom Integrity. If lethal retaliation triggers this on the acting attacker, its current activation ends.|
 |Bastion|Expert|While Defending or under Hold the Line!, the first physical creature attack received each round deals 30% less final damage.|
 
 
@@ -4046,7 +4046,7 @@ Skill progression
 |Passing Lines|Advanced|Friendly stacks may move through hexes occupied by friendly stacks, provided they end movement in a legal empty position.|
 |Rapid Response|Advanced|Once per round after an enemy Creature Activation ends, if friendly stacks are still Waiting, the waiting friendly stack scheduled latest in the current initiative order automatically takes its delayed activation next.|
 |Grand Tactics|Expert|The hero completes initial deployment after the opponent's eligible initial deployment phase. If both heroes have Grand Tactics, initial deployment keeps the normal attacker-then-defender order. This changes initial deployment only; the later Redeployment stage is unchanged. A holder without Tactics uses the ordinary one-row area, not Tactics' two additional rows. Scenario restrictions and the ordinary deployment confirmation flow remain in force.|
-|Battlefield Mastery|Expert|The first friendly stack each round to Wait or Defend receives double the normal Battlecraft rank bonus for that action.|
+|Battlefield Mastery|Expert|The first eligible ordinary friendly stack each round to Wait or Defend receives double the normal Battlecraft rank bonus for that action. An ineligible War Machine neither receives nor consumes this opportunity. Other perk contributions are not doubled.|
 
 
 

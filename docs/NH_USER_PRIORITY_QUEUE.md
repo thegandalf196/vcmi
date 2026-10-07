@@ -11,6 +11,59 @@ entries and their validation/delivery evidence.
 
 ## UP-265 — Cabir walking and icon background defects
 
+User feedback,2026-10-06: the sixpose draft appears to moonwalk; inspect other
+creatures too. Audit pose/footplant sequence, default facing and runtime mirroring
+against original walk cycles, plus customCabir/Master animation bindings. Do not
+equate translation of a standing sprite with a walk or assume every other creature
+is broken. Record concrete comparison evidence before modifying unrelated assets.
+
+Direction/gait audit,2026-10-06: CreatureAnimation advances chronological frame
+indices for both facings; the opposite facing is a spatial mirror, not temporal
+reversal. Battle movement turns toward travel and translates the sprite. Both
+production Cabir descriptors use four right-facing frames00–03; the private
+sixpose GIF is a different, uninstalled sequence. Representative original
+Gremlin/Master Gremlin, Gargoyle/Obsidian Gargoyle and Mage/Arch Mage moving
+groups contain8/6/8 frames respectively. Gargoyles retain original DEFs; Mage's
+body is unchanged; Arch Mage palette aliases retain original group/frame indices.
+No comparable direction-order defect is evidenced in these creatures. This is a
+source/descriptor and private contact-sheet comparison, not rendered acceptance.
+
+Mechanical study native-shared-root-v1 pins the same source hash, a shared56px
+scale, pelvis root and row ground reference; no nonzero-alpha pixels are removed.
+Root and independent reviewer reject it as completed walking: alignment reduces
+jitter, but repeated same-leg contacts still lack a clear opposite supporting
+contact. Reversing/reordering cannot supply that missing pose. Next creative
+correction must add an unmistakable opposite-leg forward planted contact and
+passing transition, keeping leg identity, scale/root and rearward stance-foot
+motion relative to the body. Private references remain ignored under
+build/nh-up265-animation-review; no runtime asset or normal launcher is changed.
+
+User playtest,2026-10-06: private standing preview remains static and looks
+too high-resolution/smooth beside original HeroesIII creatures. This is failed
+visual acceptance, not completed art. Prioritize real alternating gait plus
+native-resolution/material review; distinguish logical450x400 canvas from the
+visible creature silhouette. Inspect original-scale references and actual runtime
+filtering before choosing reduction. Use HoMM3 Art for all creative refinement,
+preserve gameplay/profile isolation, and do not present another standing-only
+candidate as completed walking. Mastery workers may finish independent safe edits.
+
+Native audit establishes64x60 visible pixels, not450x400 creature dimensions.
+Dense highlights/material detail remain too smooth at that scale; screen
+upscaling/filtering contribution is unverified. New HoMM3-Art matte low-poly
+sixpose draft is retained privately at output/homm3/cabir-reference-v4/
+crude-walk-sheet-v1. Transparent revision removes the opaque studio background;
+approved faintalpha cleanup and connected-silhouette extraction avoid clipping
+lower-row heads at the equal-grid seam. Shared56px native exports are inspected.
+Independent review accepts rougher finish but rejects completed walking: opposite
+leg contacts remain unclear, repeated raised-knee poses and torso displacement
+risk shimmer. No replacement/promoted preview. Artist now corrects gait/root.
+Follow-up artist studies in walk-alternation-v1 are rejected: opaqueRGB painted
+checkerboard and unclear opposite contacts. Exact prompts/hashes are preserved;
+no installation. Next bounded step aligns the valid sixposeRGBA draft by explicit
+torso landmarks rather than changing foot-contact midpoints, to distinguish
+actual pose motion from artificial alignment jitter. No new painting or invented
+animation-completion claim from that mechanical comparison.
+
 Immediate preview request,2026-10-06: user asks to see the new reference-based
 Cabir in-game. Prepare an isolated paired standing-frame preview from current
 client/resources, preserving normal snapshot and saves. Distinct base/Master
@@ -19,6 +72,21 @@ a user-manual launcher and quick original preview map if feasible. Explicitly
 disclose static movement/action/death art and incomplete full animation set.
 No desktop/input automation is authorized by this request. Private source
 provenance remains pending; keep derived preview pixels out of public Git.
+
+Walking continuation,2026-10-06: individual HoMM3-Art contact drafts are retained
+privately under output/homm3/cabir-reference-v4/walk-contact-left-v1 and
+walk-contact-right-v1 with exact prompts/source hashes. First has a wider
+asymmetric stride, but the attempted opposite contact repeats its leg phase.
+Root rejects that second draft before any gait loop or runtime installation.
+Both still have overly glossy/fine scales. Try a distinctly raised-knee passing
+pose next, with native-scale review; different poses/hashes alone do not close
+the walking defect. No completed-gait or approval claim.
+The next HoMM3-Art passing draft,walk-passing-v1, visibly raises one foot clear
+of the grounded vertical leg. Root inspected the master and retains it for a
+native contact/passing comparison; it is not a second opposite contact or a full
+alternating loop. First-contact native reduction preserves the source hash and
+uses60px shared-height/ground alignment. Full gait and cruder material finish
+remain open; no replacement of the delivered static preview yet.
 
 Paired private preview delivery,2026-10-06: launcher is
 build/nh-cabir-preview-v4.mjk0wHvH/Play-Cabir-Preview.sh, selecting unpromoted
@@ -111,6 +179,23 @@ the current runtime until alternating phases are actually evident; author the
 opposite contacts individually rather than accepting cosmetic pose differences.
 
 ## UP-264 — Preferred-school Mage Guild tome bookmarks
+
+Private manual delivery checkpoint,2026-10-06: combined UP263/264 launcher
+build/nh-magic-preview.awlVtY6Y/Play-Magic-Preview.sh selects immutable
+snapshot-f732642de31e708ea38ec77cf1d09af3a8c129b0e36fa89ef07e88951c5723ae,
+rebuilt from02fa7f89b. Hash-pinned fragment adds864 casting PNGs,nine sparse
+guild PNGs and optional resolver config; all2367 baseline files remain unchanged.
+All3241 frozen payload files still verify after a12-second true-headless
+All for One run reaching blue day4. Exit124 is deliberate timeout, not completed
+match/graphical acceptance; owned processes/runtime are gone and lock is released.
+Ten importer tests and the active private native casting fixture pass,zero skips;
+the native fixture checks864 casting geometry and representative composition,
+not actual guild-window construction or battle-UI lifecycle. Independent private
+staging review finds no blocker; manual-launcher preflight passes. Existing Repair
+schema/Shield of Chaos/redundant-namespace diagnostics remain Phase2 findings.
+This separate private profile does not replace normal Linux or Cabir preview.
+No purchaser-derived pixels are committed/distributed. User visual acceptance
+and normal delivery remain open; do not call either art family Final.
 
 Source hook and importer checkpoint: optional guildBooks manifest adds a
 noninteractive native67x85 book patch at378,344, without changing guildWindow.
@@ -365,6 +450,16 @@ while the prior input incident remains unresolved. This visual gate must not
 silently be called passed; another unblocked priority item can proceed.
 
 ## UP-261 — Proposed recruitment and transfer Leadership demand
+
+Earlier zero-headroom stack report recheck,2026-10-06: current normal click and
+radial/keyboard occupied-merge paths already call hasNoLeadershipCapacityForMerge
+before mergeStacks. At recipient per-slot maximum the request is suppressed
+locally; source-last-single-creature protection is separate and remains intact.
+No current un-clamped command gap was found for that earlier clear interaction.
+No-capacity feedback is presently a silent no-op, a deferred UX improvement—not
+permission to suppress authoritative validation. Latest portrait admission versus
+stack-transfer ambiguity/save request below remains unresolved. No new source
+change or reproduced gameplay acceptance from this bounded caller audit.
 
 New reproduction report,2026-10-06: moving a hero into a garrison produces
 `at most 3 creatures ... 240 Leadership each; hero Leadership 875` complaint.
@@ -6900,6 +6995,51 @@ before implementation; the Defend prerequisite remains unblocked.
 
 ## UP-156 — Battlecraft Battlefield Mastery
 
+Verified source/native checkpoint,2026-10-06 (playable delivery pending):
+both client/test targets build after the callback qualification and fixture
+defining-header repairs. All4 new live/detached cases pass with zero skips
+in1.862s;16 adjacent Battlecraft/Defend-lifetime/Reserve cases pass with zero
+skips in4.556s. The initial descriptor lookup failure was an alive-only test
+filter, corrected to inspect descriptor identity without claiming live health
+restoration. Module drift and the canonical-data generator check pass.
+Logs/XML: build/new-horizons-linux/testing/mastery-20261006.afdT3E6Y.
+Registration is active: total226/310 perks (155/220 generic,71/90 faction),
+84 planned; Battlecraft8/10. First eligible ordinary Wait/Defend doubles only
+rank contribution, machines preserve the side's opportunity, separate sides
+and later rounds renew independently; Wait and Defend retain their existing
+distinct expiry. Source review has no blocker. Phase2 retains actual AI Defend
+selection, controlled-unit/death/revival composition and rendered feedback.
+Normal launcher remains unchanged; this is not graphical/playable acceptance.
+
+User ruling,2026-10-06: ineligible War Machines neither receive nor consume the
+award; reserve it for the first eligible ordinary stack. Integrated into the
+canonical perk row. Status: In progress, full runtime/AI/focused-test slice;
+the older unanswered-question records below are superseded, not current holds.
+Per-side round stamp and separate Wait/Defend markers remain the selected
+event-driven architecture. No activation or coverage credit before validation.
+Frozen source checkpoint: runtime, detachedWait/Defend projection and four native
+principal fixtures are integrated; independent source review finds no blocking
+issue. Registry enabled for native fixture seeding, not yet counted as verified
+coverage. Binary descriptors retain historical side stamps but reject active
+unitmarkers even currentformat; UnitChangesJSON preserves actual combat state.
+First build30623 stops on unqualified playerToSide in free Defend-scoring helper;
+root supplies defendedPreview callback and incremental build97218 is live.
+Do not restart from a timeout or claim native pass before that handle completes.
+Phase2: actual AI Defend selection, controlledunit transitions, death/revival
+composition, graphical feedback and playable delivery remain unverified.
+
+Bounded next-slice architecture,2026-10-06: ordinary-stack doubling remains
+unimplemented. Independent map selects one per-side awarded-round stamp because
+unit effect expiry/death must not reopen the army's award. Separate unit Wait
+and Defend markers follow their existing hit/round and next-activation lifetimes;
+only rank contribution doubles, never Entrench. Side update, UnitChanges and
+HypotheticBattle must share accepted-action allocation and branch-local state.
+Do not reuse Pre-emptive Strike's unrelated per-target round stamp. Focused
+live/detached/serialization fixtures precede activation; ineligible-machine
+consumption question is presented again and remains unanswered. No production
+edit or coverage credit from this map. UP265 walking and UP263/264 delivery still
+take precedence; do not use this prepared slice to bypass unblocked queue work.
+
 Resumption audit, 2026-10-05: the War Machine consumption question remains
 unanswered after UP-232/UP-004 source delivery. Do not activate the perk or
 infer a response from automatic goal continuation. Root also rechecks other
@@ -10096,6 +10236,12 @@ retains explicit save roundtrips and ranged/retaliation/reaction/Sylvan matrices
 Artwork is Not done, fallback remains neutral; no launcher promotion.
 
 ## UP-079 — Implement Armorer Last Stand
+
+User rulings,2026-10-06: lethal retaliation triggering Last Stand ends the
+surviving attacker's current activation; protect ordinary stack health only,
+excluding clones/Phantom Integrity. Both integrated into the canonical perk
+row. Status: Open, design-ready; implement after UP-156 because authoritative
+battle/health files overlap. Historical unanswered holds below are superseded.
 
 Status: Blocked on the two mapped design choices below, 2026-10-04.
 Audit correction: the former resolved/consolidated-into-UP129 header had no

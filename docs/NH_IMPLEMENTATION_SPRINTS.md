@@ -2,6 +2,39 @@
 
 ## Current checkpoint — 2026-10-06, magic handoff / Cabir correction
 
+Mastery acceptance supersedes the pending-build checkpoint below: both targets
+build;4/4 focused cases and16/16 adjacent cases pass with zero skips. Module
+drift/canonical data checks pass; independent source review has no blocker.
+Coverage226/310 (155/220 generic,71/90 faction),84 planned; Battlecraft8/10.
+Source commit/push follows this bounded acceptance. Actual AI Defend selection,
+controlled/death/revival composition and rendered feedback remain Phase2;
+normal launcher delivery is unchanged. Cabir opposite-contact art remains the
+active user-priority correction, not an accepted walking animation.
+
+User resolves UP156 machine allocation (first eligible ordinary stack) and UP079
+LastStand retaliation ending activation/clone exclusion; both canonical rows are
+updated. Mastery runtime/AI/focusedfixtures freeze and source review passes;
+client/test rebuild97218 is pending after one qualifiedcallback compile repair.
+No completedcoverage credit until native execution. User rejects static/smooth
+Cabir preview; cruder56px sixposeRGBA draft is private/provisional, gait/root
+alignment still under review. Other new oppositecontact outputs fail alpha.
+
+Cabir direction audit now rules out temporal reversal in the shared renderer.
+Original Gremlin/Gargoyle/Magi chronology and Arch Mage palette-alias chronology
+are preserved; no equivalent defect is evidenced there. Shared-torso mechanical
+alignment reduces jitter but root/independent review still reject the sixpose
+draft: opposite planted-leg contact and passing transition must be authored.
+UP265 remains Open; no new gait or normal-playable delivery is claimed.
+
+Latest delivery cycle: paired new-reference standing Cabir preview is isolated
+and manually playable with an original5+5-stack map. Combined private glows/books
+candidate from02fa7f89b has its own manual launcher,3241-file verified snapshot,
+ten importer checks and native864-frame validation. Headless smoke reaches day4;
+no graphical acceptance or normal-pointer change is inferred. Cabir contact poses
+continue through HoMM3 Art before the ordinary Battlefield Mastery slice. Its
+side-round/per-action lifetime architecture is now recorded in UP156; no planned
+perk is activated without the machine ruling. Coverage counts remain unchanged.
+
 Explicit user work supersedes the ordinary UP156 candidate: UP263 school casting
 glows and UP264 faction tome bookmarks from the supplied v6 ZIP; UP265 Cabir
 gait/cruder art, portrait background, selection contour and both-forms shooting;
