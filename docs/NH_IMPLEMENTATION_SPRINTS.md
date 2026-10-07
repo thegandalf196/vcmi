@@ -2,6 +2,15 @@
 
 ## Current checkpoint — 2026-10-06, magic handoff / Cabir correction
 
+Bounded follow-up audit checks seven previously unrefreshed rows: Defiant,
+Veteran Cohesion, Heroic Spirit, Esprit de Corps, Iron Will, Crisis Command and
+Seize Initiative. All have recorded principal scope/trigger/lifetime decisions,
+not merely Phase2 hardening. Exact holds now replace vague index descriptions;
+Esprit de Corps's retired UP152 reference is corrected to UP130. Combined46
+planned rows have refreshed evidence; do not repeat their architecture audits
+without new rulings. Coverage remains227/310; no new activation/build is claimed.
+Windows37557751116 is still confirmed live in client compilation.
+
 Windows notice preflight37556334450 completed SUCCESS on10dc2428c. Full package
 37557751116 is confirmed live compiling the Windows client on ce1b5547cf;
 the intervening source difference is documentation-only. No duplicate dispatch,

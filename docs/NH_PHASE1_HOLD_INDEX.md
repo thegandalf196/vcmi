@@ -43,7 +43,7 @@ multiple comma-separated queue entries.
 ```text
 ID	Status	UPref	Existing recorded issue / reason
 new-horizons:armorer.unyielding	lack-producer	UP-167	No nonmagical forced-displacement producer; ordinary movement and spell relocation are not substitutes.
-new-horizons:armorer.defiant	question	UP-136	Matrix records Defiant among Armorer perks awaiting design choices.
+new-horizons:armorer.defiant	question	UP-136	Applied debuffs versus intrinsic nonmagical retaliation blockers, and No Quarter's linked Morale penalty, remain unresolved.
 new-horizons:battlecraft.overwatch	question	UP-155	Teleport/Blink interaction clarification remains open.
 new-horizons:battlecraft.rapidResponse	question	UP-159	Precedence versus earned immediate Morale/Quartermaster/Second Wind activations remains unresolved; narrow ruling requested.
 new-horizons:warMachines.precisionBombardment	question	UP-098	Basic War Machines already selects attackable structural parts; distinct perk benefit remains unresolved.
@@ -51,16 +51,16 @@ new-horizons:warMachines.breachmaker	question	UP-098	Fortification neighbor geom
 new-horizons:warMachines.battlefieldMedic	question	UP-098	Matrix says persistence awaits clarification.
 new-horizons:warMachines.fieldWorkshop	question	UP-100	Destroyed-target repair scope remains pending.
 new-horizons:warMachines.counterBattery	question	UP-097,UP-098	Automatic enemy-machine tower preference versus additional manual targeting remains unresolved; multiplier alone is incomplete.
-new-horizons:discipline.espritDeCorps	question	UP-152,UP-130	Composition scope awaits clarification.
-new-horizons:discipline.veteranCohesion	question	UP-094	Whether the 50% trigger uses initial maximum HP or surviving-creature capacity awaits clarification.
-new-horizons:discipline.heroicSpirit	question	UP-094	Extra-retaliation expiry across the immediate Morale activation awaits clarification.
+new-horizons:discipline.espritDeCorps	question	UP-130	Mixed-faction versus Undead-presence composition penalties remain unresolved; UP152 is a retired duplicate.
+new-horizons:discipline.veteranCohesion	question	UP-094	Battle-start maximum HP versus surviving-creature capacity changes the principal below-50% trigger; choice remains unanswered.
+new-horizons:discipline.heroicSpirit	question	UP-094	Extra retaliation surviving the immediate Morale activation and expiring on the following activation remains unresolved; generic next-activation expiry would erase it immediately.
 new-horizons:recruitment.drillSergeant	question	UP-127	Whole merged-stack bonus versus strict recruited-cohort provenance remains unresolved.
 new-horizons:recruitment.fieldInstructor	question	UP-127	Merged-stack versus recruited-cohort scope remains unresolved; required UI depends on that rule.
 new-horizons:recruitment.recruiterSContacts	question	UP-126	Empty-pool eligibility for multirow external dwellings remains unresolved.
 new-horizons:recruitment.reinforcementDrill	question	UP-127	Newly recruited stack identity after merging remains unresolved; UP215 cross-reference alone did not establish its hold.
-new-horizons:command.ironWill	question	UP-149	Recorded Command rule ruling remains pending.
-new-horizons:command.crisisCommand	question	UP-150	Recorded Command rule ruling remains pending.
-new-horizons:command.seizeInitiative	question	UP-151	Recorded Command rule ruling remains pending.
+new-horizons:command.ironWill	question	UP-149	Same-command reissue replacing existing recipient carries versus separate nonstacking instances remains unresolved.
+new-horizons:command.crisisCommand	question	UP-150	Free Order after complete action resolution versus interruption between hits remains unresolved.
+new-horizons:command.seizeInitiative	question	UP-151	Currently active recipient eligibility determines additional activation versus moving a pending normal activation; canonical conflict remains unresolved.
 new-horizons:lightMagic.miracleWorker	question	UP-141	25% increase to restoration HP versus resulting integer creature count remains unresolved.
 new-horizons:shadowMagic.plaguebearer	question	UP-113	Normal-limit definition remains pending.
 new-horizons:natureMagic.mireShaper	question	UP-119	Five-patch absolute cap versus sixth perk patch remains unresolved; narrow ruling requested.
@@ -128,6 +128,17 @@ new-horizons:elementalRebirth.phoenixSpark	question	UP-046	Greater Essence compo
 ```
 
 ## Selection result
+
+Bounded Armorer/Discipline readiness audit,2026-10-06: four additional planned
+rows above are checked against actual canonical wording, queue questions and
+production seams. These are principal trigger/scope/lifetime choices, not
+cosmetic or broad Phase2 concerns. No complete implementation-ready item is
+established. Esprit de Corps points to UP130; UP152 is a retired duplicate.
+Command UP149/150/151 additionally confirm principal reissue, interrupt timing
+and active-recipient eligibility decisions, not missing generic producers.
+Combined46 planned rows now have refreshed evidence; do not repeatedly remap
+these seven while their recorded choices remain unanswered. Remaining37 indexed
+rows are not newly certified by this bounded pass.
 
 Final uncertain-row audit,2026-10-06: twelve additional planned rows (including
 Rapid Response) now have exact queue/canonical holds restated above. Combined
