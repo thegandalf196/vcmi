@@ -1,5 +1,17 @@
 # New Horizons Linux build handoff
 
+## 2026-10-07 Quick-recruitment roster checkpoint
+
+Source c338c671f79a5fa6fe67ee7f6cbd794b2f2fb359 is committed/pushed.
+Local client rebuild87978 exits0 with12 jobs after the initial missing-include
+failure93863. Recruitment category/Muster guards and nominal baseline bounds
+checks pass; independent source review finds no remaining blocker. Build logs
+remain under ignored testing/quick-recruitment-20261007.3AUTx3Xr.
+No rendered acceptance or normal Linux promotion. Full Windows run37577480623
+is confirmed queued on that exact source; preserve its handle and do not restart
+solely due observation timeout. It is not yet a downloadable package. The
+successful older package below does not include this new recruitment UI.
+
 ## 2026-10-07 Bulwark result-log Windows package available
 
 Run37570969461 is terminal SUCCESS on
