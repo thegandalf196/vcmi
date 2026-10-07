@@ -11,7 +11,20 @@ entries and their validation/delivery evidence.
 
 ## UP-268 — Quick-recruitment inline creature statistics
 
-Status: In progress, 2026-10-07. Bounded independent source audit identifies a
+Status: Implemented (rendered verification/playable delivery pending), 2026-10-07.
+Focused client rebuild87978 succeeds with12 jobs after missing includes are
+repaired. Recruitment category and Muster source guards pass; added nominal
+production-constant bounds checks cover3/3/1,1/5/1 and2/5/1 at792x592.
+Independent source review finds no remaining blocker after repairing retained
+icon ownership, native button footprints, label anchors, switched popup identity
+and Cancel/Muster overlap. Private receipts: build/new-horizons-linux/testing/
+quick-recruitment-20261007.3AUTx3Xr/build.log and build-repaired.log. Initial
+failed compilation is retained. No GUI/input test, Windows compilation or
+normal Linux snapshot promotion is inferred. Long names/value truncation and
+interactive acceptance remain Phase2/rendered verification; exact cost tooltips
+retain full values. Perk/spell identity counts do not change.
+
+Bounded independent source audit identifies a
 required recruitment presentation clause absent from the quick-recruit cards.
 Canonical Core / Elite / Champion UI requires per-card name, portrait,
 availability, weekly growth, Attack, Defense, Damage, Health, Speed,
