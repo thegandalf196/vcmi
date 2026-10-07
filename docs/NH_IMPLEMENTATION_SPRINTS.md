@@ -1,5 +1,23 @@
 # New Horizons implementation sprints
 
+## Current checkpoint — 2026-10-07, recruitment routing and quick-spell state
+
+PHASE1. UP279 adds the shared requested-count-aware destination to authority,
+both AI purchase paths and human recruitment/fast-buy. No pooled Leadership or
+automatic spreading across slots. Builds47394/41564 pass with12 jobs; six new
+admission cases plus two adjacent Portal checks pass8/8 in2.563s, zero skips/
+errors/disabled after preserving a failed obsolete Portal setup. UP283 removes
+Summon Boat's pressed-state underlay from quick-spell buttons; source checks2/2
+and independent reviews pass. No rendered UI/AI-turn or normal Linux promotion.
+Coverage remains228/310 perks,61/67 combat identities and8/8 Orders; this is
+army-management/minimum-AI and required-UI path coverage, not new content counts.
+User priority now switches Cabir to an actual Lizardman adaptation, shorter/red/
+bow-free with existing Gog projectile. A private71px standing draft is reviewed,
+not installed or animated. UP282 reopens exact Academy Gargoyle/background and
+recruitment Arch Mage consumers; UP262's scattered red cloth remains open.
+Next: finish those user visual paths, then unblocked UP280 acquisition help.
+Broader UI/AI turns and multi-card/resource interactions stay Phase2.
+
 ## Current checkpoint — 2026-10-07, reference correction and Library AI
 
 PHASE1. Revalidation identifies the recent Cabir proportion/contact studies as

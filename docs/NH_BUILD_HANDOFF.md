@@ -1,5 +1,21 @@
 # New Horizons Linux build handoff
 
+## 2026-10-07 Recruitment routing / quick-spell source checkpoint
+
+UP279's shared selector routes one request to a fitting duplicate or empty slot,
+with client/AI headroom capping and exact authoritative validation. UP283 keeps
+QuickSpell's existing neutral base in every state to stop Summon Boat underlay.
+Client/test47394 and final41564 build with12 jobs. Focused native8/8 passes in
+2.563s with zero skips/errors/disabled; quick-toolbar source guards2/2 and review
+pass. Retain first7/8 Portal-setup failure and repair receipts under ignored
+testing/recruitment-slots-20261007.XjTSpmCN. No normal Linux snapshot promotion,
+graphical input, full AI turn or rendered pressed-state acceptance.
+Windows37603677097 is still live on b17e1f8fc and excludes this checkpoint;
+preserve/poll it, do not dispatch a duplicate. Existing private Cabir and magic
+preview launchers remain unchanged. New Lizardman-derived Cabir pixels stay
+private under output/homm3/cabir-lizardman-v1; one standing draft is not a game
+animation set. UP282 reported portraits/backgrounds remain delivery work.
+
 ## 2026-10-07 Library AI production forecast checkpoint
 
 Sourceb17e1f8fc4fb040140e2371199d5f21ea025f680 is committed/pushed.

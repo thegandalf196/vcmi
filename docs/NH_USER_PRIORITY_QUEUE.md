@@ -9,6 +9,138 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-282 — Academy Gargoyle background and recruitment Arch Mage colours
+
+Status: Open,2026-10-07. User still sees Gargoyle's old background and a
+non-grey Arch Mage in the small recruitment panel. Follow up existing Academy
+portrait/UP262 work; inspect each actual consumer's resource/frame, not just the
+large creature window or battle sprite. Correct the native Academy background
+and grey-cloth binding while preserving red staff accents, silhouettes and
+recruitment behavior. Acceptance requires actual relevant role/native review
+and playable candidate delivery; existing unrelated renderer tests do not close
+these reported views. Record source vs selected snapshot differences explicitly.
+
+Bounded source audit: generic CCreaturePic faction backgrounds already use the
+Academy resources in both source and selected snapshot. Large TWCRPORT routes
+cover30/31/34–43, not Gargoyle/Obsidian frames32/33; their accepted silhouette
+masks/portrait composition remain UP252 work. Complete those portraits rather
+than changing the already-correct faction-background config. Compact purchase
+card uses CPRSMALL frame37, with NH_ArchMageGreySmall registered from iconSmall;
+this binding/alias is identical in source, normal snapshot and private magic
+preview. The battle alias's seven extra cloth indices do not fix this different
+resource. Next: native small-frame/card visual inspection and role-specific cloth
+selection, then missing Gargoyle masks/composition. No rendered fix claimed.
+
+## UP-283 — Combat quick-spell toolbar pressed-state legacy icon flash
+
+Status: Implemented (rendered/playable verification pending),2026-10-07.
+Client/test rebuild41564 passes with12 jobs. The source-only routing/state
+checker passes2/2 and independent review finds no blocker. QuickSpellPanel used
+SPELLINT's stateful base frames0/1/2/3 beneath its selected id+1 symbol; pressed
+frame1 is Summon Boat. All base states now retain existing neutral frame0,
+preserving the separate symbol, press nudge, cast callback and disabled overlay.
+Native button/hold rendering has not been executed; no normal Linux promotion.
+Holding the mouse on a new spell in the combat quick
+toolbar briefly reveals Summon Boat behind its icon. Inspect normal/pressed/
+hover/disabled button frames and custom-symbol composition for the real toolbar.
+All states must retain the selected spell, with no vanilla fallback peeking
+through. Preserve click/hold/cast behavior, targeting and layout. Acceptance:
+state/frame binding checks, native rendering where available and a private
+playable pressed-state check; no claim that a normal-only icon test suffices.
+
+## UP-281 — Cabir from the original Fortress Lizardman animation
+
+Status: In progress,2026-10-07. User rejects the generated Cabir and replaces
+the art direction: use Fortress's shooting Lizardman, slightly reduce its height,
+remove its bow and recolor it red. This supersedes the red-scale/Academy-gear
+standing drafts as the replacement art baseline; retain previous work privately,
+do not install another independently generated walk cycle. Preserve original
+frame timing, foot contacts and native sprite treatment while editing the actual
+animation; shooter/fire/Repair/elemental gameplay remains unchanged unless the
+user changes it separately. All creative edits use HoMM3-Art/built-in imagegen.
+Extract purchaser resources read-only into ignored private output; do not commit
+or redistribute original/derivative pixels or overwrite the installed archives.
+Acceptance: inspect original standing/walk frames, show a native-sized edited
+preview, then coherent movement/action/death frames and in-game private preview.
+A red standing pose alone does not close walking or full-creature acceptance.
+Technical worker owns private extraction only; root owns art/integration. Preserve
+the safely running recruitment build47394 while switching to this user priority.
+User addition: both Cabirs use Inferno Gog's projectile by original resource
+reference. This changes presentation, not damage or elemental gameplay. Verify
+the configured native projectile and offsets against the new shooting frames.
+
+Private first standing draft,2026-10-07: original CPLIZA group2/frame0 and seven
+walk frames extracted read-only with indexed palette evidence and separate
+engine-style RGBA reference. Built-in HoMM3-Art removes the bow and recolors red;
+existing native exporter aligns one generated pose at71px versus original83px,
+ground268. Root inspects native original/edit comparison. Exact tool prompt,
+source/master hashes and exports remain ignored under
+output/homm3/cabir-lizardman-v1. Faint stray pixels and generated anatomy/pose
+variation remain; no full motion, runtime installation or approval claim.
+
+## UP-280 — Recipient-specific School rank explanation on spell rewards
+
+Status: Open, implementation-ready, 2026-10-07. Follow-up to UP258/UP220 and
+the user's School/legacy-spell reports. Canonical required acquisition UI
+explains the School rank needed for visible unavailable spell offers.
+Reward::loadComponents currently encodes only generic unlearnable (-1), and the
+component tooltip still shows ordinary spell text. The spellbook explanation
+does not cover reward/teacher choices. Carry the actual recipient's requirement
+through the reward component/query presentation, reusing shared rank/access
+queries. Never infer an arbitrary selected hero or change acquisition rules.
+Acceptance: recipient-specific insufficient-rank reason, normal/known/legacy
+controls, preserved disabled-state behavior and focused build/native checks.
+Root must settle the representation before delegation; no new gameplay rule is
+needed. Implement after the higher-priority shared recruitment fix below.
+
+Bounded transport audit,2026-10-07: Reward knows the recipient, but InfoWindow/
+BlockingDialog carry only the player and Components; client-selected-hero lookup
+would be incorrect. Root direction: a generic optional localized Component help
+reason with versioned serialization (older presentation may omit it), retaining
+the normal spell description and disabled subtitle. Produce it from shared
+acquisition classification, not duplicated School/roster rules or negative-value
+School masks. Known/no-book/excluded/special/banned controls must not falsely
+claim School proficiency is their sole blocker. No implementation yet.
+
+## UP-279 — Recruitment into a later legal duplicate army slot
+
+Status: Verified (delivery pending),2026-10-07. Client/test build47394 and final
+rebuild41564 pass with12 jobs. Focused native25434 passes8/8 in2.563s, zero
+skips/errors/disabled: six recruitment admission controls plus two Portal
+stock/Leadership regressions. Initial7/8 run retained: the Portal rejection
+fixture incorrectly left six legal slots empty and was repaired to genuinely
+full per-slot capacity, with all count/stock/Gold assertions preserved. Independent
+source/fixture review finds no blocker. Receipts: ignored testing/
+recruitment-slots-20261007.XjTSpmCN build.log, build-final.log,
+build-repaired.log, native.log/XML and native-repaired.log/XML; quick-toolbar
+source checks are separate. Actual UI/AI turns, multi-card/concurrent-resource
+interactions and normal playable delivery remain unverified.
+Bounded follow-up to UP261/UP011 recruitment
+and army-capacity work. Per-slot Leadership allows separate legal stacks of
+the same creature. Current server and both AI recruitment paths choose only
+getSlotFor's first match, so a full first stack blocks a later matching stack
+with room. Human slider/help/buy paths repeat that lookup. Share a read-only
+requested-count-aware slot selector across server, AI and human consumers:
+first matching slot fitting the request, otherwise fitting empty slot, otherwise
+greatest headroom for client/AI clamping. Preserve legacy/nonhero routing, exact
+server rejection of oversized requests, stock/Gold atomicity, war-machine paths
+and source/ownership validation. Do not spread one request across several slots
+or reinterpret Leadership as an army-wide budget. No new saved state or wire.
+Root owns architecture/docs/build/integration; runtime worker owns Leadership
+helper/server/two AI consumers, UI worker owns the two recruitment windows,
+tester owns the existing authoritative admission fixture. Acceptance: accepted
+recruitment with full first duplicate/later room, free-slot fallback, no-room or
+oversized rejection without mutation, legacy/nonhero controls, focused compile/
+native checks and material review. This omission is not established as the cause
+of the user's earlier long AI turn or garrison crash reports.
+
+The human scope also includes Castle-interface Ctrl/Alt fast-buy: clamp its
+intended purchase to a legal slot before requesting it. Runtime selection uses
+the effective quantity after ordinary stock capping; Leadership itself is never
+silently clamped by authority. Independent source review finds no blocker in
+runtime, AI, normal/Quick recruitment, fast-buy or the four packet fixtures.
+Client/test build and focused native acceptance are recorded above.
+
 ## UP-278 — Library production value in AI construction forecast
 
 Sourceb17e1f8fc is committed/pushed. Windows37603677097 is queued on the exact
@@ -734,6 +866,10 @@ Normal launcher pointer/source and normal saves untouched. Separate manual user
 profile; private pixels not committed. Walking/attack/death remain static and
 full-animation acceptance is still Open.
 
+User repeats the in-game preview request,2026-10-07. The same isolated launcher
+and its executable still exist; provide the full manual command and map name.
+Disclose that this is the standing preview, not a newly completed walk cycle.
+
 New user reference,2026-10-06: https://i.imgur.com/m7qkfJk.png. Root inspected
 the supplied sheet: tailed red-scaled base Cabir with blue/gold Academy collar,
 apron and belt tools; Master has gold scale armor, reinforced cuffs and blue/gold
@@ -914,6 +1050,12 @@ staff accents are preserved. Eight focused palette tests, descriptor parity and
 combined native loading/rendering check pass. Independent review finds no source
 blocker. Mixed robe/staff index136 and uncertain99/149 remain excluded, so the
 residual-red report is not closed. No original pixels enter Git.
+
+User confirms remaining scattered red pixels in the private magic preview,
+2026-10-07. Its robe alias matches the current source; the normal snapshot does
+not yet contain this refinement. Do not close UP262 or recolor mixed staff/cloth
+indices globally. Next targeted correction needs frame-specific cloth selection
+with retained staff/projectile reds, then all-frame/native and in-game review.
 
 Status: In progress,2026-10-06. User requests Arch Magi robes grey in the spirit of
 HeroesII; Magi robes remain unchanged. Both Magi and Arch Magi projectiles change
