@@ -11,6 +11,30 @@ entries and their validation/delivery evidence.
 
 ## UP-265 — Cabir walking and icon background defects
 
+Full-cycle technical continuation,2026-10-06: new private rigged-walk-guide-v2
+producer must use one shared original blockout and constant-length leg chains,
+alternating support and an actually translated world-root/ground-grid GIF.
+Assert world stance-foot stability and cycle closure before rendering; v1's
+three independent scaled joint poses and metadata-only translation are not
+full-walk evidence. No runtime art, installation or completion credit from this
+technical guide. HoMM3-Art remains required for eventual Cabir artwork.
+
+Sampled full-cycle checkpoint,2026-10-06: eight fixed-root and eight actually
+translated technical renders now exist. Analytic two-link IK preserves rest
+lengths0.66/0.64/0.368816 and unit bone scales; shared rig/mesh parent advances
+worldX0.135 per sample. Evaluated foot-mesh tip-ring landmarks stay at Near
+worldX0.54 through stance and Far worldX1.08 through its stance. Frame9 closes
+the local pose one stride1.08 ahead. Root independently loaded the saved blend
+and confirmed Near foot/root coordinates; native56 sheet shows alternating
+support. Fixed-root render drift was caught visually and repaired by detaching
+the translation action during those renders, restoring it for world travel.
+Independent review finds no blocking sampled-math defect. Dense1025-sample
+analytic trajectory checks are not Blender interpolated subframe evidence;
+whole-sole contact, full Cabir artwork and runtime motion remain unverified.
+The translated GIF deliberately resets world travel at its loop boundary.
+Retain this as a technical producer foundation, not completed Cabir gameplay
+delivery or another completed specification identity.
+
 Rig-guide checkpoint,2026-10-06: the original articulated three-pose producer
 is frozen privately with reproducible headless Blender scripts, evaluated joint
 checks and native56 contact comparison. Near support is planted through passing;

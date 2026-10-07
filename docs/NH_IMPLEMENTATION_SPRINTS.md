@@ -2,6 +2,14 @@
 
 ## Current checkpoint — 2026-10-06, magic handoff / Cabir correction
 
+Cabir technical producer now supplies a sampled eight-phase constant-length
+cycle, evaluated mesh foot-plant checks, actual translated world motion and
+local stride closure. Root's independent saved-blend probe and native56 review
+support the sampled claims; independent reviewer finds no blocking math issue.
+Visual fixed-root drift was corrected before acceptance. Interpolated playback,
+whole-sole contact, finished Cabir art and runtime delivery are not established.
+This advances the user-priority gait producer, not227/310 perk coverage.
+
 Bounded follow-up audit checks seven previously unrefreshed rows: Defiant,
 Veteran Cohesion, Heroic Spirit, Esprit de Corps, Iron Will, Crisis Command and
 Seize Initiative. All have recorded principal scope/trigger/lifetime decisions,
