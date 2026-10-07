@@ -43,6 +43,15 @@ privately at native size. They remain drafts, not runtime replacements; the
 Obsidian draft incorrectly includes background architecture in its foreground.
 Original indexed portraits and comparisons remain ignored/private.
 
+Further bounded HoMM3-Art mask revision,2026-10-07: Stone r5 removes part of
+the lower-left scenery but still retains the architecture stripe and changes
+the lower silhouette. Native58x64 composite reviewed; rejected, not installed.
+Exact prompt, generated master and mechanical reduction/comparison are private
+under output/homm3/academy-gargoyle-up282/mask-r5. Do not equate another generated
+mask with portrait completion. The reported recruitment consumer still needs
+the requested screenshot; the existing grey small alias is not evidence that
+the user's different panel is correct.
+
 ## UP-283 — Combat quick-spell toolbar pressed-state legacy icon flash
 
 Status: Implemented (Linux delivered; rendered verification pending),2026-10-07.
