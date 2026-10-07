@@ -2,6 +2,17 @@
 
 ## Current checkpoint — 2026-10-06, magic handoff / Cabir correction
 
+Final uncertain-row pass inspects twelve more planned perk rows and all six
+inactive base combat identities; exact recorded holds are restated in the hold
+index. Combined39 planned perks have refreshed evidence. Existing producers
+already cover structural damage, statuses, exact-HP summoning and nearest-legal
+Polymorph relocation; rebuilding those does not complete the missing behavior.
+No full ready slice is found in these audited sets without resolving material
+recorded rules. Coverage stays227/310; do not invent policy or claim the rest of
+Version1.0 is blocked from this limited table. Await the narrow presented choices
+instead of repeatedly remapping the same seams. Windows preflight37556334450 is
+confirmed live in dependency/source-archive validation on10dc2428c.
+
 Last Stand source10dc2428c is pushed and remote-head verified with the required
 identity. Prior Windows package37549855253 completed SUCCESS on b9fe600c4.
 New notice preflight37556334450 is confirmed live on10dc2428c; do not restart

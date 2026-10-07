@@ -45,7 +45,7 @@ ID	Status	UPref	Existing recorded issue / reason
 new-horizons:armorer.unyielding	lack-producer	UP-167	No nonmagical forced-displacement producer; ordinary movement and spell relocation are not substitutes.
 new-horizons:armorer.defiant	question	UP-136	Matrix records Defiant among Armorer perks awaiting design choices.
 new-horizons:battlecraft.overwatch	question	UP-155	Teleport/Blink interaction clarification remains open.
-new-horizons:battlecraft.rapidResponse	needs-review	UP-159	Relevant preparation exists; exact current hold is not restated here.
+new-horizons:battlecraft.rapidResponse	question	UP-159	Precedence versus earned immediate Morale/Quartermaster/Second Wind activations remains unresolved; narrow ruling requested.
 new-horizons:warMachines.precisionBombardment	question	UP-098	Basic War Machines already selects attackable structural parts; distinct perk benefit remains unresolved.
 new-horizons:warMachines.breachmaker	question	UP-098	Fortification neighbor geometry and central-keep participation remain unresolved; enum order is not adjacency.
 new-horizons:warMachines.battlefieldMedic	question	UP-098	Matrix says persistence awaits clarification.
@@ -61,7 +61,7 @@ new-horizons:recruitment.reinforcementDrill	question	UP-127	Newly recruited stac
 new-horizons:command.ironWill	question	UP-149	Recorded Command rule ruling remains pending.
 new-horizons:command.crisisCommand	question	UP-150	Recorded Command rule ruling remains pending.
 new-horizons:command.seizeInitiative	question	UP-151	Recorded Command rule ruling remains pending.
-new-horizons:lightMagic.miracleWorker	needs-review	UP-141	Light perk reference; exact current hold is not restated here.
+new-horizons:lightMagic.miracleWorker	question	UP-141	25% increase to restoration HP versus resulting integer creature count remains unresolved.
 new-horizons:shadowMagic.plaguebearer	question	UP-113	Normal-limit definition remains pending.
 new-horizons:natureMagic.mireShaper	question	UP-119	Five-patch absolute cap versus sixth perk patch remains unresolved; narrow ruling requested.
 new-horizons:natureMagic.worldroot	dependency	UP-117	Nature's Wrath/Worldroot base chain rules remain held.
@@ -71,7 +71,7 @@ new-horizons:havocMagic.meteorologist	question	UP-139	Structural stacking and fi
 new-horizons:havocMagic.cataclysm	question	UP-111,UP-139	Eligible magical-obstacle and fixed-landmark filters remain unresolved.
 new-horizons:chaosMagic.confounder	dependency	UP-043	Confusion identity/implementation is a prerequisite.
 new-horizons:chaosMagic.shapeshifter	dependency	UP-066	Polymorph battle-local creature-form behavior is a prerequisite.
-new-horizons:chaosMagic.fateDealer	needs-review	UP-060	Chaos perk reference; exact current hold is not restated here.
+new-horizons:chaosMagic.fateDealer	question	UP-060	Two collateral draws with replacement versus distinct targets remains unresolved; base eligible pool is settled.
 new-horizons:chaosMagic.realityBreaker	dependency	UP-179	Depends on Reality Warp; its target-scope question remains recorded.
 new-horizons:chaosMagic.pandemoniumMaster	dependency	UP-123	Pandemonium identity and generic debuff counting/scaling remain prerequisites.
 new-horizons:spellcraft.crossSchoolFormula	question	UP-132	Multi-school relation/eligibility interpretation remains unresolved.
@@ -84,13 +84,13 @@ new-horizons:wisdom.arcaneMemory	question	UP-054	Neutral Adventure acquisition p
 new-horizons:wisdom.sage	question	UP-074	Pre-acquisition visit timing is recorded for both Sage rows; keep Wisdom Sage distinct from Learning Sage.
 new-horizons:warcasting.enchantedCommand	question	UP-122	Shared rule decision remains pending.
 new-horizons:warcasting.combatCasting	question	UP-121	Shared rule decision remains pending.
-new-horizons:warcasting.reactiveWeave	needs-review	UP-215	Readiness-coexistence reference; exact current hold is not restated here.
+new-horizons:warcasting.reactiveWeave	question	UP-215	Half-strength readiness replacing versus stacking with stronger existing readiness remains unresolved.
 new-horizons:warcasting.perfectRhythm	question	UP-178	Master Synthesis stacking/composition remains unresolved; prerequisite sequence work does not activate the perk.
 new-horizons:logistics.rapidEmbarkation	question	UP-103,UP-208	Navigation composition: 10% final boarding cost versus halved 5% remains unresolved.
 new-horizons:logistics.pursuitMarch	question	UP-104,UP-209,UP-193	Daily recovery cap and zero-effective-recovery use consumption remain unresolved.
 new-horizons:diplomacy.mercenaryCaptain	dependency	UP-129	Deterministic recruitment/cohort provenance is a prerequisite.
 new-horizons:diplomacy.loyalMercenaries	dependency	UP-129	Deterministic recruitment/cohort provenance is a prerequisite.
-new-horizons:diplomacy.legendaryReputation	needs-review	UP-195,UP-129	Diplomacy implementation/provenance references; exact remaining hold is not restated here.
+new-horizons:diplomacy.legendaryReputation	question	UP-195,UP-129	Monthly use on refusal/zero admission versus positive join remains unresolved.
 new-horizons:estates.prospector	question	UP-166	Gold is neither a common nor rare resource; Gold-mine eligibility/reward remains unresolved.
 new-horizons:estates.merchantPrince	question	UP-071	Visitor/garrison qualification, holder stacking and eligible exchange types remain unresolved.
 new-horizons:estates.steward	question	UP-071	Two-resident stacking remains pending.
@@ -107,16 +107,16 @@ new-horizons:luck.serendipity	question	UP-085	Round-one eligibility for the firs
 new-horizons:luck.luckyRecovery	question	UP-083	Generic/Sylvan 10% recovery stacking versus shared single effect remains unresolved.
 new-horizons:luck.perfectFortune	question	UP-081	No Luck and first-blow/reaction eligibility scope remains unresolved.
 new-horizons:divineMandate.sharedPurpose	question	UP-108	Whether success qualifies by accepted Light target overlap or both effects actually triggering remains unanswered.
-new-horizons:divineMandate.divineDiscipline	needs-review	UP-108	Divine Mandate paired-recipient foundation reference; exact item-level hold not restated here.
-new-horizons:divineMandate.royalStandard	needs-review	UP-108	Divine Mandate paired-recipient foundation reference; exact item-level hold not restated here.
+new-horizons:divineMandate.divineDiscipline	question	UP-108,UP-149	Same-Order reissue replacing versus separate nonstacking carried instances remains unresolved.
+new-horizons:divineMandate.royalStandard	question	UP-108	Protection to scheduled expiry versus ending with broken/spent Order benefit remains unresolved.
 new-horizons:divineMandate.crownAndAltar	question	UP-108	Second-action timing is resolved; paired-recipient qualification remains unanswered.
 new-horizons:shroudOfMalassa.veiledMovement	lack-producer	UP-215	Movement-based reaction attack producer is absent; ordinary movement events are not equivalent.
-new-horizons:shroudOfMalassa.deepFlank	needs-review	UP-174	Shroud movement/flanking reference; exact current hold is not restated here.
-new-horizons:shroudOfMalassa.encircledDoom	needs-review	UP-174	Shroud flanking reference; exact current hold is not restated here.
+new-horizons:shroudOfMalassa.deepFlank	question	UP-174	Distinct melee sides from current positions versus accepted-hit history and reset window remains unresolved.
+new-horizons:shroudOfMalassa.encircledDoom	question	UP-174	Positional side contacts versus attack-history count/reset window remains unresolved.
 new-horizons:shroudOfMalassa.vanish	question	UP-176	Retaliation kills and simultaneous Pursuit/Vanish allowance composition remain unresolved.
-new-horizons:bloodrage.firstBlood	needs-review	UP-143	Bloodrage threshold-perk reference; exact remaining question is not restated here.
-new-horizons:bloodrage.slayer	needs-review	UP-143	Bloodrage threshold-perk reference; exact remaining question is not restated here.
-new-horizons:bloodrage.avatarOfRage	needs-review	UP-226,UP-143	Avatar implementation and threshold-family references; exact remaining hold is not restated here.
+new-horizons:bloodrage.firstBlood	question	UP-143	First Elite/Champion death overlap with Slayer producing two/three/four increments remains unresolved.
+new-horizons:bloodrage.slayer	question	UP-143	First Blood overlap on the first Elite/Champion death remains unresolved.
+new-horizons:bloodrage.avatarOfRage	question	UP-226,UP-143	Blood Scent attack-local cap qualification versus stored Rage remains unresolved.
 new-horizons:bulwarkOfTheMire.deepBulwark	lack-producer	UP-167	No canonical nonmagical forced-displacement producer exists.
 new-horizons:elementalRebirth.elementalAttunement	dependency	UP-072	Depends on unresolved Elemental Convergence terrain mapping.
 new-horizons:elementalRebirth.swiftRebirth	question	UP-046	Precedence versus earned Morale activation and multi-spawn tie order remain unresolved.
@@ -128,6 +128,16 @@ new-horizons:elementalRebirth.phoenixSpark	question	UP-046	Greater Essence compo
 ```
 
 ## Selection result
+
+Final uncertain-row audit,2026-10-06: twelve additional planned rows (including
+Rapid Response) now have exact queue/canonical holds restated above. Combined
+with the prior27-row audit,39 planned perks have refreshed item-specific
+evidence. The other44 already indexed rows are not newly certified by this
+bounded pass. No unresolved `needs-review` row remains in the table; this does
+not prove every Version1.0 feature outside this perk table is blocked. The six
+inactive combat identities below also retain actual decisions; Polymorph's
+approved nearest-legal relocation is implemented, not a new question or missing
+prerequisite. Do not rerun these architecture maps without new rule evidence.
 
 Bounded canonical/queue/source audit,2026-10-06:27 planned entries across
 War Machines, Recruitment, Logistics, Estates, Learning, Nature/Havoc, Luck and
@@ -142,10 +152,10 @@ Action. Do not repeat these mapped neighborhoods while awaiting those decisions.
 
 The user has cleared Battlefield Mastery and Last Stand for implementation.
 Mastery is now active with4/4 focused and16/16 adjacent native cases passing;
-Last Stand remains the next design-cleared runtime slice after user priorities.
+Last Stand is now active with13/13 principal and22/22 activated adjacent cases.
 This conclusion is limited to the current queue/matrix record for these IDs; it
 does not assert that all remaining Version 1.0 implementation work is blocked.
-Uncertain row-level dispositions are deliberately marked `needs-review` above.
+The former uncertain row-level dispositions now have exact holds above.
 
 ## Bounded implementation versus full activation
 
