@@ -11,6 +11,12 @@ entries and their validation/delivery evidence.
 
 ## UP-267 — Bulwark pre-emptive strike combat-log result
 
+Windows delivery checkpoint,2026-10-07: run37565586139 is terminal SUCCESS
+and uploads game artifact11460741726 for be78e0758 (Perfect Rhythm). That
+package predates this entry and UP266; neither Bulwark log change is delivered
+by it. Latest-source packaging remains required. Preserve the successful older
+artifact and normal Linux snapshot; no rendered acceptance is inferred.
+
 Status: Verified (source/native; playable delivery pending),2026-10-07.
 Client/test build60991 exits0 with12 jobs. Native50924 passes8/8 in2.664s,
 zero skips: Basic and Bog Ambush resolved pre-emptive results, repeat/Defend

@@ -1,5 +1,22 @@
 # New Horizons Linux build handoff
 
+## 2026-10-07 Perfect Rhythm Windows package available
+
+Run37565586139 is terminal SUCCESS on
+be78e0758416cabdffd537253fd9250e92a74393. Compile, staging, recursive PE
+closure/license/source packaging and preview upload all complete successfully.
+The nonexpired game artifact11460741726 is
+New-Horizons-Windows-x64-be78e0758416cabdffd537253fd9250e92a74393,
+1047196175 bytes. GitHub artifact-container SHA256:
+0892fe3a19014f10e96ec37b007db11c53f3892d51418a6a16b16e727852dd8b.
+This is not the inner game ZIP checksum. Download:
+https://github.com/thegandalf196/vcmi/actions/runs/37565586139/artifacts/11460741726
+It includes Perfect Rhythm and earlier committed gameplay, but excludes UP266
+and UP267's later Bulwark result logs. Terminal logs/API/upload inventory are
+inspected; no independent full archive download or Windows gameplay acceptance
+is claimed. Normal Linux snapshot is unchanged. Coverage remains228/310 perks
+and61/67 combat identities; delivery is not another implementation identity.
+
 ## 2026-10-07 Perfect Rhythm battle-status readback audit
 
 Independent bounded source audit confirms no missing principal UI readback:
