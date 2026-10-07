@@ -1,5 +1,15 @@
 # New Horizons Linux build handoff
 
+## 2026-10-07 Spell-cost readback checkpoint
+
+UP269 client51094/test35093 builds succeed with12 jobs. Native54019 passes7/7
+in2.472s, zero skips/errors/disabled, including world callback distinction and
+accepted follow-up Mana charge. Focused binding/module checks and independent
+source review pass. Receipts remain under ignored testing/
+spell-cost-20261007.fvX8ZAvh. Rendered acceptance and normal Linux promotion
+are not claimed. Windows37577480623 is confirmed live compiling earlier
+c338c671f (UP268), not this cost UI; preserve its handle, do not duplicate it.
+
 ## 2026-10-07 Quick-recruitment roster checkpoint
 
 Source c338c671f79a5fa6fe67ee7f6cbd794b2f2fb359 is committed/pushed.

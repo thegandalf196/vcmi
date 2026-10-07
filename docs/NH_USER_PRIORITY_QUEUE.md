@@ -9,6 +9,56 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-270 — Detailed battle-creature Morale floor readback
+
+Status: In progress,2026-10-07. Independent bounded audit confirms UP257
+implements the compact battle row, but CCreatureWindow's in-battle MoraleLuckBox
+still reads generic moraleValAndBonusList rather than battleGetMoraleInfo. It
+can display negative real Morale without explaining Commanding Presence/Fury's
+effective zero. Canonical required Morale UI applies to this detail surface too.
+Reuse the existing icon/tooltip and shared snapshot, including source privacy;
+preserve nonbattle/legacy Luck/Morale handling and all gameplay state.
+Acceptance: battle detail icon/value/help agree with shared effective and real
+values and floor reason; focused source guard, existing small native Morale
+filter and client build pass. Rendered fit/playable delivery remain separate.
+Frontend worker owns CCreatureWindow and MoraleLuckBox files only; root owns
+guards, integration and serialized builds. No new art or mechanic identity.
+
+## UP-269 — Spellbook listed and final Mana cost breakdown
+
+Status: Verified (source/native; rendered/playable delivery pending),2026-10-07.
+Client51094 and test35093 builds exit0 with12 jobs; native54019 passes7/7 in
+2.472s with zero skips/errors/disabled. Cases cover listed/final continuity,
+Wisdom/Prepared/Archmage ordering, battlefield floor, Adventure no-Wisdom/no-
+follow-up controls inside and outside battle, and actual accepted Metamagic
+Mana charge. Shared calculation is read-only; legacy cost consumers and hot
+cast/AI legality calls remain trace-free. Spellbook and Overcharge consume
+explicit-context costs; optional surcharge remains separate. Binding/module
+guards and independent source review pass. Receipts: ignored testing/
+spell-cost-20261007.fvX8ZAvh build-client.log, build-test.log and native-cost.log/
+XML. Rendered fit, broader permission/interaction coverage and playable delivery
+remain separate Phase2 gates. No new mechanic identity or Linux promotion.
+
+Canonical Wisdom cost-display UI requires
+listed cost, current final cost and a calculation explanation. SpellArea's
+current card shows callback getSpellCost only; its right-click help appends
+spell description, damage, requirements and action opportunity, not a generic
+cost breakdown. Magic Arrow's separate Overcharge display is not coverage of
+the general spellbook requirement. Independent bounded source audit confirms
+existing shared hero/battle cost producers already compute the modifiers.
+
+Expose a read-only breakdown from the shared cost calculation and consume it
+in the spellbook. Do not duplicate discount math in frontend, change Mana
+spending/order/floors, add polling or saved fields, or apply Wisdom to Adventure
+Spells. Include current army and first-cast modifiers when applicable, and
+preserve cast-specific follow-up costs rather than labeling an ordinary cost
+as an authoritative follow-up preview.
+Acceptance: listed/final comparison and popup arithmetic agree with existing
+cost callbacks; focused ordinary/Wisdom/battle/floor/Adventure controls and
+client build pass. No new spell/perk identity; rendered fit and playable
+delivery remain separate. Root owns architecture, tests and integration;
+shared-cost worker and spellbook worker have disjoint source ownership.
+
 ## UP-268 — Quick-recruitment inline creature statistics
 
 Status: Implemented (rendered verification/playable delivery pending), 2026-10-07.
