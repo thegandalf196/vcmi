@@ -2,6 +2,18 @@
 
 ## Active checkpoint — 2026-10-07, full Windows build
 
+Hosted precompile evidence inspected independently: nonexpired reports artifacts
+11491254376 (7218 bytes) and11490704812 (849 bytes) match this run/source.
+Runner package regressions92/92 pass; full graph passes32 checked host nodes,
+zero failed,44 explicitly excluded other nodes, zero cached-PE privacy findings.
+Graph SHA256 ce8b2908…07e15a95 is retained in the private structured report.
+Eight selected MSVCv142 CRT DLLs pass precompile source validation at version
+14.29.30157.0. This is not final-package binding or historical-origin proof.
+Full dependency/source and selected-CRT steps have passed; client compilation
+is confirmed live. Private reports remain under ignored
+build/nh-leadership-trace-20261007.Sq7Q18tE/hosted-preflight. The same run/watch
+handle remains owned; compilation, package and downloadable game are pending.
+
 PHASE1. Full run37637414435 is confirmed in_progress on exact committed source
 8d8db3eb12e440fce51d89e8f06608a2e76d6b10:
 https://github.com/thegandalf196/vcmi/actions/runs/37637414435
