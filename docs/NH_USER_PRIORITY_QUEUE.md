@@ -11,6 +11,17 @@ entries and their validation/delivery evidence.
 
 ## UP-288 — Cabir and Wisp supplied complete handoffs
 
+Delivery validation checkpoint: functional source4f2f847db is committed/pushed.
+Exact-source ten-job client/test build passes; private snapshot16724c2d passes
+independent3120-file digest/reference audit and fresh-profile true-headless
+six-form scenario completion (exit0, Red victory on day4 with BattleAI).
+Cabir77+83 and Magi133+133 authored battle frames resolve; additive Wisp IDs
+and current Conflux data byte-match source. Existing unrelated schema warnings
+remain Phase2; no crash, Leadership rejection or ammo-overuse is reproduced.
+Final launcher selection follows rebuilding this documentation checkpoint so
+the delivered version includes every commit. Normal launcher/profile stay
+untouched; rendered animation/audio approval remains separate.
+
 New delivery request,2026-10-07: user supplies three refreshed Downloads handoffs:
 magi-vcmi-full-handoff-v1.zip, cabir-home-agent-handoff-v1.zip and
 wisp-complete-handoff-v3.zip. Inspect current archive manifests and instructions,
