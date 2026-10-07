@@ -13439,6 +13439,13 @@ are not included in that frozen package.
 
 ## UP-043 — Implement Chaos Confusion and Confounder
 
+2026-10-07 readiness check: the authoritative detailed Confusion section still
+defines equal Attack/Defend/Wander outcomes and next-activation replacement,
+but does not settle unavailable-behavior fallback or negative-Morale consumed
+activation precedence. Re-surface these two narrow decisions to unlock this
+missing spell and Confounder; no new behavior or activation is inferred.
+Do not divert this implementation slice into exhaustive integration work.
+
 Status: Planned; two design answers pending, 2026-09-30. UP-023 Phase 1 slice.
 
 Implement the canonical Level-1, 5-Mana enemy-stack spell: its next activation
