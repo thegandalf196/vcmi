@@ -6,7 +6,8 @@ Mastery acceptance supersedes the pending-build checkpoint below: both targets
 build;4/4 focused cases and16/16 adjacent cases pass with zero skips. Module
 drift/canonical data checks pass; independent source review has no blocker.
 Coverage226/310 (155/220 generic,71/90 faction),84 planned; Battlecraft8/10.
-Source commit/push follows this bounded acceptance. Actual AI Defend selection,
+Source is committed/pushed as b9fe600c4; Windows notice preflight37549759684
+passes on that exact revision; full Windows37549855253 is live. Actual AI Defend selection,
 controlled/death/revival composition and rendered feedback remain Phase2;
 normal launcher delivery is unchanged. Cabir opposite-contact art remains the
 active user-priority correction, not an accepted walking animation.
@@ -25,6 +26,11 @@ are preserved; no equivalent defect is evidenced there. Shared-torso mechanical
 alignment reduces jitter but root/independent review still reject the sixpose
 draft: opposite planted-leg contact and passing transition must be authored.
 UP265 remains Open; no new gait or normal-playable delivery is claimed.
+The isolated opposite-contact attempt and its single targeted revision both
+repeat the wrong phase and are rejected. Text-only corrective generation is
+halted; explicit pose guidance is the next art-production requirement. No failed
+draft is installed. Root resumes the design-cleared UP079 Last Stand queue item,
+reusing its existing map and checking only current shared-resolution seams.
 
 Latest delivery cycle: paired new-reference standing Cabir preview is isolated
 and manually playable with an original5+5-stack map. Combined private glows/books

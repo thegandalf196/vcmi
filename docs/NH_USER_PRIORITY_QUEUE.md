@@ -38,6 +38,19 @@ passing transition, keeping leg identity, scale/root and rearward stance-foot
 motion relative to the body. Private references remain ignored under
 build/nh-up265-animation-review; no runtime asset or normal launcher is changed.
 
+Bounded corrective-pose attempt,2026-10-06: one isolated HoMM3-Art opposite
+contact and one targeted revision are both genuineRGBA but repeat frame00's
+planted/trailing leg phase at56px. Root confirms the worker's rejection on both
+side-by-side exports. Masters/prompts/hashes are retained privately in
+output/homm3/cabir-reference-v4/opposite-contact-v1. Neither is installed.
+Current art-production blocker: text-only pose corrections do not reliably
+produce the missing opposite supporting contact; do not generate repeated
+unchanged attempts or substitute reversed timing. Next approach needs explicit
+pose guidance/anatomical continuity before a new gait candidate can be accepted.
+UP265 remains Open. Root continues the separately design-cleared UP079 queue
+item rather than claiming Cabir completion or letting this visual block halt all
+functional coverage.
+
 User playtest,2026-10-06: private standing preview remains static and looks
 too high-resolution/smooth beside original HeroesIII creatures. This is failed
 visual acceptance, not completed art. Prioritize real alternating gait plus
@@ -6996,6 +7009,10 @@ before implementation; the Defend prerequisite remains unblocked.
 ## UP-156 — Battlecraft Battlefield Mastery
 
 Verified source/native checkpoint,2026-10-06 (playable delivery pending):
+Source is committed/pushed as b9fe600c4. Windows notice preflight37549759684
+passes on that exact revision; full Windows build37549855253 is confirmed
+in_progress on the same revision but is not yet built. Older successful packages
+do not establish it.
 both client/test targets build after the callback qualification and fixture
 defining-header repairs. All4 new live/detached cases pass with zero skips
 in1.862s;16 adjacent Battlecraft/Defend-lifetime/Reserve cases pass with zero
@@ -10236,6 +10253,14 @@ retains explicit save roundtrips and ranged/retaliation/reaction/Sylvan matrices
 Artwork is Not done, fallback remains neutral; no launcher promotion.
 
 ## UP-079 — Implement Armorer Last Stand
+
+Current selection,2026-10-06: Mastery is source/native verified and pushed.
+The Cabir's bounded opposite-contact attempt fails review; keep that art task
+Open rather than install a repeated-leg shuffle. Continue this design-cleared
+functional queue item. A bounded current-seam/ownership contract reuses the
+existing Last Stand map, focusing on shared lethal physical-attack resolution,
+Guardian absorption ordering, side-wide history and immediate Defend/retaliation
+activation termination. No activation or coverage credit before implementation.
 
 User rulings,2026-10-06: lethal retaliation triggering Last Stand ends the
 surviving attacker's current activation; protect ordinary stack health only,
