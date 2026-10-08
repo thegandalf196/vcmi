@@ -245,12 +245,20 @@ Do not delegate trivial work merely for parallelism.
 Do not let multiple implementation agents edit the same files without explicit ownership boundaries.
 User instructions always take precedence over this orchestration policy.
 
-The user authorizes up to four concurrent workers, excluding the root. Use
+The user authorizes up to six concurrent workers, excluding the root. Use
 independent, bounded ownership rather than inventing tasks to fill slots. When
 a spawn reports a thread limit, inspect the existing team and reuse completed
 workers with follow-up tasks before claiming a lower worker limit. Completed
-threads may remain allocated. Do not increase limits beyond four workers or
+threads may remain allocated. Do not increase limits beyond six workers or
 interrupt unrelated user tasks to reclaim capacity.
+
+Maintain specialist assignments for skills/perks, spells, hero redesigns,
+legacy-content access auditing, background playtesting, and independent review.
+Actual service capacity may be lower than authorization; rotate roles and report
+that limitation accurately. Workers use Sol 6.1 Medium; reviewers Sol 6.1 High.
+The playtester must use an isolated background Xvfb display and disposable
+profile/saves. Never use the host display, focus, mouse or keyboard, and never
+fall back to visible interaction. Keep runs bounded and resource-conscious.
 
 ## Persistent user-priority queue
 

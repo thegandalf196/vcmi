@@ -9,6 +9,39 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.
 
+## UP-295 — Six specialist workers and isolated background playtesting
+
+Status: In progress,2026-10-07. User authorizes six workers excluding root:
+skills/perks, spells, hero redesigns/biographies/starting armies and skills,
+legacy acquisition audit, playtester, reviewer. Persisted in AGENTS.md.
+Local Codex config changed from4 to6; a previously rejected hero-audit spawn
+then succeeded. Orchestrator skill updated and validates. Observe actual service
+capacity rather than claiming six workers merely from configuration.
+Playtester must use isolated Xvfb and disposable profiles, never host input or
+user saves. Xvfb and xvfb-run are installed; runtime isolation still requires
+verification before scenario execution. Isolated Xvfb1024x768 probe now passes:
+host DISPLAY/WAYLAND_DISPLAY removed, TCP disabled, XTEST available. No gameplay
+input exercised yet. Reviewer Sol6.1High, workers Medium.
+
+## UP-294 — Restore Cabir and Magi handoff bindings in Linux delivery
+
+Status: In progress,2026-10-07. User reproduced missing creatures in usual
+Linux launcher. Selected5b293 payload copied source Tower config over private
+handoff graphics; runtime log loads old Cabir v3 and inherited vanilla Mage.
+Assets remain present. Restore only four handoff graphics objects while
+preserving newer sounds/gameplay, freeze and independently verify candidate,
+then promote usual launcher. Add merge regression; do not close on inventory
+alone. Existing build78164 preserved and completes successfully. Detached
+recovery snapshot409accc834dd restores exactly four graphics objects, preserving
+all other3998-file payload content and46dd executable. Six graphics-merge tests
+pass, including source refresh/gameplay/sound retention. Independent review and
+runtime smoke precede promotion; normal launcher remains5b293 until those gates.
+Delivery checkpoint: independent Sol High audit passes four bindings and482
+referenced resources. Disposable-profile headless scenario completes through
+day4/victory and clean shutdown (session56509 exits0). Snapshot409accc834dd
+promoted; usual script verify-only selects it and exits0. Visual/hover/audio
+acceptance remains open; headless execution is not rendered proof.
+
 ## UP-293 — Persistent artwork review location
 
 Status: Resolved,2026-10-07. User requires every artwork preview awaiting review
@@ -837,6 +870,16 @@ isolated helper and creature window consumer; tester owns focused fixture;
 root owns authored texts, registration, validation, ledger and Git.
 
 ## UP-274 — Protect's persistent battlefield Protector/Ward link
+
+Required targeting extension in progress,2026-10-07: canonical Order targeting
+also requires a proposed Protector-to-hovered-Ward adjacency link before issue.
+The active synchronized link receipt below does not establish this pre-commit
+preview. Bounded Sol Medium production/test workers own separate client/readback
+and focused test files. Reuse authoritative pair legality and current footprints;
+hovering must not issue an Order, spend an action or mutate state. Invalid hover,
+cancel and stale targeting context must suppress the proposal. Existing active
+link behavior and simulation authority remain unchanged. Rendered acceptance
+for this extension remains separate from focused source/native verification.
 
 Status: Implemented (rendered/playable verification pending),2026-10-07.
 Combined client/test rebuild85404 succeeds with12 jobs after repairing the
@@ -5271,6 +5314,16 @@ Focused Python checks pass20/20. No accepted coverage increase or playable
 promotion yet.
 
 ## UP-197 — Necropolis Skeleton Transformer HP conversion
+
+Draft preservation checkpoint,2026-10-07: root-owned incomplete runtime/UI/AI
+planner consumers are safely isolated in stash
+ad4474def55e5bb8cfc5190384289726d55b374b for focused Protect verification.
+Older backups45b51182 and9f398b24 remain. No drafts are discarded or shipped;
+the undefined planner implementation and recorded overflow/zero-output choices
+still prevent their integration. Keep them isolated until that task is resumed
+instead of rebuilding incomplete consumers into a playable candidate. The
+approved rounding amendment in canonical Markdown and user-owned art/tool
+changes remain in the worktree, unstaged and untouched.
 
 User resolves final rounding,2026-10-07: pool aggregate sacrificed HP across
 the selected transaction, take50%, floor to whole Skeletons and discard leftover
@@ -13825,6 +13878,26 @@ launcher promotion. Later Combined Arms, Mysticism and Prepared Caster changes
 are not included in that frozen package.
 
 ## UP-043 — Implement Chaos Confusion and Confounder
+
+User resolves all resurfaced decisions,2026-10-07: trapped Wander becomes
+Defend; Confounder allows the sole legal resolved behavior to repeat; negative
+Morale forfeiture consumes pending Confusion; applying Confusion removes existing
+Berserk. Rules integrated into the canonical detailed spell/perk sections.
+Status: implementation-ready, not implemented. Older pending-answer notes below
+are superseded by these explicit replies. Confusion/Confounder activation still
+awaits production state, forced actions, AI, registration and focused validation.
+
+Canonical re-audit,2026-10-07: equal Attack/Defend/Wander probability, ordinary
+enemy-only attacks/random legal attack position and advancing as far as possible
+toward unreachable enemies are already settled. Do not reopen those questions.
+Only impossible-behavior termination and competing-activation precedence remain
+design blockers. Async questions submitted: trapped Wander -> Defend versus
+legal-behavior redraw; permit Confounder's sole legal result when a different
+result is impossible; negative-Morale forfeiture consumes versus retains pending
+Confusion; Berserk removal versus one-activation override versus deferral.
+No answer is inferred from suggested choices. Production still lacks the full
+spell/state/AI producer, and Confounder remains planned. This blocks those two
+identities, not unrelated Version1.0 implementation.
 
 2026-10-07 readiness check: the authoritative detailed Confusion section still
 defines equal Attack/Defend/Wander outcomes and next-activation replacement,

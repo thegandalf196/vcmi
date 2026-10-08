@@ -1646,6 +1646,10 @@ Select one enemy stack.
 
 Its **next activation** is replaced by one randomly selected behavior:
 
+Applying Confusion removes any existing Berserk effect. If negative Morale
+forfeits that next activation, Confusion is consumed with it; it does not carry
+over to a later usable activation.
+
 - 1/3 → Attack
 
 - 1/3 → Defend
@@ -1673,6 +1677,8 @@ The creature spends its activation Defending normally.
 ###### **Wander**
 
 A random legal destination within the creature's movement range is selected.
+
+If no legal movement destination exists, Wander resolves as Defend instead.
 
 The creature moves there and ends its activation.
 
@@ -3295,7 +3301,7 @@ A unique building that provides a bonus only while defending its town should als
 |Building|New Horizons effect|
 |---|---|
 |Necromancy Amplifier|A visiting Necropolis hero gains +10 percentage points to Necromancy raising for 7 days. Multiple Amplifiers do not stack; visiting another refreshes the duration.|
-|Skeleton Transformer|Conversion is based on aggregate sacrificed HP rather than creature count. Prototype output: Skeleton aggregate HP equal to 50% of sacrificed aggregate HP, converted into whole creatures.|
+|Skeleton Transformer|Conversion pools aggregate sacrificed HP across all selected stacks in one transaction. Prototype output: floor(50% of sacrificed aggregate HP / Skeleton HP) whole Skeletons; leftover HP is discarded.|
 |Cover of Darkness|Retains information denial and re-shrouding. It is more strategically relevant because Dimension Door requires a visible legal destination.|
 |Unearthed Graves / growth structures|Retain Undead-growth functions; exact growth values are deferred.|
 
@@ -4401,7 +4407,7 @@ Without this School Skill, ordinary sources can teach only Level 1-2 spells of t
 |---|---|---|
 |Misfortune Weaver|Basic|Misfortune reduces favorable random-effect probability by an additional 10 percentage points of the normal probability multiplier, respecting its normal minimum.|
 |Blinkmaster|Basic|Blink generates two random legal destinations and automatically uses the destination farther from the target's origin hex. Ties use deterministic hex order.|
-|Confounder|Basic|Confusion cannot produce the same behavior twice consecutively on the same target. If its random result matches that target's previous Confusion result, reroll until a different legal result is obtained.|
+|Confounder|Basic|Confusion cannot produce the same resolved behavior twice consecutively on the same target when a different legal behavior is available. If its random result matches that target's previous Confusion result, reroll until a different legal result is obtained. If only one legal behavior exists, allow that result even if it repeats; never reroll indefinitely. Trapped Wander resolves as Defend.|
 |Frenzied Curse|Basic|A Berserked creature gains +2 Speed during its forced activation.|
 |Mindbreaker|Advanced|Forgetfulness also suppresses the target's passive offensive creature abilities for its duration.|
 |Shapeshifter|Advanced|Polymorph generates two random same-tier forms and automatically applies the form with the lower Army Value. Ties use canonical creature order.|

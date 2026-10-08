@@ -72,7 +72,7 @@ new-horizons:natureMagic.elementalConjurer	dependency	UP-072	Depends on the unre
 new-horizons:havocMagic.demolitionist	question	UP-139	Structural-perk stacking and fixed-landmark destructibility remain unresolved; baseline structural producer is verified.
 new-horizons:havocMagic.meteorologist	question	UP-139	Structural stacking and fixed-landmark destructibility remain unresolved.
 new-horizons:havocMagic.cataclysm	question	UP-111,UP-139	Eligible magical-obstacle and fixed-landmark filters remain unresolved.
-new-horizons:chaosMagic.confounder	dependency	UP-043	Confusion identity/implementation is a prerequisite.
+new-horizons:chaosMagic.confounder	implementation-ready	UP-043	User settles trapped Wander -> Defend, sole legal result may repeat, negative Morale consumes Confusion, and Confusion removes Berserk; missing Confusion producer remains the implementation prerequisite.
 new-horizons:chaosMagic.shapeshifter	dependency	UP-066	Polymorph battle-local creature-form behavior is a prerequisite.
 new-horizons:chaosMagic.fateDealer	question	UP-060	Two collateral draws with replacement versus distinct targets remains unresolved; base eligible pool is settled.
 new-horizons:chaosMagic.realityBreaker	dependency	UP-179	Depends on Reality Warp; its target-scope question remains recorded.
