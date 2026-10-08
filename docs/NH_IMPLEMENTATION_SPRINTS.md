@@ -1,5 +1,33 @@
 # New Horizons implementation sprints
 
+## Phase1 checkpoint — 2026-10-08, ordinary learned Summon Boat AI access
+
+UP305 closes a distinct minimum AI gap: known zero-School casters are excluded
+by the planner's100% success filter even with an available known boat. Preserve
+the actual probability and allow positive-chance attempts; bind the planned
+water destination and validate the real boat after the awaited authoritative
+cast. On success return normally so the same planned embark node can execute;
+on failure stop/invalidate the route without refund or same-day retry. Legacy
+boat creation keeps100% gating. Separate Sol Medium production/fixture owners;
+Sol High review passes; linked40329 exits0 at10 jobs; native28876 passes10/10
+in3.299s, zero skips. Seven Summon Boat cases include real School0 success and
+failure requests, existing boat conservation, actual separate embark, no failed-
+roll retry and principal negative/legacy controls; three adjacent daily/Mana
+cases pass. Seed-range and anchor/visitable fixture failures are retained.
+Receipts: build/nh-summon-boat-ai-geometry-repaired-build.log and
+build/nh-preview-ai-validation.jUrtT2RY/native-up305-geometry-repaired.log/XML.
+Full chain/autonomous execution, async competing boats and save/day matrices
+remain Phase2; no normal promotion. No spell/perk identity increase; wider
+Adventure effect holds remain separate. Next task must be another unblocked
+functional queue omission, not exhaustive certification of this consumer.
+
+Bounded audit this cycle: Discipline and Command each7/10; their six remaining
+perks retain UP130/094/149/150/151 scope/activation choices. Cabir Repair,
+Wisp PassThrough, shooter and machine principal AI hooks already exist; actual
+Cabir AI acceptance is deferred verification, not new mechanic coverage. Four
+other neutral Adventure spells have selection/cost/daily consumers. These
+samples do not prove the remaining Version1.0 backlog blocked.
+
 ## Phase1 checkpoint — 2026-10-08, authored fixed-line specialty coverage
 
 UP304 uses explicit named-bonus provenance rather than replacing the original

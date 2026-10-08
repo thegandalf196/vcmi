@@ -5,6 +5,37 @@ resolve them before resuming ordinary New Horizons implementation. Read this
 file on every work resumption. Do not remove unfinished entries or equate an
 implementation with a verified fix in the user's playable version.
 
+## UP-305 — Summon Boat minimum AI access for ordinary learned-spell casters
+
+Status: Verified (delivery pending),2026-10-08; bounded UP056/023 continuation.
+Final linked40329 exits0 at10 jobs; native28876 passes10/10 in3.299s, zero
+skips, including seven Summon Boat cases and three shared daily/Mana controls.
+Actual School0 known-spell selection, serialized success/failure casts, existing
+boat identity, successful ordinary embark, failed-roll consumption/no retry,
+Mana/spent-day/destination/boarded-boat and legacy creation controls pass.
+Independent Sol High review has no blocker. Receipts: build/nh-summon-boat-ai-
+geometry-repaired-build.log and build/nh-preview-ai-validation.jUrtT2RY/
+native-up305-geometry-repaired.log/XML. Initial seed/anchor fixture failures
+remain recorded, not acceptance. Full ExecuteHeroChain/autonomous selection,
+async competing boats and save/day matrices remain Phase2; fixture executes
+the returned action and then separately submits ordinary embark. Normal launcher
+unchanged; no spell/perk identity count. Original scope follows. NH pathfinding
+permits a known available boat only when legacy summon success is100%, excluding
+ordinary zero-School known-spell heroes. Existing fixtures inject mastery3 and
+mask that missing consumer. Preserve existing cast probability; allow a positive-
+chance legal attempt with a known unoccupied boat. Bind its action to the planned
+adjacent water tile, submit the ordinary authoritative cast, and verify an actual
+available boat appeared there before treating it as fulfilled/embarking. Failed
+casts must stop/invalidate the stale route, retain real Mana/daily consumption,
+and not fabricate a boat or retry the spent daily opportunity. Legacy boat-
+creation reliability gate remains unchanged. Runtime Sol Medium owns layer
+transition/BoatActions; separate Sol Medium owns focused path/request fixture;
+root owns registration/docs/build/Git and Sol High reviews. Acceptance: actual
+zero-School known-spell path, accepted deterministic success and failure, actual
+boat identity/no creation, resources/daily flags/no-embark, no-boat/occupied/Mana/
+spent-day/legacy controls. No spell/perk identity or playable delivery claim yet.
+Protected barriers, Water Walk end-day and Town Portal policy holds are separate.
+
 ## UP-304 — Fixed Conflux creature specialties bypass canonical conversion
 
 Status: Verified (delivery pending),2026-10-08; bounded UP216 continuation.
