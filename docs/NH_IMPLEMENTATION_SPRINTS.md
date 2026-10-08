@@ -1,6 +1,31 @@
 # New Horizons implementation sprints
 
+## Phase1 checkpoint — 2026-10-08, ordinary beneficial creature AI
+
+UP299 completes Ogre Mage's missing minimum AI buff consumer, preserving other
+creature policies and exact ability mastery. Linked37618 exits0 at10 jobs;
+native68648 passes20/20 in8.472s with no skips, including actual accepted Ogre
+Bloodlust and adjacent Genie/Orb/restoration regressions. Independent review has
+no blocker; broader buff/controller/tactical valuation remains Phase2. Module
+drift and whitespace gates pass. Coverage identities remain231/310 perks,
+61/67 combat spells,8/8 Orders; this is a consumer coverage increase.
+UP296 broad preview/cancel rendering passes for one-/two-hex stacks on private
+a18bc063; no cast or exhaustive legality proof. Normal launcher0c6af unchanged.
+Next evidenced minimum AI gap: Wisp Long Reach is recognized in PotentialTargets,
+but adjacency-only AttackPossibility target-cell enumeration discards distant
+attacks. Shared corridor/range legality must remain authoritative; no balance or
+spell-rule change is needed. Gargoyle baked snowy portraits remain open.
+
 ## Active Phase1 slice — 2026-10-07, missing preview and minimum AI consumers
+
+Source delivery:5f076ff3e committed/pushed after linked build and14/14 native
+feature gate. Private candidatea18bc063 has reviewed matching source bytes but
+precedingbccb255db Git stamp/dirty-source receipt, not a purecommit package.
+First render fixture replaced Solmyr's required Skills and was rejected before
+battle; preserve the failure, repair only the authored map and rerun bounded.
+No normal promotion. Next minimum AI candidate is ordinary beneficial creature
+SPELLCASTER (e.g Ogre Mage Bloodlust), whose HP-only scoring remains separate
+from the newly repaired random-beneficial Genie path; confirm scope before edits.
 
 2026-10-08 checkpoint: linked12145 exits0; feature native77828 passes14/14
 in6.494s, zero skips (nine Orb, five Genie). Six Teleport structural checks pass.

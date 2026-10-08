@@ -5,6 +5,32 @@ resolve them before resuming ordinary New Horizons implementation. Read this
 file on every work resumption. Do not remove unfinished entries or equate an
 implementation with a verified fix in the user's playable version.
 
+## UP-299 — Ordinary beneficial creature spell minimum AI consumer
+
+Verification checkpoint,2026-10-08: linked build37618 exits0 at10 jobs;
+native68648 passes20/20 in8.472s, zero skips, including five new Ogre cases,
+five Genie cases, nine Orb cases and existing restoration/controller regression.
+Actual Ogre AI request applies Advanced Bloodlust (+6/three rounds), spending
+one creature cast/activation but no hero Mana/action. No-casts/no-benefit,
+school-mastery and live-state/RNG isolation controls pass. Sol High review has
+no blocker. Receipts: build/nh-beneficial-creature-ai-build.log and
+build/nh-preview-ai-validation.jUrtT2RY/native-up299.log/XML. Broader buff/controller
+interactions and tactical valuation remain Phase2. Normal launcher not promoted.
+
+Status: In progress,2026-10-08; bounded UP023 continuation after5f076ff3e.
+Ogre Mage's retained unweighted SPELLCASTER produces Advanced Bloodlust, three
+casts and a three-round enchantment, but existing HP-only BattleAI scoring
+returns zero for its pure buff. The previous random-beneficial Genie repair
+does not close this distinct ordinary creature path. Reuse detached pressure
+valuation only for positive single-recipient ordinary/unweighted casts whose
+existing HP score is zero; cache the baseline once and retain authoritative
+mastery. Preserve all damaging/healing/summoning/weighted policies and Genie
+behavior. Worker owns evaluator/new fixture, root CMake/build/docs/Git.
+Acceptance: actual AI Bloodlust request accepted by server with Advanced effect,
+duration and cast/activation costs; no-casts/no-benefit controls, forecast/RNG
+isolation and adjacent old policies. No numerical tuning or new spell identity.
+Private Teleport candidate remains frozen at the preceding reviewed source.
+
 ## UP-298 — Master Genie minimum AI support-casting path
 
 Status checkpoint: Verified (delivery pending),2026-10-08. Linked12145 exits0;
@@ -55,6 +81,15 @@ native/data gate, linked build and independent review. No playable delivery clai
 from source scoring alone; autonomous strategic use remains Phase2.
 
 ## UP-296 — Teleport highlights every legal destination
+
+Rendered checkpoint,2026-10-08: corrected authored fixture on immutable private
+a18bc063 visibly shows broad destination shading for one-hex Cabir and two-hex
+Naga; Escape clears both. Root inspected the preview screenshots under
+Downloads/provisory/nh-teleport-private-a18bc063/rendered-v3. No destination was
+confirmed, no spell cast or Mana spent. This proves rendering/cancellation, not
+exhaustive all-and-only legality; shared validation remains the source oracle.
+Owned client/wrapper/Xvfb processes cleaned; normal0c6af remains unchanged.
+Earlier failed fixture/input runs are retained, not counted as acceptance.
 
 Source/compile checkpoint,2026-10-08: all-legal preview and stable caster/
 controller/node cache are implemented. Six structural guards and linked12145
@@ -729,6 +764,14 @@ bonus collection/rendering. Phase2 retains those interaction/refresh/layout
 checks; normal Linux snapshot remains4de7cd42f and does not contain this slice.
 
 ## UP-282 — Academy Gargoyle background and recruitment Arch Mage colours
+
+Renewed rendered evidence,2026-10-08: user screenshot
+`/tmp/codex-clipboard-S8Bz7Z.png` shows Stone Gargoyle still using snowy Tower
+scenery in the categorized recruitment window, while its neighbouring Academy
+portraits use desert scenery. Remains open; changing the shared Academy backdrop
+does not replace scenery baked into the Gargoyle portrait. Verify both Stone and
+Obsidian portrait roles and the selected playable payload before closing this
+item. No new artwork or delivery acceptance is implied by recording this report.
 
 Renewed screenshot report,2026-10-07: the large recruitment window shows Stone
 Gargoyle on the old snowy Tower background while adjacent Cabir/Golem/Magi
