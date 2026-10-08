@@ -10,6 +10,10 @@ Statuses: Open; In progress; Implemented (verification pending); Verified
 entries and their validation/delivery evidence.
 
 ## UP-295 — Six specialist workers and isolated background playtesting
+New screenshot follow-up,2026-10-07: Mage remains clipped in categorized
+recruitment (clipboard FkKp1I); Cabir adventure-map appearance looks oversized/
+misaligned (clipboard dt9IAA). Track portrait role under UP289 and Cabir map
+role under UP294; restored bindings are not proof of correct role geometry.
 
 Status: In progress,2026-10-07. User authorizes six workers excluding root:
 skills/perks, spells, hero redesigns/biographies/starting armies and skills,
@@ -22,10 +26,20 @@ user saves. Xvfb and xvfb-run are installed; runtime isolation still requires
 verification before scenario execution. Isolated Xvfb1024x768 probe now passes:
 host DISPLAY/WAYLAND_DISPLAY removed, TCP disabled, XTEST available. No gameplay
 input exercised yet. Reviewer Sol6.1High, workers Medium.
+Windowed800x600/software NewHorizons main menu rendered on isolated Xvfb;
+screenshot/logs /tmp/nh-background-409acc.5zWmvw. Fullscreen under bare Xvfb
+produced1x1 window, corrected only in disposable profile. No host input or
+normal-profile access. Creature/garrison interaction remains untested.
 
 ## UP-294 — Restore Cabir and Magi handoff bindings in Linux delivery
 
-Status: In progress,2026-10-07. User reproduced missing creatures in usual
+Status: Resolved,2026-10-07 for the reported missing handoff graphics.
+Separate reopened map-geometry defect,2026-10-07: user dt9IAA screenshot shows
+Cabir adventure-map sprite at an inappropriate scale/anchor. Inspect actual
+delivered HandoffMap/encounter role versus native map-creature conventions,
+including frame dimensions/offset/footprint; preserve authored combat sprites.
+Acceptance needs rendered map evidence, not merely references resolving.
+User reproduced missing creatures in usual
 Linux launcher. Selected5b293 payload copied source Tower config over private
 handoff graphics; runtime log loads old Cabir v3 and inherited vanilla Mage.
 Assets remain present. Restore only four handoff graphics objects while
@@ -41,6 +55,23 @@ referenced resources. Disposable-profile headless scenario completes through
 day4/victory and clean shutdown (session56509 exits0). Snapshot409accc834dd
 promoted; usual script verify-only selects it and exits0. Visual/hover/audio
 acceptance remains open; headless execution is not rendered proof.
+Subsequent isolated graphical spectator battle visibly renders both Cabirs,
+both Wisps, Mage and grey Archmage from409acc. Detailed log demand-loads the
+four correct Cabir/Magi descriptors and both projectiles. Root inspected native
+screenshot, copied to Downloads/provisory/nh-linux-409acc-runtime/battle.png.
+This closes the missing-creature delivery regression only; hover/audio and
+other portrait/UI reports remain under their original entries. Background run
+reachesday4/victory; spectator query warning -1 and timeout quit-confirmation
+are recorded for Phase2, not claimed a clean graphical shutdown.
+
+Parallel specialization checkpoint: legacy auditor identifies Gem/default and
+Shrine/Scholar paid Adventure-unlock bypass; dedicated ordinary-versus-Guild
+learning boundary implementation underway. Hero auditor finds workbook mechanics
+still explicitly proposals; Solmyr's canonical authored profile already matches,
+remaining mechanics cannot be activated from workbook alone. Biography render
+acceptance remains open. Confusion additionally needs zero-advance Attack
+termination/history clarification; async question sent, other answered rules
+remain settled. These findings do not block unrelated Phase1 implementation.
 
 ## UP-293 — Persistent artwork review location
 
@@ -100,6 +131,20 @@ upgrade prerequisites use [allOf], not crash-inducing emptyvector. SDL3 compile,
 normal active-turn visual feedback and playable promotion remain pending.
 
 ## UP-289 — Recruitment layout, clipped Mage portrait and Cabir feedback
+
+User sound override,2026-10-07: both Cabir forms use Gog's ranged shot sound,
+GOGGSHOT.wav (config/creatures/inferno.json), replacing provisional breath cues.
+Source binding changed; focused config checks and private payload delivery
+pending. Melee/repair cues unchanged. Do not overwrite handoff graphics when
+delivering this sound-only change.
+Four focused sound/config checks pass; source committed b3b8fcd84. Delivery
+will merge only sounds into detached handoff payload, retaining all graphics.
+
+Reproduced again after binding recovery,2026-10-07: clipboard FkKp1I shows
+Mage still cropped in old categorized recruitment layout. Selected409acc uses
+46dd executable; newer committed native-card layout is not yet delivered.
+Inspect both portrait resource geometry and role actually consumed; do not
+claim four-role acceptance from full combat sprites or correct filename alone.
 
 Recruitment revision in progress,2026-10-07: bounded Sol Medium worker owns
 QuickRecruitmentWindow/CreaturePurchaseCard presentation and its focused layout
@@ -9434,6 +9479,15 @@ No source edits, spell registration or coverage increase is claimed by mapping.
 
 ## UP-122 — Warcasting Enchanted Command
 
+User ruling,2026-10-07: only Protect's Protector/Ward pair and Second Wind's
+selected stack receive Enchanted Command Morale; never an army-wide aura for
+these Orders. Canonical row updated. Status: implementation-ready; prior
+recipient-question hold below superseded. Implementation/native/AI still pending.
+Shared helper/newtest files staged without changing frozen build inputs.
+SecondWind immediately begins an extra activation and consumes next-activation
+bonuses without a new Morale roll under existing rules; preserve this behavior,
+record interaction for Phase2 rather than alter activation economy implicitly.
+
 Status: Blocked on Order-recipient clarification, 2026-10-02. UP-023 Advanced perk while
 Spellward's frozen repair builds. An allied recipient of an Order empowered
 by Warcasting gains+1 Morale until its next activation. Map actual recipient
@@ -9451,6 +9505,12 @@ their broad declared coverage. Asked one shared scope question; do not infer
 an unrelated whole-army aura. No source changes or activation occurred.
 
 ## UP-121 — Warcasting Combat Casting
+
+User ruling,2026-10-07: combine penetration independently.20% and15% ignore32%
+of Magical Damage Reduction (`1-product(1-p)`), not35% or strongest20%.
+Shared canonical damage rule updated for all applicable penetration effects.
+Status: implementation-ready for Combat Casting/Overwhelming Formula; prior
+composition-question hold superseded. Production/native/AI validation pending.
 
 Readiness refresh,2026-10-06: penetration composition is presented as a narrow
 choice, with20% and15% yielding32% independently,35% additively or20% strongest
