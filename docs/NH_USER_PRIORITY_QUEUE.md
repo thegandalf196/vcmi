@@ -1,5 +1,53 @@
 # User-priority queue
 
+## UP-319 — New Horizons executable/icon and in-game attribution
+
+Status: Requested; implementation pending maintenance migration. Present the
+game as New Horizons through executable/binary naming and launch icons, using
+the user's preferred original-installation icon where appropriate. Preserve
+engine internals, saves, supported launch/setup paths and licensing. Credit and
+thank the VCMI team in-game; do not strip attribution or license/source notices.
+Audit current names/icons before implementation; delivered package and launch
+appearance are separate acceptance stages.
+
+## UP-318 — Resilient pinned dependency-source preservation
+
+Status: Audit requested; inspect existing pinned dependency checkout, caches,
+release source bundles, licenses and CI acquisition before choosing a vendoring
+strategy. A fixed revision prevents update drift, not upstream disappearance.
+Determine whether an in-repository preserved source snapshot is needed without
+duplicating existing recoverable source distributions or losing attribution.
+Do not change dependencies or replace a tested release through this audit.
+
+## UP-317 — One selected runtime-art NHART package
+
+Status: Inventory and architecture mapped; implementation pending privacy
+maintenance migration. User requests a deterministic, genuine versioned binary
+NewHorizons.nhart, not ZIP, containing selected creature/town/spell/portrait/
+effect/UI art and visual descriptors, including selected modifications and
+composites. Preserve accurate provenance, original-installation dependencies,
+current presentation and gameplay; no drafts or wholesale original archives.
+Implement maintained pack/inspect/verify tools, manifest, existing-resource-system
+loader with bounded independent streams, bootstrap/scoped mounts and Windows/
+Linux package validation. Commit the selected pack in the same repository; no
+undistributed local-art dependency or duplicate loose runtime images in release.
+Acceptance separately covers deterministic/malformed/container checks, resource
+identity/scope/precedence/decoder tests, clean-install rendered presentation,
+same-byte performance comparisons and actual player-package integrity. Do not
+infer rendered/release completion from a packer or local build alone.
+
+## UP-316 — Focused privacy maintenance
+
+Status: Current instruction made portable; history cleanup and verification
+underway in a dedicated clone. Preserve unpublished work privately, freeze
+ordinary pushes, sanitize only confirmed copies of the disclosed home prefix,
+retain attribution and unrelated history, then publish only reviewed refs with
+explicit leases. Verify a fresh published clone, inspect remaining hosted URLs,
+release/log exposure and migrate work without merging obsolete ancestry.
+Detailed recovery material, replacement rules and findings stay private.
+Do not delete or replace release attachments without separate confirmation.
+The documentation portability checker uses synthetic examples only.
+
 ## UP-315 — Windows delivery of locally integrated magic artwork
 
 2026-10-08 actual Windows artifact checkpoint: run37769575838 succeeds for
