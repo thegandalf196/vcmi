@@ -1151,6 +1151,15 @@ checks; normal Linux snapshot remains4de7cd42f and does not contain this slice.
 
 ## UP-282 — Academy Gargoyle background and recruitment Arch Mage colours
 
+2026-10-08 focused HoMM3 Art Stone r8 attempt: rejected after root native/
+enlarged review. Lower-left architecture remains approximately x6–17,y30–51;
+only26 native mask pixels differ from r7. One generation, no further unchanged
+retry and no runtime installation. Original and earlier mask bytes are verified
+unchanged. Prompt/master/mask/comparison/provenance are private under
+output/homm3/academy-gargoyle-up282/mask-r8, with review copies in
+Downloads/provisory/academy-gargoyle-up282-mask-r8. This is failure evidence,
+not progress toward delivered appearance or approved new creature artwork.
+
 Latest user reiteration: snowy Gargoyle in the recruitment screenshot remains
 an unresolved delivered defect, not a corrected source asset. Rechecking the
 exact portrait resource and usable existing matte before changing the binding.
