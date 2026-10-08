@@ -1,5 +1,23 @@
 # New Horizons implementation sprints
 
+## Current Phase1 checkpoint — 2026-10-08, user-reported crash and portraits
+
+Master Teacher is active: coverage239/310 perks (generic168/220,
+faction71/90;71 planned), combat61/67 and Orders8/8. Its focused authoritative
+acceptance and deferred AI scheduling/save-format scope are in the completion
+matrix. The current priority queue temporarily precedes ordinary feature work.
+Exchange widget bounds repair is pushed2440d442d; guarded silent testing rule
+93c6e614a; Gargoyle Academy composition and current-selection native fixture
+cbc64905e; scoped private-input helper2e9c2a637. Linked client/native portrait
+acceptance passes at scales1–4, but actual Mentor/new-skill/transfer reproduction,
+recruitment/growth-window acceptance and launcher promotion remain open.
+Mage face v3 remains rejected; one coherent attached-head revision is in progress,
+not installed or approved. Existing Rebirth Chain runtime/AI source is preserved
+in a private local stash, unactivated and untested, to resume after the crash/
+portrait priority checkpoint. These repairs add no perk coverage credit.
+Deferred integration: bootstrap validation of renderer-generated Gargoyle names
+and obsolete optional legacy Cabir-animation fixtures. No broad suite rerun.
+
 ## Phase1 implementation — 2026-10-08, Esprit de Corps and generic Serendipity
 
 Verified and active: bounded canonical review removes two unnecessary
