@@ -5,6 +5,84 @@ resolve them before resuming ordinary New Horizons implementation. Read this
 file on every work resumption. Do not remove unfinished entries or equate an
 implementation with a verified fix in the user's playable version.
 
+## UP-304 — Fixed Conflux creature specialties bypass canonical conversion
+
+Status: Open (implementation-ready),2026-10-08; bounded UP216 continuation.
+Pasis/Monere's built-in fixed +3 Attack/Defense packages for Psychic/Magic
+Elementals do not use specialty.creature and therefore bypass existing canonical
+conversion provenance. New Horizons requires +1 Speed/+1 Initiative and +1
+Attack/Defense per five hero levels, capped at+6. Add NH-only overrides using
+the existing alias/conversion, preserving the creature line and legacy mode;
+remove the old flat package rather than stacking it. This does not restore
+removed Conflux recruitment lines or activate experimental workbook mechanics.
+Proposed ownership: new module hero patch; root generator/registration; focused
+NewHorizonsCreatureSpecialtyTest extension. Acceptance: actual Pasis/Monere
+loaded markers and both affected forms versus unrelated creature; levels1/5/30/35,
+no old+3 stacking, saved marker and unchanged legacy controls; linked/focused
+validation and review. Independent audit evidence: canonical specialty table
+and config/heroes/conflux.json fixed packages; handler conversion records only
+alias-generated creature provenance. This is the next ready functional item.
+
+## UP-303 — Demonic Reserve minimum adventure AI producer
+
+Status: Verified (delivery pending),2026-10-08. Linked73953 exits0 at10 jobs;
+native15322 passes26/26 in9.994s, zero skips, including eight new reserve cases,
+nine target-reason cases and adjacent authoritative Order/reserve gates.
+Actual town recruitment, acquisition hook, validated deposit/refill, BattleAI
+Gate and authoritative arrival pass with conserved troops/resources and unchanged
+or stronger active army. Rejected-refill withdrawal and principal negative
+controls pass. Independent Sol High review finds no remaining blocker.
+Receipts: build/nh-order-reasons-demonic-reserve-final-fixture-build.log and
+build/nh-preview-ai-validation.jUrtT2RY/native-up302-up303-repaired.log/XML.
+Asynchronous drift, duplicate rollback layouts, autonomous strategy and post-battle
+return/casualties remain Phase2. Normal launcher unchanged; no new perk identity.
+
+Original scope: minimum AI continuation of UP023.
+BattleAI can Gate actual pre-existing reserves, but adventure AI never arranges
+them. After ordinary best-army transfer at an owned town, use already-owned
+surplus Inferno troops to establish one rank-eligible reserve while retaining
+an active Inferno opener and a non-weaker active army. Use ordinary validated
+transfers/deposit callbacks, Leadership/slot legality and existing valuation;
+no free troops, new recruitment spending, starting-army stripping or arbitrary
+percentage split. A free staging slot may deposit surplus; if full, replace an
+eligible active stack only with a legal non-weaker leftover town stack.
+Revalidate each accepted step and safely withdraw the deposit if replacement
+fails; stop on changed state, never loop/oscillate or automatically withdraw
+an already-useful reserve. Worker owns AIGateway and focused fixture; root owns
+registration/build/docs/Git. Acceptance: actual ordinary acquisition/transfer,
+validated deposit, accepted Gate and arrival with troop conservation; controls
+for ownership, rank/category, active opener, capacity, last-stack and retries.
+Full autonomous strategic valuation remains Phase2, not a substitute for this
+missing producer. Source/build/playable delivery remain distinct.
+
+## UP-302 — Specific invalid Order target explanations
+
+Status: Verified (delivery pending),2026-10-08. Shared reasons and existing
+status-bar consumer compile/link; native15322 passes26/26 in9.994s, zero skips,
+including nine reason/translation/nonmutation cases and eight reserve AI cases.
+Specific Protect staging/adjacency, Second Wind activation and canonical/legacy
+Focus Fire checks pass. Living Time-Stopped and dead targets are distinguished;
+all17 localized strings are registered. Independent Sol High review finds no
+blocker. Final linked73953 and repaired native receipts are listed under UP303.
+Initial25/26 fixture and missing-include failures remain recorded, not acceptance.
+Rendered/status-bar journeys and broader controller/perk matrices remain pending
+Phase2/playable delivery. Normal launcher unchanged; all eight Order identities
+were already present. Original scope follows.
+
+Bounded required-UI continuation of UP023.
+Canonical Order targeting explicitly requires invalid targets to explain why.
+Current battlefield status reports only a generic illegal-target message.
+Expose read-only reasons from shared Order validation and consume them in the
+existing status bar, preserving preparation, confirmation, cancellation and
+all gameplay legality. Cover Protect's staged selection, distinct friendly
+adjacent pair/full footprints, Second Wind's spent activation, and enemy-target
+Orders. No new dialog, artwork, action budget or per-frame simulation scan.
+Worker owns shared callback, targeting controller and focused fixture; root
+owns registration, localization/config if needed, build, documentation and Git.
+Acceptance: specific rejection reasons, unchanged valid/invalid preparation,
+no state/RNG mutation, focused native gate, linked build and independent review.
+Rendered/playable acceptance remains distinct from source/native verification.
+
 ## UP-301 — Peacemaker safe passage minimum AI danger consumer
 
 Status: Verified (delivery pending),2026-10-08. Linked34865 exits0 at10 jobs;

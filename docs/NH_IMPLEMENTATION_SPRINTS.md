@@ -1,5 +1,43 @@
 # New Horizons implementation sprints
 
+## Phase1 checkpoint — 2026-10-08, Order reasons and Reserve AI producer
+
+UP302/303 linked73953 exits0 at10 jobs. Native15322 passes26/26 in9.994s,
+zero skips: nine new shared reason/translation/isolation cases, eight new reserve
+AI cases and adjacent authoritative controls. Actual recruited town troops reach
+validated reserve arrangement and BattleAI Gate arrival without free creatures
+or weakening the active army. Specific invalid Order explanations preserve
+legacy/canonical legality and normal targeting controls. Independent Sol High
+review passes after mixed-AI registration and inaccurate living-target wording
+repairs. Initial25/26 fixture and missing packet include failures are retained.
+Module drift/whitespace gates pass. No normal Linux promotion or rendered UI claim.
+Coverage identities231/310,61/67,8/8 remain unchanged; required UI/minimum AI
+coverage improves. Phase2 retains asynchronous/duplicate rollback/strategy/
+post-battle return and controller/rendered journeys. Next ready item UP304 is
+Pasis/Monere's fixed creature specialties bypassing canonical conversion;
+use existing provenance infrastructure, not workbook redesigns. Bounded Estates
+and Armorer audits confirm recorded holds, not that the full backlog is blocked.
+
+## Active Phase1 slice — 2026-10-08, Order target rejection reasons
+
+UP302 closes a confirmed required UI omission: rejected battlefield targets
+currently receive only a generic message. Shared read-only validation will
+provide specific reasons to the existing status bar, preserving target rules,
+staged Protect selection and legacy Focus Fire. One Sol Medium worker owns the
+callback/controller/fixture slice; root integrates registration/localization,
+serialized10-job build and focused validation; independent Sol High reviews.
+No new spell/perk/Order identity is expected. Coverage remains231/310 perks,
+61/67 combat spells and8/8 Orders until evidence proves this required consumer.
+In parallel, UP303 now implements the audited acquisition-time Demonic Reserve
+producer after ordinary best-army town transfers. Stage already-owned surplus,
+or replace an eligible active stack only with legal non-weaker town stock;
+retain an Inferno opener and stop after one usable reserve. Revalidate accepted
+callbacks, withdraw the exact deposit on rejected replacement and conserve all
+troops. Tactical Gating currently consumes only already populated reserves.
+Do not replace that missing producer with a contrived seeded test or free troops.
+Gargoyle portrait masks remain blocked/unapproved; no launcher promotion or
+new rendered acceptance is implied by this source implementation cycle.
+
 ## Phase1 checkpoint — 2026-10-08, Peacemaker danger/exploration consumer
 
 UP301 completes NK2's previously hero-unaware danger query for protected guard
