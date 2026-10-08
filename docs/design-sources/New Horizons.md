@@ -341,6 +341,15 @@ SP = Hero Spell Power
 
 **Magical Damage Reduction** reduces magical damage after the spell successfully affects the creature. It is distinct from **Spell Resistance** , which may prevent a hostile spell from affecting the target at all.
 
+When multiple applicable effects ignore a fraction of Magical Damage Reduction,
+combine their penetration independently, not additively or strongest-only:
+`combined penetration = 1 - product(1 - individual penetration)`.
+Thus20% and15% combine to32% penetration, leaving68% of the target's original
+Magical Damage Reduction. This shared rule applies to Spell Penetration,
+Combat Casting, Overwhelming Formula, Focused Pairing, Annihilator and other
+effects using the same penetration vocabulary; it does not bypass immunity or
+Spell Resistance.
+
 |Level|Spell|Mana|Philosophy / Effect|
 |---|---|---|---|
 |1|**Cure**|4|Single-target healing + removal of one physical affliction|
@@ -4506,7 +4515,7 @@ Warcasting rewards heroes who alternate naturally between military command and m
 |Arcane Channeling|Basic|The Order-to-Spell Warcasting bonus gains an additional +10% to the spell's Spell Power-derived component.|
 |Spellward|Basic|Friendly stacks receive 10% less magical damage. This is the successor to the old Resistance secondary skill.|
 |Battle Meditation|Basic|Once per round, after an Order-to-Spell Warcasting bonus is consumed, recover 3 Mana.|
-|Enchanted Command|Advanced|A friendly stack affected by an Order empowered by Warcasting gains +1 Morale until its next activation.|
+|Enchanted Command|Advanced|A friendly stack affected by an Order empowered by Warcasting gains +1 Morale until its next activation. Protect grants this only to its Protector/Ward pair; Second Wind grants it only to its selected stack, not the entire army.|
 |Combat Casting|Advanced|A hostile spell empowered by Warcasting ignores 15% of the target's Magical Damage Reduction.|
 |Tactical Weaving|Advanced|An armed Warcasting bonus remains available for two rounds instead of expiring at the end of the next round.|
 |Reactive Weave|Advanced|After an enemy hero casts a spell that affects your army, your next Order before the end of the next round receives half your normal Spell-to-Order Warcasting bonus.|

@@ -82,11 +82,11 @@ new-horizons:spellcraft.concentration	question	UP-069	Target-count definition re
 new-horizons:spellcraft.extendSpell	question	UP-134	Unusual spell-lifetime/expiry scope remains unresolved.
 new-horizons:spellcraft.preciseCasting	question	UP-133	Time Stop/Earthquake scope remains unresolved despite principal cases.
 new-horizons:spellcraft.counterpressure	question	UP-180	Accepted-cast effect map and no-op trigger boundary remain unresolved.
-new-horizons:spellcraft.overwhelmingFormula	question	UP-121	Penetration-composition ruling remains unresolved.
+new-horizons:spellcraft.overwhelmingFormula	implementation-ready	UP-121	User settles independent penetration composition,2026-10-07; production/first-use/AI validation pending.
 new-horizons:wisdom.arcaneMemory	question	UP-054	Neutral Adventure acquisition policy remains pending.
 new-horizons:wisdom.sage	question	UP-074	Pre-acquisition visit timing is recorded for both Sage rows; keep Wisdom Sage distinct from Learning Sage.
-new-horizons:warcasting.enchantedCommand	question	UP-122	Shared rule decision remains pending.
-new-horizons:warcasting.combatCasting	question	UP-121	Shared rule decision remains pending.
+new-horizons:warcasting.enchantedCommand	implementation-ready	UP-122	User resolves Protect pair/Second Wind selected stack only,2026-10-07; captured empowerment and next-activation expiry already mapped; implementation pending.
+new-horizons:warcasting.combatCasting	implementation-ready	UP-121	User settles independent penetration composition,2026-10-07; captured empowerment plus shared penetration implementation pending.
 new-horizons:warcasting.reactiveWeave	question	UP-215	Half-strength readiness replacing versus stacking with stronger existing readiness remains unresolved.
 new-horizons:logistics.rapidEmbarkation	question	UP-103,UP-208	Navigation composition: 10% final boarding cost versus halved 5% remains unresolved.
 new-horizons:logistics.pursuitMarch	question	UP-104,UP-209,UP-193	Daily recovery cap and zero-effective-recovery use consumption remain unresolved.
