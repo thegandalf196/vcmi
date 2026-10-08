@@ -166,6 +166,11 @@ The former uncertain row-level dispositions now have exact holds above.
 
 ## Bounded implementation versus full activation
 
+Current superseding checkpoint,2026-10-08: Counterpressure's accepted-effect
+boundary is resolved and UP180 is active with live/detached evidence; Defiant
+is also active after its linked/native gates. The following historical partial
+selection notes must not be read as current pending questions for those IDs.
+
 Independent Phase1 review identifies ordinary principal paths that can progress
 without treating narrow disputed boundaries as settled: Battlefield Mastery
 (ordinary stacks), Counterpressure (accepted damaging/debuffing effects), and
