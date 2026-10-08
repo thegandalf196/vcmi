@@ -143,6 +143,15 @@ normal active-turn visual feedback and playable promotion remain pending.
 
 ## UP-289 — Recruitment layout, clipped Mage portrait and Cabir feedback
 
+Small-portrait comparison,2026-10-07: root and independent Sol Medium inspect
+native/enlarged current32 versus nearest/Lanczos full58x64 reductions in
+Downloads/provisory/magi-small-portrait-v2. Neither candidate is a clear native
+readability improvement; no new binding installed. The head is inside the image,
+but dark hood/beard obscures features even in supplied full art. Do not label
+resampling a face repair or undo the verified full58x64 quick-recruit fix.
+Remaining small-face work needs portrait composition/readability treatment and
+actual role rendering, not arbitrary canvas expansion or a blurrier replacement.
+
 User sound override,2026-10-07: both Cabir forms use Gog's ranged shot sound,
 GOGGSHOT.wav (config/creatures/inferno.json), replacing provisional breath cues.
 Source binding changed; focused config checks and private payload delivery
@@ -218,6 +227,27 @@ and distinct rendered/hover/audio playtest evidence. Root owns integration;
 separate bounded UI and creature-feedback ownership avoids Transformer drafts.
 
 ## UP-290 — Hero-to-garrison transition still rejects Leadership overflow
+
+Rendered fitting-transfer checkpoint,2026-10-07: a second isolated0c6af run
+opens the overflow modal and clicking town3Magi→empty hero slot authoritatively
+moves2, leaving1 in town. Total3 Magi and hero's1 Cabir are conserved. Closing
+keeps Solmyr visiting. Root inspected fitting-transfer-v1 screenshot; detailed
+log records accepted ArrangeStacks ID21→RebalanceStacks. No dismissal/rejection.
+One harness detour opened/canceled Golem recruitment without purchase, not a
+gameplay defect. Exact PIDs/Xvfb cleaned and selected snapshot is unchanged.
+Final garrison admission after completely fitting armies and retrying a full
+receiving stack remain untested; do not infer them from this partial-transfer
+result. Prior open/close-only checkpoint below remains historical evidence.
+
+Rendered partial acceptance,2026-10-07: isolated authored scenario on exact
+frozen0c6af shows visiting level1 Solmyr with one Cabir and town garrison with
+three Magi (saved Wizard Leadership650; Mage requirement300). Clicking the
+visiting hero then garrison opens native Leave Guards, not a Leadership error.
+Closing preserves hero visiting and both armies unchanged. Root inspected
+native screenshot in Downloads/provisory/nh-garrison-overflow-0c6af; log records
+CGarrisonWindow. Exact owned PIDs/Xvfb cleaned. Usual script verify-only still
+selects0c6af. Fitting transfer and subsequent garrison admission remain unverified;
+do not close that boundary merely from open/close evidence.
 
 Status: Reopened,2026-10-07. User still reproduces repeated server Leadership
 rejections while trying to move a visiting hero into an over-capacity town
@@ -5388,6 +5418,41 @@ Focused Python checks pass20/20. No accepted coverage increase or playable
 promotion yet.
 
 ## UP-197 — Necropolis Skeleton Transformer HP conversion
+
+Source/native verified,2026-10-07: full linked ten-job build80809 exits0 after
+recorded fixture-only repairs. Native8195 runs34/34 in6.456s, zero skips:
+12 planner cases,8 NH serialized marketplace requests,1 historical request
+and13 capability cases including saved marker/serialization.13 focused Python
+data/UI/inventory guards and module drift pass; independent review has no
+blocker. All source admission checks precede any troop update; positive results
+precede surplus-slot erasure, and victory/loss processing runs once afterward.
+This is atomic admission with ordinary ordered packets, not a rollback promise.
+Shared UI preview and minimum bounded AI request path build. Rendered Transformer
+UI, autonomous visit sequencing, in-flight reselection locking and strategic
+valuation remain separate delivery/Phase2 work. Normal launcher not promoted.
+Earlier incomplete draft/build checkpoints below are historical.
+
+Resumed integration,2026-10-07: pure planner now exists with twelve focused
+fixtures. Restored only bounded saved-capability/schema, UI preview and AI
+town-entry drafts using apply_patch; parked stash remains intact. Three Sol
+Medium workers have separate server/native, UI and AI ownership; root owns
+config/build/module integration. The request must pool all selected slots once,
+preflight complete admission before any mutation and preserve legacy saves
+without the explicit marker. No coverage credit or playable promotion yet.
+Foundation/helper objects compile successfully. Source is frozen with21 native
+cases (12 planner,8 NH serialized requests,1 historical request),11 Python
+data/UI guards and module drift passing. Independent review finds no blocker;
+root also repairs a local AI valuation precondition to avoid existing signed
+multiplication overflow at extreme counts, without changing shared ArmyManager.
+Ten-job linked client/test build8944 is in progress. Phase2 retains rapid UI
+reselection while a request is in flight, AI visit sequencing and strategic
+valuation beyond basic strict power gain. No native execution/delivery claimed.
+Build8944 later terminates with143 after308 successful steps; its surviving
+compiler finishes before retry. Detached launch1988072 disappears immediately
+after entering Ninja, with no surviving process or compilation; do not treat
+that PID as a verified wait. Active ten-job PTY retry uses session13081 and
+nh-transformer-integration-retry-session.log. Poll that same handle on resume;
+do not restart from an observation timeout. Native gate still pending.
 
 User resolves admission,2026-10-07: zero-output selections reject unchanged;
 fill existing Skeleton stacks within Leadership and then freed selected slots,

@@ -1,5 +1,31 @@
 # New Horizons implementation sprints
 
+## Active Phase1 slice — 2026-10-07, Skeleton Transformer
+
+Completion checkpoint: linked ten-job retry80809 exits0 and native8195 passes
+34/34 in6.456s, zero skips.13 Python guards/module drift and independent review
+pass. Fixture-only identifier/legacy-map-patch mistakes are repaired and retained
+in the failure ledger. UP197 advances one missing town mechanic to native
+verified; no additional perk/spell identity is counted. Commit/push this bounded
+slice; next functional queue item is Overwhelming Formula's first-actual-damage
+lifecycle, whose nine-case state foundation does not complete the perk.
+Keep normal selected0c6af untouched until separate playable delivery.
+Earlier in-progress build checkpoints below are historical.
+
+Warcasting source delivery is committed/pushed as dc0628afa; normal Linux still
+selects the previously verified0c6af snapshot. UP197 admission choices are now
+resolved and its production pooled-HP planner, atomic validated marketplace
+request, shared native-panel preview and bounded strict-gain AI are implemented.
+Independent review has no blocker; local AI input guard prevents existing
+signed valuation overflow. Helper/capability objects compile;11 focused Python
+guards/module drift pass. Full ten-job client/test build8944 remains live.
+Next gate:21 focused conversion cases (12 planner,8 NH serialized requests,
+1 legacy request) plus capability opt-in/serialization. Do not claim town
+coverage or delivery until that principal execution succeeds. Phase2 retains
+in-flight UI reselection locking, AI visit sequencing and strategic valuation.
+Gargoyle old-background report remains open awaiting the requested mask-cleanup
+decision; failed generated mattes are not installed.
+
 ## Active Phase1 slice — 2026-10-07, resolved Warcasting rules
 
 Enchanted Command and Combat Casting are now source/native verified;
