@@ -12520,6 +12520,44 @@ Artwork Not done; neutral fallback remains. No launcher promotion.
 
 ## UP-081 — Implement Luck Perfect Fortune
 
+Status: Source/native verified, playable delivery pending,2026-10-08.
+Final active-registry55696 passes16/16 in5.537s, zero skips; ten new Perfect
+Fortune cases and six adjacent Luck cases. Actual accepted first-only melee/
+ranged/retaliation, suppressed/ineligible preservation, natural zero/negative
+Luck, independent sides, real Cleave candidate/replay/live parity and no live
+RNG mutation pass. Armed pre-attack battle and consumed state/side/real packet
+roundtrips pass; do not claim ongoing post-attack battle-health saves. Corrected
+linked99001 and fixture-only10288 exit0 at10 jobs. Data17/17, module drift and
+diff checks pass. Independent Sol High review has no remaining blocker.
+Receipts: build/nh-perfect-fortune-repaired-build.log,
+build/nh-perfect-fortune-fixture-repaired-build.log and
+build/nh-preview-ai-validation.jUrtT2RY/native-up081-active.log/XML.
+Perks232/310, generic161/220, Luck7/10; spells61/67 and faction71/90 unchanged.
+Initial compiler/native failures are retained in release lessons. Autonomous
+choice and broader controller/death/reaction/full-game-save matrices remain
+Phase2. No normal launcher promotion or final perk-art approval.
+
+Earlier checkpoint,2026-10-08: runtime/state and detached AI are implemented;
+independent Sol High review has no remaining blocker after repairing missing
+shared guaranteed damage and a Cleave optional initialization error. Repaired
+fixture object gate47390 exits0 without new warnings. Ten focused cases include
+actual candidate/Cleave replay and accepted live strikes. Linked client/test
+build70379 exits1 at10 jobs on an AI callback accessor mismatch, receipt
+build/nh-perfect-fortune-build.log; the sole AI owner is repairing it before retry;
+native acceptance and activation are pending. No coverage or playable claim yet.
+
+2026-10-08 root/independent Sol High readiness correction: the old No Luck and
+reaction hold is resolved by existing authored rules, not a new design choice.
+Canonical4694 guarantees the first eligible army attack;5073 includes ordinary
+creature attacks and retaliations and excludes spell/war-machine/healing/
+indirect damage; Misfortune1560 explicitly forbids positive Luck. Perfect Fortune
+has no exception to that prohibition. Implement a distinct per-side combat token,
+normal strike/current-controller eligibility and unspent suppressed/ineligible
+controls; do not import Sylvan Perfect Moment's +5 Luck/active-stack gates.
+Source, save propagation, minimum detached AI and focused accepted-strike evidence
+are required before activation. Root owns data/build/docs/Git; assigned worker
+owns runtime/state, separate worker owns AI, separate tester owns fixture.
+
 Status: Read-only next-slice map, 2026-10-01. UP-023 missing Expert Luck
 perk: the first eligible army attack each combat triggers positive Luck
 automatically. Map authoritative eligibility/roll timing, once-per-combat state

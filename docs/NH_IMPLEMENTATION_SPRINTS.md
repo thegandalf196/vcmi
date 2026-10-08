@@ -1,5 +1,32 @@
 # New Horizons implementation sprints
 
+## Phase1 implementation — 2026-10-08, Perfect Fortune
+
+Verified and active: linked99001/incremental10288 exit0 at10 jobs; final
+active-registry native55696 passes16/16 in5.537s, zero skips. Data17/17 and
+module drift pass, independent review has no blocker. Perks231→232/310,
+generic160→161/220, Luck6→7/10; combat/faction counts unchanged. Receipt:
+build/nh-preview-ai-validation.jUrtT2RY/native-up081-active.log/XML. Normal
+delivery remains pending. Current post-attack whole-battle save limitation is
+not bypassed: armed battle and consumed side/packet representation are proved
+separately. Initial compiler/native failures are retained, not green evidence.
+The following preparation/build notes are historical.
+
+UP081's earlier hold was unnecessary: existing canonical first-eligible attack,
+ordinary creature/retaliation Luck eligibility and Misfortune prohibition settle
+the rule. Runtime owns an independent captured per-side combat token propagated
+by the existing attack packet; AI owns detached forecast/candidate/replay state.
+Suppression and ineligible damage leave the token available. A ten-case fixture
+includes accepted melee/ranged/retaliation, suppression, packet/save safeguards,
+and actual lethal-primary/Cleave candidate/replay/live parity. Independent review
+repaired two correctness defects and has no remaining blocking finding. Object
+gate47390 exits0. Initial linked70379 failed on an AI accessor mismatch; corrected
+linked99001 is running at10 jobs. Native acceptance and activation remain pending.
+Data17/17 and module drift checks pass against the still-planned registry.
+No count or playable promotion yet. Broader controller/death/reaction matrices,
+autonomous choice and outer full-game save combinations are Phase2 work, not
+substitutes for the required principal-path gate.
+
 ## Phase1 user-priority work — 2026-10-08, Wisp compact portrait consumption
 
 UP310 corrects a real unstaged consumer: the full creature animation used Conflux

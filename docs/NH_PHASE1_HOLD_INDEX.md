@@ -1,13 +1,13 @@
 # Phase 1 planned-perk hold index
 
-Updated: 2026-10-07. This is a navigation index for the planned perk entries in
+Updated: 2026-10-08. This is a navigation index for the planned perk entries in
 `config/newHorizonsPerks.json`, not a new rule source or an amendment to the
 canonical [New Horizons design](design-sources/New%20Horizons.md). That Markdown
 remains the sole authority for gameplay. The queue and functional matrix record
 current implementation questions and dependencies.
 
-Registry-derived inventory: 31 Skills, 93 active rank effects, 231 active perks,
-and 79 planned perks: 60 generic and 19 faction. This index covers only those 79
+Registry-derived inventory: 31 Skills, 93 active rank effects, 232 active perks,
+and 78 planned perks: 59 generic and 19 faction. This index covers only those 78
 perks; the six inactive combat spells are tracked separately. The current
 selection audit in [NH_FUNCTIONAL_COMPLETION_MATRIX.md](NH_FUNCTIONAL_COMPLETION_MATRIX.md)
 historically reported item-specific questions or dependencies. The user has now
@@ -35,7 +35,9 @@ Status meanings:
   in this bounded index. Do not infer that the mechanic is ambiguous or fully
   blocked from this label.
 
-Implementation-ready/in-progress rows require direct supporting user rulings.
+Implementation-ready/in-progress rows require explicit supporting canonical
+rules or direct user rulings. Do not retain a question when the existing authored
+rules already settle it; a hypothetical exception is not itself a design hold.
 `needs-review` is intentional uncertainty, not a
 new user question. Preserve the cited queue records rather than reopening the
 same mapping without new evidence.
@@ -104,7 +106,6 @@ new-horizons:learning.masterTeacher	question	UP-164	Whether Mentor must also be 
 new-horizons:luck.opportunist	question	UP-088	Movement-only continuation from reactions versus own activation remains unresolved.
 new-horizons:luck.serendipity	question	UP-085	Round-one eligibility for the first-attack +2 Luck bonus remains unresolved; narrow corrected ruling requested.
 new-horizons:luck.luckyRecovery	question	UP-083	Generic/Sylvan 10% recovery stacking versus shared single effect remains unresolved.
-new-horizons:luck.perfectFortune	question	UP-081	No Luck and first-blow/reaction eligibility scope remains unresolved.
 new-horizons:divineMandate.sharedPurpose	question	UP-108	Whether success qualifies by accepted Light target overlap or both effects actually triggering remains unanswered.
 new-horizons:divineMandate.divineDiscipline	question	UP-108,UP-149	Same-Order reissue replacing versus separate nonstacking carried instances remains unresolved.
 new-horizons:divineMandate.royalStandard	question	UP-108	Protection to scheduled expiry versus ending with broken/spent Order benefit remains unresolved.
