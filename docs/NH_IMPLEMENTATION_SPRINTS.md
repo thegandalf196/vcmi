@@ -21,6 +21,16 @@ normal-launcher promotion is claimed. Next: continue the highest-priority
 unblocked user-queue functional omissions; this subtype does not certify the
 whole hero-redesign/specialty family.
 
+Source delivery:5e0344582 is pushed and matches origin/definitive-mvp. Normal
+Linux launcher remains unchanged. Follow-on Spellcraft audit finds5/10 active;
+Cross-School Formula(UP132), Concentration(UP069), Extend Spell(UP134), remaining
+Precise Casting scope(UP133), and Counterpressure no-op scope(UP180) retain
+item-specific rulings, not a new engine blocker. Existing principal Precise
+Casting/Counterpressure slices remain verified; do not reimplement them or infer
+all Version1.0 work blocked. Mutare membership question has been sent and retained
+in the queue. Next unblocked functional item must be selected from the queue,
+without silently deciding these scopes.
+
 ## Phase1 checkpoint — 2026-10-08, Order reasons and Reserve AI producer
 
 UP302/303 linked73953 exits0 at10 jobs. Native15322 passes26/26 in9.994s,

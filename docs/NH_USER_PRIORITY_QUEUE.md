@@ -52,6 +52,15 @@ dragon-wide limiter is not one upgrade line and remains a separate unresolved
 membership policy; Dracon/Gelu upgrade-grant specialties are not stat packages.
 Do not infer whole-family completion from the initial two-hero test.
 
+### UP304 remaining membership question — dragon-wide specialties
+
+Mutare/Mutare Drake's original HAS_ANOTHER_BONUS_LIMITER DRAGON_NATURE covers
+every Dragon, not one creature/upgrades root. UP304 deliberately leaves them
+unchanged. Async question sent2026-10-08: apply canonical Speed/Initiative and
+level-scaled Attack/Defense to all Dragons in the original scope (recommended),
+or retain the original dragon-wide bonus as an exception? Awaiting user decision;
+do not select a single faction's dragon line or claim full-family coverage.
+
 ## UP-303 — Demonic Reserve minimum adventure AI producer
 
 Status: Verified (delivery pending),2026-10-08. Linked73953 exits0 at10 jobs;
