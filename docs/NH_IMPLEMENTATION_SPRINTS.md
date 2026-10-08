@@ -1,5 +1,36 @@
 # New Horizons implementation sprints
 
+## Active Phase1 slice — 2026-10-07, Overwhelming Formula
+
+Completion checkpoint: final linked84117 build exits0. Focused native16877
+passes53/53 in4.540s, zero skips;17 Python guards/module drift and independent
+review pass. Actual HERO immediate/area and Mine/Firewall creation/passive trigger
+cases verify no-op/friendly nonconsumption, pending-cast preemption and detached
+isolation. One verified perk added:231/310; other identity counts unchanged.
+Broader adjacent gate56/57 has a pre-damage stale v2/Morale fixture defect,
+recorded for Phase2 rather than silently repaired/omitted from its receipt.
+Commit/push this slice; do not promote normal0c6af without delivery verification.
+Next missing spell: UP043 Confusion/Confounder awaits only zero-advance Attack's
+terminal behavior/history decision; four earlier rulings remain settled.
+Next unblocked reported-boundary verification: final fitting garrison admission
+and repeated full-stack clicks, using only isolated background scenarios.
+Historical implementation checkpoints follow.
+
+Previous report-only Gargoyle turn produced no implementation progress. Its
+narrow manual-mask question remains unanswered; resume the unblocked functional
+queue. Source now registers accepted eligible hero casts before effect preparation,
+selects the first actual protected hostile magical injury before nested echoes,
+and preserves delayed identity in exact decimal-string marker metadata. Saved
+real/detached side state and monotonic packets share one append-only version.
+Review identifies Mine/FireWall as principal hazard paths; extend descriptor/proxy
+provenance before crediting full perk coverage. Python registry17/17 and module
+drift pass. Linked/native validation pending; selected0c6af remains unchanged.
+
+First compile84613 is terminal1: uint64 state serialization is forbidden by the
+shared deserializer. Repair encodes four uint32 limbs and adds genuine native
+full-domain wire tests; no shared serializer relaxation. Preserve this failure
+in the release ledger and run only the focused perk/protocol/MDR gates.
+
 ## Active Phase1 slice — 2026-10-07, Skeleton Transformer
 
 Completion checkpoint: linked ten-job retry80809 exits0 and native8195 passes

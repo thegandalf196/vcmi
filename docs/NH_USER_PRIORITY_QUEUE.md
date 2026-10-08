@@ -9627,6 +9627,29 @@ an unrelated whole-army aura. No source changes or activation occurred.
 
 ## UP-121 — Warcasting Combat Casting
 
+Overwhelming Formula completed source/native,2026-10-07: ten-job linked84117
+exits0;53/53 focused native cases in4.540s, no skips, plus17 Python guards and
+module drift. First actual protected hostile injury selects the winning cast;
+direct/collateral, Plague/SoulChain and saved Mine/FireWall triggers resolve its
+independent50% against current defenses. Accepted placement/unprotected/resisted
+casts and friendly hazard damage do not consume it. Protocol/save/legacy rejection
+and detached isolation are verified. Reviewer finds no remaining blocker.
+Broader adjacent gate56/57 retains one pre-damage stale v2/Morale fixture failure
+for Phase2; no weakened assertion or false57/57 claim. Coverage now231/310 perks.
+Normal0c6af launcher unchanged: source verification is not playable delivery.
+
+Historical in-progress checkpoint: per-side accepted-cast tokens
+and first actual protected hostile magical injury are now wired through real and
+detached state packets. Direct/collateral and delayed Plague/SoulChain use current
+recipient defenses and independent50% penetration. Independent review catches
+Mine/FireWall creation's positive classification; adding original saved hazard
+provenance and PASSIVE trigger resolution rather than excluding these spells.
+Source registry activation is provisional until the linked/native gate passes;
+do not count the perk as verified or delivered yet. First compile84613 fails at
+the framework's deliberate unsigned64 deserialization guard; state now encodes
+uint32 limbs without weakening shared serialization. Ten-job repaired build is
+the next gate. Gargoyle mask decision remains pending; normal snapshot unchanged.
+
 Source/native verified,2026-10-07: independent penetration composition captures
 Warcasting before consumption, including serialized Plague/SoulChain markers,
 current-controller defenses, collateral and detached prediction. Shared42-case
@@ -14070,6 +14093,15 @@ launcher promotion. Later Combined Arms, Mysticism and Prepared Caster changes
 are not included in that frozen package.
 
 ## UP-043 — Implement Chaos Confusion and Confounder
+
+Bounded re-audit,2026-10-07: preserve the four accepted replies below. The only
+residual behavior choice is Attack selecting an enemy while neither attacking
+nor advancing even one legal hex: end as Attack/no-op or ordinary Defend, and
+record that resolved result for Confounder. Carrying Confusion forward would
+contradict next-activation consumption. The narrow clarification remains pending;
+do not copy Berserk's nearest-target/allies/no-op behavior as an implicit answer.
+State/producer, forced-action dispatch, Morale consumption, history, save and
+detached outcome enumeration are implementation gaps once that endpoint is set.
 
 User resolves all resurfaced decisions,2026-10-07: trapped Wander becomes
 Defend; Confounder allows the sole legal resolved behavior to repeat; negative

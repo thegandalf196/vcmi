@@ -6,8 +6,8 @@ canonical [New Horizons design](design-sources/New%20Horizons.md). That Markdown
 remains the sole authority for gameplay. The queue and functional matrix record
 current implementation questions and dependencies.
 
-Registry-derived inventory: 31 Skills, 93 active rank effects, 230 active perks,
-and 80 planned perks: 61 generic and 19 faction. This index covers only those 80
+Registry-derived inventory: 31 Skills, 93 active rank effects, 231 active perks,
+and 79 planned perks: 60 generic and 19 faction. This index covers only those 79
 perks; the six inactive combat spells are tracked separately. The current
 selection audit in [NH_FUNCTIONAL_COMPLETION_MATRIX.md](NH_FUNCTIONAL_COMPLETION_MATRIX.md)
 historically reported item-specific questions or dependencies. The user has now
@@ -82,7 +82,6 @@ new-horizons:spellcraft.concentration	question	UP-069	Target-count definition re
 new-horizons:spellcraft.extendSpell	question	UP-134	Unusual spell-lifetime/expiry scope remains unresolved.
 new-horizons:spellcraft.preciseCasting	question	UP-133	Time Stop/Earthquake scope remains unresolved despite principal cases.
 new-horizons:spellcraft.counterpressure	question	UP-180	Accepted-cast effect map and no-op trigger boundary remain unresolved.
-new-horizons:spellcraft.overwhelmingFormula	implementation-ready	UP-121	User settles independent penetration composition,2026-10-07; production/first-use/AI validation pending.
 new-horizons:wisdom.arcaneMemory	question	UP-054	Neutral Adventure acquisition policy remains pending.
 new-horizons:wisdom.sage	question	UP-074	Pre-acquisition visit timing is recorded for both Sage rows; keep Wisdom Sage distinct from Learning Sage.
 new-horizons:warcasting.reactiveWeave	question	UP-215	Half-strength readiness replacing versus stacking with stronger existing readiness remains unresolved.
