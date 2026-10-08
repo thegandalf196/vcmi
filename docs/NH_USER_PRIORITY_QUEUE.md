@@ -2,6 +2,18 @@
 
 ## UP-315 — Windows delivery of locally integrated magic artwork
 
+2026-10-08 actual Windows artifact checkpoint: run37769575838 succeeds for
+6c9b9df7c. Independent download/archive audit verifies all three outer payload
+checksums and all3704 inner manifest entries, embedded source identity and
+casting-only resolver. Exactly864 declared150×175 RGBA casting PNGs are present
+(18casters×6schools×8frames), with no hero-base/background files in that subtree.
+The playable ZIP SHA256 is
+ee31537576f6e7f2c861c5a5b581495c1b2ee2a651a3554cb90d43434a09b23f.
+Actions artifact11550510951 is downloadable, not a GitHub Release and not
+Windows gameplay acceptance. Private Guild composites are absent as intended;
+their public component separation still keeps this item partially open.
+Download: https://github.com/thegandalf196/vcmi/actions/runs/37769575838/artifacts/11550510951
+
 2026-10-08 publication checkpoint: casting assets and scoped-school selector
 are pushed through 6c9b9df7c. Windows preflight 37766980052 passes; fresh full
 Windows run 37769575838 targets 6c9b9df7c and is not yet a downloadable success.
@@ -9840,6 +9852,37 @@ frozen repaired Bastion fixture. The unregistered Mine Layer fixture may finish
 independently; do not change production or CMake during72269.
 
 ## UP-136 — Armorer Defiant
+
+Status: Source/native verified and active; normal playable delivery pending.
+2026-10-08 acceptance: final client/test build19185 exits0 at10 jobs. Corrected
+internal hypothetical side-hero forwarding restores opposing-side rule parity
+without changing public visibility. Isolated15741 passes7/7; actual active
+registry26881 passes10/10 with three adjacent No Quarter/Shroud cases, zero skips
+in3.527s. Data17/17, module drift and independent Sol High review pass. The active
+XML records active status in every Defiant fixture, without the private planned
+override. Side history/current packet serialization and actual candidate/replay
+are exercised; full ongoing save/autonomous AI choice remain Phase2 findings.
+Coverage235→236/310, generic164→165/220; Armorer8→9/10.
+Receipt: build/nh-defiant-native.qDWZg4c3/defiant-active.log and defiant-active.xml.
+
+2026-10-08 focused gate: repaired linked build88004 exits0 at10 jobs. Native
+68914 runs seven cases in2.635s, zero skips: six pass, detached candidate/replay
+fails because effectPreview is null. The fixture's legitimate perk acquisition
+and adjacent living target setup were independently checked; AI owner is
+investigating before activation. Registry remains planned and coverage unchanged.
+Receipt: build/nh-defiant-native.qDWZg4c3/defiant.log and defiant.xml.
+Independent non-blocking integration findings are recorded under Defiant in
+NH_RELEASE_FAILURES.md; the principal AI failure is not deferred.
+
+2026-10-08 implementation cycle: selected as the highest ready functional
+queue gap after Giant/Naga delivery. Confusion remains held on its explicit
+zero-advance Attack policy; Magi/Gargoyle drafts and public Guild separation
+remain open rather than receiving false completion credit. Separate Sol Medium
+writers own Defiant runtime/state, AI-only consumers and a new focused fixture;
+root owns integration/version/registry/build/Git, with Sol High review.
+Require side-shared round allowance, complete No Quarter exemption, innate and
+Expert Shroud denial, ordinary legality exclusions and detached parity. No
+activation or coverage increase until the principal linked/native gates pass.
 
 Canonical readiness correction,2026-10-08: runtime audit and independent Sol
 High review agree the old debuff-only question is not supported by canonical4000.

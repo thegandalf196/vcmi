@@ -6,8 +6,8 @@ canonical [New Horizons design](design-sources/New%20Horizons.md). That Markdown
 remains the sole authority for gameplay. The queue and functional matrix record
 current implementation questions and dependencies.
 
-Registry-derived inventory: 31 Skills, 93 active rank effects, 235 active perks,
-and 75 planned perks: 56 generic and 19 faction. This index covers only those 75
+Registry-derived inventory: 31 Skills, 93 active rank effects, 236 active perks,
+and 74 planned perks: 55 generic and 19 faction. This index covers only those 74
 perks; the six inactive combat spells are tracked separately. The current
 selection audit in [NH_FUNCTIONAL_COMPLETION_MATRIX.md](NH_FUNCTIONAL_COMPLETION_MATRIX.md)
 historically reported item-specific questions or dependencies. The user has now
@@ -48,7 +48,6 @@ multiple comma-separated queue entries.
 ```text
 ID	Status	UPref	Existing recorded issue / reason
 new-horizons:armorer.unyielding	lack-producer	UP-167	No nonmagical forced-displacement producer; ordinary movement and spell relocation are not substitutes.
-new-horizons:armorer.defiant	implementation-ready	UP-136	Canonical nonmagical enemy denial includes explicit innate/No Quarter/Expert Shroud causes; ignore No Quarter's linked application, preserve ordinary retaliation geometry/capacity and magical restrictions. One hero-side use per round.
 new-horizons:battlecraft.overwatch	question	UP-155	Teleport/Blink interaction clarification remains open.
 new-horizons:battlecraft.rapidResponse	question	UP-159	Precedence versus earned immediate Morale/Quartermaster/Second Wind activations remains unresolved; narrow ruling requested.
 new-horizons:warMachines.precisionBombardment	question	UP-098	Basic War Machines already selects attackable structural parts; distinct perk benefit remains unresolved.
