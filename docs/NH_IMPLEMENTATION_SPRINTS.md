@@ -1,5 +1,31 @@
 # New Horizons implementation sprints
 
+## Phase1 work — 2026-10-08, Confusion actual application lifecycle
+
+Verified slice: object gate38963 and linked61187 exit0 at10 jobs; native91897
+passes46/46 in5.932s, zero skips (12 application/34 state+geometry). Sol High
+review has no blocker. Receipts: build/nh-confusion-application-compile-gate.log,
+build/nh-confusion-application-build.log and
+build/nh-preview-ai-validation.jUrtT2RY/native-up308.log/XML. Actual handler-
+accepted requests, costs/HeroAction, Berserk/Dispel/recast, private Confounder,
+bad-Morale/Rally/TimeStop and detached castEval isolation pass. These are not
+serialized client-request journeys or full forced-action AI acceptance. Broader
+control/status/death and enclosing save matrices remain Phase2. Spell/perk
+activation and normal launcher are unchanged; remaining consumers stay Phase1.
+
+UP308 connects the verified geometry/state foundations to actual spell requests:
+source-bound removable pending marker, captured caster/Confounder, Berserk
+removal, recast history preservation, live/detached addition/removal parity and
+accepted bad-Morale consumption. Cancellation and Time Stop preserve pending
+control. Root registers the spell with an explicitly inactive saved-roster row;
+only the isolated accepted-request fixture opts in. Confounder stays planned.
+Four bounded Sol Medium owners implement marker/format, parity, producer/Morale,
+and fixture; Sol High reviews. A focused object compile gate precedes the linked
+client/test build to catch fixture API mistakes early. Full activation selection,
+detached outcome valuation and feedback remain required Phase1 work; zero-
+advance Attack retains its unanswered endpoint. No identity credit or normal
+playable promotion is claimed before the complete spell principal path exists.
+
 ## Phase1 work — 2026-10-08, Confusion pending/history propagation
 
 UP307 verified state slice: linked40888 exits0 at10 jobs; native88113 passes

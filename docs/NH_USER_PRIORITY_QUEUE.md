@@ -5,6 +5,41 @@ resolve them before resuming ordinary New Horizons implementation. Read this
 file on every work resumption. Do not remove unfinished entries or equate an
 implementation with a verified fix in the user's playable version.
 
+## UP-308 — Confusion spell application and removable pending control
+
+Status: Verified (delivery pending),2026-10-08; UP043 application slice only.
+Object gate38963 and linked61187 exit0 at10 jobs. Native91897 passes46/46 in
+5.932s, zero skips:12 actual application cases plus18 state and16 geometry
+controls. Sol High review has no blocker. Handler-accepted requests establish
+costs/HeroAction, selected-target isolation, Berserk removal, recast history,
+private Confounder capture, invalid-target/Mana rejection, actual bad-Morale
+cleanup, Rally/TimeStop preservation, actual Dispel and detached castEval/live
+isolation. Current/old/malformed marker packet guards pass. Receipts:
+build/nh-confusion-application-compile-gate.log,
+build/nh-confusion-application-build.log and
+build/nh-preview-ai-validation.jUrtT2RY/native-up308.log/XML.
+Broader control/status/death and enclosing save matrices remain Phase2.
+Spell/perk remain inactive; no active identity credit or launcher promotion.
+Next required Phase1 work: random behavior/history selection, forced dispatch,
+detached mean outcome evaluation and feedback; zero-advance Attack is still
+held. Original scope follows. Add a
+dedicated source-bound CONFUSION_PENDING spell marker, rather than reusing an
+unrelated status or expiring it before forced resolution. Spell application
+captures caster/Confounder, removes existing Berserk, replaces pending control
+and preserves prior resolved history. Live and detached marker addition/removal
+must synchronize state; Dispel clears pending only after actual marker removal,
+retaining history. Accepted negative-Morale forfeiture consumes pending control;
+cancelled rolls and Time Stop do not. Register the identity but keep its saved
+roster row inactive and Confounder planned until full dispatch/AI/feedback exist.
+The zero-advance Attack endpoint remains unanswered, not silently resolved.
+Ownership: marker/format Sol Medium; independent live/detached parity Sol Medium;
+effect/Morale Sol Medium; separate accepted-request fixture Sol Medium; root
+data/CMake/docs/build/Git and Sol High review. Acceptance: actual cast costs and
+HeroAction, target/recast/Berserk isolation, Confounder capture, actual Dispel,
+accepted bad-Morale consumption and cancellation controls, malformed/old marker
+rejection before mutation/payload, detached-copy independence. Focused validation
+only; no active identity credit or normal-launcher promotion from this slice.
+
 ## UP-307 — Confusion pending/history state and save propagation
 
 Status: Verified (delivery pending),2026-10-08; UP043/306 state slice only.
