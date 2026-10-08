@@ -5,6 +5,36 @@ resolve them before resuming ordinary New Horizons implementation. Read this
 file on every work resumption. Do not remove unfinished entries or equate an
 implementation with a verified fix in the user's playable version.
 
+## UP-309 — Pending Confusion next-activation feedback
+
+Status: Source/native verified (delivery pending),2026-10-08; required UP043
+feedback, not spell activation. Linked20969 exits0 at10 jobs; native52415
+passes26/26 in5.799s, zero skips (seven new status cases,12 application and
+seven adjacent status controls). Module drift and diff gates pass; Sol High
+review has no blocker. Receipts: build/nh-confusion-feedback-build.log and
+build/nh-preview-ai-validation.jUrtT2RY/native-up309.log/XML. Real SetStackEffect
+add/remove establishes marker/history readback, exact source/caster/flag checks,
+stale/malformed rejection, snapshot equality and read-only behavior. These are
+not widget construction/render or accepted cast tests beyond the12 existing
+application controls. Native-size NEXT/help fit, localization, display-limit
+combinations and graphical refresh remain delivery/Phase2 validation. No normal
+launcher promotion, full spell/perk credit or approved artwork claim.
+Original scope follows.
+The generic full/compact creature status pipeline displays the source-bound
+marker's zero turnsRemain as a zero-round duration and gives only the literal
+bonus name. Add shared read-only pending-next-activation feedback in the existing
+spell icon/tooltip and bonus description. Capture Confounder and distinguish
+retained resolved history from a current pending effect; history alone must not
+leave an active badge. No new artwork/layout, random outcome choice, runtime
+mutation or resolution of the held zero-advance Attack endpoint is authorized
+by this slice. Borrowed icon remains Not done. Sol Medium owns the shared helper
+and UI consumers; separate Sol Medium owns a focused fixture; root owns docs,
+CMake/build/Git, with Sol High review. Acceptance: ordinary/Confounder pending,
+recast/history, actual marker removal and stale/malformed controls, no zero-round
+label and no history-only active status, focused linked/native validation.
+Rendered acceptance and playable delivery remain separate; full spell and
+Confounder stay inactive until forced dispatch and minimum AI are complete.
+
 ## UP-308 — Confusion spell application and removable pending control
 
 Status: Verified (delivery pending),2026-10-08; UP043 application slice only.

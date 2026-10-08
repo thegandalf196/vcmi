@@ -1,5 +1,33 @@
 # New Horizons implementation sprints
 
+## Phase1 work — 2026-10-08, pending Confusion feedback
+
+Verified source/readback slice: linked20969 exits0 at10 jobs; native52415
+passes26/26 in5.799s, zero skips (seven status,12 application/seven adjacent).
+Sol High review finds no blocker; module drift and diff gates pass. Receipts:
+build/nh-confusion-feedback-build.log and
+build/nh-preview-ai-validation.jUrtT2RY/native-up309.log/XML. Actual marker
+add/remove, state/history isolation, exact source/caster/flag matching and
+snapshot equality pass. Widget construction/render/refresh, native NEXT/help
+fit, localization and wider display-limit combinations remain unverified.
+No normal delivery or identity credit. Next required Confusion consumers remain
+forced dispatch and detached mean AI; zero-advance endpoint still held.
+
+UP309 corrects a required feedback consumer independently of the held Attack
+zero-advance endpoint. Existing full and compact status rows label the pending
+marker with zero remaining rounds; bonus help only names Confusion. Shared
+read-only status must explain next-activation expiry and captured Confounder,
+without depicting retained history as an active effect or implying a randomly
+selected result. Sol Medium production and independent fixture owners are
+separate; root integrates/builds and Sol High reviews. No new art/layout,
+spell activation, identity credit or launcher promotion. Gates are recorded above.
+
+Bounded audits found existing principal consumers in active recruitment,
+Diplomacy, hero development and supplied Wisp/Cabir mechanics. These findings
+prevent duplicate implementation; they do not certify those systems or prove
+the entire remaining specification blocked. Current untracked art/tool drafts
+remain untouched. Generic status feedback is the concrete next implementation.
+
 ## Phase1 work — 2026-10-08, Confusion actual application lifecycle
 
 Verified slice: object gate38963 and linked61187 exit0 at10 jobs; native91897
