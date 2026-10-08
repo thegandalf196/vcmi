@@ -6,8 +6,8 @@ canonical [New Horizons design](design-sources/New%20Horizons.md). That Markdown
 remains the sole authority for gameplay. The queue and functional matrix record
 current implementation questions and dependencies.
 
-Registry-derived inventory: 31 Skills, 93 active rank effects, 236 active perks,
-and 74 planned perks: 55 generic and 19 faction. This index covers only those 74
+Registry-derived inventory: 31 Skills, 93 active rank effects, 238 active perks,
+and 72 planned perks: 53 generic and 19 faction. This index covers only those 72
 perks; the six inactive combat spells are tracked separately. The current
 selection audit in [NH_FUNCTIONAL_COMPLETION_MATRIX.md](NH_FUNCTIONAL_COMPLETION_MATRIX.md)
 historically reported item-specific questions or dependencies. The user has now
@@ -16,7 +16,9 @@ and active (removed from this planned-only table); Last Stand is now source/nati
 verified and active too. Perfect Rhythm is also active after its seven focused
 and eleven adjacent native cases pass; the old same-tier Master Synthesis
 composition hold is inapplicable. That is not evidence that the whole
-Version1.0 backlog is blocked.
+Version1.0 backlog is blocked. Esprit de Corps and generic Serendipity are now
+active after a linked build and 51 focused/adjacent native cases pass with zero
+skips; their earlier holds were settled by existing canonical wording.
 
 Status meanings:
 
@@ -53,7 +55,6 @@ new-horizons:battlecraft.rapidResponse	question	UP-159	Precedence versus earned 
 new-horizons:warMachines.precisionBombardment	question	UP-098	Basic War Machines already selects attackable structural parts; distinct perk benefit remains unresolved.
 new-horizons:warMachines.breachmaker	question	UP-098	Fortification neighbor geometry and central-keep participation remain unresolved; enum order is not adjacency.
 new-horizons:warMachines.fieldWorkshop	question	UP-100	Destroyed-target repair scope remains pending.
-new-horizons:discipline.espritDeCorps	question	UP-130	Mixed-faction versus Undead-presence composition penalties remain unresolved; UP152 is a retired duplicate.
 new-horizons:discipline.veteranCohesion	question	UP-094	Battle-start maximum HP versus surviving-creature capacity changes the principal below-50% trigger; choice remains unanswered.
 new-horizons:discipline.heroicSpirit	question	UP-094	Extra retaliation surviving the immediate Morale activation and expiring on the following activation remains unresolved; generic next-activation expiry would erase it immediately.
 new-horizons:recruitment.drillSergeant	question	UP-127	Whole merged-stack bonus versus strict recruited-cohort provenance remains unresolved.
@@ -100,7 +101,6 @@ new-horizons:learning.archivist	dependency	UP-165,UP-054	Neutral Adventure-scrol
 new-horizons:learning.sage	question	UP-074	Pre-acquisition visit timing is recorded for both Sage rows; keep Learning Sage distinct from Wisdom Sage.
 new-horizons:learning.masterTeacher	question	UP-164	Whether Mentor must also be selected remains unresolved; two recipient identities are required.
 new-horizons:luck.opportunist	question	UP-088	Movement-only continuation from reactions versus own activation remains unresolved.
-new-horizons:luck.serendipity	question	UP-085	Round-one eligibility for the first-attack +2 Luck bonus remains unresolved; narrow corrected ruling requested.
 new-horizons:luck.luckyRecovery	question	UP-083	Generic/Sylvan 10% recovery stacking versus shared single effect remains unresolved.
 new-horizons:divineMandate.sharedPurpose	question	UP-108	Whether success qualifies by accepted Light target overlap or both effects actually triggering remains unanswered.
 new-horizons:divineMandate.divineDiscipline	question	UP-108,UP-149	Same-Order reissue replacing versus separate nonstacking carried instances remains unresolved.

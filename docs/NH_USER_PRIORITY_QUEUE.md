@@ -54,6 +54,18 @@ Same-byte OS-warm raw reads: median 15.72 ms NHART versus 47.49 ms loose for
 not full performance certification or cold-cache/frame-time evidence.
 Testing exposed a preexisting Cabir Repair toolbar frame omission; its provisional
 original Cure symbol binding is repaired and native registration test passes.
+2026-10-08 focused Repair GUI attempt on the final NHART pack retains the
+capacity-fitting four-Golem/ten-Master-Cabir army, but reaches the input cutoff
+without enemy contact or damage. No Repair request or restoration is claimed.
+The client exits before its private display; both exit zero and cleanup passes.
+Actual Repair rendering remains open; a ranged-enemy private scenario is a
+candidate retry only after loaded health/target-selection preflight.
+The final bounded ranged-enemy retry reached real damage: eight Gargoyles lost
+8 total HP, but the single Master Cabir died before Repair was available.
+No repair request, healing, casualty restoration or repair sound is claimed.
+Packaged Master Cabir death frames resolved correctly. Client and private display
+exited zero in order; cleanup passed. Further repair acceptance is deferred to a
+separate survivable scenario, not repeated unchanged in this implementation cycle.
 Final installed pack was rendered in a six-creature authored scenario: Cabir,
 Master Cabir, Wisp, Greater Wisp, Mage and Arch Mage all appear; Wisp variants
 move/hover with outlines, Arch Mage and Master Cabir shoot with named packed
@@ -75,8 +87,15 @@ that pinned source subtree. A separate real fresh-source MinGW staging check
 exposed the obsolete loose resolver; explicit selected-source exclusions now
 pass actual committed-resource staging and preserve all twelve notices.
 The newline/staging corrections are published as `b11e69844`; retry run
-37818325794 passes dependency and package preflight and is compiling that exact
-source. `111704555` changes only future workflow summary wording. The usual
+37818325794 passes compilation and runtime-resource installation for that exact
+source, then fails because the recursive PE audit still expects the old client
+filename. A packaging-only correction and focused regression are underway;
+no player artifact was uploaded. `111704555` changes only future workflow
+summary wording.
+The packaging correction is now published as `2bcfd278d`; 28 focused root
+regressions and independent review pass. Fresh Windows run 37827298302 targets
+that exact commit. Its actual artifact remains pending download verification.
+The usual
 Linux launcher has been promoted to the verified current-source frozen pack
 and passes `--verify-only`; the previous candidate remains available. No Windows
 artifact is claimed before actual download verification. Preexisting broad content assertions (registered-spell roster,
@@ -111,8 +130,13 @@ prepared, not submitted. The affected Windows Actions artifact was deleted
 with explicit user approval; DELETE returned 204 and follow-up GET 404. Existing
 releases were untouched. All 55 release attachments were scanned without matches;
 three malformed fixture archives permit raw-byte checks only. Two recent Actions
-logs were checked; older artifacts/logs remain unaudited. External copies are
-not claimed erased. Recovery and findings remain private, pending eventual
+logs were checked; older artifacts/logs remain unaudited. A subsequent bounded
+range-download audit checks only the
+playable ZIP members of three older Actions artifacts: no target matches or
+parser exceptions. Its 137.46 MB network receipt is private. The encompassing
+artifacts and their approximately 699 MB project-source tarballs remain
+unverified; this does not close or subtract from the whole-artifact audit gap.
+External copies are not claimed erased. Recovery and findings remain private, pending eventual
 disposal agreement. Preserve unpublished work privately, freeze
 ordinary pushes, sanitize only confirmed copies of the disclosed home prefix,
 retain attribution and unrelated history, then publish only reviewed refs with
@@ -10235,6 +10259,28 @@ the source. Do not silently resolve either or repeat this map.
 
 ## UP-130 — Discipline Esprit de Corps
 
+2026-10-08 verified source/native checkpoint: active after linked client/test
+build12383 and repaired35/35 native gate11125. Activated gate19265 passes51/51
+in12.893s, zero skips, including all seven Esprit cases, real NK2 receiver/donor
+selection and adjacent Morale/Luck mechanics. Data17/17 and module drift pass;
+independent final review has no blocker. Each friendly negative ARMY contribution
+is cloned and reduced toward zero before stacking, without producer mutation or
+double combat adjustment. Adventure/help readback and temporary-army receiver
+valuation use the same rule. Discipline7->8/10; joint coverage236->238/310 with
+UP085. Receipts: build/nh-esprit-serendipity-native.piwyqh7R/active.log and XML.
+Normal playable delivery and broader interaction coverage remain separate gates.
+The earlier hold/preparation records below are historical and superseded.
+
+2026-10-08 canonical hold correction: independent Sol High review confirms
+the authored army-composition scope includes both negative mixed-faction and
+Undead-presence contributions, each produced as BonusSource::ARMY. Root accepts
+that explicit scope: reduce each negative contribution by one toward zero,
+without changing positive composition or enemy-effect penalties. Shared
+readback/runtime and focused live/detached fixtures are now assigned to a
+bounded Sol Medium worker. Registry remains planned pending principal gates;
+no coverage increase or playable delivery is claimed. The older scope hold
+below is superseded by this canonical review, not a new design amendment.
+
 Status: Blocked on existing composition-scope clarification, 2026-10-02. Continue UP-023
 Phase1 missing Basic Discipline coverage: reduce army-composition Morale
 penalties by one without changing enemy-effect penalties or granting positive
@@ -12988,6 +13034,30 @@ failed builds/tests remain recorded. Art Not done; no launcher promotion or
 graphical acceptance is claimed. Phase2 findings remain listed above.
 
 ## UP-085 — Implement Luck Serendipity
+
+2026-10-08 verified source/native checkpoint: active. Independent previous-round
+positive Luck history grants the first ordinary friendly attack +2 Luck from
+round two; actual accepted strike/controller receipts consume the opportunity,
+including No Luck suppression. Detached candidates/replay retain independent
+history; Sylvan Serendipity is unchanged. Native state, packet, side/battle
+metadata and older-format rejection gates pass. Linked build12383 and repaired
+fixture rebuild78579 pass; activated gate19265 passes51/51 in12.893s, zero skips.
+Data17/17/module drift and final independent review pass. Luck7->8/10; joint
+coverage236->238/310, generic165->167/220, planned74->72. Initial fixture crash
+and cap mismatches remain recorded, not passing evidence. The fixture correction
+puts retaliation suppression on the attacker and fails cleanly on a dead source;
+production guards were not weakened. Broader controller/reaction/forecast and
+nonstandard cache scope remain Phase2; normal playable delivery is pending.
+Earlier round-one hold/preparation records below are historical and superseded.
+
+2026-10-08 canonical hold correction: independent Sol High review confirms
+"during the previous round" requires a real previous combat round. Root accepts
+eligibility starting in round two; a round-one benefit would be an additional
+exception, not the authored rule. A bounded Sol Medium worker now owns shared
+history, authoritative strike/round consumption, detached AI parity and focused
+fixtures. The separate Sylvan same-name perk is unchanged. Registry remains
+planned until linked principal gates; no identity credit or playable promotion.
+The older round-one question below is superseded by this canonical review.
 
 Corrected narrow ruling requested,2026-10-06: canonical generic Serendipity
 grants +2 Luck to the first friendly attack after a round without positive Luck;

@@ -1,5 +1,25 @@
 # New Horizons implementation sprints
 
+## Phase1 implementation — 2026-10-08, Esprit de Corps and generic Serendipity
+
+Verified and active: bounded canonical review removes two unnecessary
+holds without changing authored rules. Esprit reduces each friendly negative
+ARMY composition contribution toward zero, preserving producers and hostile
+penalties. Generic Serendipity captures actual prior-round positive Luck and
+consumes its shared first-ordinary-attack opportunity from round two onward.
+Runtime, shared UI/readback and detached AI consumers are implemented; the
+receiving hero drives NK2 army selection. Independent production review finds
+no blocker. Linked client/test12383 and fixture rebuild78579 pass at10 jobs;
+repaired11125 passes35/35, activated19265 passes51/51 in12.893s, zero skips.
+Data17/17 and module drift pass. Coverage236->238/310, generic165->167/220,
+planned74->72; Discipline and Luck each8/10. Initial wrong retaliation binding
+and stale Morale-cap expectations are retained in release failures; production
+guards and gameplay limits were not weakened. Whole-battle metadata and side/
+packet roundtrips pass, without claiming general combat health save/resume.
+Broader integration and nonstandard AI-cache scope are recorded for Phase2.
+No normal launcher promotion is claimed. Receipts:
+build/nh-esprit-serendipity-native.piwyqh7R/active.log and XML.
+
 ## Phase1 implementation — 2026-10-08, Battlefield Medic
 
 Completed source/native checkpoint: final build4052 exits0 and focused75673
