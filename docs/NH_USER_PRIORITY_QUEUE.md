@@ -150,6 +150,22 @@ correctly in the playable candidate, verified at native resolution.
 
 ## UP-312 — Recruitment portraits still lose creature details
 
+Delivered slice,2026-10-08: usual Linux launcher selects checksum-verified
+5d1c66b6 / source7e09da9dd after the scoped rendered checks below. Original
+4c887972 snapshot remains retained. Both owned client and Xvfb exit0, private
+profile lock is free and runtime links are removed. Receipt:
+build/nh-up312-7e09da9dd-DELIVERY.json. Giant/Naga source, native verification
+and local playable delivery are established; Magi/Gargoyle keep UP312 open.
+
+2026-10-08 rendered slice: source 7e09da9dd / candidate 5d1c66b6 passes ordinary
+Academy Recruit All inspection for Giant sword and Naga full tail; root inspected
+screenshots 03/04 and normal Fort 05 under Downloads/provisory/
+academy-portrait-runtime-7e09da9dd-newversion. At800×600 purchase portraits fit
+to29×32; native58×64 checks are separate. Queen is native-tested, not present in
+this base-roster GUI check. Candidate keeps all4010 retained resources, changing
+only the Giant mask. Magi and Gargoyle defects remain unresolved; this is not
+the four-portrait acceptance or a new art approval.
+
 2026-10-08 native checkpoint: corrected full-tail Naga/Queen composition and
 Giant sword matte pass the existing actual SDL portrait fixture at scales 1–4.
 Review caught and repaired backdrop alpha erasure before delivery. Source and
