@@ -9305,6 +9305,34 @@ done; generic UI is Provisional. No immutable playable promotion.
 
 ## UP-164 — Learning Master Teacher
 
+Status: Source/native verified active,2026-10-08. Linked retry50625 passes after
+the fixture's full-serializer includes are repaired without assertion changes.
+Independent principal6/6 (3.660s) and adjacent Mentor6/6 (3.022s) pass, zero
+skips; production-active registration is asserted. Runtime grants500 times the
+captured meeting level to the first two distinct eligible recipients/week,
+without requiring selected Mentor or granting250 in addition. Known ordinary
+Mentor history survives Expert acquisition; legacy unknown used-week history
+stays spent until next week. Current world-save and typed packet checks pass;
+old packet defaults/downwrite refusal are covered, not actual old hero-save
+files. Real NK2 perk-query acceptance and subsequent authoritative meeting pass,
+not autonomous meeting scheduling. Data17/17, generated-module drift and
+independent review pass. Coverage239/310; Learning4/10. Receipts:
+build/nh-master-teacher-native.Llds7K9W/native-master-teacher.{log,xml} and
+native-mentor-adjacent.{log,xml}. Playable promotion remains separate.
+
+2026-10-08 canonical prerequisite review supersedes the historical question:
+general perk eligibility requires rank/tier progression, not an unlisted named
+Basic perk. Master Teacher explicitly supplies the automatic Mentor trigger.
+Implementation is authorized by existing canonical112–150/4663: Expert perk
+works independently of selected Mentor, replaces250 with500 times meeting
+level, and awards the first two distinct lower-level allied recipients/week.
+Retain current-format ordinary Mentor recipient history when the Expert perk
+is acquired; no repeat award or retroactive top-up. Old used-week markers lack
+recipient identity and remain conservatively spent until the next week,
+including across resaves. Root owns the versioned fixed two-recipient state and
+existing typed packet extension. Runtime, independent fixtures and minimum AI
+are assigned separately; planned status/count remains until linked validation.
+
 Status: Blocked on Mentor-prerequisite answer (map complete),2026-10-03. Expert perk extends Mentor to
 the first two different lower-level allied heroes met each week, awarding500
 times the mentor's level to each. Map existing weekly meeting provenance,
@@ -15089,6 +15117,17 @@ journeys and rendered/playable acceptance remain Phase 2/delivery work.
 No GUI, snapshot or launcher-profile promotion.
 
 ## UP-046 — Elemental Rebirth foundational effects
+
+2026-10-08 Rebirth Chain readiness review supersedes its secondary-perk hold:
+canonical122 allows only one perk per tier, so Chain cannot combine with Greater
+Essence, Elemental Ward or Adaptive Element. Canonical5015 triggers selected
+Primal Burst on every reborn appearance, including Chain's second output;
+canonical5019 prevents that output from triggering any further Rebirth. Two
+independent audits confirm the full authored Chain is implementation-ready.
+Its immutable first-output HP basis already exists. Runtime planning covers the
+separate first-generation death path, once-per-combat side history, exact25% HP,
+replication/save guards and detached AI parity. Registration remains planned
+until implementation and focused native validation pass; no coverage credit yet.
 
 Original-output HP prerequisite accepted, 2026-10-06: runtime, ADD transport,
 versioned binary metadata and detached AI now preserve the exact first-output

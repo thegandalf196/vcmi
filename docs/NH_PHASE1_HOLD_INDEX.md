@@ -6,8 +6,8 @@ canonical [New Horizons design](design-sources/New%20Horizons.md). That Markdown
 remains the sole authority for gameplay. The queue and functional matrix record
 current implementation questions and dependencies.
 
-Registry-derived inventory: 31 Skills, 93 active rank effects, 238 active perks,
-and 72 planned perks: 53 generic and 19 faction. This index covers only those 72
+Registry-derived inventory: 31 Skills, 93 active rank effects, 239 active perks,
+and 71 planned perks: 52 generic and 19 faction. This index covers only those 71
 perks; the six inactive combat spells are tracked separately. The current
 selection audit in [NH_FUNCTIONAL_COMPLETION_MATRIX.md](NH_FUNCTIONAL_COMPLETION_MATRIX.md)
 historically reported item-specific questions or dependencies. The user has now
@@ -19,6 +19,10 @@ composition hold is inapplicable. That is not evidence that the whole
 Version1.0 backlog is blocked. Esprit de Corps and generic Serendipity are now
 active after a linked build and 51 focused/adjacent native cases pass with zero
 skips; their earlier holds were settled by existing canonical wording.
+Master Teacher is now active after6 principal and6 adjacent native cases pass;
+the unnamed Mentor prerequisite was not authored. Rebirth Chain is ready under
+the one-per-tier rule and appearance-triggered Primal Burst; implementation is
+next, not completed coverage.
 
 Status meanings:
 
@@ -99,7 +103,6 @@ new-horizons:learning.historian	question	UP-071	Primary-XP reward classification
 new-horizons:learning.academicStudy	question	UP-074	First-visit/acquisition timing remains pending.
 new-horizons:learning.archivist	dependency	UP-165,UP-054	Neutral Adventure-scroll acquisition policy remains unresolved; combat-only partial cannot complete full scope.
 new-horizons:learning.sage	question	UP-074	Pre-acquisition visit timing is recorded for both Sage rows; keep Learning Sage distinct from Wisdom Sage.
-new-horizons:learning.masterTeacher	question	UP-164	Whether Mentor must also be selected remains unresolved; two recipient identities are required.
 new-horizons:luck.opportunist	question	UP-088	Movement-only continuation from reactions versus own activation remains unresolved.
 new-horizons:luck.luckyRecovery	question	UP-083	Generic/Sylvan 10% recovery stacking versus shared single effect remains unresolved.
 new-horizons:divineMandate.sharedPurpose	question	UP-108	Whether success qualifies by accepted Light target overlap or both effects actually triggering remains unanswered.
@@ -118,7 +121,7 @@ new-horizons:elementalRebirth.elementalAttunement	dependency	UP-072	Depends on u
 new-horizons:elementalRebirth.swiftRebirth	question	UP-046	Precedence versus earned Morale activation and multi-spawn tie order remain unresolved.
 new-horizons:elementalRebirth.elementalMemory	question	UP-046	Inherited Morale versus Elemental immunity remains unresolved.
 new-horizons:elementalRebirth.adaptiveElement	dependency	UP-072	Depends on unresolved Elemental Convergence terrain mapping.
-new-horizons:elementalRebirth.rebirthChain	question	UP-046	Exact first-output HP producer exists; secondary-output inheritance of other Rebirth perks remains unresolved.
+new-horizons:elementalRebirth.rebirthChain	implementation-ready	UP-046	Canonical one-per-tier eligibility excludes same-tier inheritance conflicts; Primal Burst applies to the second appearance. Exact original HP exists; Chain death/quota/replication/AI implementation remains missing.
 new-horizons:elementalRebirth.perfectConvergence	dependency	UP-072	Depends on unresolved Elemental Convergence terrain mapping.
 new-horizons:elementalRebirth.phoenixSpark	question	UP-046	Greater Essence composition with the fixed 25% replacement remains unresolved.
 ```
