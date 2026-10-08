@@ -17842,6 +17842,35 @@ and identified playable delivery.
 
 ## UP-004 — Generic hero combat-resource panel
 
+2026-10-08 Bloodrage principal rendered acceptance: ordinary canonical Crag
+Hack on normal immutable1c720/source0b53 shows+0/20% and Hero Action Available.
+An accepted Orc ranged attack destroys the whole Peasant stack while Dendroids
+remain alive; the same generic row/help updates to+5/20% and the human Hero
+Action stays Available. Blue AI independently issues Brace; Red issues no
+Spell/Order. Root inspected06/07/08 under Downloads/provisory/generic-combat-
+resource-up004-bloodrage-hYK6homf. Native800×600 is half-fit embedded combat,
+not full-scale icon/layout certification. Evidence completes27.134 seconds
+after battle readiness, final cleanup input56.591 seconds within the90-second
+contract; every input/capture is deadline/ownership guarded. Client2114153
+and private Xvfb2114056 exit0, owned PIDs are absent, lock is free and runtime
+links are removed. Actual accepted action/death are client trace79146/79190;
+receipt and nearest-enlarged preview remain in that review folder.
+
+The ordinary opt-in scenario exporter is build/native verified,1/1 zero skips
+in0.672s, after repaired build54033 exits0 at10 jobs. It checks actual initialized
+Basic Bloodrage, cap20/initial0, shooter/ammunition, Orc/Dendroid Leadership and
+the specifically unrestricted legacy Peasant contract, same-turn BATTLE route,
+portable gzip export/reload and no overwrite. No rank/rage/state injection or
+production-rule change. Original capacity-assumption failure is preserved in
+build/nh-bloodrage-ui-export.qY6fY9rA/native.log/XML; repaired acceptance is under
+build/nh-bloodrage-ui-export-repaired.W3tcK8Oz. Map SHA256:
+51947804a543ed5eec54dd9b7aa0a076829363485e44e70fce7543c3d1877d38.
+Independent fixture/provider review has no blocker. All three currently declared
+Faction-Skill providers now have principal rendered update/help evidence; no new
+spell/perk identity credit, full UP004 closure or Final art approval. Contextual
+Spell-control source/expiry capture and wider viewport/status matrices remain
+open; do not substitute further source guards for actual missing consumer work.
+
 2026-10-08 Metamagic principal rendered acceptance: frozen normal snapshot
 5d1c66b6/source7e09da9dd shows canonical Solmyr's Basic Metamagic1/1 with Hero
 Action Available. An accepted normal Magic Arrow leaves uses1/1 and changes the
@@ -17886,8 +17915,9 @@ hook. Metamagic/Bloodrage-specific rendering, full-scale/short-viewport,
 sticky/non-sticky and simultaneous/maximum-value matrix remain open; no full
 UP004 closure or new feature/artwork approval is claimed.
 
-Status: Source implemented; native client/loader checks passed; visual and
-playable verification pending.
+Status: Source implemented; native client/loader checks and all three declared
+Faction-Skill providers' principal rendered paths passed. Broader layout/control
+verification remains open; current playable delivery is normal1c720/source0b53.
 
 2026-09-27 evidence reconciliation: the generic renderer and typed provider
 loader are ancestors of successful Windows client build `36291243926` at
