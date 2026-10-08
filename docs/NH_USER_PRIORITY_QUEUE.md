@@ -5,7 +5,36 @@ resolve them before resuming ordinary New Horizons implementation. Read this
 file on every work resumption. Do not remove unfinished entries or equate an
 implementation with a verified fix in the user's playable version.
 
+## UP-300 — Wisp Long Reach minimum AI attack consumer
+
+Status: Verified (delivery pending),2026-10-08. Final linked58248 exits0 at10
+jobs; native28760 passes30/30 in11.353s, zero skips: seven new Wisp cases,
+four authoritative PassThrough/LongReach cases, nine attack-resource projections,
+five Ogre and five Genie cases. Actual stationary/movement-plus/two-hex Wisp AI
+attacks are accepted and damage the target; blocked/range/non-Reach and Greater
+Wisp adjacent no-counter controls pass. Final independent Sol High review finds
+no blocker. Receipts: build/nh-wisp-long-reach-ai-build-activation-fixture.log and
+build/nh-preview-ai-validation.jUrtT2RY/native-up300-activation.log/XML. Earlier
+compile/native failures are retained in release lessons. Movement scenario uses
+actual AI WAIT and scripted enemy DEFEND before the authoritative deferred
+activation; it is not enemy-AI decision evidence. Same-unit next activation must
+have a new event/serial and Morale or next-round queue reason. Full Protect,
+controller and faction-perk matrices remain Phase2. Normal launcher unchanged.
+
+Original scope: Canonical Wisp/Greater Wisp physical Long Reach
+permits maximum distance6 through a clear direct corridor. PotentialTargets
+recognizes legal distant attacks, but AttackPossibility evaluates only adjacent
+melee target cells and discards nonadjacent candidates. Repair the bounded AI
+consumer using shared authoritative range/corridor legality; preserve adjacent
+attacks, physical damage, retaliation and all other creature policies. Worker
+owns AttackPossibility.cpp/new focused fixture; root owns registration/build/docs.
+Acceptance: actual distant AI attack accepted by the server, positive detached
+forecast without live mutation, blocked corridor/range/non-Reach controls,
+movement-plus attack and Greater Wisp no-retaliation. No new balance/artwork.
+
 ## UP-299 — Ordinary beneficial creature spell minimum AI consumer
+Source delivery:8113ddbcc; linked/native verification below. Playable delivery
+remains pending, not equated with the source commit.
 
 Verification checkpoint,2026-10-08: linked build37618 exits0 at10 jobs;
 native68648 passes20/20 in8.472s, zero skips, including five new Ogre cases,
@@ -17,7 +46,8 @@ no blocker. Receipts: build/nh-beneficial-creature-ai-build.log and
 build/nh-preview-ai-validation.jUrtT2RY/native-up299.log/XML. Broader buff/controller
 interactions and tactical valuation remain Phase2. Normal launcher not promoted.
 
-Status: In progress,2026-10-08; bounded UP023 continuation after5f076ff3e.
+Status: Verified (delivery pending),2026-10-08; bounded UP023 continuation
+after5f076ff3e. Original implementation scope follows.
 Ogre Mage's retained unweighted SPELLCASTER produces Advanced Bloodlust, three
 casts and a three-round enchantment, but existing HP-only BattleAI scoring
 returns zero for its pure buff. The previous random-beneficial Genie repair

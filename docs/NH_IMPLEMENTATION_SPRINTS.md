@@ -1,5 +1,22 @@
 # New Horizons implementation sprints
 
+## Phase1 checkpoint — 2026-10-08, Wisp Long Reach AI
+
+UP300 completes Wisp's previously discarded distant attack consumer. Shared
+range/corridor/full-footprint rules remain authoritative; production forecast
+now avoids invalid adjacency-only collateral and retains primary physical damage.
+Final linked58248 exits0 at10 jobs; native28760 passes30/30 in11.353s with zero
+skips, including seven new Wisp cases and adjacent server/attack/Ogre/Genie gates.
+Independent final review finds no blocker. Initial compiler, distant-collateral,
+fixture-tail orientation, legitimate WAIT and same-unit reactivation failures
+are retained with causes/corrections in release lessons. No tactical retuning.
+Broader controller/Protect/faction-perk interactions remain Phase2. Coverage
+identities231/310 perks,61/67 combat spells,8/8 Orders unchanged; another required
+minimum AI path completed. Gargoyle art remains open; normal Linux0c6af unchanged.
+Next: bounded audit of canonical town/building minimum AI consumers before
+selecting another unblocked implementation item; do not declare the entire
+remaining specification blocked from the six recorded spell rulings alone.
+
 ## Phase1 checkpoint — 2026-10-08, ordinary beneficial creature AI
 
 UP299 completes Ogre Mage's missing minimum AI buff consumer, preserving other
