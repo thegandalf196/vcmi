@@ -21,8 +21,8 @@ Do not change dependencies or replace a tested release through this audit.
 
 ## UP-317 — One selected runtime-art NHART package
 
-Status: Inventory and architecture mapped; implementation pending privacy
-maintenance migration. User requests a deterministic, genuine versioned binary
+Status: Inventory and architecture mapped; packer, runtime loader, manifest and
+focused container tests are being implemented on sanitized history. User requests a deterministic, genuine versioned binary
 NewHorizons.nhart, not ZIP, containing selected creature/town/spell/portrait/
 effect/UI art and visual descriptors, including selected modifications and
 composites. Preserve accurate provenance, original-installation dependencies,
@@ -38,8 +38,22 @@ infer rendered/release completion from a packer or local build alone.
 
 ## UP-316 — Focused privacy maintenance
 
-Status: Current instruction made portable; history cleanup and verification
-underway in a dedicated clone. Preserve unpublished work privately, freeze
+Status: Current instruction exactly replaced; the affected development branch
+was narrowly rewritten and published with an explicit expected-old lease and
+atomic push. All other public branches and tags were independently confirmed
+unaffected. A fresh GitHub clone and independent historical scan found no
+remaining target disclosure in reachable published history. All eight local
+worktrees were migrated; eighteen nonprivacy unpublished files remained
+byte-identical, and three stashes were retained privately. Independent review
+confirmed healthy Git status, sanitized ancestry and pinned dependency content.
+An old GitHub file view still exposes the disclosure: private Support request
+prepared, not submitted. The affected Windows Actions artifact was deleted
+with explicit user approval; DELETE returned 204 and follow-up GET 404. Existing
+releases were untouched. All 55 release attachments were scanned without matches;
+three malformed fixture archives permit raw-byte checks only. Two recent Actions
+logs were checked; older artifacts/logs remain unaudited. External copies are
+not claimed erased. Recovery and findings remain private, pending eventual
+disposal agreement. Preserve unpublished work privately, freeze
 ordinary pushes, sanitize only confirmed copies of the disclosed home prefix,
 retain attribution and unrelated history, then publish only reviewed refs with
 explicit leases. Verify a fresh published clone, inspect remaining hosted URLs,
@@ -60,7 +74,8 @@ ee31537576f6e7f2c861c5a5b581495c1b2ee2a651a3554cb90d43434a09b23f.
 Actions artifact11550510951 is downloadable, not a GitHub Release and not
 Windows gameplay acceptance. Private Guild composites are absent as intended;
 their public component separation still keeps this item partially open.
-Download: https://github.com/thegandalf196/vcmi/actions/runs/37769575838/artifacts/11550510951
+The artifact was subsequently removed during authorized privacy maintenance;
+this historical delivery checkpoint is not a current download link.
 
 2026-10-08 publication checkpoint: casting assets and scoped-school selector
 are pushed through 6c9b9df7c. Windows preflight 37766980052 passes; fresh full
