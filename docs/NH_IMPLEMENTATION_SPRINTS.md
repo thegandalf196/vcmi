@@ -1,5 +1,20 @@
 # New Horizons implementation sprints
 
+## Phase1 user-priority work — 2026-10-08, Wisp compact portrait consumption
+
+UP310 corrects a real unstaged consumer: the full creature animation used Conflux
+scenery, while TWCRPORT still loaded transparent foregrounds over leather. Safe
+cached-export staging passes12/12 focused synthetic tests and independent Sol
+High review. Exact two unchanged runtime paths now consume existing private
+Conflux composites. Isolated run4564 exits0; root inspected both actual compact
+portraits in Downloads/provisory/wisp-compact-runtime-up310-20261008.ClgktO.
+All other candidate bytes are unchanged and owned processes/display cleaned.
+No C++ rebuild was needed. Normal playable delivery remains separate. Deferred:
+CLI/symlink negative fixtures and cleanup after mid-copy I/O failure. Phase1
+identity coverage stays61/67 combat spells and231/310 perks; this is required
+creature UI repair, not an additional spell/perk. Gargoyle matte correction and
+the next unblocked functional implementation remain active workstreams.
+
 ## Phase1 selection audit — 2026-10-08, after UP309
 
 Bounded independent legacy-access audit finds no forbidden usable grant in the

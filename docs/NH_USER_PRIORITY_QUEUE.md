@@ -7,11 +7,18 @@ implementation with a verified fix in the user's playable version.
 
 ## UP-310 — Wisp Conflux 58×64 portrait staging and runtime consumption
 
-Status: In progress,2026-10-08; unblocked UP291 background clause.
+Status: Private runtime verified (normal delivery pending),2026-10-08;
+unblocked UP291 background clause. Run4564 exits0 after actual compact
+TWCRPORT portraits for cyan Wisp and blue Greater Wisp show Conflux scenery.
+Root inspected both native screenshots under
+Downloads/provisory/wisp-compact-runtime-up310-20261008.ClgktO; RECEIPT.json
+records candidate and image hashes, exact two-file difference and isolation.
+All other payload bytes remain unchanged. Owned Xvfb2050374/launcher2050375 and
+X191 socket are absent after cleanup. This proves SDL2 compact portraits in the
+private candidate, not normal launcher delivery, SDL3 or final artwork approval.
 Cached staging source is now implemented and focused tests pass12/12
 (`/usr/bin/python3 -B -m unittest tools.tests.test_new_horizons_wisp_portraits -v`).
-Independent Sol High review reports no blocking finding. Runtime staging and
-compact-portrait graphical acceptance are still pending; this does not resolve
+Independent Sol High review reports no blocking finding. This does not resolve
 the user's separate Gargoyle background report. CLI/symlink negative fixtures
 and cleanup after mid-copy I/O failure are deferred hardening, not acceptance.
 Isolated run14687 shows both full stack-detail live animations on correct
