@@ -2,6 +2,19 @@
 
 ## UP-315 — Windows delivery of locally integrated magic artwork
 
+2026-10-08 user explicitly authorizes redistribution of the supplied new
+symbols/glows. Exactly864 standalone transparent casting PNGs are now present
+in the source resource tree with casting-only resolver configuration and
+provenance README under assets/new-horizons/magic-assets. Independent review
+confirms complete hashes, alpha/dimensions and existing CMake/Windows package
+consumption. Three actual shipped-resource contract tests and ten importer
+tests pass13/13. No original hero/base/background frames are included.
+The nine Guild composites still contain original room/repair pixels; publication
+of their authorized new components awaits separation/recovery of source inputs.
+The original combined ZIP is not currently in Downloads; existing importer
+cannot regenerate the Guild composites from a player's original installation.
+Fresh Windows/rendered acceptance remains open, not implied by packaging code.
+
 2026-10-08 user clarification: genuinely new authorized artwork belongs in
 the released game; requiring original Heroes III assets does not excuse keeping
 all new art local. Audit actual source provenance per component instead of
@@ -24,6 +37,14 @@ with provenance and complete resource manifest checks; CI source alone is not
 art-delivery evidence.
 
 ## UP-314 — School-colored hero spellcasting feedback
+
+2026-10-08 actual rendered candidate0106 startup failed before Guild access.
+Managed parent-gdb trace identifies an intentionally size-gated nested Adventure
+Map container returning nullptr at800x600; its parent unconditionally attaches
+that null child. This is not a spell-art loader failure. Narrow source correction
+skips only such authored conditional omissions before registration/ownership/
+addChild. Independent review approves; client build37828 exits0. Fixed exact
+candidate rendered retest is pending. Normal launcher remains on8c26a.
 
 2026-10-08 resource repair frozen as candidate 0106d5d0, not yet promoted.
 Independent review hashes all 3,136 baseline resources unchanged and exactly
