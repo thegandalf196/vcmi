@@ -38,6 +38,27 @@ art-delivery evidence.
 
 ## UP-314 — School-colored hero spellcasting feedback
 
+2026-10-08 focused validation: repaired six-school map export passes1/1 with
+zero skips under the isolated native profile; all six representatives are
+legitimately inscribed/castable and cost37 total Spell Points. The initial
+empty-roster failure was a fixture-only double-scoped CSpell key and is recorded
+in NH_RELEASE_FAILURES. Independent source review has no blocking findings.
+Client and native test targets build with at most10 jobs. This proves the
+validation scenario, not visible glow frames; rendered verification remains open.
+
+2026-10-08 rendered human startup, town, Guild and battle checks pass after
+the null-container fix in13cc47b74. Root inspected10-guild.png; Castle's two
+ribbons render again. Actual Magic Arrow and Bless actions are accepted, but
+immediate screenshots do not establish their casting glows. Trace contains no
+casting PNG loads. Independent source audit finds a second real defect:
+SpellSchool::encode returns a bare JSON identifier, while the casting selector
+expects the new-horizons: namespace prefix. Replace that call with the existing
+serializationKey API, retaining all fallback guards. Independent review clears
+the correction; client build68127 exits0. New focused six-school human map
+uses ordinary SoD-authored Knowledge200 (8-bit format), known eligible core
+spells and durable armies, not injected saved rules. Actual colored-frame
+capture remains pending; do not promote13cc as a complete casting fix.
+
 2026-10-08 actual rendered candidate0106 startup failed before Guild access.
 Managed parent-gdb trace identifies an intentionally size-gated nested Adventure
 Map container returning nullptr at800x600; its parent unconditionally attaches
