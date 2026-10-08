@@ -376,6 +376,24 @@ successful export or a body inside the canvas.
 
 ## UP-311 — Promote latest committed Linux build to the usual launcher
 
+2026-10-08 current candidate: exact committed363be3e07 client/library are
+frozen in snapshot17a5ecb2, including active Esprit de Corps and generic
+Serendipity. The committed NHART is unchanged:3137 selected entries,27202460
+bytes. Initial freeze correctly rejected the development config link's stale
+loose casting descriptor; a detached stage excludes that packed source and
+retains all12 shipped notices. Strict pack/mount/no-duplicate verification and
+baseline-path retention pass. Previous selection and ordinary profile remain
+untouched during acceptance. Independent20-second explicit-headless All for One
+reaches day3 with NK2 actions and BattleAI combats;802 frozen files and exact
+binary hashes pass. Timeout124 is bounded termination, not graceful normal-exit
+acceptance; owned processes exit, profile lock releases and runtime links clear.
+Existing magic/settings schema warnings, Shield of Chaos positiveness and
+masterChainLightning namespace diagnostics remain; one NK2 node-allocation
+warning is recorded for Phase2. Candidate17a5ecb2 is atomically promoted,
+retaining0350576a as previous. Usual launcher verify-only passes.
+Logs: private temporary nh-363be3e07-headless.10X0YPgI smoke/profile receipt.
+No additional rendered or new-perk gameplay acceptance is implied.
+
 Latest gameplay delivered,2026-10-08: usual Linux launcher now verifies and
 selects snapshot1c720ae7, exact source0b53fabcd, including active Defiant.
 Four-step10-job linked build27717 exits0. Independent assembly/candidate review
@@ -10658,6 +10676,13 @@ playable promotion or source commit is claimed for this candidate yet.
 
 ## UP-123 — Chaos Pandemonium and generic debuff counting
 
+2026-10-08 current-scope audit reconfirms the two unanswered principal choices;
+they are resurfaced together: repeated stackable applications count once per
+debuff type or separately, and Pandemonium Master's bonus strengthens each
+damage contribution by25% or grows cumulatively with counted debuffs. Suggestions
+are not approvals. Existing generic status metadata is preserved; no new helper
+or inactive producer is counted as completed spell execution.
+
 2026-10-03 prerequisite accepted: explicit Bonus statusTags/statusIdentity has
 strict JSON/current-wire validation, legacy empty defaults and pre-payload
 lossy-downsave rejection. Generic refresh retains strength/provenance and merges
@@ -15321,6 +15346,12 @@ launcher promotion. Later Combined Arms, Mysticism and Prepared Caster changes
 are not included in that frozen package.
 
 ## UP-043 — Implement Chaos Confusion and Confounder
+
+2026-10-08 post-perk-cycle audit: all four accepted replies and UP306-309's
+verified foundations remain intact. The immobile Attack endpoint is requested
+again without reopening probability, targeting or ordinary movement rules.
+Forced dispatch and shared resolved-outcome AI are the next complete execution
+slice after that answer; no speculative additional foundation earns coverage.
 
 2026-10-08 remaining endpoint resurfaced: if the selected Attack enemy cannot
 be attacked or approached by any legal nonstationary move, resolve as Defend
