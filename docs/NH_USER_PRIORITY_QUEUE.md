@@ -913,6 +913,28 @@ normal active-turn visual feedback and playable promotion remain pending.
 
 ## UP-289 — Recruitment layout, clipped Mage portrait and Cabir feedback
 
+2026-10-08 persistence audit: selected normal1c720/source0b53 already binds
+the base CompleteHandoff descriptor with all four hash-pinned approved MOUSEON
+frames. The shared live hover handler selects group1 for an alive, unfrozen
+newly hovered stack. Master still lacks group1; its unapproved draft must not
+be installed. A fresh private CompleteHandoff import omits the separately
+composed approved fidget and can replace that descriptor. A bounded code-only
+fix is source-verified: explicit --approved-base-fidget input, validated/composed
+before output manifests, preserving every supplied action and Master frame.
+Do not mix these poses into the older tracked NH_Cabir design or publish
+purchaser-derived handoff actions. Root reruns13/13 focused fresh-import,
+integrity and manifest checks; real pinned private inputs also compose in memory
+as200 files with81 base/83 Master frames. Independent Sol High review has no
+blocker. No C++/gameplay change, rebuild, new art installation or promotion.
+Actual base hover acceptance passes on the frozen normal candidate: pointer
+entry triggers highlighted fidget then returns to holding; all four approved
+frames load on that transition. Root inspects native hover-05/cursor-away and
+pose contact in Downloads/provisory/cabir-base-hover-up289-BvcZHF72. Evidence
+ends53.413s, cleanup59.239s; owned client/Xvfb exit0, PIDs absent, lock/runtime
+cleanup passes. Capture is approximately6fps, not proof of every isolated pose
+or full-size layout. Master idle, audio audition and other portrait roles remain
+open. Broader private staging symlink/race/interrupted-I/O hardening is Phase2.
+
 Small-portrait comparison,2026-10-07: root and independent Sol Medium inspect
 native/enlarged current32 versus nearest/Lanczos full58x64 reductions in
 Downloads/provisory/magi-small-portrait-v2. Neither candidate is a clear native
