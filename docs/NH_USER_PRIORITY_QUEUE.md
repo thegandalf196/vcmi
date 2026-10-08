@@ -59,8 +59,14 @@ Unexercised states include Wisp attacks, base Cabir melee/base Mage attacks,
 repair/death and school glows on the final package. The test remained bounded;
 all owned clients/displays exited cleanly and profile locks were released.
 Combat frame-time/cold-cache measurements and actual downloadable release
-verification remain pending. Current source changes are not yet a published
-player release. Preexisting broad content assertions (registered-spell roster,
+verification remain pending. Implementation is committed and pushed as
+`4649d73b5`; exact-commit Linux rebuild/install and independent fresh GitHub
+checkout checks pass. The Windows run stopped before compilation at the vendored
+dependency byte gate: Windows newline conversion must be disabled narrowly for
+that pinned source subtree. A separate real fresh-source MinGW staging check
+exposed the obsolete loose resolver; explicit selected-source exclusions now
+pass actual committed-resource staging and preserve all twelve notices.
+No Windows artifact is claimed from the failed run. Preexisting broad content assertions (registered-spell roster,
 Morale text and hero-list/rank expectations) remain Phase 2 findings, not a
 reason to change gameplay during packaging.
 User requests a deterministic, genuine versioned binary
