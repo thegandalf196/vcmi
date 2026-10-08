@@ -4,7 +4,9 @@
 
 Status: Desktop naming, window titles, Windows product metadata and explicit
 in-game VCMI thanks implemented; focused checks and Linux client build pass.
-Launch/package integration and rendered final candidate checks are underway.
+Linux launch/package integration passes; the usual launcher selects the frozen
+candidate built from `111704555`, retaining the previous snapshot. Windows
+downloadable-package verification remains pending.
 The application icon remains an explicit open item: no approved New Horizons
 product icon was found; unchanged original-installation icons are not silently
 redistributed. Internal engine/library identities and mobile ABI are retained.
@@ -20,7 +22,8 @@ appearance are separate acceptance stages.
 
 Status: Exact pinned recipe snapshot preserved as ordinary repository files:
 145 upstream files, 4,945,402 bytes, with origin/revision/hash inventory and an
-offline integrity gate. Nine focused tests pass. Existing recipes, profiles,
+offline integrity gate. Eleven focused tests pass, including actual Windows-EOL
+checkout protection for all 145 files. Existing recipes, profiles,
 patches and notices are unchanged; Git metadata was retained privately before
 the dependency Gitlink was replaced. CI verifies the local snapshot before
 external acquisition. This is not an offline build: binary caches, Conan/source
@@ -55,9 +58,14 @@ Final installed pack was rendered in a six-creature authored scenario: Cabir,
 Master Cabir, Wisp, Greater Wisp, Mage and Arch Mage all appear; Wisp variants
 move/hover with outlines, Arch Mage and Master Cabir shoot with named packed
 animation-frame traces. The repaired toolbar omission no longer appears.
-Unexercised states include Wisp attacks, base Cabir melee/base Mage attacks,
-repair/death and school glows on the final package. The test remained bounded;
-all owned clients/displays exited cleanly and profile locks were released.
+Additional isolated autobattle checks exercise all four shooters, both Wisp
+melee animations, Wisp death fading and Havoc casting frames from the final
+pack. Root inspected native contact/glow captures. Unexercised states include
+repair execution, all creature reaction/melee/death variants and the complete
+six-school/UI-state matrix. The last passive contact capture ended with an
+X-connection shutdown after orderly server/client stopping: its wrapper exit
+was 1, not a claimed clean exit or gameplay crash. All owned processes and
+profile locks were subsequently cleared.
 Combat frame-time/cold-cache measurements and actual downloadable release
 verification remain pending. Implementation is committed and pushed as
 `4649d73b5`; exact-commit Linux rebuild/install and independent fresh GitHub
@@ -66,7 +74,12 @@ dependency byte gate: Windows newline conversion must be disabled narrowly for
 that pinned source subtree. A separate real fresh-source MinGW staging check
 exposed the obsolete loose resolver; explicit selected-source exclusions now
 pass actual committed-resource staging and preserve all twelve notices.
-No Windows artifact is claimed from the failed run. Preexisting broad content assertions (registered-spell roster,
+The newline/staging corrections are published as `b11e69844`; retry run
+37818325794 passes dependency and package preflight and is compiling that exact
+source. `111704555` changes only future workflow summary wording. The usual
+Linux launcher has been promoted to the verified current-source frozen pack
+and passes `--verify-only`; the previous candidate remains available. No Windows
+artifact is claimed before actual download verification. Preexisting broad content assertions (registered-spell roster,
 Morale text and hero-list/rank expectations) remain Phase 2 findings, not a
 reason to change gameplay during packaging.
 User requests a deterministic, genuine versioned binary
