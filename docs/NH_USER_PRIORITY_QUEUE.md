@@ -553,6 +553,21 @@ gpt-6.1-sol/high. Existing old-model results remain historical, not relabelled.
 
 ## UP-291 — Wisp selection outline, Conflux portraits and Core dwelling
 
+Active-turn outline verified,2026-10-08: corrective isolated run42632 exits0
+and root inspects both actual additive forms' active-turn screenshots. Greater
+Wisp and base Wisp show distinct gold silhouette contours with pointer outside
+units, after ordinary pre-start/Defend controls. SDL2 software800x600 only.
+Receipt /tmp/nh-wisp-active-corrective.hOKXI5/RECEIPT.json records frozen current
+compiled binaries plus retained a18 private art/map, refreshed repository data
+and separately staged threshold64 descriptors; this is not full current-package
+acceptance. Review copies: Downloads/provisory/wisp-active-turn-20261008.2X6ULY/
+initial-active.png and base-wisp-active.png. Exact owned Xvfb/launcher stopped,
+socket removed; host input and normal profile/launcher untouched. Prior98002
+pre-start timeout remains in release lessons, not a pass. Gold-outline clause
+has actual rendered evidence; Conflux portrait/dwelling graphical acceptance,
+SDL3 and playable promotion remain open. Existing startup schema warnings are
+retained separately. No artwork approval or spell/perk count increase.
+
 Status: Open,2026-10-07. User reports new Wisp lacks the gold active-turn
 silhouette outline and Conflux portrait background. Check both base/Greater
 forms, actual delivered descriptor alpha/overlay flags and shared portrait roles;
@@ -8755,6 +8770,13 @@ and the pending UP-054 policy determines legal scroll learning. Do not implement
 or activate a combat-only subset; no duplicate question is issued.
 
 ## UP-166 — Estates Prospector preparation
+
+Narrow hold review,2026-10-08: Sol High confirms canonical4625 defines flat
++2 common/+1 rare, not extra weekly production. Existing resource selectors
+exclude Gold from both categories. The remaining choice is whether an owned
+Gold visit consumes the weekly use or is excluded without consumption; no Gold
+reward is specified. Renewed that exact question, not a numerical redesign.
+Do not infer an answer or reopen the settled Wood/Ore/rare quantities.
 
 Required-feedback audit,2026-10-06: the mine tooltip requirement is genuinely
 absent, but it is not an independent UI-only task while this perk remains

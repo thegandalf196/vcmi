@@ -1,5 +1,36 @@
 # New Horizons implementation sprints
 
+## Phase1 selection audit — 2026-10-08, after UP309
+
+Bounded independent legacy-access audit finds no forbidden usable grant in the
+sampled reward/hero-book/scroll-source paths. Random-map scroll generation lacks
+the same access filtering, but no canonical prohibition on unusable loot was
+established; do not silently change that policy. Haste/Adventure-scroll holds
+remain separate. Hero-package audit confirms approved52 biographies and current
+Solmyr/Halon/Fafner patches have producers; unapproved workbook mechanics remain
+proposals. These are source findings, not new feature credit or full-family
+certification. Sol High narrows Prospector's true Gold hold to weekly-use
+consumption, preserving the authored flat common/rare rewards. Its exact question
+and Confusion's zero-advance endpoint were renewed. No answer inferred.
+
+UP291 still requires actual Wisp active-turn silhouette evidence. A designated
+Sol Medium background tester is discovering a bounded isolated candidate path;
+execution requires verified own Xvfb/disposable-profile isolation and matching
+loaded asset identity. No host input, normal-launcher promotion or substitute
+rectangular border. Existing source overlays alone do not close the report.
+
+UP291 corrective run42632 now establishes the gold-outline clause for both
+actual additive forms; root inspected initial-active.png/base-wisp-active.png
+in /tmp/nh-wisp-active-corrective.hOKXI5 and retained review copies under
+Downloads/provisory/wisp-active-turn-20261008.2X6ULY. Ordinary input and pointer
+outside units distinguish active-turn contours from hover. SDL2 software800x600
+private mixed-source candidate only, not whole-package/SDL3 or normal delivery.
+Owned processes/socket cleaned. Prior98002 timed out at pre-start and is not
+credited. Wisp portrait/dwelling acceptance remains open; coverage identities
+61/67 spells and231/310 perks do not change. No production mutation was required.
+Next functional choices remain Confusion's zero-advance endpoint and Prospector's
+Gold use; other bounded audit samples are not whole-backlog blockage proof.
+
 ## Phase1 work — 2026-10-08, pending Confusion feedback
 
 Verified source/readback slice: linked20969 exits0 at10 jobs; native52415
