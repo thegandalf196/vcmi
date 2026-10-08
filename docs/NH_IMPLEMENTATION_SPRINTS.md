@@ -2,6 +2,18 @@
 
 ## Active Phase1 slice — 2026-10-07, Overwhelming Formula
 
+UP290 playable boundary now accepted on unchanged selected0c6af: full-stack
+retry is a local no-op; all troops conserved through legal transfers; final
+GarrisonHeroSwap23 succeeds with Solmyr visibly in the garrison row. Root
+inspected screenshot and authoritative log. Reported scenario resolved; broader
+army/AI combinations remain Phase2. All owned background processes cleaned.
+
+Source delivery:52b1e80f1 committed and pushed to definitive-mvp. Tracked
+implementation is clean; unrelated Cabir/Magi untracked drafts are preserved.
+Normal Linux0c6af is not promoted. Independent final review confirms231/310
+registry counts and53/53 focused receipts; actual server Plague/SoulChain event
+execution remains Phase2 despite shared source/helper coverage.
+
 Completion checkpoint: final linked84117 build exits0. Focused native16877
 passes53/53 in4.540s, zero skips;17 Python guards/module drift and independent
 review pass. Actual HERO immediate/area and Mine/Firewall creation/passive trigger

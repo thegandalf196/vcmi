@@ -228,6 +228,36 @@ separate bounded UI and creature-feedback ownership avoids Transformer drafts.
 
 ## UP-290 — Hero-to-garrison transition still rejects Leadership overflow
 
+Status: Resolved for the reported Wizard650/Mage300 transition,2026-10-07.
+Final isolated run on selected frozen0c6af verifies the complete path: overflow
+opens Leave Guards and leaves hero visiting; legal transfers conserve3Magi and
+1Cabir in separate capacity-fitting slots; after closing, admission succeeds.
+Root inspected final-admission-v1/actual-garrison-admission.png showing Solmyr
+in the upper/garrison row and the visiting row empty. Detailed log
+/tmp/nh-background-0c6af.edfectxr/profile/cache/vcmi/VCMI_Client_log.txt records
+accepted ArrangeStacks ID21/22, then GarrisonHeroSwap ID23 -> SetHeroesInTown
+successfully applied. No dismissal or Leadership rejection. Full-stack retry
+also has rendered no-op evidence below. Owned client/wrapper/Xvfb are terminal
+and cleaned; normal selected snapshot unchanged. Other army/control/save/AI
+combinations remain Phase2, not universally certified by this authored scenario.
+Earlier pending/reopened statuses below are historical checkpoints.
+
+Full-stack retry checkpoint,2026-10-07: isolated frozen0c6af run transfers2Magi
+to Solmyr, then retries remaining town1Mage onto that same full2Magi stack.
+Counts remain1town/2hero; tooltip shows proposed3/2max and legalincoming0.
+Root inspected full-stack-retry-v1/full-stack-retry-noop.png and detailed log
+/tmp/nh-background-0c6af.xnnr7jpt/profile/cache/vcmi/VCMI_Client_log.txt:
+the initial ArrangeStacks ID21 succeeds; retry sends no further transfer request,
+and no Leadership rejection appears. This proves the single-click no-op path,
+not all admission/transfer cases. Bounded run and owned Xvfb/client cleaned.
+Final fitting garrison admission remains unverified; a harness selected-source
+reclick opened stack information and ended the run before admission.
+Separate all-troops-fit checkpoint: two accepted ArrangeStacks ID21/22 requests
+move town3Magi into legal hero2Magi and1Mage slots, conserving all3 and the1Cabir.
+Root inspected all-troops-fit-v1/legal-all-troops-hero.png; town army is empty.
+The110s bounded run ended before admission commands were consumed, with no swap
+request; this remains preparation evidence rather than position-change proof.
+
 Rendered fitting-transfer checkpoint,2026-10-07: a second isolated0c6af run
 opens the overflow modal and clicking town3Magi→empty hero slot authoritatively
 moves2, leaving1 in town. Total3 Magi and hero's1 Cabir are conserved. Closing
