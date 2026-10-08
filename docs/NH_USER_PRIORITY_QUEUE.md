@@ -150,6 +150,29 @@ correctly in the playable candidate, verified at native resolution.
 
 ## UP-312 — Recruitment portraits still lose creature details
 
+2026-10-08 native checkpoint: corrected full-tail Naga/Queen composition and
+Giant sword matte pass the existing actual SDL portrait fixture at scales 1–4.
+Review caught and repaired backdrop alpha erasure before delivery. Source and
+cached battle frames remain unchanged; Giant preserves all prior foreground.
+The ordinary Academy export compiles and passes 1/1 with zero skips in a separate
+explicitly curated native profile. Map SHA256 is
+7998642c6bd9e56fe46a165e25ec7d4e107df91bff4c80ce85c9f18441e59a98;
+the earlier skipped run is not counted. Actual recruitment acceptance is next.
+Magi head-only v1/v2 drafts are withheld for poor native face readability; Stone
+Gargoyle ROI r9 is withheld for residual architecture. Do not close these two
+defects or claim the four reported portraits are fixed.
+
+2026-10-08 implementation slice: independently reviewed Giant sword matte
+adds exactly 73 pixels, removes none and leaves the body outside its small ROI
+unchanged. Versioned v4 source/export and native preservation checks are in
+progress; rendered acceptance is still required. Naga/Queen full-tail runtime
+composition is being implemented from the player's complete standing DEFs,
+not the already cropped portraits, preserving original files and combat bindings.
+Magi face correction has one new transparent head-only HoMM3 Art draft underway.
+Stone Gargoyle receives one focused lower-left matte-region correction instead
+of repeating the failed whole-mask generations; older rejected variants remain
+uninstalled. No four-portrait fix or new playable promotion is claimed yet.
+
 2026-10-08 independent read-only audit: current cards use native 58x64 TWCRPORT
 without an additional card-local crop. Gargoyle frame32/33 routes still omit
 Academy composition. Magi's current image equals the authored portrait but its
