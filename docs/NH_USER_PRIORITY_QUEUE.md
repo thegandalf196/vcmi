@@ -17801,6 +17801,25 @@ and identified playable delivery.
 
 ## UP-004 — Generic hero combat-resource panel
 
+2026-10-08 partial rendered acceptance: on the retained normal Linux snapshot
+5d1c66b6/source7e09da9dd, ordinary scenario initialization learns Basic Divine
+Mandate. The generic row shows1/1 and normal Hero Action Available; accepted
+Bless changes the action to Spent and right-click help explains the pending
+Order/source/round1 expiry. Accepted Brace completes the pair:0/1, one completed
+pair, normal action still Spent, pending text removed. Root inspected screenshots
+09/10/12/14/15 under Downloads/provisory/generic-combat-resource-up004-dm-zDukT8s5.
+Capture is800×600 with half-fit embedded combat, not full-scale icon acceptance.
+The accepted Bless→Brace principal sequence takes80 seconds; menu navigation is
+additional. Human client2105196 and private Xvfb2104865 exit0, profile lock is
+free and runtime directories are removed. An earlier spectator --testmap launch
+is excluded. Client source identity and accepted actions are verified in
+/tmp/nh-up004-dm.zDukT8s5/human-launch.log and profile/cache/vcmi/VCMI_Client_log.txt
+(Bless line79486, Brace line80268). UI source files are unchanged7e09..eac5056b5.
+Independent source review finds no missing principal provider/update/control
+hook. Metamagic/Bloodrage-specific rendering, full-scale/short-viewport,
+sticky/non-sticky and simultaneous/maximum-value matrix remain open; no full
+UP004 closure or new feature/artwork approval is claimed.
+
 Status: Source implemented; native client/loader checks passed; visual and
 playable verification pending.
 
