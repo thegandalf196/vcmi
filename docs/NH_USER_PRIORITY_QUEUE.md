@@ -222,6 +222,36 @@ successful export or a body inside the canvas.
 
 ## UP-311 — Promote latest committed Linux build to the usual launcher
 
+Latest gameplay delivered,2026-10-08: usual Linux launcher now verifies and
+selects snapshot1c720ae7, exact source0b53fabcd, including active Defiant.
+Four-step10-job linked build27717 exits0. Independent assembly/candidate review
+verifies4010 retained resource paths,571 private art/descriptor additions,
+graphics-only Cabir/Magi bindings, two previously runtime-accepted Wisp portraits
+and Guild-only bindings; all current gameplay,864 public casting frames and
+current Giant/Naga artwork remain intact. Explicit-candidate20-second headless
+All for One reaches13 turn starts through day5 with actual AI construction,
+movement, exchanges and combat. Timeout124 is expected; both owned processes
+are absent, disposable profile lock is free and runtime links are removed.
+Existing762 nonfatal schema diagnostics and Shield of Chaos positiveness remain
+Phase2 findings, not clean-log/full-game/rendered/Windows certification.
+Atomic promotion preserves prior5d1; normal wrapper verify-only exits0 without
+creating files or launching a client. Receipt:
+build/nh-linux-play-0b53fabcd-resources.XpYh8UF0/DELIVERY-VALIDATION.json;
+promotion receipt: build/nh-linux-play-0b53fabcd-DELIVERY.json.
+No new art approval or Magi/Gargoyle defect closure is inferred.
+
+Historical latest-source preparation,2026-10-08: normal selection was still
+snapshot5d1c66b6/source7e09da9dd. Exact committed0b53fabcd is now linked at
+10 jobs (four version/library/client steps; terminal27717 exits0). A fresh
+private assembly must retain the selected creature and Guild artwork without
+copying old gameplay configuration: only four Cabir/Magi graphics subtrees,
+private image/descriptor files, two Wisp portraits and Guild book bindings.
+Current public casting configuration and current Giant/Naga artwork must remain
+unchanged. Freeze without promotion, independently review the resource receipt,
+then run a bounded explicit-candidate headless new-game check and verify owned
+cleanup before changing the usual launcher. No playable delivery is claimed
+by this preparation checkpoint. Log: build/nh-linux-play-0b53fabcd-build.log.
+
 Delivered,2026-10-08: exact52decee72104eb48995c0c0ab46969b5f7e3735b detached
 clean build75657 and version-only relink59630 exit0 at10 jobs. Candidate8c26a113
 is checksum-frozen with independently audited graphics-only Cabir/Magi retention
@@ -5750,6 +5780,12 @@ state and minimum AI use must be covered; no polling or frontend mutation.
 Mapping does not activate the perk. Keep file ownership separate from UP208.
 
 ## UP-207 — Mana-regeneration artifact conversion
+
+2026-10-08 narrow ruling resurfaced alongside Confusion's remaining endpoint:
+independently additive per-item minima/percentage maxima versus one maximum
+after aggregation. This is not merely rounding: two tiers may contribute
+max(5,5%) + max(10,10%) instead of max(15,15%). Suggested answers are not
+submitted decisions; no conversion or activation is inferred while awaiting reply.
 
 Status: Read-only map complete; stacking clarification pending, 2026-10-04.
 Canonical tiers replace Charm/Talisman/Mystic Orb's old daily1/2/3 with
@@ -15063,6 +15099,11 @@ launcher promotion. Later Combined Arms, Mysticism and Prepared Caster changes
 are not included in that frozen package.
 
 ## UP-043 — Implement Chaos Confusion and Confounder
+
+2026-10-08 remaining endpoint resurfaced: if the selected Attack enemy cannot
+be attacked or approached by any legal nonstationary move, resolve as Defend
+or Attack/no-op. The suggested Defend answer remains unaccepted until an actual
+user reply. Preserve all four already accepted rules below.
 
 Bounded re-audit,2026-10-07: preserve the four accepted replies below. The only
 residual behavior choice is Attack selecting an enemy while neither attacking
