@@ -1,5 +1,74 @@
 # User-priority queue
 
+## Immediate testing constraint — Silent background runs
+
+User heard clicking from an invisible background game. The tester stopped its
+owned client immediately; its custom launch had omitted the dummy audio driver.
+No Mentor/transfer acceptance occurred in that run. Future graphical tests must
+use the maintained guarded private-launch helper and verify both SDL dummy
+audio-driver variables in the actual child before input. No visible or audible
+host-session fallback is allowed. Corrected run verifies both dummy variables
+in the actual immutable-baseline game process before input; the maintained
+private-launch regression passes11/11. This verifies isolation, not gameplay.
+
+## Current crash priority — Hero-to-hero army transfer
+
+Source cause found: opening-sized skill widgets are indexed by the live count
+after Mentor level-ups; user confirms Theodorus taught Serena inside the open
+trade screen. Fixed eight-slot refresh is committed and pushed as2440d442d,
+focused helper1/1 and independent review pass. Linked build94353 exits0 with10 jobs, isolated
+from the unfinished Chain source preserved in a private local stash. The fatal
+observed log stops after successful server transfer and client state application;
+no Leadership rejection occurs at that endpoint. Exact core-frame/GUI replay
+and playable promotion remain unverified. The log was overwritten on relaunch,
+so retained observed excerpt is not an intact original crash log.
+
+User reports a crash in the hero trade screen while transferring creatures
+between heroes, suspected Leadership-related. Inspect the latest ordinary
+Linux profile logs and crash evidence before guessing the cause. Preserve
+safely running portrait work and unrelated unpublished source/art. Reproduce
+the actual transfer, repair the authoritative/UI lifecycle cause, add the
+smallest relevant regression, and verify delivery; a rejected capacity request
+alone is not a reproduced crash or a fix. This crash precedes portrait polish
+and ordinary implementation backlog work.
+
+## Current user priority — Delivered Mage/Gargoyle portraits
+
+Both Gargoyles now have source registrations and module bindings for unchanged
+original HOLDING frames fitted over the existing packaged Academy backdrop.
+Linked client and fixture build94353 exits0. Native execution stops first at an
+obsolete stock-Mage animation assertion, before reaching portrait checks;
+the fixture now follows the selected packaged Magi and Cabir handoff identities.
+Rebuild67553 exits0; native3636 exits0 with all14 portraits at scales1–4,
+including complete Gargoyle bodies, backdrop/insets, TWCRPORT aliases and
+unchanged battle/small sources. Actual recruitment/growth-window acceptance
+and playable promotion remain open. Mage head v3 was rejected
+for a disconnected head/neck and remains uninstalled; its delivered defect stays
+open. Authoring drafts and all earlier review versions are retained.
+
+Pre-fix diagnosis: snapshot17a5's packed Mage58x64 equals the retained
+authored portrait, whose foreground bounds(3,10)-(55,60) do not touch the top
+canvas. The defect is native face readability, not card-local clipping or a
+missing package update. Gargoyles still resolve TWCRPORT32/33; Academy's
+composition registrations omit both frames. Existing Stone r8/r9 and Obsidian
+r3 are rejected, not ready replacements. New bounded HoMM3 Art revisions are
+assigned; no source, runtime or delivery fix is yet claimed. Current comparisons
+are under Downloads/provisory/nh-delivered-mage-gargoyle-diagnosis-v1.
+
+Renewed2026-10-08 screenshots show the normal NHART-backed recruitment view
+still has an unreadable/cropped Mage head and Stone Gargoyle snow scenery; the
+growth popup also retains that scenery. This reopens delivery acceptance for
+UP239/UP282/UP289 rather than adding a duplicate completion claim. Prioritize
+the actual packed resource identities and native58x64 foregrounds, not the
+unrelated32px small-portrait exports. Preserve approved subjects, original
+inputs, all animation bindings and rejected drafts. Fix Mage head readability
+and both Gargoyle Academy-background compositions; integrate selected outputs
+into NHART and verify recruitment/growth consumers on the promoted candidate.
+Container integrity alone is not visual acceptance. Earlier private-only
+composition exclusions are superseded by UP317's explicit shipping direction.
+Safely running independent work may finish its bounded checkpoint; no new
+ordinary backlog work takes precedence over these reported visual defects.
+
 ## UP-319 — New Horizons executable/icon and in-game attribution
 
 Status: Desktop naming, window titles, Windows product metadata and explicit
