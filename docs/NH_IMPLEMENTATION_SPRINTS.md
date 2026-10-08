@@ -1,5 +1,31 @@
 # New Horizons implementation sprints
 
+## Phase1 work — 2026-10-08, Confusion shared legal-choice foundation
+
+UP306 continues UP043 with production geometry shared by later authoritative
+and detached consumers. Root requires enemy grouping (not flattened target
+weights), ordinary action-controller legality, legal attack positions, existing
+budgeted advance geometry and legal Wander destinations. Explicitly retain the
+unanswered zero-advance Attack endpoint rather than importing Berserk's no-op.
+Sol Medium implementation and independent fixture owners have disjoint new
+files; root owns CMake/docs/build/Git and Sol High reviews. Focused validation
+completed: linked34243 exits0 at10 jobs, native84923 passes33/33 in1.326s,
+zero skips (16 new/17 adjacent); Sol High review has no remaining blocker.
+The initial32/33 fake-shooter fixture failure and repair are recorded in release
+lessons. Receipts: build/nh-confusion-choices-fixture-repaired-build.log and
+build/nh-preview-ai-validation.jUrtT2RY/native-up306-fixture-repaired.log/XML.
+Full spell remains the deliverable: pending/history state and save
+representation, forced dispatch/Morale consumption/Berserk removal, detached
+outcomes, feedback and activation follow this foundation. No new identity
+credit or launcher promotion is implied by an enumeration helper.
+
+Bounded artifact/town audits found existing principal consumers, not another
+ready gap: Orbs/Hat/paid travel equipment, House of Wisdom purchases and Escape
+Tunnel already have runtime/AI paths. Regeneration stacking, Glyphs aura and
+Lighthouse retain specific unanswered rules. Recruitment/Diplomacy and Rebirth
+also retain their recorded cohort/activation/terrain decisions. Do not repeat
+those maps without new evidence or substitute broad test polishing.
+
 ## Phase1 checkpoint — 2026-10-08, ordinary learned Summon Boat AI access
 
 UP305 closes a distinct minimum AI gap: known zero-School casters are excluded

@@ -5,6 +5,40 @@ resolve them before resuming ordinary New Horizons implementation. Read this
 file on every work resumption. Do not remove unfinished entries or equate an
 implementation with a verified fix in the user's playable version.
 
+## UP-306 — Confusion shared legal-choice foundation (UP043 continuation)
+
+Status: Partial, foundation native-verified,2026-10-08. Build2788 exits0;
+repaired stable-input linked34243 exits0 at10 jobs. Native84923 passes33/33
+in1.326s, zero skips:16 new geometry cases, nine adjacent Berserk and eight
+Long Weapon controls. Independent Sol High review has no remaining blocker.
+Receipts: build/nh-confusion-choices-fixture-repaired-build.log and
+build/nh-preview-ai-validation.jUrtT2RY/native-up306-fixture-repaired.log/XML.
+Initial32/33 fixture failure is retained in release lessons. Actual controller
+changes, stopping hazards, projected/vacated Long Weapon corridors, explicit
+Skirmisher flags with real acquired perk, double-wide/flying movement and grouped
+targets pass. Full activation/state/save/AI consumers remain Phase1 work, not
+deferred completion; broader interaction/performance acceptance is Phase2.
+Normal launcher unchanged. Original foundation scope follows.
+Implement the settled, RNG-free legal-choice
+enumeration required by both authoritative forced activation and detached AI.
+Keep enemy choices grouped so enemies with more attack positions do not become
+more likely. Use ordinary shooting/melee/action-controller legality, all legal
+attack positions, existing reachability/advance machinery and legal Wander
+destinations. Trapped Wander resolves as Defend. Expose an Attack target with
+no legal attack or advance explicitly; do not silently choose its unresolved
+Defend/no-op endpoint. The narrow endpoint question was renewed asynchronously.
+This is a foundation for the entire spell, not a substitute spell or completed
+identity: pending/history state, authoritative consumption, save propagation,
+detached outcome evaluation, registration and UI remain UP043 work. Spell and
+Confounder remain inactive until their complete principal path is verified.
+Sol Medium owns the new shared helper, a separate Sol Medium its focused geometry
+fixture; root owns registration/build/docs/Git and Sol High reviews. Acceptance:
+enemy grouping, ordinary attacks and movement, blocked/trapped controls and
+explicit unresolved endpoint; focused linked/native evidence. No broad suites
+or normal launcher promotion implied. The shared Long Weapon forecast overload
+vacates only the original actor's former footprint locally; existing two-argument
+behavior remains intact. No binary/packet state or content activation changes.
+
 ## UP-305 — Summon Boat minimum AI access for ordinary learned-spell casters
 
 Status: Verified (delivery pending),2026-10-08; bounded UP056/023 continuation.
