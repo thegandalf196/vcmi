@@ -5,6 +5,41 @@ resolve them before resuming ordinary New Horizons implementation. Read this
 file on every work resumption. Do not remove unfinished entries or equate an
 implementation with a verified fix in the user's playable version.
 
+## UP-307 — Confusion pending/history state and save propagation
+
+Status: Verified (delivery pending),2026-10-08; UP043/306 state slice only.
+Linked40888 exits0 at10 jobs; native88113 passes34/34 in2.476s, zero skips:
+18 new state tests and16 shared geometry controls. Sol High source review has
+no remaining blocker. Actual recast/history, ordinary-hook/full-init lifecycle,
+strict player/neutral JSON, older defaults/loss rejection, current descriptor
+and wire propagation, CStack localInit and nested detached-update isolation
+pass. Receipts: build/nh-confusion-state-callback-repaired-build.log and
+build/nh-preview-ai-validation.jUrtT2RY/native-up307.log/XML. Earlier fixture
+compile failures93421/20027 remain in release lessons; no assertions were
+weakened. Direct battle/attack/injury wrapper matrices remain Phase2; those
+guards were source-reviewed. No full battle health/save-resume, spell activation,
+perk/spell identity increase or normal-launcher promotion is claimed. Next:
+actual spell application/Berserk removal and settled negative-Morale consumption,
+then forced activation and detached AI; zero-advance Attack endpoint remains
+unanswered. Original scope follows. Preserve
+pending next-activation control separately from the target's previous resolved
+Attack/Defend/Wander behavior. Reapplication keeps history; negative-Morale
+forfeiture clears pending control without recording an invented behavior. Use
+the existing UnitChanges state-update path and detached copy/load rather than
+a new frontend mutation or polling loop. Add strict JSON validation, current
+binary descriptor preservation, older empty defaults and meaningful-state
+downsave rejection, including enclosing packet/battle preflight. CStack's
+local initialization must not erase this explicitly serialized metadata.
+This does not restore omitted general combat health or enable full ongoing-
+battle save/resume. Sol Medium owns production state/serialization; separate
+Sol Medium owns a new focused fixture; root CMake/docs/build/Git, Sol High
+review. Acceptance: pending plus history roundtrip/copy, reapply/consumption,
+missing-old defaults, malformed rejection, current wire and binary descriptor
+propagation, old-writer rejection without silent state loss. Full spell producer,
+forced dispatch, AI outcome evaluation, feedback and activation remain Phase1
+requirements. The zero-advance Attack endpoint still awaits the user; no active
+spell/perk credit or launcher promotion is implied.
+
 ## UP-306 — Confusion shared legal-choice foundation (UP043 continuation)
 
 Status: Partial, foundation native-verified,2026-10-08. Build2788 exits0;

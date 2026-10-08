@@ -1,5 +1,30 @@
 # New Horizons implementation sprints
 
+## Phase1 work — 2026-10-08, Confusion pending/history propagation
+
+UP307 verified state slice: linked40888 exits0 at10 jobs; native88113 passes
+34/34 in2.476s, zero skips (18 state/16 geometry). Sol High review has no
+remaining blocker; failed fixture compilations93421/20027 are preserved in
+release lessons. Receipts: build/nh-confusion-state-callback-repaired-build.log
+and build/nh-preview-ai-validation.jUrtT2RY/native-up307.log/XML. Actual JSON,
+binary descriptor/localInit, wire and detached-copy propagation pass. Direct
+battle/attack/injury wrapper interaction matrices remain Phase2, not broad
+ongoing-battle save acceptance. No spell/perk identity or launcher change.
+Next bounded production slice: apply pending state/remove Berserk and consume
+pending control on actual negative-Morale forfeiture. Full forced activation,
+AI outcome replay and feedback still belong to Phase1.
+
+UP307 follows the verified UP306 geometry foundation. Root chooses separate
+pending-control provenance and resolved per-target history, preserving history
+on recast/Morale forfeiture rather than inventing a resolved behavior. Sole
+production worker owns the state value, unit copy/JSON/reset, CStack binary and
+initialization preservation, one append-only format milestone and wire/battle
+preflight. Separate fixture owner covers actual copies, older defaults, strict
+invalid-state rejection and binary/wire propagation. Root builds/Git/docs;
+Sol High reviews. No active spell/perk count increase or normal-launcher
+promotion. Next required slice remains the actual producer/activation and
+detached AI, not a claim that metadata alone implements Confusion.
+
 ## Phase1 work — 2026-10-08, Confusion shared legal-choice foundation
 
 UP306 continues UP043 with production geometry shared by later authoritative
