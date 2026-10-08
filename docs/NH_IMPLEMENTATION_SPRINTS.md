@@ -1,5 +1,29 @@
 # New Horizons implementation sprints
 
+## Phase1 implementation — 2026-10-08, Battlefield Medic
+
+Completed source/native checkpoint: final build4052 exits0 and focused75673
+passes17/17 Medic/Surgeon/Quartermaster cases. Active-registry59555 also passes
+17/17, zero skips,5.506s; registry17/17 and module drift pass. The perk is now
+active, increasing coverage234→235/310 (generic163→164/220;75 planned;
+War Machines6→7/10). No new saved state. Permanent restoration, battle-start
+caps, destroyed remains, AI/preview parity and temporary Re-animate cleanup
+are exercised. Broader interactions/rendered hover remain Phase2. Latest
+user-priority resource/portrait delivery defects still precede ordinary backlog;
+the magic-art-restored human-startup crash is being debugged before promotion.
+The following preparation notes are historical.
+
+In progress, not activated: UP098's canonical ordinary restoration is permanent,
+with Re-animate providing the explicit temporary exception. Implement normal
+Tent survivor healing first, then an independent floor(calculated output/2)
+restoration budget capped at battle-start count and usable casualty provenance.
+Shared eligibility/preview must admit full-health survivors with casualties;
+runtime, AI, existing hover UI and authoritative completion fixture have separate
+owners. No global canBeHealed relaxation or new persistent state is intended.
+Principal acceptance includes actual healing, shared preview/AI, no-perk and
+unusable-remains controls and post-combat permanence. Coverage stays234/310
+until linked and focused native gates establish the full mechanic.
+
 ## Phase1 implementation — 2026-10-08, Counter-Battery and Counterpressure
 
 Verified and active: final linked98331 exits0 at10 jobs; native90122 passes

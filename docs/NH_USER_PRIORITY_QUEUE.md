@@ -1,5 +1,118 @@
 # User-priority queue
 
+## UP-315 — Windows delivery of locally integrated magic artwork
+
+2026-10-08 user clarification: genuinely new authorized artwork belongs in
+the released game; requiring original Heroes III assets does not excuse keeping
+all new art local. Audit actual source provenance per component instead of
+assuming the importer's private classification proves redistribution is barred.
+Bundle rights-cleared new art directly; reserve local transformation for assets
+that actually incorporate original-game pixels and require that route.
+
+Status: Confirmed delivery gap, 2026-10-08. User asks how Windows GitHub
+downloaders receive the school casting colors and Guild bookmarks. Current CI
+installs/packages tracked resources only; Windows setup imports original Data,
+Maps and Mp3, but does not run the private magic-art importer. Production hooks
+therefore fall back to original art when the private fragment is absent.
+The existing importer explicitly classifies generated pixels as private
+purchaser-derived content. Do not silently upload that bundle or claim importing
+the original game currently recreates it. Determine a distribution-safe path:
+ship a reproducible local transformation of the player's assets and authorized
+new components, or provide rights-cleared replacement artwork. Acceptance:
+fresh Windows package/setup actually produces and resolves the required art,
+with provenance and complete resource manifest checks; CI source alone is not
+art-delivery evidence.
+
+## UP-314 — School-colored hero spellcasting feedback
+
+2026-10-08 resource repair frozen as candidate 0106d5d0, not yet promoted.
+Independent review hashes all 3,136 baseline resources unchanged and exactly
+874 additions matching both prior b26652 and private handoff output. All 873
+image references resolve; 864 casting frames decode to declared dimensions,
+nine guild images are 67x85 RGBA. Receipt resides in
+build/nh-magic-assets-retained-8c26a-v1-resources/ASSEMBLY-RECEIPT.json.
+Rendered runtime verification is assigned to the isolated tester; no current
+launcher change or visual acceptance is claimed from inventory alone.
+
+2026-10-08 root diagnosis: the supplied complete private set still exists in
+build/nh-magic-assets-private-v2 (864 casting PNGs and nine guild overlays).
+Current snapshot 8c26a omits both its optional resolver configuration and its
+Images/NH_magic_assets files, despite existing production hooks. This is a
+resource-retention regression, not a request for replacement user artwork.
+Restore the approved private fragment without reverting current gameplay data;
+validate references and preserve all current creature assets before promotion.
+
+Status: Audit in progress, 2026-10-08. User reports the requested hero casting
+effects do not visibly use the spell's school color. Trace the production
+casting animation, school-color definitions and currently promoted Linux
+snapshot before choosing a fix. Acceptance requires visible school-specific
+casting feedback in an isolated rendered run, including representative spells
+from all six schools; source bindings alone are not delivered acceptance.
+
+## UP-313 — Missing Mage Guild school bookmarks
+
+2026-10-08 diagnosis: same missing private resource fragment as UP-314; the
+CCastleInterface guildBooks hook is present. Earlier UP-264 delivery evidence
+does not establish retention in current snapshot 8c26a. User confirms the entire
+set was supplied; do not ask for a resend or recreate it unnecessarily.
+
+Status: Audit in progress, 2026-10-08. User asks where the school bookmarks are
+in the Mage Guild. Reconcile this report with UP-264 and distinguish final
+spellbook bookmark artwork from actual Mage Guild integration. Check source,
+resource bindings and promoted Linux snapshot. Preserve existing school rules
+and spell availability. Acceptance: the intended guild school bookmarks render
+correctly in the playable candidate, verified at native resolution.
+
+## UP-312 — Recruitment portraits still lose creature details
+
+2026-10-08 independent read-only audit: current cards use native 58x64 TWCRPORT
+without an additional card-local crop. Gargoyle frame32/33 routes still omit
+Academy composition. Magi's current image equals the authored portrait but its
+dark hood/beard hides native facial detail. Original Naga frame40 already cuts
+off the tail, requiring full foreground recomposition rather than padding that
+crop. Giant's composition mask removes the upper-left sword region. Preserve
+private comparisons in build/nh-up239-validation and do not reinstall rejected
+Gargoyle masks or claim resampling fixes the Magi face.
+
+Status: Audit in progress, 2026-10-08. Latest user screenshot
+`/tmp/codex-clipboard-MyXhhN.png` shows the categorized recruitment view:
+Gargoyle retains the snowy background; Magi's face is missing/illegible; Naga
+has no visible tail; Giant has no visible sword. Compare actual native runtime
+portraits with original/source artwork and composition masks; preserve approved
+creature appearance. Reconcile UP-239, UP-282 and UP-289 rather than erasing
+earlier failures. Acceptance requires all four corrected portraits together in
+the actual recruitment view and exact candidate/delivery evidence, not merely
+successful export or a body inside the canvas.
+
+## UP-311 — Promote latest committed Linux build to the usual launcher
+
+Delivered,2026-10-08: exact52decee72104eb48995c0c0ab46969b5f7e3735b detached
+clean build75657 and version-only relink59630 exit0 at10 jobs. Candidate8c26a113
+is checksum-frozen with independently audited graphics-only Cabir/Magi retention
+and two runtime-verified Wisp portraits; no Medic drafts or old gameplay config.
+20-second private headless All for One smoke reaches nine player-turn starts
+through day3, including AI build/recruit/movement/battles. Timeout124 is expected;
+owned processes, lock and temporary runtime links are verified cleaned.
+762 nonfatal schema lines and Shield of Chaos positiveness diagnostic remain
+explicit Phase2 findings, not clean logs or rendered/full-game acceptance.
+Atomically selected in the normal snapshot store, retaining0c6af as previous.
+Receipt: build/nh-linux-play-52decee72-DELIVERY.json. Gargoyle backgrounds remain
+open. Build CMake helper mishandles absolute worktree gitdir metadata; changing
+only private .git pointer to the equivalent relative path and relinking restores
+the honest embedded52 identity without editing committed engine sources.
+The following preparation notes are historical.
+
+Status: In progress,2026-10-08. User explicitly requests normal Linux launcher
+selection of the latest build. Pin52decee72 in an isolated detached source/build,
+build vcmiclient at10 jobs and preserve approved/private creature graphics with
+graphics-only overlays, never uncommitted Battlefield Medic code or older
+gameplay configuration. Freeze and verify immutable payload, bounded private
+headless new-game smoke, then atomically promote the same snapshot in
+build/new-horizons-linux/playable-snapshots. Preserve previous selection/saves
+and do not launch on the host display. Acceptance includes exact52 binary
+identity, resource/overlay receipt and usual wrapper resolve/verify-only.
+No full-game or rendered certification is implied by this delivery request.
+
 User-established priority, 2026-09-24: persist newly assigned tasks here and
 resolve them before resuming ordinary New Horizons implementation. Read this
 file on every work resumption. Do not remove unfinished entries or equate an
@@ -11516,6 +11629,24 @@ interleaving, extra-attack stacking, controller-transfer compatibility, initial-
 shot multi-target lookahead, localization and full binary battle-save breadth.
 
 ## UP-098 — Fortification Engineer (continuation evidence)
+
+2026-10-08 Battlefield Medic completed source/native and activated. Final
+linked build4052 exits0; native75673 and active-registry59555 each pass17/17,
+zero skips, including seven Medic principal cases and Surgeon/Quartermaster
+controls. Registry17/17 and module drift pass. Independent source review clears
+the mechanic and compatibility correction; ordinary no-effect Tent actions
+retain their historical activation behavior. Permanent restoration, shared
+AI/hover preview, battle-start/unusable-remains caps and temporary Re-animate
+post-battle cleanup are covered. Coverage235/310,75 planned,War Machines7/10.
+Wider controller/cohort combinations and rendered hover are Phase2 evidence;
+normal launcher delivery remains separate. Preparation notes below superseded.
+
+2026-10-08 Battlefield Medic implementation underway after the canonical
+permanence hold was cleared. Separate runtime/AI/hover-feedback/test owners
+implement ordinary Tent healing then floor(calculated output/2) permanent
+restoration, shared casualty-only eligibility and battle-start/provenance caps.
+Actual accepted action and post-combat permanence are required before activation.
+Current registry remains planned; no delivery or additional coverage claimed.
 
 Battlefield Medic readiness correction,2026-10-08: canonical4100 restores
 casualties with no temporary tagging. Re-animate1051-1066 explicitly supplies

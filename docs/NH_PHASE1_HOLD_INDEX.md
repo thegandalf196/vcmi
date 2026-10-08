@@ -6,8 +6,8 @@ canonical [New Horizons design](design-sources/New%20Horizons.md). That Markdown
 remains the sole authority for gameplay. The queue and functional matrix record
 current implementation questions and dependencies.
 
-Registry-derived inventory: 31 Skills, 93 active rank effects, 234 active perks,
-and 76 planned perks: 57 generic and 19 faction. This index covers only those 76
+Registry-derived inventory: 31 Skills, 93 active rank effects, 235 active perks,
+and 75 planned perks: 56 generic and 19 faction. This index covers only those 75
 perks; the six inactive combat spells are tracked separately. The current
 selection audit in [NH_FUNCTIONAL_COMPLETION_MATRIX.md](NH_FUNCTIONAL_COMPLETION_MATRIX.md)
 historically reported item-specific questions or dependencies. The user has now
@@ -53,7 +53,6 @@ new-horizons:battlecraft.overwatch	question	UP-155	Teleport/Blink interaction cl
 new-horizons:battlecraft.rapidResponse	question	UP-159	Precedence versus earned immediate Morale/Quartermaster/Second Wind activations remains unresolved; narrow ruling requested.
 new-horizons:warMachines.precisionBombardment	question	UP-098	Basic War Machines already selects attackable structural parts; distinct perk benefit remains unresolved.
 new-horizons:warMachines.breachmaker	question	UP-098	Fortification neighbor geometry and central-keep participation remain unresolved; enum order is not adjacency.
-new-horizons:warMachines.battlefieldMedic	implementation-ready	UP-098	Ordinary casualty restoration is permanent; Re-animate supplies the explicit temporary exception. Preserve casualty provenance, normal healing first, 50% calculated-heal restoration and battle-start-count cap.
 new-horizons:warMachines.fieldWorkshop	question	UP-100	Destroyed-target repair scope remains pending.
 new-horizons:discipline.espritDeCorps	question	UP-130	Mixed-faction versus Undead-presence composition penalties remain unresolved; UP152 is a retired duplicate.
 new-horizons:discipline.veteranCohesion	question	UP-094	Battle-start maximum HP versus surviving-creature capacity changes the principal below-50% trigger; choice remains unanswered.
