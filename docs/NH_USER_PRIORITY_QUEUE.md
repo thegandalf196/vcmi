@@ -2,7 +2,13 @@
 
 ## UP-319 — New Horizons executable/icon and in-game attribution
 
-Status: Requested; implementation pending maintenance migration. Present the
+Status: Desktop naming, window titles, Windows product metadata and explicit
+in-game VCMI thanks implemented; focused checks and Linux client build pass.
+Launch/package integration and rendered final candidate checks are underway.
+The application icon remains an explicit open item: no approved New Horizons
+product icon was found; unchanged original-installation icons are not silently
+redistributed. Internal engine/library identities and mobile ABI are retained.
+Present the
 game as New Horizons through executable/binary naming and launch icons, using
 the user's preferred original-installation icon where appropriate. Preserve
 engine internals, saves, supported launch/setup paths and licensing. Credit and
@@ -12,7 +18,13 @@ appearance are separate acceptance stages.
 
 ## UP-318 — Resilient pinned dependency-source preservation
 
-Status: Audit requested; inspect existing pinned dependency checkout, caches,
+Status: Exact pinned recipe snapshot preserved as ordinary repository files:
+145 upstream files, 4,945,402 bytes, with origin/revision/hash inventory and an
+offline integrity gate. Nine focused tests pass. Existing recipes, profiles,
+patches and notices are unchanged; Git metadata was retained privately before
+the dependency Gitlink was replaced. CI verifies the local snapshot before
+external acquisition. This is not an offline build: binary caches, Conan/source
+hosts, toolchains and other submodules remain external. Inspect caches,
 release source bundles, licenses and CI acquisition before choosing a vendoring
 strategy. A fixed revision prevents update drift, not upstream disappearance.
 Determine whether an in-repository preserved source snapshot is needed without
@@ -21,8 +33,37 @@ Do not change dependencies or replace a tested release through this audit.
 
 ## UP-317 — One selected runtime-art NHART package
 
-Status: Inventory and architecture mapped; packer, runtime loader, manifest and
-focused container tests are being implemented on sanitized history. User requests a deterministic, genuine versioned binary
+Status: Source implementation and linked Linux build pass. Genuine NHART v1,
+deterministic packer/verifier, bounded native loader, early builtin/module mounts,
+explicit overlay ordering and Windows/Linux delivery validators are implemented.
+Current pack: 3,137 selected resources plus its embedded manifest; 27,202,460
+bytes; SHA256 `1a91c08b1efa146af5d8f7df0d8a99a5739c94e280fedb13e8fd4d11ae555fc8`.
+Two independent assemblies are byte-identical. Complete payload hashes verify;
+77 focused container/install/packaging/art tests and 13 native loader tests pass.
+Loose runtime exports were retained as unmounted development inputs, not deleted.
+Clean installation verifies both mounts and absence of duplicate loose artwork.
+Background rendering exercised Academy, Fort, Guild, Castle Hall, Cabir hover
+and movement, school spellbook and generic combat-resource UI; named load traces
+prove packaged resolution. Root inspected Guild and Cabir screenshots.
+Same-byte OS-warm raw reads: median 15.72 ms NHART versus 47.49 ms loose for
+25,229,127 payload bytes. Single-run startup 652/648 ms and sampled scene peak
+633,948/635,244 KiB; no material regression observed in these limited comparisons,
+not full performance certification or cold-cache/frame-time evidence.
+Testing exposed a preexisting Cabir Repair toolbar frame omission; its provisional
+original Cure symbol binding is repaired and native registration test passes.
+Final installed pack was rendered in a six-creature authored scenario: Cabir,
+Master Cabir, Wisp, Greater Wisp, Mage and Arch Mage all appear; Wisp variants
+move/hover with outlines, Arch Mage and Master Cabir shoot with named packed
+animation-frame traces. The repaired toolbar omission no longer appears.
+Unexercised states include Wisp attacks, base Cabir melee/base Mage attacks,
+repair/death and school glows on the final package. The test remained bounded;
+all owned clients/displays exited cleanly and profile locks were released.
+Combat frame-time/cold-cache measurements and actual downloadable release
+verification remain pending. Current source changes are not yet a published
+player release. Preexisting broad content assertions (registered-spell roster,
+Morale text and hero-list/rank expectations) remain Phase 2 findings, not a
+reason to change gameplay during packaging.
+User requests a deterministic, genuine versioned binary
 NewHorizons.nhart, not ZIP, containing selected creature/town/spell/portrait/
 effect/UI art and visual descriptors, including selected modifications and
 composites. Preserve accurate provenance, original-installation dependencies,
@@ -63,6 +104,13 @@ Do not delete or replace release attachments without separate confirmation.
 The documentation portability checker uses synthetic examples only.
 
 ## UP-315 — Windows delivery of locally integrated magic artwork
+
+Current direction: UP-317 supersedes the earlier private-only exclusion policy
+for selected modified and composite runtime visuals. The user's explicit NHART
+instruction includes finished Guild composites and original-based creature/UI
+art, with truthful provenance and unchanged original archives remaining external.
+Earlier checkpoints below describe historical delivery, not current selection
+or an instruction to strip selected composites from new packages.
 
 2026-10-08 actual Windows artifact checkpoint: run37769575838 succeeds for
 6c9b9df7c. Independent download/archive audit verifies all three outer payload
