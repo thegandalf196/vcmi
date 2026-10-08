@@ -1,13 +1,13 @@
 # Phase 1 planned-perk hold index
 
-Updated: 2026-10-06. This is a navigation index for the planned perk entries in
+Updated: 2026-10-07. This is a navigation index for the planned perk entries in
 `config/newHorizonsPerks.json`, not a new rule source or an amendment to the
 canonical [New Horizons design](design-sources/New%20Horizons.md). That Markdown
 remains the sole authority for gameplay. The queue and functional matrix record
 current implementation questions and dependencies.
 
-Registry-derived inventory: 31 Skills, 93 active rank effects, 228 active perks,
-and 82 planned perks: 63 generic and 19 faction. This index covers only those 82
+Registry-derived inventory: 31 Skills, 93 active rank effects, 230 active perks,
+and 80 planned perks: 61 generic and 19 faction. This index covers only those 80
 perks; the six inactive combat spells are tracked separately. The current
 selection audit in [NH_FUNCTIONAL_COMPLETION_MATRIX.md](NH_FUNCTIONAL_COMPLETION_MATRIX.md)
 historically reported item-specific questions or dependencies. The user has now
@@ -85,8 +85,6 @@ new-horizons:spellcraft.counterpressure	question	UP-180	Accepted-cast effect map
 new-horizons:spellcraft.overwhelmingFormula	implementation-ready	UP-121	User settles independent penetration composition,2026-10-07; production/first-use/AI validation pending.
 new-horizons:wisdom.arcaneMemory	question	UP-054	Neutral Adventure acquisition policy remains pending.
 new-horizons:wisdom.sage	question	UP-074	Pre-acquisition visit timing is recorded for both Sage rows; keep Wisdom Sage distinct from Learning Sage.
-new-horizons:warcasting.enchantedCommand	implementation-ready	UP-122	User resolves Protect pair/Second Wind selected stack only,2026-10-07; captured empowerment and next-activation expiry already mapped; implementation pending.
-new-horizons:warcasting.combatCasting	implementation-ready	UP-121	User settles independent penetration composition,2026-10-07; captured empowerment plus shared penetration implementation pending.
 new-horizons:warcasting.reactiveWeave	question	UP-215	Half-strength readiness replacing versus stacking with stronger existing readiness remains unresolved.
 new-horizons:logistics.rapidEmbarkation	question	UP-103,UP-208	Navigation composition: 10% final boarding cost versus halved 5% remains unresolved.
 new-horizons:logistics.pursuitMarch	question	UP-104,UP-209,UP-193	Daily recovery cap and zero-effective-recovery use consumption remain unresolved.

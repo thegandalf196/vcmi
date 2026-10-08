@@ -1,5 +1,22 @@
 # New Horizons implementation sprints
 
+## Active Phase1 slice — 2026-10-07, resolved Warcasting rules
+
+Enchanted Command and Combat Casting are now source/native verified;
+root integrated CMake, generated module, coverage/data and native gates. Precise
+Protect/SecondWind recipients and independent penetration were user-approved.
+Keep captured empowerment after readiness is spent, including delayed hostile
+damage; no first-cast shortcut for Overwhelming Formula.23 focused metadata/
+helper guards passed after recorded drift repairs. Final ten-job linked build
+passes and42 focused native cases pass;28 Python guards/module drift pass.
+Verified coverage advances to230 perks. Independent blocking review passes.
+Delayed Plague/SoulChain capture, current-controller defenses and live/detached
+Morale parity are verified. Phase2 retains full SecondWind projection lifecycle,
+queued-Morale valuation and neutral Mine/Firewall capture. Next: commit this
+bounded slice, then atomic Skeleton Transformer now its admission choices are
+resolved. Preserve selected0c6af Linux candidate during source work; this build
+has not been promoted for play.
+
 ## Active user slice — 2026-10-07, supplied Cabir/Wisp handoffs
 
 UP288 takes priority. Both Downloads archives are extracted privately and their

@@ -39,6 +39,17 @@ Cabir adventure-map sprite at an inappropriate scale/anchor. Inspect actual
 delivered HandoffMap/encounter role versus native map-creature conventions,
 including frame dimensions/offset/footprint; preserve authored combat sprites.
 Acceptance needs rendered map evidence, not merely references resolving.
+Native-map checkpoint: geometry-only original DEF inspection establishes64x64,
+44px body and foot(43,62). Both supplied forms use one fixed transform across14
+walk frames; original inputs are pinned/unchanged. Four focused exporter tests
+and independent Sol High replay/reference/privacy review pass. Private map-only
+overlay and review GIFs exist; rendered acceptance and launcher delivery pending.
+Rendered/delivery checkpoint: authored disposable scenario on frozen0c6af31a
+renders the neutral Cabir beside Solmyr at native map scale; detailed log loads
+NH_CabirHandoffNativeMap.json. Root inspected screenshot at native resolution.
+Independent4014-file audit passes. Candidate now selected for normal launcher;
+prior409acc retained. The map-size report is resolved for baseCabir; Master
+map role shares testedtransform but its rendered appearance remains unverified.
 User reproduced missing creatures in usual
 Linux launcher. Selected5b293 payload copied source Tower config over private
 handoff graphics; runtime log loads old Cabir v3 and inherited vanilla Mage.
@@ -145,6 +156,12 @@ Mage still cropped in old categorized recruitment layout. Selected409acc uses
 46dd executable; newer committed native-card layout is not yet delivered.
 Inspect both portrait resource geometry and role actually consumed; do not
 claim four-role acceptance from full combat sprites or correct filename alone.
+Quick-recruit delivery checkpoint: isolated authoredAcademy scenario opens
+recruitment with R on exact0c6af/client3d5ac169e. Full58x64 Mage head/body/staff
+render without prior crop; root inspected native screenshot in
+Downloads/provisory/nh-linux-0c6af-runtime/mage-quick-recruit/. Normal launcher
+now selects this candidate, including both Gog ranged references. Other reported
+portrait roles, actual hover/repair audio and overflow modal remain open.
 
 Recruitment revision in progress,2026-10-07: bounded Sol Medium worker owns
 QuickRecruitmentWindow/CreaturePurchaseCard presentation and its focused layout
@@ -582,6 +599,18 @@ bonus collection/rendering. Phase2 retains those interaction/refresh/layout
 checks; normal Linux snapshot remains4de7cd42f and does not contain this slice.
 
 ## UP-282 — Academy Gargoyle background and recruitment Arch Mage colours
+
+Renewed screenshot report,2026-10-07: the large recruitment window shows Stone
+Gargoyle on the old snowy Tower background while adjacent Cabir/Golem/Magi
+portraits use Academy scenery. Inspect both Gargoyle lines and all portrait
+bindings; no fix is established by adjacent creatures having new backgrounds.
+Preserve approved creature silhouettes and native geometry. Acceptance requires
+actual recruitment rendering on the delivered candidate plus binding checks
+for both Stone/Obsidian sizes; source/export alone is insufficient.
+Reference: /tmp/codex-clipboard-S8Bz7Z.png (written description survives expiry).
+Renewed the narrow mask-cleanup question after this report; previous generated
+matte failures remain unapproved. Do not install known background fragments or
+claim the user has authorized replacing the Gargoyle artwork.
 
 2026-10-07 bounded art correction: HoMM3 Art/built-in generation produced Stone
 matte r6, then one focused r7 revision. Mechanical58x64 comparisons restore
@@ -5360,6 +5389,14 @@ promotion yet.
 
 ## UP-197 — Necropolis Skeleton Transformer HP conversion
 
+User resolves admission,2026-10-07: zero-output selections reject unchanged;
+fill existing Skeleton stacks within Leadership and then freed selected slots,
+reject any remaining overflow atomically/unchanged. Both prior design holds
+below are superseded. Canonical building row updated. Sol Medium now owns pure
+planner and focused fixture; root restores capability/UI/AI drafts only after
+the planner exists, with bounded atomic-server ownership. No inferred destructive
+sacrifice, surplus deletion or unvalidated frontend state mutation.
+
 Draft preservation checkpoint,2026-10-07: root-owned incomplete runtime/UI/AI
 planner consumers are safely isolated in stash
 ad4474def55e5bb8cfc5190384289726d55b374b for focused Protect verification.
@@ -5394,6 +5431,13 @@ selections unchanged versus permit destructive zero-output sacrifice. Runtime
 implementation waits for those answers; do not invent them. No placeholder
 planner implementation or server mutation was committed. Frozen creature
 preview remains usable and unchanged while this source slice is in progress.
+Readiness checkpoint: undefined planner is confirmed declaration-only in the
+parked stash; atomic server still follows legacy per-slot substitution. Exact
+ownership contract is ready. Renewed only the two unanswered safety choices
+(zero-output unchanged rejection; remaining-overflow unchanged rejection).
+Do not infer answers from preselected options. The new NH authority branch must
+also validate market allowsTrade before planning; existing legacy visitor omits
+this check. No drafts restored or runtime behavior changed during Warcasting build.
 
 
 Readiness refresh,2026-10-07: current server still performs legacy per-stack
@@ -9479,11 +9523,23 @@ No source edits, spell registration or coverage increase is claimed by mapping.
 
 ## UP-122 — Warcasting Enchanted Command
 
+Source/native verified,2026-10-07: production accepted-Order recipient grants,
+captured empowerment, precise Protect/SecondWind scope and detached bonus
+isolation pass focused native execution. Final linked ten-job build exits0;
+42-case shared gate passes (including seven Enchanted authority/parity cases).
+Legal Basic→Advanced offer acquisition is tested without bypassing progression.
+Phase2 retains complete detached SecondWind lifecycle and queued-Morale AI
+valuation nuances. Source has not been promoted into the selected Linux snapshot.
+
 User ruling,2026-10-07: only Protect's Protector/Ward pair and Second Wind's
 selected stack receive Enchanted Command Morale; never an army-wide aura for
 these Orders. Canonical row updated. Status: implementation-ready; prior
 recipient-question hold below superseded. Implementation/native/AI still pending.
 Shared helper/newtest files staged without changing frozen build inputs.
+Production integration now assigned to Sol Medium with bounded authoritative
+accepted-Order and detached-AI ownership. Root registers helper/native fixture;
+activation receives no coverage credit until linked build and focused native
+execution pass. Parallel Combat Casting worker owns separate spell mechanics.
 SecondWind immediately begins an extra activation and consumes next-activation
 bonuses without a new Morale roll under existing rules; preserve this behavior,
 record interaction for Phase2 rather than alter activation economy implicitly.
@@ -9506,11 +9562,22 @@ an unrelated whole-army aura. No source changes or activation occurred.
 
 ## UP-121 — Warcasting Combat Casting
 
+Source/native verified,2026-10-07: independent penetration composition captures
+Warcasting before consumption, including serialized Plague/SoulChain markers,
+current-controller defenses, collateral and detached prediction. Shared42-case
+native gate passes after linked ten-job build;28 Python guards and module drift
+pass. Overwhelming Formula is not complete from its nine isolated foundation
+tests. Neutral Mine/Firewall capture remains Phase2; no playable promotion.
+
 User ruling,2026-10-07: combine penetration independently.20% and15% ignore32%
 of Magical Damage Reduction (`1-product(1-p)`), not35% or strongest20%.
 Shared canonical damage rule updated for all applicable penetration effects.
 Status: implementation-ready for Combat Casting/Overwhelming Formula; prior
 composition-question hold superseded. Production/native/AI validation pending.
+Sol Medium now implements independent target-qualified composition and Combat
+Casting using captured Warcasting empowerment. Overwhelming Formula's first
+actual qualifying damage lifecycle remains separate pending implementation;
+do not substitute first cast, or credit it from this composition change.
 
 Readiness refresh,2026-10-06: penetration composition is presented as a narrow
 choice, with20% and15% yielding32% independently,35% additively or20% strongest

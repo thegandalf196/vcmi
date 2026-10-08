@@ -3310,7 +3310,7 @@ A unique building that provides a bonus only while defending its town should als
 |Building|New Horizons effect|
 |---|---|
 |Necromancy Amplifier|A visiting Necropolis hero gains +10 percentage points to Necromancy raising for 7 days. Multiple Amplifiers do not stack; visiting another refreshes the duration.|
-|Skeleton Transformer|Conversion pools aggregate sacrificed HP across all selected stacks in one transaction. Prototype output: floor(50% of sacrificed aggregate HP / Skeleton HP) whole Skeletons; leftover HP is discarded.|
+|Skeleton Transformer|Conversion pools aggregate sacrificed HP across all selected stacks in one transaction. Prototype output: floor(50% of sacrificed aggregate HP / Skeleton HP) whole Skeletons; leftover HP is discarded. A zero-output conversion is rejected without changing the army. Fill existing Skeleton stacks within their Leadership limits, then use slots freed by the sacrifice; if any resulting Skeletons still cannot fit, reject the entire transaction without losing any creatures.|
 |Cover of Darkness|Retains information denial and re-shrouding. It is more strategically relevant because Dimension Door requires a visible legal destination.|
 |Unearthed Graves / growth structures|Retain Undead-growth functions; exact growth values are deferred.|
 
