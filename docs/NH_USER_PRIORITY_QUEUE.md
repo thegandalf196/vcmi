@@ -8538,6 +8538,27 @@ source, not this new slice. Root proceeds to coherent commit/push.
 
 ## UP-180 — Spellcraft Counterpressure
 
+2026-10-08 source/native acceptance: completed-cast semantic bonus comparison
+and actual unit changes now cover both harmful and beneficial enemy effects.
+Beneficial Dispel arms readiness; identical Slow refresh and rejected empty
+Dispel do not. All12 Counterpressure cases plus32 adjacent/mechanic cases pass
+in native90122 (44/44, zero skips); linked98331 and data17/17/module drift pass.
+Registry active; full-perk coverage credited, normal delivery still pending.
+Active-registry native89197 passes44/44 in11.051s, zero skips, with receipts
+in build/nh-preview-ai-validation.jUrtT2RY/native-up097-up180-active.log/XML.
+Broader reflected/compound/hazard/lifecycle interactions remain Phase2.
+
+Canonical readiness correction,2026-10-08: independent Sol High review finds
+the no-op Dispel hold unnecessary. Canonical4455 requires an effect on the army;
+Dispel1243 removes existing effects, so selecting an empty recipient alone is
+not an effect. However, the trigger is not limited to harmful changes: enemy
+Dispel removing our Curse also affects our army. Audit the existing cast-local
+recorder for that missing beneficial-change consumer before activating the
+whole perk. Do not repeat verified ordinary damage/debuff infrastructure or
+treat target bookkeeping as an actual effect. This is an interpretation of
+existing authored rules, not a new design amendment; no activation or increased
+coverage is claimed until complete principal-path validation.
+
 Latest acceptance,2026-10-06: ordinary-path partial runtime passes the client/test
 build and15/15 activated native cases in2.099s, zero skips/errors. Receipts:
 `UP180-damage-repair-build.log`, `UP180-projection-fixture-build.log` and
@@ -9582,6 +9603,18 @@ frozen repaired Bastion fixture. The unregistered Mine Layer fixture may finish
 independently; do not change production or CMake during72269.
 
 ## UP-136 — Armorer Defiant
+
+Canonical readiness correction,2026-10-08: runtime audit and independent Sol
+High review agree the old debuff-only question is not supported by canonical4000.
+Ignore the first nonmagical enemy retaliation-denial effect per hero-side round,
+including explicit innate blocking, No Quarter and Expert Shroud denial; retain
+ordinary reach, available retaliation capacity, living-target and magical gates.
+Ignoring No Quarter's compound application includes its linked Morale penalty;
+Shroud's independent Basic flanking damage remains. This is implementation-ready,
+not implemented or activated; do not substitute one free retaliation per stack.
+Acceptance must cover actual denial/retaliation and shared side allowance,
+No Quarter atomic exemption, ordinary geometry/magical exclusions, detached AI
+and versioned state. Earlier unanswered hold notes are historical.
 
 Status: Blocked on retaliation-denial scope, 2026-10-02. Read-only map complete:
 No Quarter applies a non-magical NO_RETALIATION debuff, but innate blocking,
@@ -11484,6 +11517,17 @@ shot multi-target lookahead, localization and full binary battle-save breadth.
 
 ## UP-098 — Fortification Engineer (continuation evidence)
 
+Battlefield Medic readiness correction,2026-10-08: canonical4100 restores
+casualties with no temporary tagging. Re-animate1051-1066 explicitly supplies
+that exception, while1069 contrasts army-preserving restoration. Independent
+Sol High review confirms ordinary permanent restoration, not an invented
+one-battle cohort. Implement normal surviving-creature healing first, followed
+by up to50% of calculated Tent healing for eligible casualties within the
+battle-start count. Preserve destroyed-remains and temporary-cohort accounting.
+This planned perk is now implementation-ready; require actual accepted Tent
+healing/restoration, postcombat survival, shared AI/UI output and focused gates
+before activation. No source or coverage credit from this interpretation alone.
+
 Breachmaker's first map identifies a genuine adjacency gap: current structural
 HP and enum/hex identity exist, but no fortification-neighbor relation does.
 The user is asked neighboring outer-wall sections with the central keep excluded
@@ -11549,6 +11593,34 @@ Independent final activation/fixture review finds no remaining blocker. Root
 will integrate this verified source checkpoint with a normal commit/push.
 
 ## UP-097 — War Machines Expert targeting and damage
+
+2026-10-08 Counter-Battery source/native acceptance: scoped manual Citadel-tower
+machine choices, actual tower/Ballista shots,150% final enemy-machine damage,
+ordinary/unselected/legacy controls and normal AI candidate/forecast parity
+pass seven dedicated cases within native90122's44/44, zero skips. Linked98331,
+data17/17 and module drift pass; independent review has no blocker. Registry
+active, full-perk coverage credited; normal launcher delivery remains pending.
+Active-registry native89197 passes44/44 in11.051s, zero skips, with receipts
+in build/nh-preview-ai-validation.jUrtT2RY/native-up097-up180-active.log/XML.
+Engineer125% Siege/unrestricted control preserved. Fractional custom-provider
+overlap and wider controller/autonomous-turn matrices remain Phase2.
+
+Canonical readiness correction,2026-10-08: Counter-Battery's deliberate enemy
+war-machine targeting is explicit in canonical4103, with +50% final damage
+specified in5267. Independent Sol High review confirms automatic preference
+alone cannot satisfy that requirement; overlapping control access is not a
+conflict with Fortification Engineer. Implement scoped manual machine choices
+for Counter-Battery-only towers when a legal machine target exists, preserving
+normal automatic behavior otherwise and Engineer's unrestricted targeting and
+exclusive125% Siege scaling. Shared action legality, UI target discovery,
+authoritative shots and AI must agree; do not narrow automatic shot legality or
+bypass range/immunity. Runtime, accepted-request fixture and detached AI fixture
+have separate Sol Medium owners; root owns data/CMake/build/docs/Git.
+Acceptance: real Citadel tower's chosen machine shot without Engineer, Ballista
+equivalent, shared150% final damage, nonmachine/unselected/legacy controls,
+ordinary-target rejection for scoped-only control, minimum AI targeting and
+focused linked/native validation. No activation or coverage credit before gates;
+no new art or normal Linux promotion implied. Earlier held notes are historical.
 
 Status: Read-only implementation map, 2026-10-01. Piercing Bolts50a85e3bf is
 pushed and the worktree was clean on resumption. Battlefield Medic remains mapped

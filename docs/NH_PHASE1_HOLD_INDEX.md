@@ -6,8 +6,8 @@ canonical [New Horizons design](design-sources/New%20Horizons.md). That Markdown
 remains the sole authority for gameplay. The queue and functional matrix record
 current implementation questions and dependencies.
 
-Registry-derived inventory: 31 Skills, 93 active rank effects, 232 active perks,
-and 78 planned perks: 59 generic and 19 faction. This index covers only those 78
+Registry-derived inventory: 31 Skills, 93 active rank effects, 234 active perks,
+and 76 planned perks: 57 generic and 19 faction. This index covers only those 76
 perks; the six inactive combat spells are tracked separately. The current
 selection audit in [NH_FUNCTIONAL_COMPLETION_MATRIX.md](NH_FUNCTIONAL_COMPLETION_MATRIX.md)
 historically reported item-specific questions or dependencies. The user has now
@@ -48,14 +48,13 @@ multiple comma-separated queue entries.
 ```text
 ID	Status	UPref	Existing recorded issue / reason
 new-horizons:armorer.unyielding	lack-producer	UP-167	No nonmagical forced-displacement producer; ordinary movement and spell relocation are not substitutes.
-new-horizons:armorer.defiant	question	UP-136	Applied debuffs versus intrinsic nonmagical retaliation blockers, and No Quarter's linked Morale penalty, remain unresolved.
+new-horizons:armorer.defiant	implementation-ready	UP-136	Canonical nonmagical enemy denial includes explicit innate/No Quarter/Expert Shroud causes; ignore No Quarter's linked application, preserve ordinary retaliation geometry/capacity and magical restrictions. One hero-side use per round.
 new-horizons:battlecraft.overwatch	question	UP-155	Teleport/Blink interaction clarification remains open.
 new-horizons:battlecraft.rapidResponse	question	UP-159	Precedence versus earned immediate Morale/Quartermaster/Second Wind activations remains unresolved; narrow ruling requested.
 new-horizons:warMachines.precisionBombardment	question	UP-098	Basic War Machines already selects attackable structural parts; distinct perk benefit remains unresolved.
 new-horizons:warMachines.breachmaker	question	UP-098	Fortification neighbor geometry and central-keep participation remain unresolved; enum order is not adjacency.
-new-horizons:warMachines.battlefieldMedic	question	UP-098	Matrix says persistence awaits clarification.
+new-horizons:warMachines.battlefieldMedic	implementation-ready	UP-098	Ordinary casualty restoration is permanent; Re-animate supplies the explicit temporary exception. Preserve casualty provenance, normal healing first, 50% calculated-heal restoration and battle-start-count cap.
 new-horizons:warMachines.fieldWorkshop	question	UP-100	Destroyed-target repair scope remains pending.
-new-horizons:warMachines.counterBattery	question	UP-097,UP-098	Automatic enemy-machine tower preference versus additional manual targeting remains unresolved; multiplier alone is incomplete.
 new-horizons:discipline.espritDeCorps	question	UP-130	Mixed-faction versus Undead-presence composition penalties remain unresolved; UP152 is a retired duplicate.
 new-horizons:discipline.veteranCohesion	question	UP-094	Battle-start maximum HP versus surviving-creature capacity changes the principal below-50% trigger; choice remains unanswered.
 new-horizons:discipline.heroicSpirit	question	UP-094	Extra retaliation surviving the immediate Morale activation and expiring on the following activation remains unresolved; generic next-activation expiry would erase it immediately.
@@ -83,7 +82,6 @@ new-horizons:spellcraft.crossSchoolFormula	question	UP-132	Multi-school relation
 new-horizons:spellcraft.concentration	question	UP-069	Target-count definition remains unresolved.
 new-horizons:spellcraft.extendSpell	question	UP-134	Unusual spell-lifetime/expiry scope remains unresolved.
 new-horizons:spellcraft.preciseCasting	question	UP-133	Time Stop/Earthquake scope remains unresolved despite principal cases.
-new-horizons:spellcraft.counterpressure	question	UP-180	Accepted-cast effect map and no-op trigger boundary remain unresolved.
 new-horizons:wisdom.arcaneMemory	question	UP-054	Neutral Adventure acquisition policy remains pending.
 new-horizons:wisdom.sage	question	UP-074	Pre-acquisition visit timing is recorded for both Sage rows; keep Wisdom Sage distinct from Learning Sage.
 new-horizons:warcasting.reactiveWeave	question	UP-215	Half-strength readiness replacing versus stacking with stronger existing readiness remains unresolved.
@@ -189,7 +187,7 @@ Canonical/queue review found no newer ruling clearing these existing holds:
 
 | Identity | Queue | Remaining decision |
 |---|---|---|
-| Confusion | UP043 | Impossible behavior, sole Confounder result and consumed activation |
+| Confusion | UP043 | Selected Attack enemy with neither legal attack nor nonstationary advance: resolved Attack/no-op versus Defend. Other fallback/consumption choices are settled. |
 | Polymorph | UP066 | Phantom conversion and reversion when no original footprint fits |
 | Reality Warp | UP179 | Beneficiary-side ownership of transferred effects |
 | Pandemonium | UP123/191 | Repeated debuff counting and per-debuff perk composition |

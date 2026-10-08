@@ -1,5 +1,31 @@
 # New Horizons implementation sprints
 
+## Phase1 implementation — 2026-10-08, Counter-Battery and Counterpressure
+
+Verified and active: final linked98331 exits0 at10 jobs; native90122 passes
+44/44 in11.306s, zero skips. Registry17/17 and module drift pass; independent
+review finds no blocking production or final-fixture issue. Coverage232→234/310,
+generic161→163/220, planned78→76; War Machines and Spellcraft each6/10.
+Active-registry native89197 also passes44/44 in11.051s, zero skips; receipt:
+build/nh-preview-ai-validation.jUrtT2RY/native-up097-up180-active.log/XML.
+Failed compiler, overkill assumptions,
+identical-refresh semantics and lifetime receipts remain in release failures.
+No normal playable promotion or new artwork. Next ready full item: UP098
+Battlefield Medic; UP136 Defiant also has a settled canonical contract.
+The following preparation notes are historical.
+
+In progress, not activated: independent canonical review clears two unnecessary
+holds. Counter-Battery explicitly allows deliberate enemy-machine targeting and
+150% final damage; Counterpressure requires actual army effects, not merely a
+selected recipient, and does not restrict qualifying changes to harmful ones.
+Separate runtime/AI/fixture owners implement the former while a disjoint spell
+recorder/fixture pair repairs the latter. Root owns configuration, serialized
+10-job builds, focused native gates and Git. Coverage remains232/310 until those
+principal execution paths pass. Preserve Engineer's unrestricted tower control
+and125% Siege separately from scoped Counter-Battery-only control. Existing
+general control providers remain unchanged; fractional custom-provider overlap
+is recorded for Phase2. No normal launcher or artwork changes are included.
+
 ## Phase1 implementation — 2026-10-08, Perfect Fortune
 
 Verified and active: linked99001/incremental10288 exit0 at10 jobs; final
