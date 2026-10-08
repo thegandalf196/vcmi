@@ -5,6 +5,32 @@ resolve them before resuming ordinary New Horizons implementation. Read this
 file on every work resumption. Do not remove unfinished entries or equate an
 implementation with a verified fix in the user's playable version.
 
+## UP-310 — Wisp Conflux 58×64 portrait staging and runtime consumption
+
+Status: In progress,2026-10-08; unblocked UP291 background clause.
+Cached staging source is now implemented and focused tests pass12/12
+(`/usr/bin/python3 -B -m unittest tools.tests.test_new_horizons_wisp_portraits -v`).
+Independent Sol High review reports no blocking finding. Runtime staging and
+compact-portrait graphical acceptance are still pending; this does not resolve
+the user's separate Gargoyle background report. CLI/symlink negative fixtures
+and cleanup after mid-copy I/O failure are deferred hardening, not acceptance.
+Isolated run14687 shows both full stack-detail live animations on correct
+Conflux CRBKGELE scenery, but the compact battle portrait still renders the raw
+transparent58×64 Wisp over brown leather. Root inspected greater-stack-panel.png
+under Downloads/provisory/wisp-portrait-runtime-20261008.cniC2a. These are distinct
+consumers: CCreaturePic versus TWCRPORT via largeIconName. Cached corrected
+exports already exist, but the frozen private candidate's two Images paths
+still match untouched supplied foreground hashes. Add explicit safe cached-
+export staging at the unchanged two runtime paths, not another art revision or
+new image binding. Preserve32px icons and every battle frame. Sole Sol Medium
+owns existing export tool; separate Sol Medium owns synthetic staging guards;
+root owns private assembly/docs/Git and Sol High review. Acceptance: preflight
+manifest/hash/58×64/opaque output, fresh disjoint overlay, no overwrite or partial
+invalid staging, exact large-only paths, unchanged source/small/frame bytes,
+focused Python tests and actual compact portraits for both forms in isolated
+combat. Purchaser scenery/composites remain private/uncommitted; no normal
+launcher promotion, new artwork approval or full current-package certification.
+
 ## UP-309 — Pending Confusion next-activation feedback
 
 Status: Source/native verified (delivery pending),2026-10-08; required UP043
@@ -1117,6 +1143,17 @@ bonus collection/rendering. Phase2 retains those interaction/refresh/layout
 checks; normal Linux snapshot remains4de7cd42f and does not contain this slice.
 
 ## UP-282 — Academy Gargoyle background and recruitment Arch Mage colours
+
+Latest user reiteration: snowy Gargoyle in the recruitment screenshot remains
+an unresolved delivered defect, not a corrected source asset. Rechecking the
+exact portrait resource and usable existing matte before changing the binding.
+Bounded audit confirms both forms still consume TWCRPORT32/33 with baked-in
+snow; Academy AssetGenerator composition omits those two frames. There is no
+approved ready-to-stage replacement. Stone r7 and Obsidian r3 still retain
+architecture or damage the silhouette, so remain unregistered. Next: clean the
+two native mattes preserving original foreground, review native/enlarged output,
+then register privately and verify recruitment. The historical unanswered cleanup
+question is not treated as a permanent authority blocker to this renewed request.
 
 Renewed rendered evidence,2026-10-08: user screenshot
 `/tmp/codex-clipboard-S8Bz7Z.png` shows Stone Gargoyle still using snowy Tower
