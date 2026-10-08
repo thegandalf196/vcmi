@@ -1,5 +1,35 @@
 # New Horizons implementation sprints
 
+## Phase1 checkpoint — 2026-10-08, Peacemaker danger/exploration consumer
+
+UP301 completes NK2's previously hero-unaware danger query for protected guard
+areas. Two existing queries now use the shared visitor-aware callback; no periodic
+scan, gameplay rule or valuation constant changes. Actual exploration selection,
+serialized request and authoritative safe arrival pass. Linked34865 exits0 at10
+jobs; native44037 passes6/6 in2.423s, zero skips. Independent review, module drift
+and whitespace pass. Compiler/calendar-fixture failures are preserved with their
+corrections; assertions were not weakened. Subterranean runtime and full autonomous
+turn/save-expiry matrices remain Phase2. Coverage231/310 perks,61/67 spells,
+8/8 Orders unchanged: minimum AI coverage increases, not content identities.
+The main ledger's stale Warcasting and Adventure effect rows were reconciled
+against registry/current execution checkpoints. Normal Linux0c6af unchanged.
+Next highest missing mapped town mechanic is Glyphs adventure aura once its
+renewed radius/overlap decisions are answered; continue other unblocked coverage
+selection meanwhile. Wisdom/Spellcraft/Warcasting sampled holds remain explicit.
+
+## Phase1 next-item selection — 2026-10-08, town consumers
+
+Bounded independent AI/UI audits confirm source consumers for Reservoir visits,
+House scroll purchases/equipment, Yard purchases/automatic Siege visit rewards,
+sampled automatic faction training/blessings and special-building construction.
+Reservoir/Nexus/Astronomy required tooltip information is also present. No new
+principal omission found; no runtime or rendered acceptance added by inspection.
+Do not revisit these implemented paths with exhaustive tests during Phase1.
+Glyphs aura is missing but still needs its explicit geometry/overlap decisions;
+renewed both questions. Next bounded selection checks Wisdom/Spellcraft/Warcasting
+prerequisites and required consumers, without claiming all79 planned perks or the
+whole specification blocked. Normal launcher and authored gameplay unchanged.
+
 ## Phase1 checkpoint — 2026-10-08, Wisp Long Reach AI
 
 UP300 completes Wisp's previously discarded distant attack consumer. Shared

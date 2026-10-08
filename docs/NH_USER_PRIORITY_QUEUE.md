@@ -5,6 +5,33 @@ resolve them before resuming ordinary New Horizons implementation. Read this
 file on every work resumption. Do not remove unfinished entries or equate an
 implementation with a verified fix in the user's playable version.
 
+## UP-301 — Peacemaker safe passage minimum AI danger consumer
+
+Status: Verified (delivery pending),2026-10-08. Linked34865 exits0 at10 jobs;
+native44037 passes6/6 in2.423s, zero skips: three new AI danger/exploration cases
+plus three adjacent authoritative Peacemaker/serialized-state cases. Actual
+ExploreNeighbourTile selection leads to a serialized CCallback movement request
+accepted by the server, safe arrival without battle and unchanged neutral army.
+Other-hero/null/pre-trigger/direct-attack danger and explicit next-week expiry
+controls pass. Independent Sol High review finds no blocker. Receipts:
+build/nh-peacemaker-danger-ai-build-calendar-fixture.log and
+build/nh-preview-ai-validation.jUrtT2RY/native-up301-repaired.log/XML. Earlier
+compile/calendar-fixture failures remain in release lessons. Subterranean exit
+is source-covered only; full autonomous turn/save-expiry matrices remain Phase2.
+Normal launcher unchanged; one minimum AI consumer, no new perk/spell identity.
+
+Original scope: Canonical Peacemaker protects its selected hero's
+passage through the chosen neutral stack's guarded area until week-end; a direct
+visit deliberately attacks and ends protection. Authoritative passableFor and
+hero-aware getGuardingCreatures already honor this state, but NK2 FuzzyHelper's
+tile/subterranean-exit danger calls ignore their visitor and count the pacified
+guardian. ExploreNeighbourTile then rejects safe passage as dangerous.
+Use the existing hero-aware guard query, preserving null-visitor legacy behavior
+and direct creature objectDanger. Worker owns FuzzyHelper.cpp/new focused fixture;
+root owns CMake/build/docs/Git. Acceptance: protected adjacent danger0 and actual
+selected exploration/request path; other hero, pre-trigger, week-expiry and direct
+attack stay dangerous. No Peacemaker rule change or tactical tuning.
+
 ## UP-300 — Wisp Long Reach minimum AI attack consumer
 
 Status: Verified (delivery pending),2026-10-08. Final linked58248 exits0 at10
@@ -5433,6 +5460,12 @@ town departure and repeated same-day benefit need clarification before encoding
 those boundaries. Fountain is independently unblocked and remains this slice.
 
 ## UP-200 — Fortress Glyphs of Fear siege Defense and local Morale
+
+2026-10-08 next-item audit: the adventure aura is still absent in production;
+the implemented siege clause does not close it. Renewed the two narrow pending
+questions: inclusive circular/same-level versus square range, and single -1
+versus one penalty per overlapping Fortress. No rule chosen automatically and
+no production edit until resolved. This hold does not block other Phase1 items.
 
 Siege-clause acceptance2026-10-05: repaired both-target build55816 and final
 build exit0. Native88293 passes4/4 in1.466s, zero skips, including the3 real
