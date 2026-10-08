@@ -2,6 +2,17 @@
 
 ## UP-315 — Windows delivery of locally integrated magic artwork
 
+2026-10-08 publication checkpoint: casting assets and scoped-school selector
+are pushed through 6c9b9df7c. Windows preflight 37766980052 passes; fresh full
+Windows run 37769575838 targets 6c9b9df7c and is not yet a downloadable success.
+Independent bounded recovery finds no separate authored Guild cutouts/masks in
+retained magic-art outputs or the supplied Downloads locations. The recorded
+source hashes remain in PRIVATE_MAGIC_ASSETS.json; misleadingly named native
+transparent-cutout files are full-room comparisons, not safe standalone inputs.
+Public Guild publication awaits original inputs; private Linux Guild rendering
+can still use the retained purchaser-dependent patches. User source question
+is pending. Do not drop current art or publish the merged room pixels.
+
 2026-10-08 user explicitly authorizes redistribution of the supplied new
 symbols/glows. Exactly864 standalone transparent casting PNGs are now present
 in the source resource tree with casting-only resolver configuration and
@@ -37,6 +48,29 @@ with provenance and complete resource manifest checks; CI source alone is not
 art-delivery evidence.
 
 ## UP-314 — School-colored hero spellcasting feedback
+
+Delivered locally, 2026-10-08: usual Linux launcher now selects verified
+snapshot 4c887972, built from pushed source 6c9b9df7c. All six schools have
+actual accepted-cast and visible, aligned, self-clearing glow evidence across
+two bounded private runs (CH00 attacker). Root inspected all six contacts.
+Eight PNG frames load for each school. Both GUI runs cleanly release owned
+clients, Xvfb displays and profile locks. A separate 20-second headless All for
+One smoke reaches day 5 / thirteen player-turn starts; timeout 124 is expected,
+client is gone, lock released and runtime links removed. Known nonfatal schema
+diagnostics remain deferred, not clean-log or full-game certification.
+Delivery receipt: build/nh-school-glow-6c9b9df7c-DELIVERY.json. Previous 8c26a
+snapshot is retained. Other hero variants/defender-side combinations remain
+Phase 2 coverage; no new artwork approval is inferred from runtime checks.
+
+2026-10-08 actual 6c9b9df7c/4c887972 candidate run verifies Light (yellow),
+Nature (green), Sorcery (blue) and Havoc (orange). Root inspected native-frame
+contacts: effects align with the caster's hand and clear on return to idle;
+all eight school-specific CH00 PNG frames load for each accepted cast.
+Evidence: Downloads/provisory/magic-six-school-casting-6c9b9df7c. Client and
+private Xvfb exit 0, lock is released, no runtime links remain. Combat ended
+before Shadow/Chaos due to test-army retaliation, not an overlay failure.
+Changed fixture now uses equal 5000 Guard stacks and passes native 1/1 with zero
+skips; two remaining casts are assigned separately. Normal launcher unchanged.
 
 2026-10-08 focused validation: repaired six-school map export passes1/1 with
 zero skips under the isolated native profile; all six representatives are
@@ -92,6 +126,15 @@ casting feedback in an isolated rendered run, including representative spells
 from all six schools; source bindings alone are not delivered acceptance.
 
 ## UP-313 — Missing Mage Guild school bookmarks
+
+Delivered locally, 2026-10-08: root inspected actual Castle Mage Guild on the
+same promoted 6c9b9df7c / 4c887972 candidate. Light/Sorcery book ribbons and
+separate exterior vista render correctly; screenshot is
+Downloads/provisory/magic-six-school-casting-6c9b9df7c/shadow-chaos-equal-armies-v2/02-guild.png.
+All nine retained private Guild patches remain in the checksum-frozen resource
+tree. Other faction rooms are not re-certified by the Castle screenshot.
+Public Windows bookmark delivery remains open under UP-315, pending separate
+authorized component inputs; do not equate local delivery with redistribution.
 
 2026-10-08 diagnosis: same missing private resource fragment as UP-314; the
 CCastleInterface guildBooks hook is present. Earlier UP-264 delivery evidence
