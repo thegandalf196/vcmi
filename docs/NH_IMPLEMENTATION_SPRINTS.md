@@ -1,5 +1,26 @@
 # New Horizons implementation sprints
 
+## Phase1 checkpoint — 2026-10-08, authored fixed-line specialty coverage
+
+UP304 uses explicit named-bonus provenance rather than replacing the original
+legacy package with an alias-generated package. Exact original pointers become
+eligible for existing saved-rule conversion; no new state or polling. Sol Medium
+owns loader/schema/content/native fixture; root registration/docs/build/Git;
+Sol High reviews independently. Audit extends the same evidenced gap from
+Pasis/Monere to nine other single-root stat packages. Dragon-wide Mutare variants
+need a membership policy, and upgrade-grant specialties are outside this subtype.
+Linked26469 passes at10 jobs; native20930 passes29/29 in19.973s, zero skips.
+Twenty-two actual-package canonical/legacy cases cover all eleven heroes; seven
+specialty cases include malformed declarations, unmarked old saves and adjacent
+alias behavior. Independent Sol High review has no blocker. Initial protected
+loader fixture failure is retained; production API remains unchanged.
+Receipts: build/nh-fixed-creature-specialties-fixture-repaired-build.log and
+build/nh-preview-ai-validation.jUrtT2RY/native-up304.log/XML. Broader mod-composition
+and playable verification remain Phase2. No perk/spell identity increase or
+normal-launcher promotion is claimed. Next: continue the highest-priority
+unblocked user-queue functional omissions; this subtype does not certify the
+whole hero-redesign/specialty family.
+
 ## Phase1 checkpoint — 2026-10-08, Order reasons and Reserve AI producer
 
 UP302/303 linked73953 exits0 at10 jobs. Native15322 passes26/26 in9.994s,

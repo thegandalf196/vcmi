@@ -7,7 +7,18 @@ implementation with a verified fix in the user's playable version.
 
 ## UP-304 — Fixed Conflux creature specialties bypass canonical conversion
 
-Status: Open (implementation-ready),2026-10-08; bounded UP216 continuation.
+Status: Verified (delivery pending),2026-10-08; bounded UP216 continuation.
+Eleven single-root authored packages now have explicit conversion provenance.
+Linked26469 exits0 at10 jobs; native20930 passes29/29 in19.973s, zero skips.
+All eleven actual heroes/forms pass canonical and missing-rule thresholds,
+original damage/speed removal or retention, prototype integrity and save/refresh.
+Unmarked saved Pasis/Monere preserve the fixed package under current rules;
+malformed declarations fail without partial provenance. Independent Sol High
+review finds no blocker. Receipts: build/nh-fixed-creature-specialties-fixture-
+repaired-build.log and build/nh-preview-ai-validation.jUrtT2RY/native-up304.log/XML.
+Initial protected-loader fixture compilation failure is retained in release
+lessons. Broader mod composition and playable verification remain Phase2;
+normal launcher unchanged, no perk/spell identity credit. Original scope follows.
 Pasis/Monere's built-in fixed +3 Attack/Defense packages for Psychic/Magic
 Elementals do not use specialty.creature and therefore bypass existing canonical
 conversion provenance. New Horizons requires +1 Speed/+1 Initiative and +1
@@ -22,6 +33,24 @@ no old+3 stacking, saved marker and unchanged legacy controls; linked/focused
 validation and review. Independent audit evidence: canonical specialty table
 and config/heroes/conflux.json fixed packages; handler conversion records only
 alias-generated creature provenance. This is the next ready functional item.
+
+Architecture checkpoint,2026-10-08: a plain specialty.creature replacement
+would change fresh legacy/missing-rule instances from fixed+3 to standard
+Heroes III scaling. Use explicit named-bonus conversion provenance instead:
+retain the original authored bonus objects, mark their exact pointers for
+canonical conversion, and reuse the existing saved-rule/marker gates. No new
+serialized state or polling. Sol Medium owns loader/schema/patch/fixture;
+root owns registration, documentation, serialized builds and Git. Native and
+linked verification are completed above; this is not playable acceptance.
+
+Independent follow-on audit also identifies exact single-line packages on
+Lacus/Kalt(Water), Thunar/Erdamon(Earth), Ignissa/Fiur(Fire), Kilgor(Behemoth),
+Undead Haart(Black Knight), and Xeron(Devil). Their named original packages can
+use the same metadata-only conversion; include them in this bounded slice if
+the shared fixture establishes actual loaded coverage. Mutare/Mutare Drake's
+dragon-wide limiter is not one upgrade line and remains a separate unresolved
+membership policy; Dracon/Gelu upgrade-grant specialties are not stat packages.
+Do not infer whole-family completion from the initial two-hero test.
 
 ## UP-303 — Demonic Reserve minimum adventure AI producer
 
