@@ -17801,6 +17801,31 @@ and identified playable delivery.
 
 ## UP-004 — Generic hero combat-resource panel
 
+2026-10-08 Metamagic principal rendered acceptance: frozen normal snapshot
+5d1c66b6/source7e09da9dd shows canonical Solmyr's Basic Metamagic1/1 with Hero
+Action Available. An accepted normal Magic Arrow leaves uses1/1 and changes the
+normal action to Spent. Ordinary C/book access admits an additional Magic Arrow
+without a creature/round advance; actual transport/log confirms the Metamagic
+cast, then uses0/1 and the normal action remains Spent. Root inspected05/10/12/
+13/14 in Downloads/provisory/generic-combat-resource-up004-metamagic-S48YibTc.
+Help accurately explains consume-on-extra-cast and same-round expiry. Contextual
+Spell-control source/expiry was not separately captured, so that clause remains
+open alongside Bloodrage and the wider viewport/status matrix. Native capture
+is800×600 with half-fit embedded combat, not full-scale icon certification.
+Dedicated ordinary scenario fixture compiles in build34412 at10 jobs and passes
+1/1, zero skips, in0.680s under build/nh-metamagic-ui-export.MLRjOc3r; it verifies
+normal initialization, legal army, two-cast affordability, same-turn BATTLE path
+and gzip export/reload, not the casting itself. Map SHA256:
+98d74c6a957b2786cbc20133301627f8b30790c7575d0b6dac345780be9d0684.
+Independent fixture review has no blocker; no gameplay defaults changed.
+Actual client trace /tmp/nh-up004-meta.S48YibTc/profile/cache/vcmi/VCMI_Client_log.txt
+records normal Arrow at79566 and explicit Metamagic second cast at80364.
+Client2106933 and private Xvfb2106881 exit0, lock is free, runtime dirs are gone;
+root confirms both PIDs absent. The124-second battle-ready interval exceeds
+the90-second interaction contract by34 seconds; record this limitation and do
+not repeat the run or claim timing-bound acceptance. First-to-extra cast is51s.
+No full UP004 closure, new identity credit or Final artwork approval.
+
 2026-10-08 partial rendered acceptance: on the retained normal Linux snapshot
 5d1c66b6/source7e09da9dd, ordinary scenario initialization learns Basic Divine
 Mandate. The generic row shows1/1 and normal Hero Action Available; accepted
