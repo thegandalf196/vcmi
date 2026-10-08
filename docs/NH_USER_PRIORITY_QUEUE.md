@@ -5,8 +5,10 @@
 Status: Desktop naming, window titles, Windows product metadata and explicit
 in-game VCMI thanks implemented; focused checks and Linux client build pass.
 Linux launch/package integration passes; the usual launcher selects the frozen
-candidate built from `111704555`, retaining the previous snapshot. Windows
-downloadable-package verification remains pending.
+candidate built from `363be3e07`, retaining the previous snapshot. Windows
+artifact11575332032 from2bcfd278d passes independent downloaded-byte naming,
+PE closure, notices and NHART verification; native Windows launch/icon appearance
+remain unverified.
 The application icon remains an explicit open item: no approved New Horizons
 product icon was found; unchanged original-installation icons are not silently
 redistributed. Internal engine/library identities and mobile ABI are retained.
@@ -35,6 +37,18 @@ duplicating existing recoverable source distributions or losing attribution.
 Do not change dependencies or replace a tested release through this audit.
 
 ## UP-317 — One selected runtime-art NHART package
+
+2026-10-08 downloadable Windows checkpoint: run37827298302 succeeds for exact
+source2bcfd278d7fe3e9ab06bc5c18f393c53d0f53a6d. Artifact11575332032 is actually
+downloaded and independently verified:3 outer payloads,1065 player files,
+3137 selected NHART entries,12 notices,2 mounts,26 PE closure files and16
+dynamic-media roots. Player ZIP SHA256:
+`10c3c7969cfcdccc6d3516e2655cb126a62d21cecd263734964df20afbf3e25d`.
+Notice/source comparisons account for Windows-only line endings without changing
+artifact bytes. This artifact includes selected runtime artwork but predates
+the Esprit/Serendipity implementation363be3e07. No native Windows gameplay,
+rendered acceptance or release replacement is claimed. Private downloaded-byte
+audit report is retained separately from public source notes.
 
 Status: Source implementation and linked Linux build pass. Genuine NHART v1,
 deterministic packer/verifier, bounded native loader, early builtin/module mounts,
