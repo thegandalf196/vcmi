@@ -5,6 +5,76 @@ resolve them before resuming ordinary New Horizons implementation. Read this
 file on every work resumption. Do not remove unfinished entries or equate an
 implementation with a verified fix in the user's playable version.
 
+## UP-298 — Master Genie minimum AI support-casting path
+
+Status checkpoint: Verified (delivery pending),2026-10-08. Linked12145 exits0;
+five dedicated native cases pass as part of14/14 in6.494s, zero skips. Actual
+BattleAI MONSTER_SPELL request is forwarded to the server, receives an eligible
+random buff and spends one cast/activation without hero Mana. Complete mean,
+zero outcomes and unchanged live RNG/state are exercised. Negative outcomes
+remain source-covered only. Independent Sol High review finds no blocker;
+full-turn/large-army tactical/performance coverage is Phase2. Selected normal
+Linux0c6af is not promoted. Earlier in-progress scope follows.
+
+Status: In progress,2026-10-07; bounded UP023/UP220 creature audit.
+Canonical Academy roster retains Master Genie's beneficial spellcasting. Server
+and human paths work, but BattleAI enumerates SPELLCASTER only, while this
+creature supplies RANDOM_SPELLCASTER. Its HP-only creature spell scorer also
+cannot value pure buffs. Extract the existing read-only eligible-beneficial pool
+unchanged; retain the server's single uniform draw. AI evaluates the full pool's
+expected benefit on detached state and submits the ordinary creature action for
+the chosen friendly recipient, never selecting the actual random outcome.
+Sol Medium owns callback/evaluator/new fixture; root owns CMake/build/Git.
+Acceptance: actual AI submission and accepted support, cast/activation consumed,
+empty-pool/no-casts controls, zero/negative outcomes retained in the mean, no
+preview mutation or RNG draw. Preserve other creature policies and bound the
+work to current eligible recipients/outcomes; broader tactical tuning is Phase2.
+This is a missing minimum AI consumer, not the deferred random-selection quality
+matrix or permission to change the retained creature's gameplay.
+
+## UP-297 — Elemental Orb minimum AI equipment-selection hook
+
+Status checkpoint: Verified (delivery pending),2026-10-08. Nine dedicated native
+cases pass in the14/14 feature gate, with matching actual-element equipment
+scores beating a weaker incumbent, map-ban/nonmatching/untagged/no-Spellbook
+controls and unchanged legacy SPELL_DAMAGE scoring. Linked12145 and independent
+review pass. This verifies the score consumed by equipment selection, not a full
+autonomous adventure equip sequence. Normal0c6af remains unchanged.
+
+Status: In progress,2026-10-07; bounded UP023/UP210 implementation audit.
+Canonical artifact conversion already supplies25% final magical damage through
+ELEMENTAL_SPELL_DAMAGE with actual-element tags. Nullkiller2 equipment scoring
+recognizes legacy SPELL_DAMAGE only and returns zero for these converted Orbs;
+there is no hero-price fallback, so they cannot replace even weak positive-score
+occupied equipment. This missing consumer is Phase1 minimum AI, not balance
+retuning. Sol Medium owns AIUtility.cpp and focused Orb fixture; root CMake/Git.
+Acceptance: positive score for actually known/available matching-element combat
+spells, no school-to-element inference, unrelated/untagged/removed spells remain
+irrelevant, legal equipment comparison and legacy behavior preserved; focused
+native/data gate, linked build and independent review. No playable delivery claim
+from source scoring alone; autonomous strategic use remains Phase2.
+
+## UP-296 — Teleport highlights every legal destination
+
+Source/compile checkpoint,2026-10-08: all-legal preview and stable caster/
+controller/node cache are implemented. Six structural guards and linked12145
+pass; independent cache blocker repaired before delivery. Existing shared legality
+remains the oracle. Rendered one-/two-hex selection and cancel are being tested
+only on a frozen private candidate; no normal launcher promotion. Adjacent
+five legacy mock failures are deferred, not silently counted as passing tests.
+
+Status: In progress,2026-10-07; bounded UP023 required P0 UI audit.
+Canonical casting UI requires every legal Teleport destination highlighted after
+stack selection. Current client validates only the hovered cell; generic range
+rendering does not enumerate legal destinations. Add read-only destination
+enumeration using existing casting prediction, shade with native battlefield
+cells and invalidate on selected stack/battle changes. Preserve clicks, cancel,
+authoritative casting and all spell rules. Sol Medium owns BattleActionsController
+and BattleFieldController; root owns docs/build/Git. Acceptance: all and only
+playable legal destinations, selected-stack/two-hex/blocked-cell legality from
+shared rules, no repeated per-frame simulation scan, cancellation clears preview;
+focused checks/build/review. Actual rendered/playable acceptance is separate.
+
 Statuses: Open; In progress; Implemented (verification pending); Verified
 (delivery pending); Resolved. Record blockers explicitly. Preserve resolved
 entries and their validation/delivery evidence.

@@ -1,5 +1,29 @@
 # New Horizons implementation sprints
 
+## Active Phase1 slice — 2026-10-07, missing preview and minimum AI consumers
+
+2026-10-08 checkpoint: linked12145 exits0; feature native77828 passes14/14
+in6.494s, zero skips (nine Orb, five Genie). Six Teleport structural checks pass.
+Independent review has no remaining blocker after stable-cache repair. Adjacent
+gate22/27 retains five unchanged stale Teleport mocks for Phase2. Private
+Teleport rendered run is underway; selected normal0c6af remains unchanged.
+Identity totals stay231/310 perks,61/67 combat spells,8/8 Orders; progress is
+two minimum AI consumers and one required P0 preview, not invented new content.
+
+UP296 implements canonical all-legal Teleport destination highlighting through
+existing read-only casting validation and native cell shading; no spell-rule
+changes. UP297 closes converted elemental Orbs' zero equipment score in NK2,
+using actual damage-element tags and eligible known spells, not old Schools.
+Independent client/NK2 owners work in parallel; root handles integration and
+focused validation at10 build jobs. No perk/spell identity increase is expected:
+these complete required UI/minimum AI paths for existing content. A separate
+Master Genie audit identifies missing random-beneficial creature casting AI;
+UP298 now implements the unchanged eligible pool and detached full-pool expected
+value, preserving the authoritative random draw. Independent lib/BattleAI owner
+does not overlap NK2/client surfaces. Broader interaction
+and autonomous strategic valuation remain Phase2, not substitutes for source
+consumer coverage. No Linux launcher promotion is authorized by this slice.
+
 ## Active Phase1 slice — 2026-10-07, Overwhelming Formula
 
 UP290 playable boundary now accepted on unchanged selected0c6af: full-stack
