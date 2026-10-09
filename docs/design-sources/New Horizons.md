@@ -1859,6 +1859,17 @@ Duration:
 
 When Polymorph expires, surviving aggregate HP is converted back into the original creature type using the same system.
 
+Expiry and Dispel restore the original footprint at its current position or the
+nearest legal battlefield position. Exception: if no legal original footprint
+exists anywhere, retain the current form, surviving HP and position, show
+restoration pending, and retry at later round boundaries. Never overlap another
+stack, remove creatures or heal them to force restoration. This exceptional
+delay does not renew the spell's normal duration.
+
+For Phantom Army, transform the copied offensive creature body's aggregate HP;
+its separate current and initial Integrity remain unchanged. Integrity does not
+determine the transformed offensive creature count.
+
 Therefore damage suffered while transformed remains real.
 
 If the transformed stack falls to 410 HP, it returns with approximately 410 aggregate HP worth of its original creatures.
@@ -4423,7 +4434,7 @@ Without this School Skill, ordinary sources can teach only Level 1-2 spells of t
 |Confounder|Basic|Confusion cannot produce the same resolved behavior twice consecutively on the same target when a different legal behavior is available. If its random result matches that target's previous Confusion result, reroll until a different legal result is obtained. If only one legal behavior exists, allow that result even if it repeats; never reroll indefinitely. Trapped Wander resolves as Defend.|
 |Frenzied Curse|Basic|A Berserked creature gains +2 Speed during its forced activation.|
 |Mindbreaker|Advanced|Forgetfulness also suppresses the target's passive offensive creature abilities for its duration.|
-|Shapeshifter|Advanced|Polymorph generates two random same-tier forms and automatically applies the form with the lower Army Value. Ties use canonical creature order.|
+|Shapeshifter|Advanced|Polymorph independently draws two random same-tier forms with replacement and automatically applies the form with the lower Army Value of the whole transformed stack, using its exact HP-converted creature count. Ties use canonical creature order.|
 |Fate Dealer|Advanced|Hand of Fate generates two random legal spill targets. If exactly one of them is hostile to the caster, that hostile stack automatically receives the spill damage; otherwise one of the two is selected randomly.|
 |Reality Breaker|Advanced|Reality Warp may target any two legal stacks rather than requiring one friendly and one enemy stack.|
 |Pandemonium Master|Expert|Pandemonium deals +25% damage per counted debuff.|

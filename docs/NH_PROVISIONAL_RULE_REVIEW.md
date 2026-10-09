@@ -1,15 +1,43 @@
 # New Horizons provisional rule review
 
+## Fate Dealer spill candidate draws
+
+Status: reasoned implementation-ready interpretation; not activated.
+
+Generate two independent uniform legal spill candidates with replacement,
+consistent with Shapeshifter. If exactly one is hostile to the caster's current
+ownership, choose it; otherwise choose fairly between the draws, including
+duplicates. Preserve the existing half-primary-actual-HP-loss amount, then apply
+the selected recipient's own defenses. Do not reroll an immune or resistant
+recipient. Review replacement versus distinct candidates later; the canonical
+rule already specifies the hostile preference and random same-side choice.
+
+Production ownership: scripts/spells/damage.lua collateral selection and
+AI/BattleAI/SpellTargetsEvaluator.cpp expectation. With H hostile and F friendly
+candidates and N=H+F, each hostile has probability(H+2F)/N² and each friendly
+F/N²; without the perk each is1/N. Focused evidence must include duplicate and
+same-side draws, controlled ownership, recipient defenses without reroll, exact
+weighted AI expectation without live RNG, and paid AI with Orders competing.
+This preparation is not implementation or accepted coverage.
+
 ## Polymorph footprint restoration and Phantom body
 
-Status: provisional interpretation; next-slice preparation, not activated.
+Status: provisional implementation; principal25/25 and foundations17/17 pass.
+
+Final exact-pair native evidence: linked64681, principal24.210s and
+foundations1.831s, zero failures/errors/skips. Receipt:
+build/nh-polymorph-native.WSrQen7z/receipt.md. Paid registered AI casting with
+Orders and active Shapeshifter passes. Runtime, AI, status and protocol guards
+are accepted; older preparatory notes below preserve the selection rationale.
+No binary form snapshot, bespoke artwork or rendered delivery claim.
 
 Use the approved nearest-legal-position policy for the original footprint on
 expiry or Dispel. If no legal original footprint exists anywhere, retain the
 current form, HP and position and retry safe restoration rather than overlap,
 kill or heal creatures. The resulting delayed restoration is an exceptional
-duration rule requiring a second look and a Pending Changes amendment before
-activation; it must be visible rather than silently presented as ordinary expiry.
+duration rule requiring a second look. Its Pending Changes amendment is now
+integrated into canonical Polymorph; status must expose the exception rather
+than silently present it as ordinary expiry.
 
 For Phantom Army, preserve the copied offensive body's aggregate creature HP
 when transforming; retain its separate current/initial Integrity, ordinary
@@ -26,6 +54,14 @@ Integrity resets health; refresh client creature forms after Dispel; and use
 separate damage caches for distinct form outcomes. Retain the existing explicit
 binary-snapshot rejection until a full form-state save contract is implemented.
 These are required implementation work, not accepted coverage.
+
+Shapeshifter uses two independent uniform same-tier draws with replacement;
+compare whole transformed-stack Army Value using the exact HP-converted count,
+not a single creature's value. Resolve ties by canonical creature order. This
+interpretation and Phantom body policy are integrated into canonical wording
+under the user's provisional-decision authorization. Review whole-stack value
+versus per-creature value and repeated-draw policy later. Runtime and weighted
+detached forecasts must agree; no native proof yet.
 
 ## Reality Warp transferred-effect beneficiaries
 

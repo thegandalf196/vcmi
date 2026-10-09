@@ -6,9 +6,9 @@ canonical [New Horizons design](design-sources/New%20Horizons.md). That Markdown
 remains the sole authority for gameplay. The queue and functional matrix record
 current implementation questions and dependencies.
 
-Registry-derived inventory: 31 Skills, 93 active rank effects, 252 active perks,
-and 58 planned perks: 43 generic and 15 faction. This index covers only those 58
-perks; the two inactive combat spells are tracked separately. The current
+Registry-derived inventory: 31 Skills, 93 active rank effects, 253 active perks,
+and 57 planned perks: 42 generic and 15 faction. This index covers only those 57
+perks; the one inactive combat spell is tracked separately. The current
 selection audit in [NH_FUNCTIONAL_COMPLETION_MATRIX.md](NH_FUNCTIONAL_COMPLETION_MATRIX.md)
 historically reported item-specific questions or dependencies. The user has now
 resolved Battlefield Mastery and Last Stand. Mastery is now source/native verified
@@ -34,6 +34,14 @@ AI placement remain Phase2 review items; adjacent39/40 includes the known
 preexisting v2/Morale fixture failure. No rendered/playable promotion is claimed.
 
 Status meanings:
+
+Polymorph/Shapeshifter pass25/25 principal and17/17 foundation native cases,
+zero skips/errors/failures, after linked64681. Their source, AI, pending UI and
+protocol guards are accepted; Shapeshifter is removed from the planned table.
+Combat66/67 and perks253/310 (generic178/220, faction75/90). Receipt:
+build/nh-polymorph-native.WSrQen7z/receipt.md. Provisional policies remain
+reviewable; binary form snapshots, authored art and rendered delivery are not
+claimed. Earlier counts below describe historical checkpoints.
 
 Mire Shaper and Miracle Worker pass24/24 principal native cases, zero skips,
 after linked50268 and fixture-only relink74808. Their rows are removed below.
@@ -99,7 +107,6 @@ new-horizons:shadowMagic.plaguebearer	question	UP-113	Normal-limit definition re
 new-horizons:havocMagic.demolitionist	question	UP-139	Structural-perk stacking and fixed-landmark destructibility remain unresolved; baseline structural producer is verified.
 new-horizons:havocMagic.meteorologist	question	UP-139	Structural stacking and fixed-landmark destructibility remain unresolved.
 new-horizons:havocMagic.cataclysm	question	UP-111,UP-139	Eligible magical-obstacle and fixed-landmark filters remain unresolved.
-new-horizons:chaosMagic.shapeshifter	dependency	UP-066	Polymorph battle-local creature-form behavior is a prerequisite.
 new-horizons:chaosMagic.fateDealer	question	UP-060	Two collateral draws with replacement versus distinct targets remains unresolved; base eligible pool is settled.
 new-horizons:chaosMagic.realityBreaker	dependency	UP-179	Depends on Reality Warp; its target-scope question remains recorded.
 new-horizons:spellcraft.crossSchoolFormula	question	UP-132	Multi-school relation/eligibility interpretation remains unresolved.

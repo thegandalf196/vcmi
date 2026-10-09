@@ -1,5 +1,150 @@
 # User-priority queue
 
+## Accepted Polymorph and Shapeshifter — 2026-10-09
+
+Linked64681 exits0. Final exact-pair principal25/25 passes in24.210s and
+foundations17/17 in1.831s, zero failures/errors/skips. Isolated paid AI1/1
+passes in3.272s with canonical Power Liches, legal Wait and unmodified Orders.
+Root verifies XML and source/private hashes; all native processes terminate.
+Receipt: build/nh-polymorph-native.WSrQen7z/receipt.md. Initial21/25 and24/25
+pairs/receipts remain private with diagnoses; assertions were not weakened.
+Coverage66/67 combat,253/310 perks (178 generic/75 faction); planned57
+(42 generic/15 faction). Skills31/31, ranks93/93 and Orders8/8 unchanged.
+Source/native acceptance does not promote the launcher or new artwork; authored
+Polymorph art is Not done and binary form snapshots retain explicit rejection.
+Wider interactions remain Phase2. Root integrates this checkpoint separately
+from Fate Dealer's ongoing Lua/tests; no unrelated user artwork/tools are staged.
+
+## Next coverage preparation — Fate Dealer and Reality Warp
+
+Read-only workers map Fate Dealer's existing actual collateral producer and
+AI expectation. The provisional two-IID-draw policy is recorded in the rule
+review ledger; implementation remains pending the Polymorph checkpoint. Runtime
+Lua, AI expectation, tests and root registry/help have separable ownership.
+No source activation or accepted coverage follows from this mapping.
+
+Fate Dealer runtime and focused tests are assigned independently to the Lua
+damage producer and existing Hand of Fate test TU, with no AI/registry ownership.
+Registry remains planned until its own production/AI/native gates. Upcoming
+Polymorph fixture relink requires the compiled TU to hold at a safe checkpoint;
+Lua also freezes before native execution through the shared private runner.
+
+Reality Warp's recipient legality must reuse deterministic parsed conditions,
+not recast admission, costs or RNG. Captured Hypnotize ceiling, shooter/living
+traits, control sidecars and Soul Chain references require explicit adapters;
+missing legacy captures retain the original effect rather than recompute it.
+Typed Polymorph is excluded, Spell Lock/Time Stop endpoints prohibited. Live
+collection and atomic shared application remain missing production work.
+
+## Polymorph and Shapeshifter production implementation — 2026-10-09
+
+Accepted36233e7e2 is pushed and its exact remote tip verified. Runtime, detached
+AI, event-driven client form/status refresh and focused lifecycle tests have
+separate owners. Root owns registration, canonical amendments, help, module
+generation, test wiring, serialized ten-job builds and Git. Reviewer checks
+the previously identified marker-aging, Phantom load/death, Dispel refresh and
+per-outcome cache hazards. No activation/coverage from a planner alone.
+
+Provisional policy: original footprint restores at the nearest legal position;
+if none exists, retain form/HP/location and retry later round boundaries. A
+validated battle-local pending flag distinguishes this from a normal final
+round. Phantom copied offensive body HP is separate from Integrity. Shapeshifter
+draws twice independently with replacement and keeps lower whole transformed
+stack Army Value, ties canonical creature order. Record these for a second look.
+Accepted totals stay65/67 combat and252/310 perks until production admission,
+linked build and focused native gates pass; no art/launcher promotion implied.
+
+Runtime, AI, UI and lifecycle10 source checkpoints are frozen. Independent
+review requires a single append-only safe-form protocol feature before any
+packet prefix is written, and raw pending-JSON type validation before load reset.
+The protocol worker has separate packet/version ownership; runtime owner handles
+the JSON check. These prevent old receivers from performing unsafe restoration
+or silently ignoring malformed pending state. Existing binary form-snapshot
+rejection remains; do not claim midbattle saving. Root waits for these freezes
+before the serialized build, not concurrent or moving-input compilation.
+
+All source owners freeze. Safe-form protocol and raw JSON guards are implemented;
+independent review reports no production blocker. Serialized build27221 is live
+at ten jobs,822 scheduled steps due to required shared-state/protocol changes.
+Final principal filter includes lifecycle11, protocol2, AI6 and status6 (25);
+focused form-foundation/placement/result controls add17. Private runner:
+build/nh-polymorph-native.WSrQen7z, binary-empty pending the terminal exact pair.
+Data17/17, registration1/1 and generated-module parity pass. No native or
+coverage claim from source activation; do not move compiled inputs mid-build.
+
+Build27221 terminates1 at13/822; isolated66259 confirms CStack's derived
+afterNewRound wrapper still accepts one argument and hides the new base method.
+Runtime owner now has narrow CStack.h/cpp forwarding ownership. Preserve derived
+round hooks, record the failure and retry only after the correction freezes.
+No native execution or accepted coverage increase has occurred.
+
+The CStack wrapper correction freezes with all derived hooks retained. Retry63872
+is live,806 scheduled steps, ten jobs. Root verifies the two forwarding hunks;
+preserve this handle rather than restarting on an observation timeout. Native
+runner WSrQen7z remains binary-empty pending terminal success. No accepted
+coverage or playable promotion yet.
+
+Retry63872 terminates1 on the lifecycle fixture's incomplete SetStackEffect.
+The tester adds its explicit defining include without changing expectations.
+Serialized retry41913 is live at ten jobs,381 remaining steps. Preserve failed
+build evidence and the exact next linked pair; accepted counts remain unchanged
+until the principal25 and adjacent17 native cases pass.
+
+Independent bounded review finds no remaining blocker; fixture expectations
+are unchanged. Obstacle TTL aging does not alter blocked geometry before the
+restoration scan, so the differing aging order has no demonstrated unsafe
+landing result. Record harmonization/coverage for Phase2 rather than claiming
+a current defect. Build41913 remains live; native acceptance pending.
+
+Build41913 exits0 at379/379, both client and test executable linked. Tester is
+authorized to refresh the private runner and copy/verify the exact pair, then
+execute principal25 and adjacent17 sequentially with isolated XDG paths and
+dummy audio/video drivers. Native counts and XML still pending; no coverage,
+launcher or rendered promotion follows from linking alone.
+
+First principal25 native gate:21 pass/4 fail, zero skips/errors,22.669s. Preserve
+original XML/log. Runtime owner diagnoses two rejected Dispel casts; protocol
+owner identifies serializer-inserted null fields in the roundtrip comparison;
+AI owner diagnoses an Order chosen instead of Polymorph. No assertions or
+production rules are weakened. Independent adjacent17 passes17/17 in1.830s
+on the same pair. Accepted totals remain65/67 combat and252/310 perks.
+
+Both test-only corrections freeze and independent review finds no blocker.
+Dispel uses real defender Defend before a paid attacker cast; protocol checks
+the emitted payload plus every authored field/type; the paid AI scenario uses
+real enemy Wait and retains canonical stats, all Orders and positive forecast.
+Serialized relink4333 is live at ten jobs, seven scheduled steps. Preserve the
+first pair/results and rerun corrected principal25 plus adjacent17 on the new
+exact pair only after terminal success. No production scorer adjustment.
+
+Relink4333 exits0 at4/4. Tester is authorized to preserve the first engine pair
+and original failed logs/XML, then copy/hash-verify the corrected pair and run
+principal-retry25 plus adjacent-retry17 in the same isolated environment.
+No accepted coverage change until corrected native results are checked.
+
+Corrected pair principal24/25 passes, zero errors/skips,22.664s; adjacent17/17
+passes again in1.830s. Dispel and exact protocol controls now pass. Sole remaining
+failure is the paid-AI fixture's positive forecast assertion: actual -523.600159
+for its Archangel scenario, even with legal Wait. Do not alter production scoring
+to force a harmful cast or discard unfavorable random outcomes. AI owner now
+diagnoses a genuinely useful same-tier weakening scenario using canonical
+creatures and unchanged Orders. Both native processes ended; original and retry
+pairs/receipts preserved. Accepted coverage remains65/67 and252/310.
+
+Read-only AI diagnosis proposes a meaningful ranged Elite target: Power Liches
+1000 at(14,5), existing Pikemen2000 at(6,5), and real enemy Wait. Native Polymorph
+can remove the shooter advantage at distance eight without excluding stronger
+random outcomes. Only the paid scenario changes; the Archangel weighted-mean
+test stays unchanged. Canonical stats, Orders, positive forecast and actual
+paid-cast/HP/RNG assertions remain. Source frozen, score/selection unproven until
+the bounded relink and exact native rerun.
+
+Independent review clears the bounded ranged-threat fixture. Relink64681 exits0
+at3/3. Tester first probes the one paid-AI case, then principal25/adjacent17 if
+it passes, preserving the earlier24/25 pair. Fate Dealer's dormant Lua selector
+is separately frozen and its test TU unchanged; registry remains planned.
+No production scoring changes or Polymorph accepted coverage yet.
+
 ## Accepted Mire Shaper and Miracle Worker checkpoint — 2026-10-09
 
 Linked50268 and fixture-only relink74808 exit0. Final exact-pair native24/24

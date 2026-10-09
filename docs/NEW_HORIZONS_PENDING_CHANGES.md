@@ -15,7 +15,11 @@ entries here and thereby recreate a permanent override layer.
 
 ## Awaiting integration
 
-### Polymorph impossible-footprint restoration — 2026-10-09
+None currently awaiting integration.
+
+## Integrated history
+
+### Polymorph impossible-footprint restoration — 2026-10-09 (integrated)
 
 Provisional decision under the user's authorization to resolve rule ambiguity:
 Polymorph normally restores its original body after two rounds or Dispel, using
@@ -28,10 +32,11 @@ immediate Dispel. It must be represented accurately in status/help text.
 
 Affected canonical section: Chaos School / Polymorph, restoration and duration.
 Second-look question: whether another explicit no-space policy is preferable.
-Awaiting canonical integration; production implementation and focused evidence
-remain separately tracked in the coverage and provisional-rule ledgers.
-
-## Integrated history
+Integrated into Chaos / Polymorph together with the Phantom body/Integrity
+distinction and explicit Shapeshifter independent draws/whole-stack Army Value.
+These reasoned interpretations remain in the second-look ledger. Production
+implementation and focused evidence remain separately tracked; integration of
+wording is not gameplay completion.
 
 ### Elemental Convergence terrain completion — 2026-10-09 (integrated)
 
