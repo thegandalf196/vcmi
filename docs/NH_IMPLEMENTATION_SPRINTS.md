@@ -1,5 +1,24 @@
 # New Horizons implementation sprints
 
+## Estates/Swift accepted checkpoint — 2026-10-09
+
+Same reusable ten-job build82853 links. Exact native39826 passes33/33 in10.755s,
+zero errors/skips: Prospector9, minimum AI5, Steward9, Swift Rebirth10. Reviewed
+source, registry21/module parity and private exact-pair hashes pass. Accepted
+perks265/310, generic185/220,faction80/90;45 remain planned. Combat67/67,
+Orders8/8,Skills31/31,ranks93/93 unchanged. Real authority rewards/transition
+income, weekly receipt/save guards, normal activation/Morale/Wait priority,
+incapacitation, actual Ice-retaliation Freeze and detached branch isolation pass.
+
+Initial compile/native failures are retained privately. Test corrections respect
+one perk per rank, real initial army slots, the saved Morale curve, owning-player
+visibility, corpse accessibility, active-action ordering and double-wide Ice
+footprints. No production eligibility or assertion is weakened. Phase2 keeps
+multi-goal AI receipt forecasting, lazy unmaterialized branches, projected
+mid-exchange valuation and wider residence/capture composition. Next integration
+batch: reviewed private Magnate, Elemental Memory and Academic Study. Playable
+promotion follows committed metadata/resource/headless gates, not source alone.
+
 ## Merchant Prince accepted checkpoint — 2026-10-09
 
 One reusable ten-job build77224 links successfully. Exact matching native11/11
@@ -13,8 +32,13 @@ provisional. No gameplay or artwork changes beyond the specified town benefit.
 
 Source8d2dd92c0 is normal-pushed and promoted to verified a711d609 after actual
 guarded repaired card-close/hover checks and a fresh silent day6 headless run.
-Merchant Prince's committed playable delivery is the next gate; private Swift
-Rebirth review and Prospector enclosing save guards progress independently.
+Merchant Prince's committed source5091ea62c subsequently passes metadata link,
+binary privacy, committed803-file packed staging and silent20s headless day3
+acceptance. Actual executable/library, four dummy SDL drivers and no display
+are checked; client cleanup and profile lock release pass. Immutable11a681ee is
+promoted and ordinary wrapper verify-only passes. This is not additional
+rendered acceptance. Private Swift Rebirth repairs and Prospector source
+integration progress independently.
 
 ## First Blood/Slayer and hover lifetime checkpoint — 2026-10-09
 

@@ -6,6 +6,13 @@ canonical [New Horizons design](design-sources/New%20Horizons.md). That Markdown
 remains the sole authority for gameplay. The queue and functional matrix record
 current implementation questions and dependencies.
 
+Prospector, Steward and Swift Rebirth pass33/33 exact native cases after
+linked82853, zero failures/errors/skips. Accepted coverage265/310, with45 planned
+perks; their rows are retired below. Historical question rows are not requests
+for permission: the user authorizes reasoned provisional choices, recorded in
+NH_PROVISIONAL_RULE_REVIEW. Safety, corrupt state and missing resources remain
+real blockers; ambiguous gameplay by itself is no reason to idle workers.
+
 Reality Warp/Reality Breaker pass73/73 principal and15/15 adjacent native cases
 after linked6035. Veiled Movement,generic Lucky Recovery and Avatar of Rage
 subsequently pass30/30 principal and8/8 adjacent cases after linked71404,
@@ -13,7 +20,7 @@ with zero errors/skips and independent review. Their planned rows are retired.
 Eagle Eye subsequently passes11 principal cases plus one late-map case and
 five adjacent controls after linked11731; its row is retired under the recorded
 retained-participant interpretation. Current accepted coverage is67/67 combat
-spells and262/310 perks (generic183/220,faction79/90); rendered/playable delivery
+spells and265/310 perks (generic185/220,faction80/90); rendered/playable delivery
 remains separate.
 
 First Blood/Slayer subsequently pass11 principal cases in a25/25 exact-pair
@@ -25,8 +32,8 @@ Merchant Prince passes eight principal and three adjacent Resource Broker
 cases after linked77224. Its row is retired under the recorded resident-town,
 non-stacking interpretation, including actual AI/server trades.
 
-Registry-derived inventory: 31 Skills, 93 active rank effects, 262 active perks,
-and 48 planned perks: 37 generic and 11 faction. This index covers only those 48
+Registry-derived inventory:31 Skills,93 active rank effects,265 active perks,
+and45 planned perks:35 generic and10 faction. This index covers only those45
 perks; combat spell implementation coverage is complete. The current
 selection audit in [NH_FUNCTIONAL_COMPLETION_MATRIX.md](NH_FUNCTIONAL_COMPLETION_MATRIX.md)
 historically reported item-specific questions or dependencies. The user has now
@@ -143,8 +150,6 @@ new-horizons:warcasting.reactiveWeave	question	UP-215	Half-strength readiness re
 new-horizons:diplomacy.mercenaryCaptain	dependency	UP-129	Deterministic recruitment/cohort provenance is a prerequisite.
 new-horizons:diplomacy.loyalMercenaries	dependency	UP-129	Deterministic recruitment/cohort provenance is a prerequisite.
 new-horizons:diplomacy.legendaryReputation	question	UP-195,UP-129	Monthly use on refusal/zero admission versus positive join remains unresolved.
-new-horizons:estates.prospector	question	UP-166	Gold is neither a common nor rare resource; Gold-mine eligibility/reward remains unresolved.
-new-horizons:estates.steward	question	UP-071	Two-resident stacking remains pending.
 new-horizons:estates.magnate	question	UP-168	Visit/week-start ownership, capture and multiple-holder stacking remain unresolved.
 new-horizons:learning.scholar	question	UP-163	One-holder reciprocal scope, no-transfer use and canonical spellbook-order representation remain unresolved.
 new-horizons:learning.historian	question	UP-071	Primary-XP reward classification for Chest/Tree/mixed rewards remains unresolved.
@@ -160,7 +165,6 @@ new-horizons:shroudOfMalassa.deepFlank	question	UP-174	Distinct melee sides from
 new-horizons:shroudOfMalassa.encircledDoom	question	UP-174	Positional side contacts versus attack-history count/reset window remains unresolved.
 new-horizons:shroudOfMalassa.vanish	question	UP-176	Retaliation kills and simultaneous Pursuit/Vanish allowance composition remain unresolved.
 new-horizons:bulwarkOfTheMire.deepBulwark	lack-producer	UP-167	No canonical nonmagical forced-displacement producer exists.
-new-horizons:elementalRebirth.swiftRebirth	question	UP-046	Precedence versus earned Morale activation and multi-spawn tie order remain unresolved.
 new-horizons:elementalRebirth.elementalMemory	question	UP-046	Inherited Morale versus Elemental immunity remains unresolved.
 new-horizons:elementalRebirth.phoenixSpark	question	UP-046	Greater Essence composition with the fixed 25% replacement remains unresolved.
 ```

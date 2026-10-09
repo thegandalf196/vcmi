@@ -1,12 +1,60 @@
 # New Horizons provisional rule review
 
+## Swift Rebirth — normal birth-round activation
+
+Advance the reborn stack's one normal activation after the acting stack's
+current activation, preserving any already-earned immediate Morale first.
+Simultaneous spawn IDs order ascending. WAIT delays the same normal activation;
+it does not create a second one. Birth-round extra activations are excluded,
+while genuine continuations remain legal. Frozen/Time Stop forfeiture spends
+the normal slot. Later rounds return to ordinary scheduling. Reasoning: the
+authored immediate turn is normal initiative promotion, not an extra-action
+generator. Shared callback/Swift lifecycle, server flow and detached AI consume
+the same typed receipt. Ten principal native cases pass after linked82853, including
+incapacitation during an accepted action and nested detached replacement.
+Review lazy child materialization before first access and approximate projected
+mid-exchange rebirth valuation in Phase2; do not claim exhaustive AI forecasting.
+
+## Prospector — eligible resources and capture timing
+
+The first visit to a mine already owned by this hero's player grants Wood/Ore+2
+or one of Mercury/Sulfur/Crystal/Gems+1. Gold is neither common nor rare and
+does not pay or consume the weekly use. Capturing a mine is not an owned-at-entry
+visit; Land Surveyor retains its separate capture reward. Each hero has an
+independent absolute-week receipt published before resources are granted.
+Reasoning: use the authored common/rare distinction and avoid consuming a
+reward on an ineligible resource. The trigger is CGMine::onHeroVisit; tooltip
+and receipt serialization are shared. Nine principal and five minimum AI cases
+pass after linked82853. Review custom resource classification, multiple-goal AI
+receipt forecasting and capture-followed-by-visit
+interaction in Phase2. This interpretation does not amend the canonical text.
+
 ## Merchant Prince — resident scope and virtual Marketplaces
 
 An owned visiting or garrison hero qualifies while linked to this town. Two
 holders grant +2 virtual Marketplaces once, not +4. Existing supported exchange
 modes consuming Marketplace efficiency benefit, retaining their ordinary caps;
 fixed transfers and unsupported modes do not change. A real Marketplace remains
-required. No kingdom-wide count is mutated. These scope choices are provisional.
+required. No kingdom-wide count is mutated. Reasoning: the text grants one town
+modifier, not a kingdom-wide or per-holder count. Implementation is
+CGTownInstance::getMarketEfficiency; eight principal and three Resource Broker
+native cases pass after linked77224. Review future independent holder stacking
+or new exchange modes if authored. These scope choices are provisional.
+
+## Steward — resident contribution and day boundary
+
+Provisionally both owned, reciprocally linked visiting and garrison heroes
+qualify; each distinct selected holder contributes250 Gold, two contribute500.
+Unlike Merchant Prince's town-single modifier, Steward describes a hero's
+individual end-day condition. Sample residence at the existing authoritative
+day transition and apply the town's ordinary handicap once to combined income;
+do not introduce a separate persistent end-turn receipt or treasury grant.
+Implementation candidate: CGTownInstance::dailyIncome consumed by
+NewTurnProcessor, existing town income label and passive right-click breakdown.
+Nine transition/handicap/ownership native cases pass after linked82853.
+Revisit captures or residence changes between individual player
+turns, asynchronous play and any explicitly authored future town-wide cap.
+The choice is provisional and does not amend the canonical wording.
 
 ## First Blood and Slayer — independent extra increments
 

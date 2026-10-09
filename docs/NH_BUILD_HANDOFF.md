@@ -1,5 +1,55 @@
 # New Horizons Linux build handoff
 
+## 2026-10-09 current delivery and compile lessons
+
+Ordinary Linux selects immutable11a681ee from normal-pushed source5091ea62c
+(Merchant Prince). Matching11/11 native, metadata link, binary privacy and
+committed803-file resource staging pass; NHART retains3137 selected entries,
+both mounts, zero loose duplicates and unchanged hash. Fresh silent headless
+All for One reaches day3 within20s, then expected timeout124; actual child
+drivers/executable/library, cleanup and profile lock are verified. Prior
+source8d2dd92c0 has the actual repaired Ice-card-close/hover graphical evidence.
+No new rendered campaign or verified Windows download is claimed here.
+
+One disposable build directory, at most ten jobs. All unique artwork, handoffs,
+profiles, snapshots and failure logs remain outside it. Do not recreate the
+former copied build/candidate forest. The Estates/Swift source batch is still
+under validation; it is not the selected playable delivery.
+
+Retained compile findings for this batch:
+
+- A test instantiating full world serialization must include the established
+  FullGameSnapshotTypes header; forward declarations alone fail template
+  visitors for settings, tavern pools, propagators and updaters. Retain exact
+  assertions rather than dropping enclosing zero-prefix coverage.
+  Direct CMap serialization additionally needs the concrete GameSettings header.
+- Shared mine reward classification belongs in one read-only public helper
+  when AI consumes it; do not duplicate the resource table to bypass access.
+- Battle initiative phases use Boost small_vector. Use the existing vstd
+  erase_if helper there; std::erase_if only overloads standard containers.
+- Tests must use the public target-rejection API, not the protected common-order
+  helper. Assert the Order is available before checking the birth-round rejection.
+- Rebirth sources must come from actual initial army slots. UnitInfo ADD without
+  a normal slot is not a valid ordinary source, even when summoned is false.
+- Deterministic Morale tests must override the saved New Horizons curve; the
+  legacy COMBAT_GOOD_MORALE_CHANCE vector does not control this ruleset.
+- Composition controls must respect one perk per rank; use independent holders
+  rather than selecting two Basic perks on one hero.
+- Detached positive controls need the owning player's callback, not a hidden
+  opponent profile. Pre-death corpse-footprint previews must ignore that source.
+- Raw injury updates do not advance BattleFlow: complete a current actor before
+  injuring it in a later synthetic control. Keep accepted-action assertions.
+- Adjacent small RNG seeds need not cover first-draw outcomes. Use bounded,
+  widely spaced seed samples and assert the actual production result afterward.
+
+Initial compile logs31518,92606,77391 and43450 are retained privately. Linked
+69267 and fixture-only45909 succeed; first native76273 passes22/33 and retains
+its failure XML. Final linked82853 and exact native39826 pass33/33 in10.755s;
+same-pair adjacent91859 passes11/11 in3.779s, zero failures/errors/skips. Earlier
+29/33 and32/33 evidence is retained privately. Source/native accepted coverage
+is265/310 perks; committed metadata and playable promotion remain separate.
+Source review/data checks are not native success or playable promotion.
+
 ## 2026-10-07 Windows full refresh is live
 
 Preflight37614491287 succeeds on689091081. Full run37616860622 is confirmed

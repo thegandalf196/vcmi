@@ -1,9 +1,29 @@
 # User-priority queue
 
+## Current Phase1 source/native checkpoint — Estates and Swift
+
+Linked82853 succeeds at ten jobs in the single reusable build. Exact native39826
+passes33/33 in10.755s with zero failures/errors/skips (Prospector9, minimum AI5,
+Steward9, Swift10); same-pair adjacent91859 passes11/11 in3.779s. Independent
+review, registry21, module parity and privacy checks pass. Accepted perks265/310:
+generic185/220,faction80/90,45 planned; combat67/67,Orders8/8,Skills31/31,
+ranks93/93 unchanged. Prior failures remain private; no production guards were
+weakened. Source commit/push and latest playable refresh follow separately.
+
+Magnate, Elemental Memory v3 and Academic Study v2 are preserved privately and
+source-reviewed, not accepted from authored tests. Veteran Cohesion progresses
+privately. Minor gameplay uncertainty uses recorded provisional decisions;
+missing resources, safety and actual crash/corruption remain genuine blockers.
+One disposable build, at most ten jobs and no private artwork inside build.
+Ordinary Linux still selects verified source5091ea62c until the new delivery gate.
+
 ## Resolved runtime findings — generated-map origin and hover caster lifetime
 
-Current delivery: source8d2dd92c0 is normal-pushed and the ordinary Linux
-launcher now selects its verified a711d609 snapshot. Exact guarded debugger
+Current delivery: source5091ea62c is normal-pushed and the ordinary Linux
+launcher now selects verified11a681ee after its silent20s headless run reaches
+day3, actual child drivers/executable/library are checked and cleanup releases
+the profile lock. The unchanged NHART verifies3137 selected resources, both
+mounts and zero loose duplicates. Prior source8d2dd92c0's guarded debugger
 recheck survives Ice-card right-button release, separate Escape and legal
 Protection-from-Water hover. No SIGSEGV; intentional bounded SIGTERM cleanup
 ends at102s, owned processes/socket gone and profile lock free. Fresh silent
@@ -17,9 +37,73 @@ Merchant Prince is accepted after linked77224 and matching native46406:
 skips. The public authoritative build path establishes real Marketplace bonuses;
 the positive-count assertion remains. Initial7/8 XML/log retained privately.
 Coverage262/310, generic183/220,faction79/90,48 planned. Registry/static21 and
-module parity pass. Commit/push and latest playable delivery remain next gates.
+module parity pass. Commit5091ea62c is normal-pushed, metadata-linked and
+binary-privacy clear; its latest playable delivery is promoted and the ordinary
+wrapper's verify-only gate passes. This is not new rendered acceptance.
 Prospector enclosing save guards and Swift Rebirth independent review progress
 privately; neither is applied or accepted yet.
+
+Prospector v3 is now applied and registered for the next source gate. Its
+nine authored cases cover common/rare rewards, Gold/no-consumption, independent
+heroes, real week rollover, capture/Land Surveyor, passive feedback, save/load,
+typed property rejection and zero-prefix map/world/lobby guards, including the
+actual off-map hero pool. Independent v3 review and linked/native evidence remain
+pending; no completion credit yet. Swift remains private while its reviewer-
+identified completed-action and nested-detached lifecycle gaps are repaired.
+
+Prospector v3 independent review is now clear for core/serialization. It finds
+that ordinary AI excludes owned mines; a separate bounded private planner/value
+patch adds exact hero-specific weekly eligibility and one-shot rewards, with
+five authored cases. No global weekly mine reset or daily capture value is added.
+Build31518 terminates1 at the Prospector fixture: direct world serialization
+needs the existing full snapshot type include. That include is added without
+removing zero-prefix assertions. Review also identifies a private quantity
+helper used by AI; it is exposed read-only, retaining shared classification.
+The reviewed five-case AI hook, nine-case Steward and repaired ten-case Swift
+Rebirth are now applied/registered together before one same-directory retry.
+Swift normal-completion/incapacitation and nested-detached marker findings are
+fixed; Steward refreshes the town income label on resident updates. All still
+await compilation/native evidence, so accepted coverage remains262/310.
+
+Combined retry92606 stops early on a standard erase_if applied to the existing
+Boost small_vector queue. The call now uses the project's existing vstd helper,
+already used in this file; no queue semantics change. Prior logs remain private.
+Next same-directory ten-job retry and33 principal native cases (Prospector9,
+minimum AI5, Steward9, Swift10). Review clears all four source paths after the
+read-only mine API correction; native results and delivery are not inferred.
+
+Retry77391 terminates1 in the full-map Prospector fixture because its serializer
+also needs the concrete GameSettings definition. The fixture now includes that
+definition; no save guard or assertion is weakened. Continue the same reusable
+build with ten jobs, retaining the failed log privately. Independent Magnate
+review and Elemental Memory private preparation continue without touching the
+frozen build sources. Minor gameplay questions use recorded provisional judgment.
+
+Retry43450 terminates1 because the Swift fixture called a protected callback.
+The public target-rejection API now preserves the positive availability control
+before the birth-round rejection. Retry69267 uses the same ten-job directory.
+Magnate's private source review is clear; Elemental Memory is private and under
+review. Academic Study and Veteran Cohesion proceed privately using documented
+provisional interpretations. None receives native or playable credit yet.
+
+Linked69267 succeeds. Exact native76273 passes22/33 in12.678s, zero skips:
+Steward9/9, minimum Prospector AI5/5, Prospector8/9; all Swift cases fail before
+their intended source/activation assertions. Prospector's fixture incorrectly
+selected two Basic perks on one hero; separate legal holders now test capture,
+Land Surveyor and owned-mine payout. Swift's ADD fixture used non-normal slots,
+and its deterministic Morale override targeted the obsolete curve. Real initial
+army slots and the saved New Horizons curve now establish the actual prerequisites.
+No production eligibility or perk-selection rule is weakened. Incremental45909
+links; exact33-case retry89336 is pending. Both initial failure logs/XML remain
+private. Elemental Memory's parent/child snapshot blocker is repaired privately
+and independently clear; registration/native acceptance is still separate.
+
+Retry89336 passes29/33 in10.742s, zero skips: Prospector9/9, AI5/5 and
+Steward9/9 are clear; Swift6/10 pass, including actual earned Morale priority,
+Wait/cap, Chain and save-prefix controls. Four remaining detached-capture,
+incapacitation and Ice-retaliation fixture paths are being diagnosed before
+acceptance. The initial and repaired XML remain private; accepted coverage
+stays262/310 until this source batch's principal gate is complete.
 
 New guarded bc9d6f/source231c1da21 observation: Begin reaches real manual
 combat; the Ice creature card visibly shows Freezing Touch20% / Shatter+25%.
