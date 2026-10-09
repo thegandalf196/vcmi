@@ -1,5 +1,16 @@
 # User-priority queue
 
+## Persistent orchestration correction — Parallel coverage during priority fixes
+
+User explicitly requests that independent perk/spell implementation continue
+while priority crash/artwork work is handled. Persisted in AGENTS.md: priority
+determines root coordination and integration/delivery order, not an exclusive
+single-worker lane. Use bounded non-overlapping ownership/isolated worktrees and
+freeze candidate bytes. Record concrete reasons for pauses and reassess each
+checkpoint; do not idle feature workers merely for pending builds/graphics.
+Rebirth Chain source is recovered into its isolated implementation worktree
+without dropping its private stash or altering the root delivery candidate.
+
 ## Immediate testing constraint — Silent background runs
 
 User heard clicking from an invisible background game. The tester stopped its
@@ -12,6 +23,21 @@ in the actual immutable-baseline game process before input; the maintained
 private-launch regression passes11/11. This verifies isolation, not gameplay.
 
 ## Current crash priority — Hero-to-hero army transfer
+
+Actual silent guarded GUI comparison now reproduces and repairs the failure.
+On the same real-GUI presave, Orrin16's Mentor meeting gives Valeska three
+levels and new Recruitment/Armorer/Spellcraft skills while exchange stays open
+(two opening skills become five). Immutable17a5 crashes on the legal13-Pikeman
+transfer: debugger identifies CSecSkillPlace::setSkill called by
+CExchangeWindow::updateArtifacts during garrisonsChanged. Exactcbc64905e
+frozen1ba7b341 accepts that transfer and its reverse, displays allfive skills,
+and exits normally0. Root inspected both fixed screenshots and the old backtrace.
+Both actual child processes verify dummy audio before input; all owned games,
+debuggers and display are stopped, profiles/saves/snapshots retained privately.
+Playable promotion remains open. The residual stale level heading is being
+refreshed through the existing title formatter; no Leadership rules change.
+Earlier evidence below describes the original overwritten user log, not this
+newly preserved controlled-reproduction debugger log.
 
 Source cause found: opening-sized skill widgets are indexed by the live count
 after Mentor level-ups; user confirms Theodorus taught Serena inside the open
@@ -33,6 +59,17 @@ alone is not a reproduced crash or a fix. This crash precedes portrait polish
 and ordinary implementation backlog work.
 
 ## Current user priority — Delivered Mage/Gargoyle portraits
+
+Root rejects generated Mage v4 after native review; no painted head is installed.
+The selected packed HOLDING frame has a readable existing face, so root selects
+its upper-torso framing provisionally: source Rect(178,174,36,49), fitted44×60
+at7,2 on the existing58×64 Academy backdrop. The reusable compositor preserves
+source/cache pixels and removes shadow only on a private canvas; module changes
+only Mage iconLarge. Linked49727 exits0 and native45888 passes all14 portraits
+at scales1–4, including exact crop/fit/backdrop/TWCRPORT and unchanged selected
+small portrait. The separate level-heading refresh also compiles. No pack
+rebuild, loose art dependency or new gameplay rule is involved. Actual ordinary
+recruitment/growth screenshots and playable delivery remain required.
 
 Both Gargoyles now have source registrations and module bindings for unchanged
 original HOLDING frames fitted over the existing packaged Academy backdrop.
