@@ -1,5 +1,16 @@
 # New Horizons provisional rule review
 
+## First Blood and Slayer — independent extra increments
+
+Provisionally each perk adds one extra ordinary Bloodrage increment to its
+qualifying destruction. The first Elite/Champion death therefore grants three
+increments when both apply, not four multiplicatively or two redundantly.
+Both holders observe the same first qualifying death before its shared combat
+receipt is spent. A capped grant still spends First Blood; resurrection never
+restores it. Slayer uses the saved Core/Elite/Champion category, not numeric tier.
+Existing summoned/clone exclusions and Bloodrage caps remain unchanged.
+This interpretation remains reviewable; it does not amend the canonical design.
+
 ## Eagle Eye retained combat participants
 
 The canonical wording says after combat, not only after victory. Provisionally

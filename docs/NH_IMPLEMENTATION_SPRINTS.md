@@ -1,5 +1,24 @@
 # New Horizons implementation sprints
 
+## First Blood/Slayer and hover lifetime checkpoint — 2026-10-09
+
+Linked61073 passes after the fixture's explicit BattleInfo callback correction.
+Exact matching native25/25 (new perks11, map-origin3, Eagle Eye11) passes6.290s,
+zero failures/errors/skips. Registry/static21,module parity, privacy and review
+pass. Perks261/310 (generic182/220,faction79/90),planned49; Bloodrage10/10,
+combat67/67,Orders8/8,Skills31/31/ranks93/93 unchanged. Independent additive
+death increments, both-holder first-event receipt, caps, resurrection, detached
+branch isolation and protocol guards are verified. The interpretation is
+explicitly provisional. Adjacent13 passes10: three preexisting old-format
+controls encounter the Frozen captured-ability guard; keep them for Phase2.
+
+The generated-map fix231c1da21 reaches manual combat; compact Ice help is
+observed. A guarded debugger then proves a hover caster-proxy use-after-free
+on right-button release alone. The selector-before-caster fix is reviewed,
+compiled and covered by static ordering checks; actual repaired card close
+must pass before a new immutable playable candidate is promoted. Merchant
+Prince and Prospector remain private reviewed candidates, not completion credit.
+
 ## Accepted Eagle Eye and generated-map source checkpoint — 2026-10-09
 
 Linked11731 passes; exact-pair12/12 (11 Eagle Eye,one late-map case) in3.546s

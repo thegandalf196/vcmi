@@ -2,6 +2,63 @@
 
 ## Blocking runtime finding — Battle-only generated map is not mounted
 
+New guarded bc9d6f/source231c1da21 observation: Begin reaches real manual
+combat; the Ice creature card visibly shows Freezing Touch20% / Shatter+25%.
+The generated-map entry defect is fixed. However the game subsequently exits
+139 after the card is closed, before tester termination. Cause is unconfirmed;
+this new blocking runtime finding must be traced before playable promotion.
+Owned game/display are gone, socket removed and profile lock released. Input
+ended around115s; final cleanup exceeded140s slightly. No Freeze/Shatter proc
+was observed, and no clean runtime acceptance is claimed. First Blood/Slayer
+source patch is applied independently but not registered/built/accepted yet.
+
+Debugger repro isolates right-button release alone; Escape is never sent.
+Backtrace enters BaseMechanics from selectHoveredStacks. Source trace identifies
+a use-after-free: the hover path captures getCurrentSpellcaster's owned proxy,
+then action selection calls the getter again and replaces/destroys that proxy.
+Fix resolves action selection before acquiring the caster used by BattleCast.
+First Blood/Slayer registration and11-case fixture are ready; review found and
+root repaired their BattleAI-off CMake guard. Build88307 was stopped cleanly
+(terminal130, owned process group gone) before applying the hover repair.
+Next gate: linked same-directory retry, focused native/static checks, then
+the exact guarded card-close repro. Ordinary launcher is not promoted yet.
+
+Hover fix is source-frozen and independently clear; existing static lifetime
+checks pass4/4. First Blood/Slayer are registered and their11-case native fixture
+is guarded by ENABLE_BATTLE_AI. Registry17/17 and module parity pass; accepted
+coverage remains259/310 until native validation succeeds. Combined incremental
+build60237 is live at ten jobs in the same reusable Release directory. Keep all
+compiled inputs frozen and poll that exact handle before retrying or editing.
+The bc9 headless run independently loads All for One and advances day1 to day8,
+but does not waive the popup-close crash or authorize playable promotion.
+Merchant Prince has a separate reviewed private two-file patch and eight
+authored cases; it is not applied, registered or counted yet.
+
+Prospector also has a private reviewed v2 candidate with eight authored native
+cases: first owned-mine visit per hero/week grants common+2 or rare+1; Gold
+does not consume the use. Its typed weekly property rejects wrong variants
+before conversion/mutation, with writer/reader/no-mutation controls. Full
+world/lobby enclosing downsave preflights remain an explicit integration
+prerequisite. No live application, activation or completion credit is claimed.
+Swift Rebirth is being mapped privately; it must promote a normal activation,
+not invent an extra one, and preserve already-earned immediate Morale priority.
+
+Build60237 stops on one test-only default BattleInfo construction; the fixture
+now passes its explicit null callback, preserving old-writer prefix assertions.
+Production and hover code compiled. Incremental retry61073 is live at ten jobs,
+with the complete build log private outside build. Poll61073 before source edits;
+native11-case acceptance and fixed popup-close repro still remain pending.
+
+Retry61073 links successfully. Matching principal34984 passes25/25 in6.290s
+(First Blood/Slayer11, Maps3, Eagle Eye11), zero failures/errors/skips.
+Registry/static21,module parity, privacy and review pass. Accepted perks now
+261/310 (generic182/220,faction79/90),planned49; Bloodrage10/10. Adjacent12858
+passes10/13: three old-format fixtures retain captured creatureAbilities and
+hit the identical preexisting Frozen downsave guard before their intended
+control. Independent review classifies this as a Phase2 fixture/profile issue;
+the production guard remains intact and those legacy readers are not claimed
+verified. Fixed popup-close rendered recheck and latest promotion remain pending.
+
 Follow-up: sourcefb4e28ff6 and unpromoted snapshotd8a45 still fail actual
 Battle-only Begin with exit134. The root stream sees the generated map, but
 CMapService first resolves its origin through core/mod scopes. The dedicated

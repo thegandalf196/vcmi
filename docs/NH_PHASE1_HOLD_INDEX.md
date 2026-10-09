@@ -13,11 +13,16 @@ with zero errors/skips and independent review. Their planned rows are retired.
 Eagle Eye subsequently passes11 principal cases plus one late-map case and
 five adjacent controls after linked11731; its row is retired under the recorded
 retained-participant interpretation. Current accepted coverage is67/67 combat
-spells and259/310 perks (generic182/220,faction77/90); rendered/playable delivery
+spells and261/310 perks (generic182/220,faction79/90); rendered/playable delivery
 remains separate.
 
-Registry-derived inventory: 31 Skills, 93 active rank effects, 259 active perks,
-and 51 planned perks: 38 generic and 13 faction. This index covers only those 51
+First Blood/Slayer subsequently pass11 principal cases in a25/25 exact-pair
+batch after linked61073. Their rows are retired under the recorded independent-
+increment interpretation; both-holder, capped, resurrection and protocol
+controls pass. Adjacent three older-format fixture failures remain Phase2.
+
+Registry-derived inventory: 31 Skills, 93 active rank effects, 261 active perks,
+and 49 planned perks: 38 generic and 11 faction. This index covers only those 49
 perks; combat spell implementation coverage is complete. The current
 selection audit in [NH_FUNCTIONAL_COMPLETION_MATRIX.md](NH_FUNCTIONAL_COMPLETION_MATRIX.md)
 historically reported item-specific questions or dependencies. The user has now
@@ -151,8 +156,6 @@ new-horizons:divineMandate.crownAndAltar	question	UP-108	Second-action timing is
 new-horizons:shroudOfMalassa.deepFlank	question	UP-174	Distinct melee sides from current positions versus accepted-hit history and reset window remains unresolved.
 new-horizons:shroudOfMalassa.encircledDoom	question	UP-174	Positional side contacts versus attack-history count/reset window remains unresolved.
 new-horizons:shroudOfMalassa.vanish	question	UP-176	Retaliation kills and simultaneous Pursuit/Vanish allowance composition remain unresolved.
-new-horizons:bloodrage.firstBlood	question	UP-143	First Elite/Champion death overlap with Slayer producing two/three/four increments remains unresolved.
-new-horizons:bloodrage.slayer	question	UP-143	First Blood overlap on the first Elite/Champion death remains unresolved.
 new-horizons:bulwarkOfTheMire.deepBulwark	lack-producer	UP-167	No canonical nonmagical forced-displacement producer exists.
 new-horizons:elementalRebirth.swiftRebirth	question	UP-046	Precedence versus earned Morale activation and multi-spawn tie order remain unresolved.
 new-horizons:elementalRebirth.elementalMemory	question	UP-046	Inherited Morale versus Elemental immunity remains unresolved.
