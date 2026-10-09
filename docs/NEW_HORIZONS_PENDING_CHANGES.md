@@ -19,6 +19,14 @@ None currently awaiting integration.
 
 ## Integrated history
 
+### Elemental Convergence terrain completion — 2026-10-09 (integrated)
+
+User approves Earth for Dirt, inland Sand and Wasteland, and Water for Swamp
+and coastal battlefields including coastal Sand. Integrated into the canonical
+Experimental Values terrain table, with captured coastal battlefield context
+taking precedence over forced Sand. Runtime and AI implementation of the spell
+and its terrain-dependent perks remain UP072 work, not completed coverage.
+
 ### Battlefield Mastery and Last Stand scope — 2026-10-06 (integrated)
 
 User resolves Battlefield Mastery's award in favor of the first eligible ordinary

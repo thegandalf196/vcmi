@@ -5246,6 +5246,12 @@ remains the Champion. The earlier five-Elite/independent-Sprite roster is supers
 |Rough / subterranean / stone-dominant terrain|Earth Elemental|
 |Grass / highlands / open-sky terrain|Air Elemental|
 |Magic plains / Conflux / explicitly arcane terrain|Magic Elemental|
+|Dirt / inland Sand / Wasteland|Earth Elemental|
+|Swamp / coastal battlefield, including coastal Sand|Water Elemental|
+
+Coastal battlefield context takes precedence over its forced Sand terrain.
+Use the captured battlefield terrain and coastal context, not the hero's
+adventure-map tile, for Elemental Convergence and its terrain-dependent perks.
 
 
 

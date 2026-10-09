@@ -1,5 +1,45 @@
 # User-priority queue
 
+## User-authorized provisional rule judgments — 2026-10-09
+
+User directs reasonable judgment when a rule is unclear, with a persistent
+record of implemented situations deserving a second look. Persisted in
+AGENTS.md and NH_PROVISIONAL_RULE_REVIEW.md. Revisit prior design-only holds;
+do not treat pending minor rulings as grounds to idle independent implementation.
+Preserve explicit decisions, focused validation and genuine safety/resource
+blockers. Review ledger records the current terrain-perk composition and timed
+Conjurer Initiative interaction without presenting them as Final approval.
+
+## Approved terrain mapping — Elemental Convergence, 2026-10-09
+
+User approves Earth for Dirt, inland Sand and Wasteland; Water for Swamp and
+coastal battlefields, including coastal Sand. Integrate this into the canonical
+terrain table and implement UP072 plus Elemental Attunement, Adaptive Element
+and Perfect Convergence with shared live/AI terrain resolution. Preserve the
+captured battlefield context rather than substituting the hero's adventure tile.
+Existing rows retain their intended elemental identity. Root owns canonical
+data, activation, serialized ten-job builds and Git; bounded workers own spell,
+Rebirth consumers and focused native acceptance. Principal acceptance now passes
+25/25 native cases, zero skips, in7.627s after linked build40484. Both paid AI
+casts (Air and Earth), exact summon HP, Conjurer expiry and18 captured-terrain
+Rebirth cases pass. Coverage is245/310 perks and63/67 combat spells. Receipt:
+build/nh-convergence-terrain-native.yQfVXadf/receipt.md. Data17/17 and module
+parity pass; independent review has no blocking finding. Adjacent39/40 retains
+the preexisting v2/Morale fixture failure for Phase2. No new launcher promotion
+or rendered acceptance is claimed. This approval does
+not resolve Rapid Embarkation, Swift Rebirth, Elemental Memory or Phoenix Spark.
+
+## Overwatch voluntary-movement producer — 2026-10-09
+
+Next Phase1 implementation: Wait arms a shooter for one50%-damage reaction
+against the first enemy entering its range before delayed activation. Shared
+authority, serialized readiness/use state, ammo and death-stop behavior must
+support AI/UI consumers. Provisional range and movement-cause interpretations
+are recorded in NH_PROVISIONAL_RULE_REVIEW.md under the user's judgment policy.
+Registration remains planned until focused production gates pass. No coverage
+is credited merely for an implementation assignment.
+
+
 ## Remaining bounded portrait acceptance — 2026-10-09
 
 Resolved principal visual check: existing two-player Academy fixture export

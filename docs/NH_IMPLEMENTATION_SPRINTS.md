@@ -1,5 +1,22 @@
 # New Horizons implementation sprints
 
+## Accepted source/native checkpoint — 2026-10-09
+
+Elemental Convergence and Elemental Conjurer, Elemental Attunement, Adaptive
+Element and Perfect Convergence pass25/25 focused native cases, zero skips,
+in7.627s. Linked client/test build40484 succeeds at10 jobs. Actual paid Air/Earth
+AI casts exposed and repaired a missing summon-value consumer. Data17/17 and
+module parity pass; independent review reports no blocker. Coverage63/67 combat
+spells and245/310 perks (generic170/220, faction75/90;65 planned). Orders8/8,
+31 Skills/93 ranks unchanged. Adjacent39/40 retains the existing v2/Morale
+fixture failure for Phase2; duration-freeze and broader Chain interactions are
+also deferred. Normal Linux launcher remains5938709; no rendered/promotion claim.
+
+Next: Overwatch's missing voluntary-movement producer, with bounded shared/server
+ownership and subsequent AI/UI consumers. User-authorized reasoned interpretations
+are recorded in NH_PROVISIONAL_RULE_REVIEW.md rather than held for minor rulings.
+Older design-only waiting paragraphs below are historical, not current policy.
+
 ## Delivered Phase1 checkpoint — 2026-10-09
 
 Linux5938709/source69004 is promoted after current linked108/108 client build,
