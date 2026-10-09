@@ -1675,6 +1675,10 @@ If several possible attacks exist, the target and legal attack position are chos
 
 If the selected enemy cannot be reached this activation, the confused creature moves toward it as far as possible.
 
+If neither a legal attack nor a legal move toward the selected enemy is possible,
+Attack resolves as Defend instead; the activation is not discarded without
+the normal Defend benefit.
+
 Importantly, Confusion does **not** make the unit attack its allies.
 
 That is Berserk's territory.

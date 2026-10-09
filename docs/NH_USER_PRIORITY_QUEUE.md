@@ -11,6 +11,13 @@ checkpoint; do not idle feature workers merely for pending builds/graphics.
 Rebirth Chain source is recovered into its isolated implementation worktree
 without dropping its private stash or altering the root delivery candidate.
 
+Confusion's remaining impossible-Attack endpoint is resolved by the user:
+when neither attacking nor legally approaching the selected enemy is possible,
+resolve as Defend. Canonical Attack wording is updated; the isolated spell worker
+implements shared resolution, forced dispatch and AI rather than stopping at an
+inert marker. Existing accepted trapped-Wander, Morale consumption, Berserk
+removal and Confounder sole-legal-result rules remain unchanged.
+
 ## Immediate testing constraint — Silent background runs
 
 User heard clicking from an invisible background game. The tester stopped its

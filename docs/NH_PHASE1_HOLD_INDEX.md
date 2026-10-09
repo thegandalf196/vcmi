@@ -76,7 +76,7 @@ new-horizons:natureMagic.elementalConjurer	dependency	UP-072	Depends on the unre
 new-horizons:havocMagic.demolitionist	question	UP-139	Structural-perk stacking and fixed-landmark destructibility remain unresolved; baseline structural producer is verified.
 new-horizons:havocMagic.meteorologist	question	UP-139	Structural stacking and fixed-landmark destructibility remain unresolved.
 new-horizons:havocMagic.cataclysm	question	UP-111,UP-139	Eligible magical-obstacle and fixed-landmark filters remain unresolved.
-new-horizons:chaosMagic.confounder	dependency	UP-043	Four prior decisions are settled; full Confusion forced-action producer still depends on the unanswered immobile-Attack endpoint. Preserve verified UP306-309 foundations.
+new-horizons:chaosMagic.confounder	dependency	UP-043	The user settled the remaining immobile-Attack endpoint as Defend. Full Confusion forced-action producer and principal native evidence remain required. Preserve verified UP306-309 foundations.
 new-horizons:chaosMagic.shapeshifter	dependency	UP-066	Polymorph battle-local creature-form behavior is a prerequisite.
 new-horizons:chaosMagic.fateDealer	question	UP-060	Two collateral draws with replacement versus distinct targets remains unresolved; base eligible pool is settled.
 new-horizons:chaosMagic.realityBreaker	dependency	UP-179	Depends on Reality Warp; its target-scope question remains recorded.
@@ -193,7 +193,7 @@ Canonical/queue review found no newer ruling clearing these existing holds:
 
 | Identity | Queue | Remaining decision |
 |---|---|---|
-| Confusion | UP043 | Selected Attack enemy with neither legal attack nor nonstationary advance: resolved Attack/no-op versus Defend. Other fallback/consumption choices are settled. |
+| Confusion | UP043 | Resolved by user: selected Attack enemy with neither legal attack nor nonstationary advance becomes Defend. Forced dispatch/shared AI and principal native acceptance remain implementation work, not a design hold. |
 | Polymorph | UP066 | Phantom conversion and reversion when no original footprint fits |
 | Reality Warp | UP179 | Beneficiary-side ownership of transferred effects |
 | Pandemonium | UP123/191 | Repeated debuff counting and per-debuff perk composition |
