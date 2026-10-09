@@ -1,5 +1,30 @@
 # New Horizons provisional rule review
 
+## Mire Shaper additional Bog Ambush patch
+
+Status: provisional interpretation; next-slice preparation only, not activated.
+
+Calculate the ordinary School/Spellcraft/Warcasting-scaled patch count with its
+five-patch cap, then add the selected perk's one additional patch. The perk thus
+permits three to six patches rather than disappearing at high Spell Power.
+This preserves the spell's normal cap and the perk's explicit extra patch.
+Review whether a future design should impose a global five-patch cap instead.
+Planned shared seam: NewHorizonsMagic::quicksandPatchCount; the current client,
+Lua authority and AI already consume that count. No native acceptance yet.
+
+## Miracle Worker casualty restoration
+
+Status: provisional interpretation; next-slice preparation only, not activated.
+
+Preserve healing allocated to wounded surviving creatures, then increase the
+remaining casualty-restoration HP pool by25%, flooring once. A fully destroyed
+eligible stack receives125% of the whole pool, subject to the existing original
+count cap. Wound-only healing is unchanged. This follows the perk's "casualties"
+wording without multiplying already-rounded creature counts or granting extra
+wound healing. Review whether the intended design should instead boost the
+entire restoration pool. Planned seam: shared heal.lua amount calculation used
+by legality, forecast and execution. No native acceptance yet.
+
 The user authorizes reasoned provisional gameplay judgments when rules or
 interactions are unclear. Implement and verify the choice, rather than stopping
 the implementation loop for every ambiguity. This ledger identifies situations
@@ -115,7 +140,7 @@ authoritative atomic movement update, without per-update polling.
 
 ## Pandemonium logical debuff counting
 
-Status: provisional interpretation; prerequisite preparation, not active gameplay.
+Status: provisional interpretation; principal Pandemonium native acceptance passed25/25.
 
 Count each distinct authored DEBUFF identity once per stack, not every Bonus
 component or repeated application. Snapshot all counts before damage resolves.

@@ -1,5 +1,61 @@
 # User-priority queue
 
+## Accepted Pandemonium checkpoint — 2026-10-09
+
+Linked3540 exits0; native25/25 passes in5.621s with zero skips/failures. Root
+checks XML and matching source/private engine hashes. Receipt:
+build/nh-pandemonium-native.aatz4JzE/receipt.md. Production registration,
+friendly-fire defenses/resistance, logical/legacy debuff classification,
+immutable snapshots and paid AI with Orders pass. Data17/17, module parity,
+privacy and independent source review pass. Combat65/67; perks250/310,
+generic175/220 and faction75/90; planned60 (45 generic,15 faction).
+No new art, NHART, rendered acceptance or normal-launcher promotion. Deferred
+integration boundaries and provisional choices stay recorded. Next: Mire
+Shaper and Miracle Worker; Polymorph's principal gaps are mapped. Earlier
+build/native pending notes below are historical and superseded here.
+
+## Pandemonium implementation checkpoint — 2026-10-09
+
+Current Phase1 slice: Pandemonium and Pandemonium Master. Runtime captures all
+recipient debuff identities before preparation or damage, with shared exact
+power, friendly-fire defenses, AI valuation and confirmation receipts. Producer
+metadata and save-safe compatibility adapters are being completed. Required
+admission data and focused native fixtures are under integration. Reasoned
+provisional rules remain in NH_PROVISIONAL_RULE_REVIEW.md.
+Accepted coverage stays64/67 combat spells and249/310 perks until the serialized
+ten-job linked build and focused native gates pass. No rendered acceptance,
+artwork completion, NHART update or launcher promotion is claimed.
+
+All source owners are frozen. Serialized linked build51420 is live at ten jobs
+for client and vcmitest. Data17/17, generated module parity and independent
+source review pass. Native runner aatz4JzE awaits the terminal exact pair;
+21 principal cases are registered. Two additional bounded legacy-adapter cases
+are prepared for after the build, without moving its inputs. Review defers
+legacy lookup measurements and advanced damage/control interactions to Phase2.
+
+Build51420 is terminal1 at174/482: the new cleanup fixture supplies a raw SpellID
+enum to BonusSourceID rather than its concrete typed wrapper. Test owner is
+repairing that fixture and adding four approved legacy-adapter controls. Shared
+production/AI objects compiled, but no linked/native pass is claimed. Preserve
+the terminal handle and failure lesson; start the retry only after test freeze.
+
+Typed fixture correction and four adapter controls are frozen. Retry3540 is
+live with312 remaining steps, ten jobs. Final focused gate is25 cases:
+one exact-power,15 live,6 status-counter and3 AI cases. First21 never executed;
+no passing native receipt is inferred from preparation or compilation.
+
+Read-only next-slice preparation identifies small shared seams for Mire Shaper
+(additional patch after the normal cap) and Miracle Worker (boost casualty HP
+after wound healing); provisional interpretations are recorded. Polymorph's
+existing transformation infrastructure needs shipped registration, safe expiry
+and Dispel restoration, Phantom handling and Shapeshifter integration. These
+are missing principal paths, not requests to perfect an already accepted system.
+Do not alter frozen build inputs while the current linked/native gate runs.
+
+Retry3540 is terminal0 at310/310, with both game client and vcmitest linked.
+The tester is assigned the final25-case native gate on the fresh exact private
+pair. No native pass, coverage increase or launcher promotion is claimed yet.
+
 ## Accepted Nature's Wrath and Pursuit March checkpoint — 2026-10-09
 
 Linked14275 exits0; fresh native pair passes Nature16/16 (4.760s) and Pursuit13/13
@@ -11072,6 +11128,13 @@ Independent Astra source review reports no blocking production finding. No GUI,
 playable promotion or source commit is claimed for this candidate yet.
 
 ## UP-123 — Chaos Pandemonium and generic debuff counting
+
+2026-10-09: the user's provisional-judgment policy supersedes the design-only
+hold below. Logical-identity deduplication and per-contribution Master scaling
+are recorded in NH_PROVISIONAL_RULE_REVIEW.md. Production metadata, snapshots,
+AI/UI and admission are integrated; build/native acceptance is in progress as
+recorded at the top of this queue. Earlier blocked notes are historical, not a
+current request for another ruling or permission to leave this work idle.
 
 2026-10-08 current-scope audit reconfirms the two unanswered principal choices;
 they are resurfaced together: repeated stackable applications count once per

@@ -6,9 +6,9 @@ canonical [New Horizons design](design-sources/New%20Horizons.md). That Markdown
 remains the sole authority for gameplay. The queue and functional matrix record
 current implementation questions and dependencies.
 
-Registry-derived inventory: 31 Skills, 93 active rank effects, 249 active perks,
-and 61 planned perks: 46 generic and 15 faction. This index covers only those 61
-perks; the three inactive combat spells are tracked separately. The current
+Registry-derived inventory: 31 Skills, 93 active rank effects, 250 active perks,
+and 60 planned perks: 45 generic and 15 faction. This index covers only those 60
+perks; the two inactive combat spells are tracked separately. The current
 selection audit in [NH_FUNCTIONAL_COMPLETION_MATRIX.md](NH_FUNCTIONAL_COMPLETION_MATRIX.md)
 historically reported item-specific questions or dependencies. The user has now
 resolved Battlefield Mastery and Last Stand. Mastery is now source/native verified
@@ -34,6 +34,12 @@ AI placement remain Phase2 review items; adjacent39/40 includes the known
 preexisting v2/Morale fixture failure. No rendered/playable promotion is claimed.
 
 Status meanings:
+
+Pandemonium/Pandemonium Master pass25/25 principal native cases, zero skips,
+after linked3540. The perk row and missing combat identity are removed below.
+Coverage65/67 combat spells and250/310 perks; generic175/220, faction75/90.
+Receipt: build/nh-pandemonium-native.aatz4JzE/receipt.md. Provisional logical
+counting/Master interpretations remain recorded; no rendered/playable promotion.
 
 Nature's Wrath/Worldroot and Pursuit March now pass29/29 principal native cases,
 zero skips, after linked14275. Their provisional choices remain in the rule-review
@@ -92,7 +98,6 @@ new-horizons:havocMagic.cataclysm	question	UP-111,UP-139	Eligible magical-obstac
 new-horizons:chaosMagic.shapeshifter	dependency	UP-066	Polymorph battle-local creature-form behavior is a prerequisite.
 new-horizons:chaosMagic.fateDealer	question	UP-060	Two collateral draws with replacement versus distinct targets remains unresolved; base eligible pool is settled.
 new-horizons:chaosMagic.realityBreaker	dependency	UP-179	Depends on Reality Warp; its target-scope question remains recorded.
-new-horizons:chaosMagic.pandemoniumMaster	dependency	UP-123	Pandemonium identity and generic debuff counting/scaling remain prerequisites.
 new-horizons:spellcraft.crossSchoolFormula	question	UP-132	Multi-school relation/eligibility interpretation remains unresolved.
 new-horizons:spellcraft.concentration	question	UP-069	Target-count definition remains unresolved.
 new-horizons:spellcraft.extendSpell	question	UP-134	Unusual spell-lifetime/expiry scope remains unresolved.
@@ -203,4 +208,3 @@ and failed candidate records remain in the queue and completion matrix.
 |---|---|---|
 | Polymorph | UP066 | Phantom conversion and reversion when no original footprint fits |
 | Reality Warp | UP179 | Beneficiary-side ownership of transferred effects |
-| Pandemonium | UP123/191 | Repeated debuff counting and per-debuff perk composition |
