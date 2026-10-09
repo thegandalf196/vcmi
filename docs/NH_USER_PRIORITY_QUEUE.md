@@ -1,6 +1,224 @@
 # User-priority queue
 
+## Top priority — preserve unique material, delete old build tree, rebuild once
+
+User authorized deleting the entire repository build directory only after all
+non-reproducible material is saved outside it and verified. Freeze workers at
+safe checkpoints. Relocate registered development worktrees, preserve unique
+source, artwork/handoffs, saves, crash evidence and useful validation records;
+retain the current playable delivery outside the disposable build tree. Verify
+preservation hashes and launcher/worktree references before deletion. Do not
+discard unfinished code, personal saves or original artwork. Then recreate one
+clean build with at most ten jobs. Do not accumulate duplicate debug binaries
+or full candidate trees. The earlier 77 obsolete snapshot deletion freed about
+63 GiB; remaining build output is approximately186 GiB. Other projects and
+unrelated home-directory data are outside this cleanup authorization.
+
+Preservation/deletion evidence: four registered worktrees relocated with exact
+HEAD/dirty-status and file-hash checks; ten Git source clones and seven additional
+source trees relocated and verified. Remaining337,989 entries (19,288,264,611
+bytes, including593 symlinks) copied outside the build tree and independently
+rehashed with zero mismatches. Independent review verifies64 actual saves,
+103 critical records and all16 historical CMake configurations. The artwork
+inventory's206,088 rows plus320 supplements have zero preservation omissions.
+Both ordinary and creature-preview stores are relocated outside the build tree;
+their17,352 files pass independent hashes. Launcher path checks and the synthetic
+wrapper test pass. Historical links to discarded binaries are retained only as
+non-runnable evidence;117 preserved links were retargeted explicitly.
+
+The entire old build directory was deleted after final inventory/worktree/live-
+process checks, freeing184,224,555,008 bytes. Disk usage became65%, with314 GiB
+available. Existing originals, unfinished work and playable deliveries remain
+recoverable; old compiled candidate pairs were discarded. One new reusable
+Release build directory is configured using installed GoogleTest sources.
+Client+vcmitest build66242 is confirmed live at ten jobs; log is outside build
+in the private preservation root (historical initial run, now terminal below).
+Poll the latest explicitly recorded live process before retrying; do
+not create another candidate/build tree or edit compiled inputs while it runs.
+This is not yet a successful rebuild or playable promotion. Small registration/
+dependency fixes include Frozen CMake wiring, its configured enabled helper and
+the Warp collector's missing BonusSelector include; native acceptance is pending.
+
+Build66242 is now terminal exit1 at the new physical-Cure Lua binding metadata.
+Reviewer identified the matching callback metadata shape and a missing complete
+SetStackEffect test include; these bounded fixes are applied only after terminal
+confirmation. Continue incrementally in the same clean directory, never restore
+old candidates. Successful rebuild/native acceptance and promotion remain pending.
+
+Retry81419 is terminal exit1 on an incomplete Rect type in Frozen UI feedback;
+the owning header now includes Rect explicitly. Retry65140 is terminal exit1
+on a test enum passed where a typed SpellID is required. The one-line typed
+identifier fix is frozen. Retry only incrementally in the same Release build,
+at ten jobs, with private logs outside build. These are compile fixes, not native
+acceptance. Minor rule uncertainties must be recorded provisionally rather than
+stalling independent work, per the user's departure instruction.
+
+Typed-identifier fix is frozen; incremental retry83662 is confirmed live at ten
+jobs in the same reusable directory. Keep compiled inputs frozen while it runs.
+Remaining artwork-path tests now pass23/23 without skips using NHART bytes and
+synthetic external authoring inputs; clean-checkout staging is being verified
+independently. No new playable promotion or artwork-cleanup commit yet.
+
+Retry83662 is terminal exit1 at the captured-recipient test fixture: missing
+mock method and private factory access. The fixture now uses its public spell-
+handler finalization path and retains all13 cases/assertions; production API is
+unchanged. Tracked-only clean artwork staging passes144 tests without skips;
+its shipping projection follows existing CMake exclusions and verifies3137
+selected entries, both NHART mounts, zero loose duplicates and unchanged hash.
+Two remaining authoring-tool/historical-preview repairs are being integrated.
+
+Retry42512 is terminal exit1: the paid Warp fixture directly accessed private
+captured magic rules. Its owner is repairing setup through the public builder
+without exposing mutable production state. Clean tracked-only artwork gate now
+passes158 cases, zero skips; follow-up repairs cover remaining historical map
+tools and static client checks. The pack is unchanged. No successful native
+build or playable promotion yet.
+
+Retry26679 is terminal exit1 on a test-only RNG namespace mismatch; both test
+declarations now use the actual CRandomGenerator type, retaining seed/draw
+assertions. The artwork cleanup index is independently cleared for scope and
+integrity:4040 visual removals plus97 policy/tool/test/docs changes, no gameplay
+or pack-byte changes. Fresh-index validation passes182 cases without skips and
+the maintained resource-staging path verifies3137 selected entries. Static
+client checks retain two known unrelated source-literal/mapping failures; the
+driver-dependent Wisp outline check has not run. Publication waits for the final
+authoring-guard gate. Compiled feature acceptance remains pending.
+
+Final artwork gate passes193 unique focused tests with zero skips; six CLI/path
+guards pass and maintained resource staging verifies the unchanged package.
+Cleanup is committed and normal-pushed as9726c6b874289fbcc4e5bc6a0d078e72b1929d38.
+Incremental build retry92906 is confirmed live at ten jobs in the one reusable
+Release directory after the test-only RNG repair. All compiled inputs remain
+frozen. Ordinary launcher still uses the independently verified previous
+delivery; source compilation is not playable promotion.
+
+Retry92906 is terminal exit0 and links both the client and vcmitest. The clean
+build occupies only about3.5 GiB; disk usage remains66%. Exact copied-pair native
+discovery finds Frozen22/Warp73. Initial acceptance is incomplete:Frozen21/22,
+Warp41/73, adjacent target conditions9/15, with zero crashes/errors/skips/timeouts.
+Original XML/logs and binary identities remain private. Warp failure cause is
+the wrong serialized health nesting in live/detached capture; guards are retained
+and valid capacity-ledger fixtures repaired. Frozen protocol/AI work proceeds
+in independent owned files; no completion credit or playable promotion yet.
+
+## Immediate user task — publish artwork only through NHART
+
+Remove tracked loose New Horizons visuals (including original-based changes,
+composites, drafts, layered/vector masters and review images), after verified
+outside-repository private backups. Keep the committed NHART, manifests,
+resource configuration, tools, records and licenses. Inventory all tracked
+locations and specific upstream/platform/test exceptions. Verify selected
+payload identity/hash/supporting metadata before removal, preserve pack bytes
+unless a demonstrated selected-resource gap needs correction. Repair workflows,
+tests and default authoring output paths; verify clean-checkout installation
+without local backups. One coherent scoped cleanup commit/push, no history
+rewrite or release replacement. Pulling its removal commit can remove tracked
+art from other worktrees; preserve them first. Existing Reality Warp changes
+and build6171 remain separate and must not be discarded.
+
+Private whole-art-tree copy (including untracked alternatives) and unpublished
+tracked patch are preserved outside the repository; recursive byte comparison
+passes. Exact per-file SHA256 inventory is being verified before removal.
+The existing pack verifies3138 indexed entries including its manifest,
+27,202,460 bytes, SHA256
+1a91c08b1efa146af5d8f7df0d8a99a5739c94e280fedb13e8fd4d11ae555fc8.
+Four detached development worktrees and the dirty primary tree are preserved.
+Build6171 is terminal exit1 on a missing Selector definition in the Warp
+collector; no compiler/native/GUI process from that build remains running.
+Its unrelated source fixes are held separately from the artwork commit.
+
+Resolved current-tree publication:9726c6b874289fbcc4e5bc6a0d078e72b1929d38
+removes4040 loose visual files and includes97 scoped policy/tool/test/doc repairs.
+Verified private backups retain originals, alternatives and review material.
+Independent review finds no remaining in-scope loose visual exception and no
+gameplay/pack/manifest-byte changes. Fresh tracked-index staging passes193 unique
+tests without skips; maintained resource assembly verifies3137 selected entries,
+both mounts, zero loose duplicates and the same package hash above. Six of eight
+driver-free historical client checks pass; missing Learned literal and newer
+perk-icon mappings remain separate pre-existing findings, with no assertion
+disabled. Driver-dependent outline/rendered acceptance was not repeated because
+package bytes/runtime behavior are unchanged. Historical Git/release copies
+remain accessible; this is not history erasure or extraction protection.
+
+## Immediate user task — classical Conflux Elemental rebalance
+
+Implement the supplied eight-creature table and equal Elite economy for
+Air/Storm, Water/Ice, Fire/Energy, Earth/Magma only:550/750 Gold,
+250/300 Leadership, growth4 and independent own-line Altar prerequisites.
+Ice becomes melee-only with zero shots and distinct physical Frozen status.
+Each successful melee attack/retaliation rolls20% once after damage; Frozen
+prevents retaliation and forfeits the next normal activation before thaw.
+Subsequent ordinary physical creature attack gains25% final damage then
+Shatters, without retaliation; direct magical damage breaks without bonus.
+No refresh/stacking; once per target per round persists through cleansing.
+Cure clears, ordinary Dispel does not. Full previews/AI/save/UI feedback and
+configurable values required. Scope excludes other Conflux lines/schools/
+attributes. Distinguish required normal-activation timing from interpretations
+of extra activations, record uncertain legacy immunities without inventing
+new-school immunity. Parallel read-only mapping while artwork preservation
+and the existing compiled candidate are protected.
+
+## Reality Warp production exchange in progress — 2026-10-09
+
+Accepted coverage remains combat66/67 and perks254/310. Captured recipient
+queries are frozen and independently reviewed; collection/preview tests are
+authored. Separate workers own atomic live/detached exchange, complete human
+pair selection/confirmation, AI pair evaluation and independent review. Root
+owns native effect registration, saved-rule admission, build wiring and data.
+The exchange preserves recipient health/casualties and captured strength,
+duration and caster provenance; it never replays an original spell. Unsupported
+representations stay at their original endpoint with explicit preview reasons.
+No build/native, activation, launcher promotion or coverage credit yet. The
+private runner remains binary-empty until all compiled owners freeze.
+
+All compiled owners are now frozen. Collection11, atomic12 (11 with Battle AI
+disabled), captured query13, preview4, paid runtime11 and AI6 cases are authored.
+Together with tags7 and existing planner9, the source-derived principal filter
+totals73; actual binary discovery remains authoritative. Adjacent parsed-target
+controls total15. Final bounded atomic review is checking the Confusion
+coherence guard and AI-disabled fixture guard. CMake configure/generate passes;
+serialized ten-job vcmitest/vcmiclient build session72461 is running from the
+candidate dirty tree based on9819b7a15. Do not edit compiled inputs or launch
+native/GUI until the build is terminal and the exact pair is verified. The
+candidate is not committed, source/native accepted or playable-promoted yet.
+
+Build72461 is terminal exit1, not running: the new exchange helper needs
+complete BonusList/typed Bonus serialization definitions. A bounded single-
+object reproduction is retained privately in BJJV/compile-exchange.log; its
+owner is fixing include completeness before retry. Independent final source
+review clears atomic coherence, stale/health guards, AI and UI. Root counts12
+TEST macros in the current atomic TU (one AI-only), retaining principal source
+inventory73; reviewer confirms the earlier13-case count was mistaken. Binary
+discovery remains authoritative. No native pair or test pass exists yet.
+
+The include-only helper fix is frozen; retry68670 is confirmed live at ten jobs,
+with its private complete log in BJJV/build-retry.log. Preserve this handle and
+poll it on continuation rather than starting another build. All implementation
+and review workers are at frozen checkpoints; no compiled-input edits during
+the retry. The normal launcher remains unchanged.
+
+Retry68670 is now terminal exit1. The helper object compiles; the next failure
+is const recipient calling non-const save during health capture. Its owner is
+switching to an acquired detached-state snapshot without mutating live state;
+no native execution or new build is live until that fix refreezes. Both lessons
+are persisted in NH_RELEASE_FAILURES.md.
+
+Both live and detached capture callers are refrozen on acquired recipient-local
+state snapshots. Serialized retry6171 is confirmed live at ten jobs; complete
+private log BJJV/build-retry2.log. Poll this exact handle on continuation and
+keep compiled inputs frozen. No native or playable acceptance yet.
+
 ## Accepted Fate Dealer — 2026-10-09
+
+Committed and normal-pushed as9819b7a15c085538aa7e9c232f71369ef0454a12.
+Root verifies commit attribution and the exact live remote ref; unrelated user
+artwork/tool inputs remain untouched and untracked. Next delegated implementation
+is Reality Warp's deterministic captured-effect recipient query using cached
+parsed conditions, with separate explicit context rather than recast Mechanics.
+It preserves absolute/negation/normal precedence and captured Hypnotize ceiling;
+unknown required capture/condition support must hold effects, not silently pass.
+Owner has TargetCondition, cached factory and CSpell forwarding plus focused
+tests; no activation or coverage credit until full live exchange/UI/AI exists.
 
 Linked46720 exits0. Exact runtime17/17 in5.471s and AI5/5 in1.888s pass with
 zero failures/errors/skips; root verifies XML and source/private pair hashes.
