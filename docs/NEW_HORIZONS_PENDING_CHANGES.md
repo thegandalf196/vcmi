@@ -15,27 +15,47 @@ entries here and thereby recreate a permanent override layer.
 
 ## Awaiting integration
 
-### Thant — authored provisional specialty replacement
+### Sage perks — eligible Guild catalog clarification
 
-Decision under the user's authorization to resolve gameplay gaps provisionally:
-replace Thant's removed Animate Dead starting inscription and specialty with
-the existing New Horizons Re-animate identity. Apply the canonical non-damage
-specialty conversion, +20% to the Spell Power-derived restoration component
-only. Preserve Re-animate's fixed220 HP component, ordinary temporary casualty
-eligibility, targeting, costs and action rules. Do not add a separate Masterful
-spell or a hero-level-scaling rider; do not change Thant's class, biography or
-other starting choices as part of this replacement.
+Provisional interpretation under the user's authorization: the Guild's available
+schools and built levels include eligible undisplayed spells from those saved
+school labels, respecting map bans and ordinary learning rules. Wisdom Sage
+reveals one such spell; Learning Sage personally learns the highest eligible
+unknown spell. This keeps Learning Sage meaningful after ordinary Guild learning
+has already taught all eligible displayed spells. Wisdom provisionally uses
+highest eligible level and canonical spellbook order for deterministic selection.
+The first built-Guild visit is consumed even before perk/book acquisition; a
+town without a Guild does not consume this separate visit. Preserve ordinary
+fixed Guild slots/research; separately revealed spells remain visible and usable.
+Private implementation is underway, not accepted. Integrate into the two Sage
+rows only after principal implementation and focused validation establish these
+semantics; revisit school-label and acquisition timing choices in the review ledger.
 
-Affected canonical sections: hero starting-profile replacement audit, hero
-specialty conversion and Re-animate. Rationale: preserve the authored necromantic
-restoration role using the closest existing legal spell, instead of retaining
-an inaccessible legacy identity or inventing a replacement spell. A private
-candidate is assigned; no activation/native acceptance or canonical integration
-is claimed yet. Review the specialty's interaction with restoration caps and
-casualty provenance during focused validation. Remove this amendment only after
-the canonical identity and verified implementation are integrated.
+### Four removed debuff specialties — provisional Frailty replacement
+
+Under the user's provisional-rule authorization, Cuthbert, Olema, Mirlanda and
+Xsi replace their inaccessible Weakness/Stone Skin specialty and fresh default
+starting inscription with existing Shadow Frailty. Preserve the defensive-debuff
+role without inventing another spell. Apply the canonical non-damage specialty
+conversion: +20% to the Spell Power-derived Defense-loss component only;
+Frailty's fixed10%, per-cast20% cap and cumulative60% cap remain unchanged.
+Do not change class, biography or other starting choices, map-prescribed starts,
+or captured legacy rules. This is a private implementation assignment, not
+activation or acceptance. Integrate the four identities only after focused
+principal/default-versus-map/legacy/save validation and independent review.
+Other removed hero specialties remain separate gaps.
 
 ## Integrated history
+
+### Thant — authored provisional specialty replacement — 2026-10-09 (integrated)
+
+Integrated into the canonical hero starting-profile audit: existing Re-animate
+replaces removed Animate Dead in fresh default starts and specialty, +20% only
+to its SP-derived restoration component. Fixed220, temporary casualty rules,
+map-prescribed spellbooks, legacy contexts and other profile choices remain.
+Source review and ten principal cases pass in native88843; fifteen adjacent
+controls pass in3070 after linked25787. Broader casualty/cap composition remains
+in the second-look ledger; no new rendered or playable acceptance is inferred.
 
 ### Polymorph impossible-footprint restoration — 2026-10-09 (integrated)
 

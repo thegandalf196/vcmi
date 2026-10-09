@@ -1,5 +1,10 @@
 # Phase 1 planned-perk hold index
 
+Current accepted checkpoint:276/310 after linked25787, principal88843:79/79 and
+adjacent3070:15/15, zero failures/errors/disabled/skips. Seven newly accepted
+rows are removed from the table below; they are no longer design holds. Remaining34 includes
+29 generic and5 faction perks. Private source-review clears are not acceptance.
+
 Updated: 2026-10-09. This is a navigation index for the planned perk entries in
 `config/newHorizonsPerks.json`, not a new rule source or an amendment to the
 canonical [New Horizons design](design-sources/New%20Horizons.md). That Markdown
@@ -154,23 +159,16 @@ new-horizons:spellcraft.concentration	question	UP-069	Target-count definition re
 new-horizons:spellcraft.extendSpell	question	UP-134	Unusual spell-lifetime/expiry scope remains unresolved.
 new-horizons:spellcraft.preciseCasting	question	UP-133	Time Stop/Earthquake scope remains unresolved despite principal cases.
 new-horizons:wisdom.arcaneMemory	question	UP-054	Neutral Adventure acquisition policy remains pending.
-new-horizons:wisdom.sage	question	UP-074	Pre-acquisition visit timing is recorded for both Sage rows; keep Wisdom Sage distinct from Learning Sage.
+new-horizons:wisdom.sage	private-implementation	UP-074	Eligible undisplayed Guild catalog and first built-Guild visit interpretation recorded provisionally; separate revealed rows/UI underway, not accepted.
 new-horizons:warcasting.reactiveWeave	question	UP-215	Half-strength readiness replacing versus stacking with stronger existing readiness remains unresolved.
 new-horizons:diplomacy.mercenaryCaptain	dependency	UP-129	Deterministic recruitment/cohort provenance is a prerequisite.
 new-horizons:diplomacy.loyalMercenaries	dependency	UP-129	Deterministic recruitment/cohort provenance is a prerequisite.
 new-horizons:diplomacy.legendaryReputation	question	UP-195,UP-129	Monthly use on refusal/zero admission versus positive join remains unresolved.
-new-horizons:learning.scholar	question	UP-163	One-holder reciprocal scope, no-transfer use and canonical spellbook-order representation remain unresolved.
-new-horizons:learning.historian	question	UP-071	Primary-XP reward classification for Chest/Tree/mixed rewards remains unresolved.
-new-horizons:learning.archivist	dependency	UP-165,UP-054	Neutral Adventure-scroll acquisition policy remains unresolved; combat-only partial cannot complete full scope.
-new-horizons:learning.sage	question	UP-074	Pre-acquisition visit timing is recorded for both Sage rows; keep Learning Sage distinct from Wisdom Sage.
+new-horizons:learning.sage	private-implementation	UP-074	Eligible Guild catalog highest unknown personal learning and first visit recorded provisionally; distinct from global Wisdom reveal, not accepted.
 new-horizons:luck.opportunist	question	UP-088	Movement-only continuation from reactions versus own activation remains unresolved.
-new-horizons:divineMandate.sharedPurpose	question	UP-108	Whether success qualifies by accepted Light target overlap or both effects actually triggering remains unanswered.
+new-horizons:divineMandate.sharedPurpose	private-repair	UP-108	Actual accepted recipient overlap/post-effect restoration implemented privately; review requires actual Purify completion and inherited detached expiry repairs before integration.
 new-horizons:divineMandate.divineDiscipline	question	UP-108,UP-149	Same-Order reissue replacing versus separate nonstacking carried instances remains unresolved.
-new-horizons:divineMandate.royalStandard	question	UP-108	Protection to scheduled expiry versus ending with broken/spent Order benefit remains unresolved.
 new-horizons:divineMandate.crownAndAltar	question	UP-108	Second-action timing is resolved; paired-recipient qualification remains unanswered.
-new-horizons:shroudOfMalassa.deepFlank	question	UP-174	Distinct melee sides from current positions versus accepted-hit history and reset window remains unresolved.
-new-horizons:shroudOfMalassa.encircledDoom	question	UP-174	Positional side contacts versus attack-history count/reset window remains unresolved.
-new-horizons:shroudOfMalassa.vanish	question	UP-176	Retaliation kills and simultaneous Pursuit/Vanish allowance composition remain unresolved.
 new-horizons:bulwarkOfTheMire.deepBulwark	lack-producer	UP-167	No canonical nonmagical forced-displacement producer exists.
 new-horizons:elementalRebirth.phoenixSpark	question	UP-046	Greater Essence composition with the fixed 25% replacement remains unresolved.
 ```

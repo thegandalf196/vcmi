@@ -5462,6 +5462,16 @@ A combat spell legitimately inscribed in a hero's spellbook may be cast regardle
 
 Hero starting profiles audit starting Skills, spells, specialties, and armies together against the current registries and mechanics. Removed or replaced vanilla mechanics must not leave stale spells, empty starting choices, obsolete specialties, or armies that violate Leadership. Author a replacement where the design leaves a gap rather than inferring one; Halon's former Mysticism package and the remaining three-starting-development profiles therefore require explicit authored replacements before activation.
 
+Thant's authored provisional replacement uses the existing Re-animate spell for
+his fresh default starting inscription and specialty instead of removed Animate
+Dead. Apply the non-damage specialty conversion only to Re-animate's Spell
+Power-derived restoration component (+20%); its fixed220 HP component and
+ordinary temporary casualty eligibility, targeting, costs and actions remain
+unchanged. Do not add a separate Masterful spell or hero-level scaling rider.
+Preserve map-prescribed spellbooks, captured legacy rules, class, biography and
+other starting choices. Revisit restoration-cap/casualty composition during
+integration; this replacement does not authorize other missing hero profiles.
+
 ###### Hero specialty conversion
 
 |**Specialty family**|**Experimental conversion**|

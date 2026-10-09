@@ -1,5 +1,20 @@
 # User-priority queue
 
+## Current Phase1 accepted checkpoint — seven perks and specialty conversions
+
+Build25787 links at ten jobs. Exact native88843 passes79/79 in25.252s and
+adjacent3070 passes15/15 in6.590s, zero failures/errors/disabled/skips. Independent
+review, static38, module parity and binary privacy pass. Accepted perks276/310:
+generic191/220,faction85/90;34 remain. The seven are Scholar, Historian, Archivist,
+Royal Standard, Deep Flank, Encircled Doom and Vanish. Haste specialists Cyra,
+Brissa and Terek plus authored Thant Re-animate pass their separate paths.
+Old failures remain private; fixture repairs retained all outcomes and production
+eligibility/save guards. Commit/push is next; playable Linux still selects the
+verified source6db2f1534/snapshot568b1029. NHART unchanged; no new rendered or
+Windows acceptance. Source-clear private Shared Purpose, both Sage perks and
+four Frailty replacements are next integration; Phoenix Spark and Recruiter's
+Contacts continue privately. Deferred cross-system findings remain Phase2.
+
 ## Current Phase1 accepted checkpoint — four perks
 
 Build90928 succeeds after incremental21118. Exact85299 native36/36 passes in
@@ -8,8 +23,44 @@ disabled/skips. Same-pair shared68621 passes33/33 in10.845s. Registry21/module
 parity, binary privacy and independent review pass. Accepted perks269/310:
 generic188/220,faction81/90;41 planned. Other identity counts unchanged. Failure
 logs stay private; production eligibility and fixture assertions were preserved.
-NHART unchanged. Commit/push and new playable delivery are pending separately;
-the normal Linux launcher still selects committed6757ac8f3/snapshot3a2cade1.
+NHART unchanged. Source6db2f1534 is normally pushed and remotely confirmed.
+Committed metadata/resource staging and privacy pass; normal Linux now selects
+snapshot568b1029 after an isolated silent20s headless run reaches day3, verifies
+actual executable/library/drivers and releases processes, sockets and profile
+lock. No new rendered acceptance or Windows downloadable verification is claimed.
+Next source batch integrates reviewed Royal Standard, Historian, Archivist,
+Deep Flank, Encircled Doom, Vanish and Scholar, plus retained Haste specialties
+and Thant's authored Reanimate replacement. Combined ten-job build88029 stops1
+at Scholar's fixture type/public-access compilation; the failed log is preserved
+privately and bounded reviewed fixture repairs precede the incremental retry.
+Fixture v3 is independently source-clear: concrete types and exact public durable
+spell membership preserve every assertion. Incremental ten-job build62589 stops1
+on Royal callback construction, Vanish integer typing and Haste's private pool
+access in fixtures; bounded public-API repairs are assigned and logs preserved.
+Those three repairs are source-clear. Retry50443 stops1 on Thant's private raw
+settings test access; reviewed public serialization now preserves exact raw
+old-reader no-invention proof. Retry82917 stops1 at Archivist's invalid-ID fixture;
+the typed default invalid ID retains exact-instance controls. Final ten-job
+retry3269 links successfully in the same directory. Binary privacy14739,
+module parity and diff checks pass. The exact matched native/library pair is
+being refreshed in the existing isolated runner for discovery79, principal79
+and adjacent15; no additional build or native acceptance is inferred yet.
+Accepted coverage remains269/310. Reviewed fixture isolation retains Scholar's old
+format control must exclude the later Reanimate admission, and Archivist's
+negative school control must use a school-gated spell rather than rank-zero
+Magic Arrow. Production eligibility/save guards remain intact. Hero biography
+and hero-data checks pass17/17 after a reviewed test-only CMake harness repair;
+production artwork/settings guards remain intact. Perk/Puppet checks pass21/21
+and generated module parity passes. Shared Purpose, the two Sage perks and four
+provisional Frailty specialty replacements progress privately without changing
+the frozen build sources. Shared Purpose v2 is source-clear after actual Purify
+completion and detached expiry repairs; its15 authored cases are not executed.
+The two Sage perks and four Frailty replacements are independently source-clear,
+not integrated or native-accepted. Recruiter's Contacts progresses privately
+using the first empty positive-growth external dwelling row and owned-at-entry
+qualification. Phoenix Spark progresses privately with its
+fixed25% replacement interpretation recorded for a second look. Native
+acceptance is not inferred from private patches.
 
 ## Current Phase1 source/native checkpoint — Estates and Swift
 

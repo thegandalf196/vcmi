@@ -1,5 +1,20 @@
 # New Horizons implementation sprints
 
+## Seven-perk/hero accepted checkpoint — 2026-10-09
+
+Same-directory ten-job build25787 links. Exact native88843 passes79/79 in25.252s
+and adjacent3070 passes15/15 in6.590s, zero failures/errors/disabled/skips.
+Scholar, Historian, Archivist, Royal Standard, Deep Flank, Encircled Doom and
+Vanish raise accepted perks269→276/310 (generic191/220,faction85/90),34 remaining.
+Cyra/Brissa/Terek Haste and authored Thant Re-animate specialty paths also pass.
+Static38, parity, binary privacy and independent reviews pass. Prior failed
+fixtures/logs/XML remain private; all actual outcomes and save/eligibility guards
+were retained. No new rendering/Windows/playable delivery is implied.
+Next: commit this accepted batch, then integrate source-clear Shared Purpose,
+both Sage perks and four authored Frailty replacements. Phoenix Spark and
+Recruiter's Contacts progress privately. Source6db2f1534/snapshot568b1029 remains
+the current ordinary Linux delivery until a separately verified promotion.
+
 ## Four-perk accepted checkpoint — 2026-10-09
 
 Ten-job retry21118 and layout-only90928 link in the same disposable build.
@@ -11,7 +26,10 @@ preserved privately; concrete includes, exact visitor comparison and H3M town
 footprint placement were corrected without relaxing mechanics/assertions.
 Next private batch: Historian, Archivist, Royal Standard, Deep Flank, Encircled
 Doom and Haste specialty conversion. Authored tests are not accepted coverage.
-Source commit/push and playable delivery of this batch remain separate gates.
+Source6db2f1534 is normally pushed and remote-ref confirmed. Committed metadata
+and resource staging pass; Linux snapshot568b1029 is promoted after a fresh
+silent20s headless smoke reaches day3 with exact child paths/drivers and cleanup
+verified. No new rendered or Windows downloadable acceptance is claimed.
 
 ## Estates/Swift accepted checkpoint — 2026-10-09
 

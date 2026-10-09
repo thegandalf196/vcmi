@@ -30,12 +30,74 @@ and restoration; ordinary immunity and caps still govern its +2 Morale. Time Sto
 or fully absorbed damage cannot earn it. Review temporary HP, polymorph and
 controller transitions in Phase2. Sources are the shared Discipline/unit-state
 and Rebirth paths, town/hero visitor helpers, NewTurnProcessor and existing
-netpack serialization. These four implementations are source-reviewed, not yet
+netpack serialization. These four implementations are source-reviewed and
 accepted at native85299:36/36 principal cases pass after linked90928, zero
 failures/errors/disabled/skips. Shared68621 passes33/33 on the same pair.
 These interpretations remain reviewable; broader interactions above are Phase2.
 
 ## Prepared private candidates — not accepted implementation coverage
+
+Accepted batch status: Royal Standard, Deep Flank, Encircled Doom, Vanish,
+Historian, Scholar and Archivist now pass their principal gates in88843:79/79,
+with adjacent3070:15/15. Haste and Thant specialty paths pass in the same batch.
+The implementation interpretations below remain reviewable Phase2 items;
+earlier authored/unrun labels are historical, not the current acceptance state.
+Shared Purpose, Sage, Frailty replacements, Phoenix Spark and Recruiter's
+Contacts remain private candidates with separate gates.
+
+Recruiter's Contacts: provisionally an empty pool means an individual external
+dwelling row, not every row simultaneously. Replenish only the first empty row
+with positive ordinary weekly growth in stable stored order; preserve base and
+upgrade sharing. Qualification uses ownership at entry, before the ordinary
+capture path. Only a successful positive stock grant spends the hero's weekly
+use; zero growth and failed/stale receipts do not. Reuse the external dwelling's
+own percent/flat growth formula, not town/Castle production. Private implementation
+is underway, with no activation/native evidence. Review multirow selection and
+captured versus previously owned dwellings in Phase2.
+
+Phoenix Spark: provisionally its explicit25% battle-start maximum aggregate HP
+replaces the ordinary Rebirth/Greater Essence HP percentage, rather than adding
+Greater Essence's15 percentage points. Capture the first eligible friendly
+Champion death and the once-combat use before summon creation; a failed legal
+placement does not shift 'first' to a later Champion or recursively retry.
+Use authoritative category and existing Rebirth eligibility, temporary summon,
+placement and lifecycle infrastructure. Related rebirth traits require explicit
+scope review rather than assuming Phoenix is an ordinary Elite Elemental.
+Private implementation is assigned; no activation or focused native evidence.
+Revisit failed-placement use and other Rebirth perk composition in Phase2.
+
+Both Sage perks: interpret the Guild's available schools and built levels as
+its eligible catalog, not only already displayed spells. Ordinary Guild learning
+already teaches all legally learnable displayed spells, so the latter would make
+Learning Sage ineffective. Respect saved per-level school labels and map bans.
+Wisdom reveals a previously undisplayed eligible spell globally; Learning learns
+the highest eligible unknown spell personally. Canonical scoped spellbook order
+breaks ties; provisionally Wisdom also chooses the highest eligible level. A
+hero's first built-Guild visit consumes its receipt even before perk/book
+acquisition; arriving with no Guild does not. Separate revealed rows preserve
+ordinary fixed slots and research. Existing-position overflow must remain
+accessible through a native component dialog, not disappear or overrun layout.
+Private implementation is underway, with no activation or native credit. Review
+multiple holders, later Guild construction, school labels and book acquisition
+timing after focused principal verification; authored clarification is pending.
+
+Vanish and Encircled Doom: Vanish earns a move-only half-Speed budget only from
+the acting stack's qualifying primary physical flanking kill. Combine it with
+existing Pursuit by maximum, not addition; no extra attack/activation is granted.
+Encircled Doom adds10 percentage points per additional distinct contact side,
+up to50, only to a qualifying physical melee flank. Existing contact geometry
+and controller filters apply. Review transient post-attack Speed forecasting and
+broader collateral/temporary-form cases in Phase2. These integrated candidates
+still await their combined native gate.
+
+Scholar: choose both reciprocal teachings before either mutation, with scoped
+canonical identity ties and a symmetric pair/week receipt. No eligible teaching
+does not consume the use. Ordinary book/school/rank/banned-spell rules still
+apply. Haste specialists keep fixed Speed unchanged; the canonical non-damage
+SP-component enhancement applies to duration. Thant's replacement applies it
+only to Re-animate restoration, not its fixed220 component. Neither change
+authorizes other starting-profile replacements. Their combined native gate is
+pending; review unusual meeting, duration and restoration compositions in Phase2.
 
 Royal Standard: capture only the original recipients of an actually selected
 Divine Mandate Order follow-up. Its negative-Morale floor lasts through that
