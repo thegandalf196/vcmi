@@ -1,5 +1,20 @@
 # New Horizons implementation sprints
 
+## Delivered Phase1 checkpoint — 2026-10-09
+
+Linux5938709/source69004 is promoted after current linked108/108 client build,
+verified3137-entry NHART, ordinary Mage/Stone recruitment+Stone growth and fresh
+Mentor level/skill/transfer/title GUI acceptance. Headless new-game/AI smoke
+reaches day4 and bounded shutdown cleanup passes. Obsidian rendering and broad
+schema/AI diagnostics remain separate Phase2/visual checks. No new identity
+coverage beyond241/310 perks and62/67 combat spells is claimed.
+
+Next coverage step is Elemental Convergence plus three terrain-dependent perks;
+the omitted terrain mapping is awaiting a precise user choice. Rapid Embarkation
+also retains its Navigation5% versus10% question. Remaining hero mechanical
+profiles need authored armies/specialty rules. These are actual rule holds, not
+permission to invent decisions or spend the coverage loop on broad polish.
+
 ## Verified Phase1 checkpoint — 2026-10-09
 
 Confusion/Confounder and Rebirth Chain are production-active after linked

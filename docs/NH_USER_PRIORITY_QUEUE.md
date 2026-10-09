@@ -1,5 +1,50 @@
 # User-priority queue
 
+## Verified Linux delivery — 2026-10-09
+
+Normal launcher now selects snapshot5938709/source69004cc23 after linked
+client1989 (108/108), detached NHART3137-entry verification, baseline resource
+retention and actual silent GUI acceptance. Root inspected Mage recruitment
+face/torso, Stone Gargoyle recruitment and weekly-growth Academy backdrop.
+Both remain Provisional art; Obsidian GUI is unverified because the single-player
+seed won before that view opened. Native all14-portrait evidence remains separate.
+
+Fresh genuine Mentor setup, not the missing old presave: Orrin16 meets Valeska,
+she gains Luck/Sorcery Magic/Battlecraft (skills2->5, level1->4) inside exchange;
+legal16-Pikeman transfer/back succeeds and heading reads Level4. Normal exits0;
+actual children verify both dummy audio variables before input. Owned games,
+debuggers and Xvfb are stopped and profile locks free. Durable private receipt
+and new real-GUI save:build/nh-delivery-gui-69004.vAMpKK8o/receipt.md.
+Review copies are non-overwriting under Downloads/provisory/nh-69004-portraits.
+
+Headless All for One smoke reaches day4 with AI/combat, then expected20-second
+timeout124; owned process absence, runtime cleanup and released lock verified.
+Schema unknown-entry diagnostics and NK2 node-allocation notices are deferred,
+not represented as a clean broad integration gate. Receipt under
+build/nh-69004-headless.MaLeehDk/. Promotion does not certify Windows rendering,
+all portrait consumers, a completed match or all new mechanics in play.
+
+## Current delivery and next coverage decision — 2026-10-09
+
+Current69004cc23 client is being relinked with10 jobs for actual portrait/title
+acceptance and Linux promotion. The old temporary Mentor replay directory is no
+longer present; retain the previously recorded result but do not claim its raw
+save/screenshots remain available. Recreate current GUI setup in ignored build/
+through genuine inputs, silent guarded display and disposable profile.
+
+An independent spell audit finds no newly cleared hold among the five inactive
+spells or a missing principal path in the inspected active UI. Elemental
+Convergence's omitted terrain mapping remains a genuine rule choice. A narrow
+question asks Earth for Dirt/inland Sand/Wasteland and Water for Swamp/coastal
+arenas (including coastal Sand), versus Sand always Earth. This unlocks three
+Rebirth perks; do not activate them before the answer and focused execution.
+
+The first maintained stage helper rejects the authoring magic-assets descriptor
+because its bytes differ from the committed selected packed descriptor. Preserve
+the authoring source; exclude only its copied loose runtime version from the
+detached stage, using the committed NHART entry unchanged. Verify both mounts
+and absence of loose duplicates before freezing. This is not a pack rebuild.
+
 ## Verified Phase1 integration — 2026-10-09
 
 Confusion (including impossible Attack -> Defend), Confounder and Rebirth Chain
