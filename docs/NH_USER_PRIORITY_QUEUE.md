@@ -1,5 +1,21 @@
 # User-priority queue
 
+## Bounded next-work selection — 2026-10-09
+
+Independent creature and action-foundation workers inspect the current source,
+canonical clauses and prior receipts. No new unambiguous principal gap is found
+in Fortress conversion defaults, Wisp/Cabir abilities and minimum AI, round Hero
+Action reset, Order target validation/AI, Wait/Defend and retaliation resets.
+Root corroborates shipped configs and shared/AI anchors. This does not certify
+all creatures or interactions and grants no new gameplay count.
+
+The next missing feature remains Elemental Convergence and its three dependent
+perks. Terrain mapping is awaiting the actual submitted user answer; Rapid
+Embarkation also retains its Navigation composition question. Do not reinterpret
+preselected options as answers, invent authored hero profiles, or repeat these
+same bounded audits without new evidence. Phase1 is incomplete and remains
+active; no all-backlog-blocked or Version1.0 completion claim is made.
+
 ## Verified Linux delivery — 2026-10-09
 
 Normal launcher now selects snapshot5938709/source69004cc23 after linked
