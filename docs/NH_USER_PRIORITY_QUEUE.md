@@ -1,6 +1,25 @@
 # User-priority queue
 
-## Blocking runtime finding — Battle-only generated map is not mounted
+## Resolved runtime findings — generated-map origin and hover caster lifetime
+
+Current delivery: source8d2dd92c0 is normal-pushed and the ordinary Linux
+launcher now selects its verified a711d609 snapshot. Exact guarded debugger
+recheck survives Ice-card right-button release, separate Escape and legal
+Protection-from-Water hover. No SIGSEGV; intentional bounded SIGTERM cleanup
+ends at102s, owned processes/socket gone and profile lock free. Fresh silent
+headless run advances day1 to day6 with actual child isolation verified, then
+cleans up after the20s bound. NHART3137 selected entries, both mounts, zero loose
+duplicates and unchanged pack hash pass. Both reported entry/hover crashes are
+closed; Frozen/encasement/Shatter rendering remains separately unobserved.
+
+Merchant Prince is accepted after linked77224 and matching native46406:
+11/11 in3.763s (eight principal, three Resource Broker), zero failures/errors/
+skips. The public authoritative build path establishes real Marketplace bonuses;
+the positive-count assertion remains. Initial7/8 XML/log retained privately.
+Coverage262/310, generic183/220,faction79/90,48 planned. Registry/static21 and
+module parity pass. Commit/push and latest playable delivery remain next gates.
+Prospector enclosing save guards and Swift Rebirth independent review progress
+privately; neither is applied or accepted yet.
 
 New guarded bc9d6f/source231c1da21 observation: Begin reaches real manual
 combat; the Ice creature card visibly shows Freezing Touch20% / Shatter+25%.

@@ -1,5 +1,21 @@
 # New Horizons implementation sprints
 
+## Merchant Prince accepted checkpoint — 2026-10-09
+
+One reusable ten-job build77224 links successfully. Exact matching native11/11
+passes in3.763s (Merchant Prince8, Resource Broker3), zero failures/errors/skips;
+registry/static21 and module parity pass. Perks262/310, generic183/220,
+faction79/90,48 planned. Real public building construction fixes the initial
+fixture's missing Marketplace bonus without weakening its positive-count check.
+Both resident positions, non-stacking holders, trade caps, absent/inactive perk
+and actual AI-authoritative trade paths are covered. Residence scope remains
+provisional. No gameplay or artwork changes beyond the specified town benefit.
+
+Source8d2dd92c0 is normal-pushed and promoted to verified a711d609 after actual
+guarded repaired card-close/hover checks and a fresh silent day6 headless run.
+Merchant Prince's committed playable delivery is the next gate; private Swift
+Rebirth review and Prospector enclosing save guards progress independently.
+
 ## First Blood/Slayer and hover lifetime checkpoint — 2026-10-09
 
 Linked61073 passes after the fixture's explicit BattleInfo callback correction.

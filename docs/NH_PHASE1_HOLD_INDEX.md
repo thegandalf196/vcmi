@@ -13,7 +13,7 @@ with zero errors/skips and independent review. Their planned rows are retired.
 Eagle Eye subsequently passes11 principal cases plus one late-map case and
 five adjacent controls after linked11731; its row is retired under the recorded
 retained-participant interpretation. Current accepted coverage is67/67 combat
-spells and261/310 perks (generic182/220,faction79/90); rendered/playable delivery
+spells and262/310 perks (generic183/220,faction79/90); rendered/playable delivery
 remains separate.
 
 First Blood/Slayer subsequently pass11 principal cases in a25/25 exact-pair
@@ -21,8 +21,12 @@ batch after linked61073. Their rows are retired under the recorded independent-
 increment interpretation; both-holder, capped, resurrection and protocol
 controls pass. Adjacent three older-format fixture failures remain Phase2.
 
-Registry-derived inventory: 31 Skills, 93 active rank effects, 261 active perks,
-and 49 planned perks: 38 generic and 11 faction. This index covers only those 49
+Merchant Prince passes eight principal and three adjacent Resource Broker
+cases after linked77224. Its row is retired under the recorded resident-town,
+non-stacking interpretation, including actual AI/server trades.
+
+Registry-derived inventory: 31 Skills, 93 active rank effects, 262 active perks,
+and 48 planned perks: 37 generic and 11 faction. This index covers only those 48
 perks; combat spell implementation coverage is complete. The current
 selection audit in [NH_FUNCTIONAL_COMPLETION_MATRIX.md](NH_FUNCTIONAL_COMPLETION_MATRIX.md)
 historically reported item-specific questions or dependencies. The user has now
@@ -140,7 +144,6 @@ new-horizons:diplomacy.mercenaryCaptain	dependency	UP-129	Deterministic recruitm
 new-horizons:diplomacy.loyalMercenaries	dependency	UP-129	Deterministic recruitment/cohort provenance is a prerequisite.
 new-horizons:diplomacy.legendaryReputation	question	UP-195,UP-129	Monthly use on refusal/zero admission versus positive join remains unresolved.
 new-horizons:estates.prospector	question	UP-166	Gold is neither a common nor rare resource; Gold-mine eligibility/reward remains unresolved.
-new-horizons:estates.merchantPrince	question	UP-071	Visitor/garrison qualification, holder stacking and eligible exchange types remain unresolved.
 new-horizons:estates.steward	question	UP-071	Two-resident stacking remains pending.
 new-horizons:estates.magnate	question	UP-168	Visit/week-start ownership, capture and multiple-holder stacking remain unresolved.
 new-horizons:learning.scholar	question	UP-163	One-holder reciprocal scope, no-transfer use and canonical spellbook-order representation remain unresolved.

@@ -1,5 +1,13 @@
 # New Horizons provisional rule review
 
+## Merchant Prince — resident scope and virtual Marketplaces
+
+An owned visiting or garrison hero qualifies while linked to this town. Two
+holders grant +2 virtual Marketplaces once, not +4. Existing supported exchange
+modes consuming Marketplace efficiency benefit, retaining their ordinary caps;
+fixed transfers and unsupported modes do not change. A real Marketplace remains
+required. No kingdom-wide count is mutated. These scope choices are provisional.
+
 ## First Blood and Slayer — independent extra increments
 
 Provisionally each perk adds one extra ordinary Bloodrage increment to its
