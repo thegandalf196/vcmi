@@ -1,5 +1,40 @@
 # New Horizons implementation sprints
 
+## Verified Phase1 checkpoint — 2026-10-09
+
+Confusion/Confounder and Rebirth Chain are production-active after linked
+build30644, native96/96 (16.817s, zero skips), data17/17, module parity and
+independent review. RMG random-scroll admission passes3/3 in the same run.
+Coverage241/310 perks (generic169/220, faction72/90;69 planned), combat62/67,
+Orders8/8,31 Skills/93 ranks. Focused state/cast/AI and save-packet gates pass;
+cross-system checks remain explicitly Phase2 in the completion matrix.
+
+Next root delivery step is relinking and freezing a client, then guarded silent
+portrait/title acceptance and normal Linux promotion. Independent implementation
+continues where canonical rules and file ownership permit. Hero mechanical
+profiles and sampled remaining town/legacy clauses retain actual design holds;
+do not invent profiles or substitute polish for missing coverage.
+
+## Current Phase1 checkpoint — 2026-10-08, parallel implementation resumed
+
+The user-priority queue retains root integration/delivery precedence, not an
+exclusive serial lane. Independent worker implementations continue in isolated
+worktrees; the earlier crash/portrait paragraph below is historical. The actual
+guarded silent Mentor replay now reproduces the old crash and accepts both
+directions with the repaired candidate. Mage upper-torso framing and exchange
+title refresh are committed8c69e527f; approved Confusion fallback144b1d09e;
+both are pushed. Normal-launcher portrait/title acceptance is still pending.
+
+Confusion and Rebirth Chain runtime/AI candidates are integrated and reviewed;
+their focused native build is in progress with10 jobs. Legacy random-scroll
+admission is an additional bounded producer repair with three candidate tests.
+Production feature registration remains inactive until principal execution
+passes. Coverage remains239/310 perks,61/67 combat spells and8/8 Orders—not
+increased by source integration, fixture compilation or review alone. Review
+interaction findings are recorded for Phase2. Next steps: finish the serialized
+build, run only these focused filters, repair concrete failures, activate verified
+features and update the coverage ledger; preserve the current human game.
+
 ## Current Phase1 checkpoint — 2026-10-08, user-reported crash and portraits
 
 Master Teacher is active: coverage239/310 perks (generic168/220,

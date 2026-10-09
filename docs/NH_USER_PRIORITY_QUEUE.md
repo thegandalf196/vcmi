@@ -1,5 +1,40 @@
 # User-priority queue
 
+## Verified Phase1 integration — 2026-10-09
+
+Confusion (including impossible Attack -> Defend), Confounder and Rebirth Chain
+are active and native-verified96/96 with zero skips in16.817s; shipped-registry
+admission is tested without private overrides. RMG random-scroll producer3/3
+passes. Linked build30644, data17/17, module parity and independent review pass.
+Coverage241/310 perks,62/67 combat spells,8/8 Orders,31 Skills/93 ranks.
+Retained logs/XML are private under build/nh-confusion-rebirth-native.8ZbuyL7f/.
+Earlier candidate failures below are superseded by these repairs and evidence.
+Usual Linux playable promotion and actual portrait/title GUI acceptance remain
+open; do not equate native source acceptance with that delivery.
+
+## Current Phase 1 integration checkpoint — Confusion, Chain and random scrolls
+
+Confusion forced-action/AI and Rebirth Chain source are integrated from separate
+worker checkpoints. Independent reviews find no principal blocking defect;
+candidate registration remains inactive until native execution. Focused tests
+cover shared probability/fallback rules, actual forced actions and paid AI
+casting, exact Chain HP/quota/generation suppression and detached AI parity.
+The serialized build uses10 jobs. New fixture compile errors are corrected
+without production API changes; source edits alone do not increase coverage.
+
+Legacy-access audit finds historical37 now35 heroAccess:false entries, inactive
+Animate Dead and accessible Haste. UP220 still holds Haste's intended profile
+replacements; no blanket legacy-ID removal is authorized. A genuine ordinary
+random-scroll producer gap is fixed narrowly in TreasurePlacer, using generated
+map settings before game-state snapshots exist and omitting empty pools. Three
+candidate tests cover blocked, eligible/map-banned and explicit legacy contexts.
+
+Hero mechanical profiles remain blocked by missing authored troop ranges and
+specialty execution rules; the reviewed biography approval does not authorize
+inventing them. Rapid Embarkation/Navigation's10% versus5% stacking question
+is submitted while unblocked integration continues. Detailed review findings
+are retained in NH_RELEASE_FAILURES for Phase2, not represented as passing tests.
+
 ## Persistent orchestration correction — Parallel coverage during priority fixes
 
 User explicitly requests that independent perk/spell implementation continue

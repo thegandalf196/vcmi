@@ -1,14 +1,14 @@
 # Phase 1 planned-perk hold index
 
-Updated: 2026-10-08. This is a navigation index for the planned perk entries in
+Updated: 2026-10-09. This is a navigation index for the planned perk entries in
 `config/newHorizonsPerks.json`, not a new rule source or an amendment to the
 canonical [New Horizons design](design-sources/New%20Horizons.md). That Markdown
 remains the sole authority for gameplay. The queue and functional matrix record
 current implementation questions and dependencies.
 
-Registry-derived inventory: 31 Skills, 93 active rank effects, 239 active perks,
-and 71 planned perks: 52 generic and 19 faction. This index covers only those 71
-perks; the six inactive combat spells are tracked separately. The current
+Registry-derived inventory: 31 Skills, 93 active rank effects, 241 active perks,
+and 69 planned perks: 51 generic and 18 faction. This index covers only those 69
+perks; the five inactive combat spells are tracked separately. The current
 selection audit in [NH_FUNCTIONAL_COMPLETION_MATRIX.md](NH_FUNCTIONAL_COMPLETION_MATRIX.md)
 historically reported item-specific questions or dependencies. The user has now
 resolved Battlefield Mastery and Last Stand. Mastery is now source/native verified
@@ -20,9 +20,9 @@ Version1.0 backlog is blocked. Esprit de Corps and generic Serendipity are now
 active after a linked build and 51 focused/adjacent native cases pass with zero
 skips; their earlier holds were settled by existing canonical wording.
 Master Teacher is now active after6 principal and6 adjacent native cases pass;
-the unnamed Mentor prerequisite was not authored. Rebirth Chain is ready under
-the one-per-tier rule and appearance-triggered Primal Burst; implementation is
-next, not completed coverage.
+the unnamed Mentor prerequisite was not authored. Confounder and Rebirth Chain
+are now active after96 focused native cases pass with zero skips, including
+unchanged shipped-registry admission. Their planned rows are removed below.
 
 Status meanings:
 
@@ -76,7 +76,6 @@ new-horizons:natureMagic.elementalConjurer	dependency	UP-072	Depends on the unre
 new-horizons:havocMagic.demolitionist	question	UP-139	Structural-perk stacking and fixed-landmark destructibility remain unresolved; baseline structural producer is verified.
 new-horizons:havocMagic.meteorologist	question	UP-139	Structural stacking and fixed-landmark destructibility remain unresolved.
 new-horizons:havocMagic.cataclysm	question	UP-111,UP-139	Eligible magical-obstacle and fixed-landmark filters remain unresolved.
-new-horizons:chaosMagic.confounder	dependency	UP-043	The user settled the remaining immobile-Attack endpoint as Defend. Full Confusion forced-action producer and principal native evidence remain required. Preserve verified UP306-309 foundations.
 new-horizons:chaosMagic.shapeshifter	dependency	UP-066	Polymorph battle-local creature-form behavior is a prerequisite.
 new-horizons:chaosMagic.fateDealer	question	UP-060	Two collateral draws with replacement versus distinct targets remains unresolved; base eligible pool is settled.
 new-horizons:chaosMagic.realityBreaker	dependency	UP-179	Depends on Reality Warp; its target-scope question remains recorded.
@@ -121,7 +120,6 @@ new-horizons:elementalRebirth.elementalAttunement	dependency	UP-072	Depends on u
 new-horizons:elementalRebirth.swiftRebirth	question	UP-046	Precedence versus earned Morale activation and multi-spawn tie order remain unresolved.
 new-horizons:elementalRebirth.elementalMemory	question	UP-046	Inherited Morale versus Elemental immunity remains unresolved.
 new-horizons:elementalRebirth.adaptiveElement	dependency	UP-072	Depends on unresolved Elemental Convergence terrain mapping.
-new-horizons:elementalRebirth.rebirthChain	implementation-ready	UP-046	Canonical one-per-tier eligibility excludes same-tier inheritance conflicts; Primal Burst applies to the second appearance. Exact original HP exists; Chain death/quota/replication/AI implementation remains missing.
 new-horizons:elementalRebirth.perfectConvergence	dependency	UP-072	Depends on unresolved Elemental Convergence terrain mapping.
 new-horizons:elementalRebirth.phoenixSpark	question	UP-046	Greater Essence composition with the fixed 25% replacement remains unresolved.
 ```
