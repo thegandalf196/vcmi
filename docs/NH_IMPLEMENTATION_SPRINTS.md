@@ -1,5 +1,19 @@
 # New Horizons implementation sprints
 
+## Accepted three-perk checkpoint — 2026-10-09
+
+Veiled Movement,generic Lucky Recovery and Avatar of Rage are source/native
+accepted after linked71404:30/30 principal cases in11.512s,8/8 adjacent controls
+in2.459s on the same engine, zero errors/skips. Independent review,data17/17,
+module parity and portable binary privacy pass. Coverage258/310 perks
+(generic181/220,faction77/90;52 planned),combat67/67; Orders8/8,Skills31/31,
+ranks93/93 unchanged. The initial28/30 run remains private; minimal fixture
+repairs retained the behavioral assertions. Controlled-target allegiance and
+broader composition remain Phase2. One Release tree and ten jobs are retained.
+Latest Linux delivery still requires committed-resource freeze/headless gates;
+do not equate source acceptance with promotion. Next:Eagle Eye's reviewed private
+11-case implementation, not counted until integrated and validated.
+
 ## Accepted Fate Dealer checkpoint — 2026-10-09
 
 Linked46720 succeeds at ten jobs. Exact runtime17/17 in5.471s and AI5/5

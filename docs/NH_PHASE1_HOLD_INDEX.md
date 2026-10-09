@@ -7,15 +7,14 @@ remains the sole authority for gameplay. The queue and functional matrix record
 current implementation questions and dependencies.
 
 Reality Warp/Reality Breaker pass73/73 principal and15/15 adjacent native cases
-after linked6035, with zero errors/skips and independent source review. The
-Reality Breaker planned row is retired. Current accepted coverage is67/67
-combat spells and255/310 perks (generic180/220,faction75/90); rendered/playable
-delivery remains separate. Veiled Movement's old producer dependency is now
-stale because accepted Overwatch provides the shared reaction path; its private
-implementation patch awaits activation/build/native acceptance.
+after linked6035. Veiled Movement,generic Lucky Recovery and Avatar of Rage
+subsequently pass30/30 principal and8/8 adjacent cases after linked71404,
+with zero errors/skips and independent review. Their planned rows are retired.
+Current accepted coverage is67/67 combat spells and258/310 perks
+(generic181/220,faction77/90); rendered/playable delivery remains separate.
 
-Registry-derived inventory: 31 Skills, 93 active rank effects, 255 active perks,
-and 55 planned perks: 40 generic and 15 faction. This index covers only those 55
+Registry-derived inventory: 31 Skills, 93 active rank effects, 258 active perks,
+and 52 planned perks: 39 generic and 13 faction. This index covers only those 52
 perks; combat spell implementation coverage is complete. The current
 selection audit in [NH_FUNCTIONAL_COMPLETION_MATRIX.md](NH_FUNCTIONAL_COMPLETION_MATRIX.md)
 historically reported item-specific questions or dependencies. The user has now
@@ -143,18 +142,15 @@ new-horizons:learning.academicStudy	question	UP-074	First-visit/acquisition timi
 new-horizons:learning.archivist	dependency	UP-165,UP-054	Neutral Adventure-scroll acquisition policy remains unresolved; combat-only partial cannot complete full scope.
 new-horizons:learning.sage	question	UP-074	Pre-acquisition visit timing is recorded for both Sage rows; keep Learning Sage distinct from Wisdom Sage.
 new-horizons:luck.opportunist	question	UP-088	Movement-only continuation from reactions versus own activation remains unresolved.
-new-horizons:luck.luckyRecovery	question	UP-083	Generic/Sylvan 10% recovery stacking versus shared single effect remains unresolved.
 new-horizons:divineMandate.sharedPurpose	question	UP-108	Whether success qualifies by accepted Light target overlap or both effects actually triggering remains unanswered.
 new-horizons:divineMandate.divineDiscipline	question	UP-108,UP-149	Same-Order reissue replacing versus separate nonstacking carried instances remains unresolved.
 new-horizons:divineMandate.royalStandard	question	UP-108	Protection to scheduled expiry versus ending with broken/spent Order benefit remains unresolved.
 new-horizons:divineMandate.crownAndAltar	question	UP-108	Second-action timing is resolved; paired-recipient qualification remains unanswered.
-new-horizons:shroudOfMalassa.veiledMovement	implementation-ready	UP-215	Accepted Overwatch supplies the movement reaction producer; prepared shared-callback patch awaits activation and native acceptance.
 new-horizons:shroudOfMalassa.deepFlank	question	UP-174	Distinct melee sides from current positions versus accepted-hit history and reset window remains unresolved.
 new-horizons:shroudOfMalassa.encircledDoom	question	UP-174	Positional side contacts versus attack-history count/reset window remains unresolved.
 new-horizons:shroudOfMalassa.vanish	question	UP-176	Retaliation kills and simultaneous Pursuit/Vanish allowance composition remain unresolved.
 new-horizons:bloodrage.firstBlood	question	UP-143	First Elite/Champion death overlap with Slayer producing two/three/four increments remains unresolved.
 new-horizons:bloodrage.slayer	question	UP-143	First Blood overlap on the first Elite/Champion death remains unresolved.
-new-horizons:bloodrage.avatarOfRage	question	UP-226,UP-143	Blood Scent attack-local cap qualification versus stored Rage remains unresolved.
 new-horizons:bulwarkOfTheMire.deepBulwark	lack-producer	UP-167	No canonical nonmagical forced-displacement producer exists.
 new-horizons:elementalRebirth.swiftRebirth	question	UP-046	Precedence versus earned Morale activation and multi-spawn tie order remain unresolved.
 new-horizons:elementalRebirth.elementalMemory	question	UP-046	Inherited Morale versus Elemental immunity remains unresolved.

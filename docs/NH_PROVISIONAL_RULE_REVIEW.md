@@ -1,5 +1,32 @@
 # New Horizons provisional rule review
 
+## Lucky Recovery composition and attack-local Avatar admission
+
+Generic and Sylvan Lucky Recovery each recover10% of actual non-overkill melee
+damage on positive Luck, healing only survivors. If both independent perks are
+selected, provisionally add their authored fractions and round down once:
+20% total, not two independently rounded ticks. Neither effect resurrects a
+dead attacker or applies to ranged/record-only forecasts. Review composition
+and delayed casualty interactions in Phase2. Focused live/detached cases are
+source/native accepted within the30-case gate after linked71404, zero skips.
+
+Avatar of Rage tests the attack's captured effective Bloodrage against that
+side's captured maximum. Blood Scent's existing attack-local increase may meet
+that threshold for this attack only, without changing stored Rage. Its25%
+intrinsic Creature Defense ignore adds through existing physical damage
+channels and their cap; it never converts Hero Primary Attributes into
+Creature Attack/Defense. Expert perk cardinality does not permit simultaneously
+selecting Endless Bloodshed; extended-cap threshold controls are therefore
+pure captured-rule fixtures, not illegally selected hero builds.
+
+Veiled Movement follows the existing current-controller Ghost Walk capability
+and suppresses only explicitly movement-triggered Overwatch reactions. Unlike
+Night Prowler's separate crossing requirement, its wording does not require
+actually crossing another creature. Ordinary shooting is unchanged.
+The current-controller fixture preserves the legacy enemy selector's original-
+target-side semantics. It proves perk ownership, not correct current-controller
+hostility; that existing allegiance interaction remains a Phase2 finding.
+
 ## Frozen normal-activation timing
 
 The supplied Conflux rebalance requires a Frozen stack's next normal Creature
@@ -17,11 +44,13 @@ stack melee attack/retaliation, not individual creatures; its roll is distinct
 from whether the surviving recipient remains eligible for application.
 Review bonus-slot scheduling and multi-strike attacks explicitly during focused
 acceptance; do not substitute existing Stone Gaze/Blind activation semantics.
-Status: implementation mapping/data changes underway, not runtime accepted.
+Status:source/native accepted in47/47 focused cases after linked6035; rendered
+verification remains pending and is not inferred from native success.
 
 ## Reality Warp mixed-pair resistance and confirmation
 
-Status: source implementation pending linked/native acceptance.
+Status:source/native accepted in73/73 principal cases after linked6035;
+rendered verification remains separate.
 
 The canonical total exchange does not specify how a mixed friendly/enemy cast
 handles Resistance or Magic Mirror. Selected hostile endpoints, determined by

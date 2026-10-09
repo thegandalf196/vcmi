@@ -203,6 +203,56 @@ Independent Veiled Movement/Lucky Recovery/Avatar patches remain private and
 unaccepted until applied/registered/built. Preparing one coherent scoped
 Warp/Conflux feature commit; package bytes and unrelated artwork remain intact.
 
+Warp/Conflux is committed and normal-pushed asd12c6f31c2fe38cb764cadf4439565be439a8dc7,
+with actual remote identity verified. Committed-metadata refresh35085 succeeds.
+Fresh tracked packed-resource staging verifies803 files,3137 selected assets,
+both NHART mounts and zero loose duplicates; all12 delivery notices are included.
+Before promotion, binary privacy inspection finds an absolute build RUNPATH and
+configured workstation install prefix. The Linux preset now uses/usr/local and
+origin-relative build RUNPATH; no ELF bytes are patched and no second build tree
+is created. This genuine same-directory rebuild is batched with three independent
+source candidates:Veiled Movement,generic Lucky Recovery,Avatar of Rage. Their
+registry activation is for testing only; accepted coverage stays255/310 until
+focused native gates pass. Perk-data17/17 and module parity pass. Two-object
+compile preflight46490 is live at at most ten jobs; freeze compiled inputs and
+poll46490 before the next full linked build. Ordinary launcher remains unchanged.
+
+Both compile preflights46490 and43827 terminate0. Review caught a Lucky server
+predicate scoped only in another function; makeAttack now recomputes the shared
+physical predicate after spell-like classification. A ranged negative control
+now submits an actual shot and asserts packet type. Avatar has its explicit
+library include and AI-conditional test wiring. All owners are frozen for the
+portable-prefix/origin-RPATH and three-perk batch build, still one Release tree
+and at most ten jobs. New perk counts remain unaccepted until native gates.
+
+Batch build45128 is confirmed live; poll that exact session on continuation.
+Its private log is outside build. Do not edit compiled/config inputs or restart
+because observation times out. Resource stage remains committedd12c6f31c until
+the next source commit is verified; no new playable snapshot is promoted yet.
+
+Build45128 is terminal0, linking both targets. Binary privacy passes with no
+findings and client RUNPATH is origin-relative. Exact-pair principal native88803
+passes28/30; adjacent6555 passes8/8 in2.459s, zero skips. Two fixture corrections
+are frozen: retaliation-blocking belongs to the Lucky attacker, and the Veiled
+control test must respect the existing enemy selector's original-target-side
+semantics before asserting current-controller perk admission. No production
+rules were changed to make these tests pass. Broader controlled-target allegiance
+is recorded for Phase2 rather than silently refactored. Initial logs/XML remain
+private and unchanged. Incremental fixture relink71404 is live at ten jobs in
+the same build directory; poll it before copying the next matched pair.
+Accepted coverage remains255/310 until the corrected principal gate passes.
+Eagle Eye has a reviewed private11-case candidate, not yet integrated or counted.
+
+Fixture relink71404 is terminal0. Matched-pair retry78415 passes30/30 principal
+cases in11.512s, zero failures/errors/disabled/skips. Adjacent8/8 uses the same
+engine hash; module parity,data17/17 and independent review pass. Binary privacy
+has zero findings and the origin-relative runtime path is verified. Current
+source/native coverage:perks258/310,generic181/220,faction77/90,planned52
+(39 generic,13 faction); combat67/67,Orders8/8,Skills31/31,ranks93/93 unchanged.
+Initial failed evidence remains private. Preparing one coherent normal commit
+and exact committed-resource Linux delivery; ordinary launcher is not yet
+promoted. Eagle Eye remains the next private candidate, not accepted coverage.
+
 ## Immediate user task — publish artwork only through NHART
 
 Remove tracked loose New Horizons visuals (including original-based changes,
