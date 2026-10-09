@@ -1,5 +1,59 @@
 # User-priority queue
 
+## Accepted Mire Shaper and Miracle Worker checkpoint — 2026-10-09
+
+Linked50268 and fixture-only relink74808 exit0. Final exact-pair native24/24
+passes, zero skips/errors/failures: Mire10 in2.587s, Miracle14 in5.580s. Root
+checks XML and matching source/private hashes. Receipt:
+build/nh-mire-miracle-native.lBbjTbsn/receipt.md. Original compile and fixture
+failures are preserved with causes/corrections in NH_RELEASE_FAILURES.md.
+Data17/17, module parity and independent final source review pass. Perks252/310,
+generic177/220 and faction75/90; planned58 (43 generic,15 faction). Combat65/67,
+Orders8/8, Skills31/31/ranks93/93 unchanged; Light/Nature perks each10/10.
+No new art, NHART, rendered acceptance or normal-launcher promotion. Broader
+interactions remain Phase2; provisional choices remain reviewable. Next:
+Polymorph's production lifecycle/Phantom/Shapeshifter and Reality Warp. Their
+read-only plans and review hazards are recorded; preparatory docs are not
+activation or coverage. Earlier pending notes below are historical.
+
+## Mire Shaper and Miracle Worker implementation — 2026-10-09
+
+Accepted Pandemonium checkpoint e879281c5 is pushed and its exact remote branch
+tip verified. Two independent workers now implement Mire Shaper's after-cap
+extra patch and Miracle Worker's casualty-only restoration-HP multiplier, with
+focused actual-cast/AI fixtures. Interpretations are in the provisional review
+ledger; tester and independent reviewer are assigned. Root owns registry,
+descriptions, module generation, serialized builds and Git. Source activation
+permits admission tests but accepted coverage remains65/67 spells and250/310
+perks until focused gates pass. Preserve user-owned untracked artwork/tools.
+
+Both source checkpoints are frozen and independently reviewed with no blocker.
+Miracle's optional-AI guards retain14 cases in the shipped AI-enabled build;
+Mire's focused filter has10. Serialized build52816 is live at ten jobs,
+779 steps. The public magic header has no content diff, but its edit/revert
+timestamp triggered broad dependent recompilation; preserve this live build.
+Private native runner lBbjTbsn remains binary-empty until the terminal exact
+pair. Data17/17 and module parity pass; native24 and coverage credit are pending.
+Root corrected Resurrection help to distinguish SP-term scaling from final
+pool bonuses. Phase2 retains crowded placement quality, wider casualty/capacity
+compositions and extreme numeric bounds; no rendered or launcher claim.
+
+Build52816 terminates1 at623/779 on the new Quicksand fixture's incomplete
+CSpell declaration. Its owner adds the direct CSpell.h include and re-freezes;
+no production contract/assertion changes. Production library and Miracle
+fixture compile, but linked/native acceptance remains pending. Preserve the
+failure lesson and use a serialized ten-job retry, not a concurrent build.
+
+Retry50268 terminates0 at148/148: client and vcmitest both link. Tester now
+refreshes the private configuration and exact engine pair for separate Mire10
+and Miracle14 native gates. Accepted counts remain unchanged until XML is
+checked; no runtime pass follows from compile success alone.
+
+Exact native pair passes Miracle14/14 in5.537s, zero skips. Mire9/10 passes in
+2.366s: actual AI fixture gets five instead of the required six patches. Its
+owner diagnoses saved profile/consumer parity; keep the requirement and failed
+evidence intact. Accepted coverage remains65/67 and250/310 pending resolution.
+
 ## Accepted Pandemonium checkpoint — 2026-10-09
 
 Linked3540 exits0; native25/25 passes in5.621s with zero skips/failures. Root

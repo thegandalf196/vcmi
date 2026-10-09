@@ -15,7 +15,21 @@ entries here and thereby recreate a permanent override layer.
 
 ## Awaiting integration
 
-None currently awaiting integration.
+### Polymorph impossible-footprint restoration — 2026-10-09
+
+Provisional decision under the user's authorization to resolve rule ambiguity:
+Polymorph normally restores its original body after two rounds or Dispel, using
+the approved nearest legal position when necessary. If no legal position for
+the original footprint exists anywhere, retain the current form, surviving HP
+and position; retry safe restoration at later round boundaries. Never overlap
+another stack, delete creatures or heal them to force restoration. This is an
+exceptional delayed restoration, not a new normal duration or a successful
+immediate Dispel. It must be represented accurately in status/help text.
+
+Affected canonical section: Chaos School / Polymorph, restoration and duration.
+Second-look question: whether another explicit no-space policy is preferable.
+Awaiting canonical integration; production implementation and focused evidence
+remain separately tracked in the coverage and provisional-rule ledgers.
 
 ## Integrated history
 

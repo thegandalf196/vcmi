@@ -6,8 +6,8 @@ canonical [New Horizons design](design-sources/New%20Horizons.md). That Markdown
 remains the sole authority for gameplay. The queue and functional matrix record
 current implementation questions and dependencies.
 
-Registry-derived inventory: 31 Skills, 93 active rank effects, 250 active perks,
-and 60 planned perks: 45 generic and 15 faction. This index covers only those 60
+Registry-derived inventory: 31 Skills, 93 active rank effects, 252 active perks,
+and 58 planned perks: 43 generic and 15 faction. This index covers only those 58
 perks; the two inactive combat spells are tracked separately. The current
 selection audit in [NH_FUNCTIONAL_COMPLETION_MATRIX.md](NH_FUNCTIONAL_COMPLETION_MATRIX.md)
 historically reported item-specific questions or dependencies. The user has now
@@ -34,6 +34,12 @@ AI placement remain Phase2 review items; adjacent39/40 includes the known
 preexisting v2/Morale fixture failure. No rendered/playable promotion is claimed.
 
 Status meanings:
+
+Mire Shaper and Miracle Worker pass24/24 principal native cases, zero skips,
+after linked50268 and fixture-only relink74808. Their rows are removed below.
+Perks252/310; generic177/220, faction75/90. Combat65/67 unchanged. Receipt:
+build/nh-mire-miracle-native.lBbjTbsn/receipt.md. Light and Nature perks each10/10.
+Provisional interpretations remain reviewable; no rendered/playable promotion.
 
 Pandemonium/Pandemonium Master pass25/25 principal native cases, zero skips,
 after linked3540. The perk row and missing combat identity are removed below.
@@ -89,9 +95,7 @@ new-horizons:recruitment.reinforcementDrill	question	UP-127	Newly recruited stac
 new-horizons:command.ironWill	question	UP-149	Same-command reissue replacing existing recipient carries versus separate nonstacking instances remains unresolved.
 new-horizons:command.crisisCommand	question	UP-150	Free Order after complete action resolution versus interruption between hits remains unresolved.
 new-horizons:command.seizeInitiative	question	UP-151	Currently active recipient eligibility determines additional activation versus moving a pending normal activation; canonical conflict remains unresolved.
-new-horizons:lightMagic.miracleWorker	question	UP-141	25% increase to restoration HP versus resulting integer creature count remains unresolved.
 new-horizons:shadowMagic.plaguebearer	question	UP-113	Normal-limit definition remains pending.
-new-horizons:natureMagic.mireShaper	question	UP-119	Five-patch absolute cap versus sixth perk patch remains unresolved; narrow ruling requested.
 new-horizons:havocMagic.demolitionist	question	UP-139	Structural-perk stacking and fixed-landmark destructibility remain unresolved; baseline structural producer is verified.
 new-horizons:havocMagic.meteorologist	question	UP-139	Structural stacking and fixed-landmark destructibility remain unresolved.
 new-horizons:havocMagic.cataclysm	question	UP-111,UP-139	Eligible magical-obstacle and fixed-landmark filters remain unresolved.

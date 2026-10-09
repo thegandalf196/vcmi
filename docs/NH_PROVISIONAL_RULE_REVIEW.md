@@ -1,20 +1,66 @@
 # New Horizons provisional rule review
 
+## Polymorph footprint restoration and Phantom body
+
+Status: provisional interpretation; next-slice preparation, not activated.
+
+Use the approved nearest-legal-position policy for the original footprint on
+expiry or Dispel. If no legal original footprint exists anywhere, retain the
+current form, HP and position and retry safe restoration rather than overlap,
+kill or heal creatures. The resulting delayed restoration is an exceptional
+duration rule requiring a second look and a Pending Changes amendment before
+activation; it must be visible rather than silently presented as ordinary expiry.
+
+For Phantom Army, preserve the copied offensive body's aggregate creature HP
+when transforming; retain its separate current/initial Integrity, ordinary
+expiry and Integrity damage behavior. Converting offensive count from Integrity
+would silently alter Phantom Army's existing model. Review whether Phantom
+forms should intentionally use a different policy. Candidate production seams:
+CUnitState, battle/BattleForm and spells/effects/BattleForm. No native proof yet.
+
+Read-only architecture review identifies activation prerequisites: preserve the
+logical form marker while restoration is pending; use fresh accessibility in
+deterministic unit-ID order after round hooks; validate converted Phantom counts
+without confusing body HP with Integrity; clear form provenance before lethal
+Integrity resets health; refresh client creature forms after Dispel; and use
+separate damage caches for distinct form outcomes. Retain the existing explicit
+binary-snapshot rejection until a full form-state save contract is implemented.
+These are required implementation work, not accepted coverage.
+
+## Reality Warp transferred-effect beneficiaries
+
+Status: provisional interpretation; next-slice preparation, not activated.
+
+Focus Magic's beneficiary follows the receiving stack's controlling side;
+Arcane Breach's beneficiary is the side opposing its new recipient. Preserve
+original caster attribution, captured strength/perk parameters and remaining
+duration. Keep unknown legacy hostility provenance rather than inventing a
+caster. This makes transferred effects function in their new location without
+recasting them at the Warp caster's power. Review controlled-recipient ownership
+changes after transfer. Confusion pending state travels with its magical effect,
+but previous resolved-behavior history stays with the recipient. Orders,
+transformations and typed non-transferable effects stay excluded. Candidate
+production seam: NewHorizonsRealityWarp's shared validated reciprocal plan and
+atomic packet application. No native proof yet.
+
 ## Mire Shaper additional Bog Ambush patch
 
-Status: provisional interpretation; next-slice preparation only, not activated.
+Status: provisional implementation; focused native acceptance passed10/10.
 
 Calculate the ordinary School/Spellcraft/Warcasting-scaled patch count with its
 five-patch cap, then add the selected perk's one additional patch. The perk thus
 permits three to six patches rather than disappearing at high Spell Power.
 This preserves the spell's normal cap and the perk's explicit extra patch.
 Review whether a future design should impose a global five-patch cap instead.
-Planned shared seam: NewHorizonsMagic::quicksandPatchCount; the current client,
-Lua authority and AI already consume that count. No native acceptance yet.
+Implemented shared seam: NewHorizonsMagic::quicksandPatchCount in
+lib/spells/NewHorizonsMagic.cpp; client, Lua authority and AI consume that count.
+Focused count, paid placement and actual AI-submission fixtures are present.
+Final native10/10 passes, zero skips, in2.587s after fixture-only relink74808.
+Receipt: build/nh-mire-miracle-native.lBbjTbsn/receipt.md. No rendered claim.
 
 ## Miracle Worker casualty restoration
 
-Status: provisional interpretation; next-slice preparation only, not activated.
+Status: provisional implementation; focused native acceptance passed14/14.
 
 Preserve healing allocated to wounded surviving creatures, then increase the
 remaining casualty-restoration HP pool by25%, flooring once. A fully destroyed
@@ -22,8 +68,11 @@ eligible stack receives125% of the whole pool, subject to the existing original
 count cap. Wound-only healing is unchanged. This follows the perk's "casualties"
 wording without multiplying already-rounded creature counts or granting extra
 wound healing. Review whether the intended design should instead boost the
-entire restoration pool. Planned seam: shared heal.lua amount calculation used
-by legality, forecast and execution. No native acceptance yet.
+entire restoration pool. Implemented seam: scripts/spells/heal.lua amount
+calculation used by legality, forecast and execution. Fourteen focused native
+fixtures pass14/14, zero skips, in5.580s on the final exact pair, including
+paid AI with Orders. Receipt: build/nh-mire-miracle-native.lBbjTbsn/receipt.md.
+Broader casualty/capacity compositions remain Phase2; no rendered claim.
 
 The user authorizes reasoned provisional gameplay judgments when rules or
 interactions are unclear. Implement and verify the choice, rather than stopping
