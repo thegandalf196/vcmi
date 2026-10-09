@@ -1,5 +1,30 @@
 # User-priority queue
 
+## Remaining bounded portrait acceptance — 2026-10-09
+
+Resolved principal visual check: existing two-player Academy fixture export
+passes1/1, then actual ordinary human UI on5938709 shows Obsidian Gargoyle's
+full body over Academy scenery in both recruitment and weekly-growth popup.
+Root inspects both native captures. Setup uses the ordinary scoped vcmibuild
+console, not a production-rule/map mutation; growth33 includes Castle, Sculptor's
+Wings and Skyship and is not a new base-growth rule. Artwork stays Provisional.
+Review copies are non-overwriting under Downloads/provisory/nh-5938709-obsidian;
+durable private receipt:build/nh-obsidian-gui-5938709.R1KZUa3S/receipt.md.
+
+Actual child verifies both dummy audio variables on owned191 before input;
+game/debugger/Xvfb are absent and profile lock free. Cleanup races the140-second
+deadline and reports timeout124, not normal exit0. Claim scoped rendered
+acceptance only; no new content count, build, gameplay edit or promotion.
+The assignment below is historical, not a remaining unverified portrait claim.
+
+The next missing functional features still require their recorded design choices.
+Do not repeat the completed creature/action audits. The designated tester owns
+the still-open Obsidian Gargoyle background check on current promoted5938709,
+using an ordinary human scenario with an active opponent so the previous
+single-player upgrade/victory failure is not repeated. Require actual recruitment
+and growth screenshots, silent guarded child verification and complete cleanup;
+this grants no new spell/perk identity and changes no production gameplay.
+
 ## Bounded next-work selection — 2026-10-09
 
 Independent creature and action-foundation workers inspect the current source,
