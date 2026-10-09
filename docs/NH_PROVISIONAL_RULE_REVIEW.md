@@ -1,5 +1,22 @@
 # New Horizons provisional rule review
 
+## Eagle Eye retained combat participants
+
+The canonical wording says after combat, not only after victory. Provisionally
+grant selected Eagle Eye to participants whose heroes remain available:ordinary
+winners and retained retreat/surrender heroes. Deleted defeated heroes gain
+nothing. Retained draw/troopless-winner cases follow the existing hero-retreat
+setting; do not introduce a new survival policy. Capture the highest eligible
+Level1–3 enemy HERO_SPELL before battle cleanup, keeping earliest-cast ties,
+then use existing learning receipts before map removal/tavern preservation.
+Creature casts do not enter that history. Saved roster, school eligibility,
+already-known exclusion and selected current-v3 rules remain authoritative.
+The unselected/legacy bonus path remains unchanged. This scope is reviewable,
+not a claim that every retention/save interaction is certified. All11 principal
+cases pass after linked11731, including actual winner/retreat/surrender, creature
+history exclusion and defeated hero removal. Broader retained draw/troopless
+winner, tavern rerecruitment and save restoration remain Phase2.
+
 ## Lucky Recovery composition and attack-local Avatar admission
 
 Generic and Sylvan Lucky Recovery each recover10% of actual non-overkill melee

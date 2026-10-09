@@ -1,5 +1,36 @@
 # User-priority queue
 
+## Blocking runtime finding — Battle-only generated map is not mounted
+
+Guarded silent software-renderer playtest of promoted150561/sourceb3cd689d5
+reaches the ordinary Battle-only setup but Begin crashes with exit134:
+MAPS/BATTLEONLYMODE cannot be resolved although the generated private vmap
+exists. Root treats this as a blocking ordinary entry-path defect, not a Frozen
+mechanic failure or rendered acceptance. Both actual audio-driver variables are
+dummy before input; owned game/Xvfb/display socket are gone and lock is free.
+Initial OpenGL1x1/black observation remains separately inconclusive.
+
+Trace:BattleOnlyModeTab already saves and refreshes all loaders; the private Maps
+directory is created after bootstrap, when initial user-data discovery is depth0.
+A dedicated refreshable local Maps loader plus explicit safe managed-profile
+Maps allowance is being implemented. Preserve purchaser Maps, original external
+archives and optional-mod isolation; no copying the generated map into original
+installation directories. Focused late-directory/refresh and launcher checks,
+linked build and an actual guarded Battle-only start are required to close it.
+Do not alter Frozen probability, invent artwork or substitute headless launch
+for this entry-path acceptance. Eagle Eye's independent principal fixture fix
+is ready; accepted perk count remains258 until its native11-case gate passes.
+
+Source fix and Eagle Eye acceptance:linked11731 terminal0; matched native42469
+passes12/12 (Eagle11+late-map1)3.546s, adjacent76177 passes5/5 in1.383s, zero
+skips/errors/failures. Independent review, shellguard,data17/17,module parity
+pass. Accepted perks259/310 (generic182/220,faction77/90),planned51 (38 generic,
+13 faction);combat67/67,Orders8/8,Skills31/31,ranks93/93 unchanged. Initial10/11
+Eagle log/XML remains private; the invalid Level2 school-negative fixture is
+repaired using Level3 Inferno, not changed production eligibility. Preparing
+one coherent source commit. Battle-only crash is NOT closed until a new exact
+candidate passes actual guarded entry; current launcher still usesb3cd689d5.
+
 ## Top priority — preserve unique material, delete old build tree, rebuild once
 
 User authorized deleting the entire repository build directory only after all
@@ -252,6 +283,23 @@ source/native coverage:perks258/310,generic181/220,faction77/90,planned52
 Initial failed evidence remains private. Preparing one coherent normal commit
 and exact committed-resource Linux delivery; ordinary launcher is not yet
 promoted. Eagle Eye remains the next private candidate, not accepted coverage.
+
+Three-perk source is committed and normal-pushed asb3cd689d5eaa7a32080744dcd8b629d3c454369b;
+remote and author/committer identity are verified. Committed metadata build6440
+passes and binary privacy has zero findings. Exact tracked-resource staging
+checks803 files,12 notices,3137 NHART entries,both mounts and zero loose copies;
+pack hash unchanged. Immutable Linux snapshot150561a69e7d is promoted only after
+isolated managed headless play reaches day3 and bounded owned shutdown removes
+runtime links/releases the profile lock. Usual Linux wrapper verify-only selects
+that snapshot. Existing schema diagnostics remain Phase2; rendered Frozen/help
+check is delegated separately through the guarded silent private launcher.
+
+Eagle Eye v2 is integrated from its reviewed private candidate with11 focused
+cases, deterministic highest-level/earliest tie and unchanged legacy behavior.
+Retained participant scope is recorded provisionally, not held for a pending
+question. Registration activation is for testing; accepted coverage stays258/310
+until linked/native acceptance. First Blood/Slayer prepares independently outside
+the repository; no candidate proliferation or ordinary launcher mutation follows.
 
 ## Immediate user task — publish artwork only through NHART
 

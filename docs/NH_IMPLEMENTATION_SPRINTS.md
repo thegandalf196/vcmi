@@ -1,5 +1,23 @@
 # New Horizons implementation sprints
 
+## Accepted Eagle Eye and generated-map source checkpoint — 2026-10-09
+
+Linked11731 passes; exact-pair12/12 (11 Eagle Eye,one late-map case) in3.546s
+and5/5 adjacent controls in1.383s pass, zero skips/errors. Independent review,
+data17/17,module parity and shell isolation checks pass. Perks259/310
+(generic182/220,faction77/90;51 planned),combat67/67; ranks/Skills/Orders
+unchanged. Initial compile and10/11 fixture evidence remains private. No gameplay
+rule was changed to satisfy an invalid Level2 school-gating expectation.
+Retained hero learning follows recorded provisional scope with unchanged legacy
+fallback. Broader retention/save interactions remain Phase2.
+
+Silent rendered checking exposed a genuine Battle-only map lookup crash; the
+local Maps loader/bootstrap guard fix is included coherently. Native late-write
+resolution is not rendered acceptance:next freeze from committed HEAD,check
+headless cleanup and actual guarded Battle-only start before closing the defect.
+One Release tree,ten jobs and unchanged NHART are retained. First Blood/Slayer
+is prepared privately; no coverage credit until integration and principal gates.
+
 ## Accepted three-perk checkpoint — 2026-10-09
 
 Veiled Movement,generic Lucky Recovery and Avatar of Rage are source/native

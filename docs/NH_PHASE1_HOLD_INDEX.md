@@ -10,11 +10,14 @@ Reality Warp/Reality Breaker pass73/73 principal and15/15 adjacent native cases
 after linked6035. Veiled Movement,generic Lucky Recovery and Avatar of Rage
 subsequently pass30/30 principal and8/8 adjacent cases after linked71404,
 with zero errors/skips and independent review. Their planned rows are retired.
-Current accepted coverage is67/67 combat spells and258/310 perks
-(generic181/220,faction77/90); rendered/playable delivery remains separate.
+Eagle Eye subsequently passes11 principal cases plus one late-map case and
+five adjacent controls after linked11731; its row is retired under the recorded
+retained-participant interpretation. Current accepted coverage is67/67 combat
+spells and259/310 perks (generic182/220,faction77/90); rendered/playable delivery
+remains separate.
 
-Registry-derived inventory: 31 Skills, 93 active rank effects, 258 active perks,
-and 52 planned perks: 39 generic and 13 faction. This index covers only those 52
+Registry-derived inventory: 31 Skills, 93 active rank effects, 259 active perks,
+and 51 planned perks: 38 generic and 13 faction. This index covers only those 51
 perks; combat spell implementation coverage is complete. The current
 selection audit in [NH_FUNCTIONAL_COMPLETION_MATRIX.md](NH_FUNCTIONAL_COMPLETION_MATRIX.md)
 historically reported item-specific questions or dependencies. The user has now
@@ -136,7 +139,6 @@ new-horizons:estates.merchantPrince	question	UP-071	Visitor/garrison qualificati
 new-horizons:estates.steward	question	UP-071	Two-resident stacking remains pending.
 new-horizons:estates.magnate	question	UP-168	Visit/week-start ownership, capture and multiple-holder stacking remain unresolved.
 new-horizons:learning.scholar	question	UP-163	One-holder reciprocal scope, no-transfer use and canonical spellbook-order representation remain unresolved.
-new-horizons:learning.eagleEye	question	UP-162	Winner-only versus other combat participants' eligibility remains unresolved.
 new-horizons:learning.historian	question	UP-071	Primary-XP reward classification for Chest/Tree/mixed rewards remains unresolved.
 new-horizons:learning.academicStudy	question	UP-074	First-visit/acquisition timing remains pending.
 new-horizons:learning.archivist	dependency	UP-165,UP-054	Neutral Adventure-scroll acquisition policy remains unresolved; combat-only partial cannot complete full scope.
