@@ -2,6 +2,22 @@
 
 ## Blocking runtime finding — Battle-only generated map is not mounted
 
+Follow-up: sourcefb4e28ff6 and unpromoted snapshotd8a45 still fail actual
+Battle-only Begin with exit134. The root stream sees the generated map, but
+CMapService first resolves its origin through core/mod scopes. The dedicated
+Maps loader is therefore moved from local into core, retaining refresh and
+user-over-installed-map precedence. Independent review clears the bounded fix;
+duplicate-load alias hardening is deferred. First native14-case rerun passes
+origin/header dimensions and all11 Eagle Eye cases, but its authored-name
+assertion uses the wrong text container. Fixture now uses header-local texts,
+retaining the exact name assertion. Rebuild32864 succeeds; final matching native
+rerun62662 passes14/14 in3.548s with no failures/errors/skips. This includes
+actual core origin, real map-header dimensions/name and all11 Eagle Eye cases.
+Binary privacy and independent source review pass. Actual GUI entry remains
+pending against a new immutable candidate.
+Neither the failed candidate nor headless startup alone closes this crash.
+The ordinary launcher remains the verified sourceb3cd689d5 snapshot.
+
 Guarded silent software-renderer playtest of promoted150561/sourceb3cd689d5
 reaches the ordinary Battle-only setup but Begin crashes with exit134:
 MAPS/BATTLEONLYMODE cannot be resolved although the generated private vmap

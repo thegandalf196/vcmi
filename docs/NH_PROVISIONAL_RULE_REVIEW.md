@@ -5,8 +5,9 @@
 The canonical wording says after combat, not only after victory. Provisionally
 grant selected Eagle Eye to participants whose heroes remain available:ordinary
 winners and retained retreat/surrender heroes. Deleted defeated heroes gain
-nothing. Retained draw/troopless-winner cases follow the existing hero-retreat
-setting; do not introduce a new survival policy. Capture the highest eligible
+nothing. Draw retention follows the existing hero-retreat setting; troopless
+winners follow the existing automatic retreat. Introduce no new survival policy.
+Capture the highest eligible
 Level1–3 enemy HERO_SPELL before battle cleanup, keeping earliest-cast ties,
 then use existing learning receipts before map removal/tavern preservation.
 Creature casts do not enter that history. Saved roster, school eligibility,
