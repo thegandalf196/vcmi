@@ -1,9 +1,10 @@
 # Phase 1 planned-perk hold index
 
-Current accepted checkpoint:276/310 after linked25787, principal88843:79/79 and
-adjacent3070:15/15, zero failures/errors/disabled/skips. Seven newly accepted
-rows are removed from the table below; they are no longer design holds. Remaining34 includes
-29 generic and5 faction perks. Private source-review clears are not acceptance.
+Current accepted checkpoint:279/310 after linked38972, principal70790:36/36 and
+adjacent61175:12/12, zero failures/errors/disabled/skips. Both Sage perks and
+Shared Purpose are removed from the table below; they are no longer holds.
+Remaining31 includes27 generic and4 faction perks. Private source-review clears
+are not acceptance; four Frailty hero replacements pass separately in this batch.
 
 Updated: 2026-10-09. This is a navigation index for the planned perk entries in
 `config/newHorizonsPerks.json`, not a new rule source or an amendment to the
@@ -145,7 +146,7 @@ new-horizons:warMachines.fieldWorkshop	question	UP-100	Destroyed-target repair s
 new-horizons:discipline.heroicSpirit	question	UP-094	Extra retaliation surviving the immediate Morale activation and expiring on the following activation remains unresolved; generic next-activation expiry would erase it immediately.
 new-horizons:recruitment.drillSergeant	question	UP-127	Whole merged-stack bonus versus strict recruited-cohort provenance remains unresolved.
 new-horizons:recruitment.fieldInstructor	question	UP-127	Merged-stack versus recruited-cohort scope remains unresolved; required UI depends on that rule.
-new-horizons:recruitment.recruiterSContacts	question	UP-126	Empty-pool eligibility for multirow external dwellings remains unresolved.
+new-horizons:recruitment.recruiterSContacts	private-source-clear	UP-126	First empty positive-growth row and owned-at-entry qualification settled provisionally; source/AI reviewed, twelve authored cases await integration/native gate.
 new-horizons:recruitment.reinforcementDrill	question	UP-127	Newly recruited stack identity after merging remains unresolved; UP215 cross-reference alone did not establish its hold.
 new-horizons:command.ironWill	question	UP-149	Same-command reissue replacing existing recipient carries versus separate nonstacking instances remains unresolved.
 new-horizons:command.crisisCommand	question	UP-150	Free Order after complete action resolution versus interruption between hits remains unresolved.
@@ -159,18 +160,15 @@ new-horizons:spellcraft.concentration	question	UP-069	Target-count definition re
 new-horizons:spellcraft.extendSpell	question	UP-134	Unusual spell-lifetime/expiry scope remains unresolved.
 new-horizons:spellcraft.preciseCasting	question	UP-133	Time Stop/Earthquake scope remains unresolved despite principal cases.
 new-horizons:wisdom.arcaneMemory	question	UP-054	Neutral Adventure acquisition policy remains pending.
-new-horizons:wisdom.sage	private-implementation	UP-074	Eligible undisplayed Guild catalog and first built-Guild visit interpretation recorded provisionally; separate revealed rows/UI underway, not accepted.
 new-horizons:warcasting.reactiveWeave	question	UP-215	Half-strength readiness replacing versus stacking with stronger existing readiness remains unresolved.
 new-horizons:diplomacy.mercenaryCaptain	dependency	UP-129	Deterministic recruitment/cohort provenance is a prerequisite.
 new-horizons:diplomacy.loyalMercenaries	dependency	UP-129	Deterministic recruitment/cohort provenance is a prerequisite.
 new-horizons:diplomacy.legendaryReputation	question	UP-195,UP-129	Monthly use on refusal/zero admission versus positive join remains unresolved.
-new-horizons:learning.sage	private-implementation	UP-074	Eligible Guild catalog highest unknown personal learning and first visit recorded provisionally; distinct from global Wisdom reveal, not accepted.
 new-horizons:luck.opportunist	question	UP-088	Movement-only continuation from reactions versus own activation remains unresolved.
-new-horizons:divineMandate.sharedPurpose	private-repair	UP-108	Actual accepted recipient overlap/post-effect restoration implemented privately; review requires actual Purify completion and inherited detached expiry repairs before integration.
 new-horizons:divineMandate.divineDiscipline	question	UP-108,UP-149	Same-Order reissue replacing versus separate nonstacking carried instances remains unresolved.
 new-horizons:divineMandate.crownAndAltar	question	UP-108	Second-action timing is resolved; paired-recipient qualification remains unanswered.
 new-horizons:bulwarkOfTheMire.deepBulwark	lack-producer	UP-167	No canonical nonmagical forced-displacement producer exists.
-new-horizons:elementalRebirth.phoenixSpark	question	UP-046	Greater Essence composition with the fixed 25% replacement remains unresolved.
+new-horizons:elementalRebirth.phoenixSpark	private-source-clear	UP-046	Fixed 25% replaces Greater Essence provisionally; production and corrected Phantom fixture source-reviewed, ten authored cases await integration/native gate.
 ```
 
 ## Selection result

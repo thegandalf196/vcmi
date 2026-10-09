@@ -1,5 +1,18 @@
 # New Horizons implementation sprints
 
+## Sage/Shared Purpose/Frailty accepted checkpoint — 2026-10-09
+
+Ten-job incremental38972 links; exact native70790 passes36/36 in12.229s and
+adjacent61175 passes12/12 in5.131s, zero failures/errors/disabled/skips.
+Shared Purpose, Wisdom Sage and Learning Sage raise accepted perks276→279/310:
+generic193/220,faction86/90,31 remaining. Four named Frailty hero replacements
+also pass. Canonical amendments, registry source hash/descriptions and module
+are synchronized; static29, binary privacy, independent reviews and unchanged
+NHART3138 verification pass. Reviewed fixture repairs use real ordinary corpses
+and legal Litany prerequisites, retaining all assertions and production gates.
+Source commit/push is next; normal Linux remains verified source3046c1ad9 until
+delivery is separately checked. Broader interactions/visual checks stay Phase2.
+
 ## Seven-perk/hero accepted checkpoint — 2026-10-09
 
 Same-directory ten-job build25787 links. Exact native88843 passes79/79 in25.252s
@@ -10,10 +23,20 @@ Cyra/Brissa/Terek Haste and authored Thant Re-animate specialty paths also pass.
 Static38, parity, binary privacy and independent reviews pass. Prior failed
 fixtures/logs/XML remain private; all actual outcomes and save/eligibility guards
 were retained. No new rendering/Windows/playable delivery is implied.
-Next: commit this accepted batch, then integrate source-clear Shared Purpose,
-both Sage perks and four authored Frailty replacements. Phoenix Spark and
-Recruiter's Contacts progress privately. Source6db2f1534/snapshot568b1029 remains
-the current ordinary Linux delivery until a separately verified promotion.
+Source3046c1ad9 is normally pushed; ordinary Linux now selects snapshot5bedaf198
+after a fresh isolated silent20s smoke reaches day4, verifies actual child bytes/
+drivers and cleanup, and passes the ordinary launcher's verify-only path gate.
+Shared Purpose, both Sage perks and four authored Frailty replacements are now
+integrated/source-reviewed. Static29 and module parity pass; ten-job build32684
+stops1 at fixture-only private building access. Existing public APIs preserve
+the setup/assertions. Retry32544 stops1 at Shared Purpose's missing BattleInfo
+callback; reviewed initialized callback/lifetime setup retains all assertions.
+Incremental retry71973 links0 and privacy passes. Exact native6385 passes33/36
+and adjacent22182 passes12/12 with no errors/skips/crash. Two Resurrection casts
+correctly reject synthesized summoned-slot targets; Mass Bless lacks Litany.
+Ordinary-army/perk fixture repair and focused revalidation lead to the later
+accepted checkpoint above. This historical checkpoint accepted276/310.
+Phoenix Spark and Recruiter's Contacts remain private source candidates.
 
 ## Four-perk accepted checkpoint — 2026-10-09
 

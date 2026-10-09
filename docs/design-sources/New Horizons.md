@@ -4515,7 +4515,7 @@ Wisdom is the Magic hero's general spell-efficiency discipline. It reduces the M
 |Mysticism|Basic|At the start of each day, recover Mana equal to the greater of 5 or 10% of maximum Mana.|
 |Arcane Memory|Basic|When the hero casts a spell from a scroll, that spell is permanently learned if the hero meets the corresponding School Skill requirement for its level.|
 |Prepared Caster|Basic|After Wisdom calculates the spell's percentage discount, the first spell cast in each combat costs 2 additional Mana less, to a minimum of 1.|
-|Sage|Advanced|The first time the hero visits each Mage Guild, the guild reveals one additional eligible spell from its available schools and built levels.|
+|Sage|Advanced|On the hero's first visit to each built Mage Guild, reveal one previously undisplayed eligible spell from the catalog of its saved per-level school labels and built levels, respecting map bans and ordinary learning rules. Choose the highest eligible level, with canonical spellbook order breaking ties. Reveal it globally in a separate additional row without changing ordinary fixed slots or research. The first built-Guild visit is consumed even without the perk or a spellbook; visiting a town with no Guild does not consume it.|
 |Meditation|Advanced|If the hero ends the day with at least 25% of maximum Movement unspent, recover an additional 15% of maximum Mana.|
 |Mana Conservation|Advanced|After combat, recover 20% of the Mana spent during that combat, up to 20 Mana.|
 |Deep Knowledge|Advanced|Wisdom's chance to grant +1 Knowledge at level-up increases by 10 percentage points.|
@@ -4692,7 +4692,7 @@ Learning covers experience, teaching, study, spell exchange, and the acquisition
 |Quick Study|Advanced|At every fifth hero level, the initial level-up offer is automatically rerolled once before the choices are shown to the player.|
 |Field Study|Advanced|Gain +25% additional Experience from defeating enemy heroes or wandering armies whose Army Value exceeded your army's at battle start.|
 |Archivist|Advanced|When the hero acquires a spell scroll, permanently learn its spell immediately if legally eligible.|
-|Sage|Expert|The first time the hero visits each town's Mage Guild, automatically learn the highest-level eligible spell from that guild's built levels and available schools that the hero does not already know. Ties use canonical spellbook order.|
+|Sage|Expert|On the hero's first visit to each built Mage Guild, after ordinary Guild teaching and any Wisdom Sage reveal, personally learn the highest-level eligible unknown spell from the catalog of its saved per-level school labels and built levels, including undisplayed spells. Respect map bans and ordinary learning rules; ties use canonical spellbook order. The first built-Guild visit is consumed even without the perk or a spellbook; visiting a town with no Guild does not consume it.|
 |Master Teacher|Expert|Mentor automatically triggers for the first two different lower-level allied heroes met each week and grants Experience equal to 500 times the mentor's level to each.|
 
 
@@ -5471,6 +5471,15 @@ unchanged. Do not add a separate Masterful spell or hero-level scaling rider.
 Preserve map-prescribed spellbooks, captured legacy rules, class, biography and
 other starting choices. Revisit restoration-cap/casualty composition during
 integration; this replacement does not authorize other missing hero profiles.
+
+Cuthbert, Olema, Mirlanda and Xsi use the existing Shadow Frailty spell for
+their fresh default starting inscription and specialty instead of removed
+Weakness/Stone Skin. Apply +20% only to Frailty's Spell Power-derived Defense-loss
+component; preserve its fixed10%, per-cast20% and cumulative60% caps. Preserve
+class, biography, other starting choices, map-prescribed spellbooks and captured
+legacy contexts. These authored provisional replacements add no separate
+Masterful spell or new hero-level rider; revisit specialist differentiation
+during integration and balance.
 
 ###### Hero specialty conversion
 

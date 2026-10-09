@@ -1,5 +1,58 @@
 # New Horizons provisional rule review
 
+## Recruitment training — whole resulting stacks
+
+Status: authored provisional contract; production producers are still missing.
+
+Use whole-stack training after genuine direct recruitment, not mixed individual
+cohorts. This matches existing stack-level Attack/Morale/Initiative and avoids
+introducing weighted statistics. Same-hero split/merge/reorder preserves compact
+receipts without additive bonuses. Cross-army movement permanently clears Field
+Instructor and Reinforcement Drill on moved troops; Drill Sergeant travels with
+them because only the other perks require combat/residence under the recruiter.
+Do not treat temporary setArmy(nullptr) detachment as an army change.
+
+Use recruitment day through day+6 for the seven-day Drill window. Consume at
+first actual combat even if immune/capped. Field Instructor activates only after
+the first completed battle for surviving original strategic troops, including
+ordinary retained retreat/surrender results. Reinforcement Drill picks the
+lowest eligible original slot at simultaneous accepted battle entry, includes
+Champions, spends once per absolute week, and uses flat round1 Initiative.
+Paid and genuinely free external recruitment qualify; generic addToSlot does
+not establish recruitment provenance. Pending Changes contains the amendment.
+
+Review aggregate-stack benefit from a small recruited addition, split/merge
+training propagation, transfer/return permanence, seven-day endpoint, simultaneous
+entry tie-break and retained losing armies in Phase2/3. Minimum AI must execute
+the real recruitment producers and consume shared combat stats; deeper strategic
+training-aware exchange valuation is deferred, not claimed implemented. Required
+feedback must distinguish pending first combat, deadline and active training.
+No native acceptance or coverage increase follows from this contract alone.
+
+## Merist and Labetha — provisional defensive replacement assignment
+
+Merist receives ordinary Hydra's Vitality, matching Nature affinity and living
+Fortress troops. Labetha receives Guardian Spirit: Hydra's Vitality and
+Regeneration exclude her nonliving Elementals, so a physical damage buffer
+better preserves the original general defensive role despite lower Light
+affinity. Known starting inscriptions retain their existing rank exemption;
+do not change starting Skills. +20% applies only to SP-derived terms, preserving
+fixed values, caps, durations and other perk staging. Record these authored
+identities in Pending Changes until focused implementation is accepted. Review
+Labetha's School affinity and specialist differentiation in Phase2/3. No source,
+native or playable acceptance is inferred from this assignment.
+
+## Aenain — provisional replacement assignment
+
+Choose existing Frailty for Aenain's removed Disrupting Ray: both target enemy
+Defense, unlike the workbook's undefined Earthquake scaling. Reuse +20% only
+to the SP-derived Defense-loss term with existing fixed term and caps unchanged.
+Preserve other starts, map spellbooks and legacy contexts. Pending Changes
+records the authored amendment; private implementation and principal paid-cast,
+default-versus-map, legacy and save evidence are still required. Revisit the
+shared spell identity across several specialists and its hero differentiation
+in Phase2/3; this does not authorize wholesale workbook adoption.
+
 ## Four-perk batch — principal native validation passed
 
 Magnate records the most recent owned-at-entry town visit in the previous
@@ -42,8 +95,11 @@ Historian, Scholar and Archivist now pass their principal gates in88843:79/79,
 with adjacent3070:15/15. Haste and Thant specialty paths pass in the same batch.
 The implementation interpretations below remain reviewable Phase2 items;
 earlier authored/unrun labels are historical, not the current acceptance state.
-Shared Purpose, Sage, Frailty replacements, Phoenix Spark and Recruiter's
-Contacts remain private candidates with separate gates.
+Shared Purpose, both Sage perks and four Frailty replacements pass36/36 exact
+native70790 and12/12 adjacent61175 after linked38972, with independent source
+review. Perks279/310 are accepted; Sage/Frailty amendments are integrated into
+the canonical document. Phoenix Spark and Recruiter's Contacts remain private
+source-reviewed candidates without native credit.
 
 Recruiter's Contacts: provisionally an empty pool means an individual external
 dwelling row, not every row simultaneously. Replenish only the first empty row
@@ -77,9 +133,9 @@ hero's first built-Guild visit consumes its receipt even before perk/book
 acquisition; arriving with no Guild does not. Separate revealed rows preserve
 ordinary fixed slots and research. Existing-position overflow must remain
 accessible through a native component dialog, not disappear or overrun layout.
-Private implementation is underway, with no activation or native credit. Review
-multiple holders, later Guild construction, school labels and book acquisition
-timing after focused principal verification; authored clarification is pending.
+Principal Sage10 passes in native70790; both perks are active and the authored
+clarification is integrated. Review multiple holders, later Guild construction,
+school labels, rendered overflow and book acquisition timing in Phase2.
 
 Vanish and Encircled Doom: Vanish earns a move-only half-Speed budget only from
 the acting stack's qualifying primary physical flanking kill. Combine it with

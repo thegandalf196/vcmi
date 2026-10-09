@@ -15,37 +15,78 @@ entries here and thereby recreate a permanent override layer.
 
 ## Awaiting integration
 
-### Sage perks — eligible Guild catalog clarification
+### Recruitment training — provisional stack-level interpretation
 
-Provisional interpretation under the user's authorization: the Guild's available
-schools and built levels include eligible undisplayed spells from those saved
-school labels, respecting map bans and ordinary learning rules. Wisdom Sage
-reveals one such spell; Learning Sage personally learns the highest eligible
-unknown spell. This keeps Learning Sage meaningful after ordinary Guild learning
-has already taught all eligible displayed spells. Wisdom provisionally uses
-highest eligible level and canonical spellbook order for deterministic selection.
-The first built-Guild visit is consumed even before perk/book acquisition; a
-town without a Guild does not consume this separate visit. Preserve ordinary
-fixed Guild slots/research; separately revealed spells remain visible and usable.
-Private implementation is underway, not accepted. Integrate into the two Sage
-rows only after principal implementation and focused validation establish these
-semantics; revisit school-label and acquisition timing choices in the review ledger.
+Drill Sergeant, Field Instructor and Reinforcement Drill operate on the whole
+resulting strategic stack after a positive direct recruitment into the hero's
+army, including recruitment into an existing matching stack. No per-creature
+cohort accounting or additive duplicate training bonuses is introduced.
+Same-hero splits and merges preserve training receipts; merging combines
+eligibility/trained flags without multiplying bonuses. Drill Sergeant retains
+the later pending deadline when two eligible stacks merge. Slot reordering is
+not a transfer. Actual army-boundary transfers permanently remove Field
+Instructor and Reinforcement Drill eligibility/benefits from the moved portion;
+Drill Sergeant follows the troops because its wording does not require continued
+residence with the recruiter. Internal temporary detachment is not a boundary.
 
-### Four removed debuff specialties — provisional Frailty replacement
+Drill Sergeant gives +1 Morale in the first actual combat during recruitment
+day through day+6 inclusive, consuming eligibility even if immunity or a cap
+prevents a benefit. Field Instructor gives surviving original strategic troops
++1 Creature Attack only after completing their first combat under the recruiter,
+including a retained retreat/surrender army, and only while continuously in that
+hero's army. Reinforcement Drill includes Champions: at accepted battle entry,
+the lowest original army slot among eligible newly recruited stacks consumes
+the hero's one weekly use and receives +2 flat Initiative in round1 only.
+Recruitment may arm a resulting stack again, but never stack the same bonus.
 
-Under the user's provisional-rule authorization, Cuthbert, Olema, Mirlanda and
-Xsi replace their inaccessible Weakness/Stone Skin specialty and fresh default
-starting inscription with existing Shadow Frailty. Preserve the defensive-debuff
-role without inventing another spell. Apply the canonical non-damage specialty
-conversion: +20% to the Spell Power-derived Defense-loss component only;
-Frailty's fixed10%, per-cast20% cap and cumulative60% cap remain unchanged.
-Do not change class, biography or other starting choices, map-prescribed starts,
-or captured legacy rules. This is a private implementation assignment, not
-activation or acceptance. Integrate the four identities only after focused
-principal/default-versus-map/legacy/save validation and independent review.
-Other removed hero specialties remain separate gaps.
+Both paid recruitment and genuine free external-dwelling recruitment qualify;
+creature transfers, rewards, resurrection, Diplomacy joins, Necromancy, summons
+and merely increasing a dwelling pool do not. Existing category, Leadership,
+payment and pool validation remain unchanged. Required pending/trained creature
+feedback, typed receipts, save guards and shared combat/AI stat consumption
+must be implemented and focused evidence accepted before canonical integration.
+These choices are provisional under the user's explicit judgment policy.
+
+### Merist and Labetha — provisional defensive specialty replacements
+
+Under the user's provisional-rule authorization, replace removed Stone Skin
+in fresh default starts and specialties with ordinary Hydra's Vitality for
+Merist and Guardian Spirit for Labetha. Merist retains a Nature-oriented defense
+spell for living Fortress troops; Guardian Spirit also protects Labetha's
+nonliving Elementals. Apply +20% only to each spell's SP-derived numerical
+component. Hydra's fixed25%, maximum50%, three-round duration and regeneration
+rate remain unchanged; Guardian Spirit's fixed50HP and two-round duration remain
+unchanged. Preserve existing School/perk staging, other profiles, map books and
+captured legacy contexts. These are authored provisional identities, not the
+workbook's undefined Masterful variants. Independent review and focused live/
+detached/default/map/legacy/save evidence must precede canonical integration.
+
+### Aenain — provisional defense-debuff specialty replacement
+
+Under the user's authorization to implement reasoned provisional rules, replace
+Aenain's inaccessible Disrupting Ray specialty and fresh default starting spell
+with existing Shadow Frailty. Preserve the original targeted Defense-debuff
+role and reuse the established non-damage specialty conversion: +20% only to
+the Spell Power-derived Defense-loss component. Keep the fixed10%, per-cast20%
+and cumulative60% caps, other profile choices, map-prescribed spellbooks and
+legacy contexts unchanged. This is a root-authored provisional amendment, not
+approval of the workbook's undefined Earthquake specialty or a new biography.
+Private implementation/focused validation must precede canonical integration.
 
 ## Integrated history
+
+### Sage catalog and four Frailty specialties — 2026-10-09 (integrated)
+
+Both Sage rows now state the eligible undisplayed catalog, saved school labels,
+ordinary learning/map-ban rules, deterministic selection, first built-Guild
+visit receipt and separate reveal rows. The canonical hero-profile audit names
+Cuthbert, Olema, Mirlanda and Xsi's existing Frailty replacement, SP-component
+conversion, unchanged caps and preserved default/map/legacy boundaries.
+Independent source review and exact native70790 pass36/36, including Sage10,
+Frailty11 and Shared Purpose15; adjacent61175 passes12/12 after linked38972.
+Eligibility, initial corpse provenance and variant prerequisites were preserved
+through reviewed fixture-only repairs. These provisional choices remain in the
+second-look ledger; other missing hero identities remain separate gaps.
 
 ### Thant — authored provisional specialty replacement — 2026-10-09 (integrated)
 

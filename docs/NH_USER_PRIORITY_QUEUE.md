@@ -1,5 +1,22 @@
 # User-priority queue
 
+## Current Phase1 accepted checkpoint — Sage, Shared Purpose and Frailty
+
+Incremental ten-job build38972 links after reviewed fixture-only repairs.
+Exact native70790 passes36/36 in12.229s; adjacent61175 passes12/12 in5.131s,
+zero failures/errors/disabled/skips. Shared Purpose15, Sage10 and Frailty11
+establish the three perks and four hero replacements. Accepted perks279/310:
+generic193/220,faction86/90;31 remain. Canonical Sage and four named Frailty
+amendments are integrated; registry source identity/descriptions and generated
+module are synchronized, with static29 passing. Independent source review,
+binary privacy and unchanged3138-entry NHART verification pass. Earlier failed
+logs/XML remain private; no production eligibility or assertion was weakened.
+Source commit/push finalization is underway. Ordinary Linux still selects
+verified snapshot5bedaf198/source3046c1ad9, not this new source batch. No new
+rendered/Windows acceptance is claimed. Next reviewed private candidates include
+Contacts, Phoenix Spark, Divine Discipline/Crown, Arcane Memory and Spellcraft;
+hero and training work continues privately. Deferred interactions remain Phase2.
+
 ## Current Phase1 accepted checkpoint — seven perks and specialty conversions
 
 Build25787 links at ten jobs. Exact native88843 passes79/79 in25.252s and
@@ -9,11 +26,28 @@ generic191/220,faction85/90;34 remain. The seven are Scholar, Historian, Archivi
 Royal Standard, Deep Flank, Encircled Doom and Vanish. Haste specialists Cyra,
 Brissa and Terek plus authored Thant Re-animate pass their separate paths.
 Old failures remain private; fixture repairs retained all outcomes and production
-eligibility/save guards. Commit/push is next; playable Linux still selects the
-verified source6db2f1534/snapshot568b1029. NHART unchanged; no new rendered or
+eligibility/save guards. Source3046c1ad9 is normally pushed and remotely confirmed.
+Playable Linux now selects snapshot5bedaf198 after its isolated silent20s smoke
+reaches day4 without an observed crash, verifies the actual executable/library
+and dummy drivers, and releases processes, sockets and profile lock. The ordinary
+launcher's verify-only path check passes. NHART unchanged; no new rendered or
 Windows acceptance. Source-clear private Shared Purpose, both Sage perks and
-four Frailty replacements are next integration; Phoenix Spark and Recruiter's
-Contacts continue privately. Deferred cross-system findings remain Phase2.
+four Frailty replacements are integrated and independently source-reviewed.
+Root finalization preserves prior version/packet identities, adds Shared300 and
+Sage301, registers the three test units/helper and activates only these three
+perks. Static29 and generated-module parity pass. Ten-job build32684 stops1 at
+Sage's fixture-only private building access; existing public add/removeBuilding
+now preserves the setup and all assertions. Retry32544 stops1 at Shared Purpose's
+fixture-only default BattleInfo construction. A reviewed initialized callback
+now outlives BattleInfo, preserving every assertion; retry71973 links0 and binary
+privacy passes. Its exact pair passes33/36 principal cases and12/12 adjacent
+controls, with no errors/skips/crash. Two Resurrection controls use synthesized
+summoned-slot stacks, which are correctly ineligible; Mass Bless lacks Litany.
+Ordinary-army and legal-perk fixture repairs retain production access rules;
+retry acceptance is recorded in the later checkpoint above. Failed logs/XML
+remain private. This historical checkpoint accepted276/310. Phoenix Spark
+and Recruiter's Contacts remain private candidates. Deferred cross-system
+findings remain Phase2.
 
 ## Current Phase1 accepted checkpoint — four perks
 
