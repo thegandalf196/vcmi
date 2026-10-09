@@ -1,5 +1,18 @@
 # New Horizons implementation sprints
 
+## Four-perk accepted checkpoint — 2026-10-09
+
+Ten-job retry21118 and layout-only90928 link in the same disposable build.
+Native85299 passes36/36 in12.615s: Magnate12, Academic7+AI3, Memory8, Veteran6;
+shared68621 passes33/33 in10.845s, zero failures/errors/disabled/skips. Registry21,
+module parity, privacy and independent review pass. Perks269/310, generic188/220,
+faction81/90;41 planned. Other identity counts unchanged. Failed fixtures are
+preserved privately; concrete includes, exact visitor comparison and H3M town
+footprint placement were corrected without relaxing mechanics/assertions.
+Next private batch: Historian, Archivist, Royal Standard, Deep Flank, Encircled
+Doom and Haste specialty conversion. Authored tests are not accepted coverage.
+Source commit/push and playable delivery of this batch remain separate gates.
+
 ## Estates/Swift accepted checkpoint — 2026-10-09
 
 Same reusable ten-job build82853 links. Exact native39826 passes33/33 in10.755s,
@@ -16,8 +29,18 @@ visibility, corpse accessibility, active-action ordering and double-wide Ice
 footprints. No production eligibility or assertion is weakened. Phase2 keeps
 multi-goal AI receipt forecasting, lazy unmaterialized branches, projected
 mid-exchange valuation and wider residence/capture composition. Next integration
-batch: reviewed private Magnate, Elemental Memory and Academic Study. Playable
-promotion follows committed metadata/resource/headless gates, not source alone.
+batch: integrated Magnate, Elemental Memory, Academic Study and Veteran Cohesion;
+36 authored cases await the current ten-job build55392 and exact-pair native
+gate. Registry21, module parity and independent source review pass. Accepted
+coverage is unchanged until that gate. Source6757ac8f3 is normally pushed and
+ordinary Linux selects snapshot3a2cade1 after fresh silent headless day2 smoke
+and cleanup. The new uncommitted batch is not that playable delivery.
+
+Parallel private work: Historian, Royal Standard and retained Cyra/Brissa Haste
+specialty conversion. Royal has eight authored cases and clear source review;
+Haste needs expanded saved-rule admission guards before integration. Hero profile
+coverage is separate from52 reviewed biography overrides/92 inheritances; do not
+activate the entire mechanical workbook as if it were canonical authority.
 
 ## Merchant Prince accepted checkpoint — 2026-10-09
 

@@ -1,5 +1,74 @@
 # New Horizons provisional rule review
 
+## Four-perk batch — principal native validation passed
+
+Magnate records the most recent owned-at-entry town visit in the previous
+absolute week. At week start it snapshots a seven-day town award; losing the
+town pauses payment, and same-owner reacquisition resumes the original clock.
+Losing the granting hero does not cancel the town award. No fallback is invented
+when the most recently visited town has been lost. Amounts aggregate before the
+ordinary income handicap. Review unusual calendar lengths and the current-vs-
+next-day income tooltip boundary in Phase2.
+
+Academic Study consumes each hero's first town arrival even before perk
+acquisition or before a Guild exists; later construction cannot create a repeat
+reward. Ownership is not an authored restriction. The hero-only visitor marker
+precedes XP and does not alter player/team or building-visit history. Mentor's
+existing meeting snapshot is retained. Review composed level-up/building/Scholar
+queries in Phase2.
+
+Elemental Memory captures the destroyed stack's positive net ordinary Morale and
+Luck independently, then adds only the missing contribution after newborn
+positive inheritance. Newborn-specific negative effects and elemental Morale
+immunity remain effective. Ordinary one-round bonus expiry and Time Stop duration
+handling are retained; detached copies eagerly snapshot their own receipt.
+Review uncommon aura/controller and paused-duration interactions in Phase2.
+
+Veteran Cohesion uses battle-start maximum aggregate HP and a strict below-half
+threshold after actual HP loss. Its once-combat personal receipt survives healing
+and restoration; ordinary immunity and caps still govern its +2 Morale. Time Stop
+or fully absorbed damage cannot earn it. Review temporary HP, polymorph and
+controller transitions in Phase2. Sources are the shared Discipline/unit-state
+and Rebirth paths, town/hero visitor helpers, NewTurnProcessor and existing
+netpack serialization. These four implementations are source-reviewed, not yet
+accepted at native85299:36/36 principal cases pass after linked90928, zero
+failures/errors/disabled/skips. Shared68621 passes33/33 on the same pair.
+These interpretations remain reviewable; broader interactions above are Phase2.
+
+## Prepared private candidates — not accepted implementation coverage
+
+Royal Standard: capture only the original recipients of an actually selected
+Divine Mandate Order follow-up. Its negative-Morale floor lasts through that
+Order's scheduled round expiry, even when a Charge is spent, Protect is broken
+or Second Wind's activation finishes. Current hostile control suspends the
+floor; friendly control restores it within the original lifetime. This differs
+from Commanding Presence's explicitly settled benefit-consumption lifetime.
+Review Second Wind and future Divine Discipline extensions in Phase2. The
+shared morale callback and captured Order recipients implement the private
+candidate; eight cases are authored and source review is clear, not executed.
+
+Deep Flank: interpret 'currently attacked from at least two distinct melee
+sides' as present friendly melee-capable contact geometry, not historical hit
+counts. Union the existing directional footprint masks; repeated contacts on
+one direction do not add sides, while a double-wide footprint can contact two
+distinct sides. Apply half the rank's base Shroud flanking damage bonus only
+to the qualifying physical ranged attack, with fractional precision preserved;
+do not halve unrelated Backstab or Ambusher bonuses. Existing Formation Fighting
+protection remains. Shared damage/callback and Lua context implement the private
+candidate. Eight cases are authored and source review is clear, not executed.
+Review incapacitated contacts, walls/terrain and wider double-wide geometry in
+Phase2; this is not a completed AI-choice or rendered acceptance claim.
+
+Historian: classify the shipped Chest XP choice and Tree's XP reward explicitly.
+Preserve Tree's existing whole next-level threshold delta, not remaining XP to
+the next level. Only New Horizons level-derived rewards gain the ordinary
+Learning calculation and Historian's additive50%; legacy Tree grants/previews
+and AI remain unchanged. Grant, preview and AI share the same gate. Saved
+unclassified rewards are not silently migrated. Seven cases are authored and
+repaired v2 source review is clear; actual native gates remain pending. Review
+unusual mixed reward components and saved classification migration in Phase2.
+
+
 ## Swift Rebirth — normal birth-round activation
 
 Advance the reborn stack's one normal activation after the acting stack's

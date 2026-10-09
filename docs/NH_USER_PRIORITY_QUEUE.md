@@ -1,5 +1,16 @@
 # User-priority queue
 
+## Current Phase1 accepted checkpoint — four perks
+
+Build90928 succeeds after incremental21118. Exact85299 native36/36 passes in
+12.615s (Magnate12, Academic7+AI3, Memory8, Veteran6), with no failures/errors/
+disabled/skips. Same-pair shared68621 passes33/33 in10.845s. Registry21/module
+parity, binary privacy and independent review pass. Accepted perks269/310:
+generic188/220,faction81/90;41 planned. Other identity counts unchanged. Failure
+logs stay private; production eligibility and fixture assertions were preserved.
+NHART unchanged. Commit/push and new playable delivery are pending separately;
+the normal Linux launcher still selects committed6757ac8f3/snapshot3a2cade1.
+
 ## Current Phase1 source/native checkpoint — Estates and Swift
 
 Linked82853 succeeds at ten jobs in the single reusable build. Exact native39826
@@ -8,14 +19,28 @@ Steward9, Swift10); same-pair adjacent91859 passes11/11 in3.779s. Independent
 review, registry21, module parity and privacy checks pass. Accepted perks265/310:
 generic185/220,faction80/90,45 planned; combat67/67,Orders8/8,Skills31/31,
 ranks93/93 unchanged. Prior failures remain private; no production guards were
-weakened. Source commit/push and latest playable refresh follow separately.
+weakened. Source commit6757ac8f3 was normally pushed. The ordinary Linux launcher
+selects snapshot3a2cade1 after a fresh silent headless smoke reached day2 and
+cleaned up; this is not acceptance of the current uncommitted batch.
 
-Magnate, Elemental Memory v3 and Academic Study v2 are preserved privately and
-source-reviewed, not accepted from authored tests. Veteran Cohesion progresses
-privately. Minor gameplay uncertainty uses recorded provisional decisions;
+Magnate, Elemental Memory v3, Academic Study v2 and Veteran Cohesion are integrated
+and independently source-reviewed. Registry21 and generated module parity pass;
+their36 authored native cases await active ten-job build55392. Registry activation
+is not accepted coverage: the accepted count remains265/310 until these gates.
+Minor gameplay uncertainty uses recorded provisional decisions;
 missing resources, safety and actual crash/corruption remain genuine blockers.
 One disposable build, at most ten jobs and no private artwork inside build.
-Ordinary Linux still selects verified source5091ea62c until the new delivery gate.
+Ordinary Linux selects verified source6757ac8f3, not this uncommitted batch.
+
+Hero-workbook follow-up: biographies have52 reviewed overrides and92 deliberate
+inheritances, verified through production loading. This does not complete all
+hero starts or authorize wholesale mechanical workbook adoption. Canonical
+authored profiles remain controlling; missing replacement starts/specialties
+must be accounted for separately from perk percentages. A bounded read-only
+audit identified Cyra/Brissa's retained Haste specialty conversion as actionable.
+Private implementation proceeds with fixed Speed unchanged and the canonical
+non-damage SP-component conversion applied provisionally to duration. Unauthored
+replacement identities remain explicit gaps, not silently activated proposals.
 
 ## Resolved runtime findings — generated-map origin and hover caster lifetime
 

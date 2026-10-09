@@ -15,7 +15,25 @@ entries here and thereby recreate a permanent override layer.
 
 ## Awaiting integration
 
-None currently awaiting integration.
+### Thant — authored provisional specialty replacement
+
+Decision under the user's authorization to resolve gameplay gaps provisionally:
+replace Thant's removed Animate Dead starting inscription and specialty with
+the existing New Horizons Re-animate identity. Apply the canonical non-damage
+specialty conversion, +20% to the Spell Power-derived restoration component
+only. Preserve Re-animate's fixed220 HP component, ordinary temporary casualty
+eligibility, targeting, costs and action rules. Do not add a separate Masterful
+spell or a hero-level-scaling rider; do not change Thant's class, biography or
+other starting choices as part of this replacement.
+
+Affected canonical sections: hero starting-profile replacement audit, hero
+specialty conversion and Re-animate. Rationale: preserve the authored necromantic
+restoration role using the closest existing legal spell, instead of retaining
+an inaccessible legacy identity or inventing a replacement spell. A private
+candidate is assigned; no activation/native acceptance or canonical integration
+is claimed yet. Review the specialty's interaction with restoration caps and
+casualty provenance during focused validation. Remove this amendment only after
+the canonical identity and verified implementation are integrated.
 
 ## Integrated history
 

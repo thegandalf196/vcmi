@@ -6,6 +6,11 @@ canonical [New Horizons design](design-sources/New%20Horizons.md). That Markdown
 remains the sole authority for gameplay. The queue and functional matrix record
 current implementation questions and dependencies.
 
+Current accepted checkpoint: native85299 passes36/36 after linked90928 and
+shared68621 passes33/33 on the same pair. Accepted perks269/310, generic188/220,
+faction81/90;41 planned. Magnate, Academic Study, Elemental Memory and Veteran
+Cohesion rows are retired. Historical counts below describe earlier checkpoints.
+
 Prospector, Steward and Swift Rebirth pass33/33 exact native cases after
 linked82853, zero failures/errors/skips. Accepted coverage265/310, with45 planned
 perks; their rows are retired below. Historical question rows are not requests
@@ -32,9 +37,14 @@ Merchant Prince passes eight principal and three adjacent Resource Broker
 cases after linked77224. Its row is retired under the recorded resident-town,
 non-stacking interpretation, including actual AI/server trades.
 
-Registry-derived inventory:31 Skills,93 active rank effects,265 active perks,
-and45 planned perks:35 generic and10 faction. This index covers only those45
-perks; combat spell implementation coverage is complete. The current
+Accepted baseline:31 Skills,93 active rank effects,265 accepted perks,
+and45 not-yet-accepted perks:35 generic and10 faction. The live registry now
+activates four integrated candidates (Magnate, Academic Study, Elemental Memory,
+Veteran Cohesion), leaving41 literally planned entries. Those four remain in the
+acceptance backlog pending36 native cases and active build55392; do not equate
+registry activation with verified coverage or retire their rows yet. This index
+covers that45-item acceptance backlog; combat spell principal implementation
+coverage is complete. The current
 selection audit in [NH_FUNCTIONAL_COMPLETION_MATRIX.md](NH_FUNCTIONAL_COMPLETION_MATRIX.md)
 historically reported item-specific questions or dependencies. The user has now
 resolved Battlefield Mastery and Last Stand. Mastery is now source/native verified
@@ -127,7 +137,6 @@ new-horizons:battlecraft.rapidResponse	question	UP-159	Precedence versus earned 
 new-horizons:warMachines.precisionBombardment	question	UP-098	Basic War Machines already selects attackable structural parts; distinct perk benefit remains unresolved.
 new-horizons:warMachines.breachmaker	question	UP-098	Fortification neighbor geometry and central-keep participation remain unresolved; enum order is not adjacency.
 new-horizons:warMachines.fieldWorkshop	question	UP-100	Destroyed-target repair scope remains pending.
-new-horizons:discipline.veteranCohesion	question	UP-094	Battle-start maximum HP versus surviving-creature capacity changes the principal below-50% trigger; choice remains unanswered.
 new-horizons:discipline.heroicSpirit	question	UP-094	Extra retaliation surviving the immediate Morale activation and expiring on the following activation remains unresolved; generic next-activation expiry would erase it immediately.
 new-horizons:recruitment.drillSergeant	question	UP-127	Whole merged-stack bonus versus strict recruited-cohort provenance remains unresolved.
 new-horizons:recruitment.fieldInstructor	question	UP-127	Merged-stack versus recruited-cohort scope remains unresolved; required UI depends on that rule.
@@ -150,10 +159,8 @@ new-horizons:warcasting.reactiveWeave	question	UP-215	Half-strength readiness re
 new-horizons:diplomacy.mercenaryCaptain	dependency	UP-129	Deterministic recruitment/cohort provenance is a prerequisite.
 new-horizons:diplomacy.loyalMercenaries	dependency	UP-129	Deterministic recruitment/cohort provenance is a prerequisite.
 new-horizons:diplomacy.legendaryReputation	question	UP-195,UP-129	Monthly use on refusal/zero admission versus positive join remains unresolved.
-new-horizons:estates.magnate	question	UP-168	Visit/week-start ownership, capture and multiple-holder stacking remain unresolved.
 new-horizons:learning.scholar	question	UP-163	One-holder reciprocal scope, no-transfer use and canonical spellbook-order representation remain unresolved.
 new-horizons:learning.historian	question	UP-071	Primary-XP reward classification for Chest/Tree/mixed rewards remains unresolved.
-new-horizons:learning.academicStudy	question	UP-074	First-visit/acquisition timing remains pending.
 new-horizons:learning.archivist	dependency	UP-165,UP-054	Neutral Adventure-scroll acquisition policy remains unresolved; combat-only partial cannot complete full scope.
 new-horizons:learning.sage	question	UP-074	Pre-acquisition visit timing is recorded for both Sage rows; keep Learning Sage distinct from Wisdom Sage.
 new-horizons:luck.opportunist	question	UP-088	Movement-only continuation from reactions versus own activation remains unresolved.
@@ -165,7 +172,6 @@ new-horizons:shroudOfMalassa.deepFlank	question	UP-174	Distinct melee sides from
 new-horizons:shroudOfMalassa.encircledDoom	question	UP-174	Positional side contacts versus attack-history count/reset window remains unresolved.
 new-horizons:shroudOfMalassa.vanish	question	UP-176	Retaliation kills and simultaneous Pursuit/Vanish allowance composition remain unresolved.
 new-horizons:bulwarkOfTheMire.deepBulwark	lack-producer	UP-167	No canonical nonmagical forced-displacement producer exists.
-new-horizons:elementalRebirth.elementalMemory	question	UP-046	Inherited Morale versus Elemental immunity remains unresolved.
 new-horizons:elementalRebirth.phoenixSpark	question	UP-046	Greater Essence composition with the fixed 25% replacement remains unresolved.
 ```
 
