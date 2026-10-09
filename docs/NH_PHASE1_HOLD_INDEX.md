@@ -6,9 +6,9 @@ canonical [New Horizons design](design-sources/New%20Horizons.md). That Markdown
 remains the sole authority for gameplay. The queue and functional matrix record
 current implementation questions and dependencies.
 
-Registry-derived inventory: 31 Skills, 93 active rank effects, 247 active perks,
-and 63 planned perks: 48 generic and 15 faction. This index covers only those 63
-perks; the four inactive combat spells are tracked separately. The current
+Registry-derived inventory: 31 Skills, 93 active rank effects, 249 active perks,
+and 61 planned perks: 46 generic and 15 faction. This index covers only those 61
+perks; the three inactive combat spells are tracked separately. The current
 selection audit in [NH_FUNCTIONAL_COMPLETION_MATRIX.md](NH_FUNCTIONAL_COMPLETION_MATRIX.md)
 historically reported item-specific questions or dependencies. The user has now
 resolved Battlefield Mastery and Last Stand. Mastery is now source/native verified
@@ -34,6 +34,11 @@ AI placement remain Phase2 review items; adjacent39/40 includes the known
 preexisting v2/Morale fixture failure. No rendered/playable promotion is claimed.
 
 Status meanings:
+
+Nature's Wrath/Worldroot and Pursuit March now pass29/29 principal native cases,
+zero skips, after linked14275. Their provisional choices remain in the rule-review
+ledger; both perk rows are removed from this planned-only index. Nature is9/1,
+Logistics10/0; combat coverage64/67. No rendered/playable promotion is claimed.
 
 - `implementation-ready`: user answered the recorded design questions; source
   work is still missing.
@@ -81,7 +86,6 @@ new-horizons:command.seizeInitiative	question	UP-151	Currently active recipient 
 new-horizons:lightMagic.miracleWorker	question	UP-141	25% increase to restoration HP versus resulting integer creature count remains unresolved.
 new-horizons:shadowMagic.plaguebearer	question	UP-113	Normal-limit definition remains pending.
 new-horizons:natureMagic.mireShaper	question	UP-119	Five-patch absolute cap versus sixth perk patch remains unresolved; narrow ruling requested.
-new-horizons:natureMagic.worldroot	dependency	UP-117	Nature's Wrath/Worldroot base chain rules remain held.
 new-horizons:havocMagic.demolitionist	question	UP-139	Structural-perk stacking and fixed-landmark destructibility remain unresolved; baseline structural producer is verified.
 new-horizons:havocMagic.meteorologist	question	UP-139	Structural stacking and fixed-landmark destructibility remain unresolved.
 new-horizons:havocMagic.cataclysm	question	UP-111,UP-139	Eligible magical-obstacle and fixed-landmark filters remain unresolved.
@@ -96,7 +100,6 @@ new-horizons:spellcraft.preciseCasting	question	UP-133	Time Stop/Earthquake scop
 new-horizons:wisdom.arcaneMemory	question	UP-054	Neutral Adventure acquisition policy remains pending.
 new-horizons:wisdom.sage	question	UP-074	Pre-acquisition visit timing is recorded for both Sage rows; keep Wisdom Sage distinct from Learning Sage.
 new-horizons:warcasting.reactiveWeave	question	UP-215	Half-strength readiness replacing versus stacking with stronger existing readiness remains unresolved.
-new-horizons:logistics.pursuitMarch	question	UP-104,UP-209,UP-193	Daily recovery cap and zero-effective-recovery use consumption remain unresolved.
 new-horizons:diplomacy.mercenaryCaptain	dependency	UP-129	Deterministic recruitment/cohort provenance is a prerequisite.
 new-horizons:diplomacy.loyalMercenaries	dependency	UP-129	Deterministic recruitment/cohort provenance is a prerequisite.
 new-horizons:diplomacy.legendaryReputation	question	UP-195,UP-129	Monthly use on refusal/zero admission versus positive join remains unresolved.
@@ -201,4 +204,3 @@ and failed candidate records remain in the queue and completion matrix.
 | Polymorph | UP066 | Phantom conversion and reversion when no original footprint fits |
 | Reality Warp | UP179 | Beneficiary-side ownership of transferred effects |
 | Pandemonium | UP123/191 | Repeated debuff counting and per-debuff perk composition |
-| Nature's Wrath | UP117 | Chaining range, healthy/blocked conduction and resisted continuation |

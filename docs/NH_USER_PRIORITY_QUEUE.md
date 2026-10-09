@@ -1,6 +1,64 @@
 # User-priority queue
 
+## Accepted Nature's Wrath and Pursuit March checkpoint — 2026-10-09
+
+Linked14275 exits0; fresh native pair passes Nature16/16 (4.760s) and Pursuit13/13
+(3.881s), zero skips/failures. Root checks XML and matching source/private hashes.
+Data17/17, module parity and independent review pass. Receipt:
+build/nh-natures-wrath-native.sc7iZDtv/receipt.md. Coverage64/67 combat spells,
+249/310 perks (174 generic,75 faction),61 planned. Nature spells11/11, Nature
+perks9/10, Logistics10/10. All failed compile attempts are retained as lessons.
+Provisional choices stay recorded; advanced interactions remain Phase2.
+No NHART, rendered acceptance or normal-launcher promotion is claimed. Next:
+Pandemonium/Pandemonium Master with complete debuff classification and AI/UI.
+Earlier in-progress notes below are historical, not a remaining build/native hold.
+
 ## User-authorized provisional rule judgments — 2026-10-09
+
+Current independent slice: Nature's Wrath/Worldroot source, mixed AI/UI preview
+and focused native fixtures are integrated for validation. Pursuit March is
+assigned independently with atomic daily recovery and event-driven AI refresh.
+Registry activation supports actual admission tests, not accepted coverage.
+Borrowed Nature's Wrath icon remains Not done; no NHART or launcher promotion.
+
+Linked build14876 stopped at127/837 for the missing availability-header include;
+the exact include is repaired. Retry38283 is confirmed live at342/711,10 jobs,
+with the shared library linked and Nature's Wrath fixture compiled. Pursuit's
+test registration was added during this build; perform a serialized follow-up
+build after terminal status to include it. No native execution yet. Private
+runner sc7iZDtv retains fresh config/XDG and must receive the terminal exact
+binary/library pair. Expected primary coverage: Nature16, Pursuit13, zero skips.
+Accepted totals still63/67 combat spells and247/310 perks. No new Git checkpoint
+or playable promotion until the linked/native acceptance gates are established.
+
+Retry38283 is terminal1 at665/711; isolated81364 confirms only the AI fixture's
+missing concrete CPlayerBattleCallback declaration. That include is repaired
+without changing the projection API. Retry67618 is live with51 remaining steps,
+including the late-registered Pursuit fixture. Preserve this handle and await
+terminal status rather than restarting a live job. Native29 remains pending.
+
+Retry67618 and isolated12023 are terminal1 on the Pursuit fixture's private
+result-setter call. Public accepted retreat/surrender setup replaces it.
+Linked retry14275 exits0 with both new-horizons and vcmitest linked. Tester is
+executing separate Nature16/Pursuit13 gates on the fresh private pair; retain
+all failure receipts. No accepted count or launcher update yet.
+
+Next bounded preparation: Pandemonium/Pandemonium Master. The missing producer
+classification is inventoried, and an unregistered read-only DEBUFF snapshot
+helper groups explicit identities and stored physical Poison. No activation or
+coverage credit. Permanent creature characteristics remain untagged; ongoing
+spell debuffs must not be excluded merely for PERMANENT bonus duration. Producer
+rollout waits for the running linked candidate to finish, avoiding moving inputs.
+
+Pandemonium preparation now also has unregistered exact-power/damage helpers
+and Lua script. Read-only review finds no source blocker, not an admission or
+runtime pass. Private metadata proposal contains65 component additions across
+20 logical status definitions, with source hashes and schema checks. It remains
+unapplied until the current acceptance checkpoint finishes. Required before
+activation: complete producer identities, stored-state adapter, bindings,
+saved-v3 admission, defense/friendly-fire AI/UI and focused native tests. Account
+for previously saved legal tag-only metadata rather than enabling a cast-time
+exception for an otherwise supported old save.
 
 User directs reasonable judgment when a rule is unclear, with a persistent
 record of implemented situations deserving a second look. Persisted in

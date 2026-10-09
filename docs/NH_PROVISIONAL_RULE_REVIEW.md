@@ -87,7 +87,7 @@ step-cost treatment. The perk must not increase the cost of an already-free acti
 
 ## Nature's Wrath conduction and range
 
-Status: provisional interpretation; next independent spell implementation.
+Status: provisional interpretation; Nature's Wrath focused acceptance passed16/16.
 
 The authored nearest-unvisited route has no numerical chaining radius. Use the
 whole playable battlefield and deterministic unit-ID ties, without changing
@@ -99,3 +99,31 @@ the current. These choices follow the described living current rather than
 turning defenses into random target-selection changes. Review chaining radius,
 defended-target continuation and invalid-status exclusions. Preserve the
 authored17/19 distinct-recipient caps,93% attenuation and survivor-only healing.
+
+## Pursuit March daily recovery
+
+Status: provisional interpretation; Pursuit March focused acceptance passed13/13.
+
+After a surviving hero wins, including an opponent's retreat or surrender,
+restore floor(10% of the current travel-layer daily Movement maximum), capped
+at the missing daily Movement. Never reduce already-over-cap Movement. Consume
+the once-per-day use only when positive recovery succeeds. The specification
+does not define zero-benefit use consumption; preserving it avoids wasting a
+reward that cannot restore anything. Review travel-layer changes, victory modes
+and whether zero recovery should consume the use. Persist the day through an
+authoritative atomic movement update, without per-update polling.
+
+## Pandemonium logical debuff counting
+
+Status: provisional interpretation; prerequisite preparation, not active gameplay.
+
+Count each distinct authored DEBUFF identity once per stack, not every Bonus
+component or repeated application. Snapshot all counts before damage resolves.
+Pandemonium Master multiplies each contribution by1.25, rather than growing the
+multiplier with the count. Physical and magical Poison share one logical Poison
+identity. Ongoing spell debuffs may use PERMANENT bonus duration; duration alone
+does not make them innate characteristics. Innate/raw-stat sources stay untagged.
+Hostile Spell Lock counts; protective friendly Spell Lock does not. Time Stop's
+incapacitation and Frenzy's forced zero Defense count as explicit harmful statuses.
+Review mixed-effect classification and simultaneous Poison variants. Metadata
+must be complete before activation; an unregistered helper is not coverage.
