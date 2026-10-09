@@ -1,5 +1,47 @@
 # New Horizons provisional rule review
 
+## Frozen normal-activation timing
+
+The supplied Conflux rebalance requires a Frozen stack's next normal Creature
+Activation to be forfeited, followed immediately by thaw. The freezing attack
+and a subsequent Shatter attack never permit retaliation, including after
+Frozen is removed by that Shatter. Cleansing before the normal slot permits
+normal action; nothing restores an already forfeited activation.
+
+Provisional interpretation: Morale, Second Wind and other extra activations
+cannot move, attack or use abilities while Frozen, but do not consume its
+normal-slot lifetime or thaw it. Preserve the recipient's successful-application
+round stamp after every removal, so cleansing or Shatter cannot enable another
+successful freeze that round. The required20% trigger belongs to a resolved
+stack melee attack/retaliation, not individual creatures; its roll is distinct
+from whether the surviving recipient remains eligible for application.
+Review bonus-slot scheduling and multi-strike attacks explicitly during focused
+acceptance; do not substitute existing Stone Gaze/Blind activation semantics.
+Status: implementation mapping/data changes underway, not runtime accepted.
+
+## Reality Warp mixed-pair resistance and confirmation
+
+Status: source implementation pending linked/native acceptance.
+
+The canonical total exchange does not specify how a mixed friendly/enemy cast
+handles Resistance or Magic Mirror. Selected hostile endpoints, determined by
+their current controller, receive the existing cached Resistance resolution;
+friendly endpoints do not resist. If any selected hostile endpoint resists,
+neither endpoint exchanges effects. A reciprocal exchange is not redirected
+onto a third stack by the single-target Magic Mirror path. Recipient eligibility
+for each captured effect remains deterministic and does not roll Resistance.
+This preserves the exchange's indivisibility without making hostile casting
+ignore defenses. Revisit two hostile Reality Breaker targets, Twist of Fate,
+Magic Mirror and Counterspell composition during Phase2.
+
+The human interface selects two stacks and opens one centered, scrollable
+complete move/stay preview. Only Confirm casts; changed captured state requires
+fresh review. This adds no separate activation ability. AI initially values
+the next reachable attack horizon using actual detached before/after states;
+long-horizon regeneration and delayed statuses deserve a second look.
+Implementation: BattleSpellMechanics, RealityWarpEffect, the shared collector,
+BattleActionsController and BattleAI. No rendered acceptance is implied.
+
 ## Fate Dealer spill candidate draws
 
 Status: provisional implementation; focused native22/22 passes after linked46720.

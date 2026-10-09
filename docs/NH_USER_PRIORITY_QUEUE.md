@@ -101,6 +101,108 @@ the wrong serialized health nesting in live/detached capture; guards are retaine
 and valid capacity-ledger fixtures repaired. Frozen protocol/AI work proceeds
 in independent owned files; no completion credit or playable promotion yet.
 
+Outside-build launcher/policy maintenance is committed and normal-pushed as
+c1fd12793fdcd1c3fd3030f35547698b1a56ff82. Both normal and creature-preview path
+checks plus synthetic wrapper/syntax checks pass, without launching or writing
+profiles. Originals and verified previous playable pointers remain intact.
+Frozen protocol receipt persistence/old-format preflights, combat AI, five
+parallel-Altar priority controls and expanded principal fixtures are source-
+frozen; Warp capture now uses state.health on both live/detached paths. Existing
+ability-RNG caches are primed before the Frozen fixture's deterministic seed,
+without changing production rolls. Module parity passes. Incremental build16458
+is confirmed live at ten jobs; poll that exact handle before touching compiled
+inputs. Native rerun/review/promoted latest delivery remain pending.
+
+Build16458 was deliberately stopped (terminal130; no owned process-group members
+remain) after review found two outer-packet prefix gaps, before editing headers.
+BattleStart now preflights Frozen rules/receipts before its fields; MakeAction
+preflights Frozen Cure selection before its request base. Three focused controls
+retain old-format empty-buffer rejection and ordinary request compatibility.
+All compiled owners are refrozen. Re-review/retry must precede native acceptance.
+
+Bounded outer-guard re-review is clear. Retry67214 is confirmed live at ten jobs
+in the same build directory; complete log remains private outside build. Poll
+67214 on continuation and keep compiled inputs frozen. The remote branch is
+independently verified atc1fd12793fdcd1c3fd3030f35547698b1a56ff82. No new native
+gate or playable promotion is claimed.
+
+Retry67214 is terminal exit1 in three new Cure fixture API references, not a
+production mechanic failure. The fixtures now use the public spell reference
+and CGameHandler's default RNG accessor, preserving all damage/status and
+no-extra-roll assertions. Private Freezing Touch help is independently reviewed
+clear and awaits integration after the current compiled gate. Veiled Movement
+has a separate reviewed-input patch; generic Lucky Recovery proceeds privately
+without editing live build inputs or stalling on minor design questions.
+
+Incremental retry26591 is confirmed live at ten jobs in the same reusable
+Release directory. Poll that exact handle before editing compiled inputs.
+Private Avatar of Rage implementation is also delegated independently; neither
+private perk patch is accepted, applied or counted yet. Disk remains66% used
+with310 GiB available; no duplicate build tree or candidate delivery is created.
+
+Retry26591 is terminal exit1 at its final Altar-priority fixture: the real
+PriorityEvaluator requires the project's TSubgoal wrapper, not a raw shared
+BuildThis pointer. Its bounded test-only repair is delegated. With compilation
+stopped, the independently reviewed six-file Freezing Touch help patch is being
+integrated before the next same-directory retry. No runtime acceptance yet.
+
+The Altar fixture uses the established Goals::sptr wrapper, retaining five
+controls. Reviewed Freezing Touch UI is applied and source-frozen: captured
+percentages, compact ability row and full help in creature/Wiki panels; four
+static checks pass. Initial CMake regeneration correctly rejected stale curated
+translations; the maintained module generator updated mod.json and parity now
+passes. Retry20712 is live at ten jobs in the same directory; poll20712 before
+editing inputs. Native discovery/acceptance and rendered UI remain pending.
+
+Retry20712 links client and tests successfully. Fresh private matched-pair
+discovery finds47 Frozen/Conflux,73 Warp and15 adjacent target-condition cases.
+Native results:Frozen42/47 (8.624s),Warp69/73 (12.346s),TargetCondition15/15;
+no crashes or skipped controls. All five parallel-Altar AI controls and four
+real Frozen attack/retaliation/forfeiture controls pass. Remaining failures are
+two zero-damage mitigation fixtures, two detached Frozen branch-isolation
+controls, competing AI Order selection, and three Warp fixture/reason/state
+checks. Bounded independent diagnosis/repairs are delegated; failed pair and
+XML/logs are preserved privately. No feature completion credit or promotion.
+
+Bounded repairs are source-frozen: detached branches capture only Frozen
+units/effects before parent thaw; legitimate zero-damage caps replace impossible
+100% MDR fixtures (the canonical cap is95%); capacity ledgers normalize before
+exact baseline capture; absent Warp rules are set during map loading before
+immutable capture; explicit Time Stop rejection precedes generic invalidity.
+Paid AI fixtures no longer falsely require a spell to beat every valid Order:
+Warp accepts Brace through the real request before exercising its remaining
+Spell action; Cure isolates its spell consumer. Exact HP, state, RNG, selector,
+receipt and no-charge assertions remain. Incremental retry80894 is live at ten
+jobs; poll it before source edits. Accepted coverage remains unchanged.
+
+Build80894 terminates1 on a newly added test enum needing its typed SpellID
+wrapper; the one-line correction preserves its assertion. Retry83390 links
+successfully. Matched rerun improves Frozen to45/47 and Warp to72/73. Remaining
+AI Cure evidence identifies missing Frozen-permission full-evaluation/forfeited
+slot handling; both bounded production paths are being repaired. Random default
+town dwellings are now removed explicitly only for the four queried fixture
+lines. Spending Brace consumes the shared base Hero Action, so the paid Warp
+consumer fixture uses a clearly named legacy-command-disabled profile instead
+of inventing another action. Original failed results remain private. No live
+build remains; the next retry waits for owners to freeze and review.
+
+Final bounded AI re-review is clear. Retry6035 links both targets successfully.
+Matching native Frozen/Conflux now passes47/47 (8.691s), zero skips/errors:
+activation/retaliation/Shatter/Cure/receipt/protocol, branch isolation and actual
+paid Frozen Cure selection plus all five Altar AI controls. Warp rerun41512 is
+currently live against the same isolated copied pair. Poll41512 before assuming
+completion; accepted coverage and playable delivery still await final evidence.
+
+Final exact-pair acceptance:Frozen/Conflux47/47 (8.691s),Warp73/73 (12.290s),
+adjacentTargetCondition15/15 (0.310s), zero errors/skips. Binary/library hashes,
+independent review and final XML are verified privately. Phase1 source/native
+coverage is now combat67/67,perks255/310 (generic180/220,faction75/90),planned55;
+Orders8/8,Skills31/31,ranks93/93 unchanged. Full rendered Frozen/help acceptance
+and latest Linux snapshot promotion remain pending, not silently closed.
+Independent Veiled Movement/Lucky Recovery/Avatar patches remain private and
+unaccepted until applied/registered/built. Preparing one coherent scoped
+Warp/Conflux feature commit; package bytes and unrelated artwork remain intact.
+
 ## Immediate user task — publish artwork only through NHART
 
 Remove tracked loose New Horizons visuals (including original-based changes,
@@ -157,6 +259,16 @@ attributes. Distinguish required normal-activation timing from interpretations
 of extra activations, record uncertain legacy immunities without inventing
 new-school immunity. Parallel read-only mapping while artwork preservation
 and the existing compiled candidate are protected.
+
+Required presentation gap remains: Freezing Touch is not displayed in creature
+information until a target is already Frozen. Add an Ice innate-ability row and
+full tooltip using captured chance/Shatter rules (not fixed numbers or an invented
+gameplay bonus), in creature and Wiki info. Existing Frozen status/ice/shatter/
+initiative feedback is source-authored but rendered acceptance is pending.
+Legacy immunity interpretation remains explicitly pending review; no automatic
+six-School replacement was invented. The four-Altar AI hint now uses equal Elite
+category weighting while preserving actual asymmetric army/upgrade rewards;
+five authored controls await native acceptance.
 
 ## Reality Warp production exchange in progress — 2026-10-09
 

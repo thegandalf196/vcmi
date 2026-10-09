@@ -6,9 +6,17 @@ canonical [New Horizons design](design-sources/New%20Horizons.md). That Markdown
 remains the sole authority for gameplay. The queue and functional matrix record
 current implementation questions and dependencies.
 
-Registry-derived inventory: 31 Skills, 93 active rank effects, 254 active perks,
-and 56 planned perks: 41 generic and 15 faction. This index covers only those 56
-perks; the one inactive combat spell is tracked separately. The current
+Reality Warp/Reality Breaker pass73/73 principal and15/15 adjacent native cases
+after linked6035, with zero errors/skips and independent source review. The
+Reality Breaker planned row is retired. Current accepted coverage is67/67
+combat spells and255/310 perks (generic180/220,faction75/90); rendered/playable
+delivery remains separate. Veiled Movement's old producer dependency is now
+stale because accepted Overwatch provides the shared reaction path; its private
+implementation patch awaits activation/build/native acceptance.
+
+Registry-derived inventory: 31 Skills, 93 active rank effects, 255 active perks,
+and 55 planned perks: 40 generic and 15 faction. This index covers only those 55
+perks; combat spell implementation coverage is complete. The current
 selection audit in [NH_FUNCTIONAL_COMPLETION_MATRIX.md](NH_FUNCTIONAL_COMPLETION_MATRIX.md)
 historically reported item-specific questions or dependencies. The user has now
 resolved Battlefield Mastery and Last Stand. Mastery is now source/native verified
@@ -114,7 +122,6 @@ new-horizons:shadowMagic.plaguebearer	question	UP-113	Normal-limit definition re
 new-horizons:havocMagic.demolitionist	question	UP-139	Structural-perk stacking and fixed-landmark destructibility remain unresolved; baseline structural producer is verified.
 new-horizons:havocMagic.meteorologist	question	UP-139	Structural stacking and fixed-landmark destructibility remain unresolved.
 new-horizons:havocMagic.cataclysm	question	UP-111,UP-139	Eligible magical-obstacle and fixed-landmark filters remain unresolved.
-new-horizons:chaosMagic.realityBreaker	dependency	UP-179	Depends on Reality Warp; its target-scope question remains recorded.
 new-horizons:spellcraft.crossSchoolFormula	question	UP-132	Multi-school relation/eligibility interpretation remains unresolved.
 new-horizons:spellcraft.concentration	question	UP-069	Target-count definition remains unresolved.
 new-horizons:spellcraft.extendSpell	question	UP-134	Unusual spell-lifetime/expiry scope remains unresolved.
@@ -141,7 +148,7 @@ new-horizons:divineMandate.sharedPurpose	question	UP-108	Whether success qualifi
 new-horizons:divineMandate.divineDiscipline	question	UP-108,UP-149	Same-Order reissue replacing versus separate nonstacking carried instances remains unresolved.
 new-horizons:divineMandate.royalStandard	question	UP-108	Protection to scheduled expiry versus ending with broken/spent Order benefit remains unresolved.
 new-horizons:divineMandate.crownAndAltar	question	UP-108	Second-action timing is resolved; paired-recipient qualification remains unanswered.
-new-horizons:shroudOfMalassa.veiledMovement	lack-producer	UP-215	Movement-based reaction attack producer is absent; ordinary movement events are not equivalent.
+new-horizons:shroudOfMalassa.veiledMovement	implementation-ready	UP-215	Accepted Overwatch supplies the movement reaction producer; prepared shared-callback patch awaits activation and native acceptance.
 new-horizons:shroudOfMalassa.deepFlank	question	UP-174	Distinct melee sides from current positions versus accepted-hit history and reset window remains unresolved.
 new-horizons:shroudOfMalassa.encircledDoom	question	UP-174	Positional side contacts versus attack-history count/reset window remains unresolved.
 new-horizons:shroudOfMalassa.vanish	question	UP-176	Retaliation kills and simultaneous Pursuit/Vanish allowance composition remain unresolved.

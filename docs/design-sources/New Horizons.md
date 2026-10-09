@@ -3366,6 +3366,24 @@ A unique building that provides a bonus only while defending its town should als
 |Garden of Life / Vault of Ashes|Retain creature-growth roles; exact growth values are deferred.|
 |Shipyard|Retained.|
 
+The four classical Elemental Altars are independent Elite recruitment lines.
+Each base Altar requires Mage Guild level 1, not another Elemental Altar. Each
+upgrade requires its own base Altar and Mage Guild level 2, with no cross-line
+Altar prerequisite. These requirements do not change the Pixie, Wisp or Phoenix
+dwelling rules.
+
+|Altar line|Base cost|Upgrade cost|
+|---|---|---|
+|Air / Storm|2,500 Gold, 5 Wood, 5 Ore, 2 Gems|2,500 Gold, 5 Wood, 5 Ore, 3 Gems|
+|Water / Ice|2,500 Gold, 5 Wood, 5 Ore, 2 Mercury|2,500 Gold, 5 Wood, 5 Ore, 3 Mercury|
+|Fire / Energy|2,500 Gold, 5 Wood, 5 Ore, 2 Sulfur|2,500 Gold, 5 Wood, 5 Ore, 3 Sulfur|
+|Earth / Magma|2,500 Gold, 5 Wood, 5 Ore, 2 Crystal|2,500 Gold, 5 Wood, 5 Ore, 3 Crystal|
+
+Building all four base Altars costs 10,000 Gold, 20 Wood, 20 Ore and 2 of each
+rare resource. Including all four upgrades, the cumulative cost is 20,000 Gold,
+40 Wood, 40 Ore and 5 of each rare resource; these totals exclude Mage Guild
+construction.
+
 
 
 ###### Asset continuity
@@ -5043,6 +5061,55 @@ Elementals created by Elemental Rebirth are temporary summons and cannot themsel
 
 - Castle test mapping: Pikemen, Archers and Swordsmen are Core; Griffins, Monks and Cavaliers are Elite; Angels are Champion. The Griffin and Swordsman lines therefore swap bands relative to a simple 1-3 / 4-6 / 7 conversion. Conflux has two Core lines: Pixie upgraded to Sprite, and Wisp upgraded to its violet-blue form (upgrade name pending). Air, Water, Fire and Earth are the four Elite Elemental lines; Phoenix is Champion. Psychic/Magic Elementals leave the recruitable Conflux roster, and their dwelling line recruits Wisps instead. Existing Psychic/Magic Elemental identities remain valid for old maps and saves. Full faction mappings and experimental numbers are in Experimental Values.
 
+###### Classical Conflux Elemental roles
+
+Air / Storm, Water / Ice, Fire / Energy and Earth / Magma are four equal-economy
+Elite lines. Air, Water, Ice, Fire, Earth and Magma are ground melee creatures.
+Storm is a ground ranged creature with 16 shots and no obstacle/wall shooting
+penalty; this does not grant No Melee Penalty or remove ordinary distance
+penalties. Energy is a flying melee creature. Speed and Initiative are distinct
+values, not interchangeable movement and activation ratings.
+
+This rebalance grants no additional attacks or area attacks. Magma gains no
+extra retaliation, Earth gains no Physical Damage Reduction and Water gains no
+ranged-damage reduction. Preserve applicable Elemental classifications and
+existing immunities unless separately revised. The legacy spell-specific
+immunity/vulnerability interpretation remains pending review: do not invent a
+mapping to the six New Horizons Magic Schools or silently treat inherited
+legacy entries as a settled new-school immunity design. Pixie/Sprite, both Wisp
+forms and Phoenix retain their unrelated rules.
+
+###### Frozen — Ice Elemental physical affliction
+
+Ice Elementals are melee-only, with zero shots. Each successful melee attack or
+retaliation rolls a 20% Frozen chance once after damage. Frozen is a distinct
+physical affliction, not Blind, Petrification or a spell effect. It prevents
+retaliation and forfeits the recipient's next normal Creature Activation; the
+recipient thaws immediately after that forfeiture. Cleansing before that normal
+slot permits normal action, but cannot restore an activation already forfeited.
+
+A subsequent ordinary physical creature attack against a Frozen recipient gains
+25% final damage, then Shatters Frozen. The recipient cannot retaliate against
+that attack, including after Shatter has removed Frozen. Direct magical damage
+breaks Frozen without the Shatter damage bonus. Frozen cannot stack or refresh.
+At most one successful application is allowed per recipient per round, and
+cleansing, Shatter or thaw does not reset that round's application restriction.
+Cure can clear Frozen; ordinary Dispel cannot. The default chance and Shatter
+damage bonus are configurable values, initially 20% and 25% respectively.
+
+Required interaction support includes save-state representation, AI use and
+damage/action previews, a distinct Frozen status icon and tooltip, visible ice
+encasement, Shatter feedback, an activation-forfeit message and an incapacitated
+initiative marker. Status and encasement must clear on cleansing, Shatter or
+thaw, while distinguishing an outstanding normal-activation forfeiture.
+
+The treatment of extra activations, application stamps and multi-strike timing
+is recorded separately as provisional interpretation in
+[the provisional rule review ledger](../NH_PROVISIONAL_RULE_REVIEW.md#frozen-normal-activation-timing).
+Those interpretations do not replace the required next-normal-activation rule
+above. Specification and authored data do not themselves establish runtime
+acceptance.
+
 # Experimental Values
 
 ###### Purpose and status
@@ -5191,11 +5258,37 @@ and assets use Cabir. Provisional artwork follows the Heroes III Art workflow.
 |Fortress|Hydra|Champion|1|650||
 |Conflux|Pixie|Core|14|45|Upgrades to Sprite; restored single Core line|
 |Conflux|Wisp|Core|8|140|Second Core line; upgraded form Leadership 170; provisional supplied values|
-|Conflux|Air Elemental|Elite|5|180||
-|Conflux|Water Elemental|Elite|5|200||
-|Conflux|Fire Elemental|Elite|4|220||
-|Conflux|Earth Elemental|Elite|4|240||
+|Conflux|Air Elemental|Elite|4|250|Storm upgrade Leadership 300|
+|Conflux|Water Elemental|Elite|4|250|Ice upgrade Leadership 300|
+|Conflux|Fire Elemental|Elite|4|250|Energy upgrade Leadership 300|
+|Conflux|Earth Elemental|Elite|4|250|Magma upgrade Leadership 300|
 |Conflux|Phoenix|Champion|1|650||
+
+###### Classical Conflux Elemental rebalance values
+
+These values supersede the previous experimental values for these eight
+creatures only. All eight are Elite, with weekly base growth 4. Base creatures
+cost 550 Gold and require 250 Leadership each; upgraded creatures cost 750 Gold
+and require 300 Leadership each. Growth modifiers from separate buildings or
+mechanics are additional, not included in these base growth figures.
+
+|Creature|Attack|Defense|Damage|HP|Speed|Initiative|Gold|Leadership|Growth|
+|---|---|---|---|---|---|---|---|---|---|
+|Air Elemental|12|10|7–10|45|10|14|550|250|4|
+|Storm Elemental|13|11|8–11|50|10|15|750|300|4|
+|Water Elemental|11|12|7–10|50|6|9|550|250|4|
+|Ice Elemental|12|14|9–12|60|6|10|750|300|4|
+|Fire Elemental|14|9|9–12|40|8|12|550|250|4|
+|Energy Elemental|15|10|11–14|45|10|13|750|300|4|
+|Earth Elemental|10|14|8–11|55|4|6|550|250|4|
+|Magma Elemental|11|16|10–13|65|5|7|750|300|4|
+
+One unmodified week's growth across the four lines supplies 16 creatures:
+8,800 Gold and 4,000 Leadership for all base forms, or 12,000 Gold and 4,800
+Leadership for all upgraded forms. Pixie/Sprite, Wisp and Phoenix numerical
+values are unchanged by this classical Elemental rebalance.
+
+###### Wisp roster and experimental values
 
 The Wisp handoff roster decision supersedes the independent Sprite Grove and
 eighth recruitment slot: restore the Pixie dwelling's Sprite upgrade. The former
