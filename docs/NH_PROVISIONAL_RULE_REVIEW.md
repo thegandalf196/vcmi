@@ -2,7 +2,7 @@
 
 ## Fate Dealer spill candidate draws
 
-Status: reasoned implementation-ready interpretation; not activated.
+Status: provisional implementation; focused native22/22 passes after linked46720.
 
 Generate two independent uniform legal spill candidates with replacement,
 consistent with Shapeshifter. If exactly one is hostile to the caster's current
@@ -18,7 +18,12 @@ candidates and N=H+F, each hostile has probability(H+2F)/N² and each friendly
 F/N²; without the perk each is1/N. Focused evidence must include duplicate and
 same-side draws, controlled ownership, recipient defenses without reroll, exact
 weighted AI expectation without live RNG, and paid AI with Orders competing.
-This preparation is not implementation or accepted coverage.
+Accepted evidence: runtime17/17 in5.471s and AI5/5 in1.888s, zero skips,
+failures or errors. Receipt: build/nh-fate-dealer-native.oy8R/receipt.md. Runtime
+and AI explicitly compare current combat controller against caster ownership;
+ordinary ownerMatches retains its existing initial-side semantics. Review wider
+control/casualty interactions in Phase2 and replacement versus distinct draws
+in a later gameplay review. Source/native acceptance is not rendered delivery.
 
 ## Polymorph footprint restoration and Phantom body
 

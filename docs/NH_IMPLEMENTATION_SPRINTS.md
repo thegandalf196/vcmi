@@ -1,5 +1,18 @@
 # New Horizons implementation sprints
 
+## Accepted Fate Dealer checkpoint — 2026-10-09
+
+Linked46720 succeeds at ten jobs. Exact runtime17/17 in5.471s and AI5/5
+in1.888s pass without failures/errors/skips. Receipt:
+build/nh-fate-dealer-native.oy8R/receipt.md; root verifies XML and matching engine
+hashes. Shipped registration, paid AI with Orders, IID replacement/coin draws,
+current control and old-v2 uniform behavior are accepted. Failed initial12/22
+evidence and corrected scaling/ownership/resistance lessons remain preserved.
+Coverage254/310 perks (generic179/220, faction75/90;56 planned), combat66/67.
+No playable/art promotion; broader interactions remain Phase2. Next bounded
+coverage foundation: Reality Warp's captured-effect receptivity and atomic
+live/detached exchange. Provisional decisions stay reviewable.
+
 ## Accepted Overwatch/boarding checkpoint — 2026-10-09
 
 Linked48629 plus fixture-only relinks13033/37069 succeed; final native29/29

@@ -4435,7 +4435,7 @@ Without this School Skill, ordinary sources can teach only Level 1-2 spells of t
 |Frenzied Curse|Basic|A Berserked creature gains +2 Speed during its forced activation.|
 |Mindbreaker|Advanced|Forgetfulness also suppresses the target's passive offensive creature abilities for its duration.|
 |Shapeshifter|Advanced|Polymorph independently draws two random same-tier forms with replacement and automatically applies the form with the lower Army Value of the whole transformed stack, using its exact HP-converted creature count. Ties use canonical creature order.|
-|Fate Dealer|Advanced|Hand of Fate generates two random legal spill targets. If exactly one of them is hostile to the caster, that hostile stack automatically receives the spill damage; otherwise one of the two is selected randomly.|
+|Fate Dealer|Advanced|Hand of Fate independently draws two random legal spill targets with replacement. If exactly one of them is hostile to the caster, that hostile stack automatically receives the spill damage; otherwise a fair coin selects one of the two draws, including duplicates.|
 |Reality Breaker|Advanced|Reality Warp may target any two legal stacks rather than requiring one friendly and one enemy stack.|
 |Pandemonium Master|Expert|Pandemonium deals +25% damage per counted debuff.|
 |Paradox Shield|Expert|Shield of Chaos gains +10 percentage points to both damage resistances, without changing the -10 Morale and -10 Luck penalties.|

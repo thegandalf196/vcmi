@@ -6,8 +6,8 @@ canonical [New Horizons design](design-sources/New%20Horizons.md). That Markdown
 remains the sole authority for gameplay. The queue and functional matrix record
 current implementation questions and dependencies.
 
-Registry-derived inventory: 31 Skills, 93 active rank effects, 253 active perks,
-and 57 planned perks: 42 generic and 15 faction. This index covers only those 57
+Registry-derived inventory: 31 Skills, 93 active rank effects, 254 active perks,
+and 56 planned perks: 41 generic and 15 faction. This index covers only those 56
 perks; the one inactive combat spell is tracked separately. The current
 selection audit in [NH_FUNCTIONAL_COMPLETION_MATRIX.md](NH_FUNCTIONAL_COMPLETION_MATRIX.md)
 historically reported item-specific questions or dependencies. The user has now
@@ -34,6 +34,13 @@ AI placement remain Phase2 review items; adjacent39/40 includes the known
 preexisting v2/Morale fixture failure. No rendered/playable promotion is claimed.
 
 Status meanings:
+
+Fate Dealer passes22/22 focused native cases after linked46720: runtime17/17
+and AI5/5, zero skips/failures/errors. Receipt:
+build/nh-fate-dealer-native.oy8R/receipt.md. Its provisional with-replacement
+choice is integrated into canonical wording and remains reviewable. Its row is
+removed from the planned-only table. Current perks254/310 (generic179/220,
+faction75/90); combat66/67 unchanged. No rendered/playable promotion.
 
 Polymorph/Shapeshifter pass25/25 principal and17/17 foundation native cases,
 zero skips/errors/failures, after linked64681. Their source, AI, pending UI and
@@ -107,7 +114,6 @@ new-horizons:shadowMagic.plaguebearer	question	UP-113	Normal-limit definition re
 new-horizons:havocMagic.demolitionist	question	UP-139	Structural-perk stacking and fixed-landmark destructibility remain unresolved; baseline structural producer is verified.
 new-horizons:havocMagic.meteorologist	question	UP-139	Structural stacking and fixed-landmark destructibility remain unresolved.
 new-horizons:havocMagic.cataclysm	question	UP-111,UP-139	Eligible magical-obstacle and fixed-landmark filters remain unresolved.
-new-horizons:chaosMagic.fateDealer	question	UP-060	Two collateral draws with replacement versus distinct targets remains unresolved; base eligible pool is settled.
 new-horizons:chaosMagic.realityBreaker	dependency	UP-179	Depends on Reality Warp; its target-scope question remains recorded.
 new-horizons:spellcraft.crossSchoolFormula	question	UP-132	Multi-school relation/eligibility interpretation remains unresolved.
 new-horizons:spellcraft.concentration	question	UP-069	Target-count definition remains unresolved.

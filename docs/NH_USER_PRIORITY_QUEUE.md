@@ -1,5 +1,19 @@
 # User-priority queue
 
+## Accepted Fate Dealer — 2026-10-09
+
+Linked46720 exits0. Exact runtime17/17 in5.471s and AI5/5 in1.888s pass with
+zero failures/errors/skips; root verifies XML and source/private pair hashes.
+Receipt: build/nh-fate-dealer-native.oy8R/receipt.md. Current-controller runtime
+and AI, duplicate/same-side selection, recipient defenses/no reroll, saved-v2
+uniform forecast and paid AI with unmodified Orders pass. Initial12/22 evidence
+is preserved privately; corrected lessons are in NH_RELEASE_FAILURES.md.
+Coverage254/310 perks (179 generic/75 faction), planned56 (41 generic/15 faction);
+combat66/67, Orders8/8, Skills31/31 and ranks93/93 unchanged. Independent review,
+data17/17 and module parity pass. No launcher, NHART or rendered promotion.
+Broader integration remains Phase2. Next: Reality Warp's missing live atomic
+exchange/recipient legality/UI/AI; its detached planner alone is not coverage.
+
 ## Accepted Polymorph and Shapeshifter — 2026-10-09
 
 Linked64681 exits0. Final exact-pair principal25/25 passes in24.210s and
@@ -16,6 +30,35 @@ Wider interactions remain Phase2. Root integrates this checkpoint separately
 from Fate Dealer's ongoing Lua/tests; no unrelated user artwork/tools are staged.
 
 ## Next coverage preparation — Fate Dealer and Reality Warp
+
+Linked6765 succeeds, but runtime10/17 and AI2/5 pass; exact original pair,
+XML/logs and hashes remain in oy8R. Native evidence reverses the proposed
+fixture scaling: preserve raw100 and original320/541 assertions. Controlled
+tests expose ordinary ownerMatches initial-side semantics; Fate now uses an
+explicit current-controller Lua query and matching AI comparison, without
+changing global spell targeting. Resistance respects75% cap/residual25%, with
+explicit immunity for a zero-value draw slot. Saved-v2 control retains the
+required core roster. All corrections freeze for review before relink; accepted
+perks remain253/310. Final focused count is runtime17 plus AI5,22 total.
+
+Fate Dealer source admission is in progress. Runtime17 and AI4 are frozen for
+review, then bounded fixes: runtime preserves effective Spell Power via the
+actual divisor and loads shipped active perk metadata unchanged with legal
+progression/help checks. AI needs an explicit v3 perk-weighting guard to match
+Lua, since the base canonical-spell helper also accepts older supported rules.
+Keep older uniform selection; do not change baseline formulas. Reviewer catches
+these before builds. Fresh private runner: build/nh-fate-dealer-native.oy8R,
+binary-empty awaiting terminal exact pair; focused filter/count finalize after
+the AI guard refreezes. Accepted perks remain253/310, combat66/67.
+
+Polymorph/Shapeshifter is committed as55ee3f107 and normal-pushed; root verifies
+the live remote tip matches the full commit ID. Fate Dealer runtime/test source
+is frozen (17 cases) and independent AI implementation is underway in its
+existing evaluator/test TU. Root integrates the replacement-draw interpretation
+into canonical wording, hero-specific help, registry and generated module for
+admission testing. Accepted perks remain253/310 until linked/native/AI gates,
+not254 merely because source registration is active. No new art or launcher
+promotion. Lua polarity is explicit: negative ownerMatches means hostile.
 
 Read-only workers map Fate Dealer's existing actual collateral producer and
 AI expectation. The provisional two-IID-draw policy is recorded in the rule
