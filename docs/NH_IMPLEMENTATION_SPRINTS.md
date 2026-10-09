@@ -1,5 +1,16 @@
 # New Horizons implementation sprints
 
+## Accepted Overwatch/boarding checkpoint — 2026-10-09
+
+Linked48629 plus fixture-only relinks13033/37069 succeed; final native29/29
+passes8.983s, zero skips. Independent review, data17/17 and module parity pass.
+Coverage247/310 perks (generic172/220, faction75/90;63 planned),63/67 combat
+spells; Orders8/8,31 Skills/93 ranks unchanged. Adjacent38/41 failures reproduce
+on the preserved prior pair; recorded Phase2, not claimed passing. Marker/rebind
+tests preserve the existing Veteran snapshot guard. No Linux launcher promotion
+or rendered acceptance follows. Next: register/integrate Nature's Wrath and
+Worldroot's new prepared helper/script, mixed-result AI/UI and focused native gate.
+
 ## Accepted source/native checkpoint — 2026-10-09
 
 Elemental Convergence and Elemental Conjurer, Elemental Attunement, Adaptive

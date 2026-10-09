@@ -36,8 +36,31 @@ against the first enemy entering its range before delayed activation. Shared
 authority, serialized readiness/use state, ammo and death-stop behavior must
 support AI/UI consumers. Provisional range and movement-cause interpretations
 are recorded in NH_PROVISIONAL_RULE_REVIEW.md under the user's judgment policy.
-Registration remains planned until focused production gates pass. No coverage
-is credited merely for an implementation assignment.
+Production acceptance now passes29/29 principal cases in8.983s, zero skips,
+after linked48629 and fixture-only relinks13033/37069. Root checks XML; data17/17,
+module parity and independent review pass. Overwatch/Rapid add two generic perks:
+247/310 total,63 planned. Durable receipt: MHQdPpt8/receipt.md under build.
+No normal-launcher promotion or rendered acceptance is claimed.
+
+Independent Rapid Embarkation implementation proceeds under the judgment policy:
+its explicit10% daily-Movement cost is final, not halved again by Navigation.
+Record this composition for a second look; require shared/server/AI parity and
+focused evidence before activation or coverage credit.
+
+Source checkpoints are frozen for linked build90398 at10 jobs. Registry entries
+are enabled for actual shipped-admission testing, not yet accepted coverage.
+Independent review reports no remaining blocker after Overwatch save-rebind and
+packet downgrade-preflight repairs. Phase2 retains occupied-transit AI/UI parity,
+advanced reaction effects/provenance and no-reactor projection overhead; Rapid
+custom/non-SAIL vehicle composition is unverified. Final native gate passes29/29;
+adjacent38/41 failures reproduce on the preserved prior binary/config pair.
+
+Next independent spell: UP117 Nature's Wrath and Worldroot. Canonical route and
+power are retained; missing range/conduction cases use the recorded provisional
+rule-review interpretation. During build90398/retry48629 only its new Lua source
+and unregistered shared helper files may be prepared; existing compiled consumers,
+configuration and test registrations remain frozen. No new coverage until
+production admission, mixed damage/healing, route preview and paid AI pass.
 
 
 ## Remaining bounded portrait acceptance — 2026-10-09

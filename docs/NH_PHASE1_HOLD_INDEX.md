@@ -6,8 +6,8 @@ canonical [New Horizons design](design-sources/New%20Horizons.md). That Markdown
 remains the sole authority for gameplay. The queue and functional matrix record
 current implementation questions and dependencies.
 
-Registry-derived inventory: 31 Skills, 93 active rank effects, 245 active perks,
-and 65 planned perks: 50 generic and 15 faction. This index covers only those 65
+Registry-derived inventory: 31 Skills, 93 active rank effects, 247 active perks,
+and 63 planned perks: 48 generic and 15 faction. This index covers only those 63
 perks; the four inactive combat spells are tracked separately. The current
 selection audit in [NH_FUNCTIONAL_COMPLETION_MATRIX.md](NH_FUNCTIONAL_COMPLETION_MATRIX.md)
 historically reported item-specific questions or dependencies. The user has now
@@ -50,8 +50,10 @@ Status meanings:
   in this bounded index. Do not infer that the mechanic is ambiguous or fully
   blocked from this label.
 
-Implementation-ready/in-progress rows require explicit supporting canonical
-rules or direct user rulings. Do not retain a question when the existing authored
+Implementation-ready/in-progress rows require supporting canonical rules, direct
+user rulings, or reasoned provisional interpretations recorded under the user's
+judgment policy in NH_PROVISIONAL_RULE_REVIEW.md. Questions are second-look
+candidates, not automatic implementation blockers. Do not retain a question when the existing authored
 rules already settle it; a hypothetical exception is not itself a design hold.
 `needs-review` is intentional uncertainty, not a
 new user question. Preserve the cited queue records rather than reopening the
@@ -63,7 +65,6 @@ multiple comma-separated queue entries.
 ```text
 ID	Status	UPref	Existing recorded issue / reason
 new-horizons:armorer.unyielding	lack-producer	UP-167	No nonmagical forced-displacement producer; ordinary movement and spell relocation are not substitutes.
-new-horizons:battlecraft.overwatch	question	UP-155	Teleport/Blink interaction clarification remains open.
 new-horizons:battlecraft.rapidResponse	question	UP-159	Precedence versus earned immediate Morale/Quartermaster/Second Wind activations remains unresolved; narrow ruling requested.
 new-horizons:warMachines.precisionBombardment	question	UP-098	Basic War Machines already selects attackable structural parts; distinct perk benefit remains unresolved.
 new-horizons:warMachines.breachmaker	question	UP-098	Fortification neighbor geometry and central-keep participation remain unresolved; enum order is not adjacency.
@@ -95,7 +96,6 @@ new-horizons:spellcraft.preciseCasting	question	UP-133	Time Stop/Earthquake scop
 new-horizons:wisdom.arcaneMemory	question	UP-054	Neutral Adventure acquisition policy remains pending.
 new-horizons:wisdom.sage	question	UP-074	Pre-acquisition visit timing is recorded for both Sage rows; keep Wisdom Sage distinct from Learning Sage.
 new-horizons:warcasting.reactiveWeave	question	UP-215	Half-strength readiness replacing versus stacking with stronger existing readiness remains unresolved.
-new-horizons:logistics.rapidEmbarkation	question	UP-103,UP-208	Navigation composition: 10% final boarding cost versus halved 5% remains unresolved.
 new-horizons:logistics.pursuitMarch	question	UP-104,UP-209,UP-193	Daily recovery cap and zero-effective-recovery use consumption remain unresolved.
 new-horizons:diplomacy.mercenaryCaptain	dependency	UP-129	Deterministic recruitment/cohort provenance is a prerequisite.
 new-horizons:diplomacy.loyalMercenaries	dependency	UP-129	Deterministic recruitment/cohort provenance is a prerequisite.

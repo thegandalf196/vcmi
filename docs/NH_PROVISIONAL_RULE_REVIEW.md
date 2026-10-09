@@ -42,7 +42,7 @@ Normal next-round expiration is included in the focused native fixture.
 
 ## Overwatch range and voluntary movement
 
-Status: provisional interpretation; implementation in progress, not active coverage.
+Status: provisional interpretation; principal native acceptance passed29/29.
 
 Use the ordinary unpenalized ranged distance (10 hexes), capped by an explicit
 limited shooting range. No-distance-penalty abilities do not make the trigger
@@ -56,4 +56,46 @@ not. Simultaneous eligible shooters resolve in stable unit-ID order. Review
 whether the intended range should instead be a distinct reaction radius, whether
 inside-range movement should trigger, and competing-reactor order. Principal
 implementation: NewHorizonsBattlecraft, CBattleInfoCallback, CUnitState and
-BattleActionProcessor; evidence remains pending focused tests and AI/UI consumers.
+BattleActionProcessor. Principal29/29 native cases pass; occupied-transit AI/UI
+forecast parity and advanced reaction effects remain Phase2 review items.
+
+Pass-through movement across an occupied ground hex cannot publish an overlapping
+stack position. Reactions therefore occur at the next legal inside-range endpoint;
+if transit leaves range before any such endpoint, no shot triggers. Review this
+bounded Ghost Walk/Passing Lines exception without introducing illegal state.
+
+Use the existing counter-reaction recursion guard so Counterfire does not answer
+an Overwatch reaction. The existing next-attack Battlecraft Wait bonus applies
+to and is consumed by that shot. Review these reaction-chain/next-attack semantics
+in Phase2; do not duplicate attack-resolution machinery merely for this perk.
+
+## Rapid Embarkation and Navigation
+
+Status: provisional interpretation; principal native acceptance passed29/29.
+
+Rapid Embarkation's explicit "costs only10% of maximum daily Movement" is a
+final boarding/disembarking cost, replacing the ordinary cost rather than an
+intermediate amount that Navigation halves again. This honors the named fixed
+cost without manufacturing a5% figure absent from its wording. Review whether
+future design should intentionally allow multiplicative stacking. Shared movement,
+authoritative boarding and pathfinder parity pass in the focused29/29 gate;
+custom-vehicle composition remains unverified.
+
+Preserve the explicit Lighthouse/free-boarding exception ahead of Rapid
+Embarkation: no embarkation penalty remains no penalty, with the existing ordinary
+step-cost treatment. The perk must not increase the cost of an already-free action.
+
+## Nature's Wrath conduction and range
+
+Status: provisional interpretation; next independent spell implementation.
+
+The authored nearest-unvisited route has no numerical chaining radius. Use the
+whole playable battlefield and deterministic unit-ID ties, without changing
+generic Chain Lightning. Healthy friends conduct with zero healing; living
+immune/invincible stacks conduct but receive no effect. Dead, ghost, turret,
+off-board and Time Stopped stacks are not route recipients. Resolve the route
+before defenses: a resisted hop still counts and attenuates but does not stop
+the current. These choices follow the described living current rather than
+turning defenses into random target-selection changes. Review chaining radius,
+defended-target continuation and invalid-status exclusions. Preserve the
+authored17/19 distinct-recipient caps,93% attenuation and survivor-only healing.
