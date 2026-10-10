@@ -2,6 +2,31 @@
 
 ## Current Phase1 continuation — independent feature lanes
 
+Town Muster AI's principal path is accepted6/6 actual native cases; root opens
+the XML and receipt. Corrected both-target93434 and privacy6976 pass. Actual
+child isolation, exact binary/resource parity, external Data/NHART preservation
+and cleanup pass. Planned ordinary town entry submits the authenticated Muster
+request; rank amounts, Broad split, weekly-use, budget, ownership and Leadership
+controls pass. Commit/push this coherent batch. Storm rendered feedback and
+Frozen presentation remain unverified; broader AI portfolio/occupancy/scheduler
+interactions remain Phase2. No ordinary-launcher promotion or full Phase1 exit.
+
+Town build38018 links production but fails its fixture's call to a private town
+owner wrapper. Untruncated diagnostic retry41987 confirms the sole compile
+error. Independent review clears the one-TU repair using the public authoritative
+handler ownership API and an actual-owner assertion, preserving all six cases.
+Incremental both-target93434 is live; native execution still awaits linkage and
+privacy. No gameplay changes are made to fit the compiler failure.
+
+External Muster and battlefield feedback are published asce958acd4; remote tip
+and author/committer identity match. Next ordinary-town Muster AI path is
+imported after independent review: purposeful eligible visits, recruitable
+valuation and the existing authenticated Muster request on ordinary town entry.
+Six focused cases are registered. Both-target build38018 runs at ten jobs;
+source/resources are frozen and native execution awaits linkage/privacy.
+The pack and ordinary launcher remain unchanged. Broader portfolio/scheduler
+interactions remain Phase2 work, not blockers to this principal-path gate.
+
 External Muster now passes all seven actual native cases after the fixture-only
 observer repair; retained Hold anchor five cases give12 distinct passing cases
 across runs, not one fresh12 run. Both-target5553 and privacy45889 pass. Root
