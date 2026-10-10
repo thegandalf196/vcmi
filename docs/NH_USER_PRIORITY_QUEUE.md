@@ -1,5 +1,24 @@
 # User-priority queue
 
+## Repository identity and main consolidation — 2026-10-10
+
+The user renamed the repository to `thegandalf196/new-horizons` and requests
+the current development history on `main`, with other public branches removed.
+Current development must not be reset or squashed. Two old branches are fully
+contained ancestors; the spellcast-modifiers branch has four unique generic
+engine-tooling commits. The user explicitly chooses verified private preservation
+and public deletion without porting that tooling into current gameplay.
+A complete private recovery bundle verifies; current untracked artwork/tools
+and detached worktree untracked files verify against their private archives,
+with binary patches retained for worktree changes. Originals remain untouched.
+Update the local remote, scoped New Horizons workflow gates and package-source
+URLs; preserve upstream VCMI attribution, dependencies and unrelated resources.
+Recheck live refs before deletion, change GitHub's default to main, and remove
+only the inventoried old branches. No history rewrite or public backup refs.
+The Frozen candidate/preparation is preserved unlaunched during maintenance.
+The existing Windows run is pinned to the pre-migration source; do not claim
+it matches the forthcoming release source or silently repack it as current.
+
 ## Authorized 0.85 release — 2026-10-10
 
 After the pending Phase1 exit checks and playable delivery validation finish,
