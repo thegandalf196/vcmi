@@ -2,6 +2,17 @@
 
 ## Current Phase1 continuation — independent feature lanes
 
+AI partial-visibility repair is imported and independently reviewed: clustering
+rejects a hidden visitable anchor before querying its top object, preserving
+the previous exclusion result without privileged fog access. The calibrated
+logger oracle observes both denied-query messages, then requires zero during
+partial-object clustering, with visible re-admission retained. Actual Sage AI
+suite6/6 passes, including all five existing controls; binary privacy, resource
+parity and owned silent cleanup pass. This confirms that source path, not exact
+attribution of the user's reported tile or all adventure fog interactions.
+An unrelated cheat/open-map graph dereference lacks a local visibility guard
+but is not reached by normal fog-mode AI; retain as a Phase2 defensive finding.
+
 Latest acceptance: the New Horizons-only Halon/Thane class swap is imported and
 independently reviewed. Four data checks and module generation pass. Actual
 NewHorizonsStartingArmyTest4/4 verifies all144 ordinary armies including exact
