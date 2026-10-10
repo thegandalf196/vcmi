@@ -2,6 +2,20 @@
 
 ## Current Phase1 continuation — independent feature lanes
 
+Next principal coverage slice: the canonical School-proficiency acquisition
+help requirement is missing from ordinary Guild scroll hover/click/popups and
+Sage overflow help. The independently reviewed client-only presenter is now
+imported, with eight native cases registered. It reads the current town visitor,
+uses captured rules and actual learning status, and never labels an inscribed
+spell as casting-locked. Acquisition/research, gameplay and artwork are unchanged.
+Both client and native tests compile. The first actual run is3/8: five fixtures
+mistakenly use a School identifier as a Skill identifier. An independently
+reviewed seven-string fixture correction preserves all original assertions.
+The second actual run passes8/8 with no failures/errors/skips/disabled cases;
+owned cleanup and complete pair/resource parity pass. Native-size ordinary
+Guild/Sage presentation remains unobserved. The accepted warning-free snapshot
+is kept immutable while this slice develops.
+
 Snapshot staging now mirrors the existing CMake exclusion for the exact selected
 packed Guild supporting configuration, after full pack/manifest verification.
 Independent review clears the narrow change; all29 snapshot-helper cases pass,
