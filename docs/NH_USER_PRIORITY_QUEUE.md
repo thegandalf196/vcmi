@@ -90,6 +90,40 @@ the persistent profile-lock file is proven unlocked rather than claimed absent.
 This closes the default Serena encyclopedia witness, not empty-book or Frozen
 presentation, full gameplay, or strict whole-route timing acceptance.
 
+The separate actual Aine empty-book run now closes that omitted principal path.
+The ordinary initialized hero card shows the worn physical Spellbook; clicking
+it opens the same hero's empty book. Combat and Adventure pages are actually
+observed with empty search and All selected, not inferred from encyclopedia or
+hidden by filtering. Root views the card and both native pages. Principal ends
+85.582s; ordinary Quit begins86.879s, client/parent reaped104.648s, no supervisor
+signals; owned display/socket cleanup155.066s meets the hard bounds. All8 native
+captures total7,280,955bytes, no video; zero WARN/ERROR, immutable parity and
+profile-lock release pass. No casting or broad gameplay claim is implied.
+Frozen's next probe uses the unchanged repaired owner and exact fixture, with
+an explicitly bounded whole-owned-run recording rather than falsely claiming
+manual-only capture. Startup and compulsory preview footage are excluded from
+principal evidence. Capture duration is relative to capture start, not client
+age; actual size must remain within128MiB despite the configured120MiB headroom.
+The corrected foot-hex/HIT-cursor/damage-preview prerequisite governs clicks;
+no intro-skip input or repeated RNG chase is authorized.
+The actual bounded video probe terminates without a legal melee preview or
+attack: zero own hits, contact rounds or Frozen applications. Manual readiness
+misses80s; cleanup Options begins131.178s, and later input is refused after140s.
+Supervisor TERM/KILL stops the client, not normal Quit. Client reap150.086s and
+display/socket cleanup155.097s satisfy hard bounds; one120s silent recording
+of38,155,738bytes and8 native captures totaling9,876,389bytes meet storage caps.
+Immutable parity passes. The Grail warning and unavailable SOSAVE frame error
+are retained. Independent review accepts the receipt as incomplete evidence,
+not Frozen acceptance. A normal scenario preparation removes Battle Mode's
+compulsory preview/replay overhead; no RNG or trigger probability is changed.
+The Save diagnostic is a confirmed two-frame button/state mapping mismatch;
+its narrow repair is assigned while retaining disabled battle-save input.
+The repair now changes only Save's frame mapping to[1,0,1,1], reusing its normal
+frame for blocked/highlighted states rather than requesting nonexistent frames.
+Root reruns all3 focused data/input-guard controls and5 product-version controls:
+8/8 pass. No build or rendered options/log verification is claimed; the selected
+immutable playable snapshot remains unchanged until deliberate delivery.
+
 Independent bounded source/specification audits reconcile required combat,
 hero-development and adventure UI; action/activation, Leadership, Siege and
 Luck/Morale; towns, recruitment, Diplomacy, artifacts and specialties; and
