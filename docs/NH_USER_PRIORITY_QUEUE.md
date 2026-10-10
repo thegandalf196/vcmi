@@ -11,11 +11,11 @@ untested Linux candidate. Record tag/commit, artifact hashes, platform checks,
 and any untested behavior. Tagging/publication remains pending, not completed.
 Detaching the GitHub fork relationship does not remove inherited GPL obligations;
 retain upstream attribution and license notices throughout release preparation.
-Release preparation finds an inherited workflow that would dispatch upstream
-Homebrew on any stable release. Its job now requires the upstream repository
-identity as well as a non-prerelease publication. Root runs the two pure
-workflow controls successfully, covering four repository/prerelease cases;
-independent review clears the narrow guard. No external dispatch occurs.
+Release preparation found an inherited workflow that would dispatch upstream
+Homebrew on stable publication. A reviewed guard first prevented fork dispatch;
+the user subsequently explicitly requested removal. The inherited notification
+workflow and its guard-only test are now removed. New Horizons Windows/Linux
+build and packaging workflows remain intact; no external dispatch occurs.
 The existing Windows artifact is older than the intended release source and
 cannot be relabeled; a fresh full build and package audit remain required.
 
