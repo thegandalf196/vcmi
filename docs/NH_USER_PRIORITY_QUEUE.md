@@ -14,6 +14,81 @@ than depend on a delayed root observation; the passive receipt draft is rejected
 as insufficient. Encyclopedia acceptance is prepared separately using an
 ordinary scenario without a Serena map instance, so her default projection is
 actually exercised. No graphical run is authorized by these preparations alone.
+The autonomous owner now has a private, unexecuted draft and twenty authored
+synthetic controls. It is not operationally ready: startup-failure unwind still
+needs repair before any launch. Root read the complete owner/core implementation;
+no control is counted as passing. Encyclopedia preparation review also corrects
+an optional test oracle: an initialized map hero supplies captured rules to the
+Wiki's default starting-package projection, not its evolved or authored current
+book. The actual hero-card empty-book witness remains valid; the fixture must
+not demand an empty default Wiki spell list for that hero.
+The same preparation review finds Aine's first placement inside the town's
+blocked footprint, which ordinary initialization would relocate to its entrance.
+The private fixture moves her outside that footprint without changing other
+map content. Independent file-only hash, ZIP, placement and book/default-page
+controls pass; engine loading and rendered acceptance are still unobserved.
+Independent review of the private cleanup draft additionally finds two concrete
+failure paths: its success predicate omits the client/reap deadline, and socket
+unlinking during an owned Xvfb termination can abort later cleanup despite the
+same process remaining alive. Both are assigned narrow repairs and negative
+synthetic controls. No draft execution or graphical run is counted as accepted.
+The reviewed second revision passes all thirty pure controls (8 ancestry,
+14 cleanup, 8 startup); actual post-execution hashes match the frozen sources.
+No real process or signal is invoked by those tests. Operational review still
+holds the manager on process-exit races in its real failure backend, which the
+synthetic shortcuts do not cover. A third revision is assigned actual-backend
+mock controls and a private validated client-identity handoff for the existing
+input gate. The corrected encyclopedia route uses individual lowercase keys and
+ordinary scrollbar clicks, not unsupported text, modifiers or wheel events.
+The consolidated exit assessment also corrects two stale retained-evidence
+entries: Implosion's repaired gate is19/19; Storm's principal three-target
+readback and mouse controls are accepted, with wider five-target/resize breadth
+still unverified. These corrections add no mechanic or rendered acceptance.
+
+The third private cleanup revision actually runs the prior30 controls successfully,
+but its added13 controls produce11 passes and two mock-construction errors;
+this is not43 passes. The fourth revision repairs those fixtures and the
+remaining actual-backend socket-unlink race, preserving replacement-inode refusal.
+Independent source review clears pure execution. Root executes all45 controls
+successfully and verifies unchanged frozen hashes afterward. No real process,
+signal or graphical run occurs in this gate. The ordinary encyclopedia run
+configuration is prepared with the fourth revision; actual operational review
+and bounded rendered execution remain separate gates.
+Review subsequently catches an unsent-signal bookkeeping bug in the failure
+caller: a deferred signal could incorrectly consume its retry. The fifth private
+revision records only confirmed delivery and adds a retry/reap witness. High
+review clears the narrow repair; root actually runs46/46 pure controls, terminal
+exit0, with frozen hashes unchanged. The previously failing third revision is
+retained. No game or display is launched by these controls. The unchanged
+ordinary encyclopedia configuration is independently clear; its actual rendered
+journey and owned cleanup still require the bounded run.
+The first approved fifth-revision launch terminates before client adoption or
+input. Its retained log proves the maintained launcher rejects the already
+created profile because the preparation omitted its required managed-profile
+marker. The manager reports an ancestor argv mismatch, but no expected/actual
+argv snapshots establish the precise ancestor or transition; do not invent that
+diagnosis. Owned processes, socket and locks are absent, immutable parity passes,
+and no screenshot or encyclopedia evidence is produced. No unchanged retry is
+made. A fresh private fixture with the launcher's exact regular marker and a
+file-only preflight is assigned; production launcher policy remains unchanged.
+A corrected fresh marked-profile preparation passes the file-only preflight and
+independent review. Its one authorized ordinary run reaches Serena's default
+encyclopedia page: Wizard,5/5/45/45, Cabirs13, Stone Gargoyles3–5, Stone Golems2–3,
+Basic Learning/Eagle Eye, Basic Metamagic and Dispel are actually visible in the
+native captures, independently viewed by root. The anticipated Iron Golem label
+in the private proposal was an oracle typo: legacy internal ironGolemID32 names
+the base Stone Golem; production and approved army identities are unchanged.
+An unchanged intermediate capture adds no evidence. Optional Aine empty-book
+presentation is omitted, not accepted.
+Normal Quit succeeds without supervisor signals: client/parent reaped132.659s,
+wrapper and supervisor exit0; owned display/socket cleanup completes155.058s,
+within155/160/170/180 reap/display/cleanup/total bounds. Planned Quit100/<130
+targets are missed explicitly (confirmation132.296s); principal evidence ends
+95.4s and every input is before140s. All12 native captures total12,060,410bytes,
+no video; startup/full logs have zero WARN/ERROR, immutable parity passes and
+the persistent profile-lock file is proven unlocked rather than claimed absent.
+This closes the default Serena encyclopedia witness, not empty-book or Frozen
+presentation, full gameplay, or strict whole-route timing acceptance.
 
 Independent bounded source/specification audits reconcile required combat,
 hero-development and adventure UI; action/activation, Leadership, Siege and
