@@ -1,5 +1,58 @@
 # User-priority queue
 
+## Authorized 0.85 release — 2026-10-10
+
+After the pending Phase1 exit checks and playable delivery validation finish,
+create the GitHub 0.85 release tag and publish both Windows and Linux downloads.
+Both artifacts must match the reviewed release source and committed NHART,
+include required licenses/notices, and provide access to the matching source
+and build instructions. Do not relabel an older Windows artifact or publish an
+untested Linux candidate. Record tag/commit, artifact hashes, platform checks,
+and any untested behavior. Tagging/publication remains pending, not completed.
+Detaching the GitHub fork relationship does not remove inherited GPL obligations;
+retain upstream attribution and license notices throughout release preparation.
+Release preparation finds an inherited workflow that would dispatch upstream
+Homebrew on any stable release. Its job now requires the upstream repository
+identity as well as a non-prerelease publication. Root runs the two pure
+workflow controls successfully, covering four repository/prerelease cases;
+independent review clears the narrow guard. No external dispatch occurs.
+The existing Windows artifact is older than the intended release source and
+cannot be relabeled; a fresh full build and package audit remain required.
+
+## Persistent Frozen blue tint and latest candidate — 2026-10-10
+
+The user requests Bloodlust-style blue coloring that persists while Frozen,
+rather than a brief flash. Production already applies the Frozen blue filter
+on every stack render from current authoritative status; clearing the status
+removes that filter. Confirm its actual readability and removal in the pending
+bounded rendered witness; do not claim a new implementation or visual approval.
+
+The latest ordinary split-fixture run reaches the intended encounter and actual
+2+1 Ice queue, but the initial encounter capture is intro, not actionable
+readiness. The first active-stack packet arrives after the old80s deadline.
+Zero attacks, positive own hits or contact rounds occur: no Freeze, Shatter,
+retaliation preview, activation-forfeit or thaw acceptance is established.
+Independent review confirms the honest incomplete receipt. Hard cleanup meets
+its bounds; supervisor stops the client rather than normal Quit. Eleven native
+captures total10,268,619bytes and one silent120s recording42,634,274bytes meet
+storage caps; immutable parity passes and full logs have WARN1/ERROR0.
+
+An explicitly longer, separate private timing profile preserves the old sources
+and actual-client-start clock: readiness180, principal360, Quit370, every input
+before380, supervisor385/390, reap395, display400, cleanup410 and total420.
+Root executes61/61 pure controls successfully and independent High review clears
+the narrow timing-only source change. Fresh configuration and actual execution
+remain separate gates; no natural trigger probability or ownership check changes.
+
+The incremental Linux build for published5cb4c1133 succeeds, binary privacy
+passes, and normal installation into the existing detached staging directory
+contains the exact Save configuration. NHART installation verification passes:
+3137 selected entries,27,202,460bytes, both mounts and no loose duplicates.
+Its hash remains1a91c08b1efa146af5d8f7df0d8a99a5739c94e280fedb13e8fd4d11ae555fc8.
+The new candidate is frozen without promotion; the usual launcher remains on
+the previous verified snapshot until rendered validation. No Windows package
+for this source or published0.85 tag/release is claimed.
+
 ## Current Phase1 exit audit — 2026-10-10
 
 Continuation checks pass: module-generation parity and the combined product
@@ -123,6 +176,52 @@ frame for blocked/highlighted states rather than requesting nonexistent frames.
 Root reruns all3 focused data/input-guard controls and5 product-version controls:
 8/8 pass. No build or rendered options/log verification is claimed; the selected
 immutable playable snapshot remains unchanged until deliberate delivery.
+The reviewed ordinary-map probe loads the intended scenario and actual Tyris
+with3 Ice Elementals; root views the native neutral-hover capture naming Iron
+Golems. It does not reach an encounter before the80s readiness bound. A later
+hover is retained as a route-discipline deviation, not Frozen evidence. No own
+attack or status application occurs. Quit begins111.359s and opens confirmation
+129.092s but does not complete; supervisor stops the client. Reap150.107s and
+owned display/socket cleanup155.065s satisfy hard bounds. The unchanged ordinary
+route must not be repeated: observation/input overhead, not a demonstrated
+combat defect, now prevents this principal witness. Frozen acceptance stays open.
+The full receipt retains the failed early Return during loading and a later
+invalid input-command argument that forwarded no event. Seven native captures
+total6,213,791bytes; the120s silent video is25,121,552bytes. Full log has one
+no-town fixture warning and zero errors; all807 immutable entries verify,
+and owned PID/socket/display lock absence plus profile-lock release pass.
+Read-only route tracing rejects the direct-map CLI shortcut: testmap/testsave
+force AI control, and the maintained guard does not accept this VMAP route.
+The next narrow preparation instead automates only ordinary startup clicks
+against reviewed native screenshot-region templates. Every click must retain
+the existing individual identity/age gate; unknown screens stop. No attack,
+path, RNG, status or game-state injection is allowed. Private synthetic controls
+and independent review precede any actual launch. This is a test-route repair,
+not another change to the combat mechanic or permission for an unchanged retry.
+The startup-only helper's11 pure controls pass in both worker and root execution;
+frozen source hashes agree and no display/game/input is launched. Independent
+review finds one real deadline gap: capture/classification/storage could cross
+the45s helper bound before a click or success is accepted. A narrow post-operation
+deadline repair and delayed-operation negative controls are assigned. The first
+revision is not operationally cleared; no graphical run follows this test pass.
+The narrow second revision rechecks identity, age and elapsed time after slow
+operations and before another click or successful Adventure receipt. Root reads
+the complete delta and five new delayed-operation controls, then runs16/16
+successfully; frozen hashes remain unchanged. Independent review clears this
+source repair. Live matching and combat remain unobserved; a fresh marked-profile
+configuration and explicit bounded execution gate remain required.
+The fixture also needs a genuine tactical correction: one friendly Ice stack
+leaves no ordinary human follow-up before a slower Frozen enemy forfeits and
+thaws. A private two-slot2+1 split preserves the same total3 Ice and every other
+map entry. Both slots are Leadership-safe; actual Initiative/queue and legal
+contact still control the witness. Per-slot survival is not the former combined
+180HP bound. Startup recognition must exclude the old quantity label and stop
+for human verification of the changed roster; no fabricated preview is used.
+Independent archive comparison confirms that split is the only map change.
+The recognizer uses unchanged retained Ice-icon pixels without the quantity
+label; root runs18/18 pure controls, including excluded-count and wrong-icon
+cases. It does not prove roster counts or queue legality. Those remain actual
+human inspection gates before path selection and combat attacks respectively.
 
 Independent bounded source/specification audits reconcile required combat,
 hero-development and adventure UI; action/activation, Leadership, Siege and
