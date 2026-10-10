@@ -27,6 +27,9 @@ GitHub About description and VCMI homepage are replaced by a New Horizons
 description with explicit engine credit and no unrelated homepage. The GitHub
 contributors list remains a reflection of preserved contributor history; do not
 strip legitimate attribution or rewrite history to change that display.
+The user reports the addendum's relative links failing in their view. All four
+targets exist in the published main tree; use explicit GitHub file URLs so they
+also work outside GitHub's README-relative renderer. Foreword text is unchanged.
 
 ## Repository identity and main consolidation — 2026-10-10
 
