@@ -1,4 +1,24 @@
-# Phase 1 planned-perk hold index
+# Phase 1 historical perk hold index
+
+## Current disposition — 2026-10-10
+
+The former planned-perk backlog is retired. A fresh recount of
+`config/newHorizonsPerks.json` finds31 Skills,93 active ranks and310 active
+perks, with no planned entries. The current accepted Skill table and final
+principal-path evidence are in
+[the functional completion matrix](NH_FUNCTIONAL_COMPLETION_MATRIX.md#current-accepted-registry-snapshot--2026-10-10).
+Registration alone is not execution evidence; the matrix records the accepted
+native gates and remaining Phase2 limitations separately.
+
+Everything below is historical navigation and preserves earlier decisions and
+failed candidates. Its in-progress rows, unanswered-choice language and missing
+spell table must not be used as a current work assignment or new permission
+request. Polymorph and Reality Warp are implemented; current combat identity
+coverage is67/67 plus five explicit Mass variants. This does not close Phase1:
+required presentation evidence and the specification-wide completion audit
+remain open in the user-priority queue and functional matrix.
+
+## Historical checkpoints
 
 Accepted checkpoint:293/310, generic204/220 and faction89/90, leaving17
 (16 generic,1 faction). Incremental9350 and privacy80564 pass; principal36894

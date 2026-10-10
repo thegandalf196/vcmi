@@ -1,5 +1,89 @@
 # User-priority queue
 
+## Current Phase1 exit audit — 2026-10-10
+
+Continuation checks pass: module-generation parity and the combined product
+version, hero-data and perk-data suites (38 tests), with whitespace and
+instruction-path checks clean. The usual launcher resolves the verified branded
+0.85.0 snapshot; no build, package or pointer change is needed for the splash.
+The next Frozen preparation corrects the demonstrated targeting error: no
+intro-skip input, and a legal melee cursor plus named damage/retaliation preview
+must precede a same-coordinate foot-hex click. This is preparation, not rendered
+acceptance. Independent cleanup must own and reap its launched processes rather
+than depend on a delayed root observation; the passive receipt draft is rejected
+as insufficient. Encyclopedia acceptance is prepared separately using an
+ordinary scenario without a Serena map instance, so her default projection is
+actually exercised. No graphical run is authorized by these preparations alone.
+
+Independent bounded source/specification audits reconcile required combat,
+hero-development and adventure UI; action/activation, Leadership, Siege and
+Luck/Morale; towns, recruitment, Diplomacy, artifacts and specialties; and
+spell/Order/perk minimum AI consumers. No additional absent principal production
+path is demonstrated in those slices. These are source audits, not new native
+suite executions or rendered certification. Existing principal evidence remains
+the controlling acceptance record; unverified compound save/resume, modifier
+composition, route invalidation and strategic AI quality remain Phase2 work.
+
+A fresh registry recount confirms31 Skills,93 active ranks and310 active perks;
+the maintained perk-data suite passes17/17. An initial command used a nonexistent
+test-module name and failed discovery; the corrected command runs the existing
+suite without changing assertions. The old planned-perk hold index is explicitly
+retired as historical navigation so completed entries do not become new work
+assignments. These counts alone do not close Phase1.
+
+The additional creature/dwelling slice maps the selected equal-Elite Elementals,
+Wisp movement/Long Reach, Cabir elemental damage/repair and Frozen lifecycle to
+production and minimum AI consumers. Current hero-data16/16 and the combined
+Elemental rebalance/Conflux growth/Cabir repair data suites18/18 pass. These are
+data/source checks, not new combat execution. A repeated historical claim of
+unauthored armies/development was retracted after reconciliation: all144 approved
+starting packages and Leadership-safe original-composition armies have current
+bytes and retained principal evidence; no missing hero was identified.
+
+The next principal evidence gap remains Frozen: readable encasement/Shatter,
+status/manual damage and retaliation previews, and normal-slot forfeiture/thaw.
+The designated tester is preparing a low-clutter manual probe, not repeating
+the prior Auto Combat run. Exact selected-candidate identity, before-every-input
+client-age checks and measured cleanup deadlines are required before root GO.
+The selected playable snapshot remains unchanged.
+
+The reviewed private input gate now flushes each individually checked event
+immediately, preventing delayed buffered input after a later cutoff rejection;
+eight synthetic controls pass. The actual manual Frozen probe then stops on a
+fixture-preparation error: Battle Mode reads persistentStorage, but the reviewed
+fixture was placed in ordinary settings. No battle, hit or Freeze is observed.
+Normal Quit exits0 at approximately97seconds; explicit complete owned cleanup
+and immutable parity pass at113.289seconds, with zero WARN/ERROR. The failed
+setup is retained. A corrected pre-launch persistent-storage fixture and narrow
+preflight are being prepared; no unchanged retry or Frozen acceptance is claimed.
+The correction is independently reviewed against the actual loader and config
+mount: the unchanged fixture belongs in the disposable profile's
+`config/vcmi/persistentStorage.json`, with graphics alone in settings. Five
+file-only preflight controls pass. A single corrected-precondition run is
+authorized with the same immutable candidate and strict bounds; actual loaded
+armies must be verified before combat. No further retry is authorized.
+That run correctly loads the reviewed fixture, but Begin invokes Battle Mode's
+compulsory quick-combat preview before manual play. No Auto toggle or Replay
+input is sent; no controlled hit, Frozen render or manual battlefield evidence
+is claimed. Normal Quit exits0; complete owned cleanup/parity passes by112.054s.
+One generated-map Grail-placement warning remains, with zero errors; this is
+not a warning-free full run. The next preparation must explicitly separate the
+mandatory preview from an ordinary Replay-controlled manual battle. No further
+graphical launch is authorized by the preparation alone.
+The reviewed Replay-route correction then reaches a fresh manual battlefield
+with full150/400 armies; the mandatory preview is excluded from all principal
+evidence. Actual manual commands are Defend and two moves, not own melee hits;
+two enemy contact attacks provoke Ice retaliations without an observed Freeze.
+Stop at two contact rounds, with no repeat to chase a favourable roll. Frozen
+presentation remains open. The verified supervisor stops the client at145/150s;
+all owned processes are eventually reaped and immutable parity passes, but
+display160/cleanup170 deadlines are missed (final cleanup178.032s). The final
+hover also exceeds the120s principal target by0.434s. No strict lifecycle,
+normal-Quit or Frozen acceptance is claimed. Future preparation must establish
+the exact legal own-melee hover/action before spending an activation and ensure
+display teardown runs independently of slow observation calls. No source or
+package change is justified by this incomplete witness.
+
 ## Current user priority — product version and pre-game branding
 
 Trace and correct the stale displayed0.15 version metadata, keeping one version
@@ -15,7 +99,18 @@ the selector and updates the single product-version source to the requested
 development identifier0.85.0; independent review, import, both-target build and
 ten focused checks pass. NHART bytes are unchanged and normal installed artwork
 verification and fresh binary privacy pass.
-Require actual packaged presentation before playable closure; launcher unchanged.
+Actual isolated native-size menu shows0.85.0; the short Single Scenario capture
+shows the New Horizons title on the formerly original loading splash. Serena's
+actual popup shows5/5/45/45, Learning/Metamagic, book/Dispel and the capped13 /
+3–5 /2–3 starting army. No startup WARN/ERROR is observed. Owned supervisor stop
+uses TERM145/KILL150, not ordinary Quit0; cleanup and full snapshot parity pass.
+Final input landed on the already-stopped owned display after the planned140s
+cutoff; exact display-cleanup elapsed time was not retained. Do not claim strict
+whole-run timing compliance or a shutdown hang from this test.
+The maintained promotion now selects that exact tested snapshot49553070d3f1;
+subsequent resolve agrees. Previous snapshot and normal profile/saves are retained.
+Source changes are committed/pushed asf14d3ba34. This closes version/splash delivery,
+not encyclopedic rendering, graceful exit or full gameplay acceptance.
 
 ## Current Phase1 continuation — independent feature lanes
 
@@ -31,8 +126,11 @@ case. The failed run is retained. A reviewed callback-free authored slot check
 repairs the unsafe artifact lookup before world-map assignment; the actual
 post-initialization Spellbook oracle remains unchanged. The changed case then
 passes1/1 and the unchanged full gate passes16/16, with no failures/errors/skips.
-Binary/resource parity, fresh privacy and silent owned cleanup pass. Rendered/
-playable acceptance remains pending. No runtime or save identity changes.
+Binary/resource parity, fresh privacy and silent owned cleanup pass. The ordinary
+Serena pre-game popup is now observed on the selected changed candidate; its perk
+short name clips in the narrow label (full underlying selection is native-tested).
+Encyclopedia, empty-book rendering and graceful exit remain separate unobserved
+gates. No runtime or save identity changes.
 
 The bounded ordinary Frozen Auto Combat probe records a natural blue-tinted
 receiver/queue marker, then actual surviving-target Ice melee Shatter without
