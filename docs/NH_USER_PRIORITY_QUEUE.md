@@ -110,8 +110,56 @@ Current provider reconciliation finds upgraded libraries despite unchanged used
 header/copyright bytes. Fresh provider/build/ELF records and the current glibc
 source pin are required before publishing; stale install receipt hashes are not
 accepted as current evidence. No old release is relabeled.
+The actual d74 raw Linux candidate now assembles successfully from the normal
+installation: client/facade bytes match the build, RUNPATH is $ORIGIN, binary
+privacy passes, all3137 selected NHART entries and both mounts verify with no
+loose duplicates. Pack bytes/hash are unchanged. Independently reviewed engine
+source contains all6189 exact committed/pinned-submodule entries; the dependency
+source companion reconciles all92 members and the updated glibc source inputs.
+These are scoped assembly/source checks, not clean-package rendered acceptance.
+Fresh d74 provider/build reports are retained privately, but the Frozen defect
+below makes that candidate obsolete, not release eligible. Windows run38075833857
+is confirmed terminal cancelled; compile/package/playable upload were skipped.
+Only a small preflight report exists. A repaired source pin, fresh exact bindings
+and replacement Windows build are required. No tag or release is published yet.
 
 ## Persistent Frozen blue tint and latest candidate — 2026-10-10
+
+The separate bounded forfeit probe verifies the actual full Frozen tooltip
+through the compact F icon and ordinary left click. One own primary Ice hit
+naturally freezes its surviving target; further own attacks stop. Ordinary
+Defend leaves it frozen and a normal-slot NO_ACTION occurs. Independent review
+finds a blocking defect: the same stack forfeits again next round without an
+intervening attack, and no thaw-removal packet occurs. The automatic-action
+wrapper bypasses onActionMade, where removal was implemented. The client prints
+"ice thaws" before removal; that message is not successful-thaw evidence.
+The initial receipt's thaw interpretation is withdrawn. Native later frames
+retain the encasement, consistent with the defect. Repair the narrow ordinary
+Frozen automatic-action boundary and test the real flow before release or
+Phase2 transition; do not call the full action-completion path recursively.
+The narrow repair now completes the accepted normal automatic forfeiture:
+existing Plague processing runs once, the typed Frozen marker is removed with
+the round receipt retained, and no recursive queue/Morale/Order action is granted.
+A captured battle-identity guard prevents callback reuse after a lethal AI tick
+synchronously finalizes the battle. Both Linux targets build; binary privacy
+passes. Focused actual-flow/native validation passes46/46 with zero skips,
+including normal thaw/next-round readiness, Time Stop isolation, nonlethal and
+lethal Plague, and genuine computer-battle finalization. The initial45-case
+candidate's lethal-fixture precondition failure is retained privately; fixture
+Spell Power, not production balance, is corrected. Current proof uses private
+HOME/all five XDG paths, dummy drivers and reaped children; the native engine is
+statically linked, not falsely claimed to map the copied facade. Source/native
+review independently verifies that exact native evidence. Repaired-candidate
+rendered delivery remains a distinct final gate.
+Normal Quit succeeds before380seconds with client reaped373.505, no supervisor
+client signals, and owned display/cleanup complete395.067. Twenty native PNGs
+total20,682,085bytes and one silent321second video126,252,529bytes meet caps.
+WARN1 is the fixture-town warning, ERROR0; all807 snapshot hashes remain intact.
+Root reads the complete receipt and native tooltip/forfeit frame; independent
+review identifies the actual core failure. No unchanged retry is authorized.
+Combined with the prior paid Shatter preview/result/message/tint-removal witness,
+this closes additional principal presentation evidence, not thaw, every
+animation frame, physical-affliction combination, save/resume or release gate.
 
 The reviewed fixed420 ordinary run supplies new scoped evidence: natural Freeze
 on an Ice retaliation, persistent blue-grey tint, a readable thin ice prism and
