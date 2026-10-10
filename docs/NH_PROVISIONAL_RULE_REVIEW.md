@@ -1,5 +1,33 @@
 # New Horizons provisional rule review
 
+## Morale extra activation — direct creature spell damage
+
+Interpretation: the existing 75% direct-damage rule includes an ordinary
+creature's explicitly activated damaging spell, as well as its physical or
+magical ordinary attack. Retained Faerie Dragons can cast again during an earned
+Morale activation if they have a charge remaining. Hero casts, passive effects,
+indirect damage and healing do not inherit that creature's output reduction.
+
+Rationale: the canonical rule specifies direct damage, not physical damage only.
+Use the captured activation origin and percentage, without changing spell power,
+charges, creature capabilities or the existing damage taxonomy. The proposed
+shared spell-mechanics adjustment runs after target mitigation and existing
+chain scaling, and is shared by damage execution and evaluation. Nine focused
+cases pass the focused native-v3 gate, including actual paid casts and detached
+evaluation. Independent source review, exact import verification, linkage and
+binary privacy pass. Other Luck/Morale batch failures remain separately tracked;
+this nine-case result does not certify those paths.
+
+Physical attack output retains the existing shared pipeline's single final
+floor; its independent fixture oracle does not scale an already-rounded ordinary
+preview a second time. A baseline near-integral floating-point underflow remains
+a separate integration finding, not permission to rewrite historical damage.
+
+Second look in Phase2: existing damage caps precede chain scaling and active
+spell output reduction. Check fractional/cap composition and custom damage scripts
+separately; this change does not redesign those systems or establish rendered
+acceptance. No canonical amendment is required for this interpretation.
+
 ## Discrete School-rank potency — preserve defining activation contracts
 
 Chosen interpretation: strengthen Curse duration to 3/4/4/5 rounds before its

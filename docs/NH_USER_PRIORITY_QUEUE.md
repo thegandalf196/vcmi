@@ -2,6 +2,99 @@
 
 ## Current Phase1 continuation — independent feature lanes
 
+Luck/Morale batch is accepted: both-target93769 is terminal0 and binary
+privacy54854 reports zero findings. Actual native-v4 discovery and execution
+pass27/27 (Morale18, scalars9), with no errors, skips, crashes or timeouts.
+Root opens the receipt and XMLs; isolation, cleanup and resource parity pass.
+Unchanged-production native-v3 Luck7 and creature-spell9 results contribute
+16 separate passing cases:43 distinct focused cases, not one fresh43 run.
+The four original fixture failures remain preserved privately. NHART and the
+ordinary playable launcher remain unchanged; platform/rendered acceptance is
+not inferred. Commit/push this coherent batch, then continue requirement-level
+Phase1 exit auditing rather than treating registry counts as completion proof.
+
+Actual native-v3 discovery matches43; execution passes39/43 with no crashes,
+timeouts, XML errors, skips or disabled cases. Luck7/7 and active creature
+spells9/9 pass, including genuine charged Faerie casts, Magog's separate earned
+Morale path and detached isolation. Morale16/18 and scalars7/9 reveal four
+fixture failures. Root opens all XMLs; independent diagnosis/review verifies
+wrong string-literal overload, existing serializer optional-null normalization,
+and a double-floor oracle. Precise fixture repairs are imported, preserving
+full semantic/envelope and rejection checks. Both-target retry93769 is live;
+retry only the affected27 after linkage/privacy. Preserve original failures
+privately; combined evidence must not be described as one fresh43-case run.
+
+Accessor-only fixture corrections are imported and exact reverse checks pass.
+Both-target incremental build84880 is terminal0; binary privacy1925 passes with
+zero findings. Exact test71b2a14552 / library02d717013a are handed to the sole
+silent isolated tester for actual43-case discovery and four bounded gates.
+Module parity,13 scalar schema controls, whitespace and added-line instruction
+portability pass; NHART remains unchanged. Source/runtime resources are frozen.
+No native acceptance, new commit/push or playable promotion is claimed yet.
+
+Build43083 is terminal1 after keep-going completion. The reviewed QuestInfo
+include and detached shared-ownership repairs are imported and reverse-checked.
+Incremental retry98492 compiles the scalar fixture but fails the two new Morale
+fixtures on obsolete accessor names: health and hero Mana must use this branch's
+public getters. Private mechanical corrections preserve every witness/assertion;
+production is unchanged. Apply after source checks, relink both targets, then
+privacy-check and execute43 actual-discovered cases. Raw compiler output remains
+private. Required-UI and legacy-access audits find no additional demonstrated
+principal omission in their bounded scopes; rendered/mod/save breadth remains
+deferred, not certified.
+
+Keep-going build43083 remains live in test compilation. Three new test TUs have
+compile failures: scalar-world's missing concrete QuestInfo include, active
+creature spell's detached shared-ownership constructor, and a Morale activation
+fixture diagnostic still requiring an untruncated retry. The first two narrow
+private corrections are verified; all43 authored cases/assertions remain.
+Do not guess a change to valid APIs for the third. After terminal build, apply
+the two known fixture repairs and capture the incremental retry's full relevant
+diagnostic. Production source/resources remain frozen; no native pass or new
+commit/push is claimed. Current playable launcher/NHART remain unchanged.
+
+Build43083 has linked the production engine library and continues keep-going
+client/test compilation. It finds one fixture compile failure: scalar world's
+CGameState serialization needs the concrete QuestInfo definition. A private
+one-include repair is verified, preserving all nine cases; apply only after the
+live build is terminal, then incrementally relink both targets. No native
+acceptance is claimed. Current summary-table recount is repaired to310 perks,
+67 combat identities,66 Leadership base lines and128 category forms, without
+rewriting historical checkpoint records or claiming broader coverage.
+
+Final active-creature spell hookv3 is source-reviewed and imported; exact reverse
+patch verification passes. Both-target build43083 is live at ten jobs, with43
+focused authored cases registered. Source/resources are frozen for the build;
+native execution awaits successful linkage and exact-pair privacy checks.
+Independent foundational/town/hero/spell audits establish no additional mapped
+principal omission in their bounded scopes, not a blanket exit certification.
+Full mid-combat save/resume and UP011 intermittent AI Leadership attribution
+remain open stabilization limits. Ordinary launcher and NHART are unchanged.
+
+Luck/Morale unionv2 is integrated: final physical Luck, precise Morale activation
+origin, ordinary physical and magical attack output, saved-world capture and
+owning-prefix compatibility guards. Its34 focused cases are authored, not run.
+A further nine-case active-creature spell increment is in independent review;
+the canonical direct-damage interpretation includes retained Faerie Dragon casts
+but excludes hero/passive/indirect damage and healing. Review caught a fixture
+reference-binding compile error before build; the private correction preserves
+all cases. Build once after the final hook import, then run43 focused cases on
+the exact privacy-checked linked pair. No native acceptance or new publication
+is claimed yet. Existing Windows run38037250855 remains live in compilation.
+
+Spell/Sage batch is committed and pushed asad3cf055e; independent remote
+verification matches. Full Windows run38037250855 is in progress, not a
+verified downloadable package. Luck/Morale's36-path private union passes
+integration source review and retains33 authored cases, but fidelity review
+finds a real omitted path: canonical Morale says75% direct damage, whereas
+the proposed physical-only gate leaves Magog's ordinary magical shots at100%.
+A bounded private correction includes ordinary direct creature attacks of
+either taxonomy, preserving reaction, machine, healing and indirect exclusions.
+Active creature spellcasting is separately being traced before choosing its
+interpretation. Source import, build and native acceptance remain pending.
+Three stale current coverage-table rows are reconciled to accepted Lighthouse,
+Glyphs and per-item Mana recovery evidence without changing historical records.
+
 Final bounded spell/Sage retry passes1/1 in4.978s after source-reviewed
 isolation of Crisis Command metadata in the synthetic prior-format control.
 Root opens the actual XML. Combined focused evidence covers116 distinct cases:
