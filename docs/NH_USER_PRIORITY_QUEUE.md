@@ -30,8 +30,9 @@ strip legitimate attribution or rewrite history to change that display.
 The user reports the addendum's relative links failing in their view. All four
 targets exist in the published main tree; use explicit GitHub file URLs so they
 also work outside GitHub's README-relative renderer. Foreword text is unchanged.
-Clarify the addendum's pending-release sentence: source is already public; it is
-the authorized0.85 release with matching Windows/Linux downloads that is pending.
+The user subsequently requests removal of the release-status sentence entirely.
+Remove it from the public addendum; the authorized0.85 release requirements and
+pending validation remain tracked separately below, not advertised in Foreword.
 
 ## Repository identity and main consolidation — 2026-10-10
 
