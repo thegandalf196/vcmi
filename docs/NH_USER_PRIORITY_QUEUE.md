@@ -2,6 +2,40 @@
 
 ## Current Phase1 continuation — independent feature lanes
 
+External Muster now passes all seven actual native cases after the fixture-only
+observer repair; retained Hold anchor five cases give12 distinct passing cases
+across runs, not one fresh12 run. Both-target5553 and privacy45889 pass. Root
+inspects the native receipt and actual Hold captures: paid single/double-wide
+footprints and removal after movement are observed. Storm rendering remains
+unobserved because the probe setup disabled its spellbook; no production defect
+is inferred. Hold expiry/control visuals and Frozen feedback remain unverified.
+Cleanup and immutable-candidate parity pass; NHART and ordinary launcher are
+unchanged. Publish this coherent batch, then import the reviewed town Muster AI
+path and run its six focused cases. Phase1 exit remains unproven.
+
+The next batch links both targets (86520) and passes binary privacy96253.
+Actual native12 passes11/12: Hold anchor5/5, external Muster6/7. Independent
+diagnosis verifies the failed fixture watched sendPack instead of the real
+applyPack event route; the one-TU observer correction preserves all assertions
+and adds target/visitor checks. Incremental both-target5553 and privacy45889 pass.
+Only the seven affected cases await retry. One unpromoted, verified NHART-only
+candidate is prepared for a bounded silent Storm/Hold rendered check. Existing
+ordinary-town Muster AI planning is separately identified as a remaining
+principal omission and assigned privately. No graphical or complete-batch
+acceptance is claimed yet; the ordinary launcher stays unchanged.
+
+Second Wind/teaching batch is published as9ed7cb4d5; independent remote and
+author/committer checks match. Full Windows run38043534263 is in progress.
+The next reviewed source batch is imported: empty owned external Core-dwelling
+Muster AI admission/valuation, Storm of Daggers damage readback beside its
+existing numbered targets, and Hold the Line anchor footprints. Source review
+and exact reverse checks pass; the Hold no-mutation witness additionally reads
+the fresh receipt. Twelve focused native cases are authored, not yet executed.
+Build both targets once, privacy-check, then run the smallest affected gates.
+Rendered Storm/Hold and Frozen feedback still require actual background evidence;
+no source/container pass closes those visual gates. Preserve the unchanged pack
+and normal launcher. Phase1 remains open.
+
 The corrected focused retry passes11/11: teaching7/7 and retained towns4/4.
 Root independently opens all XMLs; unchanged-production Second Wind9/9 and
 Morale9/9 from native-v1 contribute18 separate cases, for29 distinct passes,
