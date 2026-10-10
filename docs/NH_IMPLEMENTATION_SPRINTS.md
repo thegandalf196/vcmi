@@ -1,5 +1,21 @@
 # New Horizons implementation sprints
 
+## Contacts/Phoenix/Arcane/Aenain accepted source checkpoint — 2026-10-09
+
+Same-directory ten-job14567 links; privacy9212 passes. Exact retry2 native34618
+passes42/42 in13.975s and adjacent26046 passes23/23 in8.785s, zero failures,
+errors or skips. Three perks raise accepted coverage279→282/310 (generic195/220,
+faction87/90), leaving28; Aenain's replacement passes separately. Canonical
+amendments, registry identity/descriptions and module match; static29 and NHART
+3138 unchanged-byte verification pass. Initial failures remain private; fixture
+registration, footprint, declarations, school gates and visitable placement were
+corrected without relaxing production rules or assertions. Final-resource30700
+passes42/42 in13.962s with exact pair/resource parity and cleanup. Commit/push
+follow; playable delivery remains source58af. The next
+eleven-perk union plus hero/capacity changes is reviewed privately, not accepted.
+Iron Will and Reactive Weave use recorded provisional rules rather than waiting
+on unanswered historical questions. Broad interactions remain Phase2.
+
 ## Sage/Shared Purpose/Frailty accepted checkpoint — 2026-10-09
 
 Ten-job incremental38972 links; exact native70790 passes36/36 in12.229s and
@@ -10,8 +26,14 @@ also pass. Canonical amendments, registry source hash/descriptions and module
 are synchronized; static29, binary privacy, independent reviews and unchanged
 NHART3138 verification pass. Reviewed fixture repairs use real ordinary corpses
 and legal Litany prerequisites, retaining all assertions and production gates.
-Source commit/push is next; normal Linux remains verified source3046c1ad9 until
-delivery is separately checked. Broader interactions/visual checks stay Phase2.
+Final-resource81781 passes36/36 in12.379s. Source58af4428f is normally pushed and
+remote-confirmed; committed803-file packed staging and privacy pass. Fresh silent
+20s headless smoke reaches day2 with AI progression, verifies actual bytes/drivers
+and releases child/socket/profile references. Normal Linux selects snapshot2275da866
+and verify-only passes. Existing624 schema diagnostics match the prior accepted
+smoke exactly. Broader interactions/visual checks stay Phase2. Next private
+reconciliation combines Contacts/Phoenix/Arcane Memory/Aenain; training and
+Guardian/Crown composition continue separately without altering the delivery.
 
 ## Seven-perk/hero accepted checkpoint — 2026-10-09
 

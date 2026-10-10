@@ -1,5 +1,100 @@
 # New Horizons provisional rule review
 
+## Inteus and Halon — remaining default inscription gaps
+
+Inteus uses Crusade! as the existing general offensive-enchantment successor,
+with SP-component-only specialty scaling. Its broader target shape is recorded
+for Phase2/3 differentiation review, not hidden behind a new Masterful spell.
+Halon gains only Guardian Spirit's default inscription; Metamagic Adept remains
+his sole specialty. Pending Changes records opt-in/default/map/legacy boundaries.
+Implementation and focused evidence are pending; Coronius is not covered by this
+decision and may not inherit a replacement silently.
+
+## Iron Will and Reactive Weave — resume previously held implementation
+
+Iron Will reissue replaces the same Order's recipient snapshot, following the
+nonstacking lifecycle already used by Divine Discipline; it never revives spent
+benefits. Carry ends after the next genuine completed or forfeited activation,
+not a Wait or continuation. Reactive Weave retains separate expiry from ordinary
+readiness, chooses the stronger eligible value and consumes both on the next
+accepted Order. This avoids reaction-based extension of stronger readiness and
+unexpected additive multipliers while honoring the next-Order wording. Pending
+Changes records these provisional contracts. Production locations and focused
+evidence are pending private implementation. Revisit Time Stop/cleansing/order
+reissue and counterspell/resistance/recipient classification in Phase2.
+
+## Eight retired-development starts — legal explicit replacements
+
+The audit identifies eight current Might defaults whose retired generic choices
+normalize away, leaving only their faction Skill. Pending Changes authors exact
+legal parent/perk replacements while preserving class and other hero content.
+Retain Advanced parent ranks rather than lowering them merely to fill a Basic
+perk; the existing exceptional progression rule permits the empty Advanced slot.
+Torosar's War Machines/Master Gunner choice follows his retained Ballista role;
+the other choices preserve the closest current travel, learning or deployment
+role. Apply only fresh default development through captured opt-in profiles,
+not unconditional prototype edits or global parent-grant migration. Implementation
+and focused native evidence remain pending. Review differentiation, removed
+second-choice compensation and early development pacing during Phase2/3.
+
+## Loynis and Zubin — current enchantments replace removed defaults
+
+Provisional identities: Loynis Prayer becomes Crusade!, explicitly described as
+the current army-wide Prayer successor; Zubin Precision becomes Focus Magic,
+the current friendly-shooter enchantment. Each specialty scales only genuine
+Spell Power-derived numerical components by20%, preserving fixed values, caps,
+duration, marks and ordinary paid resolution. Pending Changes contains the
+bounded profiles contract. Default-start, map/legacy, paid/detached and saved
+admission evidence remains to be implemented; no coverage credit yet.
+Review starting-tier strength and broader enchantment/perk interactions later;
+do not reuse these decisions to activate the full hero-workbook proposals.
+
+## Halon — Metamagic capacity is not mastery
+
+Provisional clarification: honor the shipped Metamagic Adept's additional use
+at Expert as well as Basic/Advanced, yielding2/3/4. Existing effective-use
+clamping silently removes that specialty at Expert. Separate actual mastery
+from use capacity; neither surplus uses nor a standalone bonus unlock Grand or
+grant an unlearned Skill. Pending Changes records the exact bounded contract.
+Implementation, version admission and actual native evidence remain pending.
+Review legacy bonus-only profiles, live rank changes, capacity reductions and
+Grand sequence accounting in Phase2; retain consume-on-accepted-follow-up rules.
+
+## War Machines — meaningful selection, outer adjacency and surviving repair
+
+Basic War Machines already grants manual Catapult control, so Precision
+Bombardment cannot be implemented as a redundant unlock. Provisionally lock
+the selected legal part: preserve accuracy/damage rolls, but misses do not
+redirect and destroyed selected parts do not provoke silent retargeting.
+Breachmaker uses explicit outer-line adjacency excluding the keep, one
+floor(excess/2) applied-final-damage carry, and lowest positive neighboring HP
+with stable ties. Do not infer geometry from enum order or chain the overflow.
+Field Workshop repairs surviving damaged allied machines/defended structures
+only, using full shared Tent output before target missing-HP caps. This avoids
+inventing resurrection, rebuilding, blocked-breach placement or turret creation.
+Pending Changes contains the complete implementation contract.
+
+Review selected-shot utility/AI policy, central-keep topology, repeated shots,
+primary tower exclusion, repair/rebuilding distinction and opened-gate visual
+state in Phase2/3. Ordinary control, target legality, final HP, defensive-shooter
+removal and actual manual/AI eligibility are Phase1 requirements, not deferred
+polish. No source implementation or native acceptance is implied by this audit.
+
+## Arcane Memory — captured ordinary acquisition remains controlling
+
+The existing completion/provenance producer is suitable for shipped activation.
+Choose ordinary acquisition eligibility rather than inventing a scroll bypass
+for paid Adventure Guild unlocks. Current Fly scroll success spends its normal
+resources without granting a permanent unlock; captured older rules may allow
+learning. Town Portal's actual Guild teaching remains that Guild's independent
+reward. Capture exact scroll source before effects so destination learning never
+misattributes provenance. Book/tome priority, reusable scrolls, rejected effects,
+cancellation and pending queries retain their ordinary rules. Pending Changes
+records the provisional scope. Eleven current authored cases are source-clear,
+not yet integrated/native accepted. Review Adventure acquisition exceptions,
+accepted negated combat casts and future six-school Tomes in Phase2; this is not
+authorization to add missing Tome content or alter existing unlock prices.
+
 ## Recruitment training — whole resulting stacks
 
 Status: authored provisional contract; production producers are still missing.

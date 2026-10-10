@@ -15,6 +15,145 @@ entries here and thereby recreate a permanent override layer.
 
 ## Awaiting integration
 
+### Inteus and Halon — remaining removed starting inscriptions
+
+Provisionally, Inteus replaces removed Bloodlust with existing Crusade! for
+fresh default inscription and specialty. Apply the established +20% non-damage
+specialty conversion only to Crusade!'s Spell Power-derived offensive/defensive
+components, preserving its fixed terms, caps, duration, target shape and costs.
+The army-wide successor is an intentional provisional change from Bloodlust's
+single-target offense, not a new spell or a numerical compensation rider.
+Halon replaces his removed Stone Skin default inscription with existing Guardian
+Spirit. This is book-only: retain Metamagic Adept as his sole specialty, with no
+additional enchantment scaling. Apply these replacements only to fresh default
+books under captured explicit opt-in; preserve map books, saved/crossover and
+legacy contexts, class, other development, armies and biographies. Coronius's
+replacement remains a separate authored gap, not implicit approval of a proposal.
+
+### Iron Will — recipient carry and same-Order replacement
+
+Provisionally, an unspent and unbroken end-round Order benefit carries separately
+for each eligible recipient through its next genuine completed Creature
+Activation. Wait and same-activation continuations do not consume that carry;
+an incapacitation that actually forfeits the activation does. Time Stop without
+an activation does not expire it. Do not revive spent Charge, broken Protect or
+completed Second Wind. Reissuing the same Order replaces its prior recipient
+snapshot, including carried benefits, rather than preserving parallel instances.
+Other Order identities keep their ordinary coexistence rules. Use the shared
+effective-benefit lifetime for authoritative execution, previews and detached AI.
+
+### Reactive Weave — independent nonstacking readiness
+
+Provisionally, an accepted enemy Hero spell that actually affects this hero's
+army arms half the normal Spell-to-Order Warcasting empowerment, rounded down,
+through the end of the next round. Rejected casts and casts with no actual army
+recipient do not arm it. Keep ordinary and reactive readiness independently:
+the next accepted Order uses the stronger eligible bonus, never their sum, and
+consumes both matching readiness candidates. A reaction must not extend or
+overwrite stronger ordinary readiness; each candidate retains its own expiry.
+The reactive trigger does not count as this hero accepting a Spell, advance an
+alternating-action sequence, or grant a Hero Action. Apply existing consumption
+perks once to the chosen readiness, not independently to both candidates.
+Review readiness coexistence and affected-recipient classification in Phase2.
+
+### Eight retired-development hero starts — explicit captured profiles
+
+Provisionally retain each hero's current Basic faction Skill and replace its
+otherwise retired generic starting development with these existing legal choices:
+
+| Hero | Generic starting Skill | Selected Basic perk |
+|---|---|---|
+| Clancy | Basic Logistics | Pathfinding |
+| Piquedram | Basic Logistics | Scouting |
+| Thane | Advanced Learning | Scholar |
+| Torosar | Basic War Machines | Master Gunner |
+| Iona | Basic Learning | Scholar |
+| Fiona | Advanced Logistics | Scouting |
+| Ignatius | Basic Battlecraft | Tactics |
+| Lacus | Advanced Battlecraft | Tactics |
+
+Preserve Advanced parent ranks where an Advanced legacy start is being replaced;
+do not invent an Advanced perk. The existing exceptional rank-advancement rule
+allows the unfilled slot. All chosen parents are legal for the unchanged class
+and all perks are currently active. The faction Skill replaces the retired
+second generic choice; no hidden Wisdom/Mysticism/Resistance grants are added.
+These are explicit default-start profiles, not a global migration policy.
+Capture an optional profile collection in the hero rules, applying it only to
+fresh creation with default Secondary Skills. Explicit map starting rosters,
+saved/crossover initialization and captured legacy or absent-profile contexts
+remain unchanged; do not apply prototype perks unconditionally to a roster
+without its parent. Preserve class, army, biography, spellbook and specialty.
+Reject malformed profile/perk/parent admission and unsupported old-format key
+presence before enclosing serialization prefixes. Review hero differentiation
+and Advanced empty-perk-slot pacing after functional coverage is established.
+
+### Loynis and Zubin — authored offensive-enchantment replacements
+
+Loynis provisionally replaces removed Prayer with the existing Light Crusade!
+for fresh default inscription and specialty. Crusade! is the authored successor
+to army-wide Prayer. Apply +20% only to its Spell Power-derived Attack, Defense,
+Initiative and Magical Damage Reduction components, once before existing floors
+and caps. Preserve fixed bases, duration, target eligibility, costs and actions.
+Zubin provisionally replaces removed Precision with existing Sorcery Focus Magic
+for fresh default inscription and specialty. Apply +20% only to its numerical
+Spell Power-derived penetration component; preserve fixed10%, cap20%, duration3,
+first-shot handling, post-hit Arcane Breach marks and mark cap3. Neither conversion
+adds a separate Masterful spell or hero-level rider. Preserve current class,
+biography, starting Skills/army, map-prescribed books and captured legacy rules.
+Existing legitimately inscribed combat-spell casting governs their known starts;
+these replacements grant no unknown spell or ordinary acquisition exemption.
+Review high-tier starting impact and enchantment/perk composition in Phase2/3.
+
+### Halon — additional Metamagic capacity without additional mastery
+
+The selected Metamagic Adept specialty grants exactly one additional use per
+combat at each actual learned Metamagic rank. Preserve Halon's selected Basic
+Metamagic/Basic Spellcraft start and existing specialty bonus; do not restore
+Mysticism. Basic/Advanced/Expert capacities become2/3/4, respectively, while
+actual mastery remains Basic/Advanced/Expert. Extra capacity does not unlock
+Expert-only Grand Metamagic or bypass its perk requirement. A hero without
+the learned faction Skill receives no capability merely from a capacity bonus.
+Keep ordinary heroes'1/2/3 capacity unchanged. Accepted follow-up consumption,
+pending grant expiry, cancellation and Counterspell semantics remain unchanged.
+Separate capacity from rank across authoritative transitions, detached forecasts
+and UI. Capture any changed rules/state admission explicitly; unsupported old
+formats must reject unrepresentable state before writing prefix bytes, not lose
+the fourth use silently. Review this provisional clarification after focused
+Basic/Advanced/Expert and saved-state controls. Halon's removed Stone Skin start
+is a separate unimplemented replacement decision, not addressed by this repair.
+
+### War Machines — selected shots, overflow geometry and repair scope
+
+Precision Bombardment provisionally locks a Catapult's explicitly selected legal
+wall/gate/tower part. Basic War Machines retains its existing manual control;
+the perk's distinct benefit is that an accuracy miss causes no damage instead
+of redirecting to another part. Preserve accuracy, damage-quality and Siege
+rolls; it grants no guaranteed hit. Stop later shots once the selected part is
+destroyed rather than silently choosing another target. Ordinary unselected and
+captured legacy behavior remains unchanged.
+
+Breachmaker uses this explicit outer-line neighbor order:
+bottom tower — bottom wall — below gate — gate — over gate — upper wall — upper
+tower. The central keep is not an outer neighbor. Only destruction of a wall or
+gate by an actual controlled hero Catapult strike qualifies. Use applied final
+structural damage exceeding its positive pre-hit HP; carry floor(excess/2) once
+to the surviving destructible adjacent part with lowest positive current HP,
+breaking ties by fixed fortification order. No further overflow or repeated
+Siege scaling occurs. Primary tower hits, spells, creature abilities, zero
+excess and non-Catapult damage do not trigger it. Destroying the chosen neighbor
+tower also removes its real defensive shooter through ordinary authority.
+
+Field Workshop repairs existing surviving damaged allied war machines and
+friendly defended-town structures, including towers, using full ordinary
+Siege-scaled Tent output capped by missing HP. It does not rebuild destroyed
+structures or restore fallen war machines. Resolve structural tower targeting
+before treating its hex as an ordinary creature-healing target. Preserve normal
+troop healing and reduced-output extra-activation rules; casualty restoration
+and affliction cleansing do not apply to repairs. Actual HP state, manual/AI
+structure-only eligibility, previews and wall-sprite refresh must be delivered,
+not merely target labels. These choices are provisional; focused implementation
+and native evidence must precede canonical integration.
+
 ### Recruitment training — provisional stack-level interpretation
 
 Drill Sergeant, Field Instructor and Reinforcement Drill operate on the whole
@@ -61,19 +200,19 @@ captured legacy contexts. These are authored provisional identities, not the
 workbook's undefined Masterful variants. Independent review and focused live/
 detached/default/map/legacy/save evidence must precede canonical integration.
 
-### Aenain — provisional defense-debuff specialty replacement
-
-Under the user's authorization to implement reasoned provisional rules, replace
-Aenain's inaccessible Disrupting Ray specialty and fresh default starting spell
-with existing Shadow Frailty. Preserve the original targeted Defense-debuff
-role and reuse the established non-damage specialty conversion: +20% only to
-the Spell Power-derived Defense-loss component. Keep the fixed10%, per-cast20%
-and cumulative60% caps, other profile choices, map-prescribed spellbooks and
-legacy contexts unchanged. This is a root-authored provisional amendment, not
-approval of the workbook's undefined Earthquake specialty or a new biography.
-Private implementation/focused validation must precede canonical integration.
-
 ## Integrated history
+
+### Contacts, Phoenix Spark, Arcane Memory and Aenain — 2026-10-09 (integrated)
+
+The canonical rows now record owned-entry/first-empty-row growth, actual scroll
+completion and ordinary acquisition, and fixed battle-start Phoenix substitution
+with once-use placement semantics. The hero section records Aenain's SP-only
+Frailty replacement and preserved default/map/legacy boundaries. Independently
+reviewed production and fixture repairs link14567; exact retry2 principal34618
+passes42/42 in13.975s and adjacent26046 passes23/23 in8.785s, zero failures,
+errors or skips. Initial failed logs/XML remain private. Provisional choices
+remain reviewable in the second-look ledger; implementation and playable
+delivery are distinguished in the queue.
 
 ### Sage catalog and four Frailty specialties — 2026-10-09 (integrated)
 

@@ -4194,7 +4194,7 @@ Muster is hero-limited and location-limited: one hero cannot multiply the same s
 |Broad Muster|Basic|When Muster targets Core creatures, its generated recruits may be split between two Core dwellings in the same town.|
 |Elite Draft|Advanced|When Muster targets an Elite dwelling, add 1 additional Elite recruit.|
 |Field Instructor|Advanced|Core and Elite creatures recruited directly by this hero gain +1 Creature Attack after they complete their first combat under this hero. The bonus lasts while they remain in this hero's army.|
-|Recruiter's Contacts|Advanced|Once per week when visiting an owned external dwelling with an empty recruitment pool, immediately add one normal week of growth to that pool.|
+|Recruiter's Contacts|Advanced|Once per week on visiting an external dwelling already owned at entry, replenish its first empty stored recruitment row with positive normal weekly growth, in stored order, using that dwelling's ordinary growth modifiers. Base and upgraded forms share the row. Consume the hero's weekly use only on a successful positive grant; capture during this visit, zero growth, no eligible row or a failed receipt does not consume it.|
 |Reinforcement Drill|Advanced|The first newly recruited stack to enter combat under this hero each week gains +2 Initiative during round 1.|
 |Champion's Call|Expert|When Expert Muster targets a Champion dwelling, add 2 Champions instead of 1.|
 |Master Recruiter|Expert|The hero may use Muster twice per week, but never twice in the same town or external dwelling. A town or dwelling may still benefit from Muster only once per week.|
@@ -4513,7 +4513,7 @@ Wisdom is the Magic hero's general spell-efficiency discipline. It reduces the M
 |---|---|---|
 |Intelligence|Basic|Maximum Normal Spell Points equal floor(1.30 × effective Knowledge). Intelligence is the sole general multiplicative capacity effect.|
 |Mysticism|Basic|At the start of each day, recover Mana equal to the greater of 5 or 10% of maximum Mana.|
-|Arcane Memory|Basic|When the hero casts a spell from a scroll, that spell is permanently learned if the hero meets the corresponding School Skill requirement for its level.|
+|Arcane Memory|Basic|After a genuine scroll-sourced cast successfully completes, permanently learn the spell only if captured ordinary acquisition rules and its School requirement permit it. Current paid Adventure Guild unlocks are not bypassed; captured older rules retain their ordinary behavior. Book or Tome sources take priority over scrolls, and reusable scrolls over charged artifacts. Rejected, canceled or pending casts and unused carried scrolls do not teach; reusable scrolls remain reusable.|
 |Prepared Caster|Basic|After Wisdom calculates the spell's percentage discount, the first spell cast in each combat costs 2 additional Mana less, to a minimum of 1.|
 |Sage|Advanced|On the hero's first visit to each built Mage Guild, reveal one previously undisplayed eligible spell from the catalog of its saved per-level school labels and built levels, respecting map bans and ordinary learning rules. Choose the highest eligible level, with canonical spellbook order breaking ties. Reveal it globally in a separate additional row without changing ordinary fixed slots or research. The first built-Guild visit is consumed even without the perk or a spellbook; visiting a town with no Guild does not consume it.|
 |Meditation|Advanced|If the hero ends the day with at least 25% of maximum Movement unspent, recover an additional 15% of maximum Mana.|
@@ -5051,7 +5051,7 @@ Elementals created by Elemental Rebirth are temporary summons and cannot themsel
 |Adaptive Element|Advanced|Instead of a fully random Elemental, Rebirth selects from Elemental types appropriate to the current battlefield terrain.|
 |Rebirth Chain|Advanced|Once per combat, when a reborn Elemental is destroyed, summon a second random Elite Elemental with 25% of that reborn stack's original HP. This second Elemental cannot trigger Rebirth.|
 |Perfect Convergence|Expert|Every Rebirth uses the primary Elemental type associated with the current battlefield terrain by the Elemental Convergence terrain mapping instead of a random Elemental.|
-|Phoenix Spark|Expert|Once per combat, when the first friendly Champion stack is destroyed, Elemental Rebirth automatically summons a temporary Phoenix instead of an Elite Elemental, with aggregate HP equal to 25% of the destroyed Champion stack's maximum aggregate HP.|
+|Phoenix Spark|Expert|Once per combat, the first eligible original friendly Champion stack destroyed triggers a temporary Phoenix instead of an Elite Elemental, with aggregate HP equal to 25% of its battle-start maximum aggregate HP. This replaces the ordinary Rebirth and Greater Essence percentage. Consume the use before placement, even if placement fails. Applicable Ward, Primal Burst, Elemental Memory and Swift Rebirth traits remain; Elite terrain matching and recursive Rebirth or Rebirth Chain do not apply. Native Phoenix creature rebirth remains separate.|
 
 
 
@@ -5480,6 +5480,14 @@ class, biography, other starting choices, map-prescribed spellbooks and captured
 legacy contexts. These authored provisional replacements add no separate
 Masterful spell or new hero-level rider; revisit specialist differentiation
 during integration and balance.
+
+Aenain uses existing Shadow Frailty instead of inaccessible Disrupting Ray for
+his fresh default inscription and specialty. Apply +20% only to its Spell
+Power-derived Defense-loss component, preserving the fixed10%, per-cast20%
+and cumulative60% caps. Preserve other starting choices, class, biography,
+map-prescribed spellbooks and captured legacy contexts. This provisional
+replacement follows the targeted Defense-debuff role; it is not a new Masterful
+spell or approval of an undefined Earthquake specialty.
 
 ###### Hero specialty conversion
 

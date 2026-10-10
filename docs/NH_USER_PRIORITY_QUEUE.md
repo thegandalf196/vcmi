@@ -1,5 +1,97 @@
 # User-priority queue
 
+## Accepted Phase1 source gate — Contacts, Phoenix, Arcane Memory and Aenain
+
+Incremental14567 links at ten jobs; privacy9212 passes with no findings.
+Exact retry2 principal34618 passes42/42 in13.975s and adjacent26046 passes23/23
+in8.785s, zero failures/errors/disabled/skips. Accepted perks282/310:
+generic195/220,faction87/90;28 remain. Aenain's default/map/legacy/paid/detached
+replacement also passes. Canonical four amendments, registry identity and
+descriptions and generated module are synchronized; static29 and unchanged
+NHART3138 verification pass. Original failure logs/XML stay private. All actual
+rules and outcome assertions were retained through fixture-only repairs.
+Final-resource30700 passes42/42 in13.962s after refreshing only the synchronized
+registry and module metadata; exact binary pair, four resource trees, NHART bytes
+and cleanup are verified. Coherent commit/push follow; no new playable or
+rendered acceptance is claimed. Ordinary Linux stays on source58af.
+Next eleven-perk union (Training3, War Machines3, Spellcraft3, Divine2), Halon
+capacity and defensive/offensive/start-profile candidates are source-clear
+privately, with root integration and native evidence still pending. Iron Will,
+Reactive Weave and remaining inscription replacements progress independently.
+
+## Phase1 resumption — worker reassignment and focused repairs
+
+Inteus and Halon's remaining removed inscriptions now have bounded provisional
+contracts in Pending Changes: Inteus uses Crusade! with component-only specialty
+conversion; Halon's Guardian Spirit book replacement leaves Metamagic Adept as
+his sole specialty. Private implementation is assigned after the eight-start
+candidate is frozen. Coronius's replacement remains a separate gap.
+
+Completed workers are being reused for bounded implementation, review and
+private integration preparation; completed threads are not active workers.
+Phoenix/Arcane and Contacts fixture repairs preserve production rules and prior
+outcome assertions. Incremental relink14111 stops at fixture-only API errors:
+protected setType and missing declarations for two existing spell predicates.
+Reviewed public fixture fields/template handling and the declaration header
+repair link successfully in56665; privacy95096 passes with no findings.
+Exact retry62860 passes40/42, including all10 Phoenix cases; adjacent55315
+passes23/23. Remaining fixture preconditions are Misfortune's legitimate
+rank-zero learning and the changed template's visitable offset. Bounded repairs
+are delegated; no batch acceptance or playable promotion is claimed.
+Iron Will and Reactive Weave's older unanswered questions now use explicit
+provisional contracts in Pending Changes and the review ledger, under the user's
+instruction not to stall on gameplay uncertainty. Implementation proceeds
+privately with separated ownership while the root clears this source checkpoint.
+
+## Current Phase1 source gate — Contacts, Phoenix, Arcane Memory and Aenain
+
+The independently reviewed 41-file combined v3 is integrated against source58af.
+Root finalization appends Aenain, Phoenix and Contacts format admissions in that
+order, preserves packet identities, registers the helper and conditional native
+units, activates only the three intended perks and enables Aenain's captured
+replacement. The Contacts concrete-header fixture repair preserves assertions.
+Independent finalization review, static29, module parity and whitespace pass.
+Ten-job incremental build10372 stopped at a nonexistent Phoenix enum constant.
+Registered core:phoenix lookup now matches the existing Elemental lookup pattern,
+preserving every outcome assertion. Same-directory ten-job retry39970 links0;
+binary privacy13213 passes with no findings and module parity passes. The exact
+linked pair discovers42 principal and23 adjacent cases. Principal89762 passes
+35/42 in14.035s; adjacent36801 passes23/23. Seven failing cases and full log/XML
+remain private. Arcane's positive control incorrectly expects retired Hypnotize
+to become learnable; Contacts AI mutates the dwelling type without a registered
+matching subtype. Phoenix captures the correct receipt but five output cases
+fail; legal-footprint diagnosis is underway before classifying that path.
+Bounded private repairs preserve actual assertions and production rules; no
+native acceptance, commit or playable promotion yet. Accepted coverage
+remains279/310 until linked/native gates pass. The ordinary launcher remains on
+verified source58af. Training and War Machines implementation, joint Spellcraft/
+Divine/defensive composition and independent review proceed privately without
+changing frozen build sources. No new artwork or rendered acceptance is claimed.
+
+The training candidate has20 authored cases and is under independent review.
+Review found missing client army invalidation and installed-creature-ID admission;
+private v2 repairs both without weakening assertions and independent review
+confirms source-clear. Twenty authored cases remain unrun; integration is pending.
+The53-case joint Spellcraft/Divine/defensive candidate is not imported: review
+found a misplaced Cross-School packet serialization block, repaired in reviewed
+v2. A subsequent producer audit found a fixed-additive defensive branch in the
+percentage lambda; the owner has repaired v3 before any import/native claim.
+War Machines v2 is independently source-clear with16 authored unrun cases,
+including the corrected hover and deterministic miss/destruction controls.
+Training rebase and Halon capacity v1 are independently source-clear with20 and
+10 authored unrun cases, respectively. This does not affect the
+running Contacts/Phoenix/Aenain/Arcane build. NHART self-contained verification
+still passes3138 entries and unchanged bytes. Disk remains66%, with307GiB free.
+
+Legacy access audit finds no newly established usable acquisition leak: removed
+default spells are filtered, leaving some empty starts rather than permitting
+forbidden casting. Halon's selected skills/specialty exist, but his Expert extra
+Metamagic capacity is silently capped; the bounded rank/capacity correction is
+authored in Pending Changes and progressing privately. Loynis Crusade! and Zubin
+Focus Magic replacement contracts are now authored provisionally for the next
+hero workstream. Inteus, Coronius and remaining retired-development starts still
+need distinct authored replacements; the hero-workbook is not blanket authority.
+
 ## Current Phase1 accepted checkpoint — Sage, Shared Purpose and Frailty
 
 Incremental ten-job build38972 links after reviewed fixture-only repairs.
@@ -11,9 +103,13 @@ amendments are integrated; registry source identity/descriptions and generated
 module are synchronized, with static29 passing. Independent source review,
 binary privacy and unchanged3138-entry NHART verification pass. Earlier failed
 logs/XML remain private; no production eligibility or assertion was weakened.
-Source commit/push finalization is underway. Ordinary Linux still selects
-verified snapshot5bedaf198/source3046c1ad9, not this new source batch. No new
-rendered/Windows acceptance is claimed. Next reviewed private candidates include
+Source58af4428f is normally pushed and remotely confirmed. The final-resource
+principal81781 also passes36/36 in12.379s. Committed803-file packed staging,
+metadata link, privacy and one isolated silent20s smoke pass: day2 AI progression,
+actual executable/library/drivers and cleanup verified. The ordinary launcher
+now selects snapshot2275da866/source58af4428f and its verify-only gate passes.
+The624 schema diagnostics exactly match the previous smoke and remain Phase2;
+no new rendered/Windows acceptance is claimed. Next reviewed private candidates include
 Contacts, Phoenix Spark, Divine Discipline/Crown, Arcane Memory and Spellcraft;
 hero and training work continues privately. Deferred interactions remain Phase2.
 
@@ -15754,8 +15850,12 @@ acceptance, release publication or launcher promotion is inferred.
 
 ## UP-054 — Implement Wisdom Arcane Memory accepted scroll learning
 
-Status: Source reviewed and focused native verified; activation blocked on
-neutral Adventure acquisition policy, 2026-09-30.
+Status: Current ordinary-acquisition policy is settled provisionally; source and
+eleven refreshed shipped-activation cases are reviewed, private reconciliation
+with Contacts/Phoenix/Aenain is underway. Current native acceptance remains
+pending. Pending Changes and the provisional-rule ledger retain the decision;
+older unanswered-question/blocked notes below are historical, not an instruction
+to stall. No current paid Adventure Guild unlock is bypassed by a scroll.
 UP-023 Phase 1 candidate after Arcane Reservoir. A genuinely scroll-sourced
 accepted cast permanently teaches its spell only if current School acquisition
 rules permit it. Do not learn from spellbook/tome sources, failed casts, removed
