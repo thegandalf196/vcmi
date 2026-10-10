@@ -96,8 +96,40 @@ private-preview controls, all passing, and independent review clears the changes
 BUILDING now says all pinned submodules rather than retaining a stale count.
 Actual public candidate assembly, source/dependency correspondence and rendered
 download acceptance remain separate required release gates.
+A maintained raw Linux assembler now binds normal installed curated resources,
+the committed NHART and notices to exact source/archive identities, creates the
+existing BUILD-IDENTITY/SHA256SUMS contract, and preserves input bytes. This is
+not all-translation-unit provenance or rendered acceptance. Source-export checks
+confirm both required NHART docs already ship; the NH_ private-record exclusion
+does not match NHART names. No exporter behavior change is needed.
+Root executes56 assembler/staging/NHART/source-export controls successfully,
+including19 new assembler controls; independent review clears the exact source.
+The command is documented in the Linux build instructions. No actual public
+bundle, platform acceptance or release follows from those synthetic tests.
+Current provider reconciliation finds upgraded libraries despite unchanged used
+header/copyright bytes. Fresh provider/build/ELF records and the current glibc
+source pin are required before publishing; stale install receipt hashes are not
+accepted as current evidence. No old release is relabeled.
 
 ## Persistent Frozen blue tint and latest candidate — 2026-10-10
+
+The reviewed fixed420 ordinary run supplies new scoped evidence: natural Freeze
+on an Ice retaliation, persistent blue-grey tint, a readable thin ice prism and
+cyan Initiative marker. Actual manual attack preview shows12–17 damage and no
+retaliation; the subsequent physical hit deals14, reports Shatter, and clears
+the surviving receiver's tint/marker. Three own primary hits and two contact
+rounds stay within the caps; this is not an own-primary Freeze-proc claim.
+Root and independent reviewer inspect the native captures and actual log.
+Tooltip, normal activation forfeiture/thaw, shard animation and Save remain
+unobserved. The misleading popup filename supplies no popup evidence. The sole
+silent video reaches its filesize cutoff before Shatter, so it cannot prove
+that animation. Twenty native captures total20,901,033bytes and video127,003,909
+bytes meet storage caps. Normal Quit was missed; supervised reap/cleanup finish
+by395.1seconds, not graceful-exit proof. WARN1 is the known fixture-town warning,
+ERROR0 and all807 immutable snapshot hashes pass. No unchanged retry is run.
+The next preparation must target only the remaining UI/thaw evidence and repair
+capture/Quit execution discipline; already observed Shatter is not another RNG
+chase or a reason to alter gameplay.
 
 The user requests Bloodlust-style blue coloring that persists while Frozen,
 rather than a brief flash. Production already applies the Frozen blue filter
