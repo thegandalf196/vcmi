@@ -1,5 +1,29 @@
 # New Horizons provisional rule review
 
+## Discrete School-rank potency — preserve defining activation contracts
+
+Chosen interpretation: strengthen Curse duration to 3/4/4/5 rounds before its
+explicit extensions; scale Purify's authored SP/120 term through the existing
+captured School coefficient. Explicitly retain rank-neutral Sanctuary, Dispel,
+Teleport, Confusion, Berserk, Polymorph, Puppet Master and Reality Warp for the
+individual reasons now integrated into the canonical document. Their already maximal scope,
+fixed activation contracts or deliberately risky outcome do not admit a modest
+universal numerical buff without changing their defining mechanics.
+
+Rationale: fulfill meaningful authored progression where it exists, without
+inventing automatic Mass effects, extra controlled activations, selective Warp
+or improved Polymorph draws that duplicate existing perks. Purify's shared
+count and Curse/Mass Curse duration now pass their focused native23/23 and15/15
+gates respectively; this is not exhaustive cross-system acceptance.
+Existing absent duration tables and older coefficient rules retain their saved
+behavior. The amendment is integrated into the canonical Purify, Curse and
+shared School-rank sections; source hash metadata is updated. Runtime acceptance
+is established for those principal paths; this ledger is not an alternate specification.
+
+Second look: whether Curse's middle-rank plateau remains desirable in Phase3,
+and whether a future explicit non-scope benefit is worth authoring for each
+named exception. Do not claim these exceptions are additional runtime buffs.
+
 ## Rapid Response and Seize Initiative — simultaneous pending promotions
 
 Chosen interpretation: after earned immediate extras, Rapid Response's pending

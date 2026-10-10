@@ -649,6 +649,12 @@ Every friendly stack within the area may have negative effects removed.
 
 Effects Removed = min(2, 1 + floor(SP / 120))
 
+School rank scales only this Spell Power-derived term through the shared
+100/115/130/145% ladder: `min(2, 1 + floor(SP × SchoolCoefficientPercent / 12000))`.
+The fixed one, cap two, radius and target choices do not change. The table below
+shows unranked values; the second choice begins at SP 105/93/83 for
+Basic/Advanced/Expert. Purifier's separate physical-affliction removal is unchanged.
+
 ###### **SP Effects removed per affected stack**
 
 |SP|Effects removed per affected stack|
@@ -810,7 +816,12 @@ The following numbers are prototype values, but the mechanical identities are th
 
 The classic spell should remain extremely simple.
 
-For **3 rounds** , the affected creature always rolls the minimum value of its normal damage range.
+For **3/4/4/5 rounds** at no Shadow School rank / Basic / Advanced / Expert,
+the affected creature always rolls the minimum value of its normal damage range.
+Apply Malediction and other explicit duration extensions afterward, once.
+The explicit Mass Curse variant uses the same duration table; School rank does
+not itself grant that variant or change its targets. Previously captured rules
+without this duration table retain their fixed three-round base.
 
 Thus a creature dealing:
 
@@ -4271,6 +4282,18 @@ incremental rollout, a spell without an authored rank benefit keeps its normal
 effect, while its School rank still governs ordinary acquisition. This is an
 implementation gap to close spell by spell, not a permanent exemption for an
 entire school.
+
+Individually authored rank-neutral exceptions are Sanctuary (its protection ends
+at the next activation), Dispel (already removes every eligible effect on its one
+target), Teleport (already reaches any legal battlefield destination), Confusion
+(exactly one replaced activation with equal behavior probabilities), Berserk
+(exactly one forced activation), Polymorph (a deliberately risky same-tier change
+whose longer duration is not reliably beneficial), Puppet Master (one controlled
+activation with its settled Lucidity limit), and Reality Warp (complete legal
+exchange preserving remaining durations). Their separate perks remain effective.
+These named exceptions do not exempt a School or silently cover other unauthored
+discrete benefits. Curse gains its authored duration table; Purify scales its
+authored removal-count term.
 
 ###### Light Magic
 

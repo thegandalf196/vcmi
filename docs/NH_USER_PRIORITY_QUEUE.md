@@ -2,6 +2,137 @@
 
 ## Current Phase1 continuation — independent feature lanes
 
+Final bounded spell/Sage retry passes1/1 in4.978s after source-reviewed
+isolation of Crisis Command metadata in the synthetic prior-format control.
+Root opens the actual XML. Combined focused evidence covers116 distinct cases:
+v3's71 passing cases, v4's corrected one, and v2's44 unaffected cases, on
+unchanged production/resources. This is not one fresh116-case run.
+Both-target58651 and binary privacy34567 pass; final test73a76e966 and
+library80fdd188 are verified. All principal spell repairs and Sage minimum-AI
+admission now have focused evidence. Ordinary launcher/NHART remain unchanged;
+rendered/platform acceptance is separate. Commit/push the coherent reviewed
+batch next, then integrate the prepared final-Luck/Morale-activation repairs.
+
+Corrected native-v3 passes71/72: Purify23/23, Implosion19/19 and Curse15/15;
+Sage14/15, with all five minimum-AI cases passing. The sole failure is a
+synthetic old-writer positive control retaining a newer Crisis Command profile.
+Root independently opens the four XMLs: no crashes, errors, skips or disabled
+cases. A private, test-only old-profile isolation correction is assigned;
+production compatibility guards and all Sage receipt rejection controls stay.
+Both-target build35606 and exact-pair binary privacy88543 pass. Module parity,
+seven focused schema checks and added-line instruction portability pass.
+The earlier44 unaffected cases remain separate evidence, not a fresh116 run.
+Independent integrated-source review is clear; publication awaits the final
+bounded fixture repair and actual native retry. NHART and launcher unchanged.
+
+Three reviewed native-failure fixture corrections are imported and exact reverse
+application checks pass: Sage follows canonical Dispel level1/JSON-key ordering
+and retains meaningful receipt negatives; Purify erases only future metadata from
+synthetic v2 profiles; Implosion asserts actual clamped SP1/Advanced coefficient
+with an independent formula oracle and a genuine two-hex Cavalier radius witness.
+All original15/23/19 cases remain. Module parity/whitespace pass; corrected native
+execution is unrun. Curse's old-profile isolation and legitimate player activation
+precondition remain assigned privately. Build once after that review, then repeat
+only the affected focused slices on a freshly privacy-checked linked pair.
+
+Native spell/Sage batch is terminal96/116 passing,20 failures, with zero crashes,
+timeouts, errors or skips. Root independently opens all eight XMLs. Teleport8/8,
+Dispel6/6, Fire Wall14/14 and canonical save guards16/16 pass; Sage10/15,
+Purify21/23, Implosion15/19 and Curse6/15 need bounded diagnosis/repair.
+All five new Sage AI cases pass. Exact child dummy-driver/private-profile proof,
+post-run binary/resource parity and cleanup pass; fast Sage discovery's child
+proof timing limitation is retained separately, not called a passing proof.
+Independent workers own catalog/old-context fixtures, Implosion's actual SP and
+two-hex witness, and Curse's rejected public casts. Do not weaken assertions,
+widen old schemas, or publish this batch before focused repair evidence.
+
+Retry67698 is terminal with three fixture compile failures only; client linked.
+Reviewed corrections preserve all original cases/assertions: typed Dispel IDs,
+owning parent pointer for Implosion AI, and split Sage GTest macro lines.
+Retry22695 links both targets successfully. Strict schema follow-up is imported
+and reverse-patch checked; seven focused static cases pass in0.302s, module
+parity/whitespace/instruction portability pass. Binary privacy53667 reports zero
+findings. Exact test439b8cf6/library80fdd188 is handed to the sole isolated tester
+for fresh116-case discovery and eight bounded gates. Source/resources remain
+frozen; native acceptance/publication still pending. NHART and launcher unchanged.
+
+Keep-going retry67698 passes the new canonical-clause guard translation unit
+but finds enum-versus-typed-SpellID mistakes in the Dispel fixture. A bounded
+private test-only correction is assigned; all six cases/assertions must remain.
+Do not edit the live compiled candidate until its process is terminal. Native
+execution remains gated on successful linkage and exact-pair privacy checks.
+The separate Morale proposal's false-origin detached-branch leak is caught in
+review and repaired privately; source clearance and integration remain pending.
+
+Focused offline schema validation finds a pre-existing v3 omission: captured
+Morale rules are rejected as an unexpected top-level field. HEAD confirms the
+same omission. One selected shape test passes and the current-v3/rank test
+errors; a worker owns a strict optional schema repair and derived-v2 fixture
+cleanup, not disabling validation. The integrated five-clause save/parser union
+has independent High review clearance. Retry67698 has passed the repaired
+Implosion object and remains live in test compilation; source stays frozen.
+
+The integrated spell/Sage batch is compiling in the sole reusable Linux build,
+at ten jobs. First build54643 terminated on two missing concrete headers in
+Implosion (BonusList and spell availability); those include-only corrections
+are applied. Incremental keep-going retry67698 is live with819 affected steps.
+Eight focused gates contain116 authored unique cases, not yet linked/discovered
+or executed. Native acceptance, commit and push remain pending. Dispel help now
+distinguishes physical Poison and preserves absent-policy legacy wording.
+Independent private workers also address the canonical final Luck multiplier
+and75% Morale-extra physical output; legacy-world future-battle capture remains
+an explicit integration requirement. Ordinary launcher and NHART are unchanged.
+
+Windows source/dependency preflight38031917825 is terminal success for published
+12fca2063. Compilation and downloadable-package steps were intentionally skipped;
+this is not a new playable Windows build. The next full build should target the
+reviewed published batch, not an uncommitted working tree.
+
+Havoc audit finds an additional Fire Wall principal-clause mismatch: the current
+blanket FLYING exemption also suppresses damage when a flyer lands or begins its
+normal activation in flame. A private worker owns a captured grounded-flyer
+policy: airborne transit stays exempt, landing/activation burn once through
+existing callbacks. Land Mine's authored flyer exemption stays unchanged.
+
+Sage minimum-AI repair and Purify School-count correction are independently
+source-reviewed and imported, including Sage's conditional NK2 test registration.
+Both private patches pass exact reverse-application checks; module parity,
+whitespace and the focused Purify roster test pass. Five Sage and23 Purify
+authored cases still require linkage/discovery/native execution; no accepted
+coverage advancement or new commit is claimed. Implosion, Teleport, ordinary
+Dispel and discrete Curse duration work remain independent private lanes.
+The shared append-only spell-clause epoch is prepared; ordinary launcher,
+NHART and unrelated user-owned artwork/tools remain untouched.
+
+Detailed spell audit additionally confirms three bounded functional gaps:
+Teleport still applies legacy rank-dependent wall/moat restrictions despite
+the authored battlefield-wide relocation; ordinary Dispel still admits
+nonmagical permanent creature Bind; Purify's authored Spell-Power removal
+count ignores the captured School coefficient. Independent private workers
+own these repairs, with old-rule compatibility and actual shared/server/AI
+controls required. These are implementation requirements, not evidence of
+Phase1 completion. Teleport/Dispel acquisition-level discrepancies also need
+reconciliation against the detailed canonical roster before publication.
+The Frozen proc interacting with Misfortune is a separate deferred Phase2
+interaction finding; preserve its configured baseline probability.
+
+Independent review also confirms Sage's minimum-AI reachability is partial:
+its town reward is valued, but friendly-town admission and visited-object
+filters only admit Academic Study. A bounded worker owns a Sage-eligible
+predicate/admission/cluster repair with per-hero rechecks and focused tests.
+Do not replace this with blanket town revisits or change the human reward.
+Windows packaging preflight38031917825 targets published12fca2063 and is
+actually in progress; no build/download success is claimed yet.
+
+Exit audit on published12fca2063 finds a confirmed principal omission:
+canonical Implosion requires capped current-aggregate-Health damage and a
+deterministic radius3 one-hex pull after damage; current spell data only changes
+school/level/cost and still binds generic legacy damage. A bounded private
+implementation is assigned, reusing existing shared spell/displacement paths.
+Phase1 remains open;310/310 perk acceptance does not establish complete spell
+coverage. Required acceptance: actual capped damage, post-damage pull legality
+and ordering, shared previews/minimum AI, focused native/build/save checks.
+
 Final focused repair passes15/15 in10.671s, zero errors/skips/crashes/timeouts.
 Root independently opens its XML and receipt. It supersedes only Opportunist's
 v4 slice; the other288 v4 cases pass on unchanged production library/resources.
