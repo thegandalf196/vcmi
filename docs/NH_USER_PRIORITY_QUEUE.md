@@ -2,6 +2,85 @@
 
 ## Current Phase1 continuation — independent feature lanes
 
+Corrected selector rendering now has actual matched graphical evidence. Root
+inspects native captures with sustained visible centered0/5 and1/5 panels, then
+three ordered targets including identical names and a double-wide stack. Mouse
+Undo reduces3 to2 and recalculates the readback/badges; Cancel clears them with
+Mana100 and the Hero Action available. Reopening and mouse Confirm casts at
+Mana100→92, spends the action, reports99 damage/6 kills and hides the panel.
+Five-target/resize/shared-consumer breadth remains unobserved. Native reserve7/7,
+both-target linkage and privacy pass independently. Root reads the final receipt:
+owned cleanup and exact snapshot/package parity pass. Commit/push the coherent
+six-file batch. NHART and
+ordinary launcher remain unchanged; Frozen visual evidence is the next gate.
+
+Independent diagnosis confirms ordinary battlefield frames erase the selector's
+static children: panel show traverses child show, while the texture, labels and
+button faces paint only through showAll. The reviewed one-line correction makes
+the active panel repaint those existing children after the field, without new
+forecasts or input changes. Exact import matches the private result; both-target
+32859 links and privacy53433 has zero findings. Test/library hashes are unchanged,
+preserving native reserve7/7 evidence. A new matched graphical retry is delegated;
+visibility/mouse acceptance remains pending. Windows38043534263 now succeeds for
+the earlier9ed7cb4d5 source, not this uncommitted batch or Windows gameplay.
+
+Matched new-client graphical probe reproduces the invisible Storm panel even
+after centering/foreground repair. Root inspects actual0/5 and1/5 native captures:
+target badge/status work, but heading/readback/buttons remain absent. Stop the
+probe rather than claim mouse acceptance. Owned cleanup and immutable snapshot
+parity pass; the native reserve7/7 result remains valid independently. A narrow
+private redraw-lifecycle correction is assigned for independent review, rebuild
+and a new matched visual gate. No ordinary launcher promotion or Phase1 exit.
+
+Both-target52381 links successfully; fresh binary privacy20561 reports zero
+findings. Actual Endless Legion discovery matches seven literal cases, and
+native31069 passes7/7 in5.193s with zero failures/errors/skips/disabled cases.
+Root reads the XML and private receipt. Accepted result paths cover Core/Elite
+restoration, Champion/ordinary exclusions, defeat/draw, and temporary Reanimate
+cleanup while live battle health remains unchanged. Exact binary/resource,
+external Data/NHART and owned-process cleanup checks pass. A matched new-client
+snapshot is being prepared for visible panel/mouse acceptance; that gate remains
+open. No ordinary launcher promotion or complete Phase1 exit is claimed.
+
+Both narrow fixes are imported after independent review. Gated result accounting
+now always strips one-battle revivals on a detached state, preserving live health
+and replacement forms. Seven actual-result cases are authored. The shared target
+readback panel is recentered and promoted after battlefield/queue construction
+and resize, fixing the demonstrated paint-order defect without changing callbacks.
+Both-target52381 builds at ten jobs; source/resources are frozen. Native seven
+and a matched panel/mouse rendered check still await linkage/privacy. NHART and
+ordinary launcher remain unchanged; no acceptance from source edits alone.
+
+Corrected Storm graphical probe establishes three distinct ordered targets,
+including identical names and a double-wide stack, persistent ordinal/~HP
+badges, Undo recalculation, cancellation without action/Mana spend, and a paid
+three-target cast. Root inspects native captures. Dedicated exact target
+readback panel/buttons are absent, so their source presence is not acceptance;
+an independent bounded UI diagnosis is assigned. Five-target and wider control
+states remain unobserved. Owned cleanup and immutable-snapshot parity pass.
+No launcher promotion or pack changes; the reserve fix proceeds independently.
+
+Endless Legion review finds a concrete core defect: ordinary gated units are
+excluded from army casualty cleanup, while reserve result accounting removes
+temporary revivals only from replacement-form snapshots. Accepted Reanimate can
+therefore turn one-battle restored gated troops into permanent reserve survivors
+and reduce the casualty award incorrectly. Root confirms the production paths.
+Private worker owns a narrow detached-result cleanup plus seven focused actual
+result witnesses; independent High review is required before import/build.
+This is not deferred polish. Storm's corrected immutable graphical run remains
+independent and must keep its original bytes, dummy audio and owned display.
+
+Town Muster is published asabec47cc3; independently checked remote/identity.
+Next silent Storm retry uses the verified existing immutable feedback snapshot,
+with a fresh profile and actual Spellbook enabled. It is not a launcher promotion
+or a replacement of newer source. Independent bounded hero and war-machine
+audits find no additional demonstrated principal omission:52 selected biographies
+match shipping overrides;92 inherit; all144 workbook replacement armies remain
+explicitly TBD. No invented armies or whole-family completion credit. Endless
+Legion's actual result consumer remains unverified beyond arithmetic, so a
+private focused principal-result witness is assigned while graphics run.
+Windows38043534263 remains live in compilation; no duplicate build is dispatched.
+
 Town Muster AI's principal path is accepted6/6 actual native cases; root opens
 the XML and receipt. Corrected both-target93434 and privacy6976 pass. Actual
 child isolation, exact binary/resource parity, external Data/NHART preservation
