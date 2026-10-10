@@ -1,5 +1,28 @@
 # New Horizons Pending Changes
 
+## User-authored Thane / Halon class swap — New Horizons only
+
+The user explicitly assigns Halon to Battle Mage (stable class ID
+`core:alchemist`) and Thane to Wizard (`core:wizard`). The curated module
+overrides only these two hero class fields. Original core definitions remain
+unchanged when New Horizons is inactive. The engine resolves class identity
+from the current hero prototype, so this data override also changes the displayed
+and queried class of these two heroes in existing New Horizons maps, PRESET
+starts and saves. It does not recapture a loaded hero's saved primary/capability
+rules, resample armies or migrate development. Preserving historical per-instance
+class identity would require separate engine state and is not claimed here.
+All other heroes, starting-development packages, books,
+specialties, biographies, portraits and original troop compositions are
+unchanged. Four focused data checks and the actual starting-army suite4/4 pass,
+including exact class, primary, Leadership and first-stack assertions. This
+amendment awaits canonical integration and changed playable delivery.
+
+Normal class-derived primary growth, skill weights and capabilities follow the
+chosen class. At level1 without additional bonuses, Halon's Leadership becomes
+875 and Thane's becomes650; existing per-slot starting-army clamping therefore
+uses Gremlin maxima17 and13 respectively. The provisional army record reflects
+those consequences rather than separately authoring new troop quantities.
+
 ## Pasis / Monere — fresh-default Wisp-line specialty successor (provisional)
 
 Root authorizes the best-reasoned replacement for both fresh DEFAULT heroes:

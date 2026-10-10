@@ -2,6 +2,60 @@
 
 ## Current Phase1 continuation — independent feature lanes
 
+Latest acceptance: the New Horizons-only Halon/Thane class swap is imported and
+independently reviewed. Four data checks and module generation pass. Actual
+NewHorizonsStartingArmyTest4/4 verifies all144 ordinary armies including exact
+new class/primary/Leadership875/650/Gremlin17/13 assertions, plus explicit map,
+reinitialization, world roundtrip and historical absence boundaries. Initial
+missing test-mod preset failure is retained; corrected isolated setup reruns the
+same binaries/resources without weakening assertions. Build and fresh binary
+privacy pass; owned cleanup and full resource parity pass. Playable class-swap
+delivery and popup/encyclopedia rendering remain pending.
+
+Actual ordinary Guild presentation now passes on the selected immutable Linux
+candidate: unknown III/IV/V spells show Basic/Advanced/Expert Havoc help; the
+three known counterparts show no acquisition lock. Ordinary visitor/book/no-
+School state is observed, normal Quit exits0, silent owned cleanup and snapshot
+parity pass. Three private fixture instance-name errors remain recorded. Sage
+overflow and Frozen feedback are separate unobserved gates, not covered by this
+journey. Previous pending entries below retain chronological evidence.
+
+Latest playable log confirms the selected current candidate loads all three
+modules without the former startup schema/resource diagnostics. New diagnostic
+follow-up: Nullkiller2 repeatedly queries a fog-hidden tile during ordinary
+All for One day-one exploration. Trace the actual caller and repair visibility
+preconditions if confirmed; do not suppress meaningful logs or give AI privileged
+fog access. Separately, the port announcement is unconditional even when the
+internal session does not listen. Make that announcement reflect the actual
+transport branch, preserving authoritative in-process simulation and multiplayer.
+
+New user priorities: repair the map-selection Starting Hero popup and in-game
+encyclopedia, which mix New Horizons specialty text with legacy starting primary
+attributes, Skills, spells and unbounded army quantities. Both must project the
+same effective New Horizons profile used by ordinary initialization, while
+preserving legacy mode and respecting authored map overrides. Reproduction is
+the Serena starting-hero popup; source correction alone is not rendered closure.
+Independent tracing/implementation is delegated, with no concurrent mutation of
+the frozen graphical candidate.
+
+The user explicitly requests a New Horizons-only class swap: Halon becomes
+Battle Mage (the renamed Tower Alchemist), and Thane becomes Wizard. Preserve
+legacy identities, retain their authored starting development/specialties, and
+derive starting primary attributes and Leadership-safe armies from the new
+classes. Record this authored amendment in Pending Changes, validate both real
+initialized heroes and displayed profiles, and deliver the changed build before
+calling the playable class swap complete.
+
+Latest user priority: point the ordinary Linux script to the latest build.
+Post-commit1b8398361 client/library and current installed resources are staged,
+fresh binary privacy passes and the immutable snapshot verifies. Its actual
+guarded silent startup renders1280x800 and exits0 through ordinary Quit with
+zero WARN/ERROR entries; owned cleanup and full snapshot parity pass. The
+maintained atomic promotion now selects that exact candidate, and subsequent
+resolve verifies it. The previous snapshot and normal profile/saves remain
+unchanged. Do not confuse this delivery update with Guild/Frozen presentation
+acceptance or Phase1 completion.
+
 Next principal coverage slice: the canonical School-proficiency acquisition
 help requirement is missing from ordinary Guild scroll hover/click/popups and
 Sage overflow help. The independently reviewed client-only presenter is now
