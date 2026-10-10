@@ -4125,15 +4125,21 @@ A separate town building may also offer a machine. The shop presents that machin
 |Perk|Requires|Effect|
 |---|---|---|
 |Master Gunner|Basic|The Ballista fires twice during each activation. The second shot deals 60% normal damage and may target a different enemy.|
-|Precision Bombardment|Basic|The Catapult may target a specific wall section, gate, or defensive tower.|
+|Precision Bombardment|Basic|The Catapult may target a specific wall section, gate, or defensive tower. An accuracy miss deals no damage instead of redirecting to another part; remaining shots stop once the selected part is destroyed. Accuracy and damage-quality rolls are unchanged.|
 |Surgeon|Basic|First Aid Tent healing also removes one physical affliction. Removal priority is Poison, then Disease, then Bleeding, then other eligible physical afflictions in order of application.|
 |Quartermaster|Basic|Once per combat, while the Ammo Cart survives, the first allied war machine other than the Ammo Cart to complete an activation immediately receives one additional activation at 50% effectiveness.|
 |Piercing Bolts|Advanced|Ballista attacks ignore 50% of the target's Creature Defense.|
-|Breachmaker|Advanced|When a Catapult attack destroys a wall or gate section, 50% of excess structural damage automatically carries into the adjacent fortification section with the lowest current structural HP. Ties use fixed fortification order.|
+|Breachmaker|Advanced|When a hero-controlled Catapult strike destroys a wall or gate section, half of excess final structural damage, rounded down, carries once into the surviving adjacent outer-line fortification section with the lowest positive current structural HP. Ties use fixed fortification order. No recursive overflow or second Siege scaling occurs.|
 |Battlefield Medic|Advanced|After the First Aid Tent heals surviving creatures in its target stack, up to 50% of the Tent's calculated healing is automatically applied to restore casualties. The stack may not exceed its battle-start count.|
-|Field Workshop|Advanced|The First Aid Tent may target allied war machines or friendly fortifications, repairing them using its normal Siege-scaled healing value.|
+|Field Workshop|Advanced|The First Aid Tent may repair surviving damaged allied war machines or friendly defended-town fortifications using its full normal Siege-scaled healing value, capped by missing HP. It does not restore fallen machines or rebuild destroyed structures. Normal troop healing remains unchanged.|
 |Fortification Engineer|Expert|When defending a fortified town, defensive towers use 125% of the hero's Siege rating and may be manually targeted.|
 |Counter-Battery|Expert|Ballistae and defensive towers may deliberately target enemy war machines and deal increased damage against them.|
+
+Precision Bombardment adds selected-part locking to Basic War Machines' existing manual control; it does not guarantee a hit. Unselected and captured legacy behavior remains unchanged.
+
+Breachmaker's outer-line adjacency is bottom tower — bottom wall — below gate — gate — over gate — upper wall — upper tower. The central keep is not an outer neighbor. Carry uses damage exceeding the struck part's positive pre-hit HP. Primary tower hits, spells, creature abilities, zero excess and non-Catapult damage do not trigger it. Destroying a neighboring tower also removes its defensive shooter through the ordinary battle-state path.
+
+Field Workshop uses full Tent output before target missing-HP caps and preserves existing reduced-output extra-activation rules. Structural tower targeting takes precedence over ordinary creature healing at that hex. Repairs do not cleanse physical afflictions or restore casualties.
 
 
 
@@ -4190,14 +4196,18 @@ Muster is hero-limited and location-limited: one hero cannot multiply the same s
 |---|---|---|
 |Volunteer Network|Basic|When Muster targets a Core dwelling, add 2 additional Core recruits.|
 |External Recruiter|Basic|The hero may spend the weekly Muster use at an owned external Core dwelling instead of a town, adding 2 Core recruits there.|
-|Drill Sergeant|Basic|Core and Elite creatures recruited directly by this hero gain +1 Morale during the first combat they fight within the next 7 days.|
+|Drill Sergeant|Basic|Core and Elite creatures recruited directly by this hero gain +1 Morale during their first actual combat from recruitment day through day+6 inclusive. Eligibility is consumed at that combat even if immunity or a cap prevents the benefit.|
 |Broad Muster|Basic|When Muster targets Core creatures, its generated recruits may be split between two Core dwellings in the same town.|
 |Elite Draft|Advanced|When Muster targets an Elite dwelling, add 1 additional Elite recruit.|
-|Field Instructor|Advanced|Core and Elite creatures recruited directly by this hero gain +1 Creature Attack after they complete their first combat under this hero. The bonus lasts while they remain in this hero's army.|
+|Field Instructor|Advanced|Surviving original Core and Elite troops recruited directly by this hero gain +1 Creature Attack after completing their first combat under the recruiter, including retained retreat or surrender armies. The bonus lasts only while they remain continuously in that hero's army.|
 |Recruiter's Contacts|Advanced|Once per week on visiting an external dwelling already owned at entry, replenish its first empty stored recruitment row with positive normal weekly growth, in stored order, using that dwelling's ordinary growth modifiers. Base and upgraded forms share the row. Consume the hero's weekly use only on a successful positive grant; capture during this visit, zero growth, no eligible row or a failed receipt does not consume it.|
-|Reinforcement Drill|Advanced|The first newly recruited stack to enter combat under this hero each week gains +2 Initiative during round 1.|
+|Reinforcement Drill|Advanced|Once per hero per week, the lowest original army slot among eligible newly recruited stacks entering combat under the recruiter gains +2 flat Initiative during round 1 only. Champions qualify; accepted battle entry consumes the use.|
 |Champion's Call|Expert|When Expert Muster targets a Champion dwelling, add 2 Champions instead of 1.|
 |Master Recruiter|Expert|The hero may use Muster twice per week, but never twice in the same town or external dwelling. A town or dwelling may still benefit from Muster only once per week.|
+
+These three training perks apply to the whole resulting strategic stack after positive direct recruitment, including recruitment into an existing matching stack. Paid recruitment and genuine free external-dwelling recruitment qualify. Transfers, rewards, restoration, Diplomacy joins, Necromancy, summons and merely enlarging a dwelling pool do not. Category, Leadership, payment and pool validation remain unchanged.
+
+Same-hero split, merge and slot reordering preserve compact training receipts without multiplying bonuses. Merging retains the later pending Drill Sergeant deadline. Actual cross-army movement permanently clears Field Instructor and Reinforcement Drill eligibility or benefits on moved troops; Drill Sergeant follows the troops. Temporary internal detachment is not a transfer. Later recruitment may arm a resulting stack again, never stacking the same training bonus.
 
 
 
@@ -4478,16 +4488,22 @@ Spellcraft is general magical execution independent of school. It is the success
 
 |Perk|Requires|Effect|
 |---|---|---|
-|Cross-School Formula|Basic|After casting a spell from one school, the next spell cast from a different school before the end of the next round receives +10% to its Spell Power-derived numerical component.|
+|Cross-School Formula|Basic|After an accepted combat spell cast by the hero, the next accepted cast in the same or next round receives +10% to its Spell Power-derived numerical component if the two spells' saved school-membership sets are nonempty and disjoint. Each accepted cast becomes the new previous spell.|
 |Spell Penetration|Basic|Hostile spells ignore 20% of the target's Magical Damage Reduction.|
-|Concentration|Basic|A spell that targets exactly one stack receives +15% to its Spell Power-derived numerical component.|
+|Concentration|Basic|A hero combat spell with exactly one unique prospective stack recipient receives +15% to its Spell Power-derived numerical component. Count recipients before resistance rolls or random additional-target draws, not only stacks that ultimately receive an effect.|
 |Arcane Focus|Basic|The first spell cast in each combat receives +20% to its Spell Power-derived numerical component.|
-|Extend Spell|Advanced|Once per round, the first temporary spell cast by the hero lasts 1 additional round.|
+|Extend Spell|Advanced|Once per round, the first accepted hero combat spell with a positive round-based temporary lifetime lasts 1 additional round. Permanent, combat-long and action-bound effects do not qualify.|
 |Precise Casting|Advanced|When a conventional area spell with a selected central hex is centered on a hex occupied by a friendly stack, that stack is excluded from the spell's effect. Spells explicitly defined as indiscriminate, such as Armageddon, cannot benefit.|
 |Empower Spell|Advanced|Spells whose final Wisdom-adjusted Mana cost is 12 or higher receive +25% to their Spell Power-derived numerical component.|
 |Counterpressure|Advanced|After an enemy hero casts a spell that affects your army, your next spell before the end of the next round receives +20% to its Spell Power-derived component.|
 |Grand Formula|Expert|The first Level 4 or Level 5 spell cast in each combat uses 150% of its normal Spell Power-derived numerical component before other multipliers.|
 |Overwhelming Formula|Expert|The first hostile spell each combat that deals magical damage to one or more stacks with Magical Damage Reduction ignores 50% of each affected target's current Magical Damage Reduction.|
+
+Cross-School Formula uses the battle's captured school catalog, not a chosen School label or current global data. Accepted casts update its history even when countered or resisted; rejected and non-hero casts do not. A same-school cast refreshes the previous-spell reference without receiving the bonus.
+
+Concentration and Cross-School Formula modify only genuine Spell Power-derived numerical terms, composed once with existing multipliers before the final component floor. Fixed terms, costs and ordinary caps remain unchanged. Concentration's prospective count does not waive final value-dependent target legality.
+
+Extend Spell uses one accepted-cast receipt per hero per round. Rejected and non-hero casts do not consume it; an accepted qualifying cast consumes it even when its effects are negated. Round-timed obstacles and other saved round lifetimes qualify, but permanent traps, action-bound Time Stop or control, and combat-long summons do not.
 
 
 
@@ -4770,12 +4786,16 @@ Divine Mandate follows the same opportunity principles as Metamagic. The paired 
 |Consecrated Casting|Basic|A Light Spell cast through Divine Mandate gains +10% to its Spell Power-derived numerical component.|
 |Shared Purpose|Basic|If the paired Light Spell and Order both affect the same friendly stack, that stack gains +1 Morale until its next activation.|
 |Chaplain's Reserve|Basic|After the first Divine Mandate sequence each combat resolves, recover 3 Mana.|
-|Divine Discipline|Advanced|An Order issued through Divine Mandate that would normally end at the end of the round remains on affected friendly stacks through their next Creature Activation.|
+|Divine Discipline|Advanced|An Order issued through Divine Mandate that would normally end at round end remains separately on its original affected friendly recipients through their first genuine completed Creature Activation after the issuing round. Wait and same-activation continuations do not consume this carry.|
 |Purifying Mandate|Advanced|When a Light Spell cast through Divine Mandate removes a negative magical effect, it also removes one physical affliction from that target if present.|
 |Knightly Sequence|Advanced|If the Order is performed first, the paired Light Spell costs 2 less Mana; if the Light Spell is performed first, the paired Order gains +5 additional percentage points of efficiency.|
 |Royal Standard|Advanced|Friendly stacks affected by an Order issued through Divine Mandate treat negative Morale as 0 for that Order's duration.|
 |Mandate of Heaven|Expert|The first Divine Mandate sequence each combat does not count against the Skill's normal per-combat usage limit.|
 |Crown and Altar|Expert|The second action of a Divine Mandate pair automatically gains +20% to its rating-derived numerical components on each friendly stack also affected by the first action. This applies in either Spell-then-Order or Order-then-Spell order. It requires no extra button or target-preselection step and does not retroactively change the first action.|
+
+Divine Discipline extends effective unspent, unbroken benefits; it does not revive spent Charge, broken Protect or completed Second Wind. Reissuing the same Order replaces its prior recipient snapshot, including carried benefits. Only the Divine Mandate Order follow-up receives this lifetime extension.
+
+Crown and Altar uses the actual first action's friendly recipients and the second action's recipient intersection. It strengthens only rating-derived numerical terms before existing floors and caps, not fixed terms, costs, target shapes, durations or action budgets. The first action remains unchanged.
 
 
 

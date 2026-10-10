@@ -1,6 +1,12 @@
 # Phase 1 planned-perk hold index
 
-Current accepted checkpoint:282/310 after linked14567, principal34618:42/42 and
+Accepted checkpoint:293/310, generic204/220 and faction89/90, leaving17
+(16 generic,1 faction). Incremental9350 and privacy80564 pass; principal36894
+passes128/128 in43.678s and adjacent13551 passes15/15 in6.823s, zero
+failures/errors/skips, with exact binary/resource and isolated-child proof.
+Training3, War Machines3, Spellcraft3 and Divine2 retire from this hold list.
+
+Prior accepted checkpoint:282/310 after linked14567, principal34618:42/42 and
 adjacent26046:23/23, zero failures/errors/disabled/skips. Contacts, Phoenix Spark
 and Arcane Memory are removed below; remaining28 includes25 generic and3 faction
 perks. Private source-review clears are not acceptance; Aenain's replacement
@@ -138,34 +144,23 @@ multiple comma-separated queue entries.
 
 ```text
 ID	Status	UPref	Existing recorded issue / reason
-new-horizons:armorer.unyielding	lack-producer	UP-167	No nonmagical forced-displacement producer; ordinary movement and spell relocation are not substitutes.
-new-horizons:battlecraft.rapidResponse	question	UP-159	Precedence versus earned immediate Morale/Quartermaster/Second Wind activations remains unresolved; narrow ruling requested.
-new-horizons:warMachines.precisionBombardment	in-progress	UP-098	Provisional selected-part lock preserves accuracy and damage-quality rolls; private catapult producer and focused controls underway.
-new-horizons:warMachines.breachmaker	in-progress	UP-098	Explicit outer-line adjacency excludes Keep; one nonrecursive half-overflow hit is authored provisionally and implemented privately.
-new-horizons:warMachines.fieldWorkshop	in-progress	UP-100	Only surviving damaged machines/defender structures qualify; provisional raw Tent output, typed expected-HP repair and UI/AI hooks underway privately.
-new-horizons:discipline.heroicSpirit	question	UP-094	Extra retaliation surviving the immediate Morale activation and expiring on the following activation remains unresolved; generic next-activation expiry would erase it immediately.
-new-horizons:recruitment.drillSergeant	in-progress	UP-127	Whole resulting stack and seven-day first-combat receipt are authored provisionally; paid/free recruitment, same-army split/merge and actual boundary producers are being implemented privately.
-new-horizons:recruitment.fieldInstructor	in-progress	UP-127	Whole resulting stack, post-first-combat training and continuous army residence are authored provisionally; private production/feedback implementation underway.
-new-horizons:recruitment.reinforcementDrill	in-progress	UP-127	Lowest eligible original slot, Champion inclusion, absolute weekly use and round1 flat Initiative are authored provisionally; private implementation underway.
+new-horizons:armorer.unyielding	in-progress	UP-167	Independent private implementation of the authorized cause-aware relocation consumer is assigned; deterministic immunity needs real server/detached proof. No standard physical attacker is authored or invented.
+new-horizons:battlecraft.rapidResponse	in-progress	UP-159	Finish earned immediate extras before moving the latest eligible waiting stack's existing delayed activation; provisional contract and private implementation underway.
+new-horizons:discipline.heroicSpirit	in-progress	UP-094	Provisional retaliation survives the granting Morale extra and expires at the following genuine activation's start; private implementation underway.
 new-horizons:command.ironWill	in-progress	UP-149	Provisional same-Order replacement and per-recipient genuine-activation carry are authored in Pending Changes; private implementation reuses the shared carry ledger.
-new-horizons:command.crisisCommand	question	UP-150	Free Order after complete action resolution versus interruption between hits remains unresolved.
-new-horizons:command.seizeInitiative	question	UP-151	Currently active recipient eligibility determines additional activation versus moving a pending normal activation; canonical conflict remains unresolved.
-new-horizons:shadowMagic.plaguebearer	question	UP-113	Normal-limit definition remains pending.
-new-horizons:havocMagic.demolitionist	question	UP-139	Structural-perk stacking and fixed-landmark destructibility remain unresolved; baseline structural producer is verified.
-new-horizons:havocMagic.meteorologist	question	UP-139	Structural stacking and fixed-landmark destructibility remain unresolved.
-new-horizons:havocMagic.cataclysm	question	UP-111,UP-139	Eligible magical-obstacle and fixed-landmark filters remain unresolved.
-new-horizons:spellcraft.crossSchoolFormula	private-source-clear	UP-132	Disjoint saved-school memberships and accepted combat-cast history are settled provisionally; reviewed v3 repairs null-reader and declaration blockers, ten authored cases await integration/native gate.
-new-horizons:spellcraft.concentration	private-source-clear	UP-069	Deterministic prospective recipient count and final HealthValueCondition legality are source-reviewed; SP-only component union and focused native evidence remain pending.
-new-horizons:spellcraft.extendSpell	private-source-clear	UP-134	Accepted temporary-cast receipt and excluded action-bound lifetimes are source-reviewed; ten shared Spellcraft authored cases await integration/native gate.
-new-horizons:spellcraft.preciseCasting	question	UP-133	Time Stop/Earthquake scope remains unresolved despite principal cases.
+new-horizons:command.crisisCommand	private-candidate	UP-150	Immediate defending-hero suspension/choice/resumption v1 is frozen with21 authored unrun cases and independent review pending; root registration/build/native evidence remain required.
+new-horizons:command.seizeInitiative	in-progress	UP-151	Authored moved-normal contract excludes active stack and preserves enemy/immediate-extra order; private producer/normal-completion ledger implementation underway.
+new-horizons:shadowMagic.plaguebearer	private-source-candidate	UP-113	Authored one-to-two distinct recipients per processed tick; captured inheritance and actual spread/AI candidate frozen with ten authored unrun cases, independent review pending.
+new-horizons:havocMagic.demolitionist	in-progress	UP-139	Provisional additive structural category, one final floor and reserved fixed scenery are authored; existing foundation reused privately.
+new-horizons:havocMagic.meteorologist	in-progress	UP-139	Meteor-only structural modifier preserves impact area and creature damage; private implementation pending focused acceptance.
+new-horizons:havocMagic.cataclysm	in-progress	UP-111,UP-139	SP-only bonus and ordinary creation-spell magical cleanup are authored; ability-created Tower moat mines remain excluded.
+new-horizons:spellcraft.preciseCasting	in-progress	UP-133	Current centered unit-area catalog includes Fireball, Inferno, Meteor, Frost Ring and Purify; excludes custom Time Stop and structural Earthquake. Shared center-stack exclusion and actual Purify path implemented privately.
 new-horizons:warcasting.reactiveWeave	in-progress	UP-215	Provisional independent expiries, stronger nonstacking value and next accepted Order consumption are authored; private actual-effect receipt implementation is underway.
-new-horizons:diplomacy.mercenaryCaptain	dependency	UP-129	Deterministic recruitment/cohort provenance is a prerequisite.
-new-horizons:diplomacy.loyalMercenaries	dependency	UP-129	Deterministic recruitment/cohort provenance is a prerequisite.
-new-horizons:diplomacy.legendaryReputation	question	UP-195,UP-129	Monthly use on refusal/zero admission versus positive join remains unresolved.
-new-horizons:luck.opportunist	question	UP-088	Movement-only continuation from reactions versus own activation remains unresolved.
-new-horizons:divineMandate.divineDiscipline	private-source-clear	UP-108,UP-149	Captured recipient carry expires at first genuine completed activation after issuing round; reviewed nonstacking reissue and eight authored cases await integration/native gate.
-new-horizons:divineMandate.crownAndAltar	private-source-clear	UP-108	Second-action actual friendly recipient intersection and component-only scaling are source-reviewed; nine authored cases await root unions/integration/native gate.
-new-horizons:bulwarkOfTheMire.deepBulwark	lack-producer	UP-167	No canonical nonmagical forced-displacement producer exists.
+new-horizons:diplomacy.mercenaryCaptain	private-source-candidate	UP-129	Actual accepted join admission and captured first-three-combat cohort producer are frozen; twenty-two shared authored unrun cases and independent source review pending.
+new-horizons:diplomacy.loyalMercenaries	private-source-candidate	UP-129	Captured cohort identity survives Captain expiry; only negative faction-mixing penalty removed. Shared private admission/runtime candidate awaits review and native evidence.
+new-horizons:diplomacy.legendaryReputation	in-progress	UP-195,UP-129	Independent private implementation binds calendar-month waiver to positive actual admission and its original offer; authored free exceptions preserve the benefit. No acceptance claimed.
+new-horizons:luck.opportunist	implementation-ready	UP-088	Provisional own-attack movement-only tail excludes reactions, aggregates lucky strikes and grants neither another attack nor an extra activation.
+new-horizons:bulwarkOfTheMire.deepBulwark	in-progress	UP-167	Independent cause-aware private implementation uses actual Defending Bulwark and pre-effect typed admission; real server-path proof required, ordinary gameplay producer remains absent.
 ```
 
 ## Selection result

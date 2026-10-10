@@ -245,12 +245,32 @@ Do not delegate trivial work merely for parallelism.
 Do not let multiple implementation agents edit the same files without explicit ownership boundaries.
 User instructions always take precedence over this orchestration policy.
 
-The user authorizes up to six concurrent workers, excluding the root. Use
+The user authorizes up to ten concurrent workers, excluding the root. Use
 independent, bounded ownership rather than inventing tasks to fill slots. When
 a spawn reports a thread limit, inspect the existing team and reuse completed
 workers with follow-up tasks before claiming a lower worker limit. Completed
-threads may remain allocated. Do not increase limits beyond six workers or
+threads may remain allocated. Do not increase limits beyond ten workers or
 interrupt unrelated user tasks to reclaim capacity.
+
+### Automatic delegation checkpoints
+
+Worker scheduling is the root's responsibility; do not wait for the user to
+request delegation or remind the root that workers have finished. At the start
+of each continuation, on every worker completion or failure, and whenever a
+build/test becomes running, terminal or blocked, inspect the actual team and
+current priority/coverage backlog. Before the next substantial root-only task,
+assign eligible independent work to available workers with concrete ownership
+and acceptance criteria. Reuse completed threads through `followup_task`;
+sending a message or writing an assignment in notes does not start an idle
+worker. Confirm assignments against live agent status.
+
+A running build, test or priority repair is not by itself a reason to idle
+independent implementation workers. Keep frozen candidate sources unchanged:
+use private patches or isolated worktrees for parallel changes. If an available
+worker cannot safely advance a real task, record the specific dependency,
+ownership conflict or resource constraint in the priority queue and reassess it
+at the next checkpoint. Do not invent filler tasks, duplicate work, overrun the
+ten-worker authorization or confuse completed threads with running workers.
 
 Maintain specialist assignments for skills/perks, spells, hero redesigns,
 legacy-content access auditing, background playtesting, and independent review.

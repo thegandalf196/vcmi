@@ -1,5 +1,284 @@
 # User-priority queue
 
+## Agent concurrency configuration — 2026-10-09
+
+The user explicitly raises authorization to ten concurrent spawned workers,
+excluding the root. The local `$HOME/.codex/config.toml` agent concurrency setting
+is changed from six to ten; AGENTS.md and the orchestration skill agree.
+Configuration capacity is not evidence of actual service capacity. This running
+session advertises seven total slots, including the root; do not claim ten
+workers are available until actual service behavior confirms it. Preserve current
+workers and reuse completed threads instead of restarting or losing their work.
+The build-job limit remains ten and is independent of agent concurrency.
+
+## Automatic worker scheduling instruction — 2026-10-09
+
+The user's requested operational rule is appended to AGENTS.md: inspect actual
+team/backlog on continuations, worker completion/failure and build/test state
+changes; reassign independent work before substantial root-only work, use actual
+follow-up calls for completed threads and confirm live status. Record concrete
+idle constraints rather than waiting for a user nudge. Existing ownership,
+frozen-candidate and resource limits remain intact; the later explicit ten-worker
+authorization supersedes the original six-worker limit. The instruction
+is implemented locally and awaits the next coherent source commit.
+
+## Next Phase1 implementation batch — eleven perks and hero profiles
+
+Accepted v6 checkpoint: linked9350 and privacy80564 pass. Principal36894
+passes128/128 in43.678s and adjacent13551 passes15/15 in6.823s, zero
+failures/errors/skips. Next-round reissue1 and same-round rejection1 also pass.
+Exact binary/resource parity, actual isolated child environment and cleanup
+are verified. Canonical ten changed descriptions, registry/source identity
+and generated module are synchronized; static29 passes. Accepted perks now
+293/310 (generic204/220, faction89/90),17 remain. The source batch is being
+committed and normally pushed; this is not ordinary-launcher or rendered
+acceptance. The historical failed checkpoints below remain evidence.
+
+Fresh v5 Replay1, Cross1 and Spellcraft10 all pass. Principal83705 completes
+128 cases in43.876s:127 pass,1 fails, zero errors, with actual isolated child
+and exact pair proof. The sole failure rejects next-round replacement of a
+carried Divine Discipline Order as a duplicate active Order. Bounded production
+diagnosis and independent review are assigned; same-round duplicate and action
+validation must remain intact. Adjacent15 is not run after the failed gate.
+The full batch remains unaccepted and the ordinary launcher remains unchanged.
+
+Reviewed repairs link successfully in incremental6899; privacy19604, perk17,
+module parity and whitespace pass. Production battlefield selection now safely
+uses its existing terrain fallback on empty visitable tiles. Training replay
+uses its original location and separately tests that empty-tile fallback;
+Cross forecast uses its real player; Healer/Guardian are tested as two legal
+Basic alternatives rather than an impossible combined selection. This adds
+one principal case (128 total). The maintained tester has an explicit fresh
+v5 Replay1 → Cross1 → Spellcraft10 → principal128 → adjacent15 handshake.
+All six actual workers are running independent private implementation, review
+or focused validation; no accepted coverage or launcher change is claimed.
+
+Incremental6839 and privacy41877 pass. Fresh v4 Cross84481 passes1/1 in0.745s;
+Spellcraft54394 passes10/10 in3.829s, zero failures/errors/skips, with exact
+binary and actual isolated child proof. Principal96189 stops at a new Training
+replay SIGSEGV after81 completed passes and3 failures; no final XML exists and
+adjacent15 is not launched. Failures cover another player-less Cross forecast
+callback, an occupied Labetha perk tier and Training's native-terrain baseline.
+The Cross fixture receives the same real-player/positive-admission repair;
+the designated tester diagnoses the crash and independent review diagnoses
+the other two failures. No accepted counts or playable delivery change.
+
+Hero-development audit:39 current defaults retain only a faction Skill after
+legacy migration. The private Navigation candidate repairs Voy; the other38
+still need explicit authored profiles. These are not additional biography or
+book gaps. The exact roster is Castle: Adelaide, Ingham, Sanya, Caitlin;
+Rampart: Thorgrim, Coronius, Elleshar, Malcom, Aeris; Tower: Astral, Serena,
+Daremyth, Aine; Inferno: Ayden, Xyron, Axsis, Ash; Necropolis: Straker, Charna,
+Isra, Septienna, Nimbus, Thant, Vidomina, Nagash; Dungeon: Alamar, Jaegar,
+Jeddite, Geon, Deemer, Sephinroth; Stronghold: Terek, Oris, Saurug; Fortress:
+Mirlanda, Rosic, Andra, Tiva. Retain Advanced faction ranks for Adelaide,
+Astral, Isra, Vidomina, Jeddite and Mirlanda; the other32 retain Basic.
+Four Fortress replacements are provisionally authored and assigned privately
+through the existing captured default-only profile seam. PRESET, saved,
+crossover and legacy contexts remain unchanged. No workbook-wide adoption,
+biography/army changes or acceptance credit is implied. Other34 remain separate
+authoring work after those four, not a permanent question hold.
+
+Latest focused evidence: Cross73446 passes1/1 and Spellcraft2547 passes9/10
+after the populated-reader and legacy-effect repairs. The remaining detached
+forecast fixture constructs a callback without a player, although battle-start
+requires one. Bounded GDB confirms cast admission fails before evaluation.
+The independently reviewed fixture now uses the actual attacker and asserts
+legal casting and the +1 Extend allowance before retaining every consumption
+and isolation assertion. Incremental6839 is running; fresh v4 gates are pending.
+Accepted coverage remains282/310, with no launcher promotion.
+
+The populated reader-context repair and independently reviewed legacy Extend
+classifier/area-fixture corrections are imported. Ten-job incremental72678
+links test and production successfully; static29, module and whitespace pass.
+Privacy72779 is running before the fresh Cross1 → Spellcraft10 → principal127
+→ adjacent15 handshake. All earlier failures and passing subfilters remain
+private immutable evidence. The ordinary launcher remains on verified95f4.
+
+Setup92086 passes29/29 in11.272s on the verified pair. Principal17709 stops
+with SIGSEGV after35 completed passes and6 completed Spellcraft failures;
+no final XML or adjacent retry exists. Bounded isolated GDB confirms the crash
+is the populated BattleStart fixture omitting its reader game callback, not
+the empty packet path. The one-line callback repair preserves every assertion.
+Spellcraft failures have a separate independent diagnostic lane; full-batch
+acceptance remains unproven. Crisis Command and six spell-specialty successors
+are private source-clear; Legendary Reputation is frozen for review. Owners
+are actually reassigned to Navigation successors and Opportunist while the
+displacement worker continues. No gameplay coverage or playable promotion is
+claimed from private source review.
+
+Training startup repair passes independent source review; incremental54039 and
+privacy43193 pass. Guarded native79803 passes the principal Training1 regression
+in0.795s, with actual child dummy-driver/private-profile proof captured. The
+round-one marker and real expiry assertions now execute successfully. The
+authorized29-case gate is next; full127 remains conditional. Six remaining hero
+specialties are private source-clear v2 with36 authored unrun cases; Crisis
+Command v1 has21 authored unrun cases under independent review. Its owner is
+actually reassigned to the two documented Navigation successors. Legendary
+Reputation and cause-aware displacement continue privately; no accepted counts
+or ordinary launcher change follows from these private candidates.
+
+Privacy3708 passes. The guarded Training1 retry79666 fails in0.816s before later
+gates: the marker is correctly absent but the fixture is already in round2.
+Its helper calls authoritative startBattle (which starts combat) and then the
+synthetic beginCombat helper, recreating deployment and advancing again. A
+bounded fixture repair removes that duplicate startup while retaining round1
+and exact expiry assertions. The original native failure and isolation-proof
+limitation for this sub-second child are preserved privately; no unchanged
+rerun, full127 or launcher promotion occurs. The tester is actually reassigned
+to that repair and fresh output names before the next build/privacy handshake.
+
+Independent review clears the narrow Training lifecycle correction and all three
+fixture patches. Incremental82374 links vcmitest; production93588 separately
+relinks libvcmi and new-horizons successfully. Static29 and module parity pass.
+Binary privacy3708 is running before the next explicit tester handshake;
+no native retry or launcher promotion is authorized from compilation alone.
+The remaining six hero-specialty candidate has36 authored unrun controls and is
+under independent review; a retained Haste payload expectation is being corrected
+privately. Unyielding/Deep Bulwark now have an actual independent implementation
+assignment for the recorded executable cause-aware generic consumer.
+
+The Training failure reveals a production lifecycle defect: setup exports the
+round-one marker, then BattleStart initialization exports the same shared pointer
+again. Expiry removes only one accepted occurrence. A narrow CStack initialization
+normalization re-stages only typed training bonuses before the existing export;
+it preserves preview/descriptor bytes and avoids a global bonus-system change.
+The fixture now checks exact marker counts, round boundaries and expiry against
+the actual battle-native baseline. Crown controls use paired Protect/nonzero
+Attack and check detached isolation before live mutation; War checks the actual
+Catapult Shot identity and ghost/nonactive tower removal. All are imported but
+await source review, rebuild and focused native evidence; counts remain unchanged.
+
+Incremental73562 links successfully and privacy92989 passes on the refreshed
+exact binary pair. Setup27555 completes29 cases in11.874s:22 pass,7 fail,
+zero errors/skips. These are now result/resolver failures, not acquisition
+prerequisite failures: War tower removal and two Catapult lookups, Training's
+round-one Initiative control, and three Crown recipient/arithmetic/detached
+controls. Independent bounded diagnoses are actually assigned to tester and
+reviewer; all original assertions and failed evidence remain preserved.
+Full127 and the next adjacent retry have not run because the29-case gate failed.
+Accepted coverage stays282/310. Crisis Command, Legendary Reputation and six
+hero-specialty replacements continue privately in parallel; the other reviewer
+repairs Remaining Start's fixture API readiness without touching live source.
+
+Principal15919 ends at the120-second bound, not a crash: eleven completed passes
+and four War setup failures, with no final XML. Adjacent32850 passes15/15 in7.547s,
+zero failures/errors/skips on the exact frozen pair. Independent review also
+finds missing Basic/Advanced prerequisites in two Training and the Crown setup.
+Three fixture-only repairs now preserve every outcome assertion, select inert
+prerequisites legally and retain Expert Siege. One three-TU incremental rebuild
+and guarded29-case setup filter precede the127-case retry. Failed evidence and
+the initial passing adjacent XML remain private and unchanged.
+
+Exact-pair discovery confirms127 principal and15 adjacent names. Principal15919
+exposes Field Workshop's occupied Advanced-tier fixture before completing the
+batch; the maintained120-second bound remains in force. The tester preserves
+that failure, runs adjacent15 separately, then repairs only War acquisition:
+Basic Surgeon, Advanced Field Workshop, Expert Skill retained. No outcome
+assertions or production rules change; repaired War-only validation precedes
+the combined principal retry. Accepted coverage stays282/310.
+
+Incremental47947 links successfully, terminal0; privacy74576 passes with no
+findings and module/diff parity pass. Root explicitly authorizes the designated
+tester to refresh only the isolated runner's exact binary pair and four resource
+trees, verify discovery127+15, then run those bounded native filters. The ordinary
+launcher is unchanged. Accepted coverage remains282/310 until principal evidence
+is obtained; build success alone does not close the batch.
+
+Incremental46045 is terminal1 after263 completed compile steps: Crown's signed
+damage reference and Training's three concrete type headers are the new roots.
+A delegated, independently reviewed two-file fixture correction preserves all
+cases/assertions; the next same-tree ten-job incremental retry is starting.
+Native preflight remains prepared and cannot run until the test binary links.
+
+Independent review finds two principal private blockers: Precise's wrapper edit
+lost an adjacent function declaration, and Mercenary admission can tag unrelated
+troops returned through an empty neutral slot. Earlier unconditional clear for
+Mercenary is superseded on that narrow authority edge. Owners are actually
+repairing both frozen candidates before further integration; no live source or
+accepted counts change. Crisis Command and Legendary Reputation now have actual
+private implementation assignments under recorded provisional timing contracts.
+Native execution waits on the confirmed live46045 build; this dependency does
+not idle the other implementation lanes. Module parity and unchanged3138-entry
+NHART verification pass separately, not as proof of native gameplay acceptance.
+
+The three fixture repairs pass independent source review; incremental46045 is
+live and the smallest static perk/hero gate passes29/29. A separate explicit
+twenty-two-row default-book successor contract is authored provisionally in
+Pending Changes and the second-look ledger; the completed Plague worker is
+actually reassigned to its private implementation. Plague, Coronius, Havoc,
+Iron/Reactive/start globals and corrected Rapid have separate private review
+evidence; none is imported into the frozen build or counted as native acceptance.
+
+Retry27418 is terminal with three fixture API failures; production linked.
+A delegated three-file fixture repair preserves every assertion and actual Lua
+callback while fixing round packets, serializer versions, owned-stack iteration,
+detached subjects and Lua declaration includes. The frozen repair is imported;
+ten-job incremental46045 is running, with independent review pending. All six allocated workers are assigned:
+Seize Initiative, Plaguebearer, Precise Casting, fixture/native validation and
+two independent review lanes. Private Coronius, Havoc and Rapid candidates do
+not count as accepted coverage. Current accepted coverage remains282/310.
+
+The user requests completion toward a24-hour target and additional delegation.
+An additional Plague worker spawn is rejected by the actual service thread
+limit; the completed Diplomacy worker is reused for that real missing feature.
+Seize Initiative now has a recorded moved-normal provisional contract; its
+worker first repairs Rapid's genuine-action versus synthetic stopped-pass guard.
+Coronius's bounded Holy Wrath replacement is being implemented privately.
+The hero audit finds31 filtered default inscriptions before the private Inteus/
+Halon fixes, not just one remaining hero. Further book-only/specialty contracts
+are being prepared separately from unapproved workbook riders.
+
+Heroic Spirit's private11-case source candidate is frozen and under independent
+review; review finds missing Morale-event old-format admission and ordinary-death
+flag clearing. A narrow typed-grant/death-clear v2 is being repaired privately;
+no source acceptance is claimed. Its worker also owns the three Havoc perks,
+using recorded additive structural/ordinary-obstacle contracts. Iron/Reactive's
+30-case additive union is independently source-clear, pending later integration.
+Rapid Response and Diplomacy cohort production work continue separately.
+
+All six allocated workers are reassigned: Rapid Response, Heroic Spirit,
+Diplomacy cohort perks, private Iron/Reactive composition, independent review
+and focused native preparation. Root owns live integration and the single build.
+Nine global finalization files pass independent review; maintained module
+generation, data/hero29 and whitespace gates pass. Ten-job build41452 stops at
+a const Training preflight callback mismatch; the independently reviewed const
+lookup correction compiles in retry98011. That retry stops at the hero class
+service interface's absent faction field. The existing concrete resolver repair
+and snapshot-fixture include review precede the next same-directory retry.
+Accepted coverage remains282/310; no native acceptance is claimed.
+
+Retry78649 compiles the concrete hero resolver, then stops at Spellcraft's
+missing roster-predicate declaration. The existing availability header is added,
+with failed output retained privately. Starting's two concrete snapshot includes
+preserve all16 assertions. The next ten-job incremental retry is underway;
+static29/module parity remain healthy and source coverage is still unaccepted.
+Retry38381 links production, then stops at Starting's private restored-hero lookup
+and incomplete QuestInfo fixture declarations. The targeted failed-object48037
+log confirms both roots. Concrete quest data and public mutable map lookup
+preserve all16 cases and add explicit restored identity checks. The next ten-job
+incremental retry is underway; the playable snapshot is not promoted.
+The reviewer now audits Plaguebearer/Precise readiness while awaiting Heroic v2;
+the other reviewer audits exact hero-roster requirements. The tester prepares
+next Iron/Reactive/start globals privately until the new binary pair is linked.
+
+Rapid Response and Heroic Spirit's older activation questions now have explicit
+provisional contracts in Pending Changes and the second-look ledger. Independent
+private implementations are assigned; they do not alter the frozen95f4 delivery
+or count as accepted coverage before build/native verification.
+
+Root imports the reviewed additive source union7b900000 against source95f4:
+106 changed paths, with all110 result hashes matching and the four accepted
+fixture files unchanged. Training3, War Machines3, Spellcraft3 and Divine2
+production paths plus Halon capacity, defensive/offensive replacements and eight
+starting-development profiles are integrated. Root-owned version/packet/CMake/
+configuration/schema/text/module finalization is underway. Its127 focused cases
+are authored, not run; accepted coverage remains282/310. No build or playable
+acceptance follows from this import. The verified ordinary launcher stays on
+source95f4/snapshotc44f2d301 while private work advances. Iron Will is source-clear
+privately; Reactive Weave's reader guard and remaining inscription replacements
+are separate review/integration candidates, not silently included in this batch.
+
 ## Accepted Phase1 source gate — Contacts, Phoenix, Arcane Memory and Aenain
 
 Incremental14567 links at ten jobs; privacy9212 passes with no findings.
@@ -12,8 +291,14 @@ NHART3138 verification pass. Original failure logs/XML stay private. All actual
 rules and outcome assertions were retained through fixture-only repairs.
 Final-resource30700 passes42/42 in13.962s after refreshing only the synchronized
 registry and module metadata; exact binary pair, four resource trees, NHART bytes
-and cleanup are verified. Coherent commit/push follow; no new playable or
-rendered acceptance is claimed. Ordinary Linux stays on source58af.
+and cleanup are verified. Source95f4ec089 is normally pushed and independently
+remote-confirmed. Committed packed803-file staging passes3137 selected entries,
+zero loose duplicates, two mounts and required notices. Metadata relink51627 and
+privacy56817 pass. Frozen snapshotc44f2d301's silent20s headless smoke reaches
+day4 with AI progression; actual client/library/drivers, cleanup and profile lock
+release are verified. The624 schema diagnostics exactly match source58af's
+accepted smoke. Ordinary Linux selects this snapshot and verify-only passes.
+No rendered/Windows acceptance is claimed; NHART bytes remain unchanged.
 Next eleven-perk union (Training3, War Machines3, Spellcraft3, Divine2), Halon
 capacity and defensive/offensive/start-profile candidates are source-clear
 privately, with root integration and native evidence still pending. Iron Will,

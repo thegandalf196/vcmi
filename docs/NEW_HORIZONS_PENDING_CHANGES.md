@@ -15,6 +15,243 @@ entries here and thereby recreate a permanent override layer.
 
 ## Awaiting integration
 
+### Conditional physical-displacement immunities — explicit movement cause
+
+Provisionally, implement Unyielding and Deep Bulwark through a real shared
+cause-aware immunity query and authoritative forced-relocation entry, without
+inventing a physical attacker. Non-magical forced movement is distinct from
+magical relocation, ordinary movement, deployment, return-after-strike, gating,
+form restoration and Confusion walking. The animation's teleporting flag and
+the existing voluntary-movement boolean are not substitutes for that taxonomy.
+
+Unyielding grants deterministic immunity while Defending or receiving effective
+Hold the Line under the stack's current controller. Deep Bulwark grants it only
+while actually receiving its Defending Bulwark benefit. Neither rolls RNG nor
+uses charges. Check protection and complete destination legality before moving,
+clearing Entangle or breaking Orders; preserve normal relocation behavior when
+not protected. Accepted movement carries validated cause metadata, with legacy
+ordinary movement unchanged and old-format rejection for new metadata.
+
+No standard Version1.0 non-magical push/pull attack is currently authored.
+Do not reclassify Implosion or add an unapproved attacker to manufacture one.
+Phase1 may credit the conditional passive only after an actually executable
+typed authoritative server path, shared detached/UI query and focused state/
+compatibility controls prove it. A tooltip, dormant marker or missing consumer
+still earns no credit. Standard-game triggering and rendered exercise must
+remain explicitly unverified; this amends the earlier blanket UP-167 hold,
+not the requirement for a genuine mechanic.
+
+### Remaining spell specialties and Navigation specialists
+
+Provisionally, convert only the exact native specialty producers for these six
+heroes, on their local copies under a separately captured opt-in. Preserve
+original prototypes, classes, armies and biographies. Fresh default books gain
+the stated successor; explicit map books and saved/crossover initialization
+retain their book contents. Captured current specialty math is independent of
+an explicit map book, as with the other accepted conversion families.
+
+| Hero | Retired specialty | Existing successor | Strengthened component |
+|---|---|---|---|
+| Ash | Bloodlust | core:fireball | +15% Spell Power damage term |
+| Darkstorn | Stone Skin | new-horizons:hexOfPain | +15% Spell Power flat-damage term |
+| Astral | Hypnotize | new-horizons:phantomArmy | +20% Spell Power Integrity term |
+| Septienna | Death Ripple | new-horizons:plague | +15% Spell Power tick-damage term |
+| Melodia | Fortune | core:bless | +20% Spell Power duration term |
+| Daremyth | Fortune | core:haste | +20% Spell Power duration term |
+
+Do not strengthen fixed terms, target shapes, duration caps, Hex's separate
+damage-sharing percentage, Phantom's cap/Illusionist multiplier, Plague's spread
+or Haste's Speed. Hex and Plague capture strengthened damage once on application;
+triggered ticks and child infections never apply it again. Phantom preserves
+fractional arithmetic before its cap and final HP floor. Actual Lua producers,
+shared previews and AI forecasts must consume the components; markers alone are
+not implementation. No Masterful variants, hero-level or creature-tier riders.
+
+Separately, give Sylvia and Voy fresh default Basic Logistics, Basic own faction
+Skill and the existing Basic Navigation perk through explicit captured starting
+profiles. Convert only their exact retired Navigation specialty into +20% of
+Logistics's core Movement effect. Do not strengthen Navigation's sea movement or
+embark-cost perk, invent Forced March riders or globally alias Navigation.
+Preserve explicit map development, books, classes, armies, biographies and
+legacy/saved/crossover contexts. The learned Logistics parent is required for a
+meaningful specialty. Guard these opt-ins and new supported spell identity
+before old-format hero/settings/map/off-map/world/lobby prefixes.
+Explicit map development means its chosen ranks/perks remain unchanged: the
+exact specialty conversion still applies to a freshly created opted-in current
+hero even with PRESET development. Without learned Logistics it adds no Movement.
+Saved/crossover heroes without the captured local marker are not converted
+during reinitialization. Default profile installation remains fresh DEFAULT-only.
+
+### Crisis Command — complete action before the free Order
+
+Provisionally, resolve the accepted action's entire strike/damage/death sequence
+before offering the destroyed stack's hero one immediately actionable free
+Order. Do not interrupt between hits or offer it after battle finalization.
+Resume ordinary earned extra-activation scheduling after that Order opportunity;
+never consume the normal Hero Action. The opportunity must work for the
+defending hero during an enemy activation, not become an unusable allowance
+deferred until the next friendly turn. Rejected Orders do not count as issued.
+Once-per-combat receipt, safe action suspension/resumption and required choice
+UI remain implementation requirements, not an assumption that existing regular
+hero-turn gating already supports interruption.
+
+### Legendary Reputation — consume on actual positive admission
+
+Provisionally, the calendar-month use applies to the first eligible Diplomacy
+join that actually admits at least one creature. Refusal, cancellation and zero
+admission preserve the use. Existing authored free-join exceptions do not spend
+it merely because no Gold was needed. Use the existing calendar's month identity,
+not a new hardcoded day divisor. Validate and commit the free-payment receipt
+on the authoritative accepted recruitment path, preserving troop-capacity and
+remainder rules. Do not charge ordinary recruitment Gold for this eligible use.
+
+### Opportunist — movement-only tail of the stack's own attack
+
+Provisionally, a positive Luck trigger during the stack's own genuine attack
+keeps that same activation open for movement only, bounded by both two hexes
+and its remaining Movement. Aggregate the resolved strike sequence; do not
+grant another attack, extra activation or repeated movement allowance per hit.
+Retaliation, Counterfire and Overwatch reactions cannot create an activation
+tail. Preserve existing attack-range restrictions and complete the activation
+when the player declines or exhausts the movement-only opportunity.
+
+### Nonspecialist heroes — current default-book successors
+
+Provisionally, give the following fresh default heroes an existing preferred-
+School spell in place of their exact retired prototype inscription. Capture the
+explicit per-hero table; absence preserves historical behavior. Replace only
+the matching prototype spell during genuine initialization without a PRESET
+book. Preserve explicit map books, saved/crossover reinitialization, all other
+inscriptions, classes, development, armies, biographies and working specialties.
+Do not grant additional School ranks, variants or specialty bonuses.
+
+| Hero (`core:`) | Retired inscription (`core:`) | Successor |
+|---|---|---|
+| Rion | stoneSkin | new-horizons:guardianSpirit |
+| Aeris | protectAir | new-horizons:holyArmor |
+| Piquedram | shield | core:slow |
+| Neela | shield | core:slow |
+| Theodorus | shield | core:slow |
+| Ayden | viewEarth | new-horizons:confusion |
+| Axsis | protectAir | core:forgetfulness |
+| Zydar | stoneSkin | new-horizons:blink |
+| Vokial | stoneSkin | new-horizons:lifeDrain |
+| Galthran | shield | core:slow |
+| Nimbus | shield | core:dispel |
+| Nagash | protectAir | core:dispel |
+| Jaegar | shield | core:curse |
+| Malekith | bloodlust | new-horizons:shadowGift |
+| Sephinroth | protectAir | core:curse |
+| Gird | bloodlust | new-horizons:vengefulVines |
+| Dessa | stoneSkin | new-horizons:regeneration |
+| Oris | protectAir | core:forgetfulness |
+| Saurug | bloodlust | new-horizons:vengefulVines |
+| Verdish | protectFire | new-horizons:regeneration |
+| Styg | shield | new-horizons:entangle |
+| Tiva | stoneSkin | new-horizons:regeneration |
+
+These are explicit functional successors, not aliases claiming identical old
+effects. Ayden changes from adventure information to combat misdirection;
+Malekith retains Shadow Gift's existing vitality cost. Specialist conversions,
+including Coronius, Inteus, Halon and the six unresolved spell specialists,
+remain separate. Old-format writers reject presence of the captured table
+before any prefix; raw readers must not invent it. Ordinary accepted casting
+and AI enumeration use the existing spells without mastery bypasses.
+
+### Seize Initiative — move a pending normal activation
+
+Provisionally, the first accepted Hero-paid Order each combat consumes the
+trigger even if no eligible recipient remains. Rejected Orders and free Order
+follow-ups do not consume it. Select the latest-scheduled friendly pending
+normal activation, excluding the currently active stack, and move that existing
+activation into the next friendly slot after the current activation ends.
+Preserve enemy ordering and earned immediate extras. Never grant another
+activation or refund the Hero Action. Track normal completion independently
+from extra-activation resets of ordinary moved flags.
+
+
+### Coronius — current offensive starting spell
+
+Provisionally, replace Coronius's retired Slayer default inscription and
+specialty with existing Light Holy Wrath for fresh default heroes under an
+explicit captured opt-in. Apply the ordinary damage-specialty15% increase only
+to its Spell Power-derived term, retaining fixed40 damage and the existing
+Undead/Inferno multiplier. This preserves an offensive monster-hunter identity
+within Rampart's preferred schools without inventing a Masterful spell, hero-level
+rider or Elite/Champion multiplier. Preserve map-specified books, saved/crossover
+and legacy contexts, class, starting development, armies and biography.
+
+
+### Plaguebearer — per-tick propagation limit
+
+Provisionally, Plague's normal propagation limit means its existing one
+recipient per afflicted stack's processed tick. Plaguebearer raises that limit
+to two distinct eligible recipients, using the existing deterministic ordering.
+Capture the effective limit on the initial infection and inherit it on child
+infections. Do not alter damage, duration, number of ticks, resistance or the
+existing contagious chain, and do not retroactively change infections when
+the originating hero's perks change. Keep the normal limit configurable.
+
+
+### Havoc structural perks — additive damage and ordinary obstacle scope
+
+Provisionally, Demolitionist's50% and Meteorologist's25% structural modifiers
+add within one category, with one final floor and the existing structural cap.
+Apply Meteorologist only to Meteor Shower and Demolitionist only when the
+existing Havoc structural mechanic can affect a target. Do not expand impact
+areas or apply these bonuses to creatures or Earthquake. Cataclysm increases
+only Armageddon's Spell Power component by20%; structural damage inherits that
+component once, leaving fixed damage unchanged.
+
+Preserve ordinary USUAL physical obstacle destruction and reserve ABSOLUTE
+scenic landmarks; their fixed placement is not authored destructible HP.
+Cataclysm also removes SPELL_CREATED obstacles whose creation spell is ordinary
+common combat magic, excluding special spells and creature abilities. Include
+hidden ordinary traps and both sides' eligible obstacles without detonating
+them. Preserve moats, including Tower's ability-created mines even when they
+share a trigger spell with ordinary Land Mine. Fortifications remain their
+existing separate HP domain. AI uses the shared damage getter and branch-visible
+obstacles, never hidden live-state inspection for extra cleanup rewards.
+
+
+### Mercenary Captain and Loyal Mercenaries — original recruitment cohorts
+
+Provisionally, accepted paid or free neutral joins record their original
+recruiting hero and first three combats under that hero, regardless of whether
+Captain is selected yet. Consume one combat at accepted entry, including losses
+or retreat; time in another army pauses rather than resets this allowance.
+Use whole-resulting-stack nonstacking provenance, copying on split and merging
+a bounded union by original recruiter without rejecting otherwise legal merges.
+Only positive actually admitted joins qualify; refusal and zero admission do not.
+Loyal Mercenaries removes only the faction-mixing penalty contribution for the
+qualifying cohort under its original hero. Undead penalties and Morale immunity
+remain; excluded cohorts do not fabricate a positive faction-unity bonus.
+
+
+### Rapid Response — earned extra-activation precedence
+
+Provisionally, finish any immediately earned extra-activation chain before
+Rapid Response reorders a waiting friendly stack. At the completed enemy
+activation boundary, schedule the latest eligible waiting friendly stack from
+the current-round initiative queue to take its existing delayed activation next
+after those extras. Do not interrupt, discard or duplicate earned activations.
+Wait and same-activation continuations are not completed boundaries. Consume
+the once-per-round opportunity only when an eligible existing delayed activation
+is actually scheduled; revalidate a deferred recipient before executing it.
+This is a moved activation, not a new activation or an Initiative stat bonus.
+
+### Heroic Spirit — useful retaliation lifetime after Morale
+
+Provisionally, a genuine positive Morale trigger grants one additional available
+retaliation without stacking repeated grants. It survives the immediately granted
+Morale extra activation and expires when the stack's following genuine Creature
+Activation begins. Same-activation continuations are not that following activation;
+normal or independently granted extra activations are. Do not grant the retaliation
+when a purported Morale activation was not actually earned. Preserve ordinary
+retaliation consumption, round reset and incapacity restrictions. This explicit
+exception avoids erasing the perk at the start of the very Morale activation
+that generated it; review the lifetime and round-boundary behavior in Phase2.
+
 ### Inteus and Halon — remaining removed starting inscriptions
 
 Provisionally, Inteus replaces removed Bloodlust with existing Crusade! for
@@ -122,69 +359,6 @@ the fourth use silently. Review this provisional clarification after focused
 Basic/Advanced/Expert and saved-state controls. Halon's removed Stone Skin start
 is a separate unimplemented replacement decision, not addressed by this repair.
 
-### War Machines — selected shots, overflow geometry and repair scope
-
-Precision Bombardment provisionally locks a Catapult's explicitly selected legal
-wall/gate/tower part. Basic War Machines retains its existing manual control;
-the perk's distinct benefit is that an accuracy miss causes no damage instead
-of redirecting to another part. Preserve accuracy, damage-quality and Siege
-rolls; it grants no guaranteed hit. Stop later shots once the selected part is
-destroyed rather than silently choosing another target. Ordinary unselected and
-captured legacy behavior remains unchanged.
-
-Breachmaker uses this explicit outer-line neighbor order:
-bottom tower — bottom wall — below gate — gate — over gate — upper wall — upper
-tower. The central keep is not an outer neighbor. Only destruction of a wall or
-gate by an actual controlled hero Catapult strike qualifies. Use applied final
-structural damage exceeding its positive pre-hit HP; carry floor(excess/2) once
-to the surviving destructible adjacent part with lowest positive current HP,
-breaking ties by fixed fortification order. No further overflow or repeated
-Siege scaling occurs. Primary tower hits, spells, creature abilities, zero
-excess and non-Catapult damage do not trigger it. Destroying the chosen neighbor
-tower also removes its real defensive shooter through ordinary authority.
-
-Field Workshop repairs existing surviving damaged allied war machines and
-friendly defended-town structures, including towers, using full ordinary
-Siege-scaled Tent output capped by missing HP. It does not rebuild destroyed
-structures or restore fallen war machines. Resolve structural tower targeting
-before treating its hex as an ordinary creature-healing target. Preserve normal
-troop healing and reduced-output extra-activation rules; casualty restoration
-and affliction cleansing do not apply to repairs. Actual HP state, manual/AI
-structure-only eligibility, previews and wall-sprite refresh must be delivered,
-not merely target labels. These choices are provisional; focused implementation
-and native evidence must precede canonical integration.
-
-### Recruitment training — provisional stack-level interpretation
-
-Drill Sergeant, Field Instructor and Reinforcement Drill operate on the whole
-resulting strategic stack after a positive direct recruitment into the hero's
-army, including recruitment into an existing matching stack. No per-creature
-cohort accounting or additive duplicate training bonuses is introduced.
-Same-hero splits and merges preserve training receipts; merging combines
-eligibility/trained flags without multiplying bonuses. Drill Sergeant retains
-the later pending deadline when two eligible stacks merge. Slot reordering is
-not a transfer. Actual army-boundary transfers permanently remove Field
-Instructor and Reinforcement Drill eligibility/benefits from the moved portion;
-Drill Sergeant follows the troops because its wording does not require continued
-residence with the recruiter. Internal temporary detachment is not a boundary.
-
-Drill Sergeant gives +1 Morale in the first actual combat during recruitment
-day through day+6 inclusive, consuming eligibility even if immunity or a cap
-prevents a benefit. Field Instructor gives surviving original strategic troops
-+1 Creature Attack only after completing their first combat under the recruiter,
-including a retained retreat/surrender army, and only while continuously in that
-hero's army. Reinforcement Drill includes Champions: at accepted battle entry,
-the lowest original army slot among eligible newly recruited stacks consumes
-the hero's one weekly use and receives +2 flat Initiative in round1 only.
-Recruitment may arm a resulting stack again, but never stack the same bonus.
-
-Both paid recruitment and genuine free external-dwelling recruitment qualify;
-creature transfers, rewards, resurrection, Diplomacy joins, Necromancy, summons
-and merely increasing a dwelling pool do not. Existing category, Leadership,
-payment and pool validation remain unchanged. Required pending/trained creature
-feedback, typed receipts, save guards and shared combat/AI stat consumption
-must be implemented and focused evidence accepted before canonical integration.
-These choices are provisional under the user's explicit judgment policy.
 
 ### Merist and Labetha — provisional defensive specialty replacements
 
@@ -201,6 +375,38 @@ workbook's undefined Masterful variants. Independent review and focused live/
 detached/default/map/legacy/save evidence must precede canonical integration.
 
 ## Integrated history
+
+### Training, War Machines and Spellcraft/Divine clarifications — 2026-10-09 (integrated)
+
+The exact eleven-perk principal128/128 and adjacent15/15 gates pass.
+The Training and War Machines provisional contracts move into their canonical
+perk pools. Spellcraft's prospective target count, accepted-cast duration receipt
+and disjoint captured-school history, plus Divine Discipline's recipient carry,
+are stated explicitly without changing the settled automatic Crown and Altar
+pair rule. Other hero/capacity amendments remain pending.
+
+Training79803 passes its actual entry/round1/expiry regression1/1 and
+setup92086 passes29/29 after the narrow typed-marker initialization repair.
+These subfilters are evidence for the repair, not acceptance of the full batch.
+
+Fresh v5 principal83705 completed128 cases:127 passed and1 failed in43.876s.
+The remaining failure exposed an authoritative duplicate-Order guard mismatch:
+the shared callback allowed next-round carried reissue, but StartAction rejected
+it. The reviewed correction retains same-round rejection and replaces only
+prior-round carried state. V6 linked9350 and privacy80564 pass; principal36894
+passes128/128 in43.678s and adjacent13551 passes15/15 in6.823s, with zero
+failures/errors/skips and exact binary/resource/isolated-child proof.
+
+Other bounded repairs preserve actual mechanics: typed Training markers export
+once through canonical localInit; empty valid tiles use ordinary terrain
+battlefield fallback; replay uses its actual original location; combat Attack
+includes the existing native-terrain bonus; detached forecasts use real-player
+callbacks; and Healer/Guardian use separate legal Basic-tier controls. Extend
+Spell now classifies the same legacy timed-effect fallback as the spell decoder.
+None loosens rank selection, receipts, immunity, caps or save admission.
+
+The focused accepted coverage delta is eleven perks,282 to293 of310. This
+does not establish rendered acceptance or a new selected playable delivery.
 
 ### Contacts, Phoenix Spark, Arcane Memory and Aenain — 2026-10-09 (integrated)
 

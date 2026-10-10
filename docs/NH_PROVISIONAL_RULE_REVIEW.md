@@ -1,5 +1,130 @@
 # New Horizons provisional rule review
 
+## Conditional displacement passives without an invented attacker
+
+The authored Unyielding and Deep Bulwark rules are deterministic immunity to
+physical forced displacement, but no normal Version1.0 physical push producer
+is authored. A genuine generic server consumer can implement their conditional
+semantics without changing creatures, Orders or magical Implosion. Pending
+Changes records explicit cause taxonomy and the narrowly amended coverage gate:
+real accepted/rejected movement with unchanged protected state and compatibility
+proof, not an inert status. Review future physical producers and normal-game
+presentation separately; no standard trigger or rendered acceptance is claimed.
+Implementation and native evidence remain pending.
+
+## Six specialty successors and two Navigation specialists
+
+Pending Changes records functional existing-spell successors for Ash, Darkstorn,
+Astral, Septienna, Melodia and Daremyth, with canonical damage15%/non-damage20%
+component-only scaling. These intentionally change roles rather than pretending
+retired spells still work; review Astral's friendly illusion instead of control,
+Septienna's delayed contagion and shared supportive specialties during Phase2/3.
+Real initial Hex/Plague snapshots and fractional Phantom computation require
+producer changes, not only description/bonus markers. Sylvia/Voy need both a
+Logistics parent and working core-effect specialty; Navigation's perk remains
+unchanged. Exact prototype gates, map/legacy boundaries, real numerical casts/
+movement and AI/save evidence are pending. Workbook-only riders remain excluded.
+For Sylvia/Voy, fresh current PRESET heroes retain authored ranks/perks/books but
+receive the opted-in exact specialty conversion independently of development;
+an absent Logistics parent makes it inert. This matches other specialty families
+without retroactively converting saved/crossover heroes. Review map authors'
+expectations and verify both boundaries in focused controls before acceptance.
+
+## Remaining Command, Diplomacy and Luck triggers
+
+Crisis Command resolves after the whole accepted action so a multi-hit strike
+cannot be interrupted halfway; its immediately usable defending-hero Order is
+still required. Review simultaneous destroyed stacks, battle-ending damage and
+earned-extra precedence. Legendary Reputation consumes on positive admission,
+not merely an offer, preserving a monthly benefit when no troops joined; review
+authored free exceptions and treasury/capacity changes during transfer.
+Opportunist extends only the actor's own current attack activation, never a
+reaction, avoiding unintended extra activations. Review multiple lucky hits,
+ranged movement and remaining-Movement accounting. Pending Changes records
+these provisional contracts; implementation and principal evidence are pending.
+
+## Nonspecialist default inscriptions — twenty-two explicit successors
+
+The audited current roster filters thirty-one retired default inscriptions;
+separate Coronius, Inteus/Halon and six spell-specialty conversions leave these
+twenty-two nonspecialist books. Pending Changes records the exact per-hero table,
+chosen from existing preferred-School spells instead of global aliases or new
+spell mechanics. This addresses empty default books without adopting unauthored
+workbook army quantities, masteries or unique riders. Explicit map books and
+captured legacy rules retain their existing behavior. Review Ayden's shift away
+from scouting, Malekith's vitality trade and hero differentiation in Phase2/3.
+Implementation, table-driven initialization, representative real casts, raw/
+world/map/lobby guards and AI availability evidence remain pending.
+
+## Seize Initiative — no implicit repeat for the active stack
+
+Current detailed perk, Morale and initiative UI wording describe moving an
+existing normal activation, not generating an extra. Excluding the current
+stack prevents its unfinished activation from becoming an accidental repeat.
+The first accepted Hero-paid Order is the once-combat trigger, even if the
+eligible set is empty; delaying consumption would change the authored first-time
+rule. Pending Changes records slot, enemy-order and immediate-extra precedence.
+Private implementation and focused evidence are pending; review full extra,
+control and forfeiture matrices in Phase2.
+
+## Coronius — offensive successor without workbook-only riders
+
+Holy Wrath is an existing Light offensive spell, matching Rampart's authored
+preferred Nature/Light schools more closely than an unrelated friendly HP buff
+would preserve Slayer's monster-hunter role. Use the established damage-specialty
+15% SP-term rule, not non-damage20% scaling. Pending Changes explicitly records
+the changed target identity and fresh-default opt-in boundaries. The workbook's
+Masterful, tier and hero-level riders are not activated by this decision.
+Implementation and focused default/paid/detached/old-format evidence are pending;
+review broader targeting and differentiation during Phase2/3.
+
+## Plaguebearer — preserve the existing contagious baseline
+
+The producer currently selects one adjacent uninfected recipient each tick;
+its spreadAttempts bookkeeping does not enforce a lifetime or chain-depth cap.
+Interpret the authored normal limit as that existing per-tick single recipient,
+with Plaguebearer permitting two. Introducing a new finite chain cap or extending
+duration would change settled Plague instead of implementing the missing perk.
+Pending Changes records captured inheritance and unchanged damage/duration.
+Implementation and focused evidence are pending; review wider contagion and
+Spellcraft-duration combinations in Phase2, not as a blocker to coverage.
+
+## Havoc remaining perks — existing structural domain, no invented obstacle HP
+
+Demolitionist and Meteorologist add same-category structural modifiers with
+one rounding step; Cataclysm scales only the SP term once. Reuse the accepted
+structural producer rather than inventing HP for binary scenery. Reserve fixed
+ABSOLUTE landmarks provisionally, not as a claimed authored classification.
+Ordinary magical cleanup is classified by creation spell, not obstacle trigger:
+Tower's ability-created moat mines must survive despite sharing a mine trigger
+with ordinary Land Mine. Pending Changes records these interpretations. Private
+implementation, actual structural arithmetic and cleanup controls are pending;
+review scenery classification and wider structural/perk combinations in Phase2.
+
+## Diplomacy recruitment cohorts — bounded whole-stack provenance
+
+Mercenary Captain tracks three accepted combat entries under the original
+recruiter, pausing outside that army without granting a fresh allowance on
+return or later perk acquisition. A bounded union preserves different origins
+through legal merges, using the existing whole-stack Training convention rather
+than inventing fractional creatures. Loyal Mercenaries removes faction-mixing
+penalties only; it neither erases undead penalties nor fabricates unity bonuses.
+Pending Changes records this interpretation; private implementation and focused
+transfer/merge/save/entry evidence are pending. Revisit whole-stack amplification,
+late acquisition and multi-origin mixed-army valuation during Phase2/3.
+
+## Rapid Response and Heroic Spirit — activation ordering
+
+Rapid Response defers until earned immediate extras finish, preserving their
+action economy without an interruption/resumption subsystem. It then moves one
+existing delayed activation, with no use consumed for an invalid recipient.
+Heroic Spirit's additional retaliation survives the granting Morale extra and
+ends when the following genuine activation begins; otherwise the immediate
+Morale activation could erase it before it has a meaningful opportunity to work.
+Pending Changes records these provisional choices. Production and focused
+evidence are pending. Review extra chains, hostile control, forfeiture and round
+reset composition during Phase2 rather than stalling missing implementation.
+
 ## Inteus and Halon — remaining default inscription gaps
 
 Inteus uses Crusade! as the existing general offensive-enchantment successor,
@@ -97,7 +222,11 @@ authorization to add missing Tome content or alter existing unlock prices.
 
 ## Recruitment training — whole resulting stacks
 
-Status: authored provisional contract; production producers are still missing.
+Status: production producers and typed receipts are integrated; focused v6
+principal128/128 and adjacent15/15 pass with zero failures/errors/skips.
+Training79803 passes1/1 and setup92086 passes29/29. Fresh v5 completes127/128;
+its unrelated next-round carried-Order rejection is repaired for the v6 gate.
+Accepted perk coverage increases with the full gate; playable acceptance remains separate.
 
 Use whole-stack training after genuine direct recruitment, not mixed individual
 cohorts. This matches existing stack-level Attack/Morale/Initiative and avoids
@@ -114,7 +243,14 @@ ordinary retained retreat/surrender results. Reinforcement Drill picks the
 lowest eligible original slot at simultaneous accepted battle entry, includes
 Champions, spends once per absolute week, and uses flat round1 Initiative.
 Paid and genuinely free external recruitment qualify; generic addToSlot does
-not establish recruitment provenance. Pending Changes contains the amendment.
+not establish recruitment provenance. After the required full gate, canonical
+perk wording receives this amendment; second-look interactions remain here.
+
+The initialization repair re-stages only exact typed Training markers before
+canonical export so the accepted bonus is installed once, preserving descriptor
+identity, duration, setup preview and serialized replay. Actual combat starts
+once; round1 grants and subsequent expiry remain asserted. Strategic Attack
+controls distinguish the existing native-terrain battle bonus from training.
 
 Review aggregate-stack benefit from a small recruited addition, split/merge
 training propagation, transfer/return permanence, seven-day endpoint, simultaneous

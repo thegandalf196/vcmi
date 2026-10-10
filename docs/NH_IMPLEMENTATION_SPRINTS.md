@@ -11,7 +11,11 @@ amendments, registry identity/descriptions and module match; static29 and NHART
 registration, footprint, declarations, school gates and visitable placement were
 corrected without relaxing production rules or assertions. Final-resource30700
 passes42/42 in13.962s with exact pair/resource parity and cleanup. Commit/push
-follow; playable delivery remains source58af. The next
+are complete as source95f4ec089, normally pushed and remote-confirmed. Packed
+staging and metadata relink pass; ordinary Linux selects snapshotc44f2d301 after
+its isolated silent20s day4 smoke, exact child/drivers/cleanup proof and launcher
+verify-only gate. Existing624 schema diagnostics match the prior accepted smoke.
+No new rendered/Windows acceptance is claimed. The next
 eleven-perk union plus hero/capacity changes is reviewed privately, not accepted.
 Iron Will and Reactive Weave use recorded provisional rules rather than waiting
 on unanswered historical questions. Broad interactions remain Phase2.
