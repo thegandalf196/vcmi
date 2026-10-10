@@ -1,5 +1,33 @@
 # User-priority queue
 
+## Public foreword and personal privacy — 2026-10-10
+
+Download the user's supplied Google Docs Foreword and use its complete authored
+text as the GitHub front page in a root README, replacing the upstream-facing
+front page without deleting useful engine documentation or license attribution.
+The intact downloaded DOCX is retained locally, not committed. Preserve wording,
+paragraph order and headings; add only clearly separate required distribution
+and license links. No unpublished download is presented as an available release.
+User identity in public content must use only `gandalf196` or `thegandalf196`.
+Inspect identifying names, personal paths and metadata without publishing raw
+findings or sensitive fixtures. Preserve legitimate third-party attribution.
+Keep private recovery material private; distinguish current-public-content
+cleanup from historical GitHub views, artifacts and external copies.
+The intact Foreword download verifies, and the new root README preserves all88
+nonempty body paragraphs and15 headings in order, with a separate license/source
+note. Current tracked text and reachable published-main identity/message metadata
+have no matches for the previously exposed personal identifier. All386 current
+Actions artifact metadata entries have no such matches; their payloads and logs
+are not newly certified. The previously exposed old GitHub file view remains a
+Support/cache follow-up, not proof of complete removal. Raw evidence is private.
+The alias-only rule now also lives in AGENTS.md for future agents/publication.
+Independent review verifies exact Foreword parity, valid license/source links,
+the bounded privacy findings and terminal Windows cancellation. The inherited
+GitHub About description and VCMI homepage are replaced by a New Horizons
+description with explicit engine credit and no unrelated homepage. The GitHub
+contributors list remains a reflection of preserved contributor history; do not
+strip legitimate attribution or rewrite history to change that display.
+
 ## Repository identity and main consolidation — 2026-10-10
 
 The user renamed the repository to `thegandalf196/new-horizons` and requests
@@ -15,7 +43,12 @@ Update the local remote, scoped New Horizons workflow gates and package-source
 URLs; preserve upstream VCMI attribution, dependencies and unrelated resources.
 Recheck live refs before deletion, change GitHub's default to main, and remove
 only the inventoried old branches. No history rewrite or public backup refs.
-The Frozen candidate/preparation is preserved unlaunched during maintenance.
+Migration is verified: main is the only remote/local development branch and
+GitHub's default, published b353b41fc. All four inventoried old public branches
+are removed with exact expected-object leases; the verified private recovery
+material and original worktree files remain intact. Fetch and push URLs both
+use the renamed repository. The Frozen candidate/preparation stays unlaunched
+during maintenance.
 The existing Windows run is pinned to the pre-migration source; do not claim
 it matches the forthcoming release source or silently repack it as current.
 
@@ -37,6 +70,11 @@ workflow and its guard-only test are now removed. New Horizons Windows/Linux
 build and packaging workflows remain intact; no external dispatch occurs.
 The existing Windows artifact is older than the intended release source and
 cannot be relabeled; a fresh full build and package audit remain required.
+The pre-migration Windows run38073196449 is source-pinned to2ea5acfd9.
+After repository/branch migration and the new foreword request, it is confirmed
+terminal with conclusion cancelled, avoiding an obsolete release revision.
+Start a replacement build on main only after the release source freezes; no
+old package is relabeled or claimed as the forthcoming release.
 
 ## Persistent Frozen blue tint and latest candidate — 2026-10-10
 
