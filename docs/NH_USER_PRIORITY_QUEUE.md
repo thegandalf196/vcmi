@@ -2,6 +2,44 @@
 
 ## Current Phase1 continuation — independent feature lanes
 
+Snapshot staging now mirrors the existing CMake exclusion for the exact selected
+packed Guild supporting configuration, after full pack/manifest verification.
+Independent review clears the narrow change; all29 snapshot-helper cases pass,
+including three synthetic packed/undeclared/corrupt-config boundaries. NHART
+bytes and all other loose-art rejection remain unchanged. Actual no-promote
+freeze then rejects twelve missing attribution/provenance notices in the linked
+development resource tree. A normal private CMake install supplies all twelve,
+byte-identical to current sources, and passes the maintained art-install check.
+No-promote freeze now succeeds with those installed resources and the accepted
+post-commit client/library pair; NHART is unchanged. Guarded silent startup of
+that immutable candidate is delegated. No launcher promotion has occurred;
+actual warning-clearance remains pending.
+
+The actual frozen-candidate startup loads content without the reported schema,
+generated Mage/Gargoyle portrait or Ice Elemental shoot-sound errors. Its matched
+child environment is verified isolated and silent. Two definition warnings still
+remain: redundant local namespace on Master Chain Lightning, and unspecified
+Shield of Chaos positiveness defaulting to neutral. Minimal definition repairs
+are delegated; do not suppress logs or promote this candidate. The disposable
+profile opens a1x1 window with empty resolution settings, so no rendered portrait
+acceptance is claimed. Stop/clean that probe; use a reviewed explicit disposable
+resolution fixture for the next changed candidate, never the host profile.
+
+Both remaining spell-definition warnings now have independently reviewed,
+behavior-preserving source repairs: Shield of Chaos explicitly declares the
+existing neutral behavior, and Master Chain Lightning's elemental tag merges
+under its local content key with unchanged final identity/effects. Six focused
+data tests and the maintained module-generation check pass. A fresh normal
+install and changed no-promote snapshot are prepared; the second isolated probe
+uses an explicit disposable resolution. Its actual matched child renders the
+1280x800 main menu and reports zero startup WARN/ERROR entries, including none
+of the previously reported diagnostics. BattleMode selectors and right-click
+popups render Mage, Stone Gargoyle and Obsidian Gargoyle at native resolution.
+Ordinary Quit exits0; owned display/process cleanup, profile-lock release and
+complete snapshot hash parity pass. No battle is started. Ordinary launcher
+promotion remains separate and unchanged; source startup-warning repair passes
+its actual isolated candidate gate without changing package bytes or gameplay.
+
 User requires the next playable build to stop emitting the reported startup
 schema/resource warnings. Treat those exact messages as a delivery gate: run
 the matching packaged client/resources through guarded silent startup, inspect
