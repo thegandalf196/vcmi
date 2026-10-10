@@ -1,5 +1,20 @@
 # New Horizons provisional rule review
 
+## Nearest-only Town Portal — focused native validation accepted
+
+The canonical nearest-controlled-town rule now has reviewed source in the shared
+TownRelated resolver, TownPortalEffect and Nullkiller2 path nodes. Controlled is
+provisionally caster-owned rather than allied; legacy allied selection remains
+unchanged. Preserve the established squared planar distance and first-entry tie
+order. An occupied nearest town blocks the cast rather than selecting a farther
+town. The existing positive Movement admission minimum remains; successful casts
+still consume all remaining Movement. Revisit allied/cross-layer interpretation
+and low-Movement admission in Phase2. Twelve query/rank and two existing AI
+controls pass14/14 on the exact linked candidate, with isolated-child proof.
+
+The existing spell-description path supplies localized nearest-only/no-choice
+wording; source verification is not rendered tooltip acceptance.
+
 ## Conditional displacement passives without an invented attacker
 
 The authored Unyielding and Deep Bulwark rules are deterministic immunity to

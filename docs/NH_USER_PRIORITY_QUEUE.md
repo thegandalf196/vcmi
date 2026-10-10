@@ -1,5 +1,113 @@
 # User-priority queue
 
+## Current Phase1 continuation — independent feature lanes
+
+Accepted checkpoint: both-target58848 and privacy99801 pass. Native retry95141
+passes58/58 in20.911s; adjacent89325 passes15/15 in6.866s. Independent Town
+Portal62745 passes14/14 in5.281s. All three XMLs have zero failures/errors/
+skips/disabled, with exact resource/binary parity, actual isolated child drivers
+and cleanup. Root independently verifies totals and pair. Iron Will/Reactive
+Weave increase accepted perks293→295/310 (generic206/220, faction89/90),15
+remain. Hero successors and Town Portal do not add perks. Source commit and
+normal push follow the focused gates; ordinary launcher/NHART remain unchanged.
+Next integration is seven reviewed perks plus38 reviewed hero profiles, with
+the Plague prerequisite fixture repair; feature-only source review is not
+native or delivery credit. Mana/Glyphs and activation unions have independent
+review lanes; Lighthouse's strict parser/capture omission is being repaired.
+Water Walk and typed Fly/Dimension Door barrier implementation remain private.
+
+Independent Town Portal62745 passes14/14 in5.281s, zero failures/errors/skips,
+with exact pair/resource parity and actual isolated-child proof. Source review
+traces the other58 gate's three failures to fixture setup: nonadjacent melee
+without movement, faster Imp activation before the casting hero's turn, and a
+mutable malformed-reader probe inserting a null key into unrelated JSON.
+The tester owns a narrow private repair retaining all original outcomes and
+the precise inactive-state rejection assertion. No production relaxation or
+coverage credit is inferred; adjacent15 and the58 retry await repaired linkage.
+
+Build72857 completes both targets; binary privacy79665 and module parity pass.
+The exact isolated principal run discovers58 and completes55/58 in20.970s,
+with three assertion failures and no crash. Preserve its failed evidence:
+Inferno Holy Wrath cast admission, spent Charge melee admission and inactive
+Reactive Weave reader diagnostic. Bounded fixture/production diagnosis is
+assigned; adjacent15 remains stopped. Independently scoped Town Portal14 is
+authorized on the same frozen pair rather than blocking its verification on
+unrelated assertion failures. Accepted counts remain293/310.
+
+The reviewed Town Portal fixture-only const-pointer conversion is imported;
+its tie and reversed-order assertions are unchanged. Incremental ten-job
+build72857 resumes the same reusable build directory. Native58 and Town Portal14
+still await terminal linkage and exact binary/privacy handshake. The next-seven
+private perk union (51 authored cases) has an actual independent review
+assignment, while Water Walk landing safety, Lighthouse departure and Glyphs
+aura implementation proceed privately without changing this frozen candidate.
+
+Reviewed composite v3 is imported with its exact result manifest verified.
+Town Portal nearest-only source and AI changes are also imported and the module
+regenerated. Static perk17, Order badge and module checks pass. Build81371 fails
+at the Iron Will header/query boundary; a reviewed two-header correction is
+imported and ten-job retry26606 is live. The corrected Iron Will object compiles.
+Principal58 and separate Town Portal14 await complete linkage, binary privacy
+and actual isolated-child proof. No coverage increment, commit or launcher
+promotion is claimed while that gate remains incomplete.
+
+Retry26606 later terminates at the new Town Portal translation's incomplete
+GeneralTextHandler type. Diagnostic58373 confirms that precise compiler error;
+the concrete header is added and retry21726 is live. No native test is launched
+against partially linked bytes. Both new native filters retain fresh private
+output names and wait for the exact-pair/privacy handshake.
+
+Build21726 links the engine library and is progressing through client/test
+compilation. Correct invocation of the focused hero/biography/perk data gate
+with its existing tools/tests import root passes34/34; the earlier missing
+Python import-root invocation is not an implementation failure. All38 audited
+hero-profile additions now have independent source review; their234 authored
+cases remain unrun and an additive current-tree reconciliation is assigned.
+Mana artifact v2 is frozen for review; its owner has a new private Glyphs aura
+implementation assignment. No candidate changes the frozen live build inputs.
+
+Build21726 terminates at603/770 with a Town Portal tie-order fixture pointer-
+container mismatch. Its tester owns the narrow private const-pointer fix;
+no runtime tests run on partial linkage. Source inputs and all assertions are
+preserved. The complete17-perk ledger is reconciled, including the existing
+Plaguebearer v3 candidate (12 authored cases, not its earlier ten-case version).
+Private additive composition is actually assigned; no missing item is silently
+dropped from the remaining coverage count.
+
+The next58 private composite receives independent review before import. Review
+found a lost saving-only Coronius preflight guard; its owner is repairing and
+re-freezing the private artifact, without editing the live tree. Accepted counts
+remain293/310 and the ordinary launcher stays unchanged.
+
+Six canonical non-perk omissions are now tracked in the functional matrix:
+Lighthouse departure effects, Glyphs radius Morale, converted Mana artifacts,
+nearest-only Town Portal, Water Walk legal land ending, and protected Fly/Dimension
+Door barriers. Town Portal, Lighthouse and Mana artifacts have actual independent
+private worker assignments; no implementation credit is inferred. Hero authoring
+continues with Inferno after frozen Fortress/Castle/Rampart/Tower candidates.
+Preserve unpublished artwork and do not stage the unrelated untracked exports.
+
+## Next Phase1 batch — Iron Will, Reactive Weave and spell-start successors
+
+The eleven-perk source batch is committed and normally pushed as2f43fd1bf;
+the remote branch tip is independently confirmed. Accepted perks are293/310,
+with17 remaining. The ordinary launcher is still on its previous verified
+snapshot; no new rendered or Windows acceptance is inferred from source push.
+
+The next private additive union combines Iron Will/Reactive Weave with the
+Inteus/Halon and Coronius starting-spell replacements, preserving the recent
+Training, Extend, battlefield and carried-Order fixes. Its focused authored
+filter is58 cases; actual discovery and execution await linked candidate bytes.
+The tester identifies and the owner repairs a nonexistent serializer API before
+integration. Root registration, four feature epochs, unique packet304 and old
+opt-out fixture isolation are included, not deferred to an undocumented step.
+Independent review and one ten-job incremental build precede native acceptance.
+
+Private hero authoring has progressed through Fortress4, Castle4 and Rampart5,
+with no accepted profile credit yet. Existing map-authored/saved/legacy choices,
+classes, armies, biographies and books remain protected. Other missing profile
+families proceed independently; no whole-workbook mechanical activation occurs.
+
 ## Agent concurrency configuration — 2026-10-09
 
 The user explicitly raises authorization to ten concurrent spawned workers,
