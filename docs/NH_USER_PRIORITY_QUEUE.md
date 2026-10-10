@@ -2,6 +2,85 @@
 
 ## Current Phase1 continuation — independent feature lanes
 
+Accepted checkpoint: linked20964/privacy81257 pass. Principal62163 passes53/53
+in20.778s; Frozen server6991 passes4/4 in2.817s, zero failures/errors/skips/
+disabled. Root verifies XML totals, exact pair/resource receipt and registry302.
+Data34/module/instruction/whitespace checks pass. Seven perks raise295→302/310
+(generic212/220, faction90/90); eight generic remain. The38 hero profiles retain
+their independent234-case pass. This coherent source batch is ready for normal
+commit/push; user-owned untracked artwork/tools are excluded and ordinary
+launcher/NHART remain unchanged. Next: reviewed final-eight124, Books/Six/Nav90,
+five non-perk gaps69 and the fresh-default Pasis/Monere successor candidate.
+
+Hidden marker registration passes actual metadata retry23558:2/2 in1.063s,
+zero failures/errors/skips/disabled. The independently reviewed seven-file
+post-damage repair is imported, retaining battle-membership validation and all
+original outcomes, plus one Frozen multi-target parity control. Incremental84303
+builds the repaired source. The combined principal gate is53 cases; it awaits
+complete linkage, binary privacy and exact runner handoff. Accepted perks remain
+295/310 and the separate234-profile acceptance remains valid on its earlier pair.
+
+Numeric repair links in59590 and binary privacy21055 passes. Two bounded
+diagnostics19737 fail on the missing exported marker type: actual type is empty
+while source and spell identity are correct. The raw-rule strictness and
+captured numeric getter controls pass. Hidden COMBAT_EVENT_TRIGGER metadata is
+registered; detached post-damage stable-ID repair has a private review-ready
+candidate. Full repaired gate will contain53 cases after the two added regression
+controls, not51 or52. No full retry or new perk acceptance is claimed yet.
+
+Hero-profile discovery234 matches exactly. Its120-second bounded principal
+times out without assertion failures or a completed XML; preserved partial
+evidence is not acceptance. Two disjoint exact117-name partitions then pass:
+18925 in67.290s and33813 in66.493s, zero failures/errors/skips/disabled. Root
+verifies both XML totals and unchanged linked hashes. This establishes focused
+38-profile source/native evidence, not new biographies/armies or playable
+delivery. Seven-perk acceptance remains blocked by its failed51 gate. Production
+diagnosis confirms Lua numeric-marker typing and stale post-damage pointers in
+detached Frozen cleanup; narrow private repairs are assigned without weakening
+configuration types, damage outcomes or battle-membership validation.
+
+Bounded exit-gap audit identifies a fresh-default Pasis/Monere specialty omission:
+ordinary Conflux recruitment replaces Psychic/Magic Elementals with Wisps, but
+these heroes still select the removed ordinary line. Preserve accepted legacy
+Psychic specialty behavior for explicit map/saved heroes. A provisional private
+fresh-DEFAULT Wisp-line successor is assigned after the current adventure union,
+using existing specialty coefficients and no new rider; canonical amendments
+and captured target/save tests are required. Workbook starting armies remain
+TBD, not invented missing numerical rules.
+
+Actual51 discovery matches the expected names. Principal73131 completes36/51
+in20.579s with15 failures and no crash. Preserve its private log/XML: four
+Precise detached projections, one Hold the Line admission, one Havoc detached
+projection, and nine Plague marker/reader failures. Bounded independent diagnosis
+is assigned; no unchanged retry or coverage credit. Independent234 discovery
+matches exactly and principal72997 runs on the same frozen pair, with actual
+child isolation verified. No live production changes occur during that run.
+
+Incremental35274 links both targets successfully; binary privacy95269 passes
+with no findings. Data34 passes in0.876s and module/instruction/whitespace checks
+pass. The maintained tester receives the exact linked test/library hashes and
+explicit isolated runner-refresh authorization for actual discovery51 and234,
+then their separate principal gates. No new acceptance is inferred before those
+results; ordinary launcher and NHART remain unchanged.
+
+Retry36245 terminates during test compilation; diagnostic32279 isolates a missing
+concrete BattleLayout header in the Plaguebearer fixture. Its one-line include
+repair preserves all12 test bodies and assertions. Incremental linkage resumes;
+51/234 native execution remains gated on complete linkage and binary privacy.
+Private final-eight composition review identifies a real Crisis/Seize ledger
+interaction; its owner is repairing suspended-activation state without changing
+the frozen live candidate. Books/Six/Navigation is independently source-reviewed,
+with90 authored tests still unrun. Accepted coverage remains295/310.
+
+Seven-perk/38-profile composite is imported after independent source review;
+all55 result hashes match. Its first build34367 terminates on a missing direct
+Plague validator declaration include in BattleInfo. The tiny direct-header
+correction is independently reviewed; the data test's explicit obsolete
+Deep Bulwark planned expectation is updated to active without dropping its rank
+or complete-ID checks. Data34 and module parity pass. Ten-job incremental retry
+is running. Separate51/234 native filters are prepared but unrun; accepted perks
+remain295/310 and ordinary launcher/NHART remain unchanged.
+
 Accepted checkpoint: both-target58848 and privacy99801 pass. Native retry95141
 passes58/58 in20.911s; adjacent89325 passes15/15 in6.866s. Independent Town
 Portal62745 passes14/14 in5.281s. All three XMLs have zero failures/errors/

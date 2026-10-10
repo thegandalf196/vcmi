@@ -831,3 +831,74 @@ Hostile Spell Lock counts; protective friendly Spell Lock does not. Time Stop's
 incapacitation and Frenzy's forced zero Defense count as explicit harmful statuses.
 Review mixed-effect classification and simultaneous Poison variants. Metadata
 must be complete before activation; an unregistered helper is not coverage.
+
+
+## All38 audited default-development replacements — private integrated provisional candidate
+
+The user authorizes the following exact fresh DEFAULT development profiles.
+Ranks1/2/3 mean Basic/Advanced/Expert. All selected perks are existing active Basic;
+no new spell, specialty rider, army, biography or class is introduced.
+
+| Hero | Generic parent and rank | Basic perk | Own faction and rank |
+| --- | --- | --- | --- |
+| core:adelaide | new-horizons:havocMagic 1 | cryomancer | new-horizons:divineMandate 2 |
+| core:aeris | new-horizons:logistics 1 | scouting | new-horizons:sylvanLuck 1 |
+| core:aine | new-horizons:estates 1 | taxCollector | new-horizons:metamagic 1 |
+| core:alamar | new-horizons:shadowMagic 1 | bloodDrinker | new-horizons:shroudOfMalassa 1 |
+| core:andra | new-horizons:wisdom 1 | intelligence | new-horizons:bulwarkOfTheMire 1 |
+| core:ash | new-horizons:chaosMagic 1 | frenziedCurse | new-horizons:demonicGating 1 |
+| core:astral | new-horizons:spellcraft 1 | concentration | new-horizons:metamagic 2 |
+| core:axsis | new-horizons:wisdom 1 | mysticism | new-horizons:demonicGating 1 |
+| core:ayden | new-horizons:wisdom 1 | intelligence | new-horizons:demonicGating 1 |
+| core:caitlin | new-horizons:wisdom 1 | intelligence | new-horizons:divineMandate 1 |
+| core:charna | new-horizons:battlecraft 1 | tactics | new-horizons:necromancy 1 |
+| core:coronius | new-horizons:spellcraft 1 | concentration | new-horizons:sylvanLuck 1 |
+| core:daremyth | new-horizons:luck 1 | secondChance | new-horizons:metamagic 1 |
+| core:deemer | new-horizons:logistics 2 | scouting | new-horizons:shroudOfMalassa 1 |
+| core:elleshar | new-horizons:wisdom 1 | intelligence | new-horizons:sylvanLuck 1 |
+| core:geon | new-horizons:learning 1 | eagleEye | new-horizons:shroudOfMalassa 1 |
+| core:ingham | new-horizons:wisdom 1 | mysticism | new-horizons:divineMandate 1 |
+| core:isra | new-horizons:learning 1 | historian | new-horizons:necromancy 2 |
+| core:jaegar | new-horizons:wisdom 1 | mysticism | new-horizons:shroudOfMalassa 1 |
+| core:jeddite | new-horizons:spellcraft 1 | concentration | new-horizons:shroudOfMalassa 2 |
+| core:malcom | new-horizons:learning 1 | eagleEye | new-horizons:sylvanLuck 1 |
+| core:mirlanda | new-horizons:shadowMagic 1 | witheringTouch | new-horizons:bulwarkOfTheMire 2 |
+| core:nagash | new-horizons:estates 1 | taxCollector | new-horizons:necromancy 1 |
+| core:nimbus | new-horizons:learning 1 | eagleEye | new-horizons:necromancy 1 |
+| core:oris | new-horizons:learning 1 | eagleEye | new-horizons:bloodrage 1 |
+| core:rosic | new-horizons:wisdom 1 | mysticism | new-horizons:bulwarkOfTheMire 1 |
+| core:sanya | new-horizons:learning 1 | eagleEye | new-horizons:divineMandate 1 |
+| core:saurug | new-horizons:estates 1 | prospector | new-horizons:bloodrage 1 |
+| core:sephinroth | new-horizons:estates 1 | prospector | new-horizons:shroudOfMalassa 1 |
+| core:septienna | new-horizons:spellcraft 1 | arcaneFocus | new-horizons:necromancy 1 |
+| core:serena | new-horizons:learning 1 | eagleEye | new-horizons:metamagic 1 |
+| core:straker | new-horizons:warcasting 1 | spellward | new-horizons:necromancy 1 |
+| core:terek | new-horizons:battlecraft 1 | tactics | new-horizons:bloodrage 1 |
+| core:thant | new-horizons:wisdom 1 | mysticism | new-horizons:necromancy 1 |
+| core:thorgrim | new-horizons:warcasting 2 | spellward | new-horizons:sylvanLuck 1 |
+| core:tiva | new-horizons:learning 1 | eagleEye | new-horizons:bulwarkOfTheMire 1 |
+| core:vidomina | new-horizons:learning 1 | scholar | new-horizons:necromancy 2 |
+| core:xyron | new-horizons:havocMagic 1 | pyromancer | new-horizons:demonicGating 1 |
+
+Preserve original8 profiles verbatim, PRESET/map-authored choices and captured
+absence/legacy/saved/reinitialization boundaries. Retain Advanced own-faction
+ranks for Mirlanda/Adelaide/Astral/Isra/Vidomina/Jeddite; retain native training
+through Thorgrim AdvancedWarcasting and Deemer AdvancedLogistics with Basicperks
+and no automatic Advancedperk. Planned Demolitionist/undefined IronDiscipline
+and workbook Masterful/class/book/raising/level-income riders are not adopted.
+The shared validated-profile initializer bypasses only legacy migration for an
+explicit profile, preventing Rosic/Andra/Caitlin Wisdom erasure; other paths remain.
+Structural rank1..3 supports retained faction ranks; genericparent remains<=Advanced.
+Root-imported newer hero flags/cloners/epoch guards and historical fixture key
+erasures are preserved; no semantic epoch is newly appended by this candidate.
+
+Private authored evidence:234 cases233map+1MirlandaFrailty, UNRUN. Existing8 and
+all family controls remain; publicqueries cover Mana/XP/learning/sight/fire/income
+and actualCrystal/GemProspector visits. Original39-gap disposition is38 profiles
+plus Voy separate Navigation candidate. Source review is separate from native
+acceptance/delivery and does not establish all144hero content coverage.
+
+Second-look priorities: retained Advanced rank balance, Isra/Vidomina generic
+knowledge differentiation, Ash controlspell availability, Oris futureMentor role,
+Deemer exploration/fire identity and resource-economy pacing. No workbook riders
+are implicitly approved; broad combat/meeting/specialty matrices remain Phase2.
