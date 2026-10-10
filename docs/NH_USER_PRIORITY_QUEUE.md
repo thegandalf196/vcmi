@@ -62,6 +62,10 @@ it matches the forthcoming release source or silently repack it as current.
 
 After the pending Phase1 exit checks and playable delivery validation finish,
 create the GitHub 0.85 release tag and publish both Windows and Linux downloads.
+The user reconfirms publication while away: finish the release without waiting
+for another chat approval, then explicitly transition to Phase2 if the complete
+Phase1 audit establishes its exit condition. Do not pause the active goal merely
+because the user is asleep or substitute registration counts for that audit.
 Both artifacts must match the reviewed release source and committed NHART,
 include required licenses/notices, and provide access to the matching source
 and build instructions. Do not relabel an older Windows artifact or publish an
@@ -81,6 +85,17 @@ After repository/branch migration and the new foreword request, it is confirmed
 terminal with conclusion cancelled, avoiding an obsolete release revision.
 Start a replacement build on main only after the release source freezes; no
 old package is relabeled or claimed as the forthcoming release.
+
+Public Linux packaging repair: the maintained player wrapper now selects the
+actual shipped new-horizons filename, with current managed-profile/NHART
+instructions rather than the obsolete Artillery preview. The historical private
+overlay tool accepts exactly one current or legacy Linux client, preserves its
+bytes and rejects ambiguous pairs; it still refuses NHART engines and is not a
+public delivery workaround. Root executes23 focused synthetic launcher/staging/
+private-preview controls, all passing, and independent review clears the changes.
+BUILDING now says all pinned submodules rather than retaining a stale count.
+Actual public candidate assembly, source/dependency correspondence and rendered
+download acceptance remain separate required release gates.
 
 ## Persistent Frozen blue tint and latest candidate — 2026-10-10
 

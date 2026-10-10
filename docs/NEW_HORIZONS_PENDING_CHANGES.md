@@ -88,8 +88,11 @@ creature identity, class or specialty is implied by this numerical pass.
 
 Record the resulting144 default dispositions and their capacity checks. Treat
 the quantities as prototypes for Phase3 balance, not a finalized economic
-recommendation. Implementation and validation remain pending; biography
-selection is governed separately by the existing only-if-better review rule.
+recommendation. Principal implementation is accepted: the actual hero9/9 gate
+covers all144 Leadership-safe original-composition armies and map/save/legacy
+boundaries; the starting-army suite4/4 also passes, including swapped-class
+primary/Leadership/first-stack controls. Biography selection is governed
+separately by the existing only-if-better review rule.
 
 ### Conditional physical-displacement immunities — explicit movement cause
 
