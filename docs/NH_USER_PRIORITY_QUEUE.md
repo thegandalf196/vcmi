@@ -2,6 +2,241 @@
 
 ## Current Phase1 continuation — independent feature lanes
 
+Final focused repair passes15/15 in10.671s, zero errors/skips/crashes/timeouts.
+Root independently opens its XML and receipt. It supersedes only Opportunist's
+v4 slice; the other288 v4 cases pass on unchanged production library/resources.
+Combined evidence covers303 distinct cases, not a single fresh303-case run.
+Coverage advances302→310/310 perks (220 generic,90 faction); all31 Skills and
+93 ranks remain implemented. Five Adventure execution gaps and bounded hero
+book/specialty/Navigation/Wisp replacements are accepted source/native paths.
+Formal Phase1 exit audit and Phase2 deferrals remain distinct from release or
+rendered acceptance. Ordinary launcher/NHART/user-owned files are unchanged.
+
+The two remaining Master Gunner fixtures had no ordinary attacker: their sole
+Ballista is excluded by `battleIsFinished`, ending combat before queue handoff.
+The independently reviewed correction adds a surviving ordinary ally, verifies
+unfinished combat and a same-round genuine next activation, and retains the
+original extra-shot rejection. Test-only rebuild88287 links; privacy3625 passes.
+Fresh testc6217ec3 with unchanged production library0856816c is assigned for
+only the15 affected Opportunist cases. The other288 v4 cases retain their exact
+passing evidence; no single fresh303-case pass is claimed. Publication awaits
+this focused terminal result and final owned-change/privacy review.
+
+Native-v4 is terminal301/303 passing, with no crashes/timeouts. Wisp14/14,
+heroes90/90, Adventure71/71 and Legendary wire2/2 pass; perks124/126 pass.
+The only failures are Master Gunner's extra-shot rejection checks after accepting
+or declining its follow-up. An independent worker is tracing actual activation
+flow versus fixture setup before proposing a repair; no assertion is weakened.
+The prior eleven failures and all three added corruption/idempotence controls
+are otherwise cleared. Publication/accepted-count advancement remains pending.
+
+All eleven v3 failures now have independently reviewed source/fixture repairs.
+The Water Walk correction uses public absence/policy APIs, not private settings
+access. Glyphs detached battles now forward the captured adventure location;
+the original morale oracle and branch-isolation checks remain. Build67799 links
+both targets successfully, privacy44015 passes with zero findings. Exact test
+3dff58e8/library0856816c is handed to the sole guarded tester for fresh v4
+303-case discovery and five bounded gates. Source/test/config stay frozen;
+ordinary launcher and NHART are unchanged. Native acceptance is still pending.
+
+Native-v3 is terminal:292/303 pass,11 fail, with no crashes or timeouts.
+Wisp14/14, heroes90/90 and Legendary wire2/2 pass; perks117/126 and
+Adventure69/71 require repairs. The exact linked pair and resources remain
+unchanged and the tester confirms cleanup. Private fixture corrections cover
+Seize descriptor/combined queue expectations, Second Wind's preparation API,
+and Opportunist's playable target hex. Independent High review is assigned.
+Water Walk's raw null-branch expectation and Glyphs of Fear's missing detached
+battle location are separate worker lanes. Accepted coverage remains302/310;
+no commit, push or playable promotion is inferred from these results.
+
+Both-target build2582 exits0 after519/519; binary privacy16296 passes with
+zero findings. Exact pair edc7ee1b/c58c8f28 is handed to the sole guarded native
+tester for fresh303-case discovery/execution (Wisp14 first, then126/90/71/2).
+Runner resources and unchanged NHART are independently matched. Source is
+frozen during execution. The bounded exit audit opens preserved XMLs for
+previous accepted categories and finds no additional unassigned principal
+feature; current303 results still remain required before acceptance/exit.
+
+The remaining Wisp PRESET expectation is independently reviewed and imported:
+explicit development keeps Psychic targeting, while the existing creation
+policy maps Basic Logistics and adds Basic Elemental Rebirth. No gameplay
+change is made for that fixture. Both-target incremental build2582 is live
+with520 affected steps, at most ten jobs. All repairs remain awaiting this
+new linked/privacy-checked pair and fresh303-case discovery/execution.
+
+Wisp native-v2 is crash-free13/14 in11.615s, including the previously crashing
+detached-AI case; the sole explicit-map skill expectation remains under policy
+diagnosis. Legendary wire2/2 passes in0.317s. Exact child/resource receipts and
+terminal XMLs are retained privately. No broader gate rerun is claimed.
+Independently reviewed Mana, Crisis/Opportunist and Adventure fixture repairs
+are now imported and reverse-patch checked. Three new controls raise authored
+inventory300 to303 (126 perks,90 heroes,71 Adventure,14 Wisp,2 wire).
+Native acceptance awaits the next linked/privacy-checked candidate.
+
+Fixture repair build41546 links client/test successfully; binary privacy87778
+passes with zero findings. Exact test64c2825e/library723789f1 is assigned for
+Wisp14 first, then Legendary2 only if crash-free, with fresh guarded outputs.
+Data36 and module parity pass after correcting a stale test's four base
+Elemental Leadership expectations to the user-specified250; runtime data is
+unchanged. Other production/Adventure repair proposals remain private during
+this frozen run. No native-v2 result or accepted-count advancement yet.
+
+Linked native candidate completes three gates with201 passes/83 failures:
+final perks81/124, heroes66/90 and Adventure54/70. Wisp completes6 passes/
+7 failures before SIGSEGV in the detached-AI fixture; Legendary2 remains held.
+Four independently reviewed private fixture repairs are imported (Wisp,
+Books/Six, legal Rapid/Seize/Morale and Mercenary entry); reverse-patch checks
+pass. Native retry is still required. The fixture crash is not evidence of
+player-game acceptance. Separate production repairs are assigned: Mana list
+lifetime/repeated installation, Crisis decode-before-init admission and
+Opportunist's positive-Luck AI receipt. Adventure fixture repairs are parallel.
+Accepted coverage stays302/310; remote40616dd5c, launcher and NHART unchanged.
+
+Retry62717 terminates on the already-reviewed Lighthouse ownership fixture;
+the authoritative-owner correction is imported and reverse-patch verified.
+Retry86801 links client/test successfully. Binary privacy22737 passes with
+zero findings. Exact pair SHA307cc9c5 (test)/723789f1 (library) is handed to
+the sole isolated native tester for runner refresh, actual discovery and the
+separate124/90/70/14/2 gates. Resource parity, original-data isolation, actual
+child dummy-driver/private-profile proof and terminal XML totals are required.
+No native results, accepted-count increase or publication are claimed yet.
+
+Retry62717 confirms the repaired serializer/chooser compile and remains live.
+It also exposes an additional Lighthouse help/ownership fixture mismatch;
+the one-line private fix now has independent source clearance and uses the
+existing authoritative owner-change API, retaining all assertions. Apply it
+only after terminal build evidence. The separate two-case Legendary wire
+harness is prepared; none of the300 native cases has run yet. A bounded
+Phase1 exit-evidence review is in progress, not a completion claim.
+
+Retry74735 is terminal exit1 after keep-going compilation. Eight exact,
+independently reviewed compile repairs are imported: Legendary wire limbs,
+Crisis chooser, Water Walk fixture, Wisp map-info include, Crisis continuation,
+Glyphs cap accessor, Reactive old-save fixture capture and Lighthouse AI reset.
+Every private patch passes reverse application verification; existing test
+names/assertions are preserved. Data34 (0.881s), module parity and whitespace
+checks pass. Ten-job incremental retry62717 is live with530 affected steps.
+The authored focused inventory is300 (124/90/70/14 plus2 Legendary wire cases),
+not native acceptance. Next: terminal linkage, binary privacy, exact-pair
+runner handoff and separate guarded gates. Remote40616dd5c, ordinary launcher
+and NHART remain unchanged; user-owned artwork/tools remain excluded.
+
+Checkpoint: retry74735 is authoritatively live past650/891 build steps. All
+five identified repair proposals now have independent source clearance:
+Legendary wire limbs, Crisis chooser, Water Walk fixture, Wisp map-info include
+and Crisis continuation fixture. None has been imported into the live compiled
+candidate yet. The original298-case inventories remain exact; only the two
+additional Legendary wire tests will raise the authored aggregate to300.
+After terminal build evidence, import these bounded proposals and retry linkage
+before native discovery/execution. Preserve user-owned artwork/tools and NHART.
+
+Keep-going compilation additionally finds a missing concrete CMapInfo header in
+Wisp outer-writer tests; its include-only private repair has source clearance,
+with all14 case bodies unchanged. Crisis Command's new joint fixture also needs
+its typed stack accessor and the existing scope-guard header; a private repair
+is assigned. Retry74735 remains live past600 steps. These findings are compile
+blocks, not failed native mechanics; no passing native result is asserted.
+
+All three retry74735 repair proposals now have independent source clearance.
+Water Walk retains every original assertion and verifies the constructor's
+already captured magic rules instead of mutating private state. Its spell bonus
+source uses the correct concrete SpellID. The live build has passed500 steps;
+do not restart it on observation timeout or import fixes while compiling.
+Next terminal checkpoint: import the three exact private proposals, rerun the
+incremental build, then privacy/exact-pair native gates including the two added
+Legendary wire cases. Accepted coverage and remote40616dd5c remain unchanged.
+
+Retry74735 reaches test compilation while remaining live. Two private repairs
+have independent source clearance: full-range signed-limb serialization for
+Legendary Admission, and concrete stack/header plus underlying battle-state
+access in the Crisis Command chooser. The serialization proposal adds two
+authored boundary/malformed-wire tests; if imported, the aggregate becomes300.
+Water Walk's test fixture also needs the public battle-rules capture API and
+a concrete SpellID source wrapper; its owner is preparing that private repair
+without weakening assertions. Import only after this build is terminal, then
+compile and execute the exact focused gates. No native acceptance or push yet.
+
+Retry42258's process handle is missing and an authoritative process inventory
+finds no active build/compiler. Incremental ten-job retry74735 resumes with
+keep-going compilation to collect independent failures in one pass. It exposes
+an unsupported unsigned64 serialization field in Legendary Admission;
+the owner is assigned a private, range-preserving repair for independent review.
+Do not modify compiled source while this build is live. The tester independently
+revalidates all124/90/70/14 authored inventories and harnesses; native execution
+still awaits terminal linkage, binary privacy and exact-pair handoff.
+
+Retry11736 terminates on two unsupported `JsonNode(JsonType)` constructor
+calls in Protected barrier coordinate export. The maintained public `setType`
+API now initializes the same vectors, including the empty-vector result;
+coordinate values/order and all rules are unchanged. Independent source review
+is assigned. The owning TurnInfo fix already receives source clearance.
+Retry linkage and all298 native gates remain required.
+
+Retry6114 terminates at Protected flight prevalidation: `getTurnInfo()` returns
+an owning `unique_ptr`, not a raw pointer. Its local variable now retains the
+returned owner; the validation conditions and movement formulas are unchanged.
+Independent review is assigned. No other raw-pointer deduction from this API
+is found in the scoped source search. Native execution remains gated on linkage.
+
+The direct quantity-header fix receives independent source clearance. Ten-job
+retry6114 is live; `VisitQueries.cpp` now compiles, alongside the new Rapid
+Response, Heroic Spirit, Seize Initiative, Opportunist and Crisis Command helpers.
+No native or binary-privacy acceptance is inferred from partial compilation.
+Keep this source candidate frozen until linkage completes or the build reports
+a terminal failure. Prepared124/90/70/14 runner gates remain unexecuted.
+
+Build61144 terminates on missing `TQuantity` visibility in `VisitQueries.h`.
+The narrow direct `GameConstants.h` include is added and independently reviewed;
+no quantity type, mechanic or test assertion changes. Focused native execution
+remains gated on successful retry linkage and binary privacy. Preserve the failed
+build evidence; this is not a passing build or accepted-count increase.
+
+Final Pasis/Monere composition passes independent additive source review and is
+imported: all209 effective result hashes match,34 data checks plus module,
+instruction-privacy and whitespace checks pass. Save epochs append before release
+aliases, and historical fixture isolations retain their assertions. Ten-job
+incremental client/test build61144 is running in the one reusable build directory.
+The focused gates are separate124 final-perk,90 hero,70 Adventure and14 Wisp
+cases (298 authored total); execution awaits terminal linkage, binary privacy
+and exact-pair isolated-runner handshake. Accepted coverage remains302/310;
+ordinary launcher/NHART and remote commit40616dd5c are unchanged.
+
+The Adventure five-gap and captured Lighthouse-help increment now has independent
+additive source clearance and is imported. All202 effective result hashes match;
+module parity and whitespace checks pass. The combined focused inventory is284
+authored cases (124 final perks,90 hero books/specialties/Navigation,70 Adventure),
+still unrun. It includes Mana-regeneration artifact tiers, Glyphs of Fear aura,
+Castle Lighthouse departure, Water Walk legal day-end and explicit protected
+Fly/Dimension Door barriers. The separate Pasis/Monere v2 fixes the review's save
+epoch blocker and is source-cleared; its final additive composition remains
+pending. No accepted-count increase, commit, playable or platform claim follows
+from these source checks. Preserve the recorded Phase2 interaction boundaries.
+
+The independently reviewed final-eight/Books/Six/Navigation batch is imported:
+125 scoped result hashes match exactly; 34 data checks, module parity and
+whitespace checks pass. This adds production paths and registration for the
+remaining eight perks, 22 fresh-default book replacements, six spell-specialty
+successors and Sylvia/Voy's Navigation starts. Accepted coverage remains302/310
+until compilation and the separate124/90 native gates pass. Adventure five-gap
+and captured Lighthouse help additions are being composed additively before
+one incremental build. The Pasis/Monere source review identifies an incorrectly
+placed save epoch after a release alias; its private repair is assigned before
+integration. No build, native execution, new commit or launcher promotion is
+claimed for this imported batch yet.
+
+Commit `40616dd5c` is published on `definitive-mvp`; local and remote tips are
+independently verified equal. The tracked integration tree is clean before the
+next source import; user-owned untracked artwork/tools remain preserved.
+The final-eight plus Books/Six/Navigation union is frozen with 214 authored
+cases and assigned independent review. Adventure's five-gap union has source
+review clearance with 69 authored cases; additive composition and append-only
+save boundaries are being reconciled before the next incremental build.
+Pasis/Monere's fresh-default Wisp-line successor has a private implementation
+with captured save/campaign-pool guards and 14 authored cases. These are not
+native acceptance or playable-delivery claims. Separate guarded test harnesses
+are prepared; no runner refresh or execution before the root's linked-pair and
+privacy handshake. Ordinary launcher and NHART remain unchanged.
+
 Accepted checkpoint: linked20964/privacy81257 pass. Principal62163 passes53/53
 in20.778s; Frozen server6991 passes4/4 in2.817s, zero failures/errors/skips/
 disabled. Root verifies XML totals, exact pair/resource receipt and registry302.

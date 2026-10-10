@@ -1,5 +1,42 @@
 # New Horizons provisional rule review
 
+## Rapid Response and Seize Initiative — simultaneous pending promotions
+
+Chosen interpretation: after earned immediate extras, Rapid Response's pending
+waiting stack takes priority. Seize Initiative promotes its selected stack to
+the next remaining friendly slot. Preserve enemy relative order, every existing
+activation exactly once, the active front and both independent receipts.
+Rationale: Rapid promises the delayed activation next; Seize promises the next
+friendly activation without creating an extra. Composition uses the Rapid queue,
+Seize's friendly-slot permutation, then re-pins the pending Rapid recipient.
+Implementation: `CBattleInfoCallback::battleGetTurnOrder`; focused Seize fixtures
+check independent priority/order/membership/truncation invariants. Source review
+passes; the repaired native cases still require execution. Revisit simultaneous
+promotions with deferred extra chains in Phase2, without duplicating activations.
+
+## Pasis / Monere — current ordinary Wisp line, fresh DEFAULT only
+
+Chosen interpretation: both obsolete Psychic specialties use the current Wisp /
+Greater Wisp line only on fresh DEFAULT creation under their captured exact
+two-row opt-in. Preserve all existing coefficients, native Psychic prototypes,
+explicit PRESET development, saved/crossover history and absent legacy rules.
+This repairs a functional specialty whose original ordinary recruitment line
+was removed; it does not adopt the workbook's incompatible Magic Elemental or
+Rebirth riders. No new mechanic, army, book, class or biography is invented.
+
+Implementation proposal: strict hero-rule table, per-instance resolved target,
+existing local four-marker producer, description and level-up refresh; raw and
+captured old-format pre-prefix guards include actual campaign crossover pools.
+Principal authored cases exercise fresh defaults, both real Wisp identities,
+unrelated/Psychic controls, PRESET/legacy/absence, real level-up/cap, current
+world/crossover replay, repeat init, prototype isolation and guarded save
+envelopes. Cases are authored UNRUN; source review/native acceptance pending.
+
+Second look: a deliberate future change of the ordinary Conflux line, custom
+campaign identity transformations, exotic upgrade graphs and crossover travel
+options that intentionally alter development. These do not justify retroactively
+retargeting existing Psychic saves or changing the shared hero prototypes now.
+
 ## Nearest-only Town Portal — focused native validation accepted
 
 The canonical nearest-controlled-town rule now has reviewed source in the shared

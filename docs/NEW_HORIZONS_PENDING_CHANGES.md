@@ -1,5 +1,29 @@
 # New Horizons Pending Changes
 
+## Pasis / Monere — fresh-default Wisp-line specialty successor (provisional)
+
+Root authorizes the best-reasoned replacement for both fresh DEFAULT heroes:
+their obsolete ordinary Psychic/Magic Elemental specialty enrolls the current
+`new-horizons:wisp` and its Greater Wisp upgrade. Preserve the existing creature
+specialty coefficients: +1 Speed, +1 Initiative, +1 Creature Attack and Defense
+per five hero levels, capped at +6. No new Rebirth/Magic Elemental rider, book,
+army count, class, starting-development rank or biography is authorized.
+
+Canonical creature roster and hero-specialty clauses motivate this amendment:
+Wisps replace the ordinary recruitment line, while the workbook's separate
+Magic Elemental/Rebirth proposal depends on the removed line and is not adopted.
+Accepted UP304 Psychic aliases remain the prototypes and explicit PRESET/map,
+saved, absent-opt-in and crossover legacy contexts keep their original targets.
+A fresh DEFAULT captures its Wisp target once; refresh, level-up, description
+and replay follow that captured target without rereading installed defaults.
+
+Private source/test proposal only, native validation and root import pending.
+Two exact authored table entries and one per-instance resolved target require a
+new semantic save feature after Protected Adventure Barriers; older writers/readers reject key
+presence rather than dropping it. Actual campaign JSON pools and their outer
+StartInfo/world/lobby envelopes receive the same guard. No 144-hero completeness
+or playable-delivery claim follows from this bounded amendment.
+
 New Horizons.md is the sole canonical design specification. This document
 contains only temporary amendments awaiting integration into its appropriate
 sections; it is not a second permanent specification.
@@ -168,6 +192,11 @@ activation into the next friendly slot after the current activation ends.
 Preserve enemy ordering and earned immediate extras. Never grant another
 activation or refund the Hero Action. Track normal completion independently
 from extra-activation resets of ordinary moved flags.
+
+When a Rapid Response waiter is already pending, it retains immediate priority;
+Seize chooses the next remaining friendly slot. Preserve enemy relative ordering
+and unique existing activations. This provisional simultaneous-promotion rule
+does not grant either stack an additional activation.
 
 
 ### Coronius — current offensive starting spell
