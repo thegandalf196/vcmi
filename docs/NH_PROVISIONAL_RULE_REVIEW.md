@@ -1007,3 +1007,40 @@ Second-look priorities: retained Advanced rank balance, Isra/Vidomina generic
 knowledge differentiation, Ash controlspell availability, Oris futureMentor role,
 Deemer exploration/fire identity and resource-economy pacing. No workbook riders
 are implicitly approved; broad combat/meeting/specialty matrices remain Phase2.
+
+## Divine Retribution — ordinary attack provenance, not physical-only damage
+
+The detailed spell covers melee and ranged creature attacks and excludes spells.
+Provisional interpretation: an ordinary primary creature attack qualifies even
+when its damage is magical or its projectile has spell-like presentation. An
+actual hero spell or active creature spell does not qualify. This distinguishes
+an attack action from its damage element rather than inventing a physical-only
+restriction absent from the authored text.
+
+Source evidence: ordinary Magog/Lich shooting enters makeAttack/prepareAttack;
+the spell-like adapter enumerates collateral and marks presentation. Actual
+creature spellcasting instead enters CREATURE_ACTIVE BattleCast::cast. Current
+Divine Retribution judgment and AI threat gates exclude spell-like primary shots;
+a bounded correction and positive/actual-cast negative controls are assigned.
+Implementation and native acceptance remain pending. Recipient MDR applies to
+the eventual Holy payout under the existing general magical-damage rule, without
+a second cast, action, resistance roll or fabricated delayed caster.
+
+Second look: area collateral and secondary attack scope, interactions with
+delayed caster-specific penetration and unusual scripted attack origins remain
+Phase2 breadth. This interpretation does not amend spell costs, caps, duration,
+once-per-attacker accounting or casualty provenance.
+
+## Default hero armies — user-approved provisional quantities
+
+All144 supplied replacement troop rows remain TBD; their original army rows
+provide composition and reference ranges. The user now explicitly approves
+preserving that composition and adjusting quantities to current independent
+slot Leadership limits. Prefer preserving ordinary random ranges where legal,
+not replacing every army with a fixed maximum. Preserve current creature-line
+successors and explicit map/saved-context behavior; do not invent additional
+troop types or redesign combat statistics. A dedicated implementation worker
+is inspecting the existing initializer and authoring seams before setting the
+actual144 dispositions. Source, capacity evidence and playable delivery remain
+pending. Revisit these prototypes during Phase3 for hero identity and opening
+economy rather than treating legal capacity as ideal starting strength.

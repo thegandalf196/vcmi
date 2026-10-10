@@ -2,6 +2,64 @@
 
 ## Current Phase1 continuation — independent feature lanes
 
+User confirms the144 authored starting Skill/perk packages should ship and
+explicitly approves provisional Leadership-safe starting armies. Preserve each
+hero's original troop composition, adjust quantities for current independent
+slot capacity, and retain those choices for later balance review. Remaining96
+compatible packages are assigned privately; current48 settled exceptions and
+map-authored/legacy/saved boundaries remain. The biography-only review already
+made144 decisions (52 rewrites/92 deliberate inheritances); do not misreport
+those inheritances as missing drafts. No provisional troops are implemented yet.
+
+Popup regression completes on the exact f7d818/a2f35 immutable pair: bare Ice
+and Golem right-click/release survive, and the real combat popup retains NH
+Initiative/Leadership/Elite/Freezing Touch. Root inspects the captures and final
+receipt. Owned cleanup and package/snapshot parity pass. Frozen feedback remains
+unobserved: only one eligible positive hit occurs before the600s bound, no proc;
+timeout124 is not a crash or normal exit. No unchanged retry or launcher promotion.
+
+Reviewed DRv2.1 is imported with exact result hashes. Compile exposes a missing
+availability declaration and three incomplete Bonus constructor arguments;
+minimal include/source-ID repairs are imported, incremental both-target43320
+is live. Do not count its22 authored cases as executed before focused native
+results. Independent remaining pool audits continue without broad suites.
+
+Neutral-join witness builds after the include-only repair, and fresh privacy
+passes. Actual native one-case execution fails before movement: no positive
+matching generated destination is found although quote/capacity/Gold checks
+pass. Root reads the XML/receipt, preserves the failure and assigns bounded
+path/cluster/score diagnosis before claiming a missing planner or changing it.
+Divine Retribution's reviewed production correction is still private: fixture
+review preserves the95% MDR cap, typed source IDs, genuine spell charges and
+strict synthetic-v2 isolation. Await the corrected freeze before import/build.
+Actual bare and combat creature-popup captures show the null-context crash is
+repaired and gameplay Initiative/Leadership/Elite/Freezing Touch remain visible;
+the bounded Frozen journey and final owned cleanup receipt are still pending.
+
+The reviewed pregame creature-popup guard is imported with exact result parity.
+Both-target80426 and fresh privacy39570 pass. Designated tester prepares one
+matched silent popup regression followed by a bounded Frozen probe; ordinary
+launcher and NHART remain unchanged. Independent defining-clause audits identify
+Divine Retribution's Holy payout bypassing recipient MDR in server and AI. No
+authored exemption exists; this is a principal Phase1 correction, not the older
+deferred label. A private worker owns the shared adjustment and focused tests,
+with independent High review. Neutral-join AI destination planning gets a focused
+witness before any speculative planner rewrite. Windows cheap preflight38047828625
+now succeeds for1d6; avoid dispatching a full build of the known-crashing baseline
+while the reviewed repair is being verified for the next coherent publication.
+
+Published1d6bc72b6 and independently verified remote/identity. The next Frozen
+probe stops before combat: the ordinary FIELD setup requires two heroes, and
+right-clicking a selected creature crashes. A separate maintained silent guarded
+debugger run reproduces the actual fault in CStackWindow::initSections, reached
+through the BattleOnly creature popup before a gameplay interface exists. Root
+reads the backtrace; independent review confirms the unguarded capability-rule
+dereference. A minimal private null-context fix is assigned, then rebuild and
+matched actual popup verification precede another Frozen probe. Both failed runs
+preserve logs/captures and pass owned cleanup/snapshot parity. No Frozen hits or
+effects are observed. Other disjoint specification audits continue; no normal
+launcher or NHART change. Windows preflight38047828625 is still live for1d6.
+
 Corrected selector rendering now has actual matched graphical evidence. Root
 inspects native captures with sustained visible centered0/5 and1/5 panels, then
 three ordered targets including identical names and a double-wide stack. Mouse

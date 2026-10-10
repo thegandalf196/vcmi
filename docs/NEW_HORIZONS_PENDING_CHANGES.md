@@ -39,6 +39,21 @@ entries here and thereby recreate a permanent override layer.
 
 ## Awaiting integration
 
+### Provisional Leadership-safe default starting armies
+
+The user explicitly approves filling the hero workbook's TBD troop quantities
+provisionally. Preserve each hero's original troop composition and adjust its
+starting quantity range to current per-slot Leadership capacity. Preserve the
+selected creature-line successors, ordinary random-range behavior where legal,
+and at least one legal troop. Explicit map-authored armies and captured older
+contexts must not be silently replaced. No additional elite/champion line,
+creature identity, class or specialty is implied by this numerical pass.
+
+Record the resulting144 default dispositions and their capacity checks. Treat
+the quantities as prototypes for Phase3 balance, not a finalized economic
+recommendation. Implementation and validation remain pending; biography
+selection is governed separately by the existing only-if-better review rule.
+
 ### Conditional physical-displacement immunities — explicit movement cause
 
 Provisionally, implement Unyielding and Deep Bulwark through a real shared
