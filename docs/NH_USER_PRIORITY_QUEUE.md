@@ -1,6 +1,48 @@
 # User-priority queue
 
+## Current user priority — product version and pre-game branding
+
+Trace and correct the stale displayed0.15 version metadata, keeping one version
+source shared by generated module metadata and the game presentation. Version
+numbers are release identifiers, not implementation percentages; preserve save
+and ruleset identities. Locate the original Heroes III Complete splash visible
+around scenario selection/start and replace its New Horizons presentation using
+existing selected resources or coherent code-driven UI, without removing engine
+attribution. Read-only tracing is delegated while the current build completes.
+The existing local setup screen is confirmed to bypass the branded loading
+selector with a direct original LOADBAR request. A private five-file fix reuses
+the selector and updates the single product-version source to the requested
+development identifier0.85.0; independent review, import, both-target build and
+ten focused checks pass. NHART bytes are unchanged and normal installed artwork
+verification and fresh binary privacy pass.
+Require actual packaged presentation before playable closure; launcher unchanged.
+
 ## Current Phase1 continuation — independent feature lanes
+
+The shared hero starting projection is now imported after independent source
+review: map-selection and encyclopedia use effective policy, independent authored
+overrides, common starting-book/perk/Leadership rules and raw map attributes.
+Three review blockers and the empty-book icon omission are repaired. Eight
+focused projection cases are authored, including all144 real initialized heroes,
+map Spell Power120/Knowledge0 and physical Spellbook without its loader sentinel.
+Both-target compilation passes with at most ten jobs. The actual16-case native
+gate reports15 OK, then crashes with SIGSEGV in the physical-book-without-sentinel
+case. The failed run is retained. A reviewed callback-free authored slot check
+repairs the unsafe artifact lookup before world-map assignment; the actual
+post-initialization Spellbook oracle remains unchanged. The changed case then
+passes1/1 and the unchanged full gate passes16/16, with no failures/errors/skips.
+Binary/resource parity, fresh privacy and silent owned cleanup pass. Rendered/
+playable acceptance remains pending. No runtime or save identity changes.
+
+The bounded ordinary Frozen Auto Combat probe records a natural blue-tinted
+receiver/queue marker, then actual surviving-target Ice melee Shatter without
+retaliation. Native frames and real event logs correlate. Full ice encasement/
+shards are not convincingly readable amid overlapping creatures; normal-slot
+forfeiture, status tooltip and manual damage preview remain unobserved. The run
+also exceeded its shutdown bound by approximately5–10seconds and retained21
+PNGs against the20-total cap; no strict bounded-run acceptance is claimed.
+All owned processes are gone and immutable snapshot parity passes. No chance,
+RNG, state or original artwork was changed, and no unchanged retry is authorized.
 
 AI partial-visibility repair is imported and independently reviewed: clustering
 rejects a hidden visitable anchor before querying its top object, preserving
