@@ -2,6 +2,101 @@
 
 ## Current Phase1 continuation — independent feature lanes
 
+User requires the next playable build to stop emitting the reported startup
+schema/resource warnings. Treat those exact messages as a delivery gate: run
+the matching packaged client/resources through guarded silent startup, inspect
+the actual log, repair remaining causes rather than suppress validation, and
+do not promote the ordinary launcher while those reported defects remain.
+
+Latest focused acceptance: neutral planner2/2 and generated portrait recipes8/8
+pass v7; startup schema5/5 passes v8 after its synthetic missing sound receives
+the normal builtin resource scope. Root reads exact XMLs/cleanup/parity receipts.
+No source/gameplay validation is disabled. The coherent source batch is ready
+for publication; matching installed-client startup clearance is still pending.
+Older failed receipts below remain history, not current feature acceptance.
+
+Current v6 actual18/19: Blood9/9 and Counterfire8/8 pass unchanged exact
+oracles after reviewed fixture corrections. Neutral1/2 still fails; diagnostics
+show valid reward/cost but an uninitialized danger map because its fixture skips
+the normal update lifecycle. A public-update fixture correction is delegated;
+do not zero danger, loosen thresholds or force its destination. All children
+exit, pair/resource parity and cleanup pass. Source freeze released. Reviewed
+startup schema patch is integrated (real pattern validation, null shoot sound);
+five native cases and coherent playable startup delivery remain pending.
+
+New user report: the ordinary Linux launcher still starts the older selected
+executable95f4ec089 and emits incompatible magic-schema errors plus missing
+Mage/Gargoyle portrait resources. Read-only diagnosis confirms the selected v3
+schema lacks current morale support; v1/v2 messages are alternative-schema
+diagnostics, not gameplay fallback. The three portrait routes are intentional
+runtime-generated resources rejected by filesystem-only validation, not proven
+NHART omissions. The committed package verifies unchanged. Correct validator
+support and deliver matching schemas/resources before promoting a snapshot;
+do not claim the current development build is installed. Blood/Counterfire's
+independently reviewed fixture increments are imported, with exact old assertions
+retained; their incremental build passes. Neutral scoring diagnostics and narrow
+startup schema repairs are delegated privately; native reruns remain pending.
+Acceptance requires a coherent client/resource/schema/art delivery and an
+ordinary guarded startup check, not only changing the selected pointer.
+
+Latest65 focused batch is54/65, no crash/timeout/skip: DR22/22, Storm2/2,
+Inspirational7/7 and DeepFlank15/15 pass. Blood7/9 still has incomplete fixture
+health initialization and an earlier mandatory Army Value save guard;
+Counterfire0/8 is blocked by a preselected Basic perk in its default hero fixture;
+neutral1/2 verifies reward/cost but still selects no positive-score goal. Preserve
+these exact failures and repair causes, not assertions. Source freeze released
+after all children exited and pair/resource parity passed. Private workers own
+Blood/Counterfire fixture repairs and neutral scoring diagnosis while root
+handles the newly reported ordinary launcher discrepancy.
+
+Latest actual focused batch is40/43 PASS after the exact creation-only Solmyr
+profile/prototype overlap repair: hero9/9, Divine Retribution22/22,
+Blood Scent7/9, Stormcaller2/2, neutral planner0/1. All144 hero packages and
+Leadership-safe original-composition armies now pass actual initialization and
+their map/save/legacy boundaries. No crashes, timeouts, errors or skips; owned
+cleanup and resource parity pass. Earlier failed receipts below remain history.
+Blood's two failures expose a changed Griffin HP fixture and an earlier captured
+Luck serialization guard; repair fixtures without weakening their exact oracles.
+The neutral generated destination has zero score; investigate actual reward
+valuation rather than forcing a destination. Six bounded workers are assigned
+to those causes, Counterfire/Inspirational review, and Deep Flank reconciliation.
+Hero batch8e5d7326d is committed/pushed with remote/identity verification.
+Counterfire and Inspirational are integrated and build successfully. Reviewed
+Deep Flank, neutral-join reward/cost and Blood fixture corrections are imported;
+one ten-object incremental build and65-case guarded batch are pending.
+NHART and the ordinary playable launcher remain unchanged.
+
+Actual144-profile initialization finds a foundational duplicate: Solmyr's new
+profile and existing prototype both select Stormcaller. The second selection
+correctly fails validation. Latest native batch therefore fails hero1, neutral1
+and all13 DR server setup cases with that exception; all9 DR AI cases pass,
+including the corrected detached witness. No crash/timeout/skip; owned cleanup
+and resource parity pass. Preserve these failures. A narrow creation-only exact
+profile/prototype deduplication is assigned, retaining rank/conflict checks.
+No hero-package or whole DR acceptance is claimed before repair/rebuild/rerun.
+
+Independent review clears144 provisional army dispositions/four actual-init
+boundary cases, current-v3 elemental Bloodrage/eight cases and Stormcaller's
+SP-component arithmetic/two cases. All are integrated; no new army schema/table
+or save epoch. These new native gates await the duplicate-initialization repair.
+Additional ordinary-shot Counterfire and active-creature Inspirational Leader
+scope gaps are under bounded private reconciliation, not accepted features.
+
+All144 starting-development profiles are now integrated after independent review:
+96 exact workbook additions, existing48 preserved. Both focused data cases and
+the maintained module check pass; the actual all144 fresh-initialization case is
+authored, not yet executed. Provisional troops reuse the existing per-slot clamp;
+an all144 disposition/capacity witness is being prepared, with original Pixie
+composition retained rather than silently replacing it with Wisp.
+
+DR builds and privacy pass. Actual focused native execution is21/22, with no
+errors/skips/crash/timeout. The sole failure is a detached-health isolation
+assertion after live payout; independent review must classify lazy parent lookup
+versus production mutation before a repair/retry. All13 server cases pass.
+Neutral planner's unchanged failure now has a diagnostic-only delta exposing
+clusters, paths, goal identities and scores; its next execution awaits the
+incremental hero/diagnostic build. No ordinary launcher or NHART change.
+
 User confirms the144 authored starting Skill/perk packages should ship and
 explicitly approves provisional Leadership-safe starting armies. Preserve each
 hero's original troop composition, adjust quantities for current independent

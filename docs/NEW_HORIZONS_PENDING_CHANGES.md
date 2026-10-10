@@ -39,6 +39,20 @@ entries here and thereby recreate a permanent override layer.
 
 ## Awaiting integration
 
+### Complete default hero starting-development packages
+
+Apply the supplied workbook's remaining96 starting Skill/perk packages through
+the existing fresh DEFAULT profile initializer. Preserve the48 previously
+settled profiles, including their deliberate workbook differences; each hero
+keeps its own faction Skill and one installed, active Basic generic perk with
+its authored parent rank. Do not infer new Masterful abilities, specialty
+riders, books, classes or troop species from this data migration. Explicit
+PRESET/map choices and previously captured saves remain unchanged.
+
+All144 profiles are integrated and data/module checks pass. The actual fresh
+initialization witness and army/map/save/legacy controls now pass9/9; biography selection is separately
+governed by the only-if-better review, not automatic wholesale replacement.
+
 ### Provisional Leadership-safe default starting armies
 
 The user explicitly approves filling the hero workbook's TBD troop quantities

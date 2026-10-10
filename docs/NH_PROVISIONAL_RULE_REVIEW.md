@@ -1,5 +1,18 @@
 # New Horizons provisional rule review
 
+## Deep Flank — ordinary elemental primary shots (amends physical-only reading)
+
+The earlier root-provisional physical-only interpretation is superseded on
+second review: the canonical perk says friendly ranged attacks, without that
+restriction. Ordinary elemental primary shots such as Magog and Lich therefore
+receive half the Shroud flanking premium under the current captured policy.
+Actual spell casts, indirect damage and magical collateral are not new
+consumers; historical contexts retain their prior behavior. Both the eligibility
+helper and attack payload currently exclude this principal path. A bounded
+private correction with actual attack and detached-preview witnesses is assigned;
+it is not yet implemented or verified. This does not override a settled user
+decision. Wider control/collateral interactions deserve Phase2 review.
+
 ## Second Wind — charged creature abilities and direct spell output
 
 Interpretation: a full additional Creature Activation renews per-activation
@@ -1044,3 +1057,27 @@ is inspecting the existing initializer and authoring seams before setting the
 actual144 dispositions. Source, capacity evidence and playable delivery remain
 pending. Revisit these prototypes during Phase3 for hero identity and opening
 economy rather than treating legal capacity as ideal starting strength.
+
+## Bloodrage — ordinary elemental attacks
+
+The rank and Blood Scent describe damage from creature attacks, without a
+physical-only restriction. Provisionally ordinary elemental primary creature
+attacks receive their existing Rage premium; actual spellcasting, indirect damage
+and magical collateral do not gain an invented extra consumer. Avatar of Rage
+retains its separately settled physical Creature Defense channel. The current
+payload places all Rage damage inside a physical-only gate; a narrow correction
+and actual shot/detached/negative controls are assigned privately, not accepted.
+Preserve historical captured behavior where the existing policy supports it.
+Second look: unusual scripted attacks and collateral scope remain Phase2.
+
+## Inspirational Leader — direct damage during the covered activation
+
+Provisionally its unqualified damage increase includes a direct active creature
+damage spell cast by the affected stack during that activation, as well as its
+ordinary attack. It does not enhance a Hero spell or unrelated damage-over-time.
+The present melee/ranged bonus producer covers ordinary elemental attacks but
+has no active-creature-spell consumer. A bounded source reconciliation and
+focused lifetime/actual-cast evidence are assigned; implementation is not yet
+accepted. Preserve the explicit75% Morale creature-spell policy and avoid a
+global reinterpretation of all attack premiums. Second look: indirect/collateral
+origins and unusual scripted spell actions remain Phase2.
