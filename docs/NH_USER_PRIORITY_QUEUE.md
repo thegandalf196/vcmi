@@ -1,5 +1,33 @@
 # User-priority queue
 
+## Published 0.85 and Phase 1 exit — 2026-10-10
+
+Completed: [v0.85.0](https://github.com/thegandalf196/new-horizons/releases/tag/v0.85.0)
+is public, with Windows and Linux player packages, matching source companions
+and checksums. The annotated tag pins `6e21523dfef8c71151605f8d722f11962d4c3311`.
+Actual public downloads hash to Linux
+`1335e4f5f659b22b7140e16cdee2b82024f81fc12842d33fc6e40209253c2464`
+and Windows `cb3eb79d41ef8fec34301f44f9613b56308c628f5bb84a08ca62768a6e4bc382`.
+Both retain the selected committed NHART without loose fallback. The usual
+Linux launcher selects runtime files byte-identical to the accepted stage.
+Windows compilation/setup/package audit is accepted; native Windows gameplay
+and media behavior remain untested. Linux targets Ubuntu 26.04 system libraries.
+
+The final repaired Frozen witness closes natural proc, automatic forfeiture,
+authoritative thaw and the surviving stack's next normal action, alongside
+46/46 focused native tests. Known preview diagnostics, pre-run baseline limits,
+shard capture and Save-render breadth remain explicit. No warning-free or
+exhaustive graphical certification is claimed.
+
+Root adopts [the Phase 1 exit audit](NH_PHASE1_EXIT_AUDIT.md) and explicitly
+transitions to **Phase 2 — Stabilization and Integration**. Principal Version 1.0
+implementation coverage is substantially complete; 0.85 is an experimental
+preview, not final 1.0. Earlier release-pending passages are preserved history.
+Next priority: the recorded Plague/Spell Lock duration-pause interaction, followed
+by high-value control/activation/save-state integration defects. Preserve the
+published source/payload; ordinary new fixes use reviewed commits, not release
+replacement or history rewrite.
+
 ## Public foreword and personal privacy — 2026-10-10
 
 Download the user's supplied Google Docs Foreword and use its complete authored
