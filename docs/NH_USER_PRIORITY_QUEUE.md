@@ -1,5 +1,158 @@
 # User-priority queue
 
+## Reported slow Windows AI turns — 2026-10-10
+
+User reports All for One AI turns of30,618ms and54,974ms, alongside state
+updates of only0–14ms and BattleAI creation during both long turns. Diagnose
+the actual timing boundary: distinguish adventure planning, combat simulation/
+battle-AI work, frontend animation/network waits and intentional pacing. Do not
+infer a cause from aggregate makeTurn duration or hide work by removing logs.
+Use bounded isolated evidence and preserve saves/profile. Address a confirmed
+small blocking regression before corrected0.85 publication; record uncertainty
+and do not claim a measured performance improvement without a comparison.
+The repeated portrait warning remains covered by the separate decoder fix;
+the libpng interlace warning is a distinct decoder issue to inspect.
+
+User confirms Normal difficulty. BattleAI uses two forecast rounds at this
+difficulty, not the ten-round highest-difficulty branch. The NK2 aggregate
+includes battle completion; ordinary hidden AI-versus-neutral battles have no
+rendered BattleInterface unless spectating. Neither planning-update times nor
+animation assumptions establish the bottleneck. Next evidence must separate
+combat-decision count/time from dispatch/authoritative completion waits.
+
+Source-ready diagnostic: BattleAI emits one aggregate per completed battle,
+with battle wall time, active-stack callback count/total/max wall time and
+observed rounds. Shared timing state survives a lethal callback's owner
+destruction and keeps reset battles separate. Seven focused native cases pass,
+along with four Frozen AI regressions; independent review is clear. This is
+instrumentation, not a proven speed improvement. Callback totals are summed
+wall time, not CPU or server latency, and may exceed the end timestamp through
+overlap/final unwinding. The reported Windows scenario still needs reproduction.
+
+Interlace diagnosis: shipping SDL3_image3.4.4 omits interlace initialization
+before `png_read_update_info`. Bundled libpng emits the warning and enables
+handling itself, so the warning alone does not establish corrupted pixels.
+All2,899 selected NHART PNGs are non-interlaced. The sole interlaced loose PNG
+in the checked Windows package is the unchanged built-in
+`Mods/vcmi/Content/Sprites/heroWindow/backpackButtonIcon.png`, used by hero and
+exchange windows. This is a concrete candidate, not proof of the exact logged
+call. A responsible repair belongs in the dependency decoder, not regenerated
+art or warning suppression; that repair is not yet implemented.
+
+## Hero selection follows current classes — 2026-10-10
+
+Thane is now a Wizard and must appear with Wizards in hero selection; Halon
+must likewise appear with Battle Mages. Trace the displayed ordering and use
+resolved current hero-class data rather than legacy numeric IDs/grouping.
+Keep established class changes, hero IDs, statistics, skills, biographies and
+save compatibility unchanged. Verify both positions and representative other
+classes; include this bounded UI correction before the corrected0.85 freeze.
+
+## Republish corrected 0.85 after verification — 2026-10-10
+
+User explicitly requests deleting the existing GitHub0.85 tag and launching it
+again once everything is ready. This supersedes the earlier plan to preserve
+the public0.85 tag and publish0.85.1. Verify both corrected player packages
+before removing the old release/tag. Keep a verified private recovery copy;
+recreate `v0.85.0` at the reviewed correction commit and publish both downloads,
+matching source companions and fresh checksums. Mark the release as corrected
+and tell existing players to redownload. Do not create contaminated/public
+backup refs, change unrelated tags, or claim old downloads/caches are erased.
+
+## Local Windows/Wine regression before pushing — 2026-10-10
+
+User requests local Windows testing through Wine before pushing the correction.
+Wine and the x64 MinGW compiler are installed. Attempt the bounded Windows PE
+mask regression using the actual downloaded Windows SDL3/image DLLs and the
+shared production repair before publishing source. Keep Wine initialization
+and execution isolated and silent through the maintained private-display guard;
+never use the host display or profile. Distinguish this decoder/surface proof
+from full-game rendering and native Windows acceptance. Do not pass off the old
+game executable as containing the new fix. If a full local rebuild is not
+available, report that limit and retain the native Windows CI gate.
+
+Local Wine surface verification now passes: a negative witness reproduces
+RGB254 foreground in all twelve selected masks; the production-helper witness
+produces binary0/255, opaque alpha and exact independent foreground counts.
+The actual PE loads the five imported shipping SDL3/image/PNG/zlib/CRT DLLs
+from verified copies; the retained second CRT DLL is not exercised. Actual
+pre-exec and Win32 pre-SDL environment proofs, silent drivers and process
+reaping pass. Private receipts remain local. This is not full-game rendering
+or native Windows acceptance; final CI/package delivery remains pending.
+
+## Supplied New Horizons executable icon — 2026-10-10
+
+User supplies their ChatGPT-created square icon at
+https://i.imgur.com/GFSGFgr.png and requests replacement of the inherited VCMI
+executable thumbnail. Use the supplied artwork for Windows executable resources
+and Linux desktop branding, preserve the source locally, and include
+verified platform derivatives with the portrait correction. Do not use an
+extracted original-game icon or silently redesign the supplied art. Required
+bootstrap/platform icon files are specific loose-art exceptions; document their
+provenance and bindings. Keep authoring masters and review exports untracked.
+
+Source-ready: the supplied full-frame icon is bound to the Windows executable
+and nine Linux desktop sizes, with a hash/provenance notice and explicit
+source-bound Linux package admission. Eight branding tests and twenty-six
+Linux assembler tests pass; independent review is clear. Platform shell
+appearance and corrected downloadable packages remain pending.
+
+## Reported 0.85 Academy portrait-mask rejection — 2026-10-10
+
+User now authorizes implementation and a corrected release. Correct the SDL3
+grayscale decoder endpoint without weakening binary-mask validation or changing
+NHART. Add focused synthetic and actual shipping-SDL3 checks, independently
+review, build source-matched packages and publish a clearly versioned correction
+with concise player-facing release notes. Preserve private recovery payloads;
+the later explicit republish instruction above governs the public0.85 tag.
+Identify the corrected build instead of silently replacing cached binaries.
+Do not mark playable/release delivery complete on
+source or helper tests alone. Keep Linux launcher selection current after
+accepted package verification; build at most ten jobs and preserve local art.
+
+Source-ready: SDL3 repairs only the exact faulty 256-color grayscale8 palette,
+preserves alpha, and updates SDL's palette before transparency processing.
+Five native helper tests pass, and independent review is clear. The Windows
+workflow now gates packaging on all twelve selected masks decoded by its
+shipping SDL3_image with the shared production repair. NHART remains unchanged.
+Local Wine decoder execution is verified above; final release delivery remains pending.
+
+The production SDL3 bitmap-loader translation unit also passes a host syntax
+check against the exact SDL3/image headers, separately from Windows ABI/link
+acceptance. The rebuilt native client and sixteen focused mask/timing/Frozen
+tests pass. Two initial native harness attempts lacked the required NH preset
+or test-mod resource root; they are setup failures, not passing executions.
+
+User screenshot shows background-only Stone Golem, Genie and Giant recruitment
+portraits. The accompanying runtime log rejects their corresponding Academy
+portrait masks as non-binary grayscale, twice each. Diagnose the actual packaged
+bytes and render decoding/scaling contract; do not dismiss these warnings or
+equate source-image validation with rendered acceptance. The initial task was diagnosis;
+preserve published 0.85 payloads and unrelated local artwork. Record confirmed
+cause and any proposed repair separately from verified playable delivery.
+
+Diagnosis complete: the actual Windows package uses SDL3_image 3.4.4 with
+libpng enabled. Its distributed corresponding source, `src/IMG_libpng.c`,
+constructs grayscale palette channels as `(i * 255) / palette->ncolors`.
+For a 256-entry palette, white index255 becomes RGB254 rather than255.
+AssetGenerator's post-draw binary check correctly rejects that result; the
+generated portrait fails and the shipped background-only fallback is displayed.
+Decoder-equivalent reproduction with the exact packed masks and actual SDL3
+core finds first rejected pixels at ironGolem(26,4), genie(43,1), giant(5,0),
+all254/254/254/255. A correct grayscale-palette control remains binary.
+This identifies decoder palette construction, not NHART damage, scaling or
+SIMPLE blitting, as the cause. Merely switching the matte to OPAQUE cannot
+restore already-decoded254 white. Upgraded mask consumers are also susceptible.
+
+The refreshed existing Linux SDL2 renderer oracle passes all twelve portraits
+at1x–4x using the accepted immutable package resources, with zero mask-rejection
+warnings. That is backend-specific evidence, not SDL3-on-Linux certification.
+Private diagnosis receipts retain hashes and isolated dummy-driver execution;
+no host desktop, production artwork or published payload was changed. A native
+Windows instrumented execution is not claimed by these diagnosis receipts. The authorized repair
+must correct grayscale decoding or bypass the defective numeric-data conversion,
+retain strict binary validation and add SDL3-specific regression coverage.
+
 ## Published 0.85 and Phase 1 exit — 2026-10-10
 
 Completed: [v0.85.0](https://github.com/thegandalf196/new-horizons/releases/tag/v0.85.0)
