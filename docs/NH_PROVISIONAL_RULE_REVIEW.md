@@ -1,5 +1,21 @@
 # New Horizons provisional rule review
 
+## Second Wind — charged creature abilities and direct spell output
+
+Interpretation: a full additional Creature Activation renews per-activation
+cast readiness, but never restores expended charges. Its direct damaging casts
+use the same existing Second Wind coefficient as ordinary attacks; healing,
+passive/indirect effects and hero spells retain their own output. Ordinary Order
+continuation is not a fresh activation. This follows the canonical full-activation
+and direct-damage wording without changing spell power or inventing a resource.
+
+Implementation: shared spell mechanics and the live/detached activation boundary.
+Nine focused native cases pass, including two actual paid casts, exact recipient,
+spent-state denial and detached branch isolation. Adjacent Morale casts pass9/9.
+Independent review, both-target linkage and binary privacy pass. Revisit unusual
+charged abilities, simultaneous extra grants and fractional/cap composition in
+Phase2. No canonical amendment, rendered or platform acceptance is implied.
+
 ## Morale extra activation — direct creature spell damage
 
 Interpretation: the existing 75% direct-damage rule includes an ordinary

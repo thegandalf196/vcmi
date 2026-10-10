@@ -2,6 +2,38 @@
 
 ## Current Phase1 continuation — independent feature lanes
 
+The corrected focused retry passes11/11: teaching7/7 and retained towns4/4.
+Root independently opens all XMLs; unchanged-production Second Wind9/9 and
+Morale9/9 from native-v1 contribute18 separate cases, for29 distinct passes,
+not one fresh29 run. Both-target17025 and binary privacy90972 pass. Commit/push
+the coherent accepted batch next; then integrate reviewed external Muster AI
+planning and required Storm damage/Hold anchor feedback independently. Preserve
+the original fixture failures privately. NHART/launcher remain unchanged; no
+full Phase1, rendered, platform or playable-delivery acceptance is claimed.
+
+Reviewed Second Wind and teaching-meeting fixes are imported. Both-target22900
+links successfully; binary privacy18718 reports zero findings. Actual native-v1
+discovery matches29; execution passes27/29: Second Wind9/9, adjacent Morale9/9,
+teaching6/7 and retained towns3/4. Root opens the receipt and failing XMLs.
+There are no crashes, timeouts, errors or skips; isolation, cleanup and binary/
+resource parity pass. Two focused fixture diagnoses remain: single-actor path
+count is1 rather than0, and the second siege's start action uses a stale battle
+identifier. Preserve the failures and verify narrow repairs before publication.
+Independent audits also identify empty external-dwelling Muster AI planning and
+Storm of Daggers per-target battlefield damage readback as next bounded lanes.
+The existing Storm selection numbers already work; do not duplicate them.
+NHART and the ordinary playable launcher are unchanged. Phase1 remains open.
+
+Luck/Morale is committed and published asedf980b00; the exact remote branch
+tip and author/committer identity are independently verified. Requirement-level
+exit auditing identifies two further principal omissions: Second Wind's direct
+damage coefficient is absent from active creature spells, and autonomous AI
+teaching meetings are filtered out unless army reinforcement is useful. Separate
+private workers own the existing spell-damage seam and bounded NK2 meeting
+planning, with no overlapping live edits. Preserve all existing Morale/control
+and no-op meeting guards. Phase1 remains open; a count of active entries does
+not establish full functional coverage. No playable launcher promotion yet.
+
 Luck/Morale batch is accepted: both-target93769 is terminal0 and binary
 privacy54854 reports zero findings. Actual native-v4 discovery and execution
 pass27/27 (Morale18, scalars9), with no errors, skips, crashes or timeouts.
